@@ -490,3 +490,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+/* Force light colors for select options when not in dark mode */
+:not(.dark) select option {
+  background-color: white !important;
+  color: rgb(55, 65, 81) !important;
+}
+
+/* Force dark colors for select options in dark mode */
+.dark select option {
+  background-color: rgb(55, 65, 81) !important;
+  color: rgb(229, 231, 235) !important;
+}
+</style>
