@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+echo "🔍 Running pre-commit checks..."
+
+# Run linter
+echo "📝 Checking code style with Biome..."
+npm run lint || {
+  echo "❌ Linting failed! Please fix the issues above."
+  exit 1
+}
+
+# Check for sensitive data (API keys only)
+echo "🔒 Checking for API keys..."
+if grep -r "AIzaSy" --include="*.js" --include="*.vue" --include="*.ts" --exclude-dir=node_modules --exclude-dir=dist src/ 2>/dev/null; then
+  echo "❌ Error: Google Maps API key found in source code!"
+  echo "Please remove API keys from source files and use environment variables instead."
+  exit 1
+fi
+
+echo "✅ Pre-commit checks passed!"

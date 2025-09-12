@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicon - Complete set -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    
+    <!-- Primary Meta Tags -->
+    <title><%= VITE_APP_TITLE %></title>
+    <meta name="title" content="<%= VITE_APP_TITLE %>">
+    <meta name="description" content="<%= VITE_APP_DESCRIPTION %>">
+    <meta name="keywords" content="<%= VITE_APP_KEYWORDS %>">
+    <meta name="author" content="<%= VITE_SITE_NAME %>">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="<%= VITE_SITE_URL %>/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= VITE_SITE_URL %>/">
+    <meta property="og:site_name" content="<%= VITE_SITE_NAME %>">
+    <meta property="og:title" content="<%= VITE_OG_TITLE %>">
+    <meta property="og:description" content="<%= VITE_OG_DESCRIPTION %>">
+    <meta property="og:image" content="<%= VITE_SITE_URL %>/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<%= VITE_SITE_URL %>/">
+    <meta property="twitter:title" content="<%= VITE_TWITTER_TITLE %>">
+    <meta property="twitter:description" content="<%= VITE_TWITTER_DESCRIPTION %>">
+    <meta property="twitter:image" content="<%= VITE_SITE_URL %>/og-image.jpg">
+    <meta property="twitter:site" content="<%= VITE_TWITTER_HANDLE %>">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="<%= VITE_SITE_NAME %>">
+    <meta name="application-name" content="<%= VITE_SITE_NAME %>">
+    <meta name="msapplication-TileColor" content="#3B82F6">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://data.ademe.fr">
+    <link rel="preconnect" href="https://geo.api.gouv.fr">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#3B82F6">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "<%= VITE_SITE_NAME %>",
+      "url": "<%= VITE_SITE_URL %>",
+      "description": "<%= VITE_APP_DESCRIPTION %>",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "<%= VITE_SITE_NAME %>",
+        "url": "<%= VITE_SITE_URL %>"
+      }
+    }
+    </script>
+    
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "<%= VITE_SITE_NAME %>",
+      "url": "<%= VITE_SITE_URL %>",
+      "description": "<%= VITE_APP_DESCRIPTION %>",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "<%= VITE_SITE_URL %>/?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Prevent flash of unstyled content for dark mode -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || 
+            (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    
+    <!-- Fallback for no JavaScript -->
+    <noscript>
+      <div style="padding: 2rem; text-align: center; font-family: system-ui, sans-serif;">
+        <h1>JavaScript requis</h1>
+        <p>Ce site nécessite JavaScript pour fonctionner. Veuillez l'activer dans votre navigateur.</p>
+      </div>
+    </noscript>
+  </body>
+</html>

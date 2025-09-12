@@ -1,0 +1,5927 @@
+{
+  "departmentCode": "03",
+  "departmentName": "Allier",
+  "stats": {
+    "communeCount": 317,
+    "totalPopulation": 334715,
+    "totalSurface": 737723
+  },
+  "communes": [
+    {
+      "nom": "Abrest",
+      "code": "03001",
+      "codesPostaux": ["03200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4514, 46.0962]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4452, 46.0988]
+      },
+      "population": 2927,
+      "surface": 1033.82,
+      "radius": 1.81
+    },
+    {
+      "nom": "Agonges",
+      "code": "03002",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.149, 46.6238]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1577, 46.6059]
+      },
+      "population": 304,
+      "surface": 2423.89,
+      "radius": 2.78
+    },
+    {
+      "nom": "Ainay-le-Château",
+      "code": "03003",
+      "codesPostaux": ["03360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7157, 46.7182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6909, 46.7096]
+      },
+      "population": 987,
+      "surface": 2428.69,
+      "radius": 2.78
+    },
+    {
+      "nom": "Andelaroche",
+      "code": "03004",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.74, 46.248]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7481, 46.2565]
+      },
+      "population": 217,
+      "surface": 2034.89,
+      "radius": 2.55
+    },
+    {
+      "nom": "Archignat",
+      "code": "03005",
+      "codesPostaux": ["03380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4102, 46.3634]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4251, 46.3714]
+      },
+      "population": 336,
+      "surface": 2451.3,
+      "radius": 2.79
+    },
+    {
+      "nom": "Arfeuilles",
+      "code": "03006",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7388, 46.1468]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7264, 46.1569]
+      },
+      "population": 610,
+      "surface": 5958.73,
+      "radius": 4.36
+    },
+    {
+      "nom": "Arpheuilles-Saint-Priest",
+      "code": "03007",
+      "codesPostaux": ["03420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6699, 46.2273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.678, 46.2249]
+      },
+      "population": 374,
+      "surface": 1910.98,
+      "radius": 2.47
+    },
+    {
+      "nom": "Arronnes",
+      "code": "03008",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5714, 46.0513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5682, 46.0594]
+      },
+      "population": 382,
+      "surface": 2605.21,
+      "radius": 2.88
+    },
+    {
+      "nom": "Aubigny",
+      "code": "03009",
+      "codesPostaux": ["03460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1669, 46.6774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1657, 46.6821]
+      },
+      "population": 146,
+      "surface": 1708.7,
+      "radius": 2.33
+    },
+    {
+      "nom": "Audes",
+      "code": "03010",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5578, 46.461]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5615, 46.4576]
+      },
+      "population": 408,
+      "surface": 2821.82,
+      "radius": 3
+    },
+    {
+      "nom": "Aurouër",
+      "code": "03011",
+      "codesPostaux": ["03460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3123, 46.6873]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.299, 46.6877]
+      },
+      "population": 411,
+      "surface": 2581.39,
+      "radius": 2.87
+    },
+    {
+      "nom": "Autry-Issards",
+      "code": "03012",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1202, 46.5444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1369, 46.548]
+      },
+      "population": 309,
+      "surface": 1944.32,
+      "radius": 2.49
+    },
+    {
+      "nom": "Avermes",
+      "code": "03013",
+      "codesPostaux": ["03000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3164, 46.5961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3083, 46.5879]
+      },
+      "population": 4109,
+      "surface": 1560.5,
+      "radius": 2.23
+    },
+    {
+      "nom": "Avrilly",
+      "code": "03014",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.971, 46.3284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9812, 46.3319]
+      },
+      "population": 137,
+      "surface": 1150.75,
+      "radius": 1.91
+    },
+    {
+      "nom": "Bagneux",
+      "code": "03015",
+      "codesPostaux": ["03460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2071, 46.6477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2064, 46.6572]
+      },
+      "population": 339,
+      "surface": 2544.74,
+      "radius": 2.85
+    },
+    {
+      "nom": "Barberier",
+      "code": "03016",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2475, 46.2224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2459, 46.2177]
+      },
+      "population": 142,
+      "surface": 811.99,
+      "radius": 1.61
+    },
+    {
+      "nom": "Barrais-Bussolles",
+      "code": "03017",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6954, 46.2809]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7161, 46.2902]
+      },
+      "population": 185,
+      "surface": 2546.37,
+      "radius": 2.85
+    },
+    {
+      "nom": "Bayet",
+      "code": "03018",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2755, 46.2585]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2696, 46.2491]
+      },
+      "population": 673,
+      "surface": 2329.05,
+      "radius": 2.72
+    },
+    {
+      "nom": "Beaulon",
+      "code": "03019",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6733, 46.5868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6728, 46.6021]
+      },
+      "population": 1640,
+      "surface": 6375.23,
+      "radius": 4.5
+    },
+    {
+      "nom": "Beaune-d'Allier",
+      "code": "03020",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8889, 46.2782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.885, 46.2805]
+      },
+      "population": 293,
+      "surface": 2443.36,
+      "radius": 2.79
+    },
+    {
+      "nom": "Bègues",
+      "code": "03021",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1391, 46.1232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1562, 46.1262]
+      },
+      "population": 229,
+      "surface": 834.32,
+      "radius": 1.63
+    },
+    {
+      "nom": "Bellenaves",
+      "code": "03022",
+      "codesPostaux": ["03330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0693, 46.2093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0788, 46.1994]
+      },
+      "population": 986,
+      "surface": 3482.78,
+      "radius": 3.33
+    },
+    {
+      "nom": "Bellerive-sur-Allier",
+      "code": "03023",
+      "codesPostaux": ["03700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4025, 46.1202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4012, 46.1172]
+      },
+      "population": 8898,
+      "surface": 1881.58,
+      "radius": 2.45
+    },
+    {
+      "nom": "Bert",
+      "code": "03024",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7043, 46.3276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7054, 46.3238]
+      },
+      "population": 261,
+      "surface": 2435.56,
+      "radius": 2.78
+    },
+    {
+      "nom": "Bessay-sur-Allier",
+      "code": "03025",
+      "codesPostaux": ["03340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.371, 46.4507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3624, 46.4381]
+      },
+      "population": 1384,
+      "surface": 3475.86,
+      "radius": 3.33
+    },
+    {
+      "nom": "Besson",
+      "code": "03026",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2523, 46.4817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2632, 46.4711]
+      },
+      "population": 746,
+      "surface": 4726.69,
+      "radius": 3.88
+    },
+    {
+      "nom": "Bézenet",
+      "code": "03027",
+      "codesPostaux": ["03170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.846, 46.3332]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8442, 46.3288]
+      },
+      "population": 917,
+      "surface": 1000.05,
+      "radius": 1.78
+    },
+    {
+      "nom": "Billezois",
+      "code": "03028",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5758, 46.208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5725, 46.2102]
+      },
+      "population": 361,
+      "surface": 1569.19,
+      "radius": 2.23
+    },
+    {
+      "nom": "Billy",
+      "code": "03029",
+      "codesPostaux": ["03260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4414, 46.2316]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4301, 46.2367]
+      },
+      "population": 823,
+      "surface": 1024.11,
+      "radius": 1.81
+    },
+    {
+      "nom": "Biozat",
+      "code": "03030",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2927, 46.0811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.271, 46.0776]
+      },
+      "population": 923,
+      "surface": 1639.51,
+      "radius": 2.28
+    },
+    {
+      "nom": "Bizeneuille",
+      "code": "03031",
+      "codesPostaux": ["03170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7351, 46.4022]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.737, 46.4078]
+      },
+      "population": 300,
+      "surface": 2971.43,
+      "radius": 3.08
+    },
+    {
+      "nom": "Blomard",
+      "code": "03032",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9644, 46.2908]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9772, 46.2926]
+      },
+      "population": 229,
+      "surface": 2249.82,
+      "radius": 2.68
+    },
+    {
+      "nom": "Bost",
+      "code": "03033",
+      "codesPostaux": ["03300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5049, 46.1841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5182, 46.1787]
+      },
+      "population": 180,
+      "surface": 964.09,
+      "radius": 1.75
+    },
+    {
+      "nom": "Boucé",
+      "code": "03034",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4958, 46.3178]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.492, 46.3185]
+      },
+      "population": 499,
+      "surface": 2198.18,
+      "radius": 2.65
+    },
+    {
+      "nom": "Bourbon-l'Archambault",
+      "code": "03036",
+      "codesPostaux": ["03160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0448, 46.5829]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0582, 46.5857]
+      },
+      "population": 2542,
+      "surface": 5533.1,
+      "radius": 4.2
+    },
+    {
+      "nom": "Braize",
+      "code": "03037",
+      "codesPostaux": ["03360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6646, 46.6619]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.655, 46.6646]
+      },
+      "population": 259,
+      "surface": 2101.7,
+      "radius": 2.59
+    },
+    {
+      "nom": "Bransat",
+      "code": "03038",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2168, 46.3328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2292, 46.3279]
+      },
+      "population": 529,
+      "surface": 1547.24,
+      "radius": 2.22
+    },
+    {
+      "nom": "Bresnay",
+      "code": "03039",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2558, 46.4335]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2484, 46.4433]
+      },
+      "population": 385,
+      "surface": 2323.48,
+      "radius": 2.72
+    },
+    {
+      "nom": "Bressolles",
+      "code": "03040",
+      "codesPostaux": ["03000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2879, 46.5296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3172, 46.5306]
+      },
+      "population": 1141,
+      "surface": 2360.57,
+      "radius": 2.74
+    },
+    {
+      "nom": "Broût-Vernet",
+      "code": "03043",
+      "codesPostaux": ["03110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2932, 46.1995]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.273, 46.1881]
+      },
+      "population": 1209,
+      "surface": 3190.34,
+      "radius": 3.19
+    },
+    {
+      "nom": "Brugheas",
+      "code": "03044",
+      "codesPostaux": ["03700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3634, 46.073]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3674, 46.0761]
+      },
+      "population": 1556,
+      "surface": 2699.36,
+      "radius": 2.93
+    },
+    {
+      "nom": "Busset",
+      "code": "03045",
+      "codesPostaux": ["03270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5139, 46.058]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.515, 46.0604]
+      },
+      "population": 810,
+      "surface": 3683.78,
+      "radius": 3.42
+    },
+    {
+      "nom": "Buxières-les-Mines",
+      "code": "03046",
+      "codesPostaux": ["03440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.945, 46.4715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9602, 46.4691]
+      },
+      "population": 1001,
+      "surface": 4771.83,
+      "radius": 3.9
+    },
+    {
+      "nom": "Cérilly",
+      "code": "03048",
+      "codesPostaux": ["03350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8085, 46.6263]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8222, 46.6178]
+      },
+      "population": 1312,
+      "surface": 7113.31,
+      "radius": 4.76
+    },
+    {
+      "nom": "Cesset",
+      "code": "03049",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1988, 46.2987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.207, 46.3038]
+      },
+      "population": 428,
+      "surface": 1215.8,
+      "radius": 1.97
+    },
+    {
+      "nom": "Chambérat",
+      "code": "03051",
+      "codesPostaux": ["03370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4227, 46.4145]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4132, 46.4175]
+      },
+      "population": 279,
+      "surface": 2871.68,
+      "radius": 3.02
+    },
+    {
+      "nom": "Chamblet",
+      "code": "03052",
+      "codesPostaux": ["03170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7098, 46.3264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7022, 46.3341]
+      },
+      "population": 1079,
+      "surface": 2073.14,
+      "radius": 2.57
+    },
+    {
+      "nom": "Chantelle",
+      "code": "03053",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1547, 46.2398]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1516, 46.2387]
+      },
+      "population": 1124,
+      "surface": 1101.01,
+      "radius": 1.87
+    },
+    {
+      "nom": "Chapeau",
+      "code": "03054",
+      "codesPostaux": ["03340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5127, 46.4928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5224, 46.4867]
+      },
+      "population": 236,
+      "surface": 3376.86,
+      "radius": 3.28
+    },
+    {
+      "nom": "Chappes",
+      "code": "03058",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9426, 46.3831]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9278, 46.3853]
+      },
+      "population": 231,
+      "surface": 1862.85,
+      "radius": 2.44
+    },
+    {
+      "nom": "Chareil-Cintrat",
+      "code": "03059",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2328, 46.2657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2223, 46.2704]
+      },
+      "population": 385,
+      "surface": 1269.97,
+      "radius": 2.01
+    },
+    {
+      "nom": "Charmeil",
+      "code": "03060",
+      "codesPostaux": ["03110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3935, 46.158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3918, 46.1606]
+      },
+      "population": 967,
+      "surface": 741.23,
+      "radius": 1.54
+    },
+    {
+      "nom": "Charmes",
+      "code": "03061",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2464, 46.0828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2524, 46.0766]
+      },
+      "population": 374,
+      "surface": 832.98,
+      "radius": 1.63
+    },
+    {
+      "nom": "Charroux",
+      "code": "03062",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1625, 46.1817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1627, 46.1854]
+      },
+      "population": 340,
+      "surface": 1049.96,
+      "radius": 1.83
+    },
+    {
+      "nom": "Chassenard",
+      "code": "03063",
+      "codesPostaux": ["03510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9722, 46.4385]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9792, 46.4371]
+      },
+      "population": 1030,
+      "surface": 2502.95,
+      "radius": 2.82
+    },
+    {
+      "nom": "Château-sur-Allier",
+      "code": "03064",
+      "codesPostaux": ["03320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9841, 46.7812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0273, 46.7662]
+      },
+      "population": 163,
+      "surface": 2792.32,
+      "radius": 2.98
+    },
+    {
+      "nom": "Châtel-de-Neuvre",
+      "code": "03065",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2961, 46.4197]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3111, 46.4064]
+      },
+      "population": 557,
+      "surface": 1923.19,
+      "radius": 2.47
+    },
+    {
+      "nom": "Châtel-Montagne",
+      "code": "03066",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7183, 46.1021]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6832, 46.1143]
+      },
+      "population": 321,
+      "surface": 3669.09,
+      "radius": 3.42
+    },
+    {
+      "nom": "Châtelperron",
+      "code": "03067",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6326, 46.3996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6365, 46.3992]
+      },
+      "population": 132,
+      "surface": 2072.45,
+      "radius": 2.57
+    },
+    {
+      "nom": "Châtelus",
+      "code": "03068",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7225, 46.2022]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7334, 46.1931]
+      },
+      "population": 114,
+      "surface": 657.1,
+      "radius": 1.45
+    },
+    {
+      "nom": "Châtillon",
+      "code": "03069",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1228, 46.4643]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1313, 46.472]
+      },
+      "population": 313,
+      "surface": 1285.34,
+      "radius": 2.02
+    },
+    {
+      "nom": "Chavenon",
+      "code": "03070",
+      "codesPostaux": ["03440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9539, 46.4218]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9473, 46.4139]
+      },
+      "population": 139,
+      "surface": 1755.8,
+      "radius": 2.36
+    },
+    {
+      "nom": "Chavroches",
+      "code": "03071",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5984, 46.354]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5871, 46.3547]
+      },
+      "population": 262,
+      "surface": 1000.21,
+      "radius": 1.78
+    },
+    {
+      "nom": "Chazemais",
+      "code": "03072",
+      "codesPostaux": ["03370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5147, 46.4841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5257, 46.4835]
+      },
+      "population": 504,
+      "surface": 2927.36,
+      "radius": 3.05
+    },
+    {
+      "nom": "Chemilly",
+      "code": "03073",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3088, 46.4765]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3156, 46.4888]
+      },
+      "population": 588,
+      "surface": 1694.76,
+      "radius": 2.32
+    },
+    {
+      "nom": "Chevagnes",
+      "code": "03074",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5636, 46.6099]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5515, 46.6104]
+      },
+      "population": 635,
+      "surface": 4986.88,
+      "radius": 3.98
+    },
+    {
+      "nom": "Chezelle",
+      "code": "03075",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1097, 46.2136]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1234, 46.2185]
+      },
+      "population": 158,
+      "surface": 732.15,
+      "radius": 1.53
+    },
+    {
+      "nom": "Chézy",
+      "code": "03076",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4514, 46.6158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4666, 46.6129]
+      },
+      "population": 214,
+      "surface": 3663.15,
+      "radius": 3.41
+    },
+    {
+      "nom": "Chirat-l'Église",
+      "code": "03077",
+      "codesPostaux": ["03330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0339, 46.2499]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0332, 46.2402]
+      },
+      "population": 128,
+      "surface": 1838.56,
+      "radius": 2.42
+    },
+    {
+      "nom": "Chouvigny",
+      "code": "03078",
+      "codesPostaux": ["03450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0018, 46.1246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9898, 46.1269]
+      },
+      "population": 230,
+      "surface": 1336.92,
+      "radius": 2.06
+    },
+    {
+      "nom": "Cindré",
+      "code": "03079",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5469, 46.3215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5654, 46.3257]
+      },
+      "population": 282,
+      "surface": 2277.92,
+      "radius": 2.69
+    },
+    {
+      "nom": "Cognat-Lyonne",
+      "code": "03080",
+      "codesPostaux": ["03110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3002, 46.11]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.306, 46.1075]
+      },
+      "population": 707,
+      "surface": 1258.59,
+      "radius": 2
+    },
+    {
+      "nom": "Colombier",
+      "code": "03081",
+      "codesPostaux": ["03600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7937, 46.2675]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7936, 46.2714]
+      },
+      "population": 328,
+      "surface": 1300.46,
+      "radius": 2.03
+    },
+    {
+      "nom": "Commentry",
+      "code": "03082",
+      "codesPostaux": ["03600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7509, 46.2734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7416, 46.2888]
+      },
+      "population": 6018,
+      "surface": 2095.1,
+      "radius": 2.58
+    },
+    {
+      "nom": "Contigny",
+      "code": "03083",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3145, 46.3461]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3042, 46.3531]
+      },
+      "population": 575,
+      "surface": 1781.89,
+      "radius": 2.38
+    },
+    {
+      "nom": "Cosne-d'Allier",
+      "code": "03084",
+      "codesPostaux": ["03430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8317, 46.4876]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8305, 46.4751]
+      },
+      "population": 2013,
+      "surface": 2525.94,
+      "radius": 2.84
+    },
+    {
+      "nom": "Coulandon",
+      "code": "03085",
+      "codesPostaux": ["03000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2412, 46.5559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2558, 46.5512]
+      },
+      "population": 634,
+      "surface": 1698,
+      "radius": 2.32
+    },
+    {
+      "nom": "Coulanges",
+      "code": "03086",
+      "codesPostaux": ["03470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8669, 46.4789]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.86, 46.4853]
+      },
+      "population": 292,
+      "surface": 2436.1,
+      "radius": 2.78
+    },
+    {
+      "nom": "Couleuvre",
+      "code": "03087",
+      "codesPostaux": ["03320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9041, 46.6747]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9089, 46.6731]
+      },
+      "population": 592,
+      "surface": 5411.17,
+      "radius": 4.15
+    },
+    {
+      "nom": "Courçais",
+      "code": "03088",
+      "codesPostaux": ["03370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4489, 46.4657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4357, 46.4713]
+      },
+      "population": 309,
+      "surface": 2684.48,
+      "radius": 2.92
+    },
+    {
+      "nom": "Coutansouze",
+      "code": "03089",
+      "codesPostaux": ["03330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0041, 46.2071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0127, 46.2186]
+      },
+      "population": 158,
+      "surface": 1366.56,
+      "radius": 2.09
+    },
+    {
+      "nom": "Couzon",
+      "code": "03090",
+      "codesPostaux": ["03160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1192, 46.6427]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1217, 46.6582]
+      },
+      "population": 321,
+      "surface": 2019.36,
+      "radius": 2.54
+    },
+    {
+      "nom": "Créchy",
+      "code": "03091",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4228, 46.2692]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4236, 46.2605]
+      },
+      "population": 430,
+      "surface": 1193.34,
+      "radius": 1.95
+    },
+    {
+      "nom": "Cressanges",
+      "code": "03092",
+      "codesPostaux": ["03240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1666, 46.4493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1604, 46.4445]
+      },
+      "population": 637,
+      "surface": 4213.61,
+      "radius": 3.66
+    },
+    {
+      "nom": "Creuzier-le-Neuf",
+      "code": "03093",
+      "codesPostaux": ["03300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4635, 46.1785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4519, 46.1817]
+      },
+      "population": 1235,
+      "surface": 1100.08,
+      "radius": 1.87
+    },
+    {
+      "nom": "Creuzier-le-Vieux",
+      "code": "03094",
+      "codesPostaux": ["03300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4387, 46.1632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4385, 46.1617]
+      },
+      "population": 3246,
+      "surface": 1135.5,
+      "radius": 1.9
+    },
+    {
+      "nom": "Cusset",
+      "code": "03095",
+      "codesPostaux": ["03300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4774, 46.1342]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4564, 46.1319]
+      },
+      "population": 13329,
+      "surface": 3177.08,
+      "radius": 3.18
+    },
+    {
+      "nom": "Deneuille-lès-Chantelle",
+      "code": "03096",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1475, 46.2517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1464, 46.2449]
+      },
+      "population": 93,
+      "surface": 826.36,
+      "radius": 1.62
+    },
+    {
+      "nom": "Deneuille-les-Mines",
+      "code": "03097",
+      "codesPostaux": ["03170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7692, 46.3799]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7816, 46.3783]
+      },
+      "population": 352,
+      "surface": 2513.19,
+      "radius": 2.83
+    },
+    {
+      "nom": "Désertines",
+      "code": "03098",
+      "codesPostaux": ["03630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6253, 46.3571]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6184, 46.3549]
+      },
+      "population": 4323,
+      "surface": 826.42,
+      "radius": 1.62
+    },
+    {
+      "nom": "Deux-Chaises",
+      "code": "03099",
+      "codesPostaux": ["03240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0385, 46.3751]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0331, 46.3825]
+      },
+      "population": 380,
+      "surface": 4134.42,
+      "radius": 3.63
+    },
+    {
+      "nom": "Diou",
+      "code": "03100",
+      "codesPostaux": ["03290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7426, 46.5234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7482, 46.5331]
+      },
+      "population": 1354,
+      "surface": 2576.36,
+      "radius": 2.86
+    },
+    {
+      "nom": "Domérat",
+      "code": "03101",
+      "codesPostaux": ["03410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5462, 46.3706]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5362, 46.3601]
+      },
+      "population": 8665,
+      "surface": 3531.48,
+      "radius": 3.35
+    },
+    {
+      "nom": "Dompierre-sur-Besbre",
+      "code": "03102",
+      "codesPostaux": ["03290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6787, 46.5336]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6792, 46.5199]
+      },
+      "population": 2970,
+      "surface": 4588.39,
+      "radius": 3.82
+    },
+    {
+      "nom": "Doyet",
+      "code": "03104",
+      "codesPostaux": ["03170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.795, 46.345]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.799, 46.3359]
+      },
+      "population": 1129,
+      "surface": 2775.92,
+      "radius": 2.97
+    },
+    {
+      "nom": "Droiturier",
+      "code": "03105",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7085, 46.2288]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.719, 46.2299]
+      },
+      "population": 367,
+      "surface": 2218.15,
+      "radius": 2.66
+    },
+    {
+      "nom": "Durdat-Larequille",
+      "code": "03106",
+      "codesPostaux": ["03310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6968, 46.2536]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7032, 46.2527]
+      },
+      "population": 1317,
+      "surface": 2458.28,
+      "radius": 2.8
+    },
+    {
+      "nom": "Ébreuil",
+      "code": "03107",
+      "codesPostaux": ["03450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.074, 46.1121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.087, 46.1156]
+      },
+      "population": 1292,
+      "surface": 2313.74,
+      "radius": 2.71
+    },
+    {
+      "nom": "Échassières",
+      "code": "03108",
+      "codesPostaux": ["03330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9473, 46.198]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9346, 46.183]
+      },
+      "population": 369,
+      "surface": 2328.55,
+      "radius": 2.72
+    },
+    {
+      "nom": "Escurolles",
+      "code": "03109",
+      "codesPostaux": ["03110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2675, 46.1431]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2642, 46.1437]
+      },
+      "population": 797,
+      "surface": 1336.82,
+      "radius": 2.06
+    },
+    {
+      "nom": "Espinasse-Vozelle",
+      "code": "03110",
+      "codesPostaux": ["03110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3336, 46.1313]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3245, 46.1276]
+      },
+      "population": 973,
+      "surface": 1786.82,
+      "radius": 2.38
+    },
+    {
+      "nom": "Estivareilles",
+      "code": "03111",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6305, 46.4248]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6184, 46.4249]
+      },
+      "population": 1114,
+      "surface": 1172.45,
+      "radius": 1.93
+    },
+    {
+      "nom": "Étroussat",
+      "code": "03112",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.221, 46.2227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2216, 46.2204]
+      },
+      "population": 663,
+      "surface": 1317.81,
+      "radius": 2.05
+    },
+    {
+      "nom": "Ferrières-sur-Sichon",
+      "code": "03113",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6501, 46.0205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6489, 46.0252]
+      },
+      "population": 506,
+      "surface": 3859.05,
+      "radius": 3.5
+    },
+    {
+      "nom": "Fleuriel",
+      "code": "03115",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1625, 46.2897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1775, 46.2825]
+      },
+      "population": 339,
+      "surface": 2833.51,
+      "radius": 3
+    },
+    {
+      "nom": "Fourilles",
+      "code": "03116",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1981, 46.2452]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1957, 46.2412]
+      },
+      "population": 191,
+      "surface": 705.95,
+      "radius": 1.5
+    },
+    {
+      "nom": "Franchesse",
+      "code": "03117",
+      "codesPostaux": ["03160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0411, 46.6422]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0349, 46.6375]
+      },
+      "population": 465,
+      "surface": 4061.44,
+      "radius": 3.6
+    },
+    {
+      "nom": "Gannat",
+      "code": "03118",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1708, 46.0991]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1994, 46.1002]
+      },
+      "population": 5684,
+      "surface": 3676.65,
+      "radius": 3.42
+    },
+    {
+      "nom": "Gannay-sur-Loire",
+      "code": "03119",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5928, 46.7217]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6076, 46.7308]
+      },
+      "population": 394,
+      "surface": 3218.23,
+      "radius": 3.2
+    },
+    {
+      "nom": "Garnat-sur-Engièvre",
+      "code": "03120",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6712, 46.6346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6623, 46.6347]
+      },
+      "population": 672,
+      "surface": 1872.76,
+      "radius": 2.44
+    },
+    {
+      "nom": "Gennetines",
+      "code": "03121",
+      "codesPostaux": ["03400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4078, 46.6273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4093, 46.6366]
+      },
+      "population": 624,
+      "surface": 3932.04,
+      "radius": 3.54
+    },
+    {
+      "nom": "Gipcy",
+      "code": "03122",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0496, 46.5085]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0536, 46.5025]
+      },
+      "population": 236,
+      "surface": 2756.09,
+      "radius": 2.96
+    },
+    {
+      "nom": "Gouise",
+      "code": "03124",
+      "codesPostaux": ["03340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4322, 46.4103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4295, 46.4114]
+      },
+      "population": 220,
+      "surface": 2325.48,
+      "radius": 2.72
+    },
+    {
+      "nom": "Haut-Bocage",
+      "code": "03158",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6895, 46.4752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6541, 46.4785]
+      },
+      "population": 850,
+      "surface": 7022.73,
+      "radius": 4.73
+    },
+    {
+      "nom": "Hauterive",
+      "code": "03126",
+      "codesPostaux": ["03270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4396, 46.0782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4488, 46.0867]
+      },
+      "population": 1186,
+      "surface": 797.75,
+      "radius": 1.59
+    },
+    {
+      "nom": "Hérisson",
+      "code": "03127",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7134, 46.524]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7113, 46.5096]
+      },
+      "population": 564,
+      "surface": 3245.78,
+      "radius": 3.21
+    },
+    {
+      "nom": "Huriel",
+      "code": "03128",
+      "codesPostaux": ["03380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4812, 46.3757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4784, 46.3734]
+      },
+      "population": 2568,
+      "surface": 3529.59,
+      "radius": 3.35
+    },
+    {
+      "nom": "Hyds",
+      "code": "03129",
+      "codesPostaux": ["03600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8283, 46.2715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8296, 46.2841]
+      },
+      "population": 301,
+      "surface": 1880.44,
+      "radius": 2.45
+    },
+    {
+      "nom": "Isle-et-Bardais",
+      "code": "03130",
+      "codesPostaux": ["03360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7762, 46.6866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7932, 46.6883]
+      },
+      "population": 278,
+      "surface": 4503.49,
+      "radius": 3.79
+    },
+    {
+      "nom": "Isserpent",
+      "code": "03131",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6226, 46.1588]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6082, 46.1625]
+      },
+      "population": 560,
+      "surface": 2648.87,
+      "radius": 2.9
+    },
+    {
+      "nom": "Jaligny-sur-Besbre",
+      "code": "03132",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5856, 46.3789]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5943, 46.3795]
+      },
+      "population": 556,
+      "surface": 973.47,
+      "radius": 1.76
+    },
+    {
+      "nom": "Jenzat",
+      "code": "03133",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2007, 46.1603]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1948, 46.165]
+      },
+      "population": 521,
+      "surface": 1186.54,
+      "radius": 1.94
+    },
+    {
+      "nom": "La Celle",
+      "code": "03047",
+      "codesPostaux": ["03600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7742, 46.227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7856, 46.2288]
+      },
+      "population": 400,
+      "surface": 3145.81,
+      "radius": 3.16
+    },
+    {
+      "nom": "La Chabanne",
+      "code": "03050",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7526, 46.0268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.752, 46.0222]
+      },
+      "population": 172,
+      "surface": 2015.37,
+      "radius": 2.53
+    },
+    {
+      "nom": "La Chapelaude",
+      "code": "03055",
+      "codesPostaux": ["03380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5114, 46.428]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5022, 46.4221]
+      },
+      "population": 941,
+      "surface": 2861.73,
+      "radius": 3.02
+    },
+    {
+      "nom": "La Chapelle",
+      "code": "03056",
+      "codesPostaux": ["03300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5903, 46.0876]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5734, 46.0907]
+      },
+      "population": 396,
+      "surface": 2114.82,
+      "radius": 2.59
+    },
+    {
+      "nom": "La Chapelle-aux-Chasses",
+      "code": "03057",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5294, 46.6619]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5319, 46.6709]
+      },
+      "population": 197,
+      "surface": 2595.32,
+      "radius": 2.87
+    },
+    {
+      "nom": "La Ferté-Hauterive",
+      "code": "03114",
+      "codesPostaux": ["03340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.335, 46.3997]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3405, 46.3974]
+      },
+      "population": 260,
+      "surface": 2179.95,
+      "radius": 2.63
+    },
+    {
+      "nom": "La Guillermie",
+      "code": "03125",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6434, 45.9817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6391, 45.983]
+      },
+      "population": 122,
+      "surface": 1251.26,
+      "radius": 2
+    },
+    {
+      "nom": "La Petite-Marche",
+      "code": "03206",
+      "codesPostaux": ["03420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5662, 46.1893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.571, 46.192]
+      },
+      "population": 165,
+      "surface": 1503.03,
+      "radius": 2.19
+    },
+    {
+      "nom": "Laféline",
+      "code": "03134",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1786, 46.3429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1673, 46.3489]
+      },
+      "population": 183,
+      "surface": 2307.59,
+      "radius": 2.71
+    },
+    {
+      "nom": "Lalizolle",
+      "code": "03135",
+      "codesPostaux": ["03450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.001, 46.1615]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0023, 46.1562]
+      },
+      "population": 407,
+      "surface": 2372.61,
+      "radius": 2.75
+    },
+    {
+      "nom": "Lamaids",
+      "code": "03136",
+      "codesPostaux": ["03380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.441, 46.302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4312, 46.303]
+      },
+      "population": 206,
+      "surface": 772.99,
+      "radius": 1.57
+    },
+    {
+      "nom": "Langy",
+      "code": "03137",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4604, 46.2766]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4732, 46.2685]
+      },
+      "population": 274,
+      "surface": 737.99,
+      "radius": 1.53
+    },
+    {
+      "nom": "Lapalisse",
+      "code": "03138",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6453, 46.2613]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6393, 46.2503]
+      },
+      "population": 3127,
+      "surface": 3280.34,
+      "radius": 3.23
+    },
+    {
+      "nom": "Laprugne",
+      "code": "03139",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.768, 45.9941]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7429, 45.9863]
+      },
+      "population": 310,
+      "surface": 3466.02,
+      "radius": 3.32
+    },
+    {
+      "nom": "Lavault-Sainte-Anne",
+      "code": "03140",
+      "codesPostaux": ["03100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6042, 46.3093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5991, 46.3095]
+      },
+      "population": 1138,
+      "surface": 907.23,
+      "radius": 1.7
+    },
+    {
+      "nom": "Lavoine",
+      "code": "03141",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6908, 45.9675]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.697, 45.9779]
+      },
+      "population": 152,
+      "surface": 1748.12,
+      "radius": 2.36
+    },
+    {
+      "nom": "Le Bouchaud",
+      "code": "03035",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9069, 46.305]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8977, 46.306]
+      },
+      "population": 193,
+      "surface": 2282.3,
+      "radius": 2.7
+    },
+    {
+      "nom": "Le Brethon",
+      "code": "03041",
+      "codesPostaux": ["03350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7136, 46.5893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7178, 46.5714]
+      },
+      "population": 324,
+      "surface": 4406.1,
+      "radius": 3.75
+    },
+    {
+      "nom": "Le Breuil",
+      "code": "03042",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6664, 46.1753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6583, 46.1834]
+      },
+      "population": 531,
+      "surface": 3462.44,
+      "radius": 3.32
+    },
+    {
+      "nom": "Le Donjon",
+      "code": "03103",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8003, 46.3498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7949, 46.3529]
+      },
+      "population": 1011,
+      "surface": 3705.55,
+      "radius": 3.43
+    },
+    {
+      "nom": "Le Mayet-d'École",
+      "code": "03164",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2399, 46.1664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2407, 46.1681]
+      },
+      "population": 305,
+      "surface": 688.31,
+      "radius": 1.48
+    },
+    {
+      "nom": "Le Mayet-de-Montagne",
+      "code": "03165",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6491, 46.0605]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6679, 46.0727]
+      },
+      "population": 1388,
+      "surface": 2961.81,
+      "radius": 3.07
+    },
+    {
+      "nom": "Le Montet",
+      "code": "03183",
+      "codesPostaux": ["03240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0532, 46.407]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0567, 46.4094]
+      },
+      "population": 469,
+      "surface": 188.11,
+      "radius": 0.77
+    },
+    {
+      "nom": "Le Pin",
+      "code": "03208",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8887, 46.4219]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8953, 46.4133]
+      },
+      "population": 431,
+      "surface": 2187.66,
+      "radius": 2.64
+    },
+    {
+      "nom": "Le Theil",
+      "code": "03281",
+      "codesPostaux": ["03240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1237, 46.3538]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1325, 46.354]
+      },
+      "population": 388,
+      "surface": 2917.88,
+      "radius": 3.05
+    },
+    {
+      "nom": "Le Vernet",
+      "code": "03306",
+      "codesPostaux": ["03200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4765, 46.1064]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.463, 46.1103]
+      },
+      "population": 1914,
+      "surface": 1021.13,
+      "radius": 1.8
+    },
+    {
+      "nom": "Le Veurdre",
+      "code": "03309",
+      "codesPostaux": ["03320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0391, 46.7425]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.039, 46.7545]
+      },
+      "population": 476,
+      "surface": 2149.81,
+      "radius": 2.62
+    },
+    {
+      "nom": "Le Vilhain",
+      "code": "03313",
+      "codesPostaux": ["03350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7951, 46.5609]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7964, 46.5595]
+      },
+      "population": 269,
+      "surface": 2645.15,
+      "radius": 2.9
+    },
+    {
+      "nom": "Lenax",
+      "code": "03142",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8299, 46.3056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8128, 46.2989]
+      },
+      "population": 250,
+      "surface": 2845.51,
+      "radius": 3.01
+    },
+    {
+      "nom": "Lételon",
+      "code": "03143",
+      "codesPostaux": ["03360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5954, 46.6582]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5855, 46.6561]
+      },
+      "population": 91,
+      "surface": 631.35,
+      "radius": 1.42
+    },
+    {
+      "nom": "Liernolles",
+      "code": "03144",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7686, 46.3958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.753, 46.3964]
+      },
+      "population": 199,
+      "surface": 3742.17,
+      "radius": 3.45
+    },
+    {
+      "nom": "Lignerolles",
+      "code": "03145",
+      "codesPostaux": ["03410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5659, 46.2816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5667, 46.2802]
+      },
+      "population": 758,
+      "surface": 1172.83,
+      "radius": 1.93
+    },
+    {
+      "nom": "Limoise",
+      "code": "03146",
+      "codesPostaux": ["03320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0541, 46.6876]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0516, 46.6746]
+      },
+      "population": 176,
+      "surface": 1272.44,
+      "radius": 2.01
+    },
+    {
+      "nom": "Loddes",
+      "code": "03147",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.763, 46.2993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7659, 46.2882]
+      },
+      "population": 167,
+      "surface": 2349.92,
+      "radius": 2.73
+    },
+    {
+      "nom": "Loriges",
+      "code": "03148",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.342, 46.2667]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3478, 46.2685]
+      },
+      "population": 354,
+      "surface": 949.27,
+      "radius": 1.74
+    },
+    {
+      "nom": "Louchy-Montfand",
+      "code": "03149",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2461, 46.3078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2449, 46.308]
+      },
+      "population": 406,
+      "surface": 533.15,
+      "radius": 1.3
+    },
+    {
+      "nom": "Louroux-Bourbonnais",
+      "code": "03150",
+      "codesPostaux": ["03350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8329, 46.5358]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8414, 46.5356]
+      },
+      "population": 206,
+      "surface": 3334.55,
+      "radius": 3.26
+    },
+    {
+      "nom": "Louroux-de-Beaune",
+      "code": "03151",
+      "codesPostaux": ["03600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8585, 46.3012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8564, 46.2933]
+      },
+      "population": 180,
+      "surface": 1075.38,
+      "radius": 1.85
+    },
+    {
+      "nom": "Louroux-de-Bouble",
+      "code": "03152",
+      "codesPostaux": ["03330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9727, 46.2286]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9806, 46.2257]
+      },
+      "population": 228,
+      "surface": 1670.8,
+      "radius": 2.31
+    },
+    {
+      "nom": "Luneau",
+      "code": "03154",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.948, 46.3665]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9534, 46.3653]
+      },
+      "population": 269,
+      "surface": 2722.99,
+      "radius": 2.94
+    },
+    {
+      "nom": "Lurcy-Lévis",
+      "code": "03155",
+      "codesPostaux": ["03320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9111, 46.7371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9384, 46.73]
+      },
+      "population": 1852,
+      "surface": 7213.27,
+      "radius": 4.79
+    },
+    {
+      "nom": "Lusigny",
+      "code": "03156",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4786, 46.5731]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4889, 46.5888]
+      },
+      "population": 1633,
+      "surface": 4473.55,
+      "radius": 3.77
+    },
+    {
+      "nom": "Magnet",
+      "code": "03157",
+      "codesPostaux": ["03260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5097, 46.2162]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5044, 46.2122]
+      },
+      "population": 1046,
+      "surface": 1279.7,
+      "radius": 2.02
+    },
+    {
+      "nom": "Malicorne",
+      "code": "03159",
+      "codesPostaux": ["03600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7656, 46.3053]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7809, 46.3015]
+      },
+      "population": 768,
+      "surface": 1196.43,
+      "radius": 1.95
+    },
+    {
+      "nom": "Marcenat",
+      "code": "03160",
+      "codesPostaux": ["03260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.396, 46.2401]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3959, 46.235]
+      },
+      "population": 376,
+      "surface": 1954,
+      "radius": 2.49
+    },
+    {
+      "nom": "Marcillat-en-Combraille",
+      "code": "03161",
+      "codesPostaux": ["03420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6332, 46.1707]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6313, 46.1673]
+      },
+      "population": 907,
+      "surface": 3559.41,
+      "radius": 3.37
+    },
+    {
+      "nom": "Marigny",
+      "code": "03162",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2122, 46.5781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2095, 46.5821]
+      },
+      "population": 200,
+      "surface": 1730.15,
+      "radius": 2.35
+    },
+    {
+      "nom": "Mariol",
+      "code": "03163",
+      "codesPostaux": ["03270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4935, 46.0257]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4968, 46.0212]
+      },
+      "population": 696,
+      "surface": 1009.03,
+      "radius": 1.79
+    },
+    {
+      "nom": "Mazerier",
+      "code": "03166",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1862, 46.1351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1899, 46.1247]
+      },
+      "population": 320,
+      "surface": 732.72,
+      "radius": 1.53
+    },
+    {
+      "nom": "Mazirat",
+      "code": "03167",
+      "codesPostaux": ["03420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5558, 46.2213]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5408, 46.2236]
+      },
+      "population": 280,
+      "surface": 2037.22,
+      "radius": 2.55
+    },
+    {
+      "nom": "Meaulne-Vitray",
+      "code": "03168",
+      "codesPostaux": ["03360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6485, 46.6065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6174, 46.5982]
+      },
+      "population": 907,
+      "surface": 4989.64,
+      "radius": 3.99
+    },
+    {
+      "nom": "Meillard",
+      "code": "03169",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2254, 46.3892]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2344, 46.3892]
+      },
+      "population": 307,
+      "surface": 2585.25,
+      "radius": 2.87
+    },
+    {
+      "nom": "Meillers",
+      "code": "03170",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1095, 46.5172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0936, 46.5065]
+      },
+      "population": 128,
+      "surface": 2377.66,
+      "radius": 2.75
+    },
+    {
+      "nom": "Mercy",
+      "code": "03171",
+      "codesPostaux": ["03340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.524, 46.4493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.52, 46.4587]
+      },
+      "population": 244,
+      "surface": 2922.46,
+      "radius": 3.05
+    },
+    {
+      "nom": "Mesples",
+      "code": "03172",
+      "codesPostaux": ["03370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.363, 46.424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3607, 46.4327]
+      },
+      "population": 125,
+      "surface": 1534.65,
+      "radius": 2.21
+    },
+    {
+      "nom": "Molinet",
+      "code": "03173",
+      "codesPostaux": ["03510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9267, 46.4613]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9362, 46.4658]
+      },
+      "population": 1120,
+      "surface": 2618.97,
+      "radius": 2.89
+    },
+    {
+      "nom": "Molles",
+      "code": "03174",
+      "codesPostaux": ["03300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.556, 46.1121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5582, 46.1077]
+      },
+      "population": 916,
+      "surface": 2679.35,
+      "radius": 2.92
+    },
+    {
+      "nom": "Monestier",
+      "code": "03175",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1035, 46.2641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1137, 46.2557]
+      },
+      "population": 280,
+      "surface": 2975.4,
+      "radius": 3.08
+    },
+    {
+      "nom": "Monétay-sur-Allier",
+      "code": "03176",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2882, 46.3815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3011, 46.3813]
+      },
+      "population": 538,
+      "surface": 1194.98,
+      "radius": 1.95
+    },
+    {
+      "nom": "Monétay-sur-Loire",
+      "code": "03177",
+      "codesPostaux": ["03470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8235, 46.4337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8182, 46.4303]
+      },
+      "population": 249,
+      "surface": 3147.14,
+      "radius": 3.17
+    },
+    {
+      "nom": "Montaigu-le-Blin",
+      "code": "03179",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5191, 46.2914]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.511, 46.2956]
+      },
+      "population": 301,
+      "surface": 1302.7,
+      "radius": 2.04
+    },
+    {
+      "nom": "Montaiguët-en-Forez",
+      "code": "03178",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.829, 46.264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8008, 46.2705]
+      },
+      "population": 285,
+      "surface": 2249.18,
+      "radius": 2.68
+    },
+    {
+      "nom": "Montbeugny",
+      "code": "03180",
+      "codesPostaux": ["03340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4847, 46.5266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4928, 46.5283]
+      },
+      "population": 645,
+      "surface": 3275.41,
+      "radius": 3.23
+    },
+    {
+      "nom": "Montcombroux-les-Mines",
+      "code": "03181",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7249, 46.3626]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6887, 46.3522]
+      },
+      "population": 295,
+      "surface": 2367.13,
+      "radius": 2.74
+    },
+    {
+      "nom": "Monteignet-sur-l'Andelot",
+      "code": "03182",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2511, 46.1147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2563, 46.1185]
+      },
+      "population": 267,
+      "surface": 959.51,
+      "radius": 1.75
+    },
+    {
+      "nom": "Montilly",
+      "code": "03184",
+      "codesPostaux": ["03000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2351, 46.6112]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2505, 46.612]
+      },
+      "population": 496,
+      "surface": 2225.66,
+      "radius": 2.66
+    },
+    {
+      "nom": "Montluçon",
+      "code": "03185",
+      "codesPostaux": ["03100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.608, 46.3428]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6066, 46.3399]
+      },
+      "population": 33317,
+      "surface": 2068.16,
+      "radius": 2.57
+    },
+    {
+      "nom": "Montmarault",
+      "code": "03186",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9561, 46.3164]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9543, 46.3175]
+      },
+      "population": 1522,
+      "surface": 908.6,
+      "radius": 1.7
+    },
+    {
+      "nom": "Montoldre",
+      "code": "03187",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4567, 46.338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4486, 46.333]
+      },
+      "population": 602,
+      "surface": 1919.75,
+      "radius": 2.47
+    },
+    {
+      "nom": "Montord",
+      "code": "03188",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2406, 46.2897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2302, 46.2911]
+      },
+      "population": 209,
+      "surface": 456.07,
+      "radius": 1.2
+    },
+    {
+      "nom": "Montvicq",
+      "code": "03189",
+      "codesPostaux": ["03170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8244, 46.3173]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8217, 46.3193]
+      },
+      "population": 697,
+      "surface": 1015.64,
+      "radius": 1.8
+    },
+    {
+      "nom": "Moulins",
+      "code": "03190",
+      "codesPostaux": ["03000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3255, 46.5591]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3332, 46.5661]
+      },
+      "population": 19344,
+      "surface": 871.37,
+      "radius": 1.67
+    },
+    {
+      "nom": "Murat",
+      "code": "03191",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8993, 46.414]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9113, 46.4026]
+      },
+      "population": 267,
+      "surface": 2029.6,
+      "radius": 2.54
+    },
+    {
+      "nom": "Nades",
+      "code": "03192",
+      "codesPostaux": ["03450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9704, 46.1523]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9682, 46.1586]
+      },
+      "population": 158,
+      "surface": 841.25,
+      "radius": 1.64
+    },
+    {
+      "nom": "Nassigny",
+      "code": "03193",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5892, 46.4975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6008, 46.4927]
+      },
+      "population": 195,
+      "surface": 1803.17,
+      "radius": 2.4
+    },
+    {
+      "nom": "Naves",
+      "code": "03194",
+      "codesPostaux": ["03330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1154, 46.1766]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1111, 46.1766]
+      },
+      "population": 137,
+      "surface": 817.01,
+      "radius": 1.61
+    },
+    {
+      "nom": "Néris-les-Bains",
+      "code": "03195",
+      "codesPostaux": ["03310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6809, 46.3028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6597, 46.2887]
+      },
+      "population": 2441,
+      "surface": 3303.7,
+      "radius": 3.24
+    },
+    {
+      "nom": "Neuilly-en-Donjon",
+      "code": "03196",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8859, 46.3437]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8824, 46.345]
+      },
+      "population": 198,
+      "surface": 2508.28,
+      "radius": 2.83
+    },
+    {
+      "nom": "Neuilly-le-Réal",
+      "code": "03197",
+      "codesPostaux": ["03340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4381, 46.4642]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4316, 46.4647]
+      },
+      "population": 1440,
+      "surface": 4743.01,
+      "radius": 3.89
+    },
+    {
+      "nom": "Neure",
+      "code": "03198",
+      "codesPostaux": ["03320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.979, 46.7432]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9812, 46.7466]
+      },
+      "population": 201,
+      "surface": 1213.06,
+      "radius": 1.97
+    },
+    {
+      "nom": "Neuvy",
+      "code": "03200",
+      "codesPostaux": ["03000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.276, 46.5709]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2902, 46.5625]
+      },
+      "population": 1487,
+      "surface": 1897.97,
+      "radius": 2.46
+    },
+    {
+      "nom": "Nizerolles",
+      "code": "03201",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6426, 46.1068]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6386, 46.0983]
+      },
+      "population": 288,
+      "surface": 1766,
+      "radius": 2.37
+    },
+    {
+      "nom": "Noyant-d'Allier",
+      "code": "03202",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1261, 46.4783]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1249, 46.479]
+      },
+      "population": 599,
+      "surface": 2111.14,
+      "radius": 2.59
+    },
+    {
+      "nom": "Paray-le-Frésil",
+      "code": "03203",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6013, 46.6582]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6107, 46.6567]
+      },
+      "population": 379,
+      "surface": 3717.71,
+      "radius": 3.44
+    },
+    {
+      "nom": "Paray-sous-Briailles",
+      "code": "03204",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3704, 46.295]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3672, 46.289]
+      },
+      "population": 615,
+      "surface": 2227.99,
+      "radius": 2.66
+    },
+    {
+      "nom": "Périgny",
+      "code": "03205",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5611, 46.2455]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5557, 46.2498]
+      },
+      "population": 470,
+      "surface": 2721.12,
+      "radius": 2.94
+    },
+    {
+      "nom": "Pierrefitte-sur-Loire",
+      "code": "03207",
+      "codesPostaux": ["03470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8055, 46.5013]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8172, 46.506]
+      },
+      "population": 509,
+      "surface": 2546.79,
+      "radius": 2.85
+    },
+    {
+      "nom": "Poëzat",
+      "code": "03209",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2271, 46.0754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2222, 46.0772]
+      },
+      "population": 152,
+      "surface": 217.64,
+      "radius": 0.83
+    },
+    {
+      "nom": "Pouzy-Mésangy",
+      "code": "03210",
+      "codesPostaux": ["03320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0109, 46.7048]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0035, 46.7084]
+      },
+      "population": 383,
+      "surface": 3540.95,
+      "radius": 3.36
+    },
+    {
+      "nom": "Prémilhat",
+      "code": "03211",
+      "codesPostaux": ["03410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5476, 46.3082]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5344, 46.3128]
+      },
+      "population": 2513,
+      "surface": 2112.53,
+      "radius": 2.59
+    },
+    {
+      "nom": "Quinssaines",
+      "code": "03212",
+      "codesPostaux": ["03380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4903, 46.3093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.507, 46.3259]
+      },
+      "population": 1539,
+      "surface": 2590.66,
+      "radius": 2.87
+    },
+    {
+      "nom": "Reugny",
+      "code": "03213",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6099, 46.4579]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.615, 46.4606]
+      },
+      "population": 262,
+      "surface": 721.46,
+      "radius": 1.52
+    },
+    {
+      "nom": "Rocles",
+      "code": "03214",
+      "codesPostaux": ["03240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0314, 46.4418]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0316, 46.424]
+      },
+      "population": 330,
+      "surface": 2165.73,
+      "radius": 2.63
+    },
+    {
+      "nom": "Rongères",
+      "code": "03215",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.451, 46.2987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4503, 46.2944]
+      },
+      "population": 552,
+      "surface": 900.38,
+      "radius": 1.69
+    },
+    {
+      "nom": "Ronnet",
+      "code": "03216",
+      "codesPostaux": ["03420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6993, 46.2047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7004, 46.2058]
+      },
+      "population": 168,
+      "surface": 2004.97,
+      "radius": 2.53
+    },
+    {
+      "nom": "Saint-Angel",
+      "code": "03217",
+      "codesPostaux": ["03170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6957, 46.3558]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6978, 46.3573]
+      },
+      "population": 753,
+      "surface": 2551.97,
+      "radius": 2.85
+    },
+    {
+      "nom": "Saint-Aubin-le-Monial",
+      "code": "03218",
+      "codesPostaux": ["03160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0063, 46.5341]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0015, 46.5276]
+      },
+      "population": 266,
+      "surface": 2194.32,
+      "radius": 2.64
+    },
+    {
+      "nom": "Saint-Bonnet-de-Four",
+      "code": "03219",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9069, 46.315]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9114, 46.3116]
+      },
+      "population": 223,
+      "surface": 1876.98,
+      "radius": 2.44
+    },
+    {
+      "nom": "Saint-Bonnet-de-Rochefort",
+      "code": "03220",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.141, 46.149]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1369, 46.1477]
+      },
+      "population": 714,
+      "surface": 1638.38,
+      "radius": 2.28
+    },
+    {
+      "nom": "Saint-Bonnet-Tronçais",
+      "code": "03221",
+      "codesPostaux": ["03360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6964, 46.6689]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6934, 46.66]
+      },
+      "population": 739,
+      "surface": 2822.98,
+      "radius": 3
+    },
+    {
+      "nom": "Saint-Caprais",
+      "code": "03222",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7359, 46.5468]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7371, 46.5507]
+      },
+      "population": 97,
+      "surface": 2001.78,
+      "radius": 2.52
+    },
+    {
+      "nom": "Saint-Christophe-en-Bourbonnais",
+      "code": "03223",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5838, 46.1684]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5759, 46.1656]
+      },
+      "population": 431,
+      "surface": 2792.8,
+      "radius": 2.98
+    },
+    {
+      "nom": "Saint-Clément",
+      "code": "03224",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.726, 46.0544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7054, 46.0623]
+      },
+      "population": 284,
+      "surface": 2612.73,
+      "radius": 2.88
+    },
+    {
+      "nom": "Saint-Désiré",
+      "code": "03225",
+      "codesPostaux": ["03370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4521, 46.5057]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4304, 46.4971]
+      },
+      "population": 429,
+      "surface": 4247.46,
+      "radius": 3.68
+    },
+    {
+      "nom": "Saint-Didier-en-Donjon",
+      "code": "03226",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8701, 46.3846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8598, 46.3882]
+      },
+      "population": 245,
+      "surface": 3311,
+      "radius": 3.25
+    },
+    {
+      "nom": "Saint-Didier-la-Forêt",
+      "code": "03227",
+      "codesPostaux": ["03110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3372, 46.2297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3427, 46.2265]
+      },
+      "population": 388,
+      "surface": 3358.02,
+      "radius": 3.27
+    },
+    {
+      "nom": "Saint-Éloy-d'Allier",
+      "code": "03228",
+      "codesPostaux": ["03370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3605, 46.4984]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3567, 46.488]
+      },
+      "population": 56,
+      "surface": 1286.37,
+      "radius": 2.02
+    },
+    {
+      "nom": "Saint-Ennemond",
+      "code": "03229",
+      "codesPostaux": ["03400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4025, 46.6821]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4213, 46.6783]
+      },
+      "population": 619,
+      "surface": 3876.09,
+      "radius": 3.51
+    },
+    {
+      "nom": "Saint-Étienne-de-Vicq",
+      "code": "03230",
+      "codesPostaux": ["03300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5384, 46.1696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5341, 46.1782]
+      },
+      "population": 527,
+      "surface": 1926.31,
+      "radius": 2.48
+    },
+    {
+      "nom": "Saint-Fargeol",
+      "code": "03231",
+      "codesPostaux": ["03420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6298, 46.1329]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.63, 46.1383]
+      },
+      "population": 187,
+      "surface": 1043.34,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-Félix",
+      "code": "03232",
+      "codesPostaux": ["03260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4792, 46.2278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4814, 46.2267]
+      },
+      "population": 285,
+      "surface": 519.33,
+      "radius": 1.29
+    },
+    {
+      "nom": "Saint-Genest",
+      "code": "03233",
+      "codesPostaux": ["03310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6019, 46.2636]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5935, 46.2641]
+      },
+      "population": 388,
+      "surface": 1528.15,
+      "radius": 2.21
+    },
+    {
+      "nom": "Saint-Gérand-de-Vaux",
+      "code": "03234",
+      "codesPostaux": ["03340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4128, 46.386]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4002, 46.3804]
+      },
+      "population": 395,
+      "surface": 4046.08,
+      "radius": 3.59
+    },
+    {
+      "nom": "Saint-Gérand-le-Puy",
+      "code": "03235",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5164, 46.261]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5125, 46.2581]
+      },
+      "population": 956,
+      "surface": 1967.14,
+      "radius": 2.5
+    },
+    {
+      "nom": "Saint-Germain-de-Salles",
+      "code": "03237",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2234, 46.1881]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2142, 46.1797]
+      },
+      "population": 426,
+      "surface": 1171.63,
+      "radius": 1.93
+    },
+    {
+      "nom": "Saint-Germain-des-Fossés",
+      "code": "03236",
+      "codesPostaux": ["03260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4315, 46.1955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4333, 46.2086]
+      },
+      "population": 3600,
+      "surface": 797.84,
+      "radius": 1.59
+    },
+    {
+      "nom": "Saint-Hilaire",
+      "code": "03238",
+      "codesPostaux": ["03440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0183, 46.4835]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0224, 46.4936]
+      },
+      "population": 508,
+      "surface": 2094.71,
+      "radius": 2.58
+    },
+    {
+      "nom": "Saint-Léger-sur-Vouzance",
+      "code": "03239",
+      "codesPostaux": ["03130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9368, 46.4093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9374, 46.4103]
+      },
+      "population": 259,
+      "surface": 1823.82,
+      "radius": 2.41
+    },
+    {
+      "nom": "Saint-Léon",
+      "code": "03240",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6887, 46.4117]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6867, 46.4025]
+      },
+      "population": 533,
+      "surface": 3393.99,
+      "radius": 3.29
+    },
+    {
+      "nom": "Saint-Léopardin-d'Augy",
+      "code": "03241",
+      "codesPostaux": ["03160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1063, 46.6968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1044, 46.6841]
+      },
+      "population": 364,
+      "surface": 3993.44,
+      "radius": 3.57
+    },
+    {
+      "nom": "Saint-Loup",
+      "code": "03242",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3812, 46.3559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3778, 46.3508]
+      },
+      "population": 572,
+      "surface": 1765.18,
+      "radius": 2.37
+    },
+    {
+      "nom": "Saint-Marcel-en-Marcillat",
+      "code": "03244",
+      "codesPostaux": ["03420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5812, 46.152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5904, 46.1446]
+      },
+      "population": 128,
+      "surface": 1071.52,
+      "radius": 1.85
+    },
+    {
+      "nom": "Saint-Marcel-en-Murat",
+      "code": "03243",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0044, 46.3222]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0086, 46.3219]
+      },
+      "population": 129,
+      "surface": 1694.12,
+      "radius": 2.32
+    },
+    {
+      "nom": "Saint-Martin-des-Lais",
+      "code": "03245",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6616, 46.6798]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6552, 46.6681]
+      },
+      "population": 125,
+      "surface": 1824.23,
+      "radius": 2.41
+    },
+    {
+      "nom": "Saint-Martinien",
+      "code": "03246",
+      "codesPostaux": ["03380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.442, 46.3328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4707, 46.3365]
+      },
+      "population": 595,
+      "surface": 2579.31,
+      "radius": 2.87
+    },
+    {
+      "nom": "Saint-Menoux",
+      "code": "03247",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1477, 46.5829]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1577, 46.5848]
+      },
+      "population": 1135,
+      "surface": 2758.02,
+      "radius": 2.96
+    },
+    {
+      "nom": "Saint-Nicolas-des-Biefs",
+      "code": "03248",
+      "codesPostaux": ["03250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7909, 46.0569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7829, 46.0597]
+      },
+      "population": 153,
+      "surface": 2908.36,
+      "radius": 3.04
+    },
+    {
+      "nom": "Saint-Palais",
+      "code": "03249",
+      "codesPostaux": ["03370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3078, 46.4415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3012, 46.44]
+      },
+      "population": 157,
+      "surface": 2040.31,
+      "radius": 2.55
+    },
+    {
+      "nom": "Saint-Pierre-Laval",
+      "code": "03250",
+      "codesPostaux": ["42620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7718, 46.1917]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7796, 46.2021]
+      },
+      "population": 365,
+      "surface": 2410.04,
+      "radius": 2.77
+    },
+    {
+      "nom": "Saint-Plaisir",
+      "code": "03251",
+      "codesPostaux": ["03160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9551, 46.6289]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9672, 46.6225]
+      },
+      "population": 423,
+      "surface": 5285.68,
+      "radius": 4.1
+    },
+    {
+      "nom": "Saint-Pont",
+      "code": "03252",
+      "codesPostaux": ["03110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2935, 46.1552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2975, 46.1608]
+      },
+      "population": 692,
+      "surface": 1246.94,
+      "radius": 1.99
+    },
+    {
+      "nom": "Saint-Pourçain-sur-Besbre",
+      "code": "03253",
+      "codesPostaux": ["03290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6538, 46.4855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.64, 46.4763]
+      },
+      "population": 368,
+      "surface": 3338.53,
+      "radius": 3.26
+    },
+    {
+      "nom": "Saint-Pourçain-sur-Sioule",
+      "code": "03254",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3028, 46.3047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.289, 46.3072]
+      },
+      "population": 4894,
+      "surface": 3574.97,
+      "radius": 3.37
+    },
+    {
+      "nom": "Saint-Priest-d'Andelot",
+      "code": "03255",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1492, 46.0782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1638, 46.0702]
+      },
+      "population": 146,
+      "surface": 824.24,
+      "radius": 1.62
+    },
+    {
+      "nom": "Saint-Priest-en-Murat",
+      "code": "03256",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9058, 46.3577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9115, 46.3481]
+      },
+      "population": 213,
+      "surface": 2585.32,
+      "radius": 2.87
+    },
+    {
+      "nom": "Saint-Prix",
+      "code": "03257",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6502, 46.2256]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6518, 46.2318]
+      },
+      "population": 785,
+      "surface": 2178.89,
+      "radius": 2.63
+    },
+    {
+      "nom": "Saint-Rémy-en-Rollat",
+      "code": "03258",
+      "codesPostaux": ["03110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.377, 46.1915]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3913, 46.1844]
+      },
+      "population": 1769,
+      "surface": 2101.31,
+      "radius": 2.59
+    },
+    {
+      "nom": "Saint-Sauvier",
+      "code": "03259",
+      "codesPostaux": ["03370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3337, 46.3955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3307, 46.3865]
+      },
+      "population": 324,
+      "surface": 3173.8,
+      "radius": 3.18
+    },
+    {
+      "nom": "Saint-Sornin",
+      "code": "03260",
+      "codesPostaux": ["03240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0083, 46.4129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0162, 46.4102]
+      },
+      "population": 220,
+      "surface": 1950.64,
+      "radius": 2.49
+    },
+    {
+      "nom": "Saint-Victor",
+      "code": "03262",
+      "codesPostaux": ["03410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6086, 46.3891]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6075, 46.395]
+      },
+      "population": 2078,
+      "surface": 2309.19,
+      "radius": 2.71
+    },
+    {
+      "nom": "Saint-Voir",
+      "code": "03263",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5061, 46.4114]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.521, 46.4052]
+      },
+      "population": 201,
+      "surface": 2516.56,
+      "radius": 2.83
+    },
+    {
+      "nom": "Saint-Yorre",
+      "code": "03264",
+      "codesPostaux": ["03270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4672, 46.0615]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4611, 46.0657]
+      },
+      "population": 2618,
+      "surface": 648.83,
+      "radius": 1.44
+    },
+    {
+      "nom": "Sainte-Thérence",
+      "code": "03261",
+      "codesPostaux": ["03420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5752, 46.2429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5614, 46.2433]
+      },
+      "population": 179,
+      "surface": 1311.56,
+      "radius": 2.04
+    },
+    {
+      "nom": "Saligny-sur-Roudon",
+      "code": "03265",
+      "codesPostaux": ["03470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7587, 46.4643]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7484, 46.4669]
+      },
+      "population": 648,
+      "surface": 5770.01,
+      "radius": 4.29
+    },
+    {
+      "nom": "Sanssat",
+      "code": "03266",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4663, 46.2501]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4734, 46.2558]
+      },
+      "population": 277,
+      "surface": 840.86,
+      "radius": 1.64
+    },
+    {
+      "nom": "Saulcet",
+      "code": "03267",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.266, 46.3284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2627, 46.3256]
+      },
+      "population": 651,
+      "surface": 796.17,
+      "radius": 1.59
+    },
+    {
+      "nom": "Saulzet",
+      "code": "03268",
+      "codesPostaux": ["03800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2203, 46.1379]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2175, 46.1368]
+      },
+      "population": 392,
+      "surface": 920.26,
+      "radius": 1.71
+    },
+    {
+      "nom": "Sauvagny",
+      "code": "03269",
+      "codesPostaux": ["03430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7987, 46.4321]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8176, 46.4448]
+      },
+      "population": 83,
+      "surface": 1941.93,
+      "radius": 2.49
+    },
+    {
+      "nom": "Sazeret",
+      "code": "03270",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9719, 46.3471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9551, 46.3394]
+      },
+      "population": 140,
+      "surface": 1808.77,
+      "radius": 2.4
+    },
+    {
+      "nom": "Serbannes",
+      "code": "03271",
+      "codesPostaux": ["03700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3509, 46.1028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3587, 46.0973]
+      },
+      "population": 826,
+      "surface": 1424.93,
+      "radius": 2.13
+    },
+    {
+      "nom": "Servilly",
+      "code": "03272",
+      "codesPostaux": ["03120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5864, 46.2776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5868, 46.2779]
+      },
+      "population": 273,
+      "surface": 1229.07,
+      "radius": 1.98
+    },
+    {
+      "nom": "Seuillet",
+      "code": "03273",
+      "codesPostaux": ["03260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4683, 46.205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4722, 46.2023]
+      },
+      "population": 483,
+      "surface": 996.35,
+      "radius": 1.78
+    },
+    {
+      "nom": "Sorbier",
+      "code": "03274",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.66, 46.3616]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6595, 46.3663]
+      },
+      "population": 321,
+      "surface": 1712.14,
+      "radius": 2.33
+    },
+    {
+      "nom": "Souvigny",
+      "code": "03275",
+      "codesPostaux": ["03210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1946, 46.522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1923, 46.534]
+      },
+      "population": 1717,
+      "surface": 4467.18,
+      "radius": 3.77
+    },
+    {
+      "nom": "Sussat",
+      "code": "03276",
+      "codesPostaux": ["03450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0557, 46.1527]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0649, 46.1527]
+      },
+      "population": 105,
+      "surface": 799,
+      "radius": 1.59
+    },
+    {
+      "nom": "Target",
+      "code": "03277",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0503, 46.282]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0609, 46.2908]
+      },
+      "population": 247,
+      "surface": 2680.75,
+      "radius": 2.92
+    },
+    {
+      "nom": "Taxat-Senat",
+      "code": "03278",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1461, 46.2078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1394, 46.2008]
+      },
+      "population": 211,
+      "surface": 1370.74,
+      "radius": 2.09
+    },
+    {
+      "nom": "Teillet-Argenty",
+      "code": "03279",
+      "codesPostaux": ["03410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5186, 46.2644]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.511, 46.2605]
+      },
+      "population": 553,
+      "surface": 2203.76,
+      "radius": 2.65
+    },
+    {
+      "nom": "Terjat",
+      "code": "03280",
+      "codesPostaux": ["03420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6191, 46.2152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6185, 46.2041]
+      },
+      "population": 181,
+      "surface": 1788.58,
+      "radius": 2.39
+    },
+    {
+      "nom": "Theneuille",
+      "code": "03282",
+      "codesPostaux": ["03350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8807, 46.5944]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8628, 46.5843]
+      },
+      "population": 340,
+      "surface": 3989.94,
+      "radius": 3.56
+    },
+    {
+      "nom": "Thiel-sur-Acolin",
+      "code": "03283",
+      "codesPostaux": ["03230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5721, 46.529]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5814, 46.5231]
+      },
+      "population": 1036,
+      "surface": 5755.55,
+      "radius": 4.28
+    },
+    {
+      "nom": "Thionne",
+      "code": "03284",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5775, 46.4152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5736, 46.4048]
+      },
+      "population": 282,
+      "surface": 2710.55,
+      "radius": 2.94
+    },
+    {
+      "nom": "Tortezais",
+      "code": "03285",
+      "codesPostaux": ["03430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8744, 46.4427]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8584, 46.4521]
+      },
+      "population": 175,
+      "surface": 2428.19,
+      "radius": 2.78
+    },
+    {
+      "nom": "Toulon-sur-Allier",
+      "code": "03286",
+      "codesPostaux": ["03400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3819, 46.5094]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3603, 46.5182]
+      },
+      "population": 1171,
+      "surface": 3939.44,
+      "radius": 3.54
+    },
+    {
+      "nom": "Treban",
+      "code": "03287",
+      "codesPostaux": ["03240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1652, 46.3946]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1759, 46.4043]
+      },
+      "population": 376,
+      "surface": 2576.9,
+      "radius": 2.86
+    },
+    {
+      "nom": "Treignat",
+      "code": "03288",
+      "codesPostaux": ["03380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3458, 46.3469]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3404, 46.3494]
+      },
+      "population": 416,
+      "surface": 2934.97,
+      "radius": 3.06
+    },
+    {
+      "nom": "Treteau",
+      "code": "03289",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5221, 46.3654]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5245, 46.368]
+      },
+      "population": 517,
+      "surface": 3148.47,
+      "radius": 3.17
+    },
+    {
+      "nom": "Trévol",
+      "code": "03290",
+      "codesPostaux": ["03460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3144, 46.6363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.305, 46.6283]
+      },
+      "population": 1639,
+      "surface": 4075.35,
+      "radius": 3.6
+    },
+    {
+      "nom": "Trézelles",
+      "code": "03291",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5988, 46.3193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5922, 46.3291]
+      },
+      "population": 393,
+      "surface": 1827.81,
+      "radius": 2.41
+    },
+    {
+      "nom": "Tronget",
+      "code": "03292",
+      "codesPostaux": ["03240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0865, 46.4232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0663, 46.4207]
+      },
+      "population": 889,
+      "surface": 3133.54,
+      "radius": 3.16
+    },
+    {
+      "nom": "Urçay",
+      "code": "03293",
+      "codesPostaux": ["03360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.612, 46.6361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5894, 46.6237]
+      },
+      "population": 296,
+      "surface": 1258.49,
+      "radius": 2
+    },
+    {
+      "nom": "Ussel-d'Allier",
+      "code": "03294",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.19, 46.2104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1905, 46.2077]
+      },
+      "population": 168,
+      "surface": 809.2,
+      "radius": 1.6
+    },
+    {
+      "nom": "Valignat",
+      "code": "03295",
+      "codesPostaux": ["03330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0785, 46.1746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0753, 46.1761]
+      },
+      "population": 65,
+      "surface": 229.98,
+      "radius": 0.86
+    },
+    {
+      "nom": "Valigny",
+      "code": "03296",
+      "codesPostaux": ["03360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8214, 46.7153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8159, 46.7109]
+      },
+      "population": 376,
+      "surface": 2099.55,
+      "radius": 2.59
+    },
+    {
+      "nom": "Vallon-en-Sully",
+      "code": "03297",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6012, 46.5467]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6087, 46.5351]
+      },
+      "population": 1468,
+      "surface": 3797.97,
+      "radius": 3.48
+    },
+    {
+      "nom": "Varennes-sur-Allier",
+      "code": "03298",
+      "codesPostaux": ["03150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3963, 46.314]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4034, 46.3129]
+      },
+      "population": 3588,
+      "surface": 2440.85,
+      "radius": 2.79
+    },
+    {
+      "nom": "Varennes-sur-Tèche",
+      "code": "03299",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6383, 46.3165]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6291, 46.3258]
+      },
+      "population": 225,
+      "surface": 1889.85,
+      "radius": 2.45
+    },
+    {
+      "nom": "Vaumas",
+      "code": "03300",
+      "codesPostaux": ["03220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6324, 46.4482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.628, 46.4466]
+      },
+      "population": 538,
+      "surface": 3508.49,
+      "radius": 3.34
+    },
+    {
+      "nom": "Vaux",
+      "code": "03301",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5679, 46.4217]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5974, 46.4265]
+      },
+      "population": 1164,
+      "surface": 1804.54,
+      "radius": 2.4
+    },
+    {
+      "nom": "Veauce",
+      "code": "03302",
+      "codesPostaux": ["03450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0554, 46.1699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.057, 46.1645]
+      },
+      "population": 39,
+      "surface": 352.19,
+      "radius": 1.06
+    },
+    {
+      "nom": "Venas",
+      "code": "03303",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7649, 46.4696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7641, 46.477]
+      },
+      "population": 224,
+      "surface": 3211.75,
+      "radius": 3.2
+    },
+    {
+      "nom": "Vendat",
+      "code": "03304",
+      "codesPostaux": ["03110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.347, 46.1599]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.355, 46.1663]
+      },
+      "population": 2269,
+      "surface": 1674.1,
+      "radius": 2.31
+    },
+    {
+      "nom": "Verneix",
+      "code": "03305",
+      "codesPostaux": ["03190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6759, 46.4083]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6691, 46.3969]
+      },
+      "population": 577,
+      "surface": 3082,
+      "radius": 3.13
+    },
+    {
+      "nom": "Verneuil-en-Bourbonnais",
+      "code": "03307",
+      "codesPostaux": ["03500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2497, 46.3544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2525, 46.3458]
+      },
+      "population": 237,
+      "surface": 1408.73,
+      "radius": 2.12
+    },
+    {
+      "nom": "Vernusse",
+      "code": "03308",
+      "codesPostaux": ["03390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9774, 46.2612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9779, 46.2668]
+      },
+      "population": 150,
+      "surface": 1969.42,
+      "radius": 2.5
+    },
+    {
+      "nom": "Vichy",
+      "code": "03310",
+      "codesPostaux": ["03200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4254, 46.1318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4284, 46.1244]
+      },
+      "population": 25702,
+      "surface": 590.8,
+      "radius": 1.37
+    },
+    {
+      "nom": "Vicq",
+      "code": "03311",
+      "codesPostaux": ["03450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0933, 46.1452]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0924, 46.1473]
+      },
+      "population": 294,
+      "surface": 1346.4,
+      "radius": 2.07
+    },
+    {
+      "nom": "Vieure",
+      "code": "03312",
+      "codesPostaux": ["03430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8749, 46.4994]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8749, 46.5001]
+      },
+      "population": 276,
+      "surface": 3007.42,
+      "radius": 3.09
+    },
+    {
+      "nom": "Villebret",
+      "code": "03314",
+      "codesPostaux": ["03310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.63, 46.2738]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6388, 46.2678]
+      },
+      "population": 1333,
+      "surface": 1551.98,
+      "radius": 2.22
+    },
+    {
+      "nom": "Villefranche-d'Allier",
+      "code": "03315",
+      "codesPostaux": ["03430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8401, 46.397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8587, 46.3969]
+      },
+      "population": 1265,
+      "surface": 3994.92,
+      "radius": 3.57
+    },
+    {
+      "nom": "Villeneuve-sur-Allier",
+      "code": "03316",
+      "codesPostaux": ["03460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2486, 46.6753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.247, 46.6609]
+      },
+      "population": 1037,
+      "surface": 2620.9,
+      "radius": 2.89
+    },
+    {
+      "nom": "Viplaix",
+      "code": "03317",
+      "codesPostaux": ["03370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.368, 46.4608]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3781, 46.4608]
+      },
+      "population": 293,
+      "surface": 3090.1,
+      "radius": 3.14
+    },
+    {
+      "nom": "Voussac",
+      "code": "03319",
+      "codesPostaux": ["03140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0769, 46.3268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0632, 46.3268]
+      },
+      "population": 493,
+      "surface": 3490.13,
+      "radius": 3.33
+    },
+    {
+      "nom": "Ygrande",
+      "code": "03320",
+      "codesPostaux": ["03160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9382, 46.5471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9435, 46.5525]
+      },
+      "population": 778,
+      "surface": 5329.57,
+      "radius": 4.12
+    },
+    {
+      "nom": "Yzeure",
+      "code": "03321",
+      "codesPostaux": ["03400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3854, 46.5662]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3549, 46.5663]
+      },
+      "population": 12670,
+      "surface": 4321.2,
+      "radius": 3.71
+    }
+  ],
+  "postalCodes": {
+    "42620": {
+      "communes": ["Saint-Pierre-Laval"],
+      "communeCount": 1,
+      "center": [3.7796, 46.2021],
+      "coverageRadius": 2.77,
+      "totalPopulation": 365,
+      "totalSurface": 2410
+    },
+    "03200": {
+      "communes": ["Abrest", "Le Vernet", "Vichy"],
+      "communeCount": 3,
+      "center": [3.4322, 46.1211],
+      "coverageRadius": 2.7,
+      "boundingBox": {
+        "minLat": 46.0988,
+        "maxLat": 46.1244,
+        "minLon": 3.4284,
+        "maxLon": 3.463
+      },
+      "totalPopulation": 30543,
+      "totalSurface": 2646
+    },
+    "03210": {
+      "communes": [
+        "Agonges",
+        "Autry-Issards",
+        "Besson",
+        "Bresnay",
+        "Châtillon",
+        "Chemilly",
+        "Gipcy",
+        "Marigny",
+        "Meillers",
+        "Noyant-d'Allier",
+        "Saint-Menoux",
+        "Souvigny"
+      ],
+      "communeCount": 12,
+      "center": [3.1891, 46.5222],
+      "coverageRadius": 10.6,
+      "boundingBox": {
+        "minLat": 46.4433,
+        "maxLat": 46.6059,
+        "minLon": 3.0536,
+        "maxLon": 3.3156
+      },
+      "totalPopulation": 6660,
+      "totalSurface": 30599
+    },
+    "03360": {
+      "communes": [
+        "Ainay-le-Château",
+        "Braize",
+        "Isle-et-Bardais",
+        "Lételon",
+        "Meaulne-Vitray",
+        "Saint-Bonnet-Tronçais",
+        "Urçay",
+        "Valigny"
+      ],
+      "communeCount": 8,
+      "center": [2.6812, 46.6625],
+      "coverageRadius": 11.6,
+      "boundingBox": {
+        "minLat": 46.5982,
+        "maxLat": 46.7109,
+        "minLon": 2.5855,
+        "maxLon": 2.8159
+      },
+      "totalPopulation": 3933,
+      "totalSurface": 20836
+    },
+    "03120": {
+      "communes": [
+        "Andelaroche",
+        "Arfeuilles",
+        "Barrais-Bussolles",
+        "Billezois",
+        "Le Breuil",
+        "Châtelus",
+        "Droiturier",
+        "Isserpent",
+        "Lapalisse",
+        "Périgny",
+        "Saint-Christophe-en-Bourbonnais",
+        "Saint-Prix",
+        "Servilly"
+      ],
+      "communeCount": 13,
+      "center": [3.6428, 46.2248],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 46.1569,
+        "maxLat": 46.2902,
+        "minLon": 3.5557,
+        "maxLon": 3.7481
+      },
+      "totalPopulation": 8031,
+      "totalSurface": 33298
+    },
+    "03380": {
+      "communes": ["Archignat", "La Chapelaude", "Huriel", "Lamaids", "Quinssaines", "Saint-Martinien", "Treignat"],
+      "communeCount": 7,
+      "center": [2.4749, 46.3621],
+      "coverageRadius": 10.5,
+      "boundingBox": {
+        "minLat": 46.303,
+        "maxLat": 46.4221,
+        "minLon": 2.3404,
+        "maxLon": 2.507
+      },
+      "totalPopulation": 6601,
+      "totalSurface": 17721
+    },
+    "03420": {
+      "communes": [
+        "Arpheuilles-Saint-Priest",
+        "Marcillat-en-Combraille",
+        "Mazirat",
+        "La Petite-Marche",
+        "Ronnet",
+        "Saint-Fargeol",
+        "Saint-Marcel-en-Marcillat",
+        "Sainte-Thérence",
+        "Terjat"
+      ],
+      "communeCount": 9,
+      "center": [2.621, 46.1906],
+      "coverageRadius": 7.5,
+      "boundingBox": {
+        "minLat": 46.1383,
+        "maxLat": 46.2433,
+        "minLon": 2.5408,
+        "maxLon": 2.7004
+      },
+      "totalPopulation": 2569,
+      "totalSurface": 16231
+    },
+    "03250": {
+      "communes": [
+        "Arronnes",
+        "La Chabanne",
+        "Châtel-Montagne",
+        "Ferrières-sur-Sichon",
+        "La Guillermie",
+        "Laprugne",
+        "Lavoine",
+        "Le Mayet-de-Montagne",
+        "Nizerolles",
+        "Saint-Clément",
+        "Saint-Nicolas-des-Biefs"
+      ],
+      "communeCount": 11,
+      "center": [3.6717, 46.0545],
+      "coverageRadius": 9.4,
+      "boundingBox": {
+        "minLat": 45.9779,
+        "maxLat": 46.1143,
+        "minLon": 3.5682,
+        "maxLon": 3.7829
+      },
+      "totalPopulation": 4078,
+      "totalSurface": 28863
+    },
+    "03460": {
+      "communes": ["Aubigny", "Aurouër", "Bagneux", "Trévol", "Villeneuve-sur-Allier"],
+      "communeCount": 5,
+      "center": [3.2724, 46.6495],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 46.6283,
+        "maxLat": 46.6877,
+        "minLon": 3.1657,
+        "maxLon": 3.305
+      },
+      "totalPopulation": 3572,
+      "totalSurface": 13531
+    },
+    "03190": {
+      "communes": [
+        "Audes",
+        "Estivareilles",
+        "Hérisson",
+        "Haut-Bocage",
+        "Nassigny",
+        "Reugny",
+        "Saint-Caprais",
+        "Vallon-en-Sully",
+        "Vaux",
+        "Venas",
+        "Verneix"
+      ],
+      "communeCount": 11,
+      "center": [2.6314, 46.4683],
+      "coverageRadius": 12.3,
+      "boundingBox": {
+        "minLat": 46.3969,
+        "maxLat": 46.5507,
+        "minLon": 2.5615,
+        "maxLon": 2.7641
+      },
+      "totalPopulation": 6923,
+      "totalSurface": 30685
+    },
+    "03000": {
+      "communes": ["Avermes", "Bressolles", "Coulandon", "Montilly", "Moulins", "Neuvy"],
+      "communeCount": 6,
+      "center": [3.3231, 46.5682],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 46.5306,
+        "maxLat": 46.612,
+        "minLon": 3.2505,
+        "maxLon": 3.3332
+      },
+      "totalPopulation": 27211,
+      "totalSurface": 10614
+    },
+    "03130": {
+      "communes": [
+        "Avrilly",
+        "Bert",
+        "Le Bouchaud",
+        "Le Donjon",
+        "Lenax",
+        "Liernolles",
+        "Loddes",
+        "Luneau",
+        "Montaiguët-en-Forez",
+        "Montcombroux-les-Mines",
+        "Neuilly-en-Donjon",
+        "Le Pin",
+        "Saint-Didier-en-Donjon",
+        "Saint-Léger-sur-Vouzance"
+      ],
+      "communeCount": 14,
+      "center": [3.8282, 46.3511],
+      "coverageRadius": 12,
+      "boundingBox": {
+        "minLat": 46.2705,
+        "maxLat": 46.4133,
+        "minLon": 3.6887,
+        "maxLon": 3.9812
+      },
+      "totalPopulation": 4200,
+      "totalSurface": 35682
+    },
+    "03140": {
+      "communes": [
+        "Barberier",
+        "Chantelle",
+        "Chareil-Cintrat",
+        "Charroux",
+        "Chezelle",
+        "Deneuille-lès-Chantelle",
+        "Étroussat",
+        "Fleuriel",
+        "Fourilles",
+        "Monestier",
+        "Saint-Germain-de-Salles",
+        "Target",
+        "Taxat-Senat",
+        "Ussel-d'Allier",
+        "Voussac"
+      ],
+      "communeCount": 15,
+      "center": [3.1625, 46.2414],
+      "coverageRadius": 12.2,
+      "boundingBox": {
+        "minLat": 46.1797,
+        "maxLat": 46.3268,
+        "minLon": 3.0609,
+        "maxLon": 3.2459
+      },
+      "totalPopulation": 5260,
+      "totalSurface": 23147
+    },
+    "03500": {
+      "communes": [
+        "Bayet",
+        "Bransat",
+        "Cesset",
+        "Châtel-de-Neuvre",
+        "Contigny",
+        "Laféline",
+        "Loriges",
+        "Louchy-Montfand",
+        "Meillard",
+        "Monétay-sur-Allier",
+        "Montord",
+        "Paray-sous-Briailles",
+        "Saint-Pourçain-sur-Sioule",
+        "Saulcet",
+        "Verneuil-en-Bourbonnais"
+      ],
+      "communeCount": 15,
+      "center": [3.282, 46.3178],
+      "coverageRadius": 10.2,
+      "boundingBox": {
+        "minLat": 46.2491,
+        "maxLat": 46.4064,
+        "minLon": 3.1673,
+        "maxLon": 3.3672
+      },
+      "totalPopulation": 11156,
+      "totalSurface": 24831
+    },
+    "03230": {
+      "communes": [
+        "Beaulon",
+        "La Chapelle-aux-Chasses",
+        "Chevagnes",
+        "Chézy",
+        "Gannay-sur-Loire",
+        "Garnat-sur-Engièvre",
+        "Lusigny",
+        "Paray-le-Frésil",
+        "Saint-Martin-des-Lais",
+        "Thiel-sur-Acolin"
+      ],
+      "communeCount": 10,
+      "center": [3.5858, 46.6049],
+      "coverageRadius": 14.2,
+      "boundingBox": {
+        "minLat": 46.5231,
+        "maxLat": 46.7308,
+        "minLon": 3.4666,
+        "maxLon": 3.6728
+      },
+      "totalPopulation": 6925,
+      "totalSurface": 38483
+    },
+    "03390": {
+      "communes": [
+        "Beaune-d'Allier",
+        "Blomard",
+        "Chappes",
+        "Montmarault",
+        "Murat",
+        "Saint-Bonnet-de-Four",
+        "Saint-Marcel-en-Murat",
+        "Saint-Priest-en-Murat",
+        "Sazeret",
+        "Vernusse"
+      ],
+      "communeCount": 10,
+      "center": [2.9423, 46.3243],
+      "coverageRadius": 9.1,
+      "boundingBox": {
+        "minLat": 46.2668,
+        "maxLat": 46.4026,
+        "minLon": 2.885,
+        "maxLon": 3.0086
+      },
+      "totalPopulation": 3397,
+      "totalSurface": 19429
+    },
+    "03800": {
+      "communes": [
+        "Bègues",
+        "Biozat",
+        "Charmes",
+        "Gannat",
+        "Jenzat",
+        "Le Mayet-d'École",
+        "Mazerier",
+        "Monteignet-sur-l'Andelot",
+        "Poëzat",
+        "Saint-Bonnet-de-Rochefort",
+        "Saint-Priest-d'Andelot",
+        "Saulzet"
+      ],
+      "communeCount": 12,
+      "center": [3.2053, 46.1086],
+      "coverageRadius": 7.2,
+      "boundingBox": {
+        "minLat": 46.0702,
+        "maxLat": 46.1681,
+        "minLon": 3.1369,
+        "maxLon": 3.271
+      },
+      "totalPopulation": 10027,
+      "totalSurface": 14151
+    },
+    "03330": {
+      "communes": [
+        "Bellenaves",
+        "Chirat-l'Église",
+        "Coutansouze",
+        "Échassières",
+        "Louroux-de-Bouble",
+        "Naves",
+        "Valignat"
+      ],
+      "communeCount": 7,
+      "center": [3.0365, 46.2011],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 46.1761,
+        "maxLat": 46.2402,
+        "minLon": 2.9346,
+        "maxLon": 3.1111
+      },
+      "totalPopulation": 2071,
+      "totalSurface": 11734
+    },
+    "03700": {
+      "communes": ["Bellerive-sur-Allier", "Brugheas", "Serbannes"],
+      "communeCount": 3,
+      "center": [3.3934, 46.1101],
+      "coverageRadius": 4.3,
+      "boundingBox": {
+        "minLat": 46.0761,
+        "maxLat": 46.1172,
+        "minLon": 3.3587,
+        "maxLon": 3.4012
+      },
+      "totalPopulation": 11280,
+      "totalSurface": 6006
+    },
+    "03340": {
+      "communes": [
+        "Bessay-sur-Allier",
+        "Chapeau",
+        "La Ferté-Hauterive",
+        "Gouise",
+        "Mercy",
+        "Montbeugny",
+        "Neuilly-le-Réal",
+        "Saint-Gérand-de-Vaux"
+      ],
+      "communeCount": 8,
+      "center": [3.4213, 46.4534],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 46.3804,
+        "maxLat": 46.5283,
+        "minLon": 3.3405,
+        "maxLon": 3.5224
+      },
+      "totalPopulation": 4824,
+      "totalSurface": 26345
+    },
+    "03170": {
+      "communes": ["Bézenet", "Bizeneuille", "Chamblet", "Deneuille-les-Mines", "Doyet", "Montvicq", "Saint-Angel"],
+      "communeCount": 7,
+      "center": [2.7707, 46.3421],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 46.3193,
+        "maxLat": 46.4078,
+        "minLon": 2.6978,
+        "maxLon": 2.8442
+      },
+      "totalPopulation": 5227,
+      "totalSurface": 14901
+    },
+    "03260": {
+      "communes": ["Billy", "Magnet", "Marcenat", "Saint-Félix", "Saint-Germain-des-Fossés", "Seuillet"],
+      "communeCount": 6,
+      "center": [3.4469, 46.2145],
+      "coverageRadius": 4.6,
+      "boundingBox": {
+        "minLat": 46.2023,
+        "maxLat": 46.2367,
+        "minLon": 3.3959,
+        "maxLon": 3.5044
+      },
+      "totalPopulation": 6613,
+      "totalSurface": 6571
+    },
+    "03300": {
+      "communes": [
+        "Bost",
+        "La Chapelle",
+        "Creuzier-le-Neuf",
+        "Creuzier-le-Vieux",
+        "Cusset",
+        "Molles",
+        "Saint-Étienne-de-Vicq"
+      ],
+      "communeCount": 7,
+      "center": [3.4629, 46.1396],
+      "coverageRadius": 10.2,
+      "boundingBox": {
+        "minLat": 46.0907,
+        "maxLat": 46.1817,
+        "minLon": 3.4385,
+        "maxLon": 3.5734
+      },
+      "totalPopulation": 19829,
+      "totalSurface": 13097
+    },
+    "03150": {
+      "communes": [
+        "Boucé",
+        "Créchy",
+        "Langy",
+        "Montaigu-le-Blin",
+        "Montoldre",
+        "Rongères",
+        "Saint-Gérand-le-Puy",
+        "Saint-Loup",
+        "Sanssat",
+        "Varennes-sur-Allier"
+      ],
+      "communeCount": 10,
+      "center": [3.4365, 46.3027],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 46.2558,
+        "maxLat": 46.3508,
+        "minLon": 3.3778,
+        "maxLon": 3.5125
+      },
+      "totalPopulation": 8051,
+      "totalSurface": 15266
+    },
+    "03160": {
+      "communes": [
+        "Bourbon-l'Archambault",
+        "Couzon",
+        "Franchesse",
+        "Saint-Aubin-le-Monial",
+        "Saint-Léopardin-d'Augy",
+        "Saint-Plaisir",
+        "Ygrande"
+      ],
+      "communeCount": 7,
+      "center": [3.0356, 46.5968],
+      "coverageRadius": 11.1,
+      "boundingBox": {
+        "minLat": 46.5276,
+        "maxLat": 46.6841,
+        "minLon": 2.9435,
+        "maxLon": 3.1217
+      },
+      "totalPopulation": 5159,
+      "totalSurface": 28417
+    },
+    "03350": {
+      "communes": ["Le Brethon", "Cérilly", "Louroux-Bourbonnais", "Theneuille", "Le Vilhain"],
+      "communeCount": 5,
+      "center": [2.8128, 46.5937],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 46.5356,
+        "maxLat": 46.6178,
+        "minLon": 2.7178,
+        "maxLon": 2.8628
+      },
+      "totalPopulation": 2451,
+      "totalSurface": 21489
+    },
+    "03110": {
+      "communes": [
+        "Broût-Vernet",
+        "Charmeil",
+        "Cognat-Lyonne",
+        "Escurolles",
+        "Espinasse-Vozelle",
+        "Saint-Didier-la-Forêt",
+        "Saint-Pont",
+        "Saint-Rémy-en-Rollat",
+        "Vendat"
+      ],
+      "communeCount": 9,
+      "center": [3.3365, 46.1638],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 46.1075,
+        "maxLat": 46.2265,
+        "minLon": 3.2642,
+        "maxLon": 3.3918
+      },
+      "totalPopulation": 9771,
+      "totalSurface": 16694
+    },
+    "03270": {
+      "communes": ["Busset", "Hauterive", "Mariol", "Saint-Yorre"],
+      "communeCount": 4,
+      "center": [3.4713, 46.0637],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 46.0212,
+        "maxLat": 46.0867,
+        "minLon": 3.4488,
+        "maxLon": 3.515
+      },
+      "totalPopulation": 5310,
+      "totalSurface": 6139
+    },
+    "03440": {
+      "communes": ["Buxières-les-Mines", "Chavenon", "Saint-Hilaire"],
+      "communeCount": 3,
+      "center": [2.9783, 46.472],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 46.4139,
+        "maxLat": 46.4936,
+        "minLon": 2.9473,
+        "maxLon": 3.0224
+      },
+      "totalPopulation": 1648,
+      "totalSurface": 8622
+    },
+    "03600": {
+      "communes": ["La Celle", "Colombier", "Commentry", "Hyds", "Louroux-de-Beaune", "Malicorne"],
+      "communeCount": 6,
+      "center": [2.7556, 46.2862],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 46.2288,
+        "maxLat": 46.3015,
+        "minLon": 2.7416,
+        "maxLon": 2.8564
+      },
+      "totalPopulation": 7995,
+      "totalSurface": 10694
+    },
+    "03370": {
+      "communes": [
+        "Chambérat",
+        "Chazemais",
+        "Courçais",
+        "Mesples",
+        "Saint-Désiré",
+        "Saint-Éloy-d'Allier",
+        "Saint-Palais",
+        "Saint-Sauvier",
+        "Viplaix"
+      ],
+      "communeCount": 9,
+      "center": [2.4159, 46.4563],
+      "coverageRadius": 10.2,
+      "boundingBox": {
+        "minLat": 46.3865,
+        "maxLat": 46.4971,
+        "minLon": 2.3012,
+        "maxLon": 2.5257
+      },
+      "totalPopulation": 2476,
+      "totalSurface": 23856
+    },
+    "03510": {
+      "communes": ["Chassenard", "Molinet"],
+      "communeCount": 2,
+      "center": [3.9568, 46.4521],
+      "coverageRadius": 2.4,
+      "boundingBox": {
+        "minLat": 46.4371,
+        "maxLat": 46.4658,
+        "minLon": 3.9362,
+        "maxLon": 3.9792
+      },
+      "totalPopulation": 2150,
+      "totalSurface": 5122
+    },
+    "03320": {
+      "communes": ["Château-sur-Allier", "Couleuvre", "Limoise", "Lurcy-Lévis", "Neure", "Pouzy-Mésangy", "Le Veurdre"],
+      "communeCount": 7,
+      "center": [2.964, 46.722],
+      "coverageRadius": 8.6,
+      "boundingBox": {
+        "minLat": 46.6731,
+        "maxLat": 46.7662,
+        "minLon": 2.9089,
+        "maxLon": 3.0516
+      },
+      "totalPopulation": 3843,
+      "totalSurface": 23593
+    },
+    "03220": {
+      "communes": [
+        "Châtelperron",
+        "Chavroches",
+        "Cindré",
+        "Jaligny-sur-Besbre",
+        "Saint-Léon",
+        "Saint-Voir",
+        "Sorbier",
+        "Thionne",
+        "Treteau",
+        "Trézelles",
+        "Varennes-sur-Tèche",
+        "Vaumas"
+      ],
+      "communeCount": 12,
+      "center": [3.6024, 46.3794],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 46.3257,
+        "maxLat": 46.4466,
+        "minLon": 3.521,
+        "maxLon": 3.6867
+      },
+      "totalPopulation": 4242,
+      "totalSurface": 27032
+    },
+    "03450": {
+      "communes": ["Chouvigny", "Ébreuil", "Lalizolle", "Nades", "Sussat", "Veauce", "Vicq"],
+      "communeCount": 7,
+      "center": [3.0563, 46.1319],
+      "coverageRadius": 7.5,
+      "boundingBox": {
+        "minLat": 46.1156,
+        "maxLat": 46.1645,
+        "minLon": 2.9682,
+        "maxLon": 3.0924
+      },
+      "totalPopulation": 2525,
+      "totalSurface": 9362
+    },
+    "03430": {
+      "communes": ["Cosne-d'Allier", "Sauvagny", "Tortezais", "Vieure", "Villefranche-d'Allier"],
+      "communeCount": 5,
+      "center": [2.8441, 46.4492],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 46.3969,
+        "maxLat": 46.5001,
+        "minLon": 2.8176,
+        "maxLon": 2.8749
+      },
+      "totalPopulation": 3812,
+      "totalSurface": 13898
+    },
+    "03470": {
+      "communes": ["Coulanges", "Monétay-sur-Loire", "Pierrefitte-sur-Loire", "Saligny-sur-Roudon"],
+      "communeCount": 4,
+      "center": [3.7985, 46.4764],
+      "coverageRadius": 5.4,
+      "boundingBox": {
+        "minLat": 46.4303,
+        "maxLat": 46.506,
+        "minLon": 3.7484,
+        "maxLon": 3.86
+      },
+      "totalPopulation": 1698,
+      "totalSurface": 13900
+    },
+    "03240": {
+      "communes": [
+        "Cressanges",
+        "Deux-Chaises",
+        "Le Montet",
+        "Rocles",
+        "Saint-Sornin",
+        "Le Theil",
+        "Treban",
+        "Tronget"
+      ],
+      "communeCount": 8,
+      "center": [3.09, 46.4104],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 46.354,
+        "maxLat": 46.4445,
+        "minLon": 3.0162,
+        "maxLon": 3.1759
+      },
+      "totalPopulation": 3689,
+      "totalSurface": 21281
+    },
+    "03630": {
+      "communes": ["Désertines"],
+      "communeCount": 1,
+      "center": [2.6184, 46.3549],
+      "coverageRadius": 1.62,
+      "totalPopulation": 4323,
+      "totalSurface": 826
+    },
+    "03290": {
+      "communes": ["Diou", "Dompierre-sur-Besbre", "Saint-Pourçain-sur-Besbre"],
+      "communeCount": 3,
+      "center": [3.696, 46.5203],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 46.4763,
+        "maxLat": 46.5331,
+        "minLon": 3.64,
+        "maxLon": 3.7482
+      },
+      "totalPopulation": 4692,
+      "totalSurface": 10503
+    },
+    "03410": {
+      "communes": ["Domérat", "Lignerolles", "Prémilhat", "Saint-Victor", "Teillet-Argenty"],
+      "communeCount": 5,
+      "center": [2.5467, 46.349],
+      "coverageRadius": 10.3,
+      "boundingBox": {
+        "minLat": 46.2605,
+        "maxLat": 46.395,
+        "minLon": 2.511,
+        "maxLon": 2.6075
+      },
+      "totalPopulation": 14567,
+      "totalSurface": 11330
+    },
+    "03310": {
+      "communes": ["Durdat-Larequille", "Néris-les-Bains", "Saint-Genest", "Villebret"],
+      "communeCount": 4,
+      "center": [2.6604, 46.2732],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 46.2527,
+        "maxLat": 46.2887,
+        "minLon": 2.5935,
+        "maxLon": 2.7032
+      },
+      "totalPopulation": 5479,
+      "totalSurface": 8842
+    },
+    "03400": {
+      "communes": ["Gennetines", "Saint-Ennemond", "Toulon-sur-Allier", "Yzeure"],
+      "communeCount": 4,
+      "center": [3.3603, 46.5701],
+      "coverageRadius": 13,
+      "boundingBox": {
+        "minLat": 46.5182,
+        "maxLat": 46.6783,
+        "minLon": 3.3549,
+        "maxLon": 3.4213
+      },
+      "totalPopulation": 15084,
+      "totalSurface": 16069
+    },
+    "03100": {
+      "communes": ["Lavault-Sainte-Anne", "Montluçon"],
+      "communeCount": 2,
+      "center": [2.6064, 46.3389],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 46.3095,
+        "maxLat": 46.3399,
+        "minLon": 2.5991,
+        "maxLon": 2.6066
+      },
+      "totalPopulation": 34455,
+      "totalSurface": 2975
+    }
+  }
+}

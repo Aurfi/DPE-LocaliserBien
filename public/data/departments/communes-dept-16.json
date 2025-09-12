@@ -1,0 +1,6722 @@
+{
+  "departmentCode": "16",
+  "departmentName": "Charente",
+  "stats": {
+    "communeCount": 359,
+    "totalPopulation": 350544,
+    "totalSurface": 597281
+  },
+  "communes": [
+    {
+      "nom": "Abzac",
+      "code": "16001",
+      "codesPostaux": ["16500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7174, 46.0999]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7053, 46.1022]
+      },
+      "population": 513,
+      "surface": 3349.47,
+      "radius": 3.27
+    },
+    {
+      "nom": "Agris",
+      "code": "16003",
+      "codesPostaux": ["16110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3305, 45.7753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3356, 45.7751]
+      },
+      "population": 875,
+      "surface": 1869.86,
+      "radius": 2.44
+    },
+    {
+      "nom": "Aigre",
+      "code": "16005",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0252, 45.8996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0103, 45.8941]
+      },
+      "population": 1600,
+      "surface": 2379.95,
+      "radius": 2.75
+    },
+    {
+      "nom": "Alloue",
+      "code": "16007",
+      "codesPostaux": ["16490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5297, 46.0248]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5146, 46.0273]
+      },
+      "population": 481,
+      "surface": 4665.84,
+      "radius": 3.85
+    },
+    {
+      "nom": "Ambérac",
+      "code": "16008",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0626, 45.8581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0658, 45.8527]
+      },
+      "population": 312,
+      "surface": 1211.72,
+      "radius": 1.96
+    },
+    {
+      "nom": "Ambernac",
+      "code": "16009",
+      "codesPostaux": ["16490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5516, 45.978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5418, 45.9801]
+      },
+      "population": 377,
+      "surface": 2990.52,
+      "radius": 3.09
+    },
+    {
+      "nom": "Anais",
+      "code": "16011",
+      "codesPostaux": ["16560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2046, 45.7697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2094, 45.7741]
+      },
+      "population": 566,
+      "surface": 988.76,
+      "radius": 1.77
+    },
+    {
+      "nom": "Angeac-Champagne",
+      "code": "16012",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2877, 45.6131]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2956, 45.6087]
+      },
+      "population": 496,
+      "surface": 1435.85,
+      "radius": 2.14
+    },
+    {
+      "nom": "Angeac-Charente",
+      "code": "16013",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0833, 45.6247]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0749, 45.6306]
+      },
+      "population": 296,
+      "surface": 1084.83,
+      "radius": 1.86
+    },
+    {
+      "nom": "Angeduc",
+      "code": "16014",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0552, 45.4787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0501, 45.474]
+      },
+      "population": 143,
+      "surface": 357.63,
+      "radius": 1.07
+    },
+    {
+      "nom": "Angoulême",
+      "code": "16015",
+      "codesPostaux": ["16000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.145, 45.6458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1561, 45.6484]
+      },
+      "population": 41423,
+      "surface": 2174.24,
+      "radius": 2.63
+    },
+    {
+      "nom": "Ansac-sur-Vienne",
+      "code": "16016",
+      "codesPostaux": ["16500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.626, 45.9934]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6461, 45.9936]
+      },
+      "population": 816,
+      "surface": 3094.64,
+      "radius": 3.14
+    },
+    {
+      "nom": "Ars",
+      "code": "16018",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.403, 45.6363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3824, 45.6426]
+      },
+      "population": 689,
+      "surface": 1172.36,
+      "radius": 1.93
+    },
+    {
+      "nom": "Asnières-sur-Nouère",
+      "code": "16019",
+      "codesPostaux": ["16290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0477, 45.7069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0482, 45.7121]
+      },
+      "population": 1278,
+      "surface": 2146.17,
+      "radius": 2.61
+    },
+    {
+      "nom": "Aubeterre-sur-Dronne",
+      "code": "16020",
+      "codesPostaux": ["16390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1664, 45.2635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1698, 45.2715]
+      },
+      "population": 318,
+      "surface": 238.56,
+      "radius": 0.87
+    },
+    {
+      "nom": "Aunac-sur-Charente",
+      "code": "16023",
+      "codesPostaux": ["16460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2352, 45.9253]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.241, 45.919]
+      },
+      "population": 558,
+      "surface": 1710.58,
+      "radius": 2.33
+    },
+    {
+      "nom": "Aussac-Vadalle",
+      "code": "16024",
+      "codesPostaux": ["16560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2147, 45.8258]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2179, 45.816]
+      },
+      "population": 549,
+      "surface": 1758.46,
+      "radius": 2.37
+    },
+    {
+      "nom": "Baignes-Sainte-Radegonde",
+      "code": "16025",
+      "codesPostaux": ["16360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2583, 45.3757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.236, 45.3832]
+      },
+      "population": 1241,
+      "surface": 3130.58,
+      "radius": 3.16
+    },
+    {
+      "nom": "Balzac",
+      "code": "16026",
+      "codesPostaux": ["16430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1321, 45.7167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1381, 45.7113]
+      },
+      "population": 1401,
+      "surface": 973.63,
+      "radius": 1.76
+    },
+    {
+      "nom": "Barbezières",
+      "code": "16027",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0893, 45.9121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0919, 45.9119]
+      },
+      "population": 137,
+      "surface": 939.88,
+      "radius": 1.73
+    },
+    {
+      "nom": "Barbezieux-Saint-Hilaire",
+      "code": "16028",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1554, 45.4811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1558, 45.4719]
+      },
+      "population": 4738,
+      "surface": 2659.58,
+      "radius": 2.91
+    },
+    {
+      "nom": "Bardenac",
+      "code": "16029",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0181, 45.3031]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0145, 45.3009]
+      },
+      "population": 217,
+      "surface": 802.06,
+      "radius": 1.6
+    },
+    {
+      "nom": "Barret",
+      "code": "16030",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2043, 45.4897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2051, 45.4877]
+      },
+      "population": 1092,
+      "surface": 2237.45,
+      "radius": 2.67
+    },
+    {
+      "nom": "Barro",
+      "code": "16031",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2348, 46.0069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2256, 46.0004]
+      },
+      "population": 410,
+      "surface": 1067.23,
+      "radius": 1.84
+    },
+    {
+      "nom": "Bassac",
+      "code": "16032",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.101, 45.6661]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1045, 45.6631]
+      },
+      "population": 522,
+      "surface": 768.92,
+      "radius": 1.56
+    },
+    {
+      "nom": "Bazac",
+      "code": "16034",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0342, 45.2244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0486, 45.231]
+      },
+      "population": 147,
+      "surface": 492.06,
+      "radius": 1.25
+    },
+    {
+      "nom": "Beaulieu-sur-Sonnette",
+      "code": "16035",
+      "codesPostaux": ["16450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3671, 45.9287]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3839, 45.9251]
+      },
+      "population": 222,
+      "surface": 1024.24,
+      "radius": 1.81
+    },
+    {
+      "nom": "Bécheresse",
+      "code": "16036",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0786, 45.5019]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0838, 45.4996]
+      },
+      "population": 292,
+      "surface": 838.12,
+      "radius": 1.63
+    },
+    {
+      "nom": "Bellevigne",
+      "code": "16204",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1185, 45.5566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.098, 45.5551]
+      },
+      "population": 1274,
+      "surface": 4394.06,
+      "radius": 3.74
+    },
+    {
+      "nom": "Bellon",
+      "code": "16037",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1156, 45.3114]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1193, 45.3033]
+      },
+      "population": 136,
+      "surface": 915.66,
+      "radius": 1.71
+    },
+    {
+      "nom": "Benest",
+      "code": "16038",
+      "codesPostaux": ["16350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.451, 46.042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4513, 46.0365]
+      },
+      "population": 307,
+      "surface": 2108.96,
+      "radius": 2.59
+    },
+    {
+      "nom": "Bernac",
+      "code": "16039",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1689, 46.0543]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.175, 46.0459]
+      },
+      "population": 463,
+      "surface": 855.74,
+      "radius": 1.65
+    },
+    {
+      "nom": "Berneuil",
+      "code": "16040",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0714, 45.3903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0746, 45.393]
+      },
+      "population": 321,
+      "surface": 1650.92,
+      "radius": 2.29
+    },
+    {
+      "nom": "Bessac",
+      "code": "16041",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0118, 45.4306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0193, 45.4299]
+      },
+      "population": 119,
+      "surface": 1054.74,
+      "radius": 1.83
+    },
+    {
+      "nom": "Bessé",
+      "code": "16042",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0805, 45.9572]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0784, 45.9572]
+      },
+      "population": 113,
+      "surface": 772.37,
+      "radius": 1.57
+    },
+    {
+      "nom": "Bioussac",
+      "code": "16044",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2671, 46.0296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2745, 46.0302]
+      },
+      "population": 208,
+      "surface": 1586,
+      "radius": 2.25
+    },
+    {
+      "nom": "Birac",
+      "code": "16045",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0559, 45.5628]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0635, 45.5603]
+      },
+      "population": 368,
+      "surface": 1187.92,
+      "radius": 1.94
+    },
+    {
+      "nom": "Blanzaguet-Saint-Cybard",
+      "code": "16047",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3099, 45.4717]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3216, 45.4689]
+      },
+      "population": 273,
+      "surface": 1195.29,
+      "radius": 1.95
+    },
+    {
+      "nom": "Boisbreteau",
+      "code": "16048",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1562, 45.3266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.151, 45.3235]
+      },
+      "population": 128,
+      "surface": 1524.87,
+      "radius": 2.2
+    },
+    {
+      "nom": "Boisné-La Tude",
+      "code": "16082",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1976, 45.4697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1831, 45.4963]
+      },
+      "population": 661,
+      "surface": 3449.56,
+      "radius": 3.31
+    },
+    {
+      "nom": "Bonnes",
+      "code": "16049",
+      "codesPostaux": ["16390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.145, 45.2356]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1487, 45.239]
+      },
+      "population": 360,
+      "surface": 1474.63,
+      "radius": 2.17
+    },
+    {
+      "nom": "Bonneuil",
+      "code": "16050",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1329, 45.5766]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1411, 45.5764]
+      },
+      "population": 248,
+      "surface": 1364.29,
+      "radius": 2.08
+    },
+    {
+      "nom": "Bors (Canton de Charente-Sud)",
+      "code": "16053",
+      "codesPostaux": ["16360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2004, 45.3265]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1939, 45.3275]
+      },
+      "population": 118,
+      "surface": 1230.19,
+      "radius": 1.98
+    },
+    {
+      "nom": "Bors (Canton de Tude-et-Lavalette)",
+      "code": "16052",
+      "codesPostaux": ["16190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1476, 45.3421]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.168, 45.3465]
+      },
+      "population": 227,
+      "surface": 1616.95,
+      "radius": 2.27
+    },
+    {
+      "nom": "Bouëx",
+      "code": "16055",
+      "codesPostaux": ["16410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3208, 45.6279]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3176, 45.6163]
+      },
+      "population": 845,
+      "surface": 1574.23,
+      "radius": 2.24
+    },
+    {
+      "nom": "Bourg-Charente",
+      "code": "16056",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2243, 45.6644]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2211, 45.6729]
+      },
+      "population": 885,
+      "surface": 1197.7,
+      "radius": 1.95
+    },
+    {
+      "nom": "Bouteville",
+      "code": "16057",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1242, 45.6105]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1361, 45.5994]
+      },
+      "population": 330,
+      "surface": 1212.53,
+      "radius": 1.96
+    },
+    {
+      "nom": "Boutiers-Saint-Trojan",
+      "code": "16058",
+      "codesPostaux": ["16100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2956, 45.714]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2993, 45.7126]
+      },
+      "population": 1393,
+      "surface": 711.55,
+      "radius": 1.5
+    },
+    {
+      "nom": "Brettes",
+      "code": "16059",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.026, 45.9975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0405, 46.0056]
+      },
+      "population": 163,
+      "surface": 1241.02,
+      "radius": 1.99
+    },
+    {
+      "nom": "Bréville",
+      "code": "16060",
+      "codesPostaux": ["16370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2744, 45.7848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2607, 45.7962]
+      },
+      "population": 440,
+      "surface": 1566.28,
+      "radius": 2.23
+    },
+    {
+      "nom": "Brie",
+      "code": "16061",
+      "codesPostaux": ["16590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2623, 45.7329]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2418, 45.7395]
+      },
+      "population": 4157,
+      "surface": 3421.94,
+      "radius": 3.3
+    },
+    {
+      "nom": "Brie-sous-Barbezieux",
+      "code": "16062",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0418, 45.4242]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.04, 45.4217]
+      },
+      "population": 111,
+      "surface": 647.88,
+      "radius": 1.44
+    },
+    {
+      "nom": "Brie-sous-Chalais",
+      "code": "16063",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0093, 45.3206]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0055, 45.3149]
+      },
+      "population": 158,
+      "surface": 1039.57,
+      "radius": 1.82
+    },
+    {
+      "nom": "Brigueuil",
+      "code": "16064",
+      "codesPostaux": ["16420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8769, 45.9503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8603, 45.9531]
+      },
+      "population": 1101,
+      "surface": 4692.92,
+      "radius": 3.86
+    },
+    {
+      "nom": "Brillac",
+      "code": "16065",
+      "codesPostaux": ["16500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7651, 46.0708]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7793, 46.0602]
+      },
+      "population": 607,
+      "surface": 4246.42,
+      "radius": 3.68
+    },
+    {
+      "nom": "Brossac",
+      "code": "16066",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0507, 45.3269]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0446, 45.331]
+      },
+      "population": 453,
+      "surface": 2190.95,
+      "radius": 2.64
+    },
+    {
+      "nom": "Bunzac",
+      "code": "16067",
+      "codesPostaux": ["16110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3444, 45.6989]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3515, 45.7021]
+      },
+      "population": 453,
+      "surface": 1343.71,
+      "radius": 2.07
+    },
+    {
+      "nom": "Cellefrouin",
+      "code": "16068",
+      "codesPostaux": ["16260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3866, 45.8851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3907, 45.8909]
+      },
+      "population": 579,
+      "surface": 4005.33,
+      "radius": 3.57
+    },
+    {
+      "nom": "Cellettes",
+      "code": "16069",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1447, 45.8641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1483, 45.8636]
+      },
+      "population": 388,
+      "surface": 940.07,
+      "radius": 1.73
+    },
+    {
+      "nom": "Chabanais",
+      "code": "16070",
+      "codesPostaux": ["16150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7076, 45.8656]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7195, 45.8764]
+      },
+      "population": 1564,
+      "surface": 1496.64,
+      "radius": 2.18
+    },
+    {
+      "nom": "Chabrac",
+      "code": "16071",
+      "codesPostaux": ["16150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7462, 45.9236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7371, 45.9349]
+      },
+      "population": 614,
+      "surface": 2255.37,
+      "radius": 2.68
+    },
+    {
+      "nom": "Chadurie",
+      "code": "16072",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1454, 45.4924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1376, 45.4954]
+      },
+      "population": 509,
+      "surface": 1651.88,
+      "radius": 2.29
+    },
+    {
+      "nom": "Chalais",
+      "code": "16073",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0372, 45.2746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0396, 45.2729]
+      },
+      "population": 1799,
+      "surface": 1766.84,
+      "radius": 2.37
+    },
+    {
+      "nom": "Challignac",
+      "code": "16074",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0811, 45.4263]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.082, 45.4152]
+      },
+      "population": 340,
+      "surface": 1319.59,
+      "radius": 2.05
+    },
+    {
+      "nom": "Champagne-Mouton",
+      "code": "16076",
+      "codesPostaux": ["16350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4135, 46.0003]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4112, 45.9909]
+      },
+      "population": 877,
+      "surface": 2270.26,
+      "radius": 2.69
+    },
+    {
+      "nom": "Champagne-Vigny",
+      "code": "16075",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0423, 45.5097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0373, 45.508]
+      },
+      "population": 235,
+      "surface": 838.99,
+      "radius": 1.63
+    },
+    {
+      "nom": "Champmillon",
+      "code": "16077",
+      "codesPostaux": ["16290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0075, 45.6464]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0007, 45.6388]
+      },
+      "population": 525,
+      "surface": 957.44,
+      "radius": 1.75
+    },
+    {
+      "nom": "Champniers",
+      "code": "16078",
+      "codesPostaux": ["16430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2059, 45.7167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.205, 45.7145]
+      },
+      "population": 5237,
+      "surface": 4530.31,
+      "radius": 3.8
+    },
+    {
+      "nom": "Chantillac",
+      "code": "16079",
+      "codesPostaux": ["16360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2526, 45.3235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.255, 45.3225]
+      },
+      "population": 372,
+      "surface": 1796.74,
+      "radius": 2.39
+    },
+    {
+      "nom": "Charmé",
+      "code": "16083",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1205, 45.9508]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1165, 45.9539]
+      },
+      "population": 340,
+      "surface": 1147.35,
+      "radius": 1.91
+    },
+    {
+      "nom": "Charras",
+      "code": "16084",
+      "codesPostaux": ["16380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4265, 45.5449]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4141, 45.5429]
+      },
+      "population": 346,
+      "surface": 1527.9,
+      "radius": 2.21
+    },
+    {
+      "nom": "Chasseneuil-sur-Bonnieure",
+      "code": "16085",
+      "codesPostaux": ["16260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4453, 45.8242]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4495, 45.8242]
+      },
+      "population": 3103,
+      "surface": 3323.13,
+      "radius": 3.25
+    },
+    {
+      "nom": "Chassenon",
+      "code": "16086",
+      "codesPostaux": ["16150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7721, 45.8489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7666, 45.8506]
+      },
+      "population": 843,
+      "surface": 2359.54,
+      "radius": 2.74
+    },
+    {
+      "nom": "Chassiecq",
+      "code": "16087",
+      "codesPostaux": ["16350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3695, 45.9518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3787, 45.9541]
+      },
+      "population": 148,
+      "surface": 1312.75,
+      "radius": 2.04
+    },
+    {
+      "nom": "Chassors",
+      "code": "16088",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.208, 45.7095]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2026, 45.7118]
+      },
+      "population": 1103,
+      "surface": 1340.06,
+      "radius": 2.07
+    },
+    {
+      "nom": "Châteaubernard",
+      "code": "16089",
+      "codesPostaux": ["16100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3168, 45.6753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3143, 45.6739]
+      },
+      "population": 3793,
+      "surface": 1342.49,
+      "radius": 2.07
+    },
+    {
+      "nom": "Châteauneuf-sur-Charente",
+      "code": "16090",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0559, 45.5968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0546, 45.6]
+      },
+      "population": 3562,
+      "surface": 2407.46,
+      "radius": 2.77
+    },
+    {
+      "nom": "Châtignac",
+      "code": "16091",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0034, 45.3489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0118, 45.3463]
+      },
+      "population": 166,
+      "surface": 977.64,
+      "radius": 1.76
+    },
+    {
+      "nom": "Chazelles",
+      "code": "16093",
+      "codesPostaux": ["16380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3572, 45.6459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3672, 45.6471]
+      },
+      "population": 1550,
+      "surface": 2594.82,
+      "radius": 2.87
+    },
+    {
+      "nom": "Chenon",
+      "code": "16095",
+      "codesPostaux": ["16460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2246, 45.9457]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2364, 45.9425]
+      },
+      "population": 125,
+      "surface": 1048.76,
+      "radius": 1.83
+    },
+    {
+      "nom": "Cherves-Châtelars",
+      "code": "16096",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5502, 45.8073]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5468, 45.8105]
+      },
+      "population": 416,
+      "surface": 3071.12,
+      "radius": 3.13
+    },
+    {
+      "nom": "Chillac",
+      "code": "16099",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0845, 45.3573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0824, 45.3606]
+      },
+      "population": 225,
+      "surface": 1476.38,
+      "radius": 2.17
+    },
+    {
+      "nom": "Chirac",
+      "code": "16100",
+      "codesPostaux": ["16150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6875, 45.9154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.657, 45.9142]
+      },
+      "population": 779,
+      "surface": 3448.72,
+      "radius": 3.31
+    },
+    {
+      "nom": "Claix",
+      "code": "16101",
+      "codesPostaux": ["16440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0536, 45.5513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0423, 45.5547]
+      },
+      "population": 1058,
+      "surface": 1489.12,
+      "radius": 2.18
+    },
+    {
+      "nom": "Cognac",
+      "code": "16102",
+      "codesPostaux": ["16100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3376, 45.696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3259, 45.6978]
+      },
+      "population": 18466,
+      "surface": 1491.2,
+      "radius": 2.18
+    },
+    {
+      "nom": "Combiers",
+      "code": "16103",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4135, 45.5124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.415, 45.4918]
+      },
+      "population": 126,
+      "surface": 2408.79,
+      "radius": 2.77
+    },
+    {
+      "nom": "Condac",
+      "code": "16104",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.232, 46.0303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2226, 46.0249]
+      },
+      "population": 460,
+      "surface": 958.99,
+      "radius": 1.75
+    },
+    {
+      "nom": "Condéon",
+      "code": "16105",
+      "codesPostaux": ["16360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.138, 45.4034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1372, 45.4079]
+      },
+      "population": 609,
+      "surface": 3113.53,
+      "radius": 3.15
+    },
+    {
+      "nom": "Confolens",
+      "code": "16106",
+      "codesPostaux": ["16500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6639, 46.0245]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6725, 46.0152]
+      },
+      "population": 2726,
+      "surface": 2364.32,
+      "radius": 2.74
+    },
+    {
+      "nom": "Coteaux-du-Blanzacais",
+      "code": "16046",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0214, 45.4586]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0338, 45.4768]
+      },
+      "population": 1000,
+      "surface": 2393.67,
+      "radius": 2.76
+    },
+    {
+      "nom": "Coulgens",
+      "code": "16107",
+      "codesPostaux": ["16560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2737, 45.8134]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2861, 45.8106]
+      },
+      "population": 557,
+      "surface": 1181.3,
+      "radius": 1.94
+    },
+    {
+      "nom": "Coulonges",
+      "code": "16108",
+      "codesPostaux": ["16330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0885, 45.8367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0894, 45.8324]
+      },
+      "population": 121,
+      "surface": 300.47,
+      "radius": 0.98
+    },
+    {
+      "nom": "Courbillac",
+      "code": "16109",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1883, 45.7737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1789, 45.7689]
+      },
+      "population": 729,
+      "surface": 1192.3,
+      "radius": 1.95
+    },
+    {
+      "nom": "Courcôme",
+      "code": "16110",
+      "codesPostaux": ["16240", "16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1432, 45.9862]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1338, 45.987]
+      },
+      "population": 801,
+      "surface": 2995.08,
+      "radius": 3.09
+    },
+    {
+      "nom": "Courgeac",
+      "code": "16111",
+      "codesPostaux": ["16190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0793, 45.3939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0856, 45.3958]
+      },
+      "population": 170,
+      "surface": 1855.2,
+      "radius": 2.43
+    },
+    {
+      "nom": "Courlac",
+      "code": "16112",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0852, 45.3005]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.093, 45.3004]
+      },
+      "population": 58,
+      "surface": 661.45,
+      "radius": 1.45
+    },
+    {
+      "nom": "Couture",
+      "code": "16114",
+      "codesPostaux": ["16460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2886, 45.9296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2829, 45.9307]
+      },
+      "population": 173,
+      "surface": 1048.74,
+      "radius": 1.83
+    },
+    {
+      "nom": "Criteuil-la-Magdeleine",
+      "code": "16116",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.215, 45.5357]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2155, 45.5381]
+      },
+      "population": 403,
+      "surface": 1522.01,
+      "radius": 2.2
+    },
+    {
+      "nom": "Curac",
+      "code": "16117",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0234, 45.295]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0252, 45.2937]
+      },
+      "population": 116,
+      "surface": 493.62,
+      "radius": 1.25
+    },
+    {
+      "nom": "Deviat",
+      "code": "16118",
+      "codesPostaux": ["16190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0174, 45.4112]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0099, 45.4174]
+      },
+      "population": 134,
+      "surface": 843.34,
+      "radius": 1.64
+    },
+    {
+      "nom": "Dignac",
+      "code": "16119",
+      "codesPostaux": ["16410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2874, 45.5549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2803, 45.5567]
+      },
+      "population": 1373,
+      "surface": 2766.28,
+      "radius": 2.97
+    },
+    {
+      "nom": "Dirac",
+      "code": "16120",
+      "codesPostaux": ["16410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.241, 45.6013]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2483, 45.6056]
+      },
+      "population": 1509,
+      "surface": 2952.64,
+      "radius": 3.07
+    },
+    {
+      "nom": "Douzat",
+      "code": "16121",
+      "codesPostaux": ["16290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0018, 45.7038]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0022, 45.7099]
+      },
+      "population": 432,
+      "surface": 1152.44,
+      "radius": 1.92
+    },
+    {
+      "nom": "Ébréon",
+      "code": "16122",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0293, 45.9453]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0321, 45.9369]
+      },
+      "population": 139,
+      "surface": 1015.34,
+      "radius": 1.8
+    },
+    {
+      "nom": "Échallat",
+      "code": "16123",
+      "codesPostaux": ["16170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0455, 45.7182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0453, 45.7227]
+      },
+      "population": 481,
+      "surface": 1527.79,
+      "radius": 2.21
+    },
+    {
+      "nom": "Écuras",
+      "code": "16124",
+      "codesPostaux": ["16220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5661, 45.6833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5672, 45.6874]
+      },
+      "population": 542,
+      "surface": 2428.93,
+      "radius": 2.78
+    },
+    {
+      "nom": "Édon",
+      "code": "16125",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3526, 45.4879]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3551, 45.4876]
+      },
+      "population": 272,
+      "surface": 1661.47,
+      "radius": 2.3
+    },
+    {
+      "nom": "Empuré",
+      "code": "16127",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0507, 46.0252]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0526, 46.0226]
+      },
+      "population": 96,
+      "surface": 849.34,
+      "radius": 1.64
+    },
+    {
+      "nom": "Épenède",
+      "code": "16128",
+      "codesPostaux": ["16490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5374, 46.0669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5375, 46.0629]
+      },
+      "population": 191,
+      "surface": 1574.53,
+      "radius": 2.24
+    },
+    {
+      "nom": "Esse",
+      "code": "16131",
+      "codesPostaux": ["16500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7221, 46.0243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7211, 46.0319]
+      },
+      "population": 509,
+      "surface": 3018.17,
+      "radius": 3.1
+    },
+    {
+      "nom": "Étagnac",
+      "code": "16132",
+      "codesPostaux": ["16150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7833, 45.8927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7789, 45.8948]
+      },
+      "population": 987,
+      "surface": 2945.17,
+      "radius": 3.06
+    },
+    {
+      "nom": "Étriac",
+      "code": "16133",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0081, 45.5281]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0257, 45.5278]
+      },
+      "population": 200,
+      "surface": 958.02,
+      "radius": 1.75
+    },
+    {
+      "nom": "Exideuil-sur-Vienne",
+      "code": "16134",
+      "codesPostaux": ["16150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6656, 45.8786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6738, 45.8869]
+      },
+      "population": 1028,
+      "surface": 2059.55,
+      "radius": 2.56
+    },
+    {
+      "nom": "Eymouthiers",
+      "code": "16135",
+      "codesPostaux": ["16220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5478, 45.6459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5434, 45.6422]
+      },
+      "population": 325,
+      "surface": 873.07,
+      "radius": 1.67
+    },
+    {
+      "nom": "Feuillade",
+      "code": "16137",
+      "codesPostaux": ["16380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4638, 45.5919]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4691, 45.6075]
+      },
+      "population": 284,
+      "surface": 2200.41,
+      "radius": 2.65
+    },
+    {
+      "nom": "Fléac",
+      "code": "16138",
+      "codesPostaux": ["16730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0864, 45.6756]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0975, 45.6652]
+      },
+      "population": 3856,
+      "surface": 1258.86,
+      "radius": 2
+    },
+    {
+      "nom": "Fleurac",
+      "code": "16139",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0838, 45.718]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0837, 45.721]
+      },
+      "population": 220,
+      "surface": 217.37,
+      "radius": 0.83
+    },
+    {
+      "nom": "Fontenille",
+      "code": "16141",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.171, 45.9115]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1663, 45.9185]
+      },
+      "population": 343,
+      "surface": 950.19,
+      "radius": 1.74
+    },
+    {
+      "nom": "Fouquebrune",
+      "code": "16143",
+      "codesPostaux": ["16410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1993, 45.5238]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2116, 45.5274]
+      },
+      "population": 717,
+      "surface": 2790.88,
+      "radius": 2.98
+    },
+    {
+      "nom": "Fouqueure",
+      "code": "16144",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0709, 45.887]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0751, 45.884]
+      },
+      "population": 431,
+      "surface": 1652.13,
+      "radius": 2.29
+    },
+    {
+      "nom": "Foussignac",
+      "code": "16145",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1268, 45.7145]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.124, 45.7136]
+      },
+      "population": 656,
+      "surface": 1517.54,
+      "radius": 2.2
+    },
+    {
+      "nom": "Garat",
+      "code": "16146",
+      "codesPostaux": ["16410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2605, 45.6221]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2636, 45.6264]
+      },
+      "population": 2111,
+      "surface": 1940.92,
+      "radius": 2.49
+    },
+    {
+      "nom": "Genac-Bignac",
+      "code": "16148",
+      "codesPostaux": ["16170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0297, 45.7986]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0256, 45.7973]
+      },
+      "population": 973,
+      "surface": 3369.77,
+      "radius": 3.28
+    },
+    {
+      "nom": "Gensac-la-Pallue",
+      "code": "16150",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2637, 45.6587]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.253, 45.6513]
+      },
+      "population": 1614,
+      "surface": 1912.79,
+      "radius": 2.47
+    },
+    {
+      "nom": "Genté",
+      "code": "16151",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3051, 45.6369]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3133, 45.6303]
+      },
+      "population": 929,
+      "surface": 1160.24,
+      "radius": 1.92
+    },
+    {
+      "nom": "Gimeux",
+      "code": "16152",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.367, 45.6383]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3704, 45.6359]
+      },
+      "population": 727,
+      "surface": 746.78,
+      "radius": 1.54
+    },
+    {
+      "nom": "Gond-Pontouvre",
+      "code": "16154",
+      "codesPostaux": ["16160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1664, 45.6795]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1664, 45.6692]
+      },
+      "population": 5884,
+      "surface": 744.67,
+      "radius": 1.54
+    },
+    {
+      "nom": "Grassac",
+      "code": "16158",
+      "codesPostaux": ["16380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.393, 45.5832]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4034, 45.587]
+      },
+      "population": 303,
+      "surface": 2834.86,
+      "radius": 3
+    },
+    {
+      "nom": "Graves-Saint-Amant",
+      "code": "16297",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1016, 45.637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0943, 45.6427]
+      },
+      "population": 328,
+      "surface": 899.2,
+      "radius": 1.69
+    },
+    {
+      "nom": "Guimps",
+      "code": "16160",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2568, 45.468]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2475, 45.464]
+      },
+      "population": 495,
+      "surface": 1266.19,
+      "radius": 2.01
+    },
+    {
+      "nom": "Guizengeard",
+      "code": "16161",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1237, 45.3106]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1037, 45.312]
+      },
+      "population": 165,
+      "surface": 1483.14,
+      "radius": 2.17
+    },
+    {
+      "nom": "Gurat",
+      "code": "16162",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2569, 45.4389]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2702, 45.4296]
+      },
+      "population": 184,
+      "surface": 1599.04,
+      "radius": 2.26
+    },
+    {
+      "nom": "Hiersac",
+      "code": "16163",
+      "codesPostaux": ["16290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0085, 45.6744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0048, 45.6681]
+      },
+      "population": 1150,
+      "surface": 745.19,
+      "radius": 1.54
+    },
+    {
+      "nom": "Hiesse",
+      "code": "16164",
+      "codesPostaux": ["16490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5814, 46.0494]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5911, 46.0566]
+      },
+      "population": 238,
+      "surface": 2487.96,
+      "radius": 2.81
+    },
+    {
+      "nom": "Houlette",
+      "code": "16165",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2075, 45.7558]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2109, 45.7598]
+      },
+      "population": 395,
+      "surface": 724.38,
+      "radius": 1.52
+    },
+    {
+      "nom": "Jarnac",
+      "code": "16167",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1694, 45.6877]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1739, 45.6814]
+      },
+      "population": 4478,
+      "surface": 1195.17,
+      "radius": 1.95
+    },
+    {
+      "nom": "Jauldes",
+      "code": "16168",
+      "codesPostaux": ["16560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2527, 45.78]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2572, 45.7852]
+      },
+      "population": 832,
+      "surface": 2572.88,
+      "radius": 2.86
+    },
+    {
+      "nom": "Javrezac",
+      "code": "16169",
+      "codesPostaux": ["16100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3618, 45.6999]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3625, 45.7011]
+      },
+      "population": 581,
+      "surface": 364.72,
+      "radius": 1.08
+    },
+    {
+      "nom": "Juignac",
+      "code": "16170",
+      "codesPostaux": ["16190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1599, 45.368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1636, 45.3779]
+      },
+      "population": 392,
+      "surface": 2423.73,
+      "radius": 2.78
+    },
+    {
+      "nom": "Juillac-le-Coq",
+      "code": "16171",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2532, 45.589]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.261, 45.5884]
+      },
+      "population": 655,
+      "surface": 1458.74,
+      "radius": 2.15
+    },
+    {
+      "nom": "Juillé",
+      "code": "16173",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1432, 45.9267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1416, 45.9288]
+      },
+      "population": 176,
+      "surface": 866.74,
+      "radius": 1.66
+    },
+    {
+      "nom": "Julienne",
+      "code": "16174",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2308, 45.6923]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2296, 45.6967]
+      },
+      "population": 540,
+      "surface": 637.94,
+      "radius": 1.43
+    },
+    {
+      "nom": "L'Isle-d'Espagnac",
+      "code": "16166",
+      "codesPostaux": ["16340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.199, 45.6623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1978, 45.6633]
+      },
+      "population": 5691,
+      "surface": 607.84,
+      "radius": 1.39
+    },
+    {
+      "nom": "La Boixe",
+      "code": "16393",
+      "codesPostaux": ["16330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.134, 45.7649]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1239, 45.7627]
+      },
+      "population": 2163,
+      "surface": 3626.02,
+      "radius": 3.4
+    },
+    {
+      "nom": "La Chapelle",
+      "code": "16081",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0534, 45.8295]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0396, 45.8381]
+      },
+      "population": 191,
+      "surface": 773.51,
+      "radius": 1.57
+    },
+    {
+      "nom": "La Chèvrerie",
+      "code": "16098",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.134, 46.0444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1357, 46.0462]
+      },
+      "population": 137,
+      "surface": 468.55,
+      "radius": 1.22
+    },
+    {
+      "nom": "La Couronne",
+      "code": "16113",
+      "codesPostaux": ["16400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.108, 45.6095]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1014, 45.6084]
+      },
+      "population": 7759,
+      "surface": 2873.25,
+      "radius": 3.02
+    },
+    {
+      "nom": "La Faye",
+      "code": "16136",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1601, 46.0198]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1456, 46.0205]
+      },
+      "population": 595,
+      "surface": 1361.51,
+      "radius": 2.08
+    },
+    {
+      "nom": "La Forêt-de-Tessé",
+      "code": "16142",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0773, 46.0755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0838, 46.0804]
+      },
+      "population": 209,
+      "surface": 1092.94,
+      "radius": 1.87
+    },
+    {
+      "nom": "La Magdeleine",
+      "code": "16197",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0788, 46.049]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0738, 46.0509]
+      },
+      "population": 117,
+      "surface": 674.84,
+      "radius": 1.47
+    },
+    {
+      "nom": "La Rochefoucauld-en-Angoumois",
+      "code": "16281",
+      "codesPostaux": ["16110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3583, 45.736]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3858, 45.7381]
+      },
+      "population": 4020,
+      "surface": 2425.52,
+      "radius": 2.78
+    },
+    {
+      "nom": "La Rochette",
+      "code": "16282",
+      "codesPostaux": ["16110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3092, 45.7987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3132, 45.8009]
+      },
+      "population": 525,
+      "surface": 1115.44,
+      "radius": 1.88
+    },
+    {
+      "nom": "La Tâche",
+      "code": "16377",
+      "codesPostaux": ["16260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3563, 45.8688]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3552, 45.8685]
+      },
+      "population": 106,
+      "surface": 724.75,
+      "radius": 1.52
+    },
+    {
+      "nom": "Lachaise",
+      "code": "16176",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2413, 45.5144]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2389, 45.5295]
+      },
+      "population": 306,
+      "surface": 949.83,
+      "radius": 1.74
+    },
+    {
+      "nom": "Ladiville",
+      "code": "16177",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0628, 45.5112]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0661, 45.5146]
+      },
+      "population": 129,
+      "surface": 721.51,
+      "radius": 1.52
+    },
+    {
+      "nom": "Lagarde-sur-le-Né",
+      "code": "16178",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2048, 45.5144]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2036, 45.5116]
+      },
+      "population": 187,
+      "surface": 413.68,
+      "radius": 1.15
+    },
+    {
+      "nom": "Laprade",
+      "code": "16180",
+      "codesPostaux": ["16390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1866, 45.2792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1844, 45.2772]
+      },
+      "population": 249,
+      "surface": 1037.1,
+      "radius": 1.82
+    },
+    {
+      "nom": "Le Bouchage",
+      "code": "16054",
+      "codesPostaux": ["16350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3766, 46.0477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3757, 46.0478]
+      },
+      "population": 177,
+      "surface": 1647.82,
+      "radius": 2.29
+    },
+    {
+      "nom": "Le Grand-Madieu",
+      "code": "16157",
+      "codesPostaux": ["16450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4483, 45.9396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4443, 45.9408]
+      },
+      "population": 154,
+      "surface": 836.43,
+      "radius": 1.63
+    },
+    {
+      "nom": "Le Lindois",
+      "code": "16188",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5936, 45.754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5919, 45.7445]
+      },
+      "population": 339,
+      "surface": 1803.5,
+      "radius": 2.4
+    },
+    {
+      "nom": "Le Tâtre",
+      "code": "16380",
+      "codesPostaux": ["16360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2022, 45.3986]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2044, 45.3952]
+      },
+      "population": 427,
+      "surface": 605.74,
+      "radius": 1.39
+    },
+    {
+      "nom": "Le Vieux-Cérier",
+      "code": "16403",
+      "codesPostaux": ["16350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4476, 45.9792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4454, 45.9656]
+      },
+      "population": 131,
+      "surface": 971.94,
+      "radius": 1.76
+    },
+    {
+      "nom": "Les Adjots",
+      "code": "16002",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2028, 46.0781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2074, 46.0759]
+      },
+      "population": 532,
+      "surface": 1130.3,
+      "radius": 1.9
+    },
+    {
+      "nom": "Les Essards",
+      "code": "16130",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1099, 45.2368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1164, 45.2397]
+      },
+      "population": 178,
+      "surface": 906.15,
+      "radius": 1.7
+    },
+    {
+      "nom": "Les Gours",
+      "code": "16155",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0662, 45.9585]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0678, 45.9619]
+      },
+      "population": 93,
+      "surface": 1144.49,
+      "radius": 1.91
+    },
+    {
+      "nom": "Les Métairies",
+      "code": "16220",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1749, 45.7119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1644, 45.7054]
+      },
+      "population": 714,
+      "surface": 524.79,
+      "radius": 1.29
+    },
+    {
+      "nom": "Les Pins",
+      "code": "16261",
+      "codesPostaux": ["16260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3711, 45.8111]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3906, 45.8193]
+      },
+      "population": 501,
+      "surface": 2103.64,
+      "radius": 2.59
+    },
+    {
+      "nom": "Lésignac-Durand",
+      "code": "16183",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6427, 45.8159]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6383, 45.8115]
+      },
+      "population": 169,
+      "surface": 1990.28,
+      "radius": 2.52
+    },
+    {
+      "nom": "Lessac",
+      "code": "16181",
+      "codesPostaux": ["16500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.648, 46.0701]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6745, 46.0681]
+      },
+      "population": 534,
+      "surface": 3437.61,
+      "radius": 3.31
+    },
+    {
+      "nom": "Lesterps",
+      "code": "16182",
+      "codesPostaux": ["16420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7915, 46.0132]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7809, 46.0101]
+      },
+      "population": 440,
+      "surface": 3598.6,
+      "radius": 3.38
+    },
+    {
+      "nom": "Lichères",
+      "code": "16184",
+      "codesPostaux": ["16460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2195, 45.906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2239, 45.8963]
+      },
+      "population": 95,
+      "surface": 491.28,
+      "radius": 1.25
+    },
+    {
+      "nom": "Ligné",
+      "code": "16185",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1041, 45.9157]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.11, 45.9214]
+      },
+      "population": 146,
+      "surface": 800.02,
+      "radius": 1.6
+    },
+    {
+      "nom": "Lignières-Ambleville",
+      "code": "16186",
+      "codesPostaux": ["16130", "16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1963, 45.5652]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1826, 45.558]
+      },
+      "population": 704,
+      "surface": 2150.17,
+      "radius": 2.62
+    },
+    {
+      "nom": "Linars",
+      "code": "16187",
+      "codesPostaux": ["16730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0744, 45.6561]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0747, 45.6496]
+      },
+      "population": 2105,
+      "surface": 602.22,
+      "radius": 1.38
+    },
+    {
+      "nom": "Londigny",
+      "code": "16189",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1434, 46.0854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1365, 46.085]
+      },
+      "population": 246,
+      "surface": 979.09,
+      "radius": 1.77
+    },
+    {
+      "nom": "Longré",
+      "code": "16190",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0248, 45.9946]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0137, 46.0019]
+      },
+      "population": 191,
+      "surface": 1480.34,
+      "radius": 2.17
+    },
+    {
+      "nom": "Lonnes",
+      "code": "16191",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1775, 45.9394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1694, 45.9389]
+      },
+      "population": 188,
+      "surface": 751.85,
+      "radius": 1.55
+    },
+    {
+      "nom": "Louzac-Saint-André",
+      "code": "16193",
+      "codesPostaux": ["16100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3955, 45.7251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.412, 45.7139]
+      },
+      "population": 964,
+      "surface": 1018.51,
+      "radius": 1.8
+    },
+    {
+      "nom": "Lupsault",
+      "code": "16194",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0593, 45.9378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0729, 45.9408]
+      },
+      "population": 111,
+      "surface": 1149.09,
+      "radius": 1.91
+    },
+    {
+      "nom": "Lussac",
+      "code": "16195",
+      "codesPostaux": ["16450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4629, 45.8566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4628, 45.8619]
+      },
+      "population": 293,
+      "surface": 1162.26,
+      "radius": 1.92
+    },
+    {
+      "nom": "Luxé",
+      "code": "16196",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1237, 45.8958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1169, 45.892]
+      },
+      "population": 732,
+      "surface": 1221.89,
+      "radius": 1.97
+    },
+    {
+      "nom": "Magnac-lès-Gardes",
+      "code": "16198",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2741, 45.5087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2504, 45.5004]
+      },
+      "population": 487,
+      "surface": 3722.03,
+      "radius": 3.44
+    },
+    {
+      "nom": "Magnac-sur-Touvre",
+      "code": "16199",
+      "codesPostaux": ["16600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2384, 45.6558]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2373, 45.6658]
+      },
+      "population": 3252,
+      "surface": 782.74,
+      "radius": 1.58
+    },
+    {
+      "nom": "Maine-de-Boixe",
+      "code": "16200",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1775, 45.8486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1773, 45.8519]
+      },
+      "population": 476,
+      "surface": 934.85,
+      "radius": 1.73
+    },
+    {
+      "nom": "Mainxe-Gondeville",
+      "code": "16153",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1674, 45.658]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1473, 45.671]
+      },
+      "population": 1184,
+      "surface": 1560.12,
+      "radius": 2.23
+    },
+    {
+      "nom": "Mainzac",
+      "code": "16203",
+      "codesPostaux": ["16380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4779, 45.5544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4837, 45.5521]
+      },
+      "population": 123,
+      "surface": 1140.41,
+      "radius": 1.91
+    },
+    {
+      "nom": "Manot",
+      "code": "16205",
+      "codesPostaux": ["16500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6157, 45.9278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.638, 45.9447]
+      },
+      "population": 548,
+      "surface": 2037.99,
+      "radius": 2.55
+    },
+    {
+      "nom": "Mansle-les-Fontaines",
+      "code": "16206",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1866, 45.8874]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1802, 45.8764]
+      },
+      "population": 2092,
+      "surface": 1132.16,
+      "radius": 1.9
+    },
+    {
+      "nom": "Marcillac-Lanville",
+      "code": "16207",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0177, 45.8576]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0191, 45.8461]
+      },
+      "population": 509,
+      "surface": 1855.27,
+      "radius": 2.43
+    },
+    {
+      "nom": "Mareuil",
+      "code": "16208",
+      "codesPostaux": ["16170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1348, 45.7746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1418, 45.7741]
+      },
+      "population": 393,
+      "surface": 1154.07,
+      "radius": 1.92
+    },
+    {
+      "nom": "Marillac-le-Franc",
+      "code": "16209",
+      "codesPostaux": ["16110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4363, 45.732]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4275, 45.7356]
+      },
+      "population": 823,
+      "surface": 1443.11,
+      "radius": 2.14
+    },
+    {
+      "nom": "Marsac",
+      "code": "16210",
+      "codesPostaux": ["16570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.076, 45.7412]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0764, 45.7462]
+      },
+      "population": 766,
+      "surface": 1336.79,
+      "radius": 2.06
+    },
+    {
+      "nom": "Marthon",
+      "code": "16211",
+      "codesPostaux": ["16380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4477, 45.6154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4474, 45.612]
+      },
+      "population": 547,
+      "surface": 1284.85,
+      "radius": 2.02
+    },
+    {
+      "nom": "Massignac",
+      "code": "16212",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6497, 45.7793]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6547, 45.7798]
+      },
+      "population": 368,
+      "surface": 2401.94,
+      "radius": 2.77
+    },
+    {
+      "nom": "Mazerolles",
+      "code": "16213",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5201, 45.7412]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5325, 45.7482]
+      },
+      "population": 305,
+      "surface": 1745.51,
+      "radius": 2.36
+    },
+    {
+      "nom": "Médillac",
+      "code": "16215",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0147, 45.2135]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0224, 45.2225]
+      },
+      "population": 151,
+      "surface": 588.08,
+      "radius": 1.37
+    },
+    {
+      "nom": "Mérignac",
+      "code": "16216",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0693, 45.6936]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0814, 45.6972]
+      },
+      "population": 812,
+      "surface": 1870.91,
+      "radius": 2.44
+    },
+    {
+      "nom": "Merpins",
+      "code": "16217",
+      "codesPostaux": ["16100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.376, 45.6704]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3571, 45.6746]
+      },
+      "population": 1082,
+      "surface": 1051.49,
+      "radius": 1.83
+    },
+    {
+      "nom": "Mesnac",
+      "code": "16218",
+      "codesPostaux": ["16370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3433, 45.7744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3421, 45.7768]
+      },
+      "population": 408,
+      "surface": 656.88,
+      "radius": 1.45
+    },
+    {
+      "nom": "Mons",
+      "code": "16221",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0318, 45.8734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0162, 45.8667]
+      },
+      "population": 235,
+      "surface": 2022.42,
+      "radius": 2.54
+    },
+    {
+      "nom": "Montboyer",
+      "code": "16222",
+      "codesPostaux": ["16620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0707, 45.329]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0728, 45.3248]
+      },
+      "population": 329,
+      "surface": 2674.3,
+      "radius": 2.92
+    },
+    {
+      "nom": "Montbron",
+      "code": "16223",
+      "codesPostaux": ["16220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4999, 45.6731]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4991, 45.6668]
+      },
+      "population": 1995,
+      "surface": 4315.5,
+      "radius": 3.71
+    },
+    {
+      "nom": "Montembœuf",
+      "code": "16225",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5499, 45.7745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5528, 45.7771]
+      },
+      "population": 659,
+      "surface": 1604.44,
+      "radius": 2.26
+    },
+    {
+      "nom": "Montignac-le-Coq",
+      "code": "16227",
+      "codesPostaux": ["16390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2158, 45.3418]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2224, 45.34]
+      },
+      "population": 134,
+      "surface": 1025.84,
+      "radius": 1.81
+    },
+    {
+      "nom": "Montjean",
+      "code": "16229",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1122, 46.0831]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1198, 46.0879]
+      },
+      "population": 251,
+      "surface": 813.61,
+      "radius": 1.61
+    },
+    {
+      "nom": "Montmérac",
+      "code": "16224",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2169, 45.4404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2001, 45.4475]
+      },
+      "population": 725,
+      "surface": 2323.69,
+      "radius": 2.72
+    },
+    {
+      "nom": "Montmoreau",
+      "code": "16230",
+      "codesPostaux": ["16190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1524, 45.4062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1311, 45.3964]
+      },
+      "population": 2419,
+      "surface": 6508.68,
+      "radius": 4.55
+    },
+    {
+      "nom": "Montrollet",
+      "code": "16231",
+      "codesPostaux": ["16420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8988, 45.9949]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8971, 45.9832]
+      },
+      "population": 332,
+      "surface": 2210.78,
+      "radius": 2.65
+    },
+    {
+      "nom": "Mornac",
+      "code": "16232",
+      "codesPostaux": ["16600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2896, 45.6839]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2739, 45.6799]
+      },
+      "population": 2115,
+      "surface": 2332.07,
+      "radius": 2.72
+    },
+    {
+      "nom": "Mosnac-Saint-Simeux",
+      "code": "16233",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0276, 45.627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0191, 45.6185]
+      },
+      "population": 967,
+      "surface": 1577.26,
+      "radius": 2.24
+    },
+    {
+      "nom": "Moulidars",
+      "code": "16234",
+      "codesPostaux": ["16290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0428, 45.6678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0387, 45.6614]
+      },
+      "population": 664,
+      "surface": 1723.37,
+      "radius": 2.34
+    },
+    {
+      "nom": "Moulins-sur-Tardoire",
+      "code": "16406",
+      "codesPostaux": ["16110", "16220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4037, 45.6883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4194, 45.6807]
+      },
+      "population": 804,
+      "surface": 2217.57,
+      "radius": 2.66
+    },
+    {
+      "nom": "Mouthiers-sur-Boëme",
+      "code": "16236",
+      "codesPostaux": ["16440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1252, 45.5571]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1244, 45.5535]
+      },
+      "population": 2358,
+      "surface": 3486.65,
+      "radius": 3.33
+    },
+    {
+      "nom": "Mouton",
+      "code": "16237",
+      "codesPostaux": ["16460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2358, 45.8887]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2397, 45.8903]
+      },
+      "population": 223,
+      "surface": 907.09,
+      "radius": 1.7
+    },
+    {
+      "nom": "Mouzon",
+      "code": "16239",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6136, 45.7965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6152, 45.8054]
+      },
+      "population": 140,
+      "surface": 1070.8,
+      "radius": 1.85
+    },
+    {
+      "nom": "Nabinaud",
+      "code": "16240",
+      "codesPostaux": ["16390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2092, 45.2919]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2037, 45.2862]
+      },
+      "population": 99,
+      "surface": 592.76,
+      "radius": 1.37
+    },
+    {
+      "nom": "Nanclars",
+      "code": "16241",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2226, 45.8446]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2208, 45.843]
+      },
+      "population": 210,
+      "surface": 580.65,
+      "radius": 1.36
+    },
+    {
+      "nom": "Nanteuil-en-Vallée",
+      "code": "16242",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3208, 46.0091]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3214, 46.0007]
+      },
+      "population": 1357,
+      "surface": 6871.41,
+      "radius": 4.68
+    },
+    {
+      "nom": "Nercillac",
+      "code": "16243",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2676, 45.7255]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2457, 45.713]
+      },
+      "population": 1036,
+      "surface": 1638.34,
+      "radius": 2.28
+    },
+    {
+      "nom": "Nersac",
+      "code": "16244",
+      "codesPostaux": ["16440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0677, 45.6235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0508, 45.6256]
+      },
+      "population": 2258,
+      "surface": 925.72,
+      "radius": 1.72
+    },
+    {
+      "nom": "Nieuil",
+      "code": "16245",
+      "codesPostaux": ["16270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5217, 45.8846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5011, 45.8795]
+      },
+      "population": 889,
+      "surface": 2380.23,
+      "radius": 2.75
+    },
+    {
+      "nom": "Nonac",
+      "code": "16246",
+      "codesPostaux": ["16190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0549, 45.4176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0553, 45.4196]
+      },
+      "population": 258,
+      "surface": 2104.4,
+      "radius": 2.59
+    },
+    {
+      "nom": "Oradour",
+      "code": "16248",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0379, 45.9134]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0327, 45.9072]
+      },
+      "population": 155,
+      "surface": 1447.35,
+      "radius": 2.15
+    },
+    {
+      "nom": "Oradour-Fanais",
+      "code": "16249",
+      "codesPostaux": ["16500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7818, 46.1126]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7829, 46.1202]
+      },
+      "population": 341,
+      "surface": 2642.09,
+      "radius": 2.9
+    },
+    {
+      "nom": "Orgedeuil",
+      "code": "16250",
+      "codesPostaux": ["16220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4867, 45.7016]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4914, 45.6897]
+      },
+      "population": 208,
+      "surface": 1041.98,
+      "radius": 1.82
+    },
+    {
+      "nom": "Oriolles",
+      "code": "16251",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1434, 45.355]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.128, 45.3624]
+      },
+      "population": 245,
+      "surface": 1833.3,
+      "radius": 2.42
+    },
+    {
+      "nom": "Orival",
+      "code": "16252",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0716, 45.2836]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0717, 45.2768]
+      },
+      "population": 150,
+      "surface": 546.93,
+      "radius": 1.32
+    },
+    {
+      "nom": "Paizay-Naudouin-Embourie",
+      "code": "16253",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0071, 46.0318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0033, 46.0301]
+      },
+      "population": 351,
+      "surface": 2582.46,
+      "radius": 2.87
+    },
+    {
+      "nom": "Palluaud",
+      "code": "16254",
+      "codesPostaux": ["16390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.241, 45.3463]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2485, 45.3482]
+      },
+      "population": 214,
+      "surface": 862.33,
+      "radius": 1.66
+    },
+    {
+      "nom": "Parzac",
+      "code": "16255",
+      "codesPostaux": ["16450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4221, 45.9264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4146, 45.9333]
+      },
+      "population": 141,
+      "surface": 1134.03,
+      "radius": 1.9
+    },
+    {
+      "nom": "Passirac",
+      "code": "16256",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0608, 45.343]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0637, 45.346]
+      },
+      "population": 251,
+      "surface": 1470.22,
+      "radius": 2.16
+    },
+    {
+      "nom": "Pérignac",
+      "code": "16258",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0813, 45.4649]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0769, 45.4639]
+      },
+      "population": 496,
+      "surface": 2550.23,
+      "radius": 2.85
+    },
+    {
+      "nom": "Pillac",
+      "code": "16260",
+      "codesPostaux": ["16390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1773, 45.326]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1905, 45.3221]
+      },
+      "population": 253,
+      "surface": 1963.3,
+      "radius": 2.5
+    },
+    {
+      "nom": "Plassac-Rouffiac",
+      "code": "16263",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0769, 45.5251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0635, 45.5271]
+      },
+      "population": 379,
+      "surface": 1202.26,
+      "radius": 1.96
+    },
+    {
+      "nom": "Pleuville",
+      "code": "16264",
+      "codesPostaux": ["16490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4916, 46.0952]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4952, 46.0901]
+      },
+      "population": 314,
+      "surface": 3339.03,
+      "radius": 3.26
+    },
+    {
+      "nom": "Poullignac",
+      "code": "16267",
+      "codesPostaux": ["16190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0087, 45.3969]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.02, 45.3993]
+      },
+      "population": 105,
+      "surface": 899.03,
+      "radius": 1.69
+    },
+    {
+      "nom": "Poursac",
+      "code": "16268",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2649, 45.9607]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2601, 45.9602]
+      },
+      "population": 195,
+      "surface": 1143.44,
+      "radius": 1.91
+    },
+    {
+      "nom": "Pranzac",
+      "code": "16269",
+      "codesPostaux": ["16110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3475, 45.6745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3523, 45.6695]
+      },
+      "population": 885,
+      "surface": 1510.27,
+      "radius": 2.19
+    },
+    {
+      "nom": "Pressignac",
+      "code": "16270",
+      "codesPostaux": ["16150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7371, 45.8177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7423, 45.8263]
+      },
+      "population": 379,
+      "surface": 2810.1,
+      "radius": 2.99
+    },
+    {
+      "nom": "Puymoyen",
+      "code": "16271",
+      "codesPostaux": ["16400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1704, 45.611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1805, 45.6146]
+      },
+      "population": 2394,
+      "surface": 741.74,
+      "radius": 1.54
+    },
+    {
+      "nom": "Puyréaux",
+      "code": "16272",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2121, 45.8636]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2117, 45.8615]
+      },
+      "population": 571,
+      "surface": 814.18,
+      "radius": 1.61
+    },
+    {
+      "nom": "Raix",
+      "code": "16273",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1167, 46.003]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1133, 46.0005]
+      },
+      "population": 116,
+      "surface": 691.91,
+      "radius": 1.48
+    },
+    {
+      "nom": "Ranville-Breuillaud",
+      "code": "16275",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1206, 45.9103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1159, 45.9021]
+      },
+      "population": 164,
+      "surface": 1287.44,
+      "radius": 2.02
+    },
+    {
+      "nom": "Reignac",
+      "code": "16276",
+      "codesPostaux": ["16360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1752, 45.4271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1831, 45.4232]
+      },
+      "population": 715,
+      "surface": 2200.18,
+      "radius": 2.65
+    },
+    {
+      "nom": "Réparsac",
+      "code": "16277",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2537, 45.7354]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2372, 45.7303]
+      },
+      "population": 617,
+      "surface": 1117.66,
+      "radius": 1.89
+    },
+    {
+      "nom": "Rioux-Martin",
+      "code": "16279",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0055, 45.2445]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0013, 45.2459]
+      },
+      "population": 221,
+      "surface": 1465.66,
+      "radius": 2.16
+    },
+    {
+      "nom": "Rivières",
+      "code": "16280",
+      "codesPostaux": ["16110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3492, 45.7657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.361, 45.7522]
+      },
+      "population": 2023,
+      "surface": 2174.96,
+      "radius": 2.63
+    },
+    {
+      "nom": "Ronsenac",
+      "code": "16283",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2425, 45.4566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.249, 45.4765]
+      },
+      "population": 571,
+      "surface": 2663.94,
+      "radius": 2.91
+    },
+    {
+      "nom": "Rouffiac",
+      "code": "16284",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1007, 45.2634]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0815, 45.2683]
+      },
+      "population": 119,
+      "surface": 982.38,
+      "radius": 1.77
+    },
+    {
+      "nom": "Rougnac",
+      "code": "16285",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3539, 45.5376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3588, 45.5355]
+      },
+      "population": 398,
+      "surface": 2992.17,
+      "radius": 3.09
+    },
+    {
+      "nom": "Rouillac",
+      "code": "16286",
+      "codesPostaux": ["16170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0729, 45.7937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0642, 45.7754]
+      },
+      "population": 2909,
+      "surface": 5685.19,
+      "radius": 4.25
+    },
+    {
+      "nom": "Roullet-Saint-Estèphe",
+      "code": "16287",
+      "codesPostaux": ["16440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0312, 45.5776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.047, 45.5835]
+      },
+      "population": 4334,
+      "surface": 4174.32,
+      "radius": 3.65
+    },
+    {
+      "nom": "Roussines",
+      "code": "16289",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.622, 45.7227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6187, 45.7254]
+      },
+      "population": 298,
+      "surface": 1603.5,
+      "radius": 2.26
+    },
+    {
+      "nom": "Rouzède",
+      "code": "16290",
+      "codesPostaux": ["16220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5664, 45.7146]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5542, 45.7078]
+      },
+      "population": 232,
+      "surface": 1441.34,
+      "radius": 2.14
+    },
+    {
+      "nom": "Ruelle-sur-Touvre",
+      "code": "16291",
+      "codesPostaux": ["16600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2252, 45.6865]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2303, 45.6788]
+      },
+      "population": 7396,
+      "surface": 1062.43,
+      "radius": 1.84
+    },
+    {
+      "nom": "Ruffec",
+      "code": "16292",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1991, 46.0383]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1993, 46.0284]
+      },
+      "population": 3394,
+      "surface": 1351.43,
+      "radius": 2.07
+    },
+    {
+      "nom": "Saint-Adjutory",
+      "code": "16293",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.481, 45.7694]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4722, 45.7651]
+      },
+      "population": 493,
+      "surface": 1421.43,
+      "radius": 2.13
+    },
+    {
+      "nom": "Saint-Amant-de-Boixe",
+      "code": "16295",
+      "codesPostaux": ["16330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1347, 45.8061]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1335, 45.7969]
+      },
+      "population": 1327,
+      "surface": 2252,
+      "radius": 2.68
+    },
+    {
+      "nom": "Saint-Amant-de-Nouère",
+      "code": "16298",
+      "codesPostaux": ["16170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.008, 45.7344]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0027, 45.7453]
+      },
+      "population": 350,
+      "surface": 1119.7,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Aulais-la-Chapelle",
+      "code": "16301",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.048, 45.4463]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0494, 45.4476]
+      },
+      "population": 218,
+      "surface": 1480.87,
+      "radius": 2.17
+    },
+    {
+      "nom": "Saint-Avit",
+      "code": "16302",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0442, 45.2435]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0544, 45.247]
+      },
+      "population": 219,
+      "surface": 367.4,
+      "radius": 1.08
+    },
+    {
+      "nom": "Saint-Bonnet",
+      "code": "16303",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0895, 45.4701]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0967, 45.4799]
+      },
+      "population": 407,
+      "surface": 1779.63,
+      "radius": 2.38
+    },
+    {
+      "nom": "Saint-Brice",
+      "code": "16304",
+      "codesPostaux": ["16100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2674, 45.6891]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2769, 45.6876]
+      },
+      "population": 969,
+      "surface": 934.78,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saint-Christophe",
+      "code": "16306",
+      "codesPostaux": ["16420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8565, 46.0028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8483, 46.0039]
+      },
+      "population": 323,
+      "surface": 2335.28,
+      "radius": 2.73
+    },
+    {
+      "nom": "Saint-Ciers-sur-Bonnieure",
+      "code": "16307",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2435, 45.859]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2433, 45.8592]
+      },
+      "population": 313,
+      "surface": 1039.44,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-Claud",
+      "code": "16308",
+      "codesPostaux": ["16450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4834, 45.8971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4639, 45.8942]
+      },
+      "population": 1033,
+      "surface": 2671.42,
+      "radius": 2.92
+    },
+    {
+      "nom": "Saint-Coutant",
+      "code": "16310",
+      "codesPostaux": ["16350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4641, 45.9923]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4593, 45.9951]
+      },
+      "population": 212,
+      "surface": 1954.08,
+      "radius": 2.49
+    },
+    {
+      "nom": "Saint-Cybardeaux",
+      "code": "16312",
+      "codesPostaux": ["16170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0257, 45.7727]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0226, 45.7697]
+      },
+      "population": 796,
+      "surface": 2100,
+      "radius": 2.59
+    },
+    {
+      "nom": "Saint-Félix",
+      "code": "16315",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0123, 45.3692]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0094, 45.3736]
+      },
+      "population": 102,
+      "surface": 811.51,
+      "radius": 1.61
+    },
+    {
+      "nom": "Saint-Fort-sur-le-Né",
+      "code": "16316",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3072, 45.5817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3049, 45.5772]
+      },
+      "population": 380,
+      "surface": 675.79,
+      "radius": 1.47
+    },
+    {
+      "nom": "Saint-Fraigne",
+      "code": "16317",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0159, 45.9501]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.009, 45.9527]
+      },
+      "population": 429,
+      "surface": 3223.59,
+      "radius": 3.2
+    },
+    {
+      "nom": "Saint-Front",
+      "code": "16318",
+      "codesPostaux": ["16460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2831, 45.8969]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2885, 45.894]
+      },
+      "population": 358,
+      "surface": 1330.55,
+      "radius": 2.06
+    },
+    {
+      "nom": "Saint-Genis-d'Hiersac",
+      "code": "16320",
+      "codesPostaux": ["16570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0438, 45.7493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0297, 45.7505]
+      },
+      "population": 915,
+      "surface": 1930.48,
+      "radius": 2.48
+    },
+    {
+      "nom": "Saint-Georges",
+      "code": "16321",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2701, 45.9751]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2735, 45.9739]
+      },
+      "population": 44,
+      "surface": 222.19,
+      "radius": 0.84
+    },
+    {
+      "nom": "Saint-Germain-de-Montbron",
+      "code": "16323",
+      "codesPostaux": ["16380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4129, 45.6357]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4201, 45.6241]
+      },
+      "population": 488,
+      "surface": 1500.3,
+      "radius": 2.19
+    },
+    {
+      "nom": "Saint-Gourson",
+      "code": "16325",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.309, 45.951]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3218, 45.9494]
+      },
+      "population": 131,
+      "surface": 1006.03,
+      "radius": 1.79
+    },
+    {
+      "nom": "Saint-Groux",
+      "code": "16326",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1587, 45.8904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1685, 45.8966]
+      },
+      "population": 130,
+      "surface": 449.68,
+      "radius": 1.2
+    },
+    {
+      "nom": "Saint-Laurent-de-Céris",
+      "code": "16329",
+      "codesPostaux": ["16450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4977, 45.9461]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.479, 45.9419]
+      },
+      "population": 726,
+      "surface": 2974.44,
+      "radius": 3.08
+    },
+    {
+      "nom": "Saint-Laurent-de-Cognac",
+      "code": "16330",
+      "codesPostaux": ["16100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3958, 45.695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4083, 45.6964]
+      },
+      "population": 832,
+      "surface": 1087.83,
+      "radius": 1.86
+    },
+    {
+      "nom": "Saint-Laurent-des-Combes",
+      "code": "16331",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0353, 45.3537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0373, 45.3564]
+      },
+      "population": 94,
+      "surface": 771.52,
+      "radius": 1.57
+    },
+    {
+      "nom": "Saint-Martial",
+      "code": "16334",
+      "codesPostaux": ["16190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0638, 45.3715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0571, 45.3731]
+      },
+      "population": 121,
+      "surface": 932.07,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saint-Martin-du-Clocher",
+      "code": "16335",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1477, 46.0678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1542, 46.0617]
+      },
+      "population": 124,
+      "surface": 681.35,
+      "radius": 1.47
+    },
+    {
+      "nom": "Saint-Mary",
+      "code": "16336",
+      "codesPostaux": ["16260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3619, 45.8457]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3883, 45.8329]
+      },
+      "population": 350,
+      "surface": 2176.95,
+      "radius": 2.63
+    },
+    {
+      "nom": "Saint-Maurice-des-Lions",
+      "code": "16337",
+      "codesPostaux": ["16500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7026, 45.9634]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6991, 45.9645]
+      },
+      "population": 896,
+      "surface": 5003.99,
+      "radius": 3.99
+    },
+    {
+      "nom": "Saint-Médard",
+      "code": "16338",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1322, 45.507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.136, 45.5115]
+      },
+      "population": 306,
+      "surface": 830.53,
+      "radius": 1.63
+    },
+    {
+      "nom": "Saint-Même-les-Carrières",
+      "code": "16340",
+      "codesPostaux": ["16720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1435, 45.6455]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1401, 45.6438]
+      },
+      "population": 1029,
+      "surface": 1515.29,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Michel",
+      "code": "16341",
+      "codesPostaux": ["16470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.111, 45.64]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1067, 45.6416]
+      },
+      "population": 3220,
+      "surface": 248.68,
+      "radius": 0.89
+    },
+    {
+      "nom": "Saint-Palais-du-Né",
+      "code": "16342",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2852, 45.542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.266, 45.5415]
+      },
+      "population": 305,
+      "surface": 1367,
+      "radius": 2.09
+    },
+    {
+      "nom": "Saint-Preuil",
+      "code": "16343",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1773, 45.6001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1709, 45.5958]
+      },
+      "population": 302,
+      "surface": 1253.97,
+      "radius": 2
+    },
+    {
+      "nom": "Saint-Quentin-de-Chalais",
+      "code": "16346",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0769, 45.2452]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.068, 45.2577]
+      },
+      "population": 243,
+      "surface": 1245.94,
+      "radius": 1.99
+    },
+    {
+      "nom": "Saint-Quentin-sur-Charente",
+      "code": "16345",
+      "codesPostaux": ["16150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6768, 45.8392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6699, 45.8392]
+      },
+      "population": 202,
+      "surface": 1446.8,
+      "radius": 2.15
+    },
+    {
+      "nom": "Saint-Romain",
+      "code": "16347",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1322, 45.2846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.147, 45.2768]
+      },
+      "population": 513,
+      "surface": 2295.79,
+      "radius": 2.7
+    },
+    {
+      "nom": "Saint-Saturnin",
+      "code": "16348",
+      "codesPostaux": ["16290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0424, 45.6702]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0439, 45.66]
+      },
+      "population": 1273,
+      "surface": 1353.68,
+      "radius": 2.08
+    },
+    {
+      "nom": "Saint-Séverin",
+      "code": "16350",
+      "codesPostaux": ["16390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2427, 45.3118]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2546, 45.3123]
+      },
+      "population": 793,
+      "surface": 1503.12,
+      "radius": 2.19
+    },
+    {
+      "nom": "Saint-Simon",
+      "code": "16352",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0763, 45.6549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0801, 45.6511]
+      },
+      "population": 229,
+      "surface": 375.46,
+      "radius": 1.09
+    },
+    {
+      "nom": "Saint-Sornin",
+      "code": "16353",
+      "codesPostaux": ["16220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4453, 45.6954]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4382, 45.6923]
+      },
+      "population": 832,
+      "surface": 1126.64,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Sulpice-de-Ruffec",
+      "code": "16356",
+      "codesPostaux": ["16460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3191, 45.9369]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3134, 45.9394]
+      },
+      "population": 41,
+      "surface": 239.7,
+      "radius": 0.87
+    },
+    {
+      "nom": "Saint-Vallier",
+      "code": "16357",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0731, 45.2833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.063, 45.2922]
+      },
+      "population": 138,
+      "surface": 1825.36,
+      "radius": 2.41
+    },
+    {
+      "nom": "Saint-Yrieix-sur-Charente",
+      "code": "16358",
+      "codesPostaux": ["16710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.126, 45.6816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1275, 45.6753]
+      },
+      "population": 7556,
+      "surface": 1473.88,
+      "radius": 2.17
+    },
+    {
+      "nom": "Sainte-Sévère",
+      "code": "16349",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.257, 45.7674]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2374, 45.754]
+      },
+      "population": 509,
+      "surface": 1843.46,
+      "radius": 2.42
+    },
+    {
+      "nom": "Sainte-Souline",
+      "code": "16354",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0201, 45.3757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0199, 45.3796]
+      },
+      "population": 116,
+      "surface": 735.97,
+      "radius": 1.53
+    },
+    {
+      "nom": "Salles-d'Angles",
+      "code": "16359",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3481, 45.621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3328, 45.6174]
+      },
+      "population": 1007,
+      "surface": 2173.85,
+      "radius": 2.63
+    },
+    {
+      "nom": "Salles-de-Barbezieux",
+      "code": "16360",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1259, 45.4542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1302, 45.4507]
+      },
+      "population": 400,
+      "surface": 985.11,
+      "radius": 1.77
+    },
+    {
+      "nom": "Salles-de-Villefagnan",
+      "code": "16361",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1702, 45.9594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1631, 45.9585]
+      },
+      "population": 313,
+      "surface": 1302.75,
+      "radius": 2.04
+    },
+    {
+      "nom": "Salles-Lavalette",
+      "code": "16362",
+      "codesPostaux": ["16190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2336, 45.3867]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2331, 45.3834]
+      },
+      "population": 311,
+      "surface": 2047.97,
+      "radius": 2.55
+    },
+    {
+      "nom": "Saulgond",
+      "code": "16363",
+      "codesPostaux": ["16420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7839, 45.9532]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7848, 45.9502]
+      },
+      "population": 531,
+      "surface": 2739.72,
+      "radius": 2.95
+    },
+    {
+      "nom": "Sauvagnac",
+      "code": "16364",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6482, 45.7483]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6493, 45.7485]
+      },
+      "population": 68,
+      "surface": 727.59,
+      "radius": 1.52
+    },
+    {
+      "nom": "Sauvignac",
+      "code": "16365",
+      "codesPostaux": ["16480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0828, 45.2662]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0814, 45.2561]
+      },
+      "population": 98,
+      "surface": 1170.7,
+      "radius": 1.93
+    },
+    {
+      "nom": "Segonzac",
+      "code": "16366",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2124, 45.6142]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2183, 45.6178]
+      },
+      "population": 2093,
+      "surface": 3516.36,
+      "radius": 3.35
+    },
+    {
+      "nom": "Sers",
+      "code": "16368",
+      "codesPostaux": ["16410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3172, 45.582]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3222, 45.5987]
+      },
+      "population": 903,
+      "surface": 1419.5,
+      "radius": 2.13
+    },
+    {
+      "nom": "Sigogne",
+      "code": "16369",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1737, 45.7318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1588, 45.737]
+      },
+      "population": 965,
+      "surface": 2215.94,
+      "radius": 2.66
+    },
+    {
+      "nom": "Sireuil",
+      "code": "16370",
+      "codesPostaux": ["16440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0206, 45.6217]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.009, 45.6152]
+      },
+      "population": 1166,
+      "surface": 1007.11,
+      "radius": 1.79
+    },
+    {
+      "nom": "Souffrignac",
+      "code": "16372",
+      "codesPostaux": ["16380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.496, 45.5886]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5045, 45.5928]
+      },
+      "population": 149,
+      "surface": 947.09,
+      "radius": 1.74
+    },
+    {
+      "nom": "Souvigné",
+      "code": "16373",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0528, 45.9698]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0551, 45.9706]
+      },
+      "population": 182,
+      "surface": 1051.33,
+      "radius": 1.83
+    },
+    {
+      "nom": "Soyaux",
+      "code": "16374",
+      "codesPostaux": ["16800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2056, 45.6388]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1928, 45.6414]
+      },
+      "population": 10057,
+      "surface": 1275.71,
+      "radius": 2.02
+    },
+    {
+      "nom": "Suaux",
+      "code": "16375",
+      "codesPostaux": ["16260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5153, 45.8465]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5092, 45.8505]
+      },
+      "population": 380,
+      "surface": 1191.7,
+      "radius": 1.95
+    },
+    {
+      "nom": "Taizé-Aizie",
+      "code": "16378",
+      "codesPostaux": ["16700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2537, 46.0669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2398, 46.0634]
+      },
+      "population": 585,
+      "surface": 1486.82,
+      "radius": 2.18
+    },
+    {
+      "nom": "Taponnat-Fleurignac",
+      "code": "16379",
+      "codesPostaux": ["16110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4226, 45.7713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4091, 45.7795]
+      },
+      "population": 1530,
+      "surface": 2158.21,
+      "radius": 2.62
+    },
+    {
+      "nom": "Terres-de-Haute-Charente",
+      "code": "16192",
+      "codesPostaux": ["16270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.583, 45.8874]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.575, 45.8943]
+      },
+      "population": 3790,
+      "surface": 8655.55,
+      "radius": 5.25
+    },
+    {
+      "nom": "Theil-Rabier",
+      "code": "16381",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0418, 46.056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0356, 46.0508]
+      },
+      "population": 163,
+      "surface": 756.44,
+      "radius": 1.55
+    },
+    {
+      "nom": "Torsac",
+      "code": "16382",
+      "codesPostaux": ["16410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2082, 45.5664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2151, 45.5641]
+      },
+      "population": 724,
+      "surface": 2852.99,
+      "radius": 3.01
+    },
+    {
+      "nom": "Tourriers",
+      "code": "16383",
+      "codesPostaux": ["16560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1952, 45.79]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1926, 45.7957]
+      },
+      "population": 787,
+      "surface": 677.23,
+      "radius": 1.47
+    },
+    {
+      "nom": "Touvérac",
+      "code": "16384",
+      "codesPostaux": ["16360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2001, 45.3748]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2129, 45.381]
+      },
+      "population": 572,
+      "surface": 1829.01,
+      "radius": 2.41
+    },
+    {
+      "nom": "Touvre",
+      "code": "16385",
+      "codesPostaux": ["16600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2695, 45.6581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2593, 45.6607]
+      },
+      "population": 1146,
+      "surface": 916.83,
+      "radius": 1.71
+    },
+    {
+      "nom": "Triac-Lautrait",
+      "code": "16387",
+      "codesPostaux": ["16200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1193, 45.6811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1263, 45.6916]
+      },
+      "population": 462,
+      "surface": 649.09,
+      "radius": 1.44
+    },
+    {
+      "nom": "Trois-Palis",
+      "code": "16388",
+      "codesPostaux": ["16730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0481, 45.6384]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0534, 45.6427]
+      },
+      "population": 940,
+      "surface": 419.91,
+      "radius": 1.16
+    },
+    {
+      "nom": "Turgon",
+      "code": "16389",
+      "codesPostaux": ["16350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4101, 45.953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3974, 45.95]
+      },
+      "population": 81,
+      "surface": 723.95,
+      "radius": 1.52
+    },
+    {
+      "nom": "Tusson",
+      "code": "16390",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0734, 45.9304]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0677, 45.9342]
+      },
+      "population": 240,
+      "surface": 1398.56,
+      "radius": 2.11
+    },
+    {
+      "nom": "Val des Vignes",
+      "code": "16175",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0142, 45.5065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0386, 45.5349]
+      },
+      "population": 1358,
+      "surface": 5097.83,
+      "radius": 4.03
+    },
+    {
+      "nom": "Val-d'Auge",
+      "code": "16339",
+      "codesPostaux": ["16170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0866, 45.8397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0843, 45.847]
+      },
+      "population": 795,
+      "surface": 4485.67,
+      "radius": 3.78
+    },
+    {
+      "nom": "Val-de-Bonnieure",
+      "code": "16300",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2901, 45.8451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2872, 45.8488]
+      },
+      "population": 1339,
+      "surface": 2810.88,
+      "radius": 2.99
+    },
+    {
+      "nom": "Val-de-Cognac",
+      "code": "16097",
+      "codesPostaux": ["16370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.374, 45.748]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3568, 45.7441]
+      },
+      "population": 3455,
+      "surface": 6096.82,
+      "radius": 4.41
+    },
+    {
+      "nom": "Valence",
+      "code": "16392",
+      "codesPostaux": ["16460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3199, 45.8852]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3093, 45.8849]
+      },
+      "population": 190,
+      "surface": 1090.34,
+      "radius": 1.86
+    },
+    {
+      "nom": "Vaux-Lavalette",
+      "code": "16394",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2407, 45.4178]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.232, 45.4222]
+      },
+      "population": 79,
+      "surface": 678.33,
+      "radius": 1.47
+    },
+    {
+      "nom": "Vaux-Rouillac",
+      "code": "16395",
+      "codesPostaux": ["16170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0891, 45.7431]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0913, 45.7427]
+      },
+      "population": 295,
+      "surface": 1336.03,
+      "radius": 2.06
+    },
+    {
+      "nom": "Ventouse",
+      "code": "16396",
+      "codesPostaux": ["16460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3228, 45.9097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3262, 45.9039]
+      },
+      "population": 121,
+      "surface": 1010.25,
+      "radius": 1.79
+    },
+    {
+      "nom": "Verdille",
+      "code": "16397",
+      "codesPostaux": ["16140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0965, 45.8814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1061, 45.8831]
+      },
+      "population": 383,
+      "surface": 1444.84,
+      "radius": 2.14
+    },
+    {
+      "nom": "Verneuil",
+      "code": "16398",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6979, 45.7823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6932, 45.7816]
+      },
+      "population": 94,
+      "surface": 783.49,
+      "radius": 1.58
+    },
+    {
+      "nom": "Verrières",
+      "code": "16399",
+      "codesPostaux": ["16130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2619, 45.5605]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2669, 45.5706]
+      },
+      "population": 321,
+      "surface": 1340.63,
+      "radius": 2.07
+    },
+    {
+      "nom": "Verteuil-sur-Charente",
+      "code": "16400",
+      "codesPostaux": ["16510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2296, 45.9683]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2298, 45.9819]
+      },
+      "population": 588,
+      "surface": 1427.62,
+      "radius": 2.13
+    },
+    {
+      "nom": "Vervant",
+      "code": "16401",
+      "codesPostaux": ["16330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1318, 45.8335]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1241, 45.8334]
+      },
+      "population": 147,
+      "surface": 954.01,
+      "radius": 1.74
+    },
+    {
+      "nom": "Vibrac",
+      "code": "16402",
+      "codesPostaux": ["16120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0588, 45.6433]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0605, 45.6447]
+      },
+      "population": 294,
+      "surface": 283.57,
+      "radius": 0.95
+    },
+    {
+      "nom": "Vieux-Ruffec",
+      "code": "16404",
+      "codesPostaux": ["16350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3792, 46.0153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3857, 46.0102]
+      },
+      "population": 108,
+      "surface": 1278.69,
+      "radius": 2.02
+    },
+    {
+      "nom": "Vignolles",
+      "code": "16405",
+      "codesPostaux": ["16300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0997, 45.5086]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0888, 45.5104]
+      },
+      "population": 161,
+      "surface": 880.08,
+      "radius": 1.67
+    },
+    {
+      "nom": "Villebois-Lavalette",
+      "code": "16408",
+      "codesPostaux": ["16320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2818, 45.4781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2779, 45.4816]
+      },
+      "population": 718,
+      "surface": 717.83,
+      "radius": 1.51
+    },
+    {
+      "nom": "Villefagnan",
+      "code": "16409",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0939, 46.0088]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0802, 46.0134]
+      },
+      "population": 981,
+      "surface": 2400.16,
+      "radius": 2.76
+    },
+    {
+      "nom": "Villejoubert",
+      "code": "16412",
+      "codesPostaux": ["16560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1739, 45.8084]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1751, 45.8042]
+      },
+      "population": 367,
+      "surface": 788.68,
+      "radius": 1.58
+    },
+    {
+      "nom": "Villiers-le-Roux",
+      "code": "16413",
+      "codesPostaux": ["16240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1115, 46.0497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1099, 46.0473]
+      },
+      "population": 159,
+      "surface": 495.59,
+      "radius": 1.26
+    },
+    {
+      "nom": "Villognon",
+      "code": "16414",
+      "codesPostaux": ["16230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1059, 45.8614]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.098, 45.8611]
+      },
+      "population": 332,
+      "surface": 917.85,
+      "radius": 1.71
+    },
+    {
+      "nom": "Vindelle",
+      "code": "16415",
+      "codesPostaux": ["16430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1086, 45.7195]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1213, 45.7196]
+      },
+      "population": 1044,
+      "surface": 1100.03,
+      "radius": 1.87
+    },
+    {
+      "nom": "Vitrac-Saint-Vincent",
+      "code": "16416",
+      "codesPostaux": ["16310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4972, 45.8011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4947, 45.7958]
+      },
+      "population": 494,
+      "surface": 2229.3,
+      "radius": 2.66
+    },
+    {
+      "nom": "Vœuil-et-Giget",
+      "code": "16418",
+      "codesPostaux": ["16400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1591, 45.5908]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1546, 45.5852]
+      },
+      "population": 1594,
+      "surface": 852.91,
+      "radius": 1.65
+    },
+    {
+      "nom": "Vouharte",
+      "code": "16419",
+      "codesPostaux": ["16330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0777, 45.8042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0734, 45.8152]
+      },
+      "population": 312,
+      "surface": 1075.03,
+      "radius": 1.85
+    },
+    {
+      "nom": "Voulgézac",
+      "code": "16420",
+      "codesPostaux": ["16250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1304, 45.5091]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1203, 45.5121]
+      },
+      "population": 242,
+      "surface": 1341.28,
+      "radius": 2.07
+    },
+    {
+      "nom": "Vouthon",
+      "code": "16421",
+      "codesPostaux": ["16220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4482, 45.6591]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4581, 45.6692]
+      },
+      "population": 408,
+      "surface": 1044.68,
+      "radius": 1.82
+    },
+    {
+      "nom": "Vouzan",
+      "code": "16422",
+      "codesPostaux": ["16410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3652, 45.5967]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3554, 45.6021]
+      },
+      "population": 822,
+      "surface": 1633.33,
+      "radius": 2.28
+    },
+    {
+      "nom": "Xambes",
+      "code": "16423",
+      "codesPostaux": ["16330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1081, 45.8253]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1044, 45.8257]
+      },
+      "population": 235,
+      "surface": 533.37,
+      "radius": 1.3
+    },
+    {
+      "nom": "Yviers",
+      "code": "16424",
+      "codesPostaux": ["16210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0191, 45.2711]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0067, 45.2745]
+      },
+      "population": 536,
+      "surface": 2276.88,
+      "radius": 2.69
+    },
+    {
+      "nom": "Yvrac-et-Malleyrand",
+      "code": "16425",
+      "codesPostaux": ["16110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4619, 45.7324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4479, 45.7502]
+      },
+      "population": 562,
+      "surface": 1894.4,
+      "radius": 2.46
+    }
+  ],
+  "postalCodes": {
+    "16000": {
+      "communes": ["Angoulême"],
+      "communeCount": 1,
+      "center": [0.1561, 45.6484],
+      "coverageRadius": 2.63,
+      "totalPopulation": 41423,
+      "totalSurface": 2174
+    },
+    "16100": {
+      "communes": [
+        "Boutiers-Saint-Trojan",
+        "Châteaubernard",
+        "Cognac",
+        "Javrezac",
+        "Louzac-Saint-André",
+        "Merpins",
+        "Saint-Brice",
+        "Saint-Laurent-de-Cognac"
+      ],
+      "communeCount": 8,
+      "center": [-0.3287, 45.6946],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 45.6739,
+        "maxLat": 45.7139,
+        "minLon": -0.412,
+        "maxLon": -0.2769
+      },
+      "totalPopulation": 28080,
+      "totalSurface": 8003
+    },
+    "16110": {
+      "communes": [
+        "Agris",
+        "Bunzac",
+        "Marillac-le-Franc",
+        "Pranzac",
+        "Rivières",
+        "La Rochefoucauld-en-Angoumois",
+        "La Rochette",
+        "Taponnat-Fleurignac",
+        "Moulins-sur-Tardoire",
+        "Yvrac-et-Malleyrand"
+      ],
+      "communeCount": 10,
+      "center": [0.3822, 45.7412],
+      "coverageRadius": 8.6,
+      "boundingBox": {
+        "minLat": 45.6695,
+        "maxLat": 45.8009,
+        "minLon": 0.3132,
+        "maxLon": 0.4479
+      },
+      "totalPopulation": 12500,
+      "totalSurface": 18153
+    },
+    "16120": {
+      "communes": [
+        "Angeac-Charente",
+        "Bassac",
+        "Birac",
+        "Bonneuil",
+        "Bouteville",
+        "Châteauneuf-sur-Charente",
+        "Ladiville",
+        "Bellevigne",
+        "Mosnac-Saint-Simeux",
+        "Graves-Saint-Amant",
+        "Saint-Simon",
+        "Vibrac"
+      ],
+      "communeCount": 12,
+      "center": [-0.0694, 45.6012],
+      "coverageRadius": 9.7,
+      "boundingBox": {
+        "minLat": 45.5146,
+        "maxLat": 45.6631,
+        "minLon": -0.1411,
+        "maxLon": -0.0191
+      },
+      "totalPopulation": 8547,
+      "totalSurface": 16277
+    },
+    "16130": {
+      "communes": [
+        "Angeac-Champagne",
+        "Ars",
+        "Gensac-la-Pallue",
+        "Genté",
+        "Gimeux",
+        "Juillac-le-Coq",
+        "Lignières-Ambleville",
+        "Saint-Fort-sur-le-Né",
+        "Saint-Preuil",
+        "Salles-d'Angles",
+        "Segonzac",
+        "Verrières"
+      ],
+      "communeCount": 12,
+      "center": [-0.2746, 45.617],
+      "coverageRadius": 9.8,
+      "boundingBox": {
+        "minLat": 45.558,
+        "maxLat": 45.6513,
+        "minLon": -0.3824,
+        "maxLon": -0.1709
+      },
+      "totalPopulation": 9917,
+      "totalSurface": 18998
+    },
+    "16140": {
+      "communes": [
+        "Aigre",
+        "Ambérac",
+        "Barbezières",
+        "Bessé",
+        "La Chapelle",
+        "Charmé",
+        "Ébréon",
+        "Fouqueure",
+        "Les Gours",
+        "Ligné",
+        "Lupsault",
+        "Marcillac-Lanville",
+        "Mons",
+        "Oradour",
+        "Ranville-Breuillaud",
+        "Saint-Fraigne",
+        "Tusson",
+        "Verdille"
+      ],
+      "communeCount": 18,
+      "center": [0.0127, 45.8987],
+      "coverageRadius": 10.2,
+      "boundingBox": {
+        "minLat": 45.8381,
+        "maxLat": 45.9619,
+        "minLon": -0.1159,
+        "maxLon": 0.1165
+      },
+      "totalPopulation": 5728,
+      "totalSurface": 25665
+    },
+    "16150": {
+      "communes": [
+        "Chabanais",
+        "Chabrac",
+        "Chassenon",
+        "Chirac",
+        "Étagnac",
+        "Exideuil-sur-Vienne",
+        "Pressignac",
+        "Saint-Quentin-sur-Charente"
+      ],
+      "communeCount": 8,
+      "center": [0.7214, 45.8836],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 45.8263,
+        "maxLat": 45.9349,
+        "minLon": 0.657,
+        "maxLon": 0.7789
+      },
+      "totalPopulation": 6396,
+      "totalSurface": 18822
+    },
+    "16160": {
+      "communes": ["Gond-Pontouvre"],
+      "communeCount": 1,
+      "center": [0.1664, 45.6692],
+      "coverageRadius": 1.54,
+      "totalPopulation": 5884,
+      "totalSurface": 745
+    },
+    "16170": {
+      "communes": [
+        "Échallat",
+        "Genac-Bignac",
+        "Mareuil",
+        "Rouillac",
+        "Saint-Amant-de-Nouère",
+        "Saint-Cybardeaux",
+        "Val-d'Auge",
+        "Vaux-Rouillac"
+      ],
+      "communeCount": 8,
+      "center": [-0.0501, 45.7794],
+      "coverageRadius": 8,
+      "boundingBox": {
+        "minLat": 45.7227,
+        "maxLat": 45.847,
+        "minLon": -0.1418,
+        "maxLon": 0.0256
+      },
+      "totalPopulation": 6992,
+      "totalSurface": 20778
+    },
+    "16190": {
+      "communes": [
+        "Bors (Canton de Tude-et-Lavalette)",
+        "Courgeac",
+        "Deviat",
+        "Juignac",
+        "Montmoreau",
+        "Nonac",
+        "Poullignac",
+        "Saint-Martial",
+        "Salles-Lavalette"
+      ],
+      "communeCount": 9,
+      "center": [0.1274, 45.3924],
+      "coverageRadius": 11.6,
+      "boundingBox": {
+        "minLat": 45.3465,
+        "maxLat": 45.4196,
+        "minLon": -0.02,
+        "maxLon": 0.2331
+      },
+      "totalPopulation": 4137,
+      "totalSurface": 19231
+    },
+    "16200": {
+      "communes": [
+        "Bourg-Charente",
+        "Chassors",
+        "Courbillac",
+        "Fleurac",
+        "Foussignac",
+        "Mainxe-Gondeville",
+        "Houlette",
+        "Jarnac",
+        "Julienne",
+        "Mérignac",
+        "Les Métairies",
+        "Nercillac",
+        "Réparsac",
+        "Sainte-Sévère",
+        "Sigogne",
+        "Triac-Lautrait"
+      ],
+      "communeCount": 16,
+      "center": [-0.1781, 45.7033],
+      "coverageRadius": 7.6,
+      "boundingBox": {
+        "minLat": 45.671,
+        "maxLat": 45.7689,
+        "minLon": -0.2457,
+        "maxLon": -0.0814
+      },
+      "totalPopulation": 15305,
+      "totalSurface": 19443
+    },
+    "16210": {
+      "communes": [
+        "Bardenac",
+        "Bazac",
+        "Bellon",
+        "Brie-sous-Chalais",
+        "Chalais",
+        "Courlac",
+        "Curac",
+        "Les Essards",
+        "Médillac",
+        "Orival",
+        "Rioux-Martin",
+        "Rouffiac",
+        "Saint-Avit",
+        "Saint-Quentin-de-Chalais",
+        "Saint-Romain",
+        "Yviers"
+      ],
+      "communeCount": 16,
+      "center": [0.0495, 45.2706],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 45.2225,
+        "maxLat": 45.3149,
+        "minLon": -0.0145,
+        "maxLon": 0.147
+      },
+      "totalPopulation": 4961,
+      "totalSurface": 16846
+    },
+    "16220": {
+      "communes": [
+        "Écuras",
+        "Eymouthiers",
+        "Montbron",
+        "Orgedeuil",
+        "Rouzède",
+        "Saint-Sornin",
+        "Moulins-sur-Tardoire",
+        "Vouthon"
+      ],
+      "communeCount": 8,
+      "center": [0.4862, 45.6763],
+      "coverageRadius": 6.5,
+      "boundingBox": {
+        "minLat": 45.6422,
+        "maxLat": 45.7078,
+        "minLon": 0.4194,
+        "maxLon": 0.5672
+      },
+      "totalPopulation": 5346,
+      "totalSurface": 14490
+    },
+    "16230": {
+      "communes": [
+        "Cellettes",
+        "Fontenille",
+        "Juillé",
+        "Lonnes",
+        "Luxé",
+        "Maine-de-Boixe",
+        "Mansle-les-Fontaines",
+        "Nanclars",
+        "Puyréaux",
+        "Val-de-Bonnieure",
+        "Saint-Ciers-sur-Bonnieure",
+        "Saint-Groux",
+        "Villognon"
+      ],
+      "communeCount": 13,
+      "center": [0.1921, 45.8723],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 45.843,
+        "maxLat": 45.9389,
+        "minLon": 0.098,
+        "maxLon": 0.2872
+      },
+      "totalPopulation": 7290,
+      "totalSurface": 13410
+    },
+    "16240": {
+      "communes": [
+        "Brettes",
+        "La Chèvrerie",
+        "Courcôme",
+        "Empuré",
+        "La Forêt-de-Tessé",
+        "Longré",
+        "La Magdeleine",
+        "Montjean",
+        "Paizay-Naudouin-Embourie",
+        "Raix",
+        "Souvigné",
+        "Theil-Rabier",
+        "Villefagnan",
+        "Villiers-le-Roux"
+      ],
+      "communeCount": 14,
+      "center": [0.0804, 46.02],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 45.9706,
+        "maxLat": 46.0879,
+        "minLon": -0.0137,
+        "maxLon": 0.1357
+      },
+      "totalPopulation": 3917,
+      "totalSurface": 17594
+    },
+    "16250": {
+      "communes": [
+        "Bécheresse",
+        "Bessac",
+        "Coteaux-du-Blanzacais",
+        "Chadurie",
+        "Champagne-Vigny",
+        "Étriac",
+        "Val des Vignes",
+        "Pérignac",
+        "Plassac-Rouffiac",
+        "Voulgézac"
+      ],
+      "communeCount": 10,
+      "center": [0.0349, 45.5033],
+      "coverageRadius": 9.2,
+      "boundingBox": {
+        "minLat": 45.4299,
+        "maxLat": 45.5349,
+        "minLon": -0.0386,
+        "maxLon": 0.1376
+      },
+      "totalPopulation": 4830,
+      "totalSurface": 17927
+    },
+    "16260": {
+      "communes": ["Cellefrouin", "Chasseneuil-sur-Bonnieure", "Les Pins", "Saint-Mary", "Suaux", "La Tâche"],
+      "communeCount": 6,
+      "center": [0.4351, 45.8349],
+      "coverageRadius": 7.3,
+      "boundingBox": {
+        "minLat": 45.8193,
+        "maxLat": 45.8909,
+        "minLon": 0.3552,
+        "maxLon": 0.5092
+      },
+      "totalPopulation": 5019,
+      "totalSurface": 13526
+    },
+    "16270": {
+      "communes": ["Terres-de-Haute-Charente", "Nieuil"],
+      "communeCount": 2,
+      "center": [0.561, 45.8915],
+      "coverageRadius": 4.9,
+      "boundingBox": {
+        "minLat": 45.8795,
+        "maxLat": 45.8943,
+        "minLon": 0.5011,
+        "maxLon": 0.575
+      },
+      "totalPopulation": 4679,
+      "totalSurface": 11036
+    },
+    "16290": {
+      "communes": ["Asnières-sur-Nouère", "Champmillon", "Douzat", "Hiersac", "Moulidars", "Saint-Saturnin"],
+      "communeCount": 6,
+      "center": [0.0184, 45.6764],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": 45.6388,
+        "maxLat": 45.7121,
+        "minLon": -0.0387,
+        "maxLon": 0.0482
+      },
+      "totalPopulation": 5322,
+      "totalSurface": 8078
+    },
+    "16300": {
+      "communes": [
+        "Angeduc",
+        "Barbezieux-Saint-Hilaire",
+        "Barret",
+        "Brie-sous-Barbezieux",
+        "Challignac",
+        "Criteuil-la-Magdeleine",
+        "Guimps",
+        "Lachaise",
+        "Lagarde-sur-le-Né",
+        "Lignières-Ambleville",
+        "Montmérac",
+        "Saint-Aulais-la-Chapelle",
+        "Saint-Bonnet",
+        "Saint-Médard",
+        "Saint-Palais-du-Né",
+        "Salles-de-Barbezieux",
+        "Vignolles"
+      ],
+      "communeCount": 17,
+      "center": [-0.1662, 45.4821],
+      "coverageRadius": 12,
+      "boundingBox": {
+        "minLat": 45.4152,
+        "maxLat": 45.558,
+        "minLon": -0.266,
+        "maxLon": -0.04
+      },
+      "totalPopulation": 11041,
+      "totalSurface": 23171
+    },
+    "16310": {
+      "communes": [
+        "Cherves-Châtelars",
+        "Lésignac-Durand",
+        "Le Lindois",
+        "Massignac",
+        "Mazerolles",
+        "Montembœuf",
+        "Mouzon",
+        "Roussines",
+        "Saint-Adjutory",
+        "Sauvagnac",
+        "Verneuil",
+        "Vitrac-Saint-Vincent"
+      ],
+      "communeCount": 12,
+      "center": [0.5622, 45.7748],
+      "coverageRadius": 10.2,
+      "boundingBox": {
+        "minLat": 45.7254,
+        "maxLat": 45.8115,
+        "minLon": 0.4722,
+        "maxLon": 0.6932
+      },
+      "totalPopulation": 3843,
+      "totalSurface": 20453
+    },
+    "16320": {
+      "communes": [
+        "Blanzaguet-Saint-Cybard",
+        "Boisné-La Tude",
+        "Combiers",
+        "Édon",
+        "Gurat",
+        "Magnac-lès-Gardes",
+        "Ronsenac",
+        "Rougnac",
+        "Vaux-Lavalette",
+        "Villebois-Lavalette"
+      ],
+      "communeCount": 10,
+      "center": [0.2739, 45.4876],
+      "coverageRadius": 11.1,
+      "boundingBox": {
+        "minLat": 45.4222,
+        "maxLat": 45.5355,
+        "minLon": 0.1831,
+        "maxLon": 0.415
+      },
+      "totalPopulation": 3769,
+      "totalSurface": 21088
+    },
+    "16330": {
+      "communes": ["Coulonges", "Saint-Amant-de-Boixe", "La Boixe", "Vervant", "Vouharte", "Xambes"],
+      "communeCount": 6,
+      "center": [0.1212, 45.7849],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 45.7627,
+        "maxLat": 45.8334,
+        "minLon": 0.0734,
+        "maxLon": 0.1335
+      },
+      "totalPopulation": 4305,
+      "totalSurface": 8741
+    },
+    "16340": {
+      "communes": ["L'Isle-d'Espagnac"],
+      "communeCount": 1,
+      "center": [0.1978, 45.6633],
+      "coverageRadius": 1.39,
+      "totalPopulation": 5691,
+      "totalSurface": 608
+    },
+    "16350": {
+      "communes": [
+        "Benest",
+        "Le Bouchage",
+        "Champagne-Mouton",
+        "Chassiecq",
+        "Saint-Coutant",
+        "Turgon",
+        "Le Vieux-Cérier",
+        "Vieux-Ruffec"
+      ],
+      "communeCount": 8,
+      "center": [0.4171, 45.9982],
+      "coverageRadius": 6.4,
+      "boundingBox": {
+        "minLat": 45.95,
+        "maxLat": 46.0478,
+        "minLon": 0.3757,
+        "maxLon": 0.4593
+      },
+      "totalPopulation": 2041,
+      "totalSurface": 12268
+    },
+    "16360": {
+      "communes": [
+        "Baignes-Sainte-Radegonde",
+        "Bors (Canton de Charente-Sud)",
+        "Chantillac",
+        "Condéon",
+        "Reignac",
+        "Le Tâtre",
+        "Touvérac"
+      ],
+      "communeCount": 7,
+      "center": [-0.2058, 45.3877],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 45.3225,
+        "maxLat": 45.4232,
+        "minLon": -0.255,
+        "maxLon": -0.1372
+      },
+      "totalPopulation": 4054,
+      "totalSurface": 13906
+    },
+    "16370": {
+      "communes": ["Bréville", "Val-de-Cognac", "Mesnac"],
+      "communeCount": 3,
+      "center": [-0.3456, 45.7525],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 45.7441,
+        "maxLat": 45.7962,
+        "minLon": -0.3568,
+        "maxLon": -0.2607
+      },
+      "totalPopulation": 4303,
+      "totalSurface": 8320
+    },
+    "16380": {
+      "communes": [
+        "Charras",
+        "Chazelles",
+        "Feuillade",
+        "Grassac",
+        "Mainzac",
+        "Marthon",
+        "Saint-Germain-de-Montbron",
+        "Souffrignac"
+      ],
+      "communeCount": 8,
+      "center": [0.4096, 45.6166],
+      "coverageRadius": 9.3,
+      "boundingBox": {
+        "minLat": 45.5429,
+        "maxLat": 45.6471,
+        "minLon": 0.3672,
+        "maxLon": 0.5045
+      },
+      "totalPopulation": 3790,
+      "totalSurface": 14031
+    },
+    "16390": {
+      "communes": [
+        "Aubeterre-sur-Dronne",
+        "Bonnes",
+        "Laprade",
+        "Montignac-le-Coq",
+        "Nabinaud",
+        "Palluaud",
+        "Pillac",
+        "Saint-Séverin"
+      ],
+      "communeCount": 8,
+      "center": [0.2094, 45.2971],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 45.239,
+        "maxLat": 45.3482,
+        "minLon": 0.1487,
+        "maxLon": 0.2546
+      },
+      "totalPopulation": 2420,
+      "totalSurface": 8698
+    },
+    "16400": {
+      "communes": ["La Couronne", "Puymoyen", "Vœuil-et-Giget"],
+      "communeCount": 3,
+      "center": [0.1247, 45.6065],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 45.5852,
+        "maxLat": 45.6146,
+        "minLon": 0.1014,
+        "maxLon": 0.1805
+      },
+      "totalPopulation": 11747,
+      "totalSurface": 4468
+    },
+    "16410": {
+      "communes": ["Bouëx", "Dignac", "Dirac", "Fouquebrune", "Garat", "Sers", "Torsac", "Vouzan"],
+      "communeCount": 8,
+      "center": [0.2749, 45.5934],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 45.5274,
+        "maxLat": 45.6264,
+        "minLon": 0.2116,
+        "maxLon": 0.3554
+      },
+      "totalPopulation": 9004,
+      "totalSurface": 17931
+    },
+    "16420": {
+      "communes": ["Brigueuil", "Lesterps", "Montrollet", "Saint-Christophe", "Saulgond"],
+      "communeCount": 5,
+      "center": [0.8358, 45.9714],
+      "coverageRadius": 6.1,
+      "boundingBox": {
+        "minLat": 45.9502,
+        "maxLat": 46.0101,
+        "minLon": 0.7809,
+        "maxLon": 0.8971
+      },
+      "totalPopulation": 2727,
+      "totalSurface": 15577
+    },
+    "16430": {
+      "communes": ["Balzac", "Champniers", "Vindelle"],
+      "communeCount": 3,
+      "center": [0.1814, 45.7146],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": 45.7113,
+        "maxLat": 45.7196,
+        "minLon": 0.1213,
+        "maxLon": 0.205
+      },
+      "totalPopulation": 7682,
+      "totalSurface": 6604
+    },
+    "16440": {
+      "communes": ["Claix", "Mouthiers-sur-Boëme", "Nersac", "Roullet-Saint-Estèphe", "Sireuil"],
+      "communeCount": 5,
+      "center": [0.0597, 45.5863],
+      "coverageRadius": 6.3,
+      "boundingBox": {
+        "minLat": 45.5535,
+        "maxLat": 45.6256,
+        "minLon": 0.009,
+        "maxLon": 0.1244
+      },
+      "totalPopulation": 11174,
+      "totalSurface": 11083
+    },
+    "16450": {
+      "communes": [
+        "Beaulieu-sur-Sonnette",
+        "Le Grand-Madieu",
+        "Lussac",
+        "Parzac",
+        "Saint-Claud",
+        "Saint-Laurent-de-Céris"
+      ],
+      "communeCount": 6,
+      "center": [0.4572, 45.9116],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 45.8619,
+        "maxLat": 45.9419,
+        "minLon": 0.3839,
+        "maxLon": 0.479
+      },
+      "totalPopulation": 2569,
+      "totalSurface": 9803
+    },
+    "16460": {
+      "communes": [
+        "Aunac-sur-Charente",
+        "Chenon",
+        "Couture",
+        "Lichères",
+        "Mouton",
+        "Saint-Front",
+        "Saint-Sulpice-de-Ruffec",
+        "Valence",
+        "Ventouse"
+      ],
+      "communeCount": 9,
+      "center": [0.2665, 45.9084],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 45.8849,
+        "maxLat": 45.9425,
+        "minLon": 0.2239,
+        "maxLon": 0.3262
+      },
+      "totalPopulation": 1884,
+      "totalSurface": 8877
+    },
+    "16470": {
+      "communes": ["Saint-Michel"],
+      "communeCount": 1,
+      "center": [0.1067, 45.6416],
+      "coverageRadius": 0.89,
+      "totalPopulation": 3220,
+      "totalSurface": 249
+    },
+    "16480": {
+      "communes": [
+        "Berneuil",
+        "Boisbreteau",
+        "Brossac",
+        "Châtignac",
+        "Chillac",
+        "Guizengeard",
+        "Oriolles",
+        "Passirac",
+        "Saint-Félix",
+        "Saint-Laurent-des-Combes",
+        "Sainte-Souline",
+        "Saint-Vallier",
+        "Sauvignac"
+      ],
+      "communeCount": 13,
+      "center": [-0.0651, 45.3454],
+      "coverageRadius": 10.1,
+      "boundingBox": {
+        "minLat": 45.2561,
+        "maxLat": 45.393,
+        "minLon": -0.151,
+        "maxLon": 0.0373
+      },
+      "totalPopulation": 2502,
+      "totalSurface": 17922
+    },
+    "16490": {
+      "communes": ["Alloue", "Ambernac", "Épenède", "Hiesse", "Pleuville"],
+      "communeCount": 5,
+      "center": [0.5313, 46.0371],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 45.9801,
+        "maxLat": 46.0901,
+        "minLon": 0.4952,
+        "maxLon": 0.5911
+      },
+      "totalPopulation": 1601,
+      "totalSurface": 15058
+    },
+    "16500": {
+      "communes": [
+        "Abzac",
+        "Ansac-sur-Vienne",
+        "Brillac",
+        "Confolens",
+        "Esse",
+        "Lessac",
+        "Manot",
+        "Oradour-Fanais",
+        "Saint-Maurice-des-Lions"
+      ],
+      "communeCount": 9,
+      "center": [0.6897, 46.0209],
+      "coverageRadius": 13.2,
+      "boundingBox": {
+        "minLat": 45.9447,
+        "maxLat": 46.1202,
+        "minLon": 0.638,
+        "maxLon": 0.7829
+      },
+      "totalPopulation": 7490,
+      "totalSurface": 29195
+    },
+    "16510": {
+      "communes": ["Verteuil-sur-Charente"],
+      "communeCount": 1,
+      "center": [0.2298, 45.9819],
+      "coverageRadius": 2.13,
+      "totalPopulation": 588,
+      "totalSurface": 1428
+    },
+    "16560": {
+      "communes": ["Anais", "Aussac-Vadalle", "Coulgens", "Jauldes", "Tourriers", "Villejoubert"],
+      "communeCount": 6,
+      "center": [0.2262, 45.7961],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 45.7741,
+        "maxLat": 45.816,
+        "minLon": 0.1751,
+        "maxLon": 0.2861
+      },
+      "totalPopulation": 3658,
+      "totalSurface": 7967
+    },
+    "16570": {
+      "communes": ["Marsac", "Saint-Genis-d'Hiersac"],
+      "communeCount": 2,
+      "center": [0.051, 45.7485],
+      "coverageRadius": 2,
+      "boundingBox": {
+        "minLat": 45.7462,
+        "maxLat": 45.7505,
+        "minLon": 0.0297,
+        "maxLon": 0.0764
+      },
+      "totalPopulation": 1681,
+      "totalSurface": 3267
+    },
+    "16590": {
+      "communes": ["Brie"],
+      "communeCount": 1,
+      "center": [0.2418, 45.7395],
+      "coverageRadius": 3.3,
+      "totalPopulation": 4157,
+      "totalSurface": 3422
+    },
+    "16600": {
+      "communes": ["Magnac-sur-Touvre", "Mornac", "Ruelle-sur-Touvre", "Touvre"],
+      "communeCount": 4,
+      "center": [0.241, 45.6744],
+      "coverageRadius": 2.7,
+      "boundingBox": {
+        "minLat": 45.6607,
+        "maxLat": 45.6799,
+        "minLon": 0.2303,
+        "maxLon": 0.2739
+      },
+      "totalPopulation": 13909,
+      "totalSurface": 5094
+    },
+    "16620": {
+      "communes": ["Montboyer"],
+      "communeCount": 1,
+      "center": [0.0728, 45.3248],
+      "coverageRadius": 2.92,
+      "totalPopulation": 329,
+      "totalSurface": 2674
+    },
+    "16700": {
+      "communes": [
+        "Les Adjots",
+        "Barro",
+        "Bernac",
+        "Bioussac",
+        "Condac",
+        "Courcôme",
+        "La Faye",
+        "Londigny",
+        "Nanteuil-en-Vallée",
+        "Poursac",
+        "Ruffec",
+        "Saint-Georges",
+        "Saint-Gourson",
+        "Saint-Martin-du-Clocher",
+        "Salles-de-Villefagnan",
+        "Taizé-Aizie"
+      ],
+      "communeCount": 16,
+      "center": [0.2129, 46.0219],
+      "coverageRadius": 11.7,
+      "boundingBox": {
+        "minLat": 45.9494,
+        "maxLat": 46.085,
+        "minLon": 0.1338,
+        "maxLon": 0.3218
+      },
+      "totalPopulation": 9858,
+      "totalSurface": 24999
+    },
+    "16710": {
+      "communes": ["Saint-Yrieix-sur-Charente"],
+      "communeCount": 1,
+      "center": [0.1275, 45.6753],
+      "coverageRadius": 2.17,
+      "totalPopulation": 7556,
+      "totalSurface": 1474
+    },
+    "16720": {
+      "communes": ["Saint-Même-les-Carrières"],
+      "communeCount": 1,
+      "center": [-0.1401, 45.6438],
+      "coverageRadius": 2.2,
+      "totalPopulation": 1029,
+      "totalSurface": 1515
+    },
+    "16730": {
+      "communes": ["Fléac", "Linars", "Trois-Palis"],
+      "communeCount": 3,
+      "center": [0.0845, 45.6574],
+      "coverageRadius": 3,
+      "boundingBox": {
+        "minLat": 45.6427,
+        "maxLat": 45.6652,
+        "minLon": 0.0534,
+        "maxLon": 0.0975
+      },
+      "totalPopulation": 6901,
+      "totalSurface": 2281
+    },
+    "16800": {
+      "communes": ["Soyaux"],
+      "communeCount": 1,
+      "center": [0.1928, 45.6414],
+      "coverageRadius": 2.02,
+      "totalPopulation": 10057,
+      "totalSurface": 1276
+    }
+  }
+}

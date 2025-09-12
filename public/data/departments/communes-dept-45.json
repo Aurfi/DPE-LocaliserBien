@@ -1,0 +1,6184 @@
+{
+  "departmentCode": "45",
+  "departmentName": "Loiret",
+  "stats": {
+    "communeCount": 325,
+    "totalPopulation": 687063,
+    "totalSurface": 680804
+  },
+  "communes": [
+    {
+      "nom": "Adon",
+      "code": "45001",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7925, 47.7587]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7955, 47.763]
+      },
+      "population": 192,
+      "surface": 2472.48,
+      "radius": 2.81
+    },
+    {
+      "nom": "Aillant-sur-Milleron",
+      "code": "45002",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9346, 47.7958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9323, 47.7921]
+      },
+      "population": 374,
+      "surface": 2722,
+      "radius": 2.94
+    },
+    {
+      "nom": "Amilly",
+      "code": "45004",
+      "codesPostaux": ["45200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7813, 47.9911]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7676, 47.9744]
+      },
+      "population": 13432,
+      "surface": 4024.76,
+      "radius": 3.58
+    },
+    {
+      "nom": "Andonville",
+      "code": "45005",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0233, 48.274]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0297, 48.2706]
+      },
+      "population": 252,
+      "surface": 1199.91,
+      "radius": 1.95
+    },
+    {
+      "nom": "Ardon",
+      "code": "45006",
+      "codesPostaux": ["45160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8745, 47.7825]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8751, 47.779]
+      },
+      "population": 1201,
+      "surface": 5461.61,
+      "radius": 4.17
+    },
+    {
+      "nom": "Artenay",
+      "code": "45008",
+      "codesPostaux": ["45410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8792, 48.0773]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8788, 48.0823]
+      },
+      "population": 2009,
+      "surface": 2040.83,
+      "radius": 2.55
+    },
+    {
+      "nom": "Aschères-le-Marché",
+      "code": "45009",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0043, 48.1103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0079, 48.1075]
+      },
+      "population": 1140,
+      "surface": 2100.12,
+      "radius": 2.59
+    },
+    {
+      "nom": "Ascoux",
+      "code": "45010",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2514, 48.1294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2505, 48.1279]
+      },
+      "population": 1070,
+      "surface": 663.73,
+      "radius": 1.45
+    },
+    {
+      "nom": "Attray",
+      "code": "45011",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1234, 48.1158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1125, 48.1221]
+      },
+      "population": 209,
+      "surface": 1687.52,
+      "radius": 2.32
+    },
+    {
+      "nom": "Audeville",
+      "code": "45012",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2427, 48.2808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.24, 48.2778]
+      },
+      "population": 180,
+      "surface": 1269.39,
+      "radius": 2.01
+    },
+    {
+      "nom": "Augerville-la-Rivière",
+      "code": "45013",
+      "codesPostaux": ["45330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4193, 48.2542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4376, 48.2533]
+      },
+      "population": 216,
+      "surface": 402.16,
+      "radius": 1.13
+    },
+    {
+      "nom": "Aulnay-la-Rivière",
+      "code": "45014",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3753, 48.2078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.379, 48.1955]
+      },
+      "population": 505,
+      "surface": 1613.43,
+      "radius": 2.27
+    },
+    {
+      "nom": "Autruy-sur-Juine",
+      "code": "45015",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0961, 48.2786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0994, 48.2759]
+      },
+      "population": 729,
+      "surface": 2713.53,
+      "radius": 2.94
+    },
+    {
+      "nom": "Autry-le-Châtel",
+      "code": "45016",
+      "codesPostaux": ["45500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6042, 47.5951]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6013, 47.5995]
+      },
+      "population": 858,
+      "surface": 5095.95,
+      "radius": 4.03
+    },
+    {
+      "nom": "Auvilliers-en-Gâtinais",
+      "code": "45017",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4726, 47.9687]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4984, 47.9637]
+      },
+      "population": 335,
+      "surface": 2056.87,
+      "radius": 2.56
+    },
+    {
+      "nom": "Auxy",
+      "code": "45018",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4943, 48.1065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4781, 48.1179]
+      },
+      "population": 954,
+      "surface": 2024.97,
+      "radius": 2.54
+    },
+    {
+      "nom": "Baccon",
+      "code": "45019",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.624, 47.8822]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6286, 47.892]
+      },
+      "population": 643,
+      "surface": 3306.6,
+      "radius": 3.24
+    },
+    {
+      "nom": "Barville-en-Gâtinais",
+      "code": "45021",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.401, 48.1116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4012, 48.1126]
+      },
+      "population": 299,
+      "surface": 1030.48,
+      "radius": 1.81
+    },
+    {
+      "nom": "Batilly-en-Gâtinais",
+      "code": "45022",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3706, 48.0841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3809, 48.0737]
+      },
+      "population": 447,
+      "surface": 1033.67,
+      "radius": 1.81
+    },
+    {
+      "nom": "Batilly-en-Puisaye",
+      "code": "45023",
+      "codesPostaux": ["45420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8871, 47.6127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8822, 47.6129]
+      },
+      "population": 106,
+      "surface": 1739.9,
+      "radius": 2.35
+    },
+    {
+      "nom": "Baule",
+      "code": "45024",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.669, 47.8089]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6707, 47.8112]
+      },
+      "population": 2005,
+      "surface": 1191.8,
+      "radius": 1.95
+    },
+    {
+      "nom": "Bazoches-les-Gallerandes",
+      "code": "45025",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0663, 48.1653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0425, 48.1652]
+      },
+      "population": 1482,
+      "surface": 3696.86,
+      "radius": 3.43
+    },
+    {
+      "nom": "Bazoches-sur-le-Betz",
+      "code": "45026",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9918, 48.1329]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9878, 48.134]
+      },
+      "population": 968,
+      "surface": 1542.72,
+      "radius": 2.22
+    },
+    {
+      "nom": "Beauchamps-sur-Huillard",
+      "code": "45027",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4656, 47.9445]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4542, 47.9376]
+      },
+      "population": 402,
+      "surface": 1808.02,
+      "radius": 2.4
+    },
+    {
+      "nom": "Beaugency",
+      "code": "45028",
+      "codesPostaux": ["45190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6376, 47.777]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6316, 47.778]
+      },
+      "population": 7811,
+      "surface": 1656.86,
+      "radius": 2.3
+    },
+    {
+      "nom": "Beaulieu-sur-Loire",
+      "code": "45029",
+      "codesPostaux": ["45630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8031, 47.5376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8166, 47.5433]
+      },
+      "population": 1750,
+      "surface": 4947.29,
+      "radius": 3.97
+    },
+    {
+      "nom": "Beaune-la-Rolande",
+      "code": "45030",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4347, 48.0762]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4293, 48.0696]
+      },
+      "population": 1991,
+      "surface": 2058.48,
+      "radius": 2.56
+    },
+    {
+      "nom": "Bellegarde",
+      "code": "45031",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4137, 47.9806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4417, 47.9879]
+      },
+      "population": 1416,
+      "surface": 492.98,
+      "radius": 1.25
+    },
+    {
+      "nom": "Boësses",
+      "code": "45033",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4331, 48.1503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4488, 48.1526]
+      },
+      "population": 379,
+      "surface": 1309.64,
+      "radius": 2.04
+    },
+    {
+      "nom": "Boigny-sur-Bionne",
+      "code": "45034",
+      "codesPostaux": ["45760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0189, 47.9336]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0096, 47.9223]
+      },
+      "population": 2106,
+      "surface": 752.53,
+      "radius": 1.55
+    },
+    {
+      "nom": "Boiscommun",
+      "code": "45035",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3576, 48.039]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3837, 48.0383]
+      },
+      "population": 1142,
+      "surface": 1594.42,
+      "radius": 2.25
+    },
+    {
+      "nom": "Boismorand",
+      "code": "45036",
+      "codesPostaux": ["45290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7196, 47.7828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7196, 47.7859]
+      },
+      "population": 863,
+      "surface": 2537.58,
+      "radius": 2.84
+    },
+    {
+      "nom": "Boisseaux",
+      "code": "45037",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9861, 48.2521]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9873, 48.2564]
+      },
+      "population": 502,
+      "surface": 726.25,
+      "radius": 1.52
+    },
+    {
+      "nom": "Bondaroy",
+      "code": "45038",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.28, 48.1853]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2719, 48.1765]
+      },
+      "population": 414,
+      "surface": 700.49,
+      "radius": 1.49
+    },
+    {
+      "nom": "Bonnée",
+      "code": "45039",
+      "codesPostaux": ["45460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3897, 47.7937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3841, 47.7968]
+      },
+      "population": 698,
+      "surface": 1165.28,
+      "radius": 1.93
+    },
+    {
+      "nom": "Bonny-sur-Loire",
+      "code": "45040",
+      "codesPostaux": ["45420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8407, 47.581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8408, 47.5605]
+      },
+      "population": 1851,
+      "surface": 2668.77,
+      "radius": 2.91
+    },
+    {
+      "nom": "Bordeaux-en-Gâtinais",
+      "code": "45041",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5427, 48.1006]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5251, 48.0998]
+      },
+      "population": 107,
+      "surface": 948.09,
+      "radius": 1.74
+    },
+    {
+      "nom": "Bou",
+      "code": "45043",
+      "codesPostaux": ["45430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0528, 47.8695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0466, 47.8738]
+      },
+      "population": 1019,
+      "surface": 631.14,
+      "radius": 1.42
+    },
+    {
+      "nom": "Bougy-lez-Neuville",
+      "code": "45044",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0233, 48.0455]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.027, 48.0402]
+      },
+      "population": 156,
+      "surface": 1686.8,
+      "radius": 2.32
+    },
+    {
+      "nom": "Bouilly-en-Gâtinais",
+      "code": "45045",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2895, 48.0952]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2858, 48.0955]
+      },
+      "population": 307,
+      "surface": 1594.19,
+      "radius": 2.25
+    },
+    {
+      "nom": "Boulay-les-Barres",
+      "code": "45046",
+      "codesPostaux": ["45140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7738, 47.9749]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7831, 47.9803]
+      },
+      "population": 1061,
+      "surface": 1237.69,
+      "radius": 1.98
+    },
+    {
+      "nom": "Bouzonville-aux-Bois",
+      "code": "45047",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2451, 48.1037]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2442, 48.1017]
+      },
+      "population": 419,
+      "surface": 753.86,
+      "radius": 1.55
+    },
+    {
+      "nom": "Bouzy-la-Forêt",
+      "code": "45049",
+      "codesPostaux": ["45460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3672, 47.8706]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3778, 47.8513]
+      },
+      "population": 1231,
+      "surface": 3737.63,
+      "radius": 3.45
+    },
+    {
+      "nom": "Boynes",
+      "code": "45050",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3603, 48.1169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3587, 48.1198]
+      },
+      "population": 1323,
+      "surface": 1540.91,
+      "radius": 2.21
+    },
+    {
+      "nom": "Bray-Saint-Aignan",
+      "code": "45051",
+      "codesPostaux": ["45460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3771, 47.83]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3653, 47.8286]
+      },
+      "population": 1774,
+      "surface": 2615.62,
+      "radius": 2.89
+    },
+    {
+      "nom": "Breteau",
+      "code": "45052",
+      "codesPostaux": ["45250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8902, 47.6774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.894, 47.6822]
+      },
+      "population": 95,
+      "surface": 1637.93,
+      "radius": 2.28
+    },
+    {
+      "nom": "Briare",
+      "code": "45053",
+      "codesPostaux": ["45250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7417, 47.6418]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7407, 47.6396]
+      },
+      "population": 5012,
+      "surface": 4540.07,
+      "radius": 3.8
+    },
+    {
+      "nom": "Briarres-sur-Essonne",
+      "code": "45054",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4167, 48.2241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4276, 48.2281]
+      },
+      "population": 526,
+      "surface": 825.61,
+      "radius": 1.62
+    },
+    {
+      "nom": "Bricy",
+      "code": "45055",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7751, 48.0077]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7809, 47.9987]
+      },
+      "population": 542,
+      "surface": 1269.04,
+      "radius": 2.01
+    },
+    {
+      "nom": "Bromeilles",
+      "code": "45056",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4906, 48.1855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.496, 48.1862]
+      },
+      "population": 321,
+      "surface": 1474.23,
+      "radius": 2.17
+    },
+    {
+      "nom": "Bucy-le-Roi",
+      "code": "45058",
+      "codesPostaux": ["45410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.921, 48.062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.915, 48.0605]
+      },
+      "population": 177,
+      "surface": 468.52,
+      "radius": 1.22
+    },
+    {
+      "nom": "Bucy-Saint-Liphard",
+      "code": "45059",
+      "codesPostaux": ["45140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7503, 47.942]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7647, 47.9356]
+      },
+      "population": 208,
+      "surface": 1783.4,
+      "radius": 2.38
+    },
+    {
+      "nom": "Cepoy",
+      "code": "45061",
+      "codesPostaux": ["45120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7394, 48.0515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7404, 48.0443]
+      },
+      "population": 2346,
+      "surface": 846.33,
+      "radius": 1.64
+    },
+    {
+      "nom": "Cercottes",
+      "code": "45062",
+      "codesPostaux": ["45520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9021, 47.9892]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8825, 47.9857]
+      },
+      "population": 1477,
+      "surface": 2420.94,
+      "radius": 2.78
+    },
+    {
+      "nom": "Cerdon",
+      "code": "45063",
+      "codesPostaux": ["45620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3714, 47.6284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3639, 47.6346]
+      },
+      "population": 895,
+      "surface": 6715.05,
+      "radius": 4.62
+    },
+    {
+      "nom": "Cernoy-en-Berry",
+      "code": "45064",
+      "codesPostaux": ["45360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6531, 47.5449]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6587, 47.5384]
+      },
+      "population": 427,
+      "surface": 2897.69,
+      "radius": 3.04
+    },
+    {
+      "nom": "Césarville-Dossainville",
+      "code": "45065",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2866, 48.2633]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2757, 48.2615]
+      },
+      "population": 222,
+      "surface": 1919.73,
+      "radius": 2.47
+    },
+    {
+      "nom": "Chailly-en-Gâtinais",
+      "code": "45066",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.527, 47.9394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5434, 47.9479]
+      },
+      "population": 688,
+      "surface": 1834.41,
+      "radius": 2.42
+    },
+    {
+      "nom": "Chaingy",
+      "code": "45067",
+      "codesPostaux": ["45380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7763, 47.8926]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7716, 47.8838]
+      },
+      "population": 4081,
+      "surface": 2168.84,
+      "radius": 2.63
+    },
+    {
+      "nom": "Châlette-sur-Loing",
+      "code": "45068",
+      "codesPostaux": ["45120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7375, 48.0214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.732, 48.0148]
+      },
+      "population": 12958,
+      "surface": 1309.98,
+      "radius": 2.04
+    },
+    {
+      "nom": "Chambon-la-Forêt",
+      "code": "45069",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2827, 48.0535]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2952, 48.0566]
+      },
+      "population": 961,
+      "surface": 1715.94,
+      "radius": 2.34
+    },
+    {
+      "nom": "Champoulet",
+      "code": "45070",
+      "codesPostaux": ["45420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9266, 47.6544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9205, 47.6588]
+      },
+      "population": 52,
+      "surface": 938.75,
+      "radius": 1.73
+    },
+    {
+      "nom": "Chanteau",
+      "code": "45072",
+      "codesPostaux": ["45400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9628, 47.9798]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9728, 47.9661]
+      },
+      "population": 1611,
+      "surface": 2895.91,
+      "radius": 3.04
+    },
+    {
+      "nom": "Chantecoq",
+      "code": "45073",
+      "codesPostaux": ["45320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9666, 48.0472]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9605, 48.053]
+      },
+      "population": 516,
+      "surface": 1593.16,
+      "radius": 2.25
+    },
+    {
+      "nom": "Chapelon",
+      "code": "45078",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5786, 48.0355]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5787, 48.0367]
+      },
+      "population": 250,
+      "surface": 656.4,
+      "radius": 1.45
+    },
+    {
+      "nom": "Charmont-en-Beauce",
+      "code": "45080",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1167, 48.2382]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1069, 48.2304]
+      },
+      "population": 340,
+      "surface": 1807.09,
+      "radius": 2.4
+    },
+    {
+      "nom": "Charsonville",
+      "code": "45081",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5776, 47.9244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5833, 47.9289]
+      },
+      "population": 611,
+      "surface": 2462.31,
+      "radius": 2.8
+    },
+    {
+      "nom": "Château-Renard",
+      "code": "45083",
+      "codesPostaux": ["45220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9166, 47.9299]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9268, 47.9333]
+      },
+      "population": 2108,
+      "surface": 4041.97,
+      "radius": 3.59
+    },
+    {
+      "nom": "Châteauneuf-sur-Loire",
+      "code": "45082",
+      "codesPostaux": ["45110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2415, 47.8829]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2167, 47.864]
+      },
+      "population": 8470,
+      "surface": 4009.42,
+      "radius": 3.57
+    },
+    {
+      "nom": "Châtenoy",
+      "code": "45084",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4148, 47.9162]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3989, 47.9187]
+      },
+      "population": 424,
+      "surface": 2579.65,
+      "radius": 2.87
+    },
+    {
+      "nom": "Châtillon-Coligny",
+      "code": "45085",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8747, 47.8229]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8451, 47.8241]
+      },
+      "population": 1858,
+      "surface": 2560.63,
+      "radius": 2.85
+    },
+    {
+      "nom": "Châtillon-le-Roi",
+      "code": "45086",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1006, 48.1635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1064, 48.163]
+      },
+      "population": 275,
+      "surface": 458.39,
+      "radius": 1.21
+    },
+    {
+      "nom": "Châtillon-sur-Loire",
+      "code": "45087",
+      "codesPostaux": ["45360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7435, 47.5754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7529, 47.5905]
+      },
+      "population": 3152,
+      "surface": 3979.72,
+      "radius": 3.56
+    },
+    {
+      "nom": "Chaussy",
+      "code": "45088",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9917, 48.1632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9954, 48.1695]
+      },
+      "population": 274,
+      "surface": 1304.54,
+      "radius": 2.04
+    },
+    {
+      "nom": "Chécy",
+      "code": "45089",
+      "codesPostaux": ["45430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0223, 47.9019]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0251, 47.8914]
+      },
+      "population": 8948,
+      "surface": 1550.28,
+      "radius": 2.22
+    },
+    {
+      "nom": "Chevannes",
+      "code": "45091",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8532, 48.1345]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8607, 48.1347]
+      },
+      "population": 319,
+      "surface": 1201.77,
+      "radius": 1.96
+    },
+    {
+      "nom": "Chevillon-sur-Huillard",
+      "code": "45092",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6232, 47.9679]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.626, 47.9628]
+      },
+      "population": 1504,
+      "surface": 1944.44,
+      "radius": 2.49
+    },
+    {
+      "nom": "Chevilly",
+      "code": "45093",
+      "codesPostaux": ["45520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8918, 48.0318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8746, 48.0265]
+      },
+      "population": 2653,
+      "surface": 4220.93,
+      "radius": 3.67
+    },
+    {
+      "nom": "Chevry-sous-le-Bignon",
+      "code": "45094",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8929, 48.1444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8958, 48.1407]
+      },
+      "population": 228,
+      "surface": 739.79,
+      "radius": 1.53
+    },
+    {
+      "nom": "Chilleurs-aux-Bois",
+      "code": "45095",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1412, 48.0621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1336, 48.071]
+      },
+      "population": 2103,
+      "surface": 5251.76,
+      "radius": 4.09
+    },
+    {
+      "nom": "Chuelles",
+      "code": "45097",
+      "codesPostaux": ["45220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9674, 47.9962]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9653, 48.0043]
+      },
+      "population": 1230,
+      "surface": 3084.61,
+      "radius": 3.13
+    },
+    {
+      "nom": "Cléry-Saint-André",
+      "code": "45098",
+      "codesPostaux": ["45370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7613, 47.8151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7562, 47.8212]
+      },
+      "population": 3540,
+      "surface": 1830.92,
+      "radius": 2.41
+    },
+    {
+      "nom": "Coinces",
+      "code": "45099",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7282, 48.014]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7424, 48.0113]
+      },
+      "population": 498,
+      "surface": 2191.34,
+      "radius": 2.64
+    },
+    {
+      "nom": "Combleux",
+      "code": "45100",
+      "codesPostaux": ["45800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9847, 47.8991]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9872, 47.8995]
+      },
+      "population": 524,
+      "surface": 109.91,
+      "radius": 0.59
+    },
+    {
+      "nom": "Combreux",
+      "code": "45101",
+      "codesPostaux": ["45530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3046, 47.9585]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3044, 47.9568]
+      },
+      "population": 270,
+      "surface": 1269.54,
+      "radius": 2.01
+    },
+    {
+      "nom": "Conflans-sur-Loing",
+      "code": "45102",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7787, 47.945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7877, 47.9527]
+      },
+      "population": 362,
+      "surface": 918.7,
+      "radius": 1.71
+    },
+    {
+      "nom": "Corbeilles",
+      "code": "45103",
+      "codesPostaux": ["45490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5523, 48.0716]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5526, 48.0731]
+      },
+      "population": 1579,
+      "surface": 3263.7,
+      "radius": 3.22
+    },
+    {
+      "nom": "Corquilleroy",
+      "code": "45104",
+      "codesPostaux": ["45120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6943, 48.0416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6982, 48.0453]
+      },
+      "population": 2840,
+      "surface": 1396.49,
+      "radius": 2.11
+    },
+    {
+      "nom": "Cortrat",
+      "code": "45105",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.771, 47.9094]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7649, 47.8965]
+      },
+      "population": 82,
+      "surface": 1097.91,
+      "radius": 1.87
+    },
+    {
+      "nom": "Coudroy",
+      "code": "45107",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4648, 47.9002]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4678, 47.9076]
+      },
+      "population": 299,
+      "surface": 1475.52,
+      "radius": 2.17
+    },
+    {
+      "nom": "Coullons",
+      "code": "45108",
+      "codesPostaux": ["45720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5064, 47.6188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4924, 47.6195]
+      },
+      "population": 2251,
+      "surface": 8120.94,
+      "radius": 5.08
+    },
+    {
+      "nom": "Coulmiers",
+      "code": "45109",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6605, 47.934]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6637, 47.9316]
+      },
+      "population": 565,
+      "surface": 1420.92,
+      "radius": 2.13
+    },
+    {
+      "nom": "Courcelles-le-Roi",
+      "code": "45110",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3301, 48.0984]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3165, 48.0977]
+      },
+      "population": 318,
+      "surface": 629.52,
+      "radius": 1.42
+    },
+    {
+      "nom": "Courcy-aux-Loges",
+      "code": "45111",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2188, 48.0548]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2169, 48.0654]
+      },
+      "population": 453,
+      "surface": 2090.09,
+      "radius": 2.58
+    },
+    {
+      "nom": "Courtemaux",
+      "code": "45113",
+      "codesPostaux": ["45320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9342, 48.0478]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9364, 48.0503]
+      },
+      "population": 263,
+      "surface": 1221.37,
+      "radius": 1.97
+    },
+    {
+      "nom": "Courtempierre",
+      "code": "45114",
+      "codesPostaux": ["45490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6396, 48.093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6141, 48.1033]
+      },
+      "population": 214,
+      "surface": 1331.92,
+      "radius": 2.06
+    },
+    {
+      "nom": "Courtenay",
+      "code": "45115",
+      "codesPostaux": ["45320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0646, 48.0285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0588, 48.0397]
+      },
+      "population": 3799,
+      "surface": 5014.14,
+      "radius": 4
+    },
+    {
+      "nom": "Cravant",
+      "code": "45116",
+      "codesPostaux": ["45190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5782, 47.8333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5735, 47.828]
+      },
+      "population": 951,
+      "surface": 3385.07,
+      "radius": 3.28
+    },
+    {
+      "nom": "Crottes-en-Pithiverais",
+      "code": "45118",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0634, 48.1125]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0669, 48.1247]
+      },
+      "population": 319,
+      "surface": 1366.04,
+      "radius": 2.09
+    },
+    {
+      "nom": "Dadonville",
+      "code": "45119",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2663, 48.1483]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2541, 48.1413]
+      },
+      "population": 2363,
+      "surface": 1830.72,
+      "radius": 2.41
+    },
+    {
+      "nom": "Dammarie-en-Puisaye",
+      "code": "45120",
+      "codesPostaux": ["45420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8619, 47.632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8699, 47.6252]
+      },
+      "population": 173,
+      "surface": 2590.23,
+      "radius": 2.87
+    },
+    {
+      "nom": "Dammarie-sur-Loing",
+      "code": "45121",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8736, 47.7831]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8814, 47.7825]
+      },
+      "population": 460,
+      "surface": 2104.18,
+      "radius": 2.59
+    },
+    {
+      "nom": "Dampierre-en-Burly",
+      "code": "45122",
+      "codesPostaux": ["45570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5429, 47.7626]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5196, 47.7616]
+      },
+      "population": 1454,
+      "surface": 4842.49,
+      "radius": 3.93
+    },
+    {
+      "nom": "Darvoy",
+      "code": "45123",
+      "codesPostaux": ["45150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0881, 47.8529]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0959, 47.8561]
+      },
+      "population": 1905,
+      "surface": 856.09,
+      "radius": 1.65
+    },
+    {
+      "nom": "Desmonts",
+      "code": "45124",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4986, 48.2249]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4978, 48.2263]
+      },
+      "population": 171,
+      "surface": 475.92,
+      "radius": 1.23
+    },
+    {
+      "nom": "Dimancheville",
+      "code": "45125",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4248, 48.2393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4302, 48.2353]
+      },
+      "population": 107,
+      "surface": 235.51,
+      "radius": 0.87
+    },
+    {
+      "nom": "Donnery",
+      "code": "45126",
+      "codesPostaux": ["45450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.11, 47.9144]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1017, 47.9154]
+      },
+      "population": 2833,
+      "surface": 2170.83,
+      "radius": 2.63
+    },
+    {
+      "nom": "Dordives",
+      "code": "45127",
+      "codesPostaux": ["45680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7741, 48.1435]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7675, 48.1453]
+      },
+      "population": 3257,
+      "surface": 1516.04,
+      "radius": 2.2
+    },
+    {
+      "nom": "Douchy-Montcorbon",
+      "code": "45129",
+      "codesPostaux": ["45220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0713, 47.9518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0507, 47.9435]
+      },
+      "population": 1362,
+      "surface": 5012.02,
+      "radius": 3.99
+    },
+    {
+      "nom": "Dry",
+      "code": "45130",
+      "codesPostaux": ["45370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7266, 47.7922]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7157, 47.7983]
+      },
+      "population": 1414,
+      "surface": 2305.66,
+      "radius": 2.71
+    },
+    {
+      "nom": "Échilleuses",
+      "code": "45131",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4444, 48.1702]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.444, 48.1648]
+      },
+      "population": 387,
+      "surface": 1250.3,
+      "radius": 1.99
+    },
+    {
+      "nom": "Égry",
+      "code": "45132",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4403, 48.1015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4376, 48.1036]
+      },
+      "population": 356,
+      "surface": 737.92,
+      "radius": 1.53
+    },
+    {
+      "nom": "Engenville",
+      "code": "45133",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.237, 48.2369]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.245, 48.2364]
+      },
+      "population": 539,
+      "surface": 1811.03,
+      "radius": 2.4
+    },
+    {
+      "nom": "Épieds-en-Beauce",
+      "code": "45134",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6066, 47.9633]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6177, 47.9485]
+      },
+      "population": 1446,
+      "surface": 4019.03,
+      "radius": 3.58
+    },
+    {
+      "nom": "Erceville",
+      "code": "45135",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0289, 48.2447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0356, 48.2377]
+      },
+      "population": 293,
+      "surface": 1274.74,
+      "radius": 2.01
+    },
+    {
+      "nom": "Ervauville",
+      "code": "45136",
+      "codesPostaux": ["45320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9842, 48.0931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.982, 48.0879]
+      },
+      "population": 564,
+      "surface": 1256.8,
+      "radius": 2
+    },
+    {
+      "nom": "Escrennes",
+      "code": "45137",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.184, 48.1364]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1887, 48.1335]
+      },
+      "population": 711,
+      "surface": 1148.23,
+      "radius": 1.91
+    },
+    {
+      "nom": "Escrignelles",
+      "code": "45138",
+      "codesPostaux": ["45250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8217, 47.7111]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8215, 47.7161]
+      },
+      "population": 57,
+      "surface": 1402.51,
+      "radius": 2.11
+    },
+    {
+      "nom": "Estouy",
+      "code": "45139",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3238, 48.1912]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3263, 48.1863]
+      },
+      "population": 512,
+      "surface": 1870,
+      "radius": 2.44
+    },
+    {
+      "nom": "Faverelles",
+      "code": "45141",
+      "codesPostaux": ["45420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9439, 47.5929]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9309, 47.5761]
+      },
+      "population": 175,
+      "surface": 1914.32,
+      "radius": 2.47
+    },
+    {
+      "nom": "Fay-aux-Loges",
+      "code": "45142",
+      "codesPostaux": ["45450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1589, 47.9315]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1379, 47.9273]
+      },
+      "population": 3846,
+      "surface": 2641.69,
+      "radius": 2.9
+    },
+    {
+      "nom": "Feins-en-Gâtinais",
+      "code": "45143",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8348, 47.7495]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8406, 47.7465]
+      },
+      "population": 30,
+      "surface": 1186.44,
+      "radius": 1.94
+    },
+    {
+      "nom": "Férolles",
+      "code": "45144",
+      "codesPostaux": ["45150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1243, 47.825]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.111, 47.835]
+      },
+      "population": 1134,
+      "surface": 1709.43,
+      "radius": 2.33
+    },
+    {
+      "nom": "Ferrières-en-Gâtinais",
+      "code": "45145",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8122, 48.0992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7896, 48.0899]
+      },
+      "population": 3794,
+      "surface": 2740.88,
+      "radius": 2.95
+    },
+    {
+      "nom": "Fleury-les-Aubrais",
+      "code": "45147",
+      "codesPostaux": ["45400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9223, 47.9449]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9209, 47.9312]
+      },
+      "population": 21664,
+      "surface": 1011.46,
+      "radius": 1.79
+    },
+    {
+      "nom": "Fontenay-sur-Loing",
+      "code": "45148",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.769, 48.0863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7736, 48.104]
+      },
+      "population": 1677,
+      "surface": 966.85,
+      "radius": 1.75
+    },
+    {
+      "nom": "Foucherolles",
+      "code": "45149",
+      "codesPostaux": ["45320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0191, 48.0935]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0113, 48.0931]
+      },
+      "population": 303,
+      "surface": 983.5,
+      "radius": 1.77
+    },
+    {
+      "nom": "Fréville-du-Gâtinais",
+      "code": "45150",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4457, 48.0215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4448, 48.024]
+      },
+      "population": 178,
+      "surface": 1002.06,
+      "radius": 1.79
+    },
+    {
+      "nom": "Gaubertin",
+      "code": "45151",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4283, 48.1256]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4231, 48.1226]
+      },
+      "population": 251,
+      "surface": 728.43,
+      "radius": 1.52
+    },
+    {
+      "nom": "Gémigny",
+      "code": "45152",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7036, 47.9631]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6938, 47.9655]
+      },
+      "population": 218,
+      "surface": 1446.8,
+      "radius": 2.15
+    },
+    {
+      "nom": "Germigny-des-Prés",
+      "code": "45153",
+      "codesPostaux": ["45110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2709, 47.8406]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2667, 47.8458]
+      },
+      "population": 700,
+      "surface": 1002.18,
+      "radius": 1.79
+    },
+    {
+      "nom": "Gidy",
+      "code": "45154",
+      "codesPostaux": ["45520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8326, 47.991]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8374, 47.9899]
+      },
+      "population": 2015,
+      "surface": 2352.71,
+      "radius": 2.74
+    },
+    {
+      "nom": "Gien",
+      "code": "45155",
+      "codesPostaux": ["45500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6687, 47.7175]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6248, 47.698]
+      },
+      "population": 13431,
+      "surface": 6776.23,
+      "radius": 4.64
+    },
+    {
+      "nom": "Girolles",
+      "code": "45156",
+      "codesPostaux": ["45120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7217, 48.0705]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7153, 48.0621]
+      },
+      "population": 599,
+      "surface": 1385.72,
+      "radius": 2.1
+    },
+    {
+      "nom": "Givraines",
+      "code": "45157",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3851, 48.151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3709, 48.1488]
+      },
+      "population": 420,
+      "surface": 1125.36,
+      "radius": 1.89
+    },
+    {
+      "nom": "Gondreville",
+      "code": "45158",
+      "codesPostaux": ["45490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6492, 48.0516]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6552, 48.0506]
+      },
+      "population": 329,
+      "surface": 807.87,
+      "radius": 1.6
+    },
+    {
+      "nom": "Grangermont",
+      "code": "45159",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4279, 48.1878]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4255, 48.189]
+      },
+      "population": 177,
+      "surface": 394.81,
+      "radius": 1.12
+    },
+    {
+      "nom": "Greneville-en-Beauce",
+      "code": "45160",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1155, 48.1936]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1109, 48.1819]
+      },
+      "population": 672,
+      "surface": 2256.35,
+      "radius": 2.68
+    },
+    {
+      "nom": "Griselles",
+      "code": "45161",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8364, 48.0755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.83, 48.078]
+      },
+      "population": 818,
+      "surface": 3014.85,
+      "radius": 3.1
+    },
+    {
+      "nom": "Guigneville",
+      "code": "45162",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1769, 48.2182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1769, 48.2067]
+      },
+      "population": 541,
+      "surface": 3207.65,
+      "radius": 3.2
+    },
+    {
+      "nom": "Guilly",
+      "code": "45164",
+      "codesPostaux": ["45600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2679, 47.7986]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2762, 47.8054]
+      },
+      "population": 667,
+      "surface": 1702.65,
+      "radius": 2.33
+    },
+    {
+      "nom": "Gy-les-Nonains",
+      "code": "45165",
+      "codesPostaux": ["45220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8458, 47.9265]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8473, 47.9474]
+      },
+      "population": 603,
+      "surface": 2017.91,
+      "radius": 2.53
+    },
+    {
+      "nom": "Huêtre",
+      "code": "45166",
+      "codesPostaux": ["45520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8031, 48.0272]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7954, 48.0186]
+      },
+      "population": 282,
+      "surface": 1318.51,
+      "radius": 2.05
+    },
+    {
+      "nom": "Huisseau-sur-Mauves",
+      "code": "45167",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7, 47.8931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7028, 47.8932]
+      },
+      "population": 1754,
+      "surface": 3713.24,
+      "radius": 3.44
+    },
+    {
+      "nom": "Ingrannes",
+      "code": "45168",
+      "codesPostaux": ["45450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2201, 47.9908]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2113, 47.991]
+      },
+      "population": 543,
+      "surface": 3894.49,
+      "radius": 3.52
+    },
+    {
+      "nom": "Ingré",
+      "code": "45169",
+      "codesPostaux": ["45140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8161, 47.9218]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.828, 47.92]
+      },
+      "population": 9838,
+      "surface": 2080.22,
+      "radius": 2.57
+    },
+    {
+      "nom": "Intville-la-Guétard",
+      "code": "45170",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2177, 48.2541]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2143, 48.2616]
+      },
+      "population": 175,
+      "surface": 488.2,
+      "radius": 1.25
+    },
+    {
+      "nom": "Isdes",
+      "code": "45171",
+      "codesPostaux": ["45620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2583, 47.6618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2559, 47.6725]
+      },
+      "population": 531,
+      "surface": 4391.56,
+      "radius": 3.74
+    },
+    {
+      "nom": "Jargeau",
+      "code": "45173",
+      "codesPostaux": ["45150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1088, 47.8517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1221, 47.8662]
+      },
+      "population": 4636,
+      "surface": 1465.22,
+      "radius": 2.16
+    },
+    {
+      "nom": "Jouy-en-Pithiverais",
+      "code": "45174",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1261, 48.1508]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1119, 48.1429]
+      },
+      "population": 266,
+      "surface": 1589.66,
+      "radius": 2.25
+    },
+    {
+      "nom": "Jouy-le-Potier",
+      "code": "45175",
+      "codesPostaux": ["45370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8073, 47.7456]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8101, 47.7466]
+      },
+      "population": 1631,
+      "surface": 5077.09,
+      "radius": 4.02
+    },
+    {
+      "nom": "Juranville",
+      "code": "45176",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4794, 48.0618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4838, 48.0607]
+      },
+      "population": 435,
+      "surface": 1521.36,
+      "radius": 2.2
+    },
+    {
+      "nom": "La Bussière",
+      "code": "45060",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7481, 47.7371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7497, 47.7445]
+      },
+      "population": 761,
+      "surface": 3498.77,
+      "radius": 3.34
+    },
+    {
+      "nom": "La Chapelle-Onzerain",
+      "code": "45074",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.611, 48.0335]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6129, 48.0336]
+      },
+      "population": 110,
+      "surface": 725.71,
+      "radius": 1.52
+    },
+    {
+      "nom": "La Chapelle-Saint-Mesmin",
+      "code": "45075",
+      "codesPostaux": ["45380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8324, 47.8861]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8404, 47.8873]
+      },
+      "population": 10492,
+      "surface": 895.34,
+      "radius": 1.69
+    },
+    {
+      "nom": "La Chapelle-Saint-Sépulcre",
+      "code": "45076",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8392, 48.017]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8466, 48.0179]
+      },
+      "population": 223,
+      "surface": 622.68,
+      "radius": 1.41
+    },
+    {
+      "nom": "La Chapelle-sur-Aveyron",
+      "code": "45077",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8741, 47.8691]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8622, 47.8663]
+      },
+      "population": 623,
+      "surface": 1903.94,
+      "radius": 2.46
+    },
+    {
+      "nom": "La Cour-Marigny",
+      "code": "45112",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5851, 47.8923]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5965, 47.8934]
+      },
+      "population": 367,
+      "surface": 1350.37,
+      "radius": 2.07
+    },
+    {
+      "nom": "La Ferté-Saint-Aubin",
+      "code": "45146",
+      "codesPostaux": ["45240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9129, 47.7122]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.941, 47.72]
+      },
+      "population": 7317,
+      "surface": 8631.43,
+      "radius": 5.24
+    },
+    {
+      "nom": "La Neuville-sur-Essonne",
+      "code": "45225",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3798, 48.1805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3746, 48.1872]
+      },
+      "population": 345,
+      "surface": 922.39,
+      "radius": 1.71
+    },
+    {
+      "nom": "La Selle-en-Hermoy",
+      "code": "45306",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8843, 48.0065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8936, 48.0134]
+      },
+      "population": 778,
+      "surface": 1962.36,
+      "radius": 2.5
+    },
+    {
+      "nom": "La Selle-sur-le-Bied",
+      "code": "45307",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9028, 48.0778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8945, 48.0631]
+      },
+      "population": 1131,
+      "surface": 3015.71,
+      "radius": 3.1
+    },
+    {
+      "nom": "Laas",
+      "code": "45177",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2176, 48.1206]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2166, 48.1203]
+      },
+      "population": 241,
+      "surface": 659.62,
+      "radius": 1.45
+    },
+    {
+      "nom": "Ladon",
+      "code": "45178",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5327, 48.0098]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5338, 48.0044]
+      },
+      "population": 1394,
+      "surface": 1372.78,
+      "radius": 2.09
+    },
+    {
+      "nom": "Lailly-en-Val",
+      "code": "45179",
+      "codesPostaux": ["45740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7185, 47.747]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6866, 47.7701]
+      },
+      "population": 3100,
+      "surface": 4614.31,
+      "radius": 3.83
+    },
+    {
+      "nom": "Langesse",
+      "code": "45180",
+      "codesPostaux": ["45290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6468, 47.8184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6596, 47.82]
+      },
+      "population": 86,
+      "surface": 898.73,
+      "radius": 1.69
+    },
+    {
+      "nom": "Le Bardon",
+      "code": "45020",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6488, 47.8437]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6495, 47.8425]
+      },
+      "population": 970,
+      "surface": 1233.11,
+      "radius": 1.98
+    },
+    {
+      "nom": "Le Bignon-Mirabeau",
+      "code": "45032",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9319, 48.1473]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9233, 48.1463]
+      },
+      "population": 307,
+      "surface": 1285.72,
+      "radius": 2.02
+    },
+    {
+      "nom": "Le Charme",
+      "code": "45079",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9914, 47.8032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9943, 47.7997]
+      },
+      "population": 149,
+      "surface": 1374.83,
+      "radius": 2.09
+    },
+    {
+      "nom": "Le Malesherbois",
+      "code": "45191",
+      "codesPostaux": ["45300", "45330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3392, 48.2745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4163, 48.2955]
+      },
+      "population": 8022,
+      "surface": 8521.33,
+      "radius": 5.21
+    },
+    {
+      "nom": "Le Moulinet-sur-Solin",
+      "code": "45218",
+      "codesPostaux": ["45290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.613, 47.8177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.627, 47.8375]
+      },
+      "population": 128,
+      "surface": 1963.18,
+      "radius": 2.5
+    },
+    {
+      "nom": "Léouville",
+      "code": "45181",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0877, 48.2238]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0877, 48.2242]
+      },
+      "population": 88,
+      "surface": 429.5,
+      "radius": 1.17
+    },
+    {
+      "nom": "Les Bordes",
+      "code": "45042",
+      "codesPostaux": ["45460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4358, 47.8162]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4015, 47.8123]
+      },
+      "population": 1846,
+      "surface": 2411.67,
+      "radius": 2.77
+    },
+    {
+      "nom": "Les Choux",
+      "code": "45096",
+      "codesPostaux": ["45290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6549, 47.7886]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6764, 47.7974]
+      },
+      "population": 530,
+      "surface": 3366.45,
+      "radius": 3.27
+    },
+    {
+      "nom": "Ligny-le-Ribault",
+      "code": "45182",
+      "codesPostaux": ["45240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7869, 47.6803]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7808, 47.683]
+      },
+      "population": 1255,
+      "surface": 5903.88,
+      "radius": 4.34
+    },
+    {
+      "nom": "Lion-en-Beauce",
+      "code": "45183",
+      "codesPostaux": ["45410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.933, 48.1326]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9344, 48.1331]
+      },
+      "population": 122,
+      "surface": 702.18,
+      "radius": 1.5
+    },
+    {
+      "nom": "Lion-en-Sullias",
+      "code": "45184",
+      "codesPostaux": ["45600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.478, 47.7276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4895, 47.7266]
+      },
+      "population": 386,
+      "surface": 2444.03,
+      "radius": 2.79
+    },
+    {
+      "nom": "Lombreuil",
+      "code": "45185",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6263, 47.9415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.631, 47.9408]
+      },
+      "population": 304,
+      "surface": 764.64,
+      "radius": 1.56
+    },
+    {
+      "nom": "Lorcy",
+      "code": "45186",
+      "codesPostaux": ["45490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5314, 48.0459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5337, 48.0553]
+      },
+      "population": 589,
+      "surface": 1717.08,
+      "radius": 2.34
+    },
+    {
+      "nom": "Lorris",
+      "code": "45187",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.502, 47.863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.513, 47.8893]
+      },
+      "population": 3002,
+      "surface": 4504.1,
+      "radius": 3.79
+    },
+    {
+      "nom": "Loury",
+      "code": "45188",
+      "codesPostaux": ["45470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0997, 48.0047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0855, 48.002]
+      },
+      "population": 2582,
+      "surface": 3433.87,
+      "radius": 3.31
+    },
+    {
+      "nom": "Louzouer",
+      "code": "45189",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8683, 48.0344]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8803, 48.0375]
+      },
+      "population": 246,
+      "surface": 1127.81,
+      "radius": 1.89
+    },
+    {
+      "nom": "Marcilly-en-Villette",
+      "code": "45193",
+      "codesPostaux": ["45240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0323, 47.7748]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0218, 47.765]
+      },
+      "population": 2185,
+      "surface": 6255.77,
+      "radius": 4.46
+    },
+    {
+      "nom": "Mardié",
+      "code": "45194",
+      "codesPostaux": ["45430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0721, 47.9028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0566, 47.8864]
+      },
+      "population": 3083,
+      "surface": 1728.97,
+      "radius": 2.35
+    },
+    {
+      "nom": "Mareau-aux-Bois",
+      "code": "45195",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1925, 48.0968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1886, 48.1036]
+      },
+      "population": 565,
+      "surface": 1158.09,
+      "radius": 1.92
+    },
+    {
+      "nom": "Mareau-aux-Prés",
+      "code": "45196",
+      "codesPostaux": ["45370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.769, 47.8426]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7985, 47.8458]
+      },
+      "population": 1669,
+      "surface": 1541.87,
+      "radius": 2.22
+    },
+    {
+      "nom": "Marigny-les-Usages",
+      "code": "45197",
+      "codesPostaux": ["45760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0152, 47.9583]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0144, 47.9573]
+      },
+      "population": 1861,
+      "surface": 963.96,
+      "radius": 1.75
+    },
+    {
+      "nom": "Marsainvilliers",
+      "code": "45198",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2737, 48.2129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2836, 48.2221]
+      },
+      "population": 313,
+      "surface": 1076.69,
+      "radius": 1.85
+    },
+    {
+      "nom": "Melleroy",
+      "code": "45199",
+      "codesPostaux": ["45220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9596, 47.8904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9532, 47.8962]
+      },
+      "population": 507,
+      "surface": 2421.59,
+      "radius": 2.78
+    },
+    {
+      "nom": "Ménestreau-en-Villette",
+      "code": "45200",
+      "codesPostaux": ["45240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0408, 47.704]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0215, 47.6987]
+      },
+      "population": 1385,
+      "surface": 5439.83,
+      "radius": 4.16
+    },
+    {
+      "nom": "Mérinville",
+      "code": "45201",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9406, 48.09]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9402, 48.0823]
+      },
+      "population": 173,
+      "surface": 1187.33,
+      "radius": 1.94
+    },
+    {
+      "nom": "Messas",
+      "code": "45202",
+      "codesPostaux": ["45190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6353, 47.8083]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6361, 47.8075]
+      },
+      "population": 1029,
+      "surface": 529.88,
+      "radius": 1.3
+    },
+    {
+      "nom": "Meung-sur-Loire",
+      "code": "45203",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6918, 47.8396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.698, 47.8285]
+      },
+      "population": 6621,
+      "surface": 2024.8,
+      "radius": 2.54
+    },
+    {
+      "nom": "Mézières-en-Gâtinais",
+      "code": "45205",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4795, 48.023]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4895, 48.0351]
+      },
+      "population": 259,
+      "surface": 996.54,
+      "radius": 1.78
+    },
+    {
+      "nom": "Mézières-lez-Cléry",
+      "code": "45204",
+      "codesPostaux": ["45370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8212, 47.8115]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8045, 47.8186]
+      },
+      "population": 857,
+      "surface": 2707.39,
+      "radius": 2.94
+    },
+    {
+      "nom": "Mignères",
+      "code": "45206",
+      "codesPostaux": ["45490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6199, 48.052]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6242, 48.0479]
+      },
+      "population": 314,
+      "surface": 512.2,
+      "radius": 1.28
+    },
+    {
+      "nom": "Mignerette",
+      "code": "45207",
+      "codesPostaux": ["45490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6064, 48.0596]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6005, 48.0564]
+      },
+      "population": 357,
+      "surface": 620.69,
+      "radius": 1.41
+    },
+    {
+      "nom": "Montargis",
+      "code": "45208",
+      "codesPostaux": ["45200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7388, 47.9998]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7312, 47.998]
+      },
+      "population": 14819,
+      "surface": 445.56,
+      "radius": 1.19
+    },
+    {
+      "nom": "Montbarrois",
+      "code": "45209",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3956, 48.0487]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3935, 48.0451]
+      },
+      "population": 297,
+      "surface": 610.02,
+      "radius": 1.39
+    },
+    {
+      "nom": "Montbouy",
+      "code": "45210",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8251, 47.868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8198, 47.8607]
+      },
+      "population": 727,
+      "surface": 2678.52,
+      "radius": 2.92
+    },
+    {
+      "nom": "Montcresson",
+      "code": "45212",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8082, 47.9114]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8072, 47.9056]
+      },
+      "population": 1257,
+      "surface": 2106.02,
+      "radius": 2.59
+    },
+    {
+      "nom": "Montereau",
+      "code": "45213",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5545, 47.8342]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5719, 47.8571]
+      },
+      "population": 644,
+      "surface": 5019.79,
+      "radius": 4
+    },
+    {
+      "nom": "Montigny",
+      "code": "45214",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1169, 48.107]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.111, 48.112]
+      },
+      "population": 243,
+      "surface": 534.66,
+      "radius": 1.3
+    },
+    {
+      "nom": "Montliard",
+      "code": "45215",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4011, 48.0172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3979, 48.0191]
+      },
+      "population": 230,
+      "surface": 901.05,
+      "radius": 1.69
+    },
+    {
+      "nom": "Mormant-sur-Vernisson",
+      "code": "45216",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7287, 47.9427]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7362, 47.9466]
+      },
+      "population": 133,
+      "surface": 1100.82,
+      "radius": 1.87
+    },
+    {
+      "nom": "Morville-en-Beauce",
+      "code": "45217",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1614, 48.2567]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1705, 48.2513]
+      },
+      "population": 175,
+      "surface": 1102.6,
+      "radius": 1.87
+    },
+    {
+      "nom": "Moulon",
+      "code": "45219",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5967, 48.0214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5915, 48.0195]
+      },
+      "population": 183,
+      "surface": 961.34,
+      "radius": 1.75
+    },
+    {
+      "nom": "Nancray-sur-Rimarde",
+      "code": "45220",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3239, 48.0661]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3328, 48.0695]
+      },
+      "population": 571,
+      "surface": 1158.2,
+      "radius": 1.92
+    },
+    {
+      "nom": "Nargis",
+      "code": "45222",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7397, 48.1105]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7574, 48.1093]
+      },
+      "population": 1441,
+      "surface": 2224.95,
+      "radius": 2.66
+    },
+    {
+      "nom": "Nesploy",
+      "code": "45223",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3673, 47.9968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3622, 47.9961]
+      },
+      "population": 368,
+      "surface": 1293.79,
+      "radius": 2.03
+    },
+    {
+      "nom": "Neuville-aux-Bois",
+      "code": "45224",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0592, 48.0682]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0528, 48.0684]
+      },
+      "population": 4984,
+      "surface": 3179.74,
+      "radius": 3.18
+    },
+    {
+      "nom": "Neuvy-en-Sullias",
+      "code": "45226",
+      "codesPostaux": ["45510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.245, 47.7767]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2455, 47.7961]
+      },
+      "population": 1365,
+      "surface": 2523.9,
+      "radius": 2.83
+    },
+    {
+      "nom": "Nevoy",
+      "code": "45227",
+      "codesPostaux": ["45500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5871, 47.733]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5801, 47.7133]
+      },
+      "population": 1160,
+      "surface": 3084.12,
+      "radius": 3.13
+    },
+    {
+      "nom": "Nibelle",
+      "code": "45228",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3121, 48.0147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3275, 48.0217]
+      },
+      "population": 1176,
+      "surface": 2714.56,
+      "radius": 2.94
+    },
+    {
+      "nom": "Nogent-sur-Vernisson",
+      "code": "45229",
+      "codesPostaux": ["45290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.726, 47.8338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7426, 47.8456]
+      },
+      "population": 2571,
+      "surface": 3341.55,
+      "radius": 3.26
+    },
+    {
+      "nom": "Noyers",
+      "code": "45230",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5355, 47.9077]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5237, 47.9153]
+      },
+      "population": 743,
+      "surface": 1805.46,
+      "radius": 2.4
+    },
+    {
+      "nom": "Oison",
+      "code": "45231",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9807, 48.1338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9698, 48.1379]
+      },
+      "population": 122,
+      "surface": 1213.49,
+      "radius": 1.97
+    },
+    {
+      "nom": "Olivet",
+      "code": "45232",
+      "codesPostaux": ["45160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8913, 47.8559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8972, 47.8653]
+      },
+      "population": 22988,
+      "surface": 2328.21,
+      "radius": 2.72
+    },
+    {
+      "nom": "Ondreville-sur-Essonne",
+      "code": "45233",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4176, 48.1985]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.41, 48.2004]
+      },
+      "population": 403,
+      "surface": 658.27,
+      "radius": 1.45
+    },
+    {
+      "nom": "Orléans",
+      "code": "45234",
+      "codesPostaux": ["45000", "45100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9122, 47.8734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9093, 47.9029]
+      },
+      "population": 116344,
+      "surface": 2764.07,
+      "radius": 2.97
+    },
+    {
+      "nom": "Ormes",
+      "code": "45235",
+      "codesPostaux": ["45140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8085, 47.946]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8181, 47.942]
+      },
+      "population": 4341,
+      "surface": 1822.43,
+      "radius": 2.41
+    },
+    {
+      "nom": "Orville",
+      "code": "45237",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4582, 48.243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4381, 48.2438]
+      },
+      "population": 129,
+      "surface": 720.76,
+      "radius": 1.51
+    },
+    {
+      "nom": "Ousson-sur-Loire",
+      "code": "45238",
+      "codesPostaux": ["45250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7943, 47.6036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7865, 47.5885]
+      },
+      "population": 702,
+      "surface": 543.16,
+      "radius": 1.31
+    },
+    {
+      "nom": "Oussoy-en-Gâtinais",
+      "code": "45239",
+      "codesPostaux": ["45290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6396, 47.9002]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6411, 47.9068]
+      },
+      "population": 423,
+      "surface": 2327.86,
+      "radius": 2.72
+    },
+    {
+      "nom": "Outarville",
+      "code": "45240",
+      "codesPostaux": ["45480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0215, 48.2151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0168, 48.211]
+      },
+      "population": 1343,
+      "surface": 4668.05,
+      "radius": 3.85
+    },
+    {
+      "nom": "Ouvrouer-les-Champs",
+      "code": "45241",
+      "codesPostaux": ["45150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1799, 47.8367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1785, 47.8326]
+      },
+      "population": 539,
+      "surface": 1054.41,
+      "radius": 1.83
+    },
+    {
+      "nom": "Ouzouer-des-Champs",
+      "code": "45242",
+      "codesPostaux": ["45290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7048, 47.8771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7051, 47.8795]
+      },
+      "population": 279,
+      "surface": 1140.96,
+      "radius": 1.91
+    },
+    {
+      "nom": "Ouzouer-sous-Bellegarde",
+      "code": "45243",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4814, 47.9893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4654, 47.9932]
+      },
+      "population": 314,
+      "surface": 1156.02,
+      "radius": 1.92
+    },
+    {
+      "nom": "Ouzouer-sur-Loire",
+      "code": "45244",
+      "codesPostaux": ["45570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.47, 47.7862]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4809, 47.7664]
+      },
+      "population": 2560,
+      "surface": 3576.11,
+      "radius": 3.37
+    },
+    {
+      "nom": "Ouzouer-sur-Trézée",
+      "code": "45245",
+      "codesPostaux": ["45250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8138, 47.6708]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.81, 47.6709]
+      },
+      "population": 1124,
+      "surface": 6266.01,
+      "radius": 4.47
+    },
+    {
+      "nom": "Pannecières",
+      "code": "45246",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1388, 48.296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1448, 48.2926]
+      },
+      "population": 116,
+      "surface": 702.86,
+      "radius": 1.5
+    },
+    {
+      "nom": "Pannes",
+      "code": "45247",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6708, 48.0119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6726, 48.0174]
+      },
+      "population": 3719,
+      "surface": 2081.8,
+      "radius": 2.57
+    },
+    {
+      "nom": "Patay",
+      "code": "45248",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6936, 48.0513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6943, 48.0478]
+      },
+      "population": 2341,
+      "surface": 1398.69,
+      "radius": 2.11
+    },
+    {
+      "nom": "Paucourt",
+      "code": "45249",
+      "codesPostaux": ["45200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7888, 48.0423]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7932, 48.0352]
+      },
+      "population": 920,
+      "surface": 2071.2,
+      "radius": 2.57
+    },
+    {
+      "nom": "Pers-en-Gâtinais",
+      "code": "45250",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9026, 48.116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9044, 48.1204]
+      },
+      "population": 241,
+      "surface": 1070.48,
+      "radius": 1.85
+    },
+    {
+      "nom": "Pierrefitte-ès-Bois",
+      "code": "45251",
+      "codesPostaux": ["45360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6922, 47.5121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7163, 47.5071]
+      },
+      "population": 286,
+      "surface": 2769.86,
+      "radius": 2.97
+    },
+    {
+      "nom": "Pithiviers",
+      "code": "45252",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2501, 48.1805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.257, 48.1733]
+      },
+      "population": 8981,
+      "surface": 686.37,
+      "radius": 1.48
+    },
+    {
+      "nom": "Pithiviers-le-Vieil",
+      "code": "45253",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2038, 48.1732]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2058, 48.1646]
+      },
+      "population": 1729,
+      "surface": 3369.46,
+      "radius": 3.27
+    },
+    {
+      "nom": "Poilly-lez-Gien",
+      "code": "45254",
+      "codesPostaux": ["45500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5906, 47.6591]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5984, 47.6783]
+      },
+      "population": 2464,
+      "surface": 3328.24,
+      "radius": 3.25
+    },
+    {
+      "nom": "Préfontaines",
+      "code": "45255",
+      "codesPostaux": ["45490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6889, 48.1063]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6922, 48.1114]
+      },
+      "population": 429,
+      "surface": 1168.02,
+      "radius": 1.93
+    },
+    {
+      "nom": "Presnoy",
+      "code": "45256",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5592, 47.9574]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5541, 47.9572]
+      },
+      "population": 256,
+      "surface": 785.55,
+      "radius": 1.58
+    },
+    {
+      "nom": "Pressigny-les-Pins",
+      "code": "45257",
+      "codesPostaux": ["45290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7656, 47.8789]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7499, 47.8809]
+      },
+      "population": 530,
+      "surface": 1192.74,
+      "radius": 1.95
+    },
+    {
+      "nom": "Puiseaux",
+      "code": "45258",
+      "codesPostaux": ["45390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4679, 48.2084]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4716, 48.2041]
+      },
+      "population": 3336,
+      "surface": 2028.67,
+      "radius": 2.54
+    },
+    {
+      "nom": "Quiers-sur-Bezonde",
+      "code": "45259",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4223, 47.9863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4372, 47.9975]
+      },
+      "population": 1165,
+      "surface": 1659.81,
+      "radius": 2.3
+    },
+    {
+      "nom": "Ramoulu",
+      "code": "45260",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3043, 48.2306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2939, 48.2262]
+      },
+      "population": 246,
+      "surface": 1202.18,
+      "radius": 1.96
+    },
+    {
+      "nom": "Rebréchien",
+      "code": "45261",
+      "codesPostaux": ["45470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.023, 47.9932]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0442, 47.9897]
+      },
+      "population": 1396,
+      "surface": 1936.45,
+      "radius": 2.48
+    },
+    {
+      "nom": "Rouvray-Sainte-Croix",
+      "code": "45262",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7391, 48.0544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7314, 48.0578]
+      },
+      "population": 136,
+      "surface": 956.97,
+      "radius": 1.75
+    },
+    {
+      "nom": "Rouvres-Saint-Jean",
+      "code": "45263",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.214, 48.327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2133, 48.3226]
+      },
+      "population": 299,
+      "surface": 1012.97,
+      "radius": 1.8
+    },
+    {
+      "nom": "Rozières-en-Beauce",
+      "code": "45264",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7085, 47.9376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7012, 47.9419]
+      },
+      "population": 181,
+      "surface": 916.54,
+      "radius": 1.71
+    },
+    {
+      "nom": "Rozoy-le-Vieil",
+      "code": "45265",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9552, 48.1184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9455, 48.1243]
+      },
+      "population": 398,
+      "surface": 822.33,
+      "radius": 1.62
+    },
+    {
+      "nom": "Ruan",
+      "code": "45266",
+      "codesPostaux": ["45410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9277, 48.1088]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9391, 48.1117]
+      },
+      "population": 205,
+      "surface": 1637.52,
+      "radius": 2.28
+    },
+    {
+      "nom": "Saint-Aignan-le-Jaillard",
+      "code": "45268",
+      "codesPostaux": ["45600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.426, 47.7312]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4418, 47.7423]
+      },
+      "population": 602,
+      "surface": 2403.69,
+      "radius": 2.77
+    },
+    {
+      "nom": "Saint-Ay",
+      "code": "45269",
+      "codesPostaux": ["45130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7495, 47.8663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7534, 47.8579]
+      },
+      "population": 3691,
+      "surface": 1031.21,
+      "radius": 1.81
+    },
+    {
+      "nom": "Saint-Benoît-sur-Loire",
+      "code": "45270",
+      "codesPostaux": ["45730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3195, 47.81]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3073, 47.8103]
+      },
+      "population": 1993,
+      "surface": 2045.94,
+      "radius": 2.55
+    },
+    {
+      "nom": "Saint-Brisson-sur-Loire",
+      "code": "45271",
+      "codesPostaux": ["45500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6759, 47.6306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6816, 47.6468]
+      },
+      "population": 961,
+      "surface": 2207.49,
+      "radius": 2.65
+    },
+    {
+      "nom": "Saint-Cyr-en-Val",
+      "code": "45272",
+      "codesPostaux": ["45590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9551, 47.814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9689, 47.8323]
+      },
+      "population": 3430,
+      "surface": 4439.23,
+      "radius": 3.76
+    },
+    {
+      "nom": "Saint-Denis-de-l'Hôtel",
+      "code": "45273",
+      "codesPostaux": ["45550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1496, 47.8839]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1285, 47.8724]
+      },
+      "population": 3057,
+      "surface": 2542.39,
+      "radius": 2.84
+    },
+    {
+      "nom": "Saint-Denis-en-Val",
+      "code": "45274",
+      "codesPostaux": ["45560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9714, 47.8791]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9555, 47.879]
+      },
+      "population": 7768,
+      "surface": 1734.56,
+      "radius": 2.35
+    },
+    {
+      "nom": "Saint-Firmin-des-Bois",
+      "code": "45275",
+      "codesPostaux": ["45220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9161, 47.967]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9109, 47.967]
+      },
+      "population": 498,
+      "surface": 1906.92,
+      "radius": 2.46
+    },
+    {
+      "nom": "Saint-Firmin-sur-Loire",
+      "code": "45276",
+      "codesPostaux": ["45360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6964, 47.608]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7316, 47.6268]
+      },
+      "population": 509,
+      "surface": 2520.42,
+      "radius": 2.83
+    },
+    {
+      "nom": "Saint-Florent",
+      "code": "45277",
+      "codesPostaux": ["45600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.458, 47.6865]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4748, 47.6896]
+      },
+      "population": 445,
+      "surface": 3766.36,
+      "radius": 3.46
+    },
+    {
+      "nom": "Saint-Germain-des-Prés",
+      "code": "45279",
+      "codesPostaux": ["45220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8421, 47.9652]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8499, 47.9537]
+      },
+      "population": 1864,
+      "surface": 2639.26,
+      "radius": 2.9
+    },
+    {
+      "nom": "Saint-Gondon",
+      "code": "45280",
+      "codesPostaux": ["45500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5389, 47.6912]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5432, 47.6982]
+      },
+      "population": 1046,
+      "surface": 2424.08,
+      "radius": 2.78
+    },
+    {
+      "nom": "Saint-Hilaire-les-Andrésis",
+      "code": "45281",
+      "codesPostaux": ["45320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0174, 48.0527]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0134, 48.0525]
+      },
+      "population": 953,
+      "surface": 2574.13,
+      "radius": 2.86
+    },
+    {
+      "nom": "Saint-Hilaire-Saint-Mesmin",
+      "code": "45282",
+      "codesPostaux": ["45160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8313, 47.8497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8379, 47.8694]
+      },
+      "population": 3156,
+      "surface": 1411.73,
+      "radius": 2.12
+    },
+    {
+      "nom": "Saint-Hilaire-sur-Puiseaux",
+      "code": "45283",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.698, 47.9076]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7059, 47.902]
+      },
+      "population": 154,
+      "surface": 1139.38,
+      "radius": 1.9
+    },
+    {
+      "nom": "Saint-Jean-de-Braye",
+      "code": "45284",
+      "codesPostaux": ["45800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9695, 47.9216]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9709, 47.9121]
+      },
+      "population": 22088,
+      "surface": 1369.32,
+      "radius": 2.09
+    },
+    {
+      "nom": "Saint-Jean-de-la-Ruelle",
+      "code": "45285",
+      "codesPostaux": ["45140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.872, 47.9101]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8742, 47.9127]
+      },
+      "population": 16608,
+      "surface": 609.06,
+      "radius": 1.39
+    },
+    {
+      "nom": "Saint-Jean-le-Blanc",
+      "code": "45286",
+      "codesPostaux": ["45650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9345, 47.8825]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9156, 47.893]
+      },
+      "population": 9534,
+      "surface": 765.1,
+      "radius": 1.56
+    },
+    {
+      "nom": "Saint-Loup-des-Vignes",
+      "code": "45288",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4251, 48.0421]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4214, 48.0409]
+      },
+      "population": 391,
+      "surface": 928.12,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saint-Lyé-la-Forêt",
+      "code": "45289",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9712, 48.0343]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9829, 48.041]
+      },
+      "population": 1235,
+      "surface": 2733.86,
+      "radius": 2.95
+    },
+    {
+      "nom": "Saint-Martin-d'Abbat",
+      "code": "45290",
+      "codesPostaux": ["45110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3097, 47.8792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2657, 47.8565]
+      },
+      "population": 1825,
+      "surface": 3887.66,
+      "radius": 3.52
+    },
+    {
+      "nom": "Saint-Martin-sur-Ocre",
+      "code": "45291",
+      "codesPostaux": ["45500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6477, 47.6461]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6574, 47.6581]
+      },
+      "population": 1225,
+      "surface": 1578.31,
+      "radius": 2.24
+    },
+    {
+      "nom": "Saint-Maurice-sur-Aveyron",
+      "code": "45292",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9548, 47.8406]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9275, 47.852]
+      },
+      "population": 842,
+      "surface": 5464.41,
+      "radius": 4.17
+    },
+    {
+      "nom": "Saint-Maurice-sur-Fessard",
+      "code": "45293",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6157, 47.9913]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6216, 47.9924]
+      },
+      "population": 1144,
+      "surface": 1536.28,
+      "radius": 2.21
+    },
+    {
+      "nom": "Saint-Michel",
+      "code": "45294",
+      "codesPostaux": ["45340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3693, 48.0625]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3792, 48.0688]
+      },
+      "population": 149,
+      "surface": 513.4,
+      "radius": 1.28
+    },
+    {
+      "nom": "Saint-Péravy-la-Colombe",
+      "code": "45296",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6937, 48.0027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6993, 48.0001]
+      },
+      "population": 768,
+      "surface": 1931.77,
+      "radius": 2.48
+    },
+    {
+      "nom": "Saint-Père-sur-Loire",
+      "code": "45297",
+      "codesPostaux": ["45600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.379, 47.7839]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3721, 47.7745]
+      },
+      "population": 1030,
+      "surface": 1073.02,
+      "radius": 1.85
+    },
+    {
+      "nom": "Saint-Pryvé-Saint-Mesmin",
+      "code": "45298",
+      "codesPostaux": ["45750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8448, 47.8796]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8678, 47.881]
+      },
+      "population": 6200,
+      "surface": 897.76,
+      "radius": 1.69
+    },
+    {
+      "nom": "Saint-Sigismond",
+      "code": "45299",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6683, 47.9834]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6771, 47.9809]
+      },
+      "population": 270,
+      "surface": 1456.74,
+      "radius": 2.15
+    },
+    {
+      "nom": "Sainte-Geneviève-des-Bois",
+      "code": "45278",
+      "codesPostaux": ["45230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7932, 47.8105]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.819, 47.8182]
+      },
+      "population": 1062,
+      "surface": 4078.42,
+      "radius": 3.6
+    },
+    {
+      "nom": "Sandillon",
+      "code": "45300",
+      "codesPostaux": ["45640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0307, 47.8371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0295, 47.8456]
+      },
+      "population": 4209,
+      "surface": 4293.94,
+      "radius": 3.7
+    },
+    {
+      "nom": "Santeau",
+      "code": "45301",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1491, 48.095]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1441, 48.1042]
+      },
+      "population": 393,
+      "surface": 868.73,
+      "radius": 1.66
+    },
+    {
+      "nom": "Saran",
+      "code": "45302",
+      "codesPostaux": ["45770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8806, 47.9479]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8745, 47.9515]
+      },
+      "population": 16866,
+      "surface": 2030.87,
+      "radius": 2.54
+    },
+    {
+      "nom": "Sceaux-du-Gâtinais",
+      "code": "45303",
+      "codesPostaux": ["45490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.592, 48.1126]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5955, 48.105]
+      },
+      "population": 613,
+      "surface": 3171.82,
+      "radius": 3.18
+    },
+    {
+      "nom": "Seichebrières",
+      "code": "45305",
+      "codesPostaux": ["45530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2749, 47.9854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2671, 47.9696]
+      },
+      "population": 220,
+      "surface": 1485.99,
+      "radius": 2.17
+    },
+    {
+      "nom": "Semoy",
+      "code": "45308",
+      "codesPostaux": ["45400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9652, 47.9363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9492, 47.9324]
+      },
+      "population": 3204,
+      "surface": 774.34,
+      "radius": 1.57
+    },
+    {
+      "nom": "Sennely",
+      "code": "45309",
+      "codesPostaux": ["45240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1379, 47.7066]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1473, 47.6787]
+      },
+      "population": 680,
+      "surface": 4999.57,
+      "radius": 3.99
+    },
+    {
+      "nom": "Sermaises",
+      "code": "45310",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2055, 48.2956]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2017, 48.2958]
+      },
+      "population": 1703,
+      "surface": 2125.11,
+      "radius": 2.6
+    },
+    {
+      "nom": "Sigloy",
+      "code": "45311",
+      "codesPostaux": ["45110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2231, 47.8391]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2254, 47.834]
+      },
+      "population": 660,
+      "surface": 1071.48,
+      "radius": 1.85
+    },
+    {
+      "nom": "Solterre",
+      "code": "45312",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.736, 47.9101]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7367, 47.9187]
+      },
+      "population": 476,
+      "surface": 981.95,
+      "radius": 1.77
+    },
+    {
+      "nom": "Sougy",
+      "code": "45313",
+      "codesPostaux": ["45410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7974, 48.0611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7908, 48.0537]
+      },
+      "population": 835,
+      "surface": 2823.25,
+      "radius": 3
+    },
+    {
+      "nom": "Sully-la-Chapelle",
+      "code": "45314",
+      "codesPostaux": ["45450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1756, 47.9865]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1817, 47.9753]
+      },
+      "population": 453,
+      "surface": 2629.28,
+      "radius": 2.89
+    },
+    {
+      "nom": "Sully-sur-Loire",
+      "code": "45315",
+      "codesPostaux": ["45600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3499, 47.751]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3756, 47.766]
+      },
+      "population": 5142,
+      "surface": 4357.44,
+      "radius": 3.72
+    },
+    {
+      "nom": "Sury-aux-Bois",
+      "code": "45316",
+      "codesPostaux": ["45530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3604, 47.9535]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3415, 47.9655]
+      },
+      "population": 775,
+      "surface": 3795.77,
+      "radius": 3.48
+    },
+    {
+      "nom": "Tavers",
+      "code": "45317",
+      "codesPostaux": ["45190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5882, 47.7576]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6156, 47.7571]
+      },
+      "population": 1338,
+      "surface": 2197.83,
+      "radius": 2.64
+    },
+    {
+      "nom": "Thignonville",
+      "code": "45320",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1762, 48.2712]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1737, 48.2806]
+      },
+      "population": 388,
+      "surface": 914.38,
+      "radius": 1.71
+    },
+    {
+      "nom": "Thimory",
+      "code": "45321",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5959, 47.9265]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6031, 47.9242]
+      },
+      "population": 691,
+      "surface": 1253.39,
+      "radius": 2
+    },
+    {
+      "nom": "Thorailles",
+      "code": "45322",
+      "codesPostaux": ["45210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8949, 48.027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8985, 48.0234]
+      },
+      "population": 197,
+      "surface": 346.87,
+      "radius": 1.05
+    },
+    {
+      "nom": "Thou",
+      "code": "45323",
+      "codesPostaux": ["45420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8919, 47.5843]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9114, 47.5809]
+      },
+      "population": 213,
+      "surface": 1511.56,
+      "radius": 2.19
+    },
+    {
+      "nom": "Tigy",
+      "code": "45324",
+      "codesPostaux": ["45510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1812, 47.7796]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2008, 47.7951]
+      },
+      "population": 2463,
+      "surface": 4706.25,
+      "radius": 3.87
+    },
+    {
+      "nom": "Tivernon",
+      "code": "45325",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9365, 48.1581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9332, 48.1562]
+      },
+      "population": 282,
+      "surface": 1259.44,
+      "radius": 2
+    },
+    {
+      "nom": "Tournoisis",
+      "code": "45326",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6181, 48.0027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6311, 48.005]
+      },
+      "population": 383,
+      "surface": 1520.89,
+      "radius": 2.2
+    },
+    {
+      "nom": "Traînou",
+      "code": "45327",
+      "codesPostaux": ["45470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.097, 47.9643]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1013, 47.9757]
+      },
+      "population": 3419,
+      "surface": 3355.36,
+      "radius": 3.27
+    },
+    {
+      "nom": "Treilles-en-Gâtinais",
+      "code": "45328",
+      "codesPostaux": ["45490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6604, 48.0823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6609, 48.0762]
+      },
+      "population": 294,
+      "surface": 1399.86,
+      "radius": 2.11
+    },
+    {
+      "nom": "Triguères",
+      "code": "45329",
+      "codesPostaux": ["45220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9949, 47.9418]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9847, 47.9394]
+      },
+      "population": 1267,
+      "surface": 3585.94,
+      "radius": 3.38
+    },
+    {
+      "nom": "Trinay",
+      "code": "45330",
+      "codesPostaux": ["45410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9535, 48.0846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9521, 48.0859]
+      },
+      "population": 210,
+      "surface": 1743.71,
+      "radius": 2.36
+    },
+    {
+      "nom": "Vannes-sur-Cosson",
+      "code": "45331",
+      "codesPostaux": ["45510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2021, 47.7168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2123, 47.7142]
+      },
+      "population": 602,
+      "surface": 3555.99,
+      "radius": 3.36
+    },
+    {
+      "nom": "Varennes-Changy",
+      "code": "45332",
+      "codesPostaux": ["45290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6632, 47.8647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6616, 47.8654]
+      },
+      "population": 1483,
+      "surface": 2980.55,
+      "radius": 3.08
+    },
+    {
+      "nom": "Vennecy",
+      "code": "45333",
+      "codesPostaux": ["45760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0531, 47.9543]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0548, 47.9546]
+      },
+      "population": 2045,
+      "surface": 1071.46,
+      "radius": 1.85
+    },
+    {
+      "nom": "Vieilles-Maisons-sur-Joudry",
+      "code": "45334",
+      "codesPostaux": ["45260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4362, 47.8806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4445, 47.8868]
+      },
+      "population": 621,
+      "surface": 1647.96,
+      "radius": 2.29
+    },
+    {
+      "nom": "Vienne-en-Val",
+      "code": "45335",
+      "codesPostaux": ["45510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1197, 47.7775]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1336, 47.7999]
+      },
+      "population": 1965,
+      "surface": 3579.6,
+      "radius": 3.38
+    },
+    {
+      "nom": "Viglain",
+      "code": "45336",
+      "codesPostaux": ["45600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2885, 47.7329]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3021, 47.7279]
+      },
+      "population": 854,
+      "surface": 3996.34,
+      "radius": 3.57
+    },
+    {
+      "nom": "Villamblain",
+      "code": "45337",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5582, 48.013]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5498, 48.0086]
+      },
+      "population": 279,
+      "surface": 2655.83,
+      "radius": 2.91
+    },
+    {
+      "nom": "Villemandeur",
+      "code": "45338",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7011, 47.9811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7103, 47.9906]
+      },
+      "population": 6931,
+      "surface": 1149.85,
+      "radius": 1.91
+    },
+    {
+      "nom": "Villemoutiers",
+      "code": "45339",
+      "codesPostaux": ["45270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5513, 47.9916]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5585, 47.9953]
+      },
+      "population": 475,
+      "surface": 1614.86,
+      "radius": 2.27
+    },
+    {
+      "nom": "Villemurlin",
+      "code": "45340",
+      "codesPostaux": ["45600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3444, 47.6771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3356, 47.6845]
+      },
+      "population": 537,
+      "surface": 4891.8,
+      "radius": 3.95
+    },
+    {
+      "nom": "Villeneuve-sur-Conie",
+      "code": "45341",
+      "codesPostaux": ["45310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.647, 48.0484]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6504, 48.0441]
+      },
+      "population": 192,
+      "surface": 1807.24,
+      "radius": 2.4
+    },
+    {
+      "nom": "Villereau",
+      "code": "45342",
+      "codesPostaux": ["45170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9952, 48.0723]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9887, 48.0693]
+      },
+      "population": 401,
+      "surface": 908.73,
+      "radius": 1.7
+    },
+    {
+      "nom": "Villevoques",
+      "code": "45343",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6259, 48.0279]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6273, 48.0291]
+      },
+      "population": 196,
+      "surface": 504.8,
+      "radius": 1.27
+    },
+    {
+      "nom": "Villorceau",
+      "code": "45344",
+      "codesPostaux": ["45190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5921, 47.8024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5965, 47.8009]
+      },
+      "population": 1076,
+      "surface": 952.79,
+      "radius": 1.74
+    },
+    {
+      "nom": "Vimory",
+      "code": "45345",
+      "codesPostaux": ["45700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6806, 47.9495]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.686, 47.9461]
+      },
+      "population": 1101,
+      "surface": 2622.04,
+      "radius": 2.89
+    },
+    {
+      "nom": "Vitry-aux-Loges",
+      "code": "45346",
+      "codesPostaux": ["45530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2546, 47.9328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2664, 47.9399]
+      },
+      "population": 2212,
+      "surface": 4396.6,
+      "radius": 3.74
+    },
+    {
+      "nom": "Vrigny",
+      "code": "45347",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2424, 48.0673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2438, 48.0831]
+      },
+      "population": 797,
+      "surface": 1612.31,
+      "radius": 2.27
+    },
+    {
+      "nom": "Yèvre-la-Ville",
+      "code": "45348",
+      "codesPostaux": ["45300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.326, 48.1404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3257, 48.1464]
+      },
+      "population": 666,
+      "surface": 2667.11,
+      "radius": 2.91
+    }
+  ],
+  "postalCodes": {
+    "45000": {
+      "communes": ["Orléans"],
+      "communeCount": 1,
+      "center": [1.9093, 47.9029],
+      "coverageRadius": 2.97,
+      "totalPopulation": 116344,
+      "totalSurface": 2764
+    },
+    "45100": {
+      "communes": ["Orléans"],
+      "communeCount": 1,
+      "center": [1.9093, 47.9029],
+      "coverageRadius": 2.97,
+      "totalPopulation": 116344,
+      "totalSurface": 2764
+    },
+    "45110": {
+      "communes": ["Châteauneuf-sur-Loire", "Germigny-des-Prés", "Saint-Martin-d'Abbat", "Sigloy"],
+      "communeCount": 4,
+      "center": [2.2279, 47.86],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 47.834,
+        "maxLat": 47.864,
+        "minLon": 2.2167,
+        "maxLon": 2.2667
+      },
+      "totalPopulation": 11655,
+      "totalSurface": 9971
+    },
+    "45120": {
+      "communes": ["Cepoy", "Châlette-sur-Loing", "Corquilleroy", "Girolles"],
+      "communeCount": 4,
+      "center": [2.7274, 48.0246],
+      "coverageRadius": 4.3,
+      "boundingBox": {
+        "minLat": 48.0148,
+        "maxLat": 48.0621,
+        "minLon": 2.6982,
+        "maxLon": 2.7404
+      },
+      "totalPopulation": 18743,
+      "totalSurface": 4939
+    },
+    "45130": {
+      "communes": [
+        "Baccon",
+        "Le Bardon",
+        "Baule",
+        "Charsonville",
+        "Coulmiers",
+        "Épieds-en-Beauce",
+        "Huisseau-sur-Mauves",
+        "Meung-sur-Loire",
+        "Rozières-en-Beauce",
+        "Saint-Ay"
+      ],
+      "communeCount": 10,
+      "center": [1.6905, 47.8585],
+      "coverageRadius": 11.4,
+      "boundingBox": {
+        "minLat": 47.8112,
+        "maxLat": 47.9485,
+        "minLon": 1.5833,
+        "maxLon": 1.7534
+      },
+      "totalPopulation": 18487,
+      "totalSurface": 21320
+    },
+    "45140": {
+      "communes": ["Boulay-les-Barres", "Bucy-Saint-Liphard", "Ingré", "Ormes", "Saint-Jean-de-la-Ruelle"],
+      "communeCount": 5,
+      "center": [1.8487, 47.9213],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 47.9127,
+        "maxLat": 47.9803,
+        "minLon": 1.7647,
+        "maxLon": 1.8742
+      },
+      "totalPopulation": 32056,
+      "totalSurface": 7533
+    },
+    "45150": {
+      "communes": ["Darvoy", "Férolles", "Jargeau", "Ouvrouer-les-Champs"],
+      "communeCount": 4,
+      "center": [2.1182, 47.8573],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 47.8326,
+        "maxLat": 47.8662,
+        "minLon": 2.0959,
+        "maxLon": 2.1785
+      },
+      "totalPopulation": 8214,
+      "totalSurface": 5085
+    },
+    "45160": {
+      "communes": ["Ardon", "Olivet", "Saint-Hilaire-Saint-Mesmin"],
+      "communeCount": 3,
+      "center": [1.8894, 47.862],
+      "coverageRadius": 9.3,
+      "boundingBox": {
+        "minLat": 47.779,
+        "maxLat": 47.8694,
+        "minLon": 1.8379,
+        "maxLon": 1.8972
+      },
+      "totalPopulation": 27345,
+      "totalSurface": 9202
+    },
+    "45170": {
+      "communes": [
+        "Aschères-le-Marché",
+        "Attray",
+        "Bougy-lez-Neuville",
+        "Chilleurs-aux-Bois",
+        "Crottes-en-Pithiverais",
+        "Montigny",
+        "Neuville-aux-Bois",
+        "Oison",
+        "Saint-Lyé-la-Forêt",
+        "Santeau",
+        "Tivernon",
+        "Villereau"
+      ],
+      "communeCount": 12,
+      "center": [2.055, 48.077],
+      "coverageRadius": 12.7,
+      "boundingBox": {
+        "minLat": 48.0402,
+        "maxLat": 48.1562,
+        "minLon": 1.9332,
+        "maxLon": 2.1441
+      },
+      "totalPopulation": 11587,
+      "totalSurface": 22791
+    },
+    "45190": {
+      "communes": ["Beaugency", "Cravant", "Messas", "Tavers", "Villorceau"],
+      "communeCount": 5,
+      "center": [1.6226, 47.7841],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 47.7571,
+        "maxLat": 47.828,
+        "minLon": 1.5735,
+        "maxLon": 1.6361
+      },
+      "totalPopulation": 12205,
+      "totalSurface": 8722
+    },
+    "45200": {
+      "communes": ["Amilly", "Montargis", "Paucourt"],
+      "communeCount": 3,
+      "center": [2.7499, 47.9883],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 47.9744,
+        "maxLat": 48.0352,
+        "minLon": 2.7312,
+        "maxLon": 2.7932
+      },
+      "totalPopulation": 29171,
+      "totalSurface": 6542
+    },
+    "45210": {
+      "communes": [
+        "Bazoches-sur-le-Betz",
+        "Le Bignon-Mirabeau",
+        "La Chapelle-Saint-Sépulcre",
+        "Chevannes",
+        "Chevry-sous-le-Bignon",
+        "Ferrières-en-Gâtinais",
+        "Fontenay-sur-Loing",
+        "Griselles",
+        "Louzouer",
+        "Mérinville",
+        "Nargis",
+        "Pers-en-Gâtinais",
+        "Rozoy-le-Vieil",
+        "La Selle-en-Hermoy",
+        "La Selle-sur-le-Bied",
+        "Thorailles"
+      ],
+      "communeCount": 16,
+      "center": [2.8369, 48.0911],
+      "coverageRadius": 12.2,
+      "boundingBox": {
+        "minLat": 48.0134,
+        "maxLat": 48.1463,
+        "minLon": 2.7574,
+        "maxLon": 2.9878
+      },
+      "totalPopulation": 12939,
+      "totalSurface": 23873
+    },
+    "45220": {
+      "communes": [
+        "Château-Renard",
+        "Chuelles",
+        "Douchy-Montcorbon",
+        "Gy-les-Nonains",
+        "Melleroy",
+        "Saint-Firmin-des-Bois",
+        "Saint-Germain-des-Prés",
+        "Triguères"
+      ],
+      "communeCount": 8,
+      "center": [2.9378, 47.9496],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 47.8962,
+        "maxLat": 48.0043,
+        "minLon": 2.8473,
+        "maxLon": 3.0507
+      },
+      "totalPopulation": 9439,
+      "totalSurface": 24710
+    },
+    "45230": {
+      "communes": [
+        "Adon",
+        "Aillant-sur-Milleron",
+        "La Bussière",
+        "La Chapelle-sur-Aveyron",
+        "Le Charme",
+        "Châtillon-Coligny",
+        "Dammarie-sur-Loing",
+        "Feins-en-Gâtinais",
+        "Montbouy",
+        "Sainte-Geneviève-des-Bois",
+        "Saint-Maurice-sur-Aveyron"
+      ],
+      "communeCount": 11,
+      "center": [2.8484, 47.8186],
+      "coverageRadius": 11.1,
+      "boundingBox": {
+        "minLat": 47.7445,
+        "maxLat": 47.8663,
+        "minLon": 2.7497,
+        "maxLon": 2.9943
+      },
+      "totalPopulation": 7078,
+      "totalSurface": 30045
+    },
+    "45240": {
+      "communes": [
+        "La Ferté-Saint-Aubin",
+        "Ligny-le-Ribault",
+        "Marcilly-en-Villette",
+        "Ménestreau-en-Villette",
+        "Sennely"
+      ],
+      "communeCount": 5,
+      "center": [1.9587, 47.7196],
+      "coverageRadius": 14.9,
+      "boundingBox": {
+        "minLat": 47.6787,
+        "maxLat": 47.765,
+        "minLon": 1.7808,
+        "maxLon": 2.1473
+      },
+      "totalPopulation": 12822,
+      "totalSurface": 31230
+    },
+    "45250": {
+      "communes": ["Breteau", "Briare", "Escrignelles", "Ousson-sur-Loire", "Ouzouer-sur-Trézée"],
+      "communeCount": 5,
+      "center": [2.7592, 47.6407],
+      "coverageRadius": 11.2,
+      "boundingBox": {
+        "minLat": 47.5885,
+        "maxLat": 47.7161,
+        "minLon": 2.7407,
+        "maxLon": 2.894
+      },
+      "totalPopulation": 6990,
+      "totalSurface": 14390
+    },
+    "45260": {
+      "communes": [
+        "Chailly-en-Gâtinais",
+        "Châtenoy",
+        "Coudroy",
+        "La Cour-Marigny",
+        "Lorris",
+        "Montereau",
+        "Noyers",
+        "Presnoy",
+        "Thimory",
+        "Vieilles-Maisons-sur-Joudry"
+      ],
+      "communeCount": 10,
+      "center": [2.5215, 47.902],
+      "coverageRadius": 9.4,
+      "boundingBox": {
+        "minLat": 47.8571,
+        "maxLat": 47.9572,
+        "minLon": 2.3989,
+        "maxLon": 2.6031
+      },
+      "totalPopulation": 7735,
+      "totalSurface": 22256
+    },
+    "45270": {
+      "communes": [
+        "Auvilliers-en-Gâtinais",
+        "Beauchamps-sur-Huillard",
+        "Bellegarde",
+        "Chapelon",
+        "Fréville-du-Gâtinais",
+        "Ladon",
+        "Mézières-en-Gâtinais",
+        "Moulon",
+        "Nesploy",
+        "Ouzouer-sous-Bellegarde",
+        "Quiers-sur-Bezonde",
+        "Villemoutiers"
+      ],
+      "communeCount": 12,
+      "center": [2.4796, 47.9954],
+      "coverageRadius": 8.8,
+      "boundingBox": {
+        "minLat": 47.9376,
+        "maxLat": 48.0367,
+        "minLon": 2.3622,
+        "maxLon": 2.5915
+      },
+      "totalPopulation": 6739,
+      "totalSurface": 15071
+    },
+    "45290": {
+      "communes": [
+        "Boismorand",
+        "Les Choux",
+        "Langesse",
+        "Le Moulinet-sur-Solin",
+        "Nogent-sur-Vernisson",
+        "Oussoy-en-Gâtinais",
+        "Ouzouer-des-Champs",
+        "Pressigny-les-Pins",
+        "Varennes-Changy"
+      ],
+      "communeCount": 9,
+      "center": [2.7068, 47.8461],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 47.7859,
+        "maxLat": 47.9068,
+        "minLon": 2.627,
+        "maxLon": 2.7499
+      },
+      "totalPopulation": 6893,
+      "totalSurface": 19750
+    },
+    "45300": {
+      "communes": [
+        "Ascoux",
+        "Audeville",
+        "Bondaroy",
+        "Bouilly-en-Gâtinais",
+        "Bouzonville-aux-Bois",
+        "Boynes",
+        "Césarville-Dossainville",
+        "Courcelles-le-Roi",
+        "Courcy-aux-Loges",
+        "Dadonville",
+        "Engenville",
+        "Escrennes",
+        "Estouy",
+        "Givraines",
+        "Guigneville",
+        "Intville-la-Guétard",
+        "Laas",
+        "Le Malesherbois",
+        "Mareau-aux-Bois",
+        "Marsainvilliers",
+        "Morville-en-Beauce",
+        "Pannecières",
+        "Pithiviers",
+        "Pithiviers-le-Vieil",
+        "Ramoulu",
+        "Rouvres-Saint-Jean",
+        "Sermaises",
+        "Thignonville",
+        "Vrigny",
+        "Yèvre-la-Ville"
+      ],
+      "communeCount": 30,
+      "center": [2.2902, 48.2004],
+      "coverageRadius": 16,
+      "boundingBox": {
+        "minLat": 48.0654,
+        "maxLat": 48.3226,
+        "minLon": 2.1448,
+        "maxLon": 2.4163
+      },
+      "totalPopulation": 34208,
+      "totalSurface": 49454
+    },
+    "45310": {
+      "communes": [
+        "Bricy",
+        "La Chapelle-Onzerain",
+        "Coinces",
+        "Gémigny",
+        "Patay",
+        "Rouvray-Sainte-Croix",
+        "Saint-Péravy-la-Colombe",
+        "Saint-Sigismond",
+        "Tournoisis",
+        "Villamblain",
+        "Villeneuve-sur-Conie"
+      ],
+      "communeCount": 11,
+      "center": [1.6931, 48.0224],
+      "coverageRadius": 10.8,
+      "boundingBox": {
+        "minLat": 47.9655,
+        "maxLat": 48.0578,
+        "minLon": 1.5498,
+        "maxLon": 1.7809
+      },
+      "totalPopulation": 5737,
+      "totalSurface": 17361
+    },
+    "45320": {
+      "communes": ["Chantecoq", "Courtemaux", "Courtenay", "Ervauville", "Foucherolles", "Saint-Hilaire-les-Andrésis"],
+      "communeCount": 6,
+      "center": [3.0301, 48.0499],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 48.0397,
+        "maxLat": 48.0931,
+        "minLon": 2.9364,
+        "maxLon": 3.0588
+      },
+      "totalPopulation": 6398,
+      "totalSurface": 12643
+    },
+    "45330": {
+      "communes": ["Augerville-la-Rivière", "Le Malesherbois"],
+      "communeCount": 2,
+      "center": [2.4169, 48.2944],
+      "coverageRadius": 4.9,
+      "boundingBox": {
+        "minLat": 48.2533,
+        "maxLat": 48.2955,
+        "minLon": 2.4163,
+        "maxLon": 2.4376
+      },
+      "totalPopulation": 8238,
+      "totalSurface": 8923
+    },
+    "45340": {
+      "communes": [
+        "Auxy",
+        "Barville-en-Gâtinais",
+        "Batilly-en-Gâtinais",
+        "Beaune-la-Rolande",
+        "Boiscommun",
+        "Bordeaux-en-Gâtinais",
+        "Chambon-la-Forêt",
+        "Égry",
+        "Gaubertin",
+        "Juranville",
+        "Montbarrois",
+        "Montliard",
+        "Nancray-sur-Rimarde",
+        "Nibelle",
+        "Saint-Loup-des-Vignes",
+        "Saint-Michel"
+      ],
+      "communeCount": 16,
+      "center": [2.3952, 48.0645],
+      "coverageRadius": 10.5,
+      "boundingBox": {
+        "minLat": 48.0191,
+        "maxLat": 48.1226,
+        "minLon": 2.2952,
+        "maxLon": 2.5251
+      },
+      "totalPopulation": 9757,
+      "totalSurface": 20219
+    },
+    "45360": {
+      "communes": ["Cernoy-en-Berry", "Châtillon-sur-Loire", "Pierrefitte-ès-Bois", "Saint-Firmin-sur-Loire"],
+      "communeCount": 4,
+      "center": [2.7388, 47.5842],
+      "coverageRadius": 8.8,
+      "boundingBox": {
+        "minLat": 47.5071,
+        "maxLat": 47.6268,
+        "minLon": 2.6587,
+        "maxLon": 2.7529
+      },
+      "totalPopulation": 4374,
+      "totalSurface": 12168
+    },
+    "45370": {
+      "communes": ["Cléry-Saint-André", "Dry", "Jouy-le-Potier", "Mareau-aux-Prés", "Mézières-lez-Cléry"],
+      "communeCount": 5,
+      "center": [1.7719, 47.8086],
+      "coverageRadius": 7.5,
+      "boundingBox": {
+        "minLat": 47.7466,
+        "maxLat": 47.8458,
+        "minLon": 1.7157,
+        "maxLon": 1.8101
+      },
+      "totalPopulation": 9111,
+      "totalSurface": 13463
+    },
+    "45380": {
+      "communes": ["Chaingy", "La Chapelle-Saint-Mesmin"],
+      "communeCount": 2,
+      "center": [1.8211, 47.8863],
+      "coverageRadius": 3.8,
+      "boundingBox": {
+        "minLat": 47.8838,
+        "maxLat": 47.8873,
+        "minLon": 1.7716,
+        "maxLon": 1.8404
+      },
+      "totalPopulation": 14573,
+      "totalSurface": 3064
+    },
+    "45390": {
+      "communes": [
+        "Aulnay-la-Rivière",
+        "Boësses",
+        "Briarres-sur-Essonne",
+        "Bromeilles",
+        "Desmonts",
+        "Dimancheville",
+        "Échilleuses",
+        "Grangermont",
+        "La Neuville-sur-Essonne",
+        "Ondreville-sur-Essonne",
+        "Orville",
+        "Puiseaux"
+      ],
+      "communeCount": 12,
+      "center": [2.4492, 48.1997],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 48.1526,
+        "maxLat": 48.2438,
+        "minLon": 2.3746,
+        "maxLon": 2.4978
+      },
+      "totalPopulation": 6786,
+      "totalSurface": 11910
+    },
+    "45400": {
+      "communes": ["Chanteau", "Fleury-les-Aubrais", "Semoy"],
+      "communeCount": 3,
+      "center": [1.9275, 47.9335],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 47.9312,
+        "maxLat": 47.9661,
+        "minLon": 1.9209,
+        "maxLon": 1.9728
+      },
+      "totalPopulation": 26479,
+      "totalSurface": 4682
+    },
+    "45410": {
+      "communes": ["Artenay", "Bucy-le-Roi", "Lion-en-Beauce", "Ruan", "Sougy", "Trinay"],
+      "communeCount": 6,
+      "center": [1.8697, 48.0782],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 48.0537,
+        "maxLat": 48.1331,
+        "minLon": 1.7908,
+        "maxLon": 1.9521
+      },
+      "totalPopulation": 3558,
+      "totalSurface": 9416
+    },
+    "45420": {
+      "communes": ["Batilly-en-Puisaye", "Bonny-sur-Loire", "Champoulet", "Dammarie-en-Puisaye", "Faverelles", "Thou"],
+      "communeCount": 6,
+      "center": [2.8581, 47.5718],
+      "coverageRadius": 10.8,
+      "boundingBox": {
+        "minLat": 47.5605,
+        "maxLat": 47.6588,
+        "minLon": 2.8408,
+        "maxLon": 2.9309
+      },
+      "totalPopulation": 2570,
+      "totalSurface": 11364
+    },
+    "45430": {
+      "communes": ["Bou", "Chécy", "Mardié"],
+      "communeCount": 3,
+      "center": [2.0342, 47.8888],
+      "coverageRadius": 2,
+      "boundingBox": {
+        "minLat": 47.8738,
+        "maxLat": 47.8914,
+        "minLon": 2.0251,
+        "maxLon": 2.0566
+      },
+      "totalPopulation": 13050,
+      "totalSurface": 3910
+    },
+    "45450": {
+      "communes": ["Donnery", "Fay-aux-Loges", "Ingrannes", "Sully-la-Chapelle"],
+      "communeCount": 4,
+      "center": [2.1323, 47.9302],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 47.9154,
+        "maxLat": 47.991,
+        "minLon": 2.1017,
+        "maxLon": 2.2113
+      },
+      "totalPopulation": 7675,
+      "totalSurface": 11336
+    },
+    "45460": {
+      "communes": ["Bonnée", "Les Bordes", "Bouzy-la-Forêt", "Bray-Saint-Aignan"],
+      "communeCount": 4,
+      "center": [2.3825, 47.8242],
+      "coverageRadius": 3.1,
+      "boundingBox": {
+        "minLat": 47.7968,
+        "maxLat": 47.8513,
+        "minLon": 2.3653,
+        "maxLon": 2.4015
+      },
+      "totalPopulation": 5549,
+      "totalSurface": 9930
+    },
+    "45470": {
+      "communes": ["Loury", "Rebréchien", "Traînou"],
+      "communeCount": 3,
+      "center": [2.085, 47.9875],
+      "coverageRadius": 3.1,
+      "boundingBox": {
+        "minLat": 47.9757,
+        "maxLat": 48.002,
+        "minLon": 2.0442,
+        "maxLon": 2.1013
+      },
+      "totalPopulation": 7397,
+      "totalSurface": 8726
+    },
+    "45480": {
+      "communes": [
+        "Andonville",
+        "Autruy-sur-Juine",
+        "Bazoches-les-Gallerandes",
+        "Boisseaux",
+        "Charmont-en-Beauce",
+        "Châtillon-le-Roi",
+        "Chaussy",
+        "Erceville",
+        "Greneville-en-Beauce",
+        "Jouy-en-Pithiverais",
+        "Léouville",
+        "Outarville"
+      ],
+      "communeCount": 12,
+      "center": [2.0531, 48.2065],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 48.1429,
+        "maxLat": 48.2759,
+        "minLon": 1.9873,
+        "maxLon": 2.1119
+      },
+      "totalPopulation": 6516,
+      "totalSurface": 22125
+    },
+    "45490": {
+      "communes": [
+        "Corbeilles",
+        "Courtempierre",
+        "Gondreville",
+        "Lorcy",
+        "Mignères",
+        "Mignerette",
+        "Préfontaines",
+        "Sceaux-du-Gâtinais",
+        "Treilles-en-Gâtinais"
+      ],
+      "communeCount": 9,
+      "center": [2.5936, 48.0756],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 48.0479,
+        "maxLat": 48.1114,
+        "minLon": 2.5337,
+        "maxLon": 2.6922
+      },
+      "totalPopulation": 4718,
+      "totalSurface": 13993
+    },
+    "45500": {
+      "communes": [
+        "Autry-le-Châtel",
+        "Gien",
+        "Nevoy",
+        "Poilly-lez-Gien",
+        "Saint-Brisson-sur-Loire",
+        "Saint-Gondon",
+        "Saint-Martin-sur-Ocre"
+      ],
+      "communeCount": 7,
+      "center": [2.6188, 47.6879],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 47.5995,
+        "maxLat": 47.7133,
+        "minLon": 2.5432,
+        "maxLon": 2.6816
+      },
+      "totalPopulation": 21145,
+      "totalSurface": 24494
+    },
+    "45510": {
+      "communes": ["Neuvy-en-Sullias", "Tigy", "Vannes-sur-Cosson", "Vienne-en-Val"],
+      "communeCount": 4,
+      "center": [2.1908, 47.7892],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 47.7142,
+        "maxLat": 47.7999,
+        "minLon": 2.1336,
+        "maxLon": 2.2455
+      },
+      "totalPopulation": 6395,
+      "totalSurface": 14366
+    },
+    "45520": {
+      "communes": ["Cercottes", "Chevilly", "Gidy", "Huêtre"],
+      "communeCount": 4,
+      "center": [1.8613, 48.0053],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 47.9857,
+        "maxLat": 48.0265,
+        "minLon": 1.7954,
+        "maxLon": 1.8825
+      },
+      "totalPopulation": 6427,
+      "totalSurface": 10313
+    },
+    "45530": {
+      "communes": ["Combreux", "Seichebrières", "Sury-aux-Bois", "Vitry-aux-Loges"],
+      "communeCount": 4,
+      "center": [2.2861, 47.9488],
+      "coverageRadius": 4.6,
+      "boundingBox": {
+        "minLat": 47.9399,
+        "maxLat": 47.9696,
+        "minLon": 2.2664,
+        "maxLon": 2.3415
+      },
+      "totalPopulation": 3477,
+      "totalSurface": 10948
+    },
+    "45550": {
+      "communes": ["Saint-Denis-de-l'Hôtel"],
+      "communeCount": 1,
+      "center": [2.1285, 47.8724],
+      "coverageRadius": 2.84,
+      "totalPopulation": 3057,
+      "totalSurface": 2542
+    },
+    "45560": {
+      "communes": ["Saint-Denis-en-Val"],
+      "communeCount": 1,
+      "center": [1.9555, 47.879],
+      "coverageRadius": 2.35,
+      "totalPopulation": 7768,
+      "totalSurface": 1735
+    },
+    "45570": {
+      "communes": ["Dampierre-en-Burly", "Ouzouer-sur-Loire"],
+      "communeCount": 2,
+      "center": [2.4949, 47.7647],
+      "coverageRadius": 1.9,
+      "boundingBox": {
+        "minLat": 47.7616,
+        "maxLat": 47.7664,
+        "minLon": 2.4809,
+        "maxLon": 2.5196
+      },
+      "totalPopulation": 4014,
+      "totalSurface": 8419
+    },
+    "45590": {
+      "communes": ["Saint-Cyr-en-Val"],
+      "communeCount": 1,
+      "center": [1.9689, 47.8323],
+      "coverageRadius": 3.76,
+      "totalPopulation": 3430,
+      "totalSurface": 4439
+    },
+    "45600": {
+      "communes": [
+        "Guilly",
+        "Lion-en-Sullias",
+        "Saint-Aignan-le-Jaillard",
+        "Saint-Florent",
+        "Saint-Père-sur-Loire",
+        "Sully-sur-Loire",
+        "Viglain",
+        "Villemurlin"
+      ],
+      "communeCount": 8,
+      "center": [2.3729, 47.7552],
+      "coverageRadius": 10.6,
+      "boundingBox": {
+        "minLat": 47.6845,
+        "maxLat": 47.8054,
+        "minLon": 2.2762,
+        "maxLon": 2.4895
+      },
+      "totalPopulation": 9663,
+      "totalSurface": 24635
+    },
+    "45620": {
+      "communes": ["Cerdon", "Isdes"],
+      "communeCount": 2,
+      "center": [2.3237, 47.6487],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 47.6346,
+        "maxLat": 47.6725,
+        "minLon": 2.2559,
+        "maxLon": 2.3639
+      },
+      "totalPopulation": 1426,
+      "totalSurface": 11107
+    },
+    "45630": {
+      "communes": ["Beaulieu-sur-Loire"],
+      "communeCount": 1,
+      "center": [2.8166, 47.5433],
+      "coverageRadius": 3.97,
+      "totalPopulation": 1750,
+      "totalSurface": 4947
+    },
+    "45640": {
+      "communes": ["Sandillon"],
+      "communeCount": 1,
+      "center": [2.0295, 47.8456],
+      "coverageRadius": 3.7,
+      "totalPopulation": 4209,
+      "totalSurface": 4294
+    },
+    "45650": {
+      "communes": ["Saint-Jean-le-Blanc"],
+      "communeCount": 1,
+      "center": [1.9156, 47.893],
+      "coverageRadius": 1.56,
+      "totalPopulation": 9534,
+      "totalSurface": 765
+    },
+    "45680": {
+      "communes": ["Dordives"],
+      "communeCount": 1,
+      "center": [2.7675, 48.1453],
+      "coverageRadius": 2.2,
+      "totalPopulation": 3257,
+      "totalSurface": 1516
+    },
+    "45700": {
+      "communes": [
+        "Chevillon-sur-Huillard",
+        "Conflans-sur-Loing",
+        "Cortrat",
+        "Lombreuil",
+        "Montcresson",
+        "Mormant-sur-Vernisson",
+        "Pannes",
+        "Saint-Hilaire-sur-Puiseaux",
+        "Saint-Maurice-sur-Fessard",
+        "Solterre",
+        "Villemandeur",
+        "Villevoques",
+        "Vimory"
+      ],
+      "communeCount": 13,
+      "center": [2.695, 47.9803],
+      "coverageRadius": 11.8,
+      "boundingBox": {
+        "minLat": 47.8965,
+        "maxLat": 48.0291,
+        "minLon": 2.6216,
+        "maxLon": 2.8072
+      },
+      "totalPopulation": 17363,
+      "totalSurface": 17949
+    },
+    "45720": {
+      "communes": ["Coullons"],
+      "communeCount": 1,
+      "center": [2.4924, 47.6195],
+      "coverageRadius": 5.08,
+      "totalPopulation": 2251,
+      "totalSurface": 8121
+    },
+    "45730": {
+      "communes": ["Saint-Benoît-sur-Loire"],
+      "communeCount": 1,
+      "center": [2.3073, 47.8103],
+      "coverageRadius": 2.55,
+      "totalPopulation": 1993,
+      "totalSurface": 2046
+    },
+    "45740": {
+      "communes": ["Lailly-en-Val"],
+      "communeCount": 1,
+      "center": [1.6866, 47.7701],
+      "coverageRadius": 3.83,
+      "totalPopulation": 3100,
+      "totalSurface": 4614
+    },
+    "45750": {
+      "communes": ["Saint-Pryvé-Saint-Mesmin"],
+      "communeCount": 1,
+      "center": [1.8678, 47.881],
+      "coverageRadius": 1.69,
+      "totalPopulation": 6200,
+      "totalSurface": 898
+    },
+    "45760": {
+      "communes": ["Boigny-sur-Bionne", "Marigny-les-Usages", "Vennecy"],
+      "communeCount": 3,
+      "center": [2.0265, 47.9441],
+      "coverageRadius": 2.8,
+      "boundingBox": {
+        "minLat": 47.9223,
+        "maxLat": 47.9573,
+        "minLon": 2.0096,
+        "maxLon": 2.0548
+      },
+      "totalPopulation": 6012,
+      "totalSurface": 2788
+    },
+    "45770": {
+      "communes": ["Saran"],
+      "communeCount": 1,
+      "center": [1.8745, 47.9515],
+      "coverageRadius": 2.54,
+      "totalPopulation": 16866,
+      "totalSurface": 2031
+    },
+    "45800": {
+      "communes": ["Combleux", "Saint-Jean-de-Braye"],
+      "communeCount": 2,
+      "center": [1.9713, 47.9118],
+      "coverageRadius": 1.9,
+      "boundingBox": {
+        "minLat": 47.8995,
+        "maxLat": 47.9121,
+        "minLon": 1.9709,
+        "maxLon": 1.9872
+      },
+      "totalPopulation": 22612,
+      "totalSurface": 1479
+    }
+  }
+}

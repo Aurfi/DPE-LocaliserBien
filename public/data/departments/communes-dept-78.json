@@ -1,0 +1,5336 @@
+{
+  "departmentCode": "78",
+  "departmentName": "Yvelines",
+  "stats": {
+    "communeCount": 259,
+    "totalPopulation": 1470778,
+    "totalSurface": 230432
+  },
+  "communes": [
+    {
+      "nom": "Ablis",
+      "code": "78003",
+      "codesPostaux": ["78660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8565, 48.5292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.833, 48.5172]
+      },
+      "population": 3814,
+      "surface": 2618.91,
+      "radius": 2.89
+    },
+    {
+      "nom": "Achères",
+      "code": "78005",
+      "codesPostaux": ["78260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1095, 48.9817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0699, 48.9609]
+      },
+      "population": 21663,
+      "surface": 947.48,
+      "radius": 1.74
+    },
+    {
+      "nom": "Adainville",
+      "code": "78006",
+      "codesPostaux": ["78113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6629, 48.7206]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.653, 48.7228]
+      },
+      "population": 647,
+      "surface": 1018.75,
+      "radius": 1.8
+    },
+    {
+      "nom": "Aigremont",
+      "code": "78007",
+      "codesPostaux": ["78240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0127, 48.9027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0179, 48.9022]
+      },
+      "population": 1082,
+      "surface": 304.45,
+      "radius": 0.98
+    },
+    {
+      "nom": "Allainville",
+      "code": "78009",
+      "codesPostaux": ["78660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9038, 48.4673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8964, 48.4584]
+      },
+      "population": 281,
+      "surface": 1627.48,
+      "radius": 2.28
+    },
+    {
+      "nom": "Andelu",
+      "code": "78013",
+      "codesPostaux": ["78770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8094, 48.887]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8235, 48.8791]
+      },
+      "population": 527,
+      "surface": 399.08,
+      "radius": 1.13
+    },
+    {
+      "nom": "Andrésy",
+      "code": "78015",
+      "codesPostaux": ["78570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0496, 48.9778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0606, 48.9823]
+      },
+      "population": 13663,
+      "surface": 690.63,
+      "radius": 1.48
+    },
+    {
+      "nom": "Arnouville-lès-Mantes",
+      "code": "78020",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7225, 48.911]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7311, 48.9113]
+      },
+      "population": 940,
+      "surface": 990.37,
+      "radius": 1.78
+    },
+    {
+      "nom": "Aubergenville",
+      "code": "78029",
+      "codesPostaux": ["78410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.844, 48.9609]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8559, 48.9591]
+      },
+      "population": 12540,
+      "surface": 906.28,
+      "radius": 1.7
+    },
+    {
+      "nom": "Auffargis",
+      "code": "78030",
+      "codesPostaux": ["78610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8994, 48.6824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8875, 48.7002]
+      },
+      "population": 1967,
+      "surface": 1730.08,
+      "radius": 2.35
+    },
+    {
+      "nom": "Auffreville-Brasseuil",
+      "code": "78031",
+      "codesPostaux": ["78930"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7057, 48.9543]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7088, 48.9518]
+      },
+      "population": 669,
+      "surface": 234.58,
+      "radius": 0.86
+    },
+    {
+      "nom": "Aulnay-sur-Mauldre",
+      "code": "78033",
+      "codesPostaux": ["78126"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.84, 48.9294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8437, 48.9292]
+      },
+      "population": 1159,
+      "surface": 223.72,
+      "radius": 0.84
+    },
+    {
+      "nom": "Auteuil",
+      "code": "78034",
+      "codesPostaux": ["78770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8172, 48.8415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8186, 48.8406]
+      },
+      "population": 1005,
+      "surface": 441.4,
+      "radius": 1.19
+    },
+    {
+      "nom": "Autouillet",
+      "code": "78036",
+      "codesPostaux": ["78770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7958, 48.8451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8036, 48.8499]
+      },
+      "population": 655,
+      "surface": 505.81,
+      "radius": 1.27
+    },
+    {
+      "nom": "Bailly",
+      "code": "78043",
+      "codesPostaux": ["78870"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0809, 48.8366]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0788, 48.8396]
+      },
+      "population": 3690,
+      "surface": 662.23,
+      "radius": 1.45
+    },
+    {
+      "nom": "Bazainville",
+      "code": "78048",
+      "codesPostaux": ["78550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6659, 48.8121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6666, 48.8041]
+      },
+      "population": 1456,
+      "surface": 1203.65,
+      "radius": 1.96
+    },
+    {
+      "nom": "Bazemont",
+      "code": "78049",
+      "codesPostaux": ["78580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8761, 48.9321]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8654, 48.9282]
+      },
+      "population": 1712,
+      "surface": 670.42,
+      "radius": 1.46
+    },
+    {
+      "nom": "Bazoches-sur-Guyonne",
+      "code": "78050",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8489, 48.7792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.86, 48.7783]
+      },
+      "population": 697,
+      "surface": 561.67,
+      "radius": 1.34
+    },
+    {
+      "nom": "Béhoust",
+      "code": "78053",
+      "codesPostaux": ["78910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7247, 48.8324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7216, 48.8304]
+      },
+      "population": 523,
+      "surface": 542.34,
+      "radius": 1.31
+    },
+    {
+      "nom": "Bennecourt",
+      "code": "78057",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5654, 49.0484]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5699, 49.0411]
+      },
+      "population": 1792,
+      "surface": 691.89,
+      "radius": 1.48
+    },
+    {
+      "nom": "Beynes",
+      "code": "78062",
+      "codesPostaux": ["78650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8748, 48.8528]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8759, 48.8562]
+      },
+      "population": 7635,
+      "surface": 1863.9,
+      "radius": 2.44
+    },
+    {
+      "nom": "Blaru",
+      "code": "78068",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4846, 49.0413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4783, 49.0485]
+      },
+      "population": 886,
+      "surface": 1497.7,
+      "radius": 2.18
+    },
+    {
+      "nom": "Boinville-en-Mantois",
+      "code": "78070",
+      "codesPostaux": ["78930"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7491, 48.9272]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7565, 48.9296]
+      },
+      "population": 287,
+      "surface": 491.36,
+      "radius": 1.25
+    },
+    {
+      "nom": "Boinville-le-Gaillard",
+      "code": "78071",
+      "codesPostaux": ["78660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8698, 48.4958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8717, 48.4937]
+      },
+      "population": 601,
+      "surface": 1266.79,
+      "radius": 2.01
+    },
+    {
+      "nom": "Boinvilliers",
+      "code": "78072",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.661, 48.9188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6607, 48.918]
+      },
+      "population": 246,
+      "surface": 360.15,
+      "radius": 1.07
+    },
+    {
+      "nom": "Bois-d'Arcy",
+      "code": "78073",
+      "codesPostaux": ["78390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0223, 48.806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0311, 48.8011]
+      },
+      "population": 16225,
+      "surface": 559.22,
+      "radius": 1.33
+    },
+    {
+      "nom": "Boissets",
+      "code": "78076",
+      "codesPostaux": ["78910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5859, 48.8578]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5834, 48.8609]
+      },
+      "population": 291,
+      "surface": 392.7,
+      "radius": 1.12
+    },
+    {
+      "nom": "Boissy-Mauvoisin",
+      "code": "78082",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5831, 48.965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5796, 48.9645]
+      },
+      "population": 638,
+      "surface": 516.48,
+      "radius": 1.28
+    },
+    {
+      "nom": "Boissy-sans-Avoir",
+      "code": "78084",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7979, 48.8211]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7976, 48.8192]
+      },
+      "population": 614,
+      "surface": 407.16,
+      "radius": 1.14
+    },
+    {
+      "nom": "Bonnelles",
+      "code": "78087",
+      "codesPostaux": ["78830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0327, 48.6203]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0281, 48.6183]
+      },
+      "population": 2211,
+      "surface": 1080.7,
+      "radius": 1.85
+    },
+    {
+      "nom": "Bonnières-sur-Seine",
+      "code": "78089",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5685, 49.0168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5787, 49.0372]
+      },
+      "population": 5077,
+      "surface": 785.68,
+      "radius": 1.58
+    },
+    {
+      "nom": "Bouafle",
+      "code": "78090",
+      "codesPostaux": ["78410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8997, 48.9566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.897, 48.9658]
+      },
+      "population": 2222,
+      "surface": 695.72,
+      "radius": 1.49
+    },
+    {
+      "nom": "Bougival",
+      "code": "78092",
+      "codesPostaux": ["78380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1394, 48.8627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1398, 48.8608]
+      },
+      "population": 9083,
+      "surface": 275.63,
+      "radius": 0.94
+    },
+    {
+      "nom": "Bourdonné",
+      "code": "78096",
+      "codesPostaux": ["78113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6559, 48.7556]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6626, 48.7561]
+      },
+      "population": 506,
+      "surface": 1091.26,
+      "radius": 1.86
+    },
+    {
+      "nom": "Breuil-Bois-Robert",
+      "code": "78104",
+      "codesPostaux": ["78930"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7129, 48.9447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7146, 48.9448]
+      },
+      "population": 764,
+      "surface": 376.54,
+      "radius": 1.09
+    },
+    {
+      "nom": "Bréval",
+      "code": "78107",
+      "codesPostaux": ["78980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5402, 48.9567]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5339, 48.9446]
+      },
+      "population": 2031,
+      "surface": 1151.46,
+      "radius": 1.91
+    },
+    {
+      "nom": "Brueil-en-Vexin",
+      "code": "78113",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8083, 49.0279]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8167, 49.0301]
+      },
+      "population": 667,
+      "surface": 742.84,
+      "radius": 1.54
+    },
+    {
+      "nom": "Buc",
+      "code": "78117",
+      "codesPostaux": ["78530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.125, 48.7736]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1259, 48.7741]
+      },
+      "population": 5868,
+      "surface": 805.23,
+      "radius": 1.6
+    },
+    {
+      "nom": "Buchelay",
+      "code": "78118",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6788, 48.983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6724, 48.9804]
+      },
+      "population": 3364,
+      "surface": 492.97,
+      "radius": 1.25
+    },
+    {
+      "nom": "Bullion",
+      "code": "78120",
+      "codesPostaux": ["78830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9758, 48.6267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9992, 48.6211]
+      },
+      "population": 1915,
+      "surface": 2125.12,
+      "radius": 2.6
+    },
+    {
+      "nom": "Carrières-sous-Poissy",
+      "code": "78123",
+      "codesPostaux": ["78955"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0264, 48.9469]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0342, 48.9437]
+      },
+      "population": 19951,
+      "surface": 726.94,
+      "radius": 1.52
+    },
+    {
+      "nom": "Carrières-sur-Seine",
+      "code": "78124",
+      "codesPostaux": ["78420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1812, 48.9128]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1764, 48.9062]
+      },
+      "population": 15002,
+      "surface": 509.46,
+      "radius": 1.27
+    },
+    {
+      "nom": "Cernay-la-Ville",
+      "code": "78128",
+      "codesPostaux": ["78720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9617, 48.6697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9715, 48.6732]
+      },
+      "population": 1526,
+      "surface": 1007.97,
+      "radius": 1.79
+    },
+    {
+      "nom": "Chambourcy",
+      "code": "78133",
+      "codesPostaux": ["78240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0267, 48.8973]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0398, 48.9061]
+      },
+      "population": 5826,
+      "surface": 797.88,
+      "radius": 1.59
+    },
+    {
+      "nom": "Chanteloup-les-Vignes",
+      "code": "78138",
+      "codesPostaux": ["78570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0336, 48.9773]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0302, 48.9784]
+      },
+      "population": 10793,
+      "surface": 342.35,
+      "radius": 1.04
+    },
+    {
+      "nom": "Chapet",
+      "code": "78140",
+      "codesPostaux": ["78130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9383, 48.9681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.934, 48.9673]
+      },
+      "population": 1337,
+      "surface": 519.76,
+      "radius": 1.29
+    },
+    {
+      "nom": "Châteaufort",
+      "code": "78143",
+      "codesPostaux": ["78117"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0956, 48.7371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0921, 48.7374]
+      },
+      "population": 1540,
+      "surface": 489.19,
+      "radius": 1.25
+    },
+    {
+      "nom": "Chatou",
+      "code": "78146",
+      "codesPostaux": ["78400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1502, 48.8964]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1575, 48.8899]
+      },
+      "population": 30054,
+      "surface": 506.76,
+      "radius": 1.27
+    },
+    {
+      "nom": "Chaufour-lès-Bonnières",
+      "code": "78147",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4842, 49.0161]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4832, 49.0156]
+      },
+      "population": 454,
+      "surface": 305.08,
+      "radius": 0.99
+    },
+    {
+      "nom": "Chavenay",
+      "code": "78152",
+      "codesPostaux": ["78450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9862, 48.8471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9864, 48.8539]
+      },
+      "population": 1741,
+      "surface": 609.95,
+      "radius": 1.39
+    },
+    {
+      "nom": "Chevreuse",
+      "code": "78160",
+      "codesPostaux": ["78460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0343, 48.7035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0442, 48.7075]
+      },
+      "population": 5531,
+      "surface": 1357.41,
+      "radius": 2.08
+    },
+    {
+      "nom": "Choisel",
+      "code": "78162",
+      "codesPostaux": ["78460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0159, 48.6754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0178, 48.6866]
+      },
+      "population": 537,
+      "surface": 897.37,
+      "radius": 1.69
+    },
+    {
+      "nom": "Civry-la-Forêt",
+      "code": "78163",
+      "codesPostaux": ["78910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6187, 48.8647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6153, 48.8671]
+      },
+      "population": 369,
+      "surface": 938.87,
+      "radius": 1.73
+    },
+    {
+      "nom": "Clairefontaine-en-Yvelines",
+      "code": "78164",
+      "codesPostaux": ["78120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.905, 48.6172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.91, 48.6122]
+      },
+      "population": 851,
+      "surface": 1727.09,
+      "radius": 2.34
+    },
+    {
+      "nom": "Coignières",
+      "code": "78168",
+      "codesPostaux": ["78310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9178, 48.7506]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9179, 48.7476]
+      },
+      "population": 4385,
+      "surface": 808.58,
+      "radius": 1.6
+    },
+    {
+      "nom": "Condé-sur-Vesgre",
+      "code": "78171",
+      "codesPostaux": ["78113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.669, 48.7308]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6611, 48.7414]
+      },
+      "population": 1264,
+      "surface": 1077.68,
+      "radius": 1.85
+    },
+    {
+      "nom": "Conflans-Sainte-Honorine",
+      "code": "78172",
+      "codesPostaux": ["78700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0992, 49.0016]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0947, 48.9938]
+      },
+      "population": 36306,
+      "surface": 987.63,
+      "radius": 1.77
+    },
+    {
+      "nom": "Courgent",
+      "code": "78185",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6595, 48.8971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.663, 48.8918]
+      },
+      "population": 398,
+      "surface": 201.23,
+      "radius": 0.8
+    },
+    {
+      "nom": "Cravent",
+      "code": "78188",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4844, 48.9901]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4904, 48.9907]
+      },
+      "population": 436,
+      "surface": 610.27,
+      "radius": 1.39
+    },
+    {
+      "nom": "Crespières",
+      "code": "78189",
+      "codesPostaux": ["78121"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9185, 48.8809]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9239, 48.8816]
+      },
+      "population": 1717,
+      "surface": 1499.51,
+      "radius": 2.18
+    },
+    {
+      "nom": "Croissy-sur-Seine",
+      "code": "78190",
+      "codesPostaux": ["78290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1342, 48.8805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1477, 48.8805]
+      },
+      "population": 10580,
+      "surface": 344.02,
+      "radius": 1.05
+    },
+    {
+      "nom": "Dammartin-en-Serve",
+      "code": "78192",
+      "codesPostaux": ["78111"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6193, 48.9125]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6186, 48.903]
+      },
+      "population": 1417,
+      "surface": 1385.78,
+      "radius": 2.1
+    },
+    {
+      "nom": "Dampierre-en-Yvelines",
+      "code": "78193",
+      "codesPostaux": ["78720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9789, 48.7065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9858, 48.7051]
+      },
+      "population": 1003,
+      "surface": 1127.61,
+      "radius": 1.89
+    },
+    {
+      "nom": "Dannemarie",
+      "code": "78194",
+      "codesPostaux": ["78550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6036, 48.7623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.607, 48.7619]
+      },
+      "population": 226,
+      "surface": 345.41,
+      "radius": 1.05
+    },
+    {
+      "nom": "Davron",
+      "code": "78196",
+      "codesPostaux": ["78810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.946, 48.8664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9442, 48.8651]
+      },
+      "population": 282,
+      "surface": 607.86,
+      "radius": 1.39
+    },
+    {
+      "nom": "Drocourt",
+      "code": "78202",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7702, 49.0528]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7706, 49.0567]
+      },
+      "population": 556,
+      "surface": 386.5,
+      "radius": 1.11
+    },
+    {
+      "nom": "Ecquevilly",
+      "code": "78206",
+      "codesPostaux": ["78920"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.925, 48.9482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9242, 48.9491]
+      },
+      "population": 4090,
+      "surface": 1129.53,
+      "radius": 1.9
+    },
+    {
+      "nom": "Élancourt",
+      "code": "78208",
+      "codesPostaux": ["78990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9612, 48.7771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9493, 48.7683]
+      },
+      "population": 26348,
+      "surface": 924.04,
+      "radius": 1.72
+    },
+    {
+      "nom": "Émancé",
+      "code": "78209",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7342, 48.5906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.73, 48.5887]
+      },
+      "population": 882,
+      "surface": 1217.16,
+      "radius": 1.97
+    },
+    {
+      "nom": "Épône",
+      "code": "78217",
+      "codesPostaux": ["78680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8119, 48.9459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8126, 48.9576]
+      },
+      "population": 6778,
+      "surface": 1335.36,
+      "radius": 2.06
+    },
+    {
+      "nom": "Évecquemont",
+      "code": "78227",
+      "codesPostaux": ["78740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9392, 49.0182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9441, 49.0139]
+      },
+      "population": 759,
+      "surface": 252.9,
+      "radius": 0.9
+    },
+    {
+      "nom": "Favrieux",
+      "code": "78231",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6407, 48.9439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6423, 48.9433]
+      },
+      "population": 159,
+      "surface": 318.39,
+      "radius": 1.01
+    },
+    {
+      "nom": "Feucherolles",
+      "code": "78233",
+      "codesPostaux": ["78810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9847, 48.8787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9739, 48.8745]
+      },
+      "population": 3038,
+      "surface": 1319.31,
+      "radius": 2.05
+    },
+    {
+      "nom": "Flacourt",
+      "code": "78234",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6416, 48.9312]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6476, 48.9286]
+      },
+      "population": 185,
+      "surface": 435.75,
+      "radius": 1.18
+    },
+    {
+      "nom": "Flexanville",
+      "code": "78236",
+      "codesPostaux": ["78910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7415, 48.8569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7385, 48.8561]
+      },
+      "population": 572,
+      "surface": 887.76,
+      "radius": 1.68
+    },
+    {
+      "nom": "Flins-Neuve-Église",
+      "code": "78237",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5773, 48.8927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.578, 48.8906]
+      },
+      "population": 160,
+      "surface": 124.27,
+      "radius": 0.63
+    },
+    {
+      "nom": "Flins-sur-Seine",
+      "code": "78238",
+      "codesPostaux": ["78410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8721, 48.9664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.87, 48.9627]
+      },
+      "population": 2436,
+      "surface": 878.13,
+      "radius": 1.67
+    },
+    {
+      "nom": "Follainville-Dennemont",
+      "code": "78239",
+      "codesPostaux": ["78520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7027, 49.0293]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7138, 49.0218]
+      },
+      "population": 2178,
+      "surface": 975.51,
+      "radius": 1.76
+    },
+    {
+      "nom": "Fontenay-le-Fleury",
+      "code": "78242",
+      "codesPostaux": ["78330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0477, 48.8169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0457, 48.8109]
+      },
+      "population": 13640,
+      "surface": 556.68,
+      "radius": 1.33
+    },
+    {
+      "nom": "Fontenay-Mauvoisin",
+      "code": "78245",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6486, 48.9601]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6539, 48.966]
+      },
+      "population": 449,
+      "surface": 331.74,
+      "radius": 1.03
+    },
+    {
+      "nom": "Fontenay-Saint-Père",
+      "code": "78246",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7576, 49.0274]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7554, 49.0246]
+      },
+      "population": 955,
+      "surface": 1306.79,
+      "radius": 2.04
+    },
+    {
+      "nom": "Freneuse",
+      "code": "78255",
+      "codesPostaux": ["78840"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6139, 49.0489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6005, 49.0483]
+      },
+      "population": 4299,
+      "surface": 1039.34,
+      "radius": 1.82
+    },
+    {
+      "nom": "Gaillon-sur-Montcient",
+      "code": "78261",
+      "codesPostaux": ["78250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8979, 49.03]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.892, 49.0241]
+      },
+      "population": 691,
+      "surface": 497.99,
+      "radius": 1.26
+    },
+    {
+      "nom": "Galluis",
+      "code": "78262",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7898, 48.7984]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7959, 48.796]
+      },
+      "population": 1281,
+      "surface": 449.67,
+      "radius": 1.2
+    },
+    {
+      "nom": "Gambais",
+      "code": "78263",
+      "codesPostaux": ["78950"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6732, 48.7774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6745, 48.7735]
+      },
+      "population": 2513,
+      "surface": 2273.32,
+      "radius": 2.69
+    },
+    {
+      "nom": "Gambaiseuil",
+      "code": "78264",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7221, 48.7614]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7332, 48.7569]
+      },
+      "population": 65,
+      "surface": 1919.91,
+      "radius": 2.47
+    },
+    {
+      "nom": "Garancières",
+      "code": "78265",
+      "codesPostaux": ["78890"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7602, 48.8223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.755, 48.8223]
+      },
+      "population": 2577,
+      "surface": 1040.32,
+      "radius": 1.82
+    },
+    {
+      "nom": "Gargenville",
+      "code": "78267",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8112, 48.9938]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8097, 48.9899]
+      },
+      "population": 7848,
+      "surface": 865.42,
+      "radius": 1.66
+    },
+    {
+      "nom": "Gazeran",
+      "code": "78269",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7785, 48.6375]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7753, 48.6363]
+      },
+      "population": 1337,
+      "surface": 2575.91,
+      "radius": 2.86
+    },
+    {
+      "nom": "Gommecourt",
+      "code": "78276",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5931, 49.0697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5943, 49.0753]
+      },
+      "population": 621,
+      "surface": 575.97,
+      "radius": 1.35
+    },
+    {
+      "nom": "Goupillières",
+      "code": "78278",
+      "codesPostaux": ["78770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7651, 48.882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7606, 48.8767]
+      },
+      "population": 568,
+      "surface": 564.2,
+      "radius": 1.34
+    },
+    {
+      "nom": "Goussonville",
+      "code": "78281",
+      "codesPostaux": ["78930"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7668, 48.9251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7651, 48.9197]
+      },
+      "population": 643,
+      "surface": 467.89,
+      "radius": 1.22
+    },
+    {
+      "nom": "Grandchamp",
+      "code": "78283",
+      "codesPostaux": ["78113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6141, 48.7207]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6055, 48.7106]
+      },
+      "population": 302,
+      "surface": 609.61,
+      "radius": 1.39
+    },
+    {
+      "nom": "Gressey",
+      "code": "78285",
+      "codesPostaux": ["78550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6009, 48.833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6088, 48.8313]
+      },
+      "population": 539,
+      "surface": 720.76,
+      "radius": 1.51
+    },
+    {
+      "nom": "Grosrouvre",
+      "code": "78289",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7609, 48.7799]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7617, 48.7819]
+      },
+      "population": 901,
+      "surface": 1255.74,
+      "radius": 2
+    },
+    {
+      "nom": "Guernes",
+      "code": "78290",
+      "codesPostaux": ["78520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6435, 49.0164]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6364, 49.0114]
+      },
+      "population": 1085,
+      "surface": 862.97,
+      "radius": 1.66
+    },
+    {
+      "nom": "Guerville",
+      "code": "78291",
+      "codesPostaux": ["78930"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7409, 48.9544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7349, 48.9452]
+      },
+      "population": 2088,
+      "surface": 1011.48,
+      "radius": 1.79
+    },
+    {
+      "nom": "Guitrancourt",
+      "code": "78296",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7775, 49.01]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7781, 49.0085]
+      },
+      "population": 642,
+      "surface": 737.47,
+      "radius": 1.53
+    },
+    {
+      "nom": "Guyancourt",
+      "code": "78297",
+      "codesPostaux": ["78280"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0745, 48.7735]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0703, 48.7709]
+      },
+      "population": 29758,
+      "surface": 1320.15,
+      "radius": 2.05
+    },
+    {
+      "nom": "Hardricourt",
+      "code": "78299",
+      "codesPostaux": ["78250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8834, 49.0092]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8942, 49.0077]
+      },
+      "population": 2498,
+      "surface": 335.11,
+      "radius": 1.03
+    },
+    {
+      "nom": "Hargeville",
+      "code": "78300",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7464, 48.8953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7416, 48.8903]
+      },
+      "population": 424,
+      "surface": 700.98,
+      "radius": 1.49
+    },
+    {
+      "nom": "Herbeville",
+      "code": "78305",
+      "codesPostaux": ["78580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8901, 48.903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8869, 48.9061]
+      },
+      "population": 232,
+      "surface": 640.92,
+      "radius": 1.43
+    },
+    {
+      "nom": "Hermeray",
+      "code": "78307",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.688, 48.6549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.688, 48.6496]
+      },
+      "population": 958,
+      "surface": 1838.71,
+      "radius": 2.42
+    },
+    {
+      "nom": "Houdan",
+      "code": "78310",
+      "codesPostaux": ["78550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5981, 48.7968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6023, 48.7897]
+      },
+      "population": 3716,
+      "surface": 1041.03,
+      "radius": 1.82
+    },
+    {
+      "nom": "Houilles",
+      "code": "78311",
+      "codesPostaux": ["78800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1866, 48.9266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1865, 48.9232]
+      },
+      "population": 33617,
+      "surface": 447.58,
+      "radius": 1.19
+    },
+    {
+      "nom": "Issou",
+      "code": "78314",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7865, 48.9884]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7931, 48.9885]
+      },
+      "population": 3858,
+      "surface": 478.66,
+      "radius": 1.23
+    },
+    {
+      "nom": "Jambville",
+      "code": "78317",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8483, 49.0489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8538, 49.0461]
+      },
+      "population": 777,
+      "surface": 487.98,
+      "radius": 1.25
+    },
+    {
+      "nom": "Jouars-Pontchartrain",
+      "code": "78321",
+      "codesPostaux": ["78760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.913, 48.7874]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9008, 48.802]
+      },
+      "population": 5965,
+      "surface": 973.43,
+      "radius": 1.76
+    },
+    {
+      "nom": "Jouy-en-Josas",
+      "code": "78322",
+      "codesPostaux": ["78350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.161, 48.7652]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1682, 48.7647]
+      },
+      "population": 7985,
+      "surface": 1021.49,
+      "radius": 1.8
+    },
+    {
+      "nom": "Jouy-Mauvoisin",
+      "code": "78324",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6461, 48.9746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6488, 48.9746]
+      },
+      "population": 564,
+      "surface": 284.29,
+      "radius": 0.95
+    },
+    {
+      "nom": "Jumeauville",
+      "code": "78325",
+      "codesPostaux": ["78580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7827, 48.9087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7876, 48.9104]
+      },
+      "population": 624,
+      "surface": 766.64,
+      "radius": 1.56
+    },
+    {
+      "nom": "Juziers",
+      "code": "78327",
+      "codesPostaux": ["78820"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.842, 48.9991]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8456, 48.9931]
+      },
+      "population": 4040,
+      "surface": 874.55,
+      "radius": 1.67
+    },
+    {
+      "nom": "L'Étang-la-Ville",
+      "code": "78224",
+      "codesPostaux": ["78620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0586, 48.8673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0727, 48.8712]
+      },
+      "population": 4915,
+      "surface": 537.71,
+      "radius": 1.31
+    },
+    {
+      "nom": "La Boissière-École",
+      "code": "78077",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6661, 48.6911]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6482, 48.6811]
+      },
+      "population": 748,
+      "surface": 2558.26,
+      "radius": 2.85
+    },
+    {
+      "nom": "La Celle-les-Bordes",
+      "code": "78125",
+      "codesPostaux": ["78720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9459, 48.6382]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9548, 48.6401]
+      },
+      "population": 832,
+      "surface": 2288.41,
+      "radius": 2.7
+    },
+    {
+      "nom": "La Celle-Saint-Cloud",
+      "code": "78126",
+      "codesPostaux": ["78170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1342, 48.8498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1362, 48.8484]
+      },
+      "population": 20440,
+      "surface": 583.85,
+      "radius": 1.36
+    },
+    {
+      "nom": "La Falaise",
+      "code": "78230",
+      "codesPostaux": ["78410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8246, 48.9385]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.832, 48.9451]
+      },
+      "population": 616,
+      "surface": 306.14,
+      "radius": 0.99
+    },
+    {
+      "nom": "La Hauteville",
+      "code": "78302",
+      "codesPostaux": ["78113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6257, 48.7049]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6182, 48.704]
+      },
+      "population": 165,
+      "surface": 489.71,
+      "radius": 1.25
+    },
+    {
+      "nom": "La Queue-les-Yvelines",
+      "code": "78513",
+      "codesPostaux": ["78940"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7603, 48.8042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7647, 48.8056]
+      },
+      "population": 2505,
+      "surface": 577.7,
+      "radius": 1.36
+    },
+    {
+      "nom": "La Verrière",
+      "code": "78644",
+      "codesPostaux": ["78320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9505, 48.7545]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9579, 48.7575]
+      },
+      "population": 6142,
+      "surface": 213.4,
+      "radius": 0.82
+    },
+    {
+      "nom": "La Villeneuve-en-Chevrie",
+      "code": "78668",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5285, 49.0129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5279, 49.0149]
+      },
+      "population": 662,
+      "surface": 1184.45,
+      "radius": 1.94
+    },
+    {
+      "nom": "Lainville-en-Vexin",
+      "code": "78329",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8182, 49.0585]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8161, 49.0599]
+      },
+      "population": 807,
+      "surface": 774.62,
+      "radius": 1.57
+    },
+    {
+      "nom": "Le Chesnay-Rocquencourt",
+      "code": "78158",
+      "codesPostaux": ["78150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1188, 48.8285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1252, 48.8265]
+      },
+      "population": 31064,
+      "surface": 715.55,
+      "radius": 1.51
+    },
+    {
+      "nom": "Le Mesnil-le-Roi",
+      "code": "78396",
+      "codesPostaux": ["78600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1234, 48.9249]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1225, 48.928]
+      },
+      "population": 6340,
+      "surface": 381.2,
+      "radius": 1.1
+    },
+    {
+      "nom": "Le Mesnil-Saint-Denis",
+      "code": "78397",
+      "codesPostaux": ["78320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9619, 48.7389]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9602, 48.7399]
+      },
+      "population": 7103,
+      "surface": 907.15,
+      "radius": 1.7
+    },
+    {
+      "nom": "Le Pecq",
+      "code": "78481",
+      "codesPostaux": ["78230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1022, 48.8924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1063, 48.8974]
+      },
+      "population": 15858,
+      "surface": 288.54,
+      "radius": 0.96
+    },
+    {
+      "nom": "Le Perray-en-Yvelines",
+      "code": "78486",
+      "codesPostaux": ["78610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8424, 48.6988]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8545, 48.6945]
+      },
+      "population": 6515,
+      "surface": 1355.48,
+      "radius": 2.08
+    },
+    {
+      "nom": "Le Port-Marly",
+      "code": "78502",
+      "codesPostaux": ["78560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1104, 48.8808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1117, 48.8783]
+      },
+      "population": 5583,
+      "surface": 143.83,
+      "radius": 0.68
+    },
+    {
+      "nom": "Le Tartre-Gaudran",
+      "code": "78606",
+      "codesPostaux": ["78113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6028, 48.6976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5957, 48.6991]
+      },
+      "population": 37,
+      "surface": 430.23,
+      "radius": 1.17
+    },
+    {
+      "nom": "Le Tertre-Saint-Denis",
+      "code": "78608",
+      "codesPostaux": ["78980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.609, 48.9427]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6067, 48.938]
+      },
+      "population": 129,
+      "surface": 290.52,
+      "radius": 0.96
+    },
+    {
+      "nom": "Le Tremblay-sur-Mauldre",
+      "code": "78623",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8765, 48.7859]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.875, 48.7785]
+      },
+      "population": 956,
+      "surface": 606.37,
+      "radius": 1.39
+    },
+    {
+      "nom": "Le Vésinet",
+      "code": "78650",
+      "codesPostaux": ["78110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1312, 48.8928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1348, 48.8946]
+      },
+      "population": 15712,
+      "surface": 502.03,
+      "radius": 1.26
+    },
+    {
+      "nom": "Les Alluets-le-Roi",
+      "code": "78010",
+      "codesPostaux": ["78580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.913, 48.914]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9187, 48.9139]
+      },
+      "population": 1332,
+      "surface": 747.85,
+      "radius": 1.54
+    },
+    {
+      "nom": "Les Bréviaires",
+      "code": "78108",
+      "codesPostaux": ["78610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8177, 48.7172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.814, 48.708]
+      },
+      "population": 1326,
+      "surface": 1976.58,
+      "radius": 2.51
+    },
+    {
+      "nom": "Les Clayes-sous-Bois",
+      "code": "78165",
+      "codesPostaux": ["78340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9835, 48.8168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9864, 48.8213]
+      },
+      "population": 16940,
+      "surface": 610.66,
+      "radius": 1.39
+    },
+    {
+      "nom": "Les Essarts-le-Roi",
+      "code": "78220",
+      "codesPostaux": ["78690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8905, 48.713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8947, 48.7178]
+      },
+      "population": 6772,
+      "surface": 1962,
+      "radius": 2.5
+    },
+    {
+      "nom": "Les Loges-en-Josas",
+      "code": "78343",
+      "codesPostaux": ["78350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1412, 48.7617]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1405, 48.7644]
+      },
+      "population": 1655,
+      "surface": 250.6,
+      "radius": 0.89
+    },
+    {
+      "nom": "Les Mesnuls",
+      "code": "78398",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8339, 48.7542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8371, 48.7581]
+      },
+      "population": 893,
+      "surface": 656.1,
+      "radius": 1.45
+    },
+    {
+      "nom": "Les Mureaux",
+      "code": "78440",
+      "codesPostaux": ["78130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.911, 48.9877]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9092, 48.9935]
+      },
+      "population": 34151,
+      "surface": 1237.23,
+      "radius": 1.98
+    },
+    {
+      "nom": "Lévis-Saint-Nom",
+      "code": "78334",
+      "codesPostaux": ["78320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9336, 48.7248]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9486, 48.7214]
+      },
+      "population": 1610,
+      "surface": 837.09,
+      "radius": 1.63
+    },
+    {
+      "nom": "Limay",
+      "code": "78335",
+      "codesPostaux": ["78520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7367, 48.9911]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7358, 48.9921]
+      },
+      "population": 17584,
+      "surface": 1146.01,
+      "radius": 1.91
+    },
+    {
+      "nom": "Limetz-Villez",
+      "code": "78337",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5512, 49.0585]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5458, 49.0609]
+      },
+      "population": 2067,
+      "surface": 946.24,
+      "radius": 1.74
+    },
+    {
+      "nom": "Lommoye",
+      "code": "78344",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5181, 48.9985]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5153, 48.9941]
+      },
+      "population": 643,
+      "surface": 951.48,
+      "radius": 1.74
+    },
+    {
+      "nom": "Longnes",
+      "code": "78346",
+      "codesPostaux": ["78980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5753, 48.9201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.586, 48.9207]
+      },
+      "population": 1582,
+      "surface": 1398.14,
+      "radius": 2.11
+    },
+    {
+      "nom": "Longvilliers",
+      "code": "78349",
+      "codesPostaux": ["78730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9969, 48.5781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9914, 48.5784]
+      },
+      "population": 498,
+      "surface": 1405.67,
+      "radius": 2.12
+    },
+    {
+      "nom": "Louveciennes",
+      "code": "78350",
+      "codesPostaux": ["78430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1132, 48.8595]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1125, 48.8619]
+      },
+      "population": 7744,
+      "surface": 544.66,
+      "radius": 1.32
+    },
+    {
+      "nom": "Magnanville",
+      "code": "78354",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6842, 48.9685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6813, 48.9673]
+      },
+      "population": 6389,
+      "surface": 427.99,
+      "radius": 1.17
+    },
+    {
+      "nom": "Magny-les-Hameaux",
+      "code": "78356",
+      "codesPostaux": ["78114"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0494, 48.7379]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.084, 48.724]
+      },
+      "population": 9353,
+      "surface": 1670.22,
+      "radius": 2.31
+    },
+    {
+      "nom": "Maisons-Laffitte",
+      "code": "78358",
+      "codesPostaux": ["78600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1533, 48.9503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1448, 48.9461]
+      },
+      "population": 22855,
+      "surface": 693.25,
+      "radius": 1.49
+    },
+    {
+      "nom": "Mantes-la-Jolie",
+      "code": "78361",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6918, 48.9961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7153, 48.989]
+      },
+      "population": 44246,
+      "surface": 943.48,
+      "radius": 1.73
+    },
+    {
+      "nom": "Mantes-la-Ville",
+      "code": "78362",
+      "codesPostaux": ["78711"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7103, 48.9752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7135, 48.9779]
+      },
+      "population": 21874,
+      "surface": 624.38,
+      "radius": 1.41
+    },
+    {
+      "nom": "Marcq",
+      "code": "78364",
+      "codesPostaux": ["78770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8221, 48.8645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8191, 48.8597]
+      },
+      "population": 790,
+      "surface": 480.26,
+      "radius": 1.24
+    },
+    {
+      "nom": "Mareil-le-Guyon",
+      "code": "78366",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8531, 48.7899]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8473, 48.7898]
+      },
+      "population": 413,
+      "surface": 408.12,
+      "radius": 1.14
+    },
+    {
+      "nom": "Mareil-Marly",
+      "code": "78367",
+      "codesPostaux": ["78750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0775, 48.88]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0771, 48.8822]
+      },
+      "population": 3984,
+      "surface": 177.43,
+      "radius": 0.75
+    },
+    {
+      "nom": "Mareil-sur-Mauldre",
+      "code": "78368",
+      "codesPostaux": ["78124"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8747, 48.8893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8656, 48.8942]
+      },
+      "population": 1743,
+      "surface": 437.68,
+      "radius": 1.18
+    },
+    {
+      "nom": "Marly-le-Roi",
+      "code": "78372",
+      "codesPostaux": ["78160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0892, 48.866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.097, 48.8682]
+      },
+      "population": 16619,
+      "surface": 668.41,
+      "radius": 1.46
+    },
+    {
+      "nom": "Maule",
+      "code": "78380",
+      "codesPostaux": ["78580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8409, 48.9058]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8484, 48.9091]
+      },
+      "population": 6100,
+      "surface": 1743.62,
+      "radius": 2.36
+    },
+    {
+      "nom": "Maulette",
+      "code": "78381",
+      "codesPostaux": ["78550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6111, 48.7842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6246, 48.7916]
+      },
+      "population": 1054,
+      "surface": 790.62,
+      "radius": 1.59
+    },
+    {
+      "nom": "Maurecourt",
+      "code": "78382",
+      "codesPostaux": ["78780"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0479, 48.9994]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0628, 48.9965]
+      },
+      "population": 4399,
+      "surface": 368.65,
+      "radius": 1.08
+    },
+    {
+      "nom": "Maurepas",
+      "code": "78383",
+      "codesPostaux": ["78310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.925, 48.7712]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9454, 48.7621]
+      },
+      "population": 19960,
+      "surface": 841.09,
+      "radius": 1.64
+    },
+    {
+      "nom": "Médan",
+      "code": "78384",
+      "codesPostaux": ["78670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9858, 48.9559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9961, 48.953]
+      },
+      "population": 1305,
+      "surface": 288.77,
+      "radius": 0.96
+    },
+    {
+      "nom": "Ménerville",
+      "code": "78385",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5971, 48.9568]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6016, 48.9662]
+      },
+      "population": 218,
+      "surface": 349.47,
+      "radius": 1.05
+    },
+    {
+      "nom": "Méré",
+      "code": "78389",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8188, 48.7954]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.82, 48.7876]
+      },
+      "population": 1695,
+      "surface": 1052.18,
+      "radius": 1.83
+    },
+    {
+      "nom": "Méricourt",
+      "code": "78391",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6254, 49.037]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6296, 49.037]
+      },
+      "population": 378,
+      "surface": 243.69,
+      "radius": 0.88
+    },
+    {
+      "nom": "Meulan-en-Yvelines",
+      "code": "78401",
+      "codesPostaux": ["78250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.909, 49.0051]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9099, 49.0051]
+      },
+      "population": 8996,
+      "surface": 344.85,
+      "radius": 1.05
+    },
+    {
+      "nom": "Mézières-sur-Seine",
+      "code": "78402",
+      "codesPostaux": ["78970"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.782, 48.9481]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7955, 48.9613]
+      },
+      "population": 3874,
+      "surface": 1082.46,
+      "radius": 1.86
+    },
+    {
+      "nom": "Mézy-sur-Seine",
+      "code": "78403",
+      "codesPostaux": ["78250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8692, 49.0033]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8808, 48.9996]
+      },
+      "population": 2261,
+      "surface": 481.18,
+      "radius": 1.24
+    },
+    {
+      "nom": "Millemont",
+      "code": "78404",
+      "codesPostaux": ["78940"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7258, 48.8095]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7448, 48.8091]
+      },
+      "population": 278,
+      "surface": 579.58,
+      "radius": 1.36
+    },
+    {
+      "nom": "Milon-la-Chapelle",
+      "code": "78406",
+      "codesPostaux": ["78470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0461, 48.7298]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0492, 48.7264]
+      },
+      "population": 292,
+      "surface": 308.59,
+      "radius": 0.99
+    },
+    {
+      "nom": "Mittainville",
+      "code": "78407",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6363, 48.6639]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6235, 48.6653]
+      },
+      "population": 650,
+      "surface": 1064.68,
+      "radius": 1.84
+    },
+    {
+      "nom": "Moisson",
+      "code": "78410",
+      "codesPostaux": ["78840"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6587, 49.0663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.67, 49.0731]
+      },
+      "population": 913,
+      "surface": 1009.26,
+      "radius": 1.79
+    },
+    {
+      "nom": "Mondreville",
+      "code": "78413",
+      "codesPostaux": ["78980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5568, 48.9034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5509, 48.9033]
+      },
+      "population": 390,
+      "surface": 447.85,
+      "radius": 1.19
+    },
+    {
+      "nom": "Montainville",
+      "code": "78415",
+      "codesPostaux": ["78124"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8539, 48.8807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8596, 48.8821]
+      },
+      "population": 560,
+      "surface": 475.29,
+      "radius": 1.23
+    },
+    {
+      "nom": "Montalet-le-Bois",
+      "code": "78416",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8287, 49.0471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.826, 49.046]
+      },
+      "population": 321,
+      "surface": 302.88,
+      "radius": 0.98
+    },
+    {
+      "nom": "Montchauvet",
+      "code": "78417",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6265, 48.8944]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6305, 48.8915]
+      },
+      "population": 285,
+      "surface": 798.44,
+      "radius": 1.59
+    },
+    {
+      "nom": "Montesson",
+      "code": "78418",
+      "codesPostaux": ["78360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1381, 48.919]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1497, 48.9086]
+      },
+      "population": 14606,
+      "surface": 733.78,
+      "radius": 1.53
+    },
+    {
+      "nom": "Montfort-l'Amaury",
+      "code": "78420",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8081, 48.7717]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8089, 48.7781]
+      },
+      "population": 2790,
+      "surface": 573.27,
+      "radius": 1.35
+    },
+    {
+      "nom": "Montigny-le-Bretonneux",
+      "code": "78423",
+      "codesPostaux": ["78180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0252, 48.7776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0376, 48.7696]
+      },
+      "population": 32150,
+      "surface": 1070.01,
+      "radius": 1.85
+    },
+    {
+      "nom": "Morainvilliers",
+      "code": "78431",
+      "codesPostaux": ["78630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9437, 48.9351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9346, 48.9278]
+      },
+      "population": 3102,
+      "surface": 743.62,
+      "radius": 1.54
+    },
+    {
+      "nom": "Mousseaux-sur-Seine",
+      "code": "78437",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6548, 49.051]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.649, 49.0434]
+      },
+      "population": 680,
+      "surface": 720.57,
+      "radius": 1.51
+    },
+    {
+      "nom": "Mulcent",
+      "code": "78439",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6524, 48.879]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.652, 48.879]
+      },
+      "population": 117,
+      "surface": 358.46,
+      "radius": 1.07
+    },
+    {
+      "nom": "Neauphle-le-Château",
+      "code": "78442",
+      "codesPostaux": ["78640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9031, 48.8122]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8988, 48.8136]
+      },
+      "population": 3295,
+      "surface": 217.69,
+      "radius": 0.83
+    },
+    {
+      "nom": "Neauphle-le-Vieux",
+      "code": "78443",
+      "codesPostaux": ["78640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8634, 48.8166]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8637, 48.8148]
+      },
+      "population": 924,
+      "surface": 763.41,
+      "radius": 1.56
+    },
+    {
+      "nom": "Neauphlette",
+      "code": "78444",
+      "codesPostaux": ["78980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5446, 48.9358]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.525, 48.9314]
+      },
+      "population": 872,
+      "surface": 974.77,
+      "radius": 1.76
+    },
+    {
+      "nom": "Nézel",
+      "code": "78451",
+      "codesPostaux": ["78410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8398, 48.9428]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8357, 48.9457]
+      },
+      "population": 1111,
+      "surface": 132.09,
+      "radius": 0.65
+    },
+    {
+      "nom": "Noisy-le-Roi",
+      "code": "78455",
+      "codesPostaux": ["78590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0542, 48.8466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0645, 48.8437]
+      },
+      "population": 7597,
+      "surface": 554.65,
+      "radius": 1.33
+    },
+    {
+      "nom": "Notre-Dame-de-la-Mer",
+      "code": "78320",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5292, 49.0552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5285, 49.0377]
+      },
+      "population": 734,
+      "surface": 899.78,
+      "radius": 1.69
+    },
+    {
+      "nom": "Oinville-sur-Montcient",
+      "code": "78460",
+      "codesPostaux": ["78250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8474, 49.0249]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8522, 49.0289]
+      },
+      "population": 1113,
+      "surface": 381.59,
+      "radius": 1.1
+    },
+    {
+      "nom": "Orcemont",
+      "code": "78464",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8031, 48.5958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8108, 48.587]
+      },
+      "population": 983,
+      "surface": 1056.11,
+      "radius": 1.83
+    },
+    {
+      "nom": "Orgerus",
+      "code": "78465",
+      "codesPostaux": ["78910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.695, 48.8351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.702, 48.8395]
+      },
+      "population": 2484,
+      "surface": 1448.34,
+      "radius": 2.15
+    },
+    {
+      "nom": "Orgeval",
+      "code": "78466",
+      "codesPostaux": ["78630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9698, 48.9185]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9748, 48.9183]
+      },
+      "population": 7092,
+      "surface": 1546.19,
+      "radius": 2.22
+    },
+    {
+      "nom": "Orphin",
+      "code": "78470",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7842, 48.5763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7797, 48.5784]
+      },
+      "population": 879,
+      "surface": 1665.14,
+      "radius": 2.3
+    },
+    {
+      "nom": "Orsonville",
+      "code": "78472",
+      "codesPostaux": ["78660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8227, 48.4778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8364, 48.4765]
+      },
+      "population": 325,
+      "surface": 975.22,
+      "radius": 1.76
+    },
+    {
+      "nom": "Orvilliers",
+      "code": "78474",
+      "codesPostaux": ["78910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6423, 48.8549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6411, 48.8589]
+      },
+      "population": 935,
+      "surface": 592.74,
+      "radius": 1.37
+    },
+    {
+      "nom": "Osmoy",
+      "code": "78475",
+      "codesPostaux": ["78910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7162, 48.8645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7167, 48.8661]
+      },
+      "population": 407,
+      "surface": 256.82,
+      "radius": 0.9
+    },
+    {
+      "nom": "Paray-Douaville",
+      "code": "78478",
+      "codesPostaux": ["78660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8615, 48.4607]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.876, 48.4623]
+      },
+      "population": 216,
+      "surface": 1019.95,
+      "radius": 1.8
+    },
+    {
+      "nom": "Perdreauville",
+      "code": "78484",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6056, 48.9666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.626, 48.9669]
+      },
+      "population": 669,
+      "surface": 1119.65,
+      "radius": 1.89
+    },
+    {
+      "nom": "Plaisir",
+      "code": "78490",
+      "codesPostaux": ["78370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9483, 48.8129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9472, 48.8174]
+      },
+      "population": 31971,
+      "surface": 1765.03,
+      "radius": 2.37
+    },
+    {
+      "nom": "Poigny-la-Forêt",
+      "code": "78497",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7549, 48.6803]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.758, 48.6839]
+      },
+      "population": 930,
+      "surface": 2357.61,
+      "radius": 2.74
+    },
+    {
+      "nom": "Poissy",
+      "code": "78498",
+      "codesPostaux": ["78300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.025, 48.9241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0428, 48.9274]
+      },
+      "population": 40792,
+      "surface": 1288.18,
+      "radius": 2.02
+    },
+    {
+      "nom": "Ponthévrard",
+      "code": "78499",
+      "codesPostaux": ["78730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.91, 48.5496]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9117, 48.553]
+      },
+      "population": 700,
+      "surface": 264.74,
+      "radius": 0.92
+    },
+    {
+      "nom": "Porcheville",
+      "code": "78501",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.768, 48.9781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7768, 48.9719]
+      },
+      "population": 3167,
+      "surface": 462.27,
+      "radius": 1.21
+    },
+    {
+      "nom": "Prunay-en-Yvelines",
+      "code": "78506",
+      "codesPostaux": ["78660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8041, 48.5257]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7943, 48.5278]
+      },
+      "population": 820,
+      "surface": 2726.47,
+      "radius": 2.95
+    },
+    {
+      "nom": "Prunay-le-Temple",
+      "code": "78505",
+      "codesPostaux": ["78910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6741, 48.858]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6735, 48.8612]
+      },
+      "population": 410,
+      "surface": 674.36,
+      "radius": 1.47
+    },
+    {
+      "nom": "Raizeux",
+      "code": "78516",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6849, 48.6375]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.683, 48.6241]
+      },
+      "population": 990,
+      "surface": 1035.64,
+      "radius": 1.82
+    },
+    {
+      "nom": "Rambouillet",
+      "code": "78517",
+      "codesPostaux": ["78120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8339, 48.6538]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8197, 48.6451]
+      },
+      "population": 27145,
+      "surface": 3586.6,
+      "radius": 3.38
+    },
+    {
+      "nom": "Rennemoulin",
+      "code": "78518",
+      "codesPostaux": ["78590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0421, 48.8339]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0425, 48.8318]
+      },
+      "population": 107,
+      "surface": 221.77,
+      "radius": 0.84
+    },
+    {
+      "nom": "Richebourg",
+      "code": "78520",
+      "codesPostaux": ["78550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.634, 48.825]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6366, 48.8223]
+      },
+      "population": 1571,
+      "surface": 1064.09,
+      "radius": 1.84
+    },
+    {
+      "nom": "Rochefort-en-Yvelines",
+      "code": "78522",
+      "codesPostaux": ["78730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9819, 48.593]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9883, 48.5853]
+      },
+      "population": 897,
+      "surface": 1277.1,
+      "radius": 2.02
+    },
+    {
+      "nom": "Rolleboise",
+      "code": "78528",
+      "codesPostaux": ["78270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6006, 49.0195]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6105, 49.0183]
+      },
+      "population": 351,
+      "surface": 303.8,
+      "radius": 0.98
+    },
+    {
+      "nom": "Rosay",
+      "code": "78530",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.684, 48.9108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6805, 48.9149]
+      },
+      "population": 386,
+      "surface": 450.77,
+      "radius": 1.2
+    },
+    {
+      "nom": "Rosny-sur-Seine",
+      "code": "78531",
+      "codesPostaux": ["78710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6054, 48.9978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6319, 49.001]
+      },
+      "population": 7041,
+      "surface": 1923.6,
+      "radius": 2.47
+    },
+    {
+      "nom": "Sailly",
+      "code": "78536",
+      "codesPostaux": ["78440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7927, 49.0448]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8024, 49.0389]
+      },
+      "population": 335,
+      "surface": 549.37,
+      "radius": 1.32
+    },
+    {
+      "nom": "Saint-Arnoult-en-Yvelines",
+      "code": "78537",
+      "codesPostaux": ["78730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9293, 48.5752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9422, 48.5719]
+      },
+      "population": 5854,
+      "surface": 1268.94,
+      "radius": 2.01
+    },
+    {
+      "nom": "Saint-Cyr-l'École",
+      "code": "78545",
+      "codesPostaux": ["78210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0657, 48.8064]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0671, 48.7996]
+      },
+      "population": 20451,
+      "surface": 510.71,
+      "radius": 1.28
+    },
+    {
+      "nom": "Saint-Forget",
+      "code": "78548",
+      "codesPostaux": ["78720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9976, 48.7128]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9934, 48.7103]
+      },
+      "population": 445,
+      "surface": 600.28,
+      "radius": 1.38
+    },
+    {
+      "nom": "Saint-Germain-de-la-Grange",
+      "code": "78550",
+      "codesPostaux": ["78640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.902, 48.8347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.899, 48.8337]
+      },
+      "population": 1842,
+      "surface": 527.92,
+      "radius": 1.3
+    },
+    {
+      "nom": "Saint-Germain-en-Laye",
+      "code": "78551",
+      "codesPostaux": ["78100", "78112"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1052, 48.931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0938, 48.899]
+      },
+      "population": 45286,
+      "surface": 5309.05,
+      "radius": 4.11
+    },
+    {
+      "nom": "Saint-Hilarion",
+      "code": "78557",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7222, 48.6246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7326, 48.6202]
+      },
+      "population": 988,
+      "surface": 1426.25,
+      "radius": 2.13
+    },
+    {
+      "nom": "Saint-Illiers-la-Ville",
+      "code": "78558",
+      "codesPostaux": ["78980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5437, 48.9777]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5381, 48.9757]
+      },
+      "population": 356,
+      "surface": 662.16,
+      "radius": 1.45
+    },
+    {
+      "nom": "Saint-Illiers-le-Bois",
+      "code": "78559",
+      "codesPostaux": ["78980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5102, 48.9647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.508, 48.957]
+      },
+      "population": 448,
+      "surface": 442.22,
+      "radius": 1.19
+    },
+    {
+      "nom": "Saint-Lambert",
+      "code": "78561",
+      "codesPostaux": ["78470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0093, 48.7339]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0199, 48.7313]
+      },
+      "population": 448,
+      "surface": 661.81,
+      "radius": 1.45
+    },
+    {
+      "nom": "Saint-Léger-en-Yvelines",
+      "code": "78562",
+      "codesPostaux": ["78610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7646, 48.7338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7656, 48.7211]
+      },
+      "population": 1462,
+      "surface": 3508.95,
+      "radius": 3.34
+    },
+    {
+      "nom": "Saint-Martin-de-Bréthencourt",
+      "code": "78564",
+      "codesPostaux": ["78660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9179, 48.5153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9284, 48.5099]
+      },
+      "population": 688,
+      "surface": 1661.8,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-Martin-des-Champs",
+      "code": "78565",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7215, 48.8776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7186, 48.8821]
+      },
+      "population": 304,
+      "surface": 620.71,
+      "radius": 1.41
+    },
+    {
+      "nom": "Saint-Martin-la-Garenne",
+      "code": "78567",
+      "codesPostaux": ["78520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6707, 49.0372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6888, 49.0404]
+      },
+      "population": 947,
+      "surface": 1593.35,
+      "radius": 2.25
+    },
+    {
+      "nom": "Saint-Nom-la-Bretèche",
+      "code": "78571",
+      "codesPostaux": ["78860"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0168, 48.8621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0213, 48.8598]
+      },
+      "population": 4877,
+      "surface": 1180.21,
+      "radius": 1.94
+    },
+    {
+      "nom": "Saint-Rémy-l'Honoré",
+      "code": "78576",
+      "codesPostaux": ["78690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8775, 48.7515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8817, 48.7565]
+      },
+      "population": 1689,
+      "surface": 1024.36,
+      "radius": 1.81
+    },
+    {
+      "nom": "Saint-Rémy-lès-Chevreuse",
+      "code": "78575",
+      "codesPostaux": ["78470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.082, 48.7037]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0727, 48.706]
+      },
+      "population": 7747,
+      "surface": 979.55,
+      "radius": 1.77
+    },
+    {
+      "nom": "Sainte-Mesme",
+      "code": "78569",
+      "codesPostaux": ["78730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9433, 48.536]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9609, 48.5312]
+      },
+      "population": 910,
+      "surface": 830.92,
+      "radius": 1.63
+    },
+    {
+      "nom": "Sartrouville",
+      "code": "78586",
+      "codesPostaux": ["78500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1744, 48.9374]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1583, 48.9413]
+      },
+      "population": 51570,
+      "surface": 847.03,
+      "radius": 1.64
+    },
+    {
+      "nom": "Saulx-Marchais",
+      "code": "78588",
+      "codesPostaux": ["78650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8361, 48.8434]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8364, 48.8382]
+      },
+      "population": 956,
+      "surface": 215.36,
+      "radius": 0.83
+    },
+    {
+      "nom": "Senlisse",
+      "code": "78590",
+      "codesPostaux": ["78720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9688, 48.6828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9817, 48.6868]
+      },
+      "population": 509,
+      "surface": 810,
+      "radius": 1.61
+    },
+    {
+      "nom": "Septeuil",
+      "code": "78591",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6891, 48.8883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.679, 48.8926]
+      },
+      "population": 2234,
+      "surface": 956.66,
+      "radius": 1.75
+    },
+    {
+      "nom": "Soindres",
+      "code": "78597",
+      "codesPostaux": ["78200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6732, 48.9547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6749, 48.9573]
+      },
+      "population": 731,
+      "surface": 522.9,
+      "radius": 1.29
+    },
+    {
+      "nom": "Sonchamp",
+      "code": "78601",
+      "codesPostaux": ["78120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8765, 48.5854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8766, 48.5764]
+      },
+      "population": 1664,
+      "surface": 4633.79,
+      "radius": 3.84
+    },
+    {
+      "nom": "Tacoignières",
+      "code": "78605",
+      "codesPostaux": ["78910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.664, 48.8328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6748, 48.8358]
+      },
+      "population": 1194,
+      "surface": 319.89,
+      "radius": 1.01
+    },
+    {
+      "nom": "Tessancourt-sur-Aubette",
+      "code": "78609",
+      "codesPostaux": ["78250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9218, 49.0263]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9193, 49.0243]
+      },
+      "population": 971,
+      "surface": 444.71,
+      "radius": 1.19
+    },
+    {
+      "nom": "Thiverval-Grignon",
+      "code": "78615",
+      "codesPostaux": ["78850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9322, 48.8419]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9177, 48.8496]
+      },
+      "population": 1102,
+      "surface": 1130.02,
+      "radius": 1.9
+    },
+    {
+      "nom": "Thoiry",
+      "code": "78616",
+      "codesPostaux": ["78770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7989, 48.8699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7954, 48.8651]
+      },
+      "population": 1432,
+      "surface": 713.67,
+      "radius": 1.51
+    },
+    {
+      "nom": "Tilly",
+      "code": "78618",
+      "codesPostaux": ["78790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5764, 48.8785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5729, 48.8817]
+      },
+      "population": 529,
+      "surface": 775.27,
+      "radius": 1.57
+    },
+    {
+      "nom": "Toussus-le-Noble",
+      "code": "78620",
+      "codesPostaux": ["78117"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1192, 48.7477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1144, 48.7459]
+      },
+      "population": 1176,
+      "surface": 402.04,
+      "radius": 1.13
+    },
+    {
+      "nom": "Trappes",
+      "code": "78621",
+      "codesPostaux": ["78190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9964, 48.7738]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9994, 48.7761]
+      },
+      "population": 34276,
+      "surface": 1369.24,
+      "radius": 2.09
+    },
+    {
+      "nom": "Triel-sur-Seine",
+      "code": "78624",
+      "codesPostaux": ["78510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0055, 48.976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0028, 48.9809]
+      },
+      "population": 12386,
+      "surface": 1382.22,
+      "radius": 2.1
+    },
+    {
+      "nom": "Vaux-sur-Seine",
+      "code": "78638",
+      "codesPostaux": ["78740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9704, 49.0089]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9635, 49.0062]
+      },
+      "population": 5143,
+      "surface": 843.98,
+      "radius": 1.64
+    },
+    {
+      "nom": "Vélizy-Villacoublay",
+      "code": "78640",
+      "codesPostaux": ["78140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1956, 48.784]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1906, 48.7828]
+      },
+      "population": 22481,
+      "surface": 893.23,
+      "radius": 1.69
+    },
+    {
+      "nom": "Verneuil-sur-Seine",
+      "code": "78642",
+      "codesPostaux": ["78480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9659, 48.9874]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9755, 48.9791]
+      },
+      "population": 16112,
+      "surface": 959.37,
+      "radius": 1.75
+    },
+    {
+      "nom": "Vernouillet",
+      "code": "78643",
+      "codesPostaux": ["78540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9748, 48.9649]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9835, 48.9726]
+      },
+      "population": 9953,
+      "surface": 672.75,
+      "radius": 1.46
+    },
+    {
+      "nom": "Versailles",
+      "code": "78646",
+      "codesPostaux": ["78000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1191, 48.8039]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1303, 48.8012]
+      },
+      "population": 83918,
+      "surface": 2615.05,
+      "radius": 2.89
+    },
+    {
+      "nom": "Vert",
+      "code": "78647",
+      "codesPostaux": ["78930"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6824, 48.9429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6909, 48.939]
+      },
+      "population": 852,
+      "surface": 372.04,
+      "radius": 1.09
+    },
+    {
+      "nom": "Vicq",
+      "code": "78653",
+      "codesPostaux": ["78490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8283, 48.8223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8346, 48.8152]
+      },
+      "population": 391,
+      "surface": 447.2,
+      "radius": 1.19
+    },
+    {
+      "nom": "Vieille-Église-en-Yvelines",
+      "code": "78655",
+      "codesPostaux": ["78125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8759, 48.6695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8753, 48.6702]
+      },
+      "population": 618,
+      "surface": 972.93,
+      "radius": 1.76
+    },
+    {
+      "nom": "Villennes-sur-Seine",
+      "code": "78672",
+      "codesPostaux": ["78670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9975, 48.9372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9991, 48.9405]
+      },
+      "population": 5792,
+      "surface": 500.65,
+      "radius": 1.26
+    },
+    {
+      "nom": "Villepreux",
+      "code": "78674",
+      "codesPostaux": ["78450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0127, 48.8306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0052, 48.83]
+      },
+      "population": 11568,
+      "surface": 1045.96,
+      "radius": 1.82
+    },
+    {
+      "nom": "Villette",
+      "code": "78677",
+      "codesPostaux": ["78930"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6917, 48.9244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6926, 48.9273]
+      },
+      "population": 537,
+      "surface": 463.39,
+      "radius": 1.21
+    },
+    {
+      "nom": "Villiers-le-Mahieu",
+      "code": "78681",
+      "codesPostaux": ["78770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7744, 48.8518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7724, 48.8605]
+      },
+      "population": 872,
+      "surface": 689.67,
+      "radius": 1.48
+    },
+    {
+      "nom": "Villiers-Saint-Frédéric",
+      "code": "78683",
+      "codesPostaux": ["78640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.883, 48.8201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8913, 48.8197]
+      },
+      "population": 3231,
+      "surface": 509.62,
+      "radius": 1.27
+    },
+    {
+      "nom": "Viroflay",
+      "code": "78686",
+      "codesPostaux": ["78220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1725, 48.8017]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1732, 48.7997]
+      },
+      "population": 16943,
+      "surface": 347.87,
+      "radius": 1.05
+    },
+    {
+      "nom": "Voisins-le-Bretonneux",
+      "code": "78688",
+      "codesPostaux": ["78960"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.047, 48.7598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0513, 48.7587]
+      },
+      "population": 10740,
+      "surface": 360.85,
+      "radius": 1.07
+    }
+  ],
+  "postalCodes": {
+    "78000": {
+      "communes": ["Versailles"],
+      "communeCount": 1,
+      "center": [2.1303, 48.8012],
+      "coverageRadius": 2.89,
+      "totalPopulation": 83918,
+      "totalSurface": 2615
+    },
+    "78100": {
+      "communes": ["Saint-Germain-en-Laye"],
+      "communeCount": 1,
+      "center": [2.0938, 48.899],
+      "coverageRadius": 4.11,
+      "totalPopulation": 45286,
+      "totalSurface": 5309
+    },
+    "78110": {
+      "communes": ["Le Vésinet"],
+      "communeCount": 1,
+      "center": [2.1348, 48.8946],
+      "coverageRadius": 1.26,
+      "totalPopulation": 15712,
+      "totalSurface": 502
+    },
+    "78111": {
+      "communes": ["Dammartin-en-Serve"],
+      "communeCount": 1,
+      "center": [1.6186, 48.903],
+      "coverageRadius": 2.1,
+      "totalPopulation": 1417,
+      "totalSurface": 1386
+    },
+    "78112": {
+      "communes": ["Saint-Germain-en-Laye"],
+      "communeCount": 1,
+      "center": [2.0938, 48.899],
+      "coverageRadius": 4.11,
+      "totalPopulation": 45286,
+      "totalSurface": 5309
+    },
+    "78113": {
+      "communes": ["Adainville", "Bourdonné", "Condé-sur-Vesgre", "Grandchamp", "La Hauteville", "Le Tartre-Gaudran"],
+      "communeCount": 6,
+      "center": [1.6506, 48.734],
+      "coverageRadius": 5.6,
+      "boundingBox": {
+        "minLat": 48.6991,
+        "maxLat": 48.7561,
+        "minLon": 1.5957,
+        "maxLon": 1.6626
+      },
+      "totalPopulation": 2921,
+      "totalSurface": 4717
+    },
+    "78114": {
+      "communes": ["Magny-les-Hameaux"],
+      "communeCount": 1,
+      "center": [2.084, 48.724],
+      "coverageRadius": 2.31,
+      "totalPopulation": 9353,
+      "totalSurface": 1670
+    },
+    "78117": {
+      "communes": ["Châteaufort", "Toussus-le-Noble"],
+      "communeCount": 2,
+      "center": [2.1018, 48.7411],
+      "coverageRadius": 1.1,
+      "boundingBox": {
+        "minLat": 48.7374,
+        "maxLat": 48.7459,
+        "minLon": 2.0921,
+        "maxLon": 2.1144
+      },
+      "totalPopulation": 2716,
+      "totalSurface": 891
+    },
+    "78120": {
+      "communes": ["Clairefontaine-en-Yvelines", "Rambouillet", "Sonchamp"],
+      "communeCount": 3,
+      "center": [1.8255, 48.6403],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 48.5764,
+        "maxLat": 48.6451,
+        "minLon": 1.8197,
+        "maxLon": 1.91
+      },
+      "totalPopulation": 29660,
+      "totalSurface": 9947
+    },
+    "78121": {
+      "communes": ["Crespières"],
+      "communeCount": 1,
+      "center": [1.9239, 48.8816],
+      "coverageRadius": 2.18,
+      "totalPopulation": 1717,
+      "totalSurface": 1500
+    },
+    "78124": {
+      "communes": ["Mareil-sur-Mauldre", "Montainville"],
+      "communeCount": 2,
+      "center": [1.8641, 48.8913],
+      "coverageRadius": 1.1,
+      "boundingBox": {
+        "minLat": 48.8821,
+        "maxLat": 48.8942,
+        "minLon": 1.8596,
+        "maxLon": 1.8656
+      },
+      "totalPopulation": 2303,
+      "totalSurface": 913
+    },
+    "78125": {
+      "communes": [
+        "La Boissière-École",
+        "Émancé",
+        "Gazeran",
+        "Hermeray",
+        "Mittainville",
+        "Orcemont",
+        "Orphin",
+        "Poigny-la-Forêt",
+        "Raizeux",
+        "Saint-Hilarion",
+        "Vieille-Église-en-Yvelines"
+      ],
+      "communeCount": 11,
+      "center": [1.7385, 48.6324],
+      "coverageRadius": 10.9,
+      "boundingBox": {
+        "minLat": 48.5784,
+        "maxLat": 48.6839,
+        "minLon": 1.6235,
+        "maxLon": 1.8753
+      },
+      "totalPopulation": 9963,
+      "totalSurface": 17768
+    },
+    "78126": {
+      "communes": ["Aulnay-sur-Mauldre"],
+      "communeCount": 1,
+      "center": [1.8437, 48.9292],
+      "coverageRadius": 0.84,
+      "totalPopulation": 1159,
+      "totalSurface": 224
+    },
+    "78130": {
+      "communes": ["Chapet", "Les Mureaux"],
+      "communeCount": 2,
+      "center": [1.9101, 48.9925],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 48.9673,
+        "maxLat": 48.9935,
+        "minLon": 1.9092,
+        "maxLon": 1.934
+      },
+      "totalPopulation": 35488,
+      "totalSurface": 1757
+    },
+    "78140": {
+      "communes": ["Vélizy-Villacoublay"],
+      "communeCount": 1,
+      "center": [2.1906, 48.7828],
+      "coverageRadius": 1.69,
+      "totalPopulation": 22481,
+      "totalSurface": 893
+    },
+    "78150": {
+      "communes": ["Le Chesnay-Rocquencourt"],
+      "communeCount": 1,
+      "center": [2.1252, 48.8265],
+      "coverageRadius": 1.51,
+      "totalPopulation": 31064,
+      "totalSurface": 716
+    },
+    "78160": {
+      "communes": ["Marly-le-Roi"],
+      "communeCount": 1,
+      "center": [2.097, 48.8682],
+      "coverageRadius": 1.46,
+      "totalPopulation": 16619,
+      "totalSurface": 668
+    },
+    "78170": {
+      "communes": ["La Celle-Saint-Cloud"],
+      "communeCount": 1,
+      "center": [2.1362, 48.8484],
+      "coverageRadius": 1.36,
+      "totalPopulation": 20440,
+      "totalSurface": 584
+    },
+    "78180": {
+      "communes": ["Montigny-le-Bretonneux"],
+      "communeCount": 1,
+      "center": [2.0376, 48.7696],
+      "coverageRadius": 1.85,
+      "totalPopulation": 32150,
+      "totalSurface": 1070
+    },
+    "78190": {
+      "communes": ["Trappes"],
+      "communeCount": 1,
+      "center": [1.9994, 48.7761],
+      "coverageRadius": 2.09,
+      "totalPopulation": 34276,
+      "totalSurface": 1369
+    },
+    "78200": {
+      "communes": [
+        "Boinvilliers",
+        "Boissy-Mauvoisin",
+        "Buchelay",
+        "Favrieux",
+        "Flacourt",
+        "Fontenay-Mauvoisin",
+        "Jouy-Mauvoisin",
+        "Magnanville",
+        "Mantes-la-Jolie",
+        "Ménerville",
+        "Perdreauville",
+        "Soindres"
+      ],
+      "communeCount": 12,
+      "center": [1.7038, 48.9842],
+      "coverageRadius": 9.4,
+      "boundingBox": {
+        "minLat": 48.918,
+        "maxLat": 48.989,
+        "minLon": 1.5796,
+        "maxLon": 1.7153
+      },
+      "totalPopulation": 57858,
+      "totalSurface": 6103
+    },
+    "78210": {
+      "communes": ["Saint-Cyr-l'École"],
+      "communeCount": 1,
+      "center": [2.0671, 48.7996],
+      "coverageRadius": 1.28,
+      "totalPopulation": 20451,
+      "totalSurface": 511
+    },
+    "78220": {
+      "communes": ["Viroflay"],
+      "communeCount": 1,
+      "center": [2.1732, 48.7997],
+      "coverageRadius": 1.05,
+      "totalPopulation": 16943,
+      "totalSurface": 348
+    },
+    "78230": {
+      "communes": ["Le Pecq"],
+      "communeCount": 1,
+      "center": [2.1063, 48.8974],
+      "coverageRadius": 0.96,
+      "totalPopulation": 15858,
+      "totalSurface": 289
+    },
+    "78240": {
+      "communes": ["Aigremont", "Chambourcy"],
+      "communeCount": 2,
+      "center": [2.0364, 48.9055],
+      "coverageRadius": 1.4,
+      "boundingBox": {
+        "minLat": 48.9022,
+        "maxLat": 48.9061,
+        "minLon": 2.0179,
+        "maxLon": 2.0398
+      },
+      "totalPopulation": 6908,
+      "totalSurface": 1102
+    },
+    "78250": {
+      "communes": [
+        "Gaillon-sur-Montcient",
+        "Hardricourt",
+        "Meulan-en-Yvelines",
+        "Mézy-sur-Seine",
+        "Oinville-sur-Montcient",
+        "Tessancourt-sur-Aubette"
+      ],
+      "communeCount": 6,
+      "center": [1.8995, 49.0083],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 48.9996,
+        "maxLat": 49.0289,
+        "minLon": 1.8522,
+        "maxLon": 1.9193
+      },
+      "totalPopulation": 16530,
+      "totalSurface": 2485
+    },
+    "78260": {
+      "communes": ["Achères"],
+      "communeCount": 1,
+      "center": [2.0699, 48.9609],
+      "coverageRadius": 1.74,
+      "totalPopulation": 21663,
+      "totalSurface": 947
+    },
+    "78270": {
+      "communes": [
+        "Bennecourt",
+        "Blaru",
+        "Bonnières-sur-Seine",
+        "Chaufour-lès-Bonnières",
+        "Cravent",
+        "Gommecourt",
+        "Notre-Dame-de-la-Mer",
+        "Limetz-Villez",
+        "Lommoye",
+        "Méricourt",
+        "Mousseaux-sur-Seine",
+        "Rolleboise",
+        "La Villeneuve-en-Chevrie"
+      ],
+      "communeCount": 13,
+      "center": [1.5599, 49.0382],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 48.9907,
+        "maxLat": 49.0753,
+        "minLon": 1.4783,
+        "maxLon": 1.649
+      },
+      "totalPopulation": 14781,
+      "totalSurface": 9717
+    },
+    "78280": {
+      "communes": ["Guyancourt"],
+      "communeCount": 1,
+      "center": [2.0703, 48.7709],
+      "coverageRadius": 2.05,
+      "totalPopulation": 29758,
+      "totalSurface": 1320
+    },
+    "78290": {
+      "communes": ["Croissy-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.1477, 48.8805],
+      "coverageRadius": 1.05,
+      "totalPopulation": 10580,
+      "totalSurface": 344
+    },
+    "78300": {
+      "communes": ["Poissy"],
+      "communeCount": 1,
+      "center": [2.0428, 48.9274],
+      "coverageRadius": 2.02,
+      "totalPopulation": 40792,
+      "totalSurface": 1288
+    },
+    "78310": {
+      "communes": ["Coignières", "Maurepas"],
+      "communeCount": 2,
+      "center": [1.9404, 48.7595],
+      "coverageRadius": 2.2,
+      "boundingBox": {
+        "minLat": 48.7476,
+        "maxLat": 48.7621,
+        "minLon": 1.9179,
+        "maxLon": 1.9454
+      },
+      "totalPopulation": 24345,
+      "totalSurface": 1650
+    },
+    "78320": {
+      "communes": ["Lévis-Saint-Nom", "Le Mesnil-Saint-Denis", "La Verrière"],
+      "communeCount": 3,
+      "center": [1.958, 48.7452],
+      "coverageRadius": 2.8,
+      "boundingBox": {
+        "minLat": 48.7214,
+        "maxLat": 48.7575,
+        "minLon": 1.9486,
+        "maxLon": 1.9602
+      },
+      "totalPopulation": 14855,
+      "totalSurface": 1958
+    },
+    "78330": {
+      "communes": ["Fontenay-le-Fleury"],
+      "communeCount": 1,
+      "center": [2.0457, 48.8109],
+      "coverageRadius": 1.33,
+      "totalPopulation": 13640,
+      "totalSurface": 557
+    },
+    "78340": {
+      "communes": ["Les Clayes-sous-Bois"],
+      "communeCount": 1,
+      "center": [1.9864, 48.8213],
+      "coverageRadius": 1.39,
+      "totalPopulation": 16940,
+      "totalSurface": 611
+    },
+    "78350": {
+      "communes": ["Jouy-en-Josas", "Les Loges-en-Josas"],
+      "communeCount": 2,
+      "center": [2.1634, 48.7646],
+      "coverageRadius": 1.7,
+      "boundingBox": {
+        "minLat": 48.7644,
+        "maxLat": 48.7647,
+        "minLon": 2.1405,
+        "maxLon": 2.1682
+      },
+      "totalPopulation": 9640,
+      "totalSurface": 1272
+    },
+    "78360": {
+      "communes": ["Montesson"],
+      "communeCount": 1,
+      "center": [2.1497, 48.9086],
+      "coverageRadius": 1.53,
+      "totalPopulation": 14606,
+      "totalSurface": 734
+    },
+    "78370": {
+      "communes": ["Plaisir"],
+      "communeCount": 1,
+      "center": [1.9472, 48.8174],
+      "coverageRadius": 2.37,
+      "totalPopulation": 31971,
+      "totalSurface": 1765
+    },
+    "78380": {
+      "communes": ["Bougival"],
+      "communeCount": 1,
+      "center": [2.1398, 48.8608],
+      "coverageRadius": 0.94,
+      "totalPopulation": 9083,
+      "totalSurface": 276
+    },
+    "78390": {
+      "communes": ["Bois-d'Arcy"],
+      "communeCount": 1,
+      "center": [2.0311, 48.8011],
+      "coverageRadius": 1.33,
+      "totalPopulation": 16225,
+      "totalSurface": 559
+    },
+    "78400": {
+      "communes": ["Chatou"],
+      "communeCount": 1,
+      "center": [2.1575, 48.8899],
+      "coverageRadius": 1.27,
+      "totalPopulation": 30054,
+      "totalSurface": 507
+    },
+    "78410": {
+      "communes": ["Aubergenville", "Bouafle", "La Falaise", "Flins-sur-Seine", "Nézel"],
+      "communeCount": 5,
+      "center": [1.8606, 48.9591],
+      "coverageRadius": 2.8,
+      "boundingBox": {
+        "minLat": 48.9451,
+        "maxLat": 48.9658,
+        "minLon": 1.832,
+        "maxLon": 1.897
+      },
+      "totalPopulation": 18925,
+      "totalSurface": 2918
+    },
+    "78420": {
+      "communes": ["Carrières-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.1764, 48.9062],
+      "coverageRadius": 1.27,
+      "totalPopulation": 15002,
+      "totalSurface": 509
+    },
+    "78430": {
+      "communes": ["Louveciennes"],
+      "communeCount": 1,
+      "center": [2.1125, 48.8619],
+      "coverageRadius": 1.32,
+      "totalPopulation": 7744,
+      "totalSurface": 545
+    },
+    "78440": {
+      "communes": [
+        "Brueil-en-Vexin",
+        "Drocourt",
+        "Fontenay-Saint-Père",
+        "Gargenville",
+        "Guitrancourt",
+        "Issou",
+        "Jambville",
+        "Lainville-en-Vexin",
+        "Montalet-le-Bois",
+        "Porcheville",
+        "Sailly"
+      ],
+      "communeCount": 11,
+      "center": [1.7989, 48.999],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 48.9719,
+        "maxLat": 49.0599,
+        "minLon": 1.7554,
+        "maxLon": 1.8538
+      },
+      "totalPopulation": 19933,
+      "totalSurface": 7095
+    },
+    "78450": {
+      "communes": ["Chavenay", "Villepreux"],
+      "communeCount": 2,
+      "center": [2.0027, 48.8331],
+      "coverageRadius": 2.7,
+      "boundingBox": {
+        "minLat": 48.83,
+        "maxLat": 48.8539,
+        "minLon": 1.9864,
+        "maxLon": 2.0052
+      },
+      "totalPopulation": 13309,
+      "totalSurface": 1656
+    },
+    "78460": {
+      "communes": ["Chevreuse", "Choisel"],
+      "communeCount": 2,
+      "center": [2.0419, 48.7057],
+      "coverageRadius": 2.8,
+      "boundingBox": {
+        "minLat": 48.6866,
+        "maxLat": 48.7075,
+        "minLon": 2.0178,
+        "maxLon": 2.0442
+      },
+      "totalPopulation": 6068,
+      "totalSurface": 2255
+    },
+    "78470": {
+      "communes": ["Milon-la-Chapelle", "Saint-Lambert", "Saint-Rémy-lès-Chevreuse"],
+      "communeCount": 3,
+      "center": [2.0691, 48.708],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 48.706,
+        "maxLat": 48.7313,
+        "minLon": 2.0199,
+        "maxLon": 2.0727
+      },
+      "totalPopulation": 8487,
+      "totalSurface": 1950
+    },
+    "78480": {
+      "communes": ["Verneuil-sur-Seine"],
+      "communeCount": 1,
+      "center": [1.9755, 48.9791],
+      "coverageRadius": 1.75,
+      "totalPopulation": 16112,
+      "totalSurface": 959
+    },
+    "78490": {
+      "communes": [
+        "Bazoches-sur-Guyonne",
+        "Boissy-sans-Avoir",
+        "Galluis",
+        "Gambaiseuil",
+        "Grosrouvre",
+        "Mareil-le-Guyon",
+        "Méré",
+        "Les Mesnuls",
+        "Montfort-l'Amaury",
+        "Le Tremblay-sur-Mauldre",
+        "Vicq"
+      ],
+      "communeCount": 11,
+      "center": [1.818, 48.7845],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 48.7569,
+        "maxLat": 48.8192,
+        "minLon": 1.7332,
+        "maxLon": 1.875
+      },
+      "totalPopulation": 10696,
+      "totalSurface": 8337
+    },
+    "78500": {
+      "communes": ["Sartrouville"],
+      "communeCount": 1,
+      "center": [2.1583, 48.9413],
+      "coverageRadius": 1.64,
+      "totalPopulation": 51570,
+      "totalSurface": 847
+    },
+    "78510": {
+      "communes": ["Triel-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.0028, 48.9809],
+      "coverageRadius": 2.1,
+      "totalPopulation": 12386,
+      "totalSurface": 1382
+    },
+    "78520": {
+      "communes": ["Follainville-Dennemont", "Guernes", "Limay", "Saint-Martin-la-Garenne"],
+      "communeCount": 4,
+      "center": [1.7266, 48.9981],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 48.9921,
+        "maxLat": 49.0404,
+        "minLon": 1.6364,
+        "maxLon": 1.7358
+      },
+      "totalPopulation": 21794,
+      "totalSurface": 4578
+    },
+    "78530": {
+      "communes": ["Buc"],
+      "communeCount": 1,
+      "center": [2.1259, 48.7741],
+      "coverageRadius": 1.6,
+      "totalPopulation": 5868,
+      "totalSurface": 805
+    },
+    "78540": {
+      "communes": ["Vernouillet"],
+      "communeCount": 1,
+      "center": [1.9835, 48.9726],
+      "coverageRadius": 1.46,
+      "totalPopulation": 9953,
+      "totalSurface": 673
+    },
+    "78550": {
+      "communes": ["Bazainville", "Dannemarie", "Gressey", "Houdan", "Maulette", "Richebourg"],
+      "communeCount": 6,
+      "center": [1.6228, 48.8002],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 48.7619,
+        "maxLat": 48.8313,
+        "minLon": 1.6023,
+        "maxLon": 1.6666
+      },
+      "totalPopulation": 8562,
+      "totalSurface": 5166
+    },
+    "78560": {
+      "communes": ["Le Port-Marly"],
+      "communeCount": 1,
+      "center": [2.1117, 48.8783],
+      "coverageRadius": 0.68,
+      "totalPopulation": 5583,
+      "totalSurface": 144
+    },
+    "78570": {
+      "communes": ["Andrésy", "Chanteloup-les-Vignes"],
+      "communeCount": 2,
+      "center": [2.0472, 48.9806],
+      "coverageRadius": 1.3,
+      "boundingBox": {
+        "minLat": 48.9784,
+        "maxLat": 48.9823,
+        "minLon": 2.0302,
+        "maxLon": 2.0606
+      },
+      "totalPopulation": 24456,
+      "totalSurface": 1033
+    },
+    "78580": {
+      "communes": ["Les Alluets-le-Roi", "Bazemont", "Herbeville", "Jumeauville", "Maule"],
+      "communeCount": 5,
+      "center": [1.8578, 48.913],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 48.9061,
+        "maxLat": 48.9282,
+        "minLon": 1.7876,
+        "maxLon": 1.9187
+      },
+      "totalPopulation": 10000,
+      "totalSurface": 4569
+    },
+    "78590": {
+      "communes": ["Noisy-le-Roi", "Rennemoulin"],
+      "communeCount": 2,
+      "center": [2.0642, 48.8435],
+      "coverageRadius": 2.1,
+      "boundingBox": {
+        "minLat": 48.8318,
+        "maxLat": 48.8437,
+        "minLon": 2.0425,
+        "maxLon": 2.0645
+      },
+      "totalPopulation": 7704,
+      "totalSurface": 776
+    },
+    "78600": {
+      "communes": ["Maisons-Laffitte", "Le Mesnil-le-Roi"],
+      "communeCount": 2,
+      "center": [2.14, 48.9422],
+      "coverageRadius": 2.1,
+      "boundingBox": {
+        "minLat": 48.928,
+        "maxLat": 48.9461,
+        "minLon": 2.1225,
+        "maxLon": 2.1448
+      },
+      "totalPopulation": 29195,
+      "totalSurface": 1074
+    },
+    "78610": {
+      "communes": ["Auffargis", "Les Bréviaires", "Le Perray-en-Yvelines", "Saint-Léger-en-Yvelines"],
+      "communeCount": 4,
+      "center": [1.844, 48.7005],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 48.6945,
+        "maxLat": 48.7211,
+        "minLon": 1.7656,
+        "maxLon": 1.8875
+      },
+      "totalPopulation": 11270,
+      "totalSurface": 8571
+    },
+    "78620": {
+      "communes": ["L'Étang-la-Ville"],
+      "communeCount": 1,
+      "center": [2.0727, 48.8712],
+      "coverageRadius": 1.31,
+      "totalPopulation": 4915,
+      "totalSurface": 538
+    },
+    "78630": {
+      "communes": ["Morainvilliers", "Orgeval"],
+      "communeCount": 2,
+      "center": [1.9626, 48.9212],
+      "coverageRadius": 2.2,
+      "boundingBox": {
+        "minLat": 48.9183,
+        "maxLat": 48.9278,
+        "minLon": 1.9346,
+        "maxLon": 1.9748
+      },
+      "totalPopulation": 10194,
+      "totalSurface": 2290
+    },
+    "78640": {
+      "communes": ["Neauphle-le-Château", "Neauphle-le-Vieux", "Saint-Germain-de-la-Grange", "Villiers-Saint-Frédéric"],
+      "communeCount": 4,
+      "center": [1.8927, 48.8198],
+      "coverageRadius": 2.2,
+      "boundingBox": {
+        "minLat": 48.8136,
+        "maxLat": 48.8337,
+        "minLon": 1.8637,
+        "maxLon": 1.899
+      },
+      "totalPopulation": 9292,
+      "totalSurface": 2019
+    },
+    "78650": {
+      "communes": ["Beynes", "Saulx-Marchais"],
+      "communeCount": 2,
+      "center": [1.8715, 48.8542],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 48.8382,
+        "maxLat": 48.8562,
+        "minLon": 1.8364,
+        "maxLon": 1.8759
+      },
+      "totalPopulation": 8591,
+      "totalSurface": 2079
+    },
+    "78660": {
+      "communes": [
+        "Ablis",
+        "Allainville",
+        "Boinville-le-Gaillard",
+        "Orsonville",
+        "Paray-Douaville",
+        "Prunay-en-Yvelines",
+        "Saint-Martin-de-Bréthencourt"
+      ],
+      "communeCount": 7,
+      "center": [1.8457, 48.5095],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 48.4584,
+        "maxLat": 48.5278,
+        "minLon": 1.7943,
+        "maxLon": 1.9284
+      },
+      "totalPopulation": 6745,
+      "totalSurface": 11897
+    },
+    "78670": {
+      "communes": ["Médan", "Villennes-sur-Seine"],
+      "communeCount": 2,
+      "center": [1.9985, 48.9428],
+      "coverageRadius": 1.2,
+      "boundingBox": {
+        "minLat": 48.9405,
+        "maxLat": 48.953,
+        "minLon": 1.9961,
+        "maxLon": 1.9991
+      },
+      "totalPopulation": 7097,
+      "totalSurface": 789
+    },
+    "78680": {
+      "communes": ["Épône"],
+      "communeCount": 1,
+      "center": [1.8126, 48.9576],
+      "coverageRadius": 2.06,
+      "totalPopulation": 6778,
+      "totalSurface": 1335
+    },
+    "78690": {
+      "communes": ["Les Essarts-le-Roi", "Saint-Rémy-l'Honoré"],
+      "communeCount": 2,
+      "center": [1.8921, 48.7255],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 48.7178,
+        "maxLat": 48.7565,
+        "minLon": 1.8817,
+        "maxLon": 1.8947
+      },
+      "totalPopulation": 8461,
+      "totalSurface": 2986
+    },
+    "78700": {
+      "communes": ["Conflans-Sainte-Honorine"],
+      "communeCount": 1,
+      "center": [2.0947, 48.9938],
+      "coverageRadius": 1.77,
+      "totalPopulation": 36306,
+      "totalSurface": 988
+    },
+    "78710": {
+      "communes": ["Rosny-sur-Seine"],
+      "communeCount": 1,
+      "center": [1.6319, 49.001],
+      "coverageRadius": 2.47,
+      "totalPopulation": 7041,
+      "totalSurface": 1924
+    },
+    "78711": {
+      "communes": ["Mantes-la-Ville"],
+      "communeCount": 1,
+      "center": [1.7135, 48.9779],
+      "coverageRadius": 1.41,
+      "totalPopulation": 21874,
+      "totalSurface": 624
+    },
+    "78720": {
+      "communes": ["La Celle-les-Bordes", "Cernay-la-Ville", "Dampierre-en-Yvelines", "Saint-Forget", "Senlisse"],
+      "communeCount": 5,
+      "center": [1.9751, 48.6797],
+      "coverageRadius": 4.7,
+      "boundingBox": {
+        "minLat": 48.6401,
+        "maxLat": 48.7103,
+        "minLon": 1.9548,
+        "maxLon": 1.9934
+      },
+      "totalPopulation": 4315,
+      "totalSurface": 5834
+    },
+    "78730": {
+      "communes": ["Longvilliers", "Ponthévrard", "Rochefort-en-Yvelines", "Saint-Arnoult-en-Yvelines", "Sainte-Mesme"],
+      "communeCount": 5,
+      "center": [1.9491, 48.5679],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 48.5312,
+        "maxLat": 48.5853,
+        "minLon": 1.9117,
+        "maxLon": 1.9914
+      },
+      "totalPopulation": 8859,
+      "totalSurface": 5047
+    },
+    "78740": {
+      "communes": ["Évecquemont", "Vaux-sur-Seine"],
+      "communeCount": 2,
+      "center": [1.961, 49.0072],
+      "coverageRadius": 1.5,
+      "boundingBox": {
+        "minLat": 49.0062,
+        "maxLat": 49.0139,
+        "minLon": 1.9441,
+        "maxLon": 1.9635
+      },
+      "totalPopulation": 5902,
+      "totalSurface": 1097
+    },
+    "78750": {
+      "communes": ["Mareil-Marly"],
+      "communeCount": 1,
+      "center": [2.0771, 48.8822],
+      "coverageRadius": 0.75,
+      "totalPopulation": 3984,
+      "totalSurface": 177
+    },
+    "78760": {
+      "communes": ["Jouars-Pontchartrain"],
+      "communeCount": 1,
+      "center": [1.9008, 48.802],
+      "coverageRadius": 1.76,
+      "totalPopulation": 5965,
+      "totalSurface": 973
+    },
+    "78770": {
+      "communes": ["Andelu", "Auteuil", "Autouillet", "Goupillières", "Marcq", "Thoiry", "Villiers-le-Mahieu"],
+      "communeCount": 7,
+      "center": [1.7992, 48.8602],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 48.8406,
+        "maxLat": 48.8791,
+        "minLon": 1.7606,
+        "maxLon": 1.8235
+      },
+      "totalPopulation": 5849,
+      "totalSurface": 3794
+    },
+    "78780": {
+      "communes": ["Maurecourt"],
+      "communeCount": 1,
+      "center": [2.0628, 48.9965],
+      "coverageRadius": 1.08,
+      "totalPopulation": 4399,
+      "totalSurface": 369
+    },
+    "78790": {
+      "communes": [
+        "Arnouville-lès-Mantes",
+        "Courgent",
+        "Flins-Neuve-Église",
+        "Hargeville",
+        "Montchauvet",
+        "Mulcent",
+        "Rosay",
+        "Saint-Martin-des-Champs",
+        "Septeuil",
+        "Tilly"
+      ],
+      "communeCount": 10,
+      "center": [1.6777, 48.895],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 48.879,
+        "maxLat": 48.9149,
+        "minLon": 1.5729,
+        "maxLon": 1.7416
+      },
+      "totalPopulation": 5777,
+      "totalSurface": 5977
+    },
+    "78800": {
+      "communes": ["Houilles"],
+      "communeCount": 1,
+      "center": [2.1865, 48.9232],
+      "coverageRadius": 1.19,
+      "totalPopulation": 33617,
+      "totalSurface": 448
+    },
+    "78810": {
+      "communes": ["Davron", "Feucherolles"],
+      "communeCount": 2,
+      "center": [1.9714, 48.8737],
+      "coverageRadius": 2.3,
+      "boundingBox": {
+        "minLat": 48.8651,
+        "maxLat": 48.8745,
+        "minLon": 1.9442,
+        "maxLon": 1.9739
+      },
+      "totalPopulation": 3320,
+      "totalSurface": 1927
+    },
+    "78820": {
+      "communes": ["Juziers"],
+      "communeCount": 1,
+      "center": [1.8456, 48.9931],
+      "coverageRadius": 1.67,
+      "totalPopulation": 4040,
+      "totalSurface": 875
+    },
+    "78830": {
+      "communes": ["Bonnelles", "Bullion"],
+      "communeCount": 2,
+      "center": [2.0147, 48.6196],
+      "coverageRadius": 1.2,
+      "boundingBox": {
+        "minLat": 48.6183,
+        "maxLat": 48.6211,
+        "minLon": 1.9992,
+        "maxLon": 2.0281
+      },
+      "totalPopulation": 4126,
+      "totalSurface": 3206
+    },
+    "78840": {
+      "communes": ["Freneuse", "Moisson"],
+      "communeCount": 2,
+      "center": [1.6127, 49.0526],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": 49.0483,
+        "maxLat": 49.0731,
+        "minLon": 1.6005,
+        "maxLon": 1.67
+      },
+      "totalPopulation": 5212,
+      "totalSurface": 2049
+    },
+    "78850": {
+      "communes": ["Thiverval-Grignon"],
+      "communeCount": 1,
+      "center": [1.9177, 48.8496],
+      "coverageRadius": 1.9,
+      "totalPopulation": 1102,
+      "totalSurface": 1130
+    },
+    "78860": {
+      "communes": ["Saint-Nom-la-Bretèche"],
+      "communeCount": 1,
+      "center": [2.0213, 48.8598],
+      "coverageRadius": 1.94,
+      "totalPopulation": 4877,
+      "totalSurface": 1180
+    },
+    "78870": {
+      "communes": ["Bailly"],
+      "communeCount": 1,
+      "center": [2.0788, 48.8396],
+      "coverageRadius": 1.45,
+      "totalPopulation": 3690,
+      "totalSurface": 662
+    },
+    "78890": {
+      "communes": ["Garancières"],
+      "communeCount": 1,
+      "center": [1.755, 48.8223],
+      "coverageRadius": 1.82,
+      "totalPopulation": 2577,
+      "totalSurface": 1040
+    },
+    "78910": {
+      "communes": [
+        "Béhoust",
+        "Boissets",
+        "Civry-la-Forêt",
+        "Flexanville",
+        "Orgerus",
+        "Orvilliers",
+        "Osmoy",
+        "Prunay-le-Temple",
+        "Tacoignières"
+      ],
+      "communeCount": 9,
+      "center": [1.6838, 48.8471],
+      "coverageRadius": 7.6,
+      "boundingBox": {
+        "minLat": 48.8304,
+        "maxLat": 48.8671,
+        "minLon": 1.5834,
+        "maxLon": 1.7385
+      },
+      "totalPopulation": 7185,
+      "totalSurface": 6054
+    },
+    "78920": {
+      "communes": ["Ecquevilly"],
+      "communeCount": 1,
+      "center": [1.9242, 48.9491],
+      "coverageRadius": 1.9,
+      "totalPopulation": 4090,
+      "totalSurface": 1130
+    },
+    "78930": {
+      "communes": [
+        "Auffreville-Brasseuil",
+        "Boinville-en-Mantois",
+        "Breuil-Bois-Robert",
+        "Goussonville",
+        "Guerville",
+        "Vert",
+        "Villette"
+      ],
+      "communeCount": 7,
+      "center": [1.7233, 48.9398],
+      "coverageRadius": 3.8,
+      "boundingBox": {
+        "minLat": 48.9197,
+        "maxLat": 48.9518,
+        "minLon": 1.6909,
+        "maxLon": 1.7651
+      },
+      "totalPopulation": 5840,
+      "totalSurface": 3417
+    },
+    "78940": {
+      "communes": ["Millemont", "La Queue-les-Yvelines"],
+      "communeCount": 2,
+      "center": [1.7627, 48.8059],
+      "coverageRadius": 1.4,
+      "boundingBox": {
+        "minLat": 48.8056,
+        "maxLat": 48.8091,
+        "minLon": 1.7448,
+        "maxLon": 1.7647
+      },
+      "totalPopulation": 2783,
+      "totalSurface": 1157
+    },
+    "78950": {
+      "communes": ["Gambais"],
+      "communeCount": 1,
+      "center": [1.6745, 48.7735],
+      "coverageRadius": 2.69,
+      "totalPopulation": 2513,
+      "totalSurface": 2273
+    },
+    "78955": {
+      "communes": ["Carrières-sous-Poissy"],
+      "communeCount": 1,
+      "center": [2.0342, 48.9437],
+      "coverageRadius": 1.52,
+      "totalPopulation": 19951,
+      "totalSurface": 727
+    },
+    "78960": {
+      "communes": ["Voisins-le-Bretonneux"],
+      "communeCount": 1,
+      "center": [2.0513, 48.7587],
+      "coverageRadius": 1.07,
+      "totalPopulation": 10740,
+      "totalSurface": 361
+    },
+    "78970": {
+      "communes": ["Mézières-sur-Seine"],
+      "communeCount": 1,
+      "center": [1.7955, 48.9613],
+      "coverageRadius": 1.86,
+      "totalPopulation": 3874,
+      "totalSurface": 1082
+    },
+    "78980": {
+      "communes": [
+        "Bréval",
+        "Longnes",
+        "Mondreville",
+        "Neauphlette",
+        "Saint-Illiers-la-Ville",
+        "Saint-Illiers-le-Bois",
+        "Le Tertre-Saint-Denis"
+      ],
+      "communeCount": 7,
+      "center": [1.5478, 48.9361],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 48.9033,
+        "maxLat": 48.9757,
+        "minLon": 1.508,
+        "maxLon": 1.6067
+      },
+      "totalPopulation": 5808,
+      "totalSurface": 5367
+    },
+    "78990": {
+      "communes": ["Élancourt"],
+      "communeCount": 1,
+      "center": [1.9493, 48.7683],
+      "coverageRadius": 1.72,
+      "totalPopulation": 26348,
+      "totalSurface": 924
+    }
+  }
+}

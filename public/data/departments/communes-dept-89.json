@@ -1,0 +1,7895 @@
+{
+  "departmentCode": "89",
+  "departmentName": "Yonne",
+  "stats": {
+    "communeCount": 423,
+    "totalPopulation": 333896,
+    "totalSurface": 745703
+  },
+  "communes": [
+    {
+      "nom": "Aigremont",
+      "code": "89002",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8866, 47.7171]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8899, 47.7191]
+      },
+      "population": 71,
+      "surface": 684.64,
+      "radius": 1.48
+    },
+    {
+      "nom": "Aisy-sur-Armançon",
+      "code": "89004",
+      "codesPostaux": ["89390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2134, 47.6551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2251, 47.6683]
+      },
+      "population": 236,
+      "surface": 1811.21,
+      "radius": 2.4
+    },
+    {
+      "nom": "Ancy-le-Franc",
+      "code": "89005",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1635, 47.7718]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1656, 47.774]
+      },
+      "population": 837,
+      "surface": 1972.77,
+      "radius": 2.51
+    },
+    {
+      "nom": "Ancy-le-Libre",
+      "code": "89006",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1492, 47.8034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1236, 47.8018]
+      },
+      "population": 141,
+      "surface": 2191.35,
+      "radius": 2.64
+    },
+    {
+      "nom": "Andryes",
+      "code": "89007",
+      "codesPostaux": ["89480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4539, 47.5346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4852, 47.5187]
+      },
+      "population": 445,
+      "surface": 2971.7,
+      "radius": 3.08
+    },
+    {
+      "nom": "Angely",
+      "code": "89008",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0112, 47.5603]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0211, 47.5638]
+      },
+      "population": 152,
+      "surface": 866.91,
+      "radius": 1.66
+    },
+    {
+      "nom": "Annay-la-Côte",
+      "code": "89009",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8699, 47.5515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8886, 47.5336]
+      },
+      "population": 340,
+      "surface": 1283.42,
+      "radius": 2.02
+    },
+    {
+      "nom": "Annay-sur-Serein",
+      "code": "89010",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9563, 47.7324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9584, 47.7271]
+      },
+      "population": 203,
+      "surface": 2713.66,
+      "radius": 2.94
+    },
+    {
+      "nom": "Annéot",
+      "code": "89011",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8808, 47.5198]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8815, 47.5209]
+      },
+      "population": 115,
+      "surface": 613.04,
+      "radius": 1.4
+    },
+    {
+      "nom": "Annoux",
+      "code": "89012",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0518, 47.6267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0508, 47.6255]
+      },
+      "population": 84,
+      "surface": 886.05,
+      "radius": 1.68
+    },
+    {
+      "nom": "Appoigny",
+      "code": "89013",
+      "codesPostaux": ["89380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5206, 47.8669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5262, 47.8769]
+      },
+      "population": 3133,
+      "surface": 2237.64,
+      "radius": 2.67
+    },
+    {
+      "nom": "Arces-Dilo",
+      "code": "89014",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5877, 48.1047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5982, 48.0911]
+      },
+      "population": 612,
+      "surface": 2713.48,
+      "radius": 2.94
+    },
+    {
+      "nom": "Arcy-sur-Cure",
+      "code": "89015",
+      "codesPostaux": ["89270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7658, 47.5909]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.756, 47.6016]
+      },
+      "population": 482,
+      "surface": 2646.7,
+      "radius": 2.9
+    },
+    {
+      "nom": "Argentenay",
+      "code": "89016",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1159, 47.8202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1133, 47.8145]
+      },
+      "population": 79,
+      "surface": 516.33,
+      "radius": 1.28
+    },
+    {
+      "nom": "Argenteuil-sur-Armançon",
+      "code": "89017",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0928, 47.7421]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1087, 47.7563]
+      },
+      "population": 224,
+      "surface": 3063.62,
+      "radius": 3.12
+    },
+    {
+      "nom": "Armeau",
+      "code": "89018",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3336, 48.0474]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3221, 48.0447]
+      },
+      "population": 759,
+      "surface": 1024.23,
+      "radius": 1.81
+    },
+    {
+      "nom": "Arthonnay",
+      "code": "89019",
+      "codesPostaux": ["89740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2403, 47.9357]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2296, 47.9331]
+      },
+      "population": 150,
+      "surface": 2574.43,
+      "radius": 2.86
+    },
+    {
+      "nom": "Asnières-sous-Bois",
+      "code": "89020",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6429, 47.4788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6477, 47.4821]
+      },
+      "population": 114,
+      "surface": 1812.75,
+      "radius": 2.4
+    },
+    {
+      "nom": "Asquins",
+      "code": "89021",
+      "codesPostaux": ["89450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7436, 47.491]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7538, 47.4811]
+      },
+      "population": 297,
+      "surface": 2173.07,
+      "radius": 2.63
+    },
+    {
+      "nom": "Athie",
+      "code": "89022",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9925, 47.5399]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9905, 47.5385]
+      },
+      "population": 134,
+      "surface": 488.46,
+      "radius": 1.25
+    },
+    {
+      "nom": "Augy",
+      "code": "89023",
+      "codesPostaux": ["89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6214, 47.7712]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6096, 47.7668]
+      },
+      "population": 963,
+      "surface": 511.15,
+      "radius": 1.28
+    },
+    {
+      "nom": "Auxerre",
+      "code": "89024",
+      "codesPostaux": ["89000", "89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5821, 47.7939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5705, 47.796]
+      },
+      "population": 35236,
+      "surface": 4987.46,
+      "radius": 3.98
+    },
+    {
+      "nom": "Avallon",
+      "code": "89025",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9197, 47.4808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9076, 47.4883]
+      },
+      "population": 6346,
+      "surface": 2666.93,
+      "radius": 2.91
+    },
+    {
+      "nom": "Bagneaux",
+      "code": "89027",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.593, 48.2513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5939, 48.2326]
+      },
+      "population": 201,
+      "surface": 1628.94,
+      "radius": 2.28
+    },
+    {
+      "nom": "Baon",
+      "code": "89028",
+      "codesPostaux": ["89430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1377, 47.8611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1315, 47.8587]
+      },
+      "population": 62,
+      "surface": 862.24,
+      "radius": 1.66
+    },
+    {
+      "nom": "Bassou",
+      "code": "89029",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5082, 47.9245]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5136, 47.9241]
+      },
+      "population": 875,
+      "surface": 409.24,
+      "radius": 1.14
+    },
+    {
+      "nom": "Bazarnes",
+      "code": "89030",
+      "codesPostaux": ["89460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6431, 47.6634]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6625, 47.6592]
+      },
+      "population": 414,
+      "surface": 1937.57,
+      "radius": 2.48
+    },
+    {
+      "nom": "Beaumont",
+      "code": "89031",
+      "codesPostaux": ["89250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5506, 47.9121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5609, 47.9195]
+      },
+      "population": 620,
+      "surface": 647.47,
+      "radius": 1.44
+    },
+    {
+      "nom": "Beauvilliers",
+      "code": "89032",
+      "codesPostaux": ["89630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0362, 47.4135]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0411, 47.4141]
+      },
+      "population": 71,
+      "surface": 628.71,
+      "radius": 1.41
+    },
+    {
+      "nom": "Beauvoir",
+      "code": "89033",
+      "codesPostaux": ["89240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3823, 47.7902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3695, 47.7934]
+      },
+      "population": 394,
+      "surface": 675.31,
+      "radius": 1.47
+    },
+    {
+      "nom": "Beine",
+      "code": "89034",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7252, 47.8158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7229, 47.8184]
+      },
+      "population": 444,
+      "surface": 2141.53,
+      "radius": 2.61
+    },
+    {
+      "nom": "Bellechaume",
+      "code": "89035",
+      "codesPostaux": ["89210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5797, 48.0533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6058, 48.0423]
+      },
+      "population": 437,
+      "surface": 2453.64,
+      "radius": 2.79
+    },
+    {
+      "nom": "Béon",
+      "code": "89037",
+      "codesPostaux": ["89410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3161, 47.9468]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3222, 47.9569]
+      },
+      "population": 524,
+      "surface": 1551.52,
+      "radius": 2.22
+    },
+    {
+      "nom": "Bernouil",
+      "code": "89038",
+      "codesPostaux": ["89360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8974, 47.9049]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8927, 47.8997]
+      },
+      "population": 116,
+      "surface": 458.71,
+      "radius": 1.21
+    },
+    {
+      "nom": "Béru",
+      "code": "89039",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8855, 47.8054]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8888, 47.8011]
+      },
+      "population": 75,
+      "surface": 522.58,
+      "radius": 1.29
+    },
+    {
+      "nom": "Bessy-sur-Cure",
+      "code": "89040",
+      "codesPostaux": ["89270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7277, 47.6212]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7411, 47.6218]
+      },
+      "population": 185,
+      "surface": 1064.81,
+      "radius": 1.84
+    },
+    {
+      "nom": "Beugnon",
+      "code": "89041",
+      "codesPostaux": ["89570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7924, 48.0199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8051, 48.0202]
+      },
+      "population": 286,
+      "surface": 764.14,
+      "radius": 1.56
+    },
+    {
+      "nom": "Bierry-les-Belles-Fontaines",
+      "code": "89042",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1786, 47.6137]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1868, 47.5971]
+      },
+      "population": 154,
+      "surface": 2706.56,
+      "radius": 2.94
+    },
+    {
+      "nom": "Blacy",
+      "code": "89043",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0401, 47.5814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0437, 47.5718]
+      },
+      "population": 99,
+      "surface": 845.03,
+      "radius": 1.64
+    },
+    {
+      "nom": "Blannay",
+      "code": "89044",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7628, 47.5335]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7808, 47.529]
+      },
+      "population": 100,
+      "surface": 737.02,
+      "radius": 1.53
+    },
+    {
+      "nom": "Bleigny-le-Carreau",
+      "code": "89045",
+      "codesPostaux": ["89230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6759, 47.8302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6822, 47.8358]
+      },
+      "population": 282,
+      "surface": 1037.2,
+      "radius": 1.82
+    },
+    {
+      "nom": "Bléneau",
+      "code": "89046",
+      "codesPostaux": ["89220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9539, 47.6993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9485, 47.7008]
+      },
+      "population": 1146,
+      "surface": 3946.54,
+      "radius": 3.54
+    },
+    {
+      "nom": "Bœurs-en-Othe",
+      "code": "89048",
+      "codesPostaux": ["89770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7041, 48.1442]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.705, 48.1383]
+      },
+      "population": 337,
+      "surface": 2229.35,
+      "radius": 2.66
+    },
+    {
+      "nom": "Bois-d'Arcy",
+      "code": "89049",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7237, 47.5513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7192, 47.5477]
+      },
+      "population": 23,
+      "surface": 344.32,
+      "radius": 1.05
+    },
+    {
+      "nom": "Bonnard",
+      "code": "89050",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5363, 47.9318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5202, 47.9272]
+      },
+      "population": 907,
+      "surface": 406.69,
+      "radius": 1.14
+    },
+    {
+      "nom": "Branches",
+      "code": "89053",
+      "codesPostaux": ["89113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4839, 47.8745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4814, 47.885]
+      },
+      "population": 435,
+      "surface": 1105.5,
+      "radius": 1.88
+    },
+    {
+      "nom": "Brannay",
+      "code": "89054",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.127, 48.2306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.118, 48.2313]
+      },
+      "population": 778,
+      "surface": 1084.87,
+      "radius": 1.86
+    },
+    {
+      "nom": "Brienon-sur-Armançon",
+      "code": "89055",
+      "codesPostaux": ["89210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6183, 48.001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6167, 47.9919]
+      },
+      "population": 3060,
+      "surface": 2599.93,
+      "radius": 2.88
+    },
+    {
+      "nom": "Brion",
+      "code": "89056",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4787, 48.0027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4822, 47.9932]
+      },
+      "population": 614,
+      "surface": 1676.71,
+      "radius": 2.31
+    },
+    {
+      "nom": "Brosses",
+      "code": "89057",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6928, 47.5318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6916, 47.5367]
+      },
+      "population": 278,
+      "surface": 2008.58,
+      "radius": 2.53
+    },
+    {
+      "nom": "Bussières",
+      "code": "89058",
+      "codesPostaux": ["89630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0466, 47.4259]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0536, 47.425]
+      },
+      "population": 114,
+      "surface": 1178.46,
+      "radius": 1.94
+    },
+    {
+      "nom": "Bussy-en-Othe",
+      "code": "89059",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5128, 48.0411]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5132, 48.0199]
+      },
+      "population": 696,
+      "surface": 5746.39,
+      "radius": 4.28
+    },
+    {
+      "nom": "Bussy-le-Repos",
+      "code": "89060",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.217, 48.0613]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2324, 48.0571]
+      },
+      "population": 455,
+      "surface": 2378.37,
+      "radius": 2.75
+    },
+    {
+      "nom": "Butteaux",
+      "code": "89061",
+      "codesPostaux": ["89360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.822, 47.9838]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8088, 47.9794]
+      },
+      "population": 255,
+      "surface": 759.2,
+      "radius": 1.55
+    },
+    {
+      "nom": "Carisey",
+      "code": "89062",
+      "codesPostaux": ["89360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8433, 47.9229]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8467, 47.9232]
+      },
+      "population": 375,
+      "surface": 1139.38,
+      "radius": 1.9
+    },
+    {
+      "nom": "Censy",
+      "code": "89064",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0476, 47.7006]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0417, 47.696]
+      },
+      "population": 54,
+      "surface": 481.69,
+      "radius": 1.24
+    },
+    {
+      "nom": "Cérilly",
+      "code": "89065",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6223, 48.1777]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6225, 48.1813]
+      },
+      "population": 50,
+      "surface": 723.69,
+      "radius": 1.52
+    },
+    {
+      "nom": "Cerisiers",
+      "code": "89066",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5135, 48.1245]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4874, 48.132]
+      },
+      "population": 1002,
+      "surface": 2599.73,
+      "radius": 2.88
+    },
+    {
+      "nom": "Cézy",
+      "code": "89067",
+      "codesPostaux": ["89410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3166, 47.9977]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3405, 47.993]
+      },
+      "population": 1081,
+      "surface": 1624.97,
+      "radius": 2.27
+    },
+    {
+      "nom": "Chablis",
+      "code": "89068",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7932, 47.806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8002, 47.8136]
+      },
+      "population": 2151,
+      "surface": 3863.49,
+      "radius": 3.51
+    },
+    {
+      "nom": "Chailley",
+      "code": "89069",
+      "codesPostaux": ["89770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6795, 48.0911]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7014, 48.0827]
+      },
+      "population": 525,
+      "surface": 1693.77,
+      "radius": 2.32
+    },
+    {
+      "nom": "Chamoux",
+      "code": "89071",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6584, 47.4596]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6614, 47.4565]
+      },
+      "population": 95,
+      "surface": 699.88,
+      "radius": 1.49
+    },
+    {
+      "nom": "Champcevrais",
+      "code": "89072",
+      "codesPostaux": ["89220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9716, 47.754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9592, 47.7454]
+      },
+      "population": 311,
+      "surface": 3306.23,
+      "radius": 3.24
+    },
+    {
+      "nom": "Champignelles",
+      "code": "89073",
+      "codesPostaux": ["89350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0939, 47.7773]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0714, 47.78]
+      },
+      "population": 896,
+      "surface": 5360.31,
+      "radius": 4.13
+    },
+    {
+      "nom": "Champigny",
+      "code": "89074",
+      "codesPostaux": ["89340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1348, 48.3045]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1276, 48.3197]
+      },
+      "population": 2127,
+      "surface": 2117.11,
+      "radius": 2.6
+    },
+    {
+      "nom": "Champlay",
+      "code": "89075",
+      "codesPostaux": ["89300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4153, 47.9455]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4392, 47.9512]
+      },
+      "population": 757,
+      "surface": 2100.56,
+      "radius": 2.59
+    },
+    {
+      "nom": "Champlost",
+      "code": "89076",
+      "codesPostaux": ["89210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6475, 48.046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6698, 48.0244]
+      },
+      "population": 779,
+      "surface": 2313.78,
+      "radius": 2.71
+    },
+    {
+      "nom": "Champs-sur-Yonne",
+      "code": "89077",
+      "codesPostaux": ["89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6047, 47.7496]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5996, 47.7383]
+      },
+      "population": 1534,
+      "surface": 444.54,
+      "radius": 1.19
+    },
+    {
+      "nom": "Chamvres",
+      "code": "89079",
+      "codesPostaux": ["89300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3553, 47.9593]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3613, 47.9563]
+      },
+      "population": 656,
+      "surface": 562.48,
+      "radius": 1.34
+    },
+    {
+      "nom": "Charbuy",
+      "code": "89083",
+      "codesPostaux": ["89113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4609, 47.8286]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4655, 47.8242]
+      },
+      "population": 1870,
+      "surface": 2352.79,
+      "radius": 2.74
+    },
+    {
+      "nom": "Charentenay",
+      "code": "89084",
+      "codesPostaux": ["89580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5541, 47.6444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5458, 47.6502]
+      },
+      "population": 286,
+      "surface": 1475.81,
+      "radius": 2.17
+    },
+    {
+      "nom": "Charmoy",
+      "code": "89085",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4947, 47.9424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4903, 47.9403]
+      },
+      "population": 1108,
+      "surface": 695.01,
+      "radius": 1.49
+    },
+    {
+      "nom": "Charny Orée de Puisaye",
+      "code": "89086",
+      "codesPostaux": ["89120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1073, 47.8786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0946, 47.8924]
+      },
+      "population": 4854,
+      "surface": 22978.47,
+      "radius": 8.55
+    },
+    {
+      "nom": "Chassignelles",
+      "code": "89087",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1967, 47.7735]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1768, 47.7595]
+      },
+      "population": 300,
+      "surface": 1324.01,
+      "radius": 2.05
+    },
+    {
+      "nom": "Chassy",
+      "code": "89088",
+      "codesPostaux": ["89110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3281, 47.8503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3486, 47.8534]
+      },
+      "population": 475,
+      "surface": 1665.03,
+      "radius": 2.3
+    },
+    {
+      "nom": "Chastellux-sur-Cure",
+      "code": "89089",
+      "codesPostaux": ["89630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8847, 47.3876]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8873, 47.3861]
+      },
+      "population": 131,
+      "surface": 1054.11,
+      "radius": 1.83
+    },
+    {
+      "nom": "Châtel-Censoir",
+      "code": "89091",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6335, 47.5264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6348, 47.5311]
+      },
+      "population": 565,
+      "surface": 2507.88,
+      "radius": 2.83
+    },
+    {
+      "nom": "Châtel-Gérard",
+      "code": "89092",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1054, 47.631]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0937, 47.6317]
+      },
+      "population": 199,
+      "surface": 3085.05,
+      "radius": 3.13
+    },
+    {
+      "nom": "Chaumont",
+      "code": "89093",
+      "codesPostaux": ["89340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1023, 48.3095]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1031, 48.324]
+      },
+      "population": 659,
+      "surface": 896.24,
+      "radius": 1.69
+    },
+    {
+      "nom": "Chaumot",
+      "code": "89094",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2062, 48.0813]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2176, 48.0804]
+      },
+      "population": 701,
+      "surface": 1497.94,
+      "radius": 2.18
+    },
+    {
+      "nom": "Chemilly-sur-Serein",
+      "code": "89095",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8595, 47.7671]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8604, 47.7711]
+      },
+      "population": 134,
+      "surface": 1305.49,
+      "radius": 2.04
+    },
+    {
+      "nom": "Chemilly-sur-Yonne",
+      "code": "89096",
+      "codesPostaux": ["89250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5547, 47.8957]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5607, 47.8974]
+      },
+      "population": 895,
+      "surface": 576.94,
+      "radius": 1.36
+    },
+    {
+      "nom": "Cheney",
+      "code": "89098",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9591, 47.9152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9479, 47.9082]
+      },
+      "population": 234,
+      "surface": 598.06,
+      "radius": 1.38
+    },
+    {
+      "nom": "Cheny",
+      "code": "89099",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.534, 47.9446]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5359, 47.955]
+      },
+      "population": 2231,
+      "surface": 971.2,
+      "radius": 1.76
+    },
+    {
+      "nom": "Chéroy",
+      "code": "89100",
+      "codesPostaux": ["89690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.005, 48.2042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9953, 48.2007]
+      },
+      "population": 1763,
+      "surface": 1051.34,
+      "radius": 1.83
+    },
+    {
+      "nom": "Chéu",
+      "code": "89101",
+      "codesPostaux": ["89600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7552, 47.9749]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7664, 47.9655]
+      },
+      "population": 532,
+      "surface": 764.44,
+      "radius": 1.56
+    },
+    {
+      "nom": "Chevannes",
+      "code": "89102",
+      "codesPostaux": ["89240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4893, 47.7487]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4921, 47.7512]
+      },
+      "population": 2145,
+      "surface": 2420.02,
+      "radius": 2.78
+    },
+    {
+      "nom": "Chichée",
+      "code": "89104",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8392, 47.7806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8334, 47.7936]
+      },
+      "population": 299,
+      "surface": 1882.16,
+      "radius": 2.45
+    },
+    {
+      "nom": "Chichery",
+      "code": "89105",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5096, 47.9051]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.512, 47.902]
+      },
+      "population": 434,
+      "surface": 681.1,
+      "radius": 1.47
+    },
+    {
+      "nom": "Chitry",
+      "code": "89108",
+      "codesPostaux": ["89530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6982, 47.7703]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7023, 47.7627]
+      },
+      "population": 348,
+      "surface": 1505.85,
+      "radius": 2.19
+    },
+    {
+      "nom": "Collan",
+      "code": "89112",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8724, 47.8402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8742, 47.8444]
+      },
+      "population": 156,
+      "surface": 1316.08,
+      "radius": 2.05
+    },
+    {
+      "nom": "Collemiers",
+      "code": "89113",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2163, 48.1548]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2348, 48.1576]
+      },
+      "population": 661,
+      "surface": 1060.76,
+      "radius": 1.84
+    },
+    {
+      "nom": "Compigny",
+      "code": "89115",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2815, 48.3671]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2747, 48.3648]
+      },
+      "population": 182,
+      "surface": 784.33,
+      "radius": 1.58
+    },
+    {
+      "nom": "Cornant",
+      "code": "89116",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1893, 48.1342]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1873, 48.1328]
+      },
+      "population": 364,
+      "surface": 504.34,
+      "radius": 1.27
+    },
+    {
+      "nom": "Coulangeron",
+      "code": "89117",
+      "codesPostaux": ["89580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.47, 47.6818]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4722, 47.6812]
+      },
+      "population": 214,
+      "surface": 855.79,
+      "radius": 1.65
+    },
+    {
+      "nom": "Coulanges-la-Vineuse",
+      "code": "89118",
+      "codesPostaux": ["89580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5849, 47.6988]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5808, 47.6998]
+      },
+      "population": 787,
+      "surface": 1072.22,
+      "radius": 1.85
+    },
+    {
+      "nom": "Coulanges-sur-Yonne",
+      "code": "89119",
+      "codesPostaux": ["89480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5236, 47.5418]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5394, 47.5266]
+      },
+      "population": 506,
+      "surface": 1059.3,
+      "radius": 1.84
+    },
+    {
+      "nom": "Coulours",
+      "code": "89120",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5956, 48.1619]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5861, 48.1651]
+      },
+      "population": 140,
+      "surface": 1768.76,
+      "radius": 2.37
+    },
+    {
+      "nom": "Courgenay",
+      "code": "89122",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5517, 48.2877]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.554, 48.2864]
+      },
+      "population": 565,
+      "surface": 2992.83,
+      "radius": 3.09
+    },
+    {
+      "nom": "Courgis",
+      "code": "89123",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7443, 47.7781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7556, 47.7748]
+      },
+      "population": 241,
+      "surface": 1026.94,
+      "radius": 1.81
+    },
+    {
+      "nom": "Courlon-sur-Yonne",
+      "code": "89124",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1787, 48.3436]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1669, 48.3394]
+      },
+      "population": 1191,
+      "surface": 1685.66,
+      "radius": 2.32
+    },
+    {
+      "nom": "Courson-les-Carrières",
+      "code": "89125",
+      "codesPostaux": ["89560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5002, 47.5992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5002, 47.614]
+      },
+      "population": 895,
+      "surface": 3459.63,
+      "radius": 3.32
+    },
+    {
+      "nom": "Courtoin",
+      "code": "89126",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1124, 48.1225]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1086, 48.1244]
+      },
+      "population": 35,
+      "surface": 602.97,
+      "radius": 1.39
+    },
+    {
+      "nom": "Courtois-sur-Yonne",
+      "code": "89127",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2491, 48.2301]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2562, 48.2273]
+      },
+      "population": 783,
+      "surface": 425.63,
+      "radius": 1.16
+    },
+    {
+      "nom": "Coutarnoux",
+      "code": "89128",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9445, 47.6011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9643, 47.587]
+      },
+      "population": 131,
+      "surface": 864.03,
+      "radius": 1.66
+    },
+    {
+      "nom": "Crain",
+      "code": "89129",
+      "codesPostaux": ["89480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5734, 47.5403]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5561, 47.5306]
+      },
+      "population": 411,
+      "surface": 998.76,
+      "radius": 1.78
+    },
+    {
+      "nom": "Cruzy-le-Châtel",
+      "code": "89131",
+      "codesPostaux": ["89740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2254, 47.8725]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2142, 47.8565]
+      },
+      "population": 224,
+      "surface": 5941.39,
+      "radius": 4.35
+    },
+    {
+      "nom": "Cry",
+      "code": "89132",
+      "codesPostaux": ["89390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2261, 47.7046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2394, 47.7071]
+      },
+      "population": 159,
+      "surface": 1123.55,
+      "radius": 1.89
+    },
+    {
+      "nom": "Cudot",
+      "code": "89133",
+      "codesPostaux": ["89116"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1759, 47.9807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1768, 47.9848]
+      },
+      "population": 392,
+      "surface": 1897.57,
+      "radius": 2.46
+    },
+    {
+      "nom": "Cussy-les-Forges",
+      "code": "89134",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0264, 47.4635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.027, 47.4708]
+      },
+      "population": 328,
+      "surface": 1370.78,
+      "radius": 2.09
+    },
+    {
+      "nom": "Cuy",
+      "code": "89136",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2666, 48.2562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2641, 48.2585]
+      },
+      "population": 863,
+      "surface": 719.03,
+      "radius": 1.51
+    },
+    {
+      "nom": "Dannemoine",
+      "code": "89137",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9818, 47.8978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9584, 47.8952]
+      },
+      "population": 458,
+      "surface": 1025.84,
+      "radius": 1.81
+    },
+    {
+      "nom": "Deux Rivières",
+      "code": "89130",
+      "codesPostaux": ["89460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.721, 47.6742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6911, 47.684]
+      },
+      "population": 1272,
+      "surface": 3189.84,
+      "radius": 3.19
+    },
+    {
+      "nom": "Diges",
+      "code": "89139",
+      "codesPostaux": ["89240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3886, 47.7193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3989, 47.7287]
+      },
+      "population": 1059,
+      "surface": 3599.68,
+      "radius": 3.38
+    },
+    {
+      "nom": "Dissangis",
+      "code": "89141",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9788, 47.5945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9849, 47.596]
+      },
+      "population": 119,
+      "surface": 731.73,
+      "radius": 1.53
+    },
+    {
+      "nom": "Dixmont",
+      "code": "89142",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4215, 48.0773]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4146, 48.0824]
+      },
+      "population": 898,
+      "surface": 4196.79,
+      "radius": 3.65
+    },
+    {
+      "nom": "Dollot",
+      "code": "89143",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0645, 48.2101]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.074, 48.2126]
+      },
+      "population": 326,
+      "surface": 1528.34,
+      "radius": 2.21
+    },
+    {
+      "nom": "Domats",
+      "code": "89144",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0611, 48.1166]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0658, 48.1137]
+      },
+      "population": 795,
+      "surface": 2395.09,
+      "radius": 2.76
+    },
+    {
+      "nom": "Domecy-sur-Cure",
+      "code": "89145",
+      "codesPostaux": ["89450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8133, 47.4085]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8102, 47.4162]
+      },
+      "population": 406,
+      "surface": 2068.3,
+      "radius": 2.57
+    },
+    {
+      "nom": "Domecy-sur-le-Vault",
+      "code": "89146",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8097, 47.4901]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8127, 47.4908]
+      },
+      "population": 85,
+      "surface": 621.37,
+      "radius": 1.41
+    },
+    {
+      "nom": "Dracy",
+      "code": "89147",
+      "codesPostaux": ["89130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2331, 47.7476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2499, 47.756]
+      },
+      "population": 237,
+      "surface": 2215.46,
+      "radius": 2.66
+    },
+    {
+      "nom": "Druyes-les-Belles-Fontaines",
+      "code": "89148",
+      "codesPostaux": ["89560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4147, 47.5538]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4196, 47.5474]
+      },
+      "population": 273,
+      "surface": 3969.9,
+      "radius": 3.55
+    },
+    {
+      "nom": "Dyé",
+      "code": "89149",
+      "codesPostaux": ["89360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8675, 47.8888]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8693, 47.8995]
+      },
+      "population": 188,
+      "surface": 1703.98,
+      "radius": 2.33
+    },
+    {
+      "nom": "Égleny",
+      "code": "89150",
+      "codesPostaux": ["89240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3761, 47.8099]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3655, 47.8078]
+      },
+      "population": 451,
+      "surface": 800.23,
+      "radius": 1.6
+    },
+    {
+      "nom": "Égriselles-le-Bocage",
+      "code": "89151",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1818, 48.1108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1831, 48.1203]
+      },
+      "population": 1387,
+      "surface": 2358.71,
+      "radius": 2.74
+    },
+    {
+      "nom": "Épineau-les-Voves",
+      "code": "89152",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4718, 47.9443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4717, 47.9464]
+      },
+      "population": 711,
+      "surface": 709.16,
+      "radius": 1.5
+    },
+    {
+      "nom": "Épineuil",
+      "code": "89153",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9907, 47.8809]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9809, 47.8745]
+      },
+      "population": 515,
+      "surface": 619.6,
+      "radius": 1.4
+    },
+    {
+      "nom": "Escamps",
+      "code": "89154",
+      "codesPostaux": ["89240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4736, 47.7219]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.471, 47.7285]
+      },
+      "population": 853,
+      "surface": 2227.47,
+      "radius": 2.66
+    },
+    {
+      "nom": "Escolives-Sainte-Camille",
+      "code": "89155",
+      "codesPostaux": ["89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6001, 47.7212]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6061, 47.7198]
+      },
+      "population": 714,
+      "surface": 754.8,
+      "radius": 1.55
+    },
+    {
+      "nom": "Esnon",
+      "code": "89156",
+      "codesPostaux": ["89210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5676, 48.0104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5773, 47.9841]
+      },
+      "population": 386,
+      "surface": 1210.52,
+      "radius": 1.96
+    },
+    {
+      "nom": "Étais-la-Sauvin",
+      "code": "89158",
+      "codesPostaux": ["89480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3494, 47.5094]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3431, 47.5039]
+      },
+      "population": 629,
+      "surface": 4477.47,
+      "radius": 3.78
+    },
+    {
+      "nom": "Étaule",
+      "code": "89159",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9136, 47.53]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9147, 47.5364]
+      },
+      "population": 392,
+      "surface": 888.67,
+      "radius": 1.68
+    },
+    {
+      "nom": "Étigny",
+      "code": "89160",
+      "codesPostaux": ["89510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2777, 48.1379]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2886, 48.1341]
+      },
+      "population": 752,
+      "surface": 701.09,
+      "radius": 1.49
+    },
+    {
+      "nom": "Étivey",
+      "code": "89161",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1413, 47.6685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1447, 47.6773]
+      },
+      "population": 186,
+      "surface": 2791.37,
+      "radius": 2.98
+    },
+    {
+      "nom": "Évry",
+      "code": "89162",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2611, 48.2681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2558, 48.2638]
+      },
+      "population": 398,
+      "surface": 460.33,
+      "radius": 1.21
+    },
+    {
+      "nom": "Festigny",
+      "code": "89164",
+      "codesPostaux": ["89480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5333, 47.5614]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5372, 47.5542]
+      },
+      "population": 92,
+      "surface": 553.28,
+      "radius": 1.33
+    },
+    {
+      "nom": "Flacy",
+      "code": "89165",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.59, 48.2102]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6035, 48.2285]
+      },
+      "population": 122,
+      "surface": 1256.33,
+      "radius": 2
+    },
+    {
+      "nom": "Fleury-la-Vallée",
+      "code": "89167",
+      "codesPostaux": ["89113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4463, 47.8642]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4521, 47.8688]
+      },
+      "population": 1019,
+      "surface": 1519.89,
+      "radius": 2.2
+    },
+    {
+      "nom": "Fleys",
+      "code": "89168",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8629, 47.8172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8618, 47.8144]
+      },
+      "population": 175,
+      "surface": 813,
+      "radius": 1.61
+    },
+    {
+      "nom": "Flogny-la-Chapelle",
+      "code": "89169",
+      "codesPostaux": ["89360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8786, 47.9621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8722, 47.9518]
+      },
+      "population": 947,
+      "surface": 2379.03,
+      "radius": 2.75
+    },
+    {
+      "nom": "Foissy-lès-Vézelay",
+      "code": "89170",
+      "codesPostaux": ["89450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.763, 47.4379]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7646, 47.436]
+      },
+      "population": 115,
+      "surface": 568.86,
+      "radius": 1.35
+    },
+    {
+      "nom": "Foissy-sur-Vanne",
+      "code": "89171",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5055, 48.2234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5059, 48.224]
+      },
+      "population": 286,
+      "surface": 1578.87,
+      "radius": 2.24
+    },
+    {
+      "nom": "Fontaine-la-Gaillarde",
+      "code": "89172",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.401, 48.2241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3796, 48.2207]
+      },
+      "population": 518,
+      "surface": 1043.84,
+      "radius": 1.82
+    },
+    {
+      "nom": "Fontaines",
+      "code": "89173",
+      "codesPostaux": ["89130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2665, 47.6909]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2588, 47.6922]
+      },
+      "population": 462,
+      "surface": 2540.06,
+      "radius": 2.84
+    },
+    {
+      "nom": "Fontenay-près-Chablis",
+      "code": "89175",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8129, 47.8435]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.813, 47.8486]
+      },
+      "population": 136,
+      "surface": 505.11,
+      "radius": 1.27
+    },
+    {
+      "nom": "Fontenay-près-Vézelay",
+      "code": "89176",
+      "codesPostaux": ["89450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7331, 47.4171]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7556, 47.4143]
+      },
+      "population": 136,
+      "surface": 1578.03,
+      "radius": 2.24
+    },
+    {
+      "nom": "Fontenay-sous-Fouronnes",
+      "code": "89177",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6015, 47.6234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5968, 47.6164]
+      },
+      "population": 81,
+      "surface": 1235.74,
+      "radius": 1.98
+    },
+    {
+      "nom": "Fontenoy",
+      "code": "89179",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2941, 47.6498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.305, 47.6488]
+      },
+      "population": 293,
+      "surface": 1589.44,
+      "radius": 2.25
+    },
+    {
+      "nom": "Fouchères",
+      "code": "89180",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1464, 48.1786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1393, 48.1689]
+      },
+      "population": 460,
+      "surface": 1473.23,
+      "radius": 2.17
+    },
+    {
+      "nom": "Fournaudin",
+      "code": "89181",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.646, 48.148]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6411, 48.1519]
+      },
+      "population": 130,
+      "surface": 921.81,
+      "radius": 1.71
+    },
+    {
+      "nom": "Fouronnes",
+      "code": "89182",
+      "codesPostaux": ["89560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5542, 47.6078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5683, 47.6128]
+      },
+      "population": 182,
+      "surface": 1795.01,
+      "radius": 2.39
+    },
+    {
+      "nom": "Fresnes",
+      "code": "89183",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9931, 47.763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9929, 47.7608]
+      },
+      "population": 62,
+      "surface": 490.42,
+      "radius": 1.25
+    },
+    {
+      "nom": "Fulvy",
+      "code": "89184",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1633, 47.7415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1713, 47.7415]
+      },
+      "population": 129,
+      "surface": 383.63,
+      "radius": 1.11
+    },
+    {
+      "nom": "Germigny",
+      "code": "89186",
+      "codesPostaux": ["89600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7937, 47.9958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7828, 47.9945]
+      },
+      "population": 531,
+      "surface": 1183.74,
+      "radius": 1.94
+    },
+    {
+      "nom": "Gigny",
+      "code": "89187",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.303, 47.8297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.296, 47.8161]
+      },
+      "population": 83,
+      "surface": 1085.1,
+      "radius": 1.86
+    },
+    {
+      "nom": "Girolles",
+      "code": "89188",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8385, 47.547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8411, 47.5312]
+      },
+      "population": 189,
+      "surface": 1630.27,
+      "radius": 2.28
+    },
+    {
+      "nom": "Gisy-les-Nobles",
+      "code": "89189",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2543, 48.2863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2433, 48.2803]
+      },
+      "population": 556,
+      "surface": 1110.93,
+      "radius": 1.88
+    },
+    {
+      "nom": "Givry",
+      "code": "89190",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7957, 47.512]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.798, 47.5195]
+      },
+      "population": 178,
+      "surface": 857.01,
+      "radius": 1.65
+    },
+    {
+      "nom": "Gland",
+      "code": "89191",
+      "codesPostaux": ["89740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2211, 47.817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.217, 47.822]
+      },
+      "population": 41,
+      "surface": 1676.98,
+      "radius": 2.31
+    },
+    {
+      "nom": "Grimault",
+      "code": "89194",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9694, 47.6612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9872, 47.6529]
+      },
+      "population": 111,
+      "surface": 2395.8,
+      "radius": 2.76
+    },
+    {
+      "nom": "Gron",
+      "code": "89195",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2542, 48.1558]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2626, 48.1611]
+      },
+      "population": 1260,
+      "surface": 1179.34,
+      "radius": 1.94
+    },
+    {
+      "nom": "Guillon-Terre-Plaine",
+      "code": "89197",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0701, 47.5243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0917, 47.5126]
+      },
+      "population": 712,
+      "surface": 4909.6,
+      "radius": 3.95
+    },
+    {
+      "nom": "Gurgy",
+      "code": "89198",
+      "codesPostaux": ["89250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5675, 47.8805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5598, 47.8637]
+      },
+      "population": 1724,
+      "surface": 1323.26,
+      "radius": 2.05
+    },
+    {
+      "nom": "Gy-l'Évêque",
+      "code": "89199",
+      "codesPostaux": ["89580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5289, 47.7108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5473, 47.7198]
+      },
+      "population": 446,
+      "surface": 1513.03,
+      "radius": 2.19
+    },
+    {
+      "nom": "Hauterive",
+      "code": "89200",
+      "codesPostaux": ["89250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6086, 47.9338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5994, 47.9257]
+      },
+      "population": 393,
+      "surface": 956.67,
+      "radius": 1.75
+    },
+    {
+      "nom": "Héry",
+      "code": "89201",
+      "codesPostaux": ["89550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6357, 47.8984]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6265, 47.9036]
+      },
+      "population": 1789,
+      "surface": 2136.17,
+      "radius": 2.61
+    },
+    {
+      "nom": "Irancy",
+      "code": "89202",
+      "codesPostaux": ["89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7016, 47.7117]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6653, 47.7139]
+      },
+      "population": 243,
+      "surface": 1225.12,
+      "radius": 1.97
+    },
+    {
+      "nom": "Island",
+      "code": "89203",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8534, 47.4567]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.847, 47.4708]
+      },
+      "population": 188,
+      "surface": 2067.86,
+      "radius": 2.57
+    },
+    {
+      "nom": "Jaulges",
+      "code": "89205",
+      "codesPostaux": ["89360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7898, 47.9594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7871, 47.9623]
+      },
+      "population": 431,
+      "surface": 1237.82,
+      "radius": 1.98
+    },
+    {
+      "nom": "Joigny",
+      "code": "89206",
+      "codesPostaux": ["89300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4092, 48.0093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4002, 47.9812]
+      },
+      "population": 9055,
+      "surface": 4719.27,
+      "radius": 3.88
+    },
+    {
+      "nom": "Jouancy",
+      "code": "89207",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.039, 47.6719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0335, 47.682]
+      },
+      "population": 28,
+      "surface": 598.26,
+      "radius": 1.38
+    },
+    {
+      "nom": "Joux-la-Ville",
+      "code": "89208",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8576, 47.6171]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8621, 47.6222]
+      },
+      "population": 1164,
+      "surface": 4369.53,
+      "radius": 3.73
+    },
+    {
+      "nom": "Jouy",
+      "code": "89209",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9701, 48.1671]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9749, 48.1675]
+      },
+      "population": 519,
+      "surface": 1761.75,
+      "radius": 2.37
+    },
+    {
+      "nom": "Jully",
+      "code": "89210",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2983, 47.7731]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.296, 47.7758]
+      },
+      "population": 123,
+      "surface": 1994.04,
+      "radius": 2.52
+    },
+    {
+      "nom": "Junay",
+      "code": "89211",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9395, 47.8802]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9487, 47.878]
+      },
+      "population": 64,
+      "surface": 362.47,
+      "radius": 1.07
+    },
+    {
+      "nom": "Jussy",
+      "code": "89212",
+      "codesPostaux": ["89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5715, 47.7136]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5824, 47.7211]
+      },
+      "population": 355,
+      "surface": 741.65,
+      "radius": 1.54
+    },
+    {
+      "nom": "L'Isle-sur-Serein",
+      "code": "89204",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0215, 47.5868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0038, 47.5868]
+      },
+      "population": 664,
+      "surface": 441.43,
+      "radius": 1.19
+    },
+    {
+      "nom": "La Belliole",
+      "code": "89036",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0835, 48.1436]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0912, 48.1461]
+      },
+      "population": 220,
+      "surface": 862.5,
+      "radius": 1.66
+    },
+    {
+      "nom": "La Celle-Saint-Cyr",
+      "code": "89063",
+      "codesPostaux": ["89116"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2788, 47.9796]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.289, 47.9743]
+      },
+      "population": 842,
+      "surface": 1874.26,
+      "radius": 2.44
+    },
+    {
+      "nom": "La Chapelle-sur-Oreuse",
+      "code": "89080",
+      "codesPostaux": ["89260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3016, 48.2955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.307, 48.2907]
+      },
+      "population": 668,
+      "surface": 1797.65,
+      "radius": 2.39
+    },
+    {
+      "nom": "La Chapelle-Vaupelteigne",
+      "code": "89081",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7725, 47.8444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7655, 47.8452]
+      },
+      "population": 92,
+      "surface": 509.42,
+      "radius": 1.27
+    },
+    {
+      "nom": "La Ferté-Loupière",
+      "code": "89163",
+      "codesPostaux": ["89110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2414, 47.8874]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2344, 47.8975]
+      },
+      "population": 547,
+      "surface": 3057.74,
+      "radius": 3.12
+    },
+    {
+      "nom": "La Postolle",
+      "code": "89310",
+      "codesPostaux": ["89260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4534, 48.288]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4426, 48.2829]
+      },
+      "population": 152,
+      "surface": 1165.63,
+      "radius": 1.93
+    },
+    {
+      "nom": "Lailly",
+      "code": "89214",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5034, 48.2637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5298, 48.2445]
+      },
+      "population": 202,
+      "surface": 2250.74,
+      "radius": 2.68
+    },
+    {
+      "nom": "Lain",
+      "code": "89215",
+      "codesPostaux": ["89560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3432, 47.6128]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3452, 47.6183]
+      },
+      "population": 178,
+      "surface": 1033.27,
+      "radius": 1.81
+    },
+    {
+      "nom": "Lainsecq",
+      "code": "89216",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.28, 47.5462]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.274, 47.5546]
+      },
+      "population": 324,
+      "surface": 2516.53,
+      "radius": 2.83
+    },
+    {
+      "nom": "Lalande",
+      "code": "89217",
+      "codesPostaux": ["89130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3088, 47.6807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3205, 47.6817]
+      },
+      "population": 133,
+      "surface": 1026.82,
+      "radius": 1.81
+    },
+    {
+      "nom": "Laroche-Saint-Cydroine",
+      "code": "89218",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4682, 47.9743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.484, 47.9641]
+      },
+      "population": 1209,
+      "surface": 902.07,
+      "radius": 1.69
+    },
+    {
+      "nom": "Lasson",
+      "code": "89219",
+      "codesPostaux": ["89570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8097, 48.0641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8157, 48.0593]
+      },
+      "population": 142,
+      "surface": 708.82,
+      "radius": 1.5
+    },
+    {
+      "nom": "Lavau",
+      "code": "89220",
+      "codesPostaux": ["89170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0021, 47.6011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9851, 47.5961]
+      },
+      "population": 391,
+      "surface": 5534.25,
+      "radius": 4.2
+    },
+    {
+      "nom": "Le Val d'Ocre",
+      "code": "89334",
+      "codesPostaux": ["89110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.296, 47.8243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3083, 47.8212]
+      },
+      "population": 559,
+      "surface": 2959.81,
+      "radius": 3.07
+    },
+    {
+      "nom": "Les Bordes",
+      "code": "89051",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3914, 48.1082]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3806, 48.0989]
+      },
+      "population": 553,
+      "surface": 1882.65,
+      "radius": 2.45
+    },
+    {
+      "nom": "Les Clérimois",
+      "code": "89111",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4591, 48.2295]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4419, 48.2293]
+      },
+      "population": 298,
+      "surface": 1243.51,
+      "radius": 1.99
+    },
+    {
+      "nom": "Les Hauts de Forterre",
+      "code": "89405",
+      "codesPostaux": ["89560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4304, 47.6146]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4044, 47.6167]
+      },
+      "population": 481,
+      "surface": 3311.98,
+      "radius": 3.25
+    },
+    {
+      "nom": "Les Ormes",
+      "code": "89281",
+      "codesPostaux": ["89110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2598, 47.8459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.266, 47.8488]
+      },
+      "population": 284,
+      "surface": 864.89,
+      "radius": 1.66
+    },
+    {
+      "nom": "Les Sièges",
+      "code": "89395",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5356, 48.1729]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5179, 48.1812]
+      },
+      "population": 427,
+      "surface": 2371.24,
+      "radius": 2.75
+    },
+    {
+      "nom": "Les Vallées de la Vanne",
+      "code": "89411",
+      "codesPostaux": ["89190", "89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4641, 48.1767]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4264, 48.1674]
+      },
+      "population": 1012,
+      "surface": 3384.67,
+      "radius": 3.28
+    },
+    {
+      "nom": "Leugny",
+      "code": "89221",
+      "codesPostaux": ["89130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3762, 47.6854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3747, 47.6851]
+      },
+      "population": 317,
+      "surface": 1344.84,
+      "radius": 2.07
+    },
+    {
+      "nom": "Levis",
+      "code": "89222",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3307, 47.6577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3257, 47.6532]
+      },
+      "population": 222,
+      "surface": 1210.33,
+      "radius": 1.96
+    },
+    {
+      "nom": "Lézinnes",
+      "code": "89223",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0638, 47.8026]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0895, 47.8008]
+      },
+      "population": 664,
+      "surface": 1615.64,
+      "radius": 2.27
+    },
+    {
+      "nom": "Lichères-près-Aigremont",
+      "code": "89224",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8389, 47.7185]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8541, 47.7278]
+      },
+      "population": 156,
+      "surface": 1641.75,
+      "radius": 2.29
+    },
+    {
+      "nom": "Lichères-sur-Yonne",
+      "code": "89225",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5955, 47.4901]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5923, 47.5077]
+      },
+      "population": 41,
+      "surface": 1431.46,
+      "radius": 2.13
+    },
+    {
+      "nom": "Lignorelles",
+      "code": "89226",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7295, 47.862]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7268, 47.8624]
+      },
+      "population": 186,
+      "surface": 1144.81,
+      "radius": 1.91
+    },
+    {
+      "nom": "Ligny-le-Châtel",
+      "code": "89227",
+      "codesPostaux": ["89144"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7594, 47.9223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.759, 47.9002]
+      },
+      "population": 1211,
+      "surface": 2748.08,
+      "radius": 2.96
+    },
+    {
+      "nom": "Lindry",
+      "code": "89228",
+      "codesPostaux": ["89240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.425, 47.7998]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4194, 47.8007]
+      },
+      "population": 1334,
+      "surface": 1516.39,
+      "radius": 2.2
+    },
+    {
+      "nom": "Lixy",
+      "code": "89229",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1104, 48.248]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0959, 48.2392]
+      },
+      "population": 489,
+      "surface": 1227.84,
+      "radius": 1.98
+    },
+    {
+      "nom": "Looze",
+      "code": "89230",
+      "codesPostaux": ["89300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4415, 48.0025]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4382, 47.9935]
+      },
+      "population": 438,
+      "surface": 637.98,
+      "radius": 1.43
+    },
+    {
+      "nom": "Lucy-le-Bois",
+      "code": "89232",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8883, 47.5653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8908, 47.5572]
+      },
+      "population": 322,
+      "surface": 1066.84,
+      "radius": 1.84
+    },
+    {
+      "nom": "Lucy-sur-Cure",
+      "code": "89233",
+      "codesPostaux": ["89270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.772, 47.6365]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7446, 47.6286]
+      },
+      "population": 206,
+      "surface": 1054.39,
+      "radius": 1.83
+    },
+    {
+      "nom": "Lucy-sur-Yonne",
+      "code": "89234",
+      "codesPostaux": ["89480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5668, 47.5143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5831, 47.5241]
+      },
+      "population": 119,
+      "surface": 815.76,
+      "radius": 1.61
+    },
+    {
+      "nom": "Magny",
+      "code": "89235",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9757, 47.4685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9761, 47.4826]
+      },
+      "population": 872,
+      "surface": 3050.35,
+      "radius": 3.12
+    },
+    {
+      "nom": "Maillot",
+      "code": "89236",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.314, 48.1629]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.307, 48.1767]
+      },
+      "population": 1271,
+      "surface": 622.85,
+      "radius": 1.41
+    },
+    {
+      "nom": "Mailly-la-Ville",
+      "code": "89237",
+      "codesPostaux": ["89270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6881, 47.5839]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6793, 47.5984]
+      },
+      "population": 494,
+      "surface": 2371.22,
+      "radius": 2.75
+    },
+    {
+      "nom": "Mailly-le-Château",
+      "code": "89238",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5972, 47.5788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.637, 47.5964]
+      },
+      "population": 523,
+      "surface": 3741.75,
+      "radius": 3.45
+    },
+    {
+      "nom": "Malay-le-Grand",
+      "code": "89239",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3511, 48.1657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3411, 48.1748]
+      },
+      "population": 1635,
+      "surface": 2212.94,
+      "radius": 2.65
+    },
+    {
+      "nom": "Malay-le-Petit",
+      "code": "89240",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3781, 48.1871]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3794, 48.1727]
+      },
+      "population": 310,
+      "surface": 1091.09,
+      "radius": 1.86
+    },
+    {
+      "nom": "Maligny",
+      "code": "89242",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8004, 47.8673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7648, 47.8694]
+      },
+      "population": 780,
+      "surface": 2222.22,
+      "radius": 2.66
+    },
+    {
+      "nom": "Marmeaux",
+      "code": "89244",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1075, 47.5881]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0973, 47.5813]
+      },
+      "population": 84,
+      "surface": 1087.33,
+      "radius": 1.86
+    },
+    {
+      "nom": "Marsangy",
+      "code": "89245",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2471, 48.116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2578, 48.1108]
+      },
+      "population": 858,
+      "surface": 1463.67,
+      "radius": 2.16
+    },
+    {
+      "nom": "Massangis",
+      "code": "89246",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9775, 47.6232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9744, 47.624]
+      },
+      "population": 337,
+      "surface": 4194.05,
+      "radius": 3.65
+    },
+    {
+      "nom": "Mélisey",
+      "code": "89247",
+      "codesPostaux": ["89430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0751, 47.9217]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0774, 47.9172]
+      },
+      "population": 225,
+      "surface": 2225.77,
+      "radius": 2.66
+    },
+    {
+      "nom": "Menades",
+      "code": "89248",
+      "codesPostaux": ["89450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8281, 47.4409]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8231, 47.4444]
+      },
+      "population": 37,
+      "surface": 572.91,
+      "radius": 1.35
+    },
+    {
+      "nom": "Mercy",
+      "code": "89249",
+      "codesPostaux": ["89210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6265, 48.0307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6292, 48.0313]
+      },
+      "population": 77,
+      "surface": 267.64,
+      "radius": 0.92
+    },
+    {
+      "nom": "Méré",
+      "code": "89250",
+      "codesPostaux": ["89144"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8182, 47.9001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.824, 47.8996]
+      },
+      "population": 168,
+      "surface": 1180.8,
+      "radius": 1.94
+    },
+    {
+      "nom": "Merry-la-Vallée",
+      "code": "89251",
+      "codesPostaux": ["89110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3119, 47.7879]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3329, 47.8]
+      },
+      "population": 361,
+      "surface": 1836.02,
+      "radius": 2.42
+    },
+    {
+      "nom": "Merry-Sec",
+      "code": "89252",
+      "codesPostaux": ["89560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4834, 47.6635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4828, 47.6559]
+      },
+      "population": 175,
+      "surface": 1420.23,
+      "radius": 2.13
+    },
+    {
+      "nom": "Merry-sur-Yonne",
+      "code": "89253",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.642, 47.5583]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6434, 47.5632]
+      },
+      "population": 189,
+      "surface": 2374.7,
+      "radius": 2.75
+    },
+    {
+      "nom": "Mézilles",
+      "code": "89254",
+      "codesPostaux": ["89130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1736, 47.696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.173, 47.7005]
+      },
+      "population": 516,
+      "surface": 5253.11,
+      "radius": 4.09
+    },
+    {
+      "nom": "Michery",
+      "code": "89255",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2441, 48.3143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2336, 48.3094]
+      },
+      "population": 1080,
+      "surface": 1707.61,
+      "radius": 2.33
+    },
+    {
+      "nom": "Migé",
+      "code": "89256",
+      "codesPostaux": ["89580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5325, 47.6772]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5424, 47.6761]
+      },
+      "population": 392,
+      "surface": 1478.19,
+      "radius": 2.17
+    },
+    {
+      "nom": "Migennes",
+      "code": "89257",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5337, 47.9715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5223, 47.9652]
+      },
+      "population": 6878,
+      "surface": 1661.21,
+      "radius": 2.3
+    },
+    {
+      "nom": "Môlay",
+      "code": "89259",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9363, 47.7361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9397, 47.7341]
+      },
+      "population": 100,
+      "surface": 1205.82,
+      "radius": 1.96
+    },
+    {
+      "nom": "Molinons",
+      "code": "89261",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5431, 48.2229]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5364, 48.2326]
+      },
+      "population": 272,
+      "surface": 1194.91,
+      "radius": 1.95
+    },
+    {
+      "nom": "Molosmes",
+      "code": "89262",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0279, 47.9021]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0441, 47.8866]
+      },
+      "population": 160,
+      "surface": 2461.67,
+      "radius": 2.8
+    },
+    {
+      "nom": "Monéteau",
+      "code": "89263",
+      "codesPostaux": ["89470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5916, 47.8483]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5793, 47.85]
+      },
+      "population": 4113,
+      "surface": 1858.59,
+      "radius": 2.43
+    },
+    {
+      "nom": "Mont-Saint-Sulpice",
+      "code": "89268",
+      "codesPostaux": ["89250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6322, 47.9522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.626, 47.9517]
+      },
+      "population": 783,
+      "surface": 1981.98,
+      "radius": 2.51
+    },
+    {
+      "nom": "Montacher-Villegardin",
+      "code": "89264",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0334, 48.165]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0293, 48.1728]
+      },
+      "population": 719,
+      "surface": 2914.85,
+      "radius": 3.05
+    },
+    {
+      "nom": "Montholon",
+      "code": "89003",
+      "codesPostaux": ["89110", "89710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3211, 47.9004]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3503, 47.8748]
+      },
+      "population": 2730,
+      "surface": 4972.54,
+      "radius": 3.98
+    },
+    {
+      "nom": "Montigny-la-Resle",
+      "code": "89265",
+      "codesPostaux": ["89230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6801, 47.8614]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6811, 47.8652]
+      },
+      "population": 582,
+      "surface": 1609.35,
+      "radius": 2.26
+    },
+    {
+      "nom": "Montillot",
+      "code": "89266",
+      "codesPostaux": ["89660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7198, 47.5093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7225, 47.5192]
+      },
+      "population": 251,
+      "surface": 2271.63,
+      "radius": 2.69
+    },
+    {
+      "nom": "Montréal",
+      "code": "89267",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0517, 47.5467]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0367, 47.5443]
+      },
+      "population": 166,
+      "surface": 744.54,
+      "radius": 1.54
+    },
+    {
+      "nom": "Mouffy",
+      "code": "89270",
+      "codesPostaux": ["89560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5134, 47.6483]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5145, 47.6521]
+      },
+      "population": 133,
+      "surface": 492.16,
+      "radius": 1.25
+    },
+    {
+      "nom": "Moulins-en-Tonnerrois",
+      "code": "89271",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.043, 47.7314]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0353, 47.7323]
+      },
+      "population": 108,
+      "surface": 1525.12,
+      "radius": 2.2
+    },
+    {
+      "nom": "Moulins-sur-Ouanne",
+      "code": "89272",
+      "codesPostaux": ["89130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3459, 47.703]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3371, 47.7069]
+      },
+      "population": 279,
+      "surface": 1014.53,
+      "radius": 1.8
+    },
+    {
+      "nom": "Moutiers-en-Puisaye",
+      "code": "89273",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1726, 47.6113]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1758, 47.6104]
+      },
+      "population": 270,
+      "surface": 3178.07,
+      "radius": 3.18
+    },
+    {
+      "nom": "Nailly",
+      "code": "89274",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2101, 48.2182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2217, 48.2231]
+      },
+      "population": 1329,
+      "surface": 2156.92,
+      "radius": 2.62
+    },
+    {
+      "nom": "Neuvy-Sautour",
+      "code": "89276",
+      "codesPostaux": ["89570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7906, 48.0443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7921, 48.0412]
+      },
+      "population": 881,
+      "surface": 1914.75,
+      "radius": 2.47
+    },
+    {
+      "nom": "Nitry",
+      "code": "89277",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8724, 47.6763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8781, 47.6727]
+      },
+      "population": 372,
+      "surface": 3467.48,
+      "radius": 3.32
+    },
+    {
+      "nom": "Noé",
+      "code": "89278",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3943, 48.1512]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.402, 48.1647]
+      },
+      "population": 563,
+      "surface": 861.6,
+      "radius": 1.66
+    },
+    {
+      "nom": "Noyers",
+      "code": "89279",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9714, 47.703]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9958, 47.6957]
+      },
+      "population": 590,
+      "surface": 3539.53,
+      "radius": 3.36
+    },
+    {
+      "nom": "Nuits",
+      "code": "89280",
+      "codesPostaux": ["89390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1888, 47.7224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2137, 47.7299]
+      },
+      "population": 372,
+      "surface": 1159.98,
+      "radius": 1.92
+    },
+    {
+      "nom": "Ormoy",
+      "code": "89282",
+      "codesPostaux": ["89400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5751, 47.9519]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5728, 47.9527]
+      },
+      "population": 650,
+      "surface": 1344.13,
+      "radius": 2.07
+    },
+    {
+      "nom": "Ouanne",
+      "code": "89283",
+      "codesPostaux": ["89560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4163, 47.6592]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4184, 47.6617]
+      },
+      "population": 584,
+      "surface": 3873.78,
+      "radius": 3.51
+    },
+    {
+      "nom": "Pacy-sur-Armançon",
+      "code": "89284",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0815, 47.7699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0949, 47.777]
+      },
+      "population": 180,
+      "surface": 1355.96,
+      "radius": 2.08
+    },
+    {
+      "nom": "Pailly",
+      "code": "89285",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3379, 48.3461]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3229, 48.3523]
+      },
+      "population": 291,
+      "surface": 1473.22,
+      "radius": 2.17
+    },
+    {
+      "nom": "Parly",
+      "code": "89286",
+      "codesPostaux": ["89240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3408, 47.7579]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3488, 47.7646]
+      },
+      "population": 827,
+      "surface": 2087.04,
+      "radius": 2.58
+    },
+    {
+      "nom": "Paron",
+      "code": "89287",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2355, 48.1857]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2638, 48.1895]
+      },
+      "population": 4855,
+      "surface": 1050.53,
+      "radius": 1.83
+    },
+    {
+      "nom": "Paroy-en-Othe",
+      "code": "89288",
+      "codesPostaux": ["89210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5718, 48.0298]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.572, 48.0341]
+      },
+      "population": 154,
+      "surface": 531.34,
+      "radius": 1.3
+    },
+    {
+      "nom": "Paroy-sur-Tholon",
+      "code": "89289",
+      "codesPostaux": ["89300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3734, 47.9537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.374, 47.9555]
+      },
+      "population": 297,
+      "surface": 428.9,
+      "radius": 1.17
+    },
+    {
+      "nom": "Pasilly",
+      "code": "89290",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0836, 47.7018]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.077, 47.6981]
+      },
+      "population": 50,
+      "surface": 1006.71,
+      "radius": 1.79
+    },
+    {
+      "nom": "Passy",
+      "code": "89291",
+      "codesPostaux": ["89510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3043, 48.1142]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3041, 48.1104]
+      },
+      "population": 329,
+      "surface": 567.19,
+      "radius": 1.34
+    },
+    {
+      "nom": "Perceneige",
+      "code": "89469",
+      "codesPostaux": ["89260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4051, 48.3471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4059, 48.352]
+      },
+      "population": 952,
+      "surface": 6114.31,
+      "radius": 4.41
+    },
+    {
+      "nom": "Percey",
+      "code": "89292",
+      "codesPostaux": ["89360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8355, 47.9691]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8261, 47.9636]
+      },
+      "population": 248,
+      "surface": 953.09,
+      "radius": 1.74
+    },
+    {
+      "nom": "Perrigny",
+      "code": "89295",
+      "codesPostaux": ["89000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5297, 47.8265]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5384, 47.8214]
+      },
+      "population": 1254,
+      "surface": 1281.44,
+      "radius": 2.02
+    },
+    {
+      "nom": "Perrigny-sur-Armançon",
+      "code": "89296",
+      "codesPostaux": ["89390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2224, 47.689]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2364, 47.6902]
+      },
+      "population": 125,
+      "surface": 1404.46,
+      "radius": 2.11
+    },
+    {
+      "nom": "Pierre-Perthuis",
+      "code": "89297",
+      "codesPostaux": ["89450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7897, 47.4324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7956, 47.4366]
+      },
+      "population": 104,
+      "surface": 746.63,
+      "radius": 1.54
+    },
+    {
+      "nom": "Piffonds",
+      "code": "89298",
+      "codesPostaux": ["89330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1444, 48.0563]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1467, 48.0547]
+      },
+      "population": 588,
+      "surface": 2459.82,
+      "radius": 2.8
+    },
+    {
+      "nom": "Pimelles",
+      "code": "89299",
+      "codesPostaux": ["89740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1724, 47.842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1773, 47.839]
+      },
+      "population": 62,
+      "surface": 996.07,
+      "radius": 1.78
+    },
+    {
+      "nom": "Pisy",
+      "code": "89300",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1421, 47.5756]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.141, 47.5554]
+      },
+      "population": 80,
+      "surface": 1222.91,
+      "radius": 1.97
+    },
+    {
+      "nom": "Plessis-Saint-Jean",
+      "code": "89302",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.303, 48.3422]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3062, 48.3515]
+      },
+      "population": 218,
+      "surface": 1110.47,
+      "radius": 1.88
+    },
+    {
+      "nom": "Poilly-sur-Serein",
+      "code": "89303",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8898, 47.7636]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8919, 47.7648]
+      },
+      "population": 243,
+      "surface": 2125.61,
+      "radius": 2.6
+    },
+    {
+      "nom": "Poilly-sur-Tholon",
+      "code": "89304",
+      "codesPostaux": ["89110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4018, 47.8516]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3934, 47.8659]
+      },
+      "population": 670,
+      "surface": 1964.86,
+      "radius": 2.5
+    },
+    {
+      "nom": "Pont-sur-Vanne",
+      "code": "89308",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4403, 48.1974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4436, 48.1845]
+      },
+      "population": 205,
+      "surface": 1060.85,
+      "radius": 1.84
+    },
+    {
+      "nom": "Pont-sur-Yonne",
+      "code": "89309",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1885, 48.2807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2037, 48.2878]
+      },
+      "population": 3357,
+      "surface": 1395.65,
+      "radius": 2.11
+    },
+    {
+      "nom": "Pontaubert",
+      "code": "89306",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.87, 47.4919]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.861, 47.4899]
+      },
+      "population": 361,
+      "surface": 386.35,
+      "radius": 1.11
+    },
+    {
+      "nom": "Pontigny",
+      "code": "89307",
+      "codesPostaux": ["89230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7114, 47.9038]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.711, 47.9088]
+      },
+      "population": 774,
+      "surface": 1202.34,
+      "radius": 1.96
+    },
+    {
+      "nom": "Pourrain",
+      "code": "89311",
+      "codesPostaux": ["89240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4162, 47.7689]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.412, 47.756]
+      },
+      "population": 1284,
+      "surface": 2391.25,
+      "radius": 2.76
+    },
+    {
+      "nom": "Précy-le-Sec",
+      "code": "89312",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8263, 47.5905]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8318, 47.5933]
+      },
+      "population": 238,
+      "surface": 1572.83,
+      "radius": 2.24
+    },
+    {
+      "nom": "Précy-sur-Vrin",
+      "code": "89313",
+      "codesPostaux": ["89116"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.229, 47.9746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2482, 47.9674]
+      },
+      "population": 430,
+      "surface": 2154.99,
+      "radius": 2.62
+    },
+    {
+      "nom": "Prégilbert",
+      "code": "89314",
+      "codesPostaux": ["89460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6843, 47.638]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6677, 47.6391]
+      },
+      "population": 180,
+      "surface": 670.12,
+      "radius": 1.46
+    },
+    {
+      "nom": "Préhy",
+      "code": "89315",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7857, 47.7531]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7578, 47.7589]
+      },
+      "population": 164,
+      "surface": 1430.69,
+      "radius": 2.13
+    },
+    {
+      "nom": "Provency",
+      "code": "89316",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9546, 47.5408]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9546, 47.5472]
+      },
+      "population": 249,
+      "surface": 1202.56,
+      "radius": 1.96
+    },
+    {
+      "nom": "Quarré-les-Tombes",
+      "code": "89318",
+      "codesPostaux": ["89630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0186, 47.3598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9979, 47.3689]
+      },
+      "population": 621,
+      "surface": 4661.78,
+      "radius": 3.85
+    },
+    {
+      "nom": "Quenne",
+      "code": "89319",
+      "codesPostaux": ["89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6564, 47.7781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6499, 47.7774]
+      },
+      "population": 489,
+      "surface": 876.87,
+      "radius": 1.67
+    },
+    {
+      "nom": "Quincerot",
+      "code": "89320",
+      "codesPostaux": ["89740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1639, 47.9415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1628, 47.9408]
+      },
+      "population": 52,
+      "surface": 994.54,
+      "radius": 1.78
+    },
+    {
+      "nom": "Ravières",
+      "code": "89321",
+      "codesPostaux": ["89390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2592, 47.7384]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2284, 47.7346]
+      },
+      "population": 727,
+      "surface": 2211.25,
+      "radius": 2.65
+    },
+    {
+      "nom": "Roffey",
+      "code": "89323",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9122, 47.91]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9222, 47.9176]
+      },
+      "population": 146,
+      "surface": 866.75,
+      "radius": 1.66
+    },
+    {
+      "nom": "Rogny-les-Sept-Écluses",
+      "code": "89324",
+      "codesPostaux": ["89220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8928, 47.7342]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.883, 47.7466]
+      },
+      "population": 699,
+      "surface": 3277.01,
+      "radius": 3.23
+    },
+    {
+      "nom": "Ronchères",
+      "code": "89325",
+      "codesPostaux": ["89170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.122, 47.6592]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1159, 47.6594]
+      },
+      "population": 88,
+      "surface": 1133.72,
+      "radius": 1.9
+    },
+    {
+      "nom": "Rosoy",
+      "code": "89326",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.314, 48.1485]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3121, 48.1486]
+      },
+      "population": 1077,
+      "surface": 601.41,
+      "radius": 1.38
+    },
+    {
+      "nom": "Rousson",
+      "code": "89327",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2627, 48.0905]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2611, 48.0953]
+      },
+      "population": 386,
+      "surface": 570.84,
+      "radius": 1.35
+    },
+    {
+      "nom": "Rouvray",
+      "code": "89328",
+      "codesPostaux": ["89230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6685, 47.8974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6683, 47.8982]
+      },
+      "population": 368,
+      "surface": 766.01,
+      "radius": 1.56
+    },
+    {
+      "nom": "Rugny",
+      "code": "89329",
+      "codesPostaux": ["89430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1459, 47.8976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1471, 47.8981]
+      },
+      "population": 75,
+      "surface": 1393.12,
+      "radius": 2.11
+    },
+    {
+      "nom": "Sainpuits",
+      "code": "89331",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2507, 47.5123]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.257, 47.5184]
+      },
+      "population": 290,
+      "surface": 2295.17,
+      "radius": 2.7
+    },
+    {
+      "nom": "Saint-Agnan",
+      "code": "89332",
+      "codesPostaux": ["89340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0557, 48.3024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0508, 48.3054]
+      },
+      "population": 934,
+      "surface": 1324.42,
+      "radius": 2.05
+    },
+    {
+      "nom": "Saint-André-en-Terre-Plaine",
+      "code": "89333",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0582, 47.4836]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0584, 47.4805]
+      },
+      "population": 159,
+      "surface": 1429.69,
+      "radius": 2.13
+    },
+    {
+      "nom": "Saint-Aubin-sur-Yonne",
+      "code": "89335",
+      "codesPostaux": ["89300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3626, 47.9964]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3454, 48.0013]
+      },
+      "population": 435,
+      "surface": 890.15,
+      "radius": 1.68
+    },
+    {
+      "nom": "Saint-Brancher",
+      "code": "89336",
+      "codesPostaux": ["89630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9907, 47.4327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9983, 47.4254]
+      },
+      "population": 277,
+      "surface": 2222.97,
+      "radius": 2.66
+    },
+    {
+      "nom": "Saint-Bris-le-Vineux",
+      "code": "89337",
+      "codesPostaux": ["89530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6606, 47.7428]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6475, 47.744]
+      },
+      "population": 1024,
+      "surface": 3140.02,
+      "radius": 3.16
+    },
+    {
+      "nom": "Saint-Clément",
+      "code": "89338",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3183, 48.2234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2915, 48.2182]
+      },
+      "population": 2813,
+      "surface": 847.42,
+      "radius": 1.64
+    },
+    {
+      "nom": "Saint-Cyr-les-Colons",
+      "code": "89341",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7674, 47.7294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7369, 47.7425]
+      },
+      "population": 446,
+      "surface": 3450.31,
+      "radius": 3.31
+    },
+    {
+      "nom": "Saint-Denis-lès-Sens",
+      "code": "89342",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2643, 48.2321]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.265, 48.2285]
+      },
+      "population": 624,
+      "surface": 681.84,
+      "radius": 1.47
+    },
+    {
+      "nom": "Saint-Fargeau",
+      "code": "89344",
+      "codesPostaux": ["89170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0814, 47.6481]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0713, 47.6415]
+      },
+      "population": 1466,
+      "surface": 6908.48,
+      "radius": 4.69
+    },
+    {
+      "nom": "Saint-Florentin",
+      "code": "89345",
+      "codesPostaux": ["89600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7125, 47.9942]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7277, 48.0017]
+      },
+      "population": 4230,
+      "surface": 2849.35,
+      "radius": 3.01
+    },
+    {
+      "nom": "Saint-Georges-sur-Baulche",
+      "code": "89346",
+      "codesPostaux": ["89000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5163, 47.8028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5329, 47.8047]
+      },
+      "population": 3176,
+      "surface": 969.21,
+      "radius": 1.76
+    },
+    {
+      "nom": "Saint-Germain-des-Champs",
+      "code": "89347",
+      "codesPostaux": ["89630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9247, 47.4191]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9185, 47.411]
+      },
+      "population": 344,
+      "surface": 3645.28,
+      "radius": 3.41
+    },
+    {
+      "nom": "Saint-Julien-du-Sault",
+      "code": "89348",
+      "codesPostaux": ["89330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2761, 48.0289]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2962, 48.0311]
+      },
+      "population": 2202,
+      "surface": 2421.72,
+      "radius": 2.78
+    },
+    {
+      "nom": "Saint-Léger-Vauban",
+      "code": "89349",
+      "codesPostaux": ["89630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0605, 47.3726]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0416, 47.3873]
+      },
+      "population": 358,
+      "surface": 3387.05,
+      "radius": 3.28
+    },
+    {
+      "nom": "Saint-Loup-d'Ordon",
+      "code": "89350",
+      "codesPostaux": ["89330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1416, 48.0104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1627, 48.0152]
+      },
+      "population": 248,
+      "surface": 1804.38,
+      "radius": 2.4
+    },
+    {
+      "nom": "Saint-Martin-d'Ordon",
+      "code": "89353",
+      "codesPostaux": ["89330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1644, 48.0252]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1747, 48.0232]
+      },
+      "population": 420,
+      "surface": 1020.03,
+      "radius": 1.8
+    },
+    {
+      "nom": "Saint-Martin-des-Champs",
+      "code": "89352",
+      "codesPostaux": ["89170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0283, 47.6571]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0332, 47.6559]
+      },
+      "population": 259,
+      "surface": 3432.28,
+      "radius": 3.31
+    },
+    {
+      "nom": "Saint-Martin-du-Tertre",
+      "code": "89354",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2353, 48.2054]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2576, 48.2121]
+      },
+      "population": 1553,
+      "surface": 689.9,
+      "radius": 1.48
+    },
+    {
+      "nom": "Saint-Martin-sur-Armançon",
+      "code": "89355",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0667, 47.8764]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0685, 47.8718]
+      },
+      "population": 141,
+      "surface": 1420.72,
+      "radius": 2.13
+    },
+    {
+      "nom": "Saint-Maurice-aux-Riches-Hommes",
+      "code": "89359",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5008, 48.3301]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5109, 48.3474]
+      },
+      "population": 408,
+      "surface": 3315.95,
+      "radius": 3.25
+    },
+    {
+      "nom": "Saint-Maurice-le-Vieil",
+      "code": "89360",
+      "codesPostaux": ["89110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3718, 47.8215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3516, 47.8237]
+      },
+      "population": 372,
+      "surface": 492.5,
+      "radius": 1.25
+    },
+    {
+      "nom": "Saint-Maurice-Thizouaille",
+      "code": "89361",
+      "codesPostaux": ["89110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3626, 47.8331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3611, 47.8344]
+      },
+      "population": 255,
+      "surface": 196.03,
+      "radius": 0.79
+    },
+    {
+      "nom": "Saint-Moré",
+      "code": "89362",
+      "codesPostaux": ["89270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7748, 47.5746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7776, 47.5762]
+      },
+      "population": 177,
+      "surface": 1211.41,
+      "radius": 1.96
+    },
+    {
+      "nom": "Saint-Père",
+      "code": "89364",
+      "codesPostaux": ["89450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7738, 47.465]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7651, 47.4593]
+      },
+      "population": 287,
+      "surface": 1572.3,
+      "radius": 2.24
+    },
+    {
+      "nom": "Saint-Privé",
+      "code": "89365",
+      "codesPostaux": ["89220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0046, 47.6865]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0017, 47.6838]
+      },
+      "population": 518,
+      "surface": 4150.14,
+      "radius": 3.63
+    },
+    {
+      "nom": "Saint-Sauveur-en-Puisaye",
+      "code": "89368",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.196, 47.6358]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1948, 47.6181]
+      },
+      "population": 907,
+      "surface": 3071,
+      "radius": 3.13
+    },
+    {
+      "nom": "Saint-Sérotin",
+      "code": "89369",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.162, 48.2486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1584, 48.2467]
+      },
+      "population": 597,
+      "surface": 1414.96,
+      "radius": 2.12
+    },
+    {
+      "nom": "Saint-Valérien",
+      "code": "89370",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0987, 48.1809]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0965, 48.1793]
+      },
+      "population": 1806,
+      "surface": 2218.47,
+      "radius": 2.66
+    },
+    {
+      "nom": "Sainte-Colombe",
+      "code": "89339",
+      "codesPostaux": ["89440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9521, 47.5748]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9692, 47.5665]
+      },
+      "population": 185,
+      "surface": 1852.2,
+      "radius": 2.43
+    },
+    {
+      "nom": "Sainte-Magnance",
+      "code": "89351",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.079, 47.4542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.074, 47.4498]
+      },
+      "population": 480,
+      "surface": 1944.26,
+      "radius": 2.49
+    },
+    {
+      "nom": "Sainte-Pallaye",
+      "code": "89363",
+      "codesPostaux": ["89460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6807, 47.6542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6697, 47.6485]
+      },
+      "population": 98,
+      "surface": 409.27,
+      "radius": 1.14
+    },
+    {
+      "nom": "Sainte-Vertu",
+      "code": "89371",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9058, 47.734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9147, 47.7496]
+      },
+      "population": 67,
+      "surface": 1448.83,
+      "radius": 2.15
+    },
+    {
+      "nom": "Saints-en-Puisaye",
+      "code": "89367",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2732, 47.6241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.263, 47.6213]
+      },
+      "population": 546,
+      "surface": 2768.1,
+      "radius": 2.97
+    },
+    {
+      "nom": "Saligny",
+      "code": "89373",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.351, 48.2169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3517, 48.2141]
+      },
+      "population": 658,
+      "surface": 991.79,
+      "radius": 1.78
+    },
+    {
+      "nom": "Sambourg",
+      "code": "89374",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0111, 47.7731]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0216, 47.7681]
+      },
+      "population": 65,
+      "surface": 1264.53,
+      "radius": 2.01
+    },
+    {
+      "nom": "Santigny",
+      "code": "89375",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1183, 47.5833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1214, 47.5675]
+      },
+      "population": 88,
+      "surface": 944.38,
+      "radius": 1.73
+    },
+    {
+      "nom": "Sarry",
+      "code": "89376",
+      "codesPostaux": ["89310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.075, 47.6646]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0751, 47.6706]
+      },
+      "population": 134,
+      "surface": 2566.15,
+      "radius": 2.86
+    },
+    {
+      "nom": "Sauvigny-le-Beuréal",
+      "code": "89377",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1086, 47.4787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1087, 47.4862]
+      },
+      "population": 67,
+      "surface": 478.45,
+      "radius": 1.23
+    },
+    {
+      "nom": "Sauvigny-le-Bois",
+      "code": "89378",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9618, 47.5125]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9403, 47.514]
+      },
+      "population": 739,
+      "surface": 1541.69,
+      "radius": 2.22
+    },
+    {
+      "nom": "Savigny-en-Terre-Plaine",
+      "code": "89379",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0857, 47.4903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0829, 47.4953]
+      },
+      "population": 139,
+      "surface": 887.29,
+      "radius": 1.68
+    },
+    {
+      "nom": "Savigny-sur-Clairis",
+      "code": "89380",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0843, 48.0774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0919, 48.0755]
+      },
+      "population": 451,
+      "surface": 1643.67,
+      "radius": 2.29
+    },
+    {
+      "nom": "Seignelay",
+      "code": "89382",
+      "codesPostaux": ["89250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5944, 47.8998]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6005, 47.9028]
+      },
+      "population": 1460,
+      "surface": 1359.99,
+      "radius": 2.08
+    },
+    {
+      "nom": "Sementron",
+      "code": "89383",
+      "codesPostaux": ["89560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3598, 47.6232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3536, 47.6341]
+      },
+      "population": 104,
+      "surface": 1176.69,
+      "radius": 1.94
+    },
+    {
+      "nom": "Senan",
+      "code": "89384",
+      "codesPostaux": ["89710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3444, 47.9189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3591, 47.9113]
+      },
+      "population": 680,
+      "surface": 1793.11,
+      "radius": 2.39
+    },
+    {
+      "nom": "Sennevoy-le-Bas",
+      "code": "89385",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3095, 47.8012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2901, 47.807]
+      },
+      "population": 77,
+      "surface": 873.92,
+      "radius": 1.67
+    },
+    {
+      "nom": "Sennevoy-le-Haut",
+      "code": "89386",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2639, 47.814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2807, 47.8087]
+      },
+      "population": 121,
+      "surface": 889.15,
+      "radius": 1.68
+    },
+    {
+      "nom": "Sens",
+      "code": "89387",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3039, 48.1949]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2829, 48.1988]
+      },
+      "population": 27275,
+      "surface": 2183.4,
+      "radius": 2.64
+    },
+    {
+      "nom": "Sépeaux-Saint Romain",
+      "code": "89388",
+      "codesPostaux": ["89116"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2402, 47.9346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2366, 47.9425]
+      },
+      "population": 489,
+      "surface": 3054.3,
+      "radius": 3.12
+    },
+    {
+      "nom": "Serbonnes",
+      "code": "89390",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2058, 48.3304]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2033, 48.3202]
+      },
+      "population": 693,
+      "surface": 989.83,
+      "radius": 1.78
+    },
+    {
+      "nom": "Sergines",
+      "code": "89391",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2497, 48.3459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2603, 48.3438]
+      },
+      "population": 1235,
+      "surface": 1889.08,
+      "radius": 2.45
+    },
+    {
+      "nom": "Sermizelles",
+      "code": "89392",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7972, 47.5405]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7923, 47.5361]
+      },
+      "population": 249,
+      "surface": 715.69,
+      "radius": 1.51
+    },
+    {
+      "nom": "Serrigny",
+      "code": "89393",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.914, 47.8317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9118, 47.8351]
+      },
+      "population": 115,
+      "surface": 744.09,
+      "radius": 1.54
+    },
+    {
+      "nom": "Sery",
+      "code": "89394",
+      "codesPostaux": ["89270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6891, 47.6192]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6823, 47.6192]
+      },
+      "population": 76,
+      "surface": 433.51,
+      "radius": 1.17
+    },
+    {
+      "nom": "Sommecaise",
+      "code": "89397",
+      "codesPostaux": ["89110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2205, 47.838]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2312, 47.849]
+      },
+      "population": 387,
+      "surface": 1568.09,
+      "radius": 2.23
+    },
+    {
+      "nom": "Sormery",
+      "code": "89398",
+      "codesPostaux": ["89570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7579, 48.1057]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7694, 48.0897]
+      },
+      "population": 386,
+      "surface": 3112.35,
+      "radius": 3.15
+    },
+    {
+      "nom": "Soucy",
+      "code": "89399",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3253, 48.2539]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3256, 48.2493]
+      },
+      "population": 1546,
+      "surface": 2150,
+      "radius": 2.62
+    },
+    {
+      "nom": "Sougères-en-Puisaye",
+      "code": "89400",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3481, 47.567]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3295, 47.5588]
+      },
+      "population": 298,
+      "surface": 2682.05,
+      "radius": 2.92
+    },
+    {
+      "nom": "Soumaintrain",
+      "code": "89402",
+      "codesPostaux": ["89570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8419, 48.0202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8291, 48.0179]
+      },
+      "population": 212,
+      "surface": 1078.53,
+      "radius": 1.85
+    },
+    {
+      "nom": "Stigny",
+      "code": "89403",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2383, 47.7804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2338, 47.774]
+      },
+      "population": 88,
+      "surface": 1804.7,
+      "radius": 2.4
+    },
+    {
+      "nom": "Subligny",
+      "code": "89404",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1957, 48.1679]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2012, 48.1652]
+      },
+      "population": 520,
+      "surface": 786.57,
+      "radius": 1.58
+    },
+    {
+      "nom": "Talcy",
+      "code": "89406",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0757, 47.5783]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0693, 47.5725]
+      },
+      "population": 83,
+      "surface": 689.65,
+      "radius": 1.48
+    },
+    {
+      "nom": "Tanlay",
+      "code": "89407",
+      "codesPostaux": ["89430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0831, 47.8482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0848, 47.8472]
+      },
+      "population": 889,
+      "surface": 3863.4,
+      "radius": 3.51
+    },
+    {
+      "nom": "Tannerre-en-Puisaye",
+      "code": "89408",
+      "codesPostaux": ["89350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1468, 47.7394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1301, 47.7331]
+      },
+      "population": 271,
+      "surface": 2912.45,
+      "radius": 3.04
+    },
+    {
+      "nom": "Tharoiseau",
+      "code": "89409",
+      "codesPostaux": ["89450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8171, 47.4645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8042, 47.4633]
+      },
+      "population": 62,
+      "surface": 345.97,
+      "radius": 1.05
+    },
+    {
+      "nom": "Tharot",
+      "code": "89410",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8638, 47.5347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8585, 47.5278]
+      },
+      "population": 111,
+      "surface": 240.59,
+      "radius": 0.88
+    },
+    {
+      "nom": "Thizy",
+      "code": "89412",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0584, 47.5827]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0531, 47.5688]
+      },
+      "population": 184,
+      "surface": 555.78,
+      "radius": 1.33
+    },
+    {
+      "nom": "Thorey",
+      "code": "89413",
+      "codesPostaux": ["89430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.114, 47.8983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1219, 47.9042]
+      },
+      "population": 43,
+      "surface": 698.17,
+      "radius": 1.49
+    },
+    {
+      "nom": "Thorigny-sur-Oreuse",
+      "code": "89414",
+      "codesPostaux": ["89260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3831, 48.2986]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4002, 48.2932]
+      },
+      "population": 1396,
+      "surface": 4968.18,
+      "radius": 3.98
+    },
+    {
+      "nom": "Thory",
+      "code": "89415",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9168, 47.5701]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9111, 47.5635]
+      },
+      "population": 193,
+      "surface": 827.7,
+      "radius": 1.62
+    },
+    {
+      "nom": "Thury",
+      "code": "89416",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3029, 47.5895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2946, 47.5869]
+      },
+      "population": 426,
+      "surface": 2329.69,
+      "radius": 2.72
+    },
+    {
+      "nom": "Tissey",
+      "code": "89417",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.897, 47.8595]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9012, 47.8525]
+      },
+      "population": 113,
+      "surface": 600.01,
+      "radius": 1.38
+    },
+    {
+      "nom": "Tonnerre",
+      "code": "89418",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9771, 47.8403]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9735, 47.8566]
+      },
+      "population": 4268,
+      "surface": 5859.78,
+      "radius": 4.32
+    },
+    {
+      "nom": "Toucy",
+      "code": "89419",
+      "codesPostaux": ["89130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2882, 47.7328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2943, 47.7351]
+      },
+      "population": 2562,
+      "surface": 3523.42,
+      "radius": 3.35
+    },
+    {
+      "nom": "Treigny-Perreuse-Sainte-Colombe",
+      "code": "89420",
+      "codesPostaux": ["89520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1888, 47.5591]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.183, 47.5509]
+      },
+      "population": 1076,
+      "surface": 6773.04,
+      "radius": 4.64
+    },
+    {
+      "nom": "Trichey",
+      "code": "89422",
+      "codesPostaux": ["89430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1422, 47.925]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1401, 47.9307]
+      },
+      "population": 43,
+      "surface": 661.89,
+      "radius": 1.45
+    },
+    {
+      "nom": "Tronchoy",
+      "code": "89423",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9497, 47.9234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9417, 47.9143]
+      },
+      "population": 123,
+      "surface": 658.65,
+      "radius": 1.45
+    },
+    {
+      "nom": "Trucy-sur-Yonne",
+      "code": "89424",
+      "codesPostaux": ["89460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6472, 47.6296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6605, 47.6292]
+      },
+      "population": 133,
+      "surface": 846.46,
+      "radius": 1.64
+    },
+    {
+      "nom": "Turny",
+      "code": "89425",
+      "codesPostaux": ["89570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7237, 48.0651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7462, 48.0346]
+      },
+      "population": 650,
+      "surface": 2516.82,
+      "radius": 2.83
+    },
+    {
+      "nom": "Val-de-Mercy",
+      "code": "89426",
+      "codesPostaux": ["89580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5913, 47.6696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5881, 47.6751]
+      },
+      "population": 373,
+      "surface": 1344.4,
+      "radius": 2.07
+    },
+    {
+      "nom": "Vallan",
+      "code": "89427",
+      "codesPostaux": ["89580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5411, 47.7466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5374, 47.7439]
+      },
+      "population": 675,
+      "surface": 1184.45,
+      "radius": 1.94
+    },
+    {
+      "nom": "Vallery",
+      "code": "89428",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0476, 48.2334]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0461, 48.2427]
+      },
+      "population": 579,
+      "surface": 1242.56,
+      "radius": 1.99
+    },
+    {
+      "nom": "Valravillon",
+      "code": "89196",
+      "codesPostaux": ["89110", "89113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4344, 47.9025]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4394, 47.8926]
+      },
+      "population": 1777,
+      "surface": 3722.71,
+      "radius": 3.44
+    },
+    {
+      "nom": "Varennes",
+      "code": "89430",
+      "codesPostaux": ["89144"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7848, 47.9139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7834, 47.9057]
+      },
+      "population": 330,
+      "surface": 1015.99,
+      "radius": 1.8
+    },
+    {
+      "nom": "Vassy-sous-Pisy",
+      "code": "89431",
+      "codesPostaux": ["89420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1711, 47.5727]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1681, 47.5688]
+      },
+      "population": 62,
+      "surface": 749.61,
+      "radius": 1.54
+    },
+    {
+      "nom": "Vaudeurs",
+      "code": "89432",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.549, 48.1251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5511, 48.1325]
+      },
+      "population": 471,
+      "surface": 2763.92,
+      "radius": 2.97
+    },
+    {
+      "nom": "Vault-de-Lugny",
+      "code": "89433",
+      "codesPostaux": ["89200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8441, 47.5004]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8484, 47.4982]
+      },
+      "population": 269,
+      "surface": 1528.85,
+      "radius": 2.21
+    },
+    {
+      "nom": "Vaumort",
+      "code": "89434",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4412, 48.1369]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4421, 48.1533]
+      },
+      "population": 345,
+      "surface": 1463.95,
+      "radius": 2.16
+    },
+    {
+      "nom": "Venizy",
+      "code": "89436",
+      "codesPostaux": ["89210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6752, 48.0697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7088, 48.034]
+      },
+      "population": 846,
+      "surface": 4421.13,
+      "radius": 3.75
+    },
+    {
+      "nom": "Venouse",
+      "code": "89437",
+      "codesPostaux": ["89230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6916, 47.9001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6824, 47.8953]
+      },
+      "population": 291,
+      "surface": 803.83,
+      "radius": 1.6
+    },
+    {
+      "nom": "Venoy",
+      "code": "89438",
+      "codesPostaux": ["89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6568, 47.8078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6367, 47.8061]
+      },
+      "population": 1747,
+      "surface": 2309.93,
+      "radius": 2.71
+    },
+    {
+      "nom": "Vergigny",
+      "code": "89439",
+      "codesPostaux": ["89600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6957, 47.9519]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7187, 47.9709]
+      },
+      "population": 1501,
+      "surface": 3359.23,
+      "radius": 3.27
+    },
+    {
+      "nom": "Verlin",
+      "code": "89440",
+      "codesPostaux": ["89330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.227, 48.0184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2332, 48.0184]
+      },
+      "population": 407,
+      "surface": 1415.2,
+      "radius": 2.12
+    },
+    {
+      "nom": "Vermenton",
+      "code": "89441",
+      "codesPostaux": ["89270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7903, 47.6696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7349, 47.6642]
+      },
+      "population": 1273,
+      "surface": 5338.79,
+      "radius": 4.12
+    },
+    {
+      "nom": "Vernoy",
+      "code": "89442",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1265, 48.0946]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1249, 48.0948]
+      },
+      "population": 244,
+      "surface": 1446.77,
+      "radius": 2.15
+    },
+    {
+      "nom": "Véron",
+      "code": "89443",
+      "codesPostaux": ["89510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.333, 48.1275]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3066, 48.1292]
+      },
+      "population": 1853,
+      "surface": 1587.22,
+      "radius": 2.25
+    },
+    {
+      "nom": "Vézannes",
+      "code": "89445",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.885, 47.8714]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8741, 47.8768]
+      },
+      "population": 52,
+      "surface": 906.36,
+      "radius": 1.7
+    },
+    {
+      "nom": "Vézelay",
+      "code": "89446",
+      "codesPostaux": ["89450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7145, 47.4505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7463, 47.4656]
+      },
+      "population": 464,
+      "surface": 2202.17,
+      "radius": 2.65
+    },
+    {
+      "nom": "Vézinnes",
+      "code": "89447",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9342, 47.894]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9454, 47.8925]
+      },
+      "population": 157,
+      "surface": 626.1,
+      "radius": 1.41
+    },
+    {
+      "nom": "Villeblevin",
+      "code": "89449",
+      "codesPostaux": ["89340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0826, 48.3313]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0827, 48.324]
+      },
+      "population": 1813,
+      "surface": 737.95,
+      "radius": 1.53
+    },
+    {
+      "nom": "Villebougis",
+      "code": "89450",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1556, 48.2073]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1592, 48.203]
+      },
+      "population": 635,
+      "surface": 1178.87,
+      "radius": 1.94
+    },
+    {
+      "nom": "Villechétive",
+      "code": "89451",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5263, 48.0953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5084, 48.0959]
+      },
+      "population": 261,
+      "surface": 960.37,
+      "radius": 1.75
+    },
+    {
+      "nom": "Villecien",
+      "code": "89452",
+      "codesPostaux": ["89300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3394, 48.015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3287, 48.0062]
+      },
+      "population": 348,
+      "surface": 766.6,
+      "radius": 1.56
+    },
+    {
+      "nom": "Villefargeau",
+      "code": "89453",
+      "codesPostaux": ["89240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4936, 47.7915]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5052, 47.7822]
+      },
+      "population": 1101,
+      "surface": 1404.29,
+      "radius": 2.11
+    },
+    {
+      "nom": "Villemanoche",
+      "code": "89456",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1655, 48.2975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1796, 48.3001]
+      },
+      "population": 671,
+      "surface": 1458.08,
+      "radius": 2.15
+    },
+    {
+      "nom": "Villenavotte",
+      "code": "89458",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2305, 48.2428]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2378, 48.2487]
+      },
+      "population": 162,
+      "surface": 222.2,
+      "radius": 0.84
+    },
+    {
+      "nom": "Villeneuve-l'Archevêque",
+      "code": "89461",
+      "codesPostaux": ["89190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.5646, 48.2334]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.5571, 48.2339]
+      },
+      "population": 1111,
+      "surface": 699.95,
+      "radius": 1.49
+    },
+    {
+      "nom": "Villeneuve-la-Dondagre",
+      "code": "89459",
+      "codesPostaux": ["89150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1437, 48.1393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1353, 48.139]
+      },
+      "population": 337,
+      "surface": 1458.71,
+      "radius": 2.15
+    },
+    {
+      "nom": "Villeneuve-la-Guyard",
+      "code": "89460",
+      "codesPostaux": ["89340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0578, 48.331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0659, 48.3403]
+      },
+      "population": 3470,
+      "surface": 1693.88,
+      "radius": 2.32
+    },
+    {
+      "nom": "Villeneuve-les-Genêts",
+      "code": "89462",
+      "codesPostaux": ["89350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0707, 47.7393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.092, 47.7376]
+      },
+      "population": 308,
+      "surface": 2503.28,
+      "radius": 2.82
+    },
+    {
+      "nom": "Villeneuve-Saint-Salves",
+      "code": "89463",
+      "codesPostaux": ["89230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6421, 47.8503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6523, 47.8541]
+      },
+      "population": 257,
+      "surface": 709.7,
+      "radius": 1.5
+    },
+    {
+      "nom": "Villeneuve-sur-Yonne",
+      "code": "89464",
+      "codesPostaux": ["89500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3137, 48.0829]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2947, 48.0851]
+      },
+      "population": 5130,
+      "surface": 4035.25,
+      "radius": 3.58
+    },
+    {
+      "nom": "Villeperrot",
+      "code": "89465",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2108, 48.2604]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2308, 48.2627]
+      },
+      "population": 296,
+      "surface": 817.88,
+      "radius": 1.61
+    },
+    {
+      "nom": "Villeroy",
+      "code": "89466",
+      "codesPostaux": ["89100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1806, 48.1815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1854, 48.1744]
+      },
+      "population": 385,
+      "surface": 705.58,
+      "radius": 1.5
+    },
+    {
+      "nom": "Villethierry",
+      "code": "89467",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0736, 48.2654]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0738, 48.2638]
+      },
+      "population": 800,
+      "surface": 2108.32,
+      "radius": 2.59
+    },
+    {
+      "nom": "Villevallier",
+      "code": "89468",
+      "codesPostaux": ["89330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3457, 48.0267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3154, 48.0254]
+      },
+      "population": 417,
+      "surface": 844.53,
+      "radius": 1.64
+    },
+    {
+      "nom": "Villiers-les-Hauts",
+      "code": "89470",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1555, 47.724]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.147, 47.7265]
+      },
+      "population": 125,
+      "surface": 1914.35,
+      "radius": 2.47
+    },
+    {
+      "nom": "Villiers-Louis",
+      "code": "89471",
+      "codesPostaux": ["89320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3949, 48.1952]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.4027, 48.1904]
+      },
+      "population": 463,
+      "surface": 1115.83,
+      "radius": 1.88
+    },
+    {
+      "nom": "Villiers-Saint-Benoît",
+      "code": "89472",
+      "codesPostaux": ["89130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2218, 47.7815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2069, 47.7813]
+      },
+      "population": 433,
+      "surface": 3425.7,
+      "radius": 3.3
+    },
+    {
+      "nom": "Villiers-Vineux",
+      "code": "89474",
+      "codesPostaux": ["89360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.8239, 47.9427]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8349, 47.944]
+      },
+      "population": 282,
+      "surface": 1121.62,
+      "radius": 1.89
+    },
+    {
+      "nom": "Villon",
+      "code": "89475",
+      "codesPostaux": ["89740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1881, 47.8985]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1897, 47.9109]
+      },
+      "population": 111,
+      "surface": 944.97,
+      "radius": 1.73
+    },
+    {
+      "nom": "Villy",
+      "code": "89477",
+      "codesPostaux": ["89800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7476, 47.8638]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7518, 47.8676]
+      },
+      "population": 102,
+      "surface": 586.79,
+      "radius": 1.37
+    },
+    {
+      "nom": "Vincelles",
+      "code": "89478",
+      "codesPostaux": ["89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.6356, 47.6896]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.6333, 47.7033]
+      },
+      "population": 910,
+      "surface": 1257.69,
+      "radius": 2
+    },
+    {
+      "nom": "Vincelottes",
+      "code": "89479",
+      "codesPostaux": ["89290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.641, 47.7093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.64, 47.7086]
+      },
+      "population": 282,
+      "surface": 187.22,
+      "radius": 0.77
+    },
+    {
+      "nom": "Vinneuf",
+      "code": "89480",
+      "codesPostaux": ["89140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.144, 48.353]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1363, 48.3511]
+      },
+      "population": 1559,
+      "surface": 1529.63,
+      "radius": 2.21
+    },
+    {
+      "nom": "Vireaux",
+      "code": "89481",
+      "codesPostaux": ["89160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0392, 47.7867]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0491, 47.7867]
+      },
+      "population": 102,
+      "surface": 1470.16,
+      "radius": 2.16
+    },
+    {
+      "nom": "Viviers",
+      "code": "89482",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9211, 47.8055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9193, 47.8037]
+      },
+      "population": 104,
+      "surface": 924.19,
+      "radius": 1.72
+    },
+    {
+      "nom": "Voisines",
+      "code": "89483",
+      "codesPostaux": ["89260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.4178, 48.2536]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3942, 48.2525]
+      },
+      "population": 528,
+      "surface": 2703.68,
+      "radius": 2.93
+    },
+    {
+      "nom": "Voutenay-sur-Cure",
+      "code": "89485",
+      "codesPostaux": ["89270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.7861, 47.5573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.7845, 47.5617]
+      },
+      "population": 209,
+      "surface": 1023.34,
+      "radius": 1.8
+    },
+    {
+      "nom": "Yrouerre",
+      "code": "89486",
+      "codesPostaux": ["89700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9581, 47.7879]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.948, 47.7943]
+      },
+      "population": 147,
+      "surface": 1445.6,
+      "radius": 2.15
+    }
+  ],
+  "postalCodes": {
+    "89000": {
+      "communes": ["Auxerre", "Perrigny", "Saint-Georges-sur-Baulche"],
+      "communeCount": 3,
+      "center": [3.5665, 47.7975],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 47.796,
+        "maxLat": 47.8214,
+        "minLon": 3.5329,
+        "maxLon": 3.5705
+      },
+      "totalPopulation": 39666,
+      "totalSurface": 7238
+    },
+    "89100": {
+      "communes": [
+        "Collemiers",
+        "Courtois-sur-Yonne",
+        "Fontaine-la-Gaillarde",
+        "Gron",
+        "Maillot",
+        "Malay-le-Grand",
+        "Malay-le-Petit",
+        "Nailly",
+        "Paron",
+        "Rosoy",
+        "Saint-Clément",
+        "Saint-Denis-lès-Sens",
+        "Saint-Martin-du-Tertre",
+        "Saligny",
+        "Sens",
+        "Soucy",
+        "Subligny",
+        "Villeroy"
+      ],
+      "communeCount": 18,
+      "center": [3.2827, 48.1982],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 48.1486,
+        "maxLat": 48.2493,
+        "minLon": 3.1854,
+        "maxLon": 3.3796
+      },
+      "totalPopulation": 49073,
+      "totalSurface": 20482
+    },
+    "89110": {
+      "communes": [
+        "Montholon",
+        "Chassy",
+        "La Ferté-Loupière",
+        "Valravillon",
+        "Merry-la-Vallée",
+        "Les Ormes",
+        "Poilly-sur-Tholon",
+        "Le Val d'Ocre",
+        "Saint-Maurice-le-Vieil",
+        "Saint-Maurice-Thizouaille",
+        "Sommecaise"
+      ],
+      "communeCount": 11,
+      "center": [3.3534, 47.8658],
+      "coverageRadius": 9.6,
+      "boundingBox": {
+        "minLat": 47.8,
+        "maxLat": 47.8975,
+        "minLon": 3.2312,
+        "maxLon": 3.4394
+      },
+      "totalPopulation": 8417,
+      "totalSurface": 23300
+    },
+    "89113": {
+      "communes": ["Branches", "Charbuy", "Fleury-la-Vallée", "Valravillon"],
+      "communeCount": 4,
+      "center": [3.4551, 47.8621],
+      "coverageRadius": 4.3,
+      "boundingBox": {
+        "minLat": 47.8242,
+        "maxLat": 47.8926,
+        "minLon": 3.4394,
+        "maxLon": 3.4814
+      },
+      "totalPopulation": 5101,
+      "totalSurface": 8701
+    },
+    "89116": {
+      "communes": ["La Celle-Saint-Cyr", "Cudot", "Précy-sur-Vrin", "Sépeaux-Saint Romain"],
+      "communeCount": 4,
+      "center": [3.2485, 47.9676],
+      "coverageRadius": 5.7,
+      "boundingBox": {
+        "minLat": 47.9425,
+        "maxLat": 47.9848,
+        "minLon": 3.1768,
+        "maxLon": 3.289
+      },
+      "totalPopulation": 2153,
+      "totalSurface": 8981
+    },
+    "89120": {
+      "communes": ["Charny Orée de Puisaye"],
+      "communeCount": 1,
+      "center": [3.0946, 47.8924],
+      "coverageRadius": 8.55,
+      "totalPopulation": 4854,
+      "totalSurface": 22978
+    },
+    "89130": {
+      "communes": [
+        "Dracy",
+        "Fontaines",
+        "Lalande",
+        "Leugny",
+        "Mézilles",
+        "Moulins-sur-Ouanne",
+        "Toucy",
+        "Villiers-Saint-Benoît"
+      ],
+      "communeCount": 8,
+      "center": [3.2768, 47.7263],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 47.6817,
+        "maxLat": 47.7813,
+        "minLon": 3.173,
+        "maxLon": 3.3747
+      },
+      "totalPopulation": 4939,
+      "totalSurface": 20344
+    },
+    "89140": {
+      "communes": [
+        "Compigny",
+        "Courlon-sur-Yonne",
+        "Cuy",
+        "Évry",
+        "Gisy-les-Nobles",
+        "Lixy",
+        "Michery",
+        "Pailly",
+        "Plessis-Saint-Jean",
+        "Pont-sur-Yonne",
+        "Saint-Sérotin",
+        "Serbonnes",
+        "Sergines",
+        "Villemanoche",
+        "Villenavotte",
+        "Villeperrot",
+        "Villethierry",
+        "Vinneuf"
+      ],
+      "communeCount": 18,
+      "center": [3.199, 48.3021],
+      "coverageRadius": 10.8,
+      "boundingBox": {
+        "minLat": 48.2392,
+        "maxLat": 48.3648,
+        "minLon": 3.0738,
+        "maxLon": 3.3229
+      },
+      "totalPopulation": 14638,
+      "totalSurface": 22105
+    },
+    "89144": {
+      "communes": ["Ligny-le-Châtel", "Méré", "Varennes"],
+      "communeCount": 3,
+      "center": [3.7701, 47.9012],
+      "coverageRadius": 4.1,
+      "boundingBox": {
+        "minLat": 47.8996,
+        "maxLat": 47.9057,
+        "minLon": 3.759,
+        "maxLon": 3.824
+      },
+      "totalPopulation": 1709,
+      "totalSurface": 4945
+    },
+    "89150": {
+      "communes": [
+        "La Belliole",
+        "Brannay",
+        "Courtoin",
+        "Dollot",
+        "Domats",
+        "Fouchères",
+        "Jouy",
+        "Montacher-Villegardin",
+        "Saint-Valérien",
+        "Savigny-sur-Clairis",
+        "Vallery",
+        "Vernoy",
+        "Villebougis",
+        "Villeneuve-la-Dondagre"
+      ],
+      "communeCount": 14,
+      "center": [3.0865, 48.1724],
+      "coverageRadius": 10.8,
+      "boundingBox": {
+        "minLat": 48.0755,
+        "maxLat": 48.2427,
+        "minLon": 2.9749,
+        "maxLon": 3.1592
+      },
+      "totalPopulation": 7904,
+      "totalSurface": 21813
+    },
+    "89160": {
+      "communes": [
+        "Ancy-le-Franc",
+        "Ancy-le-Libre",
+        "Argentenay",
+        "Argenteuil-sur-Armançon",
+        "Chassignelles",
+        "Fulvy",
+        "Gigny",
+        "Jully",
+        "Lézinnes",
+        "Pacy-sur-Armançon",
+        "Sambourg",
+        "Sennevoy-le-Bas",
+        "Sennevoy-le-Haut",
+        "Stigny",
+        "Villiers-les-Hauts",
+        "Vireaux"
+      ],
+      "communeCount": 16,
+      "center": [4.1509, 47.7795],
+      "coverageRadius": 11.6,
+      "boundingBox": {
+        "minLat": 47.7265,
+        "maxLat": 47.8161,
+        "minLon": 4.0216,
+        "maxLon": 4.296
+      },
+      "totalPopulation": 3338,
+      "totalSurface": 23719
+    },
+    "89170": {
+      "communes": ["Lavau", "Ronchères", "Saint-Fargeau", "Saint-Martin-des-Champs"],
+      "communeCount": 4,
+      "center": [3.0533, 47.6359],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 47.5961,
+        "maxLat": 47.6594,
+        "minLon": 2.9851,
+        "maxLon": 3.1159
+      },
+      "totalPopulation": 2204,
+      "totalSurface": 17009
+    },
+    "89190": {
+      "communes": [
+        "Bagneaux",
+        "Les Clérimois",
+        "Courgenay",
+        "Flacy",
+        "Foissy-sur-Vanne",
+        "Lailly",
+        "Molinons",
+        "Pont-sur-Vanne",
+        "Saint-Maurice-aux-Riches-Hommes",
+        "Les Sièges",
+        "Les Vallées de la Vanne",
+        "Villeneuve-l'Archevêque"
+      ],
+      "communeCount": 12,
+      "center": [3.5101, 48.2286],
+      "coverageRadius": 13.3,
+      "boundingBox": {
+        "minLat": 48.1674,
+        "maxLat": 48.3474,
+        "minLon": 3.4264,
+        "maxLon": 3.6035
+      },
+      "totalPopulation": 5109,
+      "totalSurface": 22979
+    },
+    "89200": {
+      "communes": [
+        "Annay-la-Côte",
+        "Annéot",
+        "Avallon",
+        "Blannay",
+        "Domecy-sur-le-Vault",
+        "Étaule",
+        "Girolles",
+        "Givry",
+        "Island",
+        "Lucy-le-Bois",
+        "Magny",
+        "Pontaubert",
+        "Provency",
+        "Sauvigny-le-Bois",
+        "Sermizelles",
+        "Tharot",
+        "Thory",
+        "Vault-de-Lugny"
+      ],
+      "communeCount": 18,
+      "center": [3.9034, 47.5005],
+      "coverageRadius": 9.8,
+      "boundingBox": {
+        "minLat": 47.4708,
+        "maxLat": 47.5635,
+        "minLon": 3.7808,
+        "maxLon": 3.9761
+      },
+      "totalPopulation": 11298,
+      "totalSurface": 21926
+    },
+    "89210": {
+      "communes": ["Bellechaume", "Brienon-sur-Armançon", "Champlost", "Esnon", "Mercy", "Paroy-en-Othe", "Venizy"],
+      "communeCount": 7,
+      "center": [3.633, 48.0075],
+      "coverageRadius": 6.4,
+      "boundingBox": {
+        "minLat": 47.9841,
+        "maxLat": 48.0423,
+        "minLon": 3.572,
+        "maxLon": 3.7088
+      },
+      "totalPopulation": 5739,
+      "totalSurface": 13798
+    },
+    "89220": {
+      "communes": ["Bléneau", "Champcevrais", "Rogny-les-Sept-Écluses", "Saint-Privé"],
+      "communeCount": 4,
+      "center": [2.9429, 47.7147],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 47.6838,
+        "maxLat": 47.7466,
+        "minLon": 2.883,
+        "maxLon": 3.0017
+      },
+      "totalPopulation": 2674,
+      "totalSurface": 14680
+    },
+    "89230": {
+      "communes": [
+        "Bleigny-le-Carreau",
+        "Montigny-la-Resle",
+        "Pontigny",
+        "Rouvray",
+        "Venouse",
+        "Villeneuve-Saint-Salves"
+      ],
+      "communeCount": 6,
+      "center": [3.6857, 47.8822],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 47.8358,
+        "maxLat": 47.9088,
+        "minLon": 3.6523,
+        "maxLon": 3.711
+      },
+      "totalPopulation": 2554,
+      "totalSurface": 6128
+    },
+    "89240": {
+      "communes": [
+        "Beauvoir",
+        "Chevannes",
+        "Diges",
+        "Égleny",
+        "Escamps",
+        "Lindry",
+        "Parly",
+        "Pourrain",
+        "Villefargeau"
+      ],
+      "communeCount": 9,
+      "center": [3.4364, 47.7635],
+      "coverageRadius": 7.3,
+      "boundingBox": {
+        "minLat": 47.7285,
+        "maxLat": 47.8078,
+        "minLon": 3.3488,
+        "maxLon": 3.5052
+      },
+      "totalPopulation": 9448,
+      "totalSurface": 17122
+    },
+    "89250": {
+      "communes": ["Beaumont", "Chemilly-sur-Yonne", "Gurgy", "Hauterive", "Mont-Saint-Sulpice", "Seignelay"],
+      "communeCount": 6,
+      "center": [3.5816, 47.9003],
+      "coverageRadius": 6.7,
+      "boundingBox": {
+        "minLat": 47.8637,
+        "maxLat": 47.9517,
+        "minLon": 3.5598,
+        "maxLon": 3.626
+      },
+      "totalPopulation": 5875,
+      "totalSurface": 6846
+    },
+    "89260": {
+      "communes": ["La Chapelle-sur-Oreuse", "La Postolle", "Thorigny-sur-Oreuse", "Perceneige", "Voisines"],
+      "communeCount": 5,
+      "center": [3.3857, 48.3017],
+      "coverageRadius": 6,
+      "boundingBox": {
+        "minLat": 48.2525,
+        "maxLat": 48.352,
+        "minLon": 3.307,
+        "maxLon": 3.4426
+      },
+      "totalPopulation": 3696,
+      "totalSurface": 16749
+    },
+    "89270": {
+      "communes": [
+        "Arcy-sur-Cure",
+        "Bessy-sur-Cure",
+        "Lucy-sur-Cure",
+        "Mailly-la-Ville",
+        "Saint-Moré",
+        "Sery",
+        "Vermenton",
+        "Voutenay-sur-Cure"
+      ],
+      "communeCount": 8,
+      "center": [3.7348, 47.6261],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 47.5617,
+        "maxLat": 47.6642,
+        "minLon": 3.6793,
+        "maxLon": 3.7845
+      },
+      "totalPopulation": 3102,
+      "totalSurface": 15144
+    },
+    "89290": {
+      "communes": [
+        "Augy",
+        "Auxerre",
+        "Champs-sur-Yonne",
+        "Escolives-Sainte-Camille",
+        "Irancy",
+        "Jussy",
+        "Quenne",
+        "Venoy",
+        "Vincelles",
+        "Vincelottes"
+      ],
+      "communeCount": 10,
+      "center": [3.5791, 47.7885],
+      "coverageRadius": 10.6,
+      "boundingBox": {
+        "minLat": 47.7033,
+        "maxLat": 47.8061,
+        "minLon": 3.5705,
+        "maxLon": 3.6653
+      },
+      "totalPopulation": 42473,
+      "totalSurface": 13296
+    },
+    "89300": {
+      "communes": ["Champlay", "Chamvres", "Joigny", "Looze", "Paroy-sur-Tholon", "Saint-Aubin-sur-Yonne", "Villecien"],
+      "communeCount": 7,
+      "center": [3.3972, 47.9792],
+      "coverageRadius": 6,
+      "boundingBox": {
+        "minLat": 47.9512,
+        "maxLat": 48.0062,
+        "minLon": 3.3287,
+        "maxLon": 3.4392
+      },
+      "totalPopulation": 11986,
+      "totalSurface": 10106
+    },
+    "89310": {
+      "communes": [
+        "Annay-sur-Serein",
+        "Censy",
+        "Châtel-Gérard",
+        "Étivey",
+        "Fresnes",
+        "Grimault",
+        "Jouancy",
+        "Môlay",
+        "Moulins-en-Tonnerrois",
+        "Nitry",
+        "Noyers",
+        "Pasilly",
+        "Poilly-sur-Serein",
+        "Sainte-Vertu",
+        "Sarry"
+      ],
+      "communeCount": 15,
+      "center": [3.9882, 47.6979],
+      "coverageRadius": 12,
+      "boundingBox": {
+        "minLat": 47.6317,
+        "maxLat": 47.7648,
+        "minLon": 3.8781,
+        "maxLon": 4.1447
+      },
+      "totalPopulation": 2507,
+      "totalSurface": 29442
+    },
+    "89320": {
+      "communes": [
+        "Arces-Dilo",
+        "Cérilly",
+        "Cerisiers",
+        "Coulours",
+        "Fournaudin",
+        "Noé",
+        "Les Vallées de la Vanne",
+        "Vaudeurs",
+        "Vaumort",
+        "Villechétive",
+        "Villiers-Louis"
+      ],
+      "communeCount": 11,
+      "center": [3.4833, 48.1447],
+      "coverageRadius": 11.8,
+      "boundingBox": {
+        "minLat": 48.0911,
+        "maxLat": 48.1904,
+        "minLon": 3.402,
+        "maxLon": 3.6411
+      },
+      "totalPopulation": 5049,
+      "totalSurface": 19278
+    },
+    "89330": {
+      "communes": [
+        "Piffonds",
+        "Saint-Julien-du-Sault",
+        "Saint-Loup-d'Ordon",
+        "Saint-Martin-d'Ordon",
+        "Verlin",
+        "Villevallier"
+      ],
+      "communeCount": 6,
+      "center": [3.2519, 48.0309],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 48.0152,
+        "maxLat": 48.0547,
+        "minLon": 3.1467,
+        "maxLon": 3.3154
+      },
+      "totalPopulation": 4282,
+      "totalSurface": 9966
+    },
+    "89340": {
+      "communes": ["Champigny", "Chaumont", "Saint-Agnan", "Villeblevin", "Villeneuve-la-Guyard"],
+      "communeCount": 5,
+      "center": [3.085, 48.3273],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 48.3054,
+        "maxLat": 48.3403,
+        "minLon": 3.0508,
+        "maxLon": 3.1276
+      },
+      "totalPopulation": 9003,
+      "totalSurface": 6770
+    },
+    "89350": {
+      "communes": ["Champignelles", "Tannerre-en-Puisaye", "Villeneuve-les-Genêts"],
+      "communeCount": 3,
+      "center": [3.0865, 47.7625],
+      "coverageRadius": 4.7,
+      "boundingBox": {
+        "minLat": 47.7331,
+        "maxLat": 47.78,
+        "minLon": 3.0714,
+        "maxLon": 3.1301
+      },
+      "totalPopulation": 1475,
+      "totalSurface": 10776
+    },
+    "89360": {
+      "communes": [
+        "Bernouil",
+        "Butteaux",
+        "Carisey",
+        "Dyé",
+        "Flogny-la-Chapelle",
+        "Jaulges",
+        "Percey",
+        "Villiers-Vineux"
+      ],
+      "communeCount": 8,
+      "center": [3.8432, 47.9468],
+      "coverageRadius": 6.5,
+      "boundingBox": {
+        "minLat": 47.8995,
+        "maxLat": 47.9794,
+        "minLon": 3.7871,
+        "maxLon": 3.8927
+      },
+      "totalPopulation": 2842,
+      "totalSurface": 9753
+    },
+    "89380": {
+      "communes": ["Appoigny"],
+      "communeCount": 1,
+      "center": [3.5262, 47.8769],
+      "coverageRadius": 2.67,
+      "totalPopulation": 3133,
+      "totalSurface": 2238
+    },
+    "89390": {
+      "communes": ["Aisy-sur-Armançon", "Cry", "Nuits", "Perrigny-sur-Armançon", "Ravières"],
+      "communeCount": 5,
+      "center": [4.2262, 47.7177],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 47.6683,
+        "maxLat": 47.7346,
+        "minLon": 4.2137,
+        "maxLon": 4.2394
+      },
+      "totalPopulation": 1619,
+      "totalSurface": 7710
+    },
+    "89400": {
+      "communes": [
+        "Bassou",
+        "Bonnard",
+        "Brion",
+        "Bussy-en-Othe",
+        "Charmoy",
+        "Cheny",
+        "Chichery",
+        "Épineau-les-Voves",
+        "Laroche-Saint-Cydroine",
+        "Migennes",
+        "Ormoy"
+      ],
+      "communeCount": 11,
+      "center": [3.5162, 47.9581],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 47.902,
+        "maxLat": 48.0199,
+        "minLon": 3.4717,
+        "maxLon": 3.5728
+      },
+      "totalPopulation": 16313,
+      "totalSurface": 15203
+    },
+    "89410": {
+      "communes": ["Béon", "Cézy"],
+      "communeCount": 2,
+      "center": [3.3345, 47.9812],
+      "coverageRadius": 2.9,
+      "boundingBox": {
+        "minLat": 47.9569,
+        "maxLat": 47.993,
+        "minLon": 3.3222,
+        "maxLon": 3.3405
+      },
+      "totalPopulation": 1605,
+      "totalSurface": 3176
+    },
+    "89420": {
+      "communes": [
+        "Bierry-les-Belles-Fontaines",
+        "Cussy-les-Forges",
+        "Guillon-Terre-Plaine",
+        "Marmeaux",
+        "Montréal",
+        "Pisy",
+        "Saint-André-en-Terre-Plaine",
+        "Sainte-Magnance",
+        "Santigny",
+        "Sauvigny-le-Beuréal",
+        "Savigny-en-Terre-Plaine",
+        "Talcy",
+        "Thizy",
+        "Vassy-sous-Pisy"
+      ],
+      "communeCount": 14,
+      "center": [4.0821, 47.5119],
+      "coverageRadius": 12.4,
+      "boundingBox": {
+        "minLat": 47.4498,
+        "maxLat": 47.5971,
+        "minLon": 4.027,
+        "maxLon": 4.1868
+      },
+      "totalPopulation": 2786,
+      "totalSurface": 19721
+    },
+    "89430": {
+      "communes": ["Baon", "Mélisey", "Rugny", "Tanlay", "Thorey", "Trichey"],
+      "communeCount": 6,
+      "center": [4.0922, 47.8669],
+      "coverageRadius": 8,
+      "boundingBox": {
+        "minLat": 47.8472,
+        "maxLat": 47.9307,
+        "minLon": 4.0774,
+        "maxLon": 4.1471
+      },
+      "totalPopulation": 1337,
+      "totalSurface": 9705
+    },
+    "89440": {
+      "communes": [
+        "Angely",
+        "Annoux",
+        "Athie",
+        "Blacy",
+        "Coutarnoux",
+        "Dissangis",
+        "L'Isle-sur-Serein",
+        "Joux-la-Ville",
+        "Massangis",
+        "Précy-le-Sec",
+        "Sainte-Colombe"
+      ],
+      "communeCount": 11,
+      "center": [3.937, 47.6002],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 47.5385,
+        "maxLat": 47.6255,
+        "minLon": 3.8318,
+        "maxLon": 4.0508
+      },
+      "totalPopulation": 3307,
+      "totalSurface": 17112
+    },
+    "89450": {
+      "communes": [
+        "Asquins",
+        "Domecy-sur-Cure",
+        "Foissy-lès-Vézelay",
+        "Fontenay-près-Vézelay",
+        "Menades",
+        "Pierre-Perthuis",
+        "Saint-Père",
+        "Tharoiseau",
+        "Vézelay"
+      ],
+      "communeCount": 9,
+      "center": [3.7717, 47.449],
+      "coverageRadius": 4.7,
+      "boundingBox": {
+        "minLat": 47.4143,
+        "maxLat": 47.4811,
+        "minLon": 3.7463,
+        "maxLon": 3.8231
+      },
+      "totalPopulation": 1908,
+      "totalSurface": 11828
+    },
+    "89460": {
+      "communes": ["Bazarnes", "Deux Rivières", "Prégilbert", "Sainte-Pallaye", "Trucy-sur-Yonne"],
+      "communeCount": 5,
+      "center": [3.6805, 47.6701],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": 47.6292,
+        "maxLat": 47.684,
+        "minLon": 3.6605,
+        "maxLon": 3.6911
+      },
+      "totalPopulation": 2097,
+      "totalSurface": 7053
+    },
+    "89470": {
+      "communes": ["Monéteau"],
+      "communeCount": 1,
+      "center": [3.5793, 47.85],
+      "coverageRadius": 2.43,
+      "totalPopulation": 4113,
+      "totalSurface": 1859
+    },
+    "89480": {
+      "communes": ["Andryes", "Coulanges-sur-Yonne", "Crain", "Étais-la-Sauvin", "Festigny", "Lucy-sur-Yonne"],
+      "communeCount": 6,
+      "center": [3.4778, 47.5203],
+      "coverageRadius": 10.3,
+      "boundingBox": {
+        "minLat": 47.5039,
+        "maxLat": 47.5542,
+        "minLon": 3.3431,
+        "maxLon": 3.5831
+      },
+      "totalPopulation": 2202,
+      "totalSurface": 10876
+    },
+    "89500": {
+      "communes": [
+        "Armeau",
+        "Les Bordes",
+        "Bussy-le-Repos",
+        "Chaumot",
+        "Cornant",
+        "Dixmont",
+        "Égriselles-le-Bocage",
+        "Marsangy",
+        "Rousson",
+        "Villeneuve-sur-Yonne"
+      ],
+      "communeCount": 10,
+      "center": [3.2821, 48.0895],
+      "coverageRadius": 9.9,
+      "boundingBox": {
+        "minLat": 48.0447,
+        "maxLat": 48.1328,
+        "minLon": 3.1831,
+        "maxLon": 3.4146
+      },
+      "totalPopulation": 11491,
+      "totalSurface": 19913
+    },
+    "89510": {
+      "communes": ["Étigny", "Passy", "Véron"],
+      "communeCount": 3,
+      "center": [3.3017, 48.1283],
+      "coverageRadius": 2.1,
+      "boundingBox": {
+        "minLat": 48.1104,
+        "maxLat": 48.1341,
+        "minLon": 3.2886,
+        "maxLon": 3.3066
+      },
+      "totalPopulation": 2934,
+      "totalSurface": 2856
+    },
+    "89520": {
+      "communes": [
+        "Fontenoy",
+        "Lainsecq",
+        "Levis",
+        "Moutiers-en-Puisaye",
+        "Sainpuits",
+        "Saints-en-Puisaye",
+        "Saint-Sauveur-en-Puisaye",
+        "Sougères-en-Puisaye",
+        "Thury",
+        "Treigny-Perreuse-Sainte-Colombe"
+      ],
+      "communeCount": 10,
+      "center": [3.2393, 47.5888],
+      "coverageRadius": 9.7,
+      "boundingBox": {
+        "minLat": 47.5184,
+        "maxLat": 47.6532,
+        "minLon": 3.1758,
+        "maxLon": 3.3295
+      },
+      "totalPopulation": 4652,
+      "totalSurface": 28413
+    },
+    "89530": {
+      "communes": ["Chitry", "Saint-Bris-le-Vineux"],
+      "communeCount": 2,
+      "center": [3.6614, 47.7487],
+      "coverageRadius": 3.5,
+      "boundingBox": {
+        "minLat": 47.744,
+        "maxLat": 47.7627,
+        "minLon": 3.6475,
+        "maxLon": 3.7023
+      },
+      "totalPopulation": 1372,
+      "totalSurface": 4646
+    },
+    "89550": {
+      "communes": ["Héry"],
+      "communeCount": 1,
+      "center": [3.6265, 47.9036],
+      "coverageRadius": 2.61,
+      "totalPopulation": 1789,
+      "totalSurface": 2136
+    },
+    "89560": {
+      "communes": [
+        "Courson-les-Carrières",
+        "Druyes-les-Belles-Fontaines",
+        "Fouronnes",
+        "Lain",
+        "Merry-Sec",
+        "Mouffy",
+        "Ouanne",
+        "Sementron",
+        "Les Hauts de Forterre"
+      ],
+      "communeCount": 9,
+      "center": [3.4511, 47.6227],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 47.5474,
+        "maxLat": 47.6617,
+        "minLon": 3.3452,
+        "maxLon": 3.5683
+      },
+      "totalPopulation": 3005,
+      "totalSurface": 20533
+    },
+    "89570": {
+      "communes": ["Beugnon", "Lasson", "Neuvy-Sautour", "Sormery", "Soumaintrain", "Turny"],
+      "communeCount": 6,
+      "center": [3.7828, 48.0436],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 48.0179,
+        "maxLat": 48.0897,
+        "minLon": 3.7462,
+        "maxLon": 3.8291
+      },
+      "totalPopulation": 2557,
+      "totalSurface": 10095
+    },
+    "89580": {
+      "communes": [
+        "Charentenay",
+        "Coulangeron",
+        "Coulanges-la-Vineuse",
+        "Gy-l'Évêque",
+        "Migé",
+        "Val-de-Mercy",
+        "Vallan"
+      ],
+      "communeCount": 7,
+      "center": [3.5525, 47.7004],
+      "coverageRadius": 6.4,
+      "boundingBox": {
+        "minLat": 47.6502,
+        "maxLat": 47.7439,
+        "minLon": 3.4722,
+        "maxLon": 3.5881
+      },
+      "totalPopulation": 3173,
+      "totalSurface": 8924
+    },
+    "89600": {
+      "communes": ["Chéu", "Germigny", "Saint-Florentin", "Vergigny"],
+      "communeCount": 4,
+      "center": [3.733, 47.9915],
+      "coverageRadius": 3.9,
+      "boundingBox": {
+        "minLat": 47.9655,
+        "maxLat": 48.0017,
+        "minLon": 3.7187,
+        "maxLon": 3.7828
+      },
+      "totalPopulation": 6794,
+      "totalSurface": 8157
+    },
+    "89630": {
+      "communes": [
+        "Beauvilliers",
+        "Bussières",
+        "Chastellux-sur-Cure",
+        "Quarré-les-Tombes",
+        "Saint-Brancher",
+        "Saint-Germain-des-Champs",
+        "Saint-Léger-Vauban"
+      ],
+      "communeCount": 7,
+      "center": [3.9892, 47.3943],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 47.3689,
+        "maxLat": 47.4254,
+        "minLon": 3.8873,
+        "maxLon": 4.0536
+      },
+      "totalPopulation": 1916,
+      "totalSurface": 16778
+    },
+    "89660": {
+      "communes": [
+        "Asnières-sous-Bois",
+        "Bois-d'Arcy",
+        "Brosses",
+        "Chamoux",
+        "Châtel-Censoir",
+        "Fontenay-sous-Fouronnes",
+        "Lichères-sur-Yonne",
+        "Mailly-le-Château",
+        "Merry-sur-Yonne",
+        "Montillot"
+      ],
+      "communeCount": 10,
+      "center": [3.6541, 47.5461],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 47.4565,
+        "maxLat": 47.6164,
+        "minLon": 3.5923,
+        "maxLon": 3.7225
+      },
+      "totalPopulation": 2160,
+      "totalSurface": 18429
+    },
+    "89690": {
+      "communes": ["Chéroy"],
+      "communeCount": 1,
+      "center": [2.9953, 48.2007],
+      "coverageRadius": 1.83,
+      "totalPopulation": 1763,
+      "totalSurface": 1051
+    },
+    "89700": {
+      "communes": [
+        "Béru",
+        "Cheney",
+        "Collan",
+        "Dannemoine",
+        "Épineuil",
+        "Junay",
+        "Molosmes",
+        "Roffey",
+        "Saint-Martin-sur-Armançon",
+        "Serrigny",
+        "Tissey",
+        "Tonnerre",
+        "Tronchoy",
+        "Vézannes",
+        "Vézinnes",
+        "Viviers",
+        "Yrouerre"
+      ],
+      "communeCount": 17,
+      "center": [3.9659, 47.8632],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 47.7943,
+        "maxLat": 47.9176,
+        "minLon": 3.8741,
+        "maxLon": 4.0685
+      },
+      "totalPopulation": 7028,
+      "totalSurface": 20959
+    },
+    "89710": {
+      "communes": ["Montholon", "Senan"],
+      "communeCount": 2,
+      "center": [3.3521, 47.8821],
+      "coverageRadius": 3.3,
+      "boundingBox": {
+        "minLat": 47.8748,
+        "maxLat": 47.9113,
+        "minLon": 3.3503,
+        "maxLon": 3.3591
+      },
+      "totalPopulation": 3410,
+      "totalSurface": 6766
+    },
+    "89740": {
+      "communes": ["Arthonnay", "Cruzy-le-Châtel", "Gland", "Pimelles", "Quincerot", "Villon"],
+      "communeCount": 6,
+      "center": [4.206, 47.8868],
+      "coverageRadius": 7.3,
+      "boundingBox": {
+        "minLat": 47.822,
+        "maxLat": 47.9408,
+        "minLon": 4.1628,
+        "maxLon": 4.2296
+      },
+      "totalPopulation": 640,
+      "totalSurface": 13128
+    },
+    "89770": {
+      "communes": ["Bœurs-en-Othe", "Chailley"],
+      "communeCount": 2,
+      "center": [3.7028, 48.1044],
+      "coverageRadius": 3.8,
+      "boundingBox": {
+        "minLat": 48.0827,
+        "maxLat": 48.1383,
+        "minLon": 3.7014,
+        "maxLon": 3.705
+      },
+      "totalPopulation": 862,
+      "totalSurface": 3923
+    },
+    "89800": {
+      "communes": [
+        "Aigremont",
+        "Beine",
+        "Chablis",
+        "La Chapelle-Vaupelteigne",
+        "Chemilly-sur-Serein",
+        "Chichée",
+        "Courgis",
+        "Fleys",
+        "Fontenay-près-Chablis",
+        "Lichères-près-Aigremont",
+        "Lignorelles",
+        "Maligny",
+        "Préhy",
+        "Saint-Cyr-les-Colons",
+        "Villy"
+      ],
+      "communeCount": 15,
+      "center": [3.7851, 47.8111],
+      "coverageRadius": 12.9,
+      "boundingBox": {
+        "minLat": 47.7191,
+        "maxLat": 47.8694,
+        "minLon": 3.7229,
+        "maxLon": 3.8899
+      },
+      "totalPopulation": 5577,
+      "totalSurface": 23208
+    }
+  }
+}

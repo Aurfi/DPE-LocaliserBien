@@ -1,0 +1,37 @@
+{
+  "departmentCode": "977",
+  "departmentName": "Département 977",
+  "stats": {
+    "communeCount": 1,
+    "totalPopulation": 10656,
+    "totalSurface": 2082
+  },
+  "communes": [
+    {
+      "nom": "Saint-Barthélemy",
+      "code": "97701",
+      "codesPostaux": ["97133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-62.8701, 17.9215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-62.8116, 17.9036]
+      },
+      "population": 10656,
+      "surface": 2081.57,
+      "radius": 2.57
+    }
+  ],
+  "postalCodes": {
+    "97133": {
+      "communes": ["Saint-Barthélemy"],
+      "communeCount": 1,
+      "center": [-62.8116, 17.9036],
+      "coverageRadius": 2.57,
+      "totalPopulation": 10656,
+      "totalSurface": 2082
+    }
+  }
+}

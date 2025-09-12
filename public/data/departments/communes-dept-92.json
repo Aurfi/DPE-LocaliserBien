@@ -1,0 +1,885 @@
+{
+  "departmentCode": "92",
+  "departmentName": "Hauts-de-Seine",
+  "stats": {
+    "communeCount": 36,
+    "totalPopulation": 1647435,
+    "totalSurface": 17546
+  },
+  "communes": [
+    {
+      "nom": "Antony",
+      "code": "92002",
+      "codesPostaux": ["92160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2976, 48.7507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2957, 48.7537]
+      },
+      "population": 64026,
+      "surface": 956.17,
+      "radius": 1.74
+    },
+    {
+      "nom": "Asnières-sur-Seine",
+      "code": "92004",
+      "codesPostaux": ["92600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2935, 48.9181]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2889, 48.9107]
+      },
+      "population": 91457,
+      "surface": 482.12,
+      "radius": 1.24
+    },
+    {
+      "nom": "Bagneux",
+      "code": "92007",
+      "codesPostaux": ["92220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3093, 48.798]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3039, 48.7993]
+      },
+      "population": 43647,
+      "surface": 418.4,
+      "radius": 1.15
+    },
+    {
+      "nom": "Bois-Colombes",
+      "code": "92009",
+      "codesPostaux": ["92270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2688, 48.9151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2678, 48.9143]
+      },
+      "population": 29376,
+      "surface": 192.51,
+      "radius": 0.78
+    },
+    {
+      "nom": "Boulogne-Billancourt",
+      "code": "92012",
+      "codesPostaux": ["92100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2429, 48.8375]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2406, 48.836]
+      },
+      "population": 120205,
+      "surface": 615.22,
+      "radius": 1.4
+    },
+    {
+      "nom": "Bourg-la-Reine",
+      "code": "92014",
+      "codesPostaux": ["92340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3167, 48.7801]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3159, 48.7789]
+      },
+      "population": 21140,
+      "surface": 185.83,
+      "radius": 0.77
+    },
+    {
+      "nom": "Châtenay-Malabry",
+      "code": "92019",
+      "codesPostaux": ["92290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2603, 48.7697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2777, 48.7674]
+      },
+      "population": 35490,
+      "surface": 636.5,
+      "radius": 1.42
+    },
+    {
+      "nom": "Châtillon",
+      "code": "92020",
+      "codesPostaux": ["92320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2887, 48.8031]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2898, 48.7996]
+      },
+      "population": 36224,
+      "surface": 292.37,
+      "radius": 0.96
+    },
+    {
+      "nom": "Chaville",
+      "code": "92022",
+      "codesPostaux": ["92370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.191, 48.8091]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1883, 48.81]
+      },
+      "population": 20198,
+      "surface": 357.45,
+      "radius": 1.07
+    },
+    {
+      "nom": "Clamart",
+      "code": "92023",
+      "codesPostaux": ["92140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2518, 48.7957]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2629, 48.8007]
+      },
+      "population": 56882,
+      "surface": 875.91,
+      "radius": 1.67
+    },
+    {
+      "nom": "Clichy",
+      "code": "92024",
+      "codesPostaux": ["92110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3041, 48.9041]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3049, 48.9028]
+      },
+      "population": 65102,
+      "surface": 307.94,
+      "radius": 0.99
+    },
+    {
+      "nom": "Colombes",
+      "code": "92025",
+      "codesPostaux": ["92700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2469, 48.9218]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2544, 48.9225]
+      },
+      "population": 90692,
+      "surface": 777.84,
+      "radius": 1.57
+    },
+    {
+      "nom": "Courbevoie",
+      "code": "92026",
+      "codesPostaux": ["92400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2574, 48.8976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.255, 48.8954]
+      },
+      "population": 81945,
+      "surface": 416.04,
+      "radius": 1.15
+    },
+    {
+      "nom": "Fontenay-aux-Roses",
+      "code": "92032",
+      "codesPostaux": ["92260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2876, 48.7895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2865, 48.7912]
+      },
+      "population": 24586,
+      "surface": 253.04,
+      "radius": 0.9
+    },
+    {
+      "nom": "Garches",
+      "code": "92033",
+      "codesPostaux": ["92380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1861, 48.8469]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1877, 48.8435]
+      },
+      "population": 17705,
+      "surface": 272.07,
+      "radius": 0.93
+    },
+    {
+      "nom": "Gennevilliers",
+      "code": "92036",
+      "codesPostaux": ["92230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.288, 48.9319]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2933, 48.9255]
+      },
+      "population": 50874,
+      "surface": 1162.71,
+      "radius": 1.92
+    },
+    {
+      "nom": "Issy-les-Moulineaux",
+      "code": "92040",
+      "codesPostaux": ["92130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2628, 48.824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2738, 48.8245]
+      },
+      "population": 67695,
+      "surface": 424.49,
+      "radius": 1.16
+    },
+    {
+      "nom": "La Garenne-Colombes",
+      "code": "92035",
+      "codesPostaux": ["92250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2437, 48.9071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2466, 48.907]
+      },
+      "population": 29828,
+      "surface": 178.12,
+      "radius": 0.75
+    },
+    {
+      "nom": "Le Plessis-Robinson",
+      "code": "92060",
+      "codesPostaux": ["92350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2592, 48.7815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2622, 48.7821]
+      },
+      "population": 28893,
+      "surface": 340.7,
+      "radius": 1.04
+    },
+    {
+      "nom": "Levallois-Perret",
+      "code": "92044",
+      "codesPostaux": ["92300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2874, 48.8946]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2877, 48.8928]
+      },
+      "population": 68412,
+      "surface": 241.57,
+      "radius": 0.88
+    },
+    {
+      "nom": "Malakoff",
+      "code": "92046",
+      "codesPostaux": ["92240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2943, 48.817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3016, 48.8208]
+      },
+      "population": 30183,
+      "surface": 207.15,
+      "radius": 0.81
+    },
+    {
+      "nom": "Marnes-la-Coquette",
+      "code": "92047",
+      "codesPostaux": ["92430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1689, 48.8286]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1775, 48.8302]
+      },
+      "population": 1758,
+      "surface": 347.42,
+      "radius": 1.05
+    },
+    {
+      "nom": "Meudon",
+      "code": "92048",
+      "codesPostaux": ["92190", "92360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2288, 48.8028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2386, 48.813]
+      },
+      "population": 46722,
+      "surface": 994.19,
+      "radius": 1.78
+    },
+    {
+      "nom": "Montrouge",
+      "code": "92049",
+      "codesPostaux": ["92120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3163, 48.8159]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3205, 48.8188]
+      },
+      "population": 46273,
+      "surface": 207.06,
+      "radius": 0.81
+    },
+    {
+      "nom": "Nanterre",
+      "code": "92050",
+      "codesPostaux": ["92000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2018, 48.8974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2072, 48.892]
+      },
+      "population": 98119,
+      "surface": 1222.48,
+      "radius": 1.97
+    },
+    {
+      "nom": "Neuilly-sur-Seine",
+      "code": "92051",
+      "codesPostaux": ["92200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2651, 48.8862]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2697, 48.8848]
+      },
+      "population": 59200,
+      "surface": 371.71,
+      "radius": 1.09
+    },
+    {
+      "nom": "Puteaux",
+      "code": "92062",
+      "codesPostaux": ["92800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2384, 48.8824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2382, 48.8841]
+      },
+      "population": 44198,
+      "surface": 318.99,
+      "radius": 1.01
+    },
+    {
+      "nom": "Rueil-Malmaison",
+      "code": "92063",
+      "codesPostaux": ["92500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1806, 48.8717]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1806, 48.8779]
+      },
+      "population": 80842,
+      "surface": 1452.83,
+      "radius": 2.15
+    },
+    {
+      "nom": "Saint-Cloud",
+      "code": "92064",
+      "codesPostaux": ["92210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2032, 48.844]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2191, 48.8438]
+      },
+      "population": 29859,
+      "surface": 750.91,
+      "radius": 1.55
+    },
+    {
+      "nom": "Sceaux",
+      "code": "92071",
+      "codesPostaux": ["92330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2963, 48.776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2884, 48.7796]
+      },
+      "population": 20740,
+      "surface": 359.74,
+      "radius": 1.07
+    },
+    {
+      "nom": "Sèvres",
+      "code": "92072",
+      "codesPostaux": ["92310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2056, 48.8223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2126, 48.8247]
+      },
+      "population": 22782,
+      "surface": 392.74,
+      "radius": 1.12
+    },
+    {
+      "nom": "Suresnes",
+      "code": "92073",
+      "codesPostaux": ["92150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2183, 48.871]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2251, 48.8711]
+      },
+      "population": 48932,
+      "surface": 379.65,
+      "radius": 1.1
+    },
+    {
+      "nom": "Vanves",
+      "code": "92075",
+      "codesPostaux": ["92170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2869, 48.8214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2895, 48.8214]
+      },
+      "population": 28507,
+      "surface": 155.5,
+      "radius": 0.7
+    },
+    {
+      "nom": "Vaucresson",
+      "code": "92076",
+      "codesPostaux": ["92420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1628, 48.8377]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.158, 48.8394]
+      },
+      "population": 8506,
+      "surface": 309.44,
+      "radius": 0.99
+    },
+    {
+      "nom": "Ville-d'Avray",
+      "code": "92077",
+      "codesPostaux": ["92410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1759, 48.8215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1895, 48.8284]
+      },
+      "population": 10871,
+      "surface": 369.08,
+      "radius": 1.08
+    },
+    {
+      "nom": "Villeneuve-la-Garenne",
+      "code": "92078",
+      "codesPostaux": ["92390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3231, 48.9354]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3332, 48.9359]
+      },
+      "population": 25566,
+      "surface": 320.02,
+      "radius": 1.01
+    }
+  ],
+  "postalCodes": {
+    "92000": {
+      "communes": ["Nanterre"],
+      "communeCount": 1,
+      "center": [2.2072, 48.892],
+      "coverageRadius": 1.97,
+      "totalPopulation": 98119,
+      "totalSurface": 1222
+    },
+    "92100": {
+      "communes": ["Boulogne-Billancourt"],
+      "communeCount": 1,
+      "center": [2.2406, 48.836],
+      "coverageRadius": 1.4,
+      "totalPopulation": 120205,
+      "totalSurface": 615
+    },
+    "92110": {
+      "communes": ["Clichy"],
+      "communeCount": 1,
+      "center": [2.3049, 48.9028],
+      "coverageRadius": 0.99,
+      "totalPopulation": 65102,
+      "totalSurface": 308
+    },
+    "92120": {
+      "communes": ["Montrouge"],
+      "communeCount": 1,
+      "center": [2.3205, 48.8188],
+      "coverageRadius": 0.81,
+      "totalPopulation": 46273,
+      "totalSurface": 207
+    },
+    "92130": {
+      "communes": ["Issy-les-Moulineaux"],
+      "communeCount": 1,
+      "center": [2.2738, 48.8245],
+      "coverageRadius": 1.16,
+      "totalPopulation": 67695,
+      "totalSurface": 424
+    },
+    "92140": {
+      "communes": ["Clamart"],
+      "communeCount": 1,
+      "center": [2.2629, 48.8007],
+      "coverageRadius": 1.67,
+      "totalPopulation": 56882,
+      "totalSurface": 876
+    },
+    "92150": {
+      "communes": ["Suresnes"],
+      "communeCount": 1,
+      "center": [2.2251, 48.8711],
+      "coverageRadius": 1.1,
+      "totalPopulation": 48932,
+      "totalSurface": 380
+    },
+    "92160": {
+      "communes": ["Antony"],
+      "communeCount": 1,
+      "center": [2.2957, 48.7537],
+      "coverageRadius": 1.74,
+      "totalPopulation": 64026,
+      "totalSurface": 956
+    },
+    "92170": {
+      "communes": ["Vanves"],
+      "communeCount": 1,
+      "center": [2.2895, 48.8214],
+      "coverageRadius": 0.7,
+      "totalPopulation": 28507,
+      "totalSurface": 156
+    },
+    "92190": {
+      "communes": ["Meudon"],
+      "communeCount": 1,
+      "center": [2.2386, 48.813],
+      "coverageRadius": 1.78,
+      "totalPopulation": 46722,
+      "totalSurface": 994
+    },
+    "92200": {
+      "communes": ["Neuilly-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.2697, 48.8848],
+      "coverageRadius": 1.09,
+      "totalPopulation": 59200,
+      "totalSurface": 372
+    },
+    "92210": {
+      "communes": ["Saint-Cloud"],
+      "communeCount": 1,
+      "center": [2.2191, 48.8438],
+      "coverageRadius": 1.55,
+      "totalPopulation": 29859,
+      "totalSurface": 751
+    },
+    "92220": {
+      "communes": ["Bagneux"],
+      "communeCount": 1,
+      "center": [2.3039, 48.7993],
+      "coverageRadius": 1.15,
+      "totalPopulation": 43647,
+      "totalSurface": 418
+    },
+    "92230": {
+      "communes": ["Gennevilliers"],
+      "communeCount": 1,
+      "center": [2.2933, 48.9255],
+      "coverageRadius": 1.92,
+      "totalPopulation": 50874,
+      "totalSurface": 1163
+    },
+    "92240": {
+      "communes": ["Malakoff"],
+      "communeCount": 1,
+      "center": [2.3016, 48.8208],
+      "coverageRadius": 0.81,
+      "totalPopulation": 30183,
+      "totalSurface": 207
+    },
+    "92250": {
+      "communes": ["La Garenne-Colombes"],
+      "communeCount": 1,
+      "center": [2.2466, 48.907],
+      "coverageRadius": 0.75,
+      "totalPopulation": 29828,
+      "totalSurface": 178
+    },
+    "92260": {
+      "communes": ["Fontenay-aux-Roses"],
+      "communeCount": 1,
+      "center": [2.2865, 48.7912],
+      "coverageRadius": 0.9,
+      "totalPopulation": 24586,
+      "totalSurface": 253
+    },
+    "92270": {
+      "communes": ["Bois-Colombes"],
+      "communeCount": 1,
+      "center": [2.2678, 48.9143],
+      "coverageRadius": 0.78,
+      "totalPopulation": 29376,
+      "totalSurface": 193
+    },
+    "92290": {
+      "communes": ["Châtenay-Malabry"],
+      "communeCount": 1,
+      "center": [2.2777, 48.7674],
+      "coverageRadius": 1.42,
+      "totalPopulation": 35490,
+      "totalSurface": 637
+    },
+    "92300": {
+      "communes": ["Levallois-Perret"],
+      "communeCount": 1,
+      "center": [2.2877, 48.8928],
+      "coverageRadius": 0.88,
+      "totalPopulation": 68412,
+      "totalSurface": 242
+    },
+    "92310": {
+      "communes": ["Sèvres"],
+      "communeCount": 1,
+      "center": [2.2126, 48.8247],
+      "coverageRadius": 1.12,
+      "totalPopulation": 22782,
+      "totalSurface": 393
+    },
+    "92320": {
+      "communes": ["Châtillon"],
+      "communeCount": 1,
+      "center": [2.2898, 48.7996],
+      "coverageRadius": 0.96,
+      "totalPopulation": 36224,
+      "totalSurface": 292
+    },
+    "92330": {
+      "communes": ["Sceaux"],
+      "communeCount": 1,
+      "center": [2.2884, 48.7796],
+      "coverageRadius": 1.07,
+      "totalPopulation": 20740,
+      "totalSurface": 360
+    },
+    "92340": {
+      "communes": ["Bourg-la-Reine"],
+      "communeCount": 1,
+      "center": [2.3159, 48.7789],
+      "coverageRadius": 0.77,
+      "totalPopulation": 21140,
+      "totalSurface": 186
+    },
+    "92350": {
+      "communes": ["Le Plessis-Robinson"],
+      "communeCount": 1,
+      "center": [2.2622, 48.7821],
+      "coverageRadius": 1.04,
+      "totalPopulation": 28893,
+      "totalSurface": 341
+    },
+    "92360": {
+      "communes": ["Meudon"],
+      "communeCount": 1,
+      "center": [2.2386, 48.813],
+      "coverageRadius": 1.78,
+      "totalPopulation": 46722,
+      "totalSurface": 994
+    },
+    "92370": {
+      "communes": ["Chaville"],
+      "communeCount": 1,
+      "center": [2.1883, 48.81],
+      "coverageRadius": 1.07,
+      "totalPopulation": 20198,
+      "totalSurface": 357
+    },
+    "92380": {
+      "communes": ["Garches"],
+      "communeCount": 1,
+      "center": [2.1877, 48.8435],
+      "coverageRadius": 0.93,
+      "totalPopulation": 17705,
+      "totalSurface": 272
+    },
+    "92390": {
+      "communes": ["Villeneuve-la-Garenne"],
+      "communeCount": 1,
+      "center": [2.3332, 48.9359],
+      "coverageRadius": 1.01,
+      "totalPopulation": 25566,
+      "totalSurface": 320
+    },
+    "92400": {
+      "communes": ["Courbevoie"],
+      "communeCount": 1,
+      "center": [2.255, 48.8954],
+      "coverageRadius": 1.15,
+      "totalPopulation": 81945,
+      "totalSurface": 416
+    },
+    "92410": {
+      "communes": ["Ville-d'Avray"],
+      "communeCount": 1,
+      "center": [2.1895, 48.8284],
+      "coverageRadius": 1.08,
+      "totalPopulation": 10871,
+      "totalSurface": 369
+    },
+    "92420": {
+      "communes": ["Vaucresson"],
+      "communeCount": 1,
+      "center": [2.158, 48.8394],
+      "coverageRadius": 0.99,
+      "totalPopulation": 8506,
+      "totalSurface": 309
+    },
+    "92430": {
+      "communes": ["Marnes-la-Coquette"],
+      "communeCount": 1,
+      "center": [2.1775, 48.8302],
+      "coverageRadius": 1.05,
+      "totalPopulation": 1758,
+      "totalSurface": 347
+    },
+    "92500": {
+      "communes": ["Rueil-Malmaison"],
+      "communeCount": 1,
+      "center": [2.1806, 48.8779],
+      "coverageRadius": 2.15,
+      "totalPopulation": 80842,
+      "totalSurface": 1453
+    },
+    "92600": {
+      "communes": ["Asnières-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.2889, 48.9107],
+      "coverageRadius": 1.24,
+      "totalPopulation": 91457,
+      "totalSurface": 482
+    },
+    "92700": {
+      "communes": ["Colombes"],
+      "communeCount": 1,
+      "center": [2.2544, 48.9225],
+      "coverageRadius": 1.57,
+      "totalPopulation": 90692,
+      "totalSurface": 778
+    },
+    "92800": {
+      "communes": ["Puteaux"],
+      "communeCount": 1,
+      "center": [2.2382, 48.8841],
+      "coverageRadius": 1.01,
+      "totalPopulation": 44198,
+      "totalSurface": 319
+    }
+  }
+}

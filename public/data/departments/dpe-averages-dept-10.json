@@ -1,0 +1,91 @@
+{
+  "department": "10",
+  "updateDate": "2025-09-11T05:20:10.744Z",
+  "dateRange": "2022-09-11 to present",
+  "surfaceRanges": [
+    {
+      "range": "15-35m²",
+      "count": 4477,
+      "avgSurface": 26,
+      "consumption": {
+        "total": 275,
+        "chauffage": 155,
+        "eau_chaude": 103
+      },
+      "ges": 21,
+      "acPercentage": 3
+    },
+    {
+      "range": "36-60m²",
+      "count": 10201,
+      "avgSurface": 49,
+      "consumption": {
+        "total": 223,
+        "chauffage": 147,
+        "eau_chaude": 59
+      },
+      "ges": 28,
+      "acPercentage": 2
+    },
+    {
+      "range": "61-90m²",
+      "count": 15682,
+      "avgSurface": 74,
+      "consumption": {
+        "total": 220,
+        "chauffage": 159,
+        "eau_chaude": 44
+      },
+      "ges": 28,
+      "acPercentage": 3
+    },
+    {
+      "range": "91-150m²",
+      "count": 7620,
+      "avgSurface": 111,
+      "consumption": {
+        "total": 236,
+        "chauffage": 187,
+        "eau_chaude": 36
+      },
+      "ges": 28,
+      "acPercentage": 9
+    },
+    {
+      "range": "151-250m²",
+      "count": 1747,
+      "avgSurface": 183,
+      "consumption": {
+        "total": 225,
+        "chauffage": 188,
+        "eau_chaude": 26
+      },
+      "ges": 31,
+      "acPercentage": 14
+    },
+    {
+      "range": "250m²+",
+      "count": 262,
+      "avgSurface": 308,
+      "consumption": {
+        "total": 220,
+        "chauffage": 190,
+        "eau_chaude": 21
+      },
+      "ges": 35,
+      "acPercentage": 19
+    }
+  ],
+  "overall": {
+    "range": "all",
+    "count": 40939,
+    "avgSurface": 76,
+    "consumption": {
+      "total": 227,
+      "chauffage": 168,
+      "eau_chaude": 44
+    },
+    "ges": 28,
+    "acPercentage": 5
+  }
+}

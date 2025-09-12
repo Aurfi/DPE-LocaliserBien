@@ -1,0 +1,67 @@
+# {{SITE_NAME}} Robots.txt
+# {{SITE_URL}}
+
+User-agent: *
+Allow: /$
+Allow: /informations
+Allow: /mentions-legales
+Disallow: /api/
+Disallow: /data/
+Disallow: /results/
+Disallow: /search/
+Disallow: /*.json$
+Disallow: /*.db$
+Disallow: /*.sqlite$
+Disallow: /*?*
+Crawl-delay: 2
+
+# Protect user searches and results
+Disallow: /*commune=*
+Disallow: /*surface=*
+Disallow: /*consommation=*
+Disallow: /*ges=*
+
+# Sitemap location
+Sitemap: {{SITE_URL}}/sitemap.xml
+
+# Major search engines - same rules apply
+User-agent: Googlebot
+Allow: /$
+Allow: /informations
+Allow: /mentions-legales
+Disallow: /api/
+Disallow: /data/
+Disallow: /results/
+Disallow: /search/
+Disallow: /*.json$
+Disallow: /*.db$
+Disallow: /*?*
+
+User-agent: Bingbot
+Allow: /$
+Allow: /informations
+Allow: /mentions-legales
+Disallow: /api/
+Disallow: /data/
+Disallow: /results/
+Disallow: /search/
+Disallow: /*.json$
+Disallow: /*.db$
+Disallow: /*?*
+Crawl-delay: 2
+
+# Block scraping bots completely
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /

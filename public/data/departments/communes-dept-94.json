@@ -1,0 +1,1137 @@
+{
+  "departmentCode": "94",
+  "departmentName": "Val-de-Marne",
+  "stats": {
+    "communeCount": 47,
+    "totalPopulation": 1419531,
+    "totalSurface": 24468
+  },
+  "communes": [
+    {
+      "nom": "Ablon-sur-Seine",
+      "code": "94001",
+      "codesPostaux": ["94480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4229, 48.7236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4219, 48.7249]
+      },
+      "population": 6029,
+      "surface": 114.16,
+      "radius": 0.6
+    },
+    {
+      "nom": "Alfortville",
+      "code": "94002",
+      "codesPostaux": ["94140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4214, 48.7963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4203, 48.8053]
+      },
+      "population": 45569,
+      "surface": 367.17,
+      "radius": 1.08
+    },
+    {
+      "nom": "Arcueil",
+      "code": "94003",
+      "codesPostaux": ["94110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3328, 48.8053]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3369, 48.806]
+      },
+      "population": 21868,
+      "surface": 233.47,
+      "radius": 0.86
+    },
+    {
+      "nom": "Boissy-Saint-Léger",
+      "code": "94004",
+      "codesPostaux": ["94470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5251, 48.7453]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5131, 48.748]
+      },
+      "population": 17335,
+      "surface": 891.55,
+      "radius": 1.68
+    },
+    {
+      "nom": "Bonneuil-sur-Marne",
+      "code": "94011",
+      "codesPostaux": ["94380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.493, 48.7721]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4875, 48.7743]
+      },
+      "population": 18340,
+      "surface": 549.05,
+      "radius": 1.32
+    },
+    {
+      "nom": "Bry-sur-Marne",
+      "code": "94015",
+      "codesPostaux": ["94360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5224, 48.8392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5196, 48.8352]
+      },
+      "population": 18095,
+      "surface": 333.61,
+      "radius": 1.03
+    },
+    {
+      "nom": "Cachan",
+      "code": "94016",
+      "codesPostaux": ["94230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3318, 48.7914]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3341, 48.7946]
+      },
+      "population": 30526,
+      "surface": 278.72,
+      "radius": 0.94
+    },
+    {
+      "nom": "Champigny-sur-Marne",
+      "code": "94017",
+      "codesPostaux": ["94500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5206, 48.8173]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5107, 48.8132]
+      },
+      "population": 78367,
+      "surface": 1130.32,
+      "radius": 1.9
+    },
+    {
+      "nom": "Charenton-le-Pont",
+      "code": "94018",
+      "codesPostaux": ["94220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.405, 48.8229]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4161, 48.8197]
+      },
+      "population": 28756,
+      "surface": 184.99,
+      "radius": 0.77
+    },
+    {
+      "nom": "Chennevières-sur-Marne",
+      "code": "94019",
+      "codesPostaux": ["94430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5443, 48.7951]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5325, 48.7962]
+      },
+      "population": 18295,
+      "surface": 521.68,
+      "radius": 1.29
+    },
+    {
+      "nom": "Chevilly-Larue",
+      "code": "94021",
+      "codesPostaux": ["94550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3507, 48.7679]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3472, 48.7713]
+      },
+      "population": 19813,
+      "surface": 422.39,
+      "radius": 1.16
+    },
+    {
+      "nom": "Choisy-le-Roi",
+      "code": "94022",
+      "codesPostaux": ["94600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4202, 48.7635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4095, 48.7624]
+      },
+      "population": 46122,
+      "surface": 542.14,
+      "radius": 1.31
+    },
+    {
+      "nom": "Créteil",
+      "code": "94028",
+      "codesPostaux": ["94000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4523, 48.7845]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4532, 48.7779]
+      },
+      "population": 92859,
+      "surface": 1141.93,
+      "radius": 1.91
+    },
+    {
+      "nom": "Fontenay-sous-Bois",
+      "code": "94033",
+      "codesPostaux": ["94120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4736, 48.8503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4746, 48.8489]
+      },
+      "population": 52646,
+      "surface": 555.99,
+      "radius": 1.33
+    },
+    {
+      "nom": "Fresnes",
+      "code": "94034",
+      "codesPostaux": ["94260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3263, 48.7572]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3219, 48.7551]
+      },
+      "population": 29298,
+      "surface": 355.15,
+      "radius": 1.06
+    },
+    {
+      "nom": "Gentilly",
+      "code": "94037",
+      "codesPostaux": ["94250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3426, 48.812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3479, 48.8156]
+      },
+      "population": 18883,
+      "surface": 118.08,
+      "radius": 0.61
+    },
+    {
+      "nom": "Ivry-sur-Seine",
+      "code": "94041",
+      "codesPostaux": ["94200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3872, 48.8125]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3875, 48.812]
+      },
+      "population": 64526,
+      "surface": 611.46,
+      "radius": 1.4
+    },
+    {
+      "nom": "Joinville-le-Pont",
+      "code": "94042",
+      "codesPostaux": ["94340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4685, 48.8199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4669, 48.8184]
+      },
+      "population": 20784,
+      "surface": 228.52,
+      "radius": 0.85
+    },
+    {
+      "nom": "L'Haÿ-les-Roses",
+      "code": "94038",
+      "codesPostaux": ["94240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3416, 48.7777]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3375, 48.7792]
+      },
+      "population": 31338,
+      "surface": 389.56,
+      "radius": 1.11
+    },
+    {
+      "nom": "La Queue-en-Brie",
+      "code": "94060",
+      "codesPostaux": ["94510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5855, 48.7769]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5747, 48.7906]
+      },
+      "population": 12074,
+      "surface": 938.55,
+      "radius": 1.73
+    },
+    {
+      "nom": "Le Kremlin-Bicêtre",
+      "code": "94043",
+      "codesPostaux": ["94270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.356, 48.8087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3569, 48.8123]
+      },
+      "population": 23678,
+      "surface": 154.09,
+      "radius": 0.7
+    },
+    {
+      "nom": "Le Perreux-sur-Marne",
+      "code": "94058",
+      "codesPostaux": ["94170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5045, 48.8433]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5082, 48.8407]
+      },
+      "population": 34654,
+      "surface": 396.02,
+      "radius": 1.12
+    },
+    {
+      "nom": "Le Plessis-Trévise",
+      "code": "94059",
+      "codesPostaux": ["94420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5763, 48.808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5728, 48.809]
+      },
+      "population": 21096,
+      "surface": 431.92,
+      "radius": 1.17
+    },
+    {
+      "nom": "Limeil-Brévannes",
+      "code": "94044",
+      "codesPostaux": ["94450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4924, 48.7463]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4804, 48.7492]
+      },
+      "population": 27806,
+      "surface": 694.86,
+      "radius": 1.49
+    },
+    {
+      "nom": "Maisons-Alfort",
+      "code": "94046",
+      "codesPostaux": ["94700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.44, 48.8017]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4307, 48.801]
+      },
+      "population": 57422,
+      "surface": 534.8,
+      "radius": 1.3
+    },
+    {
+      "nom": "Mandres-les-Roses",
+      "code": "94047",
+      "codesPostaux": ["94520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5477, 48.7068]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5435, 48.7023]
+      },
+      "population": 4876,
+      "surface": 336.5,
+      "radius": 1.03
+    },
+    {
+      "nom": "Marolles-en-Brie",
+      "code": "94048",
+      "codesPostaux": ["94440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5539, 48.7385]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.55, 48.7325]
+      },
+      "population": 4685,
+      "surface": 459.55,
+      "radius": 1.21
+    },
+    {
+      "nom": "Nogent-sur-Marne",
+      "code": "94052",
+      "codesPostaux": ["94130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4811, 48.837]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4915, 48.8392]
+      },
+      "population": 32998,
+      "surface": 279.86,
+      "radius": 0.94
+    },
+    {
+      "nom": "Noiseau",
+      "code": "94053",
+      "codesPostaux": ["94880"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.556, 48.7757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5487, 48.7747]
+      },
+      "population": 4619,
+      "surface": 458.76,
+      "radius": 1.21
+    },
+    {
+      "nom": "Orly",
+      "code": "94054",
+      "codesPostaux": ["94310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.403, 48.7402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4006, 48.7431]
+      },
+      "population": 24488,
+      "surface": 669.04,
+      "radius": 1.46
+    },
+    {
+      "nom": "Ormesson-sur-Marne",
+      "code": "94055",
+      "codesPostaux": ["94490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5371, 48.7873]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5405, 48.7856]
+      },
+      "population": 10589,
+      "surface": 343.31,
+      "radius": 1.05
+    },
+    {
+      "nom": "Périgny",
+      "code": "94056",
+      "codesPostaux": ["94520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.562, 48.6974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5504, 48.6952]
+      },
+      "population": 2744,
+      "surface": 276.09,
+      "radius": 0.94
+    },
+    {
+      "nom": "Rungis",
+      "code": "94065",
+      "codesPostaux": ["94150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3499, 48.7493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3473, 48.7485]
+      },
+      "population": 5669,
+      "surface": 419.72,
+      "radius": 1.16
+    },
+    {
+      "nom": "Saint-Mandé",
+      "code": "94067",
+      "codesPostaux": ["94160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4195, 48.8414]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4191, 48.8432]
+      },
+      "population": 21223,
+      "surface": 90.5,
+      "radius": 0.54
+    },
+    {
+      "nom": "Saint-Maur-des-Fossés",
+      "code": "94068",
+      "codesPostaux": ["94100", "94210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4921, 48.7999]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4853, 48.8029]
+      },
+      "population": 76010,
+      "surface": 1125.56,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Maurice",
+      "code": "94069",
+      "codesPostaux": ["94410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4423, 48.8179]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4265, 48.8183]
+      },
+      "population": 14411,
+      "surface": 144.79,
+      "radius": 0.68
+    },
+    {
+      "nom": "Santeny",
+      "code": "94070",
+      "codesPostaux": ["94440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5771, 48.7362]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5702, 48.7259]
+      },
+      "population": 3958,
+      "surface": 1002.58,
+      "radius": 1.79
+    },
+    {
+      "nom": "Sucy-en-Brie",
+      "code": "94071",
+      "codesPostaux": ["94370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5374, 48.7688]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5241, 48.7708]
+      },
+      "population": 27593,
+      "surface": 1038.89,
+      "radius": 1.82
+    },
+    {
+      "nom": "Thiais",
+      "code": "94073",
+      "codesPostaux": ["94320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3869, 48.7605]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.391, 48.7642]
+      },
+      "population": 32006,
+      "surface": 642.45,
+      "radius": 1.43
+    },
+    {
+      "nom": "Valenton",
+      "code": "94074",
+      "codesPostaux": ["94460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.46, 48.7497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4696, 48.7443]
+      },
+      "population": 14453,
+      "surface": 531.13,
+      "radius": 1.3
+    },
+    {
+      "nom": "Villecresnes",
+      "code": "94075",
+      "codesPostaux": ["94440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5328, 48.7221]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5333, 48.7219]
+      },
+      "population": 11650,
+      "surface": 562.01,
+      "radius": 1.34
+    },
+    {
+      "nom": "Villejuif",
+      "code": "94076",
+      "codesPostaux": ["94800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3603, 48.7934]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3632, 48.7918]
+      },
+      "population": 58142,
+      "surface": 527.95,
+      "radius": 1.3
+    },
+    {
+      "nom": "Villeneuve-le-Roi",
+      "code": "94077",
+      "codesPostaux": ["94290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4076, 48.732]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4077, 48.7352]
+      },
+      "population": 20871,
+      "surface": 843.84,
+      "radius": 1.64
+    },
+    {
+      "nom": "Villeneuve-Saint-Georges",
+      "code": "94078",
+      "codesPostaux": ["94190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4493, 48.7389]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4477, 48.7307]
+      },
+      "population": 36170,
+      "surface": 807.3,
+      "radius": 1.6
+    },
+    {
+      "nom": "Villiers-sur-Marne",
+      "code": "94079",
+      "codesPostaux": ["94350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5482, 48.8278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5408, 48.8261]
+      },
+      "population": 32547,
+      "surface": 431.66,
+      "radius": 1.17
+    },
+    {
+      "nom": "Vincennes",
+      "code": "94080",
+      "codesPostaux": ["94300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4383, 48.8471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4398, 48.8477]
+      },
+      "population": 48368,
+      "surface": 190.34,
+      "radius": 0.78
+    },
+    {
+      "nom": "Vitry-sur-Seine",
+      "code": "94081",
+      "codesPostaux": ["94400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3951, 48.7893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3885, 48.7886]
+      },
+      "population": 95282,
+      "surface": 1165.9,
+      "radius": 1.93
+    }
+  ],
+  "postalCodes": {
+    "94000": {
+      "communes": ["Créteil"],
+      "communeCount": 1,
+      "center": [2.4532, 48.7779],
+      "coverageRadius": 1.91,
+      "totalPopulation": 92859,
+      "totalSurface": 1142
+    },
+    "94100": {
+      "communes": ["Saint-Maur-des-Fossés"],
+      "communeCount": 1,
+      "center": [2.4853, 48.8029],
+      "coverageRadius": 1.89,
+      "totalPopulation": 76010,
+      "totalSurface": 1126
+    },
+    "94110": {
+      "communes": ["Arcueil"],
+      "communeCount": 1,
+      "center": [2.3369, 48.806],
+      "coverageRadius": 0.86,
+      "totalPopulation": 21868,
+      "totalSurface": 233
+    },
+    "94120": {
+      "communes": ["Fontenay-sous-Bois"],
+      "communeCount": 1,
+      "center": [2.4746, 48.8489],
+      "coverageRadius": 1.33,
+      "totalPopulation": 52646,
+      "totalSurface": 556
+    },
+    "94130": {
+      "communes": ["Nogent-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.4915, 48.8392],
+      "coverageRadius": 0.94,
+      "totalPopulation": 32998,
+      "totalSurface": 280
+    },
+    "94140": {
+      "communes": ["Alfortville"],
+      "communeCount": 1,
+      "center": [2.4203, 48.8053],
+      "coverageRadius": 1.08,
+      "totalPopulation": 45569,
+      "totalSurface": 367
+    },
+    "94150": {
+      "communes": ["Rungis"],
+      "communeCount": 1,
+      "center": [2.3473, 48.7485],
+      "coverageRadius": 1.16,
+      "totalPopulation": 5669,
+      "totalSurface": 420
+    },
+    "94160": {
+      "communes": ["Saint-Mandé"],
+      "communeCount": 1,
+      "center": [2.4191, 48.8432],
+      "coverageRadius": 0.54,
+      "totalPopulation": 21223,
+      "totalSurface": 91
+    },
+    "94170": {
+      "communes": ["Le Perreux-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.5082, 48.8407],
+      "coverageRadius": 1.12,
+      "totalPopulation": 34654,
+      "totalSurface": 396
+    },
+    "94190": {
+      "communes": ["Villeneuve-Saint-Georges"],
+      "communeCount": 1,
+      "center": [2.4477, 48.7307],
+      "coverageRadius": 1.6,
+      "totalPopulation": 36170,
+      "totalSurface": 807
+    },
+    "94200": {
+      "communes": ["Ivry-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.3875, 48.812],
+      "coverageRadius": 1.4,
+      "totalPopulation": 64526,
+      "totalSurface": 611
+    },
+    "94210": {
+      "communes": ["Saint-Maur-des-Fossés"],
+      "communeCount": 1,
+      "center": [2.4853, 48.8029],
+      "coverageRadius": 1.89,
+      "totalPopulation": 76010,
+      "totalSurface": 1126
+    },
+    "94220": {
+      "communes": ["Charenton-le-Pont"],
+      "communeCount": 1,
+      "center": [2.4161, 48.8197],
+      "coverageRadius": 0.77,
+      "totalPopulation": 28756,
+      "totalSurface": 185
+    },
+    "94230": {
+      "communes": ["Cachan"],
+      "communeCount": 1,
+      "center": [2.3341, 48.7946],
+      "coverageRadius": 0.94,
+      "totalPopulation": 30526,
+      "totalSurface": 279
+    },
+    "94240": {
+      "communes": ["L'Haÿ-les-Roses"],
+      "communeCount": 1,
+      "center": [2.3375, 48.7792],
+      "coverageRadius": 1.11,
+      "totalPopulation": 31338,
+      "totalSurface": 390
+    },
+    "94250": {
+      "communes": ["Gentilly"],
+      "communeCount": 1,
+      "center": [2.3479, 48.8156],
+      "coverageRadius": 0.61,
+      "totalPopulation": 18883,
+      "totalSurface": 118
+    },
+    "94260": {
+      "communes": ["Fresnes"],
+      "communeCount": 1,
+      "center": [2.3219, 48.7551],
+      "coverageRadius": 1.06,
+      "totalPopulation": 29298,
+      "totalSurface": 355
+    },
+    "94270": {
+      "communes": ["Le Kremlin-Bicêtre"],
+      "communeCount": 1,
+      "center": [2.3569, 48.8123],
+      "coverageRadius": 0.7,
+      "totalPopulation": 23678,
+      "totalSurface": 154
+    },
+    "94290": {
+      "communes": ["Villeneuve-le-Roi"],
+      "communeCount": 1,
+      "center": [2.4077, 48.7352],
+      "coverageRadius": 1.64,
+      "totalPopulation": 20871,
+      "totalSurface": 844
+    },
+    "94300": {
+      "communes": ["Vincennes"],
+      "communeCount": 1,
+      "center": [2.4398, 48.8477],
+      "coverageRadius": 0.78,
+      "totalPopulation": 48368,
+      "totalSurface": 190
+    },
+    "94310": {
+      "communes": ["Orly"],
+      "communeCount": 1,
+      "center": [2.4006, 48.7431],
+      "coverageRadius": 1.46,
+      "totalPopulation": 24488,
+      "totalSurface": 669
+    },
+    "94320": {
+      "communes": ["Thiais"],
+      "communeCount": 1,
+      "center": [2.391, 48.7642],
+      "coverageRadius": 1.43,
+      "totalPopulation": 32006,
+      "totalSurface": 642
+    },
+    "94340": {
+      "communes": ["Joinville-le-Pont"],
+      "communeCount": 1,
+      "center": [2.4669, 48.8184],
+      "coverageRadius": 0.85,
+      "totalPopulation": 20784,
+      "totalSurface": 229
+    },
+    "94350": {
+      "communes": ["Villiers-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.5408, 48.8261],
+      "coverageRadius": 1.17,
+      "totalPopulation": 32547,
+      "totalSurface": 432
+    },
+    "94360": {
+      "communes": ["Bry-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.5196, 48.8352],
+      "coverageRadius": 1.03,
+      "totalPopulation": 18095,
+      "totalSurface": 334
+    },
+    "94370": {
+      "communes": ["Sucy-en-Brie"],
+      "communeCount": 1,
+      "center": [2.5241, 48.7708],
+      "coverageRadius": 1.82,
+      "totalPopulation": 27593,
+      "totalSurface": 1039
+    },
+    "94380": {
+      "communes": ["Bonneuil-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.4875, 48.7743],
+      "coverageRadius": 1.32,
+      "totalPopulation": 18340,
+      "totalSurface": 549
+    },
+    "94400": {
+      "communes": ["Vitry-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.3885, 48.7886],
+      "coverageRadius": 1.93,
+      "totalPopulation": 95282,
+      "totalSurface": 1166
+    },
+    "94410": {
+      "communes": ["Saint-Maurice"],
+      "communeCount": 1,
+      "center": [2.4265, 48.8183],
+      "coverageRadius": 0.68,
+      "totalPopulation": 14411,
+      "totalSurface": 145
+    },
+    "94420": {
+      "communes": ["Le Plessis-Trévise"],
+      "communeCount": 1,
+      "center": [2.5728, 48.809],
+      "coverageRadius": 1.17,
+      "totalPopulation": 21096,
+      "totalSurface": 432
+    },
+    "94430": {
+      "communes": ["Chennevières-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.5325, 48.7962],
+      "coverageRadius": 1.29,
+      "totalPopulation": 18295,
+      "totalSurface": 522
+    },
+    "94440": {
+      "communes": ["Marolles-en-Brie", "Santeny", "Villecresnes"],
+      "communeCount": 3,
+      "center": [2.5444, 48.7251],
+      "coverageRadius": 1.9,
+      "boundingBox": {
+        "minLat": 48.7219,
+        "maxLat": 48.7325,
+        "minLon": 2.5333,
+        "maxLon": 2.5702
+      },
+      "totalPopulation": 20293,
+      "totalSurface": 2024
+    },
+    "94450": {
+      "communes": ["Limeil-Brévannes"],
+      "communeCount": 1,
+      "center": [2.4804, 48.7492],
+      "coverageRadius": 1.49,
+      "totalPopulation": 27806,
+      "totalSurface": 695
+    },
+    "94460": {
+      "communes": ["Valenton"],
+      "communeCount": 1,
+      "center": [2.4696, 48.7443],
+      "coverageRadius": 1.3,
+      "totalPopulation": 14453,
+      "totalSurface": 531
+    },
+    "94470": {
+      "communes": ["Boissy-Saint-Léger"],
+      "communeCount": 1,
+      "center": [2.5131, 48.748],
+      "coverageRadius": 1.68,
+      "totalPopulation": 17335,
+      "totalSurface": 892
+    },
+    "94480": {
+      "communes": ["Ablon-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.4219, 48.7249],
+      "coverageRadius": 0.6,
+      "totalPopulation": 6029,
+      "totalSurface": 114
+    },
+    "94490": {
+      "communes": ["Ormesson-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.5405, 48.7856],
+      "coverageRadius": 1.05,
+      "totalPopulation": 10589,
+      "totalSurface": 343
+    },
+    "94500": {
+      "communes": ["Champigny-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.5107, 48.8132],
+      "coverageRadius": 1.9,
+      "totalPopulation": 78367,
+      "totalSurface": 1130
+    },
+    "94510": {
+      "communes": ["La Queue-en-Brie"],
+      "communeCount": 1,
+      "center": [2.5747, 48.7906],
+      "coverageRadius": 1.73,
+      "totalPopulation": 12074,
+      "totalSurface": 939
+    },
+    "94520": {
+      "communes": ["Mandres-les-Roses", "Périgny"],
+      "communeCount": 2,
+      "center": [2.546, 48.6997],
+      "coverageRadius": 0.7,
+      "boundingBox": {
+        "minLat": 48.6952,
+        "maxLat": 48.7023,
+        "minLon": 2.5435,
+        "maxLon": 2.5504
+      },
+      "totalPopulation": 7620,
+      "totalSurface": 613
+    },
+    "94550": {
+      "communes": ["Chevilly-Larue"],
+      "communeCount": 1,
+      "center": [2.3472, 48.7713],
+      "coverageRadius": 1.16,
+      "totalPopulation": 19813,
+      "totalSurface": 422
+    },
+    "94600": {
+      "communes": ["Choisy-le-Roi"],
+      "communeCount": 1,
+      "center": [2.4095, 48.7624],
+      "coverageRadius": 1.31,
+      "totalPopulation": 46122,
+      "totalSurface": 542
+    },
+    "94700": {
+      "communes": ["Maisons-Alfort"],
+      "communeCount": 1,
+      "center": [2.4307, 48.801],
+      "coverageRadius": 1.3,
+      "totalPopulation": 57422,
+      "totalSurface": 535
+    },
+    "94800": {
+      "communes": ["Villejuif"],
+      "communeCount": 1,
+      "center": [2.3632, 48.7918],
+      "coverageRadius": 1.3,
+      "totalPopulation": 58142,
+      "totalSurface": 528
+    },
+    "94880": {
+      "communes": ["Noiseau"],
+      "communeCount": 1,
+      "center": [2.5487, 48.7747],
+      "coverageRadius": 1.21,
+      "totalPopulation": 4619,
+      "totalSurface": 459
+    }
+  }
+}

@@ -1,0 +1,5906 @@
+{
+  "departmentCode": "09",
+  "departmentName": "Ariège",
+  "stats": {
+    "communeCount": 325,
+    "totalPopulation": 155333,
+    "totalSurface": 491397
+  },
+  "communes": [
+    {
+      "nom": "Aigues-Juntes",
+      "code": "09001",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.471, 43.0502]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4714, 43.0555]
+      },
+      "population": 59,
+      "surface": 764.43,
+      "radius": 1.56
+    },
+    {
+      "nom": "Aigues-Vives",
+      "code": "09002",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8781, 42.9996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8762, 42.9967]
+      },
+      "population": 631,
+      "surface": 522.61,
+      "radius": 1.29
+    },
+    {
+      "nom": "Albiès",
+      "code": "09004",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6965, 42.7539]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7023, 42.7761]
+      },
+      "population": 122,
+      "surface": 775.65,
+      "radius": 1.57
+    },
+    {
+      "nom": "Aleu",
+      "code": "09005",
+      "codesPostaux": ["09320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2683, 42.8927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.267, 42.8933]
+      },
+      "population": 131,
+      "surface": 1404.58,
+      "radius": 2.11
+    },
+    {
+      "nom": "Alliat",
+      "code": "09006",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5778, 42.8181]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5867, 42.8173]
+      },
+      "population": 56,
+      "surface": 343.91,
+      "radius": 1.05
+    },
+    {
+      "nom": "Allières",
+      "code": "09007",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3631, 43.0391]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3659, 43.0361]
+      },
+      "population": 75,
+      "surface": 907.2,
+      "radius": 1.7
+    },
+    {
+      "nom": "Alos",
+      "code": "09008",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1318, 42.9013]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.145, 42.908]
+      },
+      "population": 116,
+      "surface": 2384.98,
+      "radius": 2.76
+    },
+    {
+      "nom": "Alzen",
+      "code": "09009",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4539, 42.9805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.472, 42.9888]
+      },
+      "population": 265,
+      "surface": 1790.85,
+      "radius": 2.39
+    },
+    {
+      "nom": "Antras",
+      "code": "09011",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9023, 42.8713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9434, 42.8811]
+      },
+      "population": 74,
+      "surface": 2013.43,
+      "radius": 2.53
+    },
+    {
+      "nom": "Appy",
+      "code": "09012",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7436, 42.8032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7333, 42.79]
+      },
+      "population": 28,
+      "surface": 608.32,
+      "radius": 1.39
+    },
+    {
+      "nom": "Arabaux",
+      "code": "09013",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.635, 42.9799]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6435, 42.9846]
+      },
+      "population": 80,
+      "surface": 458.92,
+      "radius": 1.21
+    },
+    {
+      "nom": "Argein",
+      "code": "09014",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9896, 42.9278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9931, 42.9311]
+      },
+      "population": 192,
+      "surface": 1112.86,
+      "radius": 1.88
+    },
+    {
+      "nom": "Arignac",
+      "code": "09015",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5984, 42.875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5989, 42.8707]
+      },
+      "population": 722,
+      "surface": 865.48,
+      "radius": 1.66
+    },
+    {
+      "nom": "Arnave",
+      "code": "09016",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.648, 42.8518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.648, 42.8539]
+      },
+      "population": 214,
+      "surface": 835.92,
+      "radius": 1.63
+    },
+    {
+      "nom": "Arrien-en-Bethmale",
+      "code": "09017",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.052, 42.8741]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0427, 42.8964]
+      },
+      "population": 123,
+      "surface": 1448.48,
+      "radius": 2.15
+    },
+    {
+      "nom": "Arrout",
+      "code": "09018",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0206, 42.9476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.027, 42.9447]
+      },
+      "population": 92,
+      "surface": 301.95,
+      "radius": 0.98
+    },
+    {
+      "nom": "Artigat",
+      "code": "09019",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.448, 43.1456]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4394, 43.136]
+      },
+      "population": 555,
+      "surface": 2410.49,
+      "radius": 2.77
+    },
+    {
+      "nom": "Artigues",
+      "code": "09020",
+      "codesPostaux": ["09460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0409, 42.6903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0678, 42.7177]
+      },
+      "population": 32,
+      "surface": 1243.11,
+      "radius": 1.99
+    },
+    {
+      "nom": "Artix",
+      "code": "09021",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5634, 43.0663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5679, 43.0682]
+      },
+      "population": 113,
+      "surface": 743.64,
+      "radius": 1.54
+    },
+    {
+      "nom": "Arvigna",
+      "code": "09022",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7283, 43.0577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7356, 43.0604]
+      },
+      "population": 237,
+      "surface": 864.81,
+      "radius": 1.66
+    },
+    {
+      "nom": "Ascou",
+      "code": "09023",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9238, 42.719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8615, 42.7211]
+      },
+      "population": 115,
+      "surface": 3569.12,
+      "radius": 3.37
+    },
+    {
+      "nom": "Aston",
+      "code": "09024",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6603, 42.6978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6751, 42.7742]
+      },
+      "population": 193,
+      "surface": 15394.86,
+      "radius": 7
+    },
+    {
+      "nom": "Aucazein",
+      "code": "09025",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9673, 42.9251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9743, 42.9354]
+      },
+      "population": 62,
+      "surface": 605.34,
+      "radius": 1.39
+    },
+    {
+      "nom": "Audressein",
+      "code": "09026",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0184, 42.9294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0245, 42.9279]
+      },
+      "population": 146,
+      "surface": 405.8,
+      "radius": 1.14
+    },
+    {
+      "nom": "Augirein",
+      "code": "09027",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9207, 42.9143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9167, 42.9308]
+      },
+      "population": 80,
+      "surface": 969.71,
+      "radius": 1.76
+    },
+    {
+      "nom": "Aulos-Sinsat",
+      "code": "09296",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6608, 42.7985]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6617, 42.7989]
+      },
+      "population": 157,
+      "surface": 513.94,
+      "radius": 1.28
+    },
+    {
+      "nom": "Aulus-les-Bains",
+      "code": "09029",
+      "codesPostaux": ["09140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3574, 42.7622]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3393, 42.7906]
+      },
+      "population": 146,
+      "surface": 5277.05,
+      "radius": 4.1
+    },
+    {
+      "nom": "Auzat",
+      "code": "09030",
+      "codesPostaux": ["09220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4347, 42.6975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4794, 42.7673]
+      },
+      "population": 562,
+      "surface": 16287.42,
+      "radius": 7.2
+    },
+    {
+      "nom": "Ax-les-Thermes",
+      "code": "09032",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8192, 42.6841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8374, 42.7201]
+      },
+      "population": 1277,
+      "surface": 3026.55,
+      "radius": 3.1
+    },
+    {
+      "nom": "Axiat",
+      "code": "09031",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7626, 42.7996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7561, 42.7838]
+      },
+      "population": 39,
+      "surface": 959.42,
+      "radius": 1.75
+    },
+    {
+      "nom": "Bagert",
+      "code": "09033",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0703, 43.0806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0807, 43.0782]
+      },
+      "population": 41,
+      "surface": 332.96,
+      "radius": 1.03
+    },
+    {
+      "nom": "Balacet",
+      "code": "09034",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9844, 42.889]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9815, 42.8837]
+      },
+      "population": 47,
+      "surface": 215.4,
+      "radius": 0.83
+    },
+    {
+      "nom": "Balaguères",
+      "code": "09035",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0162, 42.9665]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0422, 42.9505]
+      },
+      "population": 197,
+      "surface": 1802.58,
+      "radius": 2.4
+    },
+    {
+      "nom": "Barjac",
+      "code": "09037",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1371, 43.0613]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1346, 43.0654]
+      },
+      "population": 43,
+      "surface": 276.3,
+      "radius": 0.94
+    },
+    {
+      "nom": "Baulou",
+      "code": "09044",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5406, 43.0185]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5336, 43.0159]
+      },
+      "population": 165,
+      "surface": 1478.49,
+      "radius": 2.17
+    },
+    {
+      "nom": "Bédeilhac-et-Aynat",
+      "code": "09045",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5664, 42.8814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5644, 42.8735]
+      },
+      "population": 195,
+      "surface": 658.67,
+      "radius": 1.45
+    },
+    {
+      "nom": "Bédeille",
+      "code": "09046",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0977, 43.0824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1028, 43.0872]
+      },
+      "population": 76,
+      "surface": 958.06,
+      "radius": 1.75
+    },
+    {
+      "nom": "Bélesta",
+      "code": "09047",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9512, 42.8917]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9335, 42.9029]
+      },
+      "population": 1085,
+      "surface": 2688.34,
+      "radius": 2.93
+    },
+    {
+      "nom": "Belloc",
+      "code": "09048",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9319, 43.0078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.932, 43.0125]
+      },
+      "population": 84,
+      "surface": 970.13,
+      "radius": 1.76
+    },
+    {
+      "nom": "Bénac",
+      "code": "09049",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5264, 42.9583]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5314, 42.9546]
+      },
+      "population": 174,
+      "surface": 280.86,
+      "radius": 0.95
+    },
+    {
+      "nom": "Benagues",
+      "code": "09050",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6089, 43.0779]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6099, 43.0759]
+      },
+      "population": 502,
+      "surface": 310.9,
+      "radius": 0.99
+    },
+    {
+      "nom": "Bénaix",
+      "code": "09051",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8502, 42.8933]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8587, 42.9069]
+      },
+      "population": 151,
+      "surface": 1475.06,
+      "radius": 2.17
+    },
+    {
+      "nom": "Besset",
+      "code": "09052",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8475, 43.0744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8359, 43.0784]
+      },
+      "population": 165,
+      "surface": 814.35,
+      "radius": 1.61
+    },
+    {
+      "nom": "Bestiac",
+      "code": "09053",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8002, 42.7836]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7869, 42.7679]
+      },
+      "population": 30,
+      "surface": 648.2,
+      "radius": 1.44
+    },
+    {
+      "nom": "Betchat",
+      "code": "09054",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0312, 43.086]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0114, 43.0918]
+      },
+      "population": 356,
+      "surface": 2230.36,
+      "radius": 2.66
+    },
+    {
+      "nom": "Bethmale",
+      "code": "09055",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0781, 42.8459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0584, 42.8888]
+      },
+      "population": 100,
+      "surface": 3181.28,
+      "radius": 3.18
+    },
+    {
+      "nom": "Bézac",
+      "code": "09056",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5648, 43.1565]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5756, 43.1477]
+      },
+      "population": 476,
+      "surface": 1107.28,
+      "radius": 1.88
+    },
+    {
+      "nom": "Biert",
+      "code": "09057",
+      "codesPostaux": ["09320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.314, 42.894]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3153, 42.8992]
+      },
+      "population": 307,
+      "surface": 2368.73,
+      "radius": 2.75
+    },
+    {
+      "nom": "Bompas",
+      "code": "09058",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6189, 42.8627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6173, 42.865]
+      },
+      "population": 200,
+      "surface": 278.89,
+      "radius": 0.94
+    },
+    {
+      "nom": "Bonac-Irazein",
+      "code": "09059",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9782, 42.8435]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9757, 42.877]
+      },
+      "population": 125,
+      "surface": 3796.48,
+      "radius": 3.48
+    },
+    {
+      "nom": "Bonnac",
+      "code": "09060",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5881, 43.1716]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5921, 43.1654]
+      },
+      "population": 789,
+      "surface": 973.53,
+      "radius": 1.76
+    },
+    {
+      "nom": "Bordes-Uchentein",
+      "code": "09062",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0384, 42.8472]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0293, 42.9011]
+      },
+      "population": 216,
+      "surface": 5340.7,
+      "radius": 4.12
+    },
+    {
+      "nom": "Bouan",
+      "code": "09064",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.643, 42.7914]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6463, 42.8004]
+      },
+      "population": 41,
+      "surface": 343.41,
+      "radius": 1.05
+    },
+    {
+      "nom": "Boussenac",
+      "code": "09065",
+      "codesPostaux": ["09320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3944, 42.9104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.369, 42.9039]
+      },
+      "population": 243,
+      "surface": 2629.18,
+      "radius": 2.89
+    },
+    {
+      "nom": "Brassac",
+      "code": "09066",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5151, 42.9345]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5343, 42.9453]
+      },
+      "population": 621,
+      "surface": 2445.41,
+      "radius": 2.79
+    },
+    {
+      "nom": "Brie",
+      "code": "09067",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5183, 43.2102]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5188, 43.2068]
+      },
+      "population": 206,
+      "surface": 716.17,
+      "radius": 1.51
+    },
+    {
+      "nom": "Burret",
+      "code": "09068",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4733, 42.9514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4785, 42.9544]
+      },
+      "population": 44,
+      "surface": 495.73,
+      "radius": 1.26
+    },
+    {
+      "nom": "Buzan",
+      "code": "09069",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9625, 42.9565]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9634, 42.9418]
+      },
+      "population": 40,
+      "surface": 862.94,
+      "radius": 1.66
+    },
+    {
+      "nom": "Cadarcet",
+      "code": "09071",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5016, 43.017]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4988, 43.0114]
+      },
+      "population": 214,
+      "surface": 1111.78,
+      "radius": 1.88
+    },
+    {
+      "nom": "Calzan",
+      "code": "09072",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7399, 43.0333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7376, 43.0372]
+      },
+      "population": 45,
+      "surface": 403.82,
+      "radius": 1.13
+    },
+    {
+      "nom": "Camarade",
+      "code": "09073",
+      "codesPostaux": ["09290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2802, 43.0666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2863, 43.0857]
+      },
+      "population": 209,
+      "surface": 2792.18,
+      "radius": 2.98
+    },
+    {
+      "nom": "Camon",
+      "code": "09074",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9602, 43.0177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9665, 43.0217]
+      },
+      "population": 152,
+      "surface": 1030.11,
+      "radius": 1.81
+    },
+    {
+      "nom": "Campagne-sur-Arize",
+      "code": "09075",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3176, 43.1194]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3376, 43.1274]
+      },
+      "population": 286,
+      "surface": 1343.4,
+      "radius": 2.07
+    },
+    {
+      "nom": "Canté",
+      "code": "09076",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5248, 43.2514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5317, 43.2543]
+      },
+      "population": 212,
+      "surface": 991.2,
+      "radius": 1.78
+    },
+    {
+      "nom": "Capoulet-et-Junac",
+      "code": "09077",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5746, 42.7925]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5838, 42.7945]
+      },
+      "population": 191,
+      "surface": 283.4,
+      "radius": 0.95
+    },
+    {
+      "nom": "Carcanières",
+      "code": "09078",
+      "codesPostaux": ["09460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.122, 42.7086]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1092, 42.715]
+      },
+      "population": 71,
+      "surface": 649.91,
+      "radius": 1.44
+    },
+    {
+      "nom": "Carla-Bayle",
+      "code": "09079",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3788, 43.1595]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3935, 43.1499]
+      },
+      "population": 792,
+      "surface": 3592.75,
+      "radius": 3.38
+    },
+    {
+      "nom": "Carla-de-Roquefort",
+      "code": "09080",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7556, 42.978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7684, 42.9736]
+      },
+      "population": 166,
+      "surface": 952.52,
+      "radius": 1.74
+    },
+    {
+      "nom": "Castelnau-Durban",
+      "code": "09082",
+      "codesPostaux": ["09420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3415, 42.9928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3382, 43.0002]
+      },
+      "population": 458,
+      "surface": 1317.19,
+      "radius": 2.05
+    },
+    {
+      "nom": "Castéras",
+      "code": "09083",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4048, 43.1257]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4001, 43.129]
+      },
+      "population": 22,
+      "surface": 183.08,
+      "radius": 0.76
+    },
+    {
+      "nom": "Castex",
+      "code": "09084",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.316, 43.1659]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3135, 43.165]
+      },
+      "population": 95,
+      "surface": 716.75,
+      "radius": 1.51
+    },
+    {
+      "nom": "Castillon-en-Couserans",
+      "code": "09085",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.058, 42.9177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.033, 42.9208]
+      },
+      "population": 433,
+      "surface": 499.93,
+      "radius": 1.26
+    },
+    {
+      "nom": "Caumont",
+      "code": "09086",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0773, 43.0222]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0859, 43.0293]
+      },
+      "population": 338,
+      "surface": 932.7,
+      "radius": 1.72
+    },
+    {
+      "nom": "Caussou",
+      "code": "09087",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8219, 42.7743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8042, 42.7686]
+      },
+      "population": 47,
+      "surface": 1586.44,
+      "radius": 2.25
+    },
+    {
+      "nom": "Caychax-et-Senconac",
+      "code": "09088",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7214, 42.8089]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7186, 42.7931]
+      },
+      "population": 14,
+      "surface": 1022.92,
+      "radius": 1.8
+    },
+    {
+      "nom": "Cazals-des-Baylès",
+      "code": "09089",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9366, 43.0916]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9473, 43.0871]
+      },
+      "population": 56,
+      "surface": 466.53,
+      "radius": 1.22
+    },
+    {
+      "nom": "Cazaux",
+      "code": "09090",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5171, 43.0556]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5097, 43.0525]
+      },
+      "population": 45,
+      "surface": 735.97,
+      "radius": 1.53
+    },
+    {
+      "nom": "Cazavet",
+      "code": "09091",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0334, 42.9966]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0426, 43.0024]
+      },
+      "population": 192,
+      "surface": 1807.55,
+      "radius": 2.4
+    },
+    {
+      "nom": "Cazenave-Serres-et-Allens",
+      "code": "09092",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6915, 42.8408]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6722, 42.84]
+      },
+      "population": 61,
+      "surface": 1636.71,
+      "radius": 2.28
+    },
+    {
+      "nom": "Celles",
+      "code": "09093",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6973, 42.9143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6862, 42.918]
+      },
+      "population": 143,
+      "surface": 1036.66,
+      "radius": 1.82
+    },
+    {
+      "nom": "Cérizols",
+      "code": "09094",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0675, 43.1211]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0623, 43.1288]
+      },
+      "population": 140,
+      "surface": 1451.64,
+      "radius": 2.15
+    },
+    {
+      "nom": "Cescau",
+      "code": "09095",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0532, 42.9303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0387, 42.9308]
+      },
+      "population": 162,
+      "surface": 538.83,
+      "radius": 1.31
+    },
+    {
+      "nom": "Château-Verdun",
+      "code": "09096",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6764, 42.7806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6786, 42.782]
+      },
+      "population": 41,
+      "surface": 80.27,
+      "radius": 0.51
+    },
+    {
+      "nom": "Clermont",
+      "code": "09097",
+      "codesPostaux": ["09420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2887, 43.0387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3007, 43.0395]
+      },
+      "population": 118,
+      "surface": 741.99,
+      "radius": 1.54
+    },
+    {
+      "nom": "Contrazy",
+      "code": "09098",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2092, 43.057]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2138, 43.0598]
+      },
+      "population": 71,
+      "surface": 845.34,
+      "radius": 1.64
+    },
+    {
+      "nom": "Cos",
+      "code": "09099",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5712, 42.9823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5692, 42.9775]
+      },
+      "population": 358,
+      "surface": 652.4,
+      "radius": 1.44
+    },
+    {
+      "nom": "Couflens",
+      "code": "09100",
+      "codesPostaux": ["09140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1796, 42.7698]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1868, 42.7867]
+      },
+      "population": 103,
+      "surface": 5625.6,
+      "radius": 4.23
+    },
+    {
+      "nom": "Coussa",
+      "code": "09101",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6879, 43.066]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.679, 43.0631]
+      },
+      "population": 278,
+      "surface": 773.08,
+      "radius": 1.57
+    },
+    {
+      "nom": "Coutens",
+      "code": "09102",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8235, 43.0686]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8255, 43.0749]
+      },
+      "population": 179,
+      "surface": 423.19,
+      "radius": 1.16
+    },
+    {
+      "nom": "Crampagna",
+      "code": "09103",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5877, 43.024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6075, 43.0288]
+      },
+      "population": 952,
+      "surface": 999.66,
+      "radius": 1.78
+    },
+    {
+      "nom": "Dalou",
+      "code": "09104",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6496, 43.0278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6403, 43.0335]
+      },
+      "population": 784,
+      "surface": 775.36,
+      "radius": 1.57
+    },
+    {
+      "nom": "Daumazan-sur-Arize",
+      "code": "09105",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3054, 43.1444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3071, 43.1437]
+      },
+      "population": 804,
+      "surface": 1391.26,
+      "radius": 2.1
+    },
+    {
+      "nom": "Dreuilhe",
+      "code": "09106",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8666, 42.9415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8627, 42.9475]
+      },
+      "population": 363,
+      "surface": 702.57,
+      "radius": 1.5
+    },
+    {
+      "nom": "Dun",
+      "code": "09107",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7945, 43.0237]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7998, 43.0263]
+      },
+      "population": 650,
+      "surface": 4161.6,
+      "radius": 3.64
+    },
+    {
+      "nom": "Durban-sur-Arize",
+      "code": "09108",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3504, 43.0219]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3439, 43.0194]
+      },
+      "population": 179,
+      "surface": 685.09,
+      "radius": 1.48
+    },
+    {
+      "nom": "Durfort",
+      "code": "09109",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4676, 43.1933]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4572, 43.2062]
+      },
+      "population": 185,
+      "surface": 1109.14,
+      "radius": 1.88
+    },
+    {
+      "nom": "Encourtiech",
+      "code": "09110",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1913, 42.9644]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1825, 42.9583]
+      },
+      "population": 98,
+      "surface": 485.54,
+      "radius": 1.24
+    },
+    {
+      "nom": "Engomer",
+      "code": "09111",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0641, 42.9435]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.059, 42.9469]
+      },
+      "population": 314,
+      "surface": 764.92,
+      "radius": 1.56
+    },
+    {
+      "nom": "Ercé",
+      "code": "09113",
+      "codesPostaux": ["09140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3064, 42.8369]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2905, 42.8478]
+      },
+      "population": 580,
+      "surface": 4096.91,
+      "radius": 3.61
+    },
+    {
+      "nom": "Erp",
+      "code": "09114",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2027, 42.9317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2012, 42.9419]
+      },
+      "population": 132,
+      "surface": 946.47,
+      "radius": 1.74
+    },
+    {
+      "nom": "Esclagne",
+      "code": "09115",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8449, 42.9828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8483, 42.981]
+      },
+      "population": 121,
+      "surface": 354.7,
+      "radius": 1.06
+    },
+    {
+      "nom": "Escosse",
+      "code": "09116",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5497, 43.132]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5488, 43.124]
+      },
+      "population": 362,
+      "surface": 1496.03,
+      "radius": 2.18
+    },
+    {
+      "nom": "Esplas",
+      "code": "09117",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.496, 43.1855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4984, 43.1873]
+      },
+      "population": 105,
+      "surface": 769.91,
+      "radius": 1.57
+    },
+    {
+      "nom": "Esplas-de-Sérou",
+      "code": "09118",
+      "codesPostaux": ["09420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.351, 42.9619]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3775, 42.9765]
+      },
+      "population": 171,
+      "surface": 3456.27,
+      "radius": 3.32
+    },
+    {
+      "nom": "Eycheil",
+      "code": "09119",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1574, 42.9534]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1639, 42.9687]
+      },
+      "population": 530,
+      "surface": 489.28,
+      "radius": 1.25
+    },
+    {
+      "nom": "Fabas",
+      "code": "09120",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1105, 43.1213]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1044, 43.1084]
+      },
+      "population": 353,
+      "surface": 2325.99,
+      "radius": 2.72
+    },
+    {
+      "nom": "Ferrières-sur-Ariège",
+      "code": "09121",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6055, 42.9396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6163, 42.9427]
+      },
+      "population": 775,
+      "surface": 346.5,
+      "radius": 1.05
+    },
+    {
+      "nom": "Foix",
+      "code": "09122",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.609, 42.9701]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6054, 42.964]
+      },
+      "population": 9731,
+      "surface": 1951.27,
+      "radius": 2.49
+    },
+    {
+      "nom": "Fornex",
+      "code": "09123",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2394, 43.1658]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2476, 43.1672]
+      },
+      "population": 107,
+      "surface": 966.47,
+      "radius": 1.75
+    },
+    {
+      "nom": "Fougax-et-Barrineuf",
+      "code": "09125",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.903, 42.8721]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8936, 42.8803]
+      },
+      "population": 430,
+      "surface": 3157.31,
+      "radius": 3.17
+    },
+    {
+      "nom": "Freychenet",
+      "code": "09126",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7342, 42.8867]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7196, 42.9086]
+      },
+      "population": 82,
+      "surface": 2542.27,
+      "radius": 2.84
+    },
+    {
+      "nom": "Gabre",
+      "code": "09127",
+      "codesPostaux": ["09290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.424, 43.0658]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.417, 43.0745]
+      },
+      "population": 124,
+      "surface": 1369.61,
+      "radius": 2.09
+    },
+    {
+      "nom": "Gajan",
+      "code": "09128",
+      "codesPostaux": ["09190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1389, 43.0367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1269, 43.0322]
+      },
+      "population": 330,
+      "surface": 819.1,
+      "radius": 1.61
+    },
+    {
+      "nom": "Galey",
+      "code": "09129",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9013, 42.9447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9148, 42.9357]
+      },
+      "population": 113,
+      "surface": 944.7,
+      "radius": 1.73
+    },
+    {
+      "nom": "Ganac",
+      "code": "09130",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5546, 42.9327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5621, 42.9473]
+      },
+      "population": 746,
+      "surface": 2027.63,
+      "radius": 2.54
+    },
+    {
+      "nom": "Garanou",
+      "code": "09131",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7463, 42.762]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7516, 42.7681]
+      },
+      "population": 146,
+      "surface": 310.7,
+      "radius": 0.99
+    },
+    {
+      "nom": "Gaudiès",
+      "code": "09132",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7392, 43.1728]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7313, 43.1752]
+      },
+      "population": 235,
+      "surface": 1049.43,
+      "radius": 1.83
+    },
+    {
+      "nom": "Génat",
+      "code": "09133",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5669, 42.8273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5729, 42.8233]
+      },
+      "population": 24,
+      "surface": 825.64,
+      "radius": 1.62
+    },
+    {
+      "nom": "Gestiès",
+      "code": "09134",
+      "codesPostaux": ["09220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5845, 42.7152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5733, 42.7663]
+      },
+      "population": 36,
+      "surface": 2721.33,
+      "radius": 2.94
+    },
+    {
+      "nom": "Gourbit",
+      "code": "09136",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5146, 42.8297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5351, 42.845]
+      },
+      "population": 79,
+      "surface": 1809.58,
+      "radius": 2.4
+    },
+    {
+      "nom": "Gudas",
+      "code": "09137",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6787, 43.0022]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6767, 43.0083]
+      },
+      "population": 197,
+      "surface": 1077.23,
+      "radius": 1.85
+    },
+    {
+      "nom": "Ignaux",
+      "code": "09140",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8466, 42.7413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8399, 42.7319]
+      },
+      "population": 126,
+      "surface": 546.41,
+      "radius": 1.32
+    },
+    {
+      "nom": "Ilhat",
+      "code": "09142",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7835, 42.9515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7845, 42.9567]
+      },
+      "population": 124,
+      "surface": 681.3,
+      "radius": 1.47
+    },
+    {
+      "nom": "Illartein",
+      "code": "09141",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9547, 42.9205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9658, 42.9362]
+      },
+      "population": 73,
+      "surface": 394.33,
+      "radius": 1.12
+    },
+    {
+      "nom": "Illier-et-Laramade",
+      "code": "09143",
+      "codesPostaux": ["09220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5446, 42.7905]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5399, 42.7873]
+      },
+      "population": 38,
+      "surface": 514.9,
+      "radius": 1.28
+    },
+    {
+      "nom": "Justiniac",
+      "code": "09146",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4897, 43.2142]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.492, 43.2121]
+      },
+      "population": 58,
+      "surface": 456.27,
+      "radius": 1.21
+    },
+    {
+      "nom": "L'Aiguillon",
+      "code": "09003",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9035, 42.9102]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9006, 42.9169]
+      },
+      "population": 375,
+      "surface": 643.29,
+      "radius": 1.43
+    },
+    {
+      "nom": "L'Herm",
+      "code": "09138",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6762, 42.9746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6856, 42.9725]
+      },
+      "population": 189,
+      "surface": 1481.25,
+      "radius": 2.17
+    },
+    {
+      "nom": "L'Hospitalet-près-l'Andorre",
+      "code": "09139",
+      "codesPostaux": ["09390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7752, 42.5947]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7983, 42.5878]
+      },
+      "population": 95,
+      "surface": 2677.16,
+      "radius": 2.92
+    },
+    {
+      "nom": "La Bastide-de-Besplas",
+      "code": "09038",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2766, 43.1684]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2754, 43.1671]
+      },
+      "population": 373,
+      "surface": 1030.58,
+      "radius": 1.81
+    },
+    {
+      "nom": "La Bastide-de-Bousignac",
+      "code": "09039",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8775, 43.0599]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8865, 43.0538]
+      },
+      "population": 336,
+      "surface": 1261.76,
+      "radius": 2
+    },
+    {
+      "nom": "La Bastide-de-Lordat",
+      "code": "09040",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7125, 43.1398]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7122, 43.144]
+      },
+      "population": 310,
+      "surface": 597.84,
+      "radius": 1.38
+    },
+    {
+      "nom": "La Bastide-de-Sérou",
+      "code": "09042",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4241, 43.0255]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4289, 43.0122]
+      },
+      "population": 972,
+      "surface": 4144.22,
+      "radius": 3.63
+    },
+    {
+      "nom": "La Bastide-du-Salat",
+      "code": "09041",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0024, 43.0621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9879, 43.0571]
+      },
+      "population": 202,
+      "surface": 671.08,
+      "radius": 1.46
+    },
+    {
+      "nom": "La Bastide-sur-l'Hers",
+      "code": "09043",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9017, 42.9472]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9105, 42.9563]
+      },
+      "population": 676,
+      "surface": 482.4,
+      "radius": 1.24
+    },
+    {
+      "nom": "La Tour-du-Crieu",
+      "code": "09312",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6651, 43.1071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.654, 43.1023]
+      },
+      "population": 3268,
+      "surface": 1036.01,
+      "radius": 1.82
+    },
+    {
+      "nom": "Labatut",
+      "code": "09147",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5213, 43.2627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5171, 43.2617]
+      },
+      "population": 177,
+      "surface": 360.58,
+      "radius": 1.07
+    },
+    {
+      "nom": "Lacave",
+      "code": "09148",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0147, 43.0478]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0002, 43.0393]
+      },
+      "population": 116,
+      "surface": 455.73,
+      "radius": 1.2
+    },
+    {
+      "nom": "Lacourt",
+      "code": "09149",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1767, 42.9317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1742, 42.9463]
+      },
+      "population": 201,
+      "surface": 1656.01,
+      "radius": 2.3
+    },
+    {
+      "nom": "Lagarde",
+      "code": "09150",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9436, 43.0482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9343, 43.0502]
+      },
+      "population": 210,
+      "surface": 1195.94,
+      "radius": 1.95
+    },
+    {
+      "nom": "Lanoux",
+      "code": "09151",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4244, 43.1205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4247, 43.1177]
+      },
+      "population": 62,
+      "surface": 377.42,
+      "radius": 1.1
+    },
+    {
+      "nom": "Lapège",
+      "code": "09152",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5558, 42.8026]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5725, 42.8018]
+      },
+      "population": 18,
+      "surface": 840.67,
+      "radius": 1.64
+    },
+    {
+      "nom": "Lapenne",
+      "code": "09153",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7751, 43.1433]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7496, 43.146]
+      },
+      "population": 120,
+      "surface": 2202.07,
+      "radius": 2.65
+    },
+    {
+      "nom": "Larbont",
+      "code": "09154",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4008, 42.9927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3974, 42.9939]
+      },
+      "population": 60,
+      "surface": 616.96,
+      "radius": 1.4
+    },
+    {
+      "nom": "Larcat",
+      "code": "09155",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.644, 42.77]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.661, 42.7784]
+      },
+      "population": 49,
+      "surface": 927.2,
+      "radius": 1.72
+    },
+    {
+      "nom": "Larnat",
+      "code": "09156",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.626, 42.7938]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.631, 42.7999]
+      },
+      "population": 19,
+      "surface": 560.7,
+      "radius": 1.34
+    },
+    {
+      "nom": "Laroque-d'Olmes",
+      "code": "09157",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8689, 42.9676]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8716, 42.969]
+      },
+      "population": 2414,
+      "surface": 1434.82,
+      "radius": 2.14
+    },
+    {
+      "nom": "Lasserre",
+      "code": "09158",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1623, 43.0768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1691, 43.0701]
+      },
+      "population": 252,
+      "surface": 863.07,
+      "radius": 1.66
+    },
+    {
+      "nom": "Lassur",
+      "code": "09159",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7195, 42.7425]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7356, 42.7687]
+      },
+      "population": 84,
+      "surface": 1186.72,
+      "radius": 1.94
+    },
+    {
+      "nom": "Lavelanet",
+      "code": "09160",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8466, 42.934]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8517, 42.9377]
+      },
+      "population": 6018,
+      "surface": 1278.62,
+      "radius": 2.02
+    },
+    {
+      "nom": "Le Bosc",
+      "code": "09063",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4459, 42.9348]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4605, 42.9473]
+      },
+      "population": 114,
+      "surface": 2552.27,
+      "radius": 2.85
+    },
+    {
+      "nom": "Le Carlaret",
+      "code": "09081",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.701, 43.1325]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6955, 43.1408]
+      },
+      "population": 286,
+      "surface": 951.09,
+      "radius": 1.74
+    },
+    {
+      "nom": "Le Fossat",
+      "code": "09124",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4185, 43.1807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4071, 43.1738]
+      },
+      "population": 1061,
+      "surface": 1452.09,
+      "radius": 2.15
+    },
+    {
+      "nom": "Le Mas-d'Azil",
+      "code": "09181",
+      "codesPostaux": ["09290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3499, 43.0724]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3616, 43.0793]
+      },
+      "population": 1236,
+      "surface": 3949.07,
+      "radius": 3.55
+    },
+    {
+      "nom": "Le Peyrat",
+      "code": "09229",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9293, 42.9553]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9215, 42.9564]
+      },
+      "population": 496,
+      "surface": 621.28,
+      "radius": 1.41
+    },
+    {
+      "nom": "Le Pla",
+      "code": "09230",
+      "codesPostaux": ["09460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.055, 42.6883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0808, 42.7156]
+      },
+      "population": 61,
+      "surface": 1315.84,
+      "radius": 2.05
+    },
+    {
+      "nom": "Le Port",
+      "code": "09231",
+      "codesPostaux": ["09320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3885, 42.835]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3727, 42.8679]
+      },
+      "population": 167,
+      "surface": 5011.06,
+      "radius": 3.99
+    },
+    {
+      "nom": "Le Puch",
+      "code": "09237",
+      "codesPostaux": ["09460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1006, 42.7218]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1009, 42.7181]
+      },
+      "population": 28,
+      "surface": 283.56,
+      "radius": 0.95
+    },
+    {
+      "nom": "Le Vernet",
+      "code": "09331",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6013, 43.1885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6012, 43.1846]
+      },
+      "population": 693,
+      "surface": 570.12,
+      "radius": 1.35
+    },
+    {
+      "nom": "Léran",
+      "code": "09161",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9257, 42.9833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.911, 42.9883]
+      },
+      "population": 616,
+      "surface": 1214.75,
+      "radius": 1.97
+    },
+    {
+      "nom": "Lercoul",
+      "code": "09162",
+      "codesPostaux": ["09220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5249, 42.7106]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5459, 42.77]
+      },
+      "population": 14,
+      "surface": 1943.29,
+      "radius": 2.49
+    },
+    {
+      "nom": "Les Bordes-sur-Arize",
+      "code": "09061",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.368, 43.114]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3707, 43.1059]
+      },
+      "population": 472,
+      "surface": 1280,
+      "radius": 2.02
+    },
+    {
+      "nom": "Les Cabannes",
+      "code": "09070",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6881, 42.7837]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6858, 42.7847]
+      },
+      "population": 330,
+      "surface": 87.03,
+      "radius": 0.53
+    },
+    {
+      "nom": "Les Issards",
+      "code": "09145",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7369, 43.0792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7356, 43.079]
+      },
+      "population": 253,
+      "surface": 384.94,
+      "radius": 1.11
+    },
+    {
+      "nom": "Les Pujols",
+      "code": "09238",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7226, 43.0895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7187, 43.0879]
+      },
+      "population": 862,
+      "surface": 1327.79,
+      "radius": 2.06
+    },
+    {
+      "nom": "Lescousse",
+      "code": "09163",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5112, 43.1528]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5123, 43.1531]
+      },
+      "population": 82,
+      "surface": 850.74,
+      "radius": 1.65
+    },
+    {
+      "nom": "Lescure",
+      "code": "09164",
+      "codesPostaux": ["09420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2447, 43.0066]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2342, 43.0006]
+      },
+      "population": 483,
+      "surface": 2602.31,
+      "radius": 2.88
+    },
+    {
+      "nom": "Lesparrou",
+      "code": "09165",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9408, 42.9288]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9042, 42.9306]
+      },
+      "population": 233,
+      "surface": 1641.87,
+      "radius": 2.29
+    },
+    {
+      "nom": "Leychert",
+      "code": "09166",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7224, 42.9413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7301, 42.9438]
+      },
+      "population": 112,
+      "surface": 590.34,
+      "radius": 1.37
+    },
+    {
+      "nom": "Lézat-sur-Lèze",
+      "code": "09167",
+      "codesPostaux": ["09210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3475, 43.2794]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3463, 43.2761]
+      },
+      "population": 2341,
+      "surface": 4037.33,
+      "radius": 3.58
+    },
+    {
+      "nom": "Lieurac",
+      "code": "09168",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7918, 42.9821]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7897, 42.9809]
+      },
+      "population": 180,
+      "surface": 642.34,
+      "radius": 1.43
+    },
+    {
+      "nom": "Limbrassac",
+      "code": "09169",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8454, 43.0119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8436, 43.0171]
+      },
+      "population": 119,
+      "surface": 1242.92,
+      "radius": 1.99
+    },
+    {
+      "nom": "Lissac",
+      "code": "09170",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5156, 43.2692]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.511, 43.2688]
+      },
+      "population": 240,
+      "surface": 380.56,
+      "radius": 1.1
+    },
+    {
+      "nom": "Lordat",
+      "code": "09171",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7848, 42.7961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7528, 42.7756]
+      },
+      "population": 63,
+      "surface": 753.01,
+      "radius": 1.55
+    },
+    {
+      "nom": "Lorp-Sentaraille",
+      "code": "09289",
+      "codesPostaux": ["09190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1097, 43.0187]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1216, 43.0082]
+      },
+      "population": 1392,
+      "surface": 620.95,
+      "radius": 1.41
+    },
+    {
+      "nom": "Loubaut",
+      "code": "09172",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2817, 43.1885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2854, 43.1887]
+      },
+      "population": 28,
+      "surface": 241.41,
+      "radius": 0.88
+    },
+    {
+      "nom": "Loubens",
+      "code": "09173",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5514, 43.0413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5449, 43.045]
+      },
+      "population": 277,
+      "surface": 1175.06,
+      "radius": 1.93
+    },
+    {
+      "nom": "Loubières",
+      "code": "09174",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5949, 43.0091]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5995, 43.0091]
+      },
+      "population": 359,
+      "surface": 305.89,
+      "radius": 0.99
+    },
+    {
+      "nom": "Ludiès",
+      "code": "09175",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.714, 43.1204]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7141, 43.1183]
+      },
+      "population": 99,
+      "surface": 190.05,
+      "radius": 0.78
+    },
+    {
+      "nom": "Luzenac",
+      "code": "09176",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7398, 42.719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7637, 42.7632]
+      },
+      "population": 514,
+      "surface": 2652.46,
+      "radius": 2.91
+    },
+    {
+      "nom": "Madière",
+      "code": "09177",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5183, 43.1109]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5143, 43.1062]
+      },
+      "population": 272,
+      "surface": 1037.24,
+      "radius": 1.82
+    },
+    {
+      "nom": "Malegoude",
+      "code": "09178",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9327, 43.1129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9387, 43.1124]
+      },
+      "population": 37,
+      "surface": 617.62,
+      "radius": 1.4
+    },
+    {
+      "nom": "Malléon",
+      "code": "09179",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7171, 43.0317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7119, 43.0331]
+      },
+      "population": 79,
+      "surface": 687.34,
+      "radius": 1.48
+    },
+    {
+      "nom": "Manses",
+      "code": "09180",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8146, 43.1083]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8112, 43.1005]
+      },
+      "population": 128,
+      "surface": 1542.49,
+      "radius": 2.22
+    },
+    {
+      "nom": "Massat",
+      "code": "09182",
+      "codesPostaux": ["09320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3812, 42.8767]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3477, 42.8885]
+      },
+      "population": 741,
+      "surface": 4507.88,
+      "radius": 3.79
+    },
+    {
+      "nom": "Mauvezin-de-Prat",
+      "code": "09183",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9933, 43.034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9976, 43.0313]
+      },
+      "population": 99,
+      "surface": 184,
+      "radius": 0.77
+    },
+    {
+      "nom": "Mauvezin-de-Sainte-Croix",
+      "code": "09184",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2318, 43.0751]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2283, 43.0788]
+      },
+      "population": 52,
+      "surface": 529.61,
+      "radius": 1.3
+    },
+    {
+      "nom": "Mazères",
+      "code": "09185",
+      "codesPostaux": ["09270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6782, 43.2319]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6778, 43.2503]
+      },
+      "population": 3866,
+      "surface": 4423.87,
+      "radius": 3.75
+    },
+    {
+      "nom": "Méras",
+      "code": "09186",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3126, 43.1834]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3114, 43.1819]
+      },
+      "population": 97,
+      "surface": 368.78,
+      "radius": 1.08
+    },
+    {
+      "nom": "Mercenac",
+      "code": "09187",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0685, 43.0541]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0786, 43.0402]
+      },
+      "population": 352,
+      "surface": 1365.78,
+      "radius": 2.09
+    },
+    {
+      "nom": "Mercus-Garrabet",
+      "code": "09188",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6502, 42.8838]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6295, 42.8796]
+      },
+      "population": 1226,
+      "surface": 1505.08,
+      "radius": 2.19
+    },
+    {
+      "nom": "Mérens-les-Vals",
+      "code": "09189",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8227, 42.633]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8374, 42.6578]
+      },
+      "population": 168,
+      "surface": 8013.94,
+      "radius": 5.05
+    },
+    {
+      "nom": "Mérigon",
+      "code": "09190",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2031, 43.0902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1968, 43.0884]
+      },
+      "population": 113,
+      "surface": 634.66,
+      "radius": 1.42
+    },
+    {
+      "nom": "Miglos",
+      "code": "09192",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6018, 42.7804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5995, 42.7915]
+      },
+      "population": 132,
+      "surface": 1877.19,
+      "radius": 2.44
+    },
+    {
+      "nom": "Mijanès",
+      "code": "09193",
+      "codesPostaux": ["09460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0182, 42.7076]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0559, 42.7301]
+      },
+      "population": 58,
+      "surface": 3958.93,
+      "radius": 3.55
+    },
+    {
+      "nom": "Mirepoix",
+      "code": "09194",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8707, 43.1137]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8738, 43.0881]
+      },
+      "population": 3106,
+      "surface": 4769.6,
+      "radius": 3.9
+    },
+    {
+      "nom": "Monesple",
+      "code": "09195",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4757, 43.0948]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4649, 43.1003]
+      },
+      "population": 26,
+      "surface": 613.41,
+      "radius": 1.4
+    },
+    {
+      "nom": "Montagagne",
+      "code": "09196",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4126, 42.963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4103, 42.9763]
+      },
+      "population": 82,
+      "surface": 690.1,
+      "radius": 1.48
+    },
+    {
+      "nom": "Montaillou",
+      "code": "09197",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.905, 42.7834]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8982, 42.7877]
+      },
+      "population": 17,
+      "surface": 883.37,
+      "radius": 1.68
+    },
+    {
+      "nom": "Montardit",
+      "code": "09198",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.186, 43.0694]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1938, 43.069]
+      },
+      "population": 223,
+      "surface": 734.49,
+      "radius": 1.53
+    },
+    {
+      "nom": "Montaut",
+      "code": "09199",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6554, 43.1847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6443, 43.1876]
+      },
+      "population": 694,
+      "surface": 3520.55,
+      "radius": 3.35
+    },
+    {
+      "nom": "Montbel",
+      "code": "09200",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9681, 42.9808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9767, 42.9757]
+      },
+      "population": 93,
+      "surface": 1753.46,
+      "radius": 2.36
+    },
+    {
+      "nom": "Montégut-en-Couserans",
+      "code": "09201",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0907, 42.9844]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0953, 42.9805]
+      },
+      "population": 73,
+      "surface": 628.76,
+      "radius": 1.41
+    },
+    {
+      "nom": "Montégut-Plantaurel",
+      "code": "09202",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4935, 43.0757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4858, 43.069]
+      },
+      "population": 319,
+      "surface": 1931.06,
+      "radius": 2.48
+    },
+    {
+      "nom": "Montels",
+      "code": "09203",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4692, 43.0061]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4725, 43.0045]
+      },
+      "population": 157,
+      "surface": 377.69,
+      "radius": 1.1
+    },
+    {
+      "nom": "Montesquieu-Avantès",
+      "code": "09204",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2185, 43.0358]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1966, 43.0238]
+      },
+      "population": 261,
+      "surface": 1658.69,
+      "radius": 2.3
+    },
+    {
+      "nom": "Montfa",
+      "code": "09205",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2897, 43.1023]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2841, 43.0995]
+      },
+      "population": 94,
+      "surface": 877.17,
+      "radius": 1.67
+    },
+    {
+      "nom": "Montferrier",
+      "code": "09206",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7689, 42.869]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7948, 42.8953]
+      },
+      "population": 544,
+      "surface": 5198.42,
+      "radius": 4.07
+    },
+    {
+      "nom": "Montgailhard",
+      "code": "09207",
+      "codesPostaux": ["09330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6441, 42.9387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6339, 42.9339]
+      },
+      "population": 1456,
+      "surface": 805.1,
+      "radius": 1.6
+    },
+    {
+      "nom": "Montgauch",
+      "code": "09208",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0713, 42.9922]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0754, 43]
+      },
+      "population": 112,
+      "surface": 906.8,
+      "radius": 1.7
+    },
+    {
+      "nom": "Montjoie-en-Couserans",
+      "code": "09209",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.181, 43.0133]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1598, 43.0013]
+      },
+      "population": 1001,
+      "surface": 2993.38,
+      "radius": 3.09
+    },
+    {
+      "nom": "Montoulieu",
+      "code": "09210",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6015, 42.9015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6288, 42.9088]
+      },
+      "population": 416,
+      "surface": 1430.37,
+      "radius": 2.13
+    },
+    {
+      "nom": "Montségur",
+      "code": "09211",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8241, 42.8473]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8333, 42.8716]
+      },
+      "population": 116,
+      "surface": 3738.36,
+      "radius": 3.45
+    },
+    {
+      "nom": "Montseron",
+      "code": "09212",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3154, 43.0219]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3242, 43.0182]
+      },
+      "population": 103,
+      "surface": 879.88,
+      "radius": 1.67
+    },
+    {
+      "nom": "Moulin-Neuf",
+      "code": "09213",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.948, 43.0716]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9442, 43.0744]
+      },
+      "population": 235,
+      "surface": 288.71,
+      "radius": 0.96
+    },
+    {
+      "nom": "Moulis",
+      "code": "09214",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0957, 42.9348]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.091, 42.9614]
+      },
+      "population": 796,
+      "surface": 3674.93,
+      "radius": 3.42
+    },
+    {
+      "nom": "Nalzen",
+      "code": "09215",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7552, 42.9216]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7582, 42.9172]
+      },
+      "population": 112,
+      "surface": 556.41,
+      "radius": 1.33
+    },
+    {
+      "nom": "Nescus",
+      "code": "09216",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4347, 42.9902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4314, 42.992]
+      },
+      "population": 58,
+      "surface": 302.06,
+      "radius": 0.98
+    },
+    {
+      "nom": "Niaux",
+      "code": "09217",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6019, 42.8152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5909, 42.8115]
+      },
+      "population": 151,
+      "surface": 394.97,
+      "radius": 1.12
+    },
+    {
+      "nom": "Orgeix",
+      "code": "09218",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8756, 42.6757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8669, 42.7076]
+      },
+      "population": 101,
+      "surface": 1853.82,
+      "radius": 2.43
+    },
+    {
+      "nom": "Orgibet",
+      "code": "09219",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9386, 42.9289]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9383, 42.9341]
+      },
+      "population": 164,
+      "surface": 757.74,
+      "radius": 1.55
+    },
+    {
+      "nom": "Orlu",
+      "code": "09220",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9387, 42.6586]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8894, 42.7021]
+      },
+      "population": 160,
+      "surface": 7150.26,
+      "radius": 4.77
+    },
+    {
+      "nom": "Ornolac-Ussat-les-Bains",
+      "code": "09221",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6463, 42.8236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6318, 42.8195]
+      },
+      "population": 248,
+      "surface": 1209.6,
+      "radius": 1.96
+    },
+    {
+      "nom": "Orus",
+      "code": "09222",
+      "codesPostaux": ["09220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5125, 42.7936]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5083, 42.7818]
+      },
+      "population": 24,
+      "surface": 903.54,
+      "radius": 1.7
+    },
+    {
+      "nom": "Oust",
+      "code": "09223",
+      "codesPostaux": ["09140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2362, 42.8598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2162, 42.8746]
+      },
+      "population": 574,
+      "surface": 1912.55,
+      "radius": 2.47
+    },
+    {
+      "nom": "Pailhès",
+      "code": "09224",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4467, 43.0968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4439, 43.1022]
+      },
+      "population": 511,
+      "surface": 2156.25,
+      "radius": 2.62
+    },
+    {
+      "nom": "Pamiers",
+      "code": "09225",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6168, 43.1278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6079, 43.1148]
+      },
+      "population": 16512,
+      "surface": 4626.13,
+      "radius": 3.84
+    },
+    {
+      "nom": "Pech",
+      "code": "09226",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6884, 42.7629]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6868, 42.7834]
+      },
+      "population": 37,
+      "surface": 478.85,
+      "radius": 1.23
+    },
+    {
+      "nom": "Péreille",
+      "code": "09227",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8119, 42.931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8264, 42.9216]
+      },
+      "population": 186,
+      "surface": 543.07,
+      "radius": 1.31
+    },
+    {
+      "nom": "Perles-et-Castelet",
+      "code": "09228",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7767, 42.714]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7872, 42.7439]
+      },
+      "population": 219,
+      "surface": 1805.25,
+      "radius": 2.4
+    },
+    {
+      "nom": "Prades",
+      "code": "09232",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8591, 42.7874]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8783, 42.7862]
+      },
+      "population": 46,
+      "surface": 2912.46,
+      "radius": 3.04
+    },
+    {
+      "nom": "Pradettes",
+      "code": "09233",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8204, 42.9906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8194, 42.99]
+      },
+      "population": 44,
+      "surface": 351.45,
+      "radius": 1.06
+    },
+    {
+      "nom": "Pradières",
+      "code": "09234",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6581, 42.9615]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.653, 42.9658]
+      },
+      "population": 124,
+      "surface": 674.33,
+      "radius": 1.47
+    },
+    {
+      "nom": "Prat-Bonrepaux",
+      "code": "09235",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0283, 43.035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0194, 43.0279]
+      },
+      "population": 858,
+      "surface": 1463.5,
+      "radius": 2.16
+    },
+    {
+      "nom": "Prayols",
+      "code": "09236",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5992, 42.922]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6248, 42.9263]
+      },
+      "population": 366,
+      "surface": 788.77,
+      "radius": 1.58
+    },
+    {
+      "nom": "Quérigut",
+      "code": "09239",
+      "codesPostaux": ["09460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1114, 42.6875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0972, 42.6988]
+      },
+      "population": 137,
+      "surface": 3629.87,
+      "radius": 3.4
+    },
+    {
+      "nom": "Quié",
+      "code": "09240",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5891, 42.8416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5938, 42.8453]
+      },
+      "population": 298,
+      "surface": 250.56,
+      "radius": 0.89
+    },
+    {
+      "nom": "Rabat-les-Trois-Seigneurs",
+      "code": "09241",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5044, 42.8425]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5535, 42.8558]
+      },
+      "population": 368,
+      "surface": 2703.59,
+      "radius": 2.93
+    },
+    {
+      "nom": "Raissac",
+      "code": "09242",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8137, 42.9404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8133, 42.942]
+      },
+      "population": 49,
+      "surface": 372.87,
+      "radius": 1.09
+    },
+    {
+      "nom": "Régat",
+      "code": "09243",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8856, 42.9887]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8856, 42.9887]
+      },
+      "population": 94,
+      "surface": 218.36,
+      "radius": 0.83
+    },
+    {
+      "nom": "Rieucros",
+      "code": "09244",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7671, 43.0758]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7687, 43.0825]
+      },
+      "population": 720,
+      "surface": 564.71,
+      "radius": 1.34
+    },
+    {
+      "nom": "Rieux-de-Pelleport",
+      "code": "09245",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6013, 43.0573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6113, 43.0587]
+      },
+      "population": 1261,
+      "surface": 826.11,
+      "radius": 1.62
+    },
+    {
+      "nom": "Rimont",
+      "code": "09246",
+      "codesPostaux": ["09420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2763, 42.9882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2812, 42.9951]
+      },
+      "population": 542,
+      "surface": 2900.86,
+      "radius": 3.04
+    },
+    {
+      "nom": "Rivèrenert",
+      "code": "09247",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2694, 42.9537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2296, 42.9575]
+      },
+      "population": 192,
+      "surface": 2890.07,
+      "radius": 3.03
+    },
+    {
+      "nom": "Roquefixade",
+      "code": "09249",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7628, 42.9347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.755, 42.9357]
+      },
+      "population": 150,
+      "surface": 1248.77,
+      "radius": 1.99
+    },
+    {
+      "nom": "Roquefort-les-Cascades",
+      "code": "09250",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.742, 42.9609]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7571, 42.9612]
+      },
+      "population": 83,
+      "surface": 704.59,
+      "radius": 1.5
+    },
+    {
+      "nom": "Roumengoux",
+      "code": "09251",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9252, 43.0771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9351, 43.0712]
+      },
+      "population": 169,
+      "surface": 680.61,
+      "radius": 1.47
+    },
+    {
+      "nom": "Rouze",
+      "code": "09252",
+      "codesPostaux": ["09460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0656, 42.7396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0689, 42.7303]
+      },
+      "population": 85,
+      "surface": 955.27,
+      "radius": 1.74
+    },
+    {
+      "nom": "Sabarat",
+      "code": "09253",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3994, 43.0991]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3892, 43.0999]
+      },
+      "population": 377,
+      "surface": 963.45,
+      "radius": 1.75
+    },
+    {
+      "nom": "Saint-Amadou",
+      "code": "09254",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7145, 43.111]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7232, 43.1106]
+      },
+      "population": 272,
+      "surface": 469,
+      "radius": 1.22
+    },
+    {
+      "nom": "Saint-Bauzeil",
+      "code": "09256",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5808, 43.082]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5727, 43.0767]
+      },
+      "population": 57,
+      "surface": 442.4,
+      "radius": 1.19
+    },
+    {
+      "nom": "Saint-Félix-de-Rieutord",
+      "code": "09258",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6697, 43.0421]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6724, 43.0464]
+      },
+      "population": 469,
+      "surface": 685.35,
+      "radius": 1.48
+    },
+    {
+      "nom": "Saint-Félix-de-Tournegat",
+      "code": "09259",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7617, 43.1254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7478, 43.131]
+      },
+      "population": 152,
+      "surface": 1053.12,
+      "radius": 1.83
+    },
+    {
+      "nom": "Saint-Girons",
+      "code": "09261",
+      "codesPostaux": ["09200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1591, 42.9681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.146, 42.9829]
+      },
+      "population": 6129,
+      "surface": 1901.09,
+      "radius": 2.46
+    },
+    {
+      "nom": "Saint-Jean-d'Aigues-Vives",
+      "code": "09262",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8737, 42.9198]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8727, 42.9237]
+      },
+      "population": 370,
+      "surface": 447.55,
+      "radius": 1.19
+    },
+    {
+      "nom": "Saint-Jean-de-Verges",
+      "code": "09264",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6357, 43.012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6104, 43.015]
+      },
+      "population": 1288,
+      "surface": 1283.4,
+      "radius": 2.02
+    },
+    {
+      "nom": "Saint-Jean-du-Castillonnais",
+      "code": "09263",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9264, 42.9483]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9317, 42.9356]
+      },
+      "population": 28,
+      "surface": 476.92,
+      "radius": 1.23
+    },
+    {
+      "nom": "Saint-Jean-du-Falga",
+      "code": "09265",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6229, 43.0848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6278, 43.087]
+      },
+      "population": 2864,
+      "surface": 402.18,
+      "radius": 1.13
+    },
+    {
+      "nom": "Saint-Julien-de-Gras-Capou",
+      "code": "09266",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8569, 43.0355]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8551, 43.037]
+      },
+      "population": 83,
+      "surface": 625.4,
+      "radius": 1.41
+    },
+    {
+      "nom": "Saint-Lary",
+      "code": "09267",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8681, 42.9015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8935, 42.9309]
+      },
+      "population": 147,
+      "surface": 3416.52,
+      "radius": 3.3
+    },
+    {
+      "nom": "Saint-Lizier",
+      "code": "09268",
+      "codesPostaux": ["09190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1267, 42.9997]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1358, 43.0024]
+      },
+      "population": 1384,
+      "surface": 907.56,
+      "radius": 1.7
+    },
+    {
+      "nom": "Saint-Martin-d'Oydes",
+      "code": "09270",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4858, 43.1636]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4963, 43.1694]
+      },
+      "population": 251,
+      "surface": 1185.63,
+      "radius": 1.94
+    },
+    {
+      "nom": "Saint-Martin-de-Caralp",
+      "code": "09269",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5365, 42.991]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5443, 42.9904]
+      },
+      "population": 375,
+      "surface": 921.1,
+      "radius": 1.71
+    },
+    {
+      "nom": "Saint-Michel",
+      "code": "09271",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5045, 43.1353]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5028, 43.1354]
+      },
+      "population": 91,
+      "surface": 588.87,
+      "radius": 1.37
+    },
+    {
+      "nom": "Saint-Paul-de-Jarrat",
+      "code": "09272",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.67, 42.8954]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6592, 42.9135]
+      },
+      "population": 1354,
+      "surface": 2247.54,
+      "radius": 2.67
+    },
+    {
+      "nom": "Saint-Pierre-de-Rivière",
+      "code": "09273",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5576, 42.9668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5602, 42.9611]
+      },
+      "population": 676,
+      "surface": 238.1,
+      "radius": 0.87
+    },
+    {
+      "nom": "Saint-Quentin-la-Tour",
+      "code": "09274",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9077, 43.0273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8989, 43.0334]
+      },
+      "population": 320,
+      "surface": 895.26,
+      "radius": 1.69
+    },
+    {
+      "nom": "Saint-Quirc",
+      "code": "09275",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5029, 43.2782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5017, 43.2757]
+      },
+      "population": 369,
+      "surface": 376.41,
+      "radius": 1.09
+    },
+    {
+      "nom": "Saint-Victor-Rouzaud",
+      "code": "09276",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5522, 43.0841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5514, 43.0947]
+      },
+      "population": 215,
+      "surface": 1272.07,
+      "radius": 2.01
+    },
+    {
+      "nom": "Saint-Ybars",
+      "code": "09277",
+      "codesPostaux": ["09210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3918, 43.2411]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3862, 43.2382]
+      },
+      "population": 670,
+      "surface": 2456.71,
+      "radius": 2.8
+    },
+    {
+      "nom": "Sainte-Croix-Volvestre",
+      "code": "09257",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1629, 43.1253]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1747, 43.1257]
+      },
+      "population": 652,
+      "surface": 1995.9,
+      "radius": 2.52
+    },
+    {
+      "nom": "Sainte-Foi",
+      "code": "09260",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9166, 43.1249]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9146, 43.1292]
+      },
+      "population": 30,
+      "surface": 246.05,
+      "radius": 0.88
+    },
+    {
+      "nom": "Sainte-Suzanne",
+      "code": "09342",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3735, 43.2052]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.386, 43.2104]
+      },
+      "population": 249,
+      "surface": 1048.77,
+      "radius": 1.83
+    },
+    {
+      "nom": "Salsein",
+      "code": "09279",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9989, 42.9049]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0094, 42.9101]
+      },
+      "population": 46,
+      "surface": 578.25,
+      "radius": 1.36
+    },
+    {
+      "nom": "Saurat",
+      "code": "09280",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.506, 42.8809]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5362, 42.8773]
+      },
+      "population": 697,
+      "surface": 4464.47,
+      "radius": 3.77
+    },
+    {
+      "nom": "Sautel",
+      "code": "09281",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8198, 42.9664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8088, 42.9763]
+      },
+      "population": 127,
+      "surface": 930.61,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saverdun",
+      "code": "09282",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5745, 43.227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5759, 43.2337]
+      },
+      "population": 4808,
+      "surface": 6209.85,
+      "radius": 4.45
+    },
+    {
+      "nom": "Savignac-les-Ormeaux",
+      "code": "09283",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7849, 42.6815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.818, 42.7289]
+      },
+      "population": 397,
+      "surface": 2815.28,
+      "radius": 2.99
+    },
+    {
+      "nom": "Ségura",
+      "code": "09284",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6894, 43.0319]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6911, 43.0364]
+      },
+      "population": 194,
+      "surface": 878.22,
+      "radius": 1.67
+    },
+    {
+      "nom": "Seix",
+      "code": "09285",
+      "codesPostaux": ["09140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1495, 42.8179]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2015, 42.8639]
+      },
+      "population": 743,
+      "surface": 8720.71,
+      "radius": 5.27
+    },
+    {
+      "nom": "Sentein",
+      "code": "09290",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9123, 42.8358]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9542, 42.8749]
+      },
+      "population": 170,
+      "surface": 5855.04,
+      "radius": 4.32
+    },
+    {
+      "nom": "Sentenac-d'Oust",
+      "code": "09291",
+      "codesPostaux": ["09140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1378, 42.8662]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1777, 42.8771]
+      },
+      "population": 105,
+      "surface": 1859.95,
+      "radius": 2.43
+    },
+    {
+      "nom": "Sentenac-de-Sérou",
+      "code": "09292",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.393, 42.9479]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3884, 42.9714]
+      },
+      "population": 47,
+      "surface": 1364.53,
+      "radius": 2.08
+    },
+    {
+      "nom": "Serres-sur-Arget",
+      "code": "09293",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5024, 42.9695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5192, 42.9692]
+      },
+      "population": 772,
+      "surface": 1779.25,
+      "radius": 2.38
+    },
+    {
+      "nom": "Sieuras",
+      "code": "09294",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.345, 43.1913]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3378, 43.1839]
+      },
+      "population": 94,
+      "surface": 773.91,
+      "radius": 1.57
+    },
+    {
+      "nom": "Siguer",
+      "code": "09295",
+      "codesPostaux": ["09220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5507, 42.7176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5655, 42.7654]
+      },
+      "population": 95,
+      "surface": 3822.33,
+      "radius": 3.49
+    },
+    {
+      "nom": "Sor",
+      "code": "09297",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0106, 42.9199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0106, 42.921]
+      },
+      "population": 28,
+      "surface": 108.57,
+      "radius": 0.59
+    },
+    {
+      "nom": "Sorgeat",
+      "code": "09298",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8885, 42.7446]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8512, 42.7284]
+      },
+      "population": 90,
+      "surface": 1922.94,
+      "radius": 2.47
+    },
+    {
+      "nom": "Soueix-Rogalle",
+      "code": "09299",
+      "codesPostaux": ["09140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1929, 42.8958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2115, 42.8926]
+      },
+      "population": 425,
+      "surface": 1378.96,
+      "radius": 2.1
+    },
+    {
+      "nom": "Soula",
+      "code": "09300",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6921, 42.9417]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6957, 42.943]
+      },
+      "population": 171,
+      "surface": 1133.02,
+      "radius": 1.9
+    },
+    {
+      "nom": "Soulan",
+      "code": "09301",
+      "codesPostaux": ["09320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2448, 42.9056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2325, 42.912]
+      },
+      "population": 391,
+      "surface": 2390,
+      "radius": 2.76
+    },
+    {
+      "nom": "Surba",
+      "code": "09303",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5817, 42.8597]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5742, 42.8589]
+      },
+      "population": 333,
+      "surface": 220.89,
+      "radius": 0.84
+    },
+    {
+      "nom": "Suzan",
+      "code": "09304",
+      "codesPostaux": ["09240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4342, 43.0294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4333, 43.0113]
+      },
+      "population": 24,
+      "surface": 239.87,
+      "radius": 0.87
+    },
+    {
+      "nom": "Tabre",
+      "code": "09305",
+      "codesPostaux": ["09600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8545, 42.9883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8588, 42.9891]
+      },
+      "population": 342,
+      "surface": 287.91,
+      "radius": 0.96
+    },
+    {
+      "nom": "Tarascon-sur-Ariège",
+      "code": "09306",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5977, 42.8451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6051, 42.8485]
+      },
+      "population": 3060,
+      "surface": 859.09,
+      "radius": 1.65
+    },
+    {
+      "nom": "Taurignan-Castet",
+      "code": "09307",
+      "codesPostaux": ["09160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1042, 43.0567]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0918, 43.0396]
+      },
+      "population": 160,
+      "surface": 683.08,
+      "radius": 1.47
+    },
+    {
+      "nom": "Taurignan-Vieux",
+      "code": "09308",
+      "codesPostaux": ["09190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1148, 43.0406]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1154, 43.0276]
+      },
+      "population": 206,
+      "surface": 596.19,
+      "radius": 1.38
+    },
+    {
+      "nom": "Teilhet",
+      "code": "09309",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7836, 43.0989]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7786, 43.092]
+      },
+      "population": 162,
+      "surface": 896.15,
+      "radius": 1.69
+    },
+    {
+      "nom": "Thouars-sur-Arize",
+      "code": "09310",
+      "codesPostaux": ["09350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2384, 43.1808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2414, 43.1849]
+      },
+      "population": 40,
+      "surface": 234.54,
+      "radius": 0.86
+    },
+    {
+      "nom": "Tignac",
+      "code": "09311",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8005, 42.7474]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7953, 42.7463]
+      },
+      "population": 20,
+      "surface": 369.88,
+      "radius": 1.09
+    },
+    {
+      "nom": "Tourtouse",
+      "code": "09313",
+      "codesPostaux": ["09230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1351, 43.0901]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1251, 43.0939]
+      },
+      "population": 165,
+      "surface": 1195.2,
+      "radius": 1.95
+    },
+    {
+      "nom": "Tourtrol",
+      "code": "09314",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7994, 43.069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7987, 43.0689]
+      },
+      "population": 247,
+      "surface": 515.56,
+      "radius": 1.28
+    },
+    {
+      "nom": "Trémoulet",
+      "code": "09315",
+      "codesPostaux": ["09700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7174, 43.1575]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7184, 43.1562]
+      },
+      "population": 105,
+      "surface": 387.83,
+      "radius": 1.11
+    },
+    {
+      "nom": "Troye-d'Ariège",
+      "code": "09316",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8904, 43.0238]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8775, 43.0269]
+      },
+      "population": 110,
+      "surface": 827.69,
+      "radius": 1.62
+    },
+    {
+      "nom": "Unac",
+      "code": "09318",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7826, 42.7571]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7729, 42.7618]
+      },
+      "population": 127,
+      "surface": 255.46,
+      "radius": 0.9
+    },
+    {
+      "nom": "Unzent",
+      "code": "09319",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5346, 43.1698]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5279, 43.1744]
+      },
+      "population": 119,
+      "surface": 794.78,
+      "radius": 1.59
+    },
+    {
+      "nom": "Urs",
+      "code": "09320",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.736, 42.7784]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7321, 42.7746]
+      },
+      "population": 27,
+      "surface": 87.61,
+      "radius": 0.53
+    },
+    {
+      "nom": "Ussat",
+      "code": "09321",
+      "codesPostaux": ["09400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6228, 42.8338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6202, 42.8307]
+      },
+      "population": 308,
+      "surface": 434.62,
+      "radius": 1.18
+    },
+    {
+      "nom": "Ustou",
+      "code": "09322",
+      "codesPostaux": ["09140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2622, 42.7795]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2637, 42.7992]
+      },
+      "population": 259,
+      "surface": 9872.79,
+      "radius": 5.61
+    },
+    {
+      "nom": "Val-de-Sos",
+      "code": "09334",
+      "codesPostaux": ["09220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4735, 42.7746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4993, 42.7682]
+      },
+      "population": 571,
+      "surface": 5338.38,
+      "radius": 4.12
+    },
+    {
+      "nom": "Vals",
+      "code": "09323",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.754, 43.0996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7606, 43.0958]
+      },
+      "population": 87,
+      "surface": 411.77,
+      "radius": 1.14
+    },
+    {
+      "nom": "Varilhes",
+      "code": "09324",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6344, 43.0553]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6281, 43.0459]
+      },
+      "population": 3491,
+      "surface": 1170.16,
+      "radius": 1.93
+    },
+    {
+      "nom": "Vaychis",
+      "code": "09325",
+      "codesPostaux": ["09110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8212, 42.7452]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8047, 42.7414]
+      },
+      "population": 35,
+      "surface": 456.44,
+      "radius": 1.21
+    },
+    {
+      "nom": "Vèbre",
+      "code": "09326",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7172, 42.7679]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7226, 42.7757]
+      },
+      "population": 115,
+      "surface": 521.22,
+      "radius": 1.29
+    },
+    {
+      "nom": "Ventenac",
+      "code": "09327",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7244, 42.9989]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7316, 43.0062]
+      },
+      "population": 235,
+      "surface": 1989.16,
+      "radius": 2.52
+    },
+    {
+      "nom": "Verdun",
+      "code": "09328",
+      "codesPostaux": ["09310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6943, 42.8039]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6888, 42.7918]
+      },
+      "population": 208,
+      "surface": 1171.46,
+      "radius": 1.93
+    },
+    {
+      "nom": "Vernajoul",
+      "code": "09329",
+      "codesPostaux": ["09000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5922, 42.9953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6058, 42.9856]
+      },
+      "population": 710,
+      "surface": 910.62,
+      "radius": 1.7
+    },
+    {
+      "nom": "Vernaux",
+      "code": "09330",
+      "codesPostaux": ["09250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7838, 42.79]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7579, 42.7719]
+      },
+      "population": 34,
+      "surface": 607.76,
+      "radius": 1.39
+    },
+    {
+      "nom": "Verniolle",
+      "code": "09332",
+      "codesPostaux": ["09340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6615, 43.0793]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6485, 43.0808]
+      },
+      "population": 2381,
+      "surface": 1143.22,
+      "radius": 1.91
+    },
+    {
+      "nom": "Villeneuve",
+      "code": "09335",
+      "codesPostaux": ["09800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9847, 42.9479]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9843, 42.9379]
+      },
+      "population": 42,
+      "surface": 508.96,
+      "radius": 1.27
+    },
+    {
+      "nom": "Villeneuve-d'Olmes",
+      "code": "09336",
+      "codesPostaux": ["09300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8199, 42.9082]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8216, 42.9068]
+      },
+      "population": 962,
+      "surface": 598.87,
+      "radius": 1.38
+    },
+    {
+      "nom": "Villeneuve-du-Latou",
+      "code": "09338",
+      "codesPostaux": ["09130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4338, 43.2033]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4336, 43.2035]
+      },
+      "population": 154,
+      "surface": 660.65,
+      "radius": 1.45
+    },
+    {
+      "nom": "Villeneuve-du-Paréage",
+      "code": "09339",
+      "codesPostaux": ["09100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6435, 43.1599]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6373, 43.1541]
+      },
+      "population": 752,
+      "surface": 1151.83,
+      "radius": 1.91
+    },
+    {
+      "nom": "Vira",
+      "code": "09340",
+      "codesPostaux": ["09120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7553, 43.0481]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.759, 43.0507]
+      },
+      "population": 158,
+      "surface": 535.04,
+      "radius": 1.31
+    },
+    {
+      "nom": "Viviès",
+      "code": "09341",
+      "codesPostaux": ["09500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7774, 43.062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.783, 43.0634]
+      },
+      "population": 156,
+      "surface": 440.8,
+      "radius": 1.18
+    }
+  ],
+  "postalCodes": {
+    "09240": {
+      "communes": [
+        "Aigues-Juntes",
+        "Allières",
+        "Alzen",
+        "La Bastide-de-Sérou",
+        "Cadarcet",
+        "Durban-sur-Arize",
+        "Larbont",
+        "Montagagne",
+        "Montels",
+        "Montseron",
+        "Nescus",
+        "Sentenac-de-Sérou",
+        "Suzan"
+      ],
+      "communeCount": 13,
+      "center": [1.4289, 43.0085],
+      "coverageRadius": 8.6,
+      "boundingBox": {
+        "minLat": 42.9714,
+        "maxLat": 43.0555,
+        "minLon": 1.3242,
+        "maxLon": 1.4988
+      },
+      "totalPopulation": 2295,
+      "totalSurface": 13875
+    },
+    "09600": {
+      "communes": [
+        "Aigues-Vives",
+        "La Bastide-sur-l'Hers",
+        "Belloc",
+        "Dun",
+        "Esclagne",
+        "Laroque-d'Olmes",
+        "Léran",
+        "Limbrassac",
+        "Montbel",
+        "Le Peyrat",
+        "Pradettes",
+        "Régat",
+        "Tabre"
+      ],
+      "communeCount": 13,
+      "center": [1.8771, 42.9804],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 42.9563,
+        "maxLat": 43.0263,
+        "minLon": 1.7998,
+        "maxLon": 1.9767
+      },
+      "totalPopulation": 6380,
+      "totalSurface": 13616
+    },
+    "09300": {
+      "communes": [
+        "L'Aiguillon",
+        "Bélesta",
+        "Bénaix",
+        "Carla-de-Roquefort",
+        "Dreuilhe",
+        "Fougax-et-Barrineuf",
+        "Freychenet",
+        "Ilhat",
+        "Lavelanet",
+        "Lesparrou",
+        "Leychert",
+        "Lieurac",
+        "Montferrier",
+        "Montségur",
+        "Nalzen",
+        "Péreille",
+        "Raissac",
+        "Roquefixade",
+        "Roquefort-les-Cascades",
+        "Saint-Jean-d'Aigues-Vives",
+        "Sautel",
+        "Villeneuve-d'Olmes"
+      ],
+      "communeCount": 22,
+      "center": [1.8505, 42.9275],
+      "coverageRadius": 10.9,
+      "boundingBox": {
+        "minLat": 42.8716,
+        "maxLat": 42.9809,
+        "minLon": 1.7196,
+        "maxLon": 1.9335
+      },
+      "totalPopulation": 12018,
+      "totalSurface": 31335
+    },
+    "09310": {
+      "communes": [
+        "Albiès",
+        "Aston",
+        "Bouan",
+        "Les Cabannes",
+        "Château-Verdun",
+        "Larcat",
+        "Larnat",
+        "Lassur",
+        "Pech",
+        "Aulos-Sinsat",
+        "Urs",
+        "Vèbre",
+        "Verdun"
+      ],
+      "communeCount": 13,
+      "center": [1.6874, 42.7836],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 42.7687,
+        "maxLat": 42.8004,
+        "minLon": 1.631,
+        "maxLon": 1.7356
+      },
+      "totalPopulation": 1423,
+      "totalSurface": 22129
+    },
+    "09320": {
+      "communes": ["Aleu", "Biert", "Boussenac", "Massat", "Le Port", "Soulan"],
+      "communeCount": 6,
+      "center": [1.3193, 42.8953],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 42.8679,
+        "maxLat": 42.912,
+        "minLon": 1.2325,
+        "maxLon": 1.3727
+      },
+      "totalPopulation": 1980,
+      "totalSurface": 18311
+    },
+    "09400": {
+      "communes": [
+        "Alliat",
+        "Arignac",
+        "Arnave",
+        "Bédeilhac-et-Aynat",
+        "Bompas",
+        "Capoulet-et-Junac",
+        "Cazenave-Serres-et-Allens",
+        "Génat",
+        "Gourbit",
+        "Lapège",
+        "Mercus-Garrabet",
+        "Miglos",
+        "Niaux",
+        "Ornolac-Ussat-les-Bains",
+        "Quié",
+        "Rabat-les-Trois-Seigneurs",
+        "Saurat",
+        "Surba",
+        "Tarascon-sur-Ariège",
+        "Ussat"
+      ],
+      "communeCount": 20,
+      "center": [1.5992, 42.8542],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 42.7915,
+        "maxLat": 42.8796,
+        "minLon": 1.5351,
+        "maxLon": 1.6722
+      },
+      "totalPopulation": 8581,
+      "totalSurface": 22299
+    },
+    "09200": {
+      "communes": [
+        "Alos",
+        "Encourtiech",
+        "Erp",
+        "Eycheil",
+        "Lacourt",
+        "Montégut-en-Couserans",
+        "Montesquieu-Avantès",
+        "Montjoie-en-Couserans",
+        "Moulis",
+        "Rivèrenert",
+        "Saint-Girons"
+      ],
+      "communeCount": 11,
+      "center": [1.1483, 42.9803],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 42.908,
+        "maxLat": 43.0238,
+        "minLon": 1.091,
+        "maxLon": 1.2296
+      },
+      "totalPopulation": 9529,
+      "totalSurface": 19709
+    },
+    "09800": {
+      "communes": [
+        "Antras",
+        "Argein",
+        "Arrien-en-Bethmale",
+        "Arrout",
+        "Aucazein",
+        "Audressein",
+        "Augirein",
+        "Balacet",
+        "Balaguères",
+        "Bethmale",
+        "Bonac-Irazein",
+        "Bordes-Uchentein",
+        "Buzan",
+        "Castillon-en-Couserans",
+        "Cescau",
+        "Engomer",
+        "Galey",
+        "Illartein",
+        "Orgibet",
+        "Saint-Jean-du-Castillonnais",
+        "Saint-Lary",
+        "Salsein",
+        "Sentein",
+        "Sor",
+        "Villeneuve"
+      ],
+      "communeCount": 25,
+      "center": [1.0013, 42.9215],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 42.8749,
+        "maxLat": 42.9505,
+        "minLon": 0.8935,
+        "maxLon": 1.059
+      },
+      "totalPopulation": 3214,
+      "totalSurface": 36902
+    },
+    "09250": {
+      "communes": [
+        "Appy",
+        "Axiat",
+        "Bestiac",
+        "Caussou",
+        "Caychax-et-Senconac",
+        "Garanou",
+        "Lordat",
+        "Luzenac",
+        "Unac",
+        "Vernaux"
+      ],
+      "communeCount": 10,
+      "center": [1.7631, 42.767],
+      "coverageRadius": 4.7,
+      "boundingBox": {
+        "minLat": 42.7618,
+        "maxLat": 42.7931,
+        "minLon": 1.7186,
+        "maxLon": 1.8042
+      },
+      "totalPopulation": 1042,
+      "totalSurface": 9405
+    },
+    "09000": {
+      "communes": [
+        "Arabaux",
+        "Baulou",
+        "Bénac",
+        "Le Bosc",
+        "Brassac",
+        "Burret",
+        "Celles",
+        "Cos",
+        "Ferrières-sur-Ariège",
+        "Foix",
+        "Ganac",
+        "L'Herm",
+        "Loubières",
+        "Montoulieu",
+        "Pradières",
+        "Prayols",
+        "Saint-Jean-de-Verges",
+        "Saint-Martin-de-Caralp",
+        "Saint-Paul-de-Jarrat",
+        "Saint-Pierre-de-Rivière",
+        "Serres-sur-Arget",
+        "Soula",
+        "Vernajoul"
+      ],
+      "communeCount": 23,
+      "center": [1.6002, 42.9623],
+      "coverageRadius": 11.5,
+      "boundingBox": {
+        "minLat": 42.9088,
+        "maxLat": 43.0159,
+        "minLon": 1.4605,
+        "maxLon": 1.6957
+      },
+      "totalPopulation": 19751,
+      "totalSurface": 26920
+    },
+    "09130": {
+      "communes": [
+        "Artigat",
+        "Carla-Bayle",
+        "Castéras",
+        "Durfort",
+        "Le Fossat",
+        "Lanoux",
+        "Monesple",
+        "Pailhès",
+        "Sieuras",
+        "Villeneuve-du-Latou",
+        "Sainte-Suzanne"
+      ],
+      "communeCount": 11,
+      "center": [1.4152, 43.157],
+      "coverageRadius": 7.5,
+      "boundingBox": {
+        "minLat": 43.1003,
+        "maxLat": 43.2104,
+        "minLon": 1.3378,
+        "maxLon": 1.4649
+      },
+      "totalPopulation": 3711,
+      "totalSurface": 14378
+    },
+    "09460": {
+      "communes": ["Artigues", "Carcanières", "Mijanès", "Le Pla", "Le Puch", "Quérigut", "Rouze"],
+      "communeCount": 7,
+      "center": [2.0849, 42.7154],
+      "coverageRadius": 2.9,
+      "boundingBox": {
+        "minLat": 42.6988,
+        "maxLat": 42.7303,
+        "minLon": 2.0559,
+        "maxLon": 2.1092
+      },
+      "totalPopulation": 472,
+      "totalSurface": 12036
+    },
+    "09120": {
+      "communes": [
+        "Artix",
+        "Calzan",
+        "Cazaux",
+        "Coussa",
+        "Crampagna",
+        "Dalou",
+        "Gudas",
+        "Loubens",
+        "Malléon",
+        "Montégut-Plantaurel",
+        "Rieux-de-Pelleport",
+        "Saint-Bauzeil",
+        "Saint-Félix-de-Rieutord",
+        "Ségura",
+        "Varilhes",
+        "Ventenac",
+        "Vira"
+      ],
+      "communeCount": 17,
+      "center": [1.6279, 43.0445],
+      "coverageRadius": 11.9,
+      "boundingBox": {
+        "minLat": 43.0062,
+        "maxLat": 43.0767,
+        "minLon": 1.4858,
+        "maxLon": 1.759
+      },
+      "totalPopulation": 8954,
+      "totalSurface": 15829
+    },
+    "09100": {
+      "communes": [
+        "Arvigna",
+        "Benagues",
+        "Bézac",
+        "Bonnac",
+        "Le Carlaret",
+        "Escosse",
+        "Les Issards",
+        "Lescousse",
+        "Ludiès",
+        "Madière",
+        "Pamiers",
+        "Les Pujols",
+        "Saint-Amadou",
+        "Saint-Jean-du-Falga",
+        "Saint-Martin-d'Oydes",
+        "Saint-Michel",
+        "Saint-Victor-Rouzaud",
+        "La Tour-du-Crieu",
+        "Unzent",
+        "Villeneuve-du-Paréage"
+      ],
+      "communeCount": 20,
+      "center": [1.6189, 43.1123],
+      "coverageRadius": 11.8,
+      "boundingBox": {
+        "minLat": 43.0604,
+        "maxLat": 43.1744,
+        "minLon": 1.4963,
+        "maxLon": 1.7356
+      },
+      "totalPopulation": 28564,
+      "totalSurface": 21021
+    },
+    "09110": {
+      "communes": [
+        "Ascou",
+        "Ax-les-Thermes",
+        "Ignaux",
+        "Mérens-les-Vals",
+        "Montaillou",
+        "Orgeix",
+        "Orlu",
+        "Perles-et-Castelet",
+        "Prades",
+        "Savignac-les-Ormeaux",
+        "Sorgeat",
+        "Tignac",
+        "Vaychis"
+      ],
+      "communeCount": 13,
+      "center": [1.8366, 42.7208],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 42.6578,
+        "maxLat": 42.7877,
+        "minLon": 1.7872,
+        "maxLon": 1.8982
+      },
+      "totalPopulation": 2771,
+      "totalSurface": 35326
+    },
+    "09140": {
+      "communes": ["Aulus-les-Bains", "Couflens", "Ercé", "Oust", "Seix", "Sentenac-d'Oust", "Soueix-Rogalle", "Ustou"],
+      "communeCount": 8,
+      "center": [1.2344, 42.8554],
+      "coverageRadius": 11.2,
+      "boundingBox": {
+        "minLat": 42.7867,
+        "maxLat": 42.8926,
+        "minLon": 1.1777,
+        "maxLon": 1.3393
+      },
+      "totalPopulation": 2935,
+      "totalSurface": 38745
+    },
+    "09220": {
+      "communes": ["Auzat", "Gestiès", "Illier-et-Laramade", "Lercoul", "Orus", "Siguer", "Val-de-Sos"],
+      "communeCount": 7,
+      "center": [1.4994, 42.7684],
+      "coverageRadius": 6.1,
+      "boundingBox": {
+        "minLat": 42.7654,
+        "maxLat": 42.7873,
+        "minLon": 1.4794,
+        "maxLon": 1.5733
+      },
+      "totalPopulation": 1340,
+      "totalSurface": 31531
+    },
+    "09230": {
+      "communes": [
+        "Bagert",
+        "Barjac",
+        "Bédeille",
+        "Cérizols",
+        "Contrazy",
+        "Fabas",
+        "Lasserre",
+        "Mauvezin-de-Sainte-Croix",
+        "Mérigon",
+        "Montardit",
+        "Sainte-Croix-Volvestre",
+        "Tourtouse"
+      ],
+      "communeCount": 12,
+      "center": [1.1523, 43.0999],
+      "coverageRadius": 8,
+      "boundingBox": {
+        "minLat": 43.0598,
+        "maxLat": 43.1288,
+        "minLon": 1.0623,
+        "maxLon": 1.2283
+      },
+      "totalPopulation": 2181,
+      "totalSurface": 12143
+    },
+    "09350": {
+      "communes": [
+        "La Bastide-de-Besplas",
+        "Les Bordes-sur-Arize",
+        "Campagne-sur-Arize",
+        "Castex",
+        "Daumazan-sur-Arize",
+        "Fornex",
+        "Loubaut",
+        "Méras",
+        "Montfa",
+        "Sabarat",
+        "Thouars-sur-Arize"
+      ],
+      "communeCount": 11,
+      "center": [1.3241, 43.1353],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 43.0995,
+        "maxLat": 43.1887,
+        "minLon": 1.2414,
+        "maxLon": 1.3892
+      },
+      "totalPopulation": 2773,
+      "totalSurface": 9414
+    },
+    "09500": {
+      "communes": [
+        "La Bastide-de-Bousignac",
+        "Besset",
+        "Camon",
+        "Cazals-des-Baylès",
+        "Coutens",
+        "Lagarde",
+        "Lapenne",
+        "Malegoude",
+        "Manses",
+        "Mirepoix",
+        "Moulin-Neuf",
+        "Rieucros",
+        "Roumengoux",
+        "Saint-Félix-de-Tournegat",
+        "Sainte-Foi",
+        "Saint-Julien-de-Gras-Capou",
+        "Saint-Quentin-la-Tour",
+        "Teilhet",
+        "Tourtrol",
+        "Troye-d'Ariège",
+        "Vals",
+        "Viviès"
+      ],
+      "communeCount": 22,
+      "center": [1.8568, 43.0792],
+      "coverageRadius": 11.5,
+      "boundingBox": {
+        "minLat": 43.0217,
+        "maxLat": 43.146,
+        "minLon": 1.7478,
+        "maxLon": 1.9665
+      },
+      "totalPopulation": 6960,
+      "totalSurface": 21769
+    },
+    "09700": {
+      "communes": [
+        "La Bastide-de-Lordat",
+        "Brie",
+        "Canté",
+        "Esplas",
+        "Gaudiès",
+        "Justiniac",
+        "Labatut",
+        "Lissac",
+        "Montaut",
+        "Saint-Quirc",
+        "Saverdun",
+        "Trémoulet",
+        "Le Vernet"
+      ],
+      "communeCount": 13,
+      "center": [1.5846, 43.2222],
+      "coverageRadius": 13.6,
+      "boundingBox": {
+        "minLat": 43.144,
+        "maxLat": 43.2757,
+        "minLon": 1.492,
+        "maxLon": 1.7313
+      },
+      "totalPopulation": 8212,
+      "totalSurface": 16387
+    },
+    "09160": {
+      "communes": [
+        "La Bastide-du-Salat",
+        "Betchat",
+        "Caumont",
+        "Cazavet",
+        "Lacave",
+        "Mauvezin-de-Prat",
+        "Mercenac",
+        "Montgauch",
+        "Prat-Bonrepaux",
+        "Taurignan-Castet"
+      ],
+      "communeCount": 10,
+      "center": [1.0381, 43.0383],
+      "coverageRadius": 6.4,
+      "boundingBox": {
+        "minLat": 43,
+        "maxLat": 43.0918,
+        "minLon": 0.9879,
+        "maxLon": 1.0918
+      },
+      "totalPopulation": 2785,
+      "totalSurface": 10701
+    },
+    "09290": {
+      "communes": ["Camarade", "Gabre", "Le Mas-d'Azil"],
+      "communeCount": 3,
+      "center": [1.3559, 43.0798],
+      "coverageRadius": 5.7,
+      "boundingBox": {
+        "minLat": 43.0745,
+        "maxLat": 43.0857,
+        "minLon": 1.2863,
+        "maxLon": 1.417
+      },
+      "totalPopulation": 1569,
+      "totalSurface": 8111
+    },
+    "09420": {
+      "communes": ["Castelnau-Durban", "Clermont", "Esplas-de-Sérou", "Lescure", "Rimont"],
+      "communeCount": 5,
+      "center": [1.2937, 42.9991],
+      "coverageRadius": 7.3,
+      "boundingBox": {
+        "minLat": 42.9765,
+        "maxLat": 43.0395,
+        "minLon": 1.2342,
+        "maxLon": 1.3775
+      },
+      "totalPopulation": 1772,
+      "totalSurface": 11019
+    },
+    "09190": {
+      "communes": ["Gajan", "Saint-Lizier", "Lorp-Sentaraille", "Taurignan-Vieux"],
+      "communeCount": 4,
+      "center": [1.1277, 43.0094],
+      "coverageRadius": 2.6,
+      "boundingBox": {
+        "minLat": 43.0024,
+        "maxLat": 43.0322,
+        "minLon": 1.1154,
+        "maxLon": 1.1358
+      },
+      "totalPopulation": 3312,
+      "totalSurface": 2944
+    },
+    "09390": {
+      "communes": ["L'Hospitalet-près-l'Andorre"],
+      "communeCount": 1,
+      "center": [1.7983, 42.5878],
+      "coverageRadius": 2.92,
+      "totalPopulation": 95,
+      "totalSurface": 2677
+    },
+    "09210": {
+      "communes": ["Lézat-sur-Lèze", "Saint-Ybars"],
+      "communeCount": 2,
+      "center": [1.3552, 43.2677],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 43.2382,
+        "maxLat": 43.2761,
+        "minLon": 1.3463,
+        "maxLon": 1.3862
+      },
+      "totalPopulation": 3011,
+      "totalSurface": 6494
+    },
+    "09270": {
+      "communes": ["Mazères"],
+      "communeCount": 1,
+      "center": [1.6778, 43.2503],
+      "coverageRadius": 3.75,
+      "totalPopulation": 3866,
+      "totalSurface": 4424
+    },
+    "09330": {
+      "communes": ["Montgailhard"],
+      "communeCount": 1,
+      "center": [1.6339, 42.9339],
+      "coverageRadius": 1.6,
+      "totalPopulation": 1456,
+      "totalSurface": 805
+    },
+    "09340": {
+      "communes": ["Verniolle"],
+      "communeCount": 1,
+      "center": [1.6485, 43.0808],
+      "coverageRadius": 1.91,
+      "totalPopulation": 2381,
+      "totalSurface": 1143
+    }
+  }
+}

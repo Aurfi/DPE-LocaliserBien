@@ -1,0 +1,2431 @@
+{
+  "departmentCode": "98",
+  "departmentName": "Département 98",
+  "stats": {
+    "communeCount": 90,
+    "totalPopulation": 559392,
+    "totalSurface": 36533703
+  },
+  "communes": [
+    {
+      "nom": "Alo",
+      "code": "98611",
+      "codesPostaux": ["98610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-178.0792, -14.3042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-178.042, -14.342]
+      },
+      "population": 2031,
+      "surface": 4431.43,
+      "radius": 3.76
+    },
+    {
+      "nom": "Anaa",
+      "code": "98711",
+      "codesPostaux": ["98760", "98786", "98790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-144.8758, -16.8951]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-145.5705, -17.3341]
+      },
+      "population": 811,
+      "surface": 4641.81,
+      "radius": 3.84
+    },
+    {
+      "nom": "Archipel des Crozet",
+      "code": "98413",
+      "codesPostaux": [],
+      "centre": {
+        "type": "Point",
+        "coordinates": [51.643, -46.3714]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [52.207, -46.4291]
+      },
+      "surface": 34792.47,
+      "radius": 10.52
+    },
+    {
+      "nom": "Archipel des Kerguelen",
+      "code": "98412",
+      "codesPostaux": [],
+      "centre": {
+        "type": "Point",
+        "coordinates": [69.3405, -49.2352]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [70.229, -49.1969]
+      },
+      "surface": 724889.59,
+      "radius": 48.04
+    },
+    {
+      "nom": "Arue",
+      "code": "98712",
+      "codesPostaux": ["98701"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.5463, -17.0496]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.5026, -17.5429]
+      },
+      "population": 10243,
+      "surface": 2078.43,
+      "radius": 2.57
+    },
+    {
+      "nom": "Arutua",
+      "code": "98713",
+      "codesPostaux": ["98761", "98762", "98785"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-146.438, -15.4938]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-146.3428, -15.317]
+      },
+      "population": 1664,
+      "surface": 4487.15,
+      "radius": 3.78
+    },
+    {
+      "nom": "Belep",
+      "code": "98801",
+      "codesPostaux": ["98811"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [163.6412, -19.711]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [163.6552, -19.7042]
+      },
+      "population": 867,
+      "surface": 6499.86,
+      "radius": 4.55
+    },
+    {
+      "nom": "Bora-Bora",
+      "code": "98714",
+      "codesPostaux": ["98730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-151.7585, -16.4376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-151.7367, -16.5044]
+      },
+      "population": 10549,
+      "surface": 4026.18,
+      "radius": 3.58
+    },
+    {
+      "nom": "Bouloupari",
+      "code": "98802",
+      "codesPostaux": ["98812"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [166.1346, -21.8901]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [166.1035, -21.8419]
+      },
+      "population": 3315,
+      "surface": 86605.54,
+      "radius": 16.6
+    },
+    {
+      "nom": "Bourail",
+      "code": "98803",
+      "codesPostaux": ["98870"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.4406, -21.5545]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.4509, -21.5504]
+      },
+      "population": 5531,
+      "surface": 79830.07,
+      "radius": 15.94
+    },
+    {
+      "nom": "Canala",
+      "code": "98804",
+      "codesPostaux": ["98813"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.9932, -21.497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.9062, -21.4979]
+      },
+      "population": 3701,
+      "surface": 43378.98,
+      "radius": 11.75
+    },
+    {
+      "nom": "Dumbéa",
+      "code": "98805",
+      "codesPostaux": ["98835"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [166.497, -22.1337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [166.5133, -22.1337]
+      },
+      "population": 35873,
+      "surface": 25261.53,
+      "radius": 8.97
+    },
+    {
+      "nom": "Faaa",
+      "code": "98715",
+      "codesPostaux": ["98704"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.56, -17.5843]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.5665, -17.5843]
+      },
+      "population": 29506,
+      "surface": 3638.08,
+      "radius": 3.4
+    },
+    {
+      "nom": "Fakarava",
+      "code": "98716",
+      "codesPostaux": ["98763", "98764", "98787", "98790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-145.6178, -16.0532]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-145.1437, -15.7784]
+      },
+      "population": 1637,
+      "surface": 8757.64,
+      "radius": 5.28
+    },
+    {
+      "nom": "Fangatau",
+      "code": "98717",
+      "codesPostaux": ["98765", "98766"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-140.17, -15.9797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-140.8919, -15.8202]
+      },
+      "population": 296,
+      "surface": 1404.6,
+      "radius": 2.11
+    },
+    {
+      "nom": "Farino",
+      "code": "98806",
+      "codesPostaux": ["98881"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.7568, -21.648]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.7528, -21.648]
+      },
+      "population": 712,
+      "surface": 4825.91,
+      "radius": 3.92
+    },
+    {
+      "nom": "Fatu-Hiva",
+      "code": "98718",
+      "codesPostaux": ["98740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-138.6088, -10.4657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-138.646, -10.4861]
+      },
+      "population": 612,
+      "surface": 8501.61,
+      "radius": 5.2
+    },
+    {
+      "nom": "Gambier",
+      "code": "98719",
+      "codesPostaux": ["98755", "98792", "98793"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-136.186, -22.0353]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-134.9696, -23.1045]
+      },
+      "population": 1535,
+      "surface": 5987.58,
+      "radius": 4.37
+    },
+    {
+      "nom": "Hao",
+      "code": "98720",
+      "codesPostaux": ["98767", "98790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-141.8698, -18.7199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-144.9985, -19.8678]
+      },
+      "population": 1258,
+      "surface": 6693.7,
+      "radius": 4.62
+    },
+    {
+      "nom": "Hienghène",
+      "code": "98807",
+      "codesPostaux": ["98815"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [164.8356, -20.7333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [164.8952, -20.7333]
+      },
+      "population": 2454,
+      "surface": 96302.6,
+      "radius": 17.51
+    },
+    {
+      "nom": "Hikueru",
+      "code": "98721",
+      "codesPostaux": ["98768", "98790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-142.5538, -17.611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-142.3904, -18.0441]
+      },
+      "population": 275,
+      "surface": 2018.31,
+      "radius": 2.53
+    },
+    {
+      "nom": "Hitiaa O Te Ra",
+      "code": "98722",
+      "codesPostaux": ["98705", "98706", "98707", "98708"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.3909, -17.5914]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.3829, -17.5916]
+      },
+      "population": 10033,
+      "surface": 21901.18,
+      "radius": 8.35
+    },
+    {
+      "nom": "Hiva-Oa",
+      "code": "98723",
+      "codesPostaux": ["98741", "98749", "98796"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-138.9803, -9.7286]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-139.0068, -9.7793]
+      },
+      "population": 2243,
+      "surface": 32381.21,
+      "radius": 10.15
+    },
+    {
+      "nom": "Houaïlou",
+      "code": "98808",
+      "codesPostaux": ["98816"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.5605, -21.3189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.5732, -21.3189]
+      },
+      "population": 3955,
+      "surface": 94052.72,
+      "radius": 17.3
+    },
+    {
+      "nom": "Huahine",
+      "code": "98724",
+      "codesPostaux": ["98731", "98732"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-150.996, -16.7517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-151.0135, -16.7286]
+      },
+      "population": 6075,
+      "surface": 7529.32,
+      "radius": 4.9
+    },
+    {
+      "nom": "Île de Clipperton",
+      "code": "98901",
+      "codesPostaux": ["98799"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-109.2172, 10.3034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-109.2163, 10.3036]
+      },
+      "surface": 890.9,
+      "radius": 1.68
+    },
+    {
+      "nom": "Îles Éparses de l'océan Indien",
+      "code": "98415",
+      "codesPostaux": [],
+      "centre": {
+        "type": "Point",
+        "coordinates": [42.7501, -17.0601]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [42.7285, -17.0548]
+      },
+      "surface": 3549.12,
+      "radius": 3.36
+    },
+    {
+      "nom": "Îles Saint-Paul et Nouvelle-Amsterdam",
+      "code": "98411",
+      "codesPostaux": [],
+      "centre": {
+        "type": "Point",
+        "coordinates": [77.5587, -37.8806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [77.5542, -37.8365]
+      },
+      "surface": 6052.39,
+      "radius": 4.39
+    },
+    {
+      "nom": "Kaala-Gomen",
+      "code": "98810",
+      "codesPostaux": ["98817"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [164.5001, -20.7203]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [164.544, -20.7203]
+      },
+      "population": 1803,
+      "surface": 74651.42,
+      "radius": 15.42
+    },
+    {
+      "nom": "Koné",
+      "code": "98811",
+      "codesPostaux": ["98859"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [164.9024, -21.0276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [164.8946, -21.0272]
+      },
+      "population": 8144,
+      "surface": 37129.83,
+      "radius": 10.87
+    },
+    {
+      "nom": "Kouaoua",
+      "code": "98833",
+      "codesPostaux": ["98818"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.7661, -21.4584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.781, -21.4584]
+      },
+      "population": 1304,
+      "surface": 38522.74,
+      "radius": 11.07
+    },
+    {
+      "nom": "Koumac",
+      "code": "98812",
+      "codesPostaux": ["98850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [164.2925, -20.5133]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [164.3326, -20.5018]
+      },
+      "population": 3981,
+      "surface": 55395.25,
+      "radius": 13.28
+    },
+    {
+      "nom": "L'Île-des-Pins",
+      "code": "98809",
+      "codesPostaux": ["98832"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [167.4757, -22.6132]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [167.4685, -22.6051]
+      },
+      "population": 2037,
+      "surface": 15883.04,
+      "radius": 7.11
+    },
+    {
+      "nom": "La Foa",
+      "code": "98813",
+      "codesPostaux": ["98880"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.8716, -21.7474]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.8777, -21.7341]
+      },
+      "population": 3552,
+      "surface": 46330.79,
+      "radius": 12.14
+    },
+    {
+      "nom": "La Terre-Adélie",
+      "code": "98414",
+      "codesPostaux": [],
+      "centre": {
+        "type": "Point",
+        "coordinates": [139, -75.6373]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [139, -75.7413]
+      },
+      "surface": 33556724.35,
+      "radius": 326.82
+    },
+    {
+      "nom": "Le Mont-Dore",
+      "code": "98817",
+      "codesPostaux": ["98809"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [166.7682, -22.5171]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [166.727, -22.2737]
+      },
+      "population": 27620,
+      "surface": 63882.06,
+      "radius": 14.26
+    },
+    {
+      "nom": "Lifou",
+      "code": "98814",
+      "codesPostaux": ["98820"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [167.3788, -20.9581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [167.1658, -20.9329]
+      },
+      "population": 9195,
+      "surface": 115250.48,
+      "radius": 19.15
+    },
+    {
+      "nom": "Mahina",
+      "code": "98725",
+      "codesPostaux": ["98709", "98710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.4753, -17.5575]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.4694, -17.5579]
+      },
+      "population": 14764,
+      "surface": 5203.55,
+      "radius": 4.07
+    },
+    {
+      "nom": "Makemo",
+      "code": "98726",
+      "codesPostaux": ["98769", "98789", "98790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-143.3857, -16.6551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-143.5216, -16.6197]
+      },
+      "population": 1508,
+      "surface": 7232.83,
+      "radius": 4.8
+    },
+    {
+      "nom": "Manihi",
+      "code": "98727",
+      "codesPostaux": ["98770", "98771"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-146.0776, -14.4453]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-146.2831, -14.4314]
+      },
+      "population": 1141,
+      "surface": 2627.32,
+      "radius": 2.89
+    },
+    {
+      "nom": "Maré",
+      "code": "98815",
+      "codesPostaux": ["98828"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [167.8386, -21.3952]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [167.9842, -21.5045]
+      },
+      "population": 5757,
+      "surface": 66192.47,
+      "radius": 14.52
+    },
+    {
+      "nom": "Maupiti",
+      "code": "98728",
+      "codesPostaux": ["98732"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-153.9401, -16.78]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-152.2583, -16.4461]
+      },
+      "population": 1286,
+      "surface": 2005.43,
+      "radius": 2.53
+    },
+    {
+      "nom": "Moindou",
+      "code": "98816",
+      "codesPostaux": ["98819"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.6568, -21.6466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.659, -21.6303]
+      },
+      "population": 681,
+      "surface": 32310.51,
+      "radius": 10.14
+    },
+    {
+      "nom": "Moorea-Maiao",
+      "code": "98729",
+      "codesPostaux": ["98728", "98729"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.9179, -17.506]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.8386, -17.5333]
+      },
+      "population": 17816,
+      "surface": 14650.69,
+      "radius": 6.83
+    },
+    {
+      "nom": "Napuka",
+      "code": "98730",
+      "codesPostaux": ["98772"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-141.2747, -14.1661]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-141.4303, -14.1011]
+      },
+      "population": 284,
+      "surface": 857.93,
+      "radius": 1.65
+    },
+    {
+      "nom": "Nouméa",
+      "code": "98818",
+      "codesPostaux": ["98800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [166.4076, -22.3363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [166.4576, -22.2646]
+      },
+      "population": 94285,
+      "surface": 4965.12,
+      "radius": 3.98
+    },
+    {
+      "nom": "Nuku-Hiva",
+      "code": "98731",
+      "codesPostaux": ["98742", "98748", "98796"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-140.6052, -8.6775]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-140.1246, -8.8733]
+      },
+      "population": 2951,
+      "surface": 38477.88,
+      "radius": 11.07
+    },
+    {
+      "nom": "Nukutavake",
+      "code": "98732",
+      "codesPostaux": ["98773", "98788"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-138.8598, -18.7825]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-138.7857, -19.2798]
+      },
+      "population": 295,
+      "surface": 1233.66,
+      "radius": 1.98
+    },
+    {
+      "nom": "Ouégoa",
+      "code": "98819",
+      "codesPostaux": ["98821"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [164.426, -20.3177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [164.4461, -20.4091]
+      },
+      "population": 2118,
+      "surface": 65240.6,
+      "radius": 14.41
+    },
+    {
+      "nom": "Ouvéa",
+      "code": "98820",
+      "codesPostaux": ["98814"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [166.3602, -20.4806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [166.5404, -20.4081]
+      },
+      "population": 3401,
+      "surface": 14388.81,
+      "radius": 6.77
+    },
+    {
+      "nom": "Paea",
+      "code": "98733",
+      "codesPostaux": ["98711"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.5485, -17.6961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.5529, -17.6961]
+      },
+      "population": 13021,
+      "surface": 6250.17,
+      "radius": 4.46
+    },
+    {
+      "nom": "Païta",
+      "code": "98821",
+      "codesPostaux": ["98889"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [166.277, -22.0651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [166.3074, -22.0529]
+      },
+      "population": 24563,
+      "surface": 69566.95,
+      "radius": 14.88
+    },
+    {
+      "nom": "Papara",
+      "code": "98734",
+      "codesPostaux": ["98712"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.508, -17.7119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.5003, -17.7119]
+      },
+      "population": 11680,
+      "surface": 9290.64,
+      "radius": 5.44
+    },
+    {
+      "nom": "Papeete",
+      "code": "98735",
+      "codesPostaux": ["98714"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.5555, -17.5572]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.5607, -17.5582]
+      },
+      "population": 26925,
+      "surface": 1773.66,
+      "radius": 2.38
+    },
+    {
+      "nom": "Pirae",
+      "code": "98736",
+      "codesPostaux": ["98716"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.5223, -17.5699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.5165, -17.5699]
+      },
+      "population": 14209,
+      "surface": 3377.49,
+      "radius": 3.28
+    },
+    {
+      "nom": "Poindimié",
+      "code": "98822",
+      "codesPostaux": ["98822"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.1927, -20.9337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.1508, -20.9337]
+      },
+      "population": 5006,
+      "surface": 66867.89,
+      "radius": 14.59
+    },
+    {
+      "nom": "Ponérihouen",
+      "code": "98823",
+      "codesPostaux": ["98823"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.3366, -21.1297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.3115, -21.1297]
+      },
+      "population": 2420,
+      "surface": 70432.74,
+      "radius": 14.97
+    },
+    {
+      "nom": "Pouébo",
+      "code": "98824",
+      "codesPostaux": ["98824"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [164.5946, -20.4103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [164.5735, -20.4103]
+      },
+      "population": 2144,
+      "surface": 19675.89,
+      "radius": 7.91
+    },
+    {
+      "nom": "Pouembout",
+      "code": "98825",
+      "codesPostaux": ["98825"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [164.9818, -21.1913]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [164.9933, -21.1913]
+      },
+      "population": 2752,
+      "surface": 67139.68,
+      "radius": 14.62
+    },
+    {
+      "nom": "Poum",
+      "code": "98826",
+      "codesPostaux": ["98826"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [164.074, -20.2029]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [164.1428, -20.2542]
+      },
+      "population": 1435,
+      "surface": 47256.99,
+      "radius": 12.26
+    },
+    {
+      "nom": "Poya",
+      "code": "98827",
+      "codesPostaux": ["98827"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.1764, -21.3374]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.2518, -21.3374]
+      },
+      "population": 2802,
+      "surface": 84445.92,
+      "radius": 16.4
+    },
+    {
+      "nom": "Pukapuka",
+      "code": "98737",
+      "codesPostaux": ["98774"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-138.8203, -14.8202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-138.8415, -14.8147]
+      },
+      "population": 163,
+      "surface": 627.32,
+      "radius": 1.41
+    },
+    {
+      "nom": "Punaauia",
+      "code": "98738",
+      "codesPostaux": ["98703", "98718"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.5486, -17.618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.571, -17.618]
+      },
+      "population": 28103,
+      "surface": 7864.72,
+      "radius": 5
+    },
+    {
+      "nom": "Raivavae",
+      "code": "98739",
+      "codesPostaux": ["98750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-147.6504, -23.8696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-147.6664, -23.8698]
+      },
+      "population": 903,
+      "surface": 1779.72,
+      "radius": 2.38
+    },
+    {
+      "nom": "Rangiroa",
+      "code": "98740",
+      "codesPostaux": ["98775", "98776", "98777", "98778", "98790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-147.8597, -15.1921]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-148.2599, -15.8389]
+      },
+      "population": 3657,
+      "surface": 12973.57,
+      "radius": 6.43
+    },
+    {
+      "nom": "Rapa",
+      "code": "98741",
+      "codesPostaux": ["98751", "98794"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-144.3053, -27.6451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-144.3655, -27.6082]
+      },
+      "population": 507,
+      "surface": 3851.91,
+      "radius": 3.5
+    },
+    {
+      "nom": "Reao",
+      "code": "98742",
+      "codesPostaux": ["98779", "98780"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-136.4666, -18.4685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-136.3505, -18.5195]
+      },
+      "population": 587,
+      "surface": 1758.26,
+      "radius": 2.37
+    },
+    {
+      "nom": "Rimatara",
+      "code": "98743",
+      "codesPostaux": ["98752", "98795"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-152.822, -22.6457]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-152.8065, -22.6497]
+      },
+      "population": 872,
+      "surface": 865.08,
+      "radius": 1.66
+    },
+    {
+      "nom": "Rurutu",
+      "code": "98744",
+      "codesPostaux": ["98753"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-151.3771, -22.4437]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-151.337, -22.4779]
+      },
+      "population": 2466,
+      "surface": 3447.75,
+      "radius": 3.31
+    },
+    {
+      "nom": "Sarraméa",
+      "code": "98828",
+      "codesPostaux": ["98882"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.8274, -21.6229]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.8346, -21.6229]
+      },
+      "population": 572,
+      "surface": 10594.12,
+      "radius": 5.81
+    },
+    {
+      "nom": "Sigave",
+      "code": "98612",
+      "codesPostaux": ["98620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-178.1584, -14.2743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-178.1546, -14.2743]
+      },
+      "population": 1335,
+      "surface": 1987.32,
+      "radius": 2.52
+    },
+    {
+      "nom": "Tahaa",
+      "code": "98745",
+      "codesPostaux": ["98733", "98734"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-151.4907, -16.6197]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-151.5039, -16.6308]
+      },
+      "population": 5234,
+      "surface": 9157.77,
+      "radius": 5.4
+    },
+    {
+      "nom": "Tahuata",
+      "code": "98746",
+      "codesPostaux": ["98743"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-139.0833, -9.9575]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-139.0997, -9.9575]
+      },
+      "population": 653,
+      "surface": 6972.1,
+      "radius": 4.71
+    },
+    {
+      "nom": "Taiarapu-Est",
+      "code": "98747",
+      "codesPostaux": ["98719", "98720", "98721", "98722"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.1276, -17.7821]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.2364, -17.7535]
+      },
+      "population": 12701,
+      "surface": 21879.8,
+      "radius": 8.35
+    },
+    {
+      "nom": "Taiarapu-Ouest",
+      "code": "98748",
+      "codesPostaux": ["98723", "98724", "98725"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.2446, -17.8103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.2622, -17.8103]
+      },
+      "population": 8078,
+      "surface": 10441.46,
+      "radius": 5.77
+    },
+    {
+      "nom": "Takaroa",
+      "code": "98749",
+      "codesPostaux": ["98781", "98782", "98790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-144.989, -14.494]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-144.5451, -14.951]
+      },
+      "population": 1175,
+      "surface": 3316.01,
+      "radius": 3.25
+    },
+    {
+      "nom": "Taputapuatea",
+      "code": "98750",
+      "codesPostaux": ["98735"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-151.395, -16.8208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-151.4368, -16.8208]
+      },
+      "population": 4792,
+      "surface": 8482.85,
+      "radius": 5.2
+    },
+    {
+      "nom": "Tatakoto",
+      "code": "98751",
+      "codesPostaux": ["98783"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-138.3941, -17.3513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-138.3584, -17.3481]
+      },
+      "population": 259,
+      "surface": 736.69,
+      "radius": 1.53
+    },
+    {
+      "nom": "Teva I Uta",
+      "code": "98752",
+      "codesPostaux": ["98726", "98727"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.3992, -17.7224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.4065, -17.7223]
+      },
+      "population": 10254,
+      "surface": 12015.19,
+      "radius": 6.18
+    },
+    {
+      "nom": "Thio",
+      "code": "98829",
+      "codesPostaux": ["98829"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [166.281, -21.722]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [166.2466, -21.722]
+      },
+      "population": 2524,
+      "surface": 99394.78,
+      "radius": 17.79
+    },
+    {
+      "nom": "Touho",
+      "code": "98830",
+      "codesPostaux": ["98831"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [165.144, -20.8027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [165.1495, -20.8172]
+      },
+      "population": 2380,
+      "surface": 27834.19,
+      "radius": 9.41
+    },
+    {
+      "nom": "Tubuai",
+      "code": "98753",
+      "codesPostaux": ["98754"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-149.4626, -23.3687]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-149.4827, -23.3724]
+      },
+      "population": 2217,
+      "surface": 4576.69,
+      "radius": 3.82
+    },
+    {
+      "nom": "Tumaraa",
+      "code": "98754",
+      "codesPostaux": ["98735"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-151.453, -16.8301]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-151.4668, -16.8294]
+      },
+      "population": 3721,
+      "surface": 7214.57,
+      "radius": 4.79
+    },
+    {
+      "nom": "Tureia",
+      "code": "98755",
+      "codesPostaux": ["98784"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-139.0412, -21.8794]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-139.016, -21.889]
+      },
+      "population": 336,
+      "surface": 2745.81,
+      "radius": 2.96
+    },
+    {
+      "nom": "Ua-Huka",
+      "code": "98756",
+      "codesPostaux": ["98744", "98747"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-139.5493, -8.9098]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-139.5515, -8.9097]
+      },
+      "population": 674,
+      "surface": 8647.12,
+      "radius": 5.25
+    },
+    {
+      "nom": "Ua-Pou",
+      "code": "98757",
+      "codesPostaux": ["98745", "98746"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-140.0731, -9.4092]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-140.08, -9.4011]
+      },
+      "population": 2213,
+      "surface": 10631.37,
+      "radius": 5.82
+    },
+    {
+      "nom": "Uturoa",
+      "code": "98758",
+      "codesPostaux": ["98735"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-151.4544, -16.7425]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-151.4594, -16.7437]
+      },
+      "population": 3736,
+      "surface": 1605.2,
+      "radius": 2.26
+    },
+    {
+      "nom": "Uvea",
+      "code": "98613",
+      "codesPostaux": ["98600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-176.2065, -13.2846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-176.2067, -13.2846]
+      },
+      "population": 8701,
+      "surface": 7585.28,
+      "radius": 4.91
+    },
+    {
+      "nom": "Voh",
+      "code": "98831",
+      "codesPostaux": ["98833"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [164.7405, -20.8788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [164.7083, -20.8788]
+      },
+      "population": 2856,
+      "surface": 80125.73,
+      "radius": 15.97
+    },
+    {
+      "nom": "Yaté",
+      "code": "98832",
+      "codesPostaux": ["98834"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [166.7309, -22.1]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [166.7705, -22.1]
+      },
+      "population": 1667,
+      "surface": 133946.39,
+      "radius": 20.65
+    }
+  ],
+  "postalCodes": {
+    "98600": {
+      "communes": ["Uvea"],
+      "communeCount": 1,
+      "center": [-176.2067, -13.2846],
+      "coverageRadius": 4.91,
+      "totalPopulation": 8701,
+      "totalSurface": 7585
+    },
+    "98610": {
+      "communes": ["Alo"],
+      "communeCount": 1,
+      "center": [-178.042, -14.342],
+      "coverageRadius": 3.76,
+      "totalPopulation": 2031,
+      "totalSurface": 4431
+    },
+    "98620": {
+      "communes": ["Sigave"],
+      "communeCount": 1,
+      "center": [-178.1546, -14.2743],
+      "coverageRadius": 2.52,
+      "totalPopulation": 1335,
+      "totalSurface": 1987
+    },
+    "98701": {
+      "communes": ["Arue"],
+      "communeCount": 1,
+      "center": [-149.5026, -17.5429],
+      "coverageRadius": 2.57,
+      "totalPopulation": 10243,
+      "totalSurface": 2078
+    },
+    "98703": {
+      "communes": ["Punaauia"],
+      "communeCount": 1,
+      "center": [-149.571, -17.618],
+      "coverageRadius": 5,
+      "totalPopulation": 28103,
+      "totalSurface": 7865
+    },
+    "98704": {
+      "communes": ["Faaa"],
+      "communeCount": 1,
+      "center": [-149.5665, -17.5843],
+      "coverageRadius": 3.4,
+      "totalPopulation": 29506,
+      "totalSurface": 3638
+    },
+    "98705": {
+      "communes": ["Hitiaa O Te Ra"],
+      "communeCount": 1,
+      "center": [-149.3829, -17.5916],
+      "coverageRadius": 8.35,
+      "totalPopulation": 10033,
+      "totalSurface": 21901
+    },
+    "98706": {
+      "communes": ["Hitiaa O Te Ra"],
+      "communeCount": 1,
+      "center": [-149.3829, -17.5916],
+      "coverageRadius": 8.35,
+      "totalPopulation": 10033,
+      "totalSurface": 21901
+    },
+    "98707": {
+      "communes": ["Hitiaa O Te Ra"],
+      "communeCount": 1,
+      "center": [-149.3829, -17.5916],
+      "coverageRadius": 8.35,
+      "totalPopulation": 10033,
+      "totalSurface": 21901
+    },
+    "98708": {
+      "communes": ["Hitiaa O Te Ra"],
+      "communeCount": 1,
+      "center": [-149.3829, -17.5916],
+      "coverageRadius": 8.35,
+      "totalPopulation": 10033,
+      "totalSurface": 21901
+    },
+    "98709": {
+      "communes": ["Mahina"],
+      "communeCount": 1,
+      "center": [-149.4694, -17.5579],
+      "coverageRadius": 4.07,
+      "totalPopulation": 14764,
+      "totalSurface": 5204
+    },
+    "98710": {
+      "communes": ["Mahina"],
+      "communeCount": 1,
+      "center": [-149.4694, -17.5579],
+      "coverageRadius": 4.07,
+      "totalPopulation": 14764,
+      "totalSurface": 5204
+    },
+    "98711": {
+      "communes": ["Paea"],
+      "communeCount": 1,
+      "center": [-149.5529, -17.6961],
+      "coverageRadius": 4.46,
+      "totalPopulation": 13021,
+      "totalSurface": 6250
+    },
+    "98712": {
+      "communes": ["Papara"],
+      "communeCount": 1,
+      "center": [-149.5003, -17.7119],
+      "coverageRadius": 5.44,
+      "totalPopulation": 11680,
+      "totalSurface": 9291
+    },
+    "98714": {
+      "communes": ["Papeete"],
+      "communeCount": 1,
+      "center": [-149.5607, -17.5582],
+      "coverageRadius": 2.38,
+      "totalPopulation": 26925,
+      "totalSurface": 1774
+    },
+    "98716": {
+      "communes": ["Pirae"],
+      "communeCount": 1,
+      "center": [-149.5165, -17.5699],
+      "coverageRadius": 3.28,
+      "totalPopulation": 14209,
+      "totalSurface": 3377
+    },
+    "98718": {
+      "communes": ["Punaauia"],
+      "communeCount": 1,
+      "center": [-149.571, -17.618],
+      "coverageRadius": 5,
+      "totalPopulation": 28103,
+      "totalSurface": 7865
+    },
+    "98719": {
+      "communes": ["Taiarapu-Est"],
+      "communeCount": 1,
+      "center": [-149.2364, -17.7535],
+      "coverageRadius": 8.35,
+      "totalPopulation": 12701,
+      "totalSurface": 21880
+    },
+    "98720": {
+      "communes": ["Taiarapu-Est"],
+      "communeCount": 1,
+      "center": [-149.2364, -17.7535],
+      "coverageRadius": 8.35,
+      "totalPopulation": 12701,
+      "totalSurface": 21880
+    },
+    "98721": {
+      "communes": ["Taiarapu-Est"],
+      "communeCount": 1,
+      "center": [-149.2364, -17.7535],
+      "coverageRadius": 8.35,
+      "totalPopulation": 12701,
+      "totalSurface": 21880
+    },
+    "98722": {
+      "communes": ["Taiarapu-Est"],
+      "communeCount": 1,
+      "center": [-149.2364, -17.7535],
+      "coverageRadius": 8.35,
+      "totalPopulation": 12701,
+      "totalSurface": 21880
+    },
+    "98723": {
+      "communes": ["Taiarapu-Ouest"],
+      "communeCount": 1,
+      "center": [-149.2622, -17.8103],
+      "coverageRadius": 5.77,
+      "totalPopulation": 8078,
+      "totalSurface": 10441
+    },
+    "98724": {
+      "communes": ["Taiarapu-Ouest"],
+      "communeCount": 1,
+      "center": [-149.2622, -17.8103],
+      "coverageRadius": 5.77,
+      "totalPopulation": 8078,
+      "totalSurface": 10441
+    },
+    "98725": {
+      "communes": ["Taiarapu-Ouest"],
+      "communeCount": 1,
+      "center": [-149.2622, -17.8103],
+      "coverageRadius": 5.77,
+      "totalPopulation": 8078,
+      "totalSurface": 10441
+    },
+    "98726": {
+      "communes": ["Teva I Uta"],
+      "communeCount": 1,
+      "center": [-149.4065, -17.7223],
+      "coverageRadius": 6.18,
+      "totalPopulation": 10254,
+      "totalSurface": 12015
+    },
+    "98727": {
+      "communes": ["Teva I Uta"],
+      "communeCount": 1,
+      "center": [-149.4065, -17.7223],
+      "coverageRadius": 6.18,
+      "totalPopulation": 10254,
+      "totalSurface": 12015
+    },
+    "98728": {
+      "communes": ["Moorea-Maiao"],
+      "communeCount": 1,
+      "center": [-149.8386, -17.5333],
+      "coverageRadius": 6.83,
+      "totalPopulation": 17816,
+      "totalSurface": 14651
+    },
+    "98729": {
+      "communes": ["Moorea-Maiao"],
+      "communeCount": 1,
+      "center": [-149.8386, -17.5333],
+      "coverageRadius": 6.83,
+      "totalPopulation": 17816,
+      "totalSurface": 14651
+    },
+    "98730": {
+      "communes": ["Bora-Bora"],
+      "communeCount": 1,
+      "center": [-151.7367, -16.5044],
+      "coverageRadius": 3.58,
+      "totalPopulation": 10549,
+      "totalSurface": 4026
+    },
+    "98731": {
+      "communes": ["Huahine"],
+      "communeCount": 1,
+      "center": [-151.0135, -16.7286],
+      "coverageRadius": 4.9,
+      "totalPopulation": 6075,
+      "totalSurface": 7529
+    },
+    "98732": {
+      "communes": ["Huahine", "Maupiti"],
+      "communeCount": 2,
+      "center": [-151.231, -16.6792],
+      "coverageRadius": 112.6,
+      "boundingBox": {
+        "minLat": -16.7286,
+        "maxLat": -16.4461,
+        "minLon": -152.2583,
+        "maxLon": -151.0135
+      },
+      "totalPopulation": 7361,
+      "totalSurface": 9535
+    },
+    "98733": {
+      "communes": ["Tahaa"],
+      "communeCount": 1,
+      "center": [-151.5039, -16.6308],
+      "coverageRadius": 5.4,
+      "totalPopulation": 5234,
+      "totalSurface": 9158
+    },
+    "98734": {
+      "communes": ["Tahaa"],
+      "communeCount": 1,
+      "center": [-151.5039, -16.6308],
+      "coverageRadius": 5.4,
+      "totalPopulation": 5234,
+      "totalSurface": 9158
+    },
+    "98735": {
+      "communes": ["Taputapuatea", "Tumaraa", "Uturoa"],
+      "communeCount": 3,
+      "center": [-151.4528, -16.7999],
+      "coverageRadius": 6.3,
+      "boundingBox": {
+        "minLat": -16.8294,
+        "maxLat": -16.7437,
+        "minLon": -151.4668,
+        "maxLon": -151.4368
+      },
+      "totalPopulation": 12249,
+      "totalSurface": 17303
+    },
+    "98740": {
+      "communes": ["Fatu-Hiva"],
+      "communeCount": 1,
+      "center": [-138.646, -10.4861],
+      "coverageRadius": 5.2,
+      "totalPopulation": 612,
+      "totalSurface": 8502
+    },
+    "98741": {
+      "communes": ["Hiva-Oa"],
+      "communeCount": 1,
+      "center": [-139.0068, -9.7793],
+      "coverageRadius": 10.15,
+      "totalPopulation": 2243,
+      "totalSurface": 32381
+    },
+    "98742": {
+      "communes": ["Nuku-Hiva"],
+      "communeCount": 1,
+      "center": [-140.1246, -8.8733],
+      "coverageRadius": 11.07,
+      "totalPopulation": 2951,
+      "totalSurface": 38478
+    },
+    "98743": {
+      "communes": ["Tahuata"],
+      "communeCount": 1,
+      "center": [-139.0997, -9.9575],
+      "coverageRadius": 4.71,
+      "totalPopulation": 653,
+      "totalSurface": 6972
+    },
+    "98744": {
+      "communes": ["Ua-Huka"],
+      "communeCount": 1,
+      "center": [-139.5515, -8.9097],
+      "coverageRadius": 5.25,
+      "totalPopulation": 674,
+      "totalSurface": 8647
+    },
+    "98745": {
+      "communes": ["Ua-Pou"],
+      "communeCount": 1,
+      "center": [-140.08, -9.4011],
+      "coverageRadius": 5.82,
+      "totalPopulation": 2213,
+      "totalSurface": 10631
+    },
+    "98746": {
+      "communes": ["Ua-Pou"],
+      "communeCount": 1,
+      "center": [-140.08, -9.4011],
+      "coverageRadius": 5.82,
+      "totalPopulation": 2213,
+      "totalSurface": 10631
+    },
+    "98747": {
+      "communes": ["Ua-Huka"],
+      "communeCount": 1,
+      "center": [-139.5515, -8.9097],
+      "coverageRadius": 5.25,
+      "totalPopulation": 674,
+      "totalSurface": 8647
+    },
+    "98748": {
+      "communes": ["Nuku-Hiva"],
+      "communeCount": 1,
+      "center": [-140.1246, -8.8733],
+      "coverageRadius": 11.07,
+      "totalPopulation": 2951,
+      "totalSurface": 38478
+    },
+    "98749": {
+      "communes": ["Hiva-Oa"],
+      "communeCount": 1,
+      "center": [-139.0068, -9.7793],
+      "coverageRadius": 10.15,
+      "totalPopulation": 2243,
+      "totalSurface": 32381
+    },
+    "98750": {
+      "communes": ["Raivavae"],
+      "communeCount": 1,
+      "center": [-147.6664, -23.8698],
+      "coverageRadius": 2.38,
+      "totalPopulation": 903,
+      "totalSurface": 1780
+    },
+    "98751": {
+      "communes": ["Rapa"],
+      "communeCount": 1,
+      "center": [-144.3655, -27.6082],
+      "coverageRadius": 3.5,
+      "totalPopulation": 507,
+      "totalSurface": 3852
+    },
+    "98752": {
+      "communes": ["Rimatara"],
+      "communeCount": 1,
+      "center": [-152.8065, -22.6497],
+      "coverageRadius": 1.66,
+      "totalPopulation": 872,
+      "totalSurface": 865
+    },
+    "98753": {
+      "communes": ["Rurutu"],
+      "communeCount": 1,
+      "center": [-151.337, -22.4779],
+      "coverageRadius": 3.31,
+      "totalPopulation": 2466,
+      "totalSurface": 3448
+    },
+    "98754": {
+      "communes": ["Tubuai"],
+      "communeCount": 1,
+      "center": [-149.4827, -23.3724],
+      "coverageRadius": 3.82,
+      "totalPopulation": 2217,
+      "totalSurface": 4577
+    },
+    "98755": {
+      "communes": ["Gambier"],
+      "communeCount": 1,
+      "center": [-134.9696, -23.1045],
+      "coverageRadius": 4.37,
+      "totalPopulation": 1535,
+      "totalSurface": 5988
+    },
+    "98760": {
+      "communes": ["Anaa"],
+      "communeCount": 1,
+      "center": [-145.5705, -17.3341],
+      "coverageRadius": 3.84,
+      "totalPopulation": 811,
+      "totalSurface": 4642
+    },
+    "98761": {
+      "communes": ["Arutua"],
+      "communeCount": 1,
+      "center": [-146.3428, -15.317],
+      "coverageRadius": 3.78,
+      "totalPopulation": 1664,
+      "totalSurface": 4487
+    },
+    "98762": {
+      "communes": ["Arutua"],
+      "communeCount": 1,
+      "center": [-146.3428, -15.317],
+      "coverageRadius": 3.78,
+      "totalPopulation": 1664,
+      "totalSurface": 4487
+    },
+    "98763": {
+      "communes": ["Fakarava"],
+      "communeCount": 1,
+      "center": [-145.1437, -15.7784],
+      "coverageRadius": 5.28,
+      "totalPopulation": 1637,
+      "totalSurface": 8758
+    },
+    "98764": {
+      "communes": ["Fakarava"],
+      "communeCount": 1,
+      "center": [-145.1437, -15.7784],
+      "coverageRadius": 5.28,
+      "totalPopulation": 1637,
+      "totalSurface": 8758
+    },
+    "98765": {
+      "communes": ["Fangatau"],
+      "communeCount": 1,
+      "center": [-140.8919, -15.8202],
+      "coverageRadius": 2.11,
+      "totalPopulation": 296,
+      "totalSurface": 1405
+    },
+    "98766": {
+      "communes": ["Fangatau"],
+      "communeCount": 1,
+      "center": [-140.8919, -15.8202],
+      "coverageRadius": 2.11,
+      "totalPopulation": 296,
+      "totalSurface": 1405
+    },
+    "98767": {
+      "communes": ["Hao"],
+      "communeCount": 1,
+      "center": [-144.9985, -19.8678],
+      "coverageRadius": 4.62,
+      "totalPopulation": 1258,
+      "totalSurface": 6694
+    },
+    "98768": {
+      "communes": ["Hikueru"],
+      "communeCount": 1,
+      "center": [-142.3904, -18.0441],
+      "coverageRadius": 2.53,
+      "totalPopulation": 275,
+      "totalSurface": 2018
+    },
+    "98769": {
+      "communes": ["Makemo"],
+      "communeCount": 1,
+      "center": [-143.5216, -16.6197],
+      "coverageRadius": 4.8,
+      "totalPopulation": 1508,
+      "totalSurface": 7233
+    },
+    "98770": {
+      "communes": ["Manihi"],
+      "communeCount": 1,
+      "center": [-146.2831, -14.4314],
+      "coverageRadius": 2.89,
+      "totalPopulation": 1141,
+      "totalSurface": 2627
+    },
+    "98771": {
+      "communes": ["Manihi"],
+      "communeCount": 1,
+      "center": [-146.2831, -14.4314],
+      "coverageRadius": 2.89,
+      "totalPopulation": 1141,
+      "totalSurface": 2627
+    },
+    "98772": {
+      "communes": ["Napuka"],
+      "communeCount": 1,
+      "center": [-141.4303, -14.1011],
+      "coverageRadius": 1.65,
+      "totalPopulation": 284,
+      "totalSurface": 858
+    },
+    "98773": {
+      "communes": ["Nukutavake"],
+      "communeCount": 1,
+      "center": [-138.7857, -19.2798],
+      "coverageRadius": 1.98,
+      "totalPopulation": 295,
+      "totalSurface": 1234
+    },
+    "98774": {
+      "communes": ["Pukapuka"],
+      "communeCount": 1,
+      "center": [-138.8415, -14.8147],
+      "coverageRadius": 1.41,
+      "totalPopulation": 163,
+      "totalSurface": 627
+    },
+    "98775": {
+      "communes": ["Rangiroa"],
+      "communeCount": 1,
+      "center": [-148.2599, -15.8389],
+      "coverageRadius": 6.43,
+      "totalPopulation": 3657,
+      "totalSurface": 12974
+    },
+    "98776": {
+      "communes": ["Rangiroa"],
+      "communeCount": 1,
+      "center": [-148.2599, -15.8389],
+      "coverageRadius": 6.43,
+      "totalPopulation": 3657,
+      "totalSurface": 12974
+    },
+    "98777": {
+      "communes": ["Rangiroa"],
+      "communeCount": 1,
+      "center": [-148.2599, -15.8389],
+      "coverageRadius": 6.43,
+      "totalPopulation": 3657,
+      "totalSurface": 12974
+    },
+    "98778": {
+      "communes": ["Rangiroa"],
+      "communeCount": 1,
+      "center": [-148.2599, -15.8389],
+      "coverageRadius": 6.43,
+      "totalPopulation": 3657,
+      "totalSurface": 12974
+    },
+    "98779": {
+      "communes": ["Reao"],
+      "communeCount": 1,
+      "center": [-136.3505, -18.5195],
+      "coverageRadius": 2.37,
+      "totalPopulation": 587,
+      "totalSurface": 1758
+    },
+    "98780": {
+      "communes": ["Reao"],
+      "communeCount": 1,
+      "center": [-136.3505, -18.5195],
+      "coverageRadius": 2.37,
+      "totalPopulation": 587,
+      "totalSurface": 1758
+    },
+    "98781": {
+      "communes": ["Takaroa"],
+      "communeCount": 1,
+      "center": [-144.5451, -14.951],
+      "coverageRadius": 3.25,
+      "totalPopulation": 1175,
+      "totalSurface": 3316
+    },
+    "98782": {
+      "communes": ["Takaroa"],
+      "communeCount": 1,
+      "center": [-144.5451, -14.951],
+      "coverageRadius": 3.25,
+      "totalPopulation": 1175,
+      "totalSurface": 3316
+    },
+    "98783": {
+      "communes": ["Tatakoto"],
+      "communeCount": 1,
+      "center": [-138.3584, -17.3481],
+      "coverageRadius": 1.53,
+      "totalPopulation": 259,
+      "totalSurface": 737
+    },
+    "98784": {
+      "communes": ["Tureia"],
+      "communeCount": 1,
+      "center": [-139.016, -21.889],
+      "coverageRadius": 2.96,
+      "totalPopulation": 336,
+      "totalSurface": 2746
+    },
+    "98785": {
+      "communes": ["Arutua"],
+      "communeCount": 1,
+      "center": [-146.3428, -15.317],
+      "coverageRadius": 3.78,
+      "totalPopulation": 1664,
+      "totalSurface": 4487
+    },
+    "98786": {
+      "communes": ["Anaa"],
+      "communeCount": 1,
+      "center": [-145.5705, -17.3341],
+      "coverageRadius": 3.84,
+      "totalPopulation": 811,
+      "totalSurface": 4642
+    },
+    "98787": {
+      "communes": ["Fakarava"],
+      "communeCount": 1,
+      "center": [-145.1437, -15.7784],
+      "coverageRadius": 5.28,
+      "totalPopulation": 1637,
+      "totalSurface": 8758
+    },
+    "98788": {
+      "communes": ["Nukutavake"],
+      "communeCount": 1,
+      "center": [-138.7857, -19.2798],
+      "coverageRadius": 1.98,
+      "totalPopulation": 295,
+      "totalSurface": 1234
+    },
+    "98789": {
+      "communes": ["Makemo"],
+      "communeCount": 1,
+      "center": [-143.5216, -16.6197],
+      "coverageRadius": 4.8,
+      "totalPopulation": 1508,
+      "totalSurface": 7233
+    },
+    "98790": {
+      "communes": ["Anaa", "Fakarava", "Hao", "Hikueru", "Makemo", "Rangiroa", "Takaroa"],
+      "communeCount": 7,
+      "center": [-145.8852, -16.5096],
+      "coverageRadius": 408.4,
+      "boundingBox": {
+        "minLat": -19.8678,
+        "maxLat": -14.951,
+        "minLon": -148.2599,
+        "maxLon": -142.3904
+      },
+      "totalPopulation": 10321,
+      "totalSurface": 45634
+    },
+    "98792": {
+      "communes": ["Gambier"],
+      "communeCount": 1,
+      "center": [-134.9696, -23.1045],
+      "coverageRadius": 4.37,
+      "totalPopulation": 1535,
+      "totalSurface": 5988
+    },
+    "98793": {
+      "communes": ["Gambier"],
+      "communeCount": 1,
+      "center": [-134.9696, -23.1045],
+      "coverageRadius": 4.37,
+      "totalPopulation": 1535,
+      "totalSurface": 5988
+    },
+    "98794": {
+      "communes": ["Rapa"],
+      "communeCount": 1,
+      "center": [-144.3655, -27.6082],
+      "coverageRadius": 3.5,
+      "totalPopulation": 507,
+      "totalSurface": 3852
+    },
+    "98795": {
+      "communes": ["Rimatara"],
+      "communeCount": 1,
+      "center": [-152.8065, -22.6497],
+      "coverageRadius": 1.66,
+      "totalPopulation": 872,
+      "totalSurface": 865
+    },
+    "98796": {
+      "communes": ["Hiva-Oa", "Nuku-Hiva"],
+      "communeCount": 2,
+      "center": [-139.6419, -9.2646],
+      "coverageRadius": 90.2,
+      "boundingBox": {
+        "minLat": -9.7793,
+        "maxLat": -8.8733,
+        "minLon": -140.1246,
+        "maxLon": -139.0068
+      },
+      "totalPopulation": 5194,
+      "totalSurface": 70859
+    },
+    "98799": {
+      "communes": ["Île de Clipperton"],
+      "communeCount": 1,
+      "center": [-109.2163, 10.3036],
+      "coverageRadius": 1.68,
+      "totalPopulation": 0,
+      "totalSurface": 891
+    },
+    "98800": {
+      "communes": ["Nouméa"],
+      "communeCount": 1,
+      "center": [166.4576, -22.2646],
+      "coverageRadius": 3.98,
+      "totalPopulation": 94285,
+      "totalSurface": 4965
+    },
+    "98809": {
+      "communes": ["Le Mont-Dore"],
+      "communeCount": 1,
+      "center": [166.727, -22.2737],
+      "coverageRadius": 14.26,
+      "totalPopulation": 27620,
+      "totalSurface": 63882
+    },
+    "98811": {
+      "communes": ["Belep"],
+      "communeCount": 1,
+      "center": [163.6552, -19.7042],
+      "coverageRadius": 4.55,
+      "totalPopulation": 867,
+      "totalSurface": 6500
+    },
+    "98812": {
+      "communes": ["Bouloupari"],
+      "communeCount": 1,
+      "center": [166.1035, -21.8419],
+      "coverageRadius": 16.6,
+      "totalPopulation": 3315,
+      "totalSurface": 86606
+    },
+    "98813": {
+      "communes": ["Canala"],
+      "communeCount": 1,
+      "center": [165.9062, -21.4979],
+      "coverageRadius": 11.75,
+      "totalPopulation": 3701,
+      "totalSurface": 43379
+    },
+    "98814": {
+      "communes": ["Ouvéa"],
+      "communeCount": 1,
+      "center": [166.5404, -20.4081],
+      "coverageRadius": 6.77,
+      "totalPopulation": 3401,
+      "totalSurface": 14389
+    },
+    "98815": {
+      "communes": ["Hienghène"],
+      "communeCount": 1,
+      "center": [164.8952, -20.7333],
+      "coverageRadius": 17.51,
+      "totalPopulation": 2454,
+      "totalSurface": 96303
+    },
+    "98816": {
+      "communes": ["Houaïlou"],
+      "communeCount": 1,
+      "center": [165.5732, -21.3189],
+      "coverageRadius": 17.3,
+      "totalPopulation": 3955,
+      "totalSurface": 94053
+    },
+    "98817": {
+      "communes": ["Kaala-Gomen"],
+      "communeCount": 1,
+      "center": [164.544, -20.7203],
+      "coverageRadius": 15.42,
+      "totalPopulation": 1803,
+      "totalSurface": 74651
+    },
+    "98818": {
+      "communes": ["Kouaoua"],
+      "communeCount": 1,
+      "center": [165.781, -21.4584],
+      "coverageRadius": 11.07,
+      "totalPopulation": 1304,
+      "totalSurface": 38523
+    },
+    "98819": {
+      "communes": ["Moindou"],
+      "communeCount": 1,
+      "center": [165.659, -21.6303],
+      "coverageRadius": 10.14,
+      "totalPopulation": 681,
+      "totalSurface": 32311
+    },
+    "98820": {
+      "communes": ["Lifou"],
+      "communeCount": 1,
+      "center": [167.1658, -20.9329],
+      "coverageRadius": 19.15,
+      "totalPopulation": 9195,
+      "totalSurface": 115250
+    },
+    "98821": {
+      "communes": ["Ouégoa"],
+      "communeCount": 1,
+      "center": [164.4461, -20.4091],
+      "coverageRadius": 14.41,
+      "totalPopulation": 2118,
+      "totalSurface": 65241
+    },
+    "98822": {
+      "communes": ["Poindimié"],
+      "communeCount": 1,
+      "center": [165.1508, -20.9337],
+      "coverageRadius": 14.59,
+      "totalPopulation": 5006,
+      "totalSurface": 66868
+    },
+    "98823": {
+      "communes": ["Ponérihouen"],
+      "communeCount": 1,
+      "center": [165.3115, -21.1297],
+      "coverageRadius": 14.97,
+      "totalPopulation": 2420,
+      "totalSurface": 70433
+    },
+    "98824": {
+      "communes": ["Pouébo"],
+      "communeCount": 1,
+      "center": [164.5735, -20.4103],
+      "coverageRadius": 7.91,
+      "totalPopulation": 2144,
+      "totalSurface": 19676
+    },
+    "98825": {
+      "communes": ["Pouembout"],
+      "communeCount": 1,
+      "center": [164.9933, -21.1913],
+      "coverageRadius": 14.62,
+      "totalPopulation": 2752,
+      "totalSurface": 67140
+    },
+    "98826": {
+      "communes": ["Poum"],
+      "communeCount": 1,
+      "center": [164.1428, -20.2542],
+      "coverageRadius": 12.26,
+      "totalPopulation": 1435,
+      "totalSurface": 47257
+    },
+    "98827": {
+      "communes": ["Poya"],
+      "communeCount": 1,
+      "center": [165.2518, -21.3374],
+      "coverageRadius": 16.4,
+      "totalPopulation": 2802,
+      "totalSurface": 84446
+    },
+    "98828": {
+      "communes": ["Maré"],
+      "communeCount": 1,
+      "center": [167.9842, -21.5045],
+      "coverageRadius": 14.52,
+      "totalPopulation": 5757,
+      "totalSurface": 66192
+    },
+    "98829": {
+      "communes": ["Thio"],
+      "communeCount": 1,
+      "center": [166.2466, -21.722],
+      "coverageRadius": 17.79,
+      "totalPopulation": 2524,
+      "totalSurface": 99395
+    },
+    "98831": {
+      "communes": ["Touho"],
+      "communeCount": 1,
+      "center": [165.1495, -20.8172],
+      "coverageRadius": 9.41,
+      "totalPopulation": 2380,
+      "totalSurface": 27834
+    },
+    "98832": {
+      "communes": ["L'Île-des-Pins"],
+      "communeCount": 1,
+      "center": [167.4685, -22.6051],
+      "coverageRadius": 7.11,
+      "totalPopulation": 2037,
+      "totalSurface": 15883
+    },
+    "98833": {
+      "communes": ["Voh"],
+      "communeCount": 1,
+      "center": [164.7083, -20.8788],
+      "coverageRadius": 15.97,
+      "totalPopulation": 2856,
+      "totalSurface": 80126
+    },
+    "98834": {
+      "communes": ["Yaté"],
+      "communeCount": 1,
+      "center": [166.7705, -22.1],
+      "coverageRadius": 20.65,
+      "totalPopulation": 1667,
+      "totalSurface": 133946
+    },
+    "98835": {
+      "communes": ["Dumbéa"],
+      "communeCount": 1,
+      "center": [166.5133, -22.1337],
+      "coverageRadius": 8.97,
+      "totalPopulation": 35873,
+      "totalSurface": 25262
+    },
+    "98850": {
+      "communes": ["Koumac"],
+      "communeCount": 1,
+      "center": [164.3326, -20.5018],
+      "coverageRadius": 13.28,
+      "totalPopulation": 3981,
+      "totalSurface": 55395
+    },
+    "98859": {
+      "communes": ["Koné"],
+      "communeCount": 1,
+      "center": [164.8946, -21.0272],
+      "coverageRadius": 10.87,
+      "totalPopulation": 8144,
+      "totalSurface": 37130
+    },
+    "98870": {
+      "communes": ["Bourail"],
+      "communeCount": 1,
+      "center": [165.4509, -21.5504],
+      "coverageRadius": 15.94,
+      "totalPopulation": 5531,
+      "totalSurface": 79830
+    },
+    "98880": {
+      "communes": ["La Foa"],
+      "communeCount": 1,
+      "center": [165.8777, -21.7341],
+      "coverageRadius": 12.14,
+      "totalPopulation": 3552,
+      "totalSurface": 46331
+    },
+    "98881": {
+      "communes": ["Farino"],
+      "communeCount": 1,
+      "center": [165.7528, -21.648],
+      "coverageRadius": 3.92,
+      "totalPopulation": 712,
+      "totalSurface": 4826
+    },
+    "98882": {
+      "communes": ["Sarraméa"],
+      "communeCount": 1,
+      "center": [165.8346, -21.6229],
+      "coverageRadius": 5.81,
+      "totalPopulation": 572,
+      "totalSurface": 10594
+    },
+    "98889": {
+      "communes": ["Païta"],
+      "communeCount": 1,
+      "center": [166.3074, -22.0529],
+      "coverageRadius": 14.88,
+      "totalPopulation": 24563,
+      "totalSurface": 69567
+    }
+  }
+}

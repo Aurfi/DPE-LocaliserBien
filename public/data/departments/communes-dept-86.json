@@ -1,0 +1,5093 @@
+{
+  "departmentCode": "86",
+  "departmentName": "Vienne",
+  "stats": {
+    "communeCount": 265,
+    "totalPopulation": 438688,
+    "totalSurface": 703634
+  },
+  "communes": [
+    {
+      "nom": "Adriers",
+      "code": "86001",
+      "codesPostaux": ["86430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7884, 46.2621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7988, 46.258]
+      },
+      "population": 701,
+      "surface": 6808.85,
+      "radius": 4.66
+    },
+    {
+      "nom": "Amberre",
+      "code": "86002",
+      "codesPostaux": ["86110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1564, 46.7588]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1645, 46.7657]
+      },
+      "population": 565,
+      "surface": 1585.32,
+      "radius": 2.25
+    },
+    {
+      "nom": "Anché",
+      "code": "86003",
+      "codesPostaux": ["86700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2683, 46.3497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2665, 46.3436]
+      },
+      "population": 329,
+      "surface": 1641.95,
+      "radius": 2.29
+    },
+    {
+      "nom": "Angles-sur-l'Anglin",
+      "code": "86004",
+      "codesPostaux": ["86260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8961, 46.7028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8831, 46.6958]
+      },
+      "population": 362,
+      "surface": 1462.58,
+      "radius": 2.16
+    },
+    {
+      "nom": "Angliers",
+      "code": "86005",
+      "codesPostaux": ["86330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0992, 46.9365]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1174, 46.9445]
+      },
+      "population": 607,
+      "surface": 2331.65,
+      "radius": 2.72
+    },
+    {
+      "nom": "Antigny",
+      "code": "86006",
+      "codesPostaux": ["86310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8427, 46.5343]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8544, 46.5363]
+      },
+      "population": 543,
+      "surface": 4443.16,
+      "radius": 3.76
+    },
+    {
+      "nom": "Antran",
+      "code": "86007",
+      "codesPostaux": ["86100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5182, 46.8813]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5433, 46.8526]
+      },
+      "population": 1156,
+      "surface": 2369.35,
+      "radius": 2.75
+    },
+    {
+      "nom": "Arçay",
+      "code": "86008",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0012, 46.9544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0148, 46.969]
+      },
+      "population": 342,
+      "surface": 1419.66,
+      "radius": 2.13
+    },
+    {
+      "nom": "Archigny",
+      "code": "86009",
+      "codesPostaux": ["86210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6846, 46.6682]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6532, 46.6732]
+      },
+      "population": 1060,
+      "surface": 6680.92,
+      "radius": 4.61
+    },
+    {
+      "nom": "Aslonnes",
+      "code": "86010",
+      "codesPostaux": ["86340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.34, 46.4521]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3362, 46.4429]
+      },
+      "population": 1130,
+      "surface": 2292.95,
+      "radius": 2.7
+    },
+    {
+      "nom": "Asnières-sur-Blour",
+      "code": "86011",
+      "codesPostaux": ["86430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.78, 46.1501]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7995, 46.1636]
+      },
+      "population": 189,
+      "surface": 3270.84,
+      "radius": 3.23
+    },
+    {
+      "nom": "Asnois",
+      "code": "86012",
+      "codesPostaux": ["86250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4129, 46.0998]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4131, 46.1121]
+      },
+      "population": 132,
+      "surface": 1632.86,
+      "radius": 2.28
+    },
+    {
+      "nom": "Aulnay",
+      "code": "86013",
+      "codesPostaux": ["86330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0944, 46.9064]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0928, 46.9053]
+      },
+      "population": 101,
+      "surface": 806.41,
+      "radius": 1.6
+    },
+    {
+      "nom": "Availles-en-Châtellerault",
+      "code": "86014",
+      "codesPostaux": ["86530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5712, 46.7569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5787, 46.7565]
+      },
+      "population": 1738,
+      "surface": 1549.44,
+      "radius": 2.22
+    },
+    {
+      "nom": "Availles-Limouzine",
+      "code": "86015",
+      "codesPostaux": ["86460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6515, 46.1313]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6578, 46.1206]
+      },
+      "population": 1287,
+      "surface": 5815.6,
+      "radius": 4.3
+    },
+    {
+      "nom": "Avanton",
+      "code": "86016",
+      "codesPostaux": ["86170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3077, 46.6635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3044, 46.6629]
+      },
+      "population": 2227,
+      "surface": 1079.29,
+      "radius": 1.85
+    },
+    {
+      "nom": "Ayron",
+      "code": "86017",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0463, 46.6458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0758, 46.6604]
+      },
+      "population": 1087,
+      "surface": 2833.7,
+      "radius": 3
+    },
+    {
+      "nom": "Basses",
+      "code": "86018",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1266, 47.0442]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1196, 47.0414]
+      },
+      "population": 336,
+      "surface": 1028.23,
+      "radius": 1.81
+    },
+    {
+      "nom": "Beaumont Saint-Cyr",
+      "code": "86019",
+      "codesPostaux": ["86130", "86490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4556, 46.7256]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4304, 46.7379]
+      },
+      "population": 2941,
+      "surface": 3716.77,
+      "radius": 3.44
+    },
+    {
+      "nom": "Bellefonds",
+      "code": "86020",
+      "codesPostaux": ["86210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6078, 46.6523]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5894, 46.6475]
+      },
+      "population": 250,
+      "surface": 859.28,
+      "radius": 1.65
+    },
+    {
+      "nom": "Berrie",
+      "code": "86022",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0694, 47.0612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0696, 47.0673]
+      },
+      "population": 253,
+      "surface": 1680.68,
+      "radius": 2.31
+    },
+    {
+      "nom": "Berthegon",
+      "code": "86023",
+      "codesPostaux": ["86420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2636, 46.8995]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2632, 46.8976]
+      },
+      "population": 262,
+      "surface": 1059.9,
+      "radius": 1.84
+    },
+    {
+      "nom": "Béruges",
+      "code": "86024",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2081, 46.5497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2066, 46.5672]
+      },
+      "population": 1538,
+      "surface": 3290.11,
+      "radius": 3.24
+    },
+    {
+      "nom": "Béthines",
+      "code": "86025",
+      "codesPostaux": ["86310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9649, 46.5447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9743, 46.5483]
+      },
+      "population": 470,
+      "surface": 3756.41,
+      "radius": 3.46
+    },
+    {
+      "nom": "Beuxes",
+      "code": "86026",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1747, 47.088]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1804, 47.0946]
+      },
+      "population": 558,
+      "surface": 1126.08,
+      "radius": 1.89
+    },
+    {
+      "nom": "Biard",
+      "code": "86027",
+      "codesPostaux": ["86580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2952, 46.5861]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3053, 46.5771]
+      },
+      "population": 1908,
+      "surface": 748.9,
+      "radius": 1.54
+    },
+    {
+      "nom": "Bignoux",
+      "code": "86028",
+      "codesPostaux": ["86800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4597, 46.6044]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.47, 46.6014]
+      },
+      "population": 1083,
+      "surface": 1465,
+      "radius": 2.16
+    },
+    {
+      "nom": "Blanzay",
+      "code": "86029",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2529, 46.2128]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.258, 46.201]
+      },
+      "population": 804,
+      "surface": 3560.48,
+      "radius": 3.37
+    },
+    {
+      "nom": "Boivre-la-Vallée",
+      "code": "86123",
+      "codesPostaux": ["86470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.087, 46.5391]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0742, 46.5583]
+      },
+      "population": 3041,
+      "surface": 11812.66,
+      "radius": 6.13
+    },
+    {
+      "nom": "Bonnes",
+      "code": "86031",
+      "codesPostaux": ["86300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6021, 46.6121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5974, 46.6043]
+      },
+      "population": 1686,
+      "surface": 3487.22,
+      "radius": 3.33
+    },
+    {
+      "nom": "Bonneuil-Matours",
+      "code": "86032",
+      "codesPostaux": ["86210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5684, 46.6851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5713, 46.6812]
+      },
+      "population": 2096,
+      "surface": 4291.1,
+      "radius": 3.7
+    },
+    {
+      "nom": "Bouresse",
+      "code": "86034",
+      "codesPostaux": ["86410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.576, 46.3531]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6091, 46.3612]
+      },
+      "population": 623,
+      "surface": 3734.13,
+      "radius": 3.45
+    },
+    {
+      "nom": "Bourg-Archambault",
+      "code": "86035",
+      "codesPostaux": ["86390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9973, 46.3714]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0076, 46.3828]
+      },
+      "population": 171,
+      "surface": 2440.47,
+      "radius": 2.79
+    },
+    {
+      "nom": "Bournand",
+      "code": "86036",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0718, 47.0793]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.078, 47.0864]
+      },
+      "population": 929,
+      "surface": 3272.97,
+      "radius": 3.23
+    },
+    {
+      "nom": "Brigueil-le-Chantre",
+      "code": "86037",
+      "codesPostaux": ["86290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0891, 46.3849]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0878, 46.3935]
+      },
+      "population": 460,
+      "surface": 5439.71,
+      "radius": 4.16
+    },
+    {
+      "nom": "Brion",
+      "code": "86038",
+      "codesPostaux": ["86160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4759, 46.3576]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4613, 46.3549]
+      },
+      "population": 221,
+      "surface": 1619.45,
+      "radius": 2.27
+    },
+    {
+      "nom": "Brux",
+      "code": "86039",
+      "codesPostaux": ["86510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1902, 46.2488]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1915, 46.2354]
+      },
+      "population": 765,
+      "surface": 3609.88,
+      "radius": 3.39
+    },
+    {
+      "nom": "Buxerolles",
+      "code": "86041",
+      "codesPostaux": ["86180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.367, 46.6057]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.353, 46.5983]
+      },
+      "population": 10253,
+      "surface": 912.28,
+      "radius": 1.7
+    },
+    {
+      "nom": "Buxeuil",
+      "code": "86042",
+      "codesPostaux": ["37160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6618, 46.9687]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6727, 46.9752]
+      },
+      "population": 901,
+      "surface": 1202.61,
+      "radius": 1.96
+    },
+    {
+      "nom": "Ceaux-en-Loudun",
+      "code": "86044",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2294, 47.0324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.24, 47.0257]
+      },
+      "population": 555,
+      "surface": 2877.78,
+      "radius": 3.03
+    },
+    {
+      "nom": "Celle-Lévescault",
+      "code": "86045",
+      "codesPostaux": ["86600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1744, 46.4065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1882, 46.4263]
+      },
+      "population": 1373,
+      "surface": 4281.68,
+      "radius": 3.69
+    },
+    {
+      "nom": "Cenon-sur-Vienne",
+      "code": "86046",
+      "codesPostaux": ["86530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5263, 46.7617]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5362, 46.7737]
+      },
+      "population": 1690,
+      "surface": 879.94,
+      "radius": 1.67
+    },
+    {
+      "nom": "Cernay",
+      "code": "86047",
+      "codesPostaux": ["86140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3011, 46.8368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3045, 46.8335]
+      },
+      "population": 478,
+      "surface": 331.37,
+      "radius": 1.03
+    },
+    {
+      "nom": "Chabournay",
+      "code": "86048",
+      "codesPostaux": ["86380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2699, 46.7177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2573, 46.7169]
+      },
+      "population": 1258,
+      "surface": 590.62,
+      "radius": 1.37
+    },
+    {
+      "nom": "Chalais",
+      "code": "86049",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0999, 46.9719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0993, 46.9792]
+      },
+      "population": 474,
+      "surface": 1491.45,
+      "radius": 2.18
+    },
+    {
+      "nom": "Chalandray",
+      "code": "86050",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0071, 46.6517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0029, 46.6612]
+      },
+      "population": 794,
+      "surface": 2516.23,
+      "radius": 2.83
+    },
+    {
+      "nom": "Champagné-le-Sec",
+      "code": "86051",
+      "codesPostaux": ["86510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1895, 46.1903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1898, 46.1904]
+      },
+      "population": 213,
+      "surface": 802.37,
+      "radius": 1.6
+    },
+    {
+      "nom": "Champagné-Saint-Hilaire",
+      "code": "86052",
+      "codesPostaux": ["86160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3178, 46.324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3247, 46.3196]
+      },
+      "population": 994,
+      "surface": 4690.97,
+      "radius": 3.86
+    },
+    {
+      "nom": "Champigny en Rochereau",
+      "code": "86053",
+      "codesPostaux": ["86170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1567, 46.7127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1567, 46.7147]
+      },
+      "population": 1890,
+      "surface": 3334.28,
+      "radius": 3.26
+    },
+    {
+      "nom": "Champniers",
+      "code": "86054",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.328, 46.2157]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3352, 46.2189]
+      },
+      "population": 354,
+      "surface": 2012.34,
+      "radius": 2.53
+    },
+    {
+      "nom": "Chapelle-Viviers",
+      "code": "86059",
+      "codesPostaux": ["86300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7364, 46.4673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7258, 46.484]
+      },
+      "population": 564,
+      "surface": 1472.6,
+      "radius": 2.17
+    },
+    {
+      "nom": "Charroux",
+      "code": "86061",
+      "codesPostaux": ["86250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4075, 46.1388]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4023, 46.1445]
+      },
+      "population": 1046,
+      "surface": 4464.14,
+      "radius": 3.77
+    },
+    {
+      "nom": "Chasseneuil-du-Poitou",
+      "code": "86062",
+      "codesPostaux": ["86360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.356, 46.6476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3749, 46.6506]
+      },
+      "population": 4776,
+      "surface": 1756.26,
+      "radius": 2.36
+    },
+    {
+      "nom": "Chatain",
+      "code": "86063",
+      "codesPostaux": ["86250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4408, 46.0753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4325, 46.0725]
+      },
+      "population": 241,
+      "surface": 2223.54,
+      "radius": 2.66
+    },
+    {
+      "nom": "Château-Garnier",
+      "code": "86064",
+      "codesPostaux": ["86350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4424, 46.2589]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4248, 46.2572]
+      },
+      "population": 601,
+      "surface": 3634.58,
+      "radius": 3.4
+    },
+    {
+      "nom": "Château-Larcher",
+      "code": "86065",
+      "codesPostaux": ["86370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.302, 46.4126]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3118, 46.4161]
+      },
+      "population": 1046,
+      "surface": 1545.1,
+      "radius": 2.22
+    },
+    {
+      "nom": "Châtellerault",
+      "code": "86066",
+      "codesPostaux": ["86100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5583, 46.8147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5467, 46.8179]
+      },
+      "population": 31105,
+      "surface": 5202.19,
+      "radius": 4.07
+    },
+    {
+      "nom": "Chaunay",
+      "code": "86068",
+      "codesPostaux": ["86510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1674, 46.1986]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1627, 46.2059]
+      },
+      "population": 1201,
+      "surface": 3877.11,
+      "radius": 3.51
+    },
+    {
+      "nom": "Chauvigny",
+      "code": "86070",
+      "codesPostaux": ["86300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6714, 46.5528]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6442, 46.5699]
+      },
+      "population": 7037,
+      "surface": 9602.98,
+      "radius": 5.53
+    },
+    {
+      "nom": "Chenevelles",
+      "code": "86072",
+      "codesPostaux": ["86450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6811, 46.7233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6531, 46.7282]
+      },
+      "population": 442,
+      "surface": 2920.98,
+      "radius": 3.05
+    },
+    {
+      "nom": "Cherves",
+      "code": "86073",
+      "codesPostaux": ["86170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0245, 46.6992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0164, 46.7172]
+      },
+      "population": 516,
+      "surface": 2619.16,
+      "radius": 2.89
+    },
+    {
+      "nom": "Chiré-en-Montreuil",
+      "code": "86074",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1123, 46.6223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1252, 46.6389]
+      },
+      "population": 923,
+      "surface": 2163.74,
+      "radius": 2.62
+    },
+    {
+      "nom": "Chouppes",
+      "code": "86075",
+      "codesPostaux": ["86110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1778, 46.807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1639, 46.8117]
+      },
+      "population": 801,
+      "surface": 3179.04,
+      "radius": 3.18
+    },
+    {
+      "nom": "Cissé",
+      "code": "86076",
+      "codesPostaux": ["86170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2448, 46.6485]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2279, 46.6464]
+      },
+      "population": 2875,
+      "surface": 1731.28,
+      "radius": 2.35
+    },
+    {
+      "nom": "Civaux",
+      "code": "86077",
+      "codesPostaux": ["86320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6722, 46.4417]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6648, 46.4442]
+      },
+      "population": 1205,
+      "surface": 2639.35,
+      "radius": 2.9
+    },
+    {
+      "nom": "Civray",
+      "code": "86078",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2994, 46.1427]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2952, 46.1488]
+      },
+      "population": 2543,
+      "surface": 869.75,
+      "radius": 1.66
+    },
+    {
+      "nom": "Cloué",
+      "code": "86080",
+      "codesPostaux": ["86600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1666, 46.4464]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1651, 46.4437]
+      },
+      "population": 492,
+      "surface": 1217.94,
+      "radius": 1.97
+    },
+    {
+      "nom": "Colombiers",
+      "code": "86081",
+      "codesPostaux": ["86490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4351, 46.7804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4257, 46.7721]
+      },
+      "population": 1418,
+      "surface": 2103.01,
+      "radius": 2.59
+    },
+    {
+      "nom": "Coulombiers",
+      "code": "86083",
+      "codesPostaux": ["86600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.174, 46.489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1847, 46.4842]
+      },
+      "population": 1143,
+      "surface": 2831.25,
+      "radius": 3
+    },
+    {
+      "nom": "Coulonges-les-Hérolles",
+      "code": "86084",
+      "codesPostaux": ["86290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1767, 46.4151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1546, 46.4011]
+      },
+      "population": 232,
+      "surface": 1852.95,
+      "radius": 2.43
+    },
+    {
+      "nom": "Coussay",
+      "code": "86085",
+      "codesPostaux": ["86110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1958, 46.8414]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2027, 46.8378]
+      },
+      "population": 260,
+      "surface": 2019.44,
+      "radius": 2.54
+    },
+    {
+      "nom": "Coussay-les-Bois",
+      "code": "86086",
+      "codesPostaux": ["86270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7262, 46.8111]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7426, 46.8082]
+      },
+      "population": 913,
+      "surface": 4362.68,
+      "radius": 3.73
+    },
+    {
+      "nom": "Craon",
+      "code": "86087",
+      "codesPostaux": ["86110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0248, 46.77]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0243, 46.7728]
+      },
+      "population": 183,
+      "surface": 2190.56,
+      "radius": 2.64
+    },
+    {
+      "nom": "Croutelle",
+      "code": "86088",
+      "codesPostaux": ["86240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2944, 46.5415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2871, 46.5356]
+      },
+      "population": 937,
+      "surface": 149.34,
+      "radius": 0.69
+    },
+    {
+      "nom": "Cuhon",
+      "code": "86089",
+      "codesPostaux": ["86110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1041, 46.7651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.096, 46.7599]
+      },
+      "population": 389,
+      "surface": 1661.73,
+      "radius": 2.3
+    },
+    {
+      "nom": "Curçay-sur-Dive",
+      "code": "86090",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0482, 47.0097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0574, 47.0119]
+      },
+      "population": 230,
+      "surface": 1587.89,
+      "radius": 2.25
+    },
+    {
+      "nom": "Curzay-sur-Vonne",
+      "code": "86091",
+      "codesPostaux": ["86600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0428, 46.4902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0447, 46.4911]
+      },
+      "population": 374,
+      "surface": 1652.49,
+      "radius": 2.29
+    },
+    {
+      "nom": "Dangé-Saint-Romain",
+      "code": "86092",
+      "codesPostaux": ["86220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6063, 46.926]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6056, 46.9369]
+      },
+      "population": 2968,
+      "surface": 3487.75,
+      "radius": 3.33
+    },
+    {
+      "nom": "Dercé",
+      "code": "86093",
+      "codesPostaux": ["86420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2076, 46.9416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2175, 46.9413]
+      },
+      "population": 163,
+      "surface": 1234.75,
+      "radius": 1.98
+    },
+    {
+      "nom": "Dienné",
+      "code": "86094",
+      "codesPostaux": ["86410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5373, 46.4423]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5482, 46.4415]
+      },
+      "population": 583,
+      "surface": 1741.02,
+      "radius": 2.35
+    },
+    {
+      "nom": "Dissay",
+      "code": "86095",
+      "codesPostaux": ["86130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4452, 46.698]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4314, 46.7011]
+      },
+      "population": 3143,
+      "surface": 2363.47,
+      "radius": 2.74
+    },
+    {
+      "nom": "Doussay",
+      "code": "86096",
+      "codesPostaux": ["86140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2748, 46.8411]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2745, 46.8434]
+      },
+      "population": 680,
+      "surface": 2723.47,
+      "radius": 2.94
+    },
+    {
+      "nom": "Fleix",
+      "code": "86098",
+      "codesPostaux": ["86300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7467, 46.562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7457, 46.5538]
+      },
+      "population": 144,
+      "surface": 922.87,
+      "radius": 1.71
+    },
+    {
+      "nom": "Fleuré",
+      "code": "86099",
+      "codesPostaux": ["86340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5285, 46.4863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.52, 46.4785]
+      },
+      "population": 1108,
+      "surface": 1692.4,
+      "radius": 2.32
+    },
+    {
+      "nom": "Fontaine-le-Comte",
+      "code": "86100",
+      "codesPostaux": ["86240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2522, 46.5265]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2668, 46.5344]
+      },
+      "population": 3971,
+      "surface": 1878.28,
+      "radius": 2.45
+    },
+    {
+      "nom": "Frozes",
+      "code": "86102",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1322, 46.6647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1338, 46.6601]
+      },
+      "population": 612,
+      "surface": 873.83,
+      "radius": 1.67
+    },
+    {
+      "nom": "Gençay",
+      "code": "86103",
+      "codesPostaux": ["86160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4134, 46.3705]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4042, 46.3737]
+      },
+      "population": 1681,
+      "surface": 479.96,
+      "radius": 1.24
+    },
+    {
+      "nom": "Genouillé",
+      "code": "86104",
+      "codesPostaux": ["86250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3396, 46.0971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3349, 46.1078]
+      },
+      "population": 493,
+      "surface": 3006.24,
+      "radius": 3.09
+    },
+    {
+      "nom": "Gizay",
+      "code": "86105",
+      "codesPostaux": ["86340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4255, 46.4395]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4239, 46.4401]
+      },
+      "population": 364,
+      "surface": 2072.03,
+      "radius": 2.57
+    },
+    {
+      "nom": "Glénouze",
+      "code": "86106",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0003, 47.0069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0096, 46.9951]
+      },
+      "population": 100,
+      "surface": 966.57,
+      "radius": 1.75
+    },
+    {
+      "nom": "Gouex",
+      "code": "86107",
+      "codesPostaux": ["86320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6607, 46.3701]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6908, 46.3663]
+      },
+      "population": 473,
+      "surface": 1829.29,
+      "radius": 2.41
+    },
+    {
+      "nom": "Guesnes",
+      "code": "86109",
+      "codesPostaux": ["86420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1505, 46.906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.163, 46.9148]
+      },
+      "population": 232,
+      "surface": 1340.95,
+      "radius": 2.07
+    },
+    {
+      "nom": "Haims",
+      "code": "86110",
+      "codesPostaux": ["86310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9331, 46.5145]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9185, 46.5022]
+      },
+      "population": 230,
+      "surface": 3279.25,
+      "radius": 3.23
+    },
+    {
+      "nom": "Ingrandes",
+      "code": "86111",
+      "codesPostaux": ["86220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.606, 46.8703]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5686, 46.8757]
+      },
+      "population": 1704,
+      "surface": 3511.61,
+      "radius": 3.34
+    },
+    {
+      "nom": "Iteuil",
+      "code": "86113",
+      "codesPostaux": ["86240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2904, 46.4812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3155, 46.4843]
+      },
+      "population": 2989,
+      "surface": 2199.22,
+      "radius": 2.65
+    },
+    {
+      "nom": "Jardres",
+      "code": "86114",
+      "codesPostaux": ["86800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5771, 46.5657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5649, 46.5689]
+      },
+      "population": 1250,
+      "surface": 2051.56,
+      "radius": 2.56
+    },
+    {
+      "nom": "Jaunay-Marigny",
+      "code": "86115",
+      "codesPostaux": ["86130", "86380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3642, 46.7274]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3751, 46.6837]
+      },
+      "population": 7597,
+      "surface": 4898.5,
+      "radius": 3.95
+    },
+    {
+      "nom": "Jazeneuil",
+      "code": "86116",
+      "codesPostaux": ["86600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0735, 46.4749]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0683, 46.4653]
+      },
+      "population": 797,
+      "surface": 3222.65,
+      "radius": 3.2
+    },
+    {
+      "nom": "Jouhet",
+      "code": "86117",
+      "codesPostaux": ["86500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8766, 46.4898]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8383, 46.4914]
+      },
+      "population": 510,
+      "surface": 2556.88,
+      "radius": 2.85
+    },
+    {
+      "nom": "Journet",
+      "code": "86118",
+      "codesPostaux": ["86290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9666, 46.4753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9678, 46.4628]
+      },
+      "population": 368,
+      "surface": 5923.92,
+      "radius": 4.34
+    },
+    {
+      "nom": "Joussé",
+      "code": "86119",
+      "codesPostaux": ["86350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4556, 46.228]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4721, 46.2263]
+      },
+      "population": 309,
+      "surface": 763.92,
+      "radius": 1.56
+    },
+    {
+      "nom": "L'Isle-Jourdain",
+      "code": "86112",
+      "codesPostaux": ["86150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7032, 46.2377]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6861, 46.2359]
+      },
+      "population": 1146,
+      "surface": 591.65,
+      "radius": 1.37
+    },
+    {
+      "nom": "La Bussière",
+      "code": "86040",
+      "codesPostaux": ["86310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8234, 46.6282]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8244, 46.635]
+      },
+      "population": 301,
+      "surface": 3234.85,
+      "radius": 3.21
+    },
+    {
+      "nom": "La Chapelle-Bâton",
+      "code": "86055",
+      "codesPostaux": ["86250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4071, 46.1905]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3949, 46.1854]
+      },
+      "population": 350,
+      "surface": 2997.39,
+      "radius": 3.09
+    },
+    {
+      "nom": "La Chapelle-Moulière",
+      "code": "86058",
+      "codesPostaux": ["86210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5401, 46.6438]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5652, 46.6504]
+      },
+      "population": 730,
+      "surface": 1759.75,
+      "radius": 2.37
+    },
+    {
+      "nom": "La Chaussée",
+      "code": "86069",
+      "codesPostaux": ["86330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.107, 46.8849]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1107, 46.8854]
+      },
+      "population": 187,
+      "surface": 1360.09,
+      "radius": 2.08
+    },
+    {
+      "nom": "La Ferrière-Airoux",
+      "code": "86097",
+      "codesPostaux": ["86160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.404, 46.3151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3908, 46.3191]
+      },
+      "population": 334,
+      "surface": 2715.59,
+      "radius": 2.94
+    },
+    {
+      "nom": "La Grimaudière",
+      "code": "86108",
+      "codesPostaux": ["86110", "86330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.034, 46.8043]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0176, 46.808]
+      },
+      "population": 396,
+      "surface": 1932.79,
+      "radius": 2.48
+    },
+    {
+      "nom": "La Puye",
+      "code": "86202",
+      "codesPostaux": ["86260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7444, 46.6468]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.753, 46.6429]
+      },
+      "population": 604,
+      "surface": 2368.46,
+      "radius": 2.75
+    },
+    {
+      "nom": "La Roche-Posay",
+      "code": "86207",
+      "codesPostaux": ["86270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8057, 46.7768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8124, 46.7865]
+      },
+      "population": 1571,
+      "surface": 3525.93,
+      "radius": 3.35
+    },
+    {
+      "nom": "La Roche-Rigault",
+      "code": "86079",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1709, 46.9674]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.179, 46.9687]
+      },
+      "population": 562,
+      "surface": 2570.86,
+      "radius": 2.86
+    },
+    {
+      "nom": "La Trimouille",
+      "code": "86273",
+      "codesPostaux": ["86290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0673, 46.4538]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0395, 46.4664]
+      },
+      "population": 863,
+      "surface": 4215.36,
+      "radius": 3.66
+    },
+    {
+      "nom": "La Villedieu-du-Clain",
+      "code": "86290",
+      "codesPostaux": ["86340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3888, 46.4607]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3679, 46.4559]
+      },
+      "population": 1526,
+      "surface": 721.31,
+      "radius": 1.52
+    },
+    {
+      "nom": "Lathus-Saint-Rémy",
+      "code": "86120",
+      "codesPostaux": ["86390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9372, 46.3223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9622, 46.3324]
+      },
+      "population": 1214,
+      "surface": 9862.54,
+      "radius": 5.6
+    },
+    {
+      "nom": "Latillé",
+      "code": "86121",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0672, 46.612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0757, 46.6189]
+      },
+      "population": 1483,
+      "surface": 2532.77,
+      "radius": 2.84
+    },
+    {
+      "nom": "Lauthiers",
+      "code": "86122",
+      "codesPostaux": ["86300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.726, 46.6047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7341, 46.6011]
+      },
+      "population": 68,
+      "surface": 829.86,
+      "radius": 1.63
+    },
+    {
+      "nom": "Lavoux",
+      "code": "86124",
+      "codesPostaux": ["86800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5288, 46.5961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5298, 46.5953]
+      },
+      "population": 1179,
+      "surface": 1537.83,
+      "radius": 2.21
+    },
+    {
+      "nom": "Le Vigeant",
+      "code": "86289",
+      "codesPostaux": ["86150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6324, 46.2199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6489, 46.2252]
+      },
+      "population": 656,
+      "surface": 6515.21,
+      "radius": 4.55
+    },
+    {
+      "nom": "Leigné-les-Bois",
+      "code": "86125",
+      "codesPostaux": ["86450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7072, 46.7614]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7068, 46.7594]
+      },
+      "population": 565,
+      "surface": 3004.6,
+      "radius": 3.09
+    },
+    {
+      "nom": "Leigné-sur-Usseau",
+      "code": "86127",
+      "codesPostaux": ["86230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4795, 46.9154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4728, 46.9127]
+      },
+      "population": 453,
+      "surface": 1122.52,
+      "radius": 1.89
+    },
+    {
+      "nom": "Leignes-sur-Fontaine",
+      "code": "86126",
+      "codesPostaux": ["86300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7768, 46.5107]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7755, 46.5077]
+      },
+      "population": 644,
+      "surface": 3253.22,
+      "radius": 3.22
+    },
+    {
+      "nom": "Lencloître",
+      "code": "86128",
+      "codesPostaux": ["86140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.303, 46.8081]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3268, 46.8136]
+      },
+      "population": 2490,
+      "surface": 1900.7,
+      "radius": 2.46
+    },
+    {
+      "nom": "Les Ormes",
+      "code": "86183",
+      "codesPostaux": ["86220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.621, 46.965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6046, 46.9725]
+      },
+      "population": 1620,
+      "surface": 2392.96,
+      "radius": 2.76
+    },
+    {
+      "nom": "Les Trois-Moutiers",
+      "code": "86274",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0073, 47.0621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0175, 47.0628]
+      },
+      "population": 1082,
+      "surface": 3577.76,
+      "radius": 3.37
+    },
+    {
+      "nom": "Lésigny",
+      "code": "86129",
+      "codesPostaux": ["86270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7692, 46.8346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7667, 46.8495]
+      },
+      "population": 525,
+      "surface": 1314.51,
+      "radius": 2.05
+    },
+    {
+      "nom": "Leugny",
+      "code": "86130",
+      "codesPostaux": ["86220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6959, 46.8996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7013, 46.9111]
+      },
+      "population": 370,
+      "surface": 1572.83,
+      "radius": 2.24
+    },
+    {
+      "nom": "Lhommaizé",
+      "code": "86131",
+      "codesPostaux": ["86410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5868, 46.4444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5974, 46.4347]
+      },
+      "population": 912,
+      "surface": 3072.29,
+      "radius": 3.13
+    },
+    {
+      "nom": "Liglet",
+      "code": "86132",
+      "codesPostaux": ["86290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.085, 46.5042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0846, 46.5091]
+      },
+      "population": 301,
+      "surface": 5334.21,
+      "radius": 4.12
+    },
+    {
+      "nom": "Ligugé",
+      "code": "86133",
+      "codesPostaux": ["86240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.29, 46.5228]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3305, 46.5177]
+      },
+      "population": 3429,
+      "surface": 2289.08,
+      "radius": 2.7
+    },
+    {
+      "nom": "Linazay",
+      "code": "86134",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1932, 46.1654]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1827, 46.1648]
+      },
+      "population": 217,
+      "surface": 922.75,
+      "radius": 1.71
+    },
+    {
+      "nom": "Liniers",
+      "code": "86135",
+      "codesPostaux": ["86800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5292, 46.6193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5374, 46.6125]
+      },
+      "population": 586,
+      "surface": 1634.29,
+      "radius": 2.28
+    },
+    {
+      "nom": "Lizant",
+      "code": "86136",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2783, 46.0792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2802, 46.0839]
+      },
+      "population": 381,
+      "surface": 1696.67,
+      "radius": 2.32
+    },
+    {
+      "nom": "Loudun",
+      "code": "86137",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1048, 47.0116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0823, 47.0102]
+      },
+      "population": 6791,
+      "surface": 4398.62,
+      "radius": 3.74
+    },
+    {
+      "nom": "Luchapt",
+      "code": "86138",
+      "codesPostaux": ["86430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7797, 46.1866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7808, 46.176]
+      },
+      "population": 248,
+      "surface": 2639.02,
+      "radius": 2.9
+    },
+    {
+      "nom": "Lusignan",
+      "code": "86139",
+      "codesPostaux": ["86600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1186, 46.4404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1228, 46.4349]
+      },
+      "population": 2556,
+      "surface": 3808.25,
+      "radius": 3.48
+    },
+    {
+      "nom": "Lussac-les-Châteaux",
+      "code": "86140",
+      "codesPostaux": ["86320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7304, 46.4074]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.725, 46.4038]
+      },
+      "population": 2261,
+      "surface": 2810.99,
+      "radius": 2.99
+    },
+    {
+      "nom": "Magné",
+      "code": "86141",
+      "codesPostaux": ["86160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3955, 46.3472]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3927, 46.3574]
+      },
+      "population": 672,
+      "surface": 2046.23,
+      "radius": 2.55
+    },
+    {
+      "nom": "Maillé",
+      "code": "86142",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0947, 46.6764]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0904, 46.6776]
+      },
+      "population": 640,
+      "surface": 1229.46,
+      "radius": 1.98
+    },
+    {
+      "nom": "Mairé",
+      "code": "86143",
+      "codesPostaux": ["86270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7195, 46.8607]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7495, 46.8583]
+      },
+      "population": 174,
+      "surface": 2052.79,
+      "radius": 2.56
+    },
+    {
+      "nom": "Maisonneuve",
+      "code": "86144",
+      "codesPostaux": ["86170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.054, 46.7198]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0567, 46.7223]
+      },
+      "population": 324,
+      "surface": 919.32,
+      "radius": 1.71
+    },
+    {
+      "nom": "Marçay",
+      "code": "86145",
+      "codesPostaux": ["86370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2262, 46.4706]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2303, 46.4631]
+      },
+      "population": 1119,
+      "surface": 3096.97,
+      "radius": 3.14
+    },
+    {
+      "nom": "Marigny-Chemereau",
+      "code": "86147",
+      "codesPostaux": ["86370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2173, 46.4259]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2141, 46.4249]
+      },
+      "population": 603,
+      "surface": 1151.66,
+      "radius": 1.91
+    },
+    {
+      "nom": "Marnay",
+      "code": "86148",
+      "codesPostaux": ["86160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3467, 46.3948]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3415, 46.3957]
+      },
+      "population": 714,
+      "surface": 4541.35,
+      "radius": 3.8
+    },
+    {
+      "nom": "Martaizé",
+      "code": "86149",
+      "codesPostaux": ["86330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0519, 46.92]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0605, 46.9165]
+      },
+      "population": 360,
+      "surface": 1969.66,
+      "radius": 2.5
+    },
+    {
+      "nom": "Massognes",
+      "code": "86150",
+      "codesPostaux": ["86170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0592, 46.7495]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0623, 46.7425]
+      },
+      "population": 271,
+      "surface": 1374.51,
+      "radius": 2.09
+    },
+    {
+      "nom": "Maulay",
+      "code": "86151",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2052, 46.9668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2169, 46.9763]
+      },
+      "population": 187,
+      "surface": 2304.32,
+      "radius": 2.71
+    },
+    {
+      "nom": "Mauprévoir",
+      "code": "86152",
+      "codesPostaux": ["86460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5218, 46.1667]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5166, 46.1726]
+      },
+      "population": 590,
+      "surface": 4877.41,
+      "radius": 3.94
+    },
+    {
+      "nom": "Mazerolles",
+      "code": "86153",
+      "codesPostaux": ["86320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.663, 46.4037]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.686, 46.4056]
+      },
+      "population": 853,
+      "surface": 2146.78,
+      "radius": 2.61
+    },
+    {
+      "nom": "Mazeuil",
+      "code": "86154",
+      "codesPostaux": ["86110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0887, 46.7924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0845, 46.7886]
+      },
+      "population": 245,
+      "surface": 1366.43,
+      "radius": 2.09
+    },
+    {
+      "nom": "Messemé",
+      "code": "86156",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1637, 47.0098]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.178, 47.0103]
+      },
+      "population": 241,
+      "surface": 985.4,
+      "radius": 1.77
+    },
+    {
+      "nom": "Mignaloux-Beauvoir",
+      "code": "86157",
+      "codesPostaux": ["86550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4112, 46.5488]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4141, 46.541]
+      },
+      "population": 5224,
+      "surface": 2161.07,
+      "radius": 2.62
+    },
+    {
+      "nom": "Migné-Auxances",
+      "code": "86158",
+      "codesPostaux": ["86440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3008, 46.6307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3097, 46.6275]
+      },
+      "population": 6276,
+      "surface": 2897.57,
+      "radius": 3.04
+    },
+    {
+      "nom": "Millac",
+      "code": "86159",
+      "codesPostaux": ["86150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7068, 46.1895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6878, 46.1906]
+      },
+      "population": 467,
+      "surface": 4073.4,
+      "radius": 3.6
+    },
+    {
+      "nom": "Mirebeau",
+      "code": "86160",
+      "codesPostaux": ["86110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.195, 46.7909]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1818, 46.7864]
+      },
+      "population": 2144,
+      "surface": 1380.69,
+      "radius": 2.1
+    },
+    {
+      "nom": "Moncontour",
+      "code": "86161",
+      "codesPostaux": ["86330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0033, 46.8768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0171, 46.8818]
+      },
+      "population": 982,
+      "surface": 4141.83,
+      "radius": 3.63
+    },
+    {
+      "nom": "Mondion",
+      "code": "86162",
+      "codesPostaux": ["86230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4711, 46.9393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4859, 46.938]
+      },
+      "population": 118,
+      "surface": 899.13,
+      "radius": 1.69
+    },
+    {
+      "nom": "Montamisé",
+      "code": "86163",
+      "codesPostaux": ["86360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4381, 46.6255]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4216, 46.6205]
+      },
+      "population": 3710,
+      "surface": 3261.46,
+      "radius": 3.22
+    },
+    {
+      "nom": "Monthoiron",
+      "code": "86164",
+      "codesPostaux": ["86210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6191, 46.7296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.618, 46.7329]
+      },
+      "population": 672,
+      "surface": 1689.17,
+      "radius": 2.32
+    },
+    {
+      "nom": "Montmorillon",
+      "code": "86165",
+      "codesPostaux": ["86500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8939, 46.4291]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.868, 46.4249]
+      },
+      "population": 5867,
+      "surface": 5705.81,
+      "radius": 4.26
+    },
+    {
+      "nom": "Monts-sur-Guesnes",
+      "code": "86167",
+      "codesPostaux": ["86420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1929, 46.9108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2112, 46.9194]
+      },
+      "population": 917,
+      "surface": 1134.43,
+      "radius": 1.9
+    },
+    {
+      "nom": "Morton",
+      "code": "86169",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0103, 47.104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0183, 47.1093]
+      },
+      "population": 368,
+      "surface": 811.52,
+      "radius": 1.61
+    },
+    {
+      "nom": "Moulismes",
+      "code": "86170",
+      "codesPostaux": ["86500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8079, 46.325]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8136, 46.3295]
+      },
+      "population": 361,
+      "surface": 2915.31,
+      "radius": 3.05
+    },
+    {
+      "nom": "Moussac",
+      "code": "86171",
+      "codesPostaux": ["86150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6848, 46.279]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.687, 46.2818]
+      },
+      "population": 433,
+      "surface": 2492.73,
+      "radius": 2.82
+    },
+    {
+      "nom": "Mouterre-Silly",
+      "code": "86173",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0355, 46.9837]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0433, 46.9753]
+      },
+      "population": 621,
+      "surface": 3107.35,
+      "radius": 3.14
+    },
+    {
+      "nom": "Mouterre-sur-Blourde",
+      "code": "86172",
+      "codesPostaux": ["86430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7656, 46.2163]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7543, 46.2027]
+      },
+      "population": 167,
+      "surface": 2041.11,
+      "radius": 2.55
+    },
+    {
+      "nom": "Naintré",
+      "code": "86174",
+      "codesPostaux": ["86530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4947, 46.7738]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4795, 46.7628]
+      },
+      "population": 5954,
+      "surface": 2484.52,
+      "radius": 2.81
+    },
+    {
+      "nom": "Nalliers",
+      "code": "86175",
+      "codesPostaux": ["86310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8798, 46.6116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.867, 46.6018]
+      },
+      "population": 306,
+      "surface": 1605.09,
+      "radius": 2.26
+    },
+    {
+      "nom": "Nérignac",
+      "code": "86176",
+      "codesPostaux": ["86150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7295, 46.2987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7289, 46.2955]
+      },
+      "population": 117,
+      "surface": 450.7,
+      "radius": 1.2
+    },
+    {
+      "nom": "Neuville-de-Poitou",
+      "code": "86177",
+      "codesPostaux": ["86170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2523, 46.6825]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2451, 46.6856]
+      },
+      "population": 5465,
+      "surface": 1702.95,
+      "radius": 2.33
+    },
+    {
+      "nom": "Nieuil-l'Espoir",
+      "code": "86178",
+      "codesPostaux": ["86340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4589, 46.491]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.454, 46.4828]
+      },
+      "population": 2680,
+      "surface": 2112.6,
+      "radius": 2.59
+    },
+    {
+      "nom": "Nouaillé-Maupertuis",
+      "code": "86180",
+      "codesPostaux": ["86340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4191, 46.5055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4126, 46.5108]
+      },
+      "population": 2955,
+      "surface": 2213.71,
+      "radius": 2.65
+    },
+    {
+      "nom": "Nueil-sous-Faye",
+      "code": "86181",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2763, 46.9722]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2809, 46.9794]
+      },
+      "population": 218,
+      "surface": 1602.7,
+      "radius": 2.26
+    },
+    {
+      "nom": "Orches",
+      "code": "86182",
+      "codesPostaux": ["86230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.327, 46.8805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3194, 46.8825]
+      },
+      "population": 356,
+      "surface": 1946.59,
+      "radius": 2.49
+    },
+    {
+      "nom": "Ouzilly",
+      "code": "86184",
+      "codesPostaux": ["86380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3581, 46.7758]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3618, 46.7759]
+      },
+      "population": 954,
+      "surface": 1062.93,
+      "radius": 1.84
+    },
+    {
+      "nom": "Oyré",
+      "code": "86186",
+      "codesPostaux": ["86220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.646, 46.8603]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6286, 46.8721]
+      },
+      "population": 964,
+      "surface": 3325.58,
+      "radius": 3.25
+    },
+    {
+      "nom": "Paizay-le-Sec",
+      "code": "86187",
+      "codesPostaux": ["86300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7779, 46.5847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.777, 46.5778]
+      },
+      "population": 474,
+      "surface": 3477.97,
+      "radius": 3.33
+    },
+    {
+      "nom": "Payroux",
+      "code": "86189",
+      "codesPostaux": ["86350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4807, 46.2139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4859, 46.2157]
+      },
+      "population": 463,
+      "surface": 3031.77,
+      "radius": 3.11
+    },
+    {
+      "nom": "Persac",
+      "code": "86190",
+      "codesPostaux": ["86320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7325, 46.3397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.705, 46.3432]
+      },
+      "population": 718,
+      "surface": 6038.66,
+      "radius": 4.38
+    },
+    {
+      "nom": "Pindray",
+      "code": "86191",
+      "codesPostaux": ["86500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8162, 46.476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8103, 46.4905]
+      },
+      "population": 248,
+      "surface": 2693.39,
+      "radius": 2.93
+    },
+    {
+      "nom": "Plaisance",
+      "code": "86192",
+      "codesPostaux": ["86500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8529, 46.3117]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8711, 46.3319]
+      },
+      "population": 177,
+      "surface": 1305.18,
+      "radius": 2.04
+    },
+    {
+      "nom": "Pleumartin",
+      "code": "86193",
+      "codesPostaux": ["86450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7696, 46.7446]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7652, 46.7371]
+      },
+      "population": 1208,
+      "surface": 2409.75,
+      "radius": 2.77
+    },
+    {
+      "nom": "Poitiers",
+      "code": "86194",
+      "codesPostaux": ["86000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3715, 46.5846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3412, 46.5801]
+      },
+      "population": 89472,
+      "surface": 4252.68,
+      "radius": 3.68
+    },
+    {
+      "nom": "Port-de-Piles",
+      "code": "86195",
+      "codesPostaux": ["86220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5956, 46.9989]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5993, 47.0033]
+      },
+      "population": 548,
+      "surface": 577.02,
+      "radius": 1.36
+    },
+    {
+      "nom": "Pouançay",
+      "code": "86196",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0822, 47.0882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0733, 47.081]
+      },
+      "population": 232,
+      "surface": 546.53,
+      "radius": 1.32
+    },
+    {
+      "nom": "Pouant",
+      "code": "86197",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2743, 47.0215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2711, 47.0048]
+      },
+      "population": 412,
+      "surface": 2690.61,
+      "radius": 2.93
+    },
+    {
+      "nom": "Pouillé",
+      "code": "86198",
+      "codesPostaux": ["86800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5795, 46.5419]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5772, 46.5383]
+      },
+      "population": 731,
+      "surface": 1405.15,
+      "radius": 2.11
+    },
+    {
+      "nom": "Pressac",
+      "code": "86200",
+      "codesPostaux": ["86460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5566, 46.123]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.567, 46.1159]
+      },
+      "population": 551,
+      "surface": 4938.41,
+      "radius": 3.96
+    },
+    {
+      "nom": "Prinçay",
+      "code": "86201",
+      "codesPostaux": ["86420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2528, 46.9302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2441, 46.9332]
+      },
+      "population": 204,
+      "surface": 1654.56,
+      "radius": 2.29
+    },
+    {
+      "nom": "Queaux",
+      "code": "86203",
+      "codesPostaux": ["86150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6356, 46.3104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6674, 46.3265]
+      },
+      "population": 570,
+      "surface": 5334.38,
+      "radius": 4.12
+    },
+    {
+      "nom": "Quinçay",
+      "code": "86204",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2153, 46.6086]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2357, 46.6077]
+      },
+      "population": 2113,
+      "surface": 2975.87,
+      "radius": 3.08
+    },
+    {
+      "nom": "Ranton",
+      "code": "86205",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0329, 46.9972]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0316, 47.0015]
+      },
+      "population": 204,
+      "surface": 612.47,
+      "radius": 1.4
+    },
+    {
+      "nom": "Raslay",
+      "code": "86206",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0036, 47.1128]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0009, 47.1112]
+      },
+      "population": 135,
+      "surface": 405.92,
+      "radius": 1.14
+    },
+    {
+      "nom": "Roches-Prémarie-Andillé",
+      "code": "86209",
+      "codesPostaux": ["86340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3672, 46.4768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3696, 46.4805]
+      },
+      "population": 2174,
+      "surface": 2233.59,
+      "radius": 2.67
+    },
+    {
+      "nom": "Roiffé",
+      "code": "86210",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0517, 47.1302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0537, 47.125]
+      },
+      "population": 748,
+      "surface": 2432.66,
+      "radius": 2.78
+    },
+    {
+      "nom": "Romagne",
+      "code": "86211",
+      "codesPostaux": ["86700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3032, 46.2629]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3017, 46.2712]
+      },
+      "population": 803,
+      "surface": 4126.01,
+      "radius": 3.62
+    },
+    {
+      "nom": "Rouillé",
+      "code": "86213",
+      "codesPostaux": ["86480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0282, 46.422]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0403, 46.4194]
+      },
+      "population": 2521,
+      "surface": 5207.18,
+      "radius": 4.07
+    },
+    {
+      "nom": "Saint-Benoît",
+      "code": "86214",
+      "codesPostaux": ["86280"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3561, 46.5484]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3401, 46.5495]
+      },
+      "population": 7306,
+      "surface": 1361.42,
+      "radius": 2.08
+    },
+    {
+      "nom": "Saint-Christophe",
+      "code": "86217",
+      "codesPostaux": ["86230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3766, 46.9211]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3716, 46.9204]
+      },
+      "population": 278,
+      "surface": 1519.74,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Clair",
+      "code": "86218",
+      "codesPostaux": ["86330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0546, 46.878]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0635, 46.8808]
+      },
+      "population": 205,
+      "surface": 1077,
+      "radius": 1.85
+    },
+    {
+      "nom": "Saint-Gaudent",
+      "code": "86220",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2856, 46.1123]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2885, 46.1164]
+      },
+      "population": 312,
+      "surface": 1181.63,
+      "radius": 1.94
+    },
+    {
+      "nom": "Saint-Genest-d'Ambière",
+      "code": "86221",
+      "codesPostaux": ["86140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3621, 46.8264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.368, 46.819]
+      },
+      "population": 1211,
+      "surface": 3213.93,
+      "radius": 3.2
+    },
+    {
+      "nom": "Saint-Georges-lès-Baillargeaux",
+      "code": "86222",
+      "codesPostaux": ["86130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4428, 46.6681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3997, 46.6697]
+      },
+      "population": 4345,
+      "surface": 3387.86,
+      "radius": 3.28
+    },
+    {
+      "nom": "Saint-Germain",
+      "code": "86223",
+      "codesPostaux": ["86310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9029, 46.5737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8711, 46.5649]
+      },
+      "population": 883,
+      "surface": 2034.93,
+      "radius": 2.55
+    },
+    {
+      "nom": "Saint-Gervais-les-Trois-Clochers",
+      "code": "86224",
+      "codesPostaux": ["86230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4169, 46.8949]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.407, 46.9]
+      },
+      "population": 1318,
+      "surface": 3947.74,
+      "radius": 3.54
+    },
+    {
+      "nom": "Saint-Jean-de-Sauves",
+      "code": "86225",
+      "codesPostaux": ["86330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0847, 46.8386]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0923, 46.8407]
+      },
+      "population": 1292,
+      "surface": 5665.79,
+      "radius": 4.25
+    },
+    {
+      "nom": "Saint-Julien-l'Ars",
+      "code": "86226",
+      "codesPostaux": ["86800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4931, 46.5546]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5068, 46.5583]
+      },
+      "population": 2871,
+      "surface": 1866.22,
+      "radius": 2.44
+    },
+    {
+      "nom": "Saint-Laon",
+      "code": "86227",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0195, 46.9657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0173, 46.9807]
+      },
+      "population": 136,
+      "surface": 1193.27,
+      "radius": 1.95
+    },
+    {
+      "nom": "Saint-Laurent-de-Jourdes",
+      "code": "86228",
+      "codesPostaux": ["86410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5391, 46.3904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5462, 46.3909]
+      },
+      "population": 196,
+      "surface": 1807.13,
+      "radius": 2.4
+    },
+    {
+      "nom": "Saint-Léger-de-Montbrillais",
+      "code": "86229",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0374, 47.077]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0423, 47.0724]
+      },
+      "population": 347,
+      "surface": 1042.27,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-Léomer",
+      "code": "86230",
+      "codesPostaux": ["86290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9979, 46.4161]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9927, 46.4362]
+      },
+      "population": 171,
+      "surface": 2910.37,
+      "radius": 3.04
+    },
+    {
+      "nom": "Saint-Martin-l'Ars",
+      "code": "86234",
+      "codesPostaux": ["86350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5497, 46.2105]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5304, 46.2195]
+      },
+      "population": 369,
+      "surface": 4196.46,
+      "radius": 3.65
+    },
+    {
+      "nom": "Saint-Martin-la-Pallu",
+      "code": "86281",
+      "codesPostaux": ["86110", "86170", "86380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2634, 46.7297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3088, 46.737]
+      },
+      "population": 5663,
+      "surface": 9513,
+      "radius": 5.5
+    },
+    {
+      "nom": "Saint-Maurice-la-Clouère",
+      "code": "86235",
+      "codesPostaux": ["86160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4456, 46.3853]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4147, 46.3784]
+      },
+      "population": 1310,
+      "surface": 4021.19,
+      "radius": 3.58
+    },
+    {
+      "nom": "Saint-Pierre-d'Exideuil",
+      "code": "86237",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2536, 46.157]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2703, 46.1511]
+      },
+      "population": 728,
+      "surface": 1946.25,
+      "radius": 2.49
+    },
+    {
+      "nom": "Saint-Pierre-de-Maillé",
+      "code": "86236",
+      "codesPostaux": ["86260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.825, 46.6806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8432, 46.6787]
+      },
+      "population": 852,
+      "surface": 7503.29,
+      "radius": 4.89
+    },
+    {
+      "nom": "Saint-Rémy-sur-Creuse",
+      "code": "86241",
+      "codesPostaux": ["86220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6812, 46.9337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6962, 46.9516]
+      },
+      "population": 453,
+      "surface": 1304.41,
+      "radius": 2.04
+    },
+    {
+      "nom": "Saint-Romain",
+      "code": "86242",
+      "codesPostaux": ["86250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3834, 46.2255]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3664, 46.2221]
+      },
+      "population": 390,
+      "surface": 2061.33,
+      "radius": 2.56
+    },
+    {
+      "nom": "Saint-Sauvant",
+      "code": "86244",
+      "codesPostaux": ["86600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0774, 46.3527]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0553, 46.3596]
+      },
+      "population": 1298,
+      "surface": 5992.91,
+      "radius": 4.37
+    },
+    {
+      "nom": "Saint-Savin",
+      "code": "86246",
+      "codesPostaux": ["86310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8388, 46.5878]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8653, 46.5653]
+      },
+      "population": 816,
+      "surface": 1871.78,
+      "radius": 2.44
+    },
+    {
+      "nom": "Saint-Secondin",
+      "code": "86248",
+      "codesPostaux": ["86350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4939, 46.3235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4932, 46.328]
+      },
+      "population": 531,
+      "surface": 3806.65,
+      "radius": 3.48
+    },
+    {
+      "nom": "Sainte-Radégonde",
+      "code": "86239",
+      "codesPostaux": ["86300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7041, 46.6176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7012, 46.6353]
+      },
+      "population": 184,
+      "surface": 1319.55,
+      "radius": 2.05
+    },
+    {
+      "nom": "Saires",
+      "code": "86249",
+      "codesPostaux": ["86420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2327, 46.8914]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2428, 46.8851]
+      },
+      "population": 124,
+      "surface": 1407.5,
+      "radius": 2.12
+    },
+    {
+      "nom": "Saix",
+      "code": "86250",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0034, 47.1459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0005, 47.1364]
+      },
+      "population": 263,
+      "surface": 2293.44,
+      "radius": 2.7
+    },
+    {
+      "nom": "Sammarçolles",
+      "code": "86252",
+      "codesPostaux": ["86200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1704, 47.0396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1466, 47.0337]
+      },
+      "population": 648,
+      "surface": 2118.51,
+      "radius": 2.6
+    },
+    {
+      "nom": "Sanxay",
+      "code": "86253",
+      "codesPostaux": ["86600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0057, 46.4963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0053, 46.4941]
+      },
+      "population": 548,
+      "surface": 2451.07,
+      "radius": 2.79
+    },
+    {
+      "nom": "Saulgé",
+      "code": "86254",
+      "codesPostaux": ["86500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8643, 46.3588]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8753, 46.3777]
+      },
+      "population": 1005,
+      "surface": 6259.86,
+      "radius": 4.46
+    },
+    {
+      "nom": "Savigné",
+      "code": "86255",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3266, 46.1682]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3213, 46.1601]
+      },
+      "population": 1265,
+      "surface": 3662.78,
+      "radius": 3.41
+    },
+    {
+      "nom": "Savigny-Lévescault",
+      "code": "86256",
+      "codesPostaux": ["86800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4759, 46.5266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4773, 46.5346]
+      },
+      "population": 1247,
+      "surface": 2208.45,
+      "radius": 2.65
+    },
+    {
+      "nom": "Savigny-sous-Faye",
+      "code": "86257",
+      "codesPostaux": ["86140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.289, 46.8706]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2847, 46.8699]
+      },
+      "population": 377,
+      "surface": 1506.89,
+      "radius": 2.19
+    },
+    {
+      "nom": "Scorbé-Clairvaux",
+      "code": "86258",
+      "codesPostaux": ["86140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4089, 46.8102]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4156, 46.8125]
+      },
+      "population": 2177,
+      "surface": 2275.38,
+      "radius": 2.69
+    },
+    {
+      "nom": "Senillé-Saint-Sauveur",
+      "code": "86245",
+      "codesPostaux": ["86100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6335, 46.7943]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6238, 46.8082]
+      },
+      "population": 1724,
+      "surface": 5094.63,
+      "radius": 4.03
+    },
+    {
+      "nom": "Sérigny",
+      "code": "86260",
+      "codesPostaux": ["86230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3209, 46.9296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3494, 46.9054]
+      },
+      "population": 314,
+      "surface": 2492.18,
+      "radius": 2.82
+    },
+    {
+      "nom": "Sèvres-Anxaumont",
+      "code": "86261",
+      "codesPostaux": ["86800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4607, 46.5745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4652, 46.5702]
+      },
+      "population": 2354,
+      "surface": 1568.16,
+      "radius": 2.23
+    },
+    {
+      "nom": "Sillars",
+      "code": "86262",
+      "codesPostaux": ["86320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7812, 46.4147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7684, 46.4185]
+      },
+      "population": 571,
+      "surface": 6065.42,
+      "radius": 4.39
+    },
+    {
+      "nom": "Smarves",
+      "code": "86263",
+      "codesPostaux": ["86240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3569, 46.5118]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3505, 46.5111]
+      },
+      "population": 2941,
+      "surface": 2050.59,
+      "radius": 2.55
+    },
+    {
+      "nom": "Sommières-du-Clain",
+      "code": "86264",
+      "codesPostaux": ["86160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3721, 46.278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3593, 46.2786]
+      },
+      "population": 738,
+      "surface": 2616.44,
+      "radius": 2.89
+    },
+    {
+      "nom": "Sossais",
+      "code": "86265",
+      "codesPostaux": ["86230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3751, 46.8683]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3848, 46.8575]
+      },
+      "population": 414,
+      "surface": 1199.14,
+      "radius": 1.95
+    },
+    {
+      "nom": "Surin",
+      "code": "86266",
+      "codesPostaux": ["86250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3748, 46.0823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3713, 46.0786]
+      },
+      "population": 124,
+      "surface": 1207.12,
+      "radius": 1.96
+    },
+    {
+      "nom": "Tercé",
+      "code": "86268",
+      "codesPostaux": ["86800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5582, 46.5136]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5646, 46.5163]
+      },
+      "population": 1134,
+      "surface": 2389.28,
+      "radius": 2.76
+    },
+    {
+      "nom": "Ternay",
+      "code": "86269",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0548, 47.0347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0519, 47.0381]
+      },
+      "population": 192,
+      "surface": 1023.24,
+      "radius": 1.8
+    },
+    {
+      "nom": "Thollet",
+      "code": "86270",
+      "codesPostaux": ["86290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1194, 46.4399]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1218, 46.4216]
+      },
+      "population": 163,
+      "surface": 3045.89,
+      "radius": 3.11
+    },
+    {
+      "nom": "Thurageau",
+      "code": "86271",
+      "codesPostaux": ["86110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2799, 46.7815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2422, 46.7684]
+      },
+      "population": 732,
+      "surface": 3531.2,
+      "radius": 3.35
+    },
+    {
+      "nom": "Thuré",
+      "code": "86272",
+      "codesPostaux": ["86540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4565, 46.8412]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4597, 46.832]
+      },
+      "population": 2787,
+      "surface": 4402.2,
+      "radius": 3.74
+    },
+    {
+      "nom": "Usseau",
+      "code": "86275",
+      "codesPostaux": ["86230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.495, 46.8896]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5096, 46.8756]
+      },
+      "population": 582,
+      "surface": 1899.13,
+      "radius": 2.46
+    },
+    {
+      "nom": "Usson-du-Poitou",
+      "code": "86276",
+      "codesPostaux": ["86350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5408, 46.2832]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5309, 46.277]
+      },
+      "population": 1226,
+      "surface": 7282.05,
+      "radius": 4.81
+    },
+    {
+      "nom": "Val-de-Comporté",
+      "code": "86247",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2283, 46.1423]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.229, 46.1391]
+      },
+      "population": 1007,
+      "surface": 2159.92,
+      "radius": 2.62
+    },
+    {
+      "nom": "Valdivienne",
+      "code": "86233",
+      "codesPostaux": ["86300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6357, 46.4992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6367, 46.5072]
+      },
+      "population": 2728,
+      "surface": 6147.36,
+      "radius": 4.42
+    },
+    {
+      "nom": "Valence-en-Poitou",
+      "code": "86082",
+      "codesPostaux": ["86700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2126, 46.3169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1809, 46.2988]
+      },
+      "population": 4323,
+      "surface": 8349.62,
+      "radius": 5.16
+    },
+    {
+      "nom": "Vaux-sur-Vienne",
+      "code": "86279",
+      "codesPostaux": ["86220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5631, 46.9087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5608, 46.9129]
+      },
+      "population": 543,
+      "surface": 691.36,
+      "radius": 1.48
+    },
+    {
+      "nom": "Vellèches",
+      "code": "86280",
+      "codesPostaux": ["86230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5259, 46.9377]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5315, 46.942]
+      },
+      "population": 349,
+      "surface": 1959.25,
+      "radius": 2.5
+    },
+    {
+      "nom": "Vernon",
+      "code": "86284",
+      "codesPostaux": ["86340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4767, 46.4298]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.477, 46.4409]
+      },
+      "population": 721,
+      "surface": 3935.18,
+      "radius": 3.54
+    },
+    {
+      "nom": "Verrières",
+      "code": "86285",
+      "codesPostaux": ["86410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.598, 46.4018]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5929, 46.4127]
+      },
+      "population": 930,
+      "surface": 1960.06,
+      "radius": 2.5
+    },
+    {
+      "nom": "Verrue",
+      "code": "86286",
+      "codesPostaux": ["86420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1817, 46.8673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1697, 46.8614]
+      },
+      "population": 382,
+      "surface": 2857.5,
+      "radius": 3.02
+    },
+    {
+      "nom": "Vézières",
+      "code": "86287",
+      "codesPostaux": ["86120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.125, 47.0925]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0994, 47.088]
+      },
+      "population": 346,
+      "surface": 2652.15,
+      "radius": 2.91
+    },
+    {
+      "nom": "Vicq-sur-Gartempe",
+      "code": "86288",
+      "codesPostaux": ["86260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8417, 46.7301]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8614, 46.7197]
+      },
+      "population": 656,
+      "surface": 3332.37,
+      "radius": 3.26
+    },
+    {
+      "nom": "Villemort",
+      "code": "86291",
+      "codesPostaux": ["86310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9251, 46.5492]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.921, 46.5507]
+      },
+      "population": 101,
+      "surface": 445.19,
+      "radius": 1.19
+    },
+    {
+      "nom": "Villiers",
+      "code": "86292",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1729, 46.6718]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1761, 46.6764]
+      },
+      "population": 955,
+      "surface": 1113.15,
+      "radius": 1.88
+    },
+    {
+      "nom": "Vivonne",
+      "code": "86293",
+      "codesPostaux": ["86370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2499, 46.4193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2585, 46.4263]
+      },
+      "population": 4505,
+      "surface": 4162.84,
+      "radius": 3.64
+    },
+    {
+      "nom": "Vouillé",
+      "code": "86294",
+      "codesPostaux": ["86190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1685, 46.6198]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1649, 46.6387]
+      },
+      "population": 3707,
+      "surface": 3448.58,
+      "radius": 3.31
+    },
+    {
+      "nom": "Voulême",
+      "code": "86295",
+      "codesPostaux": ["86400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2327, 46.1001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2309, 46.0997]
+      },
+      "population": 394,
+      "surface": 1126.67,
+      "radius": 1.89
+    },
+    {
+      "nom": "Voulon",
+      "code": "86296",
+      "codesPostaux": ["86700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2394, 46.3643]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.245, 46.3564]
+      },
+      "population": 468,
+      "surface": 836.98,
+      "radius": 1.63
+    },
+    {
+      "nom": "Vouneuil-sous-Biard",
+      "code": "86297",
+      "codesPostaux": ["86580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2694, 46.5843]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2729, 46.5735]
+      },
+      "population": 6245,
+      "surface": 2622.07,
+      "radius": 2.89
+    },
+    {
+      "nom": "Vouneuil-sur-Vienne",
+      "code": "86298",
+      "codesPostaux": ["86210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5385, 46.7198]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5404, 46.7184]
+      },
+      "population": 2278,
+      "surface": 3682.71,
+      "radius": 3.42
+    },
+    {
+      "nom": "Vouzailles",
+      "code": "86299",
+      "codesPostaux": ["86170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0936, 46.7153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0959, 46.7094]
+      },
+      "population": 563,
+      "surface": 1607.08,
+      "radius": 2.26
+    },
+    {
+      "nom": "Yversay",
+      "code": "86300",
+      "codesPostaux": ["86170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2062, 46.6704]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2179, 46.6767]
+      },
+      "population": 636,
+      "surface": 598.43,
+      "radius": 1.38
+    }
+  ],
+  "postalCodes": {
+    "37160": {
+      "communes": ["Buxeuil"],
+      "communeCount": 1,
+      "center": [0.6727, 46.9752],
+      "coverageRadius": 1.96,
+      "totalPopulation": 901,
+      "totalSurface": 1203
+    },
+    "86000": {
+      "communes": ["Poitiers"],
+      "communeCount": 1,
+      "center": [0.3412, 46.5801],
+      "coverageRadius": 3.68,
+      "totalPopulation": 89472,
+      "totalSurface": 4253
+    },
+    "86100": {
+      "communes": ["Antran", "Châtellerault", "Senillé-Saint-Sauveur"],
+      "communeCount": 3,
+      "center": [0.5505, 46.8186],
+      "coverageRadius": 5.7,
+      "boundingBox": {
+        "minLat": 46.8082,
+        "maxLat": 46.8526,
+        "minLon": 0.5433,
+        "maxLon": 0.6238
+      },
+      "totalPopulation": 33985,
+      "totalSurface": 12666
+    },
+    "86110": {
+      "communes": [
+        "Amberre",
+        "Chouppes",
+        "Coussay",
+        "Craon",
+        "Cuhon",
+        "La Grimaudière",
+        "Mazeuil",
+        "Mirebeau",
+        "Thurageau",
+        "Saint-Martin-la-Pallu"
+      ],
+      "communeCount": 10,
+      "center": [0.234, 46.7623],
+      "coverageRadius": 17.3,
+      "boundingBox": {
+        "minLat": 46.737,
+        "maxLat": 46.8378,
+        "minLon": 0.0176,
+        "maxLon": 0.3088
+      },
+      "totalPopulation": 11378,
+      "totalSurface": 28360
+    },
+    "86120": {
+      "communes": [
+        "Berrie",
+        "Beuxes",
+        "Bournand",
+        "Curçay-sur-Dive",
+        "Morton",
+        "Pouançay",
+        "Raslay",
+        "Roiffé",
+        "Saint-Léger-de-Montbrillais",
+        "Saix",
+        "Ternay",
+        "Les Trois-Moutiers",
+        "Vézières"
+      ],
+      "communeCount": 13,
+      "center": [0.033, 47.0857],
+      "coverageRadius": 11.3,
+      "boundingBox": {
+        "minLat": 47.0119,
+        "maxLat": 47.1364,
+        "minLon": -0.0733,
+        "maxLon": 0.1804
+      },
+      "totalPopulation": 5683,
+      "totalSurface": 22453
+    },
+    "86130": {
+      "communes": ["Beaumont Saint-Cyr", "Dissay", "Jaunay-Marigny", "Saint-Georges-lès-Baillargeaux"],
+      "communeCount": 4,
+      "center": [0.3999, 46.6922],
+      "coverageRadius": 5.6,
+      "boundingBox": {
+        "minLat": 46.6697,
+        "maxLat": 46.7379,
+        "minLon": 0.3751,
+        "maxLon": 0.4314
+      },
+      "totalPopulation": 18026,
+      "totalSurface": 14367
+    },
+    "86140": {
+      "communes": [
+        "Cernay",
+        "Doussay",
+        "Lencloître",
+        "Saint-Genest-d'Ambière",
+        "Savigny-sous-Faye",
+        "Scorbé-Clairvaux"
+      ],
+      "communeCount": 6,
+      "center": [0.3512, 46.821],
+      "coverageRadius": 7.5,
+      "boundingBox": {
+        "minLat": 46.8125,
+        "maxLat": 46.8699,
+        "minLon": 0.2745,
+        "maxLon": 0.4156
+      },
+      "totalPopulation": 7413,
+      "totalSurface": 11952
+    },
+    "86150": {
+      "communes": ["L'Isle-Jourdain", "Millac", "Moussac", "Nérignac", "Queaux", "Le Vigeant"],
+      "communeCount": 6,
+      "center": [0.6776, 46.2507],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 46.1906,
+        "maxLat": 46.3265,
+        "minLon": 0.6489,
+        "maxLon": 0.7289
+      },
+      "totalPopulation": 3389,
+      "totalSurface": 19458
+    },
+    "86160": {
+      "communes": [
+        "Brion",
+        "Champagné-Saint-Hilaire",
+        "La Ferrière-Airoux",
+        "Gençay",
+        "Magné",
+        "Marnay",
+        "Saint-Maurice-la-Clouère",
+        "Sommières-du-Clain"
+      ],
+      "communeCount": 8,
+      "center": [0.3828, 46.3534],
+      "coverageRadius": 8.6,
+      "boundingBox": {
+        "minLat": 46.2786,
+        "maxLat": 46.3957,
+        "minLon": 0.3247,
+        "maxLon": 0.4613
+      },
+      "totalPopulation": 6664,
+      "totalSurface": 22731
+    },
+    "86170": {
+      "communes": [
+        "Avanton",
+        "Champigny en Rochereau",
+        "Cherves",
+        "Cissé",
+        "Maisonneuve",
+        "Massognes",
+        "Neuville-de-Poitou",
+        "Saint-Martin-la-Pallu",
+        "Vouzailles",
+        "Yversay"
+      ],
+      "communeCount": 10,
+      "center": [0.2425, 46.6971],
+      "coverageRadius": 17.4,
+      "boundingBox": {
+        "minLat": 46.6464,
+        "maxLat": 46.7425,
+        "minLon": 0.0164,
+        "maxLon": 0.3088
+      },
+      "totalPopulation": 20430,
+      "totalSurface": 24479
+    },
+    "86180": {
+      "communes": ["Buxerolles"],
+      "communeCount": 1,
+      "center": [0.353, 46.5983],
+      "coverageRadius": 1.7,
+      "totalPopulation": 10253,
+      "totalSurface": 912
+    },
+    "86190": {
+      "communes": [
+        "Ayron",
+        "Béruges",
+        "Chalandray",
+        "Chiré-en-Montreuil",
+        "Frozes",
+        "Latillé",
+        "Maillé",
+        "Quinçay",
+        "Villiers",
+        "Vouillé"
+      ],
+      "communeCount": 10,
+      "center": [0.1475, 46.6323],
+      "coverageRadius": 12,
+      "boundingBox": {
+        "minLat": 46.5672,
+        "maxLat": 46.6776,
+        "minLon": -0.0029,
+        "maxLon": 0.2357
+      },
+      "totalPopulation": 13852,
+      "totalSurface": 22977
+    },
+    "86200": {
+      "communes": [
+        "Arçay",
+        "Basses",
+        "Ceaux-en-Loudun",
+        "Chalais",
+        "La Roche-Rigault",
+        "Glénouze",
+        "Loudun",
+        "Maulay",
+        "Messemé",
+        "Mouterre-Silly",
+        "Nueil-sous-Faye",
+        "Pouant",
+        "Ranton",
+        "Saint-Laon",
+        "Sammarçolles"
+      ],
+      "communeCount": 15,
+      "center": [0.106, 47.005],
+      "coverageRadius": 13.6,
+      "boundingBox": {
+        "minLat": 46.9687,
+        "maxLat": 47.0414,
+        "minLon": -0.0316,
+        "maxLon": 0.2809
+      },
+      "totalPopulation": 11827,
+      "totalSurface": 29368
+    },
+    "86210": {
+      "communes": [
+        "Archigny",
+        "Bellefonds",
+        "Bonneuil-Matours",
+        "La Chapelle-Moulière",
+        "Monthoiron",
+        "Vouneuil-sur-Vienne"
+      ],
+      "communeCount": 6,
+      "center": [0.5781, 46.6925],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 46.6475,
+        "maxLat": 46.7329,
+        "minLon": 0.5404,
+        "maxLon": 0.6532
+      },
+      "totalPopulation": 7086,
+      "totalSurface": 18963
+    },
+    "86220": {
+      "communes": [
+        "Dangé-Saint-Romain",
+        "Ingrandes",
+        "Leugny",
+        "Les Ormes",
+        "Oyré",
+        "Port-de-Piles",
+        "Saint-Rémy-sur-Creuse",
+        "Vaux-sur-Vienne"
+      ],
+      "communeCount": 8,
+      "center": [0.6063, 46.9272],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 46.8721,
+        "maxLat": 47.0033,
+        "minLon": 0.5608,
+        "maxLon": 0.7013
+      },
+      "totalPopulation": 9170,
+      "totalSurface": 16864
+    },
+    "86230": {
+      "communes": [
+        "Leigné-sur-Usseau",
+        "Mondion",
+        "Orches",
+        "Saint-Christophe",
+        "Saint-Gervais-les-Trois-Clochers",
+        "Sérigny",
+        "Sossais",
+        "Usseau",
+        "Vellèches"
+      ],
+      "communeCount": 9,
+      "center": [0.4247, 46.8986],
+      "coverageRadius": 9.5,
+      "boundingBox": {
+        "minLat": 46.8575,
+        "maxLat": 46.942,
+        "minLon": 0.3194,
+        "maxLon": 0.5315
+      },
+      "totalPopulation": 4182,
+      "totalSurface": 16985
+    },
+    "86240": {
+      "communes": ["Croutelle", "Fontaine-le-Comte", "Iteuil", "Ligugé", "Smarves"],
+      "communeCount": 5,
+      "center": [0.3109, 46.5152],
+      "coverageRadius": 4,
+      "boundingBox": {
+        "minLat": 46.4843,
+        "maxLat": 46.5356,
+        "minLon": 0.2668,
+        "maxLon": 0.3505
+      },
+      "totalPopulation": 14267,
+      "totalSurface": 8567
+    },
+    "86250": {
+      "communes": ["Asnois", "La Chapelle-Bâton", "Charroux", "Chatain", "Genouillé", "Saint-Romain", "Surin"],
+      "communeCount": 7,
+      "center": [0.3861, 46.1433],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 46.0725,
+        "maxLat": 46.2221,
+        "minLon": 0.3349,
+        "maxLon": 0.4325
+      },
+      "totalPopulation": 2776,
+      "totalSurface": 17593
+    },
+    "86260": {
+      "communes": ["Angles-sur-l'Anglin", "La Puye", "Saint-Pierre-de-Maillé", "Vicq-sur-Gartempe"],
+      "communeCount": 4,
+      "center": [0.8318, 46.6833],
+      "coverageRadius": 7.6,
+      "boundingBox": {
+        "minLat": 46.6429,
+        "maxLat": 46.7197,
+        "minLon": 0.753,
+        "maxLon": 0.8831
+      },
+      "totalPopulation": 2474,
+      "totalSurface": 14667
+    },
+    "86270": {
+      "communes": ["Coussay-les-Bois", "Lésigny", "Mairé", "La Roche-Posay"],
+      "communeCount": 4,
+      "center": [0.7814, 46.807],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 46.7865,
+        "maxLat": 46.8583,
+        "minLon": 0.7426,
+        "maxLon": 0.8124
+      },
+      "totalPopulation": 3183,
+      "totalSurface": 11256
+    },
+    "86280": {
+      "communes": ["Saint-Benoît"],
+      "communeCount": 1,
+      "center": [0.3401, 46.5495],
+      "coverageRadius": 2.08,
+      "totalPopulation": 7306,
+      "totalSurface": 1361
+    },
+    "86290": {
+      "communes": [
+        "Brigueil-le-Chantre",
+        "Coulonges-les-Hérolles",
+        "Journet",
+        "Liglet",
+        "Saint-Léomer",
+        "Thollet",
+        "La Trimouille"
+      ],
+      "communeCount": 7,
+      "center": [1.0557, 46.447],
+      "coverageRadius": 9.2,
+      "boundingBox": {
+        "minLat": 46.3935,
+        "maxLat": 46.5091,
+        "minLon": 0.9678,
+        "maxLon": 1.1546
+      },
+      "totalPopulation": 2558,
+      "totalSurface": 28722
+    },
+    "86300": {
+      "communes": [
+        "Bonnes",
+        "Chapelle-Viviers",
+        "Chauvigny",
+        "Fleix",
+        "Lauthiers",
+        "Leignes-sur-Fontaine",
+        "Paizay-le-Sec",
+        "Valdivienne",
+        "Sainte-Radégonde"
+      ],
+      "communeCount": 9,
+      "center": [0.6535, 46.5562],
+      "coverageRadius": 10.8,
+      "boundingBox": {
+        "minLat": 46.484,
+        "maxLat": 46.6353,
+        "minLon": 0.5974,
+        "maxLon": 0.777
+      },
+      "totalPopulation": 13529,
+      "totalSurface": 30514
+    },
+    "86310": {
+      "communes": [
+        "Antigny",
+        "Béthines",
+        "La Bussière",
+        "Haims",
+        "Nalliers",
+        "Saint-Germain",
+        "Saint-Savin",
+        "Villemort"
+      ],
+      "communeCount": 8,
+      "center": [0.8808, 46.5631],
+      "coverageRadius": 9.1,
+      "boundingBox": {
+        "minLat": 46.5022,
+        "maxLat": 46.635,
+        "minLon": 0.8244,
+        "maxLon": 0.9743
+      },
+      "totalPopulation": 3650,
+      "totalSurface": 20671
+    },
+    "86320": {
+      "communes": ["Civaux", "Gouex", "Lussac-les-Châteaux", "Mazerolles", "Persac", "Sillars"],
+      "communeCount": 6,
+      "center": [0.7067, 46.4034],
+      "coverageRadius": 6.7,
+      "boundingBox": {
+        "minLat": 46.3432,
+        "maxLat": 46.4442,
+        "minLon": 0.6648,
+        "maxLon": 0.7684
+      },
+      "totalPopulation": 6081,
+      "totalSurface": 21530
+    },
+    "86330": {
+      "communes": [
+        "Angliers",
+        "Aulnay",
+        "La Chaussée",
+        "La Grimaudière",
+        "Martaizé",
+        "Moncontour",
+        "Saint-Clair",
+        "Saint-Jean-de-Sauves"
+      ],
+      "communeCount": 8,
+      "center": [0.0595, 46.8748],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 46.808,
+        "maxLat": 46.9445,
+        "minLon": -0.0171,
+        "maxLon": 0.1174
+      },
+      "totalPopulation": 4130,
+      "totalSurface": 19285
+    },
+    "86340": {
+      "communes": [
+        "Aslonnes",
+        "Fleuré",
+        "Gizay",
+        "Nieuil-l'Espoir",
+        "Nouaillé-Maupertuis",
+        "Roches-Prémarie-Andillé",
+        "Vernon",
+        "La Villedieu-du-Clain"
+      ],
+      "communeCount": 8,
+      "center": [0.4152, 46.4781],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 46.4401,
+        "maxLat": 46.5108,
+        "minLon": 0.3362,
+        "maxLon": 0.52
+      },
+      "totalPopulation": 12658,
+      "totalSurface": 17274
+    },
+    "86350": {
+      "communes": ["Château-Garnier", "Joussé", "Payroux", "Saint-Martin-l'Ars", "Saint-Secondin", "Usson-du-Poitou"],
+      "communeCount": 6,
+      "center": [0.4958, 46.2627],
+      "coverageRadius": 7.3,
+      "boundingBox": {
+        "minLat": 46.2157,
+        "maxLat": 46.328,
+        "minLon": 0.4248,
+        "maxLon": 0.5309
+      },
+      "totalPopulation": 3499,
+      "totalSurface": 22715
+    },
+    "86360": {
+      "communes": ["Chasseneuil-du-Poitou", "Montamisé"],
+      "communeCount": 2,
+      "center": [0.3953, 46.6374],
+      "coverageRadius": 2.8,
+      "boundingBox": {
+        "minLat": 46.6205,
+        "maxLat": 46.6506,
+        "minLon": 0.3749,
+        "maxLon": 0.4216
+      },
+      "totalPopulation": 8486,
+      "totalSurface": 5018
+    },
+    "86370": {
+      "communes": ["Château-Larcher", "Marçay", "Marigny-Chemereau", "Vivonne"],
+      "communeCount": 4,
+      "center": [0.2581, 46.4304],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 46.4161,
+        "maxLat": 46.4631,
+        "minLon": 0.2141,
+        "maxLon": 0.3118
+      },
+      "totalPopulation": 7273,
+      "totalSurface": 9957
+    },
+    "86380": {
+      "communes": ["Chabournay", "Jaunay-Marigny", "Ouzilly", "Saint-Martin-la-Pallu"],
+      "communeCount": 4,
+      "center": [0.3404, 46.7116],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 46.6837,
+        "maxLat": 46.7759,
+        "minLon": 0.2573,
+        "maxLon": 0.3751
+      },
+      "totalPopulation": 15472,
+      "totalSurface": 16065
+    },
+    "86390": {
+      "communes": ["Bourg-Archambault", "Lathus-Saint-Rémy"],
+      "communeCount": 2,
+      "center": [0.9678, 46.3386],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 46.3324,
+        "maxLat": 46.3828,
+        "minLon": 0.9622,
+        "maxLon": 1.0076
+      },
+      "totalPopulation": 1385,
+      "totalSurface": 12303
+    },
+    "86400": {
+      "communes": [
+        "Blanzay",
+        "Champniers",
+        "Civray",
+        "Linazay",
+        "Lizant",
+        "Saint-Gaudent",
+        "Saint-Pierre-d'Exideuil",
+        "Val-de-Comporté",
+        "Savigné",
+        "Voulême"
+      ],
+      "communeCount": 10,
+      "center": [0.2796, 46.1516],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 46.0839,
+        "maxLat": 46.2189,
+        "minLon": 0.1827,
+        "maxLon": 0.3352
+      },
+      "totalPopulation": 8005,
+      "totalSurface": 19139
+    },
+    "86410": {
+      "communes": ["Bouresse", "Dienné", "Lhommaizé", "Saint-Laurent-de-Jourdes", "Verrières"],
+      "communeCount": 5,
+      "center": [0.5864, 46.4129],
+      "coverageRadius": 6.1,
+      "boundingBox": {
+        "minLat": 46.3612,
+        "maxLat": 46.4415,
+        "minLon": 0.5462,
+        "maxLon": 0.6091
+      },
+      "totalPopulation": 3244,
+      "totalSurface": 12315
+    },
+    "86420": {
+      "communes": ["Berthegon", "Dercé", "Guesnes", "Monts-sur-Guesnes", "Prinçay", "Saires", "Verrue"],
+      "communeCount": 7,
+      "center": [0.2104, 46.9077],
+      "coverageRadius": 6.1,
+      "boundingBox": {
+        "minLat": 46.8614,
+        "maxLat": 46.9413,
+        "minLon": 0.163,
+        "maxLon": 0.2632
+      },
+      "totalPopulation": 2284,
+      "totalSurface": 10690
+    },
+    "86430": {
+      "communes": ["Adriers", "Asnières-sur-Blour", "Luchapt", "Mouterre-sur-Blourde"],
+      "communeCount": 4,
+      "center": [0.7898, 46.2217],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 46.1636,
+        "maxLat": 46.258,
+        "minLon": 0.7543,
+        "maxLon": 0.7995
+      },
+      "totalPopulation": 1305,
+      "totalSurface": 14760
+    },
+    "86440": {
+      "communes": ["Migné-Auxances"],
+      "communeCount": 1,
+      "center": [0.3097, 46.6275],
+      "coverageRadius": 3.04,
+      "totalPopulation": 6276,
+      "totalSurface": 2898
+    },
+    "86450": {
+      "communes": ["Chenevelles", "Leigné-les-Bois", "Pleumartin"],
+      "communeCount": 3,
+      "center": [0.7279, 46.741],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 46.7282,
+        "maxLat": 46.7594,
+        "minLon": 0.6531,
+        "maxLon": 0.7652
+      },
+      "totalPopulation": 2215,
+      "totalSurface": 8335
+    },
+    "86460": {
+      "communes": ["Availles-Limouzine", "Mauprévoir", "Pressac"],
+      "communeCount": 3,
+      "center": [0.6029, 46.1322],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 46.1159,
+        "maxLat": 46.1726,
+        "minLon": 0.5166,
+        "maxLon": 0.6578
+      },
+      "totalPopulation": 2428,
+      "totalSurface": 15631
+    },
+    "86470": {
+      "communes": ["Boivre-la-Vallée"],
+      "communeCount": 1,
+      "center": [0.0742, 46.5583],
+      "coverageRadius": 6.13,
+      "totalPopulation": 3041,
+      "totalSurface": 11813
+    },
+    "86480": {
+      "communes": ["Rouillé"],
+      "communeCount": 1,
+      "center": [0.0403, 46.4194],
+      "coverageRadius": 4.07,
+      "totalPopulation": 2521,
+      "totalSurface": 5207
+    },
+    "86490": {
+      "communes": ["Beaumont Saint-Cyr", "Colombiers"],
+      "communeCount": 2,
+      "center": [0.4289, 46.749],
+      "coverageRadius": 2.6,
+      "boundingBox": {
+        "minLat": 46.7379,
+        "maxLat": 46.7721,
+        "minLon": 0.4257,
+        "maxLon": 0.4304
+      },
+      "totalPopulation": 4359,
+      "totalSurface": 5820
+    },
+    "86500": {
+      "communes": ["Jouhet", "Montmorillon", "Moulismes", "Pindray", "Plaisance", "Saulgé"],
+      "communeCount": 6,
+      "center": [0.863, 46.419],
+      "coverageRadius": 10.7,
+      "boundingBox": {
+        "minLat": 46.3295,
+        "maxLat": 46.4914,
+        "minLon": 0.8103,
+        "maxLon": 0.8753
+      },
+      "totalPopulation": 8168,
+      "totalSurface": 21436
+    },
+    "86510": {
+      "communes": ["Brux", "Champagné-le-Sec", "Chaunay"],
+      "communeCount": 3,
+      "center": [0.1755, 46.2147],
+      "coverageRadius": 3,
+      "boundingBox": {
+        "minLat": 46.1904,
+        "maxLat": 46.2354,
+        "minLon": 0.1627,
+        "maxLon": 0.1915
+      },
+      "totalPopulation": 2179,
+      "totalSurface": 8289
+    },
+    "86530": {
+      "communes": ["Availles-en-Châtellerault", "Cenon-sur-Vienne", "Naintré"],
+      "communeCount": 3,
+      "center": [0.5081, 46.7636],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 46.7565,
+        "maxLat": 46.7737,
+        "minLon": 0.4795,
+        "maxLon": 0.5787
+      },
+      "totalPopulation": 9382,
+      "totalSurface": 4914
+    },
+    "86540": {
+      "communes": ["Thuré"],
+      "communeCount": 1,
+      "center": [0.4597, 46.832],
+      "coverageRadius": 3.74,
+      "totalPopulation": 2787,
+      "totalSurface": 4402
+    },
+    "86550": {
+      "communes": ["Mignaloux-Beauvoir"],
+      "communeCount": 1,
+      "center": [0.4141, 46.541],
+      "coverageRadius": 2.62,
+      "totalPopulation": 5224,
+      "totalSurface": 2161
+    },
+    "86580": {
+      "communes": ["Biard", "Vouneuil-sous-Biard"],
+      "communeCount": 2,
+      "center": [0.2805, 46.5743],
+      "coverageRadius": 2,
+      "boundingBox": {
+        "minLat": 46.5735,
+        "maxLat": 46.5771,
+        "minLon": 0.2729,
+        "maxLon": 0.3053
+      },
+      "totalPopulation": 8153,
+      "totalSurface": 3371
+    },
+    "86600": {
+      "communes": [
+        "Celle-Lévescault",
+        "Cloué",
+        "Coulombiers",
+        "Curzay-sur-Vonne",
+        "Jazeneuil",
+        "Lusignan",
+        "Saint-Sauvant",
+        "Sanxay"
+      ],
+      "communeCount": 8,
+      "center": [0.1171, 46.4383],
+      "coverageRadius": 11.3,
+      "boundingBox": {
+        "minLat": 46.3596,
+        "maxLat": 46.4941,
+        "minLon": -0.0053,
+        "maxLon": 0.1882
+      },
+      "totalPopulation": 8581,
+      "totalSurface": 25458
+    },
+    "86700": {
+      "communes": ["Anché", "Valence-en-Poitou", "Romagne", "Voulon"],
+      "communeCount": 4,
+      "center": [0.2071, 46.3021],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 46.2712,
+        "maxLat": 46.3564,
+        "minLon": 0.1809,
+        "maxLon": 0.3017
+      },
+      "totalPopulation": 5923,
+      "totalSurface": 14955
+    },
+    "86800": {
+      "communes": [
+        "Bignoux",
+        "Jardres",
+        "Lavoux",
+        "Liniers",
+        "Pouillé",
+        "Saint-Julien-l'Ars",
+        "Savigny-Lévescault",
+        "Sèvres-Anxaumont",
+        "Tercé"
+      ],
+      "communeCount": 9,
+      "center": [0.5116, 46.5641],
+      "coverageRadius": 6.7,
+      "boundingBox": {
+        "minLat": 46.5163,
+        "maxLat": 46.6125,
+        "minLon": 0.4652,
+        "maxLon": 0.5772
+      },
+      "totalPopulation": 12435,
+      "totalSurface": 16126
+    }
+  }
+}

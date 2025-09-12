@@ -1,0 +1,6570 @@
+{
+  "departmentCode": "72",
+  "departmentName": "Sarthe",
+  "stats": {
+    "communeCount": 352,
+    "totalPopulation": 563583,
+    "totalSurface": 624137
+  },
+  "communes": [
+    {
+      "nom": "Aigné",
+      "code": "72001",
+      "codesPostaux": ["72650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1056, 48.0659]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1195, 48.0649]
+      },
+      "population": 1681,
+      "surface": 1266.55,
+      "radius": 2.01
+    },
+    {
+      "nom": "Aillières-Beauvoir",
+      "code": "72002",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.321, 48.4005]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.326, 48.4056]
+      },
+      "population": 199,
+      "surface": 1511.32,
+      "radius": 2.19
+    },
+    {
+      "nom": "Allonnes",
+      "code": "72003",
+      "codesPostaux": ["72700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1447, 47.9588]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1606, 47.9685]
+      },
+      "population": 10740,
+      "surface": 1820.38,
+      "radius": 2.41
+    },
+    {
+      "nom": "Amné",
+      "code": "72004",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0426, 48.0349]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.057, 48.0407]
+      },
+      "population": 569,
+      "surface": 1600.48,
+      "radius": 2.26
+    },
+    {
+      "nom": "Ancinnes",
+      "code": "72005",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1772, 48.3618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1783, 48.3681]
+      },
+      "population": 917,
+      "surface": 2739.7,
+      "radius": 2.95
+    },
+    {
+      "nom": "Arçonnay",
+      "code": "72006",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0826, 48.3963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0873, 48.3963]
+      },
+      "population": 1897,
+      "surface": 799.28,
+      "radius": 1.6
+    },
+    {
+      "nom": "Ardenay-sur-Mérize",
+      "code": "72007",
+      "codesPostaux": ["72370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4301, 47.9916]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4251, 47.9949]
+      },
+      "population": 499,
+      "surface": 1162.54,
+      "radius": 1.92
+    },
+    {
+      "nom": "Arnage",
+      "code": "72008",
+      "codesPostaux": ["72230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1917, 47.9306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1891, 47.9267]
+      },
+      "population": 5463,
+      "surface": 1084.69,
+      "radius": 1.86
+    },
+    {
+      "nom": "Arthezé",
+      "code": "72009",
+      "codesPostaux": ["72270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1131, 47.7914]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1182, 47.7879]
+      },
+      "population": 351,
+      "surface": 871.87,
+      "radius": 1.67
+    },
+    {
+      "nom": "Asnières-sur-Vègre",
+      "code": "72010",
+      "codesPostaux": ["72430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2247, 47.889]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.233, 47.8881]
+      },
+      "population": 337,
+      "surface": 1258.14,
+      "radius": 2
+    },
+    {
+      "nom": "Assé-le-Boisne",
+      "code": "72011",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0112, 48.3188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0084, 48.3224]
+      },
+      "population": 898,
+      "surface": 2877.47,
+      "radius": 3.03
+    },
+    {
+      "nom": "Assé-le-Riboul",
+      "code": "72012",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0833, 48.2021]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.087, 48.1936]
+      },
+      "population": 478,
+      "surface": 1682.1,
+      "radius": 2.31
+    },
+    {
+      "nom": "Aubigné-Racan",
+      "code": "72013",
+      "codesPostaux": ["72800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2504, 47.684]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2689, 47.6901]
+      },
+      "population": 2131,
+      "surface": 3233.28,
+      "radius": 3.21
+    },
+    {
+      "nom": "Auvers-le-Hamon",
+      "code": "72016",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3418, 47.9034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3517, 47.9029]
+      },
+      "population": 1458,
+      "surface": 4826.47,
+      "radius": 3.92
+    },
+    {
+      "nom": "Auvers-sous-Montfaucon",
+      "code": "72017",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0786, 47.9984]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0699, 48.0067]
+      },
+      "population": 229,
+      "surface": 753.66,
+      "radius": 1.55
+    },
+    {
+      "nom": "Avesnes-en-Saosnois",
+      "code": "72018",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3597, 48.2681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3723, 48.2643]
+      },
+      "population": 88,
+      "surface": 573.14,
+      "radius": 1.35
+    },
+    {
+      "nom": "Avessé",
+      "code": "72019",
+      "codesPostaux": ["72350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2737, 47.9646]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2485, 47.9545]
+      },
+      "population": 335,
+      "surface": 1867.16,
+      "radius": 2.44
+    },
+    {
+      "nom": "Avezé",
+      "code": "72020",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6766, 48.233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6789, 48.2271]
+      },
+      "population": 692,
+      "surface": 2103.83,
+      "radius": 2.59
+    },
+    {
+      "nom": "Avoise",
+      "code": "72021",
+      "codesPostaux": ["72430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.197, 47.8575]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2057, 47.8657]
+      },
+      "population": 572,
+      "surface": 2443.95,
+      "radius": 2.79
+    },
+    {
+      "nom": "Ballon-Saint Mars",
+      "code": "72023",
+      "codesPostaux": ["72290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2563, 48.174]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2333, 48.1762]
+      },
+      "population": 2270,
+      "surface": 3175.53,
+      "radius": 3.18
+    },
+    {
+      "nom": "Bazouges Cré sur Loir",
+      "code": "72025",
+      "codesPostaux": ["72200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1628, 47.6758]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1715, 47.6889]
+      },
+      "population": 1946,
+      "surface": 4735.99,
+      "radius": 3.88
+    },
+    {
+      "nom": "Beaufay",
+      "code": "72026",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3502, 48.1399]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3616, 48.1461]
+      },
+      "population": 1523,
+      "surface": 2397.63,
+      "radius": 2.76
+    },
+    {
+      "nom": "Beaumont-Pied-de-Bœuf",
+      "code": "72028",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3838, 47.7562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4013, 47.7596]
+      },
+      "population": 476,
+      "surface": 2483.39,
+      "radius": 2.81
+    },
+    {
+      "nom": "Beaumont-sur-Dême",
+      "code": "72027",
+      "codesPostaux": ["72340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5847, 47.6903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5687, 47.6933]
+      },
+      "population": 329,
+      "surface": 1359.53,
+      "radius": 2.08
+    },
+    {
+      "nom": "Beaumont-sur-Sarthe",
+      "code": "72029",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1167, 48.2234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1277, 48.2258]
+      },
+      "population": 1974,
+      "surface": 662.77,
+      "radius": 1.45
+    },
+    {
+      "nom": "Beillé",
+      "code": "72031",
+      "codesPostaux": ["72160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5113, 48.0845]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.511, 48.082]
+      },
+      "population": 543,
+      "surface": 859.49,
+      "radius": 1.65
+    },
+    {
+      "nom": "Berfay",
+      "code": "72032",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7473, 48.0015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7653, 47.9931]
+      },
+      "population": 334,
+      "surface": 1836.16,
+      "radius": 2.42
+    },
+    {
+      "nom": "Bernay-Neuvy-en-Champagne",
+      "code": "72219",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0331, 48.0761]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0393, 48.081]
+      },
+      "population": 768,
+      "surface": 2522.23,
+      "radius": 2.83
+    },
+    {
+      "nom": "Bérus",
+      "code": "72034",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0674, 48.3749]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0518, 48.3749]
+      },
+      "population": 434,
+      "surface": 684.7,
+      "radius": 1.48
+    },
+    {
+      "nom": "Bessé-sur-Braye",
+      "code": "72035",
+      "codesPostaux": ["72310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.731, 47.8192]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7525, 47.8337]
+      },
+      "population": 2025,
+      "surface": 2056.24,
+      "radius": 2.56
+    },
+    {
+      "nom": "Béthon",
+      "code": "72036",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0911, 48.3655]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0875, 48.3616]
+      },
+      "population": 306,
+      "surface": 386.7,
+      "radius": 1.11
+    },
+    {
+      "nom": "Blèves",
+      "code": "72037",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3332, 48.4479]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3467, 48.456]
+      },
+      "population": 129,
+      "surface": 205.33,
+      "radius": 0.81
+    },
+    {
+      "nom": "Boëssé-le-Sec",
+      "code": "72038",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5537, 48.1323]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.563, 48.1351]
+      },
+      "population": 534,
+      "surface": 1192.88,
+      "radius": 1.95
+    },
+    {
+      "nom": "Bonnétable",
+      "code": "72039",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.454, 48.1841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4268, 48.1752]
+      },
+      "population": 3721,
+      "surface": 4012.52,
+      "radius": 3.57
+    },
+    {
+      "nom": "Bouër",
+      "code": "72041",
+      "codesPostaux": ["72390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6371, 48.078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6314, 48.0829]
+      },
+      "population": 352,
+      "surface": 1206.49,
+      "radius": 1.96
+    },
+    {
+      "nom": "Bouloire",
+      "code": "72042",
+      "codesPostaux": ["72440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5496, 47.9695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5483, 47.9741]
+      },
+      "population": 2121,
+      "surface": 2701.97,
+      "radius": 2.93
+    },
+    {
+      "nom": "Bourg-le-Roi",
+      "code": "72043",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1338, 48.3459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1334, 48.3451]
+      },
+      "population": 335,
+      "surface": 36.59,
+      "radius": 0.34
+    },
+    {
+      "nom": "Bousse",
+      "code": "72044",
+      "codesPostaux": ["72270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.065, 47.7641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0582, 47.7696]
+      },
+      "population": 431,
+      "surface": 1203.22,
+      "radius": 1.96
+    },
+    {
+      "nom": "Brains-sur-Gée",
+      "code": "72045",
+      "codesPostaux": ["72550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0216, 48.0111]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0268, 48.015]
+      },
+      "population": 781,
+      "surface": 1594.07,
+      "radius": 2.25
+    },
+    {
+      "nom": "Brette-les-Pins",
+      "code": "72047",
+      "codesPostaux": ["72250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3277, 47.9118]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3377, 47.9134]
+      },
+      "population": 2127,
+      "surface": 1462.27,
+      "radius": 2.16
+    },
+    {
+      "nom": "Briosne-lès-Sables",
+      "code": "72048",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3922, 48.1734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.395, 48.1744]
+      },
+      "population": 537,
+      "surface": 993.12,
+      "radius": 1.78
+    },
+    {
+      "nom": "Brûlon",
+      "code": "72050",
+      "codesPostaux": ["72350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2314, 47.9811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2338, 47.9672]
+      },
+      "population": 1525,
+      "surface": 1620.98,
+      "radius": 2.27
+    },
+    {
+      "nom": "Cérans-Foulletourte",
+      "code": "72051",
+      "codesPostaux": ["72330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0708, 47.8337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0756, 47.8277]
+      },
+      "population": 3365,
+      "surface": 3245.17,
+      "radius": 3.21
+    },
+    {
+      "nom": "Chahaignes",
+      "code": "72052",
+      "codesPostaux": ["72340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5127, 47.7514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5143, 47.7419]
+      },
+      "population": 668,
+      "surface": 2261.37,
+      "radius": 2.68
+    },
+    {
+      "nom": "Challes",
+      "code": "72053",
+      "codesPostaux": ["72250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4268, 47.936]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4142, 47.929]
+      },
+      "population": 1161,
+      "surface": 2596.31,
+      "radius": 2.87
+    },
+    {
+      "nom": "Champagné",
+      "code": "72054",
+      "codesPostaux": ["72470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3363, 48.0157]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.33, 48.0215]
+      },
+      "population": 3680,
+      "surface": 1397.58,
+      "radius": 2.11
+    },
+    {
+      "nom": "Champfleur",
+      "code": "72056",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.124, 48.3868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1274, 48.3863]
+      },
+      "population": 1303,
+      "surface": 1316.41,
+      "radius": 2.05
+    },
+    {
+      "nom": "Champrond",
+      "code": "72057",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7452, 48.0868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7458, 48.0775]
+      },
+      "population": 68,
+      "surface": 604.6,
+      "radius": 1.39
+    },
+    {
+      "nom": "Changé",
+      "code": "72058",
+      "codesPostaux": ["72560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2966, 47.9797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2807, 47.9871]
+      },
+      "population": 6803,
+      "surface": 3525.77,
+      "radius": 3.35
+    },
+    {
+      "nom": "Chantenay-Villedieu",
+      "code": "72059",
+      "codesPostaux": ["72430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1464, 47.9203]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1611, 47.9205]
+      },
+      "population": 816,
+      "surface": 2787.79,
+      "radius": 2.98
+    },
+    {
+      "nom": "Chassillé",
+      "code": "72070",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1312, 48.0204]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1152, 48.0207]
+      },
+      "population": 250,
+      "surface": 729.68,
+      "radius": 1.52
+    },
+    {
+      "nom": "Château-l'Hermitage",
+      "code": "72072",
+      "codesPostaux": ["72510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2004, 47.8003]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1806, 47.8027]
+      },
+      "population": 255,
+      "surface": 941.11,
+      "radius": 1.73
+    },
+    {
+      "nom": "Chaufour-Notre-Dame",
+      "code": "72073",
+      "codesPostaux": ["72550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0676, 48.0139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0752, 48.0255]
+      },
+      "population": 1164,
+      "surface": 1123.67,
+      "radius": 1.89
+    },
+    {
+      "nom": "Chemiré-en-Charnie",
+      "code": "72074",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2009, 48.051]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2032, 48.0537]
+      },
+      "population": 213,
+      "surface": 1149.57,
+      "radius": 1.91
+    },
+    {
+      "nom": "Chemiré-le-Gaudin",
+      "code": "72075",
+      "codesPostaux": ["72210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0103, 47.932]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0143, 47.9279]
+      },
+      "population": 996,
+      "surface": 2289.94,
+      "radius": 2.7
+    },
+    {
+      "nom": "Chenay",
+      "code": "72076",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1621, 48.4466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1603, 48.45]
+      },
+      "population": 259,
+      "surface": 218.71,
+      "radius": 0.83
+    },
+    {
+      "nom": "Chenu",
+      "code": "72077",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3553, 47.6076]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3376, 47.6128]
+      },
+      "population": 436,
+      "surface": 3088.58,
+      "radius": 3.14
+    },
+    {
+      "nom": "Chérancé",
+      "code": "72078",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1727, 48.2806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1751, 48.2883]
+      },
+      "population": 353,
+      "surface": 1031.87,
+      "radius": 1.81
+    },
+    {
+      "nom": "Chérisay",
+      "code": "72079",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1138, 48.3491]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1124, 48.3551]
+      },
+      "population": 308,
+      "surface": 796.63,
+      "radius": 1.59
+    },
+    {
+      "nom": "Cherré-Au",
+      "code": "72080",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.671, 48.1742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6566, 48.1731]
+      },
+      "population": 2746,
+      "surface": 2974.99,
+      "radius": 3.08
+    },
+    {
+      "nom": "Chevillé",
+      "code": "72083",
+      "codesPostaux": ["72350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.222, 47.944]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2228, 47.9483]
+      },
+      "population": 357,
+      "surface": 1427.55,
+      "radius": 2.13
+    },
+    {
+      "nom": "Clermont-Créans",
+      "code": "72084",
+      "codesPostaux": ["72200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0197, 47.7292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0168, 47.7176]
+      },
+      "population": 1276,
+      "surface": 1814.86,
+      "radius": 2.4
+    },
+    {
+      "nom": "Cogners",
+      "code": "72085",
+      "codesPostaux": ["72310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6576, 47.8623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6598, 47.8689]
+      },
+      "population": 177,
+      "surface": 1363.45,
+      "radius": 2.08
+    },
+    {
+      "nom": "Commerveil",
+      "code": "72086",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3593, 48.3133]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3582, 48.317]
+      },
+      "population": 138,
+      "surface": 569.1,
+      "radius": 1.35
+    },
+    {
+      "nom": "Conflans-sur-Anille",
+      "code": "72087",
+      "codesPostaux": ["72120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7253, 47.9715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7456, 47.9446]
+      },
+      "population": 460,
+      "surface": 3101.19,
+      "radius": 3.14
+    },
+    {
+      "nom": "Congé-sur-Orne",
+      "code": "72088",
+      "codesPostaux": ["72290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2561, 48.2062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2549, 48.2005]
+      },
+      "population": 320,
+      "surface": 1130.06,
+      "radius": 1.9
+    },
+    {
+      "nom": "Conlie",
+      "code": "72089",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0015, 48.1206]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0165, 48.122]
+      },
+      "population": 1828,
+      "surface": 1722.09,
+      "radius": 2.34
+    },
+    {
+      "nom": "Connerré",
+      "code": "72090",
+      "codesPostaux": ["72160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4703, 48.0504]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4976, 48.0606]
+      },
+      "population": 2838,
+      "surface": 1659.79,
+      "radius": 2.3
+    },
+    {
+      "nom": "Contilly",
+      "code": "72091",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3562, 48.4127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3696, 48.4006]
+      },
+      "population": 135,
+      "surface": 1250.57,
+      "radius": 2
+    },
+    {
+      "nom": "Cormes",
+      "code": "72093",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7131, 48.1668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7063, 48.1703]
+      },
+      "population": 886,
+      "surface": 1889.62,
+      "radius": 2.45
+    },
+    {
+      "nom": "Coudrecieux",
+      "code": "72094",
+      "codesPostaux": ["72440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6267, 47.983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6308, 47.993]
+      },
+      "population": 638,
+      "surface": 2443.58,
+      "radius": 2.79
+    },
+    {
+      "nom": "Coulaines",
+      "code": "72095",
+      "codesPostaux": ["72190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2111, 48.0348]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2029, 48.0237]
+      },
+      "population": 8049,
+      "surface": 396.36,
+      "radius": 1.12
+    },
+    {
+      "nom": "Coulans-sur-Gée",
+      "code": "72096",
+      "codesPostaux": ["72550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0174, 48.0226]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0108, 48.0205]
+      },
+      "population": 1619,
+      "surface": 2754.13,
+      "radius": 2.96
+    },
+    {
+      "nom": "Coulongé",
+      "code": "72098",
+      "codesPostaux": ["72800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1949, 47.693]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2018, 47.6899]
+      },
+      "population": 512,
+      "surface": 1518.53,
+      "radius": 2.2
+    },
+    {
+      "nom": "Courcebœufs",
+      "code": "72099",
+      "codesPostaux": ["72290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.281, 48.1268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2864, 48.1376]
+      },
+      "population": 641,
+      "surface": 1688.23,
+      "radius": 2.32
+    },
+    {
+      "nom": "Courcelles-la-Forêt",
+      "code": "72100",
+      "codesPostaux": ["72270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0239, 47.7965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0182, 47.7827]
+      },
+      "population": 403,
+      "surface": 1963.48,
+      "radius": 2.5
+    },
+    {
+      "nom": "Courcemont",
+      "code": "72101",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3423, 48.1792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.354, 48.173]
+      },
+      "population": 670,
+      "surface": 1933.79,
+      "radius": 2.48
+    },
+    {
+      "nom": "Courcival",
+      "code": "72102",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.385, 48.2354]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.393, 48.2305]
+      },
+      "population": 83,
+      "surface": 899.4,
+      "radius": 1.69
+    },
+    {
+      "nom": "Courdemanche",
+      "code": "72103",
+      "codesPostaux": ["72150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5562, 47.8187]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5635, 47.8149]
+      },
+      "population": 614,
+      "surface": 2417.47,
+      "radius": 2.77
+    },
+    {
+      "nom": "Courgains",
+      "code": "72104",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2721, 48.2874]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2778, 48.2895]
+      },
+      "population": 585,
+      "surface": 1474.53,
+      "radius": 2.17
+    },
+    {
+      "nom": "Courgenard",
+      "code": "72105",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7354, 48.1563]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7369, 48.1512]
+      },
+      "population": 460,
+      "surface": 1141.97,
+      "radius": 1.91
+    },
+    {
+      "nom": "Courtillers",
+      "code": "72106",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3142, 47.8058]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3026, 47.7995]
+      },
+      "population": 910,
+      "surface": 740.26,
+      "radius": 1.54
+    },
+    {
+      "nom": "Crannes-en-Champagne",
+      "code": "72107",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0409, 47.9782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0495, 47.9803]
+      },
+      "population": 341,
+      "surface": 1204.49,
+      "radius": 1.96
+    },
+    {
+      "nom": "Crissé",
+      "code": "72109",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0576, 48.1856]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.06, 48.1683]
+      },
+      "population": 544,
+      "surface": 2094.93,
+      "radius": 2.58
+    },
+    {
+      "nom": "Crosmières",
+      "code": "72110",
+      "codesPostaux": ["72200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1601, 47.7387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.151, 47.7455]
+      },
+      "population": 993,
+      "surface": 2053.97,
+      "radius": 2.56
+    },
+    {
+      "nom": "Cures",
+      "code": "72111",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0207, 48.0865]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0048, 48.1004]
+      },
+      "population": 490,
+      "surface": 1156.51,
+      "radius": 1.92
+    },
+    {
+      "nom": "Dangeul",
+      "code": "72112",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.262, 48.2489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2573, 48.2484]
+      },
+      "population": 482,
+      "surface": 1405.45,
+      "radius": 2.12
+    },
+    {
+      "nom": "Degré",
+      "code": "72113",
+      "codesPostaux": ["72550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0739, 48.0519]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0683, 48.0501]
+      },
+      "population": 746,
+      "surface": 990.55,
+      "radius": 1.78
+    },
+    {
+      "nom": "Dehault",
+      "code": "72114",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5785, 48.2054]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5709, 48.2114]
+      },
+      "population": 250,
+      "surface": 896.6,
+      "radius": 1.69
+    },
+    {
+      "nom": "Dissay-sous-Courcillon",
+      "code": "72115",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.488, 47.6663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4749, 47.6646]
+      },
+      "population": 942,
+      "surface": 3522.07,
+      "radius": 3.35
+    },
+    {
+      "nom": "Dollon",
+      "code": "72118",
+      "codesPostaux": ["72390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5893, 48.0363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5871, 48.0384]
+      },
+      "population": 1433,
+      "surface": 2543.7,
+      "radius": 2.85
+    },
+    {
+      "nom": "Domfront-en-Champagne",
+      "code": "72119",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0487, 48.112]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0256, 48.1062]
+      },
+      "population": 1062,
+      "surface": 2104.98,
+      "radius": 2.59
+    },
+    {
+      "nom": "Doucelles",
+      "code": "72120",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1813, 48.2561]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1691, 48.2561]
+      },
+      "population": 225,
+      "surface": 446.67,
+      "radius": 1.19
+    },
+    {
+      "nom": "Douillet",
+      "code": "72121",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0496, 48.2763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.046, 48.2723]
+      },
+      "population": 318,
+      "surface": 1917.68,
+      "radius": 2.47
+    },
+    {
+      "nom": "Duneau",
+      "code": "72122",
+      "codesPostaux": ["72160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5329, 48.0668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5187, 48.0694]
+      },
+      "population": 1076,
+      "surface": 1296.74,
+      "radius": 2.03
+    },
+    {
+      "nom": "Dureil",
+      "code": "72123",
+      "codesPostaux": ["72270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1333, 47.8298]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1454, 47.8434]
+      },
+      "population": 61,
+      "surface": 805.89,
+      "radius": 1.6
+    },
+    {
+      "nom": "Écommoy",
+      "code": "72124",
+      "codesPostaux": ["72220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2875, 47.8232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2744, 47.8277]
+      },
+      "population": 4818,
+      "surface": 2865.22,
+      "radius": 3.02
+    },
+    {
+      "nom": "Écorpain",
+      "code": "72125",
+      "codesPostaux": ["72120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6438, 47.94]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6593, 47.9376]
+      },
+      "population": 304,
+      "surface": 2151.23,
+      "radius": 2.62
+    },
+    {
+      "nom": "Épineu-le-Chevreuil",
+      "code": "72126",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.131, 48.0416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.116, 48.0375]
+      },
+      "population": 290,
+      "surface": 1478.44,
+      "radius": 2.17
+    },
+    {
+      "nom": "Étival-lès-le-Mans",
+      "code": "72127",
+      "codesPostaux": ["72700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0785, 47.964]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0884, 47.9567]
+      },
+      "population": 1852,
+      "surface": 1034.34,
+      "radius": 1.81
+    },
+    {
+      "nom": "Fatines",
+      "code": "72129",
+      "codesPostaux": ["72470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3352, 48.047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3475, 48.0455]
+      },
+      "population": 905,
+      "surface": 546.05,
+      "radius": 1.32
+    },
+    {
+      "nom": "Fay",
+      "code": "72130",
+      "codesPostaux": ["72550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0724, 47.9997]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0701, 48.0085]
+      },
+      "population": 736,
+      "surface": 947.29,
+      "radius": 1.74
+    },
+    {
+      "nom": "Fercé-sur-Sarthe",
+      "code": "72131",
+      "codesPostaux": ["72430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0329, 47.8968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0309, 47.9019]
+      },
+      "population": 577,
+      "surface": 1218.19,
+      "radius": 1.97
+    },
+    {
+      "nom": "Fillé",
+      "code": "72133",
+      "codesPostaux": ["72210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1163, 47.8993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1265, 47.8969]
+      },
+      "population": 1543,
+      "surface": 1016.94,
+      "radius": 1.8
+    },
+    {
+      "nom": "Flée",
+      "code": "72134",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4577, 47.7353]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.453, 47.7324]
+      },
+      "population": 525,
+      "surface": 1752.95,
+      "radius": 2.36
+    },
+    {
+      "nom": "Fontenay-sur-Vègre",
+      "code": "72136",
+      "codesPostaux": ["72350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2213, 47.906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2206, 47.9046]
+      },
+      "population": 309,
+      "surface": 1146.35,
+      "radius": 1.91
+    },
+    {
+      "nom": "Fresnay-sur-Sarthe",
+      "code": "72138",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0812, 48.2855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0185, 48.2818]
+      },
+      "population": 2909,
+      "surface": 2925.44,
+      "radius": 3.05
+    },
+    {
+      "nom": "Fyé",
+      "code": "72139",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0825, 48.3241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.081, 48.3253]
+      },
+      "population": 995,
+      "surface": 1633.6,
+      "radius": 2.28
+    },
+    {
+      "nom": "Gesnes-le-Gandelin",
+      "code": "72141",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.024, 48.3581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0194, 48.3555]
+      },
+      "population": 889,
+      "surface": 1300.72,
+      "radius": 2.03
+    },
+    {
+      "nom": "Grandchamp",
+      "code": "72142",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1808, 48.3102]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1828, 48.3028]
+      },
+      "population": 141,
+      "surface": 552.65,
+      "radius": 1.33
+    },
+    {
+      "nom": "Gréez-sur-Roc",
+      "code": "72144",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8351, 48.1343]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7954, 48.1369]
+      },
+      "population": 339,
+      "surface": 2542.91,
+      "radius": 2.85
+    },
+    {
+      "nom": "Guécélard",
+      "code": "72146",
+      "codesPostaux": ["72230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1405, 47.885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1293, 47.8785]
+      },
+      "population": 3200,
+      "surface": 1219.32,
+      "radius": 1.97
+    },
+    {
+      "nom": "Jauzé",
+      "code": "72148",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3815, 48.2102]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3765, 48.2115]
+      },
+      "population": 80,
+      "surface": 575.75,
+      "radius": 1.35
+    },
+    {
+      "nom": "Joué-en-Charnie",
+      "code": "72149",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1945, 48.0144]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1884, 48.0175]
+      },
+      "population": 597,
+      "surface": 2354.9,
+      "radius": 2.74
+    },
+    {
+      "nom": "Joué-l'Abbé",
+      "code": "72150",
+      "codesPostaux": ["72380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2286, 48.1079]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2166, 48.1092]
+      },
+      "population": 1275,
+      "surface": 1047.15,
+      "radius": 1.83
+    },
+    {
+      "nom": "Juigné-sur-Sarthe",
+      "code": "72151",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2912, 47.8687]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2868, 47.8627]
+      },
+      "population": 1142,
+      "surface": 2058.61,
+      "radius": 2.56
+    },
+    {
+      "nom": "Juillé",
+      "code": "72152",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1241, 48.2452]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1224, 48.2453]
+      },
+      "population": 412,
+      "surface": 574.12,
+      "radius": 1.35
+    },
+    {
+      "nom": "Jupilles",
+      "code": "72153",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4083, 47.7939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4119, 47.7923]
+      },
+      "population": 552,
+      "surface": 2651.59,
+      "radius": 2.91
+    },
+    {
+      "nom": "La Bazoge",
+      "code": "72024",
+      "codesPostaux": ["72650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.146, 48.1018]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1543, 48.1003]
+      },
+      "population": 3748,
+      "surface": 2297.1,
+      "radius": 2.7
+    },
+    {
+      "nom": "La Bosse",
+      "code": "72040",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5551, 48.164]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.526, 48.1694]
+      },
+      "population": 153,
+      "surface": 1088.72,
+      "radius": 1.86
+    },
+    {
+      "nom": "La Bruère-sur-Loir",
+      "code": "72049",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3525, 47.6542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3482, 47.6512]
+      },
+      "population": 250,
+      "surface": 1151.55,
+      "radius": 1.91
+    },
+    {
+      "nom": "La Chapelle-aux-Choux",
+      "code": "72060",
+      "codesPostaux": ["72800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2302, 47.6296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2321, 47.6317]
+      },
+      "population": 282,
+      "surface": 1452.28,
+      "radius": 2.15
+    },
+    {
+      "nom": "La Chapelle-d'Aligné",
+      "code": "72061",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2375, 47.7367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2358, 47.7342]
+      },
+      "population": 1725,
+      "surface": 3343.44,
+      "radius": 3.26
+    },
+    {
+      "nom": "La Chapelle-du-Bois",
+      "code": "72062",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5814, 48.2234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5922, 48.2218]
+      },
+      "population": 779,
+      "surface": 1658.72,
+      "radius": 2.3
+    },
+    {
+      "nom": "La Chapelle-Huon",
+      "code": "72064",
+      "codesPostaux": ["72310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7239, 47.8566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7429, 47.8563]
+      },
+      "population": 517,
+      "surface": 1876.21,
+      "radius": 2.44
+    },
+    {
+      "nom": "La Chapelle-Saint-Aubin",
+      "code": "72065",
+      "codesPostaux": ["72650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1568, 48.0346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1625, 48.0338]
+      },
+      "population": 2252,
+      "surface": 599.67,
+      "radius": 1.38
+    },
+    {
+      "nom": "La Chapelle-Saint-Fray",
+      "code": "72066",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.09, 48.107]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0816, 48.1103]
+      },
+      "population": 421,
+      "surface": 641.32,
+      "radius": 1.43
+    },
+    {
+      "nom": "La Chapelle-Saint-Rémy",
+      "code": "72067",
+      "codesPostaux": ["72160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4619, 48.1067]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4559, 48.1075]
+      },
+      "population": 998,
+      "surface": 1935.25,
+      "radius": 2.48
+    },
+    {
+      "nom": "La Chartre-sur-le-Loir",
+      "code": "72068",
+      "codesPostaux": ["72340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5815, 47.7303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5733, 47.7296]
+      },
+      "population": 1370,
+      "surface": 877.48,
+      "radius": 1.67
+    },
+    {
+      "nom": "La Ferté-Bernard",
+      "code": "72132",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6366, 48.1847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.656, 48.186]
+      },
+      "population": 8769,
+      "surface": 1558.11,
+      "radius": 2.23
+    },
+    {
+      "nom": "La Flèche",
+      "code": "72154",
+      "codesPostaux": ["72200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0605, 47.6908]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0747, 47.6958]
+      },
+      "population": 15081,
+      "surface": 7917.72,
+      "radius": 5.02
+    },
+    {
+      "nom": "La Fontaine-Saint-Martin",
+      "code": "72135",
+      "codesPostaux": ["72330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0484, 47.7962]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0498, 47.791]
+      },
+      "population": 600,
+      "surface": 1383.87,
+      "radius": 2.1
+    },
+    {
+      "nom": "La Guierche",
+      "code": "72147",
+      "codesPostaux": ["72380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2012, 48.1185]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1945, 48.113]
+      },
+      "population": 1285,
+      "surface": 793.58,
+      "radius": 1.59
+    },
+    {
+      "nom": "La Milesse",
+      "code": "72198",
+      "codesPostaux": ["72650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1331, 48.0663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1368, 48.0643]
+      },
+      "population": 2631,
+      "surface": 1056.5,
+      "radius": 1.83
+    },
+    {
+      "nom": "La Quinte",
+      "code": "72249",
+      "codesPostaux": ["72550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0437, 48.0514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0367, 48.0598]
+      },
+      "population": 805,
+      "surface": 882.65,
+      "radius": 1.68
+    },
+    {
+      "nom": "La Suze-sur-Sarthe",
+      "code": "72346",
+      "codesPostaux": ["72210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0243, 47.8766]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0261, 47.8897]
+      },
+      "population": 4628,
+      "surface": 2150.8,
+      "radius": 2.62
+    },
+    {
+      "nom": "Laigné-Saint-Gervais",
+      "code": "72155",
+      "codesPostaux": ["72220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2145, 47.8687]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.228, 47.8787]
+      },
+      "population": 2269,
+      "surface": 2234.03,
+      "radius": 2.67
+    },
+    {
+      "nom": "Lamnay",
+      "code": "72156",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7109, 48.1051]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7055, 48.116]
+      },
+      "population": 920,
+      "surface": 2223.35,
+      "radius": 2.66
+    },
+    {
+      "nom": "Lavardin",
+      "code": "72157",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0632, 48.0828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0622, 48.0762]
+      },
+      "population": 695,
+      "surface": 763.12,
+      "radius": 1.56
+    },
+    {
+      "nom": "Lavaré",
+      "code": "72158",
+      "codesPostaux": ["72390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6494, 48.0642]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6449, 48.0544]
+      },
+      "population": 817,
+      "surface": 2306.42,
+      "radius": 2.71
+    },
+    {
+      "nom": "Lavernat",
+      "code": "72160",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3546, 47.7223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3327, 47.7181]
+      },
+      "population": 585,
+      "surface": 2285.68,
+      "radius": 2.7
+    },
+    {
+      "nom": "Le Bailleul",
+      "code": "72022",
+      "codesPostaux": ["72200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1787, 47.7685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1616, 47.7681]
+      },
+      "population": 1217,
+      "surface": 2773.85,
+      "radius": 2.97
+    },
+    {
+      "nom": "Le Breil-sur-Mérize",
+      "code": "72046",
+      "codesPostaux": ["72370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5031, 47.996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4777, 48.0096]
+      },
+      "population": 1562,
+      "surface": 1837.47,
+      "radius": 2.42
+    },
+    {
+      "nom": "Le Grand-Lucé",
+      "code": "72143",
+      "codesPostaux": ["72150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4722, 47.8717]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4677, 47.8656]
+      },
+      "population": 1941,
+      "surface": 2744.61,
+      "radius": 2.96
+    },
+    {
+      "nom": "Le Grez",
+      "code": "72145",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1595, 48.1904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1531, 48.1901]
+      },
+      "population": 384,
+      "surface": 738.26,
+      "radius": 1.53
+    },
+    {
+      "nom": "Le Luart",
+      "code": "72172",
+      "codesPostaux": ["72390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5911, 48.0836]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5835, 48.0692]
+      },
+      "population": 1454,
+      "surface": 1241.86,
+      "radius": 1.99
+    },
+    {
+      "nom": "Le Lude",
+      "code": "72176",
+      "codesPostaux": ["72800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1432, 47.6404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1568, 47.6468]
+      },
+      "population": 4016,
+      "surface": 6872.69,
+      "radius": 4.68
+    },
+    {
+      "nom": "Le Mans",
+      "code": "72181",
+      "codesPostaux": ["72000", "72100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1957, 47.9819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1973, 48.0075]
+      },
+      "population": 145182,
+      "surface": 5258.28,
+      "radius": 4.09
+    },
+    {
+      "nom": "Le Tronchet",
+      "code": "72362",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.08, 48.18]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0755, 48.1812]
+      },
+      "population": 169,
+      "surface": 390,
+      "radius": 1.11
+    },
+    {
+      "nom": "Les Aulneaux",
+      "code": "72015",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3404, 48.4405]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3317, 48.4365]
+      },
+      "population": 107,
+      "surface": 823.99,
+      "radius": 1.62
+    },
+    {
+      "nom": "Les Mées",
+      "code": "72192",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2384, 48.3127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2315, 48.3148]
+      },
+      "population": 105,
+      "surface": 681.85,
+      "radius": 1.47
+    },
+    {
+      "nom": "Lhomme",
+      "code": "72161",
+      "codesPostaux": ["72340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5663, 47.759]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5577, 47.7434]
+      },
+      "population": 938,
+      "surface": 1834.92,
+      "radius": 2.42
+    },
+    {
+      "nom": "Ligron",
+      "code": "72163",
+      "codesPostaux": ["72270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0114, 47.7699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0104, 47.7714]
+      },
+      "population": 484,
+      "surface": 1368.43,
+      "radius": 2.09
+    },
+    {
+      "nom": "Livet-en-Saosnois",
+      "code": "72164",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2107, 48.356]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2123, 48.3595]
+      },
+      "population": 65,
+      "surface": 164.43,
+      "radius": 0.72
+    },
+    {
+      "nom": "Loir en Vallée",
+      "code": "72262",
+      "codesPostaux": ["72310", "72340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6478, 47.7849]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6219, 47.751]
+      },
+      "population": 2052,
+      "surface": 6492.25,
+      "radius": 4.55
+    },
+    {
+      "nom": "Lombron",
+      "code": "72165",
+      "codesPostaux": ["72450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4106, 48.0855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4162, 48.0806]
+      },
+      "population": 1937,
+      "surface": 2420.69,
+      "radius": 2.78
+    },
+    {
+      "nom": "Longnes",
+      "code": "72166",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0833, 48.0219]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0787, 48.0195]
+      },
+      "population": 295,
+      "surface": 649.54,
+      "radius": 1.44
+    },
+    {
+      "nom": "Louailles",
+      "code": "72167",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2416, 47.7816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2517, 47.7921]
+      },
+      "population": 703,
+      "surface": 1060.04,
+      "radius": 1.84
+    },
+    {
+      "nom": "Loué",
+      "code": "72168",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1372, 48.0035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1519, 47.9939]
+      },
+      "population": 2100,
+      "surface": 1582.49,
+      "radius": 2.24
+    },
+    {
+      "nom": "Louplande",
+      "code": "72169",
+      "codesPostaux": ["72210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0542, 47.9407]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0443, 47.9437]
+      },
+      "population": 1496,
+      "surface": 1848.72,
+      "radius": 2.43
+    },
+    {
+      "nom": "Louvigny",
+      "code": "72170",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1998, 48.3387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2016, 48.3398]
+      },
+      "population": 175,
+      "surface": 876.47,
+      "radius": 1.67
+    },
+    {
+      "nom": "Louzes",
+      "code": "72171",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2996, 48.4278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3015, 48.4292]
+      },
+      "population": 104,
+      "surface": 823.77,
+      "radius": 1.62
+    },
+    {
+      "nom": "Lucé-sous-Ballon",
+      "code": "72174",
+      "codesPostaux": ["72290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2121, 48.2097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2147, 48.2087]
+      },
+      "population": 105,
+      "surface": 681.63,
+      "radius": 1.47
+    },
+    {
+      "nom": "Luceau",
+      "code": "72173",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3947, 47.7151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3976, 47.7117]
+      },
+      "population": 1233,
+      "surface": 1779.7,
+      "radius": 2.38
+    },
+    {
+      "nom": "Luché-Pringé",
+      "code": "72175",
+      "codesPostaux": ["72800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1019, 47.7053]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0759, 47.7039]
+      },
+      "population": 1524,
+      "surface": 4942.1,
+      "radius": 3.97
+    },
+    {
+      "nom": "Maigné",
+      "code": "72177",
+      "codesPostaux": ["72210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0561, 47.9405]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0541, 47.9379]
+      },
+      "population": 336,
+      "surface": 1140.71,
+      "radius": 1.91
+    },
+    {
+      "nom": "Maisoncelles",
+      "code": "72178",
+      "codesPostaux": ["72440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.578, 47.9383]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5713, 47.9359]
+      },
+      "population": 197,
+      "surface": 1131.85,
+      "radius": 1.9
+    },
+    {
+      "nom": "Malicorne-sur-Sarthe",
+      "code": "72179",
+      "codesPostaux": ["72270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0874, 47.8124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0824, 47.8132]
+      },
+      "population": 1881,
+      "surface": 1514.55,
+      "radius": 2.2
+    },
+    {
+      "nom": "Mamers",
+      "code": "72180",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3707, 48.3554]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3685, 48.3488]
+      },
+      "population": 5080,
+      "surface": 511.61,
+      "radius": 1.28
+    },
+    {
+      "nom": "Mansigné",
+      "code": "72182",
+      "codesPostaux": ["72510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.131, 47.7456]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1344, 47.7479]
+      },
+      "population": 1550,
+      "surface": 3649.44,
+      "radius": 3.41
+    },
+    {
+      "nom": "Marçon",
+      "code": "72183",
+      "codesPostaux": ["72340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5287, 47.7041]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5092, 47.7103]
+      },
+      "population": 1063,
+      "surface": 3033.3,
+      "radius": 3.11
+    },
+    {
+      "nom": "Mareil-en-Champagne",
+      "code": "72184",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.177, 47.9801]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1687, 47.984]
+      },
+      "population": 346,
+      "surface": 792.7,
+      "radius": 1.59
+    },
+    {
+      "nom": "Mareil-sur-Loir",
+      "code": "72185",
+      "codesPostaux": ["72200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0065, 47.7232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0118, 47.7149]
+      },
+      "population": 658,
+      "surface": 1202.52,
+      "radius": 1.96
+    },
+    {
+      "nom": "Maresché",
+      "code": "72186",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1492, 48.2076]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1542, 48.2117]
+      },
+      "population": 879,
+      "surface": 1499.95,
+      "radius": 2.19
+    },
+    {
+      "nom": "Marigné-Laillé",
+      "code": "72187",
+      "codesPostaux": ["72220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3508, 47.8146]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3401, 47.8182]
+      },
+      "population": 1618,
+      "surface": 3361.89,
+      "radius": 3.27
+    },
+    {
+      "nom": "Marolles-les-Braults",
+      "code": "72189",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3217, 48.2508]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3112, 48.2519]
+      },
+      "population": 2038,
+      "surface": 2435.55,
+      "radius": 2.78
+    },
+    {
+      "nom": "Marolles-lès-Saint-Calais",
+      "code": "72190",
+      "codesPostaux": ["72120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7882, 47.9146]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7849, 47.9186]
+      },
+      "population": 287,
+      "surface": 1208.66,
+      "radius": 1.96
+    },
+    {
+      "nom": "Marollette",
+      "code": "72188",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3629, 48.3776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3521, 48.3692]
+      },
+      "population": 159,
+      "surface": 576.16,
+      "radius": 1.35
+    },
+    {
+      "nom": "Mayet",
+      "code": "72191",
+      "codesPostaux": ["72360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2809, 47.7618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.275, 47.759]
+      },
+      "population": 3186,
+      "surface": 5418.88,
+      "radius": 4.15
+    },
+    {
+      "nom": "Melleray",
+      "code": "72193",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8084, 48.1012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7985, 48.0991]
+      },
+      "population": 446,
+      "surface": 2593.37,
+      "radius": 2.87
+    },
+    {
+      "nom": "Meurcé",
+      "code": "72194",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2025, 48.2396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.201, 48.2344]
+      },
+      "population": 272,
+      "surface": 619.86,
+      "radius": 1.4
+    },
+    {
+      "nom": "Mézeray",
+      "code": "72195",
+      "codesPostaux": ["72270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0213, 47.8317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0214, 47.8242]
+      },
+      "population": 1853,
+      "surface": 3332.49,
+      "radius": 3.26
+    },
+    {
+      "nom": "Mézières-sous-Lavardin",
+      "code": "72197",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0424, 48.157]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0318, 48.1569]
+      },
+      "population": 679,
+      "surface": 1537.52,
+      "radius": 2.21
+    },
+    {
+      "nom": "Mézières-sur-Ponthouin",
+      "code": "72196",
+      "codesPostaux": ["72290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2939, 48.2047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2979, 48.193]
+      },
+      "population": 735,
+      "surface": 1805.46,
+      "radius": 2.4
+    },
+    {
+      "nom": "Moitron-sur-Sarthe",
+      "code": "72199",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0516, 48.2473]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0324, 48.24]
+      },
+      "population": 266,
+      "surface": 1035.45,
+      "radius": 1.82
+    },
+    {
+      "nom": "Moncé-en-Belin",
+      "code": "72200",
+      "codesPostaux": ["72230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1956, 47.8964]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2028, 47.8931]
+      },
+      "population": 3699,
+      "surface": 1756.38,
+      "radius": 2.36
+    },
+    {
+      "nom": "Moncé-en-Saosnois",
+      "code": "72201",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.384, 48.2716]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3888, 48.2751]
+      },
+      "population": 234,
+      "surface": 891.86,
+      "radius": 1.68
+    },
+    {
+      "nom": "Monhoudou",
+      "code": "72202",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3274, 48.2864]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3255, 48.2861]
+      },
+      "population": 207,
+      "surface": 754.5,
+      "radius": 1.55
+    },
+    {
+      "nom": "Mont-Saint-Jean",
+      "code": "72211",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1123, 48.2431]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1104, 48.2466]
+      },
+      "population": 633,
+      "surface": 4236.99,
+      "radius": 3.67
+    },
+    {
+      "nom": "Montaillé",
+      "code": "72204",
+      "codesPostaux": ["72120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6937, 47.9641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7016, 47.9366]
+      },
+      "population": 517,
+      "surface": 3053.9,
+      "radius": 3.12
+    },
+    {
+      "nom": "Montbizot",
+      "code": "72205",
+      "codesPostaux": ["72380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1821, 48.1504]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1829, 48.1454]
+      },
+      "population": 1833,
+      "surface": 1138.87,
+      "radius": 1.9
+    },
+    {
+      "nom": "Montfort-le-Gesnois",
+      "code": "72241",
+      "codesPostaux": ["72450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3988, 48.0574]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4182, 48.0484]
+      },
+      "population": 2928,
+      "surface": 1879.92,
+      "radius": 2.45
+    },
+    {
+      "nom": "Montmirail",
+      "code": "72208",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7728, 48.1075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7894, 48.1026]
+      },
+      "population": 369,
+      "surface": 1258.36,
+      "radius": 2
+    },
+    {
+      "nom": "Montreuil-le-Chétif",
+      "code": "72209",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0335, 48.241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0332, 48.2463]
+      },
+      "population": 313,
+      "surface": 1470.72,
+      "radius": 2.16
+    },
+    {
+      "nom": "Montreuil-le-Henri",
+      "code": "72210",
+      "codesPostaux": ["72150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5714, 47.8621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5666, 47.8672]
+      },
+      "population": 299,
+      "surface": 1440.42,
+      "radius": 2.14
+    },
+    {
+      "nom": "Montval-sur-Loir",
+      "code": "72071",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4213, 47.6955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4186, 47.6955]
+      },
+      "population": 5707,
+      "surface": 2742.74,
+      "radius": 2.95
+    },
+    {
+      "nom": "Moulins-le-Carbonnel",
+      "code": "72212",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0143, 48.3734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0236, 48.3713]
+      },
+      "population": 697,
+      "surface": 1639.75,
+      "radius": 2.28
+    },
+    {
+      "nom": "Mulsanne",
+      "code": "72213",
+      "codesPostaux": ["72230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.244, 47.919]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2459, 47.9071]
+      },
+      "population": 5299,
+      "surface": 1531.77,
+      "radius": 2.21
+    },
+    {
+      "nom": "Nauvay",
+      "code": "72214",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3938, 48.2532]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3947, 48.2523]
+      },
+      "population": 12,
+      "surface": 270.96,
+      "radius": 0.93
+    },
+    {
+      "nom": "Neufchâtel-en-Saosnois",
+      "code": "72215",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2484, 48.387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.246, 48.3766]
+      },
+      "population": 1023,
+      "surface": 2343.66,
+      "radius": 2.73
+    },
+    {
+      "nom": "Neuvillalais",
+      "code": "72216",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0064, 48.1543]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0013, 48.1552]
+      },
+      "population": 593,
+      "surface": 1895.83,
+      "radius": 2.46
+    },
+    {
+      "nom": "Neuville-sur-Sarthe",
+      "code": "72217",
+      "codesPostaux": ["72190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2149, 48.0717]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1905, 48.0757]
+      },
+      "population": 2463,
+      "surface": 2303.94,
+      "radius": 2.71
+    },
+    {
+      "nom": "Neuvillette-en-Charnie",
+      "code": "72218",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2062, 48.0895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2128, 48.0918]
+      },
+      "population": 302,
+      "surface": 1460.43,
+      "radius": 2.16
+    },
+    {
+      "nom": "Nogent-le-Bernard",
+      "code": "72220",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5053, 48.2416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4906, 48.2366]
+      },
+      "population": 876,
+      "surface": 3033.46,
+      "radius": 3.11
+    },
+    {
+      "nom": "Nogent-sur-Loir",
+      "code": "72221",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3997, 47.6573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3958, 47.6694]
+      },
+      "population": 361,
+      "surface": 1084.28,
+      "radius": 1.86
+    },
+    {
+      "nom": "Notre-Dame-du-Pé",
+      "code": "72232",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3306, 47.7288]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3255, 47.7305]
+      },
+      "population": 707,
+      "surface": 778.33,
+      "radius": 1.57
+    },
+    {
+      "nom": "Nouans",
+      "code": "72222",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.228, 48.2383]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2226, 48.2393]
+      },
+      "population": 255,
+      "surface": 1000.21,
+      "radius": 1.78
+    },
+    {
+      "nom": "Noyen-sur-Sarthe",
+      "code": "72223",
+      "codesPostaux": ["72430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1031, 47.8569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.097, 47.8725]
+      },
+      "population": 2585,
+      "surface": 4287.92,
+      "radius": 3.69
+    },
+    {
+      "nom": "Nuillé-le-Jalais",
+      "code": "72224",
+      "codesPostaux": ["72370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4872, 48.0226]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4811, 48.019]
+      },
+      "population": 529,
+      "surface": 577.28,
+      "radius": 1.36
+    },
+    {
+      "nom": "Oisseau-le-Petit",
+      "code": "72225",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0751, 48.3473]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0862, 48.3498]
+      },
+      "population": 671,
+      "surface": 857.3,
+      "radius": 1.65
+    },
+    {
+      "nom": "Oizé",
+      "code": "72226",
+      "codesPostaux": ["72330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1097, 47.8056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1032, 47.8104]
+      },
+      "population": 1325,
+      "surface": 1687.84,
+      "radius": 2.32
+    },
+    {
+      "nom": "Panon",
+      "code": "72227",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3012, 48.3386]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2948, 48.3383]
+      },
+      "population": 33,
+      "surface": 236.44,
+      "radius": 0.87
+    },
+    {
+      "nom": "Parcé-sur-Sarthe",
+      "code": "72228",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1929, 47.8271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1998, 47.8427]
+      },
+      "population": 1998,
+      "surface": 4070.48,
+      "radius": 3.6
+    },
+    {
+      "nom": "Parennes",
+      "code": "72229",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1862, 48.1169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1856, 48.1193]
+      },
+      "population": 449,
+      "surface": 1461.16,
+      "radius": 2.16
+    },
+    {
+      "nom": "Parigné-l'Évêque",
+      "code": "72231",
+      "codesPostaux": ["72250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.364, 47.9251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3654, 47.9373]
+      },
+      "population": 5367,
+      "surface": 6364.29,
+      "radius": 4.5
+    },
+    {
+      "nom": "Parigné-le-Pôlin",
+      "code": "72230",
+      "codesPostaux": ["72330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1226, 47.8557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1089, 47.8503]
+      },
+      "population": 1038,
+      "surface": 1398.43,
+      "radius": 2.11
+    },
+    {
+      "nom": "Peray",
+      "code": "72233",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3695, 48.2507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3646, 48.2484]
+      },
+      "population": 71,
+      "surface": 246.37,
+      "radius": 0.89
+    },
+    {
+      "nom": "Pezé-le-Robert",
+      "code": "72234",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0421, 48.2012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0601, 48.1941]
+      },
+      "population": 346,
+      "surface": 1633.18,
+      "radius": 2.28
+    },
+    {
+      "nom": "Piacé",
+      "code": "72235",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1155, 48.2655]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1146, 48.259]
+      },
+      "population": 373,
+      "surface": 1013.94,
+      "radius": 1.8
+    },
+    {
+      "nom": "Pincé",
+      "code": "72236",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3642, 47.7956]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3814, 47.7977]
+      },
+      "population": 191,
+      "surface": 583.33,
+      "radius": 1.36
+    },
+    {
+      "nom": "Pirmil",
+      "code": "72237",
+      "codesPostaux": ["72430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0899, 47.9129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.097, 47.9126]
+      },
+      "population": 505,
+      "surface": 1764.88,
+      "radius": 2.37
+    },
+    {
+      "nom": "Pizieux",
+      "code": "72238",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3324, 48.3219]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3309, 48.322]
+      },
+      "population": 74,
+      "surface": 451.43,
+      "radius": 1.2
+    },
+    {
+      "nom": "Poillé-sur-Vègre",
+      "code": "72239",
+      "codesPostaux": ["72350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2778, 47.9169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2652, 47.9199]
+      },
+      "population": 597,
+      "surface": 1758.36,
+      "radius": 2.37
+    },
+    {
+      "nom": "Pontvallain",
+      "code": "72243",
+      "codesPostaux": ["72510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.206, 47.7599]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1922, 47.7509]
+      },
+      "population": 1614,
+      "surface": 3532.95,
+      "radius": 3.35
+    },
+    {
+      "nom": "Précigné",
+      "code": "72244",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3154, 47.7631]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3245, 47.7665]
+      },
+      "population": 2900,
+      "surface": 5837.88,
+      "radius": 4.31
+    },
+    {
+      "nom": "Préval",
+      "code": "72245",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6181, 48.2238]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6238, 48.2364]
+      },
+      "population": 669,
+      "surface": 762.87,
+      "radius": 1.56
+    },
+    {
+      "nom": "Prévelles",
+      "code": "72246",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4735, 48.1555]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4834, 48.1529]
+      },
+      "population": 193,
+      "surface": 484.63,
+      "radius": 1.24
+    },
+    {
+      "nom": "Pruillé-l'Éguillé",
+      "code": "72248",
+      "codesPostaux": ["72150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4186, 47.8381]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4312, 47.8363]
+      },
+      "population": 808,
+      "surface": 2125.99,
+      "radius": 2.6
+    },
+    {
+      "nom": "Pruillé-le-Chétif",
+      "code": "72247",
+      "codesPostaux": ["72700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1062, 47.9934]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1079, 47.9936]
+      },
+      "population": 1333,
+      "surface": 1039.87,
+      "radius": 1.82
+    },
+    {
+      "nom": "Rahay",
+      "code": "72250",
+      "codesPostaux": ["72120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8075, 47.9581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8308, 47.9608]
+      },
+      "population": 160,
+      "surface": 1894.41,
+      "radius": 2.46
+    },
+    {
+      "nom": "René",
+      "code": "72251",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2182, 48.2774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2216, 48.2788]
+      },
+      "population": 390,
+      "surface": 1264.13,
+      "radius": 2.01
+    },
+    {
+      "nom": "Requeil",
+      "code": "72252",
+      "codesPostaux": ["72510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1626, 47.7866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1619, 47.7847]
+      },
+      "population": 1108,
+      "surface": 1407.53,
+      "radius": 2.12
+    },
+    {
+      "nom": "Roëzé-sur-Sarthe",
+      "code": "72253",
+      "codesPostaux": ["72210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0641, 47.8939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0675, 47.8948]
+      },
+      "population": 2546,
+      "surface": 2681.26,
+      "radius": 2.92
+    },
+    {
+      "nom": "Rouessé-Fontaine",
+      "code": "72254",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1488, 48.3156]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1512, 48.324]
+      },
+      "population": 263,
+      "surface": 1253.57,
+      "radius": 2
+    },
+    {
+      "nom": "Rouessé-Vassé",
+      "code": "72255",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1953, 48.1549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1985, 48.1599]
+      },
+      "population": 791,
+      "surface": 3180.6,
+      "radius": 3.18
+    },
+    {
+      "nom": "Rouez",
+      "code": "72256",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1107, 48.1323]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1145, 48.14]
+      },
+      "population": 808,
+      "surface": 3361.35,
+      "radius": 3.27
+    },
+    {
+      "nom": "Rouillon",
+      "code": "72257",
+      "codesPostaux": ["72700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1424, 47.9997]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1367, 48.0048]
+      },
+      "population": 2352,
+      "surface": 922.38,
+      "radius": 1.71
+    },
+    {
+      "nom": "Rouperroux-le-Coquet",
+      "code": "72259",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4405, 48.2331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4287, 48.2252]
+      },
+      "population": 270,
+      "surface": 1216.42,
+      "radius": 1.97
+    },
+    {
+      "nom": "Ruaudin",
+      "code": "72260",
+      "codesPostaux": ["72230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2657, 47.9443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2636, 47.9447]
+      },
+      "population": 3492,
+      "surface": 1387.32,
+      "radius": 2.1
+    },
+    {
+      "nom": "Ruillé-en-Champagne",
+      "code": "72261",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1211, 48.0588]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0817, 48.0602]
+      },
+      "population": 301,
+      "surface": 1499.41,
+      "radius": 2.18
+    },
+    {
+      "nom": "Sablé-sur-Sarthe",
+      "code": "72264",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3542, 47.8397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3334, 47.8406]
+      },
+      "population": 12194,
+      "surface": 3700.26,
+      "radius": 3.43
+    },
+    {
+      "nom": "Saint-Aignan",
+      "code": "72265",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3429, 48.2172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3423, 48.2144]
+      },
+      "population": 246,
+      "surface": 1515.73,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Aubin-de-Locquenay",
+      "code": "72266",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0093, 48.256]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0255, 48.271]
+      },
+      "population": 764,
+      "surface": 1750.78,
+      "radius": 2.36
+    },
+    {
+      "nom": "Saint-Aubin-des-Coudrais",
+      "code": "72267",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5835, 48.1771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5875, 48.1722]
+      },
+      "population": 916,
+      "surface": 1744.45,
+      "radius": 2.36
+    },
+    {
+      "nom": "Saint-Biez-en-Belin",
+      "code": "72268",
+      "codesPostaux": ["72220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2331, 47.8172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2381, 47.8211]
+      },
+      "population": 709,
+      "surface": 930.6,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saint-Calais",
+      "code": "72269",
+      "codesPostaux": ["72120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7418, 47.932]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7427, 47.9209]
+      },
+      "population": 2969,
+      "surface": 2284.66,
+      "radius": 2.7
+    },
+    {
+      "nom": "Saint-Calez-en-Saosnois",
+      "code": "72270",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3123, 48.306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3026, 48.3133]
+      },
+      "population": 185,
+      "surface": 730.78,
+      "radius": 1.53
+    },
+    {
+      "nom": "Saint-Célerin",
+      "code": "72271",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4349, 48.1258]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4303, 48.1231]
+      },
+      "population": 881,
+      "surface": 1350.71,
+      "radius": 2.07
+    },
+    {
+      "nom": "Saint-Christophe-du-Jambet",
+      "code": "72273",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0579, 48.2373]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0359, 48.2327]
+      },
+      "population": 231,
+      "surface": 1124.83,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Christophe-en-Champagne",
+      "code": "72274",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1373, 47.9624]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1378, 47.9672]
+      },
+      "population": 214,
+      "surface": 773.74,
+      "radius": 1.57
+    },
+    {
+      "nom": "Saint-Corneille",
+      "code": "72275",
+      "codesPostaux": ["72460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.344, 48.0785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3442, 48.0666]
+      },
+      "population": 1517,
+      "surface": 1118.46,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Cosme-en-Vairais",
+      "code": "72276",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4586, 48.2739]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4588, 48.2736]
+      },
+      "population": 1884,
+      "surface": 3294.36,
+      "radius": 3.24
+    },
+    {
+      "nom": "Saint-Denis-d'Orques",
+      "code": "72278",
+      "codesPostaux": ["72350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2734, 48.0299]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2721, 48.0272]
+      },
+      "population": 750,
+      "surface": 4723.03,
+      "radius": 3.88
+    },
+    {
+      "nom": "Saint-Denis-des-Coudrais",
+      "code": "72277",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.502, 48.1639]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.507, 48.1509]
+      },
+      "population": 113,
+      "surface": 710.69,
+      "radius": 1.5
+    },
+    {
+      "nom": "Saint-Georges-de-la-Couée",
+      "code": "72279",
+      "codesPostaux": ["72150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5952, 47.8232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5839, 47.8412]
+      },
+      "population": 171,
+      "surface": 1180,
+      "radius": 1.94
+    },
+    {
+      "nom": "Saint-Georges-du-Bois",
+      "code": "72280",
+      "codesPostaux": ["72700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1034, 47.9719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0998, 47.9722]
+      },
+      "population": 2228,
+      "surface": 728.37,
+      "radius": 1.52
+    },
+    {
+      "nom": "Saint-Georges-du-Rosay",
+      "code": "72281",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5237, 48.1974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4993, 48.1997]
+      },
+      "population": 450,
+      "surface": 1736.9,
+      "radius": 2.35
+    },
+    {
+      "nom": "Saint-Georges-le-Gaultier",
+      "code": "72282",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1092, 48.2956]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1058, 48.2973]
+      },
+      "population": 519,
+      "surface": 2341.99,
+      "radius": 2.73
+    },
+    {
+      "nom": "Saint-Germain-d'Arcé",
+      "code": "72283",
+      "codesPostaux": ["72800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2793, 47.6258]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2909, 47.6239]
+      },
+      "population": 346,
+      "surface": 2928.7,
+      "radius": 3.05
+    },
+    {
+      "nom": "Saint-Gervais-de-Vic",
+      "code": "72286",
+      "codesPostaux": ["72120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7292, 47.8819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7405, 47.8856]
+      },
+      "population": 392,
+      "surface": 1613.13,
+      "radius": 2.27
+    },
+    {
+      "nom": "Saint-Jean-d'Assé",
+      "code": "72290",
+      "codesPostaux": ["72380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1245, 48.1545]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1194, 48.1507]
+      },
+      "population": 1810,
+      "surface": 2132.04,
+      "radius": 2.61
+    },
+    {
+      "nom": "Saint-Jean-de-la-Motte",
+      "code": "72291",
+      "codesPostaux": ["72510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0615, 47.7557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0561, 47.7431]
+      },
+      "population": 955,
+      "surface": 3244.54,
+      "radius": 3.21
+    },
+    {
+      "nom": "Saint-Jean-des-Échelles",
+      "code": "72292",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7305, 48.1281]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7126, 48.13]
+      },
+      "population": 225,
+      "surface": 1061.26,
+      "radius": 1.84
+    },
+    {
+      "nom": "Saint-Jean-du-Bois",
+      "code": "72293",
+      "codesPostaux": ["72430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.03, 47.8647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0403, 47.8722]
+      },
+      "population": 612,
+      "surface": 1469.08,
+      "radius": 2.16
+    },
+    {
+      "nom": "Saint-Léonard-des-Bois",
+      "code": "72294",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0893, 48.3543]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0774, 48.3529]
+      },
+      "population": 474,
+      "surface": 2740.38,
+      "radius": 2.95
+    },
+    {
+      "nom": "Saint-Longis",
+      "code": "72295",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3359, 48.3552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3463, 48.3556]
+      },
+      "population": 511,
+      "surface": 1121.46,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Maixent",
+      "code": "72296",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6462, 48.1079]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.653, 48.0898]
+      },
+      "population": 741,
+      "surface": 2240.85,
+      "radius": 2.67
+    },
+    {
+      "nom": "Saint-Marceau",
+      "code": "72297",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1225, 48.1833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1255, 48.1794]
+      },
+      "population": 536,
+      "surface": 891.52,
+      "radius": 1.68
+    },
+    {
+      "nom": "Saint-Mars-d'Outillé",
+      "code": "72299",
+      "codesPostaux": ["72220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3436, 47.873]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3322, 47.8705]
+      },
+      "population": 2471,
+      "surface": 3839.3,
+      "radius": 3.5
+    },
+    {
+      "nom": "Saint-Mars-la-Brière",
+      "code": "72300",
+      "codesPostaux": ["72470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3826, 48.0266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3753, 48.0298]
+      },
+      "population": 2712,
+      "surface": 3456.85,
+      "radius": 3.32
+    },
+    {
+      "nom": "Saint-Martin-des-Monts",
+      "code": "72302",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5989, 48.1503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5972, 48.1487]
+      },
+      "population": 172,
+      "surface": 570.43,
+      "radius": 1.35
+    },
+    {
+      "nom": "Saint-Michel-de-Chavaignes",
+      "code": "72303",
+      "codesPostaux": ["72440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5764, 48.0098]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5691, 48.0192]
+      },
+      "population": 740,
+      "surface": 1853.86,
+      "radius": 2.43
+    },
+    {
+      "nom": "Saint-Ouen-de-Mimbré",
+      "code": "72305",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0504, 48.2889]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0482, 48.2917]
+      },
+      "population": 914,
+      "surface": 1072.26,
+      "radius": 1.85
+    },
+    {
+      "nom": "Saint-Ouen-en-Belin",
+      "code": "72306",
+      "codesPostaux": ["72220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2188, 47.8339]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2107, 47.8333]
+      },
+      "population": 1325,
+      "surface": 1529.14,
+      "radius": 2.21
+    },
+    {
+      "nom": "Saint-Ouen-en-Champagne",
+      "code": "72307",
+      "codesPostaux": ["72350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1767, 47.9559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1885, 47.9498]
+      },
+      "population": 238,
+      "surface": 1116.74,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Paterne - Le Chevain",
+      "code": "72308",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.125, 48.4167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1109, 48.415]
+      },
+      "population": 2090,
+      "surface": 1296.9,
+      "radius": 2.03
+    },
+    {
+      "nom": "Saint-Paul-le-Gaultier",
+      "code": "72309",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1117, 48.3262]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1083, 48.3213]
+      },
+      "population": 276,
+      "surface": 1521.29,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Pavace",
+      "code": "72310",
+      "codesPostaux": ["72190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1931, 48.0399]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1871, 48.0384]
+      },
+      "population": 2002,
+      "surface": 518.7,
+      "radius": 1.28
+    },
+    {
+      "nom": "Saint-Pierre-de-Chevillé",
+      "code": "72311",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4293, 47.6361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.438, 47.646]
+      },
+      "population": 339,
+      "surface": 1147,
+      "radius": 1.91
+    },
+    {
+      "nom": "Saint-Pierre-des-Bois",
+      "code": "72312",
+      "codesPostaux": ["72430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1355, 47.9421]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1406, 47.9392]
+      },
+      "population": 225,
+      "surface": 751.3,
+      "radius": 1.55
+    },
+    {
+      "nom": "Saint-Pierre-des-Ormes",
+      "code": "72313",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4223, 48.2953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4212, 48.306]
+      },
+      "population": 212,
+      "surface": 1023.99,
+      "radius": 1.81
+    },
+    {
+      "nom": "Saint-Pierre-du-Lorouër",
+      "code": "72314",
+      "codesPostaux": ["72150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5031, 47.7974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5225, 47.8058]
+      },
+      "population": 363,
+      "surface": 1661.71,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-Rémy-de-Sillé",
+      "code": "72315",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1034, 48.1844]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.093, 48.1866]
+      },
+      "population": 832,
+      "surface": 1148.33,
+      "radius": 1.91
+    },
+    {
+      "nom": "Saint-Rémy-des-Monts",
+      "code": "72316",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3796, 48.321]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4005, 48.3087]
+      },
+      "population": 705,
+      "surface": 1027.31,
+      "radius": 1.81
+    },
+    {
+      "nom": "Saint-Rémy-du-Val",
+      "code": "72317",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2491, 48.3524]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.256, 48.3501]
+      },
+      "population": 498,
+      "surface": 1661.05,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-Saturnin",
+      "code": "72320",
+      "codesPostaux": ["72650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1755, 48.0607]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1594, 48.0643]
+      },
+      "population": 2773,
+      "surface": 968.25,
+      "radius": 1.76
+    },
+    {
+      "nom": "Saint-Symphorien",
+      "code": "72321",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1376, 48.0807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1149, 48.0717]
+      },
+      "population": 499,
+      "surface": 2256.74,
+      "radius": 2.68
+    },
+    {
+      "nom": "Saint-Ulphace",
+      "code": "72322",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8486, 48.1584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8184, 48.1593]
+      },
+      "population": 223,
+      "surface": 1606.29,
+      "radius": 2.26
+    },
+    {
+      "nom": "Saint-Victeur",
+      "code": "72323",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0384, 48.3173]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0375, 48.3233]
+      },
+      "population": 438,
+      "surface": 715.94,
+      "radius": 1.51
+    },
+    {
+      "nom": "Saint-Vincent-des-Prés",
+      "code": "72324",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3718, 48.297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3853, 48.2963]
+      },
+      "population": 503,
+      "surface": 1059.94,
+      "radius": 1.84
+    },
+    {
+      "nom": "Saint-Vincent-du-Lorouër",
+      "code": "72325",
+      "codesPostaux": ["72150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4792, 47.8151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4878, 47.8248]
+      },
+      "population": 822,
+      "surface": 2702.88,
+      "radius": 2.93
+    },
+    {
+      "nom": "Sainte-Cérotte",
+      "code": "72272",
+      "codesPostaux": ["72120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.689, 47.899]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6877, 47.8999]
+      },
+      "population": 326,
+      "surface": 1438.23,
+      "radius": 2.14
+    },
+    {
+      "nom": "Sainte-Jamme-sur-Sarthe",
+      "code": "72289",
+      "codesPostaux": ["72380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1594, 48.1408]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1667, 48.1405]
+      },
+      "population": 1964,
+      "surface": 860.1,
+      "radius": 1.65
+    },
+    {
+      "nom": "Sainte-Sabine-sur-Longève",
+      "code": "72319",
+      "codesPostaux": ["72380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0876, 48.1355]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0951, 48.141]
+      },
+      "population": 729,
+      "surface": 1188.09,
+      "radius": 1.94
+    },
+    {
+      "nom": "Saosnes",
+      "code": "72326",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2909, 48.3267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2771, 48.3269]
+      },
+      "population": 218,
+      "surface": 1141.83,
+      "radius": 1.91
+    },
+    {
+      "nom": "Sarcé",
+      "code": "72327",
+      "codesPostaux": ["72360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.23, 47.7245]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2203, 47.7215]
+      },
+      "population": 268,
+      "surface": 1100.29,
+      "radius": 1.87
+    },
+    {
+      "nom": "Sargé-lès-le-Mans",
+      "code": "72328",
+      "codesPostaux": ["72190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2503, 48.0394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2405, 48.0326]
+      },
+      "population": 3865,
+      "surface": 1392.96,
+      "radius": 2.11
+    },
+    {
+      "nom": "Savigné-l'Évêque",
+      "code": "72329",
+      "codesPostaux": ["72460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.281, 48.0836]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3016, 48.0772]
+      },
+      "population": 4042,
+      "surface": 2846.83,
+      "radius": 3.01
+    },
+    {
+      "nom": "Savigné-sous-le-Lude",
+      "code": "72330",
+      "codesPostaux": ["72800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0648, 47.6338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0565, 47.6184]
+      },
+      "population": 447,
+      "surface": 3398.32,
+      "radius": 3.29
+    },
+    {
+      "nom": "Sceaux-sur-Huisne",
+      "code": "72331",
+      "codesPostaux": ["72160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5791, 48.0988]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5832, 48.1049]
+      },
+      "population": 584,
+      "surface": 1185.3,
+      "radius": 1.94
+    },
+    {
+      "nom": "Ségrie",
+      "code": "72332",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0117, 48.2122]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0271, 48.2003]
+      },
+      "population": 599,
+      "surface": 2209.94,
+      "radius": 2.65
+    },
+    {
+      "nom": "Semur-en-Vallon",
+      "code": "72333",
+      "codesPostaux": ["72390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6744, 48.021]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6534, 48.0241]
+      },
+      "population": 432,
+      "surface": 1526.23,
+      "radius": 2.2
+    },
+    {
+      "nom": "Sillé-le-Guillaume",
+      "code": "72334",
+      "codesPostaux": ["72140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1333, 48.1896]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1276, 48.1832]
+      },
+      "population": 2192,
+      "surface": 1298.81,
+      "radius": 2.03
+    },
+    {
+      "nom": "Sillé-le-Philippe",
+      "code": "72335",
+      "codesPostaux": ["72460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3503, 48.1054]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3518, 48.107]
+      },
+      "population": 1080,
+      "surface": 1062.59,
+      "radius": 1.84
+    },
+    {
+      "nom": "Solesmes",
+      "code": "72336",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2832, 47.8409]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.303, 47.8506]
+      },
+      "population": 1229,
+      "surface": 1149.11,
+      "radius": 1.91
+    },
+    {
+      "nom": "Sougé-le-Ganelon",
+      "code": "72337",
+      "codesPostaux": ["72130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0425, 48.3158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0298, 48.3179]
+      },
+      "population": 832,
+      "surface": 1832.24,
+      "radius": 2.41
+    },
+    {
+      "nom": "Souillé",
+      "code": "72338",
+      "codesPostaux": ["72380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1722, 48.1208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1819, 48.1186]
+      },
+      "population": 822,
+      "surface": 457.11,
+      "radius": 1.21
+    },
+    {
+      "nom": "Souligné-Flacé",
+      "code": "72339",
+      "codesPostaux": ["72210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.018, 47.9683]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0113, 47.9738]
+      },
+      "population": 646,
+      "surface": 1661.14,
+      "radius": 2.3
+    },
+    {
+      "nom": "Souligné-sous-Ballon",
+      "code": "72340",
+      "codesPostaux": ["72290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2338, 48.1336]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2352, 48.1376]
+      },
+      "population": 1237,
+      "surface": 1277.62,
+      "radius": 2.02
+    },
+    {
+      "nom": "Soulitré",
+      "code": "72341",
+      "codesPostaux": ["72370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4402, 48.0205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4557, 48.0116]
+      },
+      "population": 604,
+      "surface": 1096.03,
+      "radius": 1.87
+    },
+    {
+      "nom": "Souvigné-sur-Même",
+      "code": "72342",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6473, 48.2132]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.637, 48.2197]
+      },
+      "population": 160,
+      "surface": 647.86,
+      "radius": 1.44
+    },
+    {
+      "nom": "Souvigné-sur-Sarthe",
+      "code": "72343",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4103, 47.8266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3882, 47.8273]
+      },
+      "population": 606,
+      "surface": 1722.2,
+      "radius": 2.34
+    },
+    {
+      "nom": "Spay",
+      "code": "72344",
+      "codesPostaux": ["72700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1501, 47.9215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1534, 47.923]
+      },
+      "population": 2821,
+      "surface": 1413.38,
+      "radius": 2.12
+    },
+    {
+      "nom": "Surfonds",
+      "code": "72345",
+      "codesPostaux": ["72370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4623, 47.9805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4582, 47.9746]
+      },
+      "population": 339,
+      "surface": 491.38,
+      "radius": 1.25
+    },
+    {
+      "nom": "Tassé",
+      "code": "72347",
+      "codesPostaux": ["72430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1531, 47.8898]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1363, 47.8901]
+      },
+      "population": 289,
+      "surface": 1078.21,
+      "radius": 1.85
+    },
+    {
+      "nom": "Tassillé",
+      "code": "72348",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.095, 47.9893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0935, 47.9931]
+      },
+      "population": 132,
+      "surface": 652.48,
+      "radius": 1.44
+    },
+    {
+      "nom": "Teillé",
+      "code": "72349",
+      "codesPostaux": ["72290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.179, 48.186]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1874, 48.1812]
+      },
+      "population": 521,
+      "surface": 1169.92,
+      "radius": 1.93
+    },
+    {
+      "nom": "Teloché",
+      "code": "72350",
+      "codesPostaux": ["72220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2805, 47.8904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.268, 47.8888]
+      },
+      "population": 3043,
+      "surface": 2296.69,
+      "radius": 2.7
+    },
+    {
+      "nom": "Tennie",
+      "code": "72351",
+      "codesPostaux": ["72240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0987, 48.1121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0801, 48.1087]
+      },
+      "population": 1017,
+      "surface": 3317.11,
+      "radius": 3.25
+    },
+    {
+      "nom": "Terrehault",
+      "code": "72352",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4078, 48.2025]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4024, 48.2047]
+      },
+      "population": 143,
+      "surface": 582.4,
+      "radius": 1.36
+    },
+    {
+      "nom": "Théligny",
+      "code": "72353",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7882, 48.1707]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8008, 48.1752]
+      },
+      "population": 215,
+      "surface": 1451.81,
+      "radius": 2.15
+    },
+    {
+      "nom": "Thoigné",
+      "code": "72354",
+      "codesPostaux": ["72260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2502, 48.2864]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2537, 48.2896]
+      },
+      "population": 165,
+      "surface": 737.23,
+      "radius": 1.53
+    },
+    {
+      "nom": "Thoiré-sous-Contensor",
+      "code": "72355",
+      "codesPostaux": ["72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2043, 48.3113]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2012, 48.3119]
+      },
+      "population": 119,
+      "surface": 606.3,
+      "radius": 1.39
+    },
+    {
+      "nom": "Thoiré-sur-Dinan",
+      "code": "72356",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4603, 47.7663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4476, 47.7536]
+      },
+      "population": 398,
+      "surface": 1777.59,
+      "radius": 2.38
+    },
+    {
+      "nom": "Thorée-les-Pins",
+      "code": "72357",
+      "codesPostaux": ["72800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0385, 47.664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0419, 47.687]
+      },
+      "population": 741,
+      "surface": 2813.95,
+      "radius": 2.99
+    },
+    {
+      "nom": "Thorigné-sur-Dué",
+      "code": "72358",
+      "codesPostaux": ["72160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5175, 48.0294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5343, 48.039]
+      },
+      "population": 1653,
+      "surface": 1921.05,
+      "radius": 2.47
+    },
+    {
+      "nom": "Torcé-en-Vallée",
+      "code": "72359",
+      "codesPostaux": ["72110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3934, 48.1326]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3968, 48.1339]
+      },
+      "population": 1412,
+      "surface": 1700.74,
+      "radius": 2.33
+    },
+    {
+      "nom": "Trangé",
+      "code": "72360",
+      "codesPostaux": ["72650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.115, 48.0324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.115, 48.0271]
+      },
+      "population": 1639,
+      "surface": 1119.89,
+      "radius": 1.89
+    },
+    {
+      "nom": "Tresson",
+      "code": "72361",
+      "codesPostaux": ["72440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5588, 47.9012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5747, 47.9024]
+      },
+      "population": 510,
+      "surface": 2955.38,
+      "radius": 3.07
+    },
+    {
+      "nom": "Tuffé Val de la Chéronne",
+      "code": "72363",
+      "codesPostaux": ["72160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5183, 48.1176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.519, 48.112]
+      },
+      "population": 1669,
+      "surface": 2936.68,
+      "radius": 3.06
+    },
+    {
+      "nom": "Vaas",
+      "code": "72364",
+      "codesPostaux": ["72500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3074, 47.6728]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3134, 47.6679]
+      },
+      "population": 1383,
+      "surface": 3034.62,
+      "radius": 3.11
+    },
+    {
+      "nom": "Val-d'Étangson",
+      "code": "72128",
+      "codesPostaux": ["72120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6201, 47.8837]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6311, 47.9005]
+      },
+      "population": 526,
+      "surface": 3136.26,
+      "radius": 3.16
+    },
+    {
+      "nom": "Val-de-la-Hune",
+      "code": "72382",
+      "codesPostaux": ["72440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4929, 47.9409]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4688, 47.9323]
+      },
+      "population": 971,
+      "surface": 4164.7,
+      "radius": 3.64
+    },
+    {
+      "nom": "Valennes",
+      "code": "72366",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8069, 48.0036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.809, 47.9948]
+      },
+      "population": 304,
+      "surface": 2668.09,
+      "radius": 2.91
+    },
+    {
+      "nom": "Vallon-sur-Gée",
+      "code": "72367",
+      "codesPostaux": ["72540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0831, 47.9573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0702, 47.9627]
+      },
+      "population": 778,
+      "surface": 1731.11,
+      "radius": 2.35
+    },
+    {
+      "nom": "Vancé",
+      "code": "72368",
+      "codesPostaux": ["72310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6553, 47.8305]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6466, 47.8302]
+      },
+      "population": 287,
+      "surface": 1262.55,
+      "radius": 2
+    },
+    {
+      "nom": "Verneil-le-Chétif",
+      "code": "72369",
+      "codesPostaux": ["72360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.295, 47.7227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2958, 47.733]
+      },
+      "population": 586,
+      "surface": 1481.11,
+      "radius": 2.17
+    },
+    {
+      "nom": "Vernie",
+      "code": "72370",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0175, 48.1818]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0209, 48.1837]
+      },
+      "population": 339,
+      "surface": 995.96,
+      "radius": 1.78
+    },
+    {
+      "nom": "Vezot",
+      "code": "72372",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2961, 48.3537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2905, 48.3526]
+      },
+      "population": 77,
+      "surface": 636.78,
+      "radius": 1.42
+    },
+    {
+      "nom": "Vibraye",
+      "code": "72373",
+      "codesPostaux": ["72320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7412, 48.0489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7365, 48.0593]
+      },
+      "population": 2508,
+      "surface": 4378.4,
+      "radius": 3.73
+    },
+    {
+      "nom": "Villaines-la-Carelle",
+      "code": "72374",
+      "codesPostaux": ["72600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2975, 48.393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.299, 48.3762]
+      },
+      "population": 137,
+      "surface": 1479.85,
+      "radius": 2.17
+    },
+    {
+      "nom": "Villaines-la-Gonais",
+      "code": "72375",
+      "codesPostaux": ["72400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6097, 48.1359]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6014, 48.1357]
+      },
+      "population": 517,
+      "surface": 1037.05,
+      "radius": 1.82
+    },
+    {
+      "nom": "Villaines-sous-Lucé",
+      "code": "72376",
+      "codesPostaux": ["72150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5024, 47.8798]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4801, 47.8652]
+      },
+      "population": 651,
+      "surface": 2550.55,
+      "radius": 2.85
+    },
+    {
+      "nom": "Villaines-sous-Malicorne",
+      "code": "72377",
+      "codesPostaux": ["72270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1058, 47.7539]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0987, 47.7654]
+      },
+      "population": 1035,
+      "surface": 1950.84,
+      "radius": 2.49
+    },
+    {
+      "nom": "Villeneuve-en-Perseigne",
+      "code": "72137",
+      "codesPostaux": ["72600", "72610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2365, 48.4303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.254, 48.4474]
+      },
+      "population": 2189,
+      "surface": 8725.44,
+      "radius": 5.27
+    },
+    {
+      "nom": "Vion",
+      "code": "72378",
+      "codesPostaux": ["72300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2654, 47.8136]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2383, 47.8193]
+      },
+      "population": 1383,
+      "surface": 2027.39,
+      "radius": 2.54
+    },
+    {
+      "nom": "Viré-en-Champagne",
+      "code": "72379",
+      "codesPostaux": ["72350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2921, 47.9862]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2912, 47.9835]
+      },
+      "population": 203,
+      "surface": 1135.81,
+      "radius": 1.9
+    },
+    {
+      "nom": "Vivoin",
+      "code": "72380",
+      "codesPostaux": ["72170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1639, 48.246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1564, 48.2335]
+      },
+      "population": 899,
+      "surface": 1834.85,
+      "radius": 2.42
+    },
+    {
+      "nom": "Voivres-lès-le-Mans",
+      "code": "72381",
+      "codesPostaux": ["72210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0781, 47.9274]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0734, 47.9295]
+      },
+      "population": 1350,
+      "surface": 1159.85,
+      "radius": 1.92
+    },
+    {
+      "nom": "Vouvray-sur-Huisne",
+      "code": "72383",
+      "codesPostaux": ["72160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5539, 48.0845]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5501, 48.0873]
+      },
+      "population": 131,
+      "surface": 334.6,
+      "radius": 1.03
+    },
+    {
+      "nom": "Yvré-l'Évêque",
+      "code": "72386",
+      "codesPostaux": ["72530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2855, 48.0265]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2706, 48.014]
+      },
+      "population": 4187,
+      "surface": 2765.51,
+      "radius": 2.97
+    },
+    {
+      "nom": "Yvré-le-Pôlin",
+      "code": "72385",
+      "codesPostaux": ["72330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1563, 47.8376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1525, 47.8184]
+      },
+      "population": 1734,
+      "surface": 2181.42,
+      "radius": 2.64
+    }
+  ],
+  "postalCodes": {
+    "72000": {
+      "communes": ["Le Mans"],
+      "communeCount": 1,
+      "center": [0.1973, 48.0075],
+      "coverageRadius": 4.09,
+      "totalPopulation": 145182,
+      "totalSurface": 5258
+    },
+    "72100": {
+      "communes": ["Le Mans"],
+      "communeCount": 1,
+      "center": [0.1973, 48.0075],
+      "coverageRadius": 4.09,
+      "totalPopulation": 145182,
+      "totalSurface": 5258
+    },
+    "72110": {
+      "communes": [
+        "Beaufay",
+        "Bonnétable",
+        "Briosne-lès-Sables",
+        "Courcemont",
+        "Courcival",
+        "Jauzé",
+        "Nogent-le-Bernard",
+        "Prévelles",
+        "Rouperroux-le-Coquet",
+        "Saint-Aignan",
+        "Saint-Célerin",
+        "Saint-Cosme-en-Vairais",
+        "Saint-Denis-des-Coudrais",
+        "Saint-Georges-du-Rosay",
+        "Terrehault",
+        "Torcé-en-Vallée"
+      ],
+      "communeCount": 16,
+      "center": [0.4217, 48.185],
+      "coverageRadius": 10.3,
+      "boundingBox": {
+        "minLat": 48.1231,
+        "maxLat": 48.2736,
+        "minLon": 0.3423,
+        "maxLon": 0.507
+      },
+      "totalPopulation": 13082,
+      "totalSurface": 26438
+    },
+    "72120": {
+      "communes": [
+        "Conflans-sur-Anille",
+        "Écorpain",
+        "Val-d'Étangson",
+        "Marolles-lès-Saint-Calais",
+        "Montaillé",
+        "Rahay",
+        "Saint-Calais",
+        "Sainte-Cérotte",
+        "Saint-Gervais-de-Vic"
+      ],
+      "communeCount": 9,
+      "center": [0.7264, 47.9206],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 47.8856,
+        "maxLat": 47.9608,
+        "minLon": 0.6311,
+        "maxLon": 0.8308
+      },
+      "totalPopulation": 5941,
+      "totalSurface": 19882
+    },
+    "72130": {
+      "communes": [
+        "Assé-le-Boisne",
+        "Douillet",
+        "Fresnay-sur-Sarthe",
+        "Gesnes-le-Gandelin",
+        "Montreuil-le-Chétif",
+        "Moulins-le-Carbonnel",
+        "Saint-Aubin-de-Locquenay",
+        "Saint-Georges-le-Gaultier",
+        "Saint-Léonard-des-Bois",
+        "Saint-Ouen-de-Mimbré",
+        "Saint-Paul-le-Gaultier",
+        "Saint-Victeur",
+        "Sougé-le-Ganelon"
+      ],
+      "communeCount": 13,
+      "center": [-0.0043, 48.3064],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 48.2463,
+        "maxLat": 48.3713,
+        "minLon": -0.1083,
+        "maxLon": 0.0482
+      },
+      "totalPopulation": 10241,
+      "totalSurface": 24107
+    },
+    "72140": {
+      "communes": [
+        "Crissé",
+        "Le Grez",
+        "Mont-Saint-Jean",
+        "Neuvillette-en-Charnie",
+        "Parennes",
+        "Pezé-le-Robert",
+        "Rouessé-Vassé",
+        "Rouez",
+        "Saint-Rémy-de-Sillé",
+        "Sillé-le-Guillaume"
+      ],
+      "communeCount": 10,
+      "center": [-0.1286, 48.1738],
+      "coverageRadius": 11.1,
+      "boundingBox": {
+        "minLat": 48.0918,
+        "maxLat": 48.2466,
+        "minLon": -0.2128,
+        "maxLon": -0.06
+      },
+      "totalPopulation": 7281,
+      "totalSurface": 20614
+    },
+    "72150": {
+      "communes": [
+        "Courdemanche",
+        "Le Grand-Lucé",
+        "Montreuil-le-Henri",
+        "Pruillé-l'Éguillé",
+        "Saint-Georges-de-la-Couée",
+        "Saint-Pierre-du-Lorouër",
+        "Saint-Vincent-du-Lorouër",
+        "Villaines-sous-Lucé"
+      ],
+      "communeCount": 8,
+      "center": [0.4894, 47.8455],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 47.8058,
+        "maxLat": 47.8672,
+        "minLon": 0.4312,
+        "maxLon": 0.5839
+      },
+      "totalPopulation": 5669,
+      "totalSurface": 16824
+    },
+    "72160": {
+      "communes": [
+        "Beillé",
+        "La Chapelle-Saint-Rémy",
+        "Connerré",
+        "Duneau",
+        "Sceaux-sur-Huisne",
+        "Thorigné-sur-Dué",
+        "Tuffé Val de la Chéronne",
+        "Vouvray-sur-Huisne"
+      ],
+      "communeCount": 8,
+      "center": [0.5125, 48.0761],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 48.039,
+        "maxLat": 48.112,
+        "minLon": 0.4559,
+        "maxLon": 0.5832
+      },
+      "totalPopulation": 9492,
+      "totalSurface": 12129
+    },
+    "72170": {
+      "communes": [
+        "Assé-le-Riboul",
+        "Beaumont-sur-Sarthe",
+        "Chérancé",
+        "Doucelles",
+        "Juillé",
+        "Maresché",
+        "Meurcé",
+        "Moitron-sur-Sarthe",
+        "Piacé",
+        "Saint-Christophe-du-Jambet",
+        "Saint-Marceau",
+        "Ségrie",
+        "Le Tronchet",
+        "Vernie",
+        "Vivoin"
+      ],
+      "communeCount": 15,
+      "center": [0.1171, 48.2226],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 48.1794,
+        "maxLat": 48.2883,
+        "minLon": 0.0209,
+        "maxLon": 0.201
+      },
+      "totalPopulation": 8005,
+      "totalSurface": 16014
+    },
+    "72190": {
+      "communes": ["Coulaines", "Neuville-sur-Sarthe", "Saint-Pavace", "Sargé-lès-le-Mans"],
+      "communeCount": 4,
+      "center": [0.208, 48.0354],
+      "coverageRadius": 4.7,
+      "boundingBox": {
+        "minLat": 48.0237,
+        "maxLat": 48.0757,
+        "minLon": 0.1871,
+        "maxLon": 0.2405
+      },
+      "totalPopulation": 16379,
+      "totalSurface": 4612
+    },
+    "72200": {
+      "communes": [
+        "Le Bailleul",
+        "Bazouges Cré sur Loir",
+        "Clermont-Créans",
+        "Crosmières",
+        "La Flèche",
+        "Mareil-sur-Loir"
+      ],
+      "communeCount": 6,
+      "center": [-0.086, 47.7036],
+      "coverageRadius": 9.2,
+      "boundingBox": {
+        "minLat": 47.6889,
+        "maxLat": 47.7681,
+        "minLon": -0.1715,
+        "maxLon": 0.0118
+      },
+      "totalPopulation": 21171,
+      "totalSurface": 20499
+    },
+    "72210": {
+      "communes": [
+        "Chemiré-le-Gaudin",
+        "Fillé",
+        "Louplande",
+        "Maigné",
+        "Roëzé-sur-Sarthe",
+        "Souligné-Flacé",
+        "La Suze-sur-Sarthe",
+        "Voivres-lès-le-Mans"
+      ],
+      "communeCount": 8,
+      "center": [0.0464, 47.9094],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 47.8897,
+        "maxLat": 47.9738,
+        "minLon": -0.0541,
+        "maxLon": 0.1265
+      },
+      "totalPopulation": 13541,
+      "totalSurface": 13949
+    },
+    "72220": {
+      "communes": [
+        "Écommoy",
+        "Laigné-Saint-Gervais",
+        "Marigné-Laillé",
+        "Saint-Biez-en-Belin",
+        "Saint-Mars-d'Outillé",
+        "Saint-Ouen-en-Belin",
+        "Teloché"
+      ],
+      "communeCount": 7,
+      "center": [0.2753, 47.852],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 47.8182,
+        "maxLat": 47.8888,
+        "minLon": 0.2107,
+        "maxLon": 0.3401
+      },
+      "totalPopulation": 16253,
+      "totalSurface": 17057
+    },
+    "72230": {
+      "communes": ["Arnage", "Guécélard", "Moncé-en-Belin", "Mulsanne", "Ruaudin"],
+      "communeCount": 5,
+      "center": [0.209, 47.9116],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 47.8785,
+        "maxLat": 47.9447,
+        "minLon": 0.1293,
+        "maxLon": 0.2636
+      },
+      "totalPopulation": 21153,
+      "totalSurface": 6979
+    },
+    "72240": {
+      "communes": [
+        "La Chapelle-Saint-Fray",
+        "Conlie",
+        "Cures",
+        "Domfront-en-Champagne",
+        "Lavardin",
+        "Mézières-sous-Lavardin",
+        "Neuvillalais",
+        "Bernay-Neuvy-en-Champagne",
+        "Ruillé-en-Champagne",
+        "Saint-Symphorien",
+        "Tennie"
+      ],
+      "communeCount": 11,
+      "center": [-0.012, 48.1089],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 48.0602,
+        "maxLat": 48.1569,
+        "minLon": -0.1149,
+        "maxLon": 0.0816
+      },
+      "totalPopulation": 8353,
+      "totalSurface": 19417
+    },
+    "72250": {
+      "communes": ["Brette-les-Pins", "Challes", "Parigné-l'Évêque"],
+      "communeCount": 3,
+      "center": [0.3651, 47.9303],
+      "coverageRadius": 3.7,
+      "boundingBox": {
+        "minLat": 47.9134,
+        "maxLat": 47.9373,
+        "minLon": 0.3377,
+        "maxLon": 0.4142
+      },
+      "totalPopulation": 8655,
+      "totalSurface": 10423
+    },
+    "72260": {
+      "communes": [
+        "Avesnes-en-Saosnois",
+        "Courgains",
+        "Dangeul",
+        "Marolles-les-Braults",
+        "Les Mées",
+        "Moncé-en-Saosnois",
+        "Monhoudou",
+        "Nauvay",
+        "Nouans",
+        "Peray",
+        "René",
+        "Thoigné"
+      ],
+      "communeCount": 12,
+      "center": [0.2919, 48.2635],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 48.2393,
+        "maxLat": 48.3148,
+        "minLon": 0.2216,
+        "maxLon": 0.3947
+      },
+      "totalPopulation": 4632,
+      "totalSurface": 11736
+    },
+    "72270": {
+      "communes": [
+        "Arthezé",
+        "Bousse",
+        "Courcelles-la-Forêt",
+        "Dureil",
+        "Ligron",
+        "Malicorne-sur-Sarthe",
+        "Mézeray",
+        "Villaines-sous-Malicorne"
+      ],
+      "communeCount": 8,
+      "center": [-0.0576, 47.7997],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 47.7654,
+        "maxLat": 47.8434,
+        "minLon": -0.1454,
+        "maxLon": 0.0104
+      },
+      "totalPopulation": 6499,
+      "totalSurface": 13011
+    },
+    "72290": {
+      "communes": [
+        "Ballon-Saint Mars",
+        "Congé-sur-Orne",
+        "Courcebœufs",
+        "Lucé-sous-Ballon",
+        "Mézières-sur-Ponthouin",
+        "Souligné-sous-Ballon",
+        "Teillé"
+      ],
+      "communeCount": 7,
+      "center": [0.2444, 48.1682],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 48.1376,
+        "maxLat": 48.2087,
+        "minLon": 0.1874,
+        "maxLon": 0.2979
+      },
+      "totalPopulation": 5829,
+      "totalSurface": 10928
+    },
+    "72300": {
+      "communes": [
+        "Auvers-le-Hamon",
+        "La Chapelle-d'Aligné",
+        "Courtillers",
+        "Juigné-sur-Sarthe",
+        "Louailles",
+        "Parcé-sur-Sarthe",
+        "Notre-Dame-du-Pé",
+        "Pincé",
+        "Précigné",
+        "Sablé-sur-Sarthe",
+        "Solesmes",
+        "Souvigné-sur-Sarthe",
+        "Vion"
+      ],
+      "communeCount": 13,
+      "center": [-0.3074, 47.8236],
+      "coverageRadius": 11.3,
+      "boundingBox": {
+        "minLat": 47.7305,
+        "maxLat": 47.9029,
+        "minLon": -0.3882,
+        "maxLon": -0.1998
+      },
+      "totalPopulation": 27146,
+      "totalSurface": 31898
+    },
+    "72310": {
+      "communes": ["Bessé-sur-Braye", "La Chapelle-Huon", "Cogners", "Loir en Vallée", "Vancé"],
+      "communeCount": 5,
+      "center": [0.6893, 47.8035],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 47.751,
+        "maxLat": 47.8689,
+        "minLon": 0.6219,
+        "maxLon": 0.7525
+      },
+      "totalPopulation": 5058,
+      "totalSurface": 13051
+    },
+    "72320": {
+      "communes": [
+        "Berfay",
+        "Champrond",
+        "Courgenard",
+        "Gréez-sur-Roc",
+        "Lamnay",
+        "Melleray",
+        "Montmirail",
+        "Saint-Jean-des-Échelles",
+        "Saint-Maixent",
+        "Saint-Ulphace",
+        "Théligny",
+        "Valennes",
+        "Vibraye"
+      ],
+      "communeCount": 13,
+      "center": [0.7415, 48.0872],
+      "coverageRadius": 11.5,
+      "boundingBox": {
+        "minLat": 47.9931,
+        "maxLat": 48.1752,
+        "minLon": 0.653,
+        "maxLon": 0.8184
+      },
+      "totalPopulation": 7152,
+      "totalSurface": 25607
+    },
+    "72330": {
+      "communes": ["Cérans-Foulletourte", "La Fontaine-Saint-Martin", "Oizé", "Parigné-le-Pôlin", "Yvré-le-Pôlin"],
+      "communeCount": 5,
+      "center": [0.099, 47.823],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 47.791,
+        "maxLat": 47.8503,
+        "minLon": 0.0498,
+        "maxLon": 0.1525
+      },
+      "totalPopulation": 8062,
+      "totalSurface": 9897
+    },
+    "72340": {
+      "communes": ["Beaumont-sur-Dême", "Chahaignes", "La Chartre-sur-le-Loir", "Lhomme", "Marçon", "Loir en Vallée"],
+      "communeCount": 6,
+      "center": [0.5696, 47.7347],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 47.6933,
+        "maxLat": 47.751,
+        "minLon": 0.5092,
+        "maxLon": 0.6219
+      },
+      "totalPopulation": 6420,
+      "totalSurface": 15859
+    },
+    "72350": {
+      "communes": [
+        "Avessé",
+        "Brûlon",
+        "Chevillé",
+        "Fontenay-sur-Vègre",
+        "Poillé-sur-Vègre",
+        "Saint-Denis-d'Orques",
+        "Saint-Ouen-en-Champagne",
+        "Viré-en-Champagne"
+      ],
+      "communeCount": 8,
+      "center": [-0.2443, 47.9639],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 47.9046,
+        "maxLat": 48.0272,
+        "minLon": -0.2912,
+        "maxLon": -0.1885
+      },
+      "totalPopulation": 4314,
+      "totalSurface": 14796
+    },
+    "72360": {
+      "communes": ["Mayet", "Sarcé", "Verneil-le-Chétif"],
+      "communeCount": 3,
+      "center": [0.2744, 47.7527],
+      "coverageRadius": 5.4,
+      "boundingBox": {
+        "minLat": 47.7215,
+        "maxLat": 47.759,
+        "minLon": 0.2203,
+        "maxLon": 0.2958
+      },
+      "totalPopulation": 4040,
+      "totalSurface": 8000
+    },
+    "72370": {
+      "communes": ["Ardenay-sur-Mérize", "Le Breil-sur-Mérize", "Nuillé-le-Jalais", "Soulitré", "Surfonds"],
+      "communeCount": 5,
+      "center": [0.4651, 48.0059],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 47.9746,
+        "maxLat": 48.019,
+        "minLon": 0.4251,
+        "maxLon": 0.4811
+      },
+      "totalPopulation": 3533,
+      "totalSurface": 5165
+    },
+    "72380": {
+      "communes": [
+        "La Guierche",
+        "Joué-l'Abbé",
+        "Montbizot",
+        "Sainte-Jamme-sur-Sarthe",
+        "Saint-Jean-d'Assé",
+        "Sainte-Sabine-sur-Longève",
+        "Souillé"
+      ],
+      "communeCount": 7,
+      "center": [0.1671, 48.1338],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 48.1092,
+        "maxLat": 48.1507,
+        "minLon": 0.0951,
+        "maxLon": 0.2166
+      },
+      "totalPopulation": 9718,
+      "totalSurface": 7617
+    },
+    "72390": {
+      "communes": ["Bouër", "Dollon", "Lavaré", "Le Luart", "Semur-en-Vallon"],
+      "communeCount": 5,
+      "center": [0.6063, 48.0534],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": 48.0241,
+        "maxLat": 48.0829,
+        "minLon": 0.5835,
+        "maxLon": 0.6534
+      },
+      "totalPopulation": 4488,
+      "totalSurface": 8825
+    },
+    "72400": {
+      "communes": [
+        "Avezé",
+        "Boëssé-le-Sec",
+        "La Bosse",
+        "La Chapelle-du-Bois",
+        "Cherré-Au",
+        "Cormes",
+        "Dehault",
+        "La Ferté-Bernard",
+        "Préval",
+        "Saint-Aubin-des-Coudrais",
+        "Saint-Martin-des-Monts",
+        "Souvigné-sur-Même",
+        "Villaines-la-Gonais"
+      ],
+      "communeCount": 13,
+      "center": [0.6442, 48.1847],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 48.1351,
+        "maxLat": 48.2364,
+        "minLon": 0.526,
+        "maxLon": 0.7063
+      },
+      "totalPopulation": 17243,
+      "totalSurface": 18126
+    },
+    "72430": {
+      "communes": [
+        "Asnières-sur-Vègre",
+        "Avoise",
+        "Chantenay-Villedieu",
+        "Fercé-sur-Sarthe",
+        "Noyen-sur-Sarthe",
+        "Pirmil",
+        "Saint-Jean-du-Bois",
+        "Saint-Pierre-des-Bois",
+        "Tassé"
+      ],
+      "communeCount": 9,
+      "center": [-0.1137, 47.8875],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 47.8657,
+        "maxLat": 47.9392,
+        "minLon": -0.233,
+        "maxLon": -0.0309
+      },
+      "totalPopulation": 6518,
+      "totalSurface": 17059
+    },
+    "72440": {
+      "communes": [
+        "Bouloire",
+        "Coudrecieux",
+        "Maisoncelles",
+        "Saint-Michel-de-Chavaignes",
+        "Tresson",
+        "Val-de-la-Hune"
+      ],
+      "communeCount": 6,
+      "center": [0.55, 47.9665],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 47.9024,
+        "maxLat": 48.0192,
+        "minLon": 0.4688,
+        "maxLon": 0.6308
+      },
+      "totalPopulation": 5177,
+      "totalSurface": 15251
+    },
+    "72450": {
+      "communes": ["Lombron", "Montfort-le-Gesnois"],
+      "communeCount": 2,
+      "center": [0.4174, 48.0612],
+      "coverageRadius": 2.2,
+      "boundingBox": {
+        "minLat": 48.0484,
+        "maxLat": 48.0806,
+        "minLon": 0.4162,
+        "maxLon": 0.4182
+      },
+      "totalPopulation": 4865,
+      "totalSurface": 4301
+    },
+    "72460": {
+      "communes": ["Saint-Corneille", "Savigné-l'Évêque", "Sillé-le-Philippe"],
+      "communeCount": 3,
+      "center": [0.3195, 48.0796],
+      "coverageRadius": 3.9,
+      "boundingBox": {
+        "minLat": 48.0666,
+        "maxLat": 48.107,
+        "minLon": 0.3016,
+        "maxLon": 0.3518
+      },
+      "totalPopulation": 6639,
+      "totalSurface": 5028
+    },
+    "72470": {
+      "communes": ["Champagné", "Fatines", "Saint-Mars-la-Brière"],
+      "communeCount": 3,
+      "center": [0.349, 48.0276],
+      "coverageRadius": 2,
+      "boundingBox": {
+        "minLat": 48.0215,
+        "maxLat": 48.0455,
+        "minLon": 0.33,
+        "maxLon": 0.3753
+      },
+      "totalPopulation": 7297,
+      "totalSurface": 5400
+    },
+    "72500": {
+      "communes": [
+        "Beaumont-Pied-de-Bœuf",
+        "La Bruère-sur-Loir",
+        "Montval-sur-Loir",
+        "Chenu",
+        "Dissay-sous-Courcillon",
+        "Flée",
+        "Jupilles",
+        "Lavernat",
+        "Luceau",
+        "Nogent-sur-Loir",
+        "Saint-Pierre-de-Chevillé",
+        "Thoiré-sur-Dinan",
+        "Vaas"
+      ],
+      "communeCount": 13,
+      "center": [0.403, 47.6969],
+      "coverageRadius": 10.7,
+      "boundingBox": {
+        "minLat": 47.6128,
+        "maxLat": 47.7923,
+        "minLon": 0.3134,
+        "maxLon": 0.4749
+      },
+      "totalPopulation": 13187,
+      "totalSurface": 28502
+    },
+    "72510": {
+      "communes": ["Château-l'Hermitage", "Mansigné", "Pontvallain", "Requeil", "Saint-Jean-de-la-Motte"],
+      "communeCount": 5,
+      "center": [0.1455, 47.7579],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 47.7431,
+        "maxLat": 47.8027,
+        "minLon": 0.0561,
+        "maxLon": 0.1922
+      },
+      "totalPopulation": 5482,
+      "totalSurface": 12776
+    },
+    "72530": {
+      "communes": ["Yvré-l'Évêque"],
+      "communeCount": 1,
+      "center": [0.2706, 48.014],
+      "coverageRadius": 2.97,
+      "totalPopulation": 4187,
+      "totalSurface": 2766
+    },
+    "72540": {
+      "communes": [
+        "Amné",
+        "Auvers-sous-Montfaucon",
+        "Chassillé",
+        "Chemiré-en-Charnie",
+        "Crannes-en-Champagne",
+        "Épineu-le-Chevreuil",
+        "Joué-en-Charnie",
+        "Longnes",
+        "Loué",
+        "Mareil-en-Champagne",
+        "Saint-Christophe-en-Champagne",
+        "Tassillé",
+        "Vallon-sur-Gée"
+      ],
+      "communeCount": 13,
+      "center": [-0.1228, 48.001],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 47.9627,
+        "maxLat": 48.0537,
+        "minLon": -0.2032,
+        "maxLon": -0.0495
+      },
+      "totalPopulation": 6354,
+      "totalSurface": 15453
+    },
+    "72550": {
+      "communes": ["Brains-sur-Gée", "Chaufour-Notre-Dame", "Coulans-sur-Gée", "Degré", "Fay", "La Quinte"],
+      "communeCount": 6,
+      "center": [0.0369, 48.0284],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 48.0085,
+        "maxLat": 48.0598,
+        "minLon": -0.0268,
+        "maxLon": 0.0752
+      },
+      "totalPopulation": 5851,
+      "totalSurface": 8292
+    },
+    "72560": {
+      "communes": ["Changé"],
+      "communeCount": 1,
+      "center": [0.2807, 47.9871],
+      "coverageRadius": 3.35,
+      "totalPopulation": 6803,
+      "totalSurface": 3526
+    },
+    "72600": {
+      "communes": [
+        "Aillières-Beauvoir",
+        "Les Aulneaux",
+        "Blèves",
+        "Commerveil",
+        "Contilly",
+        "Villeneuve-en-Perseigne",
+        "Louvigny",
+        "Louzes",
+        "Mamers",
+        "Marollette",
+        "Neufchâtel-en-Saosnois",
+        "Panon",
+        "Pizieux",
+        "Saint-Calez-en-Saosnois",
+        "Saint-Longis",
+        "Saint-Pierre-des-Ormes",
+        "Saint-Rémy-des-Monts",
+        "Saint-Rémy-du-Val",
+        "Saint-Vincent-des-Prés",
+        "Saosnes",
+        "Vezot",
+        "Villaines-la-Carelle"
+      ],
+      "communeCount": 22,
+      "center": [0.3281, 48.3664],
+      "coverageRadius": 10.6,
+      "boundingBox": {
+        "minLat": 48.2963,
+        "maxLat": 48.456,
+        "minLon": 0.2016,
+        "maxLon": 0.4212
+      },
+      "totalPopulation": 12591,
+      "totalSurface": 28788
+    },
+    "72610": {
+      "communes": [
+        "Ancinnes",
+        "Arçonnay",
+        "Bérus",
+        "Béthon",
+        "Bourg-le-Roi",
+        "Champfleur",
+        "Chenay",
+        "Chérisay",
+        "Villeneuve-en-Perseigne",
+        "Fyé",
+        "Grandchamp",
+        "Livet-en-Saosnois",
+        "Oisseau-le-Petit",
+        "Rouessé-Fontaine",
+        "Saint-Paterne - Le Chevain",
+        "Thoiré-sous-Contensor"
+      ],
+      "communeCount": 16,
+      "center": [0.1379, 48.3906],
+      "coverageRadius": 10.7,
+      "boundingBox": {
+        "minLat": 48.3028,
+        "maxLat": 48.45,
+        "minLon": 0.0518,
+        "maxLon": 0.254
+      },
+      "totalPopulation": 12292,
+      "totalSurface": 22069
+    },
+    "72650": {
+      "communes": ["Aigné", "La Bazoge", "La Chapelle-Saint-Aubin", "La Milesse", "Saint-Saturnin", "Trangé"],
+      "communeCount": 6,
+      "center": [0.145, 48.0647],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": 48.0271,
+        "maxLat": 48.1003,
+        "minLon": 0.115,
+        "maxLon": 0.1625
+      },
+      "totalPopulation": 14724,
+      "totalSurface": 7308
+    },
+    "72700": {
+      "communes": ["Allonnes", "Étival-lès-le-Mans", "Pruillé-le-Chétif", "Rouillon", "Saint-Georges-du-Bois", "Spay"],
+      "communeCount": 6,
+      "center": [0.1411, 47.9674],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 47.923,
+        "maxLat": 48.0048,
+        "minLon": 0.0884,
+        "maxLon": 0.1606
+      },
+      "totalPopulation": 21326,
+      "totalSurface": 6959
+    },
+    "72800": {
+      "communes": [
+        "Aubigné-Racan",
+        "La Chapelle-aux-Choux",
+        "Coulongé",
+        "Luché-Pringé",
+        "Le Lude",
+        "Saint-Germain-d'Arcé",
+        "Savigné-sous-le-Lude",
+        "Thorée-les-Pins"
+      ],
+      "communeCount": 8,
+      "center": [0.1644, 47.6674],
+      "coverageRadius": 10.7,
+      "boundingBox": {
+        "minLat": 47.6184,
+        "maxLat": 47.7039,
+        "minLon": 0.0419,
+        "maxLon": 0.2909
+      },
+      "totalPopulation": 9999,
+      "totalSurface": 27160
+    }
+  }
+}

@@ -1,0 +1,7116 @@
+{
+  "departmentCode": "61",
+  "departmentName": "Orne",
+  "stats": {
+    "communeCount": 381,
+    "totalPopulation": 275463,
+    "totalSurface": 614091
+  },
+  "communes": [
+    {
+      "nom": "Alençon",
+      "code": "61001",
+      "codesPostaux": ["61000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0923, 48.431]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0821, 48.4301]
+      },
+      "population": 25667,
+      "surface": 1079.1,
+      "radius": 1.85
+    },
+    {
+      "nom": "Almenêches",
+      "code": "61002",
+      "codesPostaux": ["61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1242, 48.6975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1092, 48.6978]
+      },
+      "population": 642,
+      "surface": 2037.26,
+      "radius": 2.55
+    },
+    {
+      "nom": "Appenai-sous-Bellême",
+      "code": "61005",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5661, 48.3398]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5574, 48.3446]
+      },
+      "population": 277,
+      "surface": 1091.5,
+      "radius": 1.86
+    },
+    {
+      "nom": "Argentan",
+      "code": "61006",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.013, 48.7263]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0165, 48.744]
+      },
+      "population": 13494,
+      "surface": 1841.76,
+      "radius": 2.42
+    },
+    {
+      "nom": "Athis-Val de Rouvre",
+      "code": "61007",
+      "codesPostaux": ["61100", "61430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4621, 48.7934]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4987, 48.811]
+      },
+      "population": 4208,
+      "surface": 7775.88,
+      "radius": 4.98
+    },
+    {
+      "nom": "Aube",
+      "code": "61008",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5479, 48.7312]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5451, 48.7404]
+      },
+      "population": 1249,
+      "surface": 572.92,
+      "radius": 1.35
+    },
+    {
+      "nom": "Aubry-le-Panthou",
+      "code": "61010",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2219, 48.8531]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2327, 48.8509]
+      },
+      "population": 130,
+      "surface": 684.64,
+      "radius": 1.48
+    },
+    {
+      "nom": "Aubusson",
+      "code": "61011",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5534, 48.7794]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.552, 48.7845]
+      },
+      "population": 396,
+      "surface": 393.8,
+      "radius": 1.12
+    },
+    {
+      "nom": "Auguaise",
+      "code": "61012",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5521, 48.6964]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5564, 48.7006]
+      },
+      "population": 197,
+      "surface": 221.11,
+      "radius": 0.84
+    },
+    {
+      "nom": "Aunay-les-Bois",
+      "code": "61013",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2957, 48.5448]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2906, 48.5434]
+      },
+      "population": 142,
+      "surface": 856.22,
+      "radius": 1.65
+    },
+    {
+      "nom": "Aunou-le-Faucon",
+      "code": "61014",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0532, 48.7189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0481, 48.7218]
+      },
+      "population": 247,
+      "surface": 676.1,
+      "radius": 1.47
+    },
+    {
+      "nom": "Aunou-sur-Orne",
+      "code": "61015",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2387, 48.608]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2281, 48.6117]
+      },
+      "population": 276,
+      "surface": 1819.69,
+      "radius": 2.41
+    },
+    {
+      "nom": "Avernes-Saint-Gourgon",
+      "code": "61018",
+      "codesPostaux": ["61470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3178, 48.9359]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3214, 48.9396]
+      },
+      "population": 69,
+      "surface": 1213.55,
+      "radius": 1.97
+    },
+    {
+      "nom": "Avoine",
+      "code": "61020",
+      "codesPostaux": ["61150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1012, 48.6734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0958, 48.6722]
+      },
+      "population": 217,
+      "surface": 952.94,
+      "radius": 1.74
+    },
+    {
+      "nom": "Avrilly",
+      "code": "61021",
+      "codesPostaux": ["61700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6177, 48.5367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6141, 48.5383]
+      },
+      "population": 94,
+      "surface": 550.71,
+      "radius": 1.32
+    },
+    {
+      "nom": "Bagnoles de l'Orne Normandie",
+      "code": "61483",
+      "codesPostaux": ["61140", "61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4174, 48.5696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4213, 48.553]
+      },
+      "population": 2698,
+      "surface": 1593,
+      "radius": 2.25
+    },
+    {
+      "nom": "Bailleul",
+      "code": "61023",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0223, 48.8129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0201, 48.8083]
+      },
+      "population": 608,
+      "surface": 1691.02,
+      "radius": 2.32
+    },
+    {
+      "nom": "Banvou",
+      "code": "61024",
+      "codesPostaux": ["61450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5537, 48.6657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5515, 48.666]
+      },
+      "population": 630,
+      "surface": 1299.64,
+      "radius": 2.03
+    },
+    {
+      "nom": "Barville",
+      "code": "61026",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3449, 48.4737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.34, 48.4831]
+      },
+      "population": 185,
+      "surface": 760.64,
+      "radius": 1.56
+    },
+    {
+      "nom": "Bazoches-au-Houlme",
+      "code": "61028",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2674, 48.8271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2417, 48.8156]
+      },
+      "population": 455,
+      "surface": 2893.79,
+      "radius": 3.03
+    },
+    {
+      "nom": "Bazoches-sur-Hoëne",
+      "code": "61029",
+      "codesPostaux": ["61560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4644, 48.5509]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4705, 48.5529]
+      },
+      "population": 833,
+      "surface": 2151.72,
+      "radius": 2.62
+    },
+    {
+      "nom": "Beaufai",
+      "code": "61032",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5125, 48.758]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5144, 48.7498]
+      },
+      "population": 327,
+      "surface": 1297.54,
+      "radius": 2.03
+    },
+    {
+      "nom": "Beaulieu",
+      "code": "61034",
+      "codesPostaux": ["61190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7341, 48.6801]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.744, 48.6802]
+      },
+      "population": 203,
+      "surface": 1807.88,
+      "radius": 2.4
+    },
+    {
+      "nom": "Beauvain",
+      "code": "61035",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3178, 48.6213]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3095, 48.6082]
+      },
+      "population": 265,
+      "surface": 1272.36,
+      "radius": 2.01
+    },
+    {
+      "nom": "Belfonds",
+      "code": "61036",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1089, 48.6117]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1176, 48.6112]
+      },
+      "population": 208,
+      "surface": 1426.33,
+      "radius": 2.13
+    },
+    {
+      "nom": "Belforêt-en-Perche",
+      "code": "61196",
+      "codesPostaux": ["61130", "61360", "61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5039, 48.3841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5231, 48.3743]
+      },
+      "population": 1486,
+      "surface": 7536.2,
+      "radius": 4.9
+    },
+    {
+      "nom": "Bellavilliers",
+      "code": "61037",
+      "codesPostaux": ["61360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4843, 48.4208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4984, 48.4225]
+      },
+      "population": 135,
+      "surface": 1587.25,
+      "radius": 2.25
+    },
+    {
+      "nom": "Bellême",
+      "code": "61038",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5638, 48.3719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5616, 48.3767]
+      },
+      "population": 1457,
+      "surface": 172.11,
+      "radius": 0.74
+    },
+    {
+      "nom": "Bellou-en-Houlme",
+      "code": "61040",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4416, 48.6912]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4413, 48.6905]
+      },
+      "population": 1031,
+      "surface": 3899.86,
+      "radius": 3.52
+    },
+    {
+      "nom": "Bellou-le-Trichard",
+      "code": "61041",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5549, 48.2676]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5467, 48.2682]
+      },
+      "population": 196,
+      "surface": 968.34,
+      "radius": 1.76
+    },
+    {
+      "nom": "Berd'huis",
+      "code": "61043",
+      "codesPostaux": ["61340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7411, 48.3517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7446, 48.346]
+      },
+      "population": 1094,
+      "surface": 1146.52,
+      "radius": 1.91
+    },
+    {
+      "nom": "Berjou",
+      "code": "61044",
+      "codesPostaux": ["61430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4813, 48.8512]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4805, 48.8497]
+      },
+      "population": 427,
+      "surface": 894.42,
+      "radius": 1.69
+    },
+    {
+      "nom": "Bizou",
+      "code": "61046",
+      "codesPostaux": ["61290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7484, 48.4909]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.751, 48.4953]
+      },
+      "population": 141,
+      "surface": 917.03,
+      "radius": 1.71
+    },
+    {
+      "nom": "Boëcé",
+      "code": "61048",
+      "codesPostaux": ["61560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4535, 48.5148]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4497, 48.5135]
+      },
+      "population": 125,
+      "surface": 240.12,
+      "radius": 0.87
+    },
+    {
+      "nom": "Boischampré",
+      "code": "61375",
+      "codesPostaux": ["61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0084, 48.6765]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0059, 48.666]
+      },
+      "population": 1173,
+      "surface": 4722.33,
+      "radius": 3.88
+    },
+    {
+      "nom": "Boissei-la-Lande",
+      "code": "61049",
+      "codesPostaux": ["61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0592, 48.6879]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0621, 48.6826]
+      },
+      "population": 109,
+      "surface": 718.36,
+      "radius": 1.51
+    },
+    {
+      "nom": "Boitron",
+      "code": "61051",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2687, 48.5696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2655, 48.5612]
+      },
+      "population": 348,
+      "surface": 1351.03,
+      "radius": 2.07
+    },
+    {
+      "nom": "Bonnefoi",
+      "code": "61052",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5652, 48.6751]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5683, 48.6725]
+      },
+      "population": 189,
+      "surface": 546.32,
+      "radius": 1.32
+    },
+    {
+      "nom": "Bonsmoulins",
+      "code": "61053",
+      "codesPostaux": ["61380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5432, 48.661]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5363, 48.6501]
+      },
+      "population": 232,
+      "surface": 760.01,
+      "radius": 1.56
+    },
+    {
+      "nom": "Boucé",
+      "code": "61055",
+      "codesPostaux": ["61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0935, 48.6306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0904, 48.6446]
+      },
+      "population": 567,
+      "surface": 2040.88,
+      "radius": 2.55
+    },
+    {
+      "nom": "Brethel",
+      "code": "61060",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5426, 48.7167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5411, 48.7203]
+      },
+      "population": 136,
+      "surface": 301.26,
+      "radius": 0.98
+    },
+    {
+      "nom": "Bretoncelles",
+      "code": "61061",
+      "codesPostaux": ["61110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9055, 48.4388]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8884, 48.4318]
+      },
+      "population": 1462,
+      "surface": 4039.73,
+      "radius": 3.59
+    },
+    {
+      "nom": "Brieux",
+      "code": "61062",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0802, 48.8334]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0914, 48.8371]
+      },
+      "population": 89,
+      "surface": 519.62,
+      "radius": 1.29
+    },
+    {
+      "nom": "Briouze",
+      "code": "61063",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3852, 48.7084]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3659, 48.698]
+      },
+      "population": 1511,
+      "surface": 1723.34,
+      "radius": 2.34
+    },
+    {
+      "nom": "Brullemail",
+      "code": "61064",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3238, 48.6582]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3293, 48.6561]
+      },
+      "population": 92,
+      "surface": 1045.2,
+      "radius": 1.82
+    },
+    {
+      "nom": "Buré",
+      "code": "61066",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.402, 48.5048]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4059, 48.5175]
+      },
+      "population": 101,
+      "surface": 577.56,
+      "radius": 1.36
+    },
+    {
+      "nom": "Bures",
+      "code": "61067",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3974, 48.557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3991, 48.5636]
+      },
+      "population": 166,
+      "surface": 960.18,
+      "radius": 1.75
+    },
+    {
+      "nom": "Bursard",
+      "code": "61068",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.204, 48.5404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2121, 48.5406]
+      },
+      "population": 200,
+      "surface": 1067.6,
+      "radius": 1.84
+    },
+    {
+      "nom": "Cahan",
+      "code": "61069",
+      "codesPostaux": ["61430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4475, 48.8577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4437, 48.8588]
+      },
+      "population": 162,
+      "surface": 591.38,
+      "radius": 1.37
+    },
+    {
+      "nom": "Caligny",
+      "code": "61070",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6013, 48.8025]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5949, 48.8079]
+      },
+      "population": 845,
+      "surface": 1516.94,
+      "radius": 2.2
+    },
+    {
+      "nom": "Camembert",
+      "code": "61071",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1701, 48.8924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1777, 48.8936]
+      },
+      "population": 169,
+      "surface": 1025.9,
+      "radius": 1.81
+    },
+    {
+      "nom": "Canapville",
+      "code": "61072",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2534, 48.9485]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2709, 48.9476]
+      },
+      "population": 218,
+      "surface": 819.84,
+      "radius": 1.62
+    },
+    {
+      "nom": "Carrouges",
+      "code": "61074",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1603, 48.5688]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1447, 48.5682]
+      },
+      "population": 626,
+      "surface": 852.08,
+      "radius": 1.65
+    },
+    {
+      "nom": "Ceaucé",
+      "code": "61075",
+      "codesPostaux": ["61330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6321, 48.4892]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6273, 48.4971]
+      },
+      "population": 1164,
+      "surface": 4166.23,
+      "radius": 3.64
+    },
+    {
+      "nom": "Cerisé",
+      "code": "61077",
+      "codesPostaux": ["61000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1314, 48.4451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1287, 48.4418]
+      },
+      "population": 853,
+      "surface": 443.31,
+      "radius": 1.19
+    },
+    {
+      "nom": "Cerisy-Belle-Étoile",
+      "code": "61078",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6256, 48.7841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6263, 48.7963]
+      },
+      "population": 706,
+      "surface": 1343.53,
+      "radius": 2.07
+    },
+    {
+      "nom": "Ceton",
+      "code": "61079",
+      "codesPostaux": ["61260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7563, 48.2209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7476, 48.2248]
+      },
+      "population": 1765,
+      "surface": 5988.1,
+      "radius": 4.37
+    },
+    {
+      "nom": "Chahains",
+      "code": "61080",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1099, 48.5614]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1142, 48.5627]
+      },
+      "population": 82,
+      "surface": 758.93,
+      "radius": 1.55
+    },
+    {
+      "nom": "Chailloué",
+      "code": "61081",
+      "codesPostaux": ["61240", "61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2124, 48.6597]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1954, 48.6517]
+      },
+      "population": 892,
+      "surface": 3585.84,
+      "radius": 3.38
+    },
+    {
+      "nom": "Champ-Haut",
+      "code": "61088",
+      "codesPostaux": ["61240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3232, 48.7276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3257, 48.7272]
+      },
+      "population": 42,
+      "surface": 512.93,
+      "radius": 1.28
+    },
+    {
+      "nom": "Champcerie",
+      "code": "61084",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2288, 48.7993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2267, 48.7994]
+      },
+      "population": 177,
+      "surface": 900.71,
+      "radius": 1.69
+    },
+    {
+      "nom": "Champeaux-sur-Sarthe",
+      "code": "61087",
+      "codesPostaux": ["61560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4458, 48.5743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4424, 48.5767]
+      },
+      "population": 160,
+      "surface": 946.24,
+      "radius": 1.74
+    },
+    {
+      "nom": "Champosoult",
+      "code": "61089",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1662, 48.8649]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1828, 48.8662]
+      },
+      "population": 102,
+      "surface": 707.77,
+      "radius": 1.5
+    },
+    {
+      "nom": "Champsecret",
+      "code": "61091",
+      "codesPostaux": ["61700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5254, 48.6066]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.553, 48.609]
+      },
+      "population": 961,
+      "surface": 4510.94,
+      "radius": 3.79
+    },
+    {
+      "nom": "Chandai",
+      "code": "61092",
+      "codesPostaux": ["61300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7444, 48.7424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7346, 48.7538]
+      },
+      "population": 681,
+      "surface": 1382.2,
+      "radius": 2.1
+    },
+    {
+      "nom": "Chanu",
+      "code": "61093",
+      "codesPostaux": ["61800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6733, 48.7242]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6783, 48.7298]
+      },
+      "population": 1248,
+      "surface": 1568.56,
+      "radius": 2.23
+    },
+    {
+      "nom": "Charencey",
+      "code": "61429",
+      "codesPostaux": ["61190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7597, 48.6394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7562, 48.6475]
+      },
+      "population": 755,
+      "surface": 4572.68,
+      "radius": 3.82
+    },
+    {
+      "nom": "Chaumont",
+      "code": "61103",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3341, 48.8472]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.332, 48.8358]
+      },
+      "population": 167,
+      "surface": 1954.84,
+      "radius": 2.49
+    },
+    {
+      "nom": "Chemilli",
+      "code": "61105",
+      "codesPostaux": ["61360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4528, 48.3618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4435, 48.3647]
+      },
+      "population": 173,
+      "surface": 1097.22,
+      "radius": 1.87
+    },
+    {
+      "nom": "Ciral",
+      "code": "61107",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1343, 48.5115]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1385, 48.4946]
+      },
+      "population": 410,
+      "surface": 1809.07,
+      "radius": 2.4
+    },
+    {
+      "nom": "Cisai-Saint-Aubin",
+      "code": "61108",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3572, 48.7746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3451, 48.7757]
+      },
+      "population": 181,
+      "surface": 1459.44,
+      "radius": 2.16
+    },
+    {
+      "nom": "Colombiers",
+      "code": "61111",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.047, 48.4746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0532, 48.4692]
+      },
+      "population": 334,
+      "surface": 1225.6,
+      "radius": 1.98
+    },
+    {
+      "nom": "Comblot",
+      "code": "61113",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5854, 48.4617]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5932, 48.4614]
+      },
+      "population": 61,
+      "surface": 436.7,
+      "radius": 1.18
+    },
+    {
+      "nom": "Commeaux",
+      "code": "61114",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0958, 48.7874]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1118, 48.7865]
+      },
+      "population": 149,
+      "surface": 637.86,
+      "radius": 1.42
+    },
+    {
+      "nom": "Condé-sur-Sarthe",
+      "code": "61117",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0319, 48.4316]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0351, 48.4323]
+      },
+      "population": 2492,
+      "surface": 846.5,
+      "radius": 1.64
+    },
+    {
+      "nom": "Corbon",
+      "code": "61118",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6445, 48.4577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6266, 48.4544]
+      },
+      "population": 112,
+      "surface": 848.7,
+      "radius": 1.64
+    },
+    {
+      "nom": "Coudehard",
+      "code": "61120",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1399, 48.848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1341, 48.8432]
+      },
+      "population": 78,
+      "surface": 846.89,
+      "radius": 1.64
+    },
+    {
+      "nom": "Coulimer",
+      "code": "61121",
+      "codesPostaux": ["61360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4634, 48.4795]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4644, 48.476]
+      },
+      "population": 292,
+      "surface": 1727.73,
+      "radius": 2.35
+    },
+    {
+      "nom": "Coulmer",
+      "code": "61122",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3024, 48.7664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2969, 48.7744]
+      },
+      "population": 81,
+      "surface": 670.44,
+      "radius": 1.46
+    },
+    {
+      "nom": "Coulonces",
+      "code": "61123",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0166, 48.8328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0083, 48.8356]
+      },
+      "population": 212,
+      "surface": 614.34,
+      "radius": 1.4
+    },
+    {
+      "nom": "Coulonges-sur-Sarthe",
+      "code": "61126",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3915, 48.5284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4002, 48.532]
+      },
+      "population": 486,
+      "surface": 971.87,
+      "radius": 1.76
+    },
+    {
+      "nom": "Cour-Maugis sur Huisne",
+      "code": "61050",
+      "codesPostaux": ["61110", "61340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6962, 48.4567]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7123, 48.4419]
+      },
+      "population": 580,
+      "surface": 4734,
+      "radius": 3.88
+    },
+    {
+      "nom": "Courgeon",
+      "code": "61129",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6159, 48.4786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6133, 48.4793]
+      },
+      "population": 351,
+      "surface": 1057.93,
+      "radius": 1.84
+    },
+    {
+      "nom": "Courgeoût",
+      "code": "61130",
+      "codesPostaux": ["61560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4829, 48.5069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4882, 48.5086]
+      },
+      "population": 460,
+      "surface": 1801.79,
+      "radius": 2.39
+    },
+    {
+      "nom": "Courtomer",
+      "code": "61133",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3504, 48.6267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3581, 48.6277]
+      },
+      "population": 725,
+      "surface": 2027.83,
+      "radius": 2.54
+    },
+    {
+      "nom": "Craménil",
+      "code": "61137",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3712, 48.7437]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.379, 48.7456]
+      },
+      "population": 128,
+      "surface": 814.56,
+      "radius": 1.61
+    },
+    {
+      "nom": "Croisilles",
+      "code": "61138",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2663, 48.7609]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.263, 48.7667]
+      },
+      "population": 193,
+      "surface": 1140.69,
+      "radius": 1.91
+    },
+    {
+      "nom": "Crouttes",
+      "code": "61139",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1459, 48.9241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1401, 48.9226]
+      },
+      "population": 304,
+      "surface": 1346.06,
+      "radius": 2.07
+    },
+    {
+      "nom": "Crulai",
+      "code": "61140",
+      "codesPostaux": ["61300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6599, 48.6937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6664, 48.7046]
+      },
+      "population": 803,
+      "surface": 2279.45,
+      "radius": 2.69
+    },
+    {
+      "nom": "Cuissai",
+      "code": "61141",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0026, 48.4723]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0158, 48.4723]
+      },
+      "population": 436,
+      "surface": 892.32,
+      "radius": 1.69
+    },
+    {
+      "nom": "Dame-Marie",
+      "code": "61142",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6179, 48.3582]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6152, 48.3545]
+      },
+      "population": 156,
+      "surface": 1332.01,
+      "radius": 2.06
+    },
+    {
+      "nom": "Damigny",
+      "code": "61143",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0699, 48.4519]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0733, 48.4479]
+      },
+      "population": 2425,
+      "surface": 487.91,
+      "radius": 1.25
+    },
+    {
+      "nom": "Domfront en Poiraie",
+      "code": "61145",
+      "codesPostaux": ["61700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6554, 48.5866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6504, 48.5942]
+      },
+      "population": 4131,
+      "surface": 6546.04,
+      "radius": 4.56
+    },
+    {
+      "nom": "Dompierre",
+      "code": "61146",
+      "codesPostaux": ["61700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5557, 48.6356]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5516, 48.6322]
+      },
+      "population": 384,
+      "surface": 864.66,
+      "radius": 1.66
+    },
+    {
+      "nom": "Durcet",
+      "code": "61148",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4444, 48.7397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4341, 48.7468]
+      },
+      "population": 289,
+      "surface": 965.42,
+      "radius": 1.75
+    },
+    {
+      "nom": "Échalou",
+      "code": "61149",
+      "codesPostaux": ["61440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4922, 48.7229]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4936, 48.7277]
+      },
+      "population": 328,
+      "surface": 561.38,
+      "radius": 1.34
+    },
+    {
+      "nom": "Échauffour",
+      "code": "61150",
+      "codesPostaux": ["61370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3949, 48.7352]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3873, 48.7399]
+      },
+      "population": 730,
+      "surface": 3321.28,
+      "radius": 3.25
+    },
+    {
+      "nom": "Écorcei",
+      "code": "61151",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5749, 48.7208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5784, 48.7215]
+      },
+      "population": 376,
+      "surface": 957.5,
+      "radius": 1.75
+    },
+    {
+      "nom": "Écorches",
+      "code": "61152",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0891, 48.8715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0922, 48.8673]
+      },
+      "population": 104,
+      "surface": 980.35,
+      "radius": 1.77
+    },
+    {
+      "nom": "Écouché-les-Vallées",
+      "code": "61153",
+      "codesPostaux": ["61150", "61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1316, 48.7232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1228, 48.7173]
+      },
+      "population": 2193,
+      "surface": 4149.58,
+      "radius": 3.63
+    },
+    {
+      "nom": "Écouves",
+      "code": "61341",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1057, 48.5101]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1014, 48.5035]
+      },
+      "population": 1673,
+      "surface": 3632.13,
+      "radius": 3.4
+    },
+    {
+      "nom": "Essay",
+      "code": "61156",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2471, 48.5388]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2474, 48.5419]
+      },
+      "population": 543,
+      "surface": 1602.91,
+      "radius": 2.26
+    },
+    {
+      "nom": "Faverolles",
+      "code": "61158",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2898, 48.6691]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2985, 48.6676]
+      },
+      "population": 132,
+      "surface": 1058.73,
+      "radius": 1.84
+    },
+    {
+      "nom": "Fay",
+      "code": "61159",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.411, 48.6637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4086, 48.6588]
+      },
+      "population": 69,
+      "surface": 849.57,
+      "radius": 1.64
+    },
+    {
+      "nom": "Feings",
+      "code": "61160",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.648, 48.5423]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.634, 48.5457]
+      },
+      "population": 191,
+      "surface": 2033.96,
+      "radius": 2.54
+    },
+    {
+      "nom": "Ferrières-la-Verrerie",
+      "code": "61166",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3819, 48.6534]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3766, 48.6516]
+      },
+      "population": 148,
+      "surface": 1462.58,
+      "radius": 2.16
+    },
+    {
+      "nom": "Flers",
+      "code": "61169",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5603, 48.7389]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5758, 48.7501]
+      },
+      "population": 14308,
+      "surface": 2144.72,
+      "radius": 2.61
+    },
+    {
+      "nom": "Fleuré",
+      "code": "61170",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0458, 48.6803]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0574, 48.6899]
+      },
+      "population": 205,
+      "surface": 1201.6,
+      "radius": 1.96
+    },
+    {
+      "nom": "Fontaine-les-Bassets",
+      "code": "61171",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0017, 48.8618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0053, 48.8591]
+      },
+      "population": 115,
+      "surface": 594.02,
+      "radius": 1.38
+    },
+    {
+      "nom": "Francheville",
+      "code": "61176",
+      "codesPostaux": ["61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0615, 48.6371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0553, 48.636]
+      },
+      "population": 132,
+      "surface": 957.68,
+      "radius": 1.75
+    },
+    {
+      "nom": "Fresnay-le-Samson",
+      "code": "61180",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2052, 48.8747]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2085, 48.883]
+      },
+      "population": 108,
+      "surface": 675.57,
+      "radius": 1.47
+    },
+    {
+      "nom": "Gacé",
+      "code": "61181",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3118, 48.7895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2952, 48.7957]
+      },
+      "population": 1771,
+      "surface": 649.12,
+      "radius": 1.44
+    },
+    {
+      "nom": "Gandelain",
+      "code": "61182",
+      "codesPostaux": ["61420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0852, 48.4724]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0882, 48.4792]
+      },
+      "population": 416,
+      "surface": 1493.41,
+      "radius": 2.18
+    },
+    {
+      "nom": "Gâprée",
+      "code": "61183",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2899, 48.6262]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2911, 48.6228]
+      },
+      "population": 144,
+      "surface": 1009.12,
+      "radius": 1.79
+    },
+    {
+      "nom": "Giel-Courteilles",
+      "code": "61189",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2117, 48.7638]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1967, 48.7644]
+      },
+      "population": 484,
+      "surface": 1273.44,
+      "radius": 2.01
+    },
+    {
+      "nom": "Ginai",
+      "code": "61190",
+      "codesPostaux": ["61310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2093, 48.7447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2177, 48.747]
+      },
+      "population": 72,
+      "surface": 934.29,
+      "radius": 1.72
+    },
+    {
+      "nom": "Gouffern en Auge",
+      "code": "61474",
+      "codesPostaux": ["61160", "61200", "61310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1126, 48.7851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0702, 48.7538]
+      },
+      "population": 3644,
+      "surface": 16699,
+      "radius": 7.29
+    },
+    {
+      "nom": "Guêprei",
+      "code": "61197",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0188, 48.8361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0069, 48.8362]
+      },
+      "population": 146,
+      "surface": 714.72,
+      "radius": 1.51
+    },
+    {
+      "nom": "Guerquesalles",
+      "code": "61198",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2179, 48.8967]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2068, 48.9072]
+      },
+      "population": 133,
+      "surface": 863.83,
+      "radius": 1.66
+    },
+    {
+      "nom": "Habloville",
+      "code": "61199",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1761, 48.7862]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1706, 48.789]
+      },
+      "population": 335,
+      "surface": 1177.21,
+      "radius": 1.94
+    },
+    {
+      "nom": "Hauterive",
+      "code": "61202",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2057, 48.4807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1999, 48.4782]
+      },
+      "population": 459,
+      "surface": 699.22,
+      "radius": 1.49
+    },
+    {
+      "nom": "Héloup",
+      "code": "61203",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0353, 48.3994]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0274, 48.3985]
+      },
+      "population": 887,
+      "surface": 1288.04,
+      "radius": 2.02
+    },
+    {
+      "nom": "Igé",
+      "code": "61207",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5129, 48.3142]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5207, 48.3255]
+      },
+      "population": 589,
+      "surface": 2792.47,
+      "radius": 2.98
+    },
+    {
+      "nom": "Irai",
+      "code": "61208",
+      "codesPostaux": ["61190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6883, 48.6721]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6973, 48.671]
+      },
+      "population": 609,
+      "surface": 1509.07,
+      "radius": 2.19
+    },
+    {
+      "nom": "Joué-du-Bois",
+      "code": "61209",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2356, 48.5854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2293, 48.582]
+      },
+      "population": 386,
+      "surface": 2129.73,
+      "radius": 2.6
+    },
+    {
+      "nom": "Joué-du-Plain",
+      "code": "61210",
+      "codesPostaux": ["61150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1462, 48.6829]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1228, 48.6903]
+      },
+      "population": 237,
+      "surface": 1468.81,
+      "radius": 2.16
+    },
+    {
+      "nom": "Juvigny Val d'Andaine",
+      "code": "61211",
+      "codesPostaux": ["61140", "61330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5205, 48.5269]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.509, 48.5523]
+      },
+      "population": 2104,
+      "surface": 8000.72,
+      "radius": 5.05
+    },
+    {
+      "nom": "Juvigny-sur-Orne",
+      "code": "61212",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.024, 48.7247]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0411, 48.7225]
+      },
+      "population": 119,
+      "surface": 331.38,
+      "radius": 1.03
+    },
+    {
+      "nom": "L'Aigle",
+      "code": "61214",
+      "codesPostaux": ["61300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6118, 48.7566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6289, 48.7645]
+      },
+      "population": 7771,
+      "surface": 1846.22,
+      "radius": 2.42
+    },
+    {
+      "nom": "L'Hôme-Chamondot",
+      "code": "61206",
+      "codesPostaux": ["61290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7373, 48.6032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.712, 48.5876]
+      },
+      "population": 260,
+      "surface": 1605.19,
+      "radius": 2.26
+    },
+    {
+      "nom": "L'Orée-d'Écouves",
+      "code": "61228",
+      "codesPostaux": ["61320", "61420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0135, 48.5182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0325, 48.5148]
+      },
+      "population": 730,
+      "surface": 4457.76,
+      "radius": 3.77
+    },
+    {
+      "nom": "La Bazoque",
+      "code": "61030",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.598, 48.7856]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5982, 48.7919]
+      },
+      "population": 272,
+      "surface": 268.93,
+      "radius": 0.93
+    },
+    {
+      "nom": "La Bellière",
+      "code": "61039",
+      "codesPostaux": ["61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0173, 48.6182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0352, 48.6265]
+      },
+      "population": 129,
+      "surface": 1375.31,
+      "radius": 2.09
+    },
+    {
+      "nom": "La Chapelle-au-Moine",
+      "code": "61094",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5921, 48.7039]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5848, 48.7073]
+      },
+      "population": 587,
+      "surface": 543.59,
+      "radius": 1.32
+    },
+    {
+      "nom": "La Chapelle-Biche",
+      "code": "61095",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6231, 48.7139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6292, 48.7097]
+      },
+      "population": 532,
+      "surface": 647.86,
+      "radius": 1.44
+    },
+    {
+      "nom": "La Chapelle-Montligeon",
+      "code": "61097",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6583, 48.4836]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6542, 48.4836]
+      },
+      "population": 510,
+      "surface": 844.42,
+      "radius": 1.64
+    },
+    {
+      "nom": "La Chapelle-près-Sées",
+      "code": "61098",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1493, 48.5692]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.16, 48.571]
+      },
+      "population": 488,
+      "surface": 985.72,
+      "radius": 1.77
+    },
+    {
+      "nom": "La Chapelle-Souëf",
+      "code": "61099",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5893, 48.3177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5969, 48.3227]
+      },
+      "population": 245,
+      "surface": 1126.12,
+      "radius": 1.89
+    },
+    {
+      "nom": "La Chapelle-Viel",
+      "code": "61100",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6123, 48.7114]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6168, 48.7038]
+      },
+      "population": 289,
+      "surface": 1178.27,
+      "radius": 1.94
+    },
+    {
+      "nom": "La Chaux",
+      "code": "61104",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2668, 48.6007]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2579, 48.6106]
+      },
+      "population": 53,
+      "surface": 510.41,
+      "radius": 1.27
+    },
+    {
+      "nom": "La Coulonche",
+      "code": "61124",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4635, 48.6375]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4552, 48.6472]
+      },
+      "population": 498,
+      "surface": 1404.58,
+      "radius": 2.11
+    },
+    {
+      "nom": "La Ferrière-au-Doyen",
+      "code": "61162",
+      "codesPostaux": ["61380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5072, 48.6781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4989, 48.6663]
+      },
+      "population": 156,
+      "surface": 2264.84,
+      "radius": 2.68
+    },
+    {
+      "nom": "La Ferrière-aux-Étangs",
+      "code": "61163",
+      "codesPostaux": ["61450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5069, 48.6527]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5204, 48.6629]
+      },
+      "population": 1531,
+      "surface": 1115.26,
+      "radius": 1.88
+    },
+    {
+      "nom": "La Ferrière-Béchet",
+      "code": "61164",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0736, 48.573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0704, 48.5796]
+      },
+      "population": 250,
+      "surface": 1383.28,
+      "radius": 2.1
+    },
+    {
+      "nom": "La Ferrière-Bochard",
+      "code": "61165",
+      "codesPostaux": ["61420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0345, 48.4143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0312, 48.4123]
+      },
+      "population": 706,
+      "surface": 1082.43,
+      "radius": 1.86
+    },
+    {
+      "nom": "La Ferté Macé",
+      "code": "61168",
+      "codesPostaux": ["61410", "61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3592, 48.5688]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3585, 48.5897]
+      },
+      "population": 5095,
+      "surface": 3216.47,
+      "radius": 3.2
+    },
+    {
+      "nom": "La Ferté-en-Ouche",
+      "code": "61167",
+      "codesPostaux": ["61470", "61550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4951, 48.8436]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5114, 48.8408]
+      },
+      "population": 2960,
+      "surface": 13262.77,
+      "radius": 6.5
+    },
+    {
+      "nom": "La Fresnaie-Fayel",
+      "code": "61178",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2279, 48.8343]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2227, 48.8288]
+      },
+      "population": 51,
+      "surface": 505.36,
+      "radius": 1.27
+    },
+    {
+      "nom": "La Gonfrière",
+      "code": "61193",
+      "codesPostaux": ["61550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4919, 48.8145]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4711, 48.8181]
+      },
+      "population": 274,
+      "surface": 1300.28,
+      "radius": 2.03
+    },
+    {
+      "nom": "La Lande-de-Goult",
+      "code": "61216",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0535, 48.5852]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.047, 48.5853]
+      },
+      "population": 186,
+      "surface": 2854.11,
+      "radius": 3.01
+    },
+    {
+      "nom": "La Lande-de-Lougé",
+      "code": "61217",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2499, 48.7021]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2507, 48.6926]
+      },
+      "population": 57,
+      "surface": 497.56,
+      "radius": 1.26
+    },
+    {
+      "nom": "La Lande-Patry",
+      "code": "61218",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5988, 48.7529]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6051, 48.7567]
+      },
+      "population": 1752,
+      "surface": 649.02,
+      "radius": 1.44
+    },
+    {
+      "nom": "La Lande-Saint-Siméon",
+      "code": "61219",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4311, 48.8271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4364, 48.8247]
+      },
+      "population": 163,
+      "surface": 541.67,
+      "radius": 1.31
+    },
+    {
+      "nom": "La Madeleine-Bouvet",
+      "code": "61241",
+      "codesPostaux": ["61110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8952, 48.4712]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9039, 48.4708]
+      },
+      "population": 416,
+      "surface": 1288.32,
+      "radius": 2.03
+    },
+    {
+      "nom": "La Mesnière",
+      "code": "61277",
+      "codesPostaux": ["61560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4385, 48.5218]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4341, 48.5244]
+      },
+      "population": 277,
+      "surface": 1220.95,
+      "radius": 1.97
+    },
+    {
+      "nom": "La Motte-Fouquet",
+      "code": "61295",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2695, 48.5671]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.284, 48.5684]
+      },
+      "population": 159,
+      "surface": 947.68,
+      "radius": 1.74
+    },
+    {
+      "nom": "La Roche-Mabile",
+      "code": "61350",
+      "codesPostaux": ["61420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0699, 48.4892]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0505, 48.4877]
+      },
+      "population": 162,
+      "surface": 519.94,
+      "radius": 1.29
+    },
+    {
+      "nom": "La Selle-la-Forge",
+      "code": "61466",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5302, 48.736]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.541, 48.7333]
+      },
+      "population": 1396,
+      "surface": 817.04,
+      "radius": 1.61
+    },
+    {
+      "nom": "La Trinité-des-Laitiers",
+      "code": "61493",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3774, 48.7959]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3769, 48.7982]
+      },
+      "population": 64,
+      "surface": 1128.85,
+      "radius": 1.9
+    },
+    {
+      "nom": "La Ventrouze",
+      "code": "61500",
+      "codesPostaux": ["61190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6877, 48.6124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6964, 48.6087]
+      },
+      "population": 122,
+      "surface": 715.37,
+      "radius": 1.51
+    },
+    {
+      "nom": "Lalacelle",
+      "code": "61213",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1249, 48.4694]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1433, 48.4758]
+      },
+      "population": 266,
+      "surface": 1337.11,
+      "radius": 2.06
+    },
+    {
+      "nom": "Laleu",
+      "code": "61215",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3669, 48.5369]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.378, 48.5528]
+      },
+      "population": 361,
+      "surface": 1146.45,
+      "radius": 1.91
+    },
+    {
+      "nom": "Landigou",
+      "code": "61221",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4753, 48.7429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4731, 48.7441]
+      },
+      "population": 432,
+      "surface": 541.92,
+      "radius": 1.31
+    },
+    {
+      "nom": "Landisacq",
+      "code": "61222",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.654, 48.7507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.649, 48.7567]
+      },
+      "population": 772,
+      "surface": 1089.76,
+      "radius": 1.86
+    },
+    {
+      "nom": "Larré",
+      "code": "61224",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1658, 48.4939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.164, 48.4949]
+      },
+      "population": 467,
+      "surface": 566.87,
+      "radius": 1.34
+    },
+    {
+      "nom": "Le Bosc-Renoult",
+      "code": "61054",
+      "codesPostaux": ["61470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3128, 48.9149]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3056, 48.9138]
+      },
+      "population": 259,
+      "surface": 1284.44,
+      "radius": 2.02
+    },
+    {
+      "nom": "Le Bouillon",
+      "code": "61056",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0978, 48.5587]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1023, 48.5606]
+      },
+      "population": 167,
+      "surface": 1790.57,
+      "radius": 2.39
+    },
+    {
+      "nom": "Le Cercueil",
+      "code": "61076",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0087, 48.5962]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0224, 48.5961]
+      },
+      "population": 145,
+      "surface": 1342.62,
+      "radius": 2.07
+    },
+    {
+      "nom": "Le Chalange",
+      "code": "61082",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3128, 48.5895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3121, 48.5938]
+      },
+      "population": 84,
+      "surface": 635.45,
+      "radius": 1.42
+    },
+    {
+      "nom": "Le Champ-de-la-Pierre",
+      "code": "61085",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2071, 48.6008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2046, 48.6085]
+      },
+      "population": 29,
+      "surface": 412.06,
+      "radius": 1.15
+    },
+    {
+      "nom": "Le Château-d'Almenêches",
+      "code": "61101",
+      "codesPostaux": ["61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1322, 48.672]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1222, 48.6786]
+      },
+      "population": 185,
+      "surface": 1063.53,
+      "radius": 1.84
+    },
+    {
+      "nom": "Le Châtellier",
+      "code": "61102",
+      "codesPostaux": ["61450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5811, 48.6747]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5829, 48.6768]
+      },
+      "population": 402,
+      "surface": 834.75,
+      "radius": 1.63
+    },
+    {
+      "nom": "Le Grais",
+      "code": "61195",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3253, 48.6446]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3294, 48.6389]
+      },
+      "population": 206,
+      "surface": 1226.08,
+      "radius": 1.98
+    },
+    {
+      "nom": "Le Mage",
+      "code": "61242",
+      "codesPostaux": ["61290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8128, 48.5039]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8037, 48.5085]
+      },
+      "population": 217,
+      "surface": 2558.18,
+      "radius": 2.85
+    },
+    {
+      "nom": "Le Mêle-sur-Sarthe",
+      "code": "61258",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3536, 48.5116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3521, 48.5114]
+      },
+      "population": 659,
+      "surface": 62.24,
+      "radius": 0.45
+    },
+    {
+      "nom": "Le Ménil-Bérard",
+      "code": "61259",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.511, 48.7068]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5105, 48.7064]
+      },
+      "population": 68,
+      "surface": 745.09,
+      "radius": 1.54
+    },
+    {
+      "nom": "Le Ménil-Broût",
+      "code": "61261",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2396, 48.482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2303, 48.4827]
+      },
+      "population": 176,
+      "surface": 346.58,
+      "radius": 1.05
+    },
+    {
+      "nom": "Le Ménil-Ciboult",
+      "code": "61262",
+      "codesPostaux": ["61800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7924, 48.7637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7897, 48.7648]
+      },
+      "population": 117,
+      "surface": 626.75,
+      "radius": 1.41
+    },
+    {
+      "nom": "Le Ménil-de-Briouze",
+      "code": "61260",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3974, 48.6645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3988, 48.6768]
+      },
+      "population": 529,
+      "surface": 2151.22,
+      "radius": 2.62
+    },
+    {
+      "nom": "Le Ménil-Guyon",
+      "code": "61266",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2937, 48.5797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2954, 48.5827]
+      },
+      "population": 83,
+      "surface": 281.17,
+      "radius": 0.95
+    },
+    {
+      "nom": "Le Ménil-Scelleur",
+      "code": "61271",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.124, 48.614]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1191, 48.61]
+      },
+      "population": 87,
+      "surface": 545.56,
+      "radius": 1.32
+    },
+    {
+      "nom": "Le Ménil-Vicomte",
+      "code": "61272",
+      "codesPostaux": ["61240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2958, 48.7445]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2967, 48.7498]
+      },
+      "population": 26,
+      "surface": 383.47,
+      "radius": 1.1
+    },
+    {
+      "nom": "Le Pas-Saint-l'Homer",
+      "code": "61323",
+      "codesPostaux": ["61290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9265, 48.4932]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9339, 48.496]
+      },
+      "population": 128,
+      "surface": 943.29,
+      "radius": 1.73
+    },
+    {
+      "nom": "Le Pin-au-Haras",
+      "code": "61328",
+      "codesPostaux": ["61310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1386, 48.7461]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1414, 48.7452]
+      },
+      "population": 253,
+      "surface": 869.22,
+      "radius": 1.66
+    },
+    {
+      "nom": "Le Pin-la-Garenne",
+      "code": "61329",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5494, 48.4433]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5466, 48.4433]
+      },
+      "population": 619,
+      "surface": 1584.89,
+      "radius": 2.25
+    },
+    {
+      "nom": "Le Plantis",
+      "code": "61331",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3944, 48.6027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3795, 48.6019]
+      },
+      "population": 126,
+      "surface": 823.86,
+      "radius": 1.62
+    },
+    {
+      "nom": "Le Renouard",
+      "code": "61346",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0946, 48.9182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1011, 48.9207]
+      },
+      "population": 203,
+      "surface": 1449.96,
+      "radius": 2.15
+    },
+    {
+      "nom": "Le Sap-André",
+      "code": "61461",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3893, 48.8309]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3827, 48.8283]
+      },
+      "population": 125,
+      "surface": 949.93,
+      "radius": 1.74
+    },
+    {
+      "nom": "Les Aspres",
+      "code": "61422",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6026, 48.6735]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5996, 48.6899]
+      },
+      "population": 620,
+      "surface": 2334.5,
+      "radius": 2.73
+    },
+    {
+      "nom": "Les Champeaux",
+      "code": "61086",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1333, 48.8904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1323, 48.8932]
+      },
+      "population": 98,
+      "surface": 967.81,
+      "radius": 1.76
+    },
+    {
+      "nom": "Les Genettes",
+      "code": "61187",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5822, 48.6623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5692, 48.6639]
+      },
+      "population": 162,
+      "surface": 651.29,
+      "radius": 1.44
+    },
+    {
+      "nom": "Les Menus",
+      "code": "61274",
+      "codesPostaux": ["61290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9289, 48.5165]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9331, 48.5247]
+      },
+      "population": 241,
+      "surface": 1183.63,
+      "radius": 1.94
+    },
+    {
+      "nom": "Les Monts d'Andaine",
+      "code": "61463",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4259, 48.6129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4166, 48.6244]
+      },
+      "population": 1727,
+      "surface": 3754.99,
+      "radius": 3.46
+    },
+    {
+      "nom": "Les Ventes-de-Bourse",
+      "code": "61499",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2664, 48.5061]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.277, 48.511]
+      },
+      "population": 146,
+      "surface": 2095.27,
+      "radius": 2.58
+    },
+    {
+      "nom": "Les Yveteaux",
+      "code": "61512",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.271, 48.7107]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2664, 48.7105]
+      },
+      "population": 100,
+      "surface": 580.7,
+      "radius": 1.36
+    },
+    {
+      "nom": "Lignères",
+      "code": "61225",
+      "codesPostaux": ["61240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3031, 48.7395]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3105, 48.7355]
+      },
+      "population": 29,
+      "surface": 540.13,
+      "radius": 1.31
+    },
+    {
+      "nom": "Lignou",
+      "code": "61227",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.345, 48.6756]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3472, 48.6697]
+      },
+      "population": 139,
+      "surface": 767.51,
+      "radius": 1.56
+    },
+    {
+      "nom": "Loisail",
+      "code": "61229",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5841, 48.5048]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5914, 48.5014]
+      },
+      "population": 134,
+      "surface": 522.56,
+      "radius": 1.29
+    },
+    {
+      "nom": "Longny les Villages",
+      "code": "61230",
+      "codesPostaux": ["61290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8033, 48.5419]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7522, 48.5308]
+      },
+      "population": 2826,
+      "surface": 15291.02,
+      "radius": 6.98
+    },
+    {
+      "nom": "Lonlay-l'Abbaye",
+      "code": "61232",
+      "codesPostaux": ["61700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7082, 48.6547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7096, 48.6452]
+      },
+      "population": 1118,
+      "surface": 5315.17,
+      "radius": 4.11
+    },
+    {
+      "nom": "Lonlay-le-Tesson",
+      "code": "61233",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3506, 48.6527]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3529, 48.6437]
+      },
+      "population": 229,
+      "surface": 1266.01,
+      "radius": 2.01
+    },
+    {
+      "nom": "Lonrai",
+      "code": "61234",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0379, 48.4537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0404, 48.4601]
+      },
+      "population": 1084,
+      "surface": 615.92,
+      "radius": 1.4
+    },
+    {
+      "nom": "Lougé-sur-Maire",
+      "code": "61237",
+      "codesPostaux": ["61150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2187, 48.7014]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2253, 48.6941]
+      },
+      "population": 314,
+      "surface": 1382.72,
+      "radius": 2.1
+    },
+    {
+      "nom": "Louvières-en-Auge",
+      "code": "61238",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0267, 48.8684]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0302, 48.8725]
+      },
+      "population": 95,
+      "surface": 623.31,
+      "radius": 1.41
+    },
+    {
+      "nom": "Macé",
+      "code": "61240",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1372, 48.6479]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1373, 48.638]
+      },
+      "population": 443,
+      "surface": 1442.98,
+      "radius": 2.14
+    },
+    {
+      "nom": "Magny-le-Désert",
+      "code": "61243",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3217, 48.5685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3271, 48.5699]
+      },
+      "population": 1386,
+      "surface": 3380.83,
+      "radius": 3.28
+    },
+    {
+      "nom": "Mahéru",
+      "code": "61244",
+      "codesPostaux": ["61380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4392, 48.6597]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4322, 48.6582]
+      },
+      "population": 275,
+      "surface": 1976.33,
+      "radius": 2.51
+    },
+    {
+      "nom": "Mantilly",
+      "code": "61248",
+      "codesPostaux": ["61350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8179, 48.5124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8008, 48.5205]
+      },
+      "population": 511,
+      "surface": 2919.37,
+      "radius": 3.05
+    },
+    {
+      "nom": "Marchemaisons",
+      "code": "61251",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3176, 48.5232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3049, 48.5214]
+      },
+      "population": 157,
+      "surface": 882.56,
+      "radius": 1.68
+    },
+    {
+      "nom": "Mardilly",
+      "code": "61252",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2651, 48.8283]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2788, 48.831]
+      },
+      "population": 133,
+      "surface": 1276.99,
+      "radius": 2.02
+    },
+    {
+      "nom": "Mauves-sur-Huisne",
+      "code": "61255",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6071, 48.44]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6206, 48.4478]
+      },
+      "population": 524,
+      "surface": 1452.61,
+      "radius": 2.15
+    },
+    {
+      "nom": "Médavy",
+      "code": "61256",
+      "codesPostaux": ["61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0806, 48.6729]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0859, 48.6767]
+      },
+      "population": 153,
+      "surface": 440.31,
+      "radius": 1.18
+    },
+    {
+      "nom": "Méhoudin",
+      "code": "61257",
+      "codesPostaux": ["61410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3808, 48.5085]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3833, 48.4996]
+      },
+      "population": 121,
+      "surface": 383.1,
+      "radius": 1.1
+    },
+    {
+      "nom": "Ménil-Erreux",
+      "code": "61263",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1844, 48.5043]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1893, 48.5081]
+      },
+      "population": 195,
+      "surface": 1112.04,
+      "radius": 1.88
+    },
+    {
+      "nom": "Ménil-Froger",
+      "code": "61264",
+      "codesPostaux": ["61240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2673, 48.7331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2694, 48.7329]
+      },
+      "population": 62,
+      "surface": 523.76,
+      "radius": 1.29
+    },
+    {
+      "nom": "Ménil-Gondouin",
+      "code": "61265",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2961, 48.754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2927, 48.7541]
+      },
+      "population": 157,
+      "surface": 929.01,
+      "radius": 1.72
+    },
+    {
+      "nom": "Ménil-Hermei",
+      "code": "61267",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.319, 48.8268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3262, 48.8252]
+      },
+      "population": 201,
+      "surface": 658.23,
+      "radius": 1.45
+    },
+    {
+      "nom": "Ménil-Hubert-en-Exmes",
+      "code": "61268",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2344, 48.8031]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2288, 48.8142]
+      },
+      "population": 120,
+      "surface": 1039.64,
+      "radius": 1.82
+    },
+    {
+      "nom": "Ménil-Hubert-sur-Orne",
+      "code": "61269",
+      "codesPostaux": ["61430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4141, 48.8518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4132, 48.8533]
+      },
+      "population": 487,
+      "surface": 1082.64,
+      "radius": 1.86
+    },
+    {
+      "nom": "Ménil-Vin",
+      "code": "61273",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3173, 48.8466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3183, 48.8442]
+      },
+      "population": 48,
+      "surface": 365.11,
+      "radius": 1.08
+    },
+    {
+      "nom": "Merlerault-le-Pin",
+      "code": "61275",
+      "codesPostaux": ["61240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2669, 48.695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2837, 48.6999]
+      },
+      "population": 754,
+      "surface": 6176.03,
+      "radius": 4.43
+    },
+    {
+      "nom": "Merri",
+      "code": "61276",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0481, 48.8492]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0432, 48.8498]
+      },
+      "population": 151,
+      "surface": 599.05,
+      "radius": 1.38
+    },
+    {
+      "nom": "Messei",
+      "code": "61278",
+      "codesPostaux": ["61440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.536, 48.713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5415, 48.7113]
+      },
+      "population": 1819,
+      "surface": 1333.02,
+      "radius": 2.06
+    },
+    {
+      "nom": "Mieuxcé",
+      "code": "61279",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0043, 48.4127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0105, 48.4016]
+      },
+      "population": 611,
+      "surface": 1028.59,
+      "radius": 1.81
+    },
+    {
+      "nom": "Moncy",
+      "code": "61281",
+      "codesPostaux": ["61800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6736, 48.8347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6871, 48.8246]
+      },
+      "population": 265,
+      "surface": 783.32,
+      "radius": 1.58
+    },
+    {
+      "nom": "Mont-Ormel",
+      "code": "61289",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1537, 48.8357]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1541, 48.84]
+      },
+      "population": 49,
+      "surface": 373.18,
+      "radius": 1.09
+    },
+    {
+      "nom": "Montabard",
+      "code": "61283",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0845, 48.812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.096, 48.8163]
+      },
+      "population": 284,
+      "surface": 1110.47,
+      "radius": 1.88
+    },
+    {
+      "nom": "Montchevrel",
+      "code": "61284",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3348, 48.5819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3381, 48.5738]
+      },
+      "population": 233,
+      "surface": 1103.16,
+      "radius": 1.87
+    },
+    {
+      "nom": "Montgaudry",
+      "code": "61286",
+      "codesPostaux": ["61360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4028, 48.4071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4016, 48.4067]
+      },
+      "population": 99,
+      "surface": 1119.26,
+      "radius": 1.89
+    },
+    {
+      "nom": "Montilly-sur-Noireau",
+      "code": "61287",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5728, 48.8134]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5726, 48.8151]
+      },
+      "population": 719,
+      "surface": 1119.46,
+      "radius": 1.89
+    },
+    {
+      "nom": "Montmerrei",
+      "code": "61288",
+      "codesPostaux": ["61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.031, 48.6307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0342, 48.6342]
+      },
+      "population": 555,
+      "surface": 1288.22,
+      "radius": 2.02
+    },
+    {
+      "nom": "Montreuil-au-Houlme",
+      "code": "61290",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.266, 48.6813]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.263, 48.6865]
+      },
+      "population": 127,
+      "surface": 781.74,
+      "radius": 1.58
+    },
+    {
+      "nom": "Montreuil-la-Cambe",
+      "code": "61291",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0325, 48.8844]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0499, 48.8823]
+      },
+      "population": 80,
+      "surface": 970.27,
+      "radius": 1.76
+    },
+    {
+      "nom": "Monts-sur-Orne",
+      "code": "61194",
+      "codesPostaux": ["61150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1194, 48.7509]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0935, 48.7324]
+      },
+      "population": 874,
+      "surface": 3122.62,
+      "radius": 3.15
+    },
+    {
+      "nom": "Montsecret-Clairefougère",
+      "code": "61292",
+      "codesPostaux": ["61800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6787, 48.8006]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6767, 48.7966]
+      },
+      "population": 656,
+      "surface": 1399.19,
+      "radius": 2.11
+    },
+    {
+      "nom": "Mortagne-au-Perche",
+      "code": "61293",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5642, 48.5189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5456, 48.52]
+      },
+      "population": 3857,
+      "surface": 865.64,
+      "radius": 1.66
+    },
+    {
+      "nom": "Mortrée",
+      "code": "61294",
+      "codesPostaux": ["61500", "61570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0745, 48.6242]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0773, 48.6401]
+      },
+      "population": 1125,
+      "surface": 3256.81,
+      "radius": 3.22
+    },
+    {
+      "nom": "Moulins-la-Marche",
+      "code": "61297",
+      "codesPostaux": ["61380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4767, 48.6522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4771, 48.6489]
+      },
+      "population": 717,
+      "surface": 1316.44,
+      "radius": 2.05
+    },
+    {
+      "nom": "Moulins-sur-Orne",
+      "code": "61298",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0707, 48.7534]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0706, 48.7591]
+      },
+      "population": 309,
+      "surface": 921.53,
+      "radius": 1.71
+    },
+    {
+      "nom": "Moutiers-au-Perche",
+      "code": "61300",
+      "codesPostaux": ["61110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8624, 48.4804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8466, 48.4749]
+      },
+      "population": 370,
+      "surface": 3380.35,
+      "radius": 3.28
+    },
+    {
+      "nom": "Neauphe-sous-Essai",
+      "code": "61301",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1948, 48.562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2118, 48.5654]
+      },
+      "population": 214,
+      "surface": 1141.99,
+      "radius": 1.91
+    },
+    {
+      "nom": "Neauphe-sur-Dive",
+      "code": "61302",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0913, 48.8513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0955, 48.849]
+      },
+      "population": 132,
+      "surface": 1400.18,
+      "radius": 2.11
+    },
+    {
+      "nom": "Nécy",
+      "code": "61303",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1189, 48.8294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1156, 48.8319]
+      },
+      "population": 526,
+      "surface": 784.97,
+      "radius": 1.58
+    },
+    {
+      "nom": "Neuilly-le-Bisson",
+      "code": "61304",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2186, 48.505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2322, 48.5007]
+      },
+      "population": 275,
+      "surface": 597.96,
+      "radius": 1.38
+    },
+    {
+      "nom": "Neuville-sur-Touques",
+      "code": "61307",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2871, 48.8635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2831, 48.8581]
+      },
+      "population": 237,
+      "surface": 1557.82,
+      "radius": 2.23
+    },
+    {
+      "nom": "Neuvy-au-Houlme",
+      "code": "61308",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1901, 48.8231]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1991, 48.8171]
+      },
+      "population": 198,
+      "surface": 1556.9,
+      "radius": 2.23
+    },
+    {
+      "nom": "Occagnes",
+      "code": "61314",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0673, 48.7843]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0742, 48.7796]
+      },
+      "population": 673,
+      "surface": 1564.3,
+      "radius": 2.23
+    },
+    {
+      "nom": "Ommoy",
+      "code": "61316",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0251, 48.8551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0227, 48.8548]
+      },
+      "population": 109,
+      "surface": 570.31,
+      "radius": 1.35
+    },
+    {
+      "nom": "Orgères",
+      "code": "61317",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3522, 48.7484]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3423, 48.7634]
+      },
+      "population": 182,
+      "surface": 1219.41,
+      "radius": 1.97
+    },
+    {
+      "nom": "Origny-le-Roux",
+      "code": "61319",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4196, 48.3333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4201, 48.3445]
+      },
+      "population": 249,
+      "surface": 1432.63,
+      "radius": 2.14
+    },
+    {
+      "nom": "Pacé",
+      "code": "61321",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0078, 48.4478]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0037, 48.4453]
+      },
+      "population": 411,
+      "surface": 759.63,
+      "radius": 1.55
+    },
+    {
+      "nom": "Parfondeval",
+      "code": "61322",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5058, 48.4797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5069, 48.481]
+      },
+      "population": 104,
+      "surface": 309.66,
+      "radius": 0.99
+    },
+    {
+      "nom": "Passais Villages",
+      "code": "61324",
+      "codesPostaux": ["61350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7687, 48.4886]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7569, 48.5178]
+      },
+      "population": 1159,
+      "surface": 4286.65,
+      "radius": 3.69
+    },
+    {
+      "nom": "Perche en Nocé",
+      "code": "61309",
+      "codesPostaux": ["61340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6958, 48.3585]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6807, 48.3799]
+      },
+      "population": 1974,
+      "surface": 8708.3,
+      "radius": 5.26
+    },
+    {
+      "nom": "Perrou",
+      "code": "61326",
+      "codesPostaux": ["61700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5469, 48.5753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5595, 48.573]
+      },
+      "population": 325,
+      "surface": 442.28,
+      "radius": 1.19
+    },
+    {
+      "nom": "Pervenchères",
+      "code": "61327",
+      "codesPostaux": ["61360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4062, 48.442]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4251, 48.4386]
+      },
+      "population": 342,
+      "surface": 2855.5,
+      "radius": 3.01
+    },
+    {
+      "nom": "Planches",
+      "code": "61330",
+      "codesPostaux": ["61370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.376, 48.687]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3709, 48.7007]
+      },
+      "population": 181,
+      "surface": 1255.77,
+      "radius": 2
+    },
+    {
+      "nom": "Pointel",
+      "code": "61332",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.35, 48.697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.349, 48.6991]
+      },
+      "population": 305,
+      "surface": 759.75,
+      "radius": 1.56
+    },
+    {
+      "nom": "Pontchardon",
+      "code": "61333",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2613, 48.9307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2656, 48.9283]
+      },
+      "population": 184,
+      "surface": 479.5,
+      "radius": 1.24
+    },
+    {
+      "nom": "Pouvrai",
+      "code": "61336",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5183, 48.2797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5183, 48.2762]
+      },
+      "population": 103,
+      "surface": 682,
+      "radius": 1.47
+    },
+    {
+      "nom": "Putanges-le-Lac",
+      "code": "61339",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2889, 48.7711]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2455, 48.7643]
+      },
+      "population": 2115,
+      "surface": 7743.41,
+      "radius": 4.96
+    },
+    {
+      "nom": "Rai",
+      "code": "61342",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5604, 48.7552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5793, 48.7505]
+      },
+      "population": 1437,
+      "surface": 1613.57,
+      "radius": 2.27
+    },
+    {
+      "nom": "Rânes",
+      "code": "61344",
+      "codesPostaux": ["61150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2196, 48.6424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2119, 48.6405]
+      },
+      "population": 1042,
+      "surface": 3428.11,
+      "radius": 3.3
+    },
+    {
+      "nom": "Rémalard en Perche",
+      "code": "61345",
+      "codesPostaux": ["61110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7644, 48.4405]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7744, 48.4294]
+      },
+      "population": 1892,
+      "surface": 5101.07,
+      "radius": 4.03
+    },
+    {
+      "nom": "Résenlieu",
+      "code": "61347",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.276, 48.7907]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2786, 48.7918]
+      },
+      "population": 174,
+      "surface": 507.85,
+      "radius": 1.27
+    },
+    {
+      "nom": "Réveillon",
+      "code": "61348",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5595, 48.4808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5598, 48.4781]
+      },
+      "population": 356,
+      "surface": 1189.61,
+      "radius": 1.95
+    },
+    {
+      "nom": "Ri",
+      "code": "61349",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1416, 48.7897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1383, 48.791]
+      },
+      "population": 157,
+      "surface": 747,
+      "radius": 1.54
+    },
+    {
+      "nom": "Rives d'Andaine",
+      "code": "61096",
+      "codesPostaux": ["61140", "61410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4434, 48.5352]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4793, 48.5334]
+      },
+      "population": 2867,
+      "surface": 3744.42,
+      "radius": 3.45
+    },
+    {
+      "nom": "Roiville",
+      "code": "61351",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2361, 48.8797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2343, 48.8796]
+      },
+      "population": 133,
+      "surface": 818.53,
+      "radius": 1.61
+    },
+    {
+      "nom": "Rônai",
+      "code": "61352",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1347, 48.8103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1356, 48.8133]
+      },
+      "population": 180,
+      "surface": 538.96,
+      "radius": 1.31
+    },
+    {
+      "nom": "Rouperroux",
+      "code": "61357",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.079, 48.5476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0819, 48.5472]
+      },
+      "population": 175,
+      "surface": 980.41,
+      "radius": 1.77
+    },
+    {
+      "nom": "Sablons sur Huisne",
+      "code": "61116",
+      "codesPostaux": ["61110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8714, 48.384]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8482, 48.3814]
+      },
+      "population": 1983,
+      "surface": 5279.55,
+      "radius": 4.1
+    },
+    {
+      "nom": "Sai",
+      "code": "61358",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0246, 48.7415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0248, 48.744]
+      },
+      "population": 227,
+      "surface": 510.04,
+      "radius": 1.27
+    },
+    {
+      "nom": "Saint-Agnan-sur-Sarthe",
+      "code": "61360",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4304, 48.6194]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4243, 48.609]
+      },
+      "population": 87,
+      "surface": 663.48,
+      "radius": 1.45
+    },
+    {
+      "nom": "Saint-André-de-Briouze",
+      "code": "61361",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3243, 48.7327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3276, 48.7286]
+      },
+      "population": 175,
+      "surface": 1223.29,
+      "radius": 1.97
+    },
+    {
+      "nom": "Saint-André-de-Messei",
+      "code": "61362",
+      "codesPostaux": ["61440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5275, 48.6882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5221, 48.6945]
+      },
+      "population": 522,
+      "surface": 1522.61,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Aquilin-de-Corbion",
+      "code": "61363",
+      "codesPostaux": ["61380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5285, 48.6416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5149, 48.6352]
+      },
+      "population": 54,
+      "surface": 608.19,
+      "radius": 1.39
+    },
+    {
+      "nom": "Saint-Aubin-d'Appenai",
+      "code": "61365",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3413, 48.5404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.34, 48.5355]
+      },
+      "population": 435,
+      "surface": 1131.35,
+      "radius": 1.9
+    },
+    {
+      "nom": "Saint-Aubin-de-Bonneval",
+      "code": "61366",
+      "codesPostaux": ["61470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3691, 48.9495]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3786, 48.9408]
+      },
+      "population": 131,
+      "surface": 1174.85,
+      "radius": 1.93
+    },
+    {
+      "nom": "Saint-Aubin-de-Courteraie",
+      "code": "61367",
+      "codesPostaux": ["61560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4512, 48.6096]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.439, 48.6092]
+      },
+      "population": 130,
+      "surface": 1026.23,
+      "radius": 1.81
+    },
+    {
+      "nom": "Saint-Bômer-les-Forges",
+      "code": "61369",
+      "codesPostaux": ["61700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6196, 48.6443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6337, 48.6441]
+      },
+      "population": 1023,
+      "surface": 3143.69,
+      "radius": 3.16
+    },
+    {
+      "nom": "Saint-Brice",
+      "code": "61370",
+      "codesPostaux": ["61700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6398, 48.5486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6434, 48.558]
+      },
+      "population": 149,
+      "surface": 461.37,
+      "radius": 1.21
+    },
+    {
+      "nom": "Saint-Brice-sous-Rânes",
+      "code": "61371",
+      "codesPostaux": ["61150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1932, 48.6793]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1895, 48.6765]
+      },
+      "population": 139,
+      "surface": 949.6,
+      "radius": 1.74
+    },
+    {
+      "nom": "Saint-Céneri-le-Gérei",
+      "code": "61372",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0391, 48.3872]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.051, 48.3815]
+      },
+      "population": 112,
+      "surface": 385.01,
+      "radius": 1.11
+    },
+    {
+      "nom": "Saint-Christophe-de-Chaulieu",
+      "code": "61374",
+      "codesPostaux": ["61800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8303, 48.7439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8209, 48.7459]
+      },
+      "population": 88,
+      "surface": 646.7,
+      "radius": 1.43
+    },
+    {
+      "nom": "Saint-Clair-de-Halouze",
+      "code": "61376",
+      "codesPostaux": ["61490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6229, 48.6875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6236, 48.6791]
+      },
+      "population": 821,
+      "surface": 1190.33,
+      "radius": 1.95
+    },
+    {
+      "nom": "Saint-Cyr-la-Rosière",
+      "code": "61379",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6428, 48.3164]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6405, 48.3301]
+      },
+      "population": 234,
+      "surface": 1887.56,
+      "radius": 2.45
+    },
+    {
+      "nom": "Saint-Denis-sur-Huisne",
+      "code": "61381",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5317, 48.4706]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5415, 48.4687]
+      },
+      "population": 60,
+      "surface": 466.81,
+      "radius": 1.22
+    },
+    {
+      "nom": "Saint-Denis-sur-Sarthon",
+      "code": "61382",
+      "codesPostaux": ["61420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0346, 48.4563]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0495, 48.4575]
+      },
+      "population": 1078,
+      "surface": 1378.89,
+      "radius": 2.1
+    },
+    {
+      "nom": "Saint-Ellier-les-Bois",
+      "code": "61384",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1008, 48.5263]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0933, 48.5197]
+      },
+      "population": 257,
+      "surface": 1386.73,
+      "radius": 2.1
+    },
+    {
+      "nom": "Saint-Evroult-de-Montfort",
+      "code": "61385",
+      "codesPostaux": ["61230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3134, 48.8139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3093, 48.8073]
+      },
+      "population": 359,
+      "surface": 2249.13,
+      "radius": 2.68
+    },
+    {
+      "nom": "Saint-Evroult-Notre-Dame-du-Bois",
+      "code": "61386",
+      "codesPostaux": ["61550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4457, 48.7829]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4627, 48.7908]
+      },
+      "population": 440,
+      "surface": 3446.98,
+      "radius": 3.31
+    },
+    {
+      "nom": "Saint-Fraimbault",
+      "code": "61387",
+      "codesPostaux": ["61350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7165, 48.4987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.698, 48.487]
+      },
+      "population": 542,
+      "surface": 2894.29,
+      "radius": 3.04
+    },
+    {
+      "nom": "Saint-Fulgent-des-Ormes",
+      "code": "61388",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.452, 48.3224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4474, 48.3191]
+      },
+      "population": 174,
+      "surface": 844.33,
+      "radius": 1.64
+    },
+    {
+      "nom": "Saint-Georges-d'Annebecq",
+      "code": "61390",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2657, 48.6271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2646, 48.6312]
+      },
+      "population": 167,
+      "surface": 940.88,
+      "radius": 1.73
+    },
+    {
+      "nom": "Saint-Georges-des-Groseillers",
+      "code": "61391",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5655, 48.7705]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5734, 48.7702]
+      },
+      "population": 3169,
+      "surface": 728.58,
+      "radius": 1.52
+    },
+    {
+      "nom": "Saint-Germain-d'Aunay",
+      "code": "61392",
+      "codesPostaux": ["61470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3809, 48.93]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3797, 48.9262]
+      },
+      "population": 117,
+      "surface": 855.44,
+      "radius": 1.65
+    },
+    {
+      "nom": "Saint-Germain-de-Clairefeuille",
+      "code": "61393",
+      "codesPostaux": ["61240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2338, 48.7267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2375, 48.7138]
+      },
+      "population": 132,
+      "surface": 1222.7,
+      "radius": 1.97
+    },
+    {
+      "nom": "Saint-Germain-de-la-Coudre",
+      "code": "61394",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5943, 48.2729]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6033, 48.2808]
+      },
+      "population": 828,
+      "surface": 2619.24,
+      "radius": 2.89
+    },
+    {
+      "nom": "Saint-Germain-de-Martigny",
+      "code": "61396",
+      "codesPostaux": ["61560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4656, 48.5867]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4641, 48.5894]
+      },
+      "population": 83,
+      "surface": 391.1,
+      "radius": 1.12
+    },
+    {
+      "nom": "Saint-Germain-des-Grois",
+      "code": "61395",
+      "codesPostaux": ["61110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8154, 48.4066]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8293, 48.3985]
+      },
+      "population": 204,
+      "surface": 1048.63,
+      "radius": 1.83
+    },
+    {
+      "nom": "Saint-Germain-du-Corbéis",
+      "code": "61397",
+      "codesPostaux": ["61000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0587, 48.4178]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0633, 48.4229]
+      },
+      "population": 3648,
+      "surface": 747.39,
+      "radius": 1.54
+    },
+    {
+      "nom": "Saint-Germain-le-Vieux",
+      "code": "61398",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3108, 48.612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3147, 48.6116]
+      },
+      "population": 65,
+      "surface": 324.85,
+      "radius": 1.02
+    },
+    {
+      "nom": "Saint-Gervais-des-Sablons",
+      "code": "61399",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0705, 48.9029]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0762, 48.9022]
+      },
+      "population": 71,
+      "surface": 878.77,
+      "radius": 1.67
+    },
+    {
+      "nom": "Saint-Gervais-du-Perron",
+      "code": "61400",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1456, 48.5372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1611, 48.5355]
+      },
+      "population": 346,
+      "surface": 1136.87,
+      "radius": 1.9
+    },
+    {
+      "nom": "Saint-Gilles-des-Marais",
+      "code": "61401",
+      "codesPostaux": ["61700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6973, 48.5863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.693, 48.5829]
+      },
+      "population": 106,
+      "surface": 592.94,
+      "radius": 1.37
+    },
+    {
+      "nom": "Saint-Hilaire-de-Briouze",
+      "code": "61402",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3051, 48.7059]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3239, 48.7059]
+      },
+      "population": 299,
+      "surface": 1376.27,
+      "radius": 2.09
+    },
+    {
+      "nom": "Saint-Hilaire-le-Châtel",
+      "code": "61404",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5456, 48.5563]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5287, 48.5628]
+      },
+      "population": 668,
+      "surface": 2255.35,
+      "radius": 2.68
+    },
+    {
+      "nom": "Saint-Hilaire-sur-Erre",
+      "code": "61405",
+      "codesPostaux": ["61340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7495, 48.3119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7374, 48.3126]
+      },
+      "population": 486,
+      "surface": 1532.14,
+      "radius": 2.21
+    },
+    {
+      "nom": "Saint-Hilaire-sur-Risle",
+      "code": "61406",
+      "codesPostaux": ["61270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5073, 48.7246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4901, 48.7313]
+      },
+      "population": 291,
+      "surface": 665.54,
+      "radius": 1.46
+    },
+    {
+      "nom": "Saint-Jouin-de-Blavou",
+      "code": "61411",
+      "codesPostaux": ["61360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4816, 48.448]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4735, 48.4522]
+      },
+      "population": 307,
+      "surface": 1789.48,
+      "radius": 2.39
+    },
+    {
+      "nom": "Saint-Julien-sur-Sarthe",
+      "code": "61412",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.372, 48.4887]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3571, 48.491]
+      },
+      "population": 679,
+      "surface": 1624.89,
+      "radius": 2.27
+    },
+    {
+      "nom": "Saint-Lambert-sur-Dive",
+      "code": "61413",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0933, 48.8295]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0764, 48.8193]
+      },
+      "population": 133,
+      "surface": 775.96,
+      "radius": 1.57
+    },
+    {
+      "nom": "Saint-Langis-lès-Mortagne",
+      "code": "61414",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5335, 48.5101]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5394, 48.5123]
+      },
+      "population": 871,
+      "surface": 1278.65,
+      "radius": 2.02
+    },
+    {
+      "nom": "Saint-Léger-sur-Sarthe",
+      "code": "61415",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3166, 48.4956]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3405, 48.5035]
+      },
+      "population": 314,
+      "surface": 1328.99,
+      "radius": 2.06
+    },
+    {
+      "nom": "Saint-Léonard-des-Parcs",
+      "code": "61416",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2789, 48.6438]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.288, 48.6419]
+      },
+      "population": 76,
+      "surface": 1347.82,
+      "radius": 2.07
+    },
+    {
+      "nom": "Saint-Mard-de-Réno",
+      "code": "61418",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6368, 48.5091]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6376, 48.5106]
+      },
+      "population": 397,
+      "surface": 1919.54,
+      "radius": 2.47
+    },
+    {
+      "nom": "Saint-Mars-d'Égrenne",
+      "code": "61421",
+      "codesPostaux": ["61350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7366, 48.5514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7296, 48.5607]
+      },
+      "population": 640,
+      "surface": 2543.08,
+      "radius": 2.85
+    },
+    {
+      "nom": "Saint-Martin-d'Écublei",
+      "code": "61423",
+      "codesPostaux": ["61300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6689, 48.7947]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6781, 48.7905]
+      },
+      "population": 630,
+      "surface": 1207,
+      "radius": 1.96
+    },
+    {
+      "nom": "Saint-Martin-des-Landes",
+      "code": "61424",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1563, 48.546]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1369, 48.5456]
+      },
+      "population": 187,
+      "surface": 1123.81,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Martin-des-Pézerits",
+      "code": "61425",
+      "codesPostaux": ["61380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.489, 48.6285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4863, 48.634]
+      },
+      "population": 121,
+      "surface": 465.65,
+      "radius": 1.22
+    },
+    {
+      "nom": "Saint-Martin-du-Vieux-Bellême",
+      "code": "61426",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5466, 48.37]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5446, 48.3816]
+      },
+      "population": 540,
+      "surface": 1606.48,
+      "radius": 2.26
+    },
+    {
+      "nom": "Saint-Martin-l'Aiguillon",
+      "code": "61427",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.176, 48.6008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1757, 48.6163]
+      },
+      "population": 186,
+      "surface": 1478.68,
+      "radius": 2.17
+    },
+    {
+      "nom": "Saint-Michel-Tubœuf",
+      "code": "61432",
+      "codesPostaux": ["61300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6856, 48.7555]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6888, 48.7522]
+      },
+      "population": 576,
+      "surface": 880.29,
+      "radius": 1.67
+    },
+    {
+      "nom": "Saint-Nicolas-de-Sommaire",
+      "code": "61435",
+      "codesPostaux": ["61550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5958, 48.814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6095, 48.8119]
+      },
+      "population": 266,
+      "surface": 1626.42,
+      "radius": 2.28
+    },
+    {
+      "nom": "Saint-Nicolas-des-Bois",
+      "code": "61433",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0186, 48.5109]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0159, 48.4957]
+      },
+      "population": 284,
+      "surface": 2538.92,
+      "radius": 2.84
+    },
+    {
+      "nom": "Saint-Ouen-de-Sécherouvre",
+      "code": "61438",
+      "codesPostaux": ["61560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4881, 48.5972]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4896, 48.5999]
+      },
+      "population": 159,
+      "surface": 1014.95,
+      "radius": 1.8
+    },
+    {
+      "nom": "Saint-Ouen-le-Brisoult",
+      "code": "61439",
+      "codesPostaux": ["61410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3481, 48.5062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.34, 48.5092]
+      },
+      "population": 125,
+      "surface": 972.5,
+      "radius": 1.76
+    },
+    {
+      "nom": "Saint-Ouen-sur-Iton",
+      "code": "61440",
+      "codesPostaux": ["61300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6736, 48.7364]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.695, 48.7353]
+      },
+      "population": 827,
+      "surface": 1431.24,
+      "radius": 2.13
+    },
+    {
+      "nom": "Saint-Patrice-du-Désert",
+      "code": "61442",
+      "codesPostaux": ["61600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2902, 48.5347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3013, 48.5413]
+      },
+      "population": 232,
+      "surface": 2064.11,
+      "radius": 2.56
+    },
+    {
+      "nom": "Saint-Paul",
+      "code": "61443",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6289, 48.737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6329, 48.7434]
+      },
+      "population": 652,
+      "surface": 791.36,
+      "radius": 1.59
+    },
+    {
+      "nom": "Saint-Philbert-sur-Orne",
+      "code": "61444",
+      "codesPostaux": ["61430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3741, 48.8347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3779, 48.8391]
+      },
+      "population": 112,
+      "surface": 586.69,
+      "radius": 1.37
+    },
+    {
+      "nom": "Saint-Pierre-d'Entremont",
+      "code": "61445",
+      "codesPostaux": ["61800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.65, 48.812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6502, 48.8089]
+      },
+      "population": 659,
+      "surface": 623.12,
+      "radius": 1.41
+    },
+    {
+      "nom": "Saint-Pierre-des-Loges",
+      "code": "61446",
+      "codesPostaux": ["61370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.467, 48.7425]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4719, 48.7502]
+      },
+      "population": 160,
+      "surface": 993.5,
+      "radius": 1.78
+    },
+    {
+      "nom": "Saint-Pierre-du-Regard",
+      "code": "61447",
+      "codesPostaux": ["61790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5399, 48.8322]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.548, 48.8431]
+      },
+      "population": 1335,
+      "surface": 943.37,
+      "radius": 1.73
+    },
+    {
+      "nom": "Saint-Pierre-la-Bruyère",
+      "code": "61448",
+      "codesPostaux": ["61340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8014, 48.361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8049, 48.3623]
+      },
+      "population": 428,
+      "surface": 640.16,
+      "radius": 1.43
+    },
+    {
+      "nom": "Saint-Quentin-de-Blavou",
+      "code": "61450",
+      "codesPostaux": ["61360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.419, 48.4799]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.417, 48.4713]
+      },
+      "population": 77,
+      "surface": 642.52,
+      "radius": 1.43
+    },
+    {
+      "nom": "Saint-Quentin-les-Chardonnets",
+      "code": "61451",
+      "codesPostaux": ["61800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7498, 48.7824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7611, 48.7834]
+      },
+      "population": 317,
+      "surface": 895.96,
+      "radius": 1.69
+    },
+    {
+      "nom": "Saint-Roch-sur-Égrenne",
+      "code": "61452",
+      "codesPostaux": ["61350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7426, 48.577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7451, 48.5763]
+      },
+      "population": 150,
+      "surface": 1230.86,
+      "radius": 1.98
+    },
+    {
+      "nom": "Saint-Sauveur-de-Carrouges",
+      "code": "61453",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1111, 48.5887]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1107, 48.5856]
+      },
+      "population": 239,
+      "surface": 1158.81,
+      "radius": 1.92
+    },
+    {
+      "nom": "Saint-Sulpice-sur-Risle",
+      "code": "61456",
+      "codesPostaux": ["61300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6806, 48.7784]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6575, 48.7802]
+      },
+      "population": 1587,
+      "surface": 2862.34,
+      "radius": 3.02
+    },
+    {
+      "nom": "Saint-Symphorien-des-Bruyères",
+      "code": "61457",
+      "codesPostaux": ["61300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5634, 48.7869]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5825, 48.789]
+      },
+      "population": 483,
+      "surface": 1615.96,
+      "radius": 2.27
+    },
+    {
+      "nom": "Sainte-Céronne-lès-Mortagne",
+      "code": "61373",
+      "codesPostaux": ["61380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5241, 48.5911]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5332, 48.5686]
+      },
+      "population": 249,
+      "surface": 1276.02,
+      "radius": 2.02
+    },
+    {
+      "nom": "Sainte-Gauburge-Sainte-Colombe",
+      "code": "61389",
+      "codesPostaux": ["61370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4443, 48.7082]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4307, 48.7165]
+      },
+      "population": 1013,
+      "surface": 2121.37,
+      "radius": 2.6
+    },
+    {
+      "nom": "Sainte-Honorine-la-Chardonne",
+      "code": "61407",
+      "codesPostaux": ["61430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4824, 48.8233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4855, 48.824]
+      },
+      "population": 681,
+      "surface": 1459.73,
+      "radius": 2.16
+    },
+    {
+      "nom": "Sainte-Honorine-la-Guillaume",
+      "code": "61408",
+      "codesPostaux": ["61210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3769, 48.7775]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.379, 48.7802]
+      },
+      "population": 348,
+      "surface": 1483.13,
+      "radius": 2.17
+    },
+    {
+      "nom": "Sainte-Marguerite-de-Carrouges",
+      "code": "61419",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1515, 48.5937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.155, 48.5831]
+      },
+      "population": 211,
+      "surface": 870.36,
+      "radius": 1.66
+    },
+    {
+      "nom": "Sainte-Marie-la-Robert",
+      "code": "61420",
+      "codesPostaux": ["61320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1435, 48.6276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1577, 48.6235]
+      },
+      "population": 87,
+      "surface": 554.52,
+      "radius": 1.33
+    },
+    {
+      "nom": "Sainte-Opportune",
+      "code": "61436",
+      "codesPostaux": ["61100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4124, 48.7358]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.417, 48.7425]
+      },
+      "population": 243,
+      "surface": 854.64,
+      "radius": 1.65
+    },
+    {
+      "nom": "Sainte-Scolasse-sur-Sarthe",
+      "code": "61454",
+      "codesPostaux": ["61170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3862, 48.5816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3926, 48.5771]
+      },
+      "population": 584,
+      "surface": 1423.07,
+      "radius": 2.13
+    },
+    {
+      "nom": "Saires-la-Verrerie",
+      "code": "61459",
+      "codesPostaux": ["61220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4867, 48.6883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4975, 48.6861]
+      },
+      "population": 296,
+      "surface": 817.56,
+      "radius": 1.61
+    },
+    {
+      "nom": "Sap-en-Auge",
+      "code": "61460",
+      "codesPostaux": ["61120", "61470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3196, 48.8868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3381, 48.8939]
+      },
+      "population": 942,
+      "surface": 2991.05,
+      "radius": 3.09
+    },
+    {
+      "nom": "Sarceaux",
+      "code": "61462",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0336, 48.7157]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0404, 48.7187]
+      },
+      "population": 1047,
+      "surface": 1083.53,
+      "radius": 1.86
+    },
+    {
+      "nom": "Sées",
+      "code": "61464",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1645, 48.6075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1721, 48.6059]
+      },
+      "population": 4182,
+      "surface": 4047.96,
+      "radius": 3.59
+    },
+    {
+      "nom": "Semallé",
+      "code": "61467",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1578, 48.473]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1499, 48.4757]
+      },
+      "population": 364,
+      "surface": 1428.79,
+      "radius": 2.13
+    },
+    {
+      "nom": "Sévigny",
+      "code": "61472",
+      "codesPostaux": ["61200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0198, 48.7726]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.021, 48.7769]
+      },
+      "population": 309,
+      "surface": 769.48,
+      "radius": 1.57
+    },
+    {
+      "nom": "Sevrai",
+      "code": "61473",
+      "codesPostaux": ["61150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1495, 48.7038]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1391, 48.7039]
+      },
+      "population": 285,
+      "surface": 820.52,
+      "radius": 1.62
+    },
+    {
+      "nom": "Soligny-la-Trappe",
+      "code": "61475",
+      "codesPostaux": ["61380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5561, 48.6256]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5373, 48.6177]
+      },
+      "population": 633,
+      "surface": 1987.33,
+      "radius": 2.52
+    },
+    {
+      "nom": "Suré",
+      "code": "61476",
+      "codesPostaux": ["61360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4099, 48.3692]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3976, 48.3686]
+      },
+      "population": 278,
+      "surface": 1742.93,
+      "radius": 2.36
+    },
+    {
+      "nom": "Tanques",
+      "code": "61479",
+      "codesPostaux": ["61150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0763, 48.6832]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0725, 48.687]
+      },
+      "population": 157,
+      "surface": 627.44,
+      "radius": 1.41
+    },
+    {
+      "nom": "Tanville",
+      "code": "61480",
+      "codesPostaux": ["61500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0108, 48.566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0079, 48.5684]
+      },
+      "population": 228,
+      "surface": 1324.61,
+      "radius": 2.05
+    },
+    {
+      "nom": "Tellières-le-Plessis",
+      "code": "61481",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3942, 48.6232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3915, 48.6272]
+      },
+      "population": 72,
+      "surface": 550.96,
+      "radius": 1.32
+    },
+    {
+      "nom": "Tessé-Froulay",
+      "code": "61482",
+      "codesPostaux": ["61410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4287, 48.531]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4324, 48.5275]
+      },
+      "population": 377,
+      "surface": 521.61,
+      "radius": 1.29
+    },
+    {
+      "nom": "Ticheville",
+      "code": "61485",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2619, 48.9055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2629, 48.9096]
+      },
+      "population": 195,
+      "surface": 997.78,
+      "radius": 1.78
+    },
+    {
+      "nom": "Tinchebray-Bocage",
+      "code": "61486",
+      "codesPostaux": ["61800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7337, 48.7283]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7326, 48.7629]
+      },
+      "population": 4850,
+      "surface": 9057.35,
+      "radius": 5.37
+    },
+    {
+      "nom": "Torchamp",
+      "code": "61487",
+      "codesPostaux": ["61330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6741, 48.5376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6971, 48.5468]
+      },
+      "population": 300,
+      "surface": 1473.8,
+      "radius": 2.17
+    },
+    {
+      "nom": "Touquettes",
+      "code": "61488",
+      "codesPostaux": ["61550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4186, 48.7938]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4212, 48.7969]
+      },
+      "population": 75,
+      "surface": 979.98,
+      "radius": 1.77
+    },
+    {
+      "nom": "Tournai-sur-Dive",
+      "code": "61490",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0477, 48.81]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0449, 48.8131]
+      },
+      "population": 295,
+      "surface": 1252.49,
+      "radius": 2
+    },
+    {
+      "nom": "Tourouvre au Perche",
+      "code": "61491",
+      "codesPostaux": ["61190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6321, 48.6065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6515, 48.591]
+      },
+      "population": 2989,
+      "surface": 9433.49,
+      "radius": 5.48
+    },
+    {
+      "nom": "Trémont",
+      "code": "61492",
+      "codesPostaux": ["61390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2737, 48.5988]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2745, 48.6025]
+      },
+      "population": 121,
+      "surface": 643.69,
+      "radius": 1.43
+    },
+    {
+      "nom": "Trun",
+      "code": "61494",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0438, 48.8504]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0329, 48.8429]
+      },
+      "population": 1183,
+      "surface": 913.6,
+      "radius": 1.71
+    },
+    {
+      "nom": "Val-au-Perche",
+      "code": "61484",
+      "codesPostaux": ["61130", "61260", "61340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6987, 48.2883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6905, 48.2646]
+      },
+      "population": 3324,
+      "surface": 6311.53,
+      "radius": 4.48
+    },
+    {
+      "nom": "Valframbert",
+      "code": "61497",
+      "codesPostaux": ["61250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1157, 48.4659]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1082, 48.4632]
+      },
+      "population": 1699,
+      "surface": 1431.25,
+      "radius": 2.13
+    },
+    {
+      "nom": "Vaunoise",
+      "code": "61498",
+      "codesPostaux": ["61130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4839, 48.3495]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4848, 48.3565]
+      },
+      "population": 95,
+      "surface": 767.43,
+      "radius": 1.56
+    },
+    {
+      "nom": "Verrières",
+      "code": "61501",
+      "codesPostaux": ["61110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.747, 48.3937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7624, 48.392]
+      },
+      "population": 420,
+      "surface": 1781.99,
+      "radius": 2.38
+    },
+    {
+      "nom": "Vidai",
+      "code": "61502",
+      "codesPostaux": ["61360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3724, 48.46]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3792, 48.4589]
+      },
+      "population": 73,
+      "surface": 159.73,
+      "radius": 0.71
+    },
+    {
+      "nom": "Vieux-Pont",
+      "code": "61503",
+      "codesPostaux": ["61150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1507, 48.6504]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1422, 48.6512]
+      },
+      "population": 200,
+      "surface": 974.65,
+      "radius": 1.76
+    },
+    {
+      "nom": "Villedieu-lès-Bailleul",
+      "code": "61505",
+      "codesPostaux": ["61160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0171, 48.8008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0189, 48.8145]
+      },
+      "population": 207,
+      "surface": 472.27,
+      "radius": 1.23
+    },
+    {
+      "nom": "Villiers-sous-Mortagne",
+      "code": "61507",
+      "codesPostaux": ["61400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5954, 48.542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5928, 48.5393]
+      },
+      "population": 241,
+      "surface": 1318.19,
+      "radius": 2.05
+    },
+    {
+      "nom": "Vimoutiers",
+      "code": "61508",
+      "codesPostaux": ["61120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1954, 48.9254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1983, 48.9284]
+      },
+      "population": 3041,
+      "surface": 1602.86,
+      "radius": 2.26
+    },
+    {
+      "nom": "Vitrai-sous-Laigle",
+      "code": "61510",
+      "codesPostaux": ["61300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.709, 48.7149]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7084, 48.7155]
+      },
+      "population": 213,
+      "surface": 1142.59,
+      "radius": 1.91
+    }
+  ],
+  "postalCodes": {
+    "61000": {
+      "communes": ["Alençon", "Cerisé", "Saint-Germain-du-Corbéis"],
+      "communeCount": 3,
+      "center": [0.0811, 48.4296],
+      "coverageRadius": 3.8,
+      "boundingBox": {
+        "minLat": 48.4229,
+        "maxLat": 48.4418,
+        "minLon": 0.0633,
+        "maxLon": 0.1287
+      },
+      "totalPopulation": 30168,
+      "totalSurface": 2270
+    },
+    "61100": {
+      "communes": [
+        "Athis-Val de Rouvre",
+        "Aubusson",
+        "La Bazoque",
+        "Caligny",
+        "Cerisy-Belle-Étoile",
+        "La Chapelle-au-Moine",
+        "La Chapelle-Biche",
+        "Durcet",
+        "Flers",
+        "La Lande-Patry",
+        "La Lande-Saint-Siméon",
+        "Landigou",
+        "Landisacq",
+        "Montilly-sur-Noireau",
+        "Saint-Georges-des-Groseillers",
+        "Sainte-Opportune",
+        "Saint-Paul",
+        "La Selle-la-Forge"
+      ],
+      "communeCount": 18,
+      "center": [-0.5662, 48.7635],
+      "coverageRadius": 11.7,
+      "boundingBox": {
+        "minLat": 48.7073,
+        "maxLat": 48.8247,
+        "minLon": -0.649,
+        "maxLon": -0.417
+      },
+      "totalPopulation": 31441,
+      "totalSurface": 22734
+    },
+    "61110": {
+      "communes": [
+        "Cour-Maugis sur Huisne",
+        "Bretoncelles",
+        "Sablons sur Huisne",
+        "La Madeleine-Bouvet",
+        "Moutiers-au-Perche",
+        "Rémalard en Perche",
+        "Saint-Germain-des-Grois",
+        "Verrières"
+      ],
+      "communeCount": 8,
+      "center": [0.824, 48.4195],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 48.3814,
+        "maxLat": 48.4749,
+        "minLon": 0.7123,
+        "maxLon": 0.9039
+      },
+      "totalPopulation": 7327,
+      "totalSurface": 26654
+    },
+    "61120": {
+      "communes": [
+        "Aubry-le-Panthou",
+        "Camembert",
+        "Canapville",
+        "Les Champeaux",
+        "Champosoult",
+        "Crouttes",
+        "Fresnay-le-Samson",
+        "Guerquesalles",
+        "Neuville-sur-Touques",
+        "Pontchardon",
+        "Le Renouard",
+        "Roiville",
+        "Sap-en-Auge",
+        "Ticheville",
+        "Vimoutiers"
+      ],
+      "communeCount": 15,
+      "center": [0.2233, 48.9136],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 48.8509,
+        "maxLat": 48.9476,
+        "minLon": 0.1011,
+        "maxLon": 0.3381
+      },
+      "totalPopulation": 6197,
+      "totalSurface": 16989
+    },
+    "61130": {
+      "communes": [
+        "Appenai-sous-Bellême",
+        "Bellême",
+        "Bellou-le-Trichard",
+        "La Chapelle-Souëf",
+        "Dame-Marie",
+        "Belforêt-en-Perche",
+        "Igé",
+        "Origny-le-Roux",
+        "Pouvrai",
+        "Saint-Cyr-la-Rosière",
+        "Saint-Fulgent-des-Ormes",
+        "Saint-Germain-de-la-Coudre",
+        "Saint-Martin-du-Vieux-Bellême",
+        "Val-au-Perche",
+        "Vaunoise"
+      ],
+      "communeCount": 15,
+      "center": [0.5955, 48.3193],
+      "coverageRadius": 13.3,
+      "boundingBox": {
+        "minLat": 48.2646,
+        "maxLat": 48.3816,
+        "minLon": 0.4201,
+        "maxLon": 0.6905
+      },
+      "totalPopulation": 9953,
+      "totalSurface": 31170
+    },
+    "61140": {
+      "communes": ["Rives d'Andaine", "Juvigny Val d'Andaine", "Bagnoles de l'Orne Normandie"],
+      "communeCount": 3,
+      "center": [-0.467, 48.5455],
+      "coverageRadius": 3.5,
+      "boundingBox": {
+        "minLat": 48.5334,
+        "maxLat": 48.553,
+        "minLon": -0.509,
+        "maxLon": -0.4213
+      },
+      "totalPopulation": 7669,
+      "totalSurface": 13338
+    },
+    "61150": {
+      "communes": [
+        "Avoine",
+        "Écouché-les-Vallées",
+        "Monts-sur-Orne",
+        "Joué-du-Plain",
+        "Lougé-sur-Maire",
+        "Rânes",
+        "Saint-Brice-sous-Rânes",
+        "Sevrai",
+        "Tanques",
+        "Vieux-Pont"
+      ],
+      "communeCount": 10,
+      "center": [-0.1411, 48.6965],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 48.6405,
+        "maxLat": 48.7324,
+        "minLon": -0.2253,
+        "maxLon": -0.0725
+      },
+      "totalPopulation": 5658,
+      "totalSurface": 17877
+    },
+    "61160": {
+      "communes": [
+        "Bailleul",
+        "Brieux",
+        "Coudehard",
+        "Coulonces",
+        "Écorches",
+        "Fontaine-les-Bassets",
+        "Guêprei",
+        "Louvières-en-Auge",
+        "Merri",
+        "Montabard",
+        "Mont-Ormel",
+        "Montreuil-la-Cambe",
+        "Neauphe-sur-Dive",
+        "Nécy",
+        "Ommoy",
+        "Rônai",
+        "Saint-Gervais-des-Sablons",
+        "Saint-Lambert-sur-Dive",
+        "Gouffern en Auge",
+        "Tournai-sur-Dive",
+        "Trun",
+        "Villedieu-lès-Bailleul"
+      ],
+      "communeCount": 22,
+      "center": [0.0276, 48.7996],
+      "coverageRadius": 12.1,
+      "boundingBox": {
+        "minLat": 48.7538,
+        "maxLat": 48.9022,
+        "minLon": -0.1356,
+        "maxLon": 0.1541
+      },
+      "totalPopulation": 8491,
+      "totalSurface": 33924
+    },
+    "61170": {
+      "communes": [
+        "Barville",
+        "Buré",
+        "Bures",
+        "Coulonges-sur-Sarthe",
+        "Laleu",
+        "Marchemaisons",
+        "Le Mêle-sur-Sarthe",
+        "Le Ménil-Guyon",
+        "Montchevrel",
+        "Le Plantis",
+        "Saint-Agnan-sur-Sarthe",
+        "Saint-Aubin-d'Appenai",
+        "Saint-Julien-sur-Sarthe",
+        "Saint-Léger-sur-Sarthe",
+        "Sainte-Scolasse-sur-Sarthe",
+        "Les Ventes-de-Bourse"
+      ],
+      "communeCount": 16,
+      "center": [0.3615, 48.5329],
+      "coverageRadius": 9.7,
+      "boundingBox": {
+        "minLat": 48.4831,
+        "maxLat": 48.609,
+        "minLon": 0.277,
+        "maxLon": 0.4243
+      },
+      "totalPopulation": 4802,
+      "totalSurface": 15837
+    },
+    "61190": {
+      "communes": ["Beaulieu", "Irai", "Charencey", "Tourouvre au Perche", "La Ventrouze"],
+      "communeCount": 5,
+      "center": [0.6795, 48.6149],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 48.591,
+        "maxLat": 48.6802,
+        "minLon": 0.6515,
+        "maxLon": 0.7562
+      },
+      "totalPopulation": 4678,
+      "totalSurface": 18038
+    },
+    "61200": {
+      "communes": [
+        "Argentan",
+        "Aunou-le-Faucon",
+        "Commeaux",
+        "Écouché-les-Vallées",
+        "Fleuré",
+        "Juvigny-sur-Orne",
+        "Moulins-sur-Orne",
+        "Occagnes",
+        "Sai",
+        "Sarceaux",
+        "Sévigny",
+        "Gouffern en Auge"
+      ],
+      "communeCount": 12,
+      "center": [-0.016, 48.743],
+      "coverageRadius": 8.6,
+      "boundingBox": {
+        "minLat": 48.6899,
+        "maxLat": 48.7865,
+        "minLon": -0.1228,
+        "maxLon": 0.0702
+      },
+      "totalPopulation": 22616,
+      "totalSurface": 30386
+    },
+    "61210": {
+      "communes": [
+        "Bazoches-au-Houlme",
+        "Champcerie",
+        "Giel-Courteilles",
+        "Habloville",
+        "La Lande-de-Lougé",
+        "Ménil-Gondouin",
+        "Ménil-Hermei",
+        "Ménil-Vin",
+        "Montreuil-au-Houlme",
+        "Neuvy-au-Houlme",
+        "Putanges-le-Lac",
+        "Ri",
+        "Sainte-Honorine-la-Guillaume",
+        "Les Yveteaux"
+      ],
+      "communeCount": 14,
+      "center": [-0.2452, 48.775],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 48.6865,
+        "maxLat": 48.8442,
+        "minLon": -0.379,
+        "maxLon": -0.1383
+      },
+      "totalPopulation": 4959,
+      "totalSurface": 21588
+    },
+    "61220": {
+      "communes": [
+        "Bellou-en-Houlme",
+        "Briouze",
+        "La Coulonche",
+        "Craménil",
+        "Lignou",
+        "Le Ménil-de-Briouze",
+        "Pointel",
+        "Saint-André-de-Briouze",
+        "Saint-Hilaire-de-Briouze",
+        "Saires-la-Verrerie"
+      ],
+      "communeCount": 10,
+      "center": [-0.3971, 48.6904],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 48.6472,
+        "maxLat": 48.7456,
+        "minLon": -0.4975,
+        "maxLon": -0.3239
+      },
+      "totalPopulation": 4911,
+      "totalSurface": 14938
+    },
+    "61230": {
+      "communes": [
+        "Chaumont",
+        "Cisai-Saint-Aubin",
+        "Coulmer",
+        "Croisilles",
+        "La Fresnaie-Fayel",
+        "Gacé",
+        "Mardilly",
+        "Ménil-Hubert-en-Exmes",
+        "Orgères",
+        "Résenlieu",
+        "Saint-Evroult-de-Montfort",
+        "Le Sap-André",
+        "La Trinité-des-Laitiers"
+      ],
+      "communeCount": 13,
+      "center": [0.3014, 48.7974],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 48.7634,
+        "maxLat": 48.8358,
+        "minLon": 0.2227,
+        "maxLon": 0.3827
+      },
+      "totalPopulation": 3601,
+      "totalSurface": 14752
+    },
+    "61240": {
+      "communes": [
+        "Chailloué",
+        "Champ-Haut",
+        "Lignères",
+        "Ménil-Froger",
+        "Le Ménil-Vicomte",
+        "Merlerault-le-Pin",
+        "Saint-Germain-de-Clairefeuille"
+      ],
+      "communeCount": 7,
+      "center": [0.2409, 48.6815],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 48.6517,
+        "maxLat": 48.7498,
+        "minLon": 0.1954,
+        "maxLon": 0.3257
+      },
+      "totalPopulation": 1937,
+      "totalSurface": 12945
+    },
+    "61250": {
+      "communes": [
+        "Colombiers",
+        "Condé-sur-Sarthe",
+        "Cuissai",
+        "Damigny",
+        "Hauterive",
+        "Héloup",
+        "Larré",
+        "Lonrai",
+        "Le Ménil-Broût",
+        "Ménil-Erreux",
+        "Mieuxcé",
+        "Neuilly-le-Bisson",
+        "Pacé",
+        "Écouves",
+        "Saint-Céneri-le-Gérei",
+        "Saint-Nicolas-des-Bois",
+        "Semallé",
+        "Valframbert"
+      ],
+      "communeCount": 18,
+      "center": [0.075, 48.4564],
+      "coverageRadius": 12.6,
+      "boundingBox": {
+        "minLat": 48.3815,
+        "maxLat": 48.5081,
+        "minLon": -0.051,
+        "maxLon": 0.2322
+      },
+      "totalPopulation": 14384,
+      "totalSurface": 19883
+    },
+    "61260": {
+      "communes": ["Ceton", "Val-au-Perche"],
+      "communeCount": 2,
+      "center": [0.7103, 48.2508],
+      "coverageRadius": 4,
+      "boundingBox": {
+        "minLat": 48.2248,
+        "maxLat": 48.2646,
+        "minLon": 0.6905,
+        "maxLon": 0.7476
+      },
+      "totalPopulation": 5089,
+      "totalSurface": 12300
+    },
+    "61270": {
+      "communes": [
+        "Aube",
+        "Auguaise",
+        "Beaufai",
+        "Bonnefoi",
+        "Brethel",
+        "La Chapelle-Viel",
+        "Écorcei",
+        "Les Genettes",
+        "Le Ménil-Bérard",
+        "Rai",
+        "Saint-Hilaire-sur-Risle",
+        "Les Aspres"
+      ],
+      "communeCount": 12,
+      "center": [0.5634, 48.7269],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 48.6639,
+        "maxLat": 48.7505,
+        "minLon": 0.4901,
+        "maxLon": 0.6168
+      },
+      "totalPopulation": 5341,
+      "totalSurface": 11085
+    },
+    "61290": {
+      "communes": ["Bizou", "L'Hôme-Chamondot", "Longny les Villages", "Le Mage", "Les Menus", "Le Pas-Saint-l'Homer"],
+      "communeCount": 6,
+      "center": [0.7699, 48.5305],
+      "coverageRadius": 12.7,
+      "boundingBox": {
+        "minLat": 48.4953,
+        "maxLat": 48.5876,
+        "minLon": 0.712,
+        "maxLon": 0.9339
+      },
+      "totalPopulation": 3813,
+      "totalSurface": 22498
+    },
+    "61300": {
+      "communes": [
+        "Chandai",
+        "Crulai",
+        "L'Aigle",
+        "Saint-Martin-d'Écublei",
+        "Saint-Michel-Tubœuf",
+        "Saint-Ouen-sur-Iton",
+        "Saint-Sulpice-sur-Risle",
+        "Saint-Symphorien-des-Bruyères",
+        "Vitrai-sous-Laigle"
+      ],
+      "communeCount": 9,
+      "center": [0.6482, 48.7613],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 48.7046,
+        "maxLat": 48.7905,
+        "minLon": 0.5825,
+        "maxLon": 0.7346
+      },
+      "totalPopulation": 13571,
+      "totalSurface": 14647
+    },
+    "61310": {
+      "communes": ["Ginai", "Le Pin-au-Haras", "Gouffern en Auge"],
+      "communeCount": 3,
+      "center": [0.0774, 48.7531],
+      "coverageRadius": 10.4,
+      "boundingBox": {
+        "minLat": 48.7452,
+        "maxLat": 48.7538,
+        "minLon": 0.0702,
+        "maxLon": 0.2177
+      },
+      "totalPopulation": 3969,
+      "totalSurface": 18503
+    },
+    "61320": {
+      "communes": [
+        "Carrouges",
+        "Chahains",
+        "Le Champ-de-la-Pierre",
+        "Ciral",
+        "Joué-du-Bois",
+        "Lalacelle",
+        "La Lande-de-Goult",
+        "L'Orée-d'Écouves",
+        "Le Ménil-Scelleur",
+        "Rouperroux",
+        "Saint-Ellier-les-Bois",
+        "Sainte-Marguerite-de-Carrouges",
+        "Sainte-Marie-la-Robert",
+        "Saint-Martin-des-Landes",
+        "Saint-Martin-l'Aiguillon",
+        "Saint-Sauveur-de-Carrouges"
+      ],
+      "communeCount": 16,
+      "center": [-0.121, 48.5489],
+      "coverageRadius": 9.1,
+      "boundingBox": {
+        "minLat": 48.4758,
+        "maxLat": 48.6235,
+        "minLon": -0.2293,
+        "maxLon": -0.0325
+      },
+      "totalPopulation": 4144,
+      "totalSurface": 22710
+    },
+    "61330": {
+      "communes": ["Ceaucé", "Juvigny Val d'Andaine", "Torchamp"],
+      "communeCount": 3,
+      "center": [-0.5634, 48.5338],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 48.4971,
+        "maxLat": 48.5523,
+        "minLon": -0.6971,
+        "maxLon": -0.509
+      },
+      "totalPopulation": 3568,
+      "totalSurface": 13641
+    },
+    "61340": {
+      "communes": [
+        "Berd'huis",
+        "Cour-Maugis sur Huisne",
+        "Perche en Nocé",
+        "Saint-Hilaire-sur-Erre",
+        "Saint-Pierre-la-Bruyère",
+        "Val-au-Perche"
+      ],
+      "communeCount": 6,
+      "center": [0.7063, 48.3261],
+      "coverageRadius": 12.9,
+      "boundingBox": {
+        "minLat": 48.2646,
+        "maxLat": 48.4419,
+        "minLon": 0.6807,
+        "maxLon": 0.8049
+      },
+      "totalPopulation": 7886,
+      "totalSurface": 23073
+    },
+    "61350": {
+      "communes": [
+        "Mantilly",
+        "Passais Villages",
+        "Saint-Fraimbault",
+        "Saint-Mars-d'Égrenne",
+        "Saint-Roch-sur-Égrenne"
+      ],
+      "communeCount": 5,
+      "center": [-0.7473, 48.5248],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 48.487,
+        "maxLat": 48.5763,
+        "minLon": -0.8008,
+        "maxLon": -0.698
+      },
+      "totalPopulation": 3002,
+      "totalSurface": 13874
+    },
+    "61360": {
+      "communes": [
+        "Bellavilliers",
+        "Chemilli",
+        "Coulimer",
+        "Belforêt-en-Perche",
+        "Montgaudry",
+        "Pervenchères",
+        "Saint-Jouin-de-Blavou",
+        "Saint-Quentin-de-Blavou",
+        "Suré",
+        "Vidai"
+      ],
+      "communeCount": 10,
+      "center": [0.4776, 48.4036],
+      "coverageRadius": 9.6,
+      "boundingBox": {
+        "minLat": 48.3647,
+        "maxLat": 48.476,
+        "minLon": 0.3792,
+        "maxLon": 0.5231
+      },
+      "totalPopulation": 3262,
+      "totalSurface": 20258
+    },
+    "61370": {
+      "communes": ["Échauffour", "Planches", "Sainte-Gauburge-Sainte-Colombe", "Saint-Pierre-des-Loges"],
+      "communeCount": 4,
+      "center": [0.4135, 48.7259],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 48.7007,
+        "maxLat": 48.7502,
+        "minLon": 0.3709,
+        "maxLon": 0.4719
+      },
+      "totalPopulation": 2084,
+      "totalSurface": 7692
+    },
+    "61380": {
+      "communes": [
+        "Bonsmoulins",
+        "La Ferrière-au-Doyen",
+        "Mahéru",
+        "Moulins-la-Marche",
+        "Saint-Aquilin-de-Corbion",
+        "Sainte-Céronne-lès-Mortagne",
+        "Saint-Martin-des-Pézerits",
+        "Soligny-la-Trappe"
+      ],
+      "communeCount": 8,
+      "center": [0.5017, 48.6338],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 48.5686,
+        "maxLat": 48.6663,
+        "minLon": 0.4322,
+        "maxLon": 0.5373
+      },
+      "totalPopulation": 2437,
+      "totalSurface": 10655
+    },
+    "61390": {
+      "communes": [
+        "Brullemail",
+        "Le Chalange",
+        "Courtomer",
+        "Fay",
+        "Ferrières-la-Verrerie",
+        "Gâprée",
+        "Saint-Germain-le-Vieux",
+        "Saint-Léonard-des-Parcs",
+        "Tellières-le-Plessis",
+        "Trémont"
+      ],
+      "communeCount": 10,
+      "center": [0.3419, 48.6288],
+      "coverageRadius": 6,
+      "boundingBox": {
+        "minLat": 48.5938,
+        "maxLat": 48.6588,
+        "minLon": 0.2745,
+        "maxLon": 0.4086
+      },
+      "totalPopulation": 1596,
+      "totalSurface": 9897
+    },
+    "61400": {
+      "communes": [
+        "La Chapelle-Montligeon",
+        "Comblot",
+        "Corbon",
+        "Courgeon",
+        "Feings",
+        "Belforêt-en-Perche",
+        "Loisail",
+        "Mauves-sur-Huisne",
+        "Mortagne-au-Perche",
+        "Parfondeval",
+        "Le Pin-la-Garenne",
+        "Réveillon",
+        "Saint-Denis-sur-Huisne",
+        "Saint-Hilaire-le-Châtel",
+        "Saint-Langis-lès-Mortagne",
+        "Saint-Mard-de-Réno",
+        "Villiers-sous-Mortagne"
+      ],
+      "communeCount": 17,
+      "center": [0.5601, 48.4875],
+      "coverageRadius": 12.9,
+      "boundingBox": {
+        "minLat": 48.3743,
+        "maxLat": 48.5628,
+        "minLon": 0.5069,
+        "maxLon": 0.6542
+      },
+      "totalPopulation": 10542,
+      "totalSurface": 25921
+    },
+    "61410": {
+      "communes": ["Rives d'Andaine", "La Ferté Macé", "Méhoudin", "Saint-Ouen-le-Brisoult", "Tessé-Froulay"],
+      "communeCount": 5,
+      "center": [-0.4022, 48.5657],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 48.4996,
+        "maxLat": 48.5897,
+        "minLon": -0.4793,
+        "maxLon": -0.34
+      },
+      "totalPopulation": 8585,
+      "totalSurface": 8838
+    },
+    "61420": {
+      "communes": [
+        "La Ferrière-Bochard",
+        "Gandelain",
+        "L'Orée-d'Écouves",
+        "La Roche-Mabile",
+        "Saint-Denis-sur-Sarthon"
+      ],
+      "communeCount": 5,
+      "center": [-0.0466, 48.4652],
+      "coverageRadius": 6,
+      "boundingBox": {
+        "minLat": 48.4123,
+        "maxLat": 48.5148,
+        "minLon": -0.0882,
+        "maxLon": -0.0312
+      },
+      "totalPopulation": 3092,
+      "totalSurface": 8932
+    },
+    "61430": {
+      "communes": [
+        "Athis-Val de Rouvre",
+        "Berjou",
+        "Cahan",
+        "Ménil-Hubert-sur-Orne",
+        "Sainte-Honorine-la-Chardonne",
+        "Saint-Philbert-sur-Orne"
+      ],
+      "communeCount": 6,
+      "center": [-0.4854, 48.8204],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 48.811,
+        "maxLat": 48.8588,
+        "minLon": -0.4987,
+        "maxLon": -0.3779
+      },
+      "totalPopulation": 6077,
+      "totalSurface": 12391
+    },
+    "61440": {
+      "communes": ["Échalou", "Messei", "Saint-André-de-Messei"],
+      "communeCount": 3,
+      "center": [-0.5318, 48.71],
+      "coverageRadius": 3.5,
+      "boundingBox": {
+        "minLat": 48.6945,
+        "maxLat": 48.7277,
+        "minLon": -0.5415,
+        "maxLon": -0.4936
+      },
+      "totalPopulation": 2669,
+      "totalSurface": 3417
+    },
+    "61450": {
+      "communes": ["Banvou", "Le Châtellier", "La Ferrière-aux-Étangs"],
+      "communeCount": 3,
+      "center": [-0.5378, 48.6658],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 48.6629,
+        "maxLat": 48.6768,
+        "minLon": -0.5829,
+        "maxLon": -0.5204
+      },
+      "totalPopulation": 2563,
+      "totalSurface": 3250
+    },
+    "61470": {
+      "communes": [
+        "Avernes-Saint-Gourgon",
+        "Le Bosc-Renoult",
+        "La Ferté-en-Ouche",
+        "Saint-Aubin-de-Bonneval",
+        "Saint-Germain-d'Aunay",
+        "Sap-en-Auge"
+      ],
+      "communeCount": 6,
+      "center": [0.4528, 48.8629],
+      "coverageRadius": 12.9,
+      "boundingBox": {
+        "minLat": 48.8408,
+        "maxLat": 48.9408,
+        "minLon": 0.3056,
+        "maxLon": 0.5114
+      },
+      "totalPopulation": 4478,
+      "totalSurface": 20782
+    },
+    "61490": {
+      "communes": ["Saint-Clair-de-Halouze"],
+      "communeCount": 1,
+      "center": [-0.6236, 48.6791],
+      "coverageRadius": 1.95,
+      "totalPopulation": 821,
+      "totalSurface": 1190
+    },
+    "61500": {
+      "communes": [
+        "Aunay-les-Bois",
+        "Aunou-sur-Orne",
+        "Belfonds",
+        "Boitron",
+        "Le Bouillon",
+        "Bursard",
+        "Le Cercueil",
+        "Chailloué",
+        "La Chapelle-près-Sées",
+        "Essay",
+        "La Ferrière-Béchet",
+        "Macé",
+        "Mortrée",
+        "Neauphe-sous-Essai",
+        "Saint-Gervais-du-Perron",
+        "Sées",
+        "Tanville"
+      ],
+      "communeCount": 17,
+      "center": [0.1626, 48.601],
+      "coverageRadius": 12,
+      "boundingBox": {
+        "minLat": 48.5355,
+        "maxLat": 48.6517,
+        "minLon": 0.0079,
+        "maxLon": 0.2906
+      },
+      "totalPopulation": 10197,
+      "totalSurface": 29563
+    },
+    "61550": {
+      "communes": [
+        "La Ferté-en-Ouche",
+        "La Gonfrière",
+        "Saint-Evroult-Notre-Dame-du-Bois",
+        "Saint-Nicolas-de-Sommaire",
+        "Touquettes"
+      ],
+      "communeCount": 5,
+      "center": [0.5081, 48.831],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 48.7908,
+        "maxLat": 48.8408,
+        "minLon": 0.4212,
+        "maxLon": 0.6095
+      },
+      "totalPopulation": 4015,
+      "totalSurface": 20616
+    },
+    "61560": {
+      "communes": [
+        "Bazoches-sur-Hoëne",
+        "Boëcé",
+        "Champeaux-sur-Sarthe",
+        "Courgeoût",
+        "La Mesnière",
+        "Saint-Aubin-de-Courteraie",
+        "Saint-Germain-de-Martigny",
+        "Saint-Ouen-de-Sécherouvre"
+      ],
+      "communeCount": 8,
+      "center": [0.4657, 48.5477],
+      "coverageRadius": 7.2,
+      "boundingBox": {
+        "minLat": 48.5086,
+        "maxLat": 48.6092,
+        "minLon": 0.4341,
+        "maxLon": 0.4896
+      },
+      "totalPopulation": 2227,
+      "totalSurface": 8793
+    },
+    "61570": {
+      "communes": [
+        "Almenêches",
+        "La Bellière",
+        "Boissei-la-Lande",
+        "Boucé",
+        "Le Château-d'Almenêches",
+        "Francheville",
+        "Médavy",
+        "Montmerrei",
+        "Mortrée",
+        "Boischampré"
+      ],
+      "communeCount": 10,
+      "center": [0.034, 48.6572],
+      "coverageRadius": 9.3,
+      "boundingBox": {
+        "minLat": 48.6265,
+        "maxLat": 48.6978,
+        "minLon": -0.0904,
+        "maxLon": 0.1222
+      },
+      "totalPopulation": 4770,
+      "totalSurface": 17901
+    },
+    "61600": {
+      "communes": [
+        "Beauvain",
+        "La Chaux",
+        "Faverolles",
+        "La Ferté Macé",
+        "Le Grais",
+        "Lonlay-le-Tesson",
+        "Magny-le-Désert",
+        "La Motte-Fouquet",
+        "Saint-Georges-d'Annebecq",
+        "Saint-Patrice-du-Désert",
+        "Les Monts d'Andaine",
+        "Bagnoles de l'Orne Normandie"
+      ],
+      "communeCount": 12,
+      "center": [-0.3708, 48.5868],
+      "coverageRadius": 10.5,
+      "boundingBox": {
+        "minLat": 48.5413,
+        "maxLat": 48.6676,
+        "minLon": -0.4213,
+        "maxLon": -0.2579
+      },
+      "totalPopulation": 12349,
+      "totalSurface": 21232
+    },
+    "61700": {
+      "communes": [
+        "Avrilly",
+        "Champsecret",
+        "Domfront en Poiraie",
+        "Dompierre",
+        "Lonlay-l'Abbaye",
+        "Perrou",
+        "Saint-Bômer-les-Forges",
+        "Saint-Brice",
+        "Saint-Gilles-des-Marais"
+      ],
+      "communeCount": 9,
+      "center": [-0.6369, 48.6084],
+      "coverageRadius": 8,
+      "boundingBox": {
+        "minLat": 48.5383,
+        "maxLat": 48.6452,
+        "minLon": -0.7096,
+        "maxLon": -0.5516
+      },
+      "totalPopulation": 8291,
+      "totalSurface": 22428
+    },
+    "61790": {
+      "communes": ["Saint-Pierre-du-Regard"],
+      "communeCount": 1,
+      "center": [-0.548, 48.8431],
+      "coverageRadius": 1.73,
+      "totalPopulation": 1335,
+      "totalSurface": 943
+    },
+    "61800": {
+      "communes": [
+        "Chanu",
+        "Le Ménil-Ciboult",
+        "Moncy",
+        "Montsecret-Clairefougère",
+        "Saint-Christophe-de-Chaulieu",
+        "Saint-Pierre-d'Entremont",
+        "Saint-Quentin-les-Chardonnets",
+        "Tinchebray-Bocage"
+      ],
+      "communeCount": 8,
+      "center": [-0.7146, 48.7669],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 48.7298,
+        "maxLat": 48.8246,
+        "minLon": -0.8209,
+        "maxLon": -0.6502
+      },
+      "totalPopulation": 8200,
+      "totalSurface": 15601
+    }
+  }
+}

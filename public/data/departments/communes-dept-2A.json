@@ -1,0 +1,2638 @@
+{
+  "departmentCode": "2A",
+  "departmentName": "Corse-du-Sud",
+  "stats": {
+    "communeCount": 124,
+    "totalPopulation": 166045,
+    "totalSurface": 401686
+  },
+  "communes": [
+    {
+      "nom": "Afa",
+      "code": "2A001",
+      "codesPostaux": ["20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7975, 41.981]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.797, 41.9837]
+      },
+      "population": 3350,
+      "surface": 1192.22,
+      "radius": 1.95
+    },
+    {
+      "nom": "Ajaccio",
+      "code": "2A004",
+      "codesPostaux": ["20000", "20090", "20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7058, 41.9228]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7391, 41.9194]
+      },
+      "population": 75343,
+      "surface": 8248.59,
+      "radius": 5.12
+    },
+    {
+      "nom": "Alata",
+      "code": "2A006",
+      "codesPostaux": ["20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7294, 41.9702]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7425, 41.9762]
+      },
+      "population": 3645,
+      "surface": 3058.18,
+      "radius": 3.12
+    },
+    {
+      "nom": "Albitreccia",
+      "code": "2A008",
+      "codesPostaux": ["20128", "20166"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8744, 41.8552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9417, 41.8631]
+      },
+      "population": 1780,
+      "surface": 4580.39,
+      "radius": 3.82
+    },
+    {
+      "nom": "Altagène",
+      "code": "2A011",
+      "codesPostaux": ["20112"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0737, 41.7097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0703, 41.7063]
+      },
+      "population": 54,
+      "surface": 477.09,
+      "radius": 1.23
+    },
+    {
+      "nom": "Ambiegna",
+      "code": "2A014",
+      "codesPostaux": ["20151"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7681, 42.0899]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.792, 42.0835]
+      },
+      "population": 79,
+      "surface": 616.16,
+      "radius": 1.4
+    },
+    {
+      "nom": "Appietto",
+      "code": "2A017",
+      "codesPostaux": ["20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.731, 41.9965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7674, 42.0151]
+      },
+      "population": 1751,
+      "surface": 3444.24,
+      "radius": 3.31
+    },
+    {
+      "nom": "Arbellara",
+      "code": "2A018",
+      "codesPostaux": ["20110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9926, 41.6705]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9893, 41.6823]
+      },
+      "population": 153,
+      "surface": 1129.35,
+      "radius": 1.9
+    },
+    {
+      "nom": "Arbori",
+      "code": "2A019",
+      "codesPostaux": ["20160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7958, 42.123]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7976, 42.1416]
+      },
+      "population": 51,
+      "surface": 2014,
+      "radius": 2.53
+    },
+    {
+      "nom": "Argiusta-Moriccio",
+      "code": "2A021",
+      "codesPostaux": ["20140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0325, 41.8138]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.025, 41.8153]
+      },
+      "population": 75,
+      "surface": 1023.78,
+      "radius": 1.81
+    },
+    {
+      "nom": "Arro",
+      "code": "2A022",
+      "codesPostaux": ["20151"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8011, 42.0979]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8124, 42.0928]
+      },
+      "population": 80,
+      "surface": 882.01,
+      "radius": 1.68
+    },
+    {
+      "nom": "Aullène",
+      "code": "2A024",
+      "codesPostaux": ["20116"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0929, 41.811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0807, 41.7721]
+      },
+      "population": 183,
+      "surface": 4089.48,
+      "radius": 3.61
+    },
+    {
+      "nom": "Azilone-Ampaza",
+      "code": "2A026",
+      "codesPostaux": ["20190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0144, 41.8718]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0137, 41.8633]
+      },
+      "population": 203,
+      "surface": 799.1,
+      "radius": 1.59
+    },
+    {
+      "nom": "Azzana",
+      "code": "2A027",
+      "codesPostaux": ["20121"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9331, 42.1172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9248, 42.1176]
+      },
+      "population": 50,
+      "surface": 1190.79,
+      "radius": 1.95
+    },
+    {
+      "nom": "Balogna",
+      "code": "2A028",
+      "codesPostaux": ["20160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7505, 42.1854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7786, 42.1775]
+      },
+      "population": 141,
+      "surface": 2769.28,
+      "radius": 2.97
+    },
+    {
+      "nom": "Bastelica",
+      "code": "2A031",
+      "codesPostaux": ["20119"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0553, 41.9781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0501, 42.0011]
+      },
+      "population": 517,
+      "surface": 12715.13,
+      "radius": 6.36
+    },
+    {
+      "nom": "Bastelicaccia",
+      "code": "2A032",
+      "codesPostaux": ["20129"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8371, 41.9327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8239, 41.924]
+      },
+      "population": 4258,
+      "surface": 1809.11,
+      "radius": 2.4
+    },
+    {
+      "nom": "Belvédère-Campomoro",
+      "code": "2A035",
+      "codesPostaux": ["20110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8222, 41.6178]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8158, 41.6291]
+      },
+      "population": 195,
+      "surface": 2676.18,
+      "radius": 2.92
+    },
+    {
+      "nom": "Bilia",
+      "code": "2A038",
+      "codesPostaux": ["20100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9048, 41.6222]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9074, 41.6248]
+      },
+      "population": 53,
+      "surface": 739.86,
+      "radius": 1.53
+    },
+    {
+      "nom": "Bocognano",
+      "code": "2A040",
+      "codesPostaux": ["20136"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0646, 42.0871]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0576, 42.0805]
+      },
+      "population": 393,
+      "surface": 7123.61,
+      "radius": 4.76
+    },
+    {
+      "nom": "Bonifacio",
+      "code": "2A041",
+      "codesPostaux": ["20169"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1973, 41.4217]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1557, 41.3873]
+      },
+      "population": 3269,
+      "surface": 13956.42,
+      "radius": 6.67
+    },
+    {
+      "nom": "Calcatoggio",
+      "code": "2A048",
+      "codesPostaux": ["20111"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7307, 42.0305]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7666, 42.0284]
+      },
+      "population": 517,
+      "surface": 2310.68,
+      "radius": 2.71
+    },
+    {
+      "nom": "Campo",
+      "code": "2A056",
+      "codesPostaux": ["20142"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0011, 41.8908]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0045, 41.892]
+      },
+      "population": 103,
+      "surface": 328.17,
+      "radius": 1.02
+    },
+    {
+      "nom": "Cannelle",
+      "code": "2A060",
+      "codesPostaux": ["20151"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.814, 42.0476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8207, 42.0498]
+      },
+      "population": 72,
+      "surface": 344.36,
+      "radius": 1.05
+    },
+    {
+      "nom": "Carbini",
+      "code": "2A061",
+      "codesPostaux": ["20170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1601, 41.6779]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.147, 41.679]
+      },
+      "population": 117,
+      "surface": 1651.09,
+      "radius": 2.29
+    },
+    {
+      "nom": "Carbuccia",
+      "code": "2A062",
+      "codesPostaux": ["20133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9302, 42.0343]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9534, 42.0407]
+      },
+      "population": 380,
+      "surface": 1444.14,
+      "radius": 2.14
+    },
+    {
+      "nom": "Cardo-Torgia",
+      "code": "2A064",
+      "codesPostaux": ["20190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9735, 41.8533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9767, 41.8701]
+      },
+      "population": 29,
+      "surface": 389.27,
+      "radius": 1.11
+    },
+    {
+      "nom": "Cargèse",
+      "code": "2A065",
+      "codesPostaux": ["20130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.6234, 42.1565]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.5954, 42.1347]
+      },
+      "population": 1193,
+      "surface": 4649.24,
+      "radius": 3.85
+    },
+    {
+      "nom": "Cargiaca",
+      "code": "2A066",
+      "codesPostaux": ["20164"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0385, 41.7302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0469, 41.7291]
+      },
+      "population": 62,
+      "surface": 796.67,
+      "radius": 1.59
+    },
+    {
+      "nom": "Casaglione",
+      "code": "2A070",
+      "codesPostaux": ["20111"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.758, 42.07]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7876, 42.0691]
+      },
+      "population": 509,
+      "surface": 1479.26,
+      "radius": 2.17
+    },
+    {
+      "nom": "Casalabriva",
+      "code": "2A071",
+      "codesPostaux": ["20140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9174, 41.7583]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9377, 41.7531]
+      },
+      "population": 229,
+      "surface": 1582.83,
+      "radius": 2.24
+    },
+    {
+      "nom": "Cauro",
+      "code": "2A085",
+      "codesPostaux": ["20117"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8861, 41.9036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9163, 41.9179]
+      },
+      "population": 1483,
+      "surface": 2770.51,
+      "radius": 2.97
+    },
+    {
+      "nom": "Ciamannacce",
+      "code": "2A089",
+      "codesPostaux": ["20134"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1318, 41.9695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1476, 41.9518]
+      },
+      "population": 130,
+      "surface": 2506.2,
+      "radius": 2.82
+    },
+    {
+      "nom": "Coggia",
+      "code": "2A090",
+      "codesPostaux": ["20118", "20160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7394, 42.1096]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7502, 42.1237]
+      },
+      "population": 808,
+      "surface": 3135.66,
+      "radius": 3.16
+    },
+    {
+      "nom": "Cognocoli-Monticchi",
+      "code": "2A091",
+      "codesPostaux": ["20123", "20166"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8684, 41.8052]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9064, 41.8282]
+      },
+      "population": 174,
+      "surface": 3570.97,
+      "radius": 3.37
+    },
+    {
+      "nom": "Conca",
+      "code": "2A092",
+      "codesPostaux": ["20135"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.32, 41.7548]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.3346, 41.7343]
+      },
+      "population": 1167,
+      "surface": 7803.15,
+      "radius": 4.98
+    },
+    {
+      "nom": "Corrano",
+      "code": "2A094",
+      "codesPostaux": ["20168"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0732, 41.8829]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0651, 41.8909]
+      },
+      "population": 76,
+      "surface": 1270.81,
+      "radius": 2.01
+    },
+    {
+      "nom": "Coti-Chiavari",
+      "code": "2A098",
+      "codesPostaux": ["20138"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7411, 41.7674]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7716, 41.7728]
+      },
+      "population": 731,
+      "surface": 6275.09,
+      "radius": 4.47
+    },
+    {
+      "nom": "Cozzano",
+      "code": "2A099",
+      "codesPostaux": ["20148"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1848, 41.932]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1551, 41.9352]
+      },
+      "population": 281,
+      "surface": 2508.18,
+      "radius": 2.83
+    },
+    {
+      "nom": "Cristinacce",
+      "code": "2A100",
+      "codesPostaux": ["20126"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8575, 42.2458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8384, 42.2398]
+      },
+      "population": 72,
+      "surface": 2059.91,
+      "radius": 2.56
+    },
+    {
+      "nom": "Cuttoli-Corticchiato",
+      "code": "2A103",
+      "codesPostaux": ["20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.884, 41.9776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9064, 41.9881]
+      },
+      "population": 2044,
+      "surface": 3057.43,
+      "radius": 3.12
+    },
+    {
+      "nom": "Eccica-Suarella",
+      "code": "2A104",
+      "codesPostaux": ["20117"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8956, 41.9205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9076, 41.9228]
+      },
+      "population": 1369,
+      "surface": 1440.17,
+      "radius": 2.14
+    },
+    {
+      "nom": "Évisa",
+      "code": "2A108",
+      "codesPostaux": ["20126"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8265, 42.2846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8038, 42.2537]
+      },
+      "population": 225,
+      "surface": 6716.99,
+      "radius": 4.62
+    },
+    {
+      "nom": "Figari",
+      "code": "2A114",
+      "codesPostaux": ["20114"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.126, 41.5188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1298, 41.4872]
+      },
+      "population": 1742,
+      "surface": 9995.83,
+      "radius": 5.64
+    },
+    {
+      "nom": "Foce",
+      "code": "2A115",
+      "codesPostaux": ["20100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0355, 41.624]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0628, 41.6306]
+      },
+      "population": 152,
+      "surface": 2070.75,
+      "radius": 2.57
+    },
+    {
+      "nom": "Forciolo",
+      "code": "2A117",
+      "codesPostaux": ["20190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0155, 41.8463]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0104, 41.8517]
+      },
+      "population": 90,
+      "surface": 686.56,
+      "radius": 1.48
+    },
+    {
+      "nom": "Fozzano",
+      "code": "2A118",
+      "codesPostaux": ["20143"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9909, 41.7014]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0021, 41.6994]
+      },
+      "population": 207,
+      "surface": 1939.14,
+      "radius": 2.48
+    },
+    {
+      "nom": "Frasseto",
+      "code": "2A119",
+      "codesPostaux": ["20157"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0362, 41.9199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0218, 41.8959]
+      },
+      "population": 142,
+      "surface": 1660.49,
+      "radius": 2.3
+    },
+    {
+      "nom": "Giuncheto",
+      "code": "2A127",
+      "codesPostaux": ["20100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9582, 41.5863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9538, 41.5869]
+      },
+      "population": 101,
+      "surface": 765.58,
+      "radius": 1.56
+    },
+    {
+      "nom": "Granace",
+      "code": "2A128",
+      "codesPostaux": ["20100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0123, 41.6399]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0124, 41.6418]
+      },
+      "population": 92,
+      "surface": 403.93,
+      "radius": 1.13
+    },
+    {
+      "nom": "Grossa",
+      "code": "2A129",
+      "codesPostaux": ["20100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8576, 41.605]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8776, 41.6092]
+      },
+      "population": 73,
+      "surface": 1832.3,
+      "radius": 2.42
+    },
+    {
+      "nom": "Grosseto-Prugna",
+      "code": "2A130",
+      "codesPostaux": ["20128", "20166"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8755, 41.8856]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9643, 41.8686]
+      },
+      "population": 3331,
+      "surface": 3176,
+      "radius": 3.18
+    },
+    {
+      "nom": "Guagno",
+      "code": "2A131",
+      "codesPostaux": ["20160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9813, 42.1772]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.95, 42.1685]
+      },
+      "population": 149,
+      "surface": 4278.75,
+      "radius": 3.69
+    },
+    {
+      "nom": "Guargualé",
+      "code": "2A132",
+      "codesPostaux": ["20128"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.927, 41.8251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9262, 41.8368]
+      },
+      "population": 148,
+      "surface": 1061.62,
+      "radius": 1.84
+    },
+    {
+      "nom": "Guitera-les-Bains",
+      "code": "2A133",
+      "codesPostaux": ["20153"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0797, 41.9267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0847, 41.9129]
+      },
+      "population": 157,
+      "surface": 1460.34,
+      "radius": 2.16
+    },
+    {
+      "nom": "Lecci",
+      "code": "2A139",
+      "codesPostaux": ["20137"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.3102, 41.6594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.3187, 41.6806]
+      },
+      "population": 2020,
+      "surface": 2711.78,
+      "radius": 2.94
+    },
+    {
+      "nom": "Letia",
+      "code": "2A141",
+      "codesPostaux": ["20160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8759, 42.2166]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.85, 42.1902]
+      },
+      "population": 120,
+      "surface": 3661.52,
+      "radius": 3.41
+    },
+    {
+      "nom": "Levie",
+      "code": "2A142",
+      "codesPostaux": ["20170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1083, 41.6612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.123, 41.7025]
+      },
+      "population": 674,
+      "surface": 8565.22,
+      "radius": 5.22
+    },
+    {
+      "nom": "Lopigna",
+      "code": "2A144",
+      "codesPostaux": ["20139"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8531, 42.0888]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8431, 42.1032]
+      },
+      "population": 109,
+      "surface": 1964.02,
+      "radius": 2.5
+    },
+    {
+      "nom": "Loreto-di-Tallano",
+      "code": "2A146",
+      "codesPostaux": ["20165"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0314, 41.6963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0372, 41.7193]
+      },
+      "population": 49,
+      "surface": 695.38,
+      "radius": 1.49
+    },
+    {
+      "nom": "Marignana",
+      "code": "2A154",
+      "codesPostaux": ["20141"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7193, 42.209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8006, 42.2338]
+      },
+      "population": 102,
+      "surface": 5518.12,
+      "radius": 4.19
+    },
+    {
+      "nom": "Mela",
+      "code": "2A158",
+      "codesPostaux": ["20112"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0917, 41.6827]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.094, 41.6961]
+      },
+      "population": 34,
+      "surface": 462.16,
+      "radius": 1.21
+    },
+    {
+      "nom": "Moca-Croce",
+      "code": "2A160",
+      "codesPostaux": ["20140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0064, 41.7785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0122, 41.8095]
+      },
+      "population": 234,
+      "surface": 2762.54,
+      "radius": 2.97
+    },
+    {
+      "nom": "Monacia-d'Aullène",
+      "code": "2A163",
+      "codesPostaux": ["20171"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0083, 41.5233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0117, 41.5118]
+      },
+      "population": 546,
+      "surface": 3979.93,
+      "radius": 3.56
+    },
+    {
+      "nom": "Murzo",
+      "code": "2A174",
+      "codesPostaux": ["20160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8491, 42.1556]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8272, 42.1685]
+      },
+      "population": 99,
+      "surface": 2145.96,
+      "radius": 2.61
+    },
+    {
+      "nom": "Ocana",
+      "code": "2A181",
+      "codesPostaux": ["20117"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9034, 41.9547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9345, 41.9589]
+      },
+      "population": 643,
+      "surface": 2601.33,
+      "radius": 2.88
+    },
+    {
+      "nom": "Olivese",
+      "code": "2A186",
+      "codesPostaux": ["20140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0707, 41.8365]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0571, 41.8462]
+      },
+      "population": 220,
+      "surface": 2934.04,
+      "radius": 3.06
+    },
+    {
+      "nom": "Olmeto",
+      "code": "2A189",
+      "codesPostaux": ["20113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8951, 41.7119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9175, 41.7168]
+      },
+      "population": 1265,
+      "surface": 4389.53,
+      "radius": 3.74
+    },
+    {
+      "nom": "Olmiccia",
+      "code": "2A191",
+      "codesPostaux": ["20112"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0311, 41.67]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0588, 41.6909]
+      },
+      "population": 116,
+      "surface": 1127.21,
+      "radius": 1.89
+    },
+    {
+      "nom": "Orto",
+      "code": "2A196",
+      "codesPostaux": ["20125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9626, 42.1983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9314, 42.1852]
+      },
+      "population": 71,
+      "surface": 1603.55,
+      "radius": 2.26
+    },
+    {
+      "nom": "Osani",
+      "code": "2A197",
+      "codesPostaux": ["20147"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.6165, 42.3436]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.6324, 42.3242]
+      },
+      "population": 95,
+      "surface": 5152.61,
+      "radius": 4.05
+    },
+    {
+      "nom": "Ota",
+      "code": "2A198",
+      "codesPostaux": ["20150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7362, 42.2537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7461, 42.2579]
+      },
+      "population": 471,
+      "surface": 3813.48,
+      "radius": 3.48
+    },
+    {
+      "nom": "Palneca",
+      "code": "2A200",
+      "codesPostaux": ["20134"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1868, 41.9905]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1704, 41.968]
+      },
+      "population": 133,
+      "surface": 4364.58,
+      "radius": 3.73
+    },
+    {
+      "nom": "Partinello",
+      "code": "2A203",
+      "codesPostaux": ["20147"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.6921, 42.3151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.6816, 42.3119]
+      },
+      "population": 96,
+      "surface": 1859,
+      "radius": 2.43
+    },
+    {
+      "nom": "Pastricciola",
+      "code": "2A204",
+      "codesPostaux": ["20121"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0148, 42.1444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9843, 42.1404]
+      },
+      "population": 92,
+      "surface": 4637.72,
+      "radius": 3.84
+    },
+    {
+      "nom": "Peri",
+      "code": "2A209",
+      "codesPostaux": ["20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9099, 42.0015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9206, 42.0049]
+      },
+      "population": 2042,
+      "surface": 2404.25,
+      "radius": 2.77
+    },
+    {
+      "nom": "Petreto-Bicchisano",
+      "code": "2A211",
+      "codesPostaux": ["20140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9629, 41.7657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9804, 41.7854]
+      },
+      "population": 570,
+      "surface": 3916.38,
+      "radius": 3.53
+    },
+    {
+      "nom": "Piana",
+      "code": "2A212",
+      "codesPostaux": ["20115"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.6208, 42.2233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.6378, 42.2377]
+      },
+      "population": 458,
+      "surface": 6275.02,
+      "radius": 4.47
+    },
+    {
+      "nom": "Pianottoli-Caldarello",
+      "code": "2A215",
+      "codesPostaux": ["20131"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0457, 41.5209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0551, 41.4919]
+      },
+      "population": 800,
+      "surface": 4262.56,
+      "radius": 3.68
+    },
+    {
+      "nom": "Pietrosella",
+      "code": "2A228",
+      "codesPostaux": ["20166"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8071, 41.8246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8457, 41.8366]
+      },
+      "population": 2042,
+      "surface": 3553.24,
+      "radius": 3.36
+    },
+    {
+      "nom": "Pila-Canale",
+      "code": "2A232",
+      "codesPostaux": ["20123"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8951, 41.7917]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9111, 41.8125]
+      },
+      "population": 274,
+      "surface": 1878.52,
+      "radius": 2.45
+    },
+    {
+      "nom": "Poggiolo",
+      "code": "2A240",
+      "codesPostaux": ["20125", "20160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8985, 42.1616]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9092, 42.1759]
+      },
+      "population": 107,
+      "surface": 1216.35,
+      "radius": 1.97
+    },
+    {
+      "nom": "Porto-Vecchio",
+      "code": "2A247",
+      "codesPostaux": ["20137"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.2732, 41.5849]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.2788, 41.5914]
+      },
+      "population": 11536,
+      "surface": 16830.94,
+      "radius": 7.32
+    },
+    {
+      "nom": "Propriano",
+      "code": "2A249",
+      "codesPostaux": ["20110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.89, 41.651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9035, 41.676]
+      },
+      "population": 3864,
+      "surface": 1896.7,
+      "radius": 2.46
+    },
+    {
+      "nom": "Quasquara",
+      "code": "2A253",
+      "codesPostaux": ["20142"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0071, 41.912]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0093, 41.9001]
+      },
+      "population": 61,
+      "surface": 614.49,
+      "radius": 1.4
+    },
+    {
+      "nom": "Quenza",
+      "code": "2A254",
+      "codesPostaux": ["20122"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.2156, 41.7948]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1379, 41.7651]
+      },
+      "population": 185,
+      "surface": 9590.01,
+      "radius": 5.53
+    },
+    {
+      "nom": "Renno",
+      "code": "2A258",
+      "codesPostaux": ["20160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8207, 42.2053]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8265, 42.2092]
+      },
+      "population": 63,
+      "surface": 1263.77,
+      "radius": 2.01
+    },
+    {
+      "nom": "Rezza",
+      "code": "2A259",
+      "codesPostaux": ["20121"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9557, 42.1255]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9456, 42.1245]
+      },
+      "population": 70,
+      "surface": 1363.75,
+      "radius": 2.08
+    },
+    {
+      "nom": "Rosazia",
+      "code": "2A262",
+      "codesPostaux": ["20121"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8581, 42.1235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8771, 42.1282]
+      },
+      "population": 52,
+      "surface": 1970.63,
+      "radius": 2.5
+    },
+    {
+      "nom": "Sainte-Lucie-de-Tallano",
+      "code": "2A308",
+      "codesPostaux": ["20112"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0613, 41.673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0642, 41.6977]
+      },
+      "population": 382,
+      "surface": 2560.91,
+      "radius": 2.86
+    },
+    {
+      "nom": "Salice",
+      "code": "2A266",
+      "codesPostaux": ["20121"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9003, 42.1071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9001, 42.1198]
+      },
+      "population": 88,
+      "surface": 2203.4,
+      "radius": 2.65
+    },
+    {
+      "nom": "Sampolo",
+      "code": "2A268",
+      "codesPostaux": ["20134"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1217, 41.9488]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1232, 41.9417]
+      },
+      "population": 87,
+      "surface": 713.98,
+      "radius": 1.51
+    },
+    {
+      "nom": "San-Gavino-di-Carbini",
+      "code": "2A300",
+      "codesPostaux": ["20137", "20170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.2298, 41.686]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1481, 41.7213]
+      },
+      "population": 1162,
+      "surface": 4775.94,
+      "radius": 3.9
+    },
+    {
+      "nom": "Sant'Andréa-d'Orcino",
+      "code": "2A295",
+      "codesPostaux": ["20151"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7845, 42.0452]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8086, 42.0466]
+      },
+      "population": 141,
+      "surface": 887.35,
+      "radius": 1.68
+    },
+    {
+      "nom": "Santa-Maria-Figaniella",
+      "code": "2A310",
+      "codesPostaux": ["20143"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0094, 41.7288]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0039, 41.7069]
+      },
+      "population": 83,
+      "surface": 1304.62,
+      "radius": 2.04
+    },
+    {
+      "nom": "Santa-Maria-Siché",
+      "code": "2A312",
+      "codesPostaux": ["20190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9819, 41.8838]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9812, 41.878]
+      },
+      "population": 371,
+      "surface": 1067.52,
+      "radius": 1.84
+    },
+    {
+      "nom": "Sari-d'Orcino",
+      "code": "2A270",
+      "codesPostaux": ["20151"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8369, 42.064]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8295, 42.0601]
+      },
+      "population": 351,
+      "surface": 2215.87,
+      "radius": 2.66
+    },
+    {
+      "nom": "Sari-Solenzara",
+      "code": "2A269",
+      "codesPostaux": ["20145"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.3395, 41.8163]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.3961, 41.8592]
+      },
+      "population": 1447,
+      "surface": 7444.79,
+      "radius": 4.87
+    },
+    {
+      "nom": "Sarrola-Carcopino",
+      "code": "2A271",
+      "codesPostaux": ["20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8276, 41.9981]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8413, 42.0254]
+      },
+      "population": 3250,
+      "surface": 2686.46,
+      "radius": 2.92
+    },
+    {
+      "nom": "Sartène",
+      "code": "2A272",
+      "codesPostaux": ["20100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9326, 41.5752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9719, 41.6211]
+      },
+      "population": 3732,
+      "surface": 20047.77,
+      "radius": 7.99
+    },
+    {
+      "nom": "Serra-di-Ferro",
+      "code": "2A276",
+      "codesPostaux": ["20140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8144, 41.7444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7987, 41.7286]
+      },
+      "population": 709,
+      "surface": 3274.71,
+      "radius": 3.23
+    },
+    {
+      "nom": "Serra-di-Scopamène",
+      "code": "2A278",
+      "codesPostaux": ["20127"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1187, 41.7827]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1009, 41.7541]
+      },
+      "population": 117,
+      "surface": 2048.93,
+      "radius": 2.55
+    },
+    {
+      "nom": "Serriera",
+      "code": "2A279",
+      "codesPostaux": ["20147"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.7296, 42.3084]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7088, 42.3016]
+      },
+      "population": 115,
+      "surface": 3692.02,
+      "radius": 3.43
+    },
+    {
+      "nom": "Soccia",
+      "code": "2A282",
+      "codesPostaux": ["20125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9309, 42.2065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.911, 42.1891]
+      },
+      "population": 162,
+      "surface": 2790.99,
+      "radius": 2.98
+    },
+    {
+      "nom": "Sollacaro",
+      "code": "2A284",
+      "codesPostaux": ["20140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.876, 41.742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9115, 41.7448]
+      },
+      "population": 383,
+      "surface": 2399.38,
+      "radius": 2.76
+    },
+    {
+      "nom": "Sorbollano",
+      "code": "2A285",
+      "codesPostaux": ["20152"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.112, 41.7521]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1108, 41.7522]
+      },
+      "population": 65,
+      "surface": 781.68,
+      "radius": 1.58
+    },
+    {
+      "nom": "Sotta",
+      "code": "2A288",
+      "codesPostaux": ["20146"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1767, 41.5557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1943, 41.5454]
+      },
+      "population": 1866,
+      "surface": 6657.93,
+      "radius": 4.6
+    },
+    {
+      "nom": "Tasso",
+      "code": "2A322",
+      "codesPostaux": ["20134"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0904, 41.9476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1047, 41.9435]
+      },
+      "population": 88,
+      "surface": 1682.76,
+      "radius": 2.31
+    },
+    {
+      "nom": "Tavaco",
+      "code": "2A323",
+      "codesPostaux": ["20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8873, 42.0327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8993, 42.035]
+      },
+      "population": 406,
+      "surface": 1091.06,
+      "radius": 1.86
+    },
+    {
+      "nom": "Tavera",
+      "code": "2A324",
+      "codesPostaux": ["20163"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0296, 42.0729]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0157, 42.0684]
+      },
+      "population": 433,
+      "surface": 3244.47,
+      "radius": 3.21
+    },
+    {
+      "nom": "Tolla",
+      "code": "2A326",
+      "codesPostaux": ["20117"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9674, 41.9678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9733, 41.9749]
+      },
+      "population": 121,
+      "surface": 2539.65,
+      "radius": 2.84
+    },
+    {
+      "nom": "Ucciani",
+      "code": "2A330",
+      "codesPostaux": ["20133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9853, 42.0514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9767, 42.0433]
+      },
+      "population": 503,
+      "surface": 2862.42,
+      "radius": 3.02
+    },
+    {
+      "nom": "Urbalacone",
+      "code": "2A331",
+      "codesPostaux": ["20128"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9488, 41.8234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9466, 41.8357]
+      },
+      "population": 63,
+      "surface": 827.1,
+      "radius": 1.62
+    },
+    {
+      "nom": "Valle-di-Mezzana",
+      "code": "2A336",
+      "codesPostaux": ["20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.8167, 42.0253]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.8244, 42.0239]
+      },
+      "population": 538,
+      "surface": 706.4,
+      "radius": 1.5
+    },
+    {
+      "nom": "Vero",
+      "code": "2A345",
+      "codesPostaux": ["20172"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9198, 42.0576]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9321, 42.0635]
+      },
+      "population": 629,
+      "surface": 2365.74,
+      "radius": 2.74
+    },
+    {
+      "nom": "Vico",
+      "code": "2A348",
+      "codesPostaux": ["20118", "20160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.736, 42.1462]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.7982, 42.1667]
+      },
+      "population": 1007,
+      "surface": 5221.18,
+      "radius": 4.08
+    },
+    {
+      "nom": "Viggianello",
+      "code": "2A349",
+      "codesPostaux": ["20110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9461, 41.6715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9526, 41.6807]
+      },
+      "population": 890,
+      "surface": 1695.81,
+      "radius": 2.32
+    },
+    {
+      "nom": "Villanova",
+      "code": "2A351",
+      "codesPostaux": ["20167"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.6614, 41.964]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.6676, 41.9596]
+      },
+      "population": 397,
+      "surface": 1142.89,
+      "radius": 1.91
+    },
+    {
+      "nom": "Zérubia",
+      "code": "2A357",
+      "codesPostaux": ["20116"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0545, 41.7459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0757, 41.7526]
+      },
+      "population": 46,
+      "surface": 1344.55,
+      "radius": 2.07
+    },
+    {
+      "nom": "Zévaco",
+      "code": "2A358",
+      "codesPostaux": ["20173"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0458, 41.889]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0491, 41.8922]
+      },
+      "population": 51,
+      "surface": 1009.8,
+      "radius": 1.79
+    },
+    {
+      "nom": "Zicavo",
+      "code": "2A359",
+      "codesPostaux": ["20132"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.1693, 41.884]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1285, 41.908]
+      },
+      "population": 208,
+      "surface": 9253.41,
+      "radius": 5.43
+    },
+    {
+      "nom": "Zigliara",
+      "code": "2A360",
+      "codesPostaux": ["20190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [8.9833, 41.8361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [8.9937, 41.8461]
+      },
+      "population": 128,
+      "surface": 1289.01,
+      "radius": 2.03
+    },
+    {
+      "nom": "Zonza",
+      "code": "2A362",
+      "codesPostaux": ["20124", "20144"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.2719, 41.7145]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.1714, 41.7493]
+      },
+      "population": 2869,
+      "surface": 13411.55,
+      "radius": 6.53
+    },
+    {
+      "nom": "Zoza",
+      "code": "2A363",
+      "codesPostaux": ["20112"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [9.0699, 41.7226]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [9.0699, 41.7177]
+      },
+      "population": 66,
+      "surface": 500.54,
+      "radius": 1.26
+    }
+  ],
+  "postalCodes": {
+    "20000": {
+      "communes": ["Ajaccio"],
+      "communeCount": 1,
+      "center": [8.7391, 41.9194],
+      "coverageRadius": 5.12,
+      "totalPopulation": 75343,
+      "totalSurface": 8249
+    },
+    "20090": {
+      "communes": ["Ajaccio"],
+      "communeCount": 1,
+      "center": [8.7391, 41.9194],
+      "coverageRadius": 5.12,
+      "totalPopulation": 75343,
+      "totalSurface": 8249
+    },
+    "20100": {
+      "communes": ["Bilia", "Foce", "Giuncheto", "Granace", "Grossa", "Sartène"],
+      "communeCount": 6,
+      "center": [8.9732, 41.6209],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 41.5869,
+        "maxLat": 41.6418,
+        "minLon": 8.8776,
+        "maxLon": 9.0628
+      },
+      "totalPopulation": 4203,
+      "totalSurface": 25860
+    },
+    "20110": {
+      "communes": ["Arbellara", "Belvédère-Campomoro", "Propriano", "Viggianello"],
+      "communeCount": 4,
+      "center": [8.9113, 41.6752],
+      "coverageRadius": 9.5,
+      "boundingBox": {
+        "minLat": 41.6291,
+        "maxLat": 41.6823,
+        "minLon": 8.8158,
+        "maxLon": 8.9893
+      },
+      "totalPopulation": 5102,
+      "totalSurface": 7398
+    },
+    "20111": {
+      "communes": ["Calcatoggio", "Casaglione"],
+      "communeCount": 2,
+      "center": [8.777, 42.0486],
+      "coverageRadius": 2.5,
+      "boundingBox": {
+        "minLat": 42.0284,
+        "maxLat": 42.0691,
+        "minLon": 8.7666,
+        "maxLon": 8.7876
+      },
+      "totalPopulation": 1026,
+      "totalSurface": 3790
+    },
+    "20112": {
+      "communes": ["Altagène", "Mela", "Olmiccia", "Sainte-Lucie-de-Tallano", "Zoza"],
+      "communeCount": 5,
+      "center": [9.0659, 41.6991],
+      "coverageRadius": 2.4,
+      "boundingBox": {
+        "minLat": 41.6909,
+        "maxLat": 41.7177,
+        "minLon": 9.0588,
+        "maxLon": 9.094
+      },
+      "totalPopulation": 652,
+      "totalSurface": 5128
+    },
+    "20113": {
+      "communes": ["Olmeto"],
+      "communeCount": 1,
+      "center": [8.9175, 41.7168],
+      "coverageRadius": 3.74,
+      "totalPopulation": 1265,
+      "totalSurface": 4390
+    },
+    "20114": {
+      "communes": ["Figari"],
+      "communeCount": 1,
+      "center": [9.1298, 41.4872],
+      "coverageRadius": 5.64,
+      "totalPopulation": 1742,
+      "totalSurface": 9996
+    },
+    "20115": {
+      "communes": ["Piana"],
+      "communeCount": 1,
+      "center": [8.6378, 42.2377],
+      "coverageRadius": 4.47,
+      "totalPopulation": 458,
+      "totalSurface": 6275
+    },
+    "20116": {
+      "communes": ["Aullène", "Zérubia"],
+      "communeCount": 2,
+      "center": [9.0797, 41.7682],
+      "coverageRadius": 1.8,
+      "boundingBox": {
+        "minLat": 41.7526,
+        "maxLat": 41.7721,
+        "minLon": 9.0757,
+        "maxLon": 9.0807
+      },
+      "totalPopulation": 229,
+      "totalSurface": 5434
+    },
+    "20117": {
+      "communes": ["Cauro", "Eccica-Suarella", "Ocana", "Tolla"],
+      "communeCount": 4,
+      "center": [8.9181, 41.929],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 41.9179,
+        "maxLat": 41.9749,
+        "minLon": 8.9076,
+        "maxLon": 8.9733
+      },
+      "totalPopulation": 3616,
+      "totalSurface": 9352
+    },
+    "20118": {
+      "communes": ["Coggia", "Vico"],
+      "communeCount": 2,
+      "center": [8.7768, 42.1476],
+      "coverageRadius": 3.5,
+      "boundingBox": {
+        "minLat": 42.1237,
+        "maxLat": 42.1667,
+        "minLon": 8.7502,
+        "maxLon": 8.7982
+      },
+      "totalPopulation": 1815,
+      "totalSurface": 8357
+    },
+    "20119": {
+      "communes": ["Bastelica"],
+      "communeCount": 1,
+      "center": [9.0501, 42.0011],
+      "coverageRadius": 6.36,
+      "totalPopulation": 517,
+      "totalSurface": 12715
+    },
+    "20121": {
+      "communes": ["Azzana", "Pastricciola", "Rezza", "Rosazia", "Salice"],
+      "communeCount": 5,
+      "center": [8.9313, 42.127],
+      "coverageRadius": 4.7,
+      "boundingBox": {
+        "minLat": 42.1176,
+        "maxLat": 42.1404,
+        "minLon": 8.8771,
+        "maxLon": 8.9843
+      },
+      "totalPopulation": 352,
+      "totalSurface": 11366
+    },
+    "20122": {
+      "communes": ["Quenza"],
+      "communeCount": 1,
+      "center": [9.1379, 41.7651],
+      "coverageRadius": 5.53,
+      "totalPopulation": 185,
+      "totalSurface": 9590
+    },
+    "20123": {
+      "communes": ["Cognocoli-Monticchi", "Pila-Canale"],
+      "communeCount": 2,
+      "center": [8.9093, 41.8186],
+      "coverageRadius": 1.1,
+      "boundingBox": {
+        "minLat": 41.8125,
+        "maxLat": 41.8282,
+        "minLon": 8.9064,
+        "maxLon": 8.9111
+      },
+      "totalPopulation": 448,
+      "totalSurface": 5449
+    },
+    "20124": {
+      "communes": ["Zonza"],
+      "communeCount": 1,
+      "center": [9.1714, 41.7493],
+      "coverageRadius": 6.53,
+      "totalPopulation": 2869,
+      "totalSurface": 13412
+    },
+    "20125": {
+      "communes": ["Orto", "Poggiolo", "Soccia"],
+      "communeCount": 3,
+      "center": [8.9147, 42.1841],
+      "coverageRadius": 1.4,
+      "boundingBox": {
+        "minLat": 42.1759,
+        "maxLat": 42.1891,
+        "minLon": 8.9092,
+        "maxLon": 8.9314
+      },
+      "totalPopulation": 340,
+      "totalSurface": 5611
+    },
+    "20126": {
+      "communes": ["Cristinacce", "Évisa"],
+      "communeCount": 2,
+      "center": [8.8122, 42.2503],
+      "coverageRadius": 2.5,
+      "boundingBox": {
+        "minLat": 42.2398,
+        "maxLat": 42.2537,
+        "minLon": 8.8038,
+        "maxLon": 8.8384
+      },
+      "totalPopulation": 297,
+      "totalSurface": 8777
+    },
+    "20127": {
+      "communes": ["Serra-di-Scopamène"],
+      "communeCount": 1,
+      "center": [9.1009, 41.7541],
+      "coverageRadius": 2.55,
+      "totalPopulation": 117,
+      "totalSurface": 2049
+    },
+    "20128": {
+      "communes": ["Albitreccia", "Grosseto-Prugna", "Guargualé", "Urbalacone"],
+      "communeCount": 4,
+      "center": [8.9555, 41.8655],
+      "coverageRadius": 4.1,
+      "boundingBox": {
+        "minLat": 41.8357,
+        "maxLat": 41.8686,
+        "minLon": 8.9262,
+        "maxLon": 8.9643
+      },
+      "totalPopulation": 5322,
+      "totalSurface": 9645
+    },
+    "20129": {
+      "communes": ["Bastelicaccia"],
+      "communeCount": 1,
+      "center": [8.8239, 41.924],
+      "coverageRadius": 2.4,
+      "totalPopulation": 4258,
+      "totalSurface": 1809
+    },
+    "20130": {
+      "communes": ["Cargèse"],
+      "communeCount": 1,
+      "center": [8.5954, 42.1347],
+      "coverageRadius": 3.85,
+      "totalPopulation": 1193,
+      "totalSurface": 4649
+    },
+    "20131": {
+      "communes": ["Pianottoli-Caldarello"],
+      "communeCount": 1,
+      "center": [9.0551, 41.4919],
+      "coverageRadius": 3.68,
+      "totalPopulation": 800,
+      "totalSurface": 4263
+    },
+    "20132": {
+      "communes": ["Zicavo"],
+      "communeCount": 1,
+      "center": [9.1285, 41.908],
+      "coverageRadius": 5.43,
+      "totalPopulation": 208,
+      "totalSurface": 9253
+    },
+    "20133": {
+      "communes": ["Carbuccia", "Ucciani"],
+      "communeCount": 2,
+      "center": [8.9667, 42.0422],
+      "coverageRadius": 1.2,
+      "boundingBox": {
+        "minLat": 42.0407,
+        "maxLat": 42.0433,
+        "minLon": 8.9534,
+        "maxLon": 8.9767
+      },
+      "totalPopulation": 883,
+      "totalSurface": 4307
+    },
+    "20134": {
+      "communes": ["Ciamannacce", "Palneca", "Sampolo", "Tasso"],
+      "communeCount": 4,
+      "center": [9.1411, 41.953],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 41.9417,
+        "maxLat": 41.968,
+        "minLon": 9.1047,
+        "maxLon": 9.1704
+      },
+      "totalPopulation": 438,
+      "totalSurface": 9268
+    },
+    "20135": {
+      "communes": ["Conca"],
+      "communeCount": 1,
+      "center": [9.3346, 41.7343],
+      "coverageRadius": 4.98,
+      "totalPopulation": 1167,
+      "totalSurface": 7803
+    },
+    "20136": {
+      "communes": ["Bocognano"],
+      "communeCount": 1,
+      "center": [9.0576, 42.0805],
+      "coverageRadius": 4.76,
+      "totalPopulation": 393,
+      "totalSurface": 7124
+    },
+    "20137": {
+      "communes": ["Lecci", "Porto-Vecchio", "San-Gavino-di-Carbini"],
+      "communeCount": 3,
+      "center": [9.274, 41.6139],
+      "coverageRadius": 15.9,
+      "boundingBox": {
+        "minLat": 41.5914,
+        "maxLat": 41.7213,
+        "minLon": 9.1481,
+        "maxLon": 9.3187
+      },
+      "totalPopulation": 14718,
+      "totalSurface": 24319
+    },
+    "20138": {
+      "communes": ["Coti-Chiavari"],
+      "communeCount": 1,
+      "center": [8.7716, 41.7728],
+      "coverageRadius": 4.47,
+      "totalPopulation": 731,
+      "totalSurface": 6275
+    },
+    "20139": {
+      "communes": ["Lopigna"],
+      "communeCount": 1,
+      "center": [8.8431, 42.1032],
+      "coverageRadius": 2.5,
+      "totalPopulation": 109,
+      "totalSurface": 1964
+    },
+    "20140": {
+      "communes": [
+        "Argiusta-Moriccio",
+        "Casalabriva",
+        "Moca-Croce",
+        "Olivese",
+        "Petreto-Bicchisano",
+        "Serra-di-Ferro",
+        "Sollacaro"
+      ],
+      "communeCount": 7,
+      "center": [8.9237, 41.7681],
+      "coverageRadius": 14.1,
+      "boundingBox": {
+        "minLat": 41.7286,
+        "maxLat": 41.8462,
+        "minLon": 8.7987,
+        "maxLon": 9.0571
+      },
+      "totalPopulation": 2420,
+      "totalSurface": 17894
+    },
+    "20141": {
+      "communes": ["Marignana"],
+      "communeCount": 1,
+      "center": [8.8006, 42.2338],
+      "coverageRadius": 4.19,
+      "totalPopulation": 102,
+      "totalSurface": 5518
+    },
+    "20142": {
+      "communes": ["Campo", "Quasquara"],
+      "communeCount": 2,
+      "center": [9.0063, 41.895],
+      "coverageRadius": 0.7,
+      "boundingBox": {
+        "minLat": 41.892,
+        "maxLat": 41.9001,
+        "minLon": 9.0045,
+        "maxLon": 9.0093
+      },
+      "totalPopulation": 164,
+      "totalSurface": 943
+    },
+    "20143": {
+      "communes": ["Fozzano", "Santa-Maria-Figaniella"],
+      "communeCount": 2,
+      "center": [9.0026, 41.7015],
+      "coverageRadius": 0.7,
+      "boundingBox": {
+        "minLat": 41.6994,
+        "maxLat": 41.7069,
+        "minLon": 9.0021,
+        "maxLon": 9.0039
+      },
+      "totalPopulation": 290,
+      "totalSurface": 3244
+    },
+    "20144": {
+      "communes": ["Zonza"],
+      "communeCount": 1,
+      "center": [9.1714, 41.7493],
+      "coverageRadius": 6.53,
+      "totalPopulation": 2869,
+      "totalSurface": 13412
+    },
+    "20145": {
+      "communes": ["Sari-Solenzara"],
+      "communeCount": 1,
+      "center": [9.3961, 41.8592],
+      "coverageRadius": 4.87,
+      "totalPopulation": 1447,
+      "totalSurface": 7445
+    },
+    "20146": {
+      "communes": ["Sotta"],
+      "communeCount": 1,
+      "center": [9.1943, 41.5454],
+      "coverageRadius": 4.6,
+      "totalPopulation": 1866,
+      "totalSurface": 6658
+    },
+    "20147": {
+      "communes": ["Osani", "Partinello", "Serriera"],
+      "communeCount": 3,
+      "center": [8.6765, 42.3118],
+      "coverageRadius": 3.9,
+      "boundingBox": {
+        "minLat": 42.3016,
+        "maxLat": 42.3242,
+        "minLon": 8.6324,
+        "maxLon": 8.7088
+      },
+      "totalPopulation": 306,
+      "totalSurface": 10704
+    },
+    "20148": {
+      "communes": ["Cozzano"],
+      "communeCount": 1,
+      "center": [9.1551, 41.9352],
+      "coverageRadius": 2.83,
+      "totalPopulation": 281,
+      "totalSurface": 2508
+    },
+    "20150": {
+      "communes": ["Ota"],
+      "communeCount": 1,
+      "center": [8.7461, 42.2579],
+      "coverageRadius": 3.48,
+      "totalPopulation": 471,
+      "totalSurface": 3813
+    },
+    "20151": {
+      "communes": ["Ambiegna", "Arro", "Cannelle", "Sari-d'Orcino", "Sant'Andréa-d'Orcino"],
+      "communeCount": 5,
+      "center": [8.8186, 42.0626],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 42.0466,
+        "maxLat": 42.0928,
+        "minLon": 8.792,
+        "maxLon": 8.8295
+      },
+      "totalPopulation": 723,
+      "totalSurface": 4946
+    },
+    "20152": {
+      "communes": ["Sorbollano"],
+      "communeCount": 1,
+      "center": [9.1108, 41.7522],
+      "coverageRadius": 1.58,
+      "totalPopulation": 65,
+      "totalSurface": 782
+    },
+    "20153": {
+      "communes": ["Guitera-les-Bains"],
+      "communeCount": 1,
+      "center": [9.0847, 41.9129],
+      "coverageRadius": 2.16,
+      "totalPopulation": 157,
+      "totalSurface": 1460
+    },
+    "20157": {
+      "communes": ["Frasseto"],
+      "communeCount": 1,
+      "center": [9.0218, 41.8959],
+      "coverageRadius": 2.3,
+      "totalPopulation": 142,
+      "totalSurface": 1660
+    },
+    "20160": {
+      "communes": ["Arbori", "Balogna", "Coggia", "Guagno", "Letia", "Murzo", "Poggiolo", "Renno", "Vico"],
+      "communeCount": 9,
+      "center": [8.7997, 42.1559],
+      "coverageRadius": 12.5,
+      "boundingBox": {
+        "minLat": 42.1237,
+        "maxLat": 42.2092,
+        "minLon": 8.7502,
+        "maxLon": 8.95
+      },
+      "totalPopulation": 2545,
+      "totalSurface": 25706
+    },
+    "20163": {
+      "communes": ["Tavera"],
+      "communeCount": 1,
+      "center": [9.0157, 42.0684],
+      "coverageRadius": 3.21,
+      "totalPopulation": 433,
+      "totalSurface": 3244
+    },
+    "20164": {
+      "communes": ["Cargiaca"],
+      "communeCount": 1,
+      "center": [9.0469, 41.7291],
+      "coverageRadius": 1.59,
+      "totalPopulation": 62,
+      "totalSurface": 797
+    },
+    "20165": {
+      "communes": ["Loreto-di-Tallano"],
+      "communeCount": 1,
+      "center": [9.0372, 41.7193],
+      "coverageRadius": 1.49,
+      "totalPopulation": 49,
+      "totalSurface": 695
+    },
+    "20166": {
+      "communes": ["Albitreccia", "Cognocoli-Monticchi", "Grosseto-Prugna", "Pietrosella"],
+      "communeCount": 4,
+      "center": [8.9244, 41.8574],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 41.8282,
+        "maxLat": 41.8686,
+        "minLon": 8.8457,
+        "maxLon": 8.9643
+      },
+      "totalPopulation": 7327,
+      "totalSurface": 14881
+    },
+    "20167": {
+      "communes": [
+        "Afa",
+        "Ajaccio",
+        "Alata",
+        "Appietto",
+        "Cuttoli-Corticchiato",
+        "Peri",
+        "Sarrola-Carcopino",
+        "Tavaco",
+        "Valle-di-Mezzana",
+        "Villanova"
+      ],
+      "communeCount": 10,
+      "center": [8.754, 41.9342],
+      "coverageRadius": 16.5,
+      "boundingBox": {
+        "minLat": 41.9194,
+        "maxLat": 42.035,
+        "minLon": 8.6676,
+        "maxLon": 8.9206
+      },
+      "totalPopulation": 92766,
+      "totalSurface": 27032
+    },
+    "20168": {
+      "communes": ["Corrano"],
+      "communeCount": 1,
+      "center": [9.0651, 41.8909],
+      "coverageRadius": 2.01,
+      "totalPopulation": 76,
+      "totalSurface": 1271
+    },
+    "20169": {
+      "communes": ["Bonifacio"],
+      "communeCount": 1,
+      "center": [9.1557, 41.3873],
+      "coverageRadius": 6.67,
+      "totalPopulation": 3269,
+      "totalSurface": 13956
+    },
+    "20170": {
+      "communes": ["Carbini", "Levie", "San-Gavino-di-Carbini"],
+      "communeCount": 3,
+      "center": [9.1394, 41.7123],
+      "coverageRadius": 3.8,
+      "boundingBox": {
+        "minLat": 41.679,
+        "maxLat": 41.7213,
+        "minLon": 9.123,
+        "maxLon": 9.1481
+      },
+      "totalPopulation": 1953,
+      "totalSurface": 14992
+    },
+    "20171": {
+      "communes": ["Monacia-d'Aullène"],
+      "communeCount": 1,
+      "center": [9.0117, 41.5118],
+      "coverageRadius": 3.56,
+      "totalPopulation": 546,
+      "totalSurface": 3980
+    },
+    "20172": {
+      "communes": ["Vero"],
+      "communeCount": 1,
+      "center": [8.9321, 42.0635],
+      "coverageRadius": 2.74,
+      "totalPopulation": 629,
+      "totalSurface": 2366
+    },
+    "20173": {
+      "communes": ["Zévaco"],
+      "communeCount": 1,
+      "center": [9.0491, 41.8922],
+      "coverageRadius": 1.79,
+      "totalPopulation": 51,
+      "totalSurface": 1010
+    },
+    "20190": {
+      "communes": ["Azilone-Ampaza", "Cardo-Torgia", "Forciolo", "Santa-Maria-Siché", "Zigliara"],
+      "communeCount": 5,
+      "center": [8.9942, 41.8662],
+      "coverageRadius": 2.3,
+      "boundingBox": {
+        "minLat": 41.8461,
+        "maxLat": 41.878,
+        "minLon": 8.9767,
+        "maxLon": 9.0137
+      },
+      "totalPopulation": 821,
+      "totalSurface": 4231
+    }
+  }
+}

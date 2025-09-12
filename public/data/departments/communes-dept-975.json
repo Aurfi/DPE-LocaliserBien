@@ -1,0 +1,59 @@
+{
+  "departmentCode": "975",
+  "departmentName": "Département 975",
+  "stats": {
+    "communeCount": 2,
+    "totalPopulation": 5987,
+    "totalSurface": 23331
+  },
+  "communes": [
+    {
+      "nom": "Miquelon-Langlade",
+      "code": "97501",
+      "codesPostaux": ["97500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-56.3217, 46.9634]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-56.3262, 46.9638]
+      },
+      "population": 612,
+      "surface": 20621.91,
+      "radius": 8.1
+    },
+    {
+      "nom": "Saint-Pierre",
+      "code": "97502",
+      "codesPostaux": ["97500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-56.1805, 46.788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-56.1952, 46.7832]
+      },
+      "population": 5375,
+      "surface": 2709.58,
+      "radius": 2.94
+    }
+  ],
+  "postalCodes": {
+    "97500": {
+      "communes": ["Miquelon-Langlade", "Saint-Pierre"],
+      "communeCount": 2,
+      "center": [-56.2086, 46.8017],
+      "coverageRadius": 20.2,
+      "boundingBox": {
+        "minLat": 46.7832,
+        "maxLat": 46.9638,
+        "minLon": -56.3262,
+        "maxLon": -56.1952
+      },
+      "totalPopulation": 5987,
+      "totalSurface": 23331
+    }
+  }
+}

@@ -1,0 +1,6111 @@
+{
+  "departmentCode": "40",
+  "departmentName": "Landes",
+  "stats": {
+    "communeCount": 327,
+    "totalPopulation": 428427,
+    "totalSurface": 935704
+  },
+  "communes": [
+    {
+      "nom": "Aire-sur-l'Adour",
+      "code": "40001",
+      "codesPostaux": ["40800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2561, 43.6932]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2623, 43.7001]
+      },
+      "population": 6215,
+      "surface": 5799.85,
+      "radius": 4.3
+    },
+    {
+      "nom": "Amou",
+      "code": "40002",
+      "codesPostaux": ["40330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7464, 43.5891]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7473, 43.593]
+      },
+      "population": 1555,
+      "surface": 2748.43,
+      "radius": 2.96
+    },
+    {
+      "nom": "Angoumé",
+      "code": "40003",
+      "codesPostaux": ["40990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1396, 43.7067]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1359, 43.6909]
+      },
+      "population": 266,
+      "surface": 786.82,
+      "radius": 1.58
+    },
+    {
+      "nom": "Angresse",
+      "code": "40004",
+      "codesPostaux": ["40150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3624, 43.6591]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3708, 43.659]
+      },
+      "population": 2241,
+      "surface": 771.86,
+      "radius": 1.57
+    },
+    {
+      "nom": "Arboucave",
+      "code": "40005",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4412, 43.6063]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4364, 43.6113]
+      },
+      "population": 214,
+      "surface": 995.75,
+      "radius": 1.78
+    },
+    {
+      "nom": "Arengosse",
+      "code": "40006",
+      "codesPostaux": ["40110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7811, 44.0299]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7915, 44.004]
+      },
+      "population": 713,
+      "surface": 6278.65,
+      "radius": 4.47
+    },
+    {
+      "nom": "Argelos",
+      "code": "40007",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6196, 43.5813]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6288, 43.5815]
+      },
+      "population": 162,
+      "surface": 651.97,
+      "radius": 1.44
+    },
+    {
+      "nom": "Argelouse",
+      "code": "40008",
+      "codesPostaux": ["40430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6359, 44.3728]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6465, 44.366]
+      },
+      "population": 96,
+      "surface": 2282.37,
+      "radius": 2.7
+    },
+    {
+      "nom": "Arsague",
+      "code": "40011",
+      "codesPostaux": ["40330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.789, 43.581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7962, 43.5813]
+      },
+      "population": 342,
+      "surface": 725.68,
+      "radius": 1.52
+    },
+    {
+      "nom": "Artassenx",
+      "code": "40012",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.395, 43.8461]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3991, 43.8429]
+      },
+      "population": 260,
+      "surface": 548.12,
+      "radius": 1.32
+    },
+    {
+      "nom": "Arthez-d'Armagnac",
+      "code": "40013",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.246, 43.8951]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.259, 43.8951]
+      },
+      "population": 92,
+      "surface": 1118.49,
+      "radius": 1.89
+    },
+    {
+      "nom": "Arue",
+      "code": "40014",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3607, 44.051]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3502, 44.0604]
+      },
+      "population": 358,
+      "surface": 4875.99,
+      "radius": 3.94
+    },
+    {
+      "nom": "Arx",
+      "code": "40015",
+      "codesPostaux": ["40310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0843, 44.1087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0752, 44.1061]
+      },
+      "population": 51,
+      "surface": 2436.24,
+      "radius": 2.78
+    },
+    {
+      "nom": "Aubagnan",
+      "code": "40016",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4996, 43.6648]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4885, 43.6667]
+      },
+      "population": 274,
+      "surface": 343.31,
+      "radius": 1.05
+    },
+    {
+      "nom": "Audignon",
+      "code": "40017",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5935, 43.7242]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6048, 43.7221]
+      },
+      "population": 386,
+      "surface": 937.79,
+      "radius": 1.73
+    },
+    {
+      "nom": "Audon",
+      "code": "40018",
+      "codesPostaux": ["40400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.828, 43.7996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8257, 43.7982]
+      },
+      "population": 410,
+      "surface": 754.31,
+      "radius": 1.55
+    },
+    {
+      "nom": "Aureilhan",
+      "code": "40019",
+      "codesPostaux": ["40200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.192, 44.2094]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2044, 44.2187]
+      },
+      "population": 1117,
+      "surface": 1155.19,
+      "radius": 1.92
+    },
+    {
+      "nom": "Aurice",
+      "code": "40020",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6022, 43.7993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6041, 43.8151]
+      },
+      "population": 629,
+      "surface": 1752.17,
+      "radius": 2.36
+    },
+    {
+      "nom": "Azur",
+      "code": "40021",
+      "codesPostaux": ["40140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2919, 43.7996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.303, 43.799]
+      },
+      "population": 973,
+      "surface": 1693.89,
+      "radius": 2.32
+    },
+    {
+      "nom": "Bahus-Soubiran",
+      "code": "40022",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3456, 43.6744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.356, 43.6736]
+      },
+      "population": 393,
+      "surface": 1473.38,
+      "radius": 2.17
+    },
+    {
+      "nom": "Baigts",
+      "code": "40023",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7922, 43.6897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7929, 43.6881]
+      },
+      "population": 333,
+      "surface": 1166.59,
+      "radius": 1.93
+    },
+    {
+      "nom": "Banos",
+      "code": "40024",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6184, 43.7318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6226, 43.7368]
+      },
+      "population": 267,
+      "surface": 576.73,
+      "radius": 1.35
+    },
+    {
+      "nom": "Bas-Mauco",
+      "code": "40026",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5516, 43.7958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5581, 43.7947]
+      },
+      "population": 402,
+      "surface": 1150.52,
+      "radius": 1.91
+    },
+    {
+      "nom": "Bascons",
+      "code": "40025",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4233, 43.8337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4186, 43.8214]
+      },
+      "population": 868,
+      "surface": 1868.95,
+      "radius": 2.44
+    },
+    {
+      "nom": "Bassercles",
+      "code": "40027",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6111, 43.5606]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6133, 43.5606]
+      },
+      "population": 154,
+      "surface": 667.93,
+      "radius": 1.46
+    },
+    {
+      "nom": "Bastennes",
+      "code": "40028",
+      "codesPostaux": ["40360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7802, 43.6504]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7862, 43.6492]
+      },
+      "population": 244,
+      "surface": 731.91,
+      "radius": 1.53
+    },
+    {
+      "nom": "Bats",
+      "code": "40029",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4666, 43.6533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4592, 43.6584]
+      },
+      "population": 325,
+      "surface": 738.85,
+      "radius": 1.53
+    },
+    {
+      "nom": "Baudignan",
+      "code": "40030",
+      "codesPostaux": ["40310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0404, 44.0913]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.051, 44.0896]
+      },
+      "population": 53,
+      "surface": 2358.08,
+      "radius": 2.74
+    },
+    {
+      "nom": "Bégaar",
+      "code": "40031",
+      "codesPostaux": ["40400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.869, 43.8305]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.849, 43.8228]
+      },
+      "population": 1233,
+      "surface": 2765,
+      "radius": 2.97
+    },
+    {
+      "nom": "Belhade",
+      "code": "40032",
+      "codesPostaux": ["40410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6779, 44.3654]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6845, 44.3781]
+      },
+      "population": 222,
+      "surface": 2869.45,
+      "radius": 3.02
+    },
+    {
+      "nom": "Bélis",
+      "code": "40033",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4688, 44.064]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4626, 44.063]
+      },
+      "population": 164,
+      "surface": 2033.93,
+      "radius": 2.54
+    },
+    {
+      "nom": "Bélus",
+      "code": "40034",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1184, 43.5922]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1103, 43.5917]
+      },
+      "population": 616,
+      "surface": 1188.03,
+      "radius": 1.94
+    },
+    {
+      "nom": "Bénesse-lès-Dax",
+      "code": "40035",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0393, 43.6422]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0384, 43.6419]
+      },
+      "population": 582,
+      "surface": 601.1,
+      "radius": 1.38
+    },
+    {
+      "nom": "Bénesse-Maremne",
+      "code": "40036",
+      "codesPostaux": ["40230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3679, 43.634]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3599, 43.633]
+      },
+      "population": 3733,
+      "surface": 1870.56,
+      "radius": 2.44
+    },
+    {
+      "nom": "Benquet",
+      "code": "40037",
+      "codesPostaux": ["40280"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5069, 43.8207]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5009, 43.8295]
+      },
+      "population": 1913,
+      "surface": 2951.16,
+      "radius": 3.06
+    },
+    {
+      "nom": "Bergouey",
+      "code": "40038",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7232, 43.6684]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7224, 43.6694]
+      },
+      "population": 109,
+      "surface": 442.34,
+      "radius": 1.19
+    },
+    {
+      "nom": "Betbezer-d'Armagnac",
+      "code": "40039",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.165, 43.9754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1723, 43.9773]
+      },
+      "population": 133,
+      "surface": 798.78,
+      "radius": 1.59
+    },
+    {
+      "nom": "Beylongue",
+      "code": "40040",
+      "codesPostaux": ["40370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.82, 43.9201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8284, 43.923]
+      },
+      "population": 402,
+      "surface": 3754.61,
+      "radius": 3.46
+    },
+    {
+      "nom": "Beyries",
+      "code": "40041",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6423, 43.5669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6366, 43.5713]
+      },
+      "population": 123,
+      "surface": 429.65,
+      "radius": 1.17
+    },
+    {
+      "nom": "Biarrotte",
+      "code": "40042",
+      "codesPostaux": ["40390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.275, 43.5562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2721, 43.5608]
+      },
+      "population": 350,
+      "surface": 495.81,
+      "radius": 1.26
+    },
+    {
+      "nom": "Bias",
+      "code": "40043",
+      "codesPostaux": ["40170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2379, 44.1347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2189, 44.1464]
+      },
+      "population": 787,
+      "surface": 2091.53,
+      "radius": 2.58
+    },
+    {
+      "nom": "Biaudos",
+      "code": "40044",
+      "codesPostaux": ["40390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3086, 43.5432]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3046, 43.5506]
+      },
+      "population": 1022,
+      "surface": 1559.32,
+      "radius": 2.23
+    },
+    {
+      "nom": "Biscarrosse",
+      "code": "40046",
+      "codesPostaux": ["40600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1525, 44.4077]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.167, 44.3958]
+      },
+      "population": 15412,
+      "surface": 19350.55,
+      "radius": 7.85
+    },
+    {
+      "nom": "Bonnegarde",
+      "code": "40047",
+      "codesPostaux": ["40330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7108, 43.5635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7045, 43.5679]
+      },
+      "population": 255,
+      "surface": 970.68,
+      "radius": 1.76
+    },
+    {
+      "nom": "Bordères-et-Lamensans",
+      "code": "40049",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3613, 43.7763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3635, 43.7744]
+      },
+      "population": 372,
+      "surface": 1500.2,
+      "radius": 2.19
+    },
+    {
+      "nom": "Bostens",
+      "code": "40050",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3675, 43.9703]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3612, 43.9723]
+      },
+      "population": 205,
+      "surface": 777.87,
+      "radius": 1.57
+    },
+    {
+      "nom": "Bougue",
+      "code": "40051",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4033, 43.9018]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3926, 43.8896]
+      },
+      "population": 847,
+      "surface": 2208.36,
+      "radius": 2.65
+    },
+    {
+      "nom": "Bourdalat",
+      "code": "40052",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2191, 43.8321]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2068, 43.8384]
+      },
+      "population": 205,
+      "surface": 1416.96,
+      "radius": 2.12
+    },
+    {
+      "nom": "Bourriot-Bergonce",
+      "code": "40053",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2091, 44.153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.251, 44.1289]
+      },
+      "population": 319,
+      "surface": 8296.56,
+      "radius": 5.14
+    },
+    {
+      "nom": "Brassempouy",
+      "code": "40054",
+      "codesPostaux": ["40330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.702, 43.6347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6949, 43.6339]
+      },
+      "population": 273,
+      "surface": 1085.55,
+      "radius": 1.86
+    },
+    {
+      "nom": "Bretagne-de-Marsan",
+      "code": "40055",
+      "codesPostaux": ["40280"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4655, 43.8359]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4591, 43.8473]
+      },
+      "population": 1626,
+      "surface": 1314.22,
+      "radius": 2.05
+    },
+    {
+      "nom": "Brocas",
+      "code": "40056",
+      "codesPostaux": ["40420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5446, 44.0533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5362, 44.0444]
+      },
+      "population": 727,
+      "surface": 5330.57,
+      "radius": 4.12
+    },
+    {
+      "nom": "Buanes",
+      "code": "40057",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4232, 43.7147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4227, 43.7103]
+      },
+      "population": 240,
+      "surface": 666.79,
+      "radius": 1.46
+    },
+    {
+      "nom": "Cachen",
+      "code": "40058",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4163, 44.0863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4298, 44.0702]
+      },
+      "population": 230,
+      "surface": 3581.41,
+      "radius": 3.38
+    },
+    {
+      "nom": "Cagnotte",
+      "code": "40059",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0757, 43.6055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0686, 43.5953]
+      },
+      "population": 778,
+      "surface": 1453.98,
+      "radius": 2.15
+    },
+    {
+      "nom": "Callen",
+      "code": "40060",
+      "codesPostaux": ["40430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4688, 44.2743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4765, 44.2986]
+      },
+      "population": 145,
+      "surface": 8742.47,
+      "radius": 5.28
+    },
+    {
+      "nom": "Campagne",
+      "code": "40061",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6436, 43.8665]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6395, 43.8651]
+      },
+      "population": 1025,
+      "surface": 3394.54,
+      "radius": 3.29
+    },
+    {
+      "nom": "Campet-et-Lamolère",
+      "code": "40062",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5823, 43.9163]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6063, 43.9179]
+      },
+      "population": 518,
+      "surface": 1873.82,
+      "radius": 2.44
+    },
+    {
+      "nom": "Candresse",
+      "code": "40063",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9775, 43.7108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9795, 43.7131]
+      },
+      "population": 869,
+      "surface": 853.04,
+      "radius": 1.65
+    },
+    {
+      "nom": "Canenx-et-Réaut",
+      "code": "40064",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4602, 44.0024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4415, 44.0062]
+      },
+      "population": 172,
+      "surface": 2863.4,
+      "radius": 3.02
+    },
+    {
+      "nom": "Capbreton",
+      "code": "40065",
+      "codesPostaux": ["40130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4289, 43.6311]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4316, 43.64]
+      },
+      "population": 9218,
+      "surface": 2122.66,
+      "radius": 2.6
+    },
+    {
+      "nom": "Carcarès-Sainte-Croix",
+      "code": "40066",
+      "codesPostaux": ["40400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7602, 43.8568]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7912, 43.8416]
+      },
+      "population": 540,
+      "surface": 1556.74,
+      "radius": 2.23
+    },
+    {
+      "nom": "Carcen-Ponson",
+      "code": "40067",
+      "codesPostaux": ["40400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8182, 43.8668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8062, 43.8814]
+      },
+      "population": 631,
+      "surface": 3690.85,
+      "radius": 3.43
+    },
+    {
+      "nom": "Cassen",
+      "code": "40068",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8675, 43.7577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8602, 43.7609]
+      },
+      "population": 607,
+      "surface": 593.85,
+      "radius": 1.37
+    },
+    {
+      "nom": "Castaignos-Souslens",
+      "code": "40069",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6458, 43.5864]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6512, 43.5861]
+      },
+      "population": 424,
+      "surface": 756.75,
+      "radius": 1.55
+    },
+    {
+      "nom": "Castandet",
+      "code": "40070",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3582, 43.8127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.343, 43.8082]
+      },
+      "population": 420,
+      "surface": 1681.14,
+      "radius": 2.31
+    },
+    {
+      "nom": "Castel-Sarrazin",
+      "code": "40074",
+      "codesPostaux": ["40330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7859, 43.6154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7802, 43.62]
+      },
+      "population": 576,
+      "surface": 1215.93,
+      "radius": 1.97
+    },
+    {
+      "nom": "Castelnau-Chalosse",
+      "code": "40071",
+      "codesPostaux": ["40360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8517, 43.659]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8448, 43.6649]
+      },
+      "population": 595,
+      "surface": 1064.74,
+      "radius": 1.84
+    },
+    {
+      "nom": "Castelnau-Tursan",
+      "code": "40072",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4018, 43.6522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4078, 43.6579]
+      },
+      "population": 185,
+      "surface": 935.55,
+      "radius": 1.73
+    },
+    {
+      "nom": "Castelner",
+      "code": "40073",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5912, 43.5529]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5833, 43.553]
+      },
+      "population": 120,
+      "surface": 568.4,
+      "radius": 1.35
+    },
+    {
+      "nom": "Castets",
+      "code": "40075",
+      "codesPostaux": ["40260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1487, 43.8806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1453, 43.882]
+      },
+      "population": 2510,
+      "surface": 9092.48,
+      "radius": 5.38
+    },
+    {
+      "nom": "Cauna",
+      "code": "40076",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6448, 43.7885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.64, 43.7819]
+      },
+      "population": 423,
+      "surface": 1285.28,
+      "radius": 2.02
+    },
+    {
+      "nom": "Cauneille",
+      "code": "40077",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0678, 43.563]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0631, 43.546]
+      },
+      "population": 799,
+      "surface": 1524.03,
+      "radius": 2.2
+    },
+    {
+      "nom": "Caupenne",
+      "code": "40078",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7538, 43.6878]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7459, 43.6842]
+      },
+      "population": 397,
+      "surface": 1521.96,
+      "radius": 2.2
+    },
+    {
+      "nom": "Cazalis",
+      "code": "40079",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6675, 43.6239]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6615, 43.6252]
+      },
+      "population": 139,
+      "surface": 514.54,
+      "radius": 1.28
+    },
+    {
+      "nom": "Cazères-sur-l'Adour",
+      "code": "40080",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2777, 43.7729]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.315, 43.762]
+      },
+      "population": 1126,
+      "surface": 3051.78,
+      "radius": 3.12
+    },
+    {
+      "nom": "Cère",
+      "code": "40081",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5468, 43.9933]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5361, 43.9927]
+      },
+      "population": 416,
+      "surface": 3992.37,
+      "radius": 3.56
+    },
+    {
+      "nom": "Classun",
+      "code": "40082",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.39, 43.7157]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4132, 43.7103]
+      },
+      "population": 246,
+      "surface": 891.91,
+      "radius": 1.68
+    },
+    {
+      "nom": "Clèdes",
+      "code": "40083",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3734, 43.609]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.377, 43.6184]
+      },
+      "population": 118,
+      "surface": 684.6,
+      "radius": 1.48
+    },
+    {
+      "nom": "Clermont",
+      "code": "40084",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9188, 43.6475]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9166, 43.6512]
+      },
+      "population": 742,
+      "surface": 1491.62,
+      "radius": 2.18
+    },
+    {
+      "nom": "Commensacq",
+      "code": "40085",
+      "codesPostaux": ["40210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8272, 44.2082]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8227, 44.2108]
+      },
+      "population": 434,
+      "surface": 7145.03,
+      "radius": 4.77
+    },
+    {
+      "nom": "Coudures",
+      "code": "40086",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5052, 43.6882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5203, 43.691]
+      },
+      "population": 558,
+      "surface": 1175.64,
+      "radius": 1.93
+    },
+    {
+      "nom": "Créon-d'Armagnac",
+      "code": "40087",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0744, 43.9948]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1054, 43.9946]
+      },
+      "population": 336,
+      "surface": 2139.19,
+      "radius": 2.61
+    },
+    {
+      "nom": "Dax",
+      "code": "40088",
+      "codesPostaux": ["40100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0637, 43.7025]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0518, 43.7086]
+      },
+      "population": 21716,
+      "surface": 1970.63,
+      "radius": 2.5
+    },
+    {
+      "nom": "Doazit",
+      "code": "40089",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6496, 43.6939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6453, 43.6908]
+      },
+      "population": 851,
+      "surface": 2252.05,
+      "radius": 2.68
+    },
+    {
+      "nom": "Donzacq",
+      "code": "40090",
+      "codesPostaux": ["40360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8057, 43.6529]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8036, 43.6567]
+      },
+      "population": 454,
+      "surface": 1174.27,
+      "radius": 1.93
+    },
+    {
+      "nom": "Duhort-Bachen",
+      "code": "40091",
+      "codesPostaux": ["40800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3182, 43.7158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3242, 43.7249]
+      },
+      "population": 682,
+      "surface": 3424.86,
+      "radius": 3.3
+    },
+    {
+      "nom": "Dumes",
+      "code": "40092",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5835, 43.7024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.581, 43.7064]
+      },
+      "population": 250,
+      "surface": 246.73,
+      "radius": 0.89
+    },
+    {
+      "nom": "Escalans",
+      "code": "40093",
+      "codesPostaux": ["40310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0374, 44.0023]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0396, 44.0105]
+      },
+      "population": 232,
+      "surface": 3023.1,
+      "radius": 3.1
+    },
+    {
+      "nom": "Escource",
+      "code": "40094",
+      "codesPostaux": ["40210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0361, 44.1639]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0329, 44.1639]
+      },
+      "population": 799,
+      "surface": 10349.58,
+      "radius": 5.74
+    },
+    {
+      "nom": "Estibeaux",
+      "code": "40095",
+      "codesPostaux": ["40290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9122, 43.6066]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.907, 43.6002]
+      },
+      "population": 697,
+      "surface": 1680.92,
+      "radius": 2.31
+    },
+    {
+      "nom": "Estigarde",
+      "code": "40096",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1165, 44.0431]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1146, 44.0286]
+      },
+      "population": 96,
+      "surface": 2942.24,
+      "radius": 3.06
+    },
+    {
+      "nom": "Eugénie-les-Bains",
+      "code": "40097",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3811, 43.6919]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3777, 43.6951]
+      },
+      "population": 486,
+      "surface": 1104.35,
+      "radius": 1.87
+    },
+    {
+      "nom": "Eyres-Moncube",
+      "code": "40098",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5497, 43.715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5524, 43.7215]
+      },
+      "population": 347,
+      "surface": 1223.04,
+      "radius": 1.97
+    },
+    {
+      "nom": "Fargues",
+      "code": "40099",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4543, 43.7235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4507, 43.7291]
+      },
+      "population": 314,
+      "surface": 1188.84,
+      "radius": 1.95
+    },
+    {
+      "nom": "Gaas",
+      "code": "40101",
+      "codesPostaux": ["40350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.042, 43.6103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0362, 43.6129]
+      },
+      "population": 471,
+      "surface": 920.09,
+      "radius": 1.71
+    },
+    {
+      "nom": "Gabarret",
+      "code": "40102",
+      "codesPostaux": ["40310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0049, 43.9871]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.011, 43.9849]
+      },
+      "population": 1282,
+      "surface": 1696.06,
+      "radius": 2.32
+    },
+    {
+      "nom": "Gaillères",
+      "code": "40103",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3772, 43.9383]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3714, 43.9407]
+      },
+      "population": 647,
+      "surface": 1406.26,
+      "radius": 2.12
+    },
+    {
+      "nom": "Gamarde-les-Bains",
+      "code": "40104",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8715, 43.7275]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8702, 43.7312]
+      },
+      "population": 1552,
+      "surface": 1904.03,
+      "radius": 2.46
+    },
+    {
+      "nom": "Garein",
+      "code": "40105",
+      "codesPostaux": ["40420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6514, 44.0521]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6524, 44.0467]
+      },
+      "population": 426,
+      "surface": 5669.97,
+      "radius": 4.25
+    },
+    {
+      "nom": "Garrey",
+      "code": "40106",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8988, 43.6693]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9093, 43.6705]
+      },
+      "population": 215,
+      "surface": 497.08,
+      "radius": 1.26
+    },
+    {
+      "nom": "Gastes",
+      "code": "40108",
+      "codesPostaux": ["40160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1996, 44.3117]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1473, 44.326]
+      },
+      "population": 925,
+      "surface": 4356.83,
+      "radius": 3.72
+    },
+    {
+      "nom": "Gaujacq",
+      "code": "40109",
+      "codesPostaux": ["40330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7429, 43.6394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7407, 43.6399]
+      },
+      "population": 436,
+      "surface": 1615.2,
+      "radius": 2.27
+    },
+    {
+      "nom": "Geaune",
+      "code": "40110",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3698, 43.6322]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3777, 43.6406]
+      },
+      "population": 763,
+      "surface": 1051.4,
+      "radius": 1.83
+    },
+    {
+      "nom": "Geloux",
+      "code": "40111",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6374, 43.9784]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6387, 43.9807]
+      },
+      "population": 708,
+      "surface": 5214.95,
+      "radius": 4.07
+    },
+    {
+      "nom": "Gibret",
+      "code": "40112",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8225, 43.6812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8188, 43.6856]
+      },
+      "population": 98,
+      "surface": 257.92,
+      "radius": 0.91
+    },
+    {
+      "nom": "Goos",
+      "code": "40113",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9182, 43.7316]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.899, 43.7295]
+      },
+      "population": 530,
+      "surface": 1053.39,
+      "radius": 1.83
+    },
+    {
+      "nom": "Gourbera",
+      "code": "40114",
+      "codesPostaux": ["40990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0422, 43.8068]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0487, 43.8044]
+      },
+      "population": 364,
+      "surface": 2765.37,
+      "radius": 2.97
+    },
+    {
+      "nom": "Gousse",
+      "code": "40115",
+      "codesPostaux": ["40465"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9092, 43.7752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8978, 43.7729]
+      },
+      "population": 276,
+      "surface": 413.85,
+      "radius": 1.15
+    },
+    {
+      "nom": "Gouts",
+      "code": "40116",
+      "codesPostaux": ["40400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7833, 43.7757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7966, 43.7842]
+      },
+      "population": 272,
+      "surface": 1096.05,
+      "radius": 1.87
+    },
+    {
+      "nom": "Grenade-sur-l'Adour",
+      "code": "40117",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4232, 43.7902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.431, 43.773]
+      },
+      "population": 2414,
+      "surface": 1986.92,
+      "radius": 2.51
+    },
+    {
+      "nom": "Habas",
+      "code": "40118",
+      "codesPostaux": ["40290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.932, 43.5651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9309, 43.5711]
+      },
+      "population": 1464,
+      "surface": 1878.9,
+      "radius": 2.45
+    },
+    {
+      "nom": "Hagetmau",
+      "code": "40119",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5866, 43.6498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5911, 43.6572]
+      },
+      "population": 4622,
+      "surface": 2861.22,
+      "radius": 3.02
+    },
+    {
+      "nom": "Hastingues",
+      "code": "40120",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1412, 43.5103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1493, 43.5349]
+      },
+      "population": 606,
+      "surface": 1453.76,
+      "radius": 2.15
+    },
+    {
+      "nom": "Hauriet",
+      "code": "40121",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6958, 43.7327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6967, 43.7332]
+      },
+      "population": 273,
+      "surface": 754.22,
+      "radius": 1.55
+    },
+    {
+      "nom": "Haut-Mauco",
+      "code": "40122",
+      "codesPostaux": ["40280"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5661, 43.8258]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.554, 43.8252]
+      },
+      "population": 991,
+      "surface": 1886.68,
+      "radius": 2.45
+    },
+    {
+      "nom": "Herm",
+      "code": "40123",
+      "codesPostaux": ["40990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1332, 43.8013]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.145, 43.8061]
+      },
+      "population": 1189,
+      "surface": 5237.36,
+      "radius": 4.08
+    },
+    {
+      "nom": "Herré",
+      "code": "40124",
+      "codesPostaux": ["40310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0381, 44.0203]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0252, 44.0064]
+      },
+      "population": 141,
+      "surface": 2305.68,
+      "radius": 2.71
+    },
+    {
+      "nom": "Heugas",
+      "code": "40125",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0848, 43.6416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0815, 43.6419]
+      },
+      "population": 1395,
+      "surface": 1900.76,
+      "radius": 2.46
+    },
+    {
+      "nom": "Hinx",
+      "code": "40126",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9339, 43.71]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9273, 43.7027]
+      },
+      "population": 1909,
+      "surface": 1468.17,
+      "radius": 2.16
+    },
+    {
+      "nom": "Hontanx",
+      "code": "40127",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.27, 43.8197]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2727, 43.8245]
+      },
+      "population": 611,
+      "surface": 3079.7,
+      "radius": 3.13
+    },
+    {
+      "nom": "Horsarrieu",
+      "code": "40128",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6025, 43.6908]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5985, 43.6835]
+      },
+      "population": 706,
+      "surface": 1106.81,
+      "radius": 1.88
+    },
+    {
+      "nom": "Josse",
+      "code": "40129",
+      "codesPostaux": ["40230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2373, 43.6419]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2244, 43.6409]
+      },
+      "population": 1003,
+      "surface": 938.94,
+      "radius": 1.73
+    },
+    {
+      "nom": "Labastide-Chalosse",
+      "code": "40130",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6031, 43.6146]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6104, 43.6133]
+      },
+      "population": 168,
+      "surface": 457.93,
+      "radius": 1.21
+    },
+    {
+      "nom": "Labastide-d'Armagnac",
+      "code": "40131",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1589, 43.9467]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1854, 43.9696]
+      },
+      "population": 680,
+      "surface": 3214.67,
+      "radius": 3.2
+    },
+    {
+      "nom": "Labatut",
+      "code": "40132",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9926, 43.5544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9838, 43.5509]
+      },
+      "population": 1396,
+      "surface": 2124.18,
+      "radius": 2.6
+    },
+    {
+      "nom": "Labenne",
+      "code": "40133",
+      "codesPostaux": ["40530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4371, 43.5982]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4259, 43.5949]
+      },
+      "population": 7095,
+      "surface": 2459.85,
+      "radius": 2.8
+    },
+    {
+      "nom": "Labouheyre",
+      "code": "40134",
+      "codesPostaux": ["40210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9107, 44.2243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9192, 44.2119]
+      },
+      "population": 2883,
+      "surface": 3632.45,
+      "radius": 3.4
+    },
+    {
+      "nom": "Labrit",
+      "code": "40135",
+      "codesPostaux": ["40420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5557, 44.1269]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5446, 44.1049]
+      },
+      "population": 849,
+      "surface": 7253.6,
+      "radius": 4.81
+    },
+    {
+      "nom": "Lacajunte",
+      "code": "40136",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4204, 43.5897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4258, 43.5935]
+      },
+      "population": 148,
+      "surface": 566.26,
+      "radius": 1.34
+    },
+    {
+      "nom": "Lacquy",
+      "code": "40137",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2848, 43.9584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2738, 43.9516]
+      },
+      "population": 288,
+      "surface": 1922.69,
+      "radius": 2.47
+    },
+    {
+      "nom": "Lacrabe",
+      "code": "40138",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5918, 43.6107]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5918, 43.6142]
+      },
+      "population": 286,
+      "surface": 633.63,
+      "radius": 1.42
+    },
+    {
+      "nom": "Laglorieuse",
+      "code": "40139",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3957, 43.8632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4045, 43.8671]
+      },
+      "population": 603,
+      "surface": 1166,
+      "radius": 1.93
+    },
+    {
+      "nom": "Lagrange",
+      "code": "40140",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0866, 43.9661]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1024, 43.9733]
+      },
+      "population": 190,
+      "surface": 2123.22,
+      "radius": 2.6
+    },
+    {
+      "nom": "Lahosse",
+      "code": "40141",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7864, 43.7126]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8006, 43.7125]
+      },
+      "population": 286,
+      "surface": 806.35,
+      "radius": 1.6
+    },
+    {
+      "nom": "Laluque",
+      "code": "40142",
+      "codesPostaux": ["40465"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9816, 43.8533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9941, 43.8523]
+      },
+      "population": 1086,
+      "surface": 5261.72,
+      "radius": 4.09
+    },
+    {
+      "nom": "Lamothe",
+      "code": "40143",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6612, 43.7961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.656, 43.7912]
+      },
+      "population": 305,
+      "surface": 1268.99,
+      "radius": 2.01
+    },
+    {
+      "nom": "Larbey",
+      "code": "40144",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7288, 43.7038]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7182, 43.7035]
+      },
+      "population": 240,
+      "surface": 601.55,
+      "radius": 1.38
+    },
+    {
+      "nom": "Larrivière-Saint-Savin",
+      "code": "40145",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4287, 43.7554]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4284, 43.7699]
+      },
+      "population": 588,
+      "surface": 1683.7,
+      "radius": 2.32
+    },
+    {
+      "nom": "Latrille",
+      "code": "40146",
+      "codesPostaux": ["40800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2903, 43.6275]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2882, 43.6285]
+      },
+      "population": 167,
+      "surface": 687.57,
+      "radius": 1.48
+    },
+    {
+      "nom": "Laurède",
+      "code": "40147",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7902, 43.7566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7879, 43.7549]
+      },
+      "population": 367,
+      "surface": 570.26,
+      "radius": 1.35
+    },
+    {
+      "nom": "Lauret",
+      "code": "40148",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3271, 43.5641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3434, 43.5623]
+      },
+      "population": 78,
+      "surface": 737.27,
+      "radius": 1.53
+    },
+    {
+      "nom": "Le Frêche",
+      "code": "40100",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2493, 43.9246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2389, 43.9316]
+      },
+      "population": 388,
+      "surface": 2356.59,
+      "radius": 2.74
+    },
+    {
+      "nom": "Le Leuy",
+      "code": "40153",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6526, 43.8188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6536, 43.82]
+      },
+      "population": 228,
+      "surface": 952.07,
+      "radius": 1.74
+    },
+    {
+      "nom": "Le Sen",
+      "code": "40297",
+      "codesPostaux": ["40420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5067, 44.139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5013, 44.1259]
+      },
+      "population": 221,
+      "surface": 5092.9,
+      "radius": 4.03
+    },
+    {
+      "nom": "Le Vignau",
+      "code": "40329",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2845, 43.7799]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2908, 43.7782]
+      },
+      "population": 508,
+      "surface": 1107.1,
+      "radius": 1.88
+    },
+    {
+      "nom": "Lencouacq",
+      "code": "40149",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3856, 44.1482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4064, 44.0991]
+      },
+      "population": 376,
+      "surface": 9820.48,
+      "radius": 5.59
+    },
+    {
+      "nom": "Léon",
+      "code": "40150",
+      "codesPostaux": ["40550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2768, 43.8474]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3033, 43.8759]
+      },
+      "population": 2182,
+      "surface": 6676.62,
+      "radius": 4.61
+    },
+    {
+      "nom": "Lesgor",
+      "code": "40151",
+      "codesPostaux": ["40400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9089, 43.8592]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9005, 43.8526]
+      },
+      "population": 425,
+      "surface": 2842.2,
+      "radius": 3.01
+    },
+    {
+      "nom": "Lesperon",
+      "code": "40152",
+      "codesPostaux": ["40260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0835, 43.9654]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0927, 43.9696]
+      },
+      "population": 1030,
+      "surface": 10397.13,
+      "radius": 5.75
+    },
+    {
+      "nom": "Lévignacq",
+      "code": "40154",
+      "codesPostaux": ["40170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1452, 44.0128]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1662, 44.0053]
+      },
+      "population": 345,
+      "surface": 4254.41,
+      "radius": 3.68
+    },
+    {
+      "nom": "Linxe",
+      "code": "40155",
+      "codesPostaux": ["40260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2195, 43.9287]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2456, 43.9205]
+      },
+      "population": 1550,
+      "surface": 8138.38,
+      "radius": 5.09
+    },
+    {
+      "nom": "Liposthey",
+      "code": "40156",
+      "codesPostaux": ["40410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8829, 44.304]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8772, 44.3192]
+      },
+      "population": 591,
+      "surface": 2420.41,
+      "radius": 2.78
+    },
+    {
+      "nom": "Lit-et-Mixe",
+      "code": "40157",
+      "codesPostaux": ["40170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2704, 44.0273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2582, 44.0339]
+      },
+      "population": 1704,
+      "surface": 11043.3,
+      "radius": 5.93
+    },
+    {
+      "nom": "Losse",
+      "code": "40158",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0933, 44.0948]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1028, 44.1086]
+      },
+      "population": 282,
+      "surface": 10303.16,
+      "radius": 5.73
+    },
+    {
+      "nom": "Louer",
+      "code": "40159",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.89, 43.7558]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.892, 43.7561]
+      },
+      "population": 332,
+      "surface": 284.28,
+      "radius": 0.95
+    },
+    {
+      "nom": "Lourquen",
+      "code": "40160",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7944, 43.7324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7866, 43.7312]
+      },
+      "population": 188,
+      "surface": 591.49,
+      "radius": 1.37
+    },
+    {
+      "nom": "Lubbon",
+      "code": "40161",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0127, 44.1097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0154, 44.1031]
+      },
+      "population": 80,
+      "surface": 4819.67,
+      "radius": 3.92
+    },
+    {
+      "nom": "Lucbardez-et-Bargues",
+      "code": "40162",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4143, 43.9746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4028, 43.9724]
+      },
+      "population": 564,
+      "surface": 2165.22,
+      "radius": 2.63
+    },
+    {
+      "nom": "Lüe",
+      "code": "40163",
+      "codesPostaux": ["40210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9858, 44.2337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9844, 44.2312]
+      },
+      "population": 613,
+      "surface": 9667.51,
+      "radius": 5.55
+    },
+    {
+      "nom": "Luglon",
+      "code": "40165",
+      "codesPostaux": ["40630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7306, 44.0807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7176, 44.0826]
+      },
+      "population": 375,
+      "surface": 4144.69,
+      "radius": 3.63
+    },
+    {
+      "nom": "Lussagnet",
+      "code": "40166",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2345, 43.772]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.234, 43.7753]
+      },
+      "population": 77,
+      "surface": 846.12,
+      "radius": 1.64
+    },
+    {
+      "nom": "Luxey",
+      "code": "40167",
+      "codesPostaux": ["40430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5061, 44.2382]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5179, 44.264]
+      },
+      "population": 653,
+      "surface": 16026.77,
+      "radius": 7.14
+    },
+    {
+      "nom": "Magescq",
+      "code": "40168",
+      "codesPostaux": ["40140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1841, 43.7753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.216, 43.7809]
+      },
+      "population": 2602,
+      "surface": 7718.6,
+      "radius": 4.96
+    },
+    {
+      "nom": "Maillas",
+      "code": "40169",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1786, 44.212]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1974, 44.2475]
+      },
+      "population": 128,
+      "surface": 6336.59,
+      "radius": 4.49
+    },
+    {
+      "nom": "Maillères",
+      "code": "40170",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4432, 44.0217]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4437, 44.0287]
+      },
+      "population": 230,
+      "surface": 1509.45,
+      "radius": 2.19
+    },
+    {
+      "nom": "Mano",
+      "code": "40171",
+      "codesPostaux": ["40410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6703, 44.4288]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6718, 44.4178]
+      },
+      "population": 129,
+      "surface": 3256.13,
+      "radius": 3.22
+    },
+    {
+      "nom": "Mant",
+      "code": "40172",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5027, 43.5931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5089, 43.5857]
+      },
+      "population": 270,
+      "surface": 1959.35,
+      "radius": 2.5
+    },
+    {
+      "nom": "Marpaps",
+      "code": "40173",
+      "codesPostaux": ["40330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6813, 43.5732]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6845, 43.5707]
+      },
+      "population": 133,
+      "surface": 690.9,
+      "radius": 1.48
+    },
+    {
+      "nom": "Mauries",
+      "code": "40174",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3347, 43.6138]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3332, 43.6179]
+      },
+      "population": 85,
+      "surface": 551.28,
+      "radius": 1.32
+    },
+    {
+      "nom": "Maurrin",
+      "code": "40175",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3648, 43.821]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3727, 43.8242]
+      },
+      "population": 457,
+      "surface": 1351.69,
+      "radius": 2.07
+    },
+    {
+      "nom": "Mauvezin-d'Armagnac",
+      "code": "40176",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1323, 43.9591]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1204, 43.9539]
+      },
+      "population": 99,
+      "surface": 473.01,
+      "radius": 1.23
+    },
+    {
+      "nom": "Maylis",
+      "code": "40177",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7047, 43.6948]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6825, 43.6978]
+      },
+      "population": 301,
+      "surface": 1227.92,
+      "radius": 1.98
+    },
+    {
+      "nom": "Mazerolles",
+      "code": "40178",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4334, 43.8848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.437, 43.8753]
+      },
+      "population": 670,
+      "surface": 1594.78,
+      "radius": 2.25
+    },
+    {
+      "nom": "Mées",
+      "code": "40179",
+      "codesPostaux": ["40990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1291, 43.7106]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1106, 43.7023]
+      },
+      "population": 1970,
+      "surface": 1521.3,
+      "radius": 2.2
+    },
+    {
+      "nom": "Meilhan",
+      "code": "40180",
+      "codesPostaux": ["40400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6966, 43.8685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7066, 43.8634]
+      },
+      "population": 1206,
+      "surface": 3902.46,
+      "radius": 3.52
+    },
+    {
+      "nom": "Messanges",
+      "code": "40181",
+      "codesPostaux": ["40660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3629, 43.8086]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3784, 43.8146]
+      },
+      "population": 1038,
+      "surface": 3413.81,
+      "radius": 3.3
+    },
+    {
+      "nom": "Mézos",
+      "code": "40182",
+      "codesPostaux": ["40170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.141, 44.0848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1662, 44.0757]
+      },
+      "population": 855,
+      "surface": 8898.59,
+      "radius": 5.32
+    },
+    {
+      "nom": "Mimbaste",
+      "code": "40183",
+      "codesPostaux": ["40350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9551, 43.6499]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9737, 43.6489]
+      },
+      "population": 992,
+      "surface": 2064.76,
+      "radius": 2.56
+    },
+    {
+      "nom": "Mimizan",
+      "code": "40184",
+      "codesPostaux": ["40200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2323, 44.1996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2282, 44.2005]
+      },
+      "population": 7449,
+      "surface": 11618.65,
+      "radius": 6.08
+    },
+    {
+      "nom": "Miramont-Sensacq",
+      "code": "40185",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.327, 43.5969]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3263, 43.5945]
+      },
+      "population": 346,
+      "surface": 2558.96,
+      "radius": 2.85
+    },
+    {
+      "nom": "Misson",
+      "code": "40186",
+      "codesPostaux": ["40290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9608, 43.5872]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9611, 43.5864]
+      },
+      "population": 834,
+      "surface": 1456.69,
+      "radius": 2.15
+    },
+    {
+      "nom": "Moliets-et-Maa",
+      "code": "40187",
+      "codesPostaux": ["40660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3589, 43.8626]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3589, 43.8486]
+      },
+      "population": 1303,
+      "surface": 2792.21,
+      "radius": 2.98
+    },
+    {
+      "nom": "Momuy",
+      "code": "40188",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6458, 43.617]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.636, 43.6148]
+      },
+      "population": 482,
+      "surface": 1341.31,
+      "radius": 2.07
+    },
+    {
+      "nom": "Monget",
+      "code": "40189",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5348, 43.5582]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5216, 43.5674]
+      },
+      "population": 77,
+      "surface": 573.21,
+      "radius": 1.35
+    },
+    {
+      "nom": "Monségur",
+      "code": "40190",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.544, 43.613]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5419, 43.6042]
+      },
+      "population": 393,
+      "surface": 1985.93,
+      "radius": 2.51
+    },
+    {
+      "nom": "Mont-de-Marsan",
+      "code": "40192",
+      "codesPostaux": ["40000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5009, 43.8931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5009, 43.8908]
+      },
+      "population": 31455,
+      "surface": 3659.54,
+      "radius": 3.41
+    },
+    {
+      "nom": "Montaut",
+      "code": "40191",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6572, 43.7277]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6584, 43.7404]
+      },
+      "population": 604,
+      "surface": 1412.01,
+      "radius": 2.12
+    },
+    {
+      "nom": "Montégut",
+      "code": "40193",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2042, 43.8747]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1999, 43.8745]
+      },
+      "population": 78,
+      "surface": 478.14,
+      "radius": 1.23
+    },
+    {
+      "nom": "Montfort-en-Chalosse",
+      "code": "40194",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8367, 43.7065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8365, 43.7106]
+      },
+      "population": 1223,
+      "surface": 1158.29,
+      "radius": 1.92
+    },
+    {
+      "nom": "Montgaillard",
+      "code": "40195",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4822, 43.7572]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4855, 43.7424]
+      },
+      "population": 593,
+      "surface": 2061.75,
+      "radius": 2.56
+    },
+    {
+      "nom": "Montsoué",
+      "code": "40196",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5037, 43.7327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5063, 43.732]
+      },
+      "population": 561,
+      "surface": 1799.77,
+      "radius": 2.39
+    },
+    {
+      "nom": "Morcenx-la-Nouvelle",
+      "code": "40197",
+      "codesPostaux": ["40110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9147, 44.0318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9113, 44.0335]
+      },
+      "population": 5005,
+      "surface": 13838.16,
+      "radius": 6.64
+    },
+    {
+      "nom": "Morganx",
+      "code": "40198",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5708, 43.6043]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5691, 43.6067]
+      },
+      "population": 168,
+      "surface": 527.13,
+      "radius": 1.3
+    },
+    {
+      "nom": "Mouscardès",
+      "code": "40199",
+      "codesPostaux": ["40290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8883, 43.5955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.881, 43.5848]
+      },
+      "population": 268,
+      "surface": 910.91,
+      "radius": 1.7
+    },
+    {
+      "nom": "Moustey",
+      "code": "40200",
+      "codesPostaux": ["40410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7703, 44.387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7608, 44.3583]
+      },
+      "population": 755,
+      "surface": 6763.94,
+      "radius": 4.64
+    },
+    {
+      "nom": "Mugron",
+      "code": "40201",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7479, 43.7404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7487, 43.7509]
+      },
+      "population": 1336,
+      "surface": 1654.1,
+      "radius": 2.29
+    },
+    {
+      "nom": "Narrosse",
+      "code": "40202",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.005, 43.6924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0083, 43.6928]
+      },
+      "population": 3331,
+      "surface": 1055.08,
+      "radius": 1.83
+    },
+    {
+      "nom": "Nassiet",
+      "code": "40203",
+      "codesPostaux": ["40330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6863, 43.5987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6786, 43.5997]
+      },
+      "population": 316,
+      "surface": 1186.94,
+      "radius": 1.94
+    },
+    {
+      "nom": "Nerbis",
+      "code": "40204",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7229, 43.7498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7359, 43.7541]
+      },
+      "population": 267,
+      "surface": 424.35,
+      "radius": 1.16
+    },
+    {
+      "nom": "Nousse",
+      "code": "40205",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8224, 43.7208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8257, 43.7155]
+      },
+      "population": 249,
+      "surface": 386.15,
+      "radius": 1.11
+    },
+    {
+      "nom": "Oeyregave",
+      "code": "40206",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1001, 43.5264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0996, 43.5349]
+      },
+      "population": 304,
+      "surface": 798.95,
+      "radius": 1.59
+    },
+    {
+      "nom": "Oeyreluy",
+      "code": "40207",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0792, 43.6749]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0796, 43.6725]
+      },
+      "population": 1498,
+      "surface": 567.01,
+      "radius": 1.34
+    },
+    {
+      "nom": "Onard",
+      "code": "40208",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8298, 43.7778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.838, 43.78]
+      },
+      "population": 376,
+      "surface": 613.16,
+      "radius": 1.4
+    },
+    {
+      "nom": "Ondres",
+      "code": "40209",
+      "codesPostaux": ["40440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4581, 43.5624]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4484, 43.5609]
+      },
+      "population": 6194,
+      "surface": 1526.03,
+      "radius": 2.2
+    },
+    {
+      "nom": "Onesse-Laharie",
+      "code": "40210",
+      "codesPostaux": ["40110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0224, 44.063]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0705, 44.0623]
+      },
+      "population": 1057,
+      "surface": 13250.94,
+      "radius": 6.49
+    },
+    {
+      "nom": "Orist",
+      "code": "40211",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1737, 43.6328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1755, 43.6411]
+      },
+      "population": 789,
+      "surface": 1498.95,
+      "radius": 2.18
+    },
+    {
+      "nom": "Orthevielle",
+      "code": "40212",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1448, 43.5675]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1483, 43.5525]
+      },
+      "population": 1057,
+      "surface": 1397.19,
+      "radius": 2.11
+    },
+    {
+      "nom": "Orx",
+      "code": "40213",
+      "codesPostaux": ["40230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3686, 43.6046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3698, 43.6025]
+      },
+      "population": 650,
+      "surface": 1202.5,
+      "radius": 1.96
+    },
+    {
+      "nom": "Ossages",
+      "code": "40214",
+      "codesPostaux": ["40290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8788, 43.5582]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8815, 43.5593]
+      },
+      "population": 493,
+      "surface": 1433.69,
+      "radius": 2.14
+    },
+    {
+      "nom": "Ousse-Suzan",
+      "code": "40215",
+      "codesPostaux": ["40110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7523, 43.9492]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7611, 43.9565]
+      },
+      "population": 285,
+      "surface": 2452.66,
+      "radius": 2.79
+    },
+    {
+      "nom": "Ozourt",
+      "code": "40216",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.879, 43.6569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.876, 43.6624]
+      },
+      "population": 198,
+      "surface": 397.83,
+      "radius": 1.13
+    },
+    {
+      "nom": "Parentis-en-Born",
+      "code": "40217",
+      "codesPostaux": ["40160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0879, 44.3527]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0731, 44.3527]
+      },
+      "population": 7463,
+      "surface": 12457.58,
+      "radius": 6.3
+    },
+    {
+      "nom": "Parleboscq",
+      "code": "40218",
+      "codesPostaux": ["40310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0263, 43.9365]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.016, 43.9424]
+      },
+      "population": 454,
+      "surface": 4021.75,
+      "radius": 3.58
+    },
+    {
+      "nom": "Payros-Cazautets",
+      "code": "40219",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3975, 43.627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3895, 43.6264]
+      },
+      "population": 106,
+      "surface": 637.06,
+      "radius": 1.42
+    },
+    {
+      "nom": "Pécorade",
+      "code": "40220",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3588, 43.6495]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3717, 43.6558]
+      },
+      "population": 135,
+      "surface": 420.23,
+      "radius": 1.16
+    },
+    {
+      "nom": "Perquie",
+      "code": "40221",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2563, 43.8677]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2783, 43.8775]
+      },
+      "population": 342,
+      "surface": 2638.61,
+      "radius": 2.9
+    },
+    {
+      "nom": "Pey",
+      "code": "40222",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2044, 43.6176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2017, 43.6301]
+      },
+      "population": 832,
+      "surface": 1405.53,
+      "radius": 2.12
+    },
+    {
+      "nom": "Peyre",
+      "code": "40223",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5566, 43.5711]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5481, 43.5694]
+      },
+      "population": 237,
+      "surface": 1033.63,
+      "radius": 1.81
+    },
+    {
+      "nom": "Peyrehorade",
+      "code": "40224",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1106, 43.5612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1043, 43.5439]
+      },
+      "population": 3693,
+      "surface": 1620.92,
+      "radius": 2.27
+    },
+    {
+      "nom": "Philondenx",
+      "code": "40225",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4291, 43.5693]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4469, 43.5637]
+      },
+      "population": 189,
+      "surface": 976.99,
+      "radius": 1.76
+    },
+    {
+      "nom": "Pimbo",
+      "code": "40226",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3744, 43.5799]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3775, 43.5757]
+      },
+      "population": 198,
+      "surface": 1093.75,
+      "radius": 1.87
+    },
+    {
+      "nom": "Pissos",
+      "code": "40227",
+      "codesPostaux": ["40410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7906, 44.3012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.779, 44.3071]
+      },
+      "population": 1483,
+      "surface": 14122.14,
+      "radius": 6.7
+    },
+    {
+      "nom": "Pomarez",
+      "code": "40228",
+      "codesPostaux": ["40360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8394, 43.6208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8301, 43.6287]
+      },
+      "population": 1605,
+      "surface": 3079.28,
+      "radius": 3.13
+    },
+    {
+      "nom": "Pontenx-les-Forges",
+      "code": "40229",
+      "codesPostaux": ["40200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0914, 44.2554]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1213, 44.241]
+      },
+      "population": 1737,
+      "surface": 8085.72,
+      "radius": 5.07
+    },
+    {
+      "nom": "Pontonx-sur-l'Adour",
+      "code": "40230",
+      "codesPostaux": ["40465"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9367, 43.7927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9247, 43.7877]
+      },
+      "population": 2975,
+      "surface": 4928.57,
+      "radius": 3.96
+    },
+    {
+      "nom": "Port-de-Lanne",
+      "code": "40231",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1857, 43.5758]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1785, 43.5658]
+      },
+      "population": 1228,
+      "surface": 1275.22,
+      "radius": 2.01
+    },
+    {
+      "nom": "Poudenx",
+      "code": "40232",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5918, 43.5819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5827, 43.5777]
+      },
+      "population": 219,
+      "surface": 747.79,
+      "radius": 1.54
+    },
+    {
+      "nom": "Pouillon",
+      "code": "40233",
+      "codesPostaux": ["40350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1, 43.6067]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9974, 43.6052]
+      },
+      "population": 3151,
+      "surface": 4967.88,
+      "radius": 3.98
+    },
+    {
+      "nom": "Pouydesseaux",
+      "code": "40234",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.352, 43.9882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3251, 43.9689]
+      },
+      "population": 879,
+      "surface": 3396.53,
+      "radius": 3.29
+    },
+    {
+      "nom": "Poyanne",
+      "code": "40235",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.817, 43.7547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8145, 43.7547]
+      },
+      "population": 697,
+      "surface": 1084.37,
+      "radius": 1.86
+    },
+    {
+      "nom": "Poyartin",
+      "code": "40236",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8589, 43.6884]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8655, 43.6869]
+      },
+      "population": 765,
+      "surface": 1306.05,
+      "radius": 2.04
+    },
+    {
+      "nom": "Préchacq-les-Bains",
+      "code": "40237",
+      "codesPostaux": ["40465"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9191, 43.7551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9097, 43.7575]
+      },
+      "population": 797,
+      "surface": 867.68,
+      "radius": 1.66
+    },
+    {
+      "nom": "Pujo-le-Plan",
+      "code": "40238",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3444, 43.8608]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3324, 43.8615]
+      },
+      "population": 625,
+      "surface": 1868.7,
+      "radius": 2.44
+    },
+    {
+      "nom": "Puyol-Cazalet",
+      "code": "40239",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4034, 43.6059]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4079, 43.6064]
+      },
+      "population": 104,
+      "surface": 465.1,
+      "radius": 1.22
+    },
+    {
+      "nom": "Renung",
+      "code": "40240",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3663, 43.7417]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3593, 43.7493]
+      },
+      "population": 490,
+      "surface": 2225.8,
+      "radius": 2.66
+    },
+    {
+      "nom": "Retjons",
+      "code": "40164",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2929, 44.1399]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2955, 44.1023]
+      },
+      "population": 321,
+      "surface": 7832.81,
+      "radius": 4.99
+    },
+    {
+      "nom": "Rimbez-et-Baudiets",
+      "code": "40242",
+      "codesPostaux": ["40310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0473, 44.0594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0531, 44.0521]
+      },
+      "population": 104,
+      "surface": 3290.79,
+      "radius": 3.24
+    },
+    {
+      "nom": "Rion-des-Landes",
+      "code": "40243",
+      "codesPostaux": ["40370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9436, 43.9318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9206, 43.9336]
+      },
+      "population": 3115,
+      "surface": 13393.84,
+      "radius": 6.53
+    },
+    {
+      "nom": "Rivière-Saas-et-Gourby",
+      "code": "40244",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1756, 43.6963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.152, 43.6792]
+      },
+      "population": 1425,
+      "surface": 2745.71,
+      "radius": 2.96
+    },
+    {
+      "nom": "Roquefort",
+      "code": "40245",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3287, 44.0378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3227, 44.0341]
+      },
+      "population": 1987,
+      "surface": 1214.25,
+      "radius": 1.97
+    },
+    {
+      "nom": "Sabres",
+      "code": "40246",
+      "codesPostaux": ["40630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7332, 44.1532]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.741, 44.1488]
+      },
+      "population": 1191,
+      "surface": 16210.13,
+      "radius": 7.18
+    },
+    {
+      "nom": "Saint-Agnet",
+      "code": "40247",
+      "codesPostaux": ["40800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2701, 43.6049]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.273, 43.6067]
+      },
+      "population": 181,
+      "surface": 785.26,
+      "radius": 1.58
+    },
+    {
+      "nom": "Saint-André-de-Seignanx",
+      "code": "40248",
+      "codesPostaux": ["40390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3619, 43.5621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.353, 43.5585]
+      },
+      "population": 1913,
+      "surface": 1969.72,
+      "radius": 2.5
+    },
+    {
+      "nom": "Saint-Aubin",
+      "code": "40249",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7246, 43.7184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6963, 43.7111]
+      },
+      "population": 500,
+      "surface": 965.49,
+      "radius": 1.75
+    },
+    {
+      "nom": "Saint-Avit",
+      "code": "40250",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4527, 43.9439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4468, 43.9414]
+      },
+      "population": 691,
+      "surface": 4072.62,
+      "radius": 3.6
+    },
+    {
+      "nom": "Saint-Barthélemy",
+      "code": "40251",
+      "codesPostaux": ["40390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3269, 43.5201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3303, 43.5149]
+      },
+      "population": 421,
+      "surface": 569.39,
+      "radius": 1.35
+    },
+    {
+      "nom": "Saint-Cricq-Chalosse",
+      "code": "40253",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6737, 43.6561]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6849, 43.6537]
+      },
+      "population": 633,
+      "surface": 2039.85,
+      "radius": 2.55
+    },
+    {
+      "nom": "Saint-Cricq-du-Gave",
+      "code": "40254",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0161, 43.5245]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0136, 43.5346]
+      },
+      "population": 444,
+      "surface": 858.37,
+      "radius": 1.65
+    },
+    {
+      "nom": "Saint-Cricq-Villeneuve",
+      "code": "40255",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3507, 43.9035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3527, 43.8916]
+      },
+      "population": 464,
+      "surface": 1566.84,
+      "radius": 2.23
+    },
+    {
+      "nom": "Saint-Étienne-d'Orthe",
+      "code": "40256",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1903, 43.5902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1779, 43.5888]
+      },
+      "population": 732,
+      "surface": 1117.72,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Gein",
+      "code": "40259",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3039, 43.832]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3024, 43.8364]
+      },
+      "population": 418,
+      "surface": 1796.72,
+      "radius": 2.39
+    },
+    {
+      "nom": "Saint-Geours-d'Auribat",
+      "code": "40260",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8393, 43.7547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8383, 43.757]
+      },
+      "population": 410,
+      "surface": 559.08,
+      "radius": 1.33
+    },
+    {
+      "nom": "Saint-Geours-de-Maremne",
+      "code": "40261",
+      "codesPostaux": ["40230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2348, 43.6854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2286, 43.6878]
+      },
+      "population": 2946,
+      "surface": 4318.13,
+      "radius": 3.71
+    },
+    {
+      "nom": "Saint-Gor",
+      "code": "40262",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2367, 44.0752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2422, 44.054]
+      },
+      "population": 312,
+      "surface": 5390.82,
+      "radius": 4.14
+    },
+    {
+      "nom": "Saint-Jean-de-Lier",
+      "code": "40263",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8796, 43.7855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8784, 43.7895]
+      },
+      "population": 407,
+      "surface": 812.65,
+      "radius": 1.61
+    },
+    {
+      "nom": "Saint-Jean-de-Marsacq",
+      "code": "40264",
+      "codesPostaux": ["40230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2545, 43.6161]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.258, 43.6247]
+      },
+      "population": 1810,
+      "surface": 2624.94,
+      "radius": 2.89
+    },
+    {
+      "nom": "Saint-Julien-d'Armagnac",
+      "code": "40265",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1387, 43.993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.129, 43.9837]
+      },
+      "population": 109,
+      "surface": 1480.54,
+      "radius": 2.17
+    },
+    {
+      "nom": "Saint-Julien-en-Born",
+      "code": "40266",
+      "codesPostaux": ["40170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2551, 44.0854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2259, 44.0632]
+      },
+      "population": 1738,
+      "surface": 7302.14,
+      "radius": 4.82
+    },
+    {
+      "nom": "Saint-Justin",
+      "code": "40267",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2265, 43.9907]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.23, 43.9816]
+      },
+      "population": 1015,
+      "surface": 6626.94,
+      "radius": 4.59
+    },
+    {
+      "nom": "Saint-Laurent-de-Gosse",
+      "code": "40268",
+      "codesPostaux": ["40390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2851, 43.5233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2682, 43.5329]
+      },
+      "population": 735,
+      "surface": 1761.44,
+      "radius": 2.37
+    },
+    {
+      "nom": "Saint-Lon-les-Mines",
+      "code": "40269",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1353, 43.6188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1263, 43.6141]
+      },
+      "population": 1242,
+      "surface": 2182.22,
+      "radius": 2.64
+    },
+    {
+      "nom": "Saint-Loubouer",
+      "code": "40270",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4121, 43.684]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4207, 43.6766]
+      },
+      "population": 441,
+      "surface": 1693.5,
+      "radius": 2.32
+    },
+    {
+      "nom": "Saint-Martin-d'Oney",
+      "code": "40274",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6497, 43.9293]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6403, 43.9287]
+      },
+      "population": 1356,
+      "surface": 3441.84,
+      "radius": 3.31
+    },
+    {
+      "nom": "Saint-Martin-de-Hinx",
+      "code": "40272",
+      "codesPostaux": ["40390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2684, 43.5803]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2705, 43.5821]
+      },
+      "population": 1749,
+      "surface": 2568.89,
+      "radius": 2.86
+    },
+    {
+      "nom": "Saint-Martin-de-Seignanx",
+      "code": "40273",
+      "codesPostaux": ["40390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3829, 43.5378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3865, 43.545]
+      },
+      "population": 6123,
+      "surface": 4577.35,
+      "radius": 3.82
+    },
+    {
+      "nom": "Saint-Maurice-sur-Adour",
+      "code": "40275",
+      "codesPostaux": ["40270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4691, 43.7932]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4657, 43.7843]
+      },
+      "population": 623,
+      "surface": 956.96,
+      "radius": 1.75
+    },
+    {
+      "nom": "Saint-Michel-Escalus",
+      "code": "40276",
+      "codesPostaux": ["40550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2475, 43.8752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2617, 43.8941]
+      },
+      "population": 324,
+      "surface": 1770.48,
+      "radius": 2.37
+    },
+    {
+      "nom": "Saint-Pandelon",
+      "code": "40277",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0416, 43.6676]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0387, 43.6709]
+      },
+      "population": 728,
+      "surface": 917.52,
+      "radius": 1.71
+    },
+    {
+      "nom": "Saint-Paul-en-Born",
+      "code": "40278",
+      "codesPostaux": ["40200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.155, 44.2083]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1519, 44.2243]
+      },
+      "population": 982,
+      "surface": 4351.13,
+      "radius": 3.72
+    },
+    {
+      "nom": "Saint-Paul-lès-Dax",
+      "code": "40279",
+      "codesPostaux": ["40990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0941, 43.7485]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0511, 43.725]
+      },
+      "population": 14114,
+      "surface": 5831.25,
+      "radius": 4.31
+    },
+    {
+      "nom": "Saint-Perdon",
+      "code": "40280",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6038, 43.8734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5909, 43.8649]
+      },
+      "population": 1729,
+      "surface": 3029.01,
+      "radius": 3.11
+    },
+    {
+      "nom": "Saint-Pierre-du-Mont",
+      "code": "40281",
+      "codesPostaux": ["40280"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.52, 43.8725]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5199, 43.8821]
+      },
+      "population": 9996,
+      "surface": 2640.52,
+      "radius": 2.9
+    },
+    {
+      "nom": "Saint-Sever",
+      "code": "40282",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5612, 43.7646]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5741, 43.7591]
+      },
+      "population": 5038,
+      "surface": 4685.74,
+      "radius": 3.86
+    },
+    {
+      "nom": "Saint-Vincent-de-Paul",
+      "code": "40283",
+      "codesPostaux": ["40990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9965, 43.7726]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0002, 43.7418]
+      },
+      "population": 3384,
+      "surface": 3257.47,
+      "radius": 3.22
+    },
+    {
+      "nom": "Saint-Vincent-de-Tyrosse",
+      "code": "40284",
+      "codesPostaux": ["40230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3013, 43.663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3044, 43.6609]
+      },
+      "population": 8051,
+      "surface": 2085.08,
+      "radius": 2.58
+    },
+    {
+      "nom": "Saint-Yaguen",
+      "code": "40285",
+      "codesPostaux": ["40400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7411, 43.9019]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7421, 43.8892]
+      },
+      "population": 628,
+      "surface": 3792.26,
+      "radius": 3.47
+    },
+    {
+      "nom": "Sainte-Colombe",
+      "code": "40252",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5578, 43.6805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5574, 43.6815]
+      },
+      "population": 618,
+      "surface": 1288.96,
+      "radius": 2.03
+    },
+    {
+      "nom": "Sainte-Eulalie-en-Born",
+      "code": "40257",
+      "codesPostaux": ["40200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2121, 44.2725]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1831, 44.2724]
+      },
+      "population": 1457,
+      "surface": 7147.68,
+      "radius": 4.77
+    },
+    {
+      "nom": "Sainte-Foy",
+      "code": "40258",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3238, 43.9315]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3323, 43.9358]
+      },
+      "population": 251,
+      "surface": 917.66,
+      "radius": 1.71
+    },
+    {
+      "nom": "Sainte-Marie-de-Gosse",
+      "code": "40271",
+      "codesPostaux": ["40390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2301, 43.5497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2385, 43.5565]
+      },
+      "population": 1228,
+      "surface": 2655.58,
+      "radius": 2.91
+    },
+    {
+      "nom": "Samadet",
+      "code": "40286",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4896, 43.6299]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4873, 43.6397]
+      },
+      "population": 1131,
+      "surface": 2621.43,
+      "radius": 2.89
+    },
+    {
+      "nom": "Sanguinet",
+      "code": "40287",
+      "codesPostaux": ["40460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0903, 44.4776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0764, 44.4837]
+      },
+      "population": 4662,
+      "surface": 10059.3,
+      "radius": 5.66
+    },
+    {
+      "nom": "Sarbazan",
+      "code": "40288",
+      "codesPostaux": ["40120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3202, 44.0125]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3126, 44.0195]
+      },
+      "population": 1151,
+      "surface": 2269.14,
+      "radius": 2.69
+    },
+    {
+      "nom": "Sarraziet",
+      "code": "40289",
+      "codesPostaux": ["40500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4986, 43.7062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4883, 43.7025]
+      },
+      "population": 241,
+      "surface": 709.71,
+      "radius": 1.5
+    },
+    {
+      "nom": "Sarron",
+      "code": "40290",
+      "codesPostaux": ["40800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2672, 43.5865]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.273, 43.592]
+      },
+      "population": 105,
+      "surface": 394.46,
+      "radius": 1.12
+    },
+    {
+      "nom": "Saubion",
+      "code": "40291",
+      "codesPostaux": ["40230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3323, 43.673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3482, 43.6711]
+      },
+      "population": 1806,
+      "surface": 772.4,
+      "radius": 1.57
+    },
+    {
+      "nom": "Saubrigues",
+      "code": "40292",
+      "codesPostaux": ["40230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3246, 43.609]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3147, 43.6107]
+      },
+      "population": 1605,
+      "surface": 2154.03,
+      "radius": 2.62
+    },
+    {
+      "nom": "Saubusse",
+      "code": "40293",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1815, 43.6737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1873, 43.6576]
+      },
+      "population": 1099,
+      "surface": 1039.25,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saugnac-et-Cambran",
+      "code": "40294",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9904, 43.6717]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9933, 43.6717]
+      },
+      "population": 1568,
+      "surface": 1337.74,
+      "radius": 2.06
+    },
+    {
+      "nom": "Saugnac-et-Muret",
+      "code": "40295",
+      "codesPostaux": ["40410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8494, 44.3893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8256, 44.4088]
+      },
+      "population": 1298,
+      "surface": 11002.05,
+      "radius": 5.92
+    },
+    {
+      "nom": "Seignosse",
+      "code": "40296",
+      "codesPostaux": ["40510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3939, 43.7055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3739, 43.6898]
+      },
+      "population": 3914,
+      "surface": 3660.14,
+      "radius": 3.41
+    },
+    {
+      "nom": "Serres-Gaston",
+      "code": "40298",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5198, 43.6709]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5179, 43.658]
+      },
+      "population": 401,
+      "surface": 895.58,
+      "radius": 1.69
+    },
+    {
+      "nom": "Serreslous-et-Arribans",
+      "code": "40299",
+      "codesPostaux": ["40700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6446, 43.663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6456, 43.6629]
+      },
+      "population": 193,
+      "surface": 549.58,
+      "radius": 1.32
+    },
+    {
+      "nom": "Seyresse",
+      "code": "40300",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0612, 43.6809]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0621, 43.6881]
+      },
+      "population": 1022,
+      "surface": 222.71,
+      "radius": 0.84
+    },
+    {
+      "nom": "Siest",
+      "code": "40301",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1331, 43.6499]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1303, 43.6497]
+      },
+      "population": 137,
+      "surface": 294.55,
+      "radius": 0.97
+    },
+    {
+      "nom": "Solférino",
+      "code": "40303",
+      "codesPostaux": ["40210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.907, 44.1155]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9196, 44.1455]
+      },
+      "population": 361,
+      "surface": 9846.37,
+      "radius": 5.6
+    },
+    {
+      "nom": "Soorts-Hossegor",
+      "code": "40304",
+      "codesPostaux": ["40150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4084, 43.6679]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4273, 43.6584]
+      },
+      "population": 3669,
+      "surface": 1447.52,
+      "radius": 2.15
+    },
+    {
+      "nom": "Sorbets",
+      "code": "40305",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3311, 43.6418]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.3297, 43.6341]
+      },
+      "population": 193,
+      "surface": 1195.56,
+      "radius": 1.95
+    },
+    {
+      "nom": "Sorde-l'Abbaye",
+      "code": "40306",
+      "codesPostaux": ["40300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0422, 43.5238]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.054, 43.529]
+      },
+      "population": 636,
+      "surface": 1632.31,
+      "radius": 2.28
+    },
+    {
+      "nom": "Sore",
+      "code": "40307",
+      "codesPostaux": ["40430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6021, 44.3073]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5811, 44.3233]
+      },
+      "population": 1162,
+      "surface": 14815.18,
+      "radius": 6.87
+    },
+    {
+      "nom": "Sort-en-Chalosse",
+      "code": "40308",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9225, 43.6797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9304, 43.6828]
+      },
+      "population": 887,
+      "surface": 1555.9,
+      "radius": 2.23
+    },
+    {
+      "nom": "Souprosse",
+      "code": "40309",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7195, 43.7927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7055, 43.7871]
+      },
+      "population": 1131,
+      "surface": 4250.53,
+      "radius": 3.68
+    },
+    {
+      "nom": "Soustons",
+      "code": "40310",
+      "codesPostaux": ["40140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3305, 43.754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.327, 43.7556]
+      },
+      "population": 8445,
+      "surface": 10795.55,
+      "radius": 5.86
+    },
+    {
+      "nom": "Taller",
+      "code": "40311",
+      "codesPostaux": ["40260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0621, 43.88]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0721, 43.8731]
+      },
+      "population": 680,
+      "surface": 4129.18,
+      "radius": 3.63
+    },
+    {
+      "nom": "Tarnos",
+      "code": "40312",
+      "codesPostaux": ["40220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4717, 43.5338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4604, 43.5405]
+      },
+      "population": 12900,
+      "surface": 2698.43,
+      "radius": 2.93
+    },
+    {
+      "nom": "Tartas",
+      "code": "40313",
+      "codesPostaux": ["40400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7791, 43.8156]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8094, 43.8321]
+      },
+      "population": 3174,
+      "surface": 3039.79,
+      "radius": 3.11
+    },
+    {
+      "nom": "Tercis-les-Bains",
+      "code": "40314",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1136, 43.6708]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1096, 43.6704]
+      },
+      "population": 1331,
+      "surface": 1024.31,
+      "radius": 1.81
+    },
+    {
+      "nom": "Téthieu",
+      "code": "40315",
+      "codesPostaux": ["40990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9597, 43.7476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9762, 43.7517]
+      },
+      "population": 763,
+      "surface": 1101.06,
+      "radius": 1.87
+    },
+    {
+      "nom": "Tilh",
+      "code": "40316",
+      "codesPostaux": ["40360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8336, 43.5819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.836, 43.5753]
+      },
+      "population": 841,
+      "surface": 2303.97,
+      "radius": 2.71
+    },
+    {
+      "nom": "Tosse",
+      "code": "40317",
+      "codesPostaux": ["40230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.316, 43.6952]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3317, 43.6909]
+      },
+      "population": 3455,
+      "surface": 1796.5,
+      "radius": 2.39
+    },
+    {
+      "nom": "Toulouzette",
+      "code": "40318",
+      "codesPostaux": ["40250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6762, 43.7557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.6852, 43.7557]
+      },
+      "population": 309,
+      "surface": 1167.79,
+      "radius": 1.93
+    },
+    {
+      "nom": "Trensacq",
+      "code": "40319",
+      "codesPostaux": ["40630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7015, 44.232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7512, 44.2149]
+      },
+      "population": 285,
+      "surface": 7942.88,
+      "radius": 5.03
+    },
+    {
+      "nom": "Uchacq-et-Parentis",
+      "code": "40320",
+      "codesPostaux": ["40090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.5476, 43.945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5619, 43.9287]
+      },
+      "population": 610,
+      "surface": 3859.61,
+      "radius": 3.51
+    },
+    {
+      "nom": "Urgons",
+      "code": "40321",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.432, 43.6397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4431, 43.6493]
+      },
+      "population": 242,
+      "surface": 1159.28,
+      "radius": 1.92
+    },
+    {
+      "nom": "Uza",
+      "code": "40322",
+      "codesPostaux": ["40170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1993, 44.0295]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1958, 44.035]
+      },
+      "population": 188,
+      "surface": 1288.27,
+      "radius": 2.03
+    },
+    {
+      "nom": "Vert",
+      "code": "40323",
+      "codesPostaux": ["40420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.6138, 44.0955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.5801, 44.0905]
+      },
+      "population": 238,
+      "surface": 3995.46,
+      "radius": 3.57
+    },
+    {
+      "nom": "Vicq-d'Auribat",
+      "code": "40324",
+      "codesPostaux": ["40380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8576, 43.7836]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8591, 43.7851]
+      },
+      "population": 249,
+      "surface": 423.56,
+      "radius": 1.16
+    },
+    {
+      "nom": "Vielle-Saint-Girons",
+      "code": "40326",
+      "codesPostaux": ["40560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3219, 43.9429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3024, 43.9517]
+      },
+      "population": 1451,
+      "surface": 7464.97,
+      "radius": 4.87
+    },
+    {
+      "nom": "Vielle-Soubiran",
+      "code": "40327",
+      "codesPostaux": ["40240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1715, 44.0549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1855, 44.0446]
+      },
+      "population": 224,
+      "surface": 3295.03,
+      "radius": 3.24
+    },
+    {
+      "nom": "Vielle-Tursan",
+      "code": "40325",
+      "codesPostaux": ["40320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.4639, 43.6857]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.4496, 43.6753]
+      },
+      "population": 283,
+      "surface": 1282.54,
+      "radius": 2.02
+    },
+    {
+      "nom": "Vieux-Boucau-les-Bains",
+      "code": "40328",
+      "codesPostaux": ["40480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3946, 43.7885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4011, 43.7859]
+      },
+      "population": 1682,
+      "surface": 437.96,
+      "radius": 1.18
+    },
+    {
+      "nom": "Villenave",
+      "code": "40330",
+      "codesPostaux": ["40110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.8227, 43.9681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.8088, 43.968]
+      },
+      "population": 313,
+      "surface": 2754.03,
+      "radius": 2.96
+    },
+    {
+      "nom": "Villeneuve-de-Marsan",
+      "code": "40331",
+      "codesPostaux": ["40190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.3057, 43.9087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.307, 43.8925]
+      },
+      "population": 2487,
+      "surface": 2320.17,
+      "radius": 2.72
+    },
+    {
+      "nom": "Ychoux",
+      "code": "40332",
+      "codesPostaux": ["40160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.9643, 44.3545]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.9626, 44.3282]
+      },
+      "population": 2342,
+      "surface": 11129.73,
+      "radius": 5.95
+    },
+    {
+      "nom": "Ygos-Saint-Saturnin",
+      "code": "40333",
+      "codesPostaux": ["40110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.7297, 43.9934]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.7342, 43.975]
+      },
+      "population": 1344,
+      "surface": 5849.21,
+      "radius": 4.31
+    },
+    {
+      "nom": "Yzosse",
+      "code": "40334",
+      "codesPostaux": ["40180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.015, 43.7189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0132, 43.7116]
+      },
+      "population": 384,
+      "surface": 543.17,
+      "radius": 1.31
+    }
+  ],
+  "postalCodes": {
+    "40000": {
+      "communes": ["Mont-de-Marsan"],
+      "communeCount": 1,
+      "center": [-0.5009, 43.8908],
+      "coverageRadius": 3.41,
+      "totalPopulation": 31455,
+      "totalSurface": 3660
+    },
+    "40090": {
+      "communes": [
+        "Artassenx",
+        "Bascons",
+        "Bostens",
+        "Bougue",
+        "Campagne",
+        "Campet-et-Lamolère",
+        "Canenx-et-Réaut",
+        "Cère",
+        "Gaillères",
+        "Geloux",
+        "Laglorieuse",
+        "Lucbardez-et-Bargues",
+        "Mazerolles",
+        "Saint-Avit",
+        "Saint-Martin-d'Oney",
+        "Saint-Perdon",
+        "Uchacq-et-Parentis"
+      ],
+      "communeCount": 17,
+      "center": [-0.5164, 43.9055],
+      "coverageRadius": 14.5,
+      "boundingBox": {
+        "minLat": 43.8214,
+        "maxLat": 44.0062,
+        "minLon": -0.6403,
+        "maxLon": -0.3612
+      },
+      "totalPopulation": 11889,
+      "totalSurface": 43478
+    },
+    "40100": {
+      "communes": ["Dax"],
+      "communeCount": 1,
+      "center": [-1.0518, 43.7086],
+      "coverageRadius": 2.5,
+      "totalPopulation": 21716,
+      "totalSurface": 1971
+    },
+    "40110": {
+      "communes": [
+        "Arengosse",
+        "Morcenx-la-Nouvelle",
+        "Onesse-Laharie",
+        "Ousse-Suzan",
+        "Villenave",
+        "Ygos-Saint-Saturnin"
+      ],
+      "communeCount": 6,
+      "center": [-0.8849, 44.0207],
+      "coverageRadius": 15.6,
+      "boundingBox": {
+        "minLat": 43.9565,
+        "maxLat": 44.0623,
+        "minLon": -1.0705,
+        "maxLon": -0.7342
+      },
+      "totalPopulation": 8717,
+      "totalSurface": 44424
+    },
+    "40120": {
+      "communes": [
+        "Arue",
+        "Bélis",
+        "Bourriot-Bergonce",
+        "Cachen",
+        "Lacquy",
+        "Lencouacq",
+        "Retjons",
+        "Maillas",
+        "Maillères",
+        "Pouydesseaux",
+        "Roquefort",
+        "Saint-Gor",
+        "Sarbazan"
+      ],
+      "communeCount": 13,
+      "center": [-0.3257, 44.0391],
+      "coverageRadius": 25.4,
+      "boundingBox": {
+        "minLat": 43.9516,
+        "maxLat": 44.2475,
+        "minLon": -0.4626,
+        "maxLon": -0.1974
+      },
+      "totalPopulation": 6743,
+      "totalSurface": 58481
+    },
+    "40130": {
+      "communes": ["Capbreton"],
+      "communeCount": 1,
+      "center": [-1.4316, 43.64],
+      "coverageRadius": 2.6,
+      "totalPopulation": 9218,
+      "totalSurface": 2123
+    },
+    "40140": {
+      "communes": ["Azur", "Magescq", "Soustons"],
+      "communeCount": 3,
+      "center": [-1.301, 43.7646],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 43.7556,
+        "maxLat": 43.799,
+        "minLon": -1.327,
+        "maxLon": -1.216
+      },
+      "totalPopulation": 12020,
+      "totalSurface": 20208
+    },
+    "40150": {
+      "communes": ["Angresse", "Soorts-Hossegor"],
+      "communeCount": 2,
+      "center": [-1.4059, 43.6586],
+      "coverageRadius": 2.9,
+      "boundingBox": {
+        "minLat": 43.6584,
+        "maxLat": 43.659,
+        "minLon": -1.4273,
+        "maxLon": -1.3708
+      },
+      "totalPopulation": 5910,
+      "totalSurface": 2219
+    },
+    "40160": {
+      "communes": ["Gastes", "Parentis-en-Born", "Ychoux"],
+      "communeCount": 3,
+      "center": [-1.0554, 44.3451],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 44.326,
+        "maxLat": 44.3527,
+        "minLon": -1.1473,
+        "maxLon": -0.9626
+      },
+      "totalPopulation": 10730,
+      "totalSurface": 27944
+    },
+    "40170": {
+      "communes": ["Bias", "Lévignacq", "Lit-et-Mixe", "Mézos", "Saint-Julien-en-Born", "Uza"],
+      "communeCount": 6,
+      "center": [-1.221, 44.0634],
+      "coverageRadius": 9.3,
+      "boundingBox": {
+        "minLat": 44.0053,
+        "maxLat": 44.1464,
+        "minLon": -1.2582,
+        "maxLon": -1.1662
+      },
+      "totalPopulation": 5617,
+      "totalSurface": 34878
+    },
+    "40180": {
+      "communes": [
+        "Bénesse-lès-Dax",
+        "Candresse",
+        "Clermont",
+        "Garrey",
+        "Goos",
+        "Heugas",
+        "Hinx",
+        "Narrosse",
+        "Oeyreluy",
+        "Rivière-Saas-et-Gourby",
+        "Saint-Pandelon",
+        "Saubusse",
+        "Saugnac-et-Cambran",
+        "Seyresse",
+        "Siest",
+        "Sort-en-Chalosse",
+        "Tercis-les-Bains",
+        "Yzosse"
+      ],
+      "communeCount": 18,
+      "center": [-1.0306, 43.6796],
+      "coverageRadius": 12.9,
+      "boundingBox": {
+        "minLat": 43.6419,
+        "maxLat": 43.7295,
+        "minLon": -1.1873,
+        "maxLon": -0.899
+      },
+      "totalPopulation": 19652,
+      "totalSurface": 19168
+    },
+    "40190": {
+      "communes": [
+        "Arthez-d'Armagnac",
+        "Bourdalat",
+        "Le Frêche",
+        "Hontanx",
+        "Montégut",
+        "Perquie",
+        "Pujo-le-Plan",
+        "Saint-Cricq-Villeneuve",
+        "Sainte-Foy",
+        "Saint-Gein",
+        "Villeneuve-de-Marsan"
+      ],
+      "communeCount": 11,
+      "center": [-0.2988, 43.8797],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 43.8245,
+        "maxLat": 43.9358,
+        "minLon": -0.3527,
+        "maxLon": -0.1999
+      },
+      "totalPopulation": 5961,
+      "totalSurface": 19559
+    },
+    "40200": {
+      "communes": ["Aureilhan", "Mimizan", "Pontenx-les-Forges", "Sainte-Eulalie-en-Born", "Saint-Paul-en-Born"],
+      "communeCount": 5,
+      "center": [-1.2005, 44.2177],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 44.2005,
+        "maxLat": 44.2724,
+        "minLon": -1.2282,
+        "maxLon": -1.1213
+      },
+      "totalPopulation": 12742,
+      "totalSurface": 32358
+    },
+    "40210": {
+      "communes": ["Commensacq", "Escource", "Labouheyre", "Lüe", "Solférino"],
+      "communeCount": 5,
+      "center": [-0.9367, 44.2019],
+      "coverageRadius": 9.2,
+      "boundingBox": {
+        "minLat": 44.1455,
+        "maxLat": 44.2312,
+        "minLon": -1.0329,
+        "maxLon": -0.8227
+      },
+      "totalPopulation": 5090,
+      "totalSurface": 40641
+    },
+    "40220": {
+      "communes": ["Tarnos"],
+      "communeCount": 1,
+      "center": [-1.4604, 43.5405],
+      "coverageRadius": 2.93,
+      "totalPopulation": 12900,
+      "totalSurface": 2698
+    },
+    "40230": {
+      "communes": [
+        "Bénesse-Maremne",
+        "Josse",
+        "Orx",
+        "Saint-Geours-de-Maremne",
+        "Saint-Jean-de-Marsacq",
+        "Saint-Vincent-de-Tyrosse",
+        "Saubion",
+        "Saubrigues",
+        "Tosse"
+      ],
+      "communeCount": 9,
+      "center": [-1.3065, 43.6566],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 43.6025,
+        "maxLat": 43.6909,
+        "minLon": -1.3698,
+        "maxLon": -1.2244
+      },
+      "totalPopulation": 25059,
+      "totalSurface": 17763
+    },
+    "40240": {
+      "communes": [
+        "Betbezer-d'Armagnac",
+        "Créon-d'Armagnac",
+        "Estigarde",
+        "Labastide-d'Armagnac",
+        "Lagrange",
+        "Losse",
+        "Lubbon",
+        "Mauvezin-d'Armagnac",
+        "Saint-Julien-d'Armagnac",
+        "Saint-Justin",
+        "Vielle-Soubiran"
+      ],
+      "communeCount": 11,
+      "center": [-0.1683, 43.9988],
+      "coverageRadius": 16.9,
+      "boundingBox": {
+        "minLat": 43.9539,
+        "maxLat": 44.1086,
+        "minLon": -0.23,
+        "maxLon": -0.0154
+      },
+      "totalPopulation": 3244,
+      "totalSurface": 38216
+    },
+    "40250": {
+      "communes": [
+        "Bergouey",
+        "Caupenne",
+        "Hauriet",
+        "Lahosse",
+        "Lamothe",
+        "Larbey",
+        "Laurède",
+        "Le Leuy",
+        "Lourquen",
+        "Maylis",
+        "Mugron",
+        "Nerbis",
+        "Saint-Aubin",
+        "Souprosse",
+        "Toulouzette"
+      ],
+      "communeCount": 15,
+      "center": [-0.7235, 43.7462],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 43.6694,
+        "maxLat": 43.82,
+        "minLon": -0.8006,
+        "maxLon": -0.6536
+      },
+      "totalPopulation": 6237,
+      "totalSurface": 17199
+    },
+    "40260": {
+      "communes": ["Castets", "Lesperon", "Linxe", "Taller"],
+      "communeCount": 4,
+      "center": [-1.1542, 43.9069],
+      "coverageRadius": 8.6,
+      "boundingBox": {
+        "minLat": 43.8731,
+        "maxLat": 43.9696,
+        "minLon": -1.2456,
+        "maxLon": -1.0721
+      },
+      "totalPopulation": 5770,
+      "totalSurface": 31757
+    },
+    "40270": {
+      "communes": [
+        "Bordères-et-Lamensans",
+        "Castandet",
+        "Cazères-sur-l'Adour",
+        "Grenade-sur-l'Adour",
+        "Larrivière-Saint-Savin",
+        "Lussagnet",
+        "Maurrin",
+        "Renung",
+        "Saint-Maurice-sur-Adour",
+        "Le Vignau"
+      ],
+      "communeCount": 10,
+      "center": [-0.3857, 43.7762],
+      "coverageRadius": 12.2,
+      "boundingBox": {
+        "minLat": 43.7493,
+        "maxLat": 43.8242,
+        "minLon": -0.4657,
+        "maxLon": -0.234
+      },
+      "totalPopulation": 7075,
+      "totalSurface": 16391
+    },
+    "40280": {
+      "communes": ["Benquet", "Bretagne-de-Marsan", "Haut-Mauco", "Saint-Pierre-du-Mont"],
+      "communeCount": 4,
+      "center": [-0.5129, 43.8674],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 43.8252,
+        "maxLat": 43.8821,
+        "minLon": -0.554,
+        "maxLon": -0.4591
+      },
+      "totalPopulation": 14526,
+      "totalSurface": 8793
+    },
+    "40290": {
+      "communes": ["Estibeaux", "Habas", "Misson", "Mouscardès", "Ossages"],
+      "communeCount": 5,
+      "center": [-0.9231, 43.5793],
+      "coverageRadius": 4.1,
+      "boundingBox": {
+        "minLat": 43.5593,
+        "maxLat": 43.6002,
+        "minLon": -0.9611,
+        "maxLon": -0.881
+      },
+      "totalPopulation": 3756,
+      "totalSurface": 7361
+    },
+    "40300": {
+      "communes": [
+        "Bélus",
+        "Cagnotte",
+        "Cauneille",
+        "Hastingues",
+        "Labatut",
+        "Oeyregave",
+        "Orist",
+        "Orthevielle",
+        "Pey",
+        "Peyrehorade",
+        "Port-de-Lanne",
+        "Saint-Cricq-du-Gave",
+        "Saint-Étienne-d'Orthe",
+        "Saint-Lon-les-Mines",
+        "Sorde-l'Abbaye"
+      ],
+      "communeCount": 15,
+      "center": [-1.1099, 43.5679],
+      "coverageRadius": 10.4,
+      "boundingBox": {
+        "minLat": 43.529,
+        "maxLat": 43.6411,
+        "minLon": -1.2017,
+        "maxLon": -0.9838
+      },
+      "totalPopulation": 15152,
+      "totalSurface": 21531
+    },
+    "40310": {
+      "communes": ["Arx", "Baudignan", "Escalans", "Gabarret", "Herré", "Parleboscq", "Rimbez-et-Baudiets"],
+      "communeCount": 7,
+      "center": [0.0169, 43.9885],
+      "coverageRadius": 13.9,
+      "boundingBox": {
+        "minLat": 43.9424,
+        "maxLat": 44.1061,
+        "minLon": -0.0252,
+        "maxLon": 0.0752
+      },
+      "totalPopulation": 2317,
+      "totalSurface": 19132
+    },
+    "40320": {
+      "communes": [
+        "Arboucave",
+        "Bahus-Soubiran",
+        "Bats",
+        "Buanes",
+        "Castelnau-Tursan",
+        "Classun",
+        "Clèdes",
+        "Eugénie-les-Bains",
+        "Geaune",
+        "Lacajunte",
+        "Lauret",
+        "Mauries",
+        "Miramont-Sensacq",
+        "Payros-Cazautets",
+        "Pécorade",
+        "Philondenx",
+        "Pimbo",
+        "Puyol-Cazalet",
+        "Saint-Loubouer",
+        "Samadet",
+        "Sorbets",
+        "Urgons",
+        "Vielle-Tursan"
+      ],
+      "communeCount": 23,
+      "center": [-0.4115, 43.6463],
+      "coverageRadius": 10.9,
+      "boundingBox": {
+        "minLat": 43.5623,
+        "maxLat": 43.7103,
+        "minLon": -0.4873,
+        "maxLon": -0.3263
+      },
+      "totalPopulation": 6649,
+      "totalSurface": 24502
+    },
+    "40330": {
+      "communes": ["Amou", "Arsague", "Bonnegarde", "Brassempouy", "Castel-Sarrazin", "Gaujacq", "Marpaps", "Nassiet"],
+      "communeCount": 8,
+      "center": [-0.7415, 43.6022],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 43.5679,
+        "maxLat": 43.6399,
+        "minLon": -0.7962,
+        "maxLon": -0.6786
+      },
+      "totalPopulation": 3886,
+      "totalSurface": 10239
+    },
+    "40350": {
+      "communes": ["Gaas", "Mimbaste", "Pouillon"],
+      "communeCount": 3,
+      "center": [-0.9963, 43.6154],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 43.6052,
+        "maxLat": 43.6489,
+        "minLon": -1.0362,
+        "maxLon": -0.9737
+      },
+      "totalPopulation": 4614,
+      "totalSurface": 7953
+    },
+    "40360": {
+      "communes": ["Bastennes", "Castelnau-Chalosse", "Donzacq", "Pomarez", "Tilh"],
+      "communeCount": 5,
+      "center": [-0.8277, 43.6272],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 43.5753,
+        "maxLat": 43.6649,
+        "minLon": -0.8448,
+        "maxLon": -0.7862
+      },
+      "totalPopulation": 3739,
+      "totalSurface": 8354
+    },
+    "40370": {
+      "communes": ["Beylongue", "Rion-des-Landes"],
+      "communeCount": 2,
+      "center": [-0.9101, 43.9324],
+      "coverageRadius": 6.7,
+      "boundingBox": {
+        "minLat": 43.923,
+        "maxLat": 43.9336,
+        "minLon": -0.9206,
+        "maxLon": -0.8284
+      },
+      "totalPopulation": 3517,
+      "totalSurface": 17148
+    },
+    "40380": {
+      "communes": [
+        "Baigts",
+        "Cassen",
+        "Gamarde-les-Bains",
+        "Gibret",
+        "Louer",
+        "Montfort-en-Chalosse",
+        "Nousse",
+        "Onard",
+        "Ozourt",
+        "Poyanne",
+        "Poyartin",
+        "Saint-Geours-d'Auribat",
+        "Saint-Jean-de-Lier",
+        "Vicq-d'Auribat"
+      ],
+      "communeCount": 14,
+      "center": [-0.8505, 43.733],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 43.6624,
+        "maxLat": 43.7895,
+        "minLon": -0.892,
+        "maxLon": -0.7929
+      },
+      "totalPopulation": 7496,
+      "totalSurface": 10948
+    },
+    "40390": {
+      "communes": [
+        "Biarrotte",
+        "Biaudos",
+        "Saint-André-de-Seignanx",
+        "Saint-Barthélemy",
+        "Saint-Laurent-de-Gosse",
+        "Sainte-Marie-de-Gosse",
+        "Saint-Martin-de-Hinx",
+        "Saint-Martin-de-Seignanx"
+      ],
+      "communeCount": 8,
+      "center": [-1.3361, 43.552],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 43.5149,
+        "maxLat": 43.5821,
+        "minLon": -1.3865,
+        "maxLon": -1.2385
+      },
+      "totalPopulation": 13541,
+      "totalSurface": 16158
+    },
+    "40400": {
+      "communes": [
+        "Audon",
+        "Bégaar",
+        "Carcarès-Sainte-Croix",
+        "Carcen-Ponson",
+        "Gouts",
+        "Lesgor",
+        "Meilhan",
+        "Saint-Yaguen",
+        "Tartas"
+      ],
+      "communeCount": 9,
+      "center": [-0.7991, 43.8415],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 43.7842,
+        "maxLat": 43.8892,
+        "minLon": -0.9005,
+        "maxLon": -0.7066
+      },
+      "totalPopulation": 8519,
+      "totalSurface": 23440
+    },
+    "40410": {
+      "communes": ["Belhade", "Liposthey", "Mano", "Moustey", "Pissos", "Saugnac-et-Muret"],
+      "communeCount": 6,
+      "center": [-0.7946, 44.3535],
+      "coverageRadius": 12.1,
+      "boundingBox": {
+        "minLat": 44.3071,
+        "maxLat": 44.4178,
+        "minLon": -0.8772,
+        "maxLon": -0.6718
+      },
+      "totalPopulation": 4478,
+      "totalSurface": 40434
+    },
+    "40420": {
+      "communes": ["Brocas", "Garein", "Labrit", "Le Sen", "Vert"],
+      "communeCount": 5,
+      "center": [-0.5603, 44.0774],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 44.0444,
+        "maxLat": 44.1259,
+        "minLon": -0.6524,
+        "maxLon": -0.5013
+      },
+      "totalPopulation": 2461,
+      "totalSurface": 27343
+    },
+    "40430": {
+      "communes": ["Argelouse", "Callen", "Luxey", "Sore"],
+      "communeCount": 4,
+      "center": [-0.5567, 44.3047],
+      "coverageRadius": 9.9,
+      "boundingBox": {
+        "minLat": 44.264,
+        "maxLat": 44.366,
+        "minLon": -0.6465,
+        "maxLon": -0.4765
+      },
+      "totalPopulation": 2056,
+      "totalSurface": 41867
+    },
+    "40440": {
+      "communes": ["Ondres"],
+      "communeCount": 1,
+      "center": [-1.4484, 43.5609],
+      "coverageRadius": 2.2,
+      "totalPopulation": 6194,
+      "totalSurface": 1526
+    },
+    "40460": {
+      "communes": ["Sanguinet"],
+      "communeCount": 1,
+      "center": [-1.0764, 44.4837],
+      "coverageRadius": 5.66,
+      "totalPopulation": 4662,
+      "totalSurface": 10059
+    },
+    "40465": {
+      "communes": ["Gousse", "Laluque", "Pontonx-sur-l'Adour", "Préchacq-les-Bains"],
+      "communeCount": 4,
+      "center": [-0.9356, 43.7959],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 43.7575,
+        "maxLat": 43.8523,
+        "minLon": -0.9941,
+        "maxLon": -0.8978
+      },
+      "totalPopulation": 5134,
+      "totalSurface": 11472
+    },
+    "40480": {
+      "communes": ["Vieux-Boucau-les-Bains"],
+      "communeCount": 1,
+      "center": [-1.4011, 43.7859],
+      "coverageRadius": 1.18,
+      "totalPopulation": 1682,
+      "totalSurface": 438
+    },
+    "40500": {
+      "communes": [
+        "Audignon",
+        "Aurice",
+        "Banos",
+        "Bas-Mauco",
+        "Cauna",
+        "Coudures",
+        "Dumes",
+        "Eyres-Moncube",
+        "Fargues",
+        "Montaut",
+        "Montgaillard",
+        "Montsoué",
+        "Saint-Sever",
+        "Sarraziet"
+      ],
+      "communeCount": 14,
+      "center": [-0.5675, 43.7511],
+      "coverageRadius": 9.7,
+      "boundingBox": {
+        "minLat": 43.691,
+        "maxLat": 43.8151,
+        "minLon": -0.6584,
+        "maxLon": -0.4507
+      },
+      "totalPopulation": 10613,
+      "totalSurface": 20206
+    },
+    "40510": {
+      "communes": ["Seignosse"],
+      "communeCount": 1,
+      "center": [-1.3739, 43.6898],
+      "coverageRadius": 3.41,
+      "totalPopulation": 3914,
+      "totalSurface": 3660
+    },
+    "40530": {
+      "communes": ["Labenne"],
+      "communeCount": 1,
+      "center": [-1.4259, 43.5949],
+      "coverageRadius": 2.8,
+      "totalPopulation": 7095,
+      "totalSurface": 2460
+    },
+    "40550": {
+      "communes": ["Léon", "Saint-Michel-Escalus"],
+      "communeCount": 2,
+      "center": [-1.2979, 43.8783],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 43.8759,
+        "maxLat": 43.8941,
+        "minLon": -1.3033,
+        "maxLon": -1.2617
+      },
+      "totalPopulation": 2506,
+      "totalSurface": 8447
+    },
+    "40560": {
+      "communes": ["Vielle-Saint-Girons"],
+      "communeCount": 1,
+      "center": [-1.3024, 43.9517],
+      "coverageRadius": 4.87,
+      "totalPopulation": 1451,
+      "totalSurface": 7465
+    },
+    "40600": {
+      "communes": ["Biscarrosse"],
+      "communeCount": 1,
+      "center": [-1.167, 44.3958],
+      "coverageRadius": 7.85,
+      "totalPopulation": 15412,
+      "totalSurface": 19351
+    },
+    "40630": {
+      "communes": ["Luglon", "Sabres", "Trensacq"],
+      "communeCount": 3,
+      "center": [-0.7378, 44.1456],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 44.0826,
+        "maxLat": 44.2149,
+        "minLon": -0.7512,
+        "maxLon": -0.7176
+      },
+      "totalPopulation": 1851,
+      "totalSurface": 28298
+    },
+    "40660": {
+      "communes": ["Messanges", "Moliets-et-Maa"],
+      "communeCount": 2,
+      "center": [-1.3675, 43.8335],
+      "coverageRadius": 2.3,
+      "boundingBox": {
+        "minLat": 43.8146,
+        "maxLat": 43.8486,
+        "minLon": -1.3784,
+        "maxLon": -1.3589
+      },
+      "totalPopulation": 2341,
+      "totalSurface": 6206
+    },
+    "40700": {
+      "communes": [
+        "Argelos",
+        "Aubagnan",
+        "Bassercles",
+        "Beyries",
+        "Castaignos-Souslens",
+        "Castelner",
+        "Cazalis",
+        "Doazit",
+        "Hagetmau",
+        "Horsarrieu",
+        "Labastide-Chalosse",
+        "Lacrabe",
+        "Mant",
+        "Momuy",
+        "Monget",
+        "Monségur",
+        "Morganx",
+        "Peyre",
+        "Poudenx",
+        "Sainte-Colombe",
+        "Saint-Cricq-Chalosse",
+        "Serres-Gaston",
+        "Serreslous-et-Arribans"
+      ],
+      "communeCount": 23,
+      "center": [-0.5958, 43.644],
+      "coverageRadius": 10.5,
+      "boundingBox": {
+        "minLat": 43.553,
+        "maxLat": 43.6908,
+        "minLon": -0.6849,
+        "maxLon": -0.4885
+      },
+      "totalPopulation": 11720,
+      "totalSurface": 24187
+    },
+    "40800": {
+      "communes": ["Aire-sur-l'Adour", "Duhort-Bachen", "Latrille", "Saint-Agnet", "Sarron"],
+      "communeCount": 5,
+      "center": [-0.269, 43.6969],
+      "coverageRadius": 11.7,
+      "boundingBox": {
+        "minLat": 43.592,
+        "maxLat": 43.7249,
+        "minLon": -0.3242,
+        "maxLon": -0.2623
+      },
+      "totalPopulation": 7350,
+      "totalSurface": 11092
+    },
+    "40990": {
+      "communes": ["Angoumé", "Gourbera", "Herm", "Mées", "Saint-Paul-lès-Dax", "Saint-Vincent-de-Paul", "Téthieu"],
+      "communeCount": 7,
+      "center": [-1.0521, 43.7317],
+      "coverageRadius": 11.2,
+      "boundingBox": {
+        "minLat": 43.6909,
+        "maxLat": 43.8061,
+        "minLon": -1.145,
+        "maxLon": -0.9762
+      },
+      "totalPopulation": 22050,
+      "totalSurface": 20501
+    }
+  }
+}

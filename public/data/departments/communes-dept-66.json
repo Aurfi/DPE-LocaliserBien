@@ -1,0 +1,4442 @@
+{
+  "departmentCode": "66",
+  "departmentName": "Pyrénées-Orientales",
+  "stats": {
+    "communeCount": 226,
+    "totalPopulation": 492964,
+    "totalSurface": 413945
+  },
+  "communes": [
+    {
+      "nom": "Alénya",
+      "code": "66002",
+      "codesPostaux": ["66200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9824, 42.6413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9807, 42.6378]
+      },
+      "population": 3712,
+      "surface": 572.45,
+      "radius": 1.35
+    },
+    {
+      "nom": "Amélie-les-Bains-Palalda",
+      "code": "66003",
+      "codesPostaux": ["66110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.687, 42.4508]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6696, 42.4727]
+      },
+      "population": 3553,
+      "surface": 2935.18,
+      "radius": 3.06
+    },
+    {
+      "nom": "Angoustrine-Villeneuve-des-Escaldes",
+      "code": "66005",
+      "codesPostaux": ["66760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9443, 42.546]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9573, 42.4794]
+      },
+      "population": 548,
+      "surface": 8707.67,
+      "radius": 5.26
+    },
+    {
+      "nom": "Ansignan",
+      "code": "66006",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5233, 42.7646]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5156, 42.761]
+      },
+      "population": 168,
+      "surface": 798.36,
+      "radius": 1.59
+    },
+    {
+      "nom": "Arboussols",
+      "code": "66007",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4953, 42.6669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4862, 42.6633]
+      },
+      "population": 130,
+      "surface": 1406.94,
+      "radius": 2.12
+    },
+    {
+      "nom": "Argelès-sur-Mer",
+      "code": "66008",
+      "codesPostaux": ["66700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0234, 42.53]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.021, 42.5491]
+      },
+      "population": 10779,
+      "surface": 5880.7,
+      "radius": 4.33
+    },
+    {
+      "nom": "Arles-sur-Tech",
+      "code": "66009",
+      "codesPostaux": ["66150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6228, 42.4531]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6353, 42.4551]
+      },
+      "population": 2805,
+      "surface": 2885.99,
+      "radius": 3.03
+    },
+    {
+      "nom": "Ayguatébia-Talau",
+      "code": "66010",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1962, 42.5561]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1834, 42.5723]
+      },
+      "population": 44,
+      "surface": 2995.93,
+      "radius": 3.09
+    },
+    {
+      "nom": "Bages",
+      "code": "66011",
+      "codesPostaux": ["66670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8893, 42.6075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8921, 42.6059]
+      },
+      "population": 4519,
+      "surface": 1204.66,
+      "radius": 1.96
+    },
+    {
+      "nom": "Baho",
+      "code": "66012",
+      "codesPostaux": ["66540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8229, 42.7066]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8217, 42.7013]
+      },
+      "population": 3266,
+      "surface": 774.5,
+      "radius": 1.57
+    },
+    {
+      "nom": "Baillestavy",
+      "code": "66013",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5266, 42.5682]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5264, 42.5641]
+      },
+      "population": 117,
+      "surface": 1781.2,
+      "radius": 2.38
+    },
+    {
+      "nom": "Baixas",
+      "code": "66014",
+      "codesPostaux": ["66390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8079, 42.744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8117, 42.7512]
+      },
+      "population": 2784,
+      "surface": 1901.76,
+      "radius": 2.46
+    },
+    {
+      "nom": "Banyuls-dels-Aspres",
+      "code": "66015",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8649, 42.5653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8678, 42.5659]
+      },
+      "population": 1397,
+      "surface": 1069,
+      "radius": 1.84
+    },
+    {
+      "nom": "Banyuls-sur-Mer",
+      "code": "66016",
+      "codesPostaux": ["66650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1014, 42.4602]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1294, 42.4812]
+      },
+      "population": 4583,
+      "surface": 4283.58,
+      "radius": 3.69
+    },
+    {
+      "nom": "Bélesta",
+      "code": "66019",
+      "codesPostaux": ["66720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6228, 42.7241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6072, 42.7172]
+      },
+      "population": 241,
+      "surface": 2049.25,
+      "radius": 2.55
+    },
+    {
+      "nom": "Bolquère",
+      "code": "66020",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0614, 42.5225]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0793, 42.5024]
+      },
+      "population": 805,
+      "surface": 1790.41,
+      "radius": 2.39
+    },
+    {
+      "nom": "Bompas",
+      "code": "66021",
+      "codesPostaux": ["66430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9426, 42.7271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9355, 42.7302]
+      },
+      "population": 7712,
+      "surface": 574.74,
+      "radius": 1.35
+    },
+    {
+      "nom": "Boule-d'Amont",
+      "code": "66022",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5905, 42.5884]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6143, 42.579]
+      },
+      "population": 64,
+      "surface": 2340.14,
+      "radius": 2.73
+    },
+    {
+      "nom": "Bouleternère",
+      "code": "66023",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5878, 42.6435]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5855, 42.6494]
+      },
+      "population": 953,
+      "surface": 1077.55,
+      "radius": 1.85
+    },
+    {
+      "nom": "Bourg-Madame",
+      "code": "66025",
+      "codesPostaux": ["66760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9608, 42.438]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9446, 42.4343]
+      },
+      "population": 1194,
+      "surface": 771.32,
+      "radius": 1.57
+    },
+    {
+      "nom": "Brouilla",
+      "code": "66026",
+      "codesPostaux": ["66620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8927, 42.5759]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9033, 42.5674]
+      },
+      "population": 1586,
+      "surface": 789.57,
+      "radius": 1.59
+    },
+    {
+      "nom": "Cabestany",
+      "code": "66028",
+      "codesPostaux": ["66330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9507, 42.6804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9372, 42.6789]
+      },
+      "population": 10414,
+      "surface": 1059.05,
+      "radius": 1.84
+    },
+    {
+      "nom": "Caixas",
+      "code": "66029",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6633, 42.6031]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.683, 42.5828]
+      },
+      "population": 131,
+      "surface": 2779.78,
+      "radius": 2.97
+    },
+    {
+      "nom": "Calce",
+      "code": "66030",
+      "codesPostaux": ["66600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7545, 42.7477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7555, 42.7583]
+      },
+      "population": 224,
+      "surface": 2399.62,
+      "radius": 2.76
+    },
+    {
+      "nom": "Calmeilles",
+      "code": "66032",
+      "codesPostaux": ["66400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6735, 42.5507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6744, 42.5521]
+      },
+      "population": 60,
+      "surface": 1334.67,
+      "radius": 2.06
+    },
+    {
+      "nom": "Camélas",
+      "code": "66033",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6911, 42.6404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7057, 42.6506]
+      },
+      "population": 463,
+      "surface": 1299.08,
+      "radius": 2.03
+    },
+    {
+      "nom": "Campôme",
+      "code": "66034",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3826, 42.6506]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3762, 42.6503]
+      },
+      "population": 120,
+      "surface": 535,
+      "radius": 1.3
+    },
+    {
+      "nom": "Campoussy",
+      "code": "66035",
+      "codesPostaux": ["66730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.452, 42.6978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4584, 42.71]
+      },
+      "population": 42,
+      "surface": 1732.1,
+      "radius": 2.35
+    },
+    {
+      "nom": "Canaveilles",
+      "code": "66036",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2179, 42.5348]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2499, 42.5364]
+      },
+      "population": 43,
+      "surface": 1122.95,
+      "radius": 1.89
+    },
+    {
+      "nom": "Canet-en-Roussillon",
+      "code": "66037",
+      "codesPostaux": ["66140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.002, 42.6809]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0088, 42.7058]
+      },
+      "population": 13005,
+      "surface": 3006.96,
+      "radius": 3.09
+    },
+    {
+      "nom": "Canohès",
+      "code": "66038",
+      "codesPostaux": ["66680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8294, 42.6514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8322, 42.6549]
+      },
+      "population": 6575,
+      "surface": 872.33,
+      "radius": 1.67
+    },
+    {
+      "nom": "Caramany",
+      "code": "66039",
+      "codesPostaux": ["66720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5572, 42.7388]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5706, 42.7349]
+      },
+      "population": 130,
+      "surface": 1424.98,
+      "radius": 2.13
+    },
+    {
+      "nom": "Casefabre",
+      "code": "66040",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6127, 42.6156]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6139, 42.6156]
+      },
+      "population": 43,
+      "surface": 703.17,
+      "radius": 1.5
+    },
+    {
+      "nom": "Cases-de-Pène",
+      "code": "66041",
+      "codesPostaux": ["66600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7771, 42.7931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7874, 42.779]
+      },
+      "population": 978,
+      "surface": 1354.41,
+      "radius": 2.08
+    },
+    {
+      "nom": "Cassagnes",
+      "code": "66042",
+      "codesPostaux": ["66720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.626, 42.7415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6111, 42.7396]
+      },
+      "population": 290,
+      "surface": 1522.89,
+      "radius": 2.2
+    },
+    {
+      "nom": "Casteil",
+      "code": "66043",
+      "codesPostaux": ["66820"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4229, 42.5035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3923, 42.533]
+      },
+      "population": 140,
+      "surface": 2966.31,
+      "radius": 3.07
+    },
+    {
+      "nom": "Castelnou",
+      "code": "66044",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7046, 42.6247]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7035, 42.6192]
+      },
+      "population": 286,
+      "surface": 1926.74,
+      "radius": 2.48
+    },
+    {
+      "nom": "Catllar",
+      "code": "66045",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4186, 42.6407]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4227, 42.6341]
+      },
+      "population": 724,
+      "surface": 799.87,
+      "radius": 1.6
+    },
+    {
+      "nom": "Caudiès-de-Conflent",
+      "code": "66047",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1451, 42.5623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1616, 42.5673]
+      },
+      "population": 21,
+      "surface": 651.01,
+      "radius": 1.44
+    },
+    {
+      "nom": "Caudiès-de-Fenouillèdes",
+      "code": "66046",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3781, 42.8213]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3745, 42.8132]
+      },
+      "population": 585,
+      "surface": 3753.12,
+      "radius": 3.46
+    },
+    {
+      "nom": "Cerbère",
+      "code": "66048",
+      "codesPostaux": ["66290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1493, 42.4471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1654, 42.442]
+      },
+      "population": 1213,
+      "surface": 821.7,
+      "radius": 1.62
+    },
+    {
+      "nom": "Céret",
+      "code": "66049",
+      "codesPostaux": ["66400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7565, 42.473]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7487, 42.4859]
+      },
+      "population": 7544,
+      "surface": 3786.42,
+      "radius": 3.47
+    },
+    {
+      "nom": "Claira",
+      "code": "66050",
+      "codesPostaux": ["66530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9458, 42.7626]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9562, 42.7596]
+      },
+      "population": 4801,
+      "surface": 1933.65,
+      "radius": 2.48
+    },
+    {
+      "nom": "Clara-Villerach",
+      "code": "66051",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4489, 42.5831]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4432, 42.5848]
+      },
+      "population": 267,
+      "surface": 863.2,
+      "radius": 1.66
+    },
+    {
+      "nom": "Codalet",
+      "code": "66052",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4169, 42.6015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4164, 42.6106]
+      },
+      "population": 353,
+      "surface": 282.5,
+      "radius": 0.95
+    },
+    {
+      "nom": "Collioure",
+      "code": "66053",
+      "codesPostaux": ["66190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0744, 42.5087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0832, 42.5256]
+      },
+      "population": 2637,
+      "surface": 1203.41,
+      "radius": 1.96
+    },
+    {
+      "nom": "Conat",
+      "code": "66054",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3426, 42.6203]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.358, 42.6128]
+      },
+      "population": 63,
+      "surface": 1920.49,
+      "radius": 2.47
+    },
+    {
+      "nom": "Corbère",
+      "code": "66055",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6614, 42.6515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6625, 42.6526]
+      },
+      "population": 780,
+      "surface": 725.76,
+      "radius": 1.52
+    },
+    {
+      "nom": "Corbère-les-Cabanes",
+      "code": "66056",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6837, 42.66]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6756, 42.658]
+      },
+      "population": 1155,
+      "surface": 422.34,
+      "radius": 1.16
+    },
+    {
+      "nom": "Corneilla-de-Conflent",
+      "code": "66057",
+      "codesPostaux": ["66820"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.382, 42.5786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3832, 42.5663]
+      },
+      "population": 532,
+      "surface": 1106.55,
+      "radius": 1.88
+    },
+    {
+      "nom": "Corneilla-del-Vercol",
+      "code": "66059",
+      "codesPostaux": ["66200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9512, 42.6228]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9494, 42.6256]
+      },
+      "population": 2679,
+      "surface": 539.09,
+      "radius": 1.31
+    },
+    {
+      "nom": "Corneilla-la-Rivière",
+      "code": "66058",
+      "codesPostaux": ["66550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7247, 42.7098]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7295, 42.6968]
+      },
+      "population": 2013,
+      "surface": 1265.13,
+      "radius": 2.01
+    },
+    {
+      "nom": "Corsavy",
+      "code": "66060",
+      "codesPostaux": ["66150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.541, 42.483]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5783, 42.4661]
+      },
+      "population": 247,
+      "surface": 4729.66,
+      "radius": 3.88
+    },
+    {
+      "nom": "Coustouges",
+      "code": "66061",
+      "codesPostaux": ["66260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.632, 42.3602]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6494, 42.3675]
+      },
+      "population": 93,
+      "surface": 1675.74,
+      "radius": 2.31
+    },
+    {
+      "nom": "Dorres",
+      "code": "66062",
+      "codesPostaux": ["66760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9224, 42.5125]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9411, 42.4848]
+      },
+      "population": 178,
+      "surface": 2505.17,
+      "radius": 2.82
+    },
+    {
+      "nom": "Égat",
+      "code": "66064",
+      "codesPostaux": ["66120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0195, 42.5008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0166, 42.5006]
+      },
+      "population": 418,
+      "surface": 439.67,
+      "radius": 1.18
+    },
+    {
+      "nom": "Elne",
+      "code": "66065",
+      "codesPostaux": ["66200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.978, 42.6083]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9735, 42.6014]
+      },
+      "population": 9479,
+      "surface": 2185.8,
+      "radius": 2.64
+    },
+    {
+      "nom": "Enveitg",
+      "code": "66066",
+      "codesPostaux": ["66760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8922, 42.491]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9115, 42.4609]
+      },
+      "population": 614,
+      "surface": 3031.68,
+      "radius": 3.11
+    },
+    {
+      "nom": "Err",
+      "code": "66067",
+      "codesPostaux": ["66800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0678, 42.4131]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0313, 42.4424]
+      },
+      "population": 714,
+      "surface": 2628.29,
+      "radius": 2.89
+    },
+    {
+      "nom": "Escaro",
+      "code": "66068",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.319, 42.5337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3142, 42.5362]
+      },
+      "population": 127,
+      "surface": 1509.15,
+      "radius": 2.19
+    },
+    {
+      "nom": "Espira-de-Conflent",
+      "code": "66070",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4923, 42.6168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4976, 42.6166]
+      },
+      "population": 220,
+      "surface": 614.42,
+      "radius": 1.4
+    },
+    {
+      "nom": "Espira-de-l'Agly",
+      "code": "66069",
+      "codesPostaux": ["66600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8231, 42.7987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8371, 42.777]
+      },
+      "population": 3525,
+      "surface": 2716.42,
+      "radius": 2.94
+    },
+    {
+      "nom": "Estagel",
+      "code": "66071",
+      "codesPostaux": ["66310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7077, 42.7642]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6978, 42.7731]
+      },
+      "population": 2124,
+      "surface": 2086.05,
+      "radius": 2.58
+    },
+    {
+      "nom": "Estavar",
+      "code": "66072",
+      "codesPostaux": ["66800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0121, 42.4764]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9963, 42.4678]
+      },
+      "population": 455,
+      "surface": 928.22,
+      "radius": 1.72
+    },
+    {
+      "nom": "Estoher",
+      "code": "66073",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4829, 42.5695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4854, 42.6011]
+      },
+      "population": 154,
+      "surface": 2607.26,
+      "radius": 2.88
+    },
+    {
+      "nom": "Eus",
+      "code": "66074",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4478, 42.6552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4565, 42.6447]
+      },
+      "population": 381,
+      "surface": 2015.93,
+      "radius": 2.53
+    },
+    {
+      "nom": "Eyne",
+      "code": "66075",
+      "codesPostaux": ["66800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.111, 42.4544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0797, 42.4742]
+      },
+      "population": 149,
+      "surface": 2051.11,
+      "radius": 2.56
+    },
+    {
+      "nom": "Feilluns",
+      "code": "66076",
+      "codesPostaux": ["66730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4877, 42.7613]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4835, 42.7621]
+      },
+      "population": 60,
+      "surface": 670.76,
+      "radius": 1.46
+    },
+    {
+      "nom": "Fenouillet",
+      "code": "66077",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.382, 42.7786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3808, 42.792]
+      },
+      "population": 96,
+      "surface": 1879.95,
+      "radius": 2.45
+    },
+    {
+      "nom": "Fillols",
+      "code": "66078",
+      "codesPostaux": ["66820"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4257, 42.5587]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.41, 42.5608]
+      },
+      "population": 208,
+      "surface": 887.49,
+      "radius": 1.68
+    },
+    {
+      "nom": "Finestret",
+      "code": "66079",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5194, 42.6068]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5097, 42.6169]
+      },
+      "population": 201,
+      "surface": 853.67,
+      "radius": 1.65
+    },
+    {
+      "nom": "Font-Romeu-Odeillo-Via",
+      "code": "66124",
+      "codesPostaux": ["66120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0212, 42.5145]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0328, 42.4965]
+      },
+      "population": 1770,
+      "surface": 2975.34,
+      "radius": 3.08
+    },
+    {
+      "nom": "Fontpédrouse",
+      "code": "66080",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.202, 42.4718]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1776, 42.5104]
+      },
+      "population": 122,
+      "surface": 6410.93,
+      "radius": 4.52
+    },
+    {
+      "nom": "Fontrabiouse",
+      "code": "66081",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0514, 42.6413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0956, 42.6367]
+      },
+      "population": 137,
+      "surface": 1572.45,
+      "radius": 2.24
+    },
+    {
+      "nom": "Formiguères",
+      "code": "66082",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0629, 42.6227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.103, 42.614]
+      },
+      "population": 491,
+      "surface": 4694.91,
+      "radius": 3.87
+    },
+    {
+      "nom": "Fosse",
+      "code": "66083",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4335, 42.7842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4302, 42.7853]
+      },
+      "population": 46,
+      "surface": 439.44,
+      "radius": 1.18
+    },
+    {
+      "nom": "Fourques",
+      "code": "66084",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7759, 42.5845]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7789, 42.5817]
+      },
+      "population": 1333,
+      "surface": 956.95,
+      "radius": 1.75
+    },
+    {
+      "nom": "Fuilla",
+      "code": "66085",
+      "codesPostaux": ["66820"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3549, 42.5673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3604, 42.5662]
+      },
+      "population": 435,
+      "surface": 963.22,
+      "radius": 1.75
+    },
+    {
+      "nom": "Glorianes",
+      "code": "66086",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5528, 42.5904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5547, 42.5893]
+      },
+      "population": 16,
+      "surface": 1873.66,
+      "radius": 2.44
+    },
+    {
+      "nom": "Ille-sur-Têt",
+      "code": "66088",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6167, 42.6746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6224, 42.6721]
+      },
+      "population": 5546,
+      "surface": 3168.83,
+      "radius": 3.18
+    },
+    {
+      "nom": "Joch",
+      "code": "66089",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5244, 42.6151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5247, 42.617]
+      },
+      "population": 396,
+      "surface": 345.62,
+      "radius": 1.05
+    },
+    {
+      "nom": "Jujols",
+      "code": "66090",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2823, 42.5852]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2957, 42.5701]
+      },
+      "population": 42,
+      "surface": 993.9,
+      "radius": 1.78
+    },
+    {
+      "nom": "L'Albère",
+      "code": "66001",
+      "codesPostaux": ["66480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.897, 42.4762]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8939, 42.4834]
+      },
+      "population": 63,
+      "surface": 1629.16,
+      "radius": 2.28
+    },
+    {
+      "nom": "La Bastide",
+      "code": "66018",
+      "codesPostaux": ["66110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5752, 42.5371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5893, 42.5466]
+      },
+      "population": 62,
+      "surface": 1546.01,
+      "radius": 2.22
+    },
+    {
+      "nom": "La Cabanasse",
+      "code": "66027",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1056, 42.501]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1132, 42.5002]
+      },
+      "population": 700,
+      "surface": 318.97,
+      "radius": 1.01
+    },
+    {
+      "nom": "La Llagonne",
+      "code": "66098",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.083, 42.5401]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1206, 42.5254]
+      },
+      "population": 216,
+      "surface": 2337.19,
+      "radius": 2.73
+    },
+    {
+      "nom": "Lamanère",
+      "code": "66091",
+      "codesPostaux": ["66230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5191, 42.3628]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5193, 42.361]
+      },
+      "population": 54,
+      "surface": 2371.79,
+      "radius": 2.75
+    },
+    {
+      "nom": "Lansac",
+      "code": "66092",
+      "codesPostaux": ["66720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5651, 42.7685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5607, 42.766]
+      },
+      "population": 91,
+      "surface": 526.46,
+      "radius": 1.29
+    },
+    {
+      "nom": "Laroque-des-Albères",
+      "code": "66093",
+      "codesPostaux": ["66740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9314, 42.5179]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9347, 42.5226]
+      },
+      "population": 2245,
+      "surface": 2075.72,
+      "radius": 2.57
+    },
+    {
+      "nom": "Latour-Bas-Elne",
+      "code": "66094",
+      "codesPostaux": ["66200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0067, 42.6041]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0013, 42.6045]
+      },
+      "population": 3224,
+      "surface": 332.89,
+      "radius": 1.03
+    },
+    {
+      "nom": "Latour-de-Carol",
+      "code": "66095",
+      "codesPostaux": ["66760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8736, 42.4746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.889, 42.4648]
+      },
+      "population": 472,
+      "surface": 1297.45,
+      "radius": 2.03
+    },
+    {
+      "nom": "Latour-de-France",
+      "code": "66096",
+      "codesPostaux": ["66720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6498, 42.7701]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6546, 42.7683]
+      },
+      "population": 1044,
+      "surface": 1409.41,
+      "radius": 2.12
+    },
+    {
+      "nom": "Le Barcarès",
+      "code": "66017",
+      "codesPostaux": ["66420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.028, 42.8118]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0345, 42.7893]
+      },
+      "population": 6203,
+      "surface": 1513.78,
+      "radius": 2.2
+    },
+    {
+      "nom": "Le Boulou",
+      "code": "66024",
+      "codesPostaux": ["66160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8328, 42.5267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8314, 42.5271]
+      },
+      "population": 5396,
+      "surface": 1456.66,
+      "radius": 2.15
+    },
+    {
+      "nom": "Le Perthus",
+      "code": "66137",
+      "codesPostaux": ["66480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8639, 42.4664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8634, 42.4642]
+      },
+      "population": 565,
+      "surface": 423.87,
+      "radius": 1.16
+    },
+    {
+      "nom": "Le Soler",
+      "code": "66195",
+      "codesPostaux": ["66270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7999, 42.6756]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7956, 42.6824]
+      },
+      "population": 7896,
+      "surface": 1040.25,
+      "radius": 1.82
+    },
+    {
+      "nom": "Le Tech",
+      "code": "66206",
+      "codesPostaux": ["66230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5154, 42.4439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5438, 42.4104]
+      },
+      "population": 97,
+      "surface": 2638.26,
+      "radius": 2.9
+    },
+    {
+      "nom": "Le Vivier",
+      "code": "66234",
+      "codesPostaux": ["66730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4423, 42.7637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4542, 42.7718]
+      },
+      "population": 66,
+      "surface": 1295.31,
+      "radius": 2.03
+    },
+    {
+      "nom": "Les Angles",
+      "code": "66004",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.049, 42.5797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0736, 42.5774]
+      },
+      "population": 584,
+      "surface": 4338.86,
+      "radius": 3.72
+    },
+    {
+      "nom": "Les Cluses",
+      "code": "66063",
+      "codesPostaux": ["66480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8437, 42.4847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8382, 42.4862]
+      },
+      "population": 258,
+      "surface": 883.96,
+      "radius": 1.68
+    },
+    {
+      "nom": "Lesquerde",
+      "code": "66097",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5381, 42.7927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5307, 42.8011]
+      },
+      "population": 142,
+      "surface": 1566.04,
+      "radius": 2.23
+    },
+    {
+      "nom": "Llauro",
+      "code": "66099",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7494, 42.5458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7438, 42.5495]
+      },
+      "population": 314,
+      "surface": 838.17,
+      "radius": 1.63
+    },
+    {
+      "nom": "Llo",
+      "code": "66100",
+      "codesPostaux": ["66800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0895, 42.4358]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0627, 42.4554]
+      },
+      "population": 156,
+      "surface": 2858.02,
+      "radius": 3.02
+    },
+    {
+      "nom": "Llupia",
+      "code": "66101",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7827, 42.6275]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7695, 42.6202]
+      },
+      "population": 2169,
+      "surface": 714.59,
+      "radius": 1.51
+    },
+    {
+      "nom": "Los Masos",
+      "code": "66104",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4593, 42.6145]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4612, 42.6219]
+      },
+      "population": 972,
+      "surface": 572.55,
+      "radius": 1.35
+    },
+    {
+      "nom": "Mantet",
+      "code": "66102",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2922, 42.4555]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.307, 42.4774]
+      },
+      "population": 35,
+      "surface": 3212.12,
+      "radius": 3.2
+    },
+    {
+      "nom": "Marquixanes",
+      "code": "66103",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4848, 42.6344]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4851, 42.6402]
+      },
+      "population": 585,
+      "surface": 489.9,
+      "radius": 1.25
+    },
+    {
+      "nom": "Matemale",
+      "code": "66105",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1154, 42.5788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1193, 42.5872]
+      },
+      "population": 279,
+      "surface": 1930.33,
+      "radius": 2.48
+    },
+    {
+      "nom": "Maureillas-las-Illas",
+      "code": "66106",
+      "codesPostaux": ["66480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7999, 42.4635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8063, 42.4911]
+      },
+      "population": 2859,
+      "surface": 4252.76,
+      "radius": 3.68
+    },
+    {
+      "nom": "Maury",
+      "code": "66107",
+      "codesPostaux": ["66460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6194, 42.816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5929, 42.8118]
+      },
+      "population": 780,
+      "surface": 3462.36,
+      "radius": 3.32
+    },
+    {
+      "nom": "Millas",
+      "code": "66108",
+      "codesPostaux": ["66170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6865, 42.6966]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.696, 42.6924]
+      },
+      "population": 4325,
+      "surface": 1936.01,
+      "radius": 2.48
+    },
+    {
+      "nom": "Molitg-les-Bains",
+      "code": "66109",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3955, 42.6624]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3877, 42.6514]
+      },
+      "population": 248,
+      "surface": 1309.32,
+      "radius": 2.04
+    },
+    {
+      "nom": "Mont-Louis",
+      "code": "66117",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1197, 42.5098]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1227, 42.5081]
+      },
+      "population": 150,
+      "surface": 38.55,
+      "radius": 0.35
+    },
+    {
+      "nom": "Montalba-le-Château",
+      "code": "66111",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5658, 42.699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5611, 42.6957]
+      },
+      "population": 158,
+      "surface": 1597.65,
+      "radius": 2.26
+    },
+    {
+      "nom": "Montauriol",
+      "code": "66112",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.725, 42.5777]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7245, 42.5757]
+      },
+      "population": 251,
+      "surface": 1129.99,
+      "radius": 1.9
+    },
+    {
+      "nom": "Montbolo",
+      "code": "66113",
+      "codesPostaux": ["66110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6265, 42.4924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6552, 42.4846]
+      },
+      "population": 179,
+      "surface": 2199.19,
+      "radius": 2.65
+    },
+    {
+      "nom": "Montescot",
+      "code": "66114",
+      "codesPostaux": ["66200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9188, 42.6158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9335, 42.6077]
+      },
+      "population": 1595,
+      "surface": 613.4,
+      "radius": 1.4
+    },
+    {
+      "nom": "Montesquieu-des-Albères",
+      "code": "66115",
+      "codesPostaux": ["66740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8685, 42.5206]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8796, 42.5188]
+      },
+      "population": 1283,
+      "surface": 1720.28,
+      "radius": 2.34
+    },
+    {
+      "nom": "Montferrer",
+      "code": "66116",
+      "codesPostaux": ["66150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.567, 42.4415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5672, 42.4386]
+      },
+      "population": 216,
+      "surface": 2195.27,
+      "radius": 2.64
+    },
+    {
+      "nom": "Montner",
+      "code": "66118",
+      "codesPostaux": ["66720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6946, 42.7439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6774, 42.7492]
+      },
+      "population": 328,
+      "surface": 1100.71,
+      "radius": 1.87
+    },
+    {
+      "nom": "Mosset",
+      "code": "66119",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2848, 42.6719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3476, 42.6679]
+      },
+      "population": 313,
+      "surface": 7111.61,
+      "radius": 4.76
+    },
+    {
+      "nom": "Nahuja",
+      "code": "66120",
+      "codesPostaux": ["66340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9995, 42.4243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9966, 42.4247]
+      },
+      "population": 75,
+      "surface": 567.8,
+      "radius": 1.34
+    },
+    {
+      "nom": "Néfiach",
+      "code": "66121",
+      "codesPostaux": ["66170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6566, 42.696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6661, 42.6944]
+      },
+      "population": 1371,
+      "surface": 882.05,
+      "radius": 1.68
+    },
+    {
+      "nom": "Nohèdes",
+      "code": "66122",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2547, 42.6256]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2891, 42.6226]
+      },
+      "population": 60,
+      "surface": 2896.39,
+      "radius": 3.04
+    },
+    {
+      "nom": "Nyer",
+      "code": "66123",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2764, 42.4957]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.276, 42.5331]
+      },
+      "population": 150,
+      "surface": 3708.68,
+      "radius": 3.44
+    },
+    {
+      "nom": "Olette",
+      "code": "66125",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2449, 42.5938]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2713, 42.5555]
+      },
+      "population": 337,
+      "surface": 2912.04,
+      "radius": 3.04
+    },
+    {
+      "nom": "Oms",
+      "code": "66126",
+      "codesPostaux": ["66400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7102, 42.5319]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6966, 42.543]
+      },
+      "population": 354,
+      "surface": 1873.38,
+      "radius": 2.44
+    },
+    {
+      "nom": "Opoul-Périllos",
+      "code": "66127",
+      "codesPostaux": ["66600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8601, 42.8817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8729, 42.8682]
+      },
+      "population": 1218,
+      "surface": 4861.01,
+      "radius": 3.93
+    },
+    {
+      "nom": "Oreilla",
+      "code": "66128",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2272, 42.5788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2544, 42.5584]
+      },
+      "population": 27,
+      "surface": 1641.22,
+      "radius": 2.29
+    },
+    {
+      "nom": "Ortaffa",
+      "code": "66129",
+      "codesPostaux": ["66560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9191, 42.5855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9243, 42.581]
+      },
+      "population": 1889,
+      "surface": 853.41,
+      "radius": 1.65
+    },
+    {
+      "nom": "Osséja",
+      "code": "66130",
+      "codesPostaux": ["66340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0006, 42.3923]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9809, 42.4152]
+      },
+      "population": 1376,
+      "surface": 1704.9,
+      "radius": 2.33
+    },
+    {
+      "nom": "Palau-de-Cerdagne",
+      "code": "66132",
+      "codesPostaux": ["66340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9818, 42.3864]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9687, 42.4157]
+      },
+      "population": 408,
+      "surface": 1136.9,
+      "radius": 1.9
+    },
+    {
+      "nom": "Palau-del-Vidre",
+      "code": "66133",
+      "codesPostaux": ["66690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9595, 42.5662]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9608, 42.571]
+      },
+      "population": 3232,
+      "surface": 1036.95,
+      "radius": 1.82
+    },
+    {
+      "nom": "Passa",
+      "code": "66134",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.804, 42.5674]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8123, 42.5788]
+      },
+      "population": 1079,
+      "surface": 1343.41,
+      "radius": 2.07
+    },
+    {
+      "nom": "Perpignan",
+      "code": "66136",
+      "codesPostaux": ["66000", "66100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9045, 42.699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8945, 42.6994]
+      },
+      "population": 120996,
+      "surface": 6798.62,
+      "radius": 4.65
+    },
+    {
+      "nom": "Peyrestortes",
+      "code": "66138",
+      "codesPostaux": ["66600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8471, 42.7484]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8537, 42.7552]
+      },
+      "population": 1808,
+      "surface": 806.48,
+      "radius": 1.6
+    },
+    {
+      "nom": "Pézilla-de-Conflent",
+      "code": "66139",
+      "codesPostaux": ["66730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4884, 42.7356]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4822, 42.7379]
+      },
+      "population": 37,
+      "surface": 675.91,
+      "radius": 1.47
+    },
+    {
+      "nom": "Pézilla-la-Rivière",
+      "code": "66140",
+      "codesPostaux": ["66370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.76, 42.7089]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7686, 42.6962]
+      },
+      "population": 4048,
+      "surface": 1633.97,
+      "radius": 2.28
+    },
+    {
+      "nom": "Pia",
+      "code": "66141",
+      "codesPostaux": ["66380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9172, 42.7506]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9198, 42.744]
+      },
+      "population": 11174,
+      "surface": 1340.68,
+      "radius": 2.07
+    },
+    {
+      "nom": "Planès",
+      "code": "66142",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1444, 42.4701]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1394, 42.4923]
+      },
+      "population": 56,
+      "surface": 1429.33,
+      "radius": 2.13
+    },
+    {
+      "nom": "Planèzes",
+      "code": "66143",
+      "codesPostaux": ["66720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6215, 42.7736]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6193, 42.7663]
+      },
+      "population": 96,
+      "surface": 622.72,
+      "radius": 1.41
+    },
+    {
+      "nom": "Pollestres",
+      "code": "66144",
+      "codesPostaux": ["66450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8736, 42.6373]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.871, 42.6406]
+      },
+      "population": 5489,
+      "surface": 833.78,
+      "radius": 1.63
+    },
+    {
+      "nom": "Ponteilla",
+      "code": "66145",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8288, 42.6347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8112, 42.6265]
+      },
+      "population": 3012,
+      "surface": 1390.36,
+      "radius": 2.1
+    },
+    {
+      "nom": "Port-Vendres",
+      "code": "66148",
+      "codesPostaux": ["66660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1048, 42.5034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1072, 42.5196]
+      },
+      "population": 3976,
+      "surface": 1448.56,
+      "radius": 2.15
+    },
+    {
+      "nom": "Porta",
+      "code": "66146",
+      "codesPostaux": ["66760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7935, 42.5212]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8234, 42.526]
+      },
+      "population": 103,
+      "surface": 6527.52,
+      "radius": 4.56
+    },
+    {
+      "nom": "Porté-Puymorens",
+      "code": "66147",
+      "codesPostaux": ["66760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8381, 42.5546]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8316, 42.5482]
+      },
+      "population": 102,
+      "surface": 4981.15,
+      "radius": 3.98
+    },
+    {
+      "nom": "Prades",
+      "code": "66149",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4276, 42.6107]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4207, 42.6169]
+      },
+      "population": 6166,
+      "surface": 1098.92,
+      "radius": 1.87
+    },
+    {
+      "nom": "Prats-de-Mollo-la-Preste",
+      "code": "66150",
+      "codesPostaux": ["66230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4229, 42.4174]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4794, 42.404]
+      },
+      "population": 1114,
+      "surface": 11875.12,
+      "radius": 6.15
+    },
+    {
+      "nom": "Prats-de-Sournia",
+      "code": "66151",
+      "codesPostaux": ["66730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4535, 42.7399]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4612, 42.7442]
+      },
+      "population": 77,
+      "surface": 845.29,
+      "radius": 1.64
+    },
+    {
+      "nom": "Prugnanes",
+      "code": "66152",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.435, 42.8254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.433, 42.8246]
+      },
+      "population": 97,
+      "surface": 1363.56,
+      "radius": 2.08
+    },
+    {
+      "nom": "Prunet-et-Belpuig",
+      "code": "66153",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6373, 42.5655]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6258, 42.561]
+      },
+      "population": 45,
+      "surface": 2170.92,
+      "radius": 2.63
+    },
+    {
+      "nom": "Puyvalador",
+      "code": "66154",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1097, 42.6488]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1201, 42.6462]
+      },
+      "population": 57,
+      "surface": 1912.86,
+      "radius": 2.47
+    },
+    {
+      "nom": "Py",
+      "code": "66155",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3635, 42.4683]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3509, 42.4961]
+      },
+      "population": 79,
+      "surface": 5069.09,
+      "radius": 4.02
+    },
+    {
+      "nom": "Rabouillet",
+      "code": "66156",
+      "codesPostaux": ["66730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3646, 42.7265]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3904, 42.7315]
+      },
+      "population": 87,
+      "surface": 1958.49,
+      "radius": 2.5
+    },
+    {
+      "nom": "Railleu",
+      "code": "66157",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1619, 42.5923]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1825, 42.5862]
+      },
+      "population": 23,
+      "surface": 1020.92,
+      "radius": 1.8
+    },
+    {
+      "nom": "Rasiguères",
+      "code": "66158",
+      "codesPostaux": ["66720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5979, 42.7732]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6097, 42.7661]
+      },
+      "population": 166,
+      "surface": 1387.96,
+      "radius": 2.1
+    },
+    {
+      "nom": "Réal",
+      "code": "66159",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1488, 42.64]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1323, 42.6314]
+      },
+      "population": 75,
+      "surface": 1058.07,
+      "radius": 1.84
+    },
+    {
+      "nom": "Reynès",
+      "code": "66160",
+      "codesPostaux": ["66400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6971, 42.466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7071, 42.4763]
+      },
+      "population": 1234,
+      "surface": 2780.7,
+      "radius": 2.98
+    },
+    {
+      "nom": "Ria-Sirach",
+      "code": "66161",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3828, 42.6101]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3945, 42.6078]
+      },
+      "population": 1294,
+      "surface": 1288.31,
+      "radius": 2.03
+    },
+    {
+      "nom": "Rigarda",
+      "code": "66162",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5375, 42.6292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5325, 42.6283]
+      },
+      "population": 700,
+      "surface": 363.01,
+      "radius": 1.07
+    },
+    {
+      "nom": "Rivesaltes",
+      "code": "66164",
+      "codesPostaux": ["66600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8769, 42.7761]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8688, 42.7671]
+      },
+      "population": 9151,
+      "surface": 2885.05,
+      "radius": 3.03
+    },
+    {
+      "nom": "Rodès",
+      "code": "66165",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5485, 42.6563]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5615, 42.6571]
+      },
+      "population": 717,
+      "surface": 1862.19,
+      "radius": 2.43
+    },
+    {
+      "nom": "Sahorre",
+      "code": "66166",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3565, 42.5255]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3596, 42.5343]
+      },
+      "population": 399,
+      "surface": 1505.31,
+      "radius": 2.19
+    },
+    {
+      "nom": "Saillagouse",
+      "code": "66167",
+      "codesPostaux": ["66800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0382, 42.4564]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0388, 42.4579]
+      },
+      "population": 1161,
+      "surface": 1125.31,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-André",
+      "code": "66168",
+      "codesPostaux": ["66690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9794, 42.5541]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9719, 42.5523]
+      },
+      "population": 3395,
+      "surface": 974.41,
+      "radius": 1.76
+    },
+    {
+      "nom": "Saint-Arnac",
+      "code": "66169",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5343, 42.7737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5298, 42.7795]
+      },
+      "population": 101,
+      "surface": 690.21,
+      "radius": 1.48
+    },
+    {
+      "nom": "Saint-Cyprien",
+      "code": "66171",
+      "codesPostaux": ["66750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0139, 42.6205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0039, 42.6174]
+      },
+      "population": 11995,
+      "surface": 1576.6,
+      "radius": 2.24
+    },
+    {
+      "nom": "Saint-Estève",
+      "code": "66172",
+      "codesPostaux": ["66240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8445, 42.7154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8462, 42.7077]
+      },
+      "population": 11673,
+      "surface": 1171.45,
+      "radius": 1.93
+    },
+    {
+      "nom": "Saint-Féliu-d'Amont",
+      "code": "66173",
+      "codesPostaux": ["66170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7166, 42.6752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7247, 42.685]
+      },
+      "population": 1262,
+      "surface": 563.63,
+      "radius": 1.34
+    },
+    {
+      "nom": "Saint-Féliu-d'Avall",
+      "code": "66174",
+      "codesPostaux": ["66170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7498, 42.6733]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7338, 42.6832]
+      },
+      "population": 2934,
+      "surface": 1054.7,
+      "radius": 1.83
+    },
+    {
+      "nom": "Saint-Génis-des-Fontaines",
+      "code": "66175",
+      "codesPostaux": ["66740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9221, 42.5488]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9233, 42.5451]
+      },
+      "population": 2985,
+      "surface": 993.37,
+      "radius": 1.78
+    },
+    {
+      "nom": "Saint-Hippolyte",
+      "code": "66176",
+      "codesPostaux": ["66510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9754, 42.8104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9674, 42.7849]
+      },
+      "population": 3177,
+      "surface": 2546.85,
+      "radius": 2.85
+    },
+    {
+      "nom": "Saint-Jean-Lasseille",
+      "code": "66177",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8646, 42.5863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8652, 42.5818]
+      },
+      "population": 1578,
+      "surface": 290.18,
+      "radius": 0.96
+    },
+    {
+      "nom": "Saint-Jean-Pla-de-Corts",
+      "code": "66178",
+      "codesPostaux": ["66490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7938, 42.5183]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7905, 42.5115]
+      },
+      "population": 2283,
+      "surface": 1058.83,
+      "radius": 1.84
+    },
+    {
+      "nom": "Saint-Laurent-de-Cerdans",
+      "code": "66179",
+      "codesPostaux": ["66260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6222, 42.3944]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6132, 42.3845]
+      },
+      "population": 1020,
+      "surface": 4465.74,
+      "radius": 3.77
+    },
+    {
+      "nom": "Saint-Laurent-de-la-Salanque",
+      "code": "66180",
+      "codesPostaux": ["66250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9993, 42.8073]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9883, 42.7732]
+      },
+      "population": 9941,
+      "surface": 1752.25,
+      "radius": 2.36
+    },
+    {
+      "nom": "Saint-Marsal",
+      "code": "66183",
+      "codesPostaux": ["66110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6182, 42.5256]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6217, 42.5378]
+      },
+      "population": 73,
+      "surface": 1544.99,
+      "radius": 2.22
+    },
+    {
+      "nom": "Saint-Martin-de-Fenouillet",
+      "code": "66184",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4777, 42.7848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4682, 42.7854]
+      },
+      "population": 48,
+      "surface": 934.86,
+      "radius": 1.73
+    },
+    {
+      "nom": "Saint-Michel-de-Llotes",
+      "code": "66185",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6268, 42.6465]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6249, 42.6479]
+      },
+      "population": 360,
+      "surface": 887.8,
+      "radius": 1.68
+    },
+    {
+      "nom": "Saint-Nazaire",
+      "code": "66186",
+      "codesPostaux": ["66570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9895, 42.6619]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9905, 42.6688]
+      },
+      "population": 2786,
+      "surface": 1038.31,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-Paul-de-Fenouillet",
+      "code": "66187",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5025, 42.8229]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5028, 42.8106]
+      },
+      "population": 1740,
+      "surface": 4439.16,
+      "radius": 3.76
+    },
+    {
+      "nom": "Saint-Pierre-dels-Forcats",
+      "code": "66188",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.114, 42.4778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1194, 42.4948]
+      },
+      "population": 261,
+      "surface": 1289.27,
+      "radius": 2.03
+    },
+    {
+      "nom": "Sainte-Colombe-de-la-Commanderie",
+      "code": "66170",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7421, 42.6161]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7475, 42.6141]
+      },
+      "population": 172,
+      "surface": 482.1,
+      "radius": 1.24
+    },
+    {
+      "nom": "Sainte-Léocadie",
+      "code": "66181",
+      "codesPostaux": ["66800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0057, 42.4298]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0033, 42.4366]
+      },
+      "population": 140,
+      "surface": 883.01,
+      "radius": 1.68
+    },
+    {
+      "nom": "Sainte-Marie-la-Mer",
+      "code": "66182",
+      "codesPostaux": ["66470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0168, 42.7262]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0166, 42.7276]
+      },
+      "population": 4749,
+      "surface": 1025.87,
+      "radius": 1.81
+    },
+    {
+      "nom": "Saleilles",
+      "code": "66189",
+      "codesPostaux": ["66280"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.947, 42.6553]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9539, 42.6545]
+      },
+      "population": 5724,
+      "surface": 616.15,
+      "radius": 1.4
+    },
+    {
+      "nom": "Salses-le-Château",
+      "code": "66190",
+      "codesPostaux": ["66600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9134, 42.8359]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9178, 42.8333]
+      },
+      "population": 3888,
+      "surface": 8260,
+      "radius": 5.13
+    },
+    {
+      "nom": "Sansa",
+      "code": "66191",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1788, 42.6189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1729, 42.6021]
+      },
+      "population": 31,
+      "surface": 2310.45,
+      "radius": 2.71
+    },
+    {
+      "nom": "Sauto",
+      "code": "66192",
+      "codesPostaux": ["66210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1461, 42.5166]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1506, 42.5125]
+      },
+      "population": 102,
+      "surface": 843.78,
+      "radius": 1.64
+    },
+    {
+      "nom": "Serdinya",
+      "code": "66193",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.324, 42.5736]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3189, 42.568]
+      },
+      "population": 233,
+      "surface": 1746.74,
+      "radius": 2.36
+    },
+    {
+      "nom": "Serralongue",
+      "code": "66194",
+      "codesPostaux": ["66230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5559, 42.3846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5544, 42.3977]
+      },
+      "population": 243,
+      "surface": 2300.98,
+      "radius": 2.71
+    },
+    {
+      "nom": "Sorède",
+      "code": "66196",
+      "codesPostaux": ["66690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.988, 42.5083]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9547, 42.5315]
+      },
+      "population": 3500,
+      "surface": 3457.74,
+      "radius": 3.32
+    },
+    {
+      "nom": "Souanyas",
+      "code": "66197",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2826, 42.5493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2787, 42.5496]
+      },
+      "population": 31,
+      "surface": 485.82,
+      "radius": 1.24
+    },
+    {
+      "nom": "Sournia",
+      "code": "66198",
+      "codesPostaux": ["66730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4171, 42.7138]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4418, 42.7278]
+      },
+      "population": 480,
+      "surface": 3000.85,
+      "radius": 3.09
+    },
+    {
+      "nom": "Taillet",
+      "code": "66199",
+      "codesPostaux": ["66400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6808, 42.5191]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6721, 42.5266]
+      },
+      "population": 106,
+      "surface": 1010.92,
+      "radius": 1.79
+    },
+    {
+      "nom": "Tarerach",
+      "code": "66201",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5081, 42.6816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5005, 42.6903]
+      },
+      "population": 43,
+      "surface": 823.7,
+      "radius": 1.62
+    },
+    {
+      "nom": "Targasonne",
+      "code": "66202",
+      "codesPostaux": ["66120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9877, 42.5014]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9965, 42.499]
+      },
+      "population": 194,
+      "surface": 789.36,
+      "radius": 1.59
+    },
+    {
+      "nom": "Taulis",
+      "code": "66203",
+      "codesPostaux": ["66110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6145, 42.5149]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6322, 42.523]
+      },
+      "population": 58,
+      "surface": 628.04,
+      "radius": 1.41
+    },
+    {
+      "nom": "Taurinya",
+      "code": "66204",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4408, 42.555]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4253, 42.5814]
+      },
+      "population": 327,
+      "surface": 1364.94,
+      "radius": 2.08
+    },
+    {
+      "nom": "Tautavel",
+      "code": "66205",
+      "codesPostaux": ["66720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7161, 42.8163]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7455, 42.8142]
+      },
+      "population": 911,
+      "surface": 5342.15,
+      "radius": 4.12
+    },
+    {
+      "nom": "Terrats",
+      "code": "66207",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7584, 42.6046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7724, 42.6081]
+      },
+      "population": 799,
+      "surface": 735.38,
+      "radius": 1.53
+    },
+    {
+      "nom": "Théza",
+      "code": "66208",
+      "codesPostaux": ["66200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.947, 42.6403]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9522, 42.6387]
+      },
+      "population": 2181,
+      "surface": 485.64,
+      "radius": 1.24
+    },
+    {
+      "nom": "Thuès-Entre-Valls",
+      "code": "66209",
+      "codesPostaux": ["66360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2317, 42.5006]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2236, 42.5252]
+      },
+      "population": 26,
+      "surface": 2044.38,
+      "radius": 2.55
+    },
+    {
+      "nom": "Thuir",
+      "code": "66210",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7618, 42.6384]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7562, 42.6325]
+      },
+      "population": 8215,
+      "surface": 1998.87,
+      "radius": 2.52
+    },
+    {
+      "nom": "Tordères",
+      "code": "66211",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7619, 42.5653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7515, 42.5597]
+      },
+      "population": 186,
+      "surface": 1002.78,
+      "radius": 1.79
+    },
+    {
+      "nom": "Torreilles",
+      "code": "66212",
+      "codesPostaux": ["66440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0059, 42.7571]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9939, 42.7541]
+      },
+      "population": 3793,
+      "surface": 1746.2,
+      "radius": 2.36
+    },
+    {
+      "nom": "Toulouges",
+      "code": "66213",
+      "codesPostaux": ["66350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8234, 42.6723]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8379, 42.6649]
+      },
+      "population": 7375,
+      "surface": 801.3,
+      "radius": 1.6
+    },
+    {
+      "nom": "Tresserre",
+      "code": "66214",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.842, 42.5559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8287, 42.5627]
+      },
+      "population": 1171,
+      "surface": 1112.2,
+      "radius": 1.88
+    },
+    {
+      "nom": "Trévillach",
+      "code": "66215",
+      "codesPostaux": ["66130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5105, 42.7091]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5305, 42.7078]
+      },
+      "population": 188,
+      "surface": 1744.04,
+      "radius": 2.36
+    },
+    {
+      "nom": "Trilla",
+      "code": "66216",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5229, 42.7369]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5201, 42.74]
+      },
+      "population": 77,
+      "surface": 914.2,
+      "radius": 1.71
+    },
+    {
+      "nom": "Trouillas",
+      "code": "66217",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8235, 42.6055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8082, 42.6101]
+      },
+      "population": 2291,
+      "surface": 1716.62,
+      "radius": 2.34
+    },
+    {
+      "nom": "Ur",
+      "code": "66218",
+      "codesPostaux": ["66760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9382, 42.4594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9372, 42.4622]
+      },
+      "population": 366,
+      "surface": 674.15,
+      "radius": 1.46
+    },
+    {
+      "nom": "Urbanya",
+      "code": "66219",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2964, 42.6429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3055, 42.6385]
+      },
+      "population": 45,
+      "surface": 1388.6,
+      "radius": 2.1
+    },
+    {
+      "nom": "Valcebollère",
+      "code": "66220",
+      "codesPostaux": ["66340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0472, 42.382]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0347, 42.3876]
+      },
+      "population": 35,
+      "surface": 2609.19,
+      "radius": 2.88
+    },
+    {
+      "nom": "Valmanya",
+      "code": "66221",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5089, 42.5251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5343, 42.5388]
+      },
+      "population": 34,
+      "surface": 2784.35,
+      "radius": 2.98
+    },
+    {
+      "nom": "Vernet-les-Bains",
+      "code": "66222",
+      "codesPostaux": ["66820"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4152, 42.5363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3899, 42.5489]
+      },
+      "population": 1441,
+      "surface": 1651.94,
+      "radius": 2.29
+    },
+    {
+      "nom": "Villefranche-de-Conflent",
+      "code": "66223",
+      "codesPostaux": ["66500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3575, 42.5955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3664, 42.5868]
+      },
+      "population": 205,
+      "surface": 458.75,
+      "radius": 1.21
+    },
+    {
+      "nom": "Villelongue-de-la-Salanque",
+      "code": "66224",
+      "codesPostaux": ["66410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.977, 42.7261]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9855, 42.7272]
+      },
+      "population": 3318,
+      "surface": 722.19,
+      "radius": 1.52
+    },
+    {
+      "nom": "Villelongue-dels-Monts",
+      "code": "66225",
+      "codesPostaux": ["66740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8979, 42.5238]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9027, 42.5266]
+      },
+      "population": 1917,
+      "surface": 1175.48,
+      "radius": 1.93
+    },
+    {
+      "nom": "Villemolaque",
+      "code": "66226",
+      "codesPostaux": ["66300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.848, 42.5976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8393, 42.5881]
+      },
+      "population": 1289,
+      "surface": 595.98,
+      "radius": 1.38
+    },
+    {
+      "nom": "Villeneuve-de-la-Raho",
+      "code": "66227",
+      "codesPostaux": ["66180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.909, 42.6402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9145, 42.6369]
+      },
+      "population": 4416,
+      "surface": 1156.85,
+      "radius": 1.92
+    },
+    {
+      "nom": "Villeneuve-la-Rivière",
+      "code": "66228",
+      "codesPostaux": ["66610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7964, 42.7046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8011, 42.693]
+      },
+      "population": 1360,
+      "surface": 443.49,
+      "radius": 1.19
+    },
+    {
+      "nom": "Vinça",
+      "code": "66230",
+      "codesPostaux": ["66320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5225, 42.6431]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5294, 42.645]
+      },
+      "population": 2205,
+      "surface": 782.05,
+      "radius": 1.58
+    },
+    {
+      "nom": "Vingrau",
+      "code": "66231",
+      "codesPostaux": ["66600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7904, 42.8588]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7766, 42.8488]
+      },
+      "population": 541,
+      "surface": 3257.01,
+      "radius": 3.22
+    },
+    {
+      "nom": "Vira",
+      "code": "66232",
+      "codesPostaux": ["66220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3899, 42.7653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4139, 42.7699]
+      },
+      "population": 28,
+      "surface": 1299.38,
+      "radius": 2.03
+    },
+    {
+      "nom": "Vivès",
+      "code": "66233",
+      "codesPostaux": ["66490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.766, 42.5303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7636, 42.5289]
+      },
+      "population": 182,
+      "surface": 1118.72,
+      "radius": 1.89
+    }
+  ],
+  "postalCodes": {
+    "66000": {
+      "communes": ["Perpignan"],
+      "communeCount": 1,
+      "center": [2.8945, 42.6994],
+      "coverageRadius": 4.65,
+      "totalPopulation": 120996,
+      "totalSurface": 6799
+    },
+    "66100": {
+      "communes": ["Perpignan"],
+      "communeCount": 1,
+      "center": [2.8945, 42.6994],
+      "coverageRadius": 4.65,
+      "totalPopulation": 120996,
+      "totalSurface": 6799
+    },
+    "66110": {
+      "communes": ["Amélie-les-Bains-Palalda", "La Bastide", "Montbolo", "Saint-Marsal", "Taulis"],
+      "communeCount": 5,
+      "center": [2.6662, 42.4764],
+      "coverageRadius": 10.1,
+      "boundingBox": {
+        "minLat": 42.4727,
+        "maxLat": 42.5466,
+        "minLon": 2.5893,
+        "maxLon": 2.6696
+      },
+      "totalPopulation": 3925,
+      "totalSurface": 8853
+    },
+    "66120": {
+      "communes": ["Égat", "Font-Romeu-Odeillo-Via", "Targasonne"],
+      "communeCount": 3,
+      "center": [2.027, 42.4974],
+      "coverageRadius": 2.6,
+      "boundingBox": {
+        "minLat": 42.4965,
+        "maxLat": 42.5006,
+        "minLon": 1.9965,
+        "maxLon": 2.0328
+      },
+      "totalPopulation": 2382,
+      "totalSurface": 4204
+    },
+    "66130": {
+      "communes": [
+        "Boule-d'Amont",
+        "Bouleternère",
+        "Casefabre",
+        "Corbère",
+        "Corbère-les-Cabanes",
+        "Ille-sur-Têt",
+        "Montalba-le-Château",
+        "Prunet-et-Belpuig",
+        "Saint-Michel-de-Llotes",
+        "Trévillach"
+      ],
+      "communeCount": 10,
+      "center": [2.6257, 42.6651],
+      "coverageRadius": 11.6,
+      "boundingBox": {
+        "minLat": 42.561,
+        "maxLat": 42.7078,
+        "minLon": 2.5305,
+        "maxLon": 2.6756
+      },
+      "totalPopulation": 9292,
+      "totalSurface": 14838
+    },
+    "66140": {
+      "communes": ["Canet-en-Roussillon"],
+      "communeCount": 1,
+      "center": [3.0088, 42.7058],
+      "coverageRadius": 3.09,
+      "totalPopulation": 13005,
+      "totalSurface": 3007
+    },
+    "66150": {
+      "communes": ["Arles-sur-Tech", "Corsavy", "Montferrer"],
+      "communeCount": 3,
+      "center": [2.6265, 42.4548],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 42.4386,
+        "maxLat": 42.4661,
+        "minLon": 2.5672,
+        "maxLon": 2.6353
+      },
+      "totalPopulation": 3268,
+      "totalSurface": 9811
+    },
+    "66160": {
+      "communes": ["Le Boulou"],
+      "communeCount": 1,
+      "center": [2.8314, 42.5271],
+      "coverageRadius": 2.15,
+      "totalPopulation": 5396,
+      "totalSurface": 1457
+    },
+    "66170": {
+      "communes": ["Millas", "Néfiach", "Saint-Féliu-d'Amont", "Saint-Féliu-d'Avall"],
+      "communeCount": 4,
+      "center": [2.7067, 42.689],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 42.6832,
+        "maxLat": 42.6944,
+        "minLon": 2.6661,
+        "maxLon": 2.7338
+      },
+      "totalPopulation": 9892,
+      "totalSurface": 4436
+    },
+    "66180": {
+      "communes": ["Villeneuve-de-la-Raho"],
+      "communeCount": 1,
+      "center": [2.9145, 42.6369],
+      "coverageRadius": 1.92,
+      "totalPopulation": 4416,
+      "totalSurface": 1157
+    },
+    "66190": {
+      "communes": ["Collioure"],
+      "communeCount": 1,
+      "center": [3.0832, 42.5256],
+      "coverageRadius": 1.96,
+      "totalPopulation": 2637,
+      "totalSurface": 1203
+    },
+    "66200": {
+      "communes": ["Alénya", "Corneilla-del-Vercol", "Elne", "Latour-Bas-Elne", "Montescot", "Théza"],
+      "communeCount": 6,
+      "center": [2.9709, 42.6146],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 42.6014,
+        "maxLat": 42.6387,
+        "minLon": 2.9335,
+        "maxLon": 3.0013
+      },
+      "totalPopulation": 22870,
+      "totalSurface": 4729
+    },
+    "66210": {
+      "communes": [
+        "Les Angles",
+        "Bolquère",
+        "La Cabanasse",
+        "Fontrabiouse",
+        "Formiguères",
+        "La Llagonne",
+        "Matemale",
+        "Mont-Louis",
+        "Planès",
+        "Puyvalador",
+        "Réal",
+        "Saint-Pierre-dels-Forcats",
+        "Sauto"
+      ],
+      "communeCount": 13,
+      "center": [2.1019, 42.5436],
+      "coverageRadius": 11.6,
+      "boundingBox": {
+        "minLat": 42.4923,
+        "maxLat": 42.6462,
+        "minLon": 2.0736,
+        "maxLon": 2.1506
+      },
+      "totalPopulation": 3913,
+      "totalSurface": 23555
+    },
+    "66220": {
+      "communes": [
+        "Ansignan",
+        "Caudiès-de-Fenouillèdes",
+        "Fenouillet",
+        "Fosse",
+        "Lesquerde",
+        "Prugnanes",
+        "Saint-Arnac",
+        "Saint-Martin-de-Fenouillet",
+        "Saint-Paul-de-Fenouillet",
+        "Trilla",
+        "Vira"
+      ],
+      "communeCount": 11,
+      "center": [2.4738, 42.804],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 42.74,
+        "maxLat": 42.8246,
+        "minLon": 2.3745,
+        "maxLon": 2.5307
+      },
+      "totalPopulation": 3128,
+      "totalSurface": 18078
+    },
+    "66230": {
+      "communes": ["Lamanère", "Prats-de-Mollo-la-Preste", "Serralongue", "Le Tech"],
+      "communeCount": 4,
+      "center": [2.4971, 42.4019],
+      "coverageRadius": 4.9,
+      "boundingBox": {
+        "minLat": 42.361,
+        "maxLat": 42.4104,
+        "minLon": 2.4794,
+        "maxLon": 2.5544
+      },
+      "totalPopulation": 1508,
+      "totalSurface": 19186
+    },
+    "66240": {
+      "communes": ["Saint-Estève"],
+      "communeCount": 1,
+      "center": [2.8462, 42.7077],
+      "coverageRadius": 1.93,
+      "totalPopulation": 11673,
+      "totalSurface": 1171
+    },
+    "66250": {
+      "communes": ["Saint-Laurent-de-la-Salanque"],
+      "communeCount": 1,
+      "center": [2.9883, 42.7732],
+      "coverageRadius": 2.36,
+      "totalPopulation": 9941,
+      "totalSurface": 1752
+    },
+    "66260": {
+      "communes": ["Coustouges", "Saint-Laurent-de-Cerdans"],
+      "communeCount": 2,
+      "center": [2.6162, 42.3831],
+      "coverageRadius": 3.3,
+      "boundingBox": {
+        "minLat": 42.3675,
+        "maxLat": 42.3845,
+        "minLon": 2.6132,
+        "maxLon": 2.6494
+      },
+      "totalPopulation": 1113,
+      "totalSurface": 6141
+    },
+    "66270": {
+      "communes": ["Le Soler"],
+      "communeCount": 1,
+      "center": [2.7956, 42.6824],
+      "coverageRadius": 1.82,
+      "totalPopulation": 7896,
+      "totalSurface": 1040
+    },
+    "66280": {
+      "communes": ["Saleilles"],
+      "communeCount": 1,
+      "center": [2.9539, 42.6545],
+      "coverageRadius": 1.4,
+      "totalPopulation": 5724,
+      "totalSurface": 616
+    },
+    "66290": {
+      "communes": ["Cerbère"],
+      "communeCount": 1,
+      "center": [3.1654, 42.442],
+      "coverageRadius": 1.62,
+      "totalPopulation": 1213,
+      "totalSurface": 822
+    },
+    "66300": {
+      "communes": [
+        "Banyuls-dels-Aspres",
+        "Caixas",
+        "Camélas",
+        "Castelnou",
+        "Fourques",
+        "Llauro",
+        "Llupia",
+        "Montauriol",
+        "Passa",
+        "Ponteilla",
+        "Sainte-Colombe-de-la-Commanderie",
+        "Saint-Jean-Lasseille",
+        "Terrats",
+        "Thuir",
+        "Tordères",
+        "Tresserre",
+        "Trouillas",
+        "Villemolaque"
+      ],
+      "communeCount": 18,
+      "center": [2.7897, 42.6091],
+      "coverageRadius": 9.3,
+      "boundingBox": {
+        "minLat": 42.5495,
+        "maxLat": 42.6506,
+        "minLon": 2.683,
+        "maxLon": 2.8678
+      },
+      "totalPopulation": 26136,
+      "totalSurface": 21382
+    },
+    "66310": {
+      "communes": ["Estagel"],
+      "communeCount": 1,
+      "center": [2.6978, 42.7731],
+      "coverageRadius": 2.58,
+      "totalPopulation": 2124,
+      "totalSurface": 2086
+    },
+    "66320": {
+      "communes": [
+        "Arboussols",
+        "Baillestavy",
+        "Espira-de-Conflent",
+        "Estoher",
+        "Finestret",
+        "Glorianes",
+        "Joch",
+        "Marquixanes",
+        "Rigarda",
+        "Rodès",
+        "Tarerach",
+        "Valmanya",
+        "Vinça"
+      ],
+      "communeCount": 13,
+      "center": [2.5245, 42.6368],
+      "coverageRadius": 11,
+      "boundingBox": {
+        "minLat": 42.5388,
+        "maxLat": 42.6903,
+        "minLon": 2.4851,
+        "maxLon": 2.5615
+      },
+      "totalPopulation": 5518,
+      "totalSurface": 16588
+    },
+    "66330": {
+      "communes": ["Cabestany"],
+      "communeCount": 1,
+      "center": [2.9372, 42.6789],
+      "coverageRadius": 1.84,
+      "totalPopulation": 10414,
+      "totalSurface": 1059
+    },
+    "66340": {
+      "communes": ["Nahuja", "Osséja", "Palau-de-Cerdagne", "Valcebollère"],
+      "communeCount": 4,
+      "center": [1.9799, 42.4152],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 42.3876,
+        "maxLat": 42.4247,
+        "minLon": 1.9687,
+        "maxLon": 2.0347
+      },
+      "totalPopulation": 1894,
+      "totalSurface": 6019
+    },
+    "66350": {
+      "communes": ["Toulouges"],
+      "communeCount": 1,
+      "center": [2.8379, 42.6649],
+      "coverageRadius": 1.6,
+      "totalPopulation": 7375,
+      "totalSurface": 801
+    },
+    "66360": {
+      "communes": [
+        "Ayguatébia-Talau",
+        "Canaveilles",
+        "Caudiès-de-Conflent",
+        "Escaro",
+        "Fontpédrouse",
+        "Jujols",
+        "Mantet",
+        "Nyer",
+        "Olette",
+        "Oreilla",
+        "Py",
+        "Railleu",
+        "Sahorre",
+        "Sansa",
+        "Serdinya",
+        "Souanyas",
+        "Thuès-Entre-Valls"
+      ],
+      "communeCount": 17,
+      "center": [2.2916, 42.5429],
+      "coverageRadius": 11.8,
+      "boundingBox": {
+        "minLat": 42.4774,
+        "maxLat": 42.6021,
+        "minLon": 2.1616,
+        "maxLon": 2.3596
+      },
+      "totalPopulation": 1770,
+      "totalSurface": 39341
+    },
+    "66370": {
+      "communes": ["Pézilla-la-Rivière"],
+      "communeCount": 1,
+      "center": [2.7686, 42.6962],
+      "coverageRadius": 2.28,
+      "totalPopulation": 4048,
+      "totalSurface": 1634
+    },
+    "66380": {
+      "communes": ["Pia"],
+      "communeCount": 1,
+      "center": [2.9198, 42.744],
+      "coverageRadius": 2.07,
+      "totalPopulation": 11174,
+      "totalSurface": 1341
+    },
+    "66390": {
+      "communes": ["Baixas"],
+      "communeCount": 1,
+      "center": [2.8117, 42.7512],
+      "coverageRadius": 2.46,
+      "totalPopulation": 2784,
+      "totalSurface": 1902
+    },
+    "66400": {
+      "communes": ["Calmeilles", "Céret", "Oms", "Reynès", "Taillet"],
+      "communeCount": 5,
+      "center": [2.7398, 42.4877],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 42.4763,
+        "maxLat": 42.5521,
+        "minLon": 2.6721,
+        "maxLon": 2.7487
+      },
+      "totalPopulation": 9298,
+      "totalSurface": 10786
+    },
+    "66410": {
+      "communes": ["Villelongue-de-la-Salanque"],
+      "communeCount": 1,
+      "center": [2.9855, 42.7272],
+      "coverageRadius": 1.52,
+      "totalPopulation": 3318,
+      "totalSurface": 722
+    },
+    "66420": {
+      "communes": ["Le Barcarès"],
+      "communeCount": 1,
+      "center": [3.0345, 42.7893],
+      "coverageRadius": 2.2,
+      "totalPopulation": 6203,
+      "totalSurface": 1514
+    },
+    "66430": {
+      "communes": ["Bompas"],
+      "communeCount": 1,
+      "center": [2.9355, 42.7302],
+      "coverageRadius": 1.35,
+      "totalPopulation": 7712,
+      "totalSurface": 575
+    },
+    "66440": {
+      "communes": ["Torreilles"],
+      "communeCount": 1,
+      "center": [2.9939, 42.7541],
+      "coverageRadius": 2.36,
+      "totalPopulation": 3793,
+      "totalSurface": 1746
+    },
+    "66450": {
+      "communes": ["Pollestres"],
+      "communeCount": 1,
+      "center": [2.871, 42.6406],
+      "coverageRadius": 1.63,
+      "totalPopulation": 5489,
+      "totalSurface": 834
+    },
+    "66460": {
+      "communes": ["Maury"],
+      "communeCount": 1,
+      "center": [2.5929, 42.8118],
+      "coverageRadius": 3.32,
+      "totalPopulation": 780,
+      "totalSurface": 3462
+    },
+    "66470": {
+      "communes": ["Sainte-Marie-la-Mer"],
+      "communeCount": 1,
+      "center": [3.0166, 42.7276],
+      "coverageRadius": 1.81,
+      "totalPopulation": 4749,
+      "totalSurface": 1026
+    },
+    "66480": {
+      "communes": ["L'Albère", "Les Cluses", "Maureillas-las-Illas", "Le Perthus"],
+      "communeCount": 4,
+      "center": [2.8186, 42.4866],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 42.4642,
+        "maxLat": 42.4911,
+        "minLon": 2.8063,
+        "maxLon": 2.8939
+      },
+      "totalPopulation": 3745,
+      "totalSurface": 7190
+    },
+    "66490": {
+      "communes": ["Saint-Jean-Pla-de-Corts", "Vivès"],
+      "communeCount": 2,
+      "center": [2.7885, 42.5128],
+      "coverageRadius": 2.8,
+      "boundingBox": {
+        "minLat": 42.5115,
+        "maxLat": 42.5289,
+        "minLon": 2.7636,
+        "maxLon": 2.7905
+      },
+      "totalPopulation": 2465,
+      "totalSurface": 2178
+    },
+    "66500": {
+      "communes": [
+        "Campôme",
+        "Catllar",
+        "Clara-Villerach",
+        "Codalet",
+        "Conat",
+        "Eus",
+        "Los Masos",
+        "Molitg-les-Bains",
+        "Mosset",
+        "Nohèdes",
+        "Prades",
+        "Ria-Sirach",
+        "Taurinya",
+        "Urbanya",
+        "Villefranche-de-Conflent"
+      ],
+      "communeCount": 15,
+      "center": [2.4174, 42.6184],
+      "coverageRadius": 10.6,
+      "boundingBox": {
+        "minLat": 42.5814,
+        "maxLat": 42.6679,
+        "minLon": 2.2891,
+        "maxLon": 2.4612
+      },
+      "totalPopulation": 11538,
+      "totalSurface": 23906
+    },
+    "66510": {
+      "communes": ["Saint-Hippolyte"],
+      "communeCount": 1,
+      "center": [2.9674, 42.7849],
+      "coverageRadius": 2.85,
+      "totalPopulation": 3177,
+      "totalSurface": 2547
+    },
+    "66530": {
+      "communes": ["Claira"],
+      "communeCount": 1,
+      "center": [2.9562, 42.7596],
+      "coverageRadius": 2.48,
+      "totalPopulation": 4801,
+      "totalSurface": 1934
+    },
+    "66540": {
+      "communes": ["Baho"],
+      "communeCount": 1,
+      "center": [2.8217, 42.7013],
+      "coverageRadius": 1.57,
+      "totalPopulation": 3266,
+      "totalSurface": 775
+    },
+    "66550": {
+      "communes": ["Corneilla-la-Rivière"],
+      "communeCount": 1,
+      "center": [2.7295, 42.6968],
+      "coverageRadius": 2.01,
+      "totalPopulation": 2013,
+      "totalSurface": 1265
+    },
+    "66560": {
+      "communes": ["Ortaffa"],
+      "communeCount": 1,
+      "center": [2.9243, 42.581],
+      "coverageRadius": 1.65,
+      "totalPopulation": 1889,
+      "totalSurface": 853
+    },
+    "66570": {
+      "communes": ["Saint-Nazaire"],
+      "communeCount": 1,
+      "center": [2.9905, 42.6688],
+      "coverageRadius": 1.82,
+      "totalPopulation": 2786,
+      "totalSurface": 1038
+    },
+    "66600": {
+      "communes": [
+        "Calce",
+        "Cases-de-Pène",
+        "Espira-de-l'Agly",
+        "Opoul-Périllos",
+        "Peyrestortes",
+        "Rivesaltes",
+        "Salses-le-Château",
+        "Vingrau"
+      ],
+      "communeCount": 8,
+      "center": [2.8642, 42.7881],
+      "coverageRadius": 9.9,
+      "boundingBox": {
+        "minLat": 42.7552,
+        "maxLat": 42.8682,
+        "minLon": 2.7555,
+        "maxLon": 2.9178
+      },
+      "totalPopulation": 21333,
+      "totalSurface": 26540
+    },
+    "66610": {
+      "communes": ["Villeneuve-la-Rivière"],
+      "communeCount": 1,
+      "center": [2.8011, 42.693],
+      "coverageRadius": 1.19,
+      "totalPopulation": 1360,
+      "totalSurface": 443
+    },
+    "66620": {
+      "communes": ["Brouilla"],
+      "communeCount": 1,
+      "center": [2.9033, 42.5674],
+      "coverageRadius": 1.59,
+      "totalPopulation": 1586,
+      "totalSurface": 790
+    },
+    "66650": {
+      "communes": ["Banyuls-sur-Mer"],
+      "communeCount": 1,
+      "center": [3.1294, 42.4812],
+      "coverageRadius": 3.69,
+      "totalPopulation": 4583,
+      "totalSurface": 4284
+    },
+    "66660": {
+      "communes": ["Port-Vendres"],
+      "communeCount": 1,
+      "center": [3.1072, 42.5196],
+      "coverageRadius": 2.15,
+      "totalPopulation": 3976,
+      "totalSurface": 1449
+    },
+    "66670": {
+      "communes": ["Bages"],
+      "communeCount": 1,
+      "center": [2.8921, 42.6059],
+      "coverageRadius": 1.96,
+      "totalPopulation": 4519,
+      "totalSurface": 1205
+    },
+    "66680": {
+      "communes": ["Canohès"],
+      "communeCount": 1,
+      "center": [2.8322, 42.6549],
+      "coverageRadius": 1.67,
+      "totalPopulation": 6575,
+      "totalSurface": 872
+    },
+    "66690": {
+      "communes": ["Palau-del-Vidre", "Saint-André", "Sorède"],
+      "communeCount": 3,
+      "center": [2.9624, 42.5511],
+      "coverageRadius": 2.3,
+      "boundingBox": {
+        "minLat": 42.5315,
+        "maxLat": 42.571,
+        "minLon": 2.9547,
+        "maxLon": 2.9719
+      },
+      "totalPopulation": 10127,
+      "totalSurface": 5469
+    },
+    "66700": {
+      "communes": ["Argelès-sur-Mer"],
+      "communeCount": 1,
+      "center": [3.021, 42.5491],
+      "coverageRadius": 4.33,
+      "totalPopulation": 10779,
+      "totalSurface": 5881
+    },
+    "66720": {
+      "communes": [
+        "Bélesta",
+        "Caramany",
+        "Cassagnes",
+        "Lansac",
+        "Latour-de-France",
+        "Montner",
+        "Planèzes",
+        "Rasiguères",
+        "Tautavel"
+      ],
+      "communeCount": 9,
+      "center": [2.6655, 42.7713],
+      "coverageRadius": 8.8,
+      "boundingBox": {
+        "minLat": 42.7172,
+        "maxLat": 42.8142,
+        "minLon": 2.5607,
+        "maxLon": 2.7455
+      },
+      "totalPopulation": 3297,
+      "totalSurface": 15387
+    },
+    "66730": {
+      "communes": [
+        "Campoussy",
+        "Feilluns",
+        "Pézilla-de-Conflent",
+        "Prats-de-Sournia",
+        "Rabouillet",
+        "Sournia",
+        "Le Vivier"
+      ],
+      "communeCount": 7,
+      "center": [2.4448, 42.7351],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 42.71,
+        "maxLat": 42.7718,
+        "minLon": 2.3904,
+        "maxLon": 2.4835
+      },
+      "totalPopulation": 849,
+      "totalSurface": 10179
+    },
+    "66740": {
+      "communes": [
+        "Laroque-des-Albères",
+        "Montesquieu-des-Albères",
+        "Saint-Génis-des-Fontaines",
+        "Villelongue-dels-Monts"
+      ],
+      "communeCount": 4,
+      "center": [2.915, 42.5309],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 42.5188,
+        "maxLat": 42.5451,
+        "minLon": 2.8796,
+        "maxLon": 2.9347
+      },
+      "totalPopulation": 8430,
+      "totalSurface": 5965
+    },
+    "66750": {
+      "communes": ["Saint-Cyprien"],
+      "communeCount": 1,
+      "center": [3.0039, 42.6174],
+      "coverageRadius": 2.24,
+      "totalPopulation": 11995,
+      "totalSurface": 1577
+    },
+    "66760": {
+      "communes": [
+        "Angoustrine-Villeneuve-des-Escaldes",
+        "Bourg-Madame",
+        "Dorres",
+        "Enveitg",
+        "Latour-de-Carol",
+        "Porta",
+        "Porté-Puymorens",
+        "Ur"
+      ],
+      "communeCount": 8,
+      "center": [1.9259, 42.4611],
+      "coverageRadius": 12.4,
+      "boundingBox": {
+        "minLat": 42.4343,
+        "maxLat": 42.5482,
+        "minLon": 1.8234,
+        "maxLon": 1.9573
+      },
+      "totalPopulation": 3577,
+      "totalSurface": 28496
+    },
+    "66800": {
+      "communes": ["Err", "Estavar", "Eyne", "Llo", "Saillagouse", "Sainte-Léocadie"],
+      "communeCount": 6,
+      "center": [2.0317, 42.4552],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 42.4366,
+        "maxLat": 42.4742,
+        "minLon": 1.9963,
+        "maxLon": 2.0797
+      },
+      "totalPopulation": 2775,
+      "totalSurface": 10474
+    },
+    "66820": {
+      "communes": ["Casteil", "Corneilla-de-Conflent", "Fillols", "Fuilla", "Vernet-les-Bains"],
+      "communeCount": 5,
+      "center": [2.3856, 42.5551],
+      "coverageRadius": 2.6,
+      "boundingBox": {
+        "minLat": 42.533,
+        "maxLat": 42.5663,
+        "minLon": 2.3604,
+        "maxLon": 2.41
+      },
+      "totalPopulation": 2756,
+      "totalSurface": 7576
+    }
+  }
+}

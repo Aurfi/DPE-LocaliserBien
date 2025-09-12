@@ -1,0 +1,352 @@
+<template>
+  <div id="app" :class="['min-h-screen flex flex-col relative overflow-hidden', fancyUI ? 'bg-gradient-to-br from-blue-300 via-blue-200 to-purple-300 dark:from-blue-800 dark:via-blue-800 dark:to-purple-800' : 'bg-gray-50 dark:bg-gray-900']">
+    <!-- Fancy background blobs for production -->
+    <div v-if="fancyUI" class="absolute inset-0">
+      <div class="absolute top-0 -left-4 w-96 h-96 bg-gradient-to-r from-blue-400 to-purple-400 dark:from-blue-400 dark:to-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-30 animate-blob"></div>
+      <div class="absolute top-0 -right-4 w-96 h-96 bg-gradient-to-r from-indigo-400 to-blue-400 dark:from-indigo-400 dark:to-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-30 animate-blob animation-delay-2000"></div>
+      <div class="absolute -bottom-8 left-20 w-96 h-96 bg-gradient-to-r from-purple-400 to-pink-400 dark:from-purple-400 dark:to-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-30 animate-blob animation-delay-4000"></div>
+    </div>
+    
+    <!-- Overlay glassmorphism for fancy UI -->
+    <div v-if="fancyUI" class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent dark:from-black/20 dark:via-black/10 dark:to-transparent backdrop-blur-sm"></div>
+    
+    <!-- Simple background for GitHub version -->
+    <div v-else class="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-50 dark:from-gray-900 dark:to-gray-800"></div>
+
+
+    <!-- Contenu principal -->
+    <main class="flex-1 relative z-10">
+      <router-view />
+    </main>
+
+    <!-- Footer -->
+    <footer v-show="!modalOpen" class="relative z-10">
+      <div class="max-w-4xl mx-auto px-4 py-4">
+        <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-2xl shadow-lg border border-white/50 dark:border-gray-700/50 p-4 relative">
+          <!-- Theme toggle - absolute positioned top right -->
+          <div class="absolute top-4 right-4 bg-gray-100 dark:bg-gray-700 rounded-full p-0 flex items-center">
+            <button
+              @click="toggleTheme('light')"
+              :class="[
+                'p-1 rounded-full transition-all duration-200',
+                currentTheme === 'light' ? 'bg-white shadow-sm' : currentTheme === 'auto' ? '' : 'opacity-50',
+                currentTheme === 'auto' ? 'hover:bg-gray-200/50' : ''
+              ]"
+              aria-label="Mode clair"
+            >
+              <Sun class="w-4 h-4 text-yellow-500" />
+            </button>
+            <button
+              @click="toggleTheme('dark')"
+              :class="[
+                'p-1 rounded-full transition-all duration-200',
+                currentTheme === 'dark' ? 'bg-gray-600 shadow-sm' : currentTheme === 'auto' ? '' : 'opacity-50',
+                currentTheme === 'auto' ? 'hover:bg-gray-600/50' : ''
+              ]"
+              aria-label="Mode sombre"
+            >
+              <Moon class="w-4 h-4 text-blue-400" />
+            </button>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            
+            <!-- À propos -->
+            <div>
+              <a @click="handleLogoClick" class="flex items-center mb-2 group cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2 transition-transform group-hover:scale-110">
+            <defs>
+              <linearGradient id="mapPinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#2563EB" />
+                <stop offset="15%" style="stop-color:#2563EB" />
+                <stop offset="85%" style="stop-color:#7C3AED" />
+                <stop offset="100%" style="stop-color:#7C3AED" />
+              </linearGradient>
+            </defs>
+            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" :stroke="fancyUI ? 'url(#mapPinGradient)' : 'currentColor'" :class="!fancyUI ? 'text-blue-600 dark:text-blue-400' : ''"/>
+            <path d="m9 10 2 2 4-4" :stroke="fancyUI ? 'url(#mapPinGradient)' : 'currentColor'" :class="!fancyUI ? 'text-blue-600 dark:text-blue-400' : ''"/>
+          </svg>
+                <h3 v-if="fancyUI" class="text-lg font-semibold">
+                  <span class="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">{{ siteNameFirst }}</span><span class="ml-1 bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent">{{ siteNameSecond }}</span>
+                </h3>
+                <h3 v-else class="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                  {{ siteName }}
+                </h3>
+              </a>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Service gratuit de localisation d'annonce immobilière
+              </p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="md:ml-auto md:mr-auto">
+              <h3 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">Navigation</h3>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <router-link to="/" class="footer-link group">
+                    <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors mr-2">
+                      <Search class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400" />
+                    </span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">Accueil</span>
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/informations" class="footer-link group">
+                    <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors mr-2">
+                      <HelpCircle class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400" />
+                    </span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">Informations</span>
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/mentions-legales" class="footer-link group">
+                    <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors mr-2">
+                      <FileText class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400" />
+                    </span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">Mentions légales</span>
+                  </router-link>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Sources -->
+            <div class="md:ml-auto">
+              <h3 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">Sources</h3>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a 
+                    href="https://data.ademe.fr" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="footer-link group"
+                  >
+                    <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-green-100 dark:group-hover:bg-green-900/30 transition-colors mr-2">
+                      <ExternalLink class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400" />
+                    </span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">ADEME - Données DPE</span>
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://geo.api.gouv.fr" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="footer-link group"
+                  >
+                    <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-green-100 dark:group-hover:bg-green-900/30 transition-colors mr-2">
+                      <ExternalLink class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400" />
+                    </span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">API Géographiques</span>
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://data.gouv.fr" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="footer-link group"
+                  >
+                    <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-green-100 dark:group-hover:bg-green-900/30 transition-colors mr-2">
+                      <ExternalLink class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400" />
+                    </span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">Open Data France</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Ligne de bas -->
+          <div class="border-t border-gray-200 dark:border-gray-700 mt-4 pt-3">
+            <div class="flex flex-col md:flex-row items-center justify-between text-sm">
+              <!-- Made with love -->
+              <div class="mb-4 md:mb-0">
+                <span class="text-gray-500 dark:text-gray-400 text-xs">
+                  Fait avec <span class="text-red-500">❤️</span> par des neurones artificiels
+                </span>
+              </div>
+              
+              <div class="flex items-center">
+                <span class="text-gray-600 dark:text-gray-400">Données mises à disposition par l'<a 
+                  href="https://data.ademe.fr" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent hover:from-red-400 hover:to-red-500 transition-all animate-gradient"
+                >ADEME</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</template>
+
+<script>
+import { ExternalLink, FileText, HelpCircle, Moon, Search, Shield, Sun } from 'lucide-vue-next'
+
+export default {
+  name: 'App',
+  components: {
+    Search,
+    HelpCircle,
+    FileText,
+    ExternalLink,
+    Shield,
+    Sun,
+    Moon
+  },
+  data() {
+    return {
+      currentTheme: 'auto',
+      systemPreference: 'light',
+      modalOpen: false
+    }
+  },
+  computed: {
+    fancyUI() {
+      return import.meta.env.VITE_FANCY_UI === 'true'
+    },
+    siteName() {
+      return import.meta.env.VITE_SITE_NAME || 'DPE Locator'
+    },
+    siteNameFirst() {
+      // For LocaliserBien, split as "Localiser" and "Bien"
+      const name = this.siteName
+      if (name.includes('Localiser')) {
+        return 'Localiser'
+      }
+      // For other names, split at space or return first half
+      const parts = name.split(' ')
+      return parts[0] || name.substring(0, Math.ceil(name.length / 2))
+    },
+    siteNameSecond() {
+      const name = this.siteName
+      if (name.includes('Bien')) {
+        return 'Bien'
+      }
+      const parts = name.split(' ')
+      return parts.slice(1).join(' ') || name.substring(Math.ceil(name.length / 2))
+    }
+  },
+  mounted() {
+    // Check system preference
+    this.systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+
+    // Get saved theme or default to auto
+    const savedTheme = localStorage.getItem('theme')
+    this.currentTheme = savedTheme || 'auto'
+
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      this.systemPreference = e.matches ? 'dark' : 'light'
+      if (this.currentTheme === 'auto') {
+        this.applyTheme()
+      }
+    })
+
+    // Listen for modal events
+    window.addEventListener('modal-open', () => {
+      this.modalOpen = true
+    })
+    window.addEventListener('modal-close', () => {
+      this.modalOpen = false
+    })
+
+    this.applyTheme()
+  },
+  methods: {
+    handleLogoClick() {
+      // Always navigate to home
+      if (this.$route.path !== '/') {
+        this.$router.push('/')
+      }
+      // Emit a global event to reset search and close results
+      window.dispatchEvent(new CustomEvent('reset-search'))
+      // Scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    },
+    toggleTheme(theme) {
+      // If clicking the active theme, return to auto
+      if (this.currentTheme === theme) {
+        this.currentTheme = 'auto'
+      } else {
+        this.currentTheme = theme
+      }
+
+      if (this.currentTheme === 'auto') {
+        localStorage.removeItem('theme')
+      } else {
+        localStorage.setItem('theme', this.currentTheme)
+      }
+
+      this.applyTheme()
+    },
+    applyTheme() {
+      const effectiveTheme = this.currentTheme === 'auto' ? this.systemPreference : this.currentTheme
+
+      if (effectiveTheme === 'dark') {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+.container {
+  max-width: 1200px;
+}
+
+/* Styles footer */
+.footer-link {
+  @apply flex items-center transition-all duration-200;
+}
+
+/* Animations pour les blobs */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Animation gradient pour ADEME */
+@keyframes gradient {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}
+</style>

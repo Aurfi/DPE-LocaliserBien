@@ -1,0 +1,6361 @@
+{
+  "departmentCode": "07",
+  "departmentName": "Ardèche",
+  "stats": {
+    "communeCount": 335,
+    "totalPopulation": 333229,
+    "totalSurface": 556701
+  },
+  "communes": [
+    {
+      "nom": "Accons",
+      "code": "07001",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3944, 44.8916]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3866, 44.8863]
+      },
+      "population": 365,
+      "surface": 998.95,
+      "radius": 1.78
+    },
+    {
+      "nom": "Ailhon",
+      "code": "07002",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3364, 44.5992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3418, 44.5992]
+      },
+      "population": 553,
+      "surface": 791.29,
+      "radius": 1.59
+    },
+    {
+      "nom": "Aizac",
+      "code": "07003",
+      "codesPostaux": ["07530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3335, 44.719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3281, 44.7146]
+      },
+      "population": 172,
+      "surface": 642.82,
+      "radius": 1.43
+    },
+    {
+      "nom": "Ajoux",
+      "code": "07004",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4872, 44.7541]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4934, 44.7568]
+      },
+      "population": 78,
+      "surface": 1239.47,
+      "radius": 1.99
+    },
+    {
+      "nom": "Alba-la-Romaine",
+      "code": "07005",
+      "codesPostaux": ["07400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5958, 44.5593]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5978, 44.5544]
+      },
+      "population": 1538,
+      "surface": 3093.59,
+      "radius": 3.14
+    },
+    {
+      "nom": "Albon-d'Ardèche",
+      "code": "07006",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4183, 44.8168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4277, 44.821]
+      },
+      "population": 158,
+      "surface": 915.21,
+      "radius": 1.71
+    },
+    {
+      "nom": "Alboussière",
+      "code": "07007",
+      "codesPostaux": ["07440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7449, 44.9395]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7296, 44.9435]
+      },
+      "population": 1026,
+      "surface": 1831.02,
+      "radius": 2.41
+    },
+    {
+      "nom": "Alissas",
+      "code": "07008",
+      "codesPostaux": ["07210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6139, 44.7089]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6328, 44.7142]
+      },
+      "population": 1485,
+      "surface": 1246.25,
+      "radius": 1.99
+    },
+    {
+      "nom": "Andance",
+      "code": "07009",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7972, 45.2316]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7999, 45.2413]
+      },
+      "population": 1193,
+      "surface": 663.03,
+      "radius": 1.45
+    },
+    {
+      "nom": "Annonay",
+      "code": "07010",
+      "codesPostaux": ["07100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6419, 45.2449]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6675, 45.24]
+      },
+      "population": 17222,
+      "surface": 2114.31,
+      "radius": 2.59
+    },
+    {
+      "nom": "Arcens",
+      "code": "07012",
+      "codesPostaux": ["07310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3184, 44.8963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3262, 44.9001]
+      },
+      "population": 358,
+      "surface": 1854.68,
+      "radius": 2.43
+    },
+    {
+      "nom": "Ardoix",
+      "code": "07013",
+      "codesPostaux": ["07290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7472, 45.1893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7349, 45.1861]
+      },
+      "population": 1302,
+      "surface": 1231.82,
+      "radius": 1.98
+    },
+    {
+      "nom": "Arlebosc",
+      "code": "07014",
+      "codesPostaux": ["07410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.628, 45.0381]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6531, 45.037]
+      },
+      "population": 361,
+      "surface": 1249.34,
+      "radius": 1.99
+    },
+    {
+      "nom": "Arras-sur-Rhône",
+      "code": "07015",
+      "codesPostaux": ["07370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8069, 45.143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8083, 45.1444]
+      },
+      "population": 535,
+      "surface": 555.85,
+      "radius": 1.33
+    },
+    {
+      "nom": "Astet",
+      "code": "07018",
+      "codesPostaux": ["07330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0211, 44.6841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0254, 44.6972]
+      },
+      "population": 57,
+      "surface": 3481.89,
+      "radius": 3.33
+    },
+    {
+      "nom": "Aubenas",
+      "code": "07019",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3942, 44.6107]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.39, 44.6209]
+      },
+      "population": 12488,
+      "surface": 1465.78,
+      "radius": 2.16
+    },
+    {
+      "nom": "Aubignas",
+      "code": "07020",
+      "codesPostaux": ["07400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6309, 44.5854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6325, 44.5886]
+      },
+      "population": 477,
+      "surface": 1574.47,
+      "radius": 2.24
+    },
+    {
+      "nom": "Baix",
+      "code": "07022",
+      "codesPostaux": ["07210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7474, 44.7046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7604, 44.7144]
+      },
+      "population": 1293,
+      "surface": 1755.45,
+      "radius": 2.36
+    },
+    {
+      "nom": "Balazuc",
+      "code": "07023",
+      "codesPostaux": ["07120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3737, 44.5123]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3728, 44.5091]
+      },
+      "population": 383,
+      "surface": 1877.42,
+      "radius": 2.44
+    },
+    {
+      "nom": "Banne",
+      "code": "07024",
+      "codesPostaux": ["07460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1463, 44.3598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1555, 44.3645]
+      },
+      "population": 650,
+      "surface": 3288.26,
+      "radius": 3.24
+    },
+    {
+      "nom": "Barnas",
+      "code": "07025",
+      "codesPostaux": ["07330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1589, 44.6698]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1695, 44.6684]
+      },
+      "population": 207,
+      "surface": 2480.06,
+      "radius": 2.81
+    },
+    {
+      "nom": "Beauchastel",
+      "code": "07027",
+      "codesPostaux": ["07800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7938, 44.8324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8012, 44.8256]
+      },
+      "population": 1847,
+      "surface": 848.53,
+      "radius": 1.64
+    },
+    {
+      "nom": "Beaulieu",
+      "code": "07028",
+      "codesPostaux": ["07460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2553, 44.3575]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2332, 44.3614]
+      },
+      "population": 538,
+      "surface": 2540.59,
+      "radius": 2.84
+    },
+    {
+      "nom": "Beaumont",
+      "code": "07029",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1709, 44.5437]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1683, 44.5377]
+      },
+      "population": 261,
+      "surface": 1925.68,
+      "radius": 2.48
+    },
+    {
+      "nom": "Beauvène",
+      "code": "07030",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5156, 44.8669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5114, 44.8761]
+      },
+      "population": 202,
+      "surface": 1217.18,
+      "radius": 1.97
+    },
+    {
+      "nom": "Belsentes",
+      "code": "07165",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4968, 44.92]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4872, 44.9327]
+      },
+      "population": 542,
+      "surface": 2570.78,
+      "radius": 2.86
+    },
+    {
+      "nom": "Berrias-et-Casteljau",
+      "code": "07031",
+      "codesPostaux": ["07460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2056, 44.3791]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2013, 44.3735]
+      },
+      "population": 779,
+      "surface": 2666.66,
+      "radius": 2.91
+    },
+    {
+      "nom": "Berzème",
+      "code": "07032",
+      "codesPostaux": ["07580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5717, 44.6514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5652, 44.6517]
+      },
+      "population": 159,
+      "surface": 1823.98,
+      "radius": 2.41
+    },
+    {
+      "nom": "Bessas",
+      "code": "07033",
+      "codesPostaux": ["07150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2987, 44.3423]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3014, 44.3443]
+      },
+      "population": 234,
+      "surface": 1731.94,
+      "radius": 2.35
+    },
+    {
+      "nom": "Bidon",
+      "code": "07034",
+      "codesPostaux": ["07700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5423, 44.3583]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5346, 44.3664]
+      },
+      "population": 256,
+      "surface": 2948.69,
+      "radius": 3.06
+    },
+    {
+      "nom": "Boffres",
+      "code": "07035",
+      "codesPostaux": ["07440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6891, 44.9196]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7008, 44.9193]
+      },
+      "population": 618,
+      "surface": 3085.75,
+      "radius": 3.13
+    },
+    {
+      "nom": "Bogy",
+      "code": "07036",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7682, 45.2827]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7602, 45.2826]
+      },
+      "population": 471,
+      "surface": 711.01,
+      "radius": 1.5
+    },
+    {
+      "nom": "Borée",
+      "code": "07037",
+      "codesPostaux": ["07310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2341, 44.894]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2398, 44.8983]
+      },
+      "population": 142,
+      "surface": 2841.01,
+      "radius": 3.01
+    },
+    {
+      "nom": "Borne",
+      "code": "07038",
+      "codesPostaux": ["07590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0444, 44.6115]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0152, 44.6151]
+      },
+      "population": 45,
+      "surface": 3219.29,
+      "radius": 3.2
+    },
+    {
+      "nom": "Boucieu-le-Roi",
+      "code": "07040",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6877, 45.0287]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6827, 45.0368]
+      },
+      "population": 247,
+      "surface": 886.01,
+      "radius": 1.68
+    },
+    {
+      "nom": "Boulieu-lès-Annonay",
+      "code": "07041",
+      "codesPostaux": ["07100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6433, 45.268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6662, 45.27]
+      },
+      "population": 2255,
+      "surface": 955.69,
+      "radius": 1.74
+    },
+    {
+      "nom": "Bourg-Saint-Andéol",
+      "code": "07042",
+      "codesPostaux": ["07700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6117, 44.3742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.647, 44.3693]
+      },
+      "population": 7506,
+      "surface": 4288.83,
+      "radius": 3.69
+    },
+    {
+      "nom": "Bozas",
+      "code": "07039",
+      "codesPostaux": ["07410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6439, 45.0547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6504, 45.0549]
+      },
+      "population": 256,
+      "surface": 1261.48,
+      "radius": 2
+    },
+    {
+      "nom": "Brossainc",
+      "code": "07044",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.677, 45.3286]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6792, 45.3304]
+      },
+      "population": 261,
+      "surface": 443.57,
+      "radius": 1.19
+    },
+    {
+      "nom": "Burzet",
+      "code": "07045",
+      "codesPostaux": ["07450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2346, 44.7473]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2443, 44.74]
+      },
+      "population": 529,
+      "surface": 3813.84,
+      "radius": 3.48
+    },
+    {
+      "nom": "Cellier-du-Luc",
+      "code": "07047",
+      "codesPostaux": ["07590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9028, 44.6733]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8985, 44.681]
+      },
+      "population": 91,
+      "surface": 1475.65,
+      "radius": 2.17
+    },
+    {
+      "nom": "Chalencon",
+      "code": "07048",
+      "codesPostaux": ["07240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5582, 44.8804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5759, 44.8784]
+      },
+      "population": 339,
+      "surface": 958.38,
+      "radius": 1.75
+    },
+    {
+      "nom": "Chambonas",
+      "code": "07050",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1301, 44.4253]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1289, 44.4169]
+      },
+      "population": 978,
+      "surface": 1219.75,
+      "radius": 1.97
+    },
+    {
+      "nom": "Champagne",
+      "code": "07051",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7979, 45.277]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.799, 45.2719]
+      },
+      "population": 621,
+      "surface": 413.48,
+      "radius": 1.15
+    },
+    {
+      "nom": "Champis",
+      "code": "07052",
+      "codesPostaux": ["07440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7549, 44.9566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7327, 44.9591]
+      },
+      "population": 659,
+      "surface": 1668.89,
+      "radius": 2.3
+    },
+    {
+      "nom": "Chandolas",
+      "code": "07053",
+      "codesPostaux": ["07230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.245, 44.4151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2527, 44.4032]
+      },
+      "population": 545,
+      "surface": 1190.69,
+      "radius": 1.95
+    },
+    {
+      "nom": "Chanéac",
+      "code": "07054",
+      "codesPostaux": ["07310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3127, 44.9313]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3194, 44.9329]
+      },
+      "population": 262,
+      "surface": 1586.19,
+      "radius": 2.25
+    },
+    {
+      "nom": "Charmes-sur-Rhône",
+      "code": "07055",
+      "codesPostaux": ["07800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8312, 44.8632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8321, 44.8623]
+      },
+      "population": 3160,
+      "surface": 589.79,
+      "radius": 1.37
+    },
+    {
+      "nom": "Charnas",
+      "code": "07056",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7309, 45.3429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.743, 45.3348]
+      },
+      "population": 918,
+      "surface": 549.92,
+      "radius": 1.32
+    },
+    {
+      "nom": "Chassiers",
+      "code": "07058",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2936, 44.5656]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2959, 44.5522]
+      },
+      "population": 992,
+      "surface": 1241.22,
+      "radius": 1.99
+    },
+    {
+      "nom": "Châteaubourg",
+      "code": "07059",
+      "codesPostaux": ["07130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8346, 44.9881]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8443, 44.9969]
+      },
+      "population": 232,
+      "surface": 431.49,
+      "radius": 1.17
+    },
+    {
+      "nom": "Châteauneuf-de-Vernoux",
+      "code": "07060",
+      "codesPostaux": ["07240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6483, 44.9258]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.646, 44.9184]
+      },
+      "population": 278,
+      "surface": 609.34,
+      "radius": 1.39
+    },
+    {
+      "nom": "Chauzon",
+      "code": "07061",
+      "codesPostaux": ["07120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3467, 44.4937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3612, 44.4865]
+      },
+      "population": 429,
+      "surface": 1081.74,
+      "radius": 1.86
+    },
+    {
+      "nom": "Chazeaux",
+      "code": "07062",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2974, 44.5949]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3102, 44.5951]
+      },
+      "population": 134,
+      "surface": 467.99,
+      "radius": 1.22
+    },
+    {
+      "nom": "Cheminas",
+      "code": "07063",
+      "codesPostaux": ["07300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7414, 45.1316]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7516, 45.1241]
+      },
+      "population": 413,
+      "surface": 944.21,
+      "radius": 1.73
+    },
+    {
+      "nom": "Chirols",
+      "code": "07065",
+      "codesPostaux": ["07380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2917, 44.6879]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2864, 44.6858]
+      },
+      "population": 270,
+      "surface": 692.11,
+      "radius": 1.48
+    },
+    {
+      "nom": "Chomérac",
+      "code": "07066",
+      "codesPostaux": ["07210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.668, 44.7113]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6615, 44.7081]
+      },
+      "population": 3094,
+      "surface": 1946.93,
+      "radius": 2.49
+    },
+    {
+      "nom": "Colombier-le-Cardinal",
+      "code": "07067",
+      "codesPostaux": ["07430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7427, 45.2645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7414, 45.2674]
+      },
+      "population": 335,
+      "surface": 253.79,
+      "radius": 0.9
+    },
+    {
+      "nom": "Colombier-le-Jeune",
+      "code": "07068",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7142, 45.0103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7013, 45.0112]
+      },
+      "population": 566,
+      "surface": 1523.59,
+      "radius": 2.2
+    },
+    {
+      "nom": "Colombier-le-Vieux",
+      "code": "07069",
+      "codesPostaux": ["07410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7069, 45.0559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6944, 45.0656]
+      },
+      "population": 677,
+      "surface": 1571.56,
+      "radius": 2.24
+    },
+    {
+      "nom": "Cornas",
+      "code": "07070",
+      "codesPostaux": ["07130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8441, 44.9668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8475, 44.9637]
+      },
+      "population": 2397,
+      "surface": 854.06,
+      "radius": 1.65
+    },
+    {
+      "nom": "Coucouron",
+      "code": "07071",
+      "codesPostaux": ["07470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9571, 44.7978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.971, 44.804]
+      },
+      "population": 767,
+      "surface": 2440.27,
+      "radius": 2.79
+    },
+    {
+      "nom": "Coux",
+      "code": "07072",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6195, 44.7434]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6201, 44.7329]
+      },
+      "population": 1664,
+      "surface": 1202.63,
+      "radius": 1.96
+    },
+    {
+      "nom": "Creysseilles",
+      "code": "07074",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5329, 44.7645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5447, 44.7509]
+      },
+      "population": 156,
+      "surface": 1026.02,
+      "radius": 1.81
+    },
+    {
+      "nom": "Cros-de-Géorand",
+      "code": "07075",
+      "codesPostaux": ["07510", "07630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1226, 44.8008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1254, 44.7935]
+      },
+      "population": 151,
+      "surface": 4392.44,
+      "radius": 3.74
+    },
+    {
+      "nom": "Cruas",
+      "code": "07076",
+      "codesPostaux": ["07350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7554, 44.6552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7653, 44.6569]
+      },
+      "population": 2954,
+      "surface": 1549.26,
+      "radius": 2.22
+    },
+    {
+      "nom": "Darbres",
+      "code": "07077",
+      "codesPostaux": ["07170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5216, 44.6597]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5045, 44.6468]
+      },
+      "population": 269,
+      "surface": 1634.9,
+      "radius": 2.28
+    },
+    {
+      "nom": "Davézieux",
+      "code": "07078",
+      "codesPostaux": ["07430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6989, 45.2533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7058, 45.2567]
+      },
+      "population": 3181,
+      "surface": 574.82,
+      "radius": 1.35
+    },
+    {
+      "nom": "Désaignes",
+      "code": "07079",
+      "codesPostaux": ["07570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4972, 44.9946]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5165, 44.9952]
+      },
+      "population": 1145,
+      "surface": 5157.17,
+      "radius": 4.05
+    },
+    {
+      "nom": "Devesset",
+      "code": "07080",
+      "codesPostaux": ["07320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3987, 45.0707]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3881, 45.0681]
+      },
+      "population": 306,
+      "surface": 2969.33,
+      "radius": 3.07
+    },
+    {
+      "nom": "Dompnac",
+      "code": "07081",
+      "codesPostaux": ["07260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1132, 44.5607]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1033, 44.5644]
+      },
+      "population": 77,
+      "surface": 1629.15,
+      "radius": 2.28
+    },
+    {
+      "nom": "Dornas",
+      "code": "07082",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3602, 44.8494]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3522, 44.8535]
+      },
+      "population": 198,
+      "surface": 1774.26,
+      "radius": 2.38
+    },
+    {
+      "nom": "Dunière-sur-Eyrieux",
+      "code": "07083",
+      "codesPostaux": ["07360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6479, 44.8351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6589, 44.8223]
+      },
+      "population": 437,
+      "surface": 780.17,
+      "radius": 1.58
+    },
+    {
+      "nom": "Eclassan",
+      "code": "07084",
+      "codesPostaux": ["07370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7442, 45.1618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7604, 45.1588]
+      },
+      "population": 1046,
+      "surface": 1648.41,
+      "radius": 2.29
+    },
+    {
+      "nom": "Empurany",
+      "code": "07085",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5968, 45.0254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6083, 45.0239]
+      },
+      "population": 573,
+      "surface": 1935.08,
+      "radius": 2.48
+    },
+    {
+      "nom": "Étables",
+      "code": "07086",
+      "codesPostaux": ["07300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7381, 45.094]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7253, 45.1016]
+      },
+      "population": 979,
+      "surface": 1578.56,
+      "radius": 2.24
+    },
+    {
+      "nom": "Fabras",
+      "code": "07087",
+      "codesPostaux": ["07380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2807, 44.6501]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.288, 44.6513]
+      },
+      "population": 458,
+      "surface": 758.46,
+      "radius": 1.55
+    },
+    {
+      "nom": "Faugères",
+      "code": "07088",
+      "codesPostaux": ["07230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1436, 44.4828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1372, 44.476]
+      },
+      "population": 113,
+      "surface": 581.73,
+      "radius": 1.36
+    },
+    {
+      "nom": "Félines",
+      "code": "07089",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7205, 45.3155]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.728, 45.3173]
+      },
+      "population": 1874,
+      "surface": 1417.59,
+      "radius": 2.12
+    },
+    {
+      "nom": "Flaviac",
+      "code": "07090",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6622, 44.7522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.676, 44.7474]
+      },
+      "population": 1239,
+      "surface": 1301.91,
+      "radius": 2.04
+    },
+    {
+      "nom": "Fons",
+      "code": "07091",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3492, 44.5826]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3501, 44.5835]
+      },
+      "population": 317,
+      "surface": 408.19,
+      "radius": 1.14
+    },
+    {
+      "nom": "Freyssenet",
+      "code": "07092",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5466, 44.6881]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5411, 44.6828]
+      },
+      "population": 46,
+      "surface": 970.61,
+      "radius": 1.76
+    },
+    {
+      "nom": "Genestelle",
+      "code": "07093",
+      "codesPostaux": ["07530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3915, 44.7401]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3916, 44.7186]
+      },
+      "population": 269,
+      "surface": 2151.52,
+      "radius": 2.62
+    },
+    {
+      "nom": "Gilhac-et-Bruzac",
+      "code": "07094",
+      "codesPostaux": ["07800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7474, 44.8624]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7287, 44.8599]
+      },
+      "population": 174,
+      "surface": 3094.28,
+      "radius": 3.14
+    },
+    {
+      "nom": "Gilhoc-sur-Ormèze",
+      "code": "07095",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6757, 44.9882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6884, 44.9873]
+      },
+      "population": 473,
+      "surface": 2108.61,
+      "radius": 2.59
+    },
+    {
+      "nom": "Gluiras",
+      "code": "07096",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.522, 44.8456]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.523, 44.8471]
+      },
+      "population": 368,
+      "surface": 2465.99,
+      "radius": 2.8
+    },
+    {
+      "nom": "Glun",
+      "code": "07097",
+      "codesPostaux": ["07300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.823, 45.008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8386, 45.0173]
+      },
+      "population": 686,
+      "surface": 752.02,
+      "radius": 1.55
+    },
+    {
+      "nom": "Gourdon",
+      "code": "07098",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4646, 44.7328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4483, 44.7314]
+      },
+      "population": 78,
+      "surface": 1278.6,
+      "radius": 2.02
+    },
+    {
+      "nom": "Gras",
+      "code": "07099",
+      "codesPostaux": ["07700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.536, 44.4403]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5396, 44.4439]
+      },
+      "population": 588,
+      "surface": 5763.65,
+      "radius": 4.28
+    },
+    {
+      "nom": "Gravières",
+      "code": "07100",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0715, 44.4199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0917, 44.4216]
+      },
+      "population": 511,
+      "surface": 1880.42,
+      "radius": 2.45
+    },
+    {
+      "nom": "Grospierres",
+      "code": "07101",
+      "codesPostaux": ["07120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2868, 44.3941]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2903, 44.3994]
+      },
+      "population": 931,
+      "surface": 2720.01,
+      "radius": 2.94
+    },
+    {
+      "nom": "Guilherand-Granges",
+      "code": "07102",
+      "codesPostaux": ["07500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8655, 44.9301]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8714, 44.9326]
+      },
+      "population": 11277,
+      "surface": 650.82,
+      "radius": 1.44
+    },
+    {
+      "nom": "Issamoulenc",
+      "code": "07104",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4519, 44.7887]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4756, 44.7827]
+      },
+      "population": 105,
+      "surface": 1566.64,
+      "radius": 2.23
+    },
+    {
+      "nom": "Issanlas",
+      "code": "07105",
+      "codesPostaux": ["07510", "07660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0046, 44.7644]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0124, 44.7652]
+      },
+      "population": 103,
+      "surface": 2863.68,
+      "radius": 3.02
+    },
+    {
+      "nom": "Issarlès",
+      "code": "07106",
+      "codesPostaux": ["07470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0597, 44.8488]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0309, 44.8421]
+      },
+      "population": 125,
+      "surface": 1884.65,
+      "radius": 2.45
+    },
+    {
+      "nom": "Jaujac",
+      "code": "07107",
+      "codesPostaux": ["07380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2409, 44.6278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2548, 44.6365]
+      },
+      "population": 1229,
+      "surface": 2447.39,
+      "radius": 2.79
+    },
+    {
+      "nom": "Jaunac",
+      "code": "07108",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3937, 44.9199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3998, 44.9202]
+      },
+      "population": 121,
+      "surface": 392.6,
+      "radius": 1.12
+    },
+    {
+      "nom": "Joannas",
+      "code": "07109",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2498, 44.5737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2521, 44.5645]
+      },
+      "population": 317,
+      "surface": 1210.16,
+      "radius": 1.96
+    },
+    {
+      "nom": "Joyeuse",
+      "code": "07110",
+      "codesPostaux": ["07260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2499, 44.4713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2353, 44.4802]
+      },
+      "population": 1760,
+      "surface": 1292.2,
+      "radius": 2.03
+    },
+    {
+      "nom": "Juvinas",
+      "code": "07111",
+      "codesPostaux": ["07600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.307, 44.7048]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3075, 44.7107]
+      },
+      "population": 186,
+      "surface": 849.14,
+      "radius": 1.64
+    },
+    {
+      "nom": "La Rochette",
+      "code": "07195",
+      "codesPostaux": ["07310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2296, 44.9234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2394, 44.9157]
+      },
+      "population": 63,
+      "surface": 1414.75,
+      "radius": 2.12
+    },
+    {
+      "nom": "La Souche",
+      "code": "07315",
+      "codesPostaux": ["07380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1565, 44.6258]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2018, 44.6292]
+      },
+      "population": 384,
+      "surface": 3188.2,
+      "radius": 3.19
+    },
+    {
+      "nom": "La Voulte-sur-Rhône",
+      "code": "07349",
+      "codesPostaux": ["07800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7829, 44.7996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7808, 44.7996]
+      },
+      "population": 4762,
+      "surface": 993.29,
+      "radius": 1.78
+    },
+    {
+      "nom": "Labastide-de-Virac",
+      "code": "07113",
+      "codesPostaux": ["07150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4236, 44.3551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4026, 44.351]
+      },
+      "population": 322,
+      "surface": 2314.97,
+      "radius": 2.71
+    },
+    {
+      "nom": "Labastide-sur-Bésorgues",
+      "code": "07112",
+      "codesPostaux": ["07600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2994, 44.7514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3032, 44.7247]
+      },
+      "population": 282,
+      "surface": 1735.03,
+      "radius": 2.35
+    },
+    {
+      "nom": "Labatie-d'Andaure",
+      "code": "07114",
+      "codesPostaux": ["07570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.493, 45.0344]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4933, 45.0246]
+      },
+      "population": 220,
+      "surface": 1006.82,
+      "radius": 1.79
+    },
+    {
+      "nom": "Labeaume",
+      "code": "07115",
+      "codesPostaux": ["07120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3074, 44.4682]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3072, 44.4486]
+      },
+      "population": 684,
+      "surface": 1785.74,
+      "radius": 2.38
+    },
+    {
+      "nom": "Labégude",
+      "code": "07116",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3571, 44.6412]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3676, 44.6478]
+      },
+      "population": 1376,
+      "surface": 319.1,
+      "radius": 1.01
+    },
+    {
+      "nom": "Lablachère",
+      "code": "07117",
+      "codesPostaux": ["07230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2159, 44.4611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2159, 44.464]
+      },
+      "population": 2214,
+      "surface": 2674.28,
+      "radius": 2.92
+    },
+    {
+      "nom": "Laboule",
+      "code": "07118",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1718, 44.5928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.165, 44.5874]
+      },
+      "population": 144,
+      "surface": 1753.54,
+      "radius": 2.36
+    },
+    {
+      "nom": "Lachamp-Raphaël",
+      "code": "07120",
+      "codesPostaux": ["07530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.286, 44.7969]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2904, 44.8095]
+      },
+      "population": 66,
+      "surface": 1415.51,
+      "radius": 2.12
+    },
+    {
+      "nom": "Lachapelle-Graillouse",
+      "code": "07121",
+      "codesPostaux": ["07470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0241, 44.8121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0214, 44.8117]
+      },
+      "population": 188,
+      "surface": 2080.93,
+      "radius": 2.57
+    },
+    {
+      "nom": "Lachapelle-sous-Aubenas",
+      "code": "07122",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3552, 44.5601]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3634, 44.5639]
+      },
+      "population": 1840,
+      "surface": 1023.37,
+      "radius": 1.8
+    },
+    {
+      "nom": "Lachapelle-sous-Chanéac",
+      "code": "07123",
+      "codesPostaux": ["07310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3203, 44.9535]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3306, 44.9478]
+      },
+      "population": 159,
+      "surface": 897.8,
+      "radius": 1.69
+    },
+    {
+      "nom": "Lafarre",
+      "code": "07124",
+      "codesPostaux": ["07520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5169, 45.0769]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5097, 45.079]
+      },
+      "population": 45,
+      "surface": 1119.16,
+      "radius": 1.89
+    },
+    {
+      "nom": "Lagorce",
+      "code": "07126",
+      "codesPostaux": ["07150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4293, 44.4469]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4176, 44.447]
+      },
+      "population": 1227,
+      "surface": 6928.72,
+      "radius": 4.7
+    },
+    {
+      "nom": "Lalevade-d'Ardèche",
+      "code": "07127",
+      "codesPostaux": ["07380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3161, 44.6527]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3222, 44.65]
+      },
+      "population": 1153,
+      "surface": 227.93,
+      "radius": 0.85
+    },
+    {
+      "nom": "Lalouvesc",
+      "code": "07128",
+      "codesPostaux": ["07520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5216, 45.1169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5347, 45.1199]
+      },
+      "population": 383,
+      "surface": 1070.23,
+      "radius": 1.85
+    },
+    {
+      "nom": "Lamastre",
+      "code": "07129",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5911, 44.9767]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5792, 44.9851]
+      },
+      "population": 2336,
+      "surface": 2579.67,
+      "radius": 2.87
+    },
+    {
+      "nom": "Lanarce",
+      "code": "07130",
+      "codesPostaux": ["07660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0027, 44.731]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0025, 44.7287]
+      },
+      "population": 209,
+      "surface": 2266.68,
+      "radius": 2.69
+    },
+    {
+      "nom": "Lanas",
+      "code": "07131",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3812, 44.5339]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3983, 44.5315]
+      },
+      "population": 431,
+      "surface": 1017.67,
+      "radius": 1.8
+    },
+    {
+      "nom": "Largentière",
+      "code": "07132",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2984, 44.5307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2921, 44.5418]
+      },
+      "population": 1496,
+      "surface": 736.3,
+      "radius": 1.53
+    },
+    {
+      "nom": "Larnas",
+      "code": "07133",
+      "codesPostaux": ["07220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5959, 44.4553]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5981, 44.4489]
+      },
+      "population": 272,
+      "surface": 1391.28,
+      "radius": 2.1
+    },
+    {
+      "nom": "Laurac-en-Vivarais",
+      "code": "07134",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2875, 44.5051]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2903, 44.5087]
+      },
+      "population": 1045,
+      "surface": 906.4,
+      "radius": 1.7
+    },
+    {
+      "nom": "Laveyrune",
+      "code": "07136",
+      "codesPostaux": ["48250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9255, 44.6174]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.895, 44.6316]
+      },
+      "population": 109,
+      "surface": 1352.04,
+      "radius": 2.07
+    },
+    {
+      "nom": "Lavillatte",
+      "code": "07137",
+      "codesPostaux": ["07660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9524, 44.7419]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9495, 44.7431]
+      },
+      "population": 43,
+      "surface": 1886.3,
+      "radius": 2.45
+    },
+    {
+      "nom": "Lavilledieu",
+      "code": "07138",
+      "codesPostaux": ["07170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4474, 44.5818]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4536, 44.5751]
+      },
+      "population": 2248,
+      "surface": 1489.6,
+      "radius": 2.18
+    },
+    {
+      "nom": "Laviolle",
+      "code": "07139",
+      "codesPostaux": ["07530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3338, 44.761]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3393, 44.7628]
+      },
+      "population": 99,
+      "surface": 1402.36,
+      "radius": 2.11
+    },
+    {
+      "nom": "Le Béage",
+      "code": "07026",
+      "codesPostaux": ["07630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1346, 44.8542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1187, 44.8488]
+      },
+      "population": 255,
+      "surface": 3317.72,
+      "radius": 3.25
+    },
+    {
+      "nom": "Le Chambon",
+      "code": "07049",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2996, 44.8306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3037, 44.8358]
+      },
+      "population": 60,
+      "surface": 1060.54,
+      "radius": 1.84
+    },
+    {
+      "nom": "Le Cheylard",
+      "code": "07064",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.422, 44.9061]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4232, 44.9061]
+      },
+      "population": 2812,
+      "surface": 1353.67,
+      "radius": 2.08
+    },
+    {
+      "nom": "Le Crestet",
+      "code": "07073",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6322, 45.0115]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6516, 45.0143]
+      },
+      "population": 522,
+      "surface": 1003.93,
+      "radius": 1.79
+    },
+    {
+      "nom": "Le Lac-d'Issarlès",
+      "code": "07119",
+      "codesPostaux": ["07470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0749, 44.8282]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0617, 44.8213]
+      },
+      "population": 251,
+      "surface": 1381.79,
+      "radius": 2.1
+    },
+    {
+      "nom": "Le Plagnal",
+      "code": "07175",
+      "codesPostaux": ["07590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9553, 44.697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9458, 44.6996]
+      },
+      "population": 65,
+      "surface": 1564.21,
+      "radius": 2.23
+    },
+    {
+      "nom": "Le Pouzin",
+      "code": "07181",
+      "codesPostaux": ["07250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7491, 44.7537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7487, 44.7558]
+      },
+      "population": 2893,
+      "surface": 1110.97,
+      "radius": 1.88
+    },
+    {
+      "nom": "Le Roux",
+      "code": "07200",
+      "codesPostaux": ["07560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1409, 44.7201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1473, 44.7235]
+      },
+      "population": 64,
+      "surface": 1657.07,
+      "radius": 2.3
+    },
+    {
+      "nom": "Le Teil",
+      "code": "07319",
+      "codesPostaux": ["07400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6664, 44.5476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6838, 44.5504]
+      },
+      "population": 8812,
+      "surface": 2664.28,
+      "radius": 2.91
+    },
+    {
+      "nom": "Lemps",
+      "code": "07140",
+      "codesPostaux": ["07610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7876, 45.0902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7648, 45.1085]
+      },
+      "population": 798,
+      "surface": 1232.28,
+      "radius": 1.98
+    },
+    {
+      "nom": "Lentillères",
+      "code": "07141",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2948, 44.6071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3135, 44.6132]
+      },
+      "population": 236,
+      "surface": 877.06,
+      "radius": 1.67
+    },
+    {
+      "nom": "Les Assions",
+      "code": "07017",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1882, 44.4243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.174, 44.4213]
+      },
+      "population": 768,
+      "surface": 1399.9,
+      "radius": 2.11
+    },
+    {
+      "nom": "Les Ollières-sur-Eyrieux",
+      "code": "07167",
+      "codesPostaux": ["07360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6207, 44.8068]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6135, 44.8042]
+      },
+      "population": 1020,
+      "surface": 740.16,
+      "radius": 1.53
+    },
+    {
+      "nom": "Les Salelles",
+      "code": "07305",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0989, 44.4355]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1026, 44.4343]
+      },
+      "population": 406,
+      "surface": 567.56,
+      "radius": 1.34
+    },
+    {
+      "nom": "Les Vans",
+      "code": "07334",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1145, 44.3884]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1317, 44.4048]
+      },
+      "population": 2680,
+      "surface": 3118.34,
+      "radius": 3.15
+    },
+    {
+      "nom": "Lespéron",
+      "code": "07142",
+      "codesPostaux": ["07660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9001, 44.731]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.8979, 44.7302]
+      },
+      "population": 321,
+      "surface": 2547.36,
+      "radius": 2.85
+    },
+    {
+      "nom": "Limony",
+      "code": "07143",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.749, 45.351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7581, 45.3525]
+      },
+      "population": 817,
+      "surface": 738.93,
+      "radius": 1.53
+    },
+    {
+      "nom": "Loubaresse",
+      "code": "07144",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0555, 44.5921]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0502, 44.5999]
+      },
+      "population": 45,
+      "surface": 912.73,
+      "radius": 1.7
+    },
+    {
+      "nom": "Lussas",
+      "code": "07145",
+      "codesPostaux": ["07170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4653, 44.6208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4722, 44.6118]
+      },
+      "population": 1142,
+      "surface": 1652.21,
+      "radius": 2.29
+    },
+    {
+      "nom": "Lyas",
+      "code": "07146",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5976, 44.7545]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6005, 44.7396]
+      },
+      "population": 592,
+      "surface": 814.77,
+      "radius": 1.61
+    },
+    {
+      "nom": "Malarce-sur-la-Thines",
+      "code": "07147",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0512, 44.4777]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0723, 44.446]
+      },
+      "population": 257,
+      "surface": 3784.19,
+      "radius": 3.47
+    },
+    {
+      "nom": "Malbosc",
+      "code": "07148",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0729, 44.3484]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0737, 44.3463]
+      },
+      "population": 146,
+      "surface": 2169.44,
+      "radius": 2.63
+    },
+    {
+      "nom": "Marcols-les-Eaux",
+      "code": "07149",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3881, 44.806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4008, 44.8154]
+      },
+      "population": 283,
+      "surface": 1606.46,
+      "radius": 2.26
+    },
+    {
+      "nom": "Mariac",
+      "code": "07150",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.351, 44.8877]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3676, 44.8836]
+      },
+      "population": 541,
+      "surface": 1641.84,
+      "radius": 2.29
+    },
+    {
+      "nom": "Mars",
+      "code": "07151",
+      "codesPostaux": ["07320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3299, 45.0087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3252, 45.0222]
+      },
+      "population": 246,
+      "surface": 1943.2,
+      "radius": 2.49
+    },
+    {
+      "nom": "Mauves",
+      "code": "07152",
+      "codesPostaux": ["07300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8182, 45.0294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8292, 45.0384]
+      },
+      "population": 1192,
+      "surface": 732.52,
+      "radius": 1.53
+    },
+    {
+      "nom": "Mayres",
+      "code": "07153",
+      "codesPostaux": ["07330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1001, 44.6646]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1165, 44.6652]
+      },
+      "population": 264,
+      "surface": 2957.95,
+      "radius": 3.07
+    },
+    {
+      "nom": "Mazan-l'Abbaye",
+      "code": "07154",
+      "codesPostaux": ["07510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.084, 44.7272]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0896, 44.7281]
+      },
+      "population": 124,
+      "surface": 4614.74,
+      "radius": 3.83
+    },
+    {
+      "nom": "Mercuer",
+      "code": "07155",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3509, 44.6242]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3592, 44.6307]
+      },
+      "population": 1315,
+      "surface": 768.41,
+      "radius": 1.56
+    },
+    {
+      "nom": "Meyras",
+      "code": "07156",
+      "codesPostaux": ["07380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.26, 44.6786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2671, 44.6813]
+      },
+      "population": 906,
+      "surface": 1243.88,
+      "radius": 1.99
+    },
+    {
+      "nom": "Meysse",
+      "code": "07157",
+      "codesPostaux": ["07400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.704, 44.6188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7226, 44.6085]
+      },
+      "population": 1380,
+      "surface": 1871.31,
+      "radius": 2.44
+    },
+    {
+      "nom": "Mézilhac",
+      "code": "07158",
+      "codesPostaux": ["07530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.342, 44.8078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3515, 44.8082]
+      },
+      "population": 99,
+      "surface": 2669.56,
+      "radius": 2.92
+    },
+    {
+      "nom": "Mirabel",
+      "code": "07159",
+      "codesPostaux": ["07170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4967, 44.5986]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4988, 44.6072]
+      },
+      "population": 777,
+      "surface": 2006.14,
+      "radius": 2.53
+    },
+    {
+      "nom": "Monestier",
+      "code": "07160",
+      "codesPostaux": ["07690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5089, 45.2032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5322, 45.1984]
+      },
+      "population": 59,
+      "surface": 746.48,
+      "radius": 1.54
+    },
+    {
+      "nom": "Montpezat-sous-Bauzon",
+      "code": "07161",
+      "codesPostaux": ["07560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1977, 44.7214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2061, 44.7122]
+      },
+      "population": 756,
+      "surface": 2727.64,
+      "radius": 2.95
+    },
+    {
+      "nom": "Montréal",
+      "code": "07162",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2937, 44.5124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2916, 44.5277]
+      },
+      "population": 569,
+      "surface": 614.57,
+      "radius": 1.4
+    },
+    {
+      "nom": "Montselgues",
+      "code": "07163",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0037, 44.5234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0053, 44.5238]
+      },
+      "population": 86,
+      "surface": 3639.24,
+      "radius": 3.4
+    },
+    {
+      "nom": "Nozières",
+      "code": "07166",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5405, 45.032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5428, 45.0284]
+      },
+      "population": 240,
+      "surface": 2189.22,
+      "radius": 2.64
+    },
+    {
+      "nom": "Orgnac-l'Aven",
+      "code": "07168",
+      "codesPostaux": ["07150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4214, 44.3094]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.433, 44.3059]
+      },
+      "population": 566,
+      "surface": 2171.2,
+      "radius": 2.63
+    },
+    {
+      "nom": "Ozon",
+      "code": "07169",
+      "codesPostaux": ["07370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7985, 45.1637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8029, 45.1657]
+      },
+      "population": 386,
+      "surface": 838.62,
+      "radius": 1.63
+    },
+    {
+      "nom": "Pailharès",
+      "code": "07170",
+      "codesPostaux": ["07410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5574, 45.0786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5662, 45.0777]
+      },
+      "population": 288,
+      "surface": 1984.34,
+      "radius": 2.51
+    },
+    {
+      "nom": "Payzac",
+      "code": "07171",
+      "codesPostaux": ["07230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1474, 44.4543]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1523, 44.4538]
+      },
+      "population": 539,
+      "surface": 1320.95,
+      "radius": 2.05
+    },
+    {
+      "nom": "Peaugres",
+      "code": "07172",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7335, 45.2827]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7289, 45.2866]
+      },
+      "population": 2353,
+      "surface": 1445.19,
+      "radius": 2.14
+    },
+    {
+      "nom": "Péreyres",
+      "code": "07173",
+      "codesPostaux": ["07450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.259, 44.7803]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2538, 44.7769]
+      },
+      "population": 49,
+      "surface": 1264.12,
+      "radius": 2.01
+    },
+    {
+      "nom": "Peyraud",
+      "code": "07174",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7823, 45.297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7879, 45.3029]
+      },
+      "population": 517,
+      "surface": 602.73,
+      "radius": 1.39
+    },
+    {
+      "nom": "Planzolles",
+      "code": "07176",
+      "codesPostaux": ["07230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1576, 44.4845]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1529, 44.486]
+      },
+      "population": 162,
+      "surface": 534.95,
+      "radius": 1.3
+    },
+    {
+      "nom": "Plats",
+      "code": "07177",
+      "codesPostaux": ["07300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7815, 45.0167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7824, 45.0107]
+      },
+      "population": 836,
+      "surface": 1654.09,
+      "radius": 2.29
+    },
+    {
+      "nom": "Pont-de-Labeaume",
+      "code": "07178",
+      "codesPostaux": ["07380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2961, 44.6662]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2884, 44.6653]
+      },
+      "population": 572,
+      "surface": 481.39,
+      "radius": 1.24
+    },
+    {
+      "nom": "Pourchères",
+      "code": "07179",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5051, 44.7423]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5064, 44.7479]
+      },
+      "population": 137,
+      "surface": 786.41,
+      "radius": 1.58
+    },
+    {
+      "nom": "Prades",
+      "code": "07182",
+      "codesPostaux": ["07380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3115, 44.6334]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3138, 44.6382]
+      },
+      "population": 1184,
+      "surface": 999.24,
+      "radius": 1.78
+    },
+    {
+      "nom": "Pradons",
+      "code": "07183",
+      "codesPostaux": ["07120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3754, 44.4725]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3579, 44.4741]
+      },
+      "population": 537,
+      "surface": 805.91,
+      "radius": 1.6
+    },
+    {
+      "nom": "Pranles",
+      "code": "07184",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5818, 44.781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5751, 44.7722]
+      },
+      "population": 505,
+      "surface": 2913.32,
+      "radius": 3.05
+    },
+    {
+      "nom": "Préaux",
+      "code": "07185",
+      "codesPostaux": ["07290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6458, 45.1376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6633, 45.1417]
+      },
+      "population": 706,
+      "surface": 2273.49,
+      "radius": 2.69
+    },
+    {
+      "nom": "Privas",
+      "code": "07186",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5949, 44.7214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5991, 44.7352]
+      },
+      "population": 8552,
+      "surface": 1201.34,
+      "radius": 1.96
+    },
+    {
+      "nom": "Prunet",
+      "code": "07187",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.255, 44.5957]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2604, 44.5967]
+      },
+      "population": 134,
+      "surface": 890.3,
+      "radius": 1.68
+    },
+    {
+      "nom": "Quintenas",
+      "code": "07188",
+      "codesPostaux": ["07290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.702, 45.1916]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6881, 45.1895]
+      },
+      "population": 1750,
+      "surface": 1422.68,
+      "radius": 2.13
+    },
+    {
+      "nom": "Ribes",
+      "code": "07189",
+      "codesPostaux": ["07260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1969, 44.5035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2072, 44.4951]
+      },
+      "population": 328,
+      "surface": 692.37,
+      "radius": 1.48
+    },
+    {
+      "nom": "Rochecolombe",
+      "code": "07190",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4519, 44.518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4332, 44.5177]
+      },
+      "population": 222,
+      "surface": 2155.95,
+      "radius": 2.62
+    },
+    {
+      "nom": "Rochemaure",
+      "code": "07191",
+      "codesPostaux": ["07400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6972, 44.5863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7044, 44.589]
+      },
+      "population": 2250,
+      "surface": 2501.59,
+      "radius": 2.82
+    },
+    {
+      "nom": "Rochepaule",
+      "code": "07192",
+      "codesPostaux": ["07320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.46, 45.0852]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4564, 45.0768]
+      },
+      "population": 238,
+      "surface": 3352.49,
+      "radius": 3.27
+    },
+    {
+      "nom": "Rocher",
+      "code": "07193",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2779, 44.581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2857, 44.5749]
+      },
+      "population": 296,
+      "surface": 314.32,
+      "radius": 1
+    },
+    {
+      "nom": "Rochessauve",
+      "code": "07194",
+      "codesPostaux": ["07210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6063, 44.6779]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6266, 44.6791]
+      },
+      "population": 484,
+      "surface": 1744.13,
+      "radius": 2.36
+    },
+    {
+      "nom": "Rocles",
+      "code": "07196",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2085, 44.5709]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2172, 44.5634]
+      },
+      "population": 263,
+      "surface": 1670.07,
+      "radius": 2.31
+    },
+    {
+      "nom": "Roiffieux",
+      "code": "07197",
+      "codesPostaux": ["07100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6528, 45.2208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6587, 45.2277]
+      },
+      "population": 2723,
+      "surface": 1947.46,
+      "radius": 2.49
+    },
+    {
+      "nom": "Rompon",
+      "code": "07198",
+      "codesPostaux": ["07250", "07800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7285, 44.768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7218, 44.762]
+      },
+      "population": 1141,
+      "surface": 2236.18,
+      "radius": 2.67
+    },
+    {
+      "nom": "Rosières",
+      "code": "07199",
+      "codesPostaux": ["07260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2607, 44.4878]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2573, 44.4812]
+      },
+      "population": 1307,
+      "surface": 1645.7,
+      "radius": 2.29
+    },
+    {
+      "nom": "Ruoms",
+      "code": "07201",
+      "codesPostaux": ["07120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.347, 44.4506]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3416, 44.4525]
+      },
+      "population": 2286,
+      "surface": 1240.51,
+      "radius": 1.99
+    },
+    {
+      "nom": "Sablières",
+      "code": "07202",
+      "codesPostaux": ["07260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0675, 44.5451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0743, 44.5321]
+      },
+      "population": 166,
+      "surface": 3836.95,
+      "radius": 3.49
+    },
+    {
+      "nom": "Sagnes-et-Goudoulet",
+      "code": "07203",
+      "codesPostaux": ["07450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2169, 44.8027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2259, 44.7903]
+      },
+      "population": 119,
+      "surface": 2499.88,
+      "radius": 2.82
+    },
+    {
+      "nom": "Saint-Agrève",
+      "code": "07204",
+      "codesPostaux": ["07320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4188, 44.9963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3963, 45.0095]
+      },
+      "population": 2300,
+      "surface": 4851.96,
+      "radius": 3.93
+    },
+    {
+      "nom": "Saint-Alban-Auriolles",
+      "code": "07207",
+      "codesPostaux": ["07120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2965, 44.4324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2996, 44.426]
+      },
+      "population": 1101,
+      "surface": 1740.29,
+      "radius": 2.35
+    },
+    {
+      "nom": "Saint-Alban-d'Ay",
+      "code": "07205",
+      "codesPostaux": ["07790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6318, 45.1862]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6372, 45.1872]
+      },
+      "population": 1396,
+      "surface": 2375.51,
+      "radius": 2.75
+    },
+    {
+      "nom": "Saint-Alban-en-Montagne",
+      "code": "07206",
+      "codesPostaux": ["07590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9172, 44.7103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9106, 44.7067]
+      },
+      "population": 65,
+      "surface": 1409.59,
+      "radius": 2.12
+    },
+    {
+      "nom": "Saint-Andéol-de-Berg",
+      "code": "07208",
+      "codesPostaux": ["07170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5336, 44.53]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5283, 44.5277]
+      },
+      "population": 130,
+      "surface": 1580.15,
+      "radius": 2.24
+    },
+    {
+      "nom": "Saint-Andéol-de-Fourchades",
+      "code": "07209",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2894, 44.8434]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2969, 44.8478]
+      },
+      "population": 53,
+      "surface": 1643.59,
+      "radius": 2.29
+    },
+    {
+      "nom": "Saint-Andéol-de-Vals",
+      "code": "07210",
+      "codesPostaux": ["07600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4015, 44.6976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4016, 44.6912]
+      },
+      "population": 529,
+      "surface": 1663.62,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-André-de-Cruzières",
+      "code": "07211",
+      "codesPostaux": ["07460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2147, 44.3158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2151, 44.3133]
+      },
+      "population": 464,
+      "surface": 2035.42,
+      "radius": 2.55
+    },
+    {
+      "nom": "Saint-André-en-Vivarais",
+      "code": "07212",
+      "codesPostaux": ["07690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4162, 45.1131]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4127, 45.1204]
+      },
+      "population": 211,
+      "surface": 2068.7,
+      "radius": 2.57
+    },
+    {
+      "nom": "Saint-André-Lachamp",
+      "code": "07213",
+      "codesPostaux": ["07230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.155, 44.5057]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.165, 44.5051]
+      },
+      "population": 166,
+      "surface": 1668.3,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-Apollinaire-de-Rias",
+      "code": "07214",
+      "codesPostaux": ["07240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5843, 44.917]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5923, 44.9202]
+      },
+      "population": 199,
+      "surface": 854.45,
+      "radius": 1.65
+    },
+    {
+      "nom": "Saint-Barthélemy-Grozon",
+      "code": "07216",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6507, 44.9618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6319, 44.9636]
+      },
+      "population": 500,
+      "surface": 1977.95,
+      "radius": 2.51
+    },
+    {
+      "nom": "Saint-Barthélemy-le-Meil",
+      "code": "07215",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4823, 44.8823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4985, 44.8849]
+      },
+      "population": 203,
+      "surface": 737.57,
+      "radius": 1.53
+    },
+    {
+      "nom": "Saint-Barthélemy-le-Plain",
+      "code": "07217",
+      "codesPostaux": ["07300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7455, 45.0493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7463, 45.053]
+      },
+      "population": 859,
+      "surface": 1908.2,
+      "radius": 2.46
+    },
+    {
+      "nom": "Saint-Basile",
+      "code": "07218",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5618, 44.9479]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5712, 44.9567]
+      },
+      "population": 351,
+      "surface": 1817.71,
+      "radius": 2.41
+    },
+    {
+      "nom": "Saint-Bauzile",
+      "code": "07219",
+      "codesPostaux": ["07210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6662, 44.6708]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6738, 44.6763]
+      },
+      "population": 316,
+      "surface": 709.19,
+      "radius": 1.5
+    },
+    {
+      "nom": "Saint-Christol",
+      "code": "07220",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4366, 44.8702]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.442, 44.8678]
+      },
+      "population": 100,
+      "surface": 1477.05,
+      "radius": 2.17
+    },
+    {
+      "nom": "Saint-Cierge-la-Serre",
+      "code": "07221",
+      "codesPostaux": ["07800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6792, 44.792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6862, 44.7929]
+      },
+      "population": 246,
+      "surface": 1589,
+      "radius": 2.25
+    },
+    {
+      "nom": "Saint-Cierge-sous-le-Cheylard",
+      "code": "07222",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.451, 44.9248]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4497, 44.9227]
+      },
+      "population": 217,
+      "surface": 601.01,
+      "radius": 1.38
+    },
+    {
+      "nom": "Saint-Cirgues-de-Prades",
+      "code": "07223",
+      "codesPostaux": ["07380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2729, 44.6214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2713, 44.623]
+      },
+      "population": 140,
+      "surface": 347.25,
+      "radius": 1.05
+    },
+    {
+      "nom": "Saint-Cirgues-en-Montagne",
+      "code": "07224",
+      "codesPostaux": ["07510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1012, 44.7709]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.0918, 44.7555]
+      },
+      "population": 215,
+      "surface": 2197.78,
+      "radius": 2.64
+    },
+    {
+      "nom": "Saint-Clair",
+      "code": "07225",
+      "codesPostaux": ["07430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6855, 45.2764]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6802, 45.2783]
+      },
+      "population": 1292,
+      "surface": 598.18,
+      "radius": 1.38
+    },
+    {
+      "nom": "Saint-Clément",
+      "code": "07226",
+      "codesPostaux": ["07310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2623, 44.9502]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2648, 44.9526]
+      },
+      "population": 93,
+      "surface": 1983.71,
+      "radius": 2.51
+    },
+    {
+      "nom": "Saint-Cyr",
+      "code": "07227",
+      "codesPostaux": ["07430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7379, 45.2505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7342, 45.2513]
+      },
+      "population": 1430,
+      "surface": 830.16,
+      "radius": 1.63
+    },
+    {
+      "nom": "Saint-Désirat",
+      "code": "07228",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7837, 45.2568]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7852, 45.2544]
+      },
+      "population": 876,
+      "surface": 744.46,
+      "radius": 1.54
+    },
+    {
+      "nom": "Saint-Didier-sous-Aubenas",
+      "code": "07229",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4202, 44.6101]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4153, 44.6074]
+      },
+      "population": 924,
+      "surface": 275.78,
+      "radius": 0.94
+    },
+    {
+      "nom": "Saint-Étienne-de-Boulogne",
+      "code": "07230",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4709, 44.7015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4582, 44.7011]
+      },
+      "population": 404,
+      "surface": 1513.93,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Étienne-de-Fontbellon",
+      "code": "07231",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.378, 44.5962]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3831, 44.5996]
+      },
+      "population": 2894,
+      "surface": 962.79,
+      "radius": 1.75
+    },
+    {
+      "nom": "Saint-Étienne-de-Lugdarès",
+      "code": "07232",
+      "codesPostaux": ["07590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.974, 44.6468]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9527, 44.6508]
+      },
+      "population": 407,
+      "surface": 5083.54,
+      "radius": 4.02
+    },
+    {
+      "nom": "Saint-Étienne-de-Serre",
+      "code": "07233",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5216, 44.8026]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5362, 44.8008]
+      },
+      "population": 217,
+      "surface": 1661.64,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-Étienne-de-Valoux",
+      "code": "07234",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7754, 45.2409]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7804, 45.2463]
+      },
+      "population": 274,
+      "surface": 239.69,
+      "radius": 0.87
+    },
+    {
+      "nom": "Saint-Félicien",
+      "code": "07236",
+      "codesPostaux": ["07410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6064, 45.0798]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6276, 45.0866]
+      },
+      "population": 1114,
+      "surface": 2149.14,
+      "radius": 2.62
+    },
+    {
+      "nom": "Saint-Fortunat-sur-Eyrieux",
+      "code": "07237",
+      "codesPostaux": ["07360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.684, 44.8385]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.673, 44.8287]
+      },
+      "population": 806,
+      "surface": 2307.62,
+      "radius": 2.71
+    },
+    {
+      "nom": "Saint-Genest-de-Beauzon",
+      "code": "07238",
+      "codesPostaux": ["07230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1951, 44.4459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.187, 44.4414]
+      },
+      "population": 335,
+      "surface": 535.51,
+      "radius": 1.31
+    },
+    {
+      "nom": "Saint-Genest-Lachamp",
+      "code": "07239",
+      "codesPostaux": ["07160", "07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4249, 44.8458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4228, 44.8469]
+      },
+      "population": 112,
+      "surface": 2324.61,
+      "radius": 2.72
+    },
+    {
+      "nom": "Saint-Georges-les-Bains",
+      "code": "07240",
+      "codesPostaux": ["07800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8088, 44.8569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8086, 44.8597]
+      },
+      "population": 2415,
+      "surface": 1400.11,
+      "radius": 2.11
+    },
+    {
+      "nom": "Saint-Germain",
+      "code": "07241",
+      "codesPostaux": ["07170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.448, 44.5549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4482, 44.5533]
+      },
+      "population": 704,
+      "surface": 972.51,
+      "radius": 1.76
+    },
+    {
+      "nom": "Saint-Gineys-en-Coiron",
+      "code": "07242",
+      "codesPostaux": ["07580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5402, 44.6346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5341, 44.6335]
+      },
+      "population": 119,
+      "surface": 1356.7,
+      "radius": 2.08
+    },
+    {
+      "nom": "Saint-Jacques-d'Atticieux",
+      "code": "07243",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6684, 45.333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6664, 45.3341]
+      },
+      "population": 279,
+      "surface": 500.89,
+      "radius": 1.26
+    },
+    {
+      "nom": "Saint-Jean-Chambre",
+      "code": "07244",
+      "codesPostaux": ["07240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5604, 44.9095]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5644, 44.9036]
+      },
+      "population": 252,
+      "surface": 1544.45,
+      "radius": 2.22
+    },
+    {
+      "nom": "Saint-Jean-de-Muzols",
+      "code": "07245",
+      "codesPostaux": ["07300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8001, 45.0775]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8131, 45.0835]
+      },
+      "population": 2499,
+      "surface": 1088.04,
+      "radius": 1.86
+    },
+    {
+      "nom": "Saint-Jean-le-Centenier",
+      "code": "07247",
+      "codesPostaux": ["07580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5358, 44.586]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5352, 44.5916]
+      },
+      "population": 868,
+      "surface": 1497.44,
+      "radius": 2.18
+    },
+    {
+      "nom": "Saint-Jean-Roure",
+      "code": "07248",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4183, 44.9535]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.429, 44.9421]
+      },
+      "population": 264,
+      "surface": 2397.41,
+      "radius": 2.76
+    },
+    {
+      "nom": "Saint-Jeure-d'Andaure",
+      "code": "07249",
+      "codesPostaux": ["07320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4673, 45.0472]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4577, 45.0466]
+      },
+      "population": 101,
+      "surface": 1343.72,
+      "radius": 2.07
+    },
+    {
+      "nom": "Saint-Jeure-d'Ay",
+      "code": "07250",
+      "codesPostaux": ["07290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7123, 45.1453]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7065, 45.1461]
+      },
+      "population": 497,
+      "surface": 705.36,
+      "radius": 1.5
+    },
+    {
+      "nom": "Saint-Joseph-des-Bancs",
+      "code": "07251",
+      "codesPostaux": ["07530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4147, 44.7515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4121, 44.7362]
+      },
+      "population": 191,
+      "surface": 1292.03,
+      "radius": 2.03
+    },
+    {
+      "nom": "Saint-Julien-d'Intres",
+      "code": "07103",
+      "codesPostaux": ["07310", "07320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3415, 44.9792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3623, 44.9823]
+      },
+      "population": 305,
+      "surface": 2128.22,
+      "radius": 2.6
+    },
+    {
+      "nom": "Saint-Julien-du-Gua",
+      "code": "07253",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4419, 44.7702]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.445, 44.768]
+      },
+      "population": 169,
+      "surface": 1694.95,
+      "radius": 2.32
+    },
+    {
+      "nom": "Saint-Julien-du-Serre",
+      "code": "07254",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.402, 44.6603]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4102, 44.6575]
+      },
+      "population": 874,
+      "surface": 972.59,
+      "radius": 1.76
+    },
+    {
+      "nom": "Saint-Julien-en-Saint-Alban",
+      "code": "07255",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.69, 44.7516]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6976, 44.7544]
+      },
+      "population": 1464,
+      "surface": 1043.17,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-Julien-le-Roux",
+      "code": "07257",
+      "codesPostaux": ["07240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6773, 44.8663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6776, 44.872]
+      },
+      "population": 125,
+      "surface": 849.96,
+      "radius": 1.64
+    },
+    {
+      "nom": "Saint-Julien-Vocance",
+      "code": "07258",
+      "codesPostaux": ["07690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4897, 45.1676]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5027, 45.1749]
+      },
+      "population": 222,
+      "surface": 2599.51,
+      "radius": 2.88
+    },
+    {
+      "nom": "Saint-Just-d'Ardèche",
+      "code": "07259",
+      "codesPostaux": ["07700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6242, 44.2917]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6134, 44.3039]
+      },
+      "population": 1611,
+      "surface": 1036.85,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-Lager-Bressac",
+      "code": "07260",
+      "codesPostaux": ["07210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7196, 44.6916]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7088, 44.6927]
+      },
+      "population": 959,
+      "surface": 1600.79,
+      "radius": 2.26
+    },
+    {
+      "nom": "Saint-Laurent-du-Pape",
+      "code": "07261",
+      "codesPostaux": ["07800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7475, 44.8234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7633, 44.8224]
+      },
+      "population": 1617,
+      "surface": 2047.42,
+      "radius": 2.55
+    },
+    {
+      "nom": "Saint-Laurent-les-Bains-Laval-d'Aurelle",
+      "code": "07262",
+      "codesPostaux": ["07590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9592, 44.5906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.9707, 44.6067]
+      },
+      "population": 184,
+      "surface": 3569.87,
+      "radius": 3.37
+    },
+    {
+      "nom": "Saint-Laurent-sous-Coiron",
+      "code": "07263",
+      "codesPostaux": ["07170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4838, 44.6726]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4816, 44.6375]
+      },
+      "population": 120,
+      "surface": 1559.22,
+      "radius": 2.23
+    },
+    {
+      "nom": "Saint-Marcel-d'Ardèche",
+      "code": "07264",
+      "codesPostaux": ["07700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6007, 44.3301]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6173, 44.3275]
+      },
+      "population": 2357,
+      "surface": 3607.86,
+      "radius": 3.39
+    },
+    {
+      "nom": "Saint-Marcel-lès-Annonay",
+      "code": "07265",
+      "codesPostaux": ["07100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.634, 45.2909]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6266, 45.2852]
+      },
+      "population": 1378,
+      "surface": 1703.78,
+      "radius": 2.33
+    },
+    {
+      "nom": "Saint-Martial",
+      "code": "07267",
+      "codesPostaux": ["07310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2507, 44.8573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2749, 44.8654]
+      },
+      "population": 271,
+      "surface": 3638.04,
+      "radius": 3.4
+    },
+    {
+      "nom": "Saint-Martin-d'Ardèche",
+      "code": "07268",
+      "codesPostaux": ["07700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5722, 44.3073]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5659, 44.3021]
+      },
+      "population": 941,
+      "surface": 565.31,
+      "radius": 1.34
+    },
+    {
+      "nom": "Saint-Martin-de-Valamas",
+      "code": "07269",
+      "codesPostaux": ["07310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3696, 44.9368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3686, 44.9371]
+      },
+      "population": 1084,
+      "surface": 2009.39,
+      "radius": 2.53
+    },
+    {
+      "nom": "Saint-Martin-sur-Lavezon",
+      "code": "07270",
+      "codesPostaux": ["07400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6526, 44.6383]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6514, 44.6378]
+      },
+      "population": 430,
+      "surface": 2362.92,
+      "radius": 2.74
+    },
+    {
+      "nom": "Saint-Maurice-d'Ardèche",
+      "code": "07272",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4015, 44.5198]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3998, 44.5216]
+      },
+      "population": 373,
+      "surface": 526.23,
+      "radius": 1.29
+    },
+    {
+      "nom": "Saint-Maurice-d'Ibie",
+      "code": "07273",
+      "codesPostaux": ["07170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4861, 44.4782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4828, 44.5008]
+      },
+      "population": 213,
+      "surface": 2357.63,
+      "radius": 2.74
+    },
+    {
+      "nom": "Saint-Maurice-en-Chalencon",
+      "code": "07274",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5812, 44.8548]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5894, 44.8588]
+      },
+      "population": 200,
+      "surface": 770.61,
+      "radius": 1.57
+    },
+    {
+      "nom": "Saint-Mélany",
+      "code": "07275",
+      "codesPostaux": ["07260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1276, 44.5391]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1177, 44.53]
+      },
+      "population": 107,
+      "surface": 1062.49,
+      "radius": 1.84
+    },
+    {
+      "nom": "Saint-Michel-d'Aurance",
+      "code": "07276",
+      "codesPostaux": ["07160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4587, 44.8995]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.46, 44.902]
+      },
+      "population": 262,
+      "surface": 805.81,
+      "radius": 1.6
+    },
+    {
+      "nom": "Saint-Michel-de-Boulogne",
+      "code": "07277",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4323, 44.6993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4335, 44.6949]
+      },
+      "population": 148,
+      "surface": 747.59,
+      "radius": 1.54
+    },
+    {
+      "nom": "Saint-Michel-de-Chabrillanoux",
+      "code": "07278",
+      "codesPostaux": ["07360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6116, 44.8365]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6024, 44.8382]
+      },
+      "population": 405,
+      "surface": 1180.27,
+      "radius": 1.94
+    },
+    {
+      "nom": "Saint-Montan",
+      "code": "07279",
+      "codesPostaux": ["07220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6185, 44.4379]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6271, 44.4379]
+      },
+      "population": 1955,
+      "surface": 3359.81,
+      "radius": 3.27
+    },
+    {
+      "nom": "Saint-Paul-le-Jeune",
+      "code": "07280",
+      "codesPostaux": ["07460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1573, 44.3332]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1506, 44.3396]
+      },
+      "population": 967,
+      "surface": 1459.15,
+      "radius": 2.16
+    },
+    {
+      "nom": "Saint-Péray",
+      "code": "07281",
+      "codesPostaux": ["07130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8314, 44.9394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8406, 44.9445]
+      },
+      "population": 7591,
+      "surface": 2381.47,
+      "radius": 2.75
+    },
+    {
+      "nom": "Saint-Pierre-de-Colombier",
+      "code": "07282",
+      "codesPostaux": ["07450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2651, 44.7102]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2631, 44.7048]
+      },
+      "population": 443,
+      "surface": 947.1,
+      "radius": 1.74
+    },
+    {
+      "nom": "Saint-Pierre-la-Roche",
+      "code": "07283",
+      "codesPostaux": ["07400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6188, 44.6553]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6213, 44.6494]
+      },
+      "population": 63,
+      "surface": 998.43,
+      "radius": 1.78
+    },
+    {
+      "nom": "Saint-Pierre-Saint-Jean",
+      "code": "07284",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.0971, 44.4785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1084, 44.4579]
+      },
+      "population": 190,
+      "surface": 2372.22,
+      "radius": 2.75
+    },
+    {
+      "nom": "Saint-Pierre-sur-Doux",
+      "code": "07285",
+      "codesPostaux": ["07520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4848, 45.126]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4649, 45.1202]
+      },
+      "population": 110,
+      "surface": 2162.7,
+      "radius": 2.62
+    },
+    {
+      "nom": "Saint-Pierreville",
+      "code": "07286",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4845, 44.8242]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4882, 44.8152]
+      },
+      "population": 515,
+      "surface": 2052.33,
+      "radius": 2.56
+    },
+    {
+      "nom": "Saint-Pons",
+      "code": "07287",
+      "codesPostaux": ["07580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5725, 44.5985]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5765, 44.5937]
+      },
+      "population": 302,
+      "surface": 1668.39,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-Priest",
+      "code": "07288",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5389, 44.7148]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.546, 44.7167]
+      },
+      "population": 1337,
+      "surface": 1980.34,
+      "radius": 2.51
+    },
+    {
+      "nom": "Saint-Privat",
+      "code": "07289",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4239, 44.6284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4102, 44.6292]
+      },
+      "population": 1664,
+      "surface": 623.57,
+      "radius": 1.41
+    },
+    {
+      "nom": "Saint-Prix",
+      "code": "07290",
+      "codesPostaux": ["07270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.503, 44.9506]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5015, 44.9431]
+      },
+      "population": 273,
+      "surface": 1524.28,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Remèze",
+      "code": "07291",
+      "codesPostaux": ["07700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4979, 44.3768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5011, 44.3917]
+      },
+      "population": 848,
+      "surface": 4363.2,
+      "radius": 3.73
+    },
+    {
+      "nom": "Saint-Romain-d'Ay",
+      "code": "07292",
+      "codesPostaux": ["07290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6804, 45.1662]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6625, 45.1637]
+      },
+      "population": 1168,
+      "surface": 955.07,
+      "radius": 1.74
+    },
+    {
+      "nom": "Saint-Romain-de-Lerps",
+      "code": "07293",
+      "codesPostaux": ["07130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7952, 44.9768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7972, 44.9795]
+      },
+      "population": 989,
+      "surface": 1426.82,
+      "radius": 2.13
+    },
+    {
+      "nom": "Saint-Sauveur-de-Cruzières",
+      "code": "07294",
+      "codesPostaux": ["07460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2535, 44.295]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.253, 44.2992]
+      },
+      "population": 566,
+      "surface": 2521.62,
+      "radius": 2.83
+    },
+    {
+      "nom": "Saint-Sauveur-de-Montagut",
+      "code": "07295",
+      "codesPostaux": ["07190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5772, 44.8199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5802, 44.8215]
+      },
+      "population": 1112,
+      "surface": 1170.36,
+      "radius": 1.93
+    },
+    {
+      "nom": "Saint-Sernin",
+      "code": "07296",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3762, 44.5755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3933, 44.5716]
+      },
+      "population": 1842,
+      "surface": 582.85,
+      "radius": 1.36
+    },
+    {
+      "nom": "Saint-Sylvestre",
+      "code": "07297",
+      "codesPostaux": ["07440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7481, 44.9865]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7464, 44.9891]
+      },
+      "population": 511,
+      "surface": 1542.94,
+      "radius": 2.22
+    },
+    {
+      "nom": "Saint-Symphorien-de-Mahun",
+      "code": "07299",
+      "codesPostaux": ["07290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5534, 45.1563]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5603, 45.1639]
+      },
+      "population": 117,
+      "surface": 1957.91,
+      "radius": 2.5
+    },
+    {
+      "nom": "Saint-Symphorien-sous-Chomérac",
+      "code": "07298",
+      "codesPostaux": ["07210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7073, 44.7301]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7044, 44.7194]
+      },
+      "population": 855,
+      "surface": 798.06,
+      "radius": 1.59
+    },
+    {
+      "nom": "Saint-Thomé",
+      "code": "07300",
+      "codesPostaux": ["07220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6184, 44.5037]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6234, 44.5012]
+      },
+      "population": 475,
+      "surface": 1979.84,
+      "radius": 2.51
+    },
+    {
+      "nom": "Saint-Victor",
+      "code": "07301",
+      "codesPostaux": ["07410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6867, 45.104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6738, 45.1004]
+      },
+      "population": 961,
+      "surface": 3207.11,
+      "radius": 3.2
+    },
+    {
+      "nom": "Saint-Vincent-de-Barrès",
+      "code": "07302",
+      "codesPostaux": ["07210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7033, 44.6583]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7086, 44.6606]
+      },
+      "population": 827,
+      "surface": 1884.99,
+      "radius": 2.45
+    },
+    {
+      "nom": "Saint-Vincent-de-Durfort",
+      "code": "07303",
+      "codesPostaux": ["07360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6373, 44.7912]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6437, 44.8048]
+      },
+      "population": 272,
+      "surface": 1283.82,
+      "radius": 2.02
+    },
+    {
+      "nom": "Sainte-Eulalie",
+      "code": "07235",
+      "codesPostaux": ["07510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1918, 44.8297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1894, 44.8095]
+      },
+      "population": 209,
+      "surface": 2235.43,
+      "radius": 2.67
+    },
+    {
+      "nom": "Sainte-Marguerite-Lafigère",
+      "code": "07266",
+      "codesPostaux": ["07140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.9975, 44.4866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.988, 44.4776]
+      },
+      "population": 116,
+      "surface": 981.31,
+      "radius": 1.77
+    },
+    {
+      "nom": "Salavas",
+      "code": "07304",
+      "codesPostaux": ["07150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3652, 44.3882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3778, 44.395]
+      },
+      "population": 731,
+      "surface": 1717.15,
+      "radius": 2.34
+    },
+    {
+      "nom": "Sampzon",
+      "code": "07306",
+      "codesPostaux": ["07120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3342, 44.4119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3437, 44.4248]
+      },
+      "population": 244,
+      "surface": 843.45,
+      "radius": 1.64
+    },
+    {
+      "nom": "Sanilhac",
+      "code": "07307",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2343, 44.5309]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2506, 44.536]
+      },
+      "population": 444,
+      "surface": 2107.65,
+      "radius": 2.59
+    },
+    {
+      "nom": "Sarras",
+      "code": "07308",
+      "codesPostaux": ["07370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7775, 45.1866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8, 45.1868]
+      },
+      "population": 2232,
+      "surface": 1159.43,
+      "radius": 1.92
+    },
+    {
+      "nom": "Satillieu",
+      "code": "07309",
+      "codesPostaux": ["07290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5925, 45.142]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.614, 45.1506]
+      },
+      "population": 1502,
+      "surface": 3337.9,
+      "radius": 3.26
+    },
+    {
+      "nom": "Savas",
+      "code": "07310",
+      "codesPostaux": ["07430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6706, 45.3001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6927, 45.2971]
+      },
+      "population": 896,
+      "surface": 1255.25,
+      "radius": 2
+    },
+    {
+      "nom": "Sceautres",
+      "code": "07311",
+      "codesPostaux": ["07400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.609, 44.6158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6066, 44.6164]
+      },
+      "population": 147,
+      "surface": 1457.99,
+      "radius": 2.15
+    },
+    {
+      "nom": "Sécheras",
+      "code": "07312",
+      "codesPostaux": ["07610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7759, 45.1296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7703, 45.1309]
+      },
+      "population": 517,
+      "surface": 738.16,
+      "radius": 1.53
+    },
+    {
+      "nom": "Serrières",
+      "code": "07313",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7654, 45.3178]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7628, 45.32]
+      },
+      "population": 1074,
+      "surface": 404.11,
+      "radius": 1.13
+    },
+    {
+      "nom": "Silhac",
+      "code": "07314",
+      "codesPostaux": ["07240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6089, 44.8738]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6051, 44.8807]
+      },
+      "population": 399,
+      "surface": 2289.36,
+      "radius": 2.7
+    },
+    {
+      "nom": "Soyons",
+      "code": "07316",
+      "codesPostaux": ["07130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8504, 44.8919]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8494, 44.8905]
+      },
+      "population": 2298,
+      "surface": 803.4,
+      "radius": 1.6
+    },
+    {
+      "nom": "Talencieux",
+      "code": "07317",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7724, 45.2199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7782, 45.2214]
+      },
+      "population": 1116,
+      "surface": 722.31,
+      "radius": 1.52
+    },
+    {
+      "nom": "Tauriers",
+      "code": "07318",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.271, 44.5518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2808, 44.5523]
+      },
+      "population": 203,
+      "surface": 450.96,
+      "radius": 1.2
+    },
+    {
+      "nom": "Thorrenc",
+      "code": "07321",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7606, 45.2327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7618, 45.2362]
+      },
+      "population": 322,
+      "surface": 371.8,
+      "radius": 1.09
+    },
+    {
+      "nom": "Thueyts",
+      "code": "07322",
+      "codesPostaux": ["07330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2107, 44.6727]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.2219, 44.6757]
+      },
+      "population": 1208,
+      "surface": 2143.31,
+      "radius": 2.61
+    },
+    {
+      "nom": "Toulaud",
+      "code": "07323",
+      "codesPostaux": ["07130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7942, 44.9009]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8195, 44.8971]
+      },
+      "population": 1701,
+      "surface": 3529.1,
+      "radius": 3.35
+    },
+    {
+      "nom": "Tournon-sur-Rhône",
+      "code": "07324",
+      "codesPostaux": ["07300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8156, 45.0534]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8322, 45.068]
+      },
+      "population": 11302,
+      "surface": 2144.22,
+      "radius": 2.61
+    },
+    {
+      "nom": "Ucel",
+      "code": "07325",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3867, 44.6412]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.397, 44.6266]
+      },
+      "population": 2031,
+      "surface": 559.23,
+      "radius": 1.33
+    },
+    {
+      "nom": "Usclades-et-Rieutord",
+      "code": "07326",
+      "codesPostaux": ["07510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1673, 44.7722]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1582, 44.7757]
+      },
+      "population": 110,
+      "surface": 1256.89,
+      "radius": 2
+    },
+    {
+      "nom": "Uzer",
+      "code": "07327",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3287, 44.5177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.325, 44.519]
+      },
+      "population": 418,
+      "surface": 347.37,
+      "radius": 1.05
+    },
+    {
+      "nom": "Vagnas",
+      "code": "07328",
+      "codesPostaux": ["07150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3466, 44.3627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3662, 44.3454]
+      },
+      "population": 628,
+      "surface": 2391.89,
+      "radius": 2.76
+    },
+    {
+      "nom": "Valgorge",
+      "code": "07329",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.1118, 44.5918]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.1233, 44.5895]
+      },
+      "population": 415,
+      "surface": 2643.76,
+      "radius": 2.9
+    },
+    {
+      "nom": "Vallées-d'Antraigues-Asperjoc",
+      "code": "07011",
+      "codesPostaux": ["07530", "07600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3463, 44.7302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3566, 44.7187]
+      },
+      "population": 852,
+      "surface": 2224.16,
+      "radius": 2.66
+    },
+    {
+      "nom": "Vallon-Pont-d'Arc",
+      "code": "07330",
+      "codesPostaux": ["07150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4024, 44.3982]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3954, 44.4074]
+      },
+      "population": 2469,
+      "surface": 2910.97,
+      "radius": 3.04
+    },
+    {
+      "nom": "Vals-les-Bains",
+      "code": "07331",
+      "codesPostaux": ["07600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3426, 44.666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3649, 44.6651]
+      },
+      "population": 3479,
+      "surface": 1948.15,
+      "radius": 2.49
+    },
+    {
+      "nom": "Valvignères",
+      "code": "07332",
+      "codesPostaux": ["07400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5538, 44.505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5748, 44.5004]
+      },
+      "population": 438,
+      "surface": 3032.56,
+      "radius": 3.11
+    },
+    {
+      "nom": "Vanosc",
+      "code": "07333",
+      "codesPostaux": ["07690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5355, 45.2244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5502, 45.2241]
+      },
+      "population": 934,
+      "surface": 2634,
+      "radius": 2.9
+    },
+    {
+      "nom": "Vaudevant",
+      "code": "07335",
+      "codesPostaux": ["07410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6074, 45.1097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6184, 45.1037]
+      },
+      "population": 218,
+      "surface": 1269.22,
+      "radius": 2.01
+    },
+    {
+      "nom": "Vernon",
+      "code": "07336",
+      "codesPostaux": ["07260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.2251, 44.5074]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.221, 44.5076]
+      },
+      "population": 223,
+      "surface": 380.55,
+      "radius": 1.1
+    },
+    {
+      "nom": "Vernosc-lès-Annonay",
+      "code": "07337",
+      "codesPostaux": ["07430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7254, 45.224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7144, 45.2189]
+      },
+      "population": 2670,
+      "surface": 1658.06,
+      "radius": 2.3
+    },
+    {
+      "nom": "Vernoux-en-Vivarais",
+      "code": "07338",
+      "codesPostaux": ["07240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6443, 44.9069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6462, 44.896]
+      },
+      "population": 1985,
+      "surface": 3109.77,
+      "radius": 3.15
+    },
+    {
+      "nom": "Vesseaux",
+      "code": "07339",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.4438, 44.6531]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4424, 44.652]
+      },
+      "population": 2048,
+      "surface": 1894.27,
+      "radius": 2.46
+    },
+    {
+      "nom": "Veyras",
+      "code": "07340",
+      "codesPostaux": ["07000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5541, 44.7346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5626, 44.7355]
+      },
+      "population": 1504,
+      "surface": 779.61,
+      "radius": 1.58
+    },
+    {
+      "nom": "Villeneuve-de-Berg",
+      "code": "07341",
+      "codesPostaux": ["07170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5119, 44.5455]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.501, 44.5568]
+      },
+      "population": 3031,
+      "surface": 2491.29,
+      "radius": 2.82
+    },
+    {
+      "nom": "Villevocance",
+      "code": "07342",
+      "codesPostaux": ["07690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5952, 45.2253]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5905, 45.2263]
+      },
+      "population": 1181,
+      "surface": 950.56,
+      "radius": 1.74
+    },
+    {
+      "nom": "Vinezac",
+      "code": "07343",
+      "codesPostaux": ["07110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.3332, 44.5498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.3247, 44.5398]
+      },
+      "population": 1388,
+      "surface": 1105.96,
+      "radius": 1.88
+    },
+    {
+      "nom": "Vinzieux",
+      "code": "07344",
+      "codesPostaux": ["07340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7044, 45.3291]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.701, 45.3275]
+      },
+      "population": 520,
+      "surface": 695.99,
+      "radius": 1.49
+    },
+    {
+      "nom": "Vion",
+      "code": "07345",
+      "codesPostaux": ["07610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7977, 45.1152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8053, 45.11]
+      },
+      "population": 932,
+      "surface": 632.07,
+      "radius": 1.42
+    },
+    {
+      "nom": "Viviers",
+      "code": "07346",
+      "codesPostaux": ["07220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6616, 44.4816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6911, 44.4803]
+      },
+      "population": 3659,
+      "surface": 3383.44,
+      "radius": 3.28
+    },
+    {
+      "nom": "Vocance",
+      "code": "07347",
+      "codesPostaux": ["07690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.5616, 45.1947]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.5541, 45.2019]
+      },
+      "population": 615,
+      "surface": 1754.63,
+      "radius": 2.36
+    },
+    {
+      "nom": "Vogüé",
+      "code": "07348",
+      "codesPostaux": ["07200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.411, 44.5562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.4134, 44.551]
+      },
+      "population": 1035,
+      "surface": 1192.02,
+      "radius": 1.95
+    }
+  ],
+  "postalCodes": {
+    "48250": {
+      "communes": ["Laveyrune"],
+      "communeCount": 1,
+      "center": [3.895, 44.6316],
+      "coverageRadius": 2.07,
+      "totalPopulation": 109,
+      "totalSurface": 1352
+    },
+    "07160": {
+      "communes": [
+        "Accons",
+        "Le Chambon",
+        "Le Cheylard",
+        "Dornas",
+        "Jaunac",
+        "Mariac",
+        "Belsentes",
+        "Saint-Andéol-de-Fourchades",
+        "Saint-Barthélemy-le-Meil",
+        "Saint-Christol",
+        "Saint-Cierge-sous-le-Cheylard",
+        "Saint-Genest-Lachamp",
+        "Saint-Jean-Roure",
+        "Saint-Michel-d'Aurance"
+      ],
+      "communeCount": 14,
+      "center": [4.4223, 44.902],
+      "coverageRadius": 11.9,
+      "boundingBox": {
+        "minLat": 44.8358,
+        "maxLat": 44.9421,
+        "minLon": 4.2969,
+        "maxLon": 4.4985
+      },
+      "totalPopulation": 5850,
+      "totalSurface": 19780
+    },
+    "07200": {
+      "communes": [
+        "Ailhon",
+        "Aubenas",
+        "Fons",
+        "Labégude",
+        "Lachapelle-sous-Aubenas",
+        "Lanas",
+        "Lentillères",
+        "Mercuer",
+        "Rochecolombe",
+        "Saint-Didier-sous-Aubenas",
+        "Saint-Étienne-de-Boulogne",
+        "Saint-Étienne-de-Fontbellon",
+        "Saint-Julien-du-Serre",
+        "Saint-Maurice-d'Ardèche",
+        "Saint-Michel-de-Boulogne",
+        "Saint-Privat",
+        "Saint-Sernin",
+        "Ucel",
+        "Vesseaux",
+        "Vogüé"
+      ],
+      "communeCount": 20,
+      "center": [4.3924, 44.6133],
+      "coverageRadius": 11.2,
+      "boundingBox": {
+        "minLat": 44.5177,
+        "maxLat": 44.7011,
+        "minLon": 4.3135,
+        "maxLon": 4.4582
+      },
+      "totalPopulation": 33015,
+      "totalSurface": 18678
+    },
+    "07530": {
+      "communes": [
+        "Aizac",
+        "Vallées-d'Antraigues-Asperjoc",
+        "Genestelle",
+        "Lachamp-Raphaël",
+        "Laviolle",
+        "Mézilhac",
+        "Saint-Joseph-des-Bancs"
+      ],
+      "communeCount": 7,
+      "center": [4.3615, 44.7312],
+      "coverageRadius": 10.4,
+      "boundingBox": {
+        "minLat": 44.7146,
+        "maxLat": 44.8095,
+        "minLon": 4.2904,
+        "maxLon": 4.4121
+      },
+      "totalPopulation": 1748,
+      "totalSurface": 11798
+    },
+    "07000": {
+      "communes": [
+        "Ajoux",
+        "Coux",
+        "Creysseilles",
+        "Flaviac",
+        "Freyssenet",
+        "Gourdon",
+        "Lyas",
+        "Pourchères",
+        "Pranles",
+        "Privas",
+        "Saint-Julien-en-Saint-Alban",
+        "Saint-Priest",
+        "Veyras"
+      ],
+      "communeCount": 13,
+      "center": [4.6045, 44.7375],
+      "coverageRadius": 12.4,
+      "boundingBox": {
+        "minLat": 44.6828,
+        "maxLat": 44.7722,
+        "minLon": 4.4483,
+        "maxLon": 4.6976
+      },
+      "totalPopulation": 17352,
+      "totalSurface": 16538
+    },
+    "07400": {
+      "communes": [
+        "Alba-la-Romaine",
+        "Aubignas",
+        "Meysse",
+        "Rochemaure",
+        "Saint-Martin-sur-Lavezon",
+        "Saint-Pierre-la-Roche",
+        "Sceautres",
+        "Le Teil",
+        "Valvignères"
+      ],
+      "communeCount": 9,
+      "center": [4.6752, 44.5648],
+      "coverageRadius": 10.8,
+      "boundingBox": {
+        "minLat": 44.5004,
+        "maxLat": 44.6494,
+        "minLon": 4.5748,
+        "maxLon": 4.7226
+      },
+      "totalPopulation": 15535,
+      "totalSurface": 19557
+    },
+    "07190": {
+      "communes": [
+        "Albon-d'Ardèche",
+        "Beauvène",
+        "Gluiras",
+        "Issamoulenc",
+        "Marcols-les-Eaux",
+        "Saint-Étienne-de-Serre",
+        "Saint-Genest-Lachamp",
+        "Saint-Julien-du-Gua",
+        "Saint-Maurice-en-Chalencon",
+        "Saint-Pierreville",
+        "Saint-Sauveur-de-Montagut"
+      ],
+      "communeCount": 11,
+      "center": [4.5173, 44.8239],
+      "coverageRadius": 9.3,
+      "boundingBox": {
+        "minLat": 44.768,
+        "maxLat": 44.8761,
+        "minLon": 4.4008,
+        "maxLon": 4.5894
+      },
+      "totalPopulation": 3441,
+      "totalSurface": 17446
+    },
+    "07440": {
+      "communes": ["Alboussière", "Boffres", "Champis", "Saint-Sylvestre"],
+      "communeCount": 4,
+      "center": [4.7271, 44.9501],
+      "coverageRadius": 4.6,
+      "boundingBox": {
+        "minLat": 44.9193,
+        "maxLat": 44.9891,
+        "minLon": 4.7008,
+        "maxLon": 4.7464
+      },
+      "totalPopulation": 2814,
+      "totalSurface": 8129
+    },
+    "07210": {
+      "communes": [
+        "Alissas",
+        "Baix",
+        "Chomérac",
+        "Rochessauve",
+        "Saint-Bauzile",
+        "Saint-Lager-Bressac",
+        "Saint-Symphorien-sous-Chomérac",
+        "Saint-Vincent-de-Barrès"
+      ],
+      "communeCount": 8,
+      "center": [4.6823, 44.7026],
+      "coverageRadius": 6.4,
+      "boundingBox": {
+        "minLat": 44.6606,
+        "maxLat": 44.7194,
+        "minLon": 4.6266,
+        "maxLon": 4.7604
+      },
+      "totalPopulation": 9313,
+      "totalSurface": 11686
+    },
+    "07340": {
+      "communes": [
+        "Andance",
+        "Bogy",
+        "Brossainc",
+        "Champagne",
+        "Charnas",
+        "Félines",
+        "Limony",
+        "Peaugres",
+        "Peyraud",
+        "Saint-Désirat",
+        "Saint-Étienne-de-Valoux",
+        "Saint-Jacques-d'Atticieux",
+        "Serrières",
+        "Talencieux",
+        "Thorrenc",
+        "Vinzieux"
+      ],
+      "communeCount": 16,
+      "center": [4.7533, 45.2905],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 45.2214,
+        "maxLat": 45.3525,
+        "minLon": 4.6664,
+        "maxLon": 4.7999
+      },
+      "totalPopulation": 13486,
+      "totalSurface": 10665
+    },
+    "07100": {
+      "communes": ["Annonay", "Boulieu-lès-Annonay", "Roiffieux", "Saint-Marcel-lès-Annonay"],
+      "communeCount": 4,
+      "center": [4.664, 45.2441],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 45.2277,
+        "maxLat": 45.2852,
+        "minLon": 4.6266,
+        "maxLon": 4.6675
+      },
+      "totalPopulation": 23578,
+      "totalSurface": 6721
+    },
+    "07600": {
+      "communes": [
+        "Vallées-d'Antraigues-Asperjoc",
+        "Juvinas",
+        "Labastide-sur-Bésorgues",
+        "Saint-Andéol-de-Vals",
+        "Vals-les-Bains"
+      ],
+      "communeCount": 5,
+      "center": [4.3619, 44.681],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 44.6651,
+        "maxLat": 44.7247,
+        "minLon": 4.3032,
+        "maxLon": 4.4016
+      },
+      "totalPopulation": 5328,
+      "totalSurface": 8420
+    },
+    "07310": {
+      "communes": [
+        "Arcens",
+        "Borée",
+        "Chanéac",
+        "Saint-Julien-d'Intres",
+        "Lachapelle-sous-Chanéac",
+        "La Rochette",
+        "Saint-Clément",
+        "Saint-Martial",
+        "Saint-Martin-de-Valamas"
+      ],
+      "communeCount": 9,
+      "center": [4.333, 44.9284],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 44.8654,
+        "maxLat": 44.9823,
+        "minLon": 4.2394,
+        "maxLon": 4.3686
+      },
+      "totalPopulation": 2737,
+      "totalSurface": 18354
+    },
+    "07290": {
+      "communes": [
+        "Ardoix",
+        "Préaux",
+        "Quintenas",
+        "Saint-Jeure-d'Ay",
+        "Saint-Romain-d'Ay",
+        "Saint-Symphorien-de-Mahun",
+        "Satillieu"
+      ],
+      "communeCount": 7,
+      "center": [4.6734, 45.168],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 45.1417,
+        "maxLat": 45.1895,
+        "minLon": 4.5603,
+        "maxLon": 4.7349
+      },
+      "totalPopulation": 7042,
+      "totalSurface": 11884
+    },
+    "07410": {
+      "communes": [
+        "Arlebosc",
+        "Bozas",
+        "Colombier-le-Vieux",
+        "Pailharès",
+        "Saint-Félicien",
+        "Saint-Victor",
+        "Vaudevant"
+      ],
+      "communeCount": 7,
+      "center": [4.6495, 45.0799],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 45.037,
+        "maxLat": 45.1037,
+        "minLon": 4.5662,
+        "maxLon": 4.6944
+      },
+      "totalPopulation": 3875,
+      "totalSurface": 12692
+    },
+    "07370": {
+      "communes": ["Arras-sur-Rhône", "Eclassan", "Ozon", "Sarras"],
+      "communeCount": 4,
+      "center": [4.7915, 45.1725],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 45.1444,
+        "maxLat": 45.1868,
+        "minLon": 4.7604,
+        "maxLon": 4.8083
+      },
+      "totalPopulation": 4199,
+      "totalSurface": 4202
+    },
+    "07140": {
+      "communes": [
+        "Les Assions",
+        "Chambonas",
+        "Gravières",
+        "Malarce-sur-la-Thines",
+        "Malbosc",
+        "Montselgues",
+        "Sainte-Marguerite-Lafigère",
+        "Saint-Pierre-Saint-Jean",
+        "Les Salelles",
+        "Les Vans"
+      ],
+      "communeCount": 10,
+      "center": [4.1222, 44.4172],
+      "coverageRadius": 15.1,
+      "boundingBox": {
+        "minLat": 44.3463,
+        "maxLat": 44.5238,
+        "minLon": 3.988,
+        "maxLon": 4.174
+      },
+      "totalPopulation": 6138,
+      "totalSurface": 21132
+    },
+    "07330": {
+      "communes": ["Astet", "Barnas", "Mayres", "Thueyts"],
+      "communeCount": 4,
+      "center": [4.1932, 44.6739],
+      "coverageRadius": 13.6,
+      "boundingBox": {
+        "minLat": 44.6652,
+        "maxLat": 44.6972,
+        "minLon": 4.0254,
+        "maxLon": 4.2219
+      },
+      "totalPopulation": 1736,
+      "totalSurface": 11063
+    },
+    "07120": {
+      "communes": [
+        "Balazuc",
+        "Chauzon",
+        "Grospierres",
+        "Labeaume",
+        "Pradons",
+        "Ruoms",
+        "Saint-Alban-Auriolles",
+        "Sampzon"
+      ],
+      "communeCount": 8,
+      "center": [4.3283, 44.4464],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 44.3994,
+        "maxLat": 44.5091,
+        "minLon": 4.2903,
+        "maxLon": 4.3728
+      },
+      "totalPopulation": 6595,
+      "totalSurface": 12095
+    },
+    "07460": {
+      "communes": [
+        "Banne",
+        "Beaulieu",
+        "Berrias-et-Casteljau",
+        "Saint-André-de-Cruzières",
+        "Saint-Paul-le-Jeune",
+        "Saint-Sauveur-de-Cruzières"
+      ],
+      "communeCount": 6,
+      "center": [4.1947, 44.3445],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 44.2992,
+        "maxLat": 44.3735,
+        "minLon": 4.1506,
+        "maxLon": 4.253
+      },
+      "totalPopulation": 3964,
+      "totalSurface": 14512
+    },
+    "07630": {
+      "communes": ["Le Béage", "Cros-de-Géorand"],
+      "communeCount": 2,
+      "center": [4.1212, 44.8282],
+      "coverageRadius": 3.9,
+      "boundingBox": {
+        "minLat": 44.7935,
+        "maxLat": 44.8488,
+        "minLon": 4.1187,
+        "maxLon": 4.1254
+      },
+      "totalPopulation": 406,
+      "totalSurface": 7710
+    },
+    "07800": {
+      "communes": [
+        "Beauchastel",
+        "Charmes-sur-Rhône",
+        "Gilhac-et-Bruzac",
+        "Rompon",
+        "Saint-Cierge-la-Serre",
+        "Saint-Georges-les-Bains",
+        "Saint-Laurent-du-Pape",
+        "La Voulte-sur-Rhône"
+      ],
+      "communeCount": 8,
+      "center": [4.7898, 44.8253],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 44.762,
+        "maxLat": 44.8623,
+        "minLon": 4.6862,
+        "maxLon": 4.8321
+      },
+      "totalPopulation": 15362,
+      "totalSurface": 12799
+    },
+    "07110": {
+      "communes": [
+        "Beaumont",
+        "Chassiers",
+        "Chazeaux",
+        "Joannas",
+        "Laboule",
+        "Largentière",
+        "Laurac-en-Vivarais",
+        "Loubaresse",
+        "Montréal",
+        "Prunet",
+        "Rocher",
+        "Rocles",
+        "Sanilhac",
+        "Tauriers",
+        "Uzer",
+        "Valgorge",
+        "Vinezac"
+      ],
+      "communeCount": 17,
+      "center": [4.2772, 44.5441],
+      "coverageRadius": 19.1,
+      "boundingBox": {
+        "minLat": 44.5087,
+        "maxLat": 44.5999,
+        "minLon": 4.0502,
+        "maxLon": 4.325
+      },
+      "totalPopulation": 8564,
+      "totalSurface": 19299
+    },
+    "07580": {
+      "communes": ["Berzème", "Saint-Gineys-en-Coiron", "Saint-Jean-le-Centenier", "Saint-Pons"],
+      "communeCount": 4,
+      "center": [4.547, 44.6021],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 44.5916,
+        "maxLat": 44.6517,
+        "minLon": 4.5341,
+        "maxLon": 4.5765
+      },
+      "totalPopulation": 1448,
+      "totalSurface": 6347
+    },
+    "07150": {
+      "communes": [
+        "Bessas",
+        "Labastide-de-Virac",
+        "Lagorce",
+        "Orgnac-l'Aven",
+        "Salavas",
+        "Vagnas",
+        "Vallon-Pont-d'Arc"
+      ],
+      "communeCount": 7,
+      "center": [4.395, 44.3929],
+      "coverageRadius": 10.2,
+      "boundingBox": {
+        "minLat": 44.3059,
+        "maxLat": 44.447,
+        "minLon": 4.3014,
+        "maxLon": 4.433
+      },
+      "totalPopulation": 6177,
+      "totalSurface": 20167
+    },
+    "07700": {
+      "communes": [
+        "Bidon",
+        "Bourg-Saint-Andéol",
+        "Gras",
+        "Saint-Just-d'Ardèche",
+        "Saint-Marcel-d'Ardèche",
+        "Saint-Martin-d'Ardèche",
+        "Saint-Remèze"
+      ],
+      "communeCount": 7,
+      "center": [4.6175, 44.3548],
+      "coverageRadius": 11.7,
+      "boundingBox": {
+        "minLat": 44.3021,
+        "maxLat": 44.4439,
+        "minLon": 4.5011,
+        "maxLon": 4.647
+      },
+      "totalPopulation": 14107,
+      "totalSurface": 22574
+    },
+    "07590": {
+      "communes": [
+        "Borne",
+        "Cellier-du-Luc",
+        "Le Plagnal",
+        "Saint-Alban-en-Montagne",
+        "Saint-Étienne-de-Lugdarès",
+        "Saint-Laurent-les-Bains-Laval-d'Aurelle"
+      ],
+      "communeCount": 6,
+      "center": [3.9504, 44.6506],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 44.6067,
+        "maxLat": 44.7067,
+        "minLon": 3.8985,
+        "maxLon": 4.0152
+      },
+      "totalPopulation": 857,
+      "totalSurface": 16322
+    },
+    "07270": {
+      "communes": [
+        "Boucieu-le-Roi",
+        "Colombier-le-Jeune",
+        "Le Crestet",
+        "Empurany",
+        "Gilhoc-sur-Ormèze",
+        "Lamastre",
+        "Nozières",
+        "Saint-Barthélemy-Grozon",
+        "Saint-Basile",
+        "Saint-Prix"
+      ],
+      "communeCount": 10,
+      "center": [4.6112, 44.9924],
+      "coverageRadius": 10.3,
+      "boundingBox": {
+        "minLat": 44.9431,
+        "maxLat": 45.0368,
+        "minLon": 4.5015,
+        "maxLon": 4.7013
+      },
+      "totalPopulation": 6081,
+      "totalSurface": 17546
+    },
+    "07450": {
+      "communes": ["Burzet", "Péreyres", "Sagnes-et-Goudoulet", "Saint-Pierre-de-Colombier"],
+      "communeCount": 4,
+      "center": [4.2501, 44.7332],
+      "coverageRadius": 6.7,
+      "boundingBox": {
+        "minLat": 44.7048,
+        "maxLat": 44.7903,
+        "minLon": 4.2259,
+        "maxLon": 4.2631
+      },
+      "totalPopulation": 1140,
+      "totalSurface": 8525
+    },
+    "07240": {
+      "communes": [
+        "Chalencon",
+        "Châteauneuf-de-Vernoux",
+        "Saint-Apollinaire-de-Rias",
+        "Saint-Jean-Chambre",
+        "Saint-Julien-le-Roux",
+        "Silhac",
+        "Vernoux-en-Vivarais"
+      ],
+      "communeCount": 7,
+      "center": [4.6273, 44.8954],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 44.872,
+        "maxLat": 44.9202,
+        "minLon": 4.5644,
+        "maxLon": 4.6776
+      },
+      "totalPopulation": 3577,
+      "totalSurface": 10216
+    },
+    "07230": {
+      "communes": [
+        "Chandolas",
+        "Faugères",
+        "Lablachère",
+        "Payzac",
+        "Planzolles",
+        "Saint-André-Lachamp",
+        "Saint-Genest-de-Beauzon"
+      ],
+      "communeCount": 7,
+      "center": [4.2033, 44.4555],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 44.4032,
+        "maxLat": 44.5051,
+        "minLon": 4.1372,
+        "maxLon": 4.2527
+      },
+      "totalPopulation": 4074,
+      "totalSurface": 8506
+    },
+    "07130": {
+      "communes": ["Châteaubourg", "Cornas", "Saint-Péray", "Saint-Romain-de-Lerps", "Soyons", "Toulaud"],
+      "communeCount": 6,
+      "center": [4.8379, 44.9371],
+      "coverageRadius": 6.7,
+      "boundingBox": {
+        "minLat": 44.8905,
+        "maxLat": 44.9969,
+        "minLon": 4.7972,
+        "maxLon": 4.8494
+      },
+      "totalPopulation": 15208,
+      "totalSurface": 9426
+    },
+    "07300": {
+      "communes": [
+        "Cheminas",
+        "Étables",
+        "Glun",
+        "Mauves",
+        "Plats",
+        "Saint-Barthélemy-le-Plain",
+        "Saint-Jean-de-Muzols",
+        "Tournon-sur-Rhône"
+      ],
+      "communeCount": 8,
+      "center": [4.8162, 45.0661],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 45.0107,
+        "maxLat": 45.1241,
+        "minLon": 4.7253,
+        "maxLon": 4.8386
+      },
+      "totalPopulation": 18766,
+      "totalSurface": 10802
+    },
+    "07380": {
+      "communes": [
+        "Chirols",
+        "Fabras",
+        "Jaujac",
+        "Lalevade-d'Ardèche",
+        "Meyras",
+        "Pont-de-Labeaume",
+        "Prades",
+        "Saint-Cirgues-de-Prades",
+        "La Souche"
+      ],
+      "communeCount": 9,
+      "center": [4.284, 44.6508],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 44.623,
+        "maxLat": 44.6858,
+        "minLon": 4.2018,
+        "maxLon": 4.3222
+      },
+      "totalPopulation": 6296,
+      "totalSurface": 10386
+    },
+    "07430": {
+      "communes": ["Colombier-le-Cardinal", "Davézieux", "Saint-Clair", "Saint-Cyr", "Savas", "Vernosc-lès-Annonay"],
+      "communeCount": 6,
+      "center": [4.7089, 45.2525],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 45.2189,
+        "maxLat": 45.2971,
+        "minLon": 4.6802,
+        "maxLon": 4.7414
+      },
+      "totalPopulation": 9804,
+      "totalSurface": 5170
+    },
+    "07470": {
+      "communes": ["Coucouron", "Issarlès", "Le Lac-d'Issarlès", "Lachapelle-Graillouse"],
+      "communeCount": 4,
+      "center": [4.0008, 44.8119],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 44.804,
+        "maxLat": 44.8421,
+        "minLon": 3.971,
+        "maxLon": 4.0617
+      },
+      "totalPopulation": 1331,
+      "totalSurface": 7788
+    },
+    "07510": {
+      "communes": [
+        "Cros-de-Géorand",
+        "Issanlas",
+        "Mazan-l'Abbaye",
+        "Saint-Cirgues-en-Montagne",
+        "Sainte-Eulalie",
+        "Usclades-et-Rieutord"
+      ],
+      "communeCount": 6,
+      "center": [4.1185, 44.774],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 44.7281,
+        "maxLat": 44.8095,
+        "minLon": 4.0124,
+        "maxLon": 4.1894
+      },
+      "totalPopulation": 912,
+      "totalSurface": 17561
+    },
+    "07350": {
+      "communes": ["Cruas"],
+      "communeCount": 1,
+      "center": [4.7653, 44.6569],
+      "coverageRadius": 2.22,
+      "totalPopulation": 2954,
+      "totalSurface": 1549
+    },
+    "07170": {
+      "communes": [
+        "Darbres",
+        "Lavilledieu",
+        "Lussas",
+        "Mirabel",
+        "Saint-Andéol-de-Berg",
+        "Saint-Germain",
+        "Saint-Laurent-sous-Coiron",
+        "Saint-Maurice-d'Ibie",
+        "Villeneuve-de-Berg"
+      ],
+      "communeCount": 9,
+      "center": [4.4801, 44.5752],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 44.5008,
+        "maxLat": 44.6468,
+        "minLon": 4.4482,
+        "maxLon": 4.5283
+      },
+      "totalPopulation": 8634,
+      "totalSurface": 15744
+    },
+    "07570": {
+      "communes": ["Désaignes", "Labatie-d'Andaure"],
+      "communeCount": 2,
+      "center": [4.5128, 44.9999],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 44.9952,
+        "maxLat": 45.0246,
+        "minLon": 4.4933,
+        "maxLon": 4.5165
+      },
+      "totalPopulation": 1365,
+      "totalSurface": 6164
+    },
+    "07320": {
+      "communes": ["Devesset", "Saint-Julien-d'Intres", "Mars", "Rochepaule", "Saint-Agrève", "Saint-Jeure-d'Andaure"],
+      "communeCount": 6,
+      "center": [4.3935, 45.0188],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 44.9823,
+        "maxLat": 45.0768,
+        "minLon": 4.3252,
+        "maxLon": 4.4577
+      },
+      "totalPopulation": 3496,
+      "totalSurface": 16589
+    },
+    "07260": {
+      "communes": ["Dompnac", "Joyeuse", "Ribes", "Rosières", "Sablières", "Saint-Mélany", "Vernon"],
+      "communeCount": 7,
+      "center": [4.227, 44.4884],
+      "coverageRadius": 13.1,
+      "boundingBox": {
+        "minLat": 44.4802,
+        "maxLat": 44.5644,
+        "minLon": 4.0743,
+        "maxLon": 4.2573
+      },
+      "totalPopulation": 3968,
+      "totalSurface": 10539
+    },
+    "07360": {
+      "communes": [
+        "Dunière-sur-Eyrieux",
+        "Les Ollières-sur-Eyrieux",
+        "Saint-Fortunat-sur-Eyrieux",
+        "Saint-Michel-de-Chabrillanoux",
+        "Saint-Vincent-de-Durfort"
+      ],
+      "communeCount": 5,
+      "center": [4.6378, 44.8183],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 44.8042,
+        "maxLat": 44.8382,
+        "minLon": 4.6024,
+        "maxLon": 4.673
+      },
+      "totalPopulation": 2940,
+      "totalSurface": 6292
+    },
+    "07500": {
+      "communes": ["Guilherand-Granges"],
+      "communeCount": 1,
+      "center": [4.8714, 44.9326],
+      "coverageRadius": 1.44,
+      "totalPopulation": 11277,
+      "totalSurface": 651
+    },
+    "07660": {
+      "communes": ["Issanlas", "Lanarce", "Lavillatte", "Lespéron"],
+      "communeCount": 4,
+      "center": [3.951, 44.7359],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 44.7287,
+        "maxLat": 44.7652,
+        "minLon": 3.8979,
+        "maxLon": 4.0124
+      },
+      "totalPopulation": 676,
+      "totalSurface": 9564
+    },
+    "07520": {
+      "communes": ["Lafarre", "Lalouvesc", "Saint-Pierre-sur-Doux"],
+      "communeCount": 3,
+      "center": [4.5183, 45.1165],
+      "coverageRadius": 4.3,
+      "boundingBox": {
+        "minLat": 45.079,
+        "maxLat": 45.1202,
+        "minLon": 4.4649,
+        "maxLon": 4.5347
+      },
+      "totalPopulation": 538,
+      "totalSurface": 4352
+    },
+    "07220": {
+      "communes": ["Larnas", "Saint-Montan", "Saint-Thomé", "Viviers"],
+      "communeCount": 4,
+      "center": [4.6624, 44.4675],
+      "coverageRadius": 5.6,
+      "boundingBox": {
+        "minLat": 44.4379,
+        "maxLat": 44.5012,
+        "minLon": 4.5981,
+        "maxLon": 4.6911
+      },
+      "totalPopulation": 6361,
+      "totalSurface": 10114
+    },
+    "07610": {
+      "communes": ["Lemps", "Sécheras", "Vion"],
+      "communeCount": 3,
+      "center": [4.7829, 45.1143],
+      "coverageRadius": 2.1,
+      "boundingBox": {
+        "minLat": 45.1085,
+        "maxLat": 45.1309,
+        "minLon": 4.7648,
+        "maxLon": 4.8053
+      },
+      "totalPopulation": 2247,
+      "totalSurface": 2603
+    },
+    "07690": {
+      "communes": ["Monestier", "Saint-André-en-Vivarais", "Saint-Julien-Vocance", "Vanosc", "Villevocance", "Vocance"],
+      "communeCount": 6,
+      "center": [4.5531, 45.21],
+      "coverageRadius": 14.9,
+      "boundingBox": {
+        "minLat": 45.1204,
+        "maxLat": 45.2263,
+        "minLon": 4.4127,
+        "maxLon": 4.5905
+      },
+      "totalPopulation": 3222,
+      "totalSurface": 10754
+    },
+    "07560": {
+      "communes": ["Montpezat-sous-Bauzon", "Le Roux"],
+      "communeCount": 2,
+      "center": [4.2015, 44.7131],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 44.7122,
+        "maxLat": 44.7235,
+        "minLon": 4.1473,
+        "maxLon": 4.2061
+      },
+      "totalPopulation": 820,
+      "totalSurface": 4385
+    },
+    "07250": {
+      "communes": ["Le Pouzin", "Rompon"],
+      "communeCount": 2,
+      "center": [4.7411, 44.7576],
+      "coverageRadius": 1.7,
+      "boundingBox": {
+        "minLat": 44.7558,
+        "maxLat": 44.762,
+        "minLon": 4.7218,
+        "maxLon": 4.7487
+      },
+      "totalPopulation": 4034,
+      "totalSurface": 3347
+    },
+    "07790": {
+      "communes": ["Saint-Alban-d'Ay"],
+      "communeCount": 1,
+      "center": [4.6372, 45.1872],
+      "coverageRadius": 2.75,
+      "totalPopulation": 1396,
+      "totalSurface": 2376
+    }
+  }
+}

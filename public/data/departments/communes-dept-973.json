@@ -1,0 +1,565 @@
+{
+  "departmentCode": "973",
+  "departmentName": "Guyane",
+  "stats": {
+    "communeCount": 22,
+    "totalPopulation": 288382,
+    "totalSurface": 8368363
+  },
+  "communes": [
+    {
+      "nom": "Apatou",
+      "code": "97360",
+      "codesPostaux": ["97317"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-54.2171, 4.9019]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-54.3438, 5.1555]
+      },
+      "population": 10059,
+      "surface": 215476.98,
+      "radius": 26.19
+    },
+    {
+      "nom": "Awala-Yalimapo",
+      "code": "97361",
+      "codesPostaux": ["97319"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-53.9167, 5.6742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-53.9057, 5.734]
+      },
+      "population": 1549,
+      "surface": 21476.41,
+      "radius": 8.27
+    },
+    {
+      "nom": "Camopi",
+      "code": "97356",
+      "codesPostaux": ["97330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.6916, 2.8679]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.3342, 3.1674]
+      },
+      "population": 2168,
+      "surface": 1047238.04,
+      "radius": 57.74
+    },
+    {
+      "nom": "Cayenne",
+      "code": "97302",
+      "codesPostaux": ["97300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.3319, 4.9464]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.335, 4.9382]
+      },
+      "population": 63956,
+      "surface": 2552.23,
+      "radius": 2.85
+    },
+    {
+      "nom": "Grand-Santi",
+      "code": "97357",
+      "codesPostaux": ["97340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-54.1148, 4.3756]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-54.3837, 4.2758]
+      },
+      "population": 9390,
+      "surface": 215219.43,
+      "radius": 26.17
+    },
+    {
+      "nom": "Iracoubo",
+      "code": "97303",
+      "codesPostaux": ["97350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-53.2979, 5.2395]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-53.2054, 5.4798]
+      },
+      "population": 1685,
+      "surface": 248376.01,
+      "radius": 28.12
+    },
+    {
+      "nom": "Kourou",
+      "code": "97304",
+      "codesPostaux": ["97310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.7767, 4.9085]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.6427, 5.1581]
+      },
+      "population": 24470,
+      "surface": 228919.57,
+      "radius": 26.99
+    },
+    {
+      "nom": "Macouria",
+      "code": "97305",
+      "codesPostaux": ["97355"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.4834, 4.9925]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.4742, 5.0139]
+      },
+      "population": 18807,
+      "surface": 28746.49,
+      "radius": 9.57
+    },
+    {
+      "nom": "Mana",
+      "code": "97306",
+      "codesPostaux": ["97318", "97360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-53.6784, 4.9955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-53.777, 5.667]
+      },
+      "population": 11364,
+      "surface": 662240.57,
+      "radius": 45.91
+    },
+    {
+      "nom": "Maripasoula",
+      "code": "97353",
+      "codesPostaux": ["97370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-53.8275, 3.049]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-54.028, 3.6409]
+      },
+      "population": 8423,
+      "surface": 1874271.06,
+      "radius": 77.24
+    },
+    {
+      "nom": "Matoury",
+      "code": "97307",
+      "codesPostaux": ["97351"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.3498, 4.8281]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.3314, 4.8505]
+      },
+      "population": 35551,
+      "surface": 14667.97,
+      "radius": 6.83
+    },
+    {
+      "nom": "Montsinéry-Tonnegrande",
+      "code": "97313",
+      "codesPostaux": ["97356"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.5059, 4.8124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.4929, 4.8932]
+      },
+      "population": 3457,
+      "surface": 63054.57,
+      "radius": 14.17
+    },
+    {
+      "nom": "Ouanary",
+      "code": "97314",
+      "codesPostaux": ["97380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-51.8261, 4.2104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-51.6731, 4.2088]
+      },
+      "population": 200,
+      "surface": 104569.14,
+      "radius": 18.24
+    },
+    {
+      "nom": "Papaichton",
+      "code": "97362",
+      "codesPostaux": ["97316"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-54.0463, 4.0165]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-54.1497, 3.807]
+      },
+      "population": 5530,
+      "surface": 269670.04,
+      "radius": 29.3
+    },
+    {
+      "nom": "Régina",
+      "code": "97301",
+      "codesPostaux": ["97353", "97390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.4797, 4.0081]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.129, 4.3137]
+      },
+      "population": 1657,
+      "surface": 1139424.75,
+      "radius": 60.22
+    },
+    {
+      "nom": "Remire-Montjoly",
+      "code": "97309",
+      "codesPostaux": ["97354"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.2809, 4.8897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.2765, 4.905]
+      },
+      "population": 27037,
+      "surface": 4629.62,
+      "radius": 3.84
+    },
+    {
+      "nom": "Roura",
+      "code": "97310",
+      "codesPostaux": ["97311", "97352"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.5164, 4.4685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.324, 4.7285]
+      },
+      "population": 3382,
+      "surface": 368601.13,
+      "radius": 34.25
+    },
+    {
+      "nom": "Saint-Élie",
+      "code": "97358",
+      "codesPostaux": ["97312"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-53.1108, 4.4853]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-53.2877, 4.8253]
+      },
+      "population": 157,
+      "surface": 581350.7,
+      "radius": 43.02
+    },
+    {
+      "nom": "Saint-Georges",
+      "code": "97308",
+      "codesPostaux": ["97313"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-52.075, 3.8078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-51.8014, 3.8887]
+      },
+      "population": 4710,
+      "surface": 284751.54,
+      "radius": 30.11
+    },
+    {
+      "nom": "Saint-Laurent-du-Maroni",
+      "code": "97311",
+      "codesPostaux": ["97320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-54.0105, 4.9478]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-54.029, 5.5036]
+      },
+      "population": 51732,
+      "surface": 432077.02,
+      "radius": 37.09
+    },
+    {
+      "nom": "Saül",
+      "code": "97352",
+      "codesPostaux": ["97314"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-53.4333, 3.8181]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-53.2095, 3.6231]
+      },
+      "population": 297,
+      "surface": 449085.3,
+      "radius": 37.81
+    },
+    {
+      "nom": "Sinnamary",
+      "code": "97312",
+      "codesPostaux": ["97315"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-53.0097, 5.2418]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-52.9585, 5.3771]
+      },
+      "population": 2801,
+      "surface": 111964.92,
+      "radius": 18.88
+    }
+  ],
+  "postalCodes": {
+    "97300": {
+      "communes": ["Cayenne"],
+      "communeCount": 1,
+      "center": [-52.335, 4.9382],
+      "coverageRadius": 2.85,
+      "totalPopulation": 63956,
+      "totalSurface": 2552
+    },
+    "97310": {
+      "communes": ["Kourou"],
+      "communeCount": 1,
+      "center": [-52.6427, 5.1581],
+      "coverageRadius": 26.99,
+      "totalPopulation": 24470,
+      "totalSurface": 228920
+    },
+    "97311": {
+      "communes": ["Roura"],
+      "communeCount": 1,
+      "center": [-52.324, 4.7285],
+      "coverageRadius": 34.25,
+      "totalPopulation": 3382,
+      "totalSurface": 368601
+    },
+    "97312": {
+      "communes": ["Saint-Élie"],
+      "communeCount": 1,
+      "center": [-53.2877, 4.8253],
+      "coverageRadius": 43.02,
+      "totalPopulation": 157,
+      "totalSurface": 581351
+    },
+    "97313": {
+      "communes": ["Saint-Georges"],
+      "communeCount": 1,
+      "center": [-51.8014, 3.8887],
+      "coverageRadius": 30.11,
+      "totalPopulation": 4710,
+      "totalSurface": 284752
+    },
+    "97314": {
+      "communes": ["Saül"],
+      "communeCount": 1,
+      "center": [-53.2095, 3.6231],
+      "coverageRadius": 37.81,
+      "totalPopulation": 297,
+      "totalSurface": 449085
+    },
+    "97315": {
+      "communes": ["Sinnamary"],
+      "communeCount": 1,
+      "center": [-52.9585, 5.3771],
+      "coverageRadius": 18.88,
+      "totalPopulation": 2801,
+      "totalSurface": 111965
+    },
+    "97316": {
+      "communes": ["Papaichton"],
+      "communeCount": 1,
+      "center": [-54.1497, 3.807],
+      "coverageRadius": 29.3,
+      "totalPopulation": 5530,
+      "totalSurface": 269670
+    },
+    "97317": {
+      "communes": ["Apatou"],
+      "communeCount": 1,
+      "center": [-54.3438, 5.1555],
+      "coverageRadius": 26.19,
+      "totalPopulation": 10059,
+      "totalSurface": 215477
+    },
+    "97318": {
+      "communes": ["Mana"],
+      "communeCount": 1,
+      "center": [-53.777, 5.667],
+      "coverageRadius": 45.91,
+      "totalPopulation": 11364,
+      "totalSurface": 662241
+    },
+    "97319": {
+      "communes": ["Awala-Yalimapo"],
+      "communeCount": 1,
+      "center": [-53.9057, 5.734],
+      "coverageRadius": 8.27,
+      "totalPopulation": 1549,
+      "totalSurface": 21476
+    },
+    "97320": {
+      "communes": ["Saint-Laurent-du-Maroni"],
+      "communeCount": 1,
+      "center": [-54.029, 5.5036],
+      "coverageRadius": 37.09,
+      "totalPopulation": 51732,
+      "totalSurface": 432077
+    },
+    "97330": {
+      "communes": ["Camopi"],
+      "communeCount": 1,
+      "center": [-52.3342, 3.1674],
+      "coverageRadius": 57.74,
+      "totalPopulation": 2168,
+      "totalSurface": 1047238
+    },
+    "97340": {
+      "communes": ["Grand-Santi"],
+      "communeCount": 1,
+      "center": [-54.3837, 4.2758],
+      "coverageRadius": 26.17,
+      "totalPopulation": 9390,
+      "totalSurface": 215219
+    },
+    "97350": {
+      "communes": ["Iracoubo"],
+      "communeCount": 1,
+      "center": [-53.2054, 5.4798],
+      "coverageRadius": 28.12,
+      "totalPopulation": 1685,
+      "totalSurface": 248376
+    },
+    "97351": {
+      "communes": ["Matoury"],
+      "communeCount": 1,
+      "center": [-52.3314, 4.8505],
+      "coverageRadius": 6.83,
+      "totalPopulation": 35551,
+      "totalSurface": 14668
+    },
+    "97352": {
+      "communes": ["Roura"],
+      "communeCount": 1,
+      "center": [-52.324, 4.7285],
+      "coverageRadius": 34.25,
+      "totalPopulation": 3382,
+      "totalSurface": 368601
+    },
+    "97353": {
+      "communes": ["Régina"],
+      "communeCount": 1,
+      "center": [-52.129, 4.3137],
+      "coverageRadius": 60.22,
+      "totalPopulation": 1657,
+      "totalSurface": 1139425
+    },
+    "97354": {
+      "communes": ["Remire-Montjoly"],
+      "communeCount": 1,
+      "center": [-52.2765, 4.905],
+      "coverageRadius": 3.84,
+      "totalPopulation": 27037,
+      "totalSurface": 4630
+    },
+    "97355": {
+      "communes": ["Macouria"],
+      "communeCount": 1,
+      "center": [-52.4742, 5.0139],
+      "coverageRadius": 9.57,
+      "totalPopulation": 18807,
+      "totalSurface": 28746
+    },
+    "97356": {
+      "communes": ["Montsinéry-Tonnegrande"],
+      "communeCount": 1,
+      "center": [-52.4929, 4.8932],
+      "coverageRadius": 14.17,
+      "totalPopulation": 3457,
+      "totalSurface": 63055
+    },
+    "97360": {
+      "communes": ["Mana"],
+      "communeCount": 1,
+      "center": [-53.777, 5.667],
+      "coverageRadius": 45.91,
+      "totalPopulation": 11364,
+      "totalSurface": 662241
+    },
+    "97370": {
+      "communes": ["Maripasoula"],
+      "communeCount": 1,
+      "center": [-54.028, 3.6409],
+      "coverageRadius": 77.24,
+      "totalPopulation": 8423,
+      "totalSurface": 1874271
+    },
+    "97380": {
+      "communes": ["Ouanary"],
+      "communeCount": 1,
+      "center": [-51.6731, 4.2088],
+      "coverageRadius": 18.24,
+      "totalPopulation": 200,
+      "totalSurface": 104569
+    },
+    "97390": {
+      "communes": ["Régina"],
+      "communeCount": 1,
+      "center": [-52.129, 4.3137],
+      "coverageRadius": 60.22,
+      "totalPopulation": 1657,
+      "totalSurface": 1139425
+    }
+  }
+}

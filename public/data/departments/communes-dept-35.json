@@ -1,0 +1,6486 @@
+{
+  "departmentCode": "35",
+  "departmentName": "Ille-et-Vilaine",
+  "stats": {
+    "communeCount": 332,
+    "totalPopulation": 1109232,
+    "totalSurface": 683357
+  },
+  "communes": [
+    {
+      "nom": "Acigné",
+      "code": "35001",
+      "codesPostaux": ["35690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5189, 48.1461]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5342, 48.1336]
+      },
+      "population": 6911,
+      "surface": 3020.19,
+      "radius": 3.1
+    },
+    {
+      "nom": "Amanlis",
+      "code": "35002",
+      "codesPostaux": ["35150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4951, 48.0017]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4759, 48.0051]
+      },
+      "population": 1765,
+      "surface": 2555.55,
+      "radius": 2.85
+    },
+    {
+      "nom": "Andouillé-Neuville",
+      "code": "35003",
+      "codesPostaux": ["35250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5951, 48.2993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5908, 48.2936]
+      },
+      "population": 1006,
+      "surface": 1268.56,
+      "radius": 2.01
+    },
+    {
+      "nom": "Arbrissel",
+      "code": "35005",
+      "codesPostaux": ["35130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2909, 47.9283]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3028, 47.9272]
+      },
+      "population": 270,
+      "surface": 462.99,
+      "radius": 1.21
+    },
+    {
+      "nom": "Argentré-du-Plessis",
+      "code": "35006",
+      "codesPostaux": ["35370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1395, 48.0505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1482, 48.0574]
+      },
+      "population": 4591,
+      "surface": 4123.36,
+      "radius": 3.62
+    },
+    {
+      "nom": "Aubigné",
+      "code": "35007",
+      "codesPostaux": ["35250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6312, 48.2983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6339, 48.2946]
+      },
+      "population": 465,
+      "surface": 223.07,
+      "radius": 0.84
+    },
+    {
+      "nom": "Availles-sur-Seiche",
+      "code": "35008",
+      "codesPostaux": ["35130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1862, 47.9589]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1954, 47.9614]
+      },
+      "population": 647,
+      "surface": 1108.96,
+      "radius": 1.88
+    },
+    {
+      "nom": "Baguer-Morvan",
+      "code": "35009",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7712, 48.5037]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7742, 48.5253]
+      },
+      "population": 1697,
+      "surface": 2435.99,
+      "radius": 2.78
+    },
+    {
+      "nom": "Baguer-Pican",
+      "code": "35010",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.691, 48.551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6993, 48.5533]
+      },
+      "population": 1764,
+      "surface": 1611.57,
+      "radius": 2.26
+    },
+    {
+      "nom": "Bain-de-Bretagne",
+      "code": "35012",
+      "codesPostaux": ["35470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6806, 47.8324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.683, 47.8427]
+      },
+      "population": 7704,
+      "surface": 6600.18,
+      "radius": 4.58
+    },
+    {
+      "nom": "Bains-sur-Oust",
+      "code": "35013",
+      "codesPostaux": ["35600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.074, 47.716]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0717, 47.7054]
+      },
+      "population": 3521,
+      "surface": 4504.4,
+      "radius": 3.79
+    },
+    {
+      "nom": "Bais",
+      "code": "35014",
+      "codesPostaux": ["35680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2989, 48.0089]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2898, 48.0111]
+      },
+      "population": 2511,
+      "surface": 3520.04,
+      "radius": 3.35
+    },
+    {
+      "nom": "Balazé",
+      "code": "35015",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1834, 48.1759]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.193, 48.1682]
+      },
+      "population": 2181,
+      "surface": 3642.58,
+      "radius": 3.41
+    },
+    {
+      "nom": "Baulon",
+      "code": "35016",
+      "codesPostaux": ["35580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9278, 47.9967]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9322, 47.9851]
+      },
+      "population": 2208,
+      "surface": 2520.99,
+      "radius": 2.83
+    },
+    {
+      "nom": "Bazouges-la-Pérouse",
+      "code": "35019",
+      "codesPostaux": ["35560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5638, 48.4444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5748, 48.4276]
+      },
+      "population": 1865,
+      "surface": 5783.89,
+      "radius": 4.29
+    },
+    {
+      "nom": "Beaucé",
+      "code": "35021",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1554, 48.346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1568, 48.3381]
+      },
+      "population": 1289,
+      "surface": 843.53,
+      "radius": 1.64
+    },
+    {
+      "nom": "Bécherel",
+      "code": "35022",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9423, 48.296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9456, 48.2966]
+      },
+      "population": 685,
+      "surface": 55.48,
+      "radius": 0.42
+    },
+    {
+      "nom": "Bédée",
+      "code": "35023",
+      "codesPostaux": ["35137"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9534, 48.185]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9435, 48.1798]
+      },
+      "population": 4571,
+      "surface": 3947.61,
+      "radius": 3.54
+    },
+    {
+      "nom": "Betton",
+      "code": "35024",
+      "codesPostaux": ["35830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6477, 48.1797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6402, 48.1824]
+      },
+      "population": 12775,
+      "surface": 2678.48,
+      "radius": 2.92
+    },
+    {
+      "nom": "Billé",
+      "code": "35025",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2524, 48.2939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2457, 48.2862]
+      },
+      "population": 1038,
+      "surface": 1703.26,
+      "radius": 2.33
+    },
+    {
+      "nom": "Bléruais",
+      "code": "35026",
+      "codesPostaux": ["35750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1181, 48.1161]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1239, 48.1114]
+      },
+      "population": 98,
+      "surface": 334.62,
+      "radius": 1.03
+    },
+    {
+      "nom": "Boisgervilly",
+      "code": "35027",
+      "codesPostaux": ["35360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0863, 48.1669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0668, 48.1666]
+      },
+      "population": 1757,
+      "surface": 2009.68,
+      "radius": 2.53
+    },
+    {
+      "nom": "Boistrudan",
+      "code": "35028",
+      "codesPostaux": ["35150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4006, 47.9776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.402, 47.9699]
+      },
+      "population": 726,
+      "surface": 1291.73,
+      "radius": 2.03
+    },
+    {
+      "nom": "Bonnemain",
+      "code": "35029",
+      "codesPostaux": ["35270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7715, 48.4709]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7672, 48.4669]
+      },
+      "population": 1533,
+      "surface": 2413.67,
+      "radius": 2.77
+    },
+    {
+      "nom": "Bourg-des-Comptes",
+      "code": "35033",
+      "codesPostaux": ["35890"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7182, 47.9244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.739, 47.9277]
+      },
+      "population": 3388,
+      "surface": 2342.1,
+      "radius": 2.73
+    },
+    {
+      "nom": "Bourgbarré",
+      "code": "35032",
+      "codesPostaux": ["35230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6236, 47.9833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6141, 47.995]
+      },
+      "population": 4692,
+      "surface": 1479.83,
+      "radius": 2.17
+    },
+    {
+      "nom": "Bovel",
+      "code": "35035",
+      "codesPostaux": ["35330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9557, 47.9532]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9767, 47.9511]
+      },
+      "population": 600,
+      "surface": 1468.16,
+      "radius": 2.16
+    },
+    {
+      "nom": "Bréal-sous-Montfort",
+      "code": "35037",
+      "codesPostaux": ["35310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8733, 48.0444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8641, 48.0485]
+      },
+      "population": 6430,
+      "surface": 3395.2,
+      "radius": 3.29
+    },
+    {
+      "nom": "Bréal-sous-Vitré",
+      "code": "35038",
+      "codesPostaux": ["35370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0563, 48.0879]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0618, 48.1042]
+      },
+      "population": 614,
+      "surface": 579.15,
+      "radius": 1.36
+    },
+    {
+      "nom": "Brécé",
+      "code": "35039",
+      "codesPostaux": ["35530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4934, 48.1091]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4828, 48.1106]
+      },
+      "population": 2185,
+      "surface": 723.9,
+      "radius": 1.52
+    },
+    {
+      "nom": "Breteil",
+      "code": "35040",
+      "codesPostaux": ["35160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9133, 48.1376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8994, 48.1455]
+      },
+      "population": 3678,
+      "surface": 1488.74,
+      "radius": 2.18
+    },
+    {
+      "nom": "Brie",
+      "code": "35041",
+      "codesPostaux": ["35150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5534, 47.9496]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5391, 47.9512]
+      },
+      "population": 1014,
+      "surface": 1369.97,
+      "radius": 2.09
+    },
+    {
+      "nom": "Brielles",
+      "code": "35042",
+      "codesPostaux": ["35370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0998, 48.0087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.089, 48.0073]
+      },
+      "population": 679,
+      "surface": 1161.52,
+      "radius": 1.92
+    },
+    {
+      "nom": "Broualan",
+      "code": "35044",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6607, 48.4733]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6508, 48.4738]
+      },
+      "population": 411,
+      "surface": 1288.97,
+      "radius": 2.03
+    },
+    {
+      "nom": "Bruc-sur-Aff",
+      "code": "35045",
+      "codesPostaux": ["35550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0066, 47.8166]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0211, 47.8143]
+      },
+      "population": 856,
+      "surface": 2123.25,
+      "radius": 2.6
+    },
+    {
+      "nom": "Bruz",
+      "code": "35047",
+      "codesPostaux": ["35170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7469, 48.024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7461, 48.0245]
+      },
+      "population": 19667,
+      "surface": 2994.77,
+      "radius": 3.09
+    },
+    {
+      "nom": "Cancale",
+      "code": "35049",
+      "codesPostaux": ["35260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8598, 48.6895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8529, 48.6752]
+      },
+      "population": 5554,
+      "surface": 1256.7,
+      "radius": 2
+    },
+    {
+      "nom": "Cardroc",
+      "code": "35050",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8943, 48.2842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8892, 48.2851]
+      },
+      "population": 598,
+      "surface": 734.28,
+      "radius": 1.53
+    },
+    {
+      "nom": "Cesson-Sévigné",
+      "code": "35051",
+      "codesPostaux": ["35510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5935, 48.1235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6032, 48.1194]
+      },
+      "population": 18076,
+      "surface": 3214.27,
+      "radius": 3.2
+    },
+    {
+      "nom": "Champeaux",
+      "code": "35052",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3, 48.1361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3112, 48.1479]
+      },
+      "population": 504,
+      "surface": 1037.97,
+      "radius": 1.82
+    },
+    {
+      "nom": "Chanteloup",
+      "code": "35054",
+      "codesPostaux": ["35150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6222, 47.9559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6152, 47.9674]
+      },
+      "population": 1881,
+      "surface": 1797.87,
+      "radius": 2.39
+    },
+    {
+      "nom": "Chantepie",
+      "code": "35055",
+      "codesPostaux": ["35135"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6064, 48.0831]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6204, 48.0884]
+      },
+      "population": 10378,
+      "surface": 1196.3,
+      "radius": 1.95
+    },
+    {
+      "nom": "Chartres-de-Bretagne",
+      "code": "35066",
+      "codesPostaux": ["35131"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7039, 48.0451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7074, 48.0409]
+      },
+      "population": 8678,
+      "surface": 996.81,
+      "radius": 1.78
+    },
+    {
+      "nom": "Chasné-sur-Illet",
+      "code": "35067",
+      "codesPostaux": ["35250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5692, 48.2331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5651, 48.2371]
+      },
+      "population": 1702,
+      "surface": 965.05,
+      "radius": 1.75
+    },
+    {
+      "nom": "Châteaubourg",
+      "code": "35068",
+      "codesPostaux": ["35220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4034, 48.1203]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4047, 48.1095]
+      },
+      "population": 7523,
+      "surface": 2893.52,
+      "radius": 3.03
+    },
+    {
+      "nom": "Châteaugiron",
+      "code": "35069",
+      "codesPostaux": ["35410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4751, 48.0481]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5032, 48.0486]
+      },
+      "population": 10688,
+      "surface": 2371.97,
+      "radius": 2.75
+    },
+    {
+      "nom": "Châteauneuf-d'Ille-et-Vilaine",
+      "code": "35070",
+      "codesPostaux": ["35430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9287, 48.5579]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9286, 48.5615]
+      },
+      "population": 1679,
+      "surface": 139.68,
+      "radius": 0.67
+    },
+    {
+      "nom": "Châtillon-en-Vendelais",
+      "code": "35072",
+      "codesPostaux": ["35210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1669, 48.2307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1792, 48.2246]
+      },
+      "population": 1738,
+      "surface": 3215.7,
+      "radius": 3.2
+    },
+    {
+      "nom": "Chauvigné",
+      "code": "35075",
+      "codesPostaux": ["35490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4472, 48.3726]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4618, 48.3765]
+      },
+      "population": 807,
+      "surface": 1794.72,
+      "radius": 2.39
+    },
+    {
+      "nom": "Chavagne",
+      "code": "35076",
+      "codesPostaux": ["35310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7879, 48.0563]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.789, 48.0523]
+      },
+      "population": 4562,
+      "surface": 1255.52,
+      "radius": 2
+    },
+    {
+      "nom": "Chelun",
+      "code": "35077",
+      "codesPostaux": ["35640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2447, 47.8546]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2234, 47.854]
+      },
+      "population": 354,
+      "surface": 1150.05,
+      "radius": 1.91
+    },
+    {
+      "nom": "Cherrueix",
+      "code": "35078",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7186, 48.591]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7097, 48.6053]
+      },
+      "population": 1106,
+      "surface": 1290.48,
+      "radius": 2.03
+    },
+    {
+      "nom": "Chevaigné",
+      "code": "35079",
+      "codesPostaux": ["35250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6387, 48.2251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6305, 48.2121]
+      },
+      "population": 2396,
+      "surface": 1037.1,
+      "radius": 1.82
+    },
+    {
+      "nom": "Cintré",
+      "code": "35080",
+      "codesPostaux": ["35310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8837, 48.109]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8727, 48.106]
+      },
+      "population": 2614,
+      "surface": 853.3,
+      "radius": 1.65
+    },
+    {
+      "nom": "Clayes",
+      "code": "35081",
+      "codesPostaux": ["35590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8535, 48.1782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8535, 48.1764]
+      },
+      "population": 941,
+      "surface": 432.93,
+      "radius": 1.17
+    },
+    {
+      "nom": "Coësmes",
+      "code": "35082",
+      "codesPostaux": ["35134"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4194, 47.8703]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4427, 47.8825]
+      },
+      "population": 1435,
+      "surface": 2377.16,
+      "radius": 2.75
+    },
+    {
+      "nom": "Comblessac",
+      "code": "35084",
+      "codesPostaux": ["35330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0854, 47.873]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0843, 47.8766]
+      },
+      "population": 677,
+      "surface": 1729.83,
+      "radius": 2.35
+    },
+    {
+      "nom": "Combourg",
+      "code": "35085",
+      "codesPostaux": ["35270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7333, 48.4111]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7524, 48.41]
+      },
+      "population": 6324,
+      "surface": 6394.54,
+      "radius": 4.51
+    },
+    {
+      "nom": "Combourtillé",
+      "code": "35086",
+      "codesPostaux": ["35210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2673, 48.2665]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2465, 48.2722]
+      },
+      "population": 608,
+      "surface": 921.44,
+      "radius": 1.71
+    },
+    {
+      "nom": "Cornillé",
+      "code": "35087",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3095, 48.0857]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.307, 48.0801]
+      },
+      "population": 967,
+      "surface": 1259.23,
+      "radius": 2
+    },
+    {
+      "nom": "Corps-Nuds",
+      "code": "35088",
+      "codesPostaux": ["35150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5706, 47.981]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5881, 47.979]
+      },
+      "population": 3555,
+      "surface": 2289.92,
+      "radius": 2.7
+    },
+    {
+      "nom": "Crevin",
+      "code": "35090",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6602, 47.931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6619, 47.9365]
+      },
+      "population": 2790,
+      "surface": 846.3,
+      "radius": 1.64
+    },
+    {
+      "nom": "Cuguen",
+      "code": "35092",
+      "codesPostaux": ["35270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6581, 48.435]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.664, 48.4499]
+      },
+      "population": 830,
+      "surface": 2384.99,
+      "radius": 2.76
+    },
+    {
+      "nom": "Dinard",
+      "code": "35093",
+      "codesPostaux": ["35800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0602, 48.629]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0549, 48.6316]
+      },
+      "population": 10407,
+      "surface": 761.87,
+      "radius": 1.56
+    },
+    {
+      "nom": "Dingé",
+      "code": "35094",
+      "codesPostaux": ["35440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7011, 48.3414]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7158, 48.3572]
+      },
+      "population": 1690,
+      "surface": 5351.92,
+      "radius": 4.13
+    },
+    {
+      "nom": "Dol-de-Bretagne",
+      "code": "35095",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7467, 48.5338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7535, 48.5497]
+      },
+      "population": 5786,
+      "surface": 1554.58,
+      "radius": 2.22
+    },
+    {
+      "nom": "Domagné",
+      "code": "35096",
+      "codesPostaux": ["35113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4051, 48.0654]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3947, 48.0703]
+      },
+      "population": 2439,
+      "surface": 2927.2,
+      "radius": 3.05
+    },
+    {
+      "nom": "Domalain",
+      "code": "35097",
+      "codesPostaux": ["35680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2445, 47.9975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2407, 47.9963]
+      },
+      "population": 2050,
+      "surface": 3353.22,
+      "radius": 3.27
+    },
+    {
+      "nom": "Domloup",
+      "code": "35099",
+      "codesPostaux": ["35410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5437, 48.0686]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5221, 48.0621]
+      },
+      "population": 3839,
+      "surface": 1841.29,
+      "radius": 2.42
+    },
+    {
+      "nom": "Dourdain",
+      "code": "35101",
+      "codesPostaux": ["35450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3791, 48.191]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3695, 48.1926]
+      },
+      "population": 1225,
+      "surface": 1391.18,
+      "radius": 2.1
+    },
+    {
+      "nom": "Drouges",
+      "code": "35102",
+      "codesPostaux": ["35130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2576, 47.904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2657, 47.9005]
+      },
+      "population": 503,
+      "surface": 1168.9,
+      "radius": 1.93
+    },
+    {
+      "nom": "Eancé",
+      "code": "35103",
+      "codesPostaux": ["35640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2483, 47.8212]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2448, 47.8222]
+      },
+      "population": 430,
+      "surface": 1668.94,
+      "radius": 2.3
+    },
+    {
+      "nom": "Epiniac",
+      "code": "35104",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7047, 48.4974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6979, 48.5104]
+      },
+      "population": 1423,
+      "surface": 2445.44,
+      "radius": 2.79
+    },
+    {
+      "nom": "Erbrée",
+      "code": "35105",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1084, 48.1117]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1255, 48.0997]
+      },
+      "population": 1713,
+      "surface": 3583.86,
+      "radius": 3.38
+    },
+    {
+      "nom": "Ercé-en-Lamée",
+      "code": "35106",
+      "codesPostaux": ["35620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5636, 47.8167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5605, 47.8297]
+      },
+      "population": 1568,
+      "surface": 3930.04,
+      "radius": 3.54
+    },
+    {
+      "nom": "Ercé-près-Liffré",
+      "code": "35107",
+      "codesPostaux": ["35340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5187, 48.2544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5175, 48.2561]
+      },
+      "population": 2010,
+      "surface": 1588.15,
+      "radius": 2.25
+    },
+    {
+      "nom": "Essé",
+      "code": "35108",
+      "codesPostaux": ["35150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4279, 47.9512]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4228, 47.9578]
+      },
+      "population": 1028,
+      "surface": 2340.75,
+      "radius": 2.73
+    },
+    {
+      "nom": "Étrelles",
+      "code": "35109",
+      "codesPostaux": ["35370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2104, 48.0699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1938, 48.0601]
+      },
+      "population": 2670,
+      "surface": 2791.43,
+      "radius": 2.98
+    },
+    {
+      "nom": "Feins",
+      "code": "35110",
+      "codesPostaux": ["35440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6274, 48.3276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6403, 48.3282]
+      },
+      "population": 1066,
+      "surface": 2030.36,
+      "radius": 2.54
+    },
+    {
+      "nom": "Forges-la-Forêt",
+      "code": "35114",
+      "codesPostaux": ["35640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2917, 47.8611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.28, 47.8613]
+      },
+      "population": 265,
+      "surface": 613.22,
+      "radius": 1.4
+    },
+    {
+      "nom": "Fougères",
+      "code": "35115",
+      "codesPostaux": ["35300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1953, 48.3512]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2045, 48.3515]
+      },
+      "population": 20602,
+      "surface": 1042.61,
+      "radius": 1.82
+    },
+    {
+      "nom": "Gaël",
+      "code": "35117",
+      "codesPostaux": ["35290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2346, 48.1167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.222, 48.1317]
+      },
+      "population": 1617,
+      "surface": 5287.17,
+      "radius": 4.1
+    },
+    {
+      "nom": "Gahard",
+      "code": "35118",
+      "codesPostaux": ["35490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5246, 48.285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5187, 48.2975]
+      },
+      "population": 1523,
+      "surface": 2511.77,
+      "radius": 2.83
+    },
+    {
+      "nom": "Gennes-sur-Seiche",
+      "code": "35119",
+      "codesPostaux": ["35370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1274, 48.0008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.125, 47.9894]
+      },
+      "population": 943,
+      "surface": 1859.19,
+      "radius": 2.43
+    },
+    {
+      "nom": "Gévezé",
+      "code": "35120",
+      "codesPostaux": ["35850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7918, 48.2075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7887, 48.2208]
+      },
+      "population": 5987,
+      "surface": 2780.21,
+      "radius": 2.97
+    },
+    {
+      "nom": "Gosné",
+      "code": "35121",
+      "codesPostaux": ["35140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4606, 48.2492]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4662, 48.247]
+      },
+      "population": 2098,
+      "surface": 1840.61,
+      "radius": 2.42
+    },
+    {
+      "nom": "Goven",
+      "code": "35123",
+      "codesPostaux": ["35580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8414, 48.0143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.846, 48.0066]
+      },
+      "population": 4326,
+      "surface": 4007.36,
+      "radius": 3.57
+    },
+    {
+      "nom": "Grand-Fougeray",
+      "code": "35124",
+      "codesPostaux": ["35390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7155, 47.7381]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7315, 47.7223]
+      },
+      "population": 2523,
+      "surface": 5530.48,
+      "radius": 4.2
+    },
+    {
+      "nom": "Guichen",
+      "code": "35126",
+      "codesPostaux": ["35580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7969, 47.9623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7967, 47.966]
+      },
+      "population": 9203,
+      "surface": 4302.29,
+      "radius": 3.7
+    },
+    {
+      "nom": "Guignen",
+      "code": "35127",
+      "codesPostaux": ["35580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8558, 47.9276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8616, 47.9194]
+      },
+      "population": 4149,
+      "surface": 5315.77,
+      "radius": 4.11
+    },
+    {
+      "nom": "Guipel",
+      "code": "35128",
+      "codesPostaux": ["35440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7244, 48.2942]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7247, 48.2986]
+      },
+      "population": 1735,
+      "surface": 2549.04,
+      "radius": 2.85
+    },
+    {
+      "nom": "Guipry-Messac",
+      "code": "35176",
+      "codesPostaux": ["35480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8318, 47.8257]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.807, 47.8248]
+      },
+      "population": 7243,
+      "surface": 9226.87,
+      "radius": 5.42
+    },
+    {
+      "nom": "Hédé-Bazouges",
+      "code": "35130",
+      "codesPostaux": ["35630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7777, 48.3009]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8022, 48.2955]
+      },
+      "population": 2273,
+      "surface": 1475.77,
+      "radius": 2.17
+    },
+    {
+      "nom": "Hirel",
+      "code": "35132",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8143, 48.5935]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8006, 48.606]
+      },
+      "population": 1384,
+      "surface": 989.27,
+      "radius": 1.77
+    },
+    {
+      "nom": "Iffendic",
+      "code": "35133",
+      "codesPostaux": ["35750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0448, 48.1204]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0336, 48.1294]
+      },
+      "population": 4603,
+      "surface": 7481.41,
+      "radius": 4.88
+    },
+    {
+      "nom": "Irodouër",
+      "code": "35135",
+      "codesPostaux": ["35850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9497, 48.2433]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9487, 48.249]
+      },
+      "population": 2308,
+      "surface": 2359.01,
+      "radius": 2.74
+    },
+    {
+      "nom": "Janzé",
+      "code": "35136",
+      "codesPostaux": ["35150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4979, 47.9439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4982, 47.9594]
+      },
+      "population": 8618,
+      "surface": 4163.83,
+      "radius": 3.64
+    },
+    {
+      "nom": "Javené",
+      "code": "35137",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2116, 48.3187]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2176, 48.3195]
+      },
+      "population": 2185,
+      "surface": 1850.4,
+      "radius": 2.43
+    },
+    {
+      "nom": "L'Hermitage",
+      "code": "35131",
+      "codesPostaux": ["35590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8153, 48.1226]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8178, 48.1275]
+      },
+      "population": 4683,
+      "surface": 693.97,
+      "radius": 1.49
+    },
+    {
+      "nom": "La Baussaine",
+      "code": "35017",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8971, 48.3143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8982, 48.3132]
+      },
+      "population": 675,
+      "surface": 976.88,
+      "radius": 1.76
+    },
+    {
+      "nom": "La Bazouge-du-Désert",
+      "code": "35018",
+      "codesPostaux": ["35420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1072, 48.443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1051, 48.4434]
+      },
+      "population": 1080,
+      "surface": 2509.52,
+      "radius": 2.83
+    },
+    {
+      "nom": "La Bosse-de-Bretagne",
+      "code": "35030",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5847, 47.8675]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6009, 47.87]
+      },
+      "population": 691,
+      "surface": 1062.34,
+      "radius": 1.84
+    },
+    {
+      "nom": "La Bouëxière",
+      "code": "35031",
+      "codesPostaux": ["35340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.433, 48.1747]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4375, 48.184]
+      },
+      "population": 4602,
+      "surface": 4975.25,
+      "radius": 3.98
+    },
+    {
+      "nom": "La Boussac",
+      "code": "35034",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6509, 48.5155]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6607, 48.5133]
+      },
+      "population": 1250,
+      "surface": 2189.85,
+      "radius": 2.64
+    },
+    {
+      "nom": "La Chapelle du Lou du Lac",
+      "code": "35060",
+      "codesPostaux": ["35360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9932, 48.2124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9922, 48.2135]
+      },
+      "population": 1037,
+      "surface": 1049.75,
+      "radius": 1.83
+    },
+    {
+      "nom": "La Chapelle-aux-Filtzméens",
+      "code": "35056",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8182, 48.3828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8246, 48.3842]
+      },
+      "population": 825,
+      "surface": 644.53,
+      "radius": 1.43
+    },
+    {
+      "nom": "La Chapelle-Bouëxic",
+      "code": "35057",
+      "codesPostaux": ["35330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9239, 47.9348]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9399, 47.9298]
+      },
+      "population": 1527,
+      "surface": 2071.35,
+      "radius": 2.57
+    },
+    {
+      "nom": "La Chapelle-Chaussée",
+      "code": "35058",
+      "codesPostaux": ["35630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8653, 48.2688]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8533, 48.271]
+      },
+      "population": 1299,
+      "surface": 1478.86,
+      "radius": 2.17
+    },
+    {
+      "nom": "La Chapelle-de-Brain",
+      "code": "35064",
+      "codesPostaux": ["35660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9288, 47.6953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9346, 47.7008]
+      },
+      "population": 1107,
+      "surface": 1781.54,
+      "radius": 2.38
+    },
+    {
+      "nom": "La Chapelle-des-Fougeretz",
+      "code": "35059",
+      "codesPostaux": ["35520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7374, 48.1774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7326, 48.1771]
+      },
+      "population": 4603,
+      "surface": 873.29,
+      "radius": 1.67
+    },
+    {
+      "nom": "La Chapelle-Erbrée",
+      "code": "35061",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0963, 48.1422]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1003, 48.1409]
+      },
+      "population": 723,
+      "surface": 1189.89,
+      "radius": 1.95
+    },
+    {
+      "nom": "La Chapelle-Fleurigné",
+      "code": "35062",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0968, 48.3459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0996, 48.3477]
+      },
+      "population": 2430,
+      "surface": 4507.25,
+      "radius": 3.79
+    },
+    {
+      "nom": "La Chapelle-Saint-Aubert",
+      "code": "35063",
+      "codesPostaux": ["35140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.312, 48.3091]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3069, 48.3138]
+      },
+      "population": 468,
+      "surface": 998.38,
+      "radius": 1.78
+    },
+    {
+      "nom": "La Chapelle-Thouarault",
+      "code": "35065",
+      "codesPostaux": ["35590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8569, 48.1268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8663, 48.1238]
+      },
+      "population": 2266,
+      "surface": 777.02,
+      "radius": 1.57
+    },
+    {
+      "nom": "La Couyère",
+      "code": "35089",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5044, 47.8924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5065, 47.8876]
+      },
+      "population": 447,
+      "surface": 1189.28,
+      "radius": 1.95
+    },
+    {
+      "nom": "La Dominelais",
+      "code": "35098",
+      "codesPostaux": ["35390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6839, 47.758]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6878, 47.762]
+      },
+      "population": 1414,
+      "surface": 3253.36,
+      "radius": 3.22
+    },
+    {
+      "nom": "La Fresnais",
+      "code": "35116",
+      "codesPostaux": ["35111"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8383, 48.5846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8439, 48.5949]
+      },
+      "population": 2508,
+      "surface": 1439.43,
+      "radius": 2.14
+    },
+    {
+      "nom": "La Gouesnière",
+      "code": "35122",
+      "codesPostaux": ["35350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8901, 48.603]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8934, 48.604]
+      },
+      "population": 2000,
+      "surface": 882.83,
+      "radius": 1.68
+    },
+    {
+      "nom": "La Guerche-de-Bretagne",
+      "code": "35125",
+      "codesPostaux": ["35130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2396, 47.9448]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2295, 47.9422]
+      },
+      "population": 4450,
+      "surface": 1168.36,
+      "radius": 1.93
+    },
+    {
+      "nom": "La Mézière",
+      "code": "35177",
+      "codesPostaux": ["35520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7504, 48.2135]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.754, 48.2195]
+      },
+      "population": 4935,
+      "surface": 1642.41,
+      "radius": 2.29
+    },
+    {
+      "nom": "La Noë-Blanche",
+      "code": "35202",
+      "codesPostaux": ["35470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7442, 47.7988]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7418, 47.8025]
+      },
+      "population": 1007,
+      "surface": 2309.49,
+      "radius": 2.71
+    },
+    {
+      "nom": "La Nouaye",
+      "code": "35203",
+      "codesPostaux": ["35137"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9756, 48.1663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9783, 48.1625]
+      },
+      "population": 357,
+      "surface": 272.49,
+      "radius": 0.93
+    },
+    {
+      "nom": "La Richardais",
+      "code": "35241",
+      "codesPostaux": ["35780"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.043, 48.61]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0344, 48.6066]
+      },
+      "population": 2624,
+      "surface": 315.72,
+      "radius": 1
+    },
+    {
+      "nom": "La Selle-en-Luitré",
+      "code": "35324",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1464, 48.3235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1269, 48.3105]
+      },
+      "population": 618,
+      "surface": 860.66,
+      "radius": 1.66
+    },
+    {
+      "nom": "La Selle-Guerchaise",
+      "code": "35325",
+      "codesPostaux": ["35130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1718, 47.9435]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.172, 47.944]
+      },
+      "population": 153,
+      "surface": 219.64,
+      "radius": 0.84
+    },
+    {
+      "nom": "La Ville-ès-Nonais",
+      "code": "35358",
+      "codesPostaux": ["35430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9508, 48.5504]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9546, 48.5467]
+      },
+      "population": 1226,
+      "surface": 441.95,
+      "radius": 1.19
+    },
+    {
+      "nom": "Laignelet",
+      "code": "35138",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1516, 48.3771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1489, 48.3706]
+      },
+      "population": 1217,
+      "surface": 1504.88,
+      "radius": 2.19
+    },
+    {
+      "nom": "Laillé",
+      "code": "35139",
+      "codesPostaux": ["35890"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7101, 47.9731]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7214, 47.9788]
+      },
+      "population": 5154,
+      "surface": 3201.99,
+      "radius": 3.19
+    },
+    {
+      "nom": "Lalleu",
+      "code": "35140",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5185, 47.854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.51, 47.8555]
+      },
+      "population": 581,
+      "surface": 1539.87,
+      "radius": 2.21
+    },
+    {
+      "nom": "Landavran",
+      "code": "35141",
+      "codesPostaux": ["35450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2862, 48.163]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2889, 48.1592]
+      },
+      "population": 682,
+      "surface": 520.76,
+      "radius": 1.29
+    },
+    {
+      "nom": "Landéan",
+      "code": "35142",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1393, 48.4165]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1525, 48.4125]
+      },
+      "population": 1225,
+      "surface": 2825.73,
+      "radius": 3
+    },
+    {
+      "nom": "Landujan",
+      "code": "35143",
+      "codesPostaux": ["35360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0057, 48.2464]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9975, 48.2505]
+      },
+      "population": 930,
+      "surface": 1451.8,
+      "radius": 2.15
+    },
+    {
+      "nom": "Langan",
+      "code": "35144",
+      "codesPostaux": ["35850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8481, 48.237]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.853, 48.2456]
+      },
+      "population": 1090,
+      "surface": 778.85,
+      "radius": 1.57
+    },
+    {
+      "nom": "Langon",
+      "code": "35145",
+      "codesPostaux": ["35660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8699, 47.7321]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8493, 47.7207]
+      },
+      "population": 1393,
+      "surface": 3654.25,
+      "radius": 3.41
+    },
+    {
+      "nom": "Langouet",
+      "code": "35146",
+      "codesPostaux": ["35630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8133, 48.2561]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8247, 48.2501]
+      },
+      "population": 610,
+      "surface": 711.76,
+      "radius": 1.51
+    },
+    {
+      "nom": "Lanrigan",
+      "code": "35148",
+      "codesPostaux": ["35270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6926, 48.3908]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6999, 48.3942]
+      },
+      "population": 144,
+      "surface": 405.99,
+      "radius": 1.14
+    },
+    {
+      "nom": "Lassy",
+      "code": "35149",
+      "codesPostaux": ["35580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8653, 47.971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8726, 47.9787]
+      },
+      "population": 1817,
+      "surface": 985.46,
+      "radius": 1.77
+    },
+    {
+      "nom": "Le Châtellier",
+      "code": "35071",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2438, 48.4251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2542, 48.4157]
+      },
+      "population": 427,
+      "surface": 1349.53,
+      "radius": 2.07
+    },
+    {
+      "nom": "Le Crouais",
+      "code": "35091",
+      "codesPostaux": ["35290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1524, 48.2067]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1409, 48.2068]
+      },
+      "population": 591,
+      "surface": 626.55,
+      "radius": 1.41
+    },
+    {
+      "nom": "Le Ferré",
+      "code": "35111",
+      "codesPostaux": ["35420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2936, 48.4871]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.294, 48.4912]
+      },
+      "population": 727,
+      "surface": 1741.56,
+      "radius": 2.35
+    },
+    {
+      "nom": "Le Loroux",
+      "code": "35157",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0811, 48.398]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0664, 48.3942]
+      },
+      "population": 618,
+      "surface": 1142.28,
+      "radius": 1.91
+    },
+    {
+      "nom": "Le Minihic-sur-Rance",
+      "code": "35181",
+      "codesPostaux": ["35870"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.011, 48.5737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0119, 48.5754]
+      },
+      "population": 1499,
+      "surface": 386.88,
+      "radius": 1.11
+    },
+    {
+      "nom": "Le Pertre",
+      "code": "35217",
+      "codesPostaux": ["35370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.0573, 48.0342]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0365, 48.0349]
+      },
+      "population": 1372,
+      "surface": 4360.22,
+      "radius": 3.73
+    },
+    {
+      "nom": "Le Petit-Fougeray",
+      "code": "35218",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6135, 47.9285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6083, 47.9274]
+      },
+      "population": 886,
+      "surface": 909.18,
+      "radius": 1.7
+    },
+    {
+      "nom": "Le Rheu",
+      "code": "35240",
+      "codesPostaux": ["35650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7882, 48.0971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7938, 48.1008]
+      },
+      "population": 9823,
+      "surface": 1914.87,
+      "radius": 2.47
+    },
+    {
+      "nom": "Le Sel-de-Bretagne",
+      "code": "35322",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6073, 47.8991]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6085, 47.8957]
+      },
+      "population": 1102,
+      "surface": 854.98,
+      "radius": 1.65
+    },
+    {
+      "nom": "Le Theil-de-Bretagne",
+      "code": "35333",
+      "codesPostaux": ["35240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4213, 47.9148]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4291, 47.9202]
+      },
+      "population": 1720,
+      "surface": 2444.93,
+      "radius": 2.79
+    },
+    {
+      "nom": "Le Tiercent",
+      "code": "35336",
+      "codesPostaux": ["35460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4213, 48.349]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4071, 48.3501]
+      },
+      "population": 194,
+      "surface": 369.67,
+      "radius": 1.08
+    },
+    {
+      "nom": "Le Tronchet",
+      "code": "35362",
+      "codesPostaux": ["35540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8404, 48.4921]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8388, 48.4863]
+      },
+      "population": 1204,
+      "surface": 1140.85,
+      "radius": 1.91
+    },
+    {
+      "nom": "Le Verger",
+      "code": "35351",
+      "codesPostaux": ["35160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9197, 48.0667]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9326, 48.0708]
+      },
+      "population": 1404,
+      "surface": 710.38,
+      "radius": 1.5
+    },
+    {
+      "nom": "Le Vivier-sur-Mer",
+      "code": "35361",
+      "codesPostaux": ["35960"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7791, 48.5958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.773, 48.6023]
+      },
+      "population": 1062,
+      "surface": 223.47,
+      "radius": 0.84
+    },
+    {
+      "nom": "Lécousse",
+      "code": "35150",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2183, 48.3584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2176, 48.368]
+      },
+      "population": 3423,
+      "surface": 1111.33,
+      "radius": 1.88
+    },
+    {
+      "nom": "Les Brulais",
+      "code": "35046",
+      "codesPostaux": ["35330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0577, 47.8897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0419, 47.8889]
+      },
+      "population": 541,
+      "surface": 1202.71,
+      "radius": 1.96
+    },
+    {
+      "nom": "Les Iffs",
+      "code": "35134",
+      "codesPostaux": ["35630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8652, 48.2953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8665, 48.2882]
+      },
+      "population": 274,
+      "surface": 450.63,
+      "radius": 1.2
+    },
+    {
+      "nom": "Les Portes du Coglais",
+      "code": "35191",
+      "codesPostaux": ["35460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3403, 48.4523]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3088, 48.4417]
+      },
+      "population": 2235,
+      "surface": 4116.5,
+      "radius": 3.62
+    },
+    {
+      "nom": "Lieuron",
+      "code": "35151",
+      "codesPostaux": ["35550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9369, 47.8523]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.944, 47.8506]
+      },
+      "population": 802,
+      "surface": 1689.13,
+      "radius": 2.32
+    },
+    {
+      "nom": "Liffré",
+      "code": "35152",
+      "codesPostaux": ["35340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5064, 48.2025]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5054, 48.214]
+      },
+      "population": 8987,
+      "surface": 6666.14,
+      "radius": 4.61
+    },
+    {
+      "nom": "Lillemer",
+      "code": "35153",
+      "codesPostaux": ["35111"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8538, 48.5703]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8617, 48.5643]
+      },
+      "population": 383,
+      "surface": 379.17,
+      "radius": 1.1
+    },
+    {
+      "nom": "Livré-sur-Changeon",
+      "code": "35154",
+      "codesPostaux": ["35450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3422, 48.2264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3423, 48.2183]
+      },
+      "population": 1737,
+      "surface": 2675.74,
+      "radius": 2.92
+    },
+    {
+      "nom": "Lohéac",
+      "code": "35155",
+      "codesPostaux": ["35550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8876, 47.8719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8854, 47.8671]
+      },
+      "population": 700,
+      "surface": 525.83,
+      "radius": 1.29
+    },
+    {
+      "nom": "Longaulnay",
+      "code": "35156",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9416, 48.3074]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9388, 48.3097]
+      },
+      "population": 598,
+      "surface": 763.08,
+      "radius": 1.56
+    },
+    {
+      "nom": "Lourmais",
+      "code": "35159",
+      "codesPostaux": ["35270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.734, 48.4397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.727, 48.449]
+      },
+      "population": 335,
+      "surface": 724.59,
+      "radius": 1.52
+    },
+    {
+      "nom": "Loutehel",
+      "code": "35160",
+      "codesPostaux": ["35330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0796, 47.9366]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0793, 47.9374]
+      },
+      "population": 235,
+      "surface": 728.93,
+      "radius": 1.52
+    },
+    {
+      "nom": "Louvigné-de-Bais",
+      "code": "35161",
+      "codesPostaux": ["35680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3398, 48.0531]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3322, 48.0485]
+      },
+      "population": 1874,
+      "surface": 1571.61,
+      "radius": 2.24
+    },
+    {
+      "nom": "Louvigné-du-Désert",
+      "code": "35162",
+      "codesPostaux": ["35420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1251, 48.4859]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1239, 48.48]
+      },
+      "population": 3352,
+      "surface": 4224.28,
+      "radius": 3.67
+    },
+    {
+      "nom": "Luitré-Dompierre",
+      "code": "35163",
+      "codesPostaux": ["35133", "35210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1301, 48.2823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.117, 48.2846]
+      },
+      "population": 1844,
+      "surface": 3912.5,
+      "radius": 3.53
+    },
+    {
+      "nom": "Maen Roch",
+      "code": "35257",
+      "codesPostaux": ["35460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3484, 48.3975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3649, 48.4109]
+      },
+      "population": 5093,
+      "surface": 3949.57,
+      "radius": 3.55
+    },
+    {
+      "nom": "Marcillé-Raoul",
+      "code": "35164",
+      "codesPostaux": ["35560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6161, 48.3756]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6039, 48.3855]
+      },
+      "population": 737,
+      "surface": 2237.15,
+      "radius": 2.67
+    },
+    {
+      "nom": "Marcillé-Robert",
+      "code": "35165",
+      "codesPostaux": ["35240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3552, 47.9594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3613, 47.9496]
+      },
+      "population": 994,
+      "surface": 2060.58,
+      "radius": 2.56
+    },
+    {
+      "nom": "Marpiré",
+      "code": "35166",
+      "codesPostaux": ["35220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3541, 48.1467]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.34, 48.142]
+      },
+      "population": 1013,
+      "surface": 1130.39,
+      "radius": 1.9
+    },
+    {
+      "nom": "Martigné-Ferchaud",
+      "code": "35167",
+      "codesPostaux": ["35640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.323, 47.828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3175, 47.8313]
+      },
+      "population": 2632,
+      "surface": 7488.61,
+      "radius": 4.88
+    },
+    {
+      "nom": "Maxent",
+      "code": "35169",
+      "codesPostaux": ["35380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0284, 47.9811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0344, 47.9823]
+      },
+      "population": 1457,
+      "surface": 4010.25,
+      "radius": 3.57
+    },
+    {
+      "nom": "Mecé",
+      "code": "35170",
+      "codesPostaux": ["35450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2908, 48.2369]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3027, 48.2375]
+      },
+      "population": 613,
+      "surface": 1619.97,
+      "radius": 2.27
+    },
+    {
+      "nom": "Médréac",
+      "code": "35171",
+      "codesPostaux": ["35360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0632, 48.2613]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.067, 48.2679]
+      },
+      "population": 1845,
+      "surface": 3535.23,
+      "radius": 3.35
+    },
+    {
+      "nom": "Meillac",
+      "code": "35172",
+      "codesPostaux": ["35270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8268, 48.4285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8151, 48.4118]
+      },
+      "population": 1975,
+      "surface": 3259.41,
+      "radius": 3.22
+    },
+    {
+      "nom": "Melesse",
+      "code": "35173",
+      "codesPostaux": ["35520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6887, 48.2192]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6976, 48.216]
+      },
+      "population": 7400,
+      "surface": 3251.07,
+      "radius": 3.22
+    },
+    {
+      "nom": "Mellé",
+      "code": "35174",
+      "codesPostaux": ["35420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1912, 48.4844]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1897, 48.4883]
+      },
+      "population": 648,
+      "surface": 1581.69,
+      "radius": 2.24
+    },
+    {
+      "nom": "Mernel",
+      "code": "35175",
+      "codesPostaux": ["35330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9494, 47.8993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9686, 47.8975]
+      },
+      "population": 1017,
+      "surface": 1676.65,
+      "radius": 2.31
+    },
+    {
+      "nom": "Mesnil-Roc'h",
+      "code": "35308",
+      "codesPostaux": ["35720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.876, 48.4639]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.913, 48.4468]
+      },
+      "population": 4457,
+      "surface": 4148.7,
+      "radius": 3.63
+    },
+    {
+      "nom": "Mézières-sur-Couesnon",
+      "code": "35178",
+      "codesPostaux": ["35140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4368, 48.2974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4322, 48.2945]
+      },
+      "population": 1735,
+      "surface": 2520.87,
+      "radius": 2.83
+    },
+    {
+      "nom": "Miniac-Morvan",
+      "code": "35179",
+      "codesPostaux": ["35540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.896, 48.5215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8993, 48.5153]
+      },
+      "population": 4379,
+      "surface": 3162.62,
+      "radius": 3.17
+    },
+    {
+      "nom": "Miniac-sous-Bécherel",
+      "code": "35180",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9301, 48.2789]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.931, 48.2843]
+      },
+      "population": 788,
+      "surface": 1357.79,
+      "radius": 2.08
+    },
+    {
+      "nom": "Mondevert",
+      "code": "35183",
+      "codesPostaux": ["35370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.093, 48.0863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0976, 48.0833]
+      },
+      "population": 806,
+      "surface": 508.19,
+      "radius": 1.27
+    },
+    {
+      "nom": "Mont-Dol",
+      "code": "35186",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7578, 48.5713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7689, 48.5701]
+      },
+      "population": 1076,
+      "surface": 2639.17,
+      "radius": 2.9
+    },
+    {
+      "nom": "Montauban-de-Bretagne",
+      "code": "35184",
+      "codesPostaux": ["35360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0618, 48.2075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0494, 48.1991]
+      },
+      "population": 6574,
+      "surface": 4607.68,
+      "radius": 3.83
+    },
+    {
+      "nom": "Montautour",
+      "code": "35185",
+      "codesPostaux": ["35210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1218, 48.206]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1488, 48.2038]
+      },
+      "population": 268,
+      "surface": 692.04,
+      "radius": 1.48
+    },
+    {
+      "nom": "Monterfil",
+      "code": "35187",
+      "codesPostaux": ["35160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.99, 48.0623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9794, 48.0668]
+      },
+      "population": 1352,
+      "surface": 1730.23,
+      "radius": 2.35
+    },
+    {
+      "nom": "Montfort-sur-Meu",
+      "code": "35188",
+      "codesPostaux": ["35160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9582, 48.1273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9575, 48.139]
+      },
+      "population": 6767,
+      "surface": 1404.94,
+      "radius": 2.11
+    },
+    {
+      "nom": "Montgermont",
+      "code": "35189",
+      "codesPostaux": ["35760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7167, 48.1547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7162, 48.1558]
+      },
+      "population": 3777,
+      "surface": 468.4,
+      "radius": 1.22
+    },
+    {
+      "nom": "Monthault",
+      "code": "35190",
+      "codesPostaux": ["35420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1771, 48.5104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1817, 48.5115]
+      },
+      "population": 250,
+      "surface": 834.98,
+      "radius": 1.63
+    },
+    {
+      "nom": "Montreuil-des-Landes",
+      "code": "35192",
+      "codesPostaux": ["35210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.225, 48.2526]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2235, 48.247]
+      },
+      "population": 235,
+      "surface": 940.63,
+      "radius": 1.73
+    },
+    {
+      "nom": "Montreuil-le-Gast",
+      "code": "35193",
+      "codesPostaux": ["35520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7173, 48.2414]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7287, 48.2471]
+      },
+      "population": 2048,
+      "surface": 921.86,
+      "radius": 1.71
+    },
+    {
+      "nom": "Montreuil-sous-Pérouse",
+      "code": "35194",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2381, 48.1537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2345, 48.1506]
+      },
+      "population": 1041,
+      "surface": 1612.98,
+      "radius": 2.27
+    },
+    {
+      "nom": "Montreuil-sur-Ille",
+      "code": "35195",
+      "codesPostaux": ["35440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.668, 48.3053]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6714, 48.3069]
+      },
+      "population": 2419,
+      "surface": 1527.18,
+      "radius": 2.2
+    },
+    {
+      "nom": "Mordelles",
+      "code": "35196",
+      "codesPostaux": ["35310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8515, 48.0853]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8468, 48.073]
+      },
+      "population": 7831,
+      "surface": 3014.62,
+      "radius": 3.1
+    },
+    {
+      "nom": "Mouazé",
+      "code": "35197",
+      "codesPostaux": ["35250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6085, 48.2191]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6077, 48.232]
+      },
+      "population": 1728,
+      "surface": 834.3,
+      "radius": 1.63
+    },
+    {
+      "nom": "Moulins",
+      "code": "35198",
+      "codesPostaux": ["35680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3667, 48.0079]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3717, 48.0015]
+      },
+      "population": 716,
+      "surface": 1538.34,
+      "radius": 2.21
+    },
+    {
+      "nom": "Moussé",
+      "code": "35199",
+      "codesPostaux": ["35130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2773, 47.9169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2708, 47.9238]
+      },
+      "population": 310,
+      "surface": 344.74,
+      "radius": 1.05
+    },
+    {
+      "nom": "Moutiers",
+      "code": "35200",
+      "codesPostaux": ["35130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2055, 47.976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2128, 47.9661]
+      },
+      "population": 905,
+      "surface": 1789.54,
+      "radius": 2.39
+    },
+    {
+      "nom": "Muel",
+      "code": "35201",
+      "codesPostaux": ["35290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1575, 48.116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1574, 48.1277]
+      },
+      "population": 912,
+      "surface": 2926.96,
+      "radius": 3.05
+    },
+    {
+      "nom": "Nouvoitou",
+      "code": "35204",
+      "codesPostaux": ["35410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5504, 48.0292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5461, 48.042]
+      },
+      "population": 3732,
+      "surface": 1939.54,
+      "radius": 2.48
+    },
+    {
+      "nom": "Noyal-Châtillon-sur-Seiche",
+      "code": "35206",
+      "codesPostaux": ["35230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.661, 48.053]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.662, 48.0428]
+      },
+      "population": 7995,
+      "surface": 2644.64,
+      "radius": 2.9
+    },
+    {
+      "nom": "Noyal-sous-Bazouges",
+      "code": "35205",
+      "codesPostaux": ["35560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6207, 48.4191]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6245, 48.4133]
+      },
+      "population": 382,
+      "surface": 1502.3,
+      "radius": 2.19
+    },
+    {
+      "nom": "Noyal-sur-Vilaine",
+      "code": "35207",
+      "codesPostaux": ["35530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5026, 48.0949]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5239, 48.1139]
+      },
+      "population": 6250,
+      "surface": 3122.4,
+      "radius": 3.15
+    },
+    {
+      "nom": "Orgères",
+      "code": "35208",
+      "codesPostaux": ["35230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6625, 47.9861]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6676, 47.9957]
+      },
+      "population": 5602,
+      "surface": 1678,
+      "radius": 2.31
+    },
+    {
+      "nom": "Pacé",
+      "code": "35210",
+      "codesPostaux": ["35740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7744, 48.1535]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7728, 48.1467]
+      },
+      "population": 11815,
+      "surface": 3494.36,
+      "radius": 3.34
+    },
+    {
+      "nom": "Paimpont",
+      "code": "35211",
+      "codesPostaux": ["35380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1793, 48.0327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1739, 48.0196]
+      },
+      "population": 1778,
+      "surface": 11032.17,
+      "radius": 5.93
+    },
+    {
+      "nom": "Pancé",
+      "code": "35212",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.643, 47.889]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6626, 47.8828]
+      },
+      "population": 1171,
+      "surface": 1976.97,
+      "radius": 2.51
+    },
+    {
+      "nom": "Parcé",
+      "code": "35214",
+      "codesPostaux": ["35210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1946, 48.2727]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2014, 48.2732]
+      },
+      "population": 652,
+      "surface": 1718.79,
+      "radius": 2.34
+    },
+    {
+      "nom": "Parigné",
+      "code": "35215",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1999, 48.4205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1918, 48.4277]
+      },
+      "population": 1301,
+      "surface": 2018.46,
+      "radius": 2.53
+    },
+    {
+      "nom": "Parthenay-de-Bretagne",
+      "code": "35216",
+      "codesPostaux": ["35850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.829, 48.1882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8316, 48.1918]
+      },
+      "population": 1802,
+      "surface": 486.73,
+      "radius": 1.24
+    },
+    {
+      "nom": "Pipriac",
+      "code": "35219",
+      "codesPostaux": ["35550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9416, 47.8147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9463, 47.8092]
+      },
+      "population": 3871,
+      "surface": 4931.16,
+      "radius": 3.96
+    },
+    {
+      "nom": "Piré-Chancé",
+      "code": "35220",
+      "codesPostaux": ["35150", "35680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.406, 48.0146]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4293, 48.0095]
+      },
+      "population": 3177,
+      "surface": 4186.88,
+      "radius": 3.65
+    },
+    {
+      "nom": "Pléchâtel",
+      "code": "35221",
+      "codesPostaux": ["35470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7224, 47.8759]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7511, 47.8962]
+      },
+      "population": 2796,
+      "surface": 3622.67,
+      "radius": 3.4
+    },
+    {
+      "nom": "Pleine-Fougères",
+      "code": "35222",
+      "codesPostaux": ["35610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5722, 48.5317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5637, 48.5337]
+      },
+      "population": 1978,
+      "surface": 3257.61,
+      "radius": 3.22
+    },
+    {
+      "nom": "Plélan-le-Grand",
+      "code": "35223",
+      "codesPostaux": ["35380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0765, 47.9987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0966, 48.0024]
+      },
+      "population": 4063,
+      "surface": 5009.19,
+      "radius": 3.99
+    },
+    {
+      "nom": "Plerguer",
+      "code": "35224",
+      "codesPostaux": ["35540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8478, 48.534]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8488, 48.5268]
+      },
+      "population": 2871,
+      "surface": 2027.22,
+      "radius": 2.54
+    },
+    {
+      "nom": "Plesder",
+      "code": "35225",
+      "codesPostaux": ["35720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9328, 48.4162]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9233, 48.4134]
+      },
+      "population": 778,
+      "surface": 1122.79,
+      "radius": 1.89
+    },
+    {
+      "nom": "Pleugueneuc",
+      "code": "35226",
+      "codesPostaux": ["35720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8851, 48.4054]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9041, 48.3974]
+      },
+      "population": 2063,
+      "surface": 2480.1,
+      "radius": 2.81
+    },
+    {
+      "nom": "Pleumeleuc",
+      "code": "35227",
+      "codesPostaux": ["35137"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8889, 48.1793]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9196, 48.183]
+      },
+      "population": 3535,
+      "surface": 1969.09,
+      "radius": 2.5
+    },
+    {
+      "nom": "Pleurtuit",
+      "code": "35228",
+      "codesPostaux": ["35730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0696, 48.5791]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.059, 48.5792]
+      },
+      "population": 7064,
+      "surface": 2884.74,
+      "radius": 3.03
+    },
+    {
+      "nom": "Pocé-les-Bois",
+      "code": "35229",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2612, 48.113]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2497, 48.1152]
+      },
+      "population": 1317,
+      "surface": 1492.94,
+      "radius": 2.18
+    },
+    {
+      "nom": "Poilley",
+      "code": "35230",
+      "codesPostaux": ["35420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2546, 48.4664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2622, 48.4664]
+      },
+      "population": 380,
+      "surface": 1085.3,
+      "radius": 1.86
+    },
+    {
+      "nom": "Poligné",
+      "code": "35231",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6853, 47.9001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6849, 47.8871]
+      },
+      "population": 1245,
+      "surface": 951.94,
+      "radius": 1.74
+    },
+    {
+      "nom": "Pont-Péan",
+      "code": "35363",
+      "codesPostaux": ["35131"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6975, 48.0114]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.706, 48.0108]
+      },
+      "population": 4289,
+      "surface": 878.99,
+      "radius": 1.67
+    },
+    {
+      "nom": "Princé",
+      "code": "35232",
+      "codesPostaux": ["35210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1028, 48.2393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.0882, 48.2183]
+      },
+      "population": 398,
+      "surface": 1232.99,
+      "radius": 1.98
+    },
+    {
+      "nom": "Québriac",
+      "code": "35233",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8106, 48.3579]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8275, 48.3447]
+      },
+      "population": 1590,
+      "surface": 2084.54,
+      "radius": 2.58
+    },
+    {
+      "nom": "Quédillac",
+      "code": "35234",
+      "codesPostaux": ["35290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1422, 48.2386]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1412, 48.2492]
+      },
+      "population": 1272,
+      "surface": 2683.57,
+      "radius": 2.92
+    },
+    {
+      "nom": "Rannée",
+      "code": "35235",
+      "codesPostaux": ["35130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.233, 47.9063]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2414, 47.9229]
+      },
+      "population": 1081,
+      "surface": 5248.23,
+      "radius": 4.09
+    },
+    {
+      "nom": "Redon",
+      "code": "35236",
+      "codesPostaux": ["35600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0787, 47.6557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0838, 47.6507]
+      },
+      "population": 9336,
+      "surface": 1529.78,
+      "radius": 2.21
+    },
+    {
+      "nom": "Renac",
+      "code": "35237",
+      "codesPostaux": ["35660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9769, 47.722]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9755, 47.7193]
+      },
+      "population": 1032,
+      "surface": 2620.13,
+      "radius": 2.89
+    },
+    {
+      "nom": "Rennes",
+      "code": "35238",
+      "codesPostaux": ["35000", "35200", "35700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6884, 48.1159]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6801, 48.1116]
+      },
+      "population": 227830,
+      "surface": 5033.19,
+      "radius": 4
+    },
+    {
+      "nom": "Retiers",
+      "code": "35239",
+      "codesPostaux": ["35240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3512, 47.9093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3784, 47.9124]
+      },
+      "population": 4553,
+      "surface": 4211.38,
+      "radius": 3.66
+    },
+    {
+      "nom": "Rimou",
+      "code": "35242",
+      "codesPostaux": ["35560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5305, 48.3869]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5132, 48.3985]
+      },
+      "population": 350,
+      "surface": 1345.5,
+      "radius": 2.07
+    },
+    {
+      "nom": "Rives-du-Couesnon",
+      "code": "35282",
+      "codesPostaux": ["35140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3421, 48.2878]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3696, 48.2898]
+      },
+      "population": 2919,
+      "surface": 4913.17,
+      "radius": 3.95
+    },
+    {
+      "nom": "Romagné",
+      "code": "35243",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.259, 48.3446]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2759, 48.3425]
+      },
+      "population": 2434,
+      "surface": 2696.24,
+      "radius": 2.93
+    },
+    {
+      "nom": "Romazy",
+      "code": "35244",
+      "codesPostaux": ["35490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4926, 48.3834]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4977, 48.3761]
+      },
+      "population": 275,
+      "surface": 722.82,
+      "radius": 1.52
+    },
+    {
+      "nom": "Romillé",
+      "code": "35245",
+      "codesPostaux": ["35850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.874, 48.2272]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8924, 48.2155]
+      },
+      "population": 4154,
+      "surface": 2896.87,
+      "radius": 3.04
+    },
+    {
+      "nom": "Roz-Landrieux",
+      "code": "35246",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8203, 48.5472]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.813, 48.5438]
+      },
+      "population": 1376,
+      "surface": 1806.16,
+      "radius": 2.4
+    },
+    {
+      "nom": "Roz-sur-Couesnon",
+      "code": "35247",
+      "codesPostaux": ["35610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.596, 48.5926]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5916, 48.5897]
+      },
+      "population": 1036,
+      "surface": 2601.39,
+      "radius": 2.88
+    },
+    {
+      "nom": "Sains",
+      "code": "35248",
+      "codesPostaux": ["35610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5968, 48.5557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5858, 48.5522]
+      },
+      "population": 457,
+      "surface": 1044.12,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-Armel",
+      "code": "35250",
+      "codesPostaux": ["35230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5765, 48.0138]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5937, 48.0141]
+      },
+      "population": 2344,
+      "surface": 789.18,
+      "radius": 1.58
+    },
+    {
+      "nom": "Saint-Aubin-d'Aubigné",
+      "code": "35251",
+      "codesPostaux": ["35250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6002, 48.2618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6058, 48.2628]
+      },
+      "population": 4231,
+      "surface": 2336.38,
+      "radius": 2.73
+    },
+    {
+      "nom": "Saint-Aubin-des-Landes",
+      "code": "35252",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2936, 48.099]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2971, 48.0941]
+      },
+      "population": 923,
+      "surface": 1033.64,
+      "radius": 1.81
+    },
+    {
+      "nom": "Saint-Aubin-du-Cormier",
+      "code": "35253",
+      "codesPostaux": ["35140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4239, 48.2559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3991, 48.2601]
+      },
+      "population": 4145,
+      "surface": 2755.5,
+      "radius": 2.96
+    },
+    {
+      "nom": "Saint-Benoît-des-Ondes",
+      "code": "35255",
+      "codesPostaux": ["35114"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.86, 48.6135]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8504, 48.6192]
+      },
+      "population": 966,
+      "surface": 297.19,
+      "radius": 0.97
+    },
+    {
+      "nom": "Saint-Briac-sur-Mer",
+      "code": "35256",
+      "codesPostaux": ["35800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.13, 48.6172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1327, 48.6186]
+      },
+      "population": 2228,
+      "surface": 813.87,
+      "radius": 1.61
+    },
+    {
+      "nom": "Saint-Brieuc-des-Iffs",
+      "code": "35258",
+      "codesPostaux": ["35630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8446, 48.3033]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8497, 48.2928]
+      },
+      "population": 323,
+      "surface": 822.78,
+      "radius": 1.62
+    },
+    {
+      "nom": "Saint-Broladre",
+      "code": "35259",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6641, 48.5786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6563, 48.587]
+      },
+      "population": 1166,
+      "surface": 2413.25,
+      "radius": 2.77
+    },
+    {
+      "nom": "Saint-Christophe-de-Valains",
+      "code": "35261",
+      "codesPostaux": ["35140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4491, 48.3414]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4472, 48.3421]
+      },
+      "population": 230,
+      "surface": 329.33,
+      "radius": 1.02
+    },
+    {
+      "nom": "Saint-Christophe-des-Bois",
+      "code": "35260",
+      "codesPostaux": ["35210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2365, 48.227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2471, 48.2269]
+      },
+      "population": 562,
+      "surface": 926.88,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saint-Coulomb",
+      "code": "35263",
+      "codesPostaux": ["35350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9236, 48.6807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9123, 48.6765]
+      },
+      "population": 2970,
+      "surface": 1802.27,
+      "radius": 2.4
+    },
+    {
+      "nom": "Saint-Didier",
+      "code": "35264",
+      "codesPostaux": ["35220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3606, 48.0913]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3719, 48.0955]
+      },
+      "population": 2030,
+      "surface": 1419.02,
+      "radius": 2.13
+    },
+    {
+      "nom": "Saint-Domineuc",
+      "code": "35265",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8695, 48.3611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8761, 48.3712]
+      },
+      "population": 2587,
+      "surface": 1575.14,
+      "radius": 2.24
+    },
+    {
+      "nom": "Saint-Erblon",
+      "code": "35266",
+      "codesPostaux": ["35230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6465, 48.02]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6513, 48.0181]
+      },
+      "population": 3615,
+      "surface": 1094.05,
+      "radius": 1.87
+    },
+    {
+      "nom": "Saint-Ganton",
+      "code": "35268",
+      "codesPostaux": ["35550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8981, 47.7681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8839, 47.7546]
+      },
+      "population": 414,
+      "surface": 1416.33,
+      "radius": 2.12
+    },
+    {
+      "nom": "Saint-Georges-de-Gréhaigne",
+      "code": "35270",
+      "codesPostaux": ["35610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.547, 48.5823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5484, 48.5684]
+      },
+      "population": 377,
+      "surface": 1223.77,
+      "radius": 1.97
+    },
+    {
+      "nom": "Saint-Georges-de-Reintembault",
+      "code": "35271",
+      "codesPostaux": ["35420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2324, 48.5068]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2434, 48.5089]
+      },
+      "population": 1524,
+      "surface": 3154.77,
+      "radius": 3.17
+    },
+    {
+      "nom": "Saint-Germain-du-Pinel",
+      "code": "35272",
+      "codesPostaux": ["35370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1726, 48.0028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1678, 48.0106]
+      },
+      "population": 1007,
+      "surface": 1128.77,
+      "radius": 1.9
+    },
+    {
+      "nom": "Saint-Germain-en-Coglès",
+      "code": "35273",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2556, 48.4016]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2629, 48.4039]
+      },
+      "population": 2091,
+      "surface": 3255.34,
+      "radius": 3.22
+    },
+    {
+      "nom": "Saint-Germain-sur-Ille",
+      "code": "35274",
+      "codesPostaux": ["35250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6514, 48.2494]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6595, 48.2491]
+      },
+      "population": 1023,
+      "surface": 389.47,
+      "radius": 1.11
+    },
+    {
+      "nom": "Saint-Gilles",
+      "code": "35275",
+      "codesPostaux": ["35590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.85, 48.1517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8292, 48.1545]
+      },
+      "population": 5489,
+      "surface": 2096.22,
+      "radius": 2.58
+    },
+    {
+      "nom": "Saint-Gondran",
+      "code": "35276",
+      "codesPostaux": ["35630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.823, 48.2693]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8364, 48.2672]
+      },
+      "population": 629,
+      "surface": 444.34,
+      "radius": 1.19
+    },
+    {
+      "nom": "Saint-Gonlay",
+      "code": "35277",
+      "codesPostaux": ["35750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0738, 48.1121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0665, 48.1136]
+      },
+      "population": 381,
+      "surface": 926.08,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saint-Grégoire",
+      "code": "35278",
+      "codesPostaux": ["35760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6815, 48.1598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6823, 48.1538]
+      },
+      "population": 9992,
+      "surface": 1750.17,
+      "radius": 2.36
+    },
+    {
+      "nom": "Saint-Guinoux",
+      "code": "35279",
+      "codesPostaux": ["35430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8894, 48.5793]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8842, 48.577]
+      },
+      "population": 1247,
+      "surface": 649.9,
+      "radius": 1.44
+    },
+    {
+      "nom": "Saint-Hilaire-des-Landes",
+      "code": "35280",
+      "codesPostaux": ["35140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.371, 48.3378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3565, 48.3517]
+      },
+      "population": 1032,
+      "surface": 1852.13,
+      "radius": 2.43
+    },
+    {
+      "nom": "Saint-Jacques-de-la-Lande",
+      "code": "35281",
+      "codesPostaux": ["35136"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7252, 48.0779]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7129, 48.0806]
+      },
+      "population": 13593,
+      "surface": 1234.05,
+      "radius": 1.98
+    },
+    {
+      "nom": "Saint-Jean-sur-Vilaine",
+      "code": "35283",
+      "codesPostaux": ["35220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3349, 48.1225]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3614, 48.1168]
+      },
+      "population": 1376,
+      "surface": 1078,
+      "radius": 1.85
+    },
+    {
+      "nom": "Saint-Jouan-des-Guérets",
+      "code": "35284",
+      "codesPostaux": ["35430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9667, 48.6043]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9721, 48.5992]
+      },
+      "population": 2816,
+      "surface": 925.03,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saint-Just",
+      "code": "35285",
+      "codesPostaux": ["35550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9651, 47.7673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9609, 47.7647]
+      },
+      "population": 1103,
+      "surface": 2798.55,
+      "radius": 2.98
+    },
+    {
+      "nom": "Saint-Léger-des-Prés",
+      "code": "35286",
+      "codesPostaux": ["35270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6568, 48.3881]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.648, 48.3942]
+      },
+      "population": 295,
+      "surface": 559.69,
+      "radius": 1.33
+    },
+    {
+      "nom": "Saint-Lunaire",
+      "code": "35287",
+      "codesPostaux": ["35800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1004, 48.62]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1096, 48.6366]
+      },
+      "population": 2647,
+      "surface": 1037.12,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-M'Hervé",
+      "code": "35300",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.114, 48.1741]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.1173, 48.1787]
+      },
+      "population": 1357,
+      "surface": 3105.34,
+      "radius": 3.14
+    },
+    {
+      "nom": "Saint-Malo",
+      "code": "35288",
+      "codesPostaux": ["35400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0066, 48.6465]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0227, 48.6515]
+      },
+      "population": 47255,
+      "surface": 3640.72,
+      "radius": 3.4
+    },
+    {
+      "nom": "Saint-Malo-de-Phily",
+      "code": "35289",
+      "codesPostaux": ["35480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8091, 47.8649]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7869, 47.8778]
+      },
+      "population": 1074,
+      "surface": 1882.22,
+      "radius": 2.45
+    },
+    {
+      "nom": "Saint-Malon-sur-Mel",
+      "code": "35290",
+      "codesPostaux": ["35750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1096, 48.0932]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1007, 48.0935]
+      },
+      "population": 613,
+      "surface": 1625.28,
+      "radius": 2.27
+    },
+    {
+      "nom": "Saint-Marc-le-Blanc",
+      "code": "35292",
+      "codesPostaux": ["35460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4015, 48.374]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4094, 48.3648]
+      },
+      "population": 1567,
+      "surface": 2298.08,
+      "radius": 2.7
+    },
+    {
+      "nom": "Saint-Marcan",
+      "code": "35291",
+      "codesPostaux": ["35120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.628, 48.5855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6343, 48.5876]
+      },
+      "population": 432,
+      "surface": 772.31,
+      "radius": 1.57
+    },
+    {
+      "nom": "Saint-Maugan",
+      "code": "35295",
+      "codesPostaux": ["35750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1022, 48.1367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0843, 48.135]
+      },
+      "population": 518,
+      "surface": 854.71,
+      "radius": 1.65
+    },
+    {
+      "nom": "Saint-Médard-sur-Ille",
+      "code": "35296",
+      "codesPostaux": ["35250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6803, 48.2764]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6608, 48.2735]
+      },
+      "population": 1350,
+      "surface": 1834.85,
+      "radius": 2.42
+    },
+    {
+      "nom": "Saint-Méen-le-Grand",
+      "code": "35297",
+      "codesPostaux": ["35290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1903, 48.1923]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1928, 48.1898]
+      },
+      "population": 4642,
+      "surface": 1858.67,
+      "radius": 2.43
+    },
+    {
+      "nom": "Saint-Méloir-des-Ondes",
+      "code": "35299",
+      "codesPostaux": ["35350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9053, 48.639]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9048, 48.6378]
+      },
+      "population": 4666,
+      "surface": 2899.6,
+      "radius": 3.04
+    },
+    {
+      "nom": "Saint-Onen-la-Chapelle",
+      "code": "35302",
+      "codesPostaux": ["35290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1586, 48.1705]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1729, 48.177]
+      },
+      "population": 1121,
+      "surface": 2489.8,
+      "radius": 2.82
+    },
+    {
+      "nom": "Saint-Ouen-des-Alleux",
+      "code": "35304",
+      "codesPostaux": ["35140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4346, 48.3287]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4263, 48.327]
+      },
+      "population": 1308,
+      "surface": 1543.16,
+      "radius": 2.22
+    },
+    {
+      "nom": "Saint-Péran",
+      "code": "35305",
+      "codesPostaux": ["35380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0649, 48.0566]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.058, 48.0533]
+      },
+      "population": 415,
+      "surface": 944.12,
+      "radius": 1.73
+    },
+    {
+      "nom": "Saint-Père-Marc-en-Poulet",
+      "code": "35306",
+      "codesPostaux": ["35430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9281, 48.5852]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9232, 48.5879]
+      },
+      "population": 2399,
+      "surface": 1875.83,
+      "radius": 2.44
+    },
+    {
+      "nom": "Saint-Pern",
+      "code": "35307",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9837, 48.2823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9868, 48.2873]
+      },
+      "population": 1003,
+      "surface": 1209.4,
+      "radius": 1.96
+    },
+    {
+      "nom": "Saint-Rémy-du-Plain",
+      "code": "35309",
+      "codesPostaux": ["35560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5692, 48.3767]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5715, 48.3694]
+      },
+      "population": 808,
+      "surface": 1478.89,
+      "radius": 2.17
+    },
+    {
+      "nom": "Saint-Sauveur-des-Landes",
+      "code": "35310",
+      "codesPostaux": ["35133"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.316, 48.3477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.3133, 48.3426]
+      },
+      "population": 1565,
+      "surface": 1883.2,
+      "radius": 2.45
+    },
+    {
+      "nom": "Saint-Séglin",
+      "code": "35311",
+      "codesPostaux": ["35330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.024, 47.8503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0064, 47.8543]
+      },
+      "population": 600,
+      "surface": 947.33,
+      "radius": 1.74
+    },
+    {
+      "nom": "Saint-Senoux",
+      "code": "35312",
+      "codesPostaux": ["35580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7892, 47.9144]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7878, 47.9046]
+      },
+      "population": 1836,
+      "surface": 1826.96,
+      "radius": 2.41
+    },
+    {
+      "nom": "Saint-Suliac",
+      "code": "35314",
+      "codesPostaux": ["35430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.967, 48.5713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9711, 48.5688]
+      },
+      "population": 977,
+      "surface": 469.67,
+      "radius": 1.22
+    },
+    {
+      "nom": "Saint-Sulpice-des-Landes",
+      "code": "35316",
+      "codesPostaux": ["35390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6216, 47.7785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6211, 47.7664]
+      },
+      "population": 827,
+      "surface": 1133.29,
+      "radius": 1.9
+    },
+    {
+      "nom": "Saint-Sulpice-la-Forêt",
+      "code": "35315",
+      "codesPostaux": ["35250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5771, 48.2134]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5786, 48.2188]
+      },
+      "population": 1557,
+      "surface": 676.1,
+      "radius": 1.47
+    },
+    {
+      "nom": "Saint-Symphorien",
+      "code": "35317",
+      "codesPostaux": ["35630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8022, 48.2814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8214, 48.2917]
+      },
+      "population": 613,
+      "surface": 795.7,
+      "radius": 1.59
+    },
+    {
+      "nom": "Saint-Thual",
+      "code": "35318",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9345, 48.3372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9339, 48.3357]
+      },
+      "population": 999,
+      "surface": 1157.2,
+      "radius": 1.92
+    },
+    {
+      "nom": "Saint-Thurial",
+      "code": "35319",
+      "codesPostaux": ["35310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9424, 48.0338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9318, 48.0291]
+      },
+      "population": 2165,
+      "surface": 1812.05,
+      "radius": 2.4
+    },
+    {
+      "nom": "Saint-Uniac",
+      "code": "35320",
+      "codesPostaux": ["35360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0347, 48.1676]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0298, 48.1739]
+      },
+      "population": 512,
+      "surface": 694.66,
+      "radius": 1.49
+    },
+    {
+      "nom": "Sainte-Anne-sur-Vilaine",
+      "code": "35249",
+      "codesPostaux": ["35390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8081, 47.7363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8247, 47.73]
+      },
+      "population": 1032,
+      "surface": 2875.07,
+      "radius": 3.03
+    },
+    {
+      "nom": "Sainte-Colombe",
+      "code": "35262",
+      "codesPostaux": ["35134"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4581, 47.8961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4566, 47.8876]
+      },
+      "population": 364,
+      "surface": 775.17,
+      "radius": 1.57
+    },
+    {
+      "nom": "Sainte-Marie",
+      "code": "35294",
+      "codesPostaux": ["35600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0181, 47.6958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0008, 47.6943]
+      },
+      "population": 2249,
+      "surface": 2504.96,
+      "radius": 2.82
+    },
+    {
+      "nom": "Saulnières",
+      "code": "35321",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5748, 47.9197]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5844, 47.9147]
+      },
+      "population": 798,
+      "surface": 1059.7,
+      "radius": 1.84
+    },
+    {
+      "nom": "Sens-de-Bretagne",
+      "code": "35326",
+      "codesPostaux": ["35490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5563, 48.3367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5354, 48.3328]
+      },
+      "population": 2620,
+      "surface": 3115.4,
+      "radius": 3.15
+    },
+    {
+      "nom": "Servon-sur-Vilaine",
+      "code": "35327",
+      "codesPostaux": ["35530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4585, 48.123]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4603, 48.1217]
+      },
+      "population": 4032,
+      "surface": 1536.7,
+      "radius": 2.21
+    },
+    {
+      "nom": "Sixt-sur-Aff",
+      "code": "35328",
+      "codesPostaux": ["35550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0561, 47.7755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0796, 47.776]
+      },
+      "population": 2222,
+      "surface": 4319.75,
+      "radius": 3.71
+    },
+    {
+      "nom": "Sougeal",
+      "code": "35329",
+      "codesPostaux": ["35610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5131, 48.5043]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5239, 48.5089]
+      },
+      "population": 544,
+      "surface": 1434.85,
+      "radius": 2.14
+    },
+    {
+      "nom": "Taillis",
+      "code": "35330",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2432, 48.1861]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2389, 48.1889]
+      },
+      "population": 1036,
+      "surface": 1310.59,
+      "radius": 2.04
+    },
+    {
+      "nom": "Talensac",
+      "code": "35331",
+      "codesPostaux": ["35160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9224, 48.0905]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9289, 48.1083]
+      },
+      "population": 2530,
+      "surface": 2170.05,
+      "radius": 2.63
+    },
+    {
+      "nom": "Teillay",
+      "code": "35332",
+      "codesPostaux": ["35620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5213, 47.8062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5389, 47.8069]
+      },
+      "population": 1103,
+      "surface": 2659.58,
+      "radius": 2.91
+    },
+    {
+      "nom": "Thorigné-Fouillard",
+      "code": "35334",
+      "codesPostaux": ["35235"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5866, 48.1524]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5817, 48.1532]
+      },
+      "population": 8631,
+      "surface": 1357.55,
+      "radius": 2.08
+    },
+    {
+      "nom": "Thourie",
+      "code": "35335",
+      "codesPostaux": ["35134"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.4556, 47.8522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4798, 47.8546]
+      },
+      "population": 857,
+      "surface": 2462.49,
+      "radius": 2.8
+    },
+    {
+      "nom": "Tinténiac",
+      "code": "35337",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8298, 48.3182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8365, 48.3288]
+      },
+      "population": 3877,
+      "surface": 2347.04,
+      "radius": 2.73
+    },
+    {
+      "nom": "Torcé",
+      "code": "35338",
+      "codesPostaux": ["35370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2702, 48.0632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2675, 48.0611]
+      },
+      "population": 1270,
+      "surface": 1429.32,
+      "radius": 2.13
+    },
+    {
+      "nom": "Trans-la-Forêt",
+      "code": "35339",
+      "codesPostaux": ["35610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6016, 48.4872]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5878, 48.4971]
+      },
+      "population": 638,
+      "surface": 1513.06,
+      "radius": 2.19
+    },
+    {
+      "nom": "Treffendel",
+      "code": "35340",
+      "codesPostaux": ["35380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0059, 48.0309]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0059, 48.0378]
+      },
+      "population": 1327,
+      "surface": 1903.71,
+      "radius": 2.46
+    },
+    {
+      "nom": "Trémeheuc",
+      "code": "35342",
+      "codesPostaux": ["35270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6954, 48.4396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7028, 48.4255]
+      },
+      "population": 349,
+      "surface": 626.24,
+      "radius": 1.41
+    },
+    {
+      "nom": "Tresbœuf",
+      "code": "35343",
+      "codesPostaux": ["35320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5461, 47.8783]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.548, 47.8822]
+      },
+      "population": 1235,
+      "surface": 2572.9,
+      "radius": 2.86
+    },
+    {
+      "nom": "Trévérien",
+      "code": "35345",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9152, 48.3718]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9299, 48.372]
+      },
+      "population": 918,
+      "surface": 1222.72,
+      "radius": 1.97
+    },
+    {
+      "nom": "Trimer",
+      "code": "35346",
+      "codesPostaux": ["35190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.8956, 48.3477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.8929, 48.3429]
+      },
+      "population": 205,
+      "surface": 358.67,
+      "radius": 1.07
+    },
+    {
+      "nom": "Val d'Anast",
+      "code": "35168",
+      "codesPostaux": ["35330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9931, 47.8981]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9865, 47.8911]
+      },
+      "population": 3925,
+      "surface": 7652.63,
+      "radius": 4.94
+    },
+    {
+      "nom": "Val-Couesnon",
+      "code": "35004",
+      "codesPostaux": ["35460", "35560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.465, 48.441]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.4825, 48.4593]
+      },
+      "population": 4084,
+      "surface": 7951.36,
+      "radius": 5.03
+    },
+    {
+      "nom": "Val-d'Izé",
+      "code": "35347",
+      "codesPostaux": ["35450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2987, 48.1861]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.302, 48.177]
+      },
+      "population": 2601,
+      "surface": 4568.36,
+      "radius": 3.81
+    },
+    {
+      "nom": "Vergéal",
+      "code": "35350",
+      "codesPostaux": ["35680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2562, 48.0335]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2643, 48.0361]
+      },
+      "population": 804,
+      "surface": 1118.66,
+      "radius": 1.89
+    },
+    {
+      "nom": "Vern-sur-Seiche",
+      "code": "35352",
+      "codesPostaux": ["35770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.6082, 48.0458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.6017, 48.0446]
+      },
+      "population": 8272,
+      "surface": 1996.29,
+      "radius": 2.52
+    },
+    {
+      "nom": "Vezin-le-Coquet",
+      "code": "35353",
+      "codesPostaux": ["35132"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7528, 48.116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.7552, 48.119]
+      },
+      "population": 6441,
+      "surface": 791.73,
+      "radius": 1.59
+    },
+    {
+      "nom": "Vieux-Viel",
+      "code": "35354",
+      "codesPostaux": ["35610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5549, 48.4997]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.5443, 48.5111]
+      },
+      "population": 328,
+      "surface": 895.94,
+      "radius": 1.69
+    },
+    {
+      "nom": "Vieux-Vy-sur-Couesnon",
+      "code": "35355",
+      "codesPostaux": ["35490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.5007, 48.3339]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.488, 48.3434]
+      },
+      "population": 1280,
+      "surface": 2161.88,
+      "radius": 2.62
+    },
+    {
+      "nom": "Vignoc",
+      "code": "35356",
+      "codesPostaux": ["35630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.7644, 48.2589]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.784, 48.249]
+      },
+      "population": 2290,
+      "surface": 1428.42,
+      "radius": 2.13
+    },
+    {
+      "nom": "Villamée",
+      "code": "35357",
+      "codesPostaux": ["35420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.2162, 48.4569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2176, 48.4615]
+      },
+      "population": 291,
+      "surface": 1089.44,
+      "radius": 1.86
+    },
+    {
+      "nom": "Visseiche",
+      "code": "35359",
+      "codesPostaux": ["35130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.3023, 47.9592]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.303, 47.9542]
+      },
+      "population": 868,
+      "surface": 1627.83,
+      "radius": 2.28
+    },
+    {
+      "nom": "Vitré",
+      "code": "35360",
+      "codesPostaux": ["35500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.1972, 48.1105]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.2155, 48.1247]
+      },
+      "population": 18892,
+      "surface": 3865.76,
+      "radius": 3.51
+    }
+  ],
+  "postalCodes": {
+    "35000": {
+      "communes": ["Rennes"],
+      "communeCount": 1,
+      "center": [-1.6801, 48.1116],
+      "coverageRadius": 4,
+      "totalPopulation": 227830,
+      "totalSurface": 5033
+    },
+    "35111": {
+      "communes": ["La Fresnais", "Lillemer"],
+      "communeCount": 2,
+      "center": [-1.8463, 48.5908],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 48.5643,
+        "maxLat": 48.5949,
+        "minLon": -1.8617,
+        "maxLon": -1.8439
+      },
+      "totalPopulation": 2891,
+      "totalSurface": 1819
+    },
+    "35113": {
+      "communes": ["Domagné"],
+      "communeCount": 1,
+      "center": [-1.3947, 48.0703],
+      "coverageRadius": 3.05,
+      "totalPopulation": 2439,
+      "totalSurface": 2927
+    },
+    "35114": {
+      "communes": ["Saint-Benoît-des-Ondes"],
+      "communeCount": 1,
+      "center": [-1.8504, 48.6192],
+      "coverageRadius": 0.97,
+      "totalPopulation": 966,
+      "totalSurface": 297
+    },
+    "35120": {
+      "communes": [
+        "Baguer-Morvan",
+        "Baguer-Pican",
+        "La Boussac",
+        "Broualan",
+        "Cherrueix",
+        "Dol-de-Bretagne",
+        "Epiniac",
+        "Hirel",
+        "Mont-Dol",
+        "Roz-Landrieux",
+        "Saint-Broladre",
+        "Saint-Marcan"
+      ],
+      "communeCount": 12,
+      "center": [-1.7351, 48.5521],
+      "coverageRadius": 10.7,
+      "boundingBox": {
+        "minLat": 48.4738,
+        "maxLat": 48.606,
+        "minLon": -1.813,
+        "maxLon": -1.6343
+      },
+      "totalPopulation": 18871,
+      "totalSurface": 21437
+    },
+    "35130": {
+      "communes": [
+        "Arbrissel",
+        "Availles-sur-Seiche",
+        "Drouges",
+        "La Guerche-de-Bretagne",
+        "Moussé",
+        "Moutiers",
+        "Rannée",
+        "La Selle-Guerchaise",
+        "Visseiche"
+      ],
+      "communeCount": 9,
+      "center": [-1.2384, 47.9415],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 47.9005,
+        "maxLat": 47.9661,
+        "minLon": -1.303,
+        "maxLon": -1.172
+      },
+      "totalPopulation": 9187,
+      "totalSurface": 13139
+    },
+    "35131": {
+      "communes": ["Chartres-de-Bretagne", "Pont-Péan"],
+      "communeCount": 2,
+      "center": [-1.7069, 48.0309],
+      "coverageRadius": 2.3,
+      "boundingBox": {
+        "minLat": 48.0108,
+        "maxLat": 48.0409,
+        "minLon": -1.7074,
+        "maxLon": -1.706
+      },
+      "totalPopulation": 12967,
+      "totalSurface": 1876
+    },
+    "35132": {
+      "communes": ["Vezin-le-Coquet"],
+      "communeCount": 1,
+      "center": [-1.7552, 48.119],
+      "coverageRadius": 1.59,
+      "totalPopulation": 6441,
+      "totalSurface": 792
+    },
+    "35133": {
+      "communes": [
+        "Beaucé",
+        "Billé",
+        "La Chapelle-Fleurigné",
+        "Le Châtellier",
+        "Javené",
+        "Laignelet",
+        "Landéan",
+        "Lécousse",
+        "Le Loroux",
+        "Luitré-Dompierre",
+        "Parigné",
+        "Romagné",
+        "Saint-Germain-en-Coglès",
+        "Saint-Sauveur-des-Landes",
+        "La Selle-en-Luitré"
+      ],
+      "communeCount": 15,
+      "center": [-1.1979, 48.3544],
+      "coverageRadius": 10.7,
+      "boundingBox": {
+        "minLat": 48.2846,
+        "maxLat": 48.4277,
+        "minLon": -1.3133,
+        "maxLon": -1.0664
+      },
+      "totalPopulation": 23705,
+      "totalSurface": 31465
+    },
+    "35134": {
+      "communes": ["Coësmes", "Sainte-Colombe", "Thourie"],
+      "communeCount": 3,
+      "center": [-1.4566, 47.8742],
+      "coverageRadius": 2.8,
+      "boundingBox": {
+        "minLat": 47.8546,
+        "maxLat": 47.8876,
+        "minLon": -1.4798,
+        "maxLon": -1.4427
+      },
+      "totalPopulation": 2656,
+      "totalSurface": 5615
+    },
+    "35135": {
+      "communes": ["Chantepie"],
+      "communeCount": 1,
+      "center": [-1.6204, 48.0884],
+      "coverageRadius": 1.95,
+      "totalPopulation": 10378,
+      "totalSurface": 1196
+    },
+    "35136": {
+      "communes": ["Saint-Jacques-de-la-Lande"],
+      "communeCount": 1,
+      "center": [-1.7129, 48.0806],
+      "coverageRadius": 1.98,
+      "totalPopulation": 13593,
+      "totalSurface": 1234
+    },
+    "35137": {
+      "communes": ["Bédée", "La Nouaye", "Pleumeleuc"],
+      "communeCount": 3,
+      "center": [-1.935, 48.1804],
+      "coverageRadius": 3.8,
+      "boundingBox": {
+        "minLat": 48.1625,
+        "maxLat": 48.183,
+        "minLon": -1.9783,
+        "maxLon": -1.9196
+      },
+      "totalPopulation": 8463,
+      "totalSurface": 6189
+    },
+    "35140": {
+      "communes": [
+        "La Chapelle-Saint-Aubert",
+        "Gosné",
+        "Mézières-sur-Couesnon",
+        "Saint-Aubin-du-Cormier",
+        "Saint-Christophe-de-Valains",
+        "Saint-Hilaire-des-Landes",
+        "Rives-du-Couesnon",
+        "Saint-Ouen-des-Alleux"
+      ],
+      "communeCount": 8,
+      "center": [-1.4042, 48.2849],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 48.247,
+        "maxLat": 48.3517,
+        "minLon": -1.4662,
+        "maxLon": -1.3069
+      },
+      "totalPopulation": 13935,
+      "totalSurface": 16753
+    },
+    "35150": {
+      "communes": ["Amanlis", "Boistrudan", "Brie", "Chanteloup", "Corps-Nuds", "Essé", "Janzé", "Piré-Chancé"],
+      "communeCount": 8,
+      "center": [-1.5063, 47.9742],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 47.9512,
+        "maxLat": 48.0095,
+        "minLon": -1.6152,
+        "maxLon": -1.402
+      },
+      "totalPopulation": 21764,
+      "totalSurface": 19997
+    },
+    "35160": {
+      "communes": ["Breteil", "Monterfil", "Montfort-sur-Meu", "Talensac", "Le Verger"],
+      "communeCount": 5,
+      "center": [-1.939, 48.1233],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 48.0668,
+        "maxLat": 48.1455,
+        "minLon": -1.9794,
+        "maxLon": -1.8994
+      },
+      "totalPopulation": 15731,
+      "totalSurface": 7504
+    },
+    "35170": {
+      "communes": ["Bruz"],
+      "communeCount": 1,
+      "center": [-1.7461, 48.0245],
+      "coverageRadius": 3.09,
+      "totalPopulation": 19667,
+      "totalSurface": 2995
+    },
+    "35190": {
+      "communes": [
+        "La Baussaine",
+        "Bécherel",
+        "Cardroc",
+        "La Chapelle-aux-Filtzméens",
+        "Longaulnay",
+        "Miniac-sous-Bécherel",
+        "Québriac",
+        "Saint-Domineuc",
+        "Saint-Pern",
+        "Saint-Thual",
+        "Tinténiac",
+        "Trévérien",
+        "Trimer"
+      ],
+      "communeCount": 13,
+      "center": [-1.8826, 48.3342],
+      "coverageRadius": 9.4,
+      "boundingBox": {
+        "minLat": 48.2843,
+        "maxLat": 48.3842,
+        "minLon": -1.9868,
+        "maxLon": -1.8246
+      },
+      "totalPopulation": 15348,
+      "totalSurface": 14487
+    },
+    "35200": {
+      "communes": ["Rennes"],
+      "communeCount": 1,
+      "center": [-1.6801, 48.1116],
+      "coverageRadius": 4,
+      "totalPopulation": 227830,
+      "totalSurface": 5033
+    },
+    "35210": {
+      "communes": [
+        "Châtillon-en-Vendelais",
+        "Combourtillé",
+        "Luitré-Dompierre",
+        "Montautour",
+        "Montreuil-des-Landes",
+        "Parcé",
+        "Princé",
+        "Saint-Christophe-des-Bois"
+      ],
+      "communeCount": 8,
+      "center": [-1.1705, 48.2515],
+      "coverageRadius": 7.2,
+      "boundingBox": {
+        "minLat": 48.2038,
+        "maxLat": 48.2846,
+        "minLon": -1.2471,
+        "maxLon": -1.0882
+      },
+      "totalPopulation": 6305,
+      "totalSurface": 13561
+    },
+    "35220": {
+      "communes": ["Châteaubourg", "Marpiré", "Saint-Didier", "Saint-Jean-sur-Vilaine"],
+      "communeCount": 4,
+      "center": [-1.3886, 48.1107],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 48.0955,
+        "maxLat": 48.142,
+        "minLon": -1.4047,
+        "maxLon": -1.34
+      },
+      "totalPopulation": 11942,
+      "totalSurface": 6521
+    },
+    "35230": {
+      "communes": ["Bourgbarré", "Noyal-Châtillon-sur-Seiche", "Orgères", "Saint-Armel", "Saint-Erblon"],
+      "communeCount": 5,
+      "center": [-1.6458, 48.0162],
+      "coverageRadius": 3.9,
+      "boundingBox": {
+        "minLat": 47.995,
+        "maxLat": 48.0428,
+        "minLon": -1.6676,
+        "maxLon": -1.5937
+      },
+      "totalPopulation": 24248,
+      "totalSurface": 7686
+    },
+    "35235": {
+      "communes": ["Thorigné-Fouillard"],
+      "communeCount": 1,
+      "center": [-1.5817, 48.1532],
+      "coverageRadius": 2.08,
+      "totalPopulation": 8631,
+      "totalSurface": 1358
+    },
+    "35240": {
+      "communes": ["Marcillé-Robert", "Retiers", "Le Theil-de-Bretagne"],
+      "communeCount": 3,
+      "center": [-1.3881, 47.9193],
+      "coverageRadius": 4,
+      "boundingBox": {
+        "minLat": 47.9124,
+        "maxLat": 47.9496,
+        "minLon": -1.4291,
+        "maxLon": -1.3613
+      },
+      "totalPopulation": 7267,
+      "totalSurface": 8717
+    },
+    "35250": {
+      "communes": [
+        "Andouillé-Neuville",
+        "Aubigné",
+        "Chasné-sur-Illet",
+        "Chevaigné",
+        "Mouazé",
+        "Saint-Aubin-d'Aubigné",
+        "Saint-Germain-sur-Ille",
+        "Saint-Médard-sur-Ille",
+        "Saint-Sulpice-la-Forêt"
+      ],
+      "communeCount": 9,
+      "center": [-1.6108, 48.2472],
+      "coverageRadius": 5.6,
+      "boundingBox": {
+        "minLat": 48.2121,
+        "maxLat": 48.2946,
+        "minLon": -1.6608,
+        "maxLon": -1.5651
+      },
+      "totalPopulation": 15458,
+      "totalSurface": 9565
+    },
+    "35260": {
+      "communes": ["Cancale"],
+      "communeCount": 1,
+      "center": [-1.8529, 48.6752],
+      "coverageRadius": 2,
+      "totalPopulation": 5554,
+      "totalSurface": 1257
+    },
+    "35270": {
+      "communes": [
+        "Bonnemain",
+        "Combourg",
+        "Cuguen",
+        "Lanrigan",
+        "Lourmais",
+        "Meillac",
+        "Saint-Léger-des-Prés",
+        "Trémeheuc"
+      ],
+      "communeCount": 8,
+      "center": [-1.7532, 48.4215],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 48.3942,
+        "maxLat": 48.4669,
+        "minLon": -1.8151,
+        "maxLon": -1.648
+      },
+      "totalPopulation": 11785,
+      "totalSurface": 16769
+    },
+    "35290": {
+      "communes": ["Le Crouais", "Gaël", "Muel", "Quédillac", "Saint-Méen-le-Grand", "Saint-Onen-la-Chapelle"],
+      "communeCount": 6,
+      "center": [-2.1826, 48.182],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 48.1277,
+        "maxLat": 48.2492,
+        "minLon": -2.222,
+        "maxLon": -2.1409
+      },
+      "totalPopulation": 10155,
+      "totalSurface": 15873
+    },
+    "35300": {
+      "communes": ["Fougères"],
+      "communeCount": 1,
+      "center": [-1.2045, 48.3515],
+      "coverageRadius": 1.82,
+      "totalPopulation": 20602,
+      "totalSurface": 1043
+    },
+    "35310": {
+      "communes": ["Bréal-sous-Montfort", "Chavagne", "Cintré", "Mordelles", "Saint-Thurial"],
+      "communeCount": 5,
+      "center": [-1.851, 48.062],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 48.0291,
+        "maxLat": 48.106,
+        "minLon": -1.9318,
+        "maxLon": -1.789
+      },
+      "totalPopulation": 23602,
+      "totalSurface": 10331
+    },
+    "35320": {
+      "communes": [
+        "La Bosse-de-Bretagne",
+        "La Couyère",
+        "Crevin",
+        "Lalleu",
+        "Pancé",
+        "Le Petit-Fougeray",
+        "Poligné",
+        "Saulnières",
+        "Le Sel-de-Bretagne",
+        "Tresbœuf"
+      ],
+      "communeCount": 10,
+      "center": [-1.6181, 47.9021],
+      "coverageRadius": 9.6,
+      "boundingBox": {
+        "minLat": 47.8555,
+        "maxLat": 47.9365,
+        "minLon": -1.6849,
+        "maxLon": -1.5065
+      },
+      "totalPopulation": 10946,
+      "totalSurface": 12963
+    },
+    "35330": {
+      "communes": [
+        "Bovel",
+        "Les Brulais",
+        "La Chapelle-Bouëxic",
+        "Comblessac",
+        "Loutehel",
+        "Val d'Anast",
+        "Mernel",
+        "Saint-Séglin"
+      ],
+      "communeCount": 8,
+      "center": [-1.9903, 47.8998],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 47.8543,
+        "maxLat": 47.9511,
+        "minLon": -2.0843,
+        "maxLon": -1.9399
+      },
+      "totalPopulation": 9122,
+      "totalSurface": 17478
+    },
+    "35340": {
+      "communes": ["La Bouëxière", "Ercé-près-Liffré", "Liffré"],
+      "communeCount": 3,
+      "center": [-1.4869, 48.2106],
+      "coverageRadius": 5.6,
+      "boundingBox": {
+        "minLat": 48.184,
+        "maxLat": 48.2561,
+        "minLon": -1.5175,
+        "maxLon": -1.4375
+      },
+      "totalPopulation": 15599,
+      "totalSurface": 13230
+    },
+    "35350": {
+      "communes": ["La Gouesnière", "Saint-Coulomb", "Saint-Méloir-des-Ondes"],
+      "communeCount": 3,
+      "center": [-1.9047, 48.6427],
+      "coverageRadius": 4.4,
+      "boundingBox": {
+        "minLat": 48.604,
+        "maxLat": 48.6765,
+        "minLon": -1.9123,
+        "maxLon": -1.8934
+      },
+      "totalPopulation": 9636,
+      "totalSurface": 5585
+    },
+    "35360": {
+      "communes": [
+        "Boisgervilly",
+        "La Chapelle du Lou du Lac",
+        "Landujan",
+        "Médréac",
+        "Montauban-de-Bretagne",
+        "Saint-Uniac"
+      ],
+      "communeCount": 6,
+      "center": [-2.0451, 48.2086],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 48.1666,
+        "maxLat": 48.2679,
+        "minLon": -2.067,
+        "maxLon": -1.9922
+      },
+      "totalPopulation": 12655,
+      "totalSurface": 13349
+    },
+    "35370": {
+      "communes": [
+        "Argentré-du-Plessis",
+        "Bréal-sous-Vitré",
+        "Brielles",
+        "Étrelles",
+        "Gennes-sur-Seiche",
+        "Mondevert",
+        "Le Pertre",
+        "Saint-Germain-du-Pinel",
+        "Torcé"
+      ],
+      "communeCount": 9,
+      "center": [-1.147, 48.0492],
+      "coverageRadius": 9.1,
+      "boundingBox": {
+        "minLat": 47.9894,
+        "maxLat": 48.1042,
+        "minLon": -1.2675,
+        "maxLon": -1.0365
+      },
+      "totalPopulation": 13952,
+      "totalSurface": 17941
+    },
+    "35380": {
+      "communes": ["Maxent", "Paimpont", "Plélan-le-Grand", "Saint-Péran", "Treffendel"],
+      "communeCount": 5,
+      "center": [-2.0867, 48.0101],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 47.9823,
+        "maxLat": 48.0533,
+        "minLon": -2.1739,
+        "maxLon": -2.0059
+      },
+      "totalPopulation": 9040,
+      "totalSurface": 22899
+    },
+    "35390": {
+      "communes": ["La Dominelais", "Grand-Fougeray", "Sainte-Anne-sur-Vilaine", "Saint-Sulpice-des-Landes"],
+      "communeCount": 4,
+      "center": [-1.7217, 47.7396],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 47.7223,
+        "maxLat": 47.7664,
+        "minLon": -1.8247,
+        "maxLon": -1.6211
+      },
+      "totalPopulation": 5796,
+      "totalSurface": 12792
+    },
+    "35400": {
+      "communes": ["Saint-Malo"],
+      "communeCount": 1,
+      "center": [-2.0227, 48.6515],
+      "coverageRadius": 3.4,
+      "totalPopulation": 47255,
+      "totalSurface": 3641
+    },
+    "35410": {
+      "communes": ["Châteaugiron", "Domloup", "Nouvoitou"],
+      "communeCount": 3,
+      "center": [-1.5159, 48.0501],
+      "coverageRadius": 2.5,
+      "boundingBox": {
+        "minLat": 48.042,
+        "maxLat": 48.0621,
+        "minLon": -1.5461,
+        "maxLon": -1.5032
+      },
+      "totalPopulation": 18259,
+      "totalSurface": 6153
+    },
+    "35420": {
+      "communes": [
+        "La Bazouge-du-Désert",
+        "Le Ferré",
+        "Louvigné-du-Désert",
+        "Mellé",
+        "Monthault",
+        "Poilley",
+        "Saint-Georges-de-Reintembault",
+        "Villamée"
+      ],
+      "communeCount": 8,
+      "center": [-1.1751, 48.4819],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 48.4434,
+        "maxLat": 48.5115,
+        "minLon": -1.294,
+        "maxLon": -1.1051
+      },
+      "totalPopulation": 8252,
+      "totalSurface": 16222
+    },
+    "35430": {
+      "communes": [
+        "Châteauneuf-d'Ille-et-Vilaine",
+        "Saint-Guinoux",
+        "Saint-Jouan-des-Guérets",
+        "Saint-Père-Marc-en-Poulet",
+        "Saint-Suliac",
+        "La Ville-ès-Nonais"
+      ],
+      "communeCount": 6,
+      "center": [-1.9409, 48.5787],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 48.5467,
+        "maxLat": 48.5992,
+        "minLon": -1.9721,
+        "maxLon": -1.8842
+      },
+      "totalPopulation": 10344,
+      "totalSurface": 4502
+    },
+    "35440": {
+      "communes": ["Dingé", "Feins", "Guipel", "Montreuil-sur-Ille"],
+      "communeCount": 4,
+      "center": [-1.6908, 48.3204],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 48.2986,
+        "maxLat": 48.3572,
+        "minLon": -1.7247,
+        "maxLon": -1.6403
+      },
+      "totalPopulation": 6910,
+      "totalSurface": 11459
+    },
+    "35450": {
+      "communes": ["Dourdain", "Landavran", "Livré-sur-Changeon", "Mecé", "Val-d'Izé"],
+      "communeCount": 5,
+      "center": [-1.323, 48.1939],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 48.1592,
+        "maxLat": 48.2375,
+        "minLon": -1.3695,
+        "maxLon": -1.2889
+      },
+      "totalPopulation": 6858,
+      "totalSurface": 10776
+    },
+    "35460": {
+      "communes": ["Val-Couesnon", "Les Portes du Coglais", "Maen Roch", "Saint-Marc-le-Blanc", "Le Tiercent"],
+      "communeCount": 5,
+      "center": [-1.3978, 48.4248],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 48.3501,
+        "maxLat": 48.4593,
+        "minLon": -1.4825,
+        "maxLon": -1.3088
+      },
+      "totalPopulation": 13173,
+      "totalSurface": 18685
+    },
+    "35470": {
+      "communes": ["Bain-de-Bretagne", "La Noë-Blanche", "Pléchâtel"],
+      "communeCount": 3,
+      "center": [-1.7047, 47.8522],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 47.8025,
+        "maxLat": 47.8962,
+        "minLon": -1.7511,
+        "maxLon": -1.683
+      },
+      "totalPopulation": 11507,
+      "totalSurface": 12532
+    },
+    "35480": {
+      "communes": ["Guipry-Messac", "Saint-Malo-de-Phily"],
+      "communeCount": 2,
+      "center": [-1.8044, 47.8316],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 47.8248,
+        "maxLat": 47.8778,
+        "minLon": -1.807,
+        "maxLon": -1.7869
+      },
+      "totalPopulation": 8317,
+      "totalSurface": 11109
+    },
+    "35490": {
+      "communes": ["Chauvigné", "Gahard", "Romazy", "Sens-de-Bretagne", "Vieux-Vy-sur-Couesnon"],
+      "communeCount": 5,
+      "center": [-1.5114, 48.3339],
+      "coverageRadius": 6,
+      "boundingBox": {
+        "minLat": 48.2975,
+        "maxLat": 48.3765,
+        "minLon": -1.5354,
+        "maxLon": -1.4618
+      },
+      "totalPopulation": 6505,
+      "totalSurface": 10307
+    },
+    "35500": {
+      "communes": [
+        "Balazé",
+        "Champeaux",
+        "La Chapelle-Erbrée",
+        "Cornillé",
+        "Erbrée",
+        "Montreuil-sous-Pérouse",
+        "Pocé-les-Bois",
+        "Saint-Aubin-des-Landes",
+        "Saint-M'Hervé",
+        "Taillis",
+        "Vitré"
+      ],
+      "communeCount": 11,
+      "center": [-1.2116, 48.1299],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 48.0801,
+        "maxLat": 48.1889,
+        "minLon": -1.3112,
+        "maxLon": -1.1003
+      },
+      "totalPopulation": 30654,
+      "totalSurface": 23135
+    },
+    "35510": {
+      "communes": ["Cesson-Sévigné"],
+      "communeCount": 1,
+      "center": [-1.6032, 48.1194],
+      "coverageRadius": 3.2,
+      "totalPopulation": 18076,
+      "totalSurface": 3214
+    },
+    "35520": {
+      "communes": ["La Chapelle-des-Fougeretz", "Melesse", "La Mézière", "Montreuil-le-Gast"],
+      "communeCount": 4,
+      "center": [-1.7241, 48.2108],
+      "coverageRadius": 4.1,
+      "boundingBox": {
+        "minLat": 48.1771,
+        "maxLat": 48.2471,
+        "minLon": -1.754,
+        "maxLon": -1.6976
+      },
+      "totalPopulation": 18986,
+      "totalSurface": 6689
+    },
+    "35530": {
+      "communes": ["Brécé", "Noyal-sur-Vilaine", "Servon-sur-Vilaine"],
+      "communeCount": 3,
+      "center": [-1.4961, 48.1158],
+      "coverageRadius": 2.8,
+      "boundingBox": {
+        "minLat": 48.1106,
+        "maxLat": 48.1217,
+        "minLon": -1.5239,
+        "maxLon": -1.4603
+      },
+      "totalPopulation": 12467,
+      "totalSurface": 5383
+    },
+    "35540": {
+      "communes": ["Miniac-Morvan", "Plerguer", "Le Tronchet"],
+      "communeCount": 3,
+      "center": [-1.8735, 48.5151],
+      "coverageRadius": 4.1,
+      "boundingBox": {
+        "minLat": 48.4863,
+        "maxLat": 48.5268,
+        "minLon": -1.8993,
+        "maxLon": -1.8388
+      },
+      "totalPopulation": 8454,
+      "totalSurface": 6331
+    },
+    "35550": {
+      "communes": ["Bruc-sur-Aff", "Lieuron", "Lohéac", "Pipriac", "Saint-Ganton", "Saint-Just", "Sixt-sur-Aff"],
+      "communeCount": 7,
+      "center": [-1.977, 47.8024],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 47.7546,
+        "maxLat": 47.8671,
+        "minLon": -2.0796,
+        "maxLon": -1.8839
+      },
+      "totalPopulation": 9968,
+      "totalSurface": 17804
+    },
+    "35560": {
+      "communes": [
+        "Val-Couesnon",
+        "Bazouges-la-Pérouse",
+        "Marcillé-Raoul",
+        "Noyal-sous-Bazouges",
+        "Rimou",
+        "Saint-Rémy-du-Plain"
+      ],
+      "communeCount": 6,
+      "center": [-1.5309, 48.4319],
+      "coverageRadius": 7.6,
+      "boundingBox": {
+        "minLat": 48.3694,
+        "maxLat": 48.4593,
+        "minLon": -1.6245,
+        "maxLon": -1.4825
+      },
+      "totalPopulation": 8226,
+      "totalSurface": 20299
+    },
+    "35580": {
+      "communes": ["Baulon", "Goven", "Guichen", "Guignen", "Lassy", "Saint-Senoux"],
+      "communeCount": 6,
+      "center": [-1.8351, 47.9632],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 47.9046,
+        "maxLat": 48.0066,
+        "minLon": -1.9322,
+        "maxLon": -1.7878
+      },
+      "totalPopulation": 23539,
+      "totalSurface": 18959
+    },
+    "35590": {
+      "communes": ["La Chapelle-Thouarault", "Clayes", "L'Hermitage", "Saint-Gilles"],
+      "communeCount": 4,
+      "center": [-1.8332, 48.1414],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 48.1238,
+        "maxLat": 48.1764,
+        "minLon": -1.8663,
+        "maxLon": -1.8178
+      },
+      "totalPopulation": 13379,
+      "totalSurface": 4000
+    },
+    "35600": {
+      "communes": ["Bains-sur-Oust", "Redon", "Sainte-Marie"],
+      "communeCount": 3,
+      "center": [-2.0686, 47.6699],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 47.6507,
+        "maxLat": 47.7054,
+        "minLon": -2.0838,
+        "maxLon": -2.0008
+      },
+      "totalPopulation": 15106,
+      "totalSurface": 8539
+    },
+    "35610": {
+      "communes": [
+        "Pleine-Fougères",
+        "Roz-sur-Couesnon",
+        "Sains",
+        "Saint-Georges-de-Gréhaigne",
+        "Sougeal",
+        "Trans-la-Forêt",
+        "Vieux-Viel"
+      ],
+      "communeCount": 7,
+      "center": [-1.5675, 48.5403],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 48.4971,
+        "maxLat": 48.5897,
+        "minLon": -1.5916,
+        "maxLon": -1.5239
+      },
+      "totalPopulation": 5358,
+      "totalSurface": 11971
+    },
+    "35620": {
+      "communes": ["Ercé-en-Lamée", "Teillay"],
+      "communeCount": 2,
+      "center": [-1.5516, 47.8203],
+      "coverageRadius": 1.8,
+      "boundingBox": {
+        "minLat": 47.8069,
+        "maxLat": 47.8297,
+        "minLon": -1.5605,
+        "maxLon": -1.5389
+      },
+      "totalPopulation": 2671,
+      "totalSurface": 6590
+    },
+    "35630": {
+      "communes": [
+        "La Chapelle-Chaussée",
+        "Hédé-Bazouges",
+        "Les Iffs",
+        "Langouet",
+        "Saint-Brieuc-des-Iffs",
+        "Saint-Gondran",
+        "Saint-Symphorien",
+        "Vignoc"
+      ],
+      "communeCount": 8,
+      "center": [-1.8148, 48.2728],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 48.249,
+        "maxLat": 48.2955,
+        "minLon": -1.8665,
+        "maxLon": -1.784
+      },
+      "totalPopulation": 8311,
+      "totalSurface": 7608
+    },
+    "35640": {
+      "communes": ["Chelun", "Eancé", "Forges-la-Forêt", "Martigné-Ferchaud"],
+      "communeCount": 4,
+      "center": [-1.2973, 47.8346],
+      "coverageRadius": 6,
+      "boundingBox": {
+        "minLat": 47.8222,
+        "maxLat": 47.8613,
+        "minLon": -1.3175,
+        "maxLon": -1.2234
+      },
+      "totalPopulation": 3681,
+      "totalSurface": 10921
+    },
+    "35650": {
+      "communes": ["Le Rheu"],
+      "communeCount": 1,
+      "center": [-1.7938, 48.1008],
+      "coverageRadius": 2.47,
+      "totalPopulation": 9823,
+      "totalSurface": 1915
+    },
+    "35660": {
+      "communes": ["La Chapelle-de-Brain", "Langon", "Renac"],
+      "communeCount": 3,
+      "center": [-1.9129, 47.7141],
+      "coverageRadius": 4.9,
+      "boundingBox": {
+        "minLat": 47.7008,
+        "maxLat": 47.7207,
+        "minLon": -1.9755,
+        "maxLon": -1.8493
+      },
+      "totalPopulation": 3532,
+      "totalSurface": 8056
+    },
+    "35680": {
+      "communes": ["Bais", "Domalain", "Louvigné-de-Bais", "Moulins", "Piré-Chancé", "Vergéal"],
+      "communeCount": 6,
+      "center": [-1.3311, 48.0154],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 47.9963,
+        "maxLat": 48.0485,
+        "minLon": -1.4293,
+        "maxLon": -1.2407
+      },
+      "totalPopulation": 11132,
+      "totalSurface": 15289
+    },
+    "35690": {
+      "communes": ["Acigné"],
+      "communeCount": 1,
+      "center": [-1.5342, 48.1336],
+      "coverageRadius": 3.1,
+      "totalPopulation": 6911,
+      "totalSurface": 3020
+    },
+    "35700": {
+      "communes": ["Rennes"],
+      "communeCount": 1,
+      "center": [-1.6801, 48.1116],
+      "coverageRadius": 4,
+      "totalPopulation": 227830,
+      "totalSurface": 5033
+    },
+    "35720": {
+      "communes": ["Plesder", "Pleugueneuc", "Mesnil-Roc'h"],
+      "communeCount": 3,
+      "center": [-1.9116, 48.4293],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 48.3974,
+        "maxLat": 48.4468,
+        "minLon": -1.9233,
+        "maxLon": -1.9041
+      },
+      "totalPopulation": 7298,
+      "totalSurface": 7752
+    },
+    "35730": {
+      "communes": ["Pleurtuit"],
+      "communeCount": 1,
+      "center": [-2.059, 48.5792],
+      "coverageRadius": 3.03,
+      "totalPopulation": 7064,
+      "totalSurface": 2885
+    },
+    "35740": {
+      "communes": ["Pacé"],
+      "communeCount": 1,
+      "center": [-1.7728, 48.1467],
+      "coverageRadius": 3.34,
+      "totalPopulation": 11815,
+      "totalSurface": 3494
+    },
+    "35750": {
+      "communes": ["Bléruais", "Iffendic", "Saint-Gonlay", "Saint-Malon-sur-Mel", "Saint-Maugan"],
+      "communeCount": 5,
+      "center": [-2.0479, 48.1251],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 48.0935,
+        "maxLat": 48.135,
+        "minLon": -2.1239,
+        "maxLon": -2.0336
+      },
+      "totalPopulation": 6213,
+      "totalSurface": 11222
+    },
+    "35760": {
+      "communes": ["Montgermont", "Saint-Grégoire"],
+      "communeCount": 2,
+      "center": [-1.6916, 48.1543],
+      "coverageRadius": 1.9,
+      "boundingBox": {
+        "minLat": 48.1538,
+        "maxLat": 48.1558,
+        "minLon": -1.7162,
+        "maxLon": -1.6823
+      },
+      "totalPopulation": 13769,
+      "totalSurface": 2219
+    },
+    "35770": {
+      "communes": ["Vern-sur-Seiche"],
+      "communeCount": 1,
+      "center": [-1.6017, 48.0446],
+      "coverageRadius": 2.52,
+      "totalPopulation": 8272,
+      "totalSurface": 1996
+    },
+    "35780": {
+      "communes": ["La Richardais"],
+      "communeCount": 1,
+      "center": [-2.0344, 48.6066],
+      "coverageRadius": 1,
+      "totalPopulation": 2624,
+      "totalSurface": 316
+    },
+    "35800": {
+      "communes": ["Dinard", "Saint-Briac-sur-Mer", "Saint-Lunaire"],
+      "communeCount": 3,
+      "center": [-2.0757, 48.6306],
+      "coverageRadius": 4.4,
+      "boundingBox": {
+        "minLat": 48.6186,
+        "maxLat": 48.6366,
+        "minLon": -2.1327,
+        "maxLon": -2.0549
+      },
+      "totalPopulation": 15282,
+      "totalSurface": 2613
+    },
+    "35830": {
+      "communes": ["Betton"],
+      "communeCount": 1,
+      "center": [-1.6402, 48.1824],
+      "coverageRadius": 2.92,
+      "totalPopulation": 12775,
+      "totalSurface": 2678
+    },
+    "35850": {
+      "communes": ["Gévezé", "Irodouër", "Langan", "Parthenay-de-Bretagne", "Romillé"],
+      "communeCount": 5,
+      "center": [-1.8505, 48.222],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 48.1918,
+        "maxLat": 48.249,
+        "minLon": -1.9487,
+        "maxLon": -1.7887
+      },
+      "totalPopulation": 15341,
+      "totalSurface": 9302
+    },
+    "35870": {
+      "communes": ["Le Minihic-sur-Rance"],
+      "communeCount": 1,
+      "center": [-2.0119, 48.5754],
+      "coverageRadius": 1.11,
+      "totalPopulation": 1499,
+      "totalSurface": 387
+    },
+    "35890": {
+      "communes": ["Bourg-des-Comptes", "Laillé"],
+      "communeCount": 2,
+      "center": [-1.7284, 47.9585],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 47.9277,
+        "maxLat": 47.9788,
+        "minLon": -1.739,
+        "maxLon": -1.7214
+      },
+      "totalPopulation": 8542,
+      "totalSurface": 5544
+    },
+    "35960": {
+      "communes": ["Le Vivier-sur-Mer"],
+      "communeCount": 1,
+      "center": [-1.773, 48.6023],
+      "coverageRadius": 0.84,
+      "totalPopulation": 1062,
+      "totalSurface": 223
+    }
+  }
+}

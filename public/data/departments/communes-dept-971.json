@@ -1,0 +1,789 @@
+{
+  "departmentCode": "971",
+  "departmentName": "Guadeloupe",
+  "stats": {
+    "communeCount": 32,
+    "totalPopulation": 383569,
+    "totalSurface": 164289
+  },
+  "communes": [
+    {
+      "nom": "Anse-Bertrand",
+      "code": "97102",
+      "codesPostaux": ["97121"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.4698, 16.4668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.5088, 16.4721]
+      },
+      "population": 4232,
+      "surface": 6419.28,
+      "radius": 4.52
+    },
+    {
+      "nom": "Baie-Mahault",
+      "code": "97103",
+      "codesPostaux": ["97122"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.5951, 16.2498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.587, 16.2678]
+      },
+      "population": 30943,
+      "surface": 4673.72,
+      "radius": 3.86
+    },
+    {
+      "nom": "Baillif",
+      "code": "97104",
+      "codesPostaux": ["97123"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.7158, 16.0497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.7467, 16.021]
+      },
+      "population": 4949,
+      "surface": 2439.93,
+      "radius": 2.79
+    },
+    {
+      "nom": "Basse-Terre",
+      "code": "97105",
+      "codesPostaux": ["97100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.7294, 15.9992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.7324, 15.997]
+      },
+      "population": 9419,
+      "surface": 450.04,
+      "radius": 1.2
+    },
+    {
+      "nom": "Bouillante",
+      "code": "97106",
+      "codesPostaux": ["97125"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.7578, 16.1387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.7697, 16.1323]
+      },
+      "population": 6381,
+      "surface": 4367.45,
+      "radius": 3.73
+    },
+    {
+      "nom": "Capesterre-Belle-Eau",
+      "code": "97107",
+      "codesPostaux": ["97130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.6197, 16.0486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.5647, 16.0424]
+      },
+      "population": 17882,
+      "surface": 10362.69,
+      "radius": 5.74
+    },
+    {
+      "nom": "Capesterre-de-Marie-Galante",
+      "code": "97108",
+      "codesPostaux": ["97140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.2296, 15.9176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.2212, 15.8924]
+      },
+      "population": 3150,
+      "surface": 4638.87,
+      "radius": 3.84
+    },
+    {
+      "nom": "Deshaies",
+      "code": "97111",
+      "codesPostaux": ["97126"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.7831, 16.3194]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.7943, 16.307]
+      },
+      "population": 3792,
+      "surface": 3156.91,
+      "radius": 3.17
+    },
+    {
+      "nom": "Gourbeyre",
+      "code": "97109",
+      "codesPostaux": ["97113"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.689, 16.0057]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.6924, 15.9946]
+      },
+      "population": 7378,
+      "surface": 2276.42,
+      "radius": 2.69
+    },
+    {
+      "nom": "Goyave",
+      "code": "97114",
+      "codesPostaux": ["97128"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.615, 16.1231]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.5749, 16.1328]
+      },
+      "population": 7640,
+      "surface": 6036.78,
+      "radius": 4.38
+    },
+    {
+      "nom": "Grand-Bourg",
+      "code": "97112",
+      "codesPostaux": ["97112"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.2929, 15.9085]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.3163, 15.8826]
+      },
+      "population": 4678,
+      "surface": 5583.19,
+      "radius": 4.22
+    },
+    {
+      "nom": "La Désirade",
+      "code": "97110",
+      "codesPostaux": ["97127"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.0814, 16.2972]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0756, 16.3036]
+      },
+      "population": 1349,
+      "surface": 2117.29,
+      "radius": 2.6
+    },
+    {
+      "nom": "Lamentin",
+      "code": "97115",
+      "codesPostaux": ["97129"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.6695, 16.2443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.6333, 16.2715]
+      },
+      "population": 18437,
+      "surface": 6579.54,
+      "radius": 4.58
+    },
+    {
+      "nom": "Le Gosier",
+      "code": "97113",
+      "codesPostaux": ["97190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.4749, 16.2274]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.4921, 16.2059]
+      },
+      "population": 27205,
+      "surface": 4575.06,
+      "radius": 3.82
+    },
+    {
+      "nom": "Le Moule",
+      "code": "97117",
+      "codesPostaux": ["97160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.36, 16.3354]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.3437, 16.3312]
+      },
+      "population": 22924,
+      "surface": 8337.61,
+      "radius": 5.15
+    },
+    {
+      "nom": "Les Abymes",
+      "code": "97101",
+      "codesPostaux": ["97139", "97142"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.4967, 16.2678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.5054, 16.2711]
+      },
+      "population": 51760,
+      "surface": 7042.83,
+      "radius": 4.73
+    },
+    {
+      "nom": "Morne-à-l'Eau",
+      "code": "97116",
+      "codesPostaux": ["97111"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.4988, 16.3212]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.4572, 16.3316]
+      },
+      "population": 15839,
+      "surface": 7000.94,
+      "radius": 4.72
+    },
+    {
+      "nom": "Petit-Bourg",
+      "code": "97118",
+      "codesPostaux": ["97170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.658, 16.1695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.5904, 16.1915]
+      },
+      "population": 24299,
+      "surface": 13191.93,
+      "radius": 6.48
+    },
+    {
+      "nom": "Petit-Canal",
+      "code": "97119",
+      "codesPostaux": ["97131"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.4547, 16.3921]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.4899, 16.3788]
+      },
+      "population": 8206,
+      "surface": 7420.68,
+      "radius": 4.86
+    },
+    {
+      "nom": "Pointe-à-Pitre",
+      "code": "97120",
+      "codesPostaux": ["97110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.5379, 16.2351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.5336, 16.241]
+      },
+      "population": 14855,
+      "surface": 277.55,
+      "radius": 0.94
+    },
+    {
+      "nom": "Pointe-Noire",
+      "code": "97121",
+      "codesPostaux": ["97116"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.7651, 16.227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.7902, 16.2326]
+      },
+      "population": 5813,
+      "surface": 6005.56,
+      "radius": 4.37
+    },
+    {
+      "nom": "Port-Louis",
+      "code": "97122",
+      "codesPostaux": ["97117"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.488, 16.4201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.5325, 16.4169]
+      },
+      "population": 5591,
+      "surface": 4438.14,
+      "radius": 3.76
+    },
+    {
+      "nom": "Saint-Claude",
+      "code": "97124",
+      "codesPostaux": ["97120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.6953, 16.0406]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.6969, 16.0281]
+      },
+      "population": 10432,
+      "surface": 3459.88,
+      "radius": 3.32
+    },
+    {
+      "nom": "Saint-François",
+      "code": "97125",
+      "codesPostaux": ["97118"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.2539, 16.2784]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.2742, 16.2515]
+      },
+      "population": 13249,
+      "surface": 6120.18,
+      "radius": 4.41
+    },
+    {
+      "nom": "Saint-Louis",
+      "code": "97126",
+      "codesPostaux": ["97134"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.2732, 15.9654]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.319, 15.9539]
+      },
+      "population": 2594,
+      "surface": 5767.26,
+      "radius": 4.28
+    },
+    {
+      "nom": "Sainte-Anne",
+      "code": "97128",
+      "codesPostaux": ["97180"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.3896, 16.2565]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.3859, 16.2255]
+      },
+      "population": 24415,
+      "surface": 8096.24,
+      "radius": 5.08
+    },
+    {
+      "nom": "Sainte-Rose",
+      "code": "97129",
+      "codesPostaux": ["97115"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.6836, 16.2937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.6984, 16.3332]
+      },
+      "population": 17494,
+      "surface": 12310.66,
+      "radius": 6.26
+    },
+    {
+      "nom": "Terre-de-Bas",
+      "code": "97130",
+      "codesPostaux": ["97136"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.6326, 15.8554]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.6433, 15.8496]
+      },
+      "population": 895,
+      "surface": 680.89,
+      "radius": 1.47
+    },
+    {
+      "nom": "Terre-de-Haut",
+      "code": "97131",
+      "codesPostaux": ["97137"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.5892, 15.8579]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.5824, 15.8667]
+      },
+      "population": 1479,
+      "surface": 581.54,
+      "radius": 1.36
+    },
+    {
+      "nom": "Trois-Rivières",
+      "code": "97132",
+      "codesPostaux": ["97114"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.6493, 15.9931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.6446, 15.9765]
+      },
+      "population": 7519,
+      "surface": 3138.81,
+      "radius": 3.16
+    },
+    {
+      "nom": "Vieux-Fort",
+      "code": "97133",
+      "codesPostaux": ["97141"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.6929, 15.9607]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.6976, 15.9485]
+      },
+      "population": 1730,
+      "surface": 737.98,
+      "radius": 1.53
+    },
+    {
+      "nom": "Vieux-Habitants",
+      "code": "97134",
+      "codesPostaux": ["97119"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.717, 16.0847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.7645, 16.06]
+      },
+      "population": 7040,
+      "surface": 6003.61,
+      "radius": 4.37
+    }
+  ],
+  "postalCodes": {
+    "97100": {
+      "communes": ["Basse-Terre"],
+      "communeCount": 1,
+      "center": [-61.7324, 15.997],
+      "coverageRadius": 1.2,
+      "totalPopulation": 9419,
+      "totalSurface": 450
+    },
+    "97110": {
+      "communes": ["Pointe-à-Pitre"],
+      "communeCount": 1,
+      "center": [-61.5336, 16.241],
+      "coverageRadius": 0.94,
+      "totalPopulation": 14855,
+      "totalSurface": 278
+    },
+    "97111": {
+      "communes": ["Morne-à-l'Eau"],
+      "communeCount": 1,
+      "center": [-61.4572, 16.3316],
+      "coverageRadius": 4.72,
+      "totalPopulation": 15839,
+      "totalSurface": 7001
+    },
+    "97112": {
+      "communes": ["Grand-Bourg"],
+      "communeCount": 1,
+      "center": [-61.3163, 15.8826],
+      "coverageRadius": 4.22,
+      "totalPopulation": 4678,
+      "totalSurface": 5583
+    },
+    "97113": {
+      "communes": ["Gourbeyre"],
+      "communeCount": 1,
+      "center": [-61.6924, 15.9946],
+      "coverageRadius": 2.69,
+      "totalPopulation": 7378,
+      "totalSurface": 2276
+    },
+    "97114": {
+      "communes": ["Trois-Rivières"],
+      "communeCount": 1,
+      "center": [-61.6446, 15.9765],
+      "coverageRadius": 3.16,
+      "totalPopulation": 7519,
+      "totalSurface": 3139
+    },
+    "97115": {
+      "communes": ["Sainte-Rose"],
+      "communeCount": 1,
+      "center": [-61.6984, 16.3332],
+      "coverageRadius": 6.26,
+      "totalPopulation": 17494,
+      "totalSurface": 12311
+    },
+    "97116": {
+      "communes": ["Pointe-Noire"],
+      "communeCount": 1,
+      "center": [-61.7902, 16.2326],
+      "coverageRadius": 4.37,
+      "totalPopulation": 5813,
+      "totalSurface": 6006
+    },
+    "97117": {
+      "communes": ["Port-Louis"],
+      "communeCount": 1,
+      "center": [-61.5325, 16.4169],
+      "coverageRadius": 3.76,
+      "totalPopulation": 5591,
+      "totalSurface": 4438
+    },
+    "97118": {
+      "communes": ["Saint-François"],
+      "communeCount": 1,
+      "center": [-61.2742, 16.2515],
+      "coverageRadius": 4.41,
+      "totalPopulation": 13249,
+      "totalSurface": 6120
+    },
+    "97119": {
+      "communes": ["Vieux-Habitants"],
+      "communeCount": 1,
+      "center": [-61.7645, 16.06],
+      "coverageRadius": 4.37,
+      "totalPopulation": 7040,
+      "totalSurface": 6004
+    },
+    "97120": {
+      "communes": ["Saint-Claude"],
+      "communeCount": 1,
+      "center": [-61.6969, 16.0281],
+      "coverageRadius": 3.32,
+      "totalPopulation": 10432,
+      "totalSurface": 3460
+    },
+    "97121": {
+      "communes": ["Anse-Bertrand"],
+      "communeCount": 1,
+      "center": [-61.5088, 16.4721],
+      "coverageRadius": 4.52,
+      "totalPopulation": 4232,
+      "totalSurface": 6419
+    },
+    "97122": {
+      "communes": ["Baie-Mahault"],
+      "communeCount": 1,
+      "center": [-61.587, 16.2678],
+      "coverageRadius": 3.86,
+      "totalPopulation": 30943,
+      "totalSurface": 4674
+    },
+    "97123": {
+      "communes": ["Baillif"],
+      "communeCount": 1,
+      "center": [-61.7467, 16.021],
+      "coverageRadius": 2.79,
+      "totalPopulation": 4949,
+      "totalSurface": 2440
+    },
+    "97125": {
+      "communes": ["Bouillante"],
+      "communeCount": 1,
+      "center": [-61.7697, 16.1323],
+      "coverageRadius": 3.73,
+      "totalPopulation": 6381,
+      "totalSurface": 4367
+    },
+    "97126": {
+      "communes": ["Deshaies"],
+      "communeCount": 1,
+      "center": [-61.7943, 16.307],
+      "coverageRadius": 3.17,
+      "totalPopulation": 3792,
+      "totalSurface": 3157
+    },
+    "97127": {
+      "communes": ["La Désirade"],
+      "communeCount": 1,
+      "center": [-61.0756, 16.3036],
+      "coverageRadius": 2.6,
+      "totalPopulation": 1349,
+      "totalSurface": 2117
+    },
+    "97128": {
+      "communes": ["Goyave"],
+      "communeCount": 1,
+      "center": [-61.5749, 16.1328],
+      "coverageRadius": 4.38,
+      "totalPopulation": 7640,
+      "totalSurface": 6037
+    },
+    "97129": {
+      "communes": ["Lamentin"],
+      "communeCount": 1,
+      "center": [-61.6333, 16.2715],
+      "coverageRadius": 4.58,
+      "totalPopulation": 18437,
+      "totalSurface": 6580
+    },
+    "97130": {
+      "communes": ["Capesterre-Belle-Eau"],
+      "communeCount": 1,
+      "center": [-61.5647, 16.0424],
+      "coverageRadius": 5.74,
+      "totalPopulation": 17882,
+      "totalSurface": 10363
+    },
+    "97131": {
+      "communes": ["Petit-Canal"],
+      "communeCount": 1,
+      "center": [-61.4899, 16.3788],
+      "coverageRadius": 4.86,
+      "totalPopulation": 8206,
+      "totalSurface": 7421
+    },
+    "97134": {
+      "communes": ["Saint-Louis"],
+      "communeCount": 1,
+      "center": [-61.319, 15.9539],
+      "coverageRadius": 4.28,
+      "totalPopulation": 2594,
+      "totalSurface": 5767
+    },
+    "97136": {
+      "communes": ["Terre-de-Bas"],
+      "communeCount": 1,
+      "center": [-61.6433, 15.8496],
+      "coverageRadius": 1.47,
+      "totalPopulation": 895,
+      "totalSurface": 681
+    },
+    "97137": {
+      "communes": ["Terre-de-Haut"],
+      "communeCount": 1,
+      "center": [-61.5824, 15.8667],
+      "coverageRadius": 1.36,
+      "totalPopulation": 1479,
+      "totalSurface": 582
+    },
+    "97139": {
+      "communes": ["Les Abymes"],
+      "communeCount": 1,
+      "center": [-61.5054, 16.2711],
+      "coverageRadius": 4.73,
+      "totalPopulation": 51760,
+      "totalSurface": 7043
+    },
+    "97140": {
+      "communes": ["Capesterre-de-Marie-Galante"],
+      "communeCount": 1,
+      "center": [-61.2212, 15.8924],
+      "coverageRadius": 3.84,
+      "totalPopulation": 3150,
+      "totalSurface": 4639
+    },
+    "97141": {
+      "communes": ["Vieux-Fort"],
+      "communeCount": 1,
+      "center": [-61.6976, 15.9485],
+      "coverageRadius": 1.53,
+      "totalPopulation": 1730,
+      "totalSurface": 738
+    },
+    "97142": {
+      "communes": ["Les Abymes"],
+      "communeCount": 1,
+      "center": [-61.5054, 16.2711],
+      "coverageRadius": 4.73,
+      "totalPopulation": 51760,
+      "totalSurface": 7043
+    },
+    "97160": {
+      "communes": ["Le Moule"],
+      "communeCount": 1,
+      "center": [-61.3437, 16.3312],
+      "coverageRadius": 5.15,
+      "totalPopulation": 22924,
+      "totalSurface": 8338
+    },
+    "97170": {
+      "communes": ["Petit-Bourg"],
+      "communeCount": 1,
+      "center": [-61.5904, 16.1915],
+      "coverageRadius": 6.48,
+      "totalPopulation": 24299,
+      "totalSurface": 13192
+    },
+    "97180": {
+      "communes": ["Sainte-Anne"],
+      "communeCount": 1,
+      "center": [-61.3859, 16.2255],
+      "coverageRadius": 5.08,
+      "totalPopulation": 24415,
+      "totalSurface": 8096
+    },
+    "97190": {
+      "communes": ["Le Gosier"],
+      "communeCount": 1,
+      "center": [-61.4921, 16.2059],
+      "coverageRadius": 3.82,
+      "totalPopulation": 27205,
+      "totalSurface": 4575
+    }
+  }
+}

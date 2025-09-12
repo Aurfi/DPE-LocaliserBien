@@ -1,0 +1,815 @@
+{
+  "departmentCode": "972",
+  "departmentName": "Martinique",
+  "stats": {
+    "communeCount": 34,
+    "totalPopulation": 361019,
+    "totalSurface": 109284
+  },
+  "communes": [
+    {
+      "nom": "Basse-Pointe",
+      "code": "97203",
+      "codesPostaux": ["97218"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1237, 14.841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1202, 14.8685]
+      },
+      "population": 2810,
+      "surface": 2793.24,
+      "radius": 2.98
+    },
+    {
+      "nom": "Bellefontaine",
+      "code": "97234",
+      "codesPostaux": ["97222"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.146, 14.6747]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1644, 14.6737]
+      },
+      "population": 1824,
+      "surface": 1196.57,
+      "radius": 1.95
+    },
+    {
+      "nom": "Case-Pilote",
+      "code": "97205",
+      "codesPostaux": ["97222"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1297, 14.6594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.139, 14.6432]
+      },
+      "population": 4524,
+      "surface": 1857.2,
+      "radius": 2.43
+    },
+    {
+      "nom": "Ducos",
+      "code": "97207",
+      "codesPostaux": ["97224"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.9685, 14.5785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.9758, 14.5759]
+      },
+      "population": 17837,
+      "surface": 2878.95,
+      "radius": 3.03
+    },
+    {
+      "nom": "Fonds-Saint-Denis",
+      "code": "97208",
+      "codesPostaux": ["97250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1207, 14.7228]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1325, 14.7389]
+      },
+      "population": 641,
+      "surface": 2378.95,
+      "radius": 2.75
+    },
+    {
+      "nom": "Fort-de-France",
+      "code": "97209",
+      "codesPostaux": ["97200", "97234"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.0686, 14.6492]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0695, 14.6071]
+      },
+      "population": 75165,
+      "surface": 4403.76,
+      "radius": 3.74
+    },
+    {
+      "nom": "Grand'Rivière",
+      "code": "97211",
+      "codesPostaux": ["97218"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1836, 14.847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1814, 14.8735]
+      },
+      "population": 508,
+      "surface": 1669.3,
+      "radius": 2.31
+    },
+    {
+      "nom": "Gros-Morne",
+      "code": "97212",
+      "codesPostaux": ["97213"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.0303, 14.7084]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0048, 14.7102]
+      },
+      "population": 9752,
+      "surface": 4627.46,
+      "radius": 3.84
+    },
+    {
+      "nom": "L'Ajoupa-Bouillon",
+      "code": "97201",
+      "codesPostaux": ["97216"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1305, 14.816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1145, 14.8248]
+      },
+      "population": 1693,
+      "surface": 1237.18,
+      "radius": 1.98
+    },
+    {
+      "nom": "La Trinité",
+      "code": "97230",
+      "codesPostaux": ["97220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.9469, 14.7518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.9632, 14.7386]
+      },
+      "population": 11622,
+      "surface": 4602.16,
+      "radius": 3.83
+    },
+    {
+      "nom": "Le Carbet",
+      "code": "97204",
+      "codesPostaux": ["97221"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1583, 14.7041]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1832, 14.7121]
+      },
+      "population": 3619,
+      "surface": 1789.74,
+      "radius": 2.39
+    },
+    {
+      "nom": "Le Diamant",
+      "code": "97206",
+      "codesPostaux": ["97223"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.0165, 14.4787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0254, 14.4801]
+      },
+      "population": 5924,
+      "surface": 2750.72,
+      "radius": 2.96
+    },
+    {
+      "nom": "Le François",
+      "code": "97210",
+      "codesPostaux": ["97240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.8976, 14.6093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.9027, 14.6153]
+      },
+      "population": 15858,
+      "surface": 5443.42,
+      "radius": 4.16
+    },
+    {
+      "nom": "Le Lamentin",
+      "code": "97213",
+      "codesPostaux": ["97232"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.9923, 14.6231]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0035, 14.6154]
+      },
+      "population": 39346,
+      "surface": 6273.15,
+      "radius": 4.47
+    },
+    {
+      "nom": "Le Lorrain",
+      "code": "97214",
+      "codesPostaux": ["97214"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.074, 14.7995]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0556, 14.8327]
+      },
+      "population": 6607,
+      "surface": 5049.31,
+      "radius": 4.01
+    },
+    {
+      "nom": "Le Marigot",
+      "code": "97216",
+      "codesPostaux": ["97225"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.053, 14.7795]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0282, 14.8215]
+      },
+      "population": 2991,
+      "surface": 2176.73,
+      "radius": 2.63
+    },
+    {
+      "nom": "Le Marin",
+      "code": "97217",
+      "codesPostaux": ["97290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.8589, 14.4822]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.8707, 14.4714]
+      },
+      "population": 8526,
+      "surface": 3179.64,
+      "radius": 3.18
+    },
+    {
+      "nom": "Le Morne-Rouge",
+      "code": "97218",
+      "codesPostaux": ["97260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1217, 14.7695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1348, 14.7728]
+      },
+      "population": 4469,
+      "surface": 3768.01,
+      "radius": 3.46
+    },
+    {
+      "nom": "Le Morne-Vert",
+      "code": "97233",
+      "codesPostaux": ["97226"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1362, 14.7046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1443, 14.7075]
+      },
+      "population": 1748,
+      "surface": 1337.79,
+      "radius": 2.06
+    },
+    {
+      "nom": "Le Prêcheur",
+      "code": "97219",
+      "codesPostaux": ["97250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1963, 14.8221]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.2246, 14.8012]
+      },
+      "population": 1463,
+      "surface": 2994.18,
+      "radius": 3.09
+    },
+    {
+      "nom": "Le Robert",
+      "code": "97222",
+      "codesPostaux": ["97231"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.9243, 14.6786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.9392, 14.6776]
+      },
+      "population": 21490,
+      "surface": 4514.12,
+      "radius": 3.79
+    },
+    {
+      "nom": "Le Vauclin",
+      "code": "97232",
+      "codesPostaux": ["97280"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.8595, 14.542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.84, 14.5451]
+      },
+      "population": 8481,
+      "surface": 3890.81,
+      "radius": 3.52
+    },
+    {
+      "nom": "Les Anses-d'Arlet",
+      "code": "97202",
+      "codesPostaux": ["97217"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.0736, 14.4996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0801, 14.4911]
+      },
+      "population": 3874,
+      "surface": 2588.33,
+      "radius": 2.87
+    },
+    {
+      "nom": "Les Trois-Îlets",
+      "code": "97231",
+      "codesPostaux": ["97229"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.0376, 14.5329]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0337, 14.5393]
+      },
+      "population": 6735,
+      "surface": 2768.1,
+      "radius": 2.97
+    },
+    {
+      "nom": "Macouba",
+      "code": "97215",
+      "codesPostaux": ["97218"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1465, 14.8474]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.145, 14.8762]
+      },
+      "population": 1001,
+      "surface": 1695.48,
+      "radius": 2.32
+    },
+    {
+      "nom": "Rivière-Pilote",
+      "code": "97220",
+      "codesPostaux": ["97211"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.897, 14.5027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.9033, 14.4867]
+      },
+      "population": 11797,
+      "surface": 3596.56,
+      "radius": 3.38
+    },
+    {
+      "nom": "Rivière-Salée",
+      "code": "97221",
+      "codesPostaux": ["97215"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.9623, 14.5262]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.9749, 14.524]
+      },
+      "population": 11818,
+      "surface": 3976.65,
+      "radius": 3.56
+    },
+    {
+      "nom": "Saint-Esprit",
+      "code": "97223",
+      "codesPostaux": ["97270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.9233, 14.5617]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.9372, 14.5606]
+      },
+      "population": 10422,
+      "surface": 2332.04,
+      "radius": 2.72
+    },
+    {
+      "nom": "Saint-Joseph",
+      "code": "97224",
+      "codesPostaux": ["97212"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.0407, 14.6835]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.0394, 14.6702]
+      },
+      "population": 16470,
+      "surface": 4357.82,
+      "radius": 3.72
+    },
+    {
+      "nom": "Saint-Pierre",
+      "code": "97225",
+      "codesPostaux": ["97250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1735, 14.7717]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1751, 14.7431]
+      },
+      "population": 4069,
+      "surface": 3869.43,
+      "radius": 3.51
+    },
+    {
+      "nom": "Sainte-Anne",
+      "code": "97226",
+      "codesPostaux": ["97227"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.8516, 14.4314]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.8812, 14.435]
+      },
+      "population": 4491,
+      "surface": 3880.4,
+      "radius": 3.51
+    },
+    {
+      "nom": "Sainte-Luce",
+      "code": "97227",
+      "codesPostaux": ["97228"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-60.9467, 14.4904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.9216, 14.4683]
+      },
+      "population": 9275,
+      "surface": 2811.49,
+      "radius": 2.99
+    },
+    {
+      "nom": "Sainte-Marie",
+      "code": "97228",
+      "codesPostaux": ["97230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.0084, 14.773]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-60.9935, 14.7815]
+      },
+      "population": 14827,
+      "surface": 4465.39,
+      "radius": 3.77
+    },
+    {
+      "nom": "Schœlcher",
+      "code": "97229",
+      "codesPostaux": ["97233"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-61.1001, 14.6518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-61.1013, 14.616]
+      },
+      "population": 19342,
+      "surface": 2130.25,
+      "radius": 2.6
+    }
+  ],
+  "postalCodes": {
+    "97200": {
+      "communes": ["Fort-de-France"],
+      "communeCount": 1,
+      "center": [-61.0695, 14.6071],
+      "coverageRadius": 3.74,
+      "totalPopulation": 75165,
+      "totalSurface": 4404
+    },
+    "97211": {
+      "communes": ["Rivière-Pilote"],
+      "communeCount": 1,
+      "center": [-60.9033, 14.4867],
+      "coverageRadius": 3.38,
+      "totalPopulation": 11797,
+      "totalSurface": 3597
+    },
+    "97212": {
+      "communes": ["Saint-Joseph"],
+      "communeCount": 1,
+      "center": [-61.0394, 14.6702],
+      "coverageRadius": 3.72,
+      "totalPopulation": 16470,
+      "totalSurface": 4358
+    },
+    "97213": {
+      "communes": ["Gros-Morne"],
+      "communeCount": 1,
+      "center": [-61.0048, 14.7102],
+      "coverageRadius": 3.84,
+      "totalPopulation": 9752,
+      "totalSurface": 4627
+    },
+    "97214": {
+      "communes": ["Le Lorrain"],
+      "communeCount": 1,
+      "center": [-61.0556, 14.8327],
+      "coverageRadius": 4.01,
+      "totalPopulation": 6607,
+      "totalSurface": 5049
+    },
+    "97215": {
+      "communes": ["Rivière-Salée"],
+      "communeCount": 1,
+      "center": [-60.9749, 14.524],
+      "coverageRadius": 3.56,
+      "totalPopulation": 11818,
+      "totalSurface": 3977
+    },
+    "97216": {
+      "communes": ["L'Ajoupa-Bouillon"],
+      "communeCount": 1,
+      "center": [-61.1145, 14.8248],
+      "coverageRadius": 1.98,
+      "totalPopulation": 1693,
+      "totalSurface": 1237
+    },
+    "97217": {
+      "communes": ["Les Anses-d'Arlet"],
+      "communeCount": 1,
+      "center": [-61.0801, 14.4911],
+      "coverageRadius": 2.87,
+      "totalPopulation": 3874,
+      "totalSurface": 2588
+    },
+    "97218": {
+      "communes": ["Basse-Pointe", "Grand'Rivière", "Macouba"],
+      "communeCount": 3,
+      "center": [-61.1331, 14.8709],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 14.8685,
+        "maxLat": 14.8762,
+        "minLon": -61.1814,
+        "maxLon": -61.1202
+      },
+      "totalPopulation": 4319,
+      "totalSurface": 6158
+    },
+    "97220": {
+      "communes": ["La Trinité"],
+      "communeCount": 1,
+      "center": [-60.9632, 14.7386],
+      "coverageRadius": 3.83,
+      "totalPopulation": 11622,
+      "totalSurface": 4602
+    },
+    "97221": {
+      "communes": ["Le Carbet"],
+      "communeCount": 1,
+      "center": [-61.1832, 14.7121],
+      "coverageRadius": 2.39,
+      "totalPopulation": 3619,
+      "totalSurface": 1790
+    },
+    "97222": {
+      "communes": ["Case-Pilote", "Bellefontaine"],
+      "communeCount": 2,
+      "center": [-61.1463, 14.652],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 14.6432,
+        "maxLat": 14.6737,
+        "minLon": -61.1644,
+        "maxLon": -61.139
+      },
+      "totalPopulation": 6348,
+      "totalSurface": 3054
+    },
+    "97223": {
+      "communes": ["Le Diamant"],
+      "communeCount": 1,
+      "center": [-61.0254, 14.4801],
+      "coverageRadius": 2.96,
+      "totalPopulation": 5924,
+      "totalSurface": 2751
+    },
+    "97224": {
+      "communes": ["Ducos"],
+      "communeCount": 1,
+      "center": [-60.9758, 14.5759],
+      "coverageRadius": 3.03,
+      "totalPopulation": 17837,
+      "totalSurface": 2879
+    },
+    "97225": {
+      "communes": ["Le Marigot"],
+      "communeCount": 1,
+      "center": [-61.0282, 14.8215],
+      "coverageRadius": 2.63,
+      "totalPopulation": 2991,
+      "totalSurface": 2177
+    },
+    "97226": {
+      "communes": ["Le Morne-Vert"],
+      "communeCount": 1,
+      "center": [-61.1443, 14.7075],
+      "coverageRadius": 2.06,
+      "totalPopulation": 1748,
+      "totalSurface": 1338
+    },
+    "97227": {
+      "communes": ["Sainte-Anne"],
+      "communeCount": 1,
+      "center": [-60.8812, 14.435],
+      "coverageRadius": 3.51,
+      "totalPopulation": 4491,
+      "totalSurface": 3880
+    },
+    "97228": {
+      "communes": ["Sainte-Luce"],
+      "communeCount": 1,
+      "center": [-60.9216, 14.4683],
+      "coverageRadius": 2.99,
+      "totalPopulation": 9275,
+      "totalSurface": 2811
+    },
+    "97229": {
+      "communes": ["Les Trois-Îlets"],
+      "communeCount": 1,
+      "center": [-61.0337, 14.5393],
+      "coverageRadius": 2.97,
+      "totalPopulation": 6735,
+      "totalSurface": 2768
+    },
+    "97230": {
+      "communes": ["Sainte-Marie"],
+      "communeCount": 1,
+      "center": [-60.9935, 14.7815],
+      "coverageRadius": 3.77,
+      "totalPopulation": 14827,
+      "totalSurface": 4465
+    },
+    "97231": {
+      "communes": ["Le Robert"],
+      "communeCount": 1,
+      "center": [-60.9392, 14.6776],
+      "coverageRadius": 3.79,
+      "totalPopulation": 21490,
+      "totalSurface": 4514
+    },
+    "97232": {
+      "communes": ["Le Lamentin"],
+      "communeCount": 1,
+      "center": [-61.0035, 14.6154],
+      "coverageRadius": 4.47,
+      "totalPopulation": 39346,
+      "totalSurface": 6273
+    },
+    "97233": {
+      "communes": ["Schœlcher"],
+      "communeCount": 1,
+      "center": [-61.1013, 14.616],
+      "coverageRadius": 2.6,
+      "totalPopulation": 19342,
+      "totalSurface": 2130
+    },
+    "97234": {
+      "communes": ["Fort-de-France"],
+      "communeCount": 1,
+      "center": [-61.0695, 14.6071],
+      "coverageRadius": 3.74,
+      "totalPopulation": 75165,
+      "totalSurface": 4404
+    },
+    "97240": {
+      "communes": ["Le François"],
+      "communeCount": 1,
+      "center": [-60.9027, 14.6153],
+      "coverageRadius": 4.16,
+      "totalPopulation": 15858,
+      "totalSurface": 5443
+    },
+    "97250": {
+      "communes": ["Fonds-Saint-Denis", "Le Prêcheur", "Saint-Pierre"],
+      "communeCount": 3,
+      "center": [-61.1824, 14.7564],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 14.7389,
+        "maxLat": 14.8012,
+        "minLon": -61.2246,
+        "maxLon": -61.1325
+      },
+      "totalPopulation": 6173,
+      "totalSurface": 9243
+    },
+    "97260": {
+      "communes": ["Le Morne-Rouge"],
+      "communeCount": 1,
+      "center": [-61.1348, 14.7728],
+      "coverageRadius": 3.46,
+      "totalPopulation": 4469,
+      "totalSurface": 3768
+    },
+    "97270": {
+      "communes": ["Saint-Esprit"],
+      "communeCount": 1,
+      "center": [-60.9372, 14.5606],
+      "coverageRadius": 2.72,
+      "totalPopulation": 10422,
+      "totalSurface": 2332
+    },
+    "97280": {
+      "communes": ["Le Vauclin"],
+      "communeCount": 1,
+      "center": [-60.84, 14.5451],
+      "coverageRadius": 3.52,
+      "totalPopulation": 8481,
+      "totalSurface": 3891
+    },
+    "97290": {
+      "communes": ["Le Marin"],
+      "communeCount": 1,
+      "center": [-60.8707, 14.4714],
+      "coverageRadius": 3.18,
+      "totalPopulation": 8526,
+      "totalSurface": 3180
+    }
+  }
+}

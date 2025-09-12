@@ -1,0 +1,6648 @@
+{
+  "departmentCode": "28",
+  "departmentName": "Eure-et-Loir",
+  "stats": {
+    "communeCount": 363,
+    "totalPopulation": 432638,
+    "totalSurface": 592725
+  },
+  "communes": [
+    {
+      "nom": "Abondant",
+      "code": "28001",
+      "codesPostaux": ["28410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4236, 48.7983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4397, 48.785]
+      },
+      "population": 2446,
+      "surface": 3509.82,
+      "radius": 3.34
+    },
+    {
+      "nom": "Allainville",
+      "code": "28003",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2907, 48.7211]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3023, 48.7222]
+      },
+      "population": 153,
+      "surface": 533.63,
+      "radius": 1.3
+    },
+    {
+      "nom": "Allonnes",
+      "code": "28004",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6524, 48.3312]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6562, 48.3297]
+      },
+      "population": 319,
+      "surface": 1031.82,
+      "radius": 1.81
+    },
+    {
+      "nom": "Alluyes",
+      "code": "28005",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3666, 48.2251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3665, 48.2296]
+      },
+      "population": 758,
+      "surface": 1981.39,
+      "radius": 2.51
+    },
+    {
+      "nom": "Amilly",
+      "code": "28006",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4073, 48.4424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.396, 48.4437]
+      },
+      "population": 1823,
+      "surface": 1978.95,
+      "radius": 2.51
+    },
+    {
+      "nom": "Anet",
+      "code": "28007",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4432, 48.851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4391, 48.8569]
+      },
+      "population": 2708,
+      "surface": 794.82,
+      "radius": 1.59
+    },
+    {
+      "nom": "Arcisses",
+      "code": "28236",
+      "codesPostaux": ["28400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.89, 48.3365]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8366, 48.3337]
+      },
+      "population": 2209,
+      "surface": 4580.93,
+      "radius": 3.82
+    },
+    {
+      "nom": "Ardelles",
+      "code": "28008",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1768, 48.5445]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1734, 48.5453]
+      },
+      "population": 210,
+      "surface": 1040.57,
+      "radius": 1.82
+    },
+    {
+      "nom": "Ardelu",
+      "code": "28009",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9135, 48.3544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9121, 48.3531]
+      },
+      "population": 72,
+      "surface": 408.37,
+      "radius": 1.14
+    },
+    {
+      "nom": "Argenvilliers",
+      "code": "28010",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9724, 48.2753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9568, 48.261]
+      },
+      "population": 318,
+      "surface": 1837.82,
+      "radius": 2.42
+    },
+    {
+      "nom": "Aunay-sous-Auneau",
+      "code": "28013",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.818, 48.4442]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8075, 48.442]
+      },
+      "population": 1511,
+      "surface": 1960.32,
+      "radius": 2.5
+    },
+    {
+      "nom": "Aunay-sous-Crécy",
+      "code": "28014",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3054, 48.6576]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3054, 48.6714]
+      },
+      "population": 659,
+      "surface": 849.76,
+      "radius": 1.64
+    },
+    {
+      "nom": "Auneau-Bleury-Saint-Symphorien",
+      "code": "28015",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7642, 48.5]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7755, 48.4632]
+      },
+      "population": 6354,
+      "surface": 3434.94,
+      "radius": 3.31
+    },
+    {
+      "nom": "Authon-du-Perche",
+      "code": "28018",
+      "codesPostaux": ["28330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8916, 48.185]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8968, 48.195]
+      },
+      "population": 1482,
+      "surface": 3518.61,
+      "radius": 3.35
+    },
+    {
+      "nom": "Baigneaux",
+      "code": "28019",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8201, 48.1266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8142, 48.1282]
+      },
+      "population": 216,
+      "surface": 1196.94,
+      "radius": 1.95
+    },
+    {
+      "nom": "Bailleau-Armenonville",
+      "code": "28023",
+      "codesPostaux": ["28320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6404, 48.5308]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6532, 48.5322]
+      },
+      "population": 1322,
+      "surface": 1780.77,
+      "radius": 2.38
+    },
+    {
+      "nom": "Bailleau-l'Évêque",
+      "code": "28022",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3988, 48.488]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3962, 48.4896]
+      },
+      "population": 1190,
+      "surface": 1981.76,
+      "radius": 2.51
+    },
+    {
+      "nom": "Bailleau-le-Pin",
+      "code": "28021",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3265, 48.3567]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3305, 48.3662]
+      },
+      "population": 1645,
+      "surface": 1669.89,
+      "radius": 2.31
+    },
+    {
+      "nom": "Barjouville",
+      "code": "28024",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4713, 48.4044]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4778, 48.4101]
+      },
+      "population": 1755,
+      "surface": 413.64,
+      "radius": 1.15
+    },
+    {
+      "nom": "Baudreville",
+      "code": "28026",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8922, 48.3241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9056, 48.332]
+      },
+      "population": 239,
+      "surface": 1311.68,
+      "radius": 2.04
+    },
+    {
+      "nom": "Bazoches-en-Dunois",
+      "code": "28028",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5751, 48.0911]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5684, 48.1018]
+      },
+      "population": 262,
+      "surface": 1880.91,
+      "radius": 2.45
+    },
+    {
+      "nom": "Bazoches-les-Hautes",
+      "code": "28029",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.825, 48.1622]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8098, 48.1572]
+      },
+      "population": 328,
+      "surface": 1711.49,
+      "radius": 2.33
+    },
+    {
+      "nom": "Beauche",
+      "code": "28030",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9818, 48.6785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9684, 48.6846]
+      },
+      "population": 284,
+      "surface": 1688.96,
+      "radius": 2.32
+    },
+    {
+      "nom": "Beaumont-les-Autels",
+      "code": "28031",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9613, 48.2416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9593, 48.2571]
+      },
+      "population": 430,
+      "surface": 2139.82,
+      "radius": 2.61
+    },
+    {
+      "nom": "Beauvilliers",
+      "code": "28032",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6561, 48.2994]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6516, 48.2978]
+      },
+      "population": 342,
+      "surface": 2325.53,
+      "radius": 2.72
+    },
+    {
+      "nom": "Belhomert-Guéhouville",
+      "code": "28033",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0541, 48.501]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0573, 48.5025]
+      },
+      "population": 811,
+      "surface": 1096.72,
+      "radius": 1.87
+    },
+    {
+      "nom": "Berchères-les-Pierres",
+      "code": "28035",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5595, 48.3758]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.552, 48.3852]
+      },
+      "population": 1000,
+      "surface": 2009.04,
+      "radius": 2.53
+    },
+    {
+      "nom": "Berchères-Saint-Germain",
+      "code": "28034",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4569, 48.5365]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4822, 48.5347]
+      },
+      "population": 898,
+      "surface": 2785.62,
+      "radius": 2.98
+    },
+    {
+      "nom": "Berchères-sur-Vesgre",
+      "code": "28036",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5511, 48.8443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5416, 48.8418]
+      },
+      "population": 855,
+      "surface": 1223.72,
+      "radius": 1.97
+    },
+    {
+      "nom": "Bérou-la-Mulotière",
+      "code": "28037",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0741, 48.742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0494, 48.7464]
+      },
+      "population": 345,
+      "surface": 1320.29,
+      "radius": 2.05
+    },
+    {
+      "nom": "Béthonvilliers",
+      "code": "28038",
+      "codesPostaux": ["28330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9016, 48.2304]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9081, 48.2216]
+      },
+      "population": 132,
+      "surface": 1237.86,
+      "radius": 1.99
+    },
+    {
+      "nom": "Béville-le-Comte",
+      "code": "28039",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7032, 48.4378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7112, 48.4361]
+      },
+      "population": 1693,
+      "surface": 2025,
+      "radius": 2.54
+    },
+    {
+      "nom": "Billancelles",
+      "code": "28040",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2131, 48.4945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2157, 48.4867]
+      },
+      "population": 314,
+      "surface": 1206.63,
+      "radius": 1.96
+    },
+    {
+      "nom": "Blandainville",
+      "code": "28041",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.294, 48.3119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2922, 48.309]
+      },
+      "population": 282,
+      "surface": 1378.85,
+      "radius": 2.09
+    },
+    {
+      "nom": "Boissy-en-Drouais",
+      "code": "28045",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.251, 48.7297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2615, 48.7286]
+      },
+      "population": 229,
+      "surface": 607.28,
+      "radius": 1.39
+    },
+    {
+      "nom": "Boissy-lès-Perche",
+      "code": "28046",
+      "codesPostaux": ["28340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9006, 48.679]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8887, 48.6854]
+      },
+      "population": 495,
+      "surface": 3370.61,
+      "radius": 3.28
+    },
+    {
+      "nom": "Boisville-la-Saint-Père",
+      "code": "28047",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7008, 48.3331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6944, 48.3274]
+      },
+      "population": 721,
+      "surface": 2518.1,
+      "radius": 2.83
+    },
+    {
+      "nom": "Boncé",
+      "code": "28049",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5211, 48.3062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5046, 48.3082]
+      },
+      "population": 223,
+      "surface": 898.83,
+      "radius": 1.69
+    },
+    {
+      "nom": "Boncourt",
+      "code": "28050",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4645, 48.8445]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4626, 48.8471]
+      },
+      "population": 283,
+      "surface": 370.05,
+      "radius": 1.09
+    },
+    {
+      "nom": "Bonneval",
+      "code": "28051",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3844, 48.1787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3854, 48.1815]
+      },
+      "population": 4890,
+      "surface": 2884.67,
+      "radius": 3.03
+    },
+    {
+      "nom": "Bouglainval",
+      "code": "28052",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5091, 48.5522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5049, 48.5654]
+      },
+      "population": 737,
+      "surface": 1447.75,
+      "radius": 2.15
+    },
+    {
+      "nom": "Boutigny-Prouais",
+      "code": "28056",
+      "codesPostaux": ["28410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5674, 48.7363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5874, 48.7447]
+      },
+      "population": 1708,
+      "surface": 3296.94,
+      "radius": 3.24
+    },
+    {
+      "nom": "Bouville",
+      "code": "28057",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3804, 48.2631]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3795, 48.259]
+      },
+      "population": 553,
+      "surface": 1568.6,
+      "radius": 2.23
+    },
+    {
+      "nom": "Bréchamps",
+      "code": "28058",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5193, 48.6713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5219, 48.672]
+      },
+      "population": 365,
+      "surface": 550.7,
+      "radius": 1.32
+    },
+    {
+      "nom": "Brezolles",
+      "code": "28059",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.064, 48.6898]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0727, 48.6901]
+      },
+      "population": 1796,
+      "surface": 1427.06,
+      "radius": 2.13
+    },
+    {
+      "nom": "Briconville",
+      "code": "28060",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3901, 48.5166]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3874, 48.5286]
+      },
+      "population": 268,
+      "surface": 625.61,
+      "radius": 1.41
+    },
+    {
+      "nom": "Brou",
+      "code": "28061",
+      "codesPostaux": ["28160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1557, 48.2189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1662, 48.2113]
+      },
+      "population": 3245,
+      "surface": 1974.66,
+      "radius": 2.51
+    },
+    {
+      "nom": "Broué",
+      "code": "28062",
+      "codesPostaux": ["28410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5251, 48.752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5223, 48.7499]
+      },
+      "population": 859,
+      "surface": 1219.41,
+      "radius": 1.97
+    },
+    {
+      "nom": "Bû",
+      "code": "28064",
+      "codesPostaux": ["28410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4888, 48.8041]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4929, 48.7973]
+      },
+      "population": 2093,
+      "surface": 2303.52,
+      "radius": 2.71
+    },
+    {
+      "nom": "Bullainville",
+      "code": "28065",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5073, 48.1717]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5092, 48.1715]
+      },
+      "population": 111,
+      "surface": 671.32,
+      "radius": 1.46
+    },
+    {
+      "nom": "Cernay",
+      "code": "28067",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2316, 48.3871]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2377, 48.3838]
+      },
+      "population": 83,
+      "surface": 792.61,
+      "radius": 1.59
+    },
+    {
+      "nom": "Challet",
+      "code": "28068",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4276, 48.5529]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4352, 48.5536]
+      },
+      "population": 432,
+      "surface": 1015.02,
+      "radius": 1.8
+    },
+    {
+      "nom": "Champhol",
+      "code": "28070",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5129, 48.4679]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5001, 48.4689]
+      },
+      "population": 3674,
+      "surface": 543.18,
+      "radius": 1.31
+    },
+    {
+      "nom": "Champrond-en-Gâtine",
+      "code": "28071",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.073, 48.3993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0736, 48.4015]
+      },
+      "population": 733,
+      "surface": 3435.33,
+      "radius": 3.31
+    },
+    {
+      "nom": "Champrond-en-Perchet",
+      "code": "28072",
+      "codesPostaux": ["28400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8878, 48.31]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.868, 48.3107]
+      },
+      "population": 389,
+      "surface": 926.7,
+      "radius": 1.72
+    },
+    {
+      "nom": "Champseru",
+      "code": "28073",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6494, 48.489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6555, 48.4922]
+      },
+      "population": 347,
+      "surface": 1508.61,
+      "radius": 2.19
+    },
+    {
+      "nom": "Chapelle-Guillaume",
+      "code": "28078",
+      "codesPostaux": ["28330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8963, 48.1205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9076, 48.1152]
+      },
+      "population": 182,
+      "surface": 2007.97,
+      "radius": 2.53
+    },
+    {
+      "nom": "Chapelle-Royale",
+      "code": "28079",
+      "codesPostaux": ["28290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0439, 48.1528]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0539, 48.1435]
+      },
+      "population": 321,
+      "surface": 1003.41,
+      "radius": 1.79
+    },
+    {
+      "nom": "Charbonnières",
+      "code": "28080",
+      "codesPostaux": ["28330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9448, 48.1891]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9353, 48.1922]
+      },
+      "population": 259,
+      "surface": 2109.68,
+      "radius": 2.59
+    },
+    {
+      "nom": "Charonville",
+      "code": "28081",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3145, 48.2796]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3056, 48.281]
+      },
+      "population": 298,
+      "surface": 971.88,
+      "radius": 1.76
+    },
+    {
+      "nom": "Charpont",
+      "code": "28082",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4329, 48.6945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4383, 48.6999]
+      },
+      "population": 638,
+      "surface": 721.37,
+      "radius": 1.52
+    },
+    {
+      "nom": "Chartainvilliers",
+      "code": "28084",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5475, 48.5453]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5534, 48.5448]
+      },
+      "population": 665,
+      "surface": 914.44,
+      "radius": 1.71
+    },
+    {
+      "nom": "Chartres",
+      "code": "28085",
+      "codesPostaux": ["28000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5046, 48.4481]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4889, 48.4439]
+      },
+      "population": 37990,
+      "surface": 1692.69,
+      "radius": 2.32
+    },
+    {
+      "nom": "Chassant",
+      "code": "28086",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0652, 48.2915]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0625, 48.294]
+      },
+      "population": 304,
+      "surface": 446.05,
+      "radius": 1.19
+    },
+    {
+      "nom": "Châtaincourt",
+      "code": "28087",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.237, 48.6906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2271, 48.6944]
+      },
+      "population": 227,
+      "surface": 1479.58,
+      "radius": 2.17
+    },
+    {
+      "nom": "Châteaudun",
+      "code": "28088",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3207, 48.0718]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3279, 48.0704]
+      },
+      "population": 12898,
+      "surface": 2841.86,
+      "radius": 3.01
+    },
+    {
+      "nom": "Châteauneuf-en-Thymerais",
+      "code": "28089",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2391, 48.5928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2421, 48.581]
+      },
+      "population": 2632,
+      "surface": 408.82,
+      "radius": 1.14
+    },
+    {
+      "nom": "Châtenay",
+      "code": "28092",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8841, 48.3537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8832, 48.3587]
+      },
+      "population": 236,
+      "surface": 1038.85,
+      "radius": 1.82
+    },
+    {
+      "nom": "Chaudon",
+      "code": "28094",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.496, 48.6561]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4992, 48.6595]
+      },
+      "population": 1689,
+      "surface": 1148.35,
+      "radius": 1.91
+    },
+    {
+      "nom": "Chauffours",
+      "code": "28095",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3387, 48.3941]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.347, 48.3949]
+      },
+      "population": 290,
+      "surface": 753.53,
+      "radius": 1.55
+    },
+    {
+      "nom": "Cherisy",
+      "code": "28098",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4359, 48.7573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4239, 48.7475]
+      },
+      "population": 1857,
+      "surface": 1244.66,
+      "radius": 1.99
+    },
+    {
+      "nom": "Chuisnes",
+      "code": "28099",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1881, 48.4367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2071, 48.4468]
+      },
+      "population": 1123,
+      "surface": 2318.69,
+      "radius": 2.72
+    },
+    {
+      "nom": "Cintray",
+      "code": "28100",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3643, 48.445]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3671, 48.4482]
+      },
+      "population": 470,
+      "surface": 399.29,
+      "radius": 1.13
+    },
+    {
+      "nom": "Clévilliers",
+      "code": "28102",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.382, 48.5523]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3887, 48.5434]
+      },
+      "population": 753,
+      "surface": 1590.72,
+      "radius": 2.25
+    },
+    {
+      "nom": "Cloyes-les-Trois-Rivières",
+      "code": "28103",
+      "codesPostaux": ["28220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2997, 48.0069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2335, 47.9973]
+      },
+      "population": 5601,
+      "surface": 11971.01,
+      "radius": 6.17
+    },
+    {
+      "nom": "Coltainville",
+      "code": "28104",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5928, 48.4941]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5851, 48.4861]
+      },
+      "population": 904,
+      "surface": 1795.53,
+      "radius": 2.39
+    },
+    {
+      "nom": "Combres",
+      "code": "28105",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0572, 48.3345]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0634, 48.3254]
+      },
+      "population": 553,
+      "surface": 1512.37,
+      "radius": 2.19
+    },
+    {
+      "nom": "Conie-Molitard",
+      "code": "28106",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4448, 48.1131]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4395, 48.1129]
+      },
+      "population": 389,
+      "surface": 1521.7,
+      "radius": 2.2
+    },
+    {
+      "nom": "Corancez",
+      "code": "28107",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5149, 48.3678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5194, 48.3667]
+      },
+      "population": 361,
+      "surface": 688.33,
+      "radius": 1.48
+    },
+    {
+      "nom": "Cormainville",
+      "code": "28108",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6041, 48.1308]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6108, 48.1365]
+      },
+      "population": 222,
+      "surface": 1811.11,
+      "radius": 2.4
+    },
+    {
+      "nom": "Coudray-au-Perche",
+      "code": "28111",
+      "codesPostaux": ["28330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8609, 48.2361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8552, 48.2318]
+      },
+      "population": 364,
+      "surface": 1467.26,
+      "radius": 2.16
+    },
+    {
+      "nom": "Coulombs",
+      "code": "28113",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5527, 48.6562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5419, 48.6506]
+      },
+      "population": 1371,
+      "surface": 1263.95,
+      "radius": 2.01
+    },
+    {
+      "nom": "Courbehaye",
+      "code": "28114",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6089, 48.1474]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6081, 48.1595]
+      },
+      "population": 137,
+      "surface": 1985.26,
+      "radius": 2.51
+    },
+    {
+      "nom": "Courville-sur-Eure",
+      "code": "28116",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2483, 48.4533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2401, 48.4487]
+      },
+      "population": 2802,
+      "surface": 1118.1,
+      "radius": 1.89
+    },
+    {
+      "nom": "Crécy-Couvé",
+      "code": "28117",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2842, 48.6776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2826, 48.6717]
+      },
+      "population": 263,
+      "surface": 667.23,
+      "radius": 1.46
+    },
+    {
+      "nom": "Croisilles",
+      "code": "28118",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4984, 48.6905]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.504, 48.6893]
+      },
+      "population": 423,
+      "surface": 574.46,
+      "radius": 1.35
+    },
+    {
+      "nom": "Crucey-Villages",
+      "code": "28120",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1036, 48.6749]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0782, 48.6673]
+      },
+      "population": 467,
+      "surface": 4445.73,
+      "radius": 3.76
+    },
+    {
+      "nom": "Dambron",
+      "code": "28121",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8734, 48.1152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8726, 48.1143]
+      },
+      "population": 99,
+      "surface": 1192.76,
+      "radius": 1.95
+    },
+    {
+      "nom": "Dammarie",
+      "code": "28122",
+      "codesPostaux": ["28360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4964, 48.3384]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4931, 48.3441]
+      },
+      "population": 1500,
+      "surface": 3279.19,
+      "radius": 3.23
+    },
+    {
+      "nom": "Dampierre-sous-Brou",
+      "code": "28123",
+      "codesPostaux": ["28160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1103, 48.2232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1124, 48.2114]
+      },
+      "population": 445,
+      "surface": 1453.59,
+      "radius": 2.15
+    },
+    {
+      "nom": "Dampierre-sur-Avre",
+      "code": "28124",
+      "codesPostaux": ["28350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1437, 48.7575]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1496, 48.7626]
+      },
+      "population": 763,
+      "surface": 1834,
+      "radius": 2.42
+    },
+    {
+      "nom": "Dancy",
+      "code": "28126",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.464, 48.1526]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4642, 48.1503]
+      },
+      "population": 204,
+      "surface": 990.74,
+      "radius": 1.78
+    },
+    {
+      "nom": "Dangeau",
+      "code": "28127",
+      "codesPostaux": ["28160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2712, 48.2065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2876, 48.2087]
+      },
+      "population": 1260,
+      "surface": 5497.78,
+      "radius": 4.18
+    },
+    {
+      "nom": "Dangers",
+      "code": "28128",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3505, 48.5082]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3509, 48.5072]
+      },
+      "population": 433,
+      "surface": 739.21,
+      "radius": 1.53
+    },
+    {
+      "nom": "Denonville",
+      "code": "28129",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8022, 48.393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8115, 48.3915]
+      },
+      "population": 773,
+      "surface": 1299.39,
+      "radius": 2.03
+    },
+    {
+      "nom": "Digny",
+      "code": "28130",
+      "codesPostaux": ["28250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1378, 48.5338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1528, 48.5372]
+      },
+      "population": 1002,
+      "surface": 4066.94,
+      "radius": 3.6
+    },
+    {
+      "nom": "Donnemain-Saint-Mamès",
+      "code": "28132",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3669, 48.1012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3687, 48.1068]
+      },
+      "population": 661,
+      "surface": 1281.39,
+      "radius": 2.02
+    },
+    {
+      "nom": "Dreux",
+      "code": "28134",
+      "codesPostaux": ["28100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3578, 48.7482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3709, 48.736]
+      },
+      "population": 31205,
+      "surface": 2423.79,
+      "radius": 2.78
+    },
+    {
+      "nom": "Droue-sur-Drouette",
+      "code": "28135",
+      "codesPostaux": ["28230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7012, 48.5999]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7031, 48.6013]
+      },
+      "population": 1204,
+      "surface": 535.14,
+      "radius": 1.31
+    },
+    {
+      "nom": "Écluzelles",
+      "code": "28136",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4218, 48.7088]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4247, 48.7097]
+      },
+      "population": 159,
+      "surface": 326.48,
+      "radius": 1.02
+    },
+    {
+      "nom": "Écrosnes",
+      "code": "28137",
+      "codesPostaux": ["28320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7349, 48.5525]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7273, 48.545]
+      },
+      "population": 860,
+      "surface": 2389.22,
+      "radius": 2.76
+    },
+    {
+      "nom": "Éole-en-Beauce",
+      "code": "28406",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6716, 48.2108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7035, 48.2173]
+      },
+      "population": 1240,
+      "surface": 10415.1,
+      "radius": 5.76
+    },
+    {
+      "nom": "Épeautrolles",
+      "code": "28139",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3352, 48.3135]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3269, 48.309]
+      },
+      "population": 169,
+      "surface": 929.6,
+      "radius": 1.72
+    },
+    {
+      "nom": "Épernon",
+      "code": "28140",
+      "codesPostaux": ["28230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6859, 48.5947]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6739, 48.6103]
+      },
+      "population": 5509,
+      "surface": 656.3,
+      "radius": 1.45
+    },
+    {
+      "nom": "Ermenonville-la-Grande",
+      "code": "28141",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3785, 48.337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3852, 48.3371]
+      },
+      "population": 315,
+      "surface": 1208.83,
+      "radius": 1.96
+    },
+    {
+      "nom": "Ermenonville-la-Petite",
+      "code": "28142",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3448, 48.29]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3538, 48.2962]
+      },
+      "population": 189,
+      "surface": 512.93,
+      "radius": 1.28
+    },
+    {
+      "nom": "Escorpain",
+      "code": "28143",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2145, 48.7205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2103, 48.7212]
+      },
+      "population": 234,
+      "surface": 955.41,
+      "radius": 1.74
+    },
+    {
+      "nom": "Faverolles",
+      "code": "28146",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5818, 48.6799]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5798, 48.6874]
+      },
+      "population": 818,
+      "surface": 1004.21,
+      "radius": 1.79
+    },
+    {
+      "nom": "Favières",
+      "code": "28147",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2337, 48.5317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.227, 48.5293]
+      },
+      "population": 625,
+      "surface": 1279.27,
+      "radius": 2.02
+    },
+    {
+      "nom": "Fessanvilliers-Mattanvilliers",
+      "code": "28151",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0376, 48.7017]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0467, 48.7129]
+      },
+      "population": 172,
+      "surface": 1181.36,
+      "radius": 1.94
+    },
+    {
+      "nom": "Flacey",
+      "code": "28153",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3319, 48.1505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.35, 48.1479]
+      },
+      "population": 212,
+      "surface": 1416.02,
+      "radius": 2.12
+    },
+    {
+      "nom": "Fontaine-la-Guyon",
+      "code": "28154",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2986, 48.4742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3115, 48.4745]
+      },
+      "population": 1675,
+      "surface": 1469,
+      "radius": 2.16
+    },
+    {
+      "nom": "Fontaine-les-Ribouts",
+      "code": "28155",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2484, 48.657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2546, 48.6539]
+      },
+      "population": 187,
+      "surface": 713.37,
+      "radius": 1.51
+    },
+    {
+      "nom": "Fontaine-Simon",
+      "code": "28156",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9881, 48.513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0173, 48.504]
+      },
+      "population": 887,
+      "surface": 1712.04,
+      "radius": 2.33
+    },
+    {
+      "nom": "Fontenay-sur-Conie",
+      "code": "28157",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6855, 48.167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6654, 48.1645]
+      },
+      "population": 149,
+      "surface": 1340.07,
+      "radius": 2.07
+    },
+    {
+      "nom": "Fontenay-sur-Eure",
+      "code": "28158",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4217, 48.4069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4119, 48.3952]
+      },
+      "population": 1180,
+      "surface": 1380.22,
+      "radius": 2.1
+    },
+    {
+      "nom": "Francourville",
+      "code": "28160",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6583, 48.4008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.661, 48.4048]
+      },
+      "population": 930,
+      "surface": 1864.12,
+      "radius": 2.44
+    },
+    {
+      "nom": "Frazé",
+      "code": "28161",
+      "codesPostaux": ["28160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0947, 48.2629]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0976, 48.2625]
+      },
+      "population": 488,
+      "surface": 2777.87,
+      "radius": 2.97
+    },
+    {
+      "nom": "Fresnay-l'Évêque",
+      "code": "28164",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8101, 48.2618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8219, 48.265]
+      },
+      "population": 741,
+      "surface": 2924.67,
+      "radius": 3.05
+    },
+    {
+      "nom": "Fresnay-le-Comte",
+      "code": "28162",
+      "codesPostaux": ["28360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4833, 48.3046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4761, 48.3028]
+      },
+      "population": 286,
+      "surface": 832.21,
+      "radius": 1.63
+    },
+    {
+      "nom": "Fresnay-le-Gilmert",
+      "code": "28163",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4196, 48.513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4204, 48.5137]
+      },
+      "population": 223,
+      "surface": 606.22,
+      "radius": 1.39
+    },
+    {
+      "nom": "Friaize",
+      "code": "28166",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1217, 48.4318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1349, 48.4316]
+      },
+      "population": 261,
+      "surface": 1066.3,
+      "radius": 1.84
+    },
+    {
+      "nom": "Fruncé",
+      "code": "28167",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1937, 48.4069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2246, 48.4071]
+      },
+      "population": 378,
+      "surface": 1699.8,
+      "radius": 2.33
+    },
+    {
+      "nom": "Gallardon",
+      "code": "28168",
+      "codesPostaux": ["28320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6865, 48.5351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6899, 48.5253]
+      },
+      "population": 3537,
+      "surface": 1133.25,
+      "radius": 1.9
+    },
+    {
+      "nom": "Garancières-en-Beauce",
+      "code": "28169",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9106, 48.4352]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9184, 48.4361]
+      },
+      "population": 222,
+      "surface": 1136.92,
+      "radius": 1.9
+    },
+    {
+      "nom": "Garancières-en-Drouais",
+      "code": "28170",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2824, 48.7041]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2841, 48.7028]
+      },
+      "population": 283,
+      "surface": 652.39,
+      "radius": 1.44
+    },
+    {
+      "nom": "Garnay",
+      "code": "28171",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3371, 48.6983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.34, 48.7035]
+      },
+      "population": 1000,
+      "surface": 1436.59,
+      "radius": 2.14
+    },
+    {
+      "nom": "Gas",
+      "code": "28172",
+      "codesPostaux": ["28320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.661, 48.565]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6649, 48.5677]
+      },
+      "population": 730,
+      "surface": 1225.03,
+      "radius": 1.97
+    },
+    {
+      "nom": "Gasville-Oisème",
+      "code": "28173",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5536, 48.4734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5381, 48.4668]
+      },
+      "population": 1474,
+      "surface": 916.61,
+      "radius": 1.71
+    },
+    {
+      "nom": "Gellainville",
+      "code": "28177",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5362, 48.414]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5334, 48.4162]
+      },
+      "population": 763,
+      "surface": 1206.76,
+      "radius": 1.96
+    },
+    {
+      "nom": "Germainville",
+      "code": "28178",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4735, 48.7462]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4841, 48.7427]
+      },
+      "population": 345,
+      "surface": 879.27,
+      "radius": 1.67
+    },
+    {
+      "nom": "Gilles",
+      "code": "28180",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5175, 48.9088]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5146, 48.9116]
+      },
+      "population": 503,
+      "surface": 727.46,
+      "radius": 1.52
+    },
+    {
+      "nom": "Gohory",
+      "code": "28182",
+      "codesPostaux": ["28160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2212, 48.1647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2288, 48.1671]
+      },
+      "population": 319,
+      "surface": 961.38,
+      "radius": 1.75
+    },
+    {
+      "nom": "Gommerville",
+      "code": "28183",
+      "codesPostaux": ["28310", "28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.947, 48.3458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.945, 48.346]
+      },
+      "population": 667,
+      "surface": 3261.4,
+      "radius": 3.22
+    },
+    {
+      "nom": "Gouillons",
+      "code": "28184",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8374, 48.3435]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8398, 48.3424]
+      },
+      "population": 337,
+      "surface": 1211.82,
+      "radius": 1.96
+    },
+    {
+      "nom": "Goussainville",
+      "code": "28185",
+      "codesPostaux": ["28410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5566, 48.7831]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5552, 48.7764]
+      },
+      "population": 1340,
+      "surface": 1323.72,
+      "radius": 2.05
+    },
+    {
+      "nom": "Guainville",
+      "code": "28187",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4811, 48.9186]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4921, 48.9152]
+      },
+      "population": 684,
+      "surface": 1437.54,
+      "radius": 2.14
+    },
+    {
+      "nom": "Guilleville",
+      "code": "28189",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8022, 48.2244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8116, 48.2256]
+      },
+      "population": 163,
+      "surface": 1354.18,
+      "radius": 2.08
+    },
+    {
+      "nom": "Guillonville",
+      "code": "28190",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6458, 48.094]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6612, 48.0925]
+      },
+      "population": 463,
+      "surface": 2741.16,
+      "radius": 2.95
+    },
+    {
+      "nom": "Hanches",
+      "code": "28191",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6436, 48.6048]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6426, 48.6006]
+      },
+      "population": 2710,
+      "surface": 1634.58,
+      "radius": 2.28
+    },
+    {
+      "nom": "Happonvilliers",
+      "code": "28192",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1063, 48.3344]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1087, 48.3248]
+      },
+      "population": 309,
+      "surface": 1919.82,
+      "radius": 2.47
+    },
+    {
+      "nom": "Havelu",
+      "code": "28193",
+      "codesPostaux": ["28410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5335, 48.7873]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.533, 48.7877]
+      },
+      "population": 131,
+      "surface": 376.37,
+      "radius": 1.09
+    },
+    {
+      "nom": "Houville-la-Branche",
+      "code": "28194",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6383, 48.4449]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6445, 48.4427]
+      },
+      "population": 414,
+      "surface": 1391.39,
+      "radius": 2.1
+    },
+    {
+      "nom": "Houx",
+      "code": "28195",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6207, 48.5686]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.62, 48.5662]
+      },
+      "population": 750,
+      "surface": 634.85,
+      "radius": 1.42
+    },
+    {
+      "nom": "Illiers-Combray",
+      "code": "28196",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2132, 48.3018]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2466, 48.2985]
+      },
+      "population": 3228,
+      "surface": 3389.51,
+      "radius": 3.28
+    },
+    {
+      "nom": "Intréville",
+      "code": "28197",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9366, 48.2985]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9369, 48.2964]
+      },
+      "population": 121,
+      "surface": 896.19,
+      "radius": 1.69
+    },
+    {
+      "nom": "Jallans",
+      "code": "28198",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3872, 48.0773]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3709, 48.0749]
+      },
+      "population": 787,
+      "surface": 907.94,
+      "radius": 1.7
+    },
+    {
+      "nom": "Janville-en-Beauce",
+      "code": "28199",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8474, 48.1998]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8827, 48.2002]
+      },
+      "population": 2482,
+      "surface": 4261.62,
+      "radius": 3.68
+    },
+    {
+      "nom": "Jaudrais",
+      "code": "28200",
+      "codesPostaux": ["28250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1202, 48.5752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1282, 48.5774]
+      },
+      "population": 409,
+      "surface": 1538.19,
+      "radius": 2.21
+    },
+    {
+      "nom": "Jouy",
+      "code": "28201",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.544, 48.5138]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5506, 48.5118]
+      },
+      "population": 1989,
+      "surface": 1299.24,
+      "radius": 2.03
+    },
+    {
+      "nom": "La Bazoche-Gouet",
+      "code": "28027",
+      "codesPostaux": ["28330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9803, 48.1356]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9796, 48.1378]
+      },
+      "population": 1230,
+      "surface": 3784.25,
+      "radius": 3.47
+    },
+    {
+      "nom": "La Bourdinière-Saint-Loup",
+      "code": "28048",
+      "codesPostaux": ["28360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4272, 48.3183]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4112, 48.3184]
+      },
+      "population": 751,
+      "surface": 2032.38,
+      "radius": 2.54
+    },
+    {
+      "nom": "La Chapelle-d'Aunainville",
+      "code": "28074",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7952, 48.4154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8071, 48.417]
+      },
+      "population": 243,
+      "surface": 745.98,
+      "radius": 1.54
+    },
+    {
+      "nom": "La Chapelle-du-Noyer",
+      "code": "28075",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3147, 48.0402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3132, 48.0553]
+      },
+      "population": 1014,
+      "surface": 1339.4,
+      "radius": 2.06
+    },
+    {
+      "nom": "La Chapelle-Forainvilliers",
+      "code": "28076",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4916, 48.7284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5015, 48.7293]
+      },
+      "population": 214,
+      "surface": 542.84,
+      "radius": 1.31
+    },
+    {
+      "nom": "La Chapelle-Fortin",
+      "code": "28077",
+      "codesPostaux": ["28340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8603, 48.6486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8638, 48.6446]
+      },
+      "population": 169,
+      "surface": 1455.08,
+      "radius": 2.15
+    },
+    {
+      "nom": "La Chaussée-d'Ivry",
+      "code": "28096",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.493, 48.8906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4797, 48.8825]
+      },
+      "population": 1307,
+      "surface": 845.32,
+      "radius": 1.64
+    },
+    {
+      "nom": "La Croix-du-Perche",
+      "code": "28119",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0427, 48.2816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0489, 48.2743]
+      },
+      "population": 148,
+      "surface": 1256.44,
+      "radius": 2
+    },
+    {
+      "nom": "La Ferté-Vidame",
+      "code": "28149",
+      "codesPostaux": ["28340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8929, 48.5988]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9009, 48.6115]
+      },
+      "population": 558,
+      "surface": 4034.73,
+      "radius": 3.58
+    },
+    {
+      "nom": "La Framboisière",
+      "code": "28159",
+      "codesPostaux": ["28250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0157, 48.5975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.014, 48.5951]
+      },
+      "population": 337,
+      "surface": 519.18,
+      "radius": 1.29
+    },
+    {
+      "nom": "La Gaudaine",
+      "code": "28175",
+      "codesPostaux": ["28400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9595, 48.2978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9291, 48.3026]
+      },
+      "population": 179,
+      "surface": 919.7,
+      "radius": 1.71
+    },
+    {
+      "nom": "La Loupe",
+      "code": "28214",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0261, 48.4733]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0144, 48.4714]
+      },
+      "population": 3230,
+      "surface": 736.94,
+      "radius": 1.53
+    },
+    {
+      "nom": "La Mancelière",
+      "code": "28231",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9858, 48.6413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.995, 48.6485]
+      },
+      "population": 152,
+      "surface": 593.51,
+      "radius": 1.37
+    },
+    {
+      "nom": "La Puisaye",
+      "code": "28310",
+      "codesPostaux": ["28250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9697, 48.6127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9576, 48.6088]
+      },
+      "population": 247,
+      "surface": 2055.87,
+      "radius": 2.56
+    },
+    {
+      "nom": "La Saucelle",
+      "code": "28368",
+      "codesPostaux": ["28250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0296, 48.6279]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0292, 48.6305]
+      },
+      "population": 201,
+      "surface": 1423.27,
+      "radius": 2.13
+    },
+    {
+      "nom": "Lamblore",
+      "code": "28202",
+      "codesPostaux": ["28340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9188, 48.6254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9161, 48.6273]
+      },
+      "population": 323,
+      "surface": 1082.88,
+      "radius": 1.86
+    },
+    {
+      "nom": "Landelles",
+      "code": "28203",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1906, 48.4636]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2007, 48.4674]
+      },
+      "population": 631,
+      "surface": 1043.86,
+      "radius": 1.82
+    },
+    {
+      "nom": "Laons",
+      "code": "28206",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.192, 48.6991]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1756, 48.7048]
+      },
+      "population": 655,
+      "surface": 1585.62,
+      "radius": 2.25
+    },
+    {
+      "nom": "Le Boullay-les-Deux-Églises",
+      "code": "28053",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3275, 48.6302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3286, 48.6254]
+      },
+      "population": 250,
+      "surface": 1385.99,
+      "radius": 2.1
+    },
+    {
+      "nom": "Le Boullay-Mivoye",
+      "code": "28054",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4082, 48.6551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4066, 48.6476]
+      },
+      "population": 529,
+      "surface": 1105.37,
+      "radius": 1.88
+    },
+    {
+      "nom": "Le Boullay-Thierry",
+      "code": "28055",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4357, 48.6352]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.431, 48.6382]
+      },
+      "population": 585,
+      "surface": 1302.79,
+      "radius": 2.04
+    },
+    {
+      "nom": "Le Coudray",
+      "code": "28110",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5026, 48.4188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4908, 48.4304]
+      },
+      "population": 4063,
+      "surface": 556.53,
+      "radius": 1.33
+    },
+    {
+      "nom": "Le Favril",
+      "code": "28148",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1171, 48.457]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1291, 48.4634]
+      },
+      "population": 365,
+      "surface": 2392.27,
+      "radius": 2.76
+    },
+    {
+      "nom": "Le Gault-Saint-Denis",
+      "code": "28176",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4808, 48.2413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4836, 48.2443]
+      },
+      "population": 674,
+      "surface": 2373.53,
+      "radius": 2.75
+    },
+    {
+      "nom": "Le Gué-de-Longroi",
+      "code": "28188",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7067, 48.4916]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7177, 48.5003]
+      },
+      "population": 889,
+      "surface": 693.39,
+      "radius": 1.49
+    },
+    {
+      "nom": "Le Mesnil-Simon",
+      "code": "28247",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5315, 48.8895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5376, 48.8962]
+      },
+      "population": 569,
+      "surface": 922.56,
+      "radius": 1.71
+    },
+    {
+      "nom": "Le Mesnil-Thomas",
+      "code": "28248",
+      "codesPostaux": ["28250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0953, 48.588]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.094, 48.5998]
+      },
+      "population": 337,
+      "surface": 1633.08,
+      "radius": 2.28
+    },
+    {
+      "nom": "Le Thieulin",
+      "code": "28385",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1384, 48.4053]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1324, 48.4079]
+      },
+      "population": 427,
+      "surface": 1192.44,
+      "radius": 1.95
+    },
+    {
+      "nom": "Les Autels-Villevillon",
+      "code": "28016",
+      "codesPostaux": ["28330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9924, 48.1778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.997, 48.1737]
+      },
+      "population": 110,
+      "surface": 1023.35,
+      "radius": 1.8
+    },
+    {
+      "nom": "Les Châtelets",
+      "code": "28090",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0201, 48.6568]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0101, 48.6492]
+      },
+      "population": 111,
+      "surface": 988.4,
+      "radius": 1.77
+    },
+    {
+      "nom": "Les Châtelliers-Notre-Dame",
+      "code": "28091",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2091, 48.347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2034, 48.3466]
+      },
+      "population": 149,
+      "surface": 1099.99,
+      "radius": 1.87
+    },
+    {
+      "nom": "Les Corvées-les-Yys",
+      "code": "28109",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1477, 48.3666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1408, 48.3627]
+      },
+      "population": 327,
+      "surface": 1372.3,
+      "radius": 2.09
+    },
+    {
+      "nom": "Les Étilleux",
+      "code": "28144",
+      "codesPostaux": ["28330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8151, 48.2439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8233, 48.2345]
+      },
+      "population": 194,
+      "surface": 844.54,
+      "radius": 1.64
+    },
+    {
+      "nom": "Les Pinthières",
+      "code": "28299",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5748, 48.7044]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.567, 48.7016]
+      },
+      "population": 164,
+      "surface": 404.3,
+      "radius": 1.13
+    },
+    {
+      "nom": "Les Ressuintes",
+      "code": "28314",
+      "codesPostaux": ["28340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9264, 48.5947]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9376, 48.5956]
+      },
+      "population": 153,
+      "surface": 747.28,
+      "radius": 1.54
+    },
+    {
+      "nom": "Les Villages Vovéens",
+      "code": "28422",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5995, 48.2714]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6273, 48.2725]
+      },
+      "population": 3977,
+      "surface": 6383.17,
+      "radius": 4.51
+    },
+    {
+      "nom": "Léthuin",
+      "code": "28207",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8586, 48.3772]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8684, 48.3681]
+      },
+      "population": 240,
+      "surface": 709.69,
+      "radius": 1.5
+    },
+    {
+      "nom": "Levainville",
+      "code": "28208",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7458, 48.4925]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7434, 48.4895]
+      },
+      "population": 377,
+      "surface": 555.95,
+      "radius": 1.33
+    },
+    {
+      "nom": "Lèves",
+      "code": "28209",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4692, 48.4801]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4814, 48.4691]
+      },
+      "population": 5701,
+      "surface": 751.39,
+      "radius": 1.55
+    },
+    {
+      "nom": "Levesville-la-Chenard",
+      "code": "28210",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8306, 48.302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8241, 48.3035]
+      },
+      "population": 235,
+      "surface": 1403.47,
+      "radius": 2.11
+    },
+    {
+      "nom": "Logron",
+      "code": "28211",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2528, 48.1382]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2623, 48.1477]
+      },
+      "population": 587,
+      "surface": 2277.18,
+      "radius": 2.69
+    },
+    {
+      "nom": "Loigny-la-Bataille",
+      "code": "28212",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7243, 48.1302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7347, 48.1214]
+      },
+      "population": 215,
+      "surface": 1815.35,
+      "radius": 2.4
+    },
+    {
+      "nom": "Lormaye",
+      "code": "28213",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5429, 48.6393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5397, 48.6469]
+      },
+      "population": 683,
+      "surface": 145.15,
+      "radius": 0.68
+    },
+    {
+      "nom": "Louville-la-Chenard",
+      "code": "28215",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7934, 48.3268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.787, 48.325]
+      },
+      "population": 247,
+      "surface": 1990.01,
+      "radius": 2.52
+    },
+    {
+      "nom": "Louvilliers-en-Drouais",
+      "code": "28216",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.283, 48.7338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2846, 48.732]
+      },
+      "population": 221,
+      "surface": 416.37,
+      "radius": 1.15
+    },
+    {
+      "nom": "Louvilliers-lès-Perche",
+      "code": "28217",
+      "codesPostaux": ["28250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0624, 48.6192]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0788, 48.6224]
+      },
+      "population": 198,
+      "surface": 1455.43,
+      "radius": 2.15
+    },
+    {
+      "nom": "Lucé",
+      "code": "28218",
+      "codesPostaux": ["28110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4525, 48.4337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4624, 48.4378]
+      },
+      "population": 15658,
+      "surface": 616.59,
+      "radius": 1.4
+    },
+    {
+      "nom": "Luigny",
+      "code": "28219",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0246, 48.2393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0242, 48.2405]
+      },
+      "population": 423,
+      "surface": 1623.08,
+      "radius": 2.27
+    },
+    {
+      "nom": "Luisant",
+      "code": "28220",
+      "codesPostaux": ["28600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4668, 48.4239]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.474, 48.4294]
+      },
+      "population": 6818,
+      "surface": 442.17,
+      "radius": 1.19
+    },
+    {
+      "nom": "Lumeau",
+      "code": "28221",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7728, 48.1047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7864, 48.116]
+      },
+      "population": 137,
+      "surface": 1527.61,
+      "radius": 2.21
+    },
+    {
+      "nom": "Luplanté",
+      "code": "28222",
+      "codesPostaux": ["28360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.385, 48.2987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4008, 48.2996]
+      },
+      "population": 387,
+      "surface": 1669.84,
+      "radius": 2.31
+    },
+    {
+      "nom": "Luray",
+      "code": "28223",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3985, 48.7144]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3947, 48.7236]
+      },
+      "population": 1570,
+      "surface": 453.36,
+      "radius": 1.2
+    },
+    {
+      "nom": "Magny",
+      "code": "28225",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2665, 48.3478]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2615, 48.349]
+      },
+      "population": 652,
+      "surface": 1320.51,
+      "radius": 2.05
+    },
+    {
+      "nom": "Maillebois",
+      "code": "28226",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1527, 48.63]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1478, 48.6312]
+      },
+      "population": 926,
+      "surface": 4125.84,
+      "radius": 3.62
+    },
+    {
+      "nom": "Maintenon",
+      "code": "28227",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5815, 48.5828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5771, 48.5865]
+      },
+      "population": 4532,
+      "surface": 1149.61,
+      "radius": 1.91
+    },
+    {
+      "nom": "Mainvilliers",
+      "code": "28229",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4471, 48.4651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4639, 48.4509]
+      },
+      "population": 10950,
+      "surface": 1203.5,
+      "radius": 1.96
+    },
+    {
+      "nom": "Maisons",
+      "code": "28230",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.846, 48.4038]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8439, 48.4094]
+      },
+      "population": 403,
+      "surface": 957.19,
+      "radius": 1.75
+    },
+    {
+      "nom": "Manou",
+      "code": "28232",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9614, 48.5372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9803, 48.5196]
+      },
+      "population": 606,
+      "surface": 1363.48,
+      "radius": 2.08
+    },
+    {
+      "nom": "Marboué",
+      "code": "28233",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3056, 48.1245]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3316, 48.1135]
+      },
+      "population": 1124,
+      "surface": 2666.29,
+      "radius": 2.91
+    },
+    {
+      "nom": "Marchéville",
+      "code": "28234",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2401, 48.3603]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2522, 48.3679]
+      },
+      "population": 506,
+      "surface": 1259.63,
+      "radius": 2
+    },
+    {
+      "nom": "Marchezais",
+      "code": "28235",
+      "codesPostaux": ["28410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5135, 48.775]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5091, 48.7729]
+      },
+      "population": 408,
+      "surface": 222.21,
+      "radius": 0.84
+    },
+    {
+      "nom": "Marolles-les-Buis",
+      "code": "28237",
+      "codesPostaux": ["28400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9437, 48.3674]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9276, 48.3609]
+      },
+      "population": 207,
+      "surface": 1320.05,
+      "radius": 2.05
+    },
+    {
+      "nom": "Marville-Moutiers-Brûlé",
+      "code": "28239",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3779, 48.6742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3903, 48.6756]
+      },
+      "population": 1027,
+      "surface": 2041.58,
+      "radius": 2.55
+    },
+    {
+      "nom": "Meaucé",
+      "code": "28240",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9826, 48.485]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0022, 48.4868]
+      },
+      "population": 499,
+      "surface": 1159.65,
+      "radius": 1.92
+    },
+    {
+      "nom": "Méréglise",
+      "code": "28242",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1861, 48.2931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.187, 48.2897]
+      },
+      "population": 106,
+      "surface": 445.51,
+      "radius": 1.19
+    },
+    {
+      "nom": "Mérouville",
+      "code": "28243",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9014, 48.3013]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8976, 48.2966]
+      },
+      "population": 215,
+      "surface": 970.73,
+      "radius": 1.76
+    },
+    {
+      "nom": "Meslay-le-Grenet",
+      "code": "28245",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3918, 48.3704]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3819, 48.3673]
+      },
+      "population": 376,
+      "surface": 894.41,
+      "radius": 1.69
+    },
+    {
+      "nom": "Meslay-le-Vidame",
+      "code": "28246",
+      "codesPostaux": ["28360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4824, 48.2757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4622, 48.2807]
+      },
+      "population": 516,
+      "surface": 1485,
+      "radius": 2.17
+    },
+    {
+      "nom": "Mévoisins",
+      "code": "28249",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5997, 48.5524]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5926, 48.5491]
+      },
+      "population": 622,
+      "surface": 431.74,
+      "radius": 1.17
+    },
+    {
+      "nom": "Mézières-en-Drouais",
+      "code": "28251",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4419, 48.7257]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4253, 48.7251]
+      },
+      "population": 1057,
+      "surface": 850.82,
+      "radius": 1.65
+    },
+    {
+      "nom": "Miermaigne",
+      "code": "28252",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0006, 48.2471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9929, 48.2465]
+      },
+      "population": 171,
+      "surface": 1117.66,
+      "radius": 1.89
+    },
+    {
+      "nom": "Mignières",
+      "code": "28253",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4244, 48.3653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4261, 48.359]
+      },
+      "population": 1157,
+      "surface": 1307.86,
+      "radius": 2.04
+    },
+    {
+      "nom": "Mittainvilliers-Vérigny",
+      "code": "28254",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3308, 48.5137]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3101, 48.4983]
+      },
+      "population": 800,
+      "surface": 2479.76,
+      "radius": 2.81
+    },
+    {
+      "nom": "Moinville-la-Jeulin",
+      "code": "28255",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7012, 48.3752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7004, 48.3807]
+      },
+      "population": 160,
+      "surface": 606.85,
+      "radius": 1.39
+    },
+    {
+      "nom": "Moléans",
+      "code": "28256",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4016, 48.1143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3924, 48.1138]
+      },
+      "population": 442,
+      "surface": 1104.05,
+      "radius": 1.87
+    },
+    {
+      "nom": "Mondonville-Saint-Jean",
+      "code": "28257",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8251, 48.3623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8248, 48.3643]
+      },
+      "population": 93,
+      "surface": 550.14,
+      "radius": 1.32
+    },
+    {
+      "nom": "Montboissier",
+      "code": "28259",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.412, 48.2292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3928, 48.2212]
+      },
+      "population": 348,
+      "surface": 1417.2,
+      "radius": 2.12
+    },
+    {
+      "nom": "Montharville",
+      "code": "28260",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.326, 48.1771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3302, 48.1834]
+      },
+      "population": 103,
+      "surface": 646.93,
+      "radius": 1.44
+    },
+    {
+      "nom": "Montigny-le-Chartif",
+      "code": "28261",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1255, 48.2903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1529, 48.2863]
+      },
+      "population": 590,
+      "surface": 2620.88,
+      "radius": 2.89
+    },
+    {
+      "nom": "Montigny-sur-Avre",
+      "code": "28263",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0116, 48.7207]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0202, 48.7286]
+      },
+      "population": 272,
+      "surface": 745.66,
+      "radius": 1.54
+    },
+    {
+      "nom": "Montireau",
+      "code": "28264",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0369, 48.4146]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0264, 48.4083]
+      },
+      "population": 136,
+      "surface": 1046.96,
+      "radius": 1.83
+    },
+    {
+      "nom": "Montlandon",
+      "code": "28265",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0258, 48.3873]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0232, 48.3914]
+      },
+      "population": 254,
+      "surface": 294.56,
+      "radius": 0.97
+    },
+    {
+      "nom": "Montreuil",
+      "code": "28267",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3807, 48.7791]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3772, 48.7767]
+      },
+      "population": 530,
+      "surface": 628.17,
+      "radius": 1.41
+    },
+    {
+      "nom": "Morainville",
+      "code": "28268",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8314, 48.3794]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8268, 48.3796]
+      },
+      "population": 17,
+      "surface": 386.18,
+      "radius": 1.11
+    },
+    {
+      "nom": "Morancez",
+      "code": "28269",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5058, 48.3998]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4934, 48.4066]
+      },
+      "population": 1927,
+      "surface": 714.25,
+      "radius": 1.51
+    },
+    {
+      "nom": "Moriers",
+      "code": "28270",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4408, 48.2191]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4371, 48.2146]
+      },
+      "population": 223,
+      "surface": 908,
+      "radius": 1.7
+    },
+    {
+      "nom": "Morvilliers",
+      "code": "28271",
+      "codesPostaux": ["28340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9452, 48.6521]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9362, 48.6444]
+      },
+      "population": 127,
+      "surface": 997.99,
+      "radius": 1.78
+    },
+    {
+      "nom": "Mottereau",
+      "code": "28272",
+      "codesPostaux": ["28160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1613, 48.2499]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1763, 48.2543]
+      },
+      "population": 152,
+      "surface": 882.07,
+      "radius": 1.68
+    },
+    {
+      "nom": "Moulhard",
+      "code": "28273",
+      "codesPostaux": ["28160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0077, 48.2108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0441, 48.2083]
+      },
+      "population": 139,
+      "surface": 1143.9,
+      "radius": 1.91
+    },
+    {
+      "nom": "Moutiers",
+      "code": "28274",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7595, 48.2974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7738, 48.2967]
+      },
+      "population": 243,
+      "surface": 2140.19,
+      "radius": 2.61
+    },
+    {
+      "nom": "Néron",
+      "code": "28275",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4987, 48.5979]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5144, 48.6018]
+      },
+      "population": 699,
+      "surface": 1928.04,
+      "radius": 2.48
+    },
+    {
+      "nom": "Neuville Saint Denis",
+      "code": "28319",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9222, 48.2774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9414, 48.2798]
+      },
+      "population": 345,
+      "surface": 4176.47,
+      "radius": 3.65
+    },
+    {
+      "nom": "Neuvy-en-Dunois",
+      "code": "28277",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5429, 48.1984]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5367, 48.2067]
+      },
+      "population": 305,
+      "surface": 2583.62,
+      "radius": 2.87
+    },
+    {
+      "nom": "Nogent-le-Phaye",
+      "code": "28278",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5809, 48.4497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5748, 48.4429]
+      },
+      "population": 1463,
+      "surface": 1498.61,
+      "radius": 2.18
+    },
+    {
+      "nom": "Nogent-le-Roi",
+      "code": "28279",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5206, 48.6315]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5308, 48.648]
+      },
+      "population": 4023,
+      "surface": 1317.39,
+      "radius": 2.05
+    },
+    {
+      "nom": "Nogent-le-Rotrou",
+      "code": "28280",
+      "codesPostaux": ["28400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8071, 48.3197]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8217, 48.3217]
+      },
+      "population": 9305,
+      "surface": 2337.29,
+      "radius": 2.73
+    },
+    {
+      "nom": "Nogent-sur-Eure",
+      "code": "28281",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3868, 48.3896]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3619, 48.3895]
+      },
+      "population": 502,
+      "surface": 918.46,
+      "radius": 1.71
+    },
+    {
+      "nom": "Nonvilliers-Grandhoux",
+      "code": "28282",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1416, 48.3399]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1725, 48.3431]
+      },
+      "population": 431,
+      "surface": 2200.33,
+      "radius": 2.65
+    },
+    {
+      "nom": "Nottonville",
+      "code": "28283",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5232, 48.1262]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5059, 48.1128]
+      },
+      "population": 283,
+      "surface": 2477.76,
+      "radius": 2.81
+    },
+    {
+      "nom": "Oinville-Saint-Liphard",
+      "code": "28284",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9276, 48.2359]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9167, 48.2338]
+      },
+      "population": 277,
+      "surface": 2186.14,
+      "radius": 2.64
+    },
+    {
+      "nom": "Oinville-sous-Auneau",
+      "code": "28285",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7096, 48.4704]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7275, 48.4659]
+      },
+      "population": 326,
+      "surface": 1045.33,
+      "radius": 1.82
+    },
+    {
+      "nom": "Ollé",
+      "code": "28286",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2926, 48.3874]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.296, 48.3867]
+      },
+      "population": 626,
+      "surface": 1307.94,
+      "radius": 2.04
+    },
+    {
+      "nom": "Orgères-en-Beauce",
+      "code": "28287",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6865, 48.1376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6813, 48.1458]
+      },
+      "population": 998,
+      "surface": 1540.7,
+      "radius": 2.21
+    },
+    {
+      "nom": "Ormoy",
+      "code": "28289",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4724, 48.6224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.472, 48.6204]
+      },
+      "population": 224,
+      "surface": 916.14,
+      "radius": 1.71
+    },
+    {
+      "nom": "Orrouer",
+      "code": "28290",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2813, 48.4049]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2878, 48.4126]
+      },
+      "population": 282,
+      "surface": 1320.5,
+      "radius": 2.05
+    },
+    {
+      "nom": "Ouarville",
+      "code": "28291",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.765, 48.361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7719, 48.3544]
+      },
+      "population": 534,
+      "surface": 2042.1,
+      "radius": 2.55
+    },
+    {
+      "nom": "Ouerre",
+      "code": "28292",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4938, 48.7081]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4641, 48.7004]
+      },
+      "population": 785,
+      "surface": 1273.23,
+      "radius": 2.01
+    },
+    {
+      "nom": "Oulins",
+      "code": "28293",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4939, 48.8661]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4725, 48.8676]
+      },
+      "population": 1221,
+      "surface": 1031.44,
+      "radius": 1.81
+    },
+    {
+      "nom": "Oysonville",
+      "code": "28294",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9481, 48.3918]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9528, 48.394]
+      },
+      "population": 526,
+      "surface": 963.17,
+      "radius": 1.75
+    },
+    {
+      "nom": "Péronville",
+      "code": "28296",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5753, 48.0611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5835, 48.0618]
+      },
+      "population": 260,
+      "surface": 2503.95,
+      "radius": 2.82
+    },
+    {
+      "nom": "Pierres",
+      "code": "28298",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5566, 48.5883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5671, 48.59]
+      },
+      "population": 2792,
+      "surface": 1052.98,
+      "radius": 1.83
+    },
+    {
+      "nom": "Poinville",
+      "code": "28300",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8994, 48.1758]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9003, 48.1766]
+      },
+      "population": 173,
+      "surface": 814.73,
+      "radius": 1.61
+    },
+    {
+      "nom": "Poisvilliers",
+      "code": "28301",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.46, 48.5072]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4686, 48.5077]
+      },
+      "population": 460,
+      "surface": 1064.89,
+      "radius": 1.84
+    },
+    {
+      "nom": "Pontgouin",
+      "code": "28302",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1372, 48.4902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1611, 48.4816]
+      },
+      "population": 1117,
+      "surface": 2541.51,
+      "radius": 2.84
+    },
+    {
+      "nom": "Poupry",
+      "code": "28303",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8343, 48.1005]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8398, 48.0991]
+      },
+      "population": 99,
+      "surface": 1461.16,
+      "radius": 2.16
+    },
+    {
+      "nom": "Prasville",
+      "code": "28304",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7145, 48.271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7085, 48.2762]
+      },
+      "population": 449,
+      "surface": 1651.12,
+      "radius": 2.29
+    },
+    {
+      "nom": "Pré-Saint-Évroult",
+      "code": "28305",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4526, 48.1885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4661, 48.1843]
+      },
+      "population": 286,
+      "surface": 2160.62,
+      "radius": 2.62
+    },
+    {
+      "nom": "Pré-Saint-Martin",
+      "code": "28306",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4715, 48.2222]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4763, 48.2213]
+      },
+      "population": 176,
+      "surface": 729.27,
+      "radius": 1.52
+    },
+    {
+      "nom": "Prudemanche",
+      "code": "28308",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1375, 48.7202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1364, 48.7164]
+      },
+      "population": 264,
+      "surface": 1544.38,
+      "radius": 2.22
+    },
+    {
+      "nom": "Prunay-le-Gillon",
+      "code": "28309",
+      "codesPostaux": ["28360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6381, 48.3678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6344, 48.3646]
+      },
+      "population": 1155,
+      "surface": 2570.39,
+      "radius": 2.86
+    },
+    {
+      "nom": "Puiseux",
+      "code": "28312",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.368, 48.6396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3746, 48.6371]
+      },
+      "population": 133,
+      "surface": 521.8,
+      "radius": 1.29
+    },
+    {
+      "nom": "Réclainville",
+      "code": "28313",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7423, 48.3387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7454, 48.3384]
+      },
+      "population": 203,
+      "surface": 996.04,
+      "radius": 1.78
+    },
+    {
+      "nom": "Revercourt",
+      "code": "28315",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0787, 48.7217]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.084, 48.7209]
+      },
+      "population": 25,
+      "surface": 551.61,
+      "radius": 1.33
+    },
+    {
+      "nom": "Rohaire",
+      "code": "28316",
+      "codesPostaux": ["28340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8404, 48.6668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8515, 48.6687]
+      },
+      "population": 131,
+      "surface": 1003.15,
+      "radius": 1.79
+    },
+    {
+      "nom": "Roinville",
+      "code": "28317",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7584, 48.4449]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7463, 48.4449]
+      },
+      "population": 582,
+      "surface": 683.21,
+      "radius": 1.47
+    },
+    {
+      "nom": "Rouvres",
+      "code": "28321",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4744, 48.8327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4871, 48.8402]
+      },
+      "population": 818,
+      "surface": 1648.49,
+      "radius": 2.29
+    },
+    {
+      "nom": "Rueil-la-Gadelière",
+      "code": "28322",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9628, 48.706]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9763, 48.7146]
+      },
+      "population": 469,
+      "surface": 1890.3,
+      "radius": 2.45
+    },
+    {
+      "nom": "Saint-Ange-et-Torçay",
+      "code": "28323",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2095, 48.6478]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2257, 48.6379]
+      },
+      "population": 284,
+      "surface": 1664.29,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-Arnoult-des-Bois",
+      "code": "28324",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2568, 48.4919]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2616, 48.4924]
+      },
+      "population": 895,
+      "surface": 2064.44,
+      "radius": 2.56
+    },
+    {
+      "nom": "Saint-Aubin-des-Bois",
+      "code": "28325",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.345, 48.4666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3583, 48.4655]
+      },
+      "population": 1127,
+      "surface": 1824.44,
+      "radius": 2.41
+    },
+    {
+      "nom": "Saint-Avit-les-Guespières",
+      "code": "28326",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2602, 48.2673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2716, 48.2705]
+      },
+      "population": 347,
+      "surface": 1273.19,
+      "radius": 2.01
+    },
+    {
+      "nom": "Saint-Bomer",
+      "code": "28327",
+      "codesPostaux": ["28330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8263, 48.1957]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8265, 48.196]
+      },
+      "population": 194,
+      "surface": 1347.29,
+      "radius": 2.07
+    },
+    {
+      "nom": "Saint-Christophe",
+      "code": "28329",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3709, 48.133]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.366, 48.1267]
+      },
+      "population": 148,
+      "surface": 615.47,
+      "radius": 1.4
+    },
+    {
+      "nom": "Saint-Denis-des-Puits",
+      "code": "28333",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1609, 48.3812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1744, 48.3928]
+      },
+      "population": 150,
+      "surface": 1377.93,
+      "radius": 2.09
+    },
+    {
+      "nom": "Saint-Denis-Lanneray",
+      "code": "28334",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2465, 48.0851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.292, 48.0674]
+      },
+      "population": 2095,
+      "surface": 4075.73,
+      "radius": 3.6
+    },
+    {
+      "nom": "Saint-Éliph",
+      "code": "28335",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0381, 48.4534]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0249, 48.4507]
+      },
+      "population": 833,
+      "surface": 2381.25,
+      "radius": 2.75
+    },
+    {
+      "nom": "Saint-Éman",
+      "code": "28336",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2028, 48.3276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2148, 48.3225]
+      },
+      "population": 94,
+      "surface": 463.06,
+      "radius": 1.21
+    },
+    {
+      "nom": "Saint-Georges-sur-Eure",
+      "code": "28337",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3583, 48.4214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.356, 48.417]
+      },
+      "population": 2728,
+      "surface": 1552.49,
+      "radius": 2.22
+    },
+    {
+      "nom": "Saint-Germain-le-Gaillard",
+      "code": "28339",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2569, 48.4246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2582, 48.4228]
+      },
+      "population": 372,
+      "surface": 827,
+      "radius": 1.62
+    },
+    {
+      "nom": "Saint-Jean-de-Rebervilliers",
+      "code": "28341",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2601, 48.6204]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2513, 48.6134]
+      },
+      "population": 243,
+      "surface": 1093.74,
+      "radius": 1.87
+    },
+    {
+      "nom": "Saint-Jean-Pierre-Fixte",
+      "code": "28342",
+      "codesPostaux": ["28400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8333, 48.2948]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8365, 48.2929]
+      },
+      "population": 269,
+      "surface": 707.13,
+      "radius": 1.5
+    },
+    {
+      "nom": "Saint-Laurent-la-Gâtine",
+      "code": "28343",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.54, 48.6924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5226, 48.6932]
+      },
+      "population": 463,
+      "surface": 699.54,
+      "radius": 1.49
+    },
+    {
+      "nom": "Saint-Léger-des-Aubées",
+      "code": "28344",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7504, 48.417]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.742, 48.4099]
+      },
+      "population": 257,
+      "surface": 1338.5,
+      "radius": 2.06
+    },
+    {
+      "nom": "Saint-Lubin-de-Cravant",
+      "code": "28346",
+      "codesPostaux": ["28270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0987, 48.7076]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0906, 48.711]
+      },
+      "population": 55,
+      "surface": 693.27,
+      "radius": 1.49
+    },
+    {
+      "nom": "Saint-Lubin-de-la-Haye",
+      "code": "28347",
+      "codesPostaux": ["28410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5622, 48.82]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5695, 48.8194]
+      },
+      "population": 950,
+      "surface": 1429.38,
+      "radius": 2.13
+    },
+    {
+      "nom": "Saint-Lubin-des-Joncherets",
+      "code": "28348",
+      "codesPostaux": ["28350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1923, 48.7465]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1927, 48.7666]
+      },
+      "population": 4129,
+      "surface": 1443.15,
+      "radius": 2.14
+    },
+    {
+      "nom": "Saint-Lucien",
+      "code": "28349",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6235, 48.641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6253, 48.6487]
+      },
+      "population": 278,
+      "surface": 882.2,
+      "radius": 1.68
+    },
+    {
+      "nom": "Saint-Luperce",
+      "code": "28350",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3079, 48.4403]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3138, 48.4359]
+      },
+      "population": 994,
+      "surface": 1446.97,
+      "radius": 2.15
+    },
+    {
+      "nom": "Saint-Maixme-Hauterive",
+      "code": "28351",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1914, 48.594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1806, 48.5882]
+      },
+      "population": 410,
+      "surface": 3204.77,
+      "radius": 3.19
+    },
+    {
+      "nom": "Saint-Martin-de-Nigelles",
+      "code": "28352",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6166, 48.6134]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6107, 48.6115]
+      },
+      "population": 1581,
+      "surface": 1249.54,
+      "radius": 1.99
+    },
+    {
+      "nom": "Saint-Maur-sur-le-Loir",
+      "code": "28353",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4184, 48.152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4172, 48.1525]
+      },
+      "population": 405,
+      "surface": 1669.05,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-Maurice-Saint-Germain",
+      "code": "28354",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0748, 48.4941]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0787, 48.496]
+      },
+      "population": 484,
+      "surface": 1216.79,
+      "radius": 1.97
+    },
+    {
+      "nom": "Saint-Ouen-Marchefroy",
+      "code": "28355",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5347, 48.8537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5311, 48.8565]
+      },
+      "population": 293,
+      "surface": 936.43,
+      "radius": 1.73
+    },
+    {
+      "nom": "Saint-Piat",
+      "code": "28357",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.585, 48.5477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5847, 48.5471]
+      },
+      "population": 1121,
+      "surface": 1149.16,
+      "radius": 1.91
+    },
+    {
+      "nom": "Saint-Prest",
+      "code": "28358",
+      "codesPostaux": ["28300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5156, 48.4924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5309, 48.4921]
+      },
+      "population": 2119,
+      "surface": 1685.78,
+      "radius": 2.32
+    },
+    {
+      "nom": "Saint-Rémy-sur-Avre",
+      "code": "28359",
+      "codesPostaux": ["28380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2381, 48.7486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2396, 48.7617]
+      },
+      "population": 4065,
+      "surface": 1305.21,
+      "radius": 2.04
+    },
+    {
+      "nom": "Saint-Sauveur-Marville",
+      "code": "28360",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2811, 48.6077]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2802, 48.5967]
+      },
+      "population": 927,
+      "surface": 1892.94,
+      "radius": 2.45
+    },
+    {
+      "nom": "Saint-Victor-de-Buthon",
+      "code": "28362",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9756, 48.4108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9674, 48.4081]
+      },
+      "population": 509,
+      "surface": 2825.19,
+      "radius": 3
+    },
+    {
+      "nom": "Sainte-Gemme-Moronval",
+      "code": "28332",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.416, 48.7357]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4143, 48.738]
+      },
+      "population": 1158,
+      "surface": 553.68,
+      "radius": 1.33
+    },
+    {
+      "nom": "Saintigny",
+      "code": "28331",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0029, 48.3506]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.985, 48.3448]
+      },
+      "population": 934,
+      "surface": 4525.37,
+      "radius": 3.8
+    },
+    {
+      "nom": "Sainville",
+      "code": "28363",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8802, 48.4149]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8802, 48.4152]
+      },
+      "population": 1037,
+      "surface": 2203.03,
+      "radius": 2.65
+    },
+    {
+      "nom": "Sancheville",
+      "code": "28364",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.579, 48.1806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5736, 48.1908]
+      },
+      "population": 748,
+      "surface": 2197.24,
+      "radius": 2.64
+    },
+    {
+      "nom": "Sandarville",
+      "code": "28365",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3479, 48.3448]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3527, 48.3491]
+      },
+      "population": 419,
+      "surface": 956.91,
+      "radius": 1.75
+    },
+    {
+      "nom": "Santeuil",
+      "code": "28366",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7399, 48.3807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7337, 48.3878]
+      },
+      "population": 324,
+      "surface": 928.83,
+      "radius": 1.72
+    },
+    {
+      "nom": "Santilly",
+      "code": "28367",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8813, 48.151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8759, 48.1464]
+      },
+      "population": 306,
+      "surface": 1790.19,
+      "radius": 2.39
+    },
+    {
+      "nom": "Saulnières",
+      "code": "28369",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2657, 48.6655]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2742, 48.6585]
+      },
+      "population": 772,
+      "surface": 1073.52,
+      "radius": 1.85
+    },
+    {
+      "nom": "Saumeray",
+      "code": "28370",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3169, 48.2552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3225, 48.2502]
+      },
+      "population": 467,
+      "surface": 1951.15,
+      "radius": 2.49
+    },
+    {
+      "nom": "Saussay",
+      "code": "28371",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4102, 48.8503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4136, 48.8588]
+      },
+      "population": 1090,
+      "surface": 470.04,
+      "radius": 1.22
+    },
+    {
+      "nom": "Senantes",
+      "code": "28372",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5818, 48.6568]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5818, 48.6524]
+      },
+      "population": 537,
+      "surface": 769.42,
+      "radius": 1.56
+    },
+    {
+      "nom": "Senonches",
+      "code": "28373",
+      "codesPostaux": ["28250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0144, 48.5584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0337, 48.5607]
+      },
+      "population": 3013,
+      "surface": 6261.88,
+      "radius": 4.46
+    },
+    {
+      "nom": "Serazereux",
+      "code": "28374",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4382, 48.5938]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4354, 48.5967]
+      },
+      "population": 538,
+      "surface": 1571.87,
+      "radius": 2.24
+    },
+    {
+      "nom": "Serville",
+      "code": "28375",
+      "codesPostaux": ["28410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4889, 48.7698]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4849, 48.7671]
+      },
+      "population": 362,
+      "surface": 564.93,
+      "radius": 1.34
+    },
+    {
+      "nom": "Sorel-Moussel",
+      "code": "28377",
+      "codesPostaux": ["28260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3989, 48.8255]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3817, 48.841]
+      },
+      "population": 1782,
+      "surface": 1299.14,
+      "radius": 2.03
+    },
+    {
+      "nom": "Souancé-au-Perche",
+      "code": "28378",
+      "codesPostaux": ["28400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8355, 48.2697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8563, 48.2678]
+      },
+      "population": 496,
+      "surface": 1900.72,
+      "radius": 2.46
+    },
+    {
+      "nom": "Soulaires",
+      "code": "28379",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5905, 48.5184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5872, 48.5166]
+      },
+      "population": 474,
+      "surface": 599.48,
+      "radius": 1.38
+    },
+    {
+      "nom": "Sours",
+      "code": "28380",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5977, 48.4126]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5981, 48.4125]
+      },
+      "population": 1964,
+      "surface": 3319.97,
+      "radius": 3.25
+    },
+    {
+      "nom": "Terminiers",
+      "code": "28382",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7337, 48.0923]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7389, 48.0841]
+      },
+      "population": 881,
+      "surface": 3198.77,
+      "radius": 3.19
+    },
+    {
+      "nom": "Theuville",
+      "code": "28383",
+      "codesPostaux": ["28150", "28360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5909, 48.3281]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6011, 48.336]
+      },
+      "population": 728,
+      "surface": 3043.86,
+      "radius": 3.11
+    },
+    {
+      "nom": "Thimert-Gâtelles",
+      "code": "28386",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2549, 48.5521]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2516, 48.5685]
+      },
+      "population": 1240,
+      "surface": 4277.46,
+      "radius": 3.69
+    },
+    {
+      "nom": "Thiron-Gardais",
+      "code": "28387",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0137, 48.3047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9943, 48.3112]
+      },
+      "population": 972,
+      "surface": 1346.47,
+      "radius": 2.07
+    },
+    {
+      "nom": "Thivars",
+      "code": "28388",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4469, 48.3799]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4506, 48.38]
+      },
+      "population": 1099,
+      "surface": 925.77,
+      "radius": 1.72
+    },
+    {
+      "nom": "Thiville",
+      "code": "28389",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3723, 48.0177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3741, 48.0257]
+      },
+      "population": 337,
+      "surface": 2822.15,
+      "radius": 3
+    },
+    {
+      "nom": "Tillay-le-Péneux",
+      "code": "28390",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7592, 48.1562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7741, 48.1602]
+      },
+      "population": 313,
+      "surface": 2233.44,
+      "radius": 2.67
+    },
+    {
+      "nom": "Toury",
+      "code": "28391",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9425, 48.1954]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9367, 48.1962]
+      },
+      "population": 2620,
+      "surface": 1895.51,
+      "radius": 2.46
+    },
+    {
+      "nom": "Trancrainville",
+      "code": "28392",
+      "codesPostaux": ["28310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8631, 48.2378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8613, 48.2391]
+      },
+      "population": 169,
+      "surface": 1169.68,
+      "radius": 1.93
+    },
+    {
+      "nom": "Tremblay-les-Villages",
+      "code": "28393",
+      "codesPostaux": ["28170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3871, 48.59]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3794, 48.6004]
+      },
+      "population": 2208,
+      "surface": 6352.17,
+      "radius": 4.5
+    },
+    {
+      "nom": "Tréon",
+      "code": "28394",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3213, 48.6714]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3232, 48.6764]
+      },
+      "population": 1448,
+      "surface": 1100.5,
+      "radius": 1.87
+    },
+    {
+      "nom": "Trizay-Coutretot-Saint-Serge",
+      "code": "28395",
+      "codesPostaux": ["28400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8826, 48.2942]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8671, 48.2925]
+      },
+      "population": 438,
+      "surface": 1118.8,
+      "radius": 1.89
+    },
+    {
+      "nom": "Trizay-lès-Bonneval",
+      "code": "28396",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3336, 48.1993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.335, 48.1999]
+      },
+      "population": 318,
+      "surface": 990.45,
+      "radius": 1.78
+    },
+    {
+      "nom": "Umpeau",
+      "code": "28397",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6658, 48.4686]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6706, 48.476]
+      },
+      "population": 403,
+      "surface": 1144.96,
+      "radius": 1.91
+    },
+    {
+      "nom": "Unverre",
+      "code": "28398",
+      "codesPostaux": ["28160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0586, 48.1997]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0917, 48.198]
+      },
+      "population": 1212,
+      "surface": 6222.95,
+      "radius": 4.45
+    },
+    {
+      "nom": "Vald'Yerre",
+      "code": "28012",
+      "codesPostaux": ["28290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1128, 48.092]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1228, 48.0979]
+      },
+      "population": 3608,
+      "surface": 14630.33,
+      "radius": 6.82
+    },
+    {
+      "nom": "Varize",
+      "code": "28400",
+      "codesPostaux": ["28140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5262, 48.0814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5149, 48.0955]
+      },
+      "population": 189,
+      "surface": 1385.04,
+      "radius": 2.1
+    },
+    {
+      "nom": "Vaupillon",
+      "code": "28401",
+      "codesPostaux": ["28240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9705, 48.4589]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9931, 48.4595]
+      },
+      "population": 461,
+      "surface": 1274.76,
+      "radius": 2.01
+    },
+    {
+      "nom": "Ver-lès-Chartres",
+      "code": "28403",
+      "codesPostaux": ["28630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4841, 48.379]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4779, 48.3836]
+      },
+      "population": 776,
+      "surface": 947.33,
+      "radius": 1.74
+    },
+    {
+      "nom": "Vernouillet",
+      "code": "28404",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.352, 48.7141]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3555, 48.7204]
+      },
+      "population": 12491,
+      "surface": 1225.96,
+      "radius": 1.98
+    },
+    {
+      "nom": "Vert-en-Drouais",
+      "code": "28405",
+      "codesPostaux": ["28500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2924, 48.7499]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2915, 48.7599]
+      },
+      "population": 1119,
+      "surface": 973,
+      "radius": 1.76
+    },
+    {
+      "nom": "Vichères",
+      "code": "28407",
+      "codesPostaux": ["28480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9068, 48.2636]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9117, 48.2683]
+      },
+      "population": 288,
+      "surface": 1235.27,
+      "radius": 1.98
+    },
+    {
+      "nom": "Vierville",
+      "code": "28408",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9045, 48.3848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9144, 48.3847]
+      },
+      "population": 110,
+      "surface": 672.21,
+      "radius": 1.46
+    },
+    {
+      "nom": "Vieuvicq",
+      "code": "28409",
+      "codesPostaux": ["28120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2085, 48.261]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2138, 48.2634]
+      },
+      "population": 445,
+      "surface": 1577.49,
+      "radius": 2.24
+    },
+    {
+      "nom": "Villampuy",
+      "code": "28410",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5137, 48.0386]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5098, 48.0356]
+      },
+      "population": 298,
+      "surface": 1673.74,
+      "radius": 2.31
+    },
+    {
+      "nom": "Villars",
+      "code": "28411",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5413, 48.2317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.554, 48.2296]
+      },
+      "population": 180,
+      "surface": 841.75,
+      "radius": 1.64
+    },
+    {
+      "nom": "Villebon",
+      "code": "28414",
+      "codesPostaux": ["28190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1987, 48.3875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2078, 48.3917]
+      },
+      "population": 56,
+      "surface": 225.8,
+      "radius": 0.85
+    },
+    {
+      "nom": "Villemaury",
+      "code": "28330",
+      "codesPostaux": ["28200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4492, 48.0477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4705, 48.0406]
+      },
+      "population": 1300,
+      "surface": 7733.84,
+      "radius": 4.96
+    },
+    {
+      "nom": "Villemeux-sur-Eure",
+      "code": "28415",
+      "codesPostaux": ["28210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4582, 48.6678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4604, 48.6746]
+      },
+      "population": 1808,
+      "surface": 1887.71,
+      "radius": 2.45
+    },
+    {
+      "nom": "Villiers-le-Morhier",
+      "code": "28417",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.577, 48.6212]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5645, 48.6186]
+      },
+      "population": 1359,
+      "surface": 1056.83,
+      "radius": 1.83
+    },
+    {
+      "nom": "Villiers-Saint-Orien",
+      "code": "28418",
+      "codesPostaux": ["28800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4966, 48.1424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4869, 48.1328]
+      },
+      "population": 162,
+      "surface": 1511.81,
+      "radius": 2.19
+    },
+    {
+      "nom": "Vitray-en-Beauce",
+      "code": "28419",
+      "codesPostaux": ["28360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4181, 48.2759]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.422, 48.2761]
+      },
+      "population": 353,
+      "surface": 1093.13,
+      "radius": 1.87
+    },
+    {
+      "nom": "Voise",
+      "code": "28421",
+      "codesPostaux": ["28700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7079, 48.4032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7053, 48.4]
+      },
+      "population": 251,
+      "surface": 1031.87,
+      "radius": 1.81
+    },
+    {
+      "nom": "Yermenonville",
+      "code": "28423",
+      "codesPostaux": ["28130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6222, 48.5484]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.62, 48.5565]
+      },
+      "population": 624,
+      "surface": 513.61,
+      "radius": 1.28
+    },
+    {
+      "nom": "Yèvres",
+      "code": "28424",
+      "codesPostaux": ["28160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1877, 48.1935]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.192, 48.21]
+      },
+      "population": 1673,
+      "surface": 4179.07,
+      "radius": 3.65
+    },
+    {
+      "nom": "Ymeray",
+      "code": "28425",
+      "codesPostaux": ["28320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7049, 48.508]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7006, 48.5099]
+      },
+      "population": 574,
+      "surface": 686.4,
+      "radius": 1.48
+    },
+    {
+      "nom": "Ymonville",
+      "code": "28426",
+      "codesPostaux": ["28150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7505, 48.2481]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7488, 48.2614]
+      },
+      "population": 481,
+      "surface": 2092.94,
+      "radius": 2.58
+    }
+  ],
+  "postalCodes": {
+    "28000": {
+      "communes": ["Chartres"],
+      "communeCount": 1,
+      "center": [1.4889, 48.4439],
+      "coverageRadius": 2.32,
+      "totalPopulation": 37990,
+      "totalSurface": 1693
+    },
+    "28100": {
+      "communes": ["Dreux"],
+      "communeCount": 1,
+      "center": [1.3709, 48.736],
+      "coverageRadius": 2.78,
+      "totalPopulation": 31205,
+      "totalSurface": 2424
+    },
+    "28110": {
+      "communes": ["Lucé"],
+      "communeCount": 1,
+      "center": [1.4624, 48.4378],
+      "coverageRadius": 1.4,
+      "totalPopulation": 15658,
+      "totalSurface": 617
+    },
+    "28120": {
+      "communes": [
+        "Bailleau-le-Pin",
+        "Blandainville",
+        "Cernay",
+        "Charonville",
+        "Les Châtelliers-Notre-Dame",
+        "Chauffours",
+        "Épeautrolles",
+        "Ermenonville-la-Grande",
+        "Ermenonville-la-Petite",
+        "Illiers-Combray",
+        "Magny",
+        "Marchéville",
+        "Méréglise",
+        "Meslay-le-Grenet",
+        "Montigny-le-Chartif",
+        "Nogent-sur-Eure",
+        "Nonvilliers-Grandhoux",
+        "Ollé",
+        "Saint-Avit-les-Guespières",
+        "Saint-Éman",
+        "Sandarville",
+        "Vieuvicq"
+      ],
+      "communeCount": 22,
+      "center": [1.2774, 48.3299],
+      "coverageRadius": 10.5,
+      "boundingBox": {
+        "minLat": 48.2634,
+        "maxLat": 48.3949,
+        "minLon": 1.1529,
+        "maxLon": 1.3852
+      },
+      "totalPopulation": 11742,
+      "totalSurface": 27946
+    },
+    "28130": {
+      "communes": [
+        "Bouglainval",
+        "Chartainvilliers",
+        "Hanches",
+        "Houx",
+        "Maintenon",
+        "Mévoisins",
+        "Pierres",
+        "Saint-Martin-de-Nigelles",
+        "Saint-Piat",
+        "Soulaires",
+        "Villiers-le-Morhier",
+        "Yermenonville"
+      ],
+      "communeCount": 12,
+      "center": [1.5881, 48.5839],
+      "coverageRadius": 7.5,
+      "boundingBox": {
+        "minLat": 48.5166,
+        "maxLat": 48.6186,
+        "minLon": 1.5049,
+        "maxLon": 1.6426
+      },
+      "totalPopulation": 17967,
+      "totalSurface": 11835
+    },
+    "28140": {
+      "communes": [
+        "Baigneaux",
+        "Bazoches-en-Dunois",
+        "Bazoches-les-Hautes",
+        "Cormainville",
+        "Courbehaye",
+        "Dambron",
+        "Fontenay-sur-Conie",
+        "Guillonville",
+        "Loigny-la-Bataille",
+        "Lumeau",
+        "Nottonville",
+        "Orgères-en-Beauce",
+        "Péronville",
+        "Poupry",
+        "Terminiers",
+        "Tillay-le-Péneux",
+        "Varize"
+      ],
+      "communeCount": 17,
+      "center": [1.6885, 48.1189],
+      "coverageRadius": 13.7,
+      "boundingBox": {
+        "minLat": 48.0618,
+        "maxLat": 48.1645,
+        "minLon": 1.5059,
+        "maxLon": 1.8726
+      },
+      "totalPopulation": 5251,
+      "totalSurface": 32003
+    },
+    "28150": {
+      "communes": [
+        "Allonnes",
+        "Beauvilliers",
+        "Boisville-la-Saint-Père",
+        "Boncé",
+        "Louville-la-Chenard",
+        "Moutiers",
+        "Ouarville",
+        "Prasville",
+        "Réclainville",
+        "Theuville",
+        "Éole-en-Beauce",
+        "Villars",
+        "Les Villages Vovéens",
+        "Ymonville"
+      ],
+      "communeCount": 14,
+      "center": [1.6649, 48.2843],
+      "coverageRadius": 12.2,
+      "boundingBox": {
+        "minLat": 48.2173,
+        "maxLat": 48.3544,
+        "minLon": 1.5046,
+        "maxLon": 1.787
+      },
+      "totalPopulation": 9887,
+      "totalSurface": 38371
+    },
+    "28160": {
+      "communes": [
+        "Brou",
+        "Dampierre-sous-Brou",
+        "Dangeau",
+        "Frazé",
+        "Gohory",
+        "Mottereau",
+        "Moulhard",
+        "Unverre",
+        "Yèvres"
+      ],
+      "communeCount": 9,
+      "center": [1.1721, 48.2108],
+      "coverageRadius": 9.5,
+      "boundingBox": {
+        "minLat": 48.1671,
+        "maxLat": 48.2625,
+        "minLon": 1.0441,
+        "maxLon": 1.2876
+      },
+      "totalPopulation": 8933,
+      "totalSurface": 25093
+    },
+    "28170": {
+      "communes": [
+        "Ardelles",
+        "Le Boullay-les-Deux-Églises",
+        "Châteauneuf-en-Thymerais",
+        "Favières",
+        "Fontaine-les-Ribouts",
+        "Maillebois",
+        "Puiseux",
+        "Saint-Ange-et-Torçay",
+        "Saint-Jean-de-Rebervilliers",
+        "Saint-Maixme-Hauterive",
+        "Saint-Sauveur-Marville",
+        "Serazereux",
+        "Thimert-Gâtelles",
+        "Tremblay-les-Villages"
+      ],
+      "communeCount": 14,
+      "center": [1.2751, 48.5917],
+      "coverageRadius": 11.9,
+      "boundingBox": {
+        "minLat": 48.5293,
+        "maxLat": 48.6539,
+        "minLon": 1.1478,
+        "maxLon": 1.4354
+      },
+      "totalPopulation": 10813,
+      "totalSurface": 29533
+    },
+    "28190": {
+      "communes": [
+        "Billancelles",
+        "Chuisnes",
+        "Courville-sur-Eure",
+        "Dangers",
+        "Le Favril",
+        "Fontaine-la-Guyon",
+        "Fruncé",
+        "Landelles",
+        "Mittainvilliers-Vérigny",
+        "Orrouer",
+        "Pontgouin",
+        "Saint-Arnoult-des-Bois",
+        "Saint-Georges-sur-Eure",
+        "Saint-Germain-le-Gaillard",
+        "Saint-Luperce",
+        "Villebon"
+      ],
+      "communeCount": 16,
+      "center": [1.2699, 48.4536],
+      "coverageRadius": 10.5,
+      "boundingBox": {
+        "minLat": 48.3917,
+        "maxLat": 48.5072,
+        "minLon": 1.1291,
+        "maxLon": 1.356
+      },
+      "totalPopulation": 14965,
+      "totalSurface": 24446
+    },
+    "28200": {
+      "communes": [
+        "La Chapelle-du-Noyer",
+        "Châteaudun",
+        "Conie-Molitard",
+        "Donnemain-Saint-Mamès",
+        "Jallans",
+        "Logron",
+        "Marboué",
+        "Moléans",
+        "Saint-Christophe",
+        "Villemaury",
+        "Saint-Denis-Lanneray",
+        "Thiville",
+        "Villampuy"
+      ],
+      "communeCount": 13,
+      "center": [1.3401, 48.074],
+      "coverageRadius": 13.4,
+      "boundingBox": {
+        "minLat": 48.0257,
+        "maxLat": 48.1477,
+        "minLon": 1.2623,
+        "maxLon": 1.5098
+      },
+      "totalPopulation": 22080,
+      "totalSurface": 30861
+    },
+    "28210": {
+      "communes": [
+        "Le Boullay-Mivoye",
+        "Le Boullay-Thierry",
+        "Bréchamps",
+        "Chaudon",
+        "Coulombs",
+        "Croisilles",
+        "Faverolles",
+        "Lormaye",
+        "Néron",
+        "Nogent-le-Roi",
+        "Ormoy",
+        "Les Pinthières",
+        "Saint-Laurent-la-Gâtine",
+        "Saint-Lucien",
+        "Senantes",
+        "Villemeux-sur-Eure"
+      ],
+      "communeCount": 16,
+      "center": [1.5153, 48.656],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 48.6018,
+        "maxLat": 48.7016,
+        "minLon": 1.4066,
+        "maxLon": 1.6253
+      },
+      "totalPopulation": 14659,
+      "totalSurface": 15900
+    },
+    "28220": {
+      "communes": ["Cloyes-les-Trois-Rivières"],
+      "communeCount": 1,
+      "center": [1.2335, 47.9973],
+      "coverageRadius": 6.17,
+      "totalPopulation": 5601,
+      "totalSurface": 11971
+    },
+    "28230": {
+      "communes": ["Droue-sur-Drouette", "Épernon"],
+      "communeCount": 2,
+      "center": [1.6791, 48.6087],
+      "coverageRadius": 2,
+      "boundingBox": {
+        "minLat": 48.6013,
+        "maxLat": 48.6103,
+        "minLon": 1.6739,
+        "maxLon": 1.7031
+      },
+      "totalPopulation": 6713,
+      "totalSurface": 1191
+    },
+    "28240": {
+      "communes": [
+        "Belhomert-Guéhouville",
+        "Champrond-en-Gâtine",
+        "Les Corvées-les-Yys",
+        "Fontaine-Simon",
+        "Friaize",
+        "La Loupe",
+        "Manou",
+        "Meaucé",
+        "Montireau",
+        "Montlandon",
+        "Saint-Denis-des-Puits",
+        "Saint-Éliph",
+        "Saint-Maurice-Saint-Germain",
+        "Saint-Victor-de-Buthon",
+        "Le Thieulin",
+        "Vaupillon"
+      ],
+      "communeCount": 16,
+      "center": [1.0343, 48.4604],
+      "coverageRadius": 13.5,
+      "boundingBox": {
+        "minLat": 48.3627,
+        "maxLat": 48.5196,
+        "minLon": 0.9674,
+        "maxLon": 1.1744
+      },
+      "totalPopulation": 10608,
+      "totalSurface": 23553
+    },
+    "28250": {
+      "communes": [
+        "Digny",
+        "La Framboisière",
+        "Jaudrais",
+        "Louvilliers-lès-Perche",
+        "Le Mesnil-Thomas",
+        "La Puisaye",
+        "La Saucelle",
+        "Senonches"
+      ],
+      "communeCount": 8,
+      "center": [1.0617, 48.5687],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 48.5372,
+        "maxLat": 48.6305,
+        "minLon": 0.9576,
+        "maxLon": 1.1528
+      },
+      "totalPopulation": 5744,
+      "totalSurface": 18954
+    },
+    "28260": {
+      "communes": [
+        "Anet",
+        "Berchères-sur-Vesgre",
+        "Boncourt",
+        "La Chaussée-d'Ivry",
+        "Gilles",
+        "Guainville",
+        "Le Mesnil-Simon",
+        "Oulins",
+        "Rouvres",
+        "Saint-Ouen-Marchefroy",
+        "Saussay",
+        "Sorel-Moussel"
+      ],
+      "communeCount": 12,
+      "center": [1.4601, 48.8636],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 48.8402,
+        "maxLat": 48.9152,
+        "minLon": 1.3817,
+        "maxLon": 1.5416
+      },
+      "totalPopulation": 12113,
+      "totalSurface": 11707
+    },
+    "28270": {
+      "communes": [
+        "Beauche",
+        "Bérou-la-Mulotière",
+        "Brezolles",
+        "Châtaincourt",
+        "Les Châtelets",
+        "Crucey-Villages",
+        "Escorpain",
+        "Fessanvilliers-Mattanvilliers",
+        "Laons",
+        "La Mancelière",
+        "Montigny-sur-Avre",
+        "Prudemanche",
+        "Revercourt",
+        "Rueil-la-Gadelière",
+        "Saint-Lubin-de-Cravant"
+      ],
+      "communeCount": 15,
+      "center": [1.079, 48.699],
+      "coverageRadius": 10.9,
+      "boundingBox": {
+        "minLat": 48.6485,
+        "maxLat": 48.7464,
+        "minLon": 0.9684,
+        "maxLon": 1.2271
+      },
+      "totalPopulation": 5528,
+      "totalSurface": 21091
+    },
+    "28290": {
+      "communes": ["Vald'Yerre", "Chapelle-Royale"],
+      "communeCount": 2,
+      "center": [1.1172, 48.1016],
+      "coverageRadius": 6.7,
+      "boundingBox": {
+        "minLat": 48.0979,
+        "maxLat": 48.1435,
+        "minLon": 1.0539,
+        "maxLon": 1.1228
+      },
+      "totalPopulation": 3929,
+      "totalSurface": 15634
+    },
+    "28300": {
+      "communes": [
+        "Amilly",
+        "Bailleau-l'Évêque",
+        "Berchères-Saint-Germain",
+        "Briconville",
+        "Challet",
+        "Champhol",
+        "Cintray",
+        "Clévilliers",
+        "Coltainville",
+        "Fresnay-le-Gilmert",
+        "Gasville-Oisème",
+        "Jouy",
+        "Lèves",
+        "Mainvilliers",
+        "Poisvilliers",
+        "Saint-Aubin-des-Bois",
+        "Saint-Prest"
+      ],
+      "communeCount": 17,
+      "center": [1.4731, 48.4721],
+      "coverageRadius": 10.1,
+      "boundingBox": {
+        "minLat": 48.4437,
+        "maxLat": 48.5536,
+        "minLon": 1.3583,
+        "maxLon": 1.5851
+      },
+      "totalPopulation": 34455,
+      "totalSurface": 22068
+    },
+    "28310": {
+      "communes": [
+        "Baudreville",
+        "Fresnay-l'Évêque",
+        "Gommerville",
+        "Gouillons",
+        "Guilleville",
+        "Intréville",
+        "Janville-en-Beauce",
+        "Levesville-la-Chenard",
+        "Mérouville",
+        "Oinville-Saint-Liphard",
+        "Poinville",
+        "Neuville Saint Denis",
+        "Santilly",
+        "Toury",
+        "Trancrainville"
+      ],
+      "communeCount": 15,
+      "center": [1.8981, 48.233],
+      "coverageRadius": 13.1,
+      "boundingBox": {
+        "minLat": 48.1464,
+        "maxLat": 48.346,
+        "minLon": 1.8116,
+        "maxLon": 1.945
+      },
+      "totalPopulation": 9090,
+      "totalSurface": 29628
+    },
+    "28320": {
+      "communes": ["Bailleau-Armenonville", "Écrosnes", "Gallardon", "Gas", "Ymeray"],
+      "communeCount": 5,
+      "center": [1.6858, 48.5322],
+      "coverageRadius": 4.3,
+      "boundingBox": {
+        "minLat": 48.5099,
+        "maxLat": 48.5677,
+        "minLon": 1.6532,
+        "maxLon": 1.7273
+      },
+      "totalPopulation": 7023,
+      "totalSurface": 7215
+    },
+    "28330": {
+      "communes": [
+        "Les Autels-Villevillon",
+        "Authon-du-Perche",
+        "La Bazoche-Gouet",
+        "Béthonvilliers",
+        "Chapelle-Guillaume",
+        "Charbonnières",
+        "Coudray-au-Perche",
+        "Les Étilleux",
+        "Saint-Bomer"
+      ],
+      "communeCount": 9,
+      "center": [0.9169, 48.1798],
+      "coverageRadius": 9.3,
+      "boundingBox": {
+        "minLat": 48.1152,
+        "maxLat": 48.2345,
+        "minLon": 0.8233,
+        "maxLon": 0.997
+      },
+      "totalPopulation": 4147,
+      "totalSurface": 17341
+    },
+    "28340": {
+      "communes": [
+        "Boissy-lès-Perche",
+        "La Chapelle-Fortin",
+        "La Ferté-Vidame",
+        "Lamblore",
+        "Morvilliers",
+        "Les Ressuintes",
+        "Rohaire"
+      ],
+      "communeCount": 7,
+      "center": [0.899, 48.6404],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 48.5956,
+        "maxLat": 48.6854,
+        "minLon": 0.8515,
+        "maxLon": 0.9376
+      },
+      "totalPopulation": 1956,
+      "totalSurface": 12692
+    },
+    "28350": {
+      "communes": ["Dampierre-sur-Avre", "Saint-Lubin-des-Joncherets"],
+      "communeCount": 2,
+      "center": [1.186, 48.766],
+      "coverageRadius": 2.7,
+      "boundingBox": {
+        "minLat": 48.7626,
+        "maxLat": 48.7666,
+        "minLon": 1.1496,
+        "maxLon": 1.1927
+      },
+      "totalPopulation": 4892,
+      "totalSurface": 3277
+    },
+    "28360": {
+      "communes": [
+        "La Bourdinière-Saint-Loup",
+        "Dammarie",
+        "Fresnay-le-Comte",
+        "Luplanté",
+        "Meslay-le-Vidame",
+        "Prunay-le-Gillon",
+        "Theuville",
+        "Vitray-en-Beauce"
+      ],
+      "communeCount": 8,
+      "center": [1.5105, 48.3287],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 48.2761,
+        "maxLat": 48.3646,
+        "minLon": 1.4008,
+        "maxLon": 1.6344
+      },
+      "totalPopulation": 5676,
+      "totalSurface": 16006
+    },
+    "28380": {
+      "communes": ["Saint-Rémy-sur-Avre"],
+      "communeCount": 1,
+      "center": [1.2396, 48.7617],
+      "coverageRadius": 2.04,
+      "totalPopulation": 4065,
+      "totalSurface": 1305
+    },
+    "28400": {
+      "communes": [
+        "Champrond-en-Perchet",
+        "La Gaudaine",
+        "Arcisses",
+        "Marolles-les-Buis",
+        "Nogent-le-Rotrou",
+        "Saint-Jean-Pierre-Fixte",
+        "Souancé-au-Perche",
+        "Trizay-Coutretot-Saint-Serge"
+      ],
+      "communeCount": 8,
+      "center": [0.8316, 48.3202],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 48.2678,
+        "maxLat": 48.3609,
+        "minLon": 0.8217,
+        "maxLon": 0.9291
+      },
+      "totalPopulation": 13492,
+      "totalSurface": 13811
+    },
+    "28410": {
+      "communes": [
+        "Abondant",
+        "Boutigny-Prouais",
+        "Broué",
+        "Bû",
+        "Goussainville",
+        "Havelu",
+        "Marchezais",
+        "Saint-Lubin-de-la-Haye",
+        "Serville"
+      ],
+      "communeCount": 9,
+      "center": [1.5144, 48.7789],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 48.7447,
+        "maxLat": 48.8194,
+        "minLon": 1.4397,
+        "maxLon": 1.5874
+      },
+      "totalPopulation": 10297,
+      "totalSurface": 14246
+    },
+    "28480": {
+      "communes": [
+        "Argenvilliers",
+        "Beaumont-les-Autels",
+        "Chassant",
+        "Combres",
+        "La Croix-du-Perche",
+        "Happonvilliers",
+        "Luigny",
+        "Miermaigne",
+        "Saintigny",
+        "Thiron-Gardais",
+        "Vichères"
+      ],
+      "communeCount": 11,
+      "center": [1.0057, 48.2989],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 48.2405,
+        "maxLat": 48.3448,
+        "minLon": 0.9117,
+        "maxLon": 1.1087
+      },
+      "totalPopulation": 4850,
+      "totalSurface": 18960
+    },
+    "28500": {
+      "communes": [
+        "Allainville",
+        "Aunay-sous-Crécy",
+        "Boissy-en-Drouais",
+        "La Chapelle-Forainvilliers",
+        "Charpont",
+        "Cherisy",
+        "Crécy-Couvé",
+        "Écluzelles",
+        "Garancières-en-Drouais",
+        "Garnay",
+        "Germainville",
+        "Louvilliers-en-Drouais",
+        "Luray",
+        "Marville-Moutiers-Brûlé",
+        "Mézières-en-Drouais",
+        "Montreuil",
+        "Ouerre",
+        "Sainte-Gemme-Moronval",
+        "Saulnières",
+        "Tréon",
+        "Vernouillet",
+        "Vert-en-Drouais"
+      ],
+      "communeCount": 22,
+      "center": [1.3658, 48.7173],
+      "coverageRadius": 10.1,
+      "boundingBox": {
+        "minLat": 48.6585,
+        "maxLat": 48.7767,
+        "minLon": 1.2615,
+        "maxLon": 1.5015
+      },
+      "totalPopulation": 27978,
+      "totalSurface": 19052
+    },
+    "28600": {
+      "communes": ["Luisant"],
+      "communeCount": 1,
+      "center": [1.474, 48.4294],
+      "coverageRadius": 1.19,
+      "totalPopulation": 6818,
+      "totalSurface": 442
+    },
+    "28630": {
+      "communes": [
+        "Barjouville",
+        "Berchères-les-Pierres",
+        "Corancez",
+        "Le Coudray",
+        "Fontenay-sur-Eure",
+        "Gellainville",
+        "Mignières",
+        "Morancez",
+        "Nogent-le-Phaye",
+        "Sours",
+        "Thivars",
+        "Ver-lès-Chartres"
+      ],
+      "communeCount": 12,
+      "center": [1.5021, 48.4079],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 48.359,
+        "maxLat": 48.4429,
+        "minLon": 1.4119,
+        "maxLon": 1.5981
+      },
+      "totalPopulation": 17508,
+      "totalSurface": 14968
+    },
+    "28700": {
+      "communes": [
+        "Ardelu",
+        "Aunay-sous-Auneau",
+        "Auneau-Bleury-Saint-Symphorien",
+        "Béville-le-Comte",
+        "Champseru",
+        "La Chapelle-d'Aunainville",
+        "Châtenay",
+        "Denonville",
+        "Francourville",
+        "Garancières-en-Beauce",
+        "Gommerville",
+        "Le Gué-de-Longroi",
+        "Houville-la-Branche",
+        "Léthuin",
+        "Levainville",
+        "Maisons",
+        "Moinville-la-Jeulin",
+        "Mondonville-Saint-Jean",
+        "Morainville",
+        "Oinville-sous-Auneau",
+        "Oysonville",
+        "Roinville",
+        "Saint-Léger-des-Aubées",
+        "Sainville",
+        "Santeuil",
+        "Umpeau",
+        "Vierville",
+        "Voise"
+      ],
+      "communeCount": 28,
+      "center": [1.7773, 48.4379],
+      "coverageRadius": 16.1,
+      "boundingBox": {
+        "minLat": 48.346,
+        "maxLat": 48.5003,
+        "minLon": 1.6445,
+        "maxLon": 1.9528
+      },
+      "totalPopulation": 19457,
+      "totalSurface": 34546
+    },
+    "28800": {
+      "communes": [
+        "Alluyes",
+        "Bonneval",
+        "Bouville",
+        "Bullainville",
+        "Dancy",
+        "Flacey",
+        "Le Gault-Saint-Denis",
+        "Montboissier",
+        "Montharville",
+        "Moriers",
+        "Neuvy-en-Dunois",
+        "Pré-Saint-Évroult",
+        "Pré-Saint-Martin",
+        "Saint-Maur-sur-le-Loir",
+        "Sancheville",
+        "Saumeray",
+        "Trizay-lès-Bonneval",
+        "Villiers-Saint-Orien"
+      ],
+      "communeCount": 18,
+      "center": [1.4118, 48.197],
+      "coverageRadius": 12.1,
+      "boundingBox": {
+        "minLat": 48.1328,
+        "maxLat": 48.259,
+        "minLon": 1.3225,
+        "maxLon": 1.5736
+      },
+      "totalPopulation": 10943,
+      "totalSurface": 28652
+    }
+  }
+}

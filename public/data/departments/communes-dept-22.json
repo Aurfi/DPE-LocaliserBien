@@ -1,0 +1,6660 @@
+{
+  "departmentCode": "22",
+  "departmentName": "Côtes-d'Armor",
+  "stats": {
+    "communeCount": 344,
+    "totalPopulation": 608166,
+    "totalSurface": 697821
+  },
+  "communes": [
+    {
+      "nom": "Allineuc",
+      "code": "22001",
+      "codesPostaux": ["22460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8693, 48.3147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8734, 48.3109]
+      },
+      "population": 592,
+      "surface": 2436.99,
+      "radius": 2.79
+    },
+    {
+      "nom": "Andel",
+      "code": "22002",
+      "codesPostaux": ["22400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5549, 48.493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5665, 48.4911]
+      },
+      "population": 1170,
+      "surface": 1239.71,
+      "radius": 1.99
+    },
+    {
+      "nom": "Aucaleuc",
+      "code": "22003",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1237, 48.452]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1303, 48.4562]
+      },
+      "population": 953,
+      "surface": 653.62,
+      "radius": 1.44
+    },
+    {
+      "nom": "Beaussais-sur-Mer",
+      "code": "22209",
+      "codesPostaux": ["22650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1383, 48.5627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1394, 48.5791]
+      },
+      "population": 4379,
+      "surface": 4188.33,
+      "radius": 3.65
+    },
+    {
+      "nom": "Bégard",
+      "code": "22004",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2921, 48.6365]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3005, 48.6304]
+      },
+      "population": 4862,
+      "surface": 3633.63,
+      "radius": 3.4
+    },
+    {
+      "nom": "Belle-Isle-en-Terre",
+      "code": "22005",
+      "codesPostaux": ["22810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3793, 48.538]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3955, 48.5436]
+      },
+      "population": 1031,
+      "surface": 1433.13,
+      "radius": 2.14
+    },
+    {
+      "nom": "Berhet",
+      "code": "22006",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3089, 48.6975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3159, 48.6951]
+      },
+      "population": 272,
+      "surface": 333.86,
+      "radius": 1.03
+    },
+    {
+      "nom": "Binic-Étables-sur-Mer",
+      "code": "22055",
+      "codesPostaux": ["22520", "22680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8372, 48.6167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8352, 48.6266]
+      },
+      "population": 7020,
+      "surface": 1504.51,
+      "radius": 2.19
+    },
+    {
+      "nom": "Bobital",
+      "code": "22008",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.098, 48.4133]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1035, 48.4142]
+      },
+      "population": 1143,
+      "surface": 509.71,
+      "radius": 1.27
+    },
+    {
+      "nom": "Bon Repos sur Blavet",
+      "code": "22107",
+      "codesPostaux": ["22570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1161, 48.2147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1233, 48.2416]
+      },
+      "population": 1237,
+      "surface": 5514.24,
+      "radius": 4.19
+    },
+    {
+      "nom": "Boqueho",
+      "code": "22011",
+      "codesPostaux": ["22170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.986, 48.4666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9606, 48.4833]
+      },
+      "population": 1054,
+      "surface": 2759.79,
+      "radius": 2.96
+    },
+    {
+      "nom": "Bourbriac",
+      "code": "22013",
+      "codesPostaux": ["22390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1973, 48.4649]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1884, 48.4739]
+      },
+      "population": 2126,
+      "surface": 7315.33,
+      "radius": 4.83
+    },
+    {
+      "nom": "Bourseul",
+      "code": "22014",
+      "codesPostaux": ["22130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2606, 48.4662]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2605, 48.4848]
+      },
+      "population": 1247,
+      "surface": 2251.53,
+      "radius": 2.68
+    },
+    {
+      "nom": "Bréhand",
+      "code": "22015",
+      "codesPostaux": ["22510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5899, 48.3954]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5778, 48.4029]
+      },
+      "population": 1695,
+      "surface": 2589.4,
+      "radius": 2.87
+    },
+    {
+      "nom": "Brélidy",
+      "code": "22018",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2277, 48.6504]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2196, 48.6633]
+      },
+      "population": 316,
+      "surface": 829.02,
+      "radius": 1.62
+    },
+    {
+      "nom": "Bringolo",
+      "code": "22019",
+      "codesPostaux": ["22170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0101, 48.5806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0035, 48.5765]
+      },
+      "population": 510,
+      "surface": 936.84,
+      "radius": 1.73
+    },
+    {
+      "nom": "Broons",
+      "code": "22020",
+      "codesPostaux": ["22250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2418, 48.3135]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2621, 48.3171]
+      },
+      "population": 2931,
+      "surface": 3571.77,
+      "radius": 3.37
+    },
+    {
+      "nom": "Brusvily",
+      "code": "22021",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1174, 48.3922]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1273, 48.3908]
+      },
+      "population": 1155,
+      "surface": 1208.12,
+      "radius": 1.96
+    },
+    {
+      "nom": "Bulat-Pestivien",
+      "code": "22023",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3347, 48.4317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3295, 48.4287]
+      },
+      "population": 409,
+      "surface": 3168.25,
+      "radius": 3.18
+    },
+    {
+      "nom": "Calanhel",
+      "code": "22024",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4679, 48.4377]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4808, 48.4359]
+      },
+      "population": 236,
+      "surface": 1469.08,
+      "radius": 2.16
+    },
+    {
+      "nom": "Callac",
+      "code": "22025",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4138, 48.4192]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4277, 48.4045]
+      },
+      "population": 2274,
+      "surface": 3347.14,
+      "radius": 3.26
+    },
+    {
+      "nom": "Calorguen",
+      "code": "22026",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0248, 48.4061]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0287, 48.4092]
+      },
+      "population": 722,
+      "surface": 860.14,
+      "radius": 1.65
+    },
+    {
+      "nom": "Camlez",
+      "code": "22028",
+      "codesPostaux": ["22450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3174, 48.7827]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3055, 48.7769]
+      },
+      "population": 832,
+      "surface": 1175.87,
+      "radius": 1.93
+    },
+    {
+      "nom": "Canihuel",
+      "code": "22029",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0861, 48.337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1058, 48.3385]
+      },
+      "population": 348,
+      "surface": 3246.18,
+      "radius": 3.21
+    },
+    {
+      "nom": "Caouënnec-Lanvézéac",
+      "code": "22030",
+      "codesPostaux": ["22300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.368, 48.7067]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3755, 48.7046]
+      },
+      "population": 904,
+      "surface": 725.08,
+      "radius": 1.52
+    },
+    {
+      "nom": "Carnoët",
+      "code": "22031",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5424, 48.3569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5199, 48.3672]
+      },
+      "population": 667,
+      "surface": 4200.93,
+      "radius": 3.66
+    },
+    {
+      "nom": "Caulnes",
+      "code": "22032",
+      "codesPostaux": ["22350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1598, 48.3032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.156, 48.2886]
+      },
+      "population": 2506,
+      "surface": 3252.76,
+      "radius": 3.22
+    },
+    {
+      "nom": "Caurel",
+      "code": "22033",
+      "codesPostaux": ["22530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0375, 48.2199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0354, 48.2162]
+      },
+      "population": 355,
+      "surface": 1315.17,
+      "radius": 2.05
+    },
+    {
+      "nom": "Cavan",
+      "code": "22034",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3563, 48.6832]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3476, 48.6726]
+      },
+      "population": 1548,
+      "surface": 1680.49,
+      "radius": 2.31
+    },
+    {
+      "nom": "Châtelaudren-Plouagat",
+      "code": "22206",
+      "codesPostaux": ["22170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9872, 48.5311]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9989, 48.5366]
+      },
+      "population": 3968,
+      "surface": 3283.28,
+      "radius": 3.23
+    },
+    {
+      "nom": "Coadout",
+      "code": "22040",
+      "codesPostaux": ["22970"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1728, 48.5154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1878, 48.5177]
+      },
+      "population": 538,
+      "surface": 987.95,
+      "radius": 1.77
+    },
+    {
+      "nom": "Coatascorn",
+      "code": "22041",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2601, 48.6692]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2508, 48.674]
+      },
+      "population": 251,
+      "surface": 814.06,
+      "radius": 1.61
+    },
+    {
+      "nom": "Coatréven",
+      "code": "22042",
+      "codesPostaux": ["22450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3235, 48.7641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3437, 48.7685]
+      },
+      "population": 493,
+      "surface": 927.81,
+      "radius": 1.72
+    },
+    {
+      "nom": "Coëtmieux",
+      "code": "22044",
+      "codesPostaux": ["22400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5904, 48.4868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6011, 48.4914]
+      },
+      "population": 1840,
+      "surface": 820.33,
+      "radius": 1.62
+    },
+    {
+      "nom": "Cohiniac",
+      "code": "22045",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9464, 48.4513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9509, 48.4619]
+      },
+      "population": 397,
+      "surface": 1256.24,
+      "radius": 2
+    },
+    {
+      "nom": "Corlay",
+      "code": "22047",
+      "codesPostaux": ["22320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0419, 48.307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0587, 48.3181]
+      },
+      "population": 913,
+      "surface": 1413.74,
+      "radius": 2.12
+    },
+    {
+      "nom": "Corseul",
+      "code": "22048",
+      "codesPostaux": ["22130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1675, 48.4846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1675, 48.4813]
+      },
+      "population": 2270,
+      "surface": 4227.95,
+      "radius": 3.67
+    },
+    {
+      "nom": "Créhen",
+      "code": "22049",
+      "codesPostaux": ["22130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1869, 48.5447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2143, 48.5451]
+      },
+      "population": 1664,
+      "surface": 1821.54,
+      "radius": 2.41
+    },
+    {
+      "nom": "Dinan",
+      "code": "22050",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0533, 48.4471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0472, 48.4541]
+      },
+      "population": 14966,
+      "surface": 872.23,
+      "radius": 1.67
+    },
+    {
+      "nom": "Duault",
+      "code": "22052",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4361, 48.3638]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4378, 48.3622]
+      },
+      "population": 388,
+      "surface": 2188.11,
+      "radius": 2.64
+    },
+    {
+      "nom": "Éréac",
+      "code": "22053",
+      "codesPostaux": ["22250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3426, 48.2714]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3472, 48.2748]
+      },
+      "population": 676,
+      "surface": 2149.66,
+      "radius": 2.62
+    },
+    {
+      "nom": "Erquy",
+      "code": "22054",
+      "codesPostaux": ["22430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.4571, 48.618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4657, 48.6284]
+      },
+      "population": 3929,
+      "surface": 2643.68,
+      "radius": 2.9
+    },
+    {
+      "nom": "Évran",
+      "code": "22056",
+      "codesPostaux": ["22630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9773, 48.3771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9813, 48.3815]
+      },
+      "population": 1787,
+      "surface": 2430.35,
+      "radius": 2.78
+    },
+    {
+      "nom": "Fréhel",
+      "code": "22179",
+      "codesPostaux": ["22240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3713, 48.6334]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3652, 48.6278]
+      },
+      "population": 1611,
+      "surface": 1931.61,
+      "radius": 2.48
+    },
+    {
+      "nom": "Gausson",
+      "code": "22060",
+      "codesPostaux": ["22150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7615, 48.2916]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7546, 48.3004]
+      },
+      "population": 648,
+      "surface": 1673.52,
+      "radius": 2.31
+    },
+    {
+      "nom": "Glomel",
+      "code": "22061",
+      "codesPostaux": ["22110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3808, 48.2055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3942, 48.2232]
+      },
+      "population": 1412,
+      "surface": 7911.57,
+      "radius": 5.02
+    },
+    {
+      "nom": "Gomené",
+      "code": "22062",
+      "codesPostaux": ["22230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.4935, 48.1835]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4866, 48.1741]
+      },
+      "population": 549,
+      "surface": 2561.23,
+      "radius": 2.86
+    },
+    {
+      "nom": "Gommenec'h",
+      "code": "22063",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0481, 48.6362]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0504, 48.6416]
+      },
+      "population": 552,
+      "surface": 1207.82,
+      "radius": 1.96
+    },
+    {
+      "nom": "Gouarec",
+      "code": "22064",
+      "codesPostaux": ["22570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1937, 48.236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1782, 48.2266]
+      },
+      "population": 912,
+      "surface": 657.4,
+      "radius": 1.45
+    },
+    {
+      "nom": "Goudelin",
+      "code": "22065",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0245, 48.606]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0159, 48.6047]
+      },
+      "population": 1716,
+      "surface": 2323.16,
+      "radius": 2.72
+    },
+    {
+      "nom": "Grâce-Uzel",
+      "code": "22068",
+      "codesPostaux": ["22460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7951, 48.252]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8006, 48.2411]
+      },
+      "population": 429,
+      "surface": 813.22,
+      "radius": 1.61
+    },
+    {
+      "nom": "Grâces",
+      "code": "22067",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1847, 48.5478]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1846, 48.557]
+      },
+      "population": 2588,
+      "surface": 1416.25,
+      "radius": 2.12
+    },
+    {
+      "nom": "Guenroc",
+      "code": "22069",
+      "codesPostaux": ["22350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0823, 48.3141]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.076, 48.3181]
+      },
+      "population": 217,
+      "surface": 758.19,
+      "radius": 1.55
+    },
+    {
+      "nom": "Guerlédan",
+      "code": "22158",
+      "codesPostaux": ["22530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9481, 48.1955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9873, 48.2017]
+      },
+      "population": 2528,
+      "surface": 4913.81,
+      "radius": 3.95
+    },
+    {
+      "nom": "Guingamp",
+      "code": "22070",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1533, 48.5608]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1481, 48.5612]
+      },
+      "population": 7127,
+      "surface": 346.24,
+      "radius": 1.05
+    },
+    {
+      "nom": "Guitté",
+      "code": "22071",
+      "codesPostaux": ["22350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1008, 48.2917]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.095, 48.2972]
+      },
+      "population": 711,
+      "surface": 1494.88,
+      "radius": 2.18
+    },
+    {
+      "nom": "Gurunhuel",
+      "code": "22072",
+      "codesPostaux": ["22390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2883, 48.5114]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2995, 48.5157]
+      },
+      "population": 406,
+      "surface": 1995.7,
+      "radius": 2.52
+    },
+    {
+      "nom": "Hémonstoir",
+      "code": "22075",
+      "codesPostaux": ["22600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.85, 48.1573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8308, 48.1606]
+      },
+      "population": 708,
+      "surface": 1417.9,
+      "radius": 2.12
+    },
+    {
+      "nom": "Hénanbihen",
+      "code": "22076",
+      "codesPostaux": ["22550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3861, 48.559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3792, 48.5612]
+      },
+      "population": 1429,
+      "surface": 3181.37,
+      "radius": 3.18
+    },
+    {
+      "nom": "Hénansal",
+      "code": "22077",
+      "codesPostaux": ["22400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.451, 48.5373]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4347, 48.5407]
+      },
+      "population": 1263,
+      "surface": 2928.79,
+      "radius": 3.05
+    },
+    {
+      "nom": "Hénon",
+      "code": "22079",
+      "codesPostaux": ["22150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6898, 48.3885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6842, 48.3857]
+      },
+      "population": 2315,
+      "surface": 4205.08,
+      "radius": 3.66
+    },
+    {
+      "nom": "Hillion",
+      "code": "22081",
+      "codesPostaux": ["22120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6453, 48.5042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6678, 48.5133]
+      },
+      "population": 4304,
+      "surface": 2464.85,
+      "radius": 2.8
+    },
+    {
+      "nom": "Île-de-Bréhat",
+      "code": "22016",
+      "codesPostaux": ["22870"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0083, 48.8501]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0012, 48.8435]
+      },
+      "population": 427,
+      "surface": 315.69,
+      "radius": 1
+    },
+    {
+      "nom": "Illifaut",
+      "code": "22083",
+      "codesPostaux": ["22230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3297, 48.1418]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3476, 48.1461]
+      },
+      "population": 688,
+      "surface": 2698.95,
+      "radius": 2.93
+    },
+    {
+      "nom": "Jugon-les-Lacs",
+      "code": "22084",
+      "codesPostaux": ["22270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3217, 48.4014]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3241, 48.4088]
+      },
+      "population": 2528,
+      "surface": 3875.08,
+      "radius": 3.51
+    },
+    {
+      "nom": "Kerbors",
+      "code": "22085",
+      "codesPostaux": ["22610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1829, 48.8254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1838, 48.8288]
+      },
+      "population": 286,
+      "surface": 703.29,
+      "radius": 1.5
+    },
+    {
+      "nom": "Kerfot",
+      "code": "22086",
+      "codesPostaux": ["22500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.033, 48.7357]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0279, 48.7373]
+      },
+      "population": 634,
+      "surface": 583.2,
+      "radius": 1.36
+    },
+    {
+      "nom": "Kergrist-Moëlou",
+      "code": "22087",
+      "codesPostaux": ["22110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3194, 48.2945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3179, 48.3105]
+      },
+      "population": 636,
+      "surface": 4713.9,
+      "radius": 3.87
+    },
+    {
+      "nom": "Kerien",
+      "code": "22088",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2274, 48.4097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2114, 48.39]
+      },
+      "population": 247,
+      "surface": 2207.02,
+      "radius": 2.65
+    },
+    {
+      "nom": "Kermaria-Sulard",
+      "code": "22090",
+      "codesPostaux": ["22450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3748, 48.7753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3723, 48.7723]
+      },
+      "population": 1106,
+      "surface": 926.48,
+      "radius": 1.72
+    },
+    {
+      "nom": "Kermoroc'h",
+      "code": "22091",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2029, 48.6141]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2064, 48.6234]
+      },
+      "population": 429,
+      "surface": 616.69,
+      "radius": 1.4
+    },
+    {
+      "nom": "Kerpert",
+      "code": "22092",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1359, 48.389]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1348, 48.3777]
+      },
+      "population": 269,
+      "surface": 2129.64,
+      "radius": 2.6
+    },
+    {
+      "nom": "La Bouillie",
+      "code": "22012",
+      "codesPostaux": ["22240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.4398, 48.5875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4372, 48.5736]
+      },
+      "population": 845,
+      "surface": 1099.99,
+      "radius": 1.87
+    },
+    {
+      "nom": "La Chapelle-Blanche",
+      "code": "22036",
+      "codesPostaux": ["22350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1251, 48.2676]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.144, 48.266]
+      },
+      "population": 211,
+      "surface": 806.34,
+      "radius": 1.6
+    },
+    {
+      "nom": "La Chapelle-Neuve",
+      "code": "22037",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4389, 48.466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4207, 48.4617]
+      },
+      "population": 403,
+      "surface": 2410.94,
+      "radius": 2.77
+    },
+    {
+      "nom": "La Chèze",
+      "code": "22039",
+      "codesPostaux": ["22210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6618, 48.1319]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6576, 48.1318]
+      },
+      "population": 572,
+      "surface": 259.35,
+      "radius": 0.91
+    },
+    {
+      "nom": "La Harmoye",
+      "code": "22073",
+      "codesPostaux": ["22320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9737, 48.3472]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9616, 48.3357]
+      },
+      "population": 379,
+      "surface": 1782.34,
+      "radius": 2.38
+    },
+    {
+      "nom": "La Landec",
+      "code": "22097",
+      "codesPostaux": ["22980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1809, 48.4256]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.179, 48.4352]
+      },
+      "population": 749,
+      "surface": 774.54,
+      "radius": 1.57
+    },
+    {
+      "nom": "La Malhoure",
+      "code": "22140",
+      "codesPostaux": ["22640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.4957, 48.3957]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4952, 48.3965]
+      },
+      "population": 621,
+      "surface": 516.72,
+      "radius": 1.28
+    },
+    {
+      "nom": "La Méaugon",
+      "code": "22144",
+      "codesPostaux": ["22440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8472, 48.5036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8398, 48.4998]
+      },
+      "population": 1326,
+      "surface": 673.67,
+      "radius": 1.46
+    },
+    {
+      "nom": "La Motte",
+      "code": "22155",
+      "codesPostaux": ["22600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7052, 48.2342]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7338, 48.2359]
+      },
+      "population": 2159,
+      "surface": 4351.11,
+      "radius": 3.72
+    },
+    {
+      "nom": "La Prénessaye",
+      "code": "22255",
+      "codesPostaux": ["22210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6479, 48.1852]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6351, 48.1818]
+      },
+      "population": 870,
+      "surface": 1729.06,
+      "radius": 2.35
+    },
+    {
+      "nom": "La Roche-Jaudy",
+      "code": "22264",
+      "codesPostaux": ["22450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.23, 48.7304]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2632, 48.7473]
+      },
+      "population": 2643,
+      "surface": 3020.98,
+      "radius": 3.1
+    },
+    {
+      "nom": "La Vicomté-sur-Rance",
+      "code": "22385",
+      "codesPostaux": ["22690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9834, 48.4882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9822, 48.4873]
+      },
+      "population": 1142,
+      "surface": 465.63,
+      "radius": 1.22
+    },
+    {
+      "nom": "Lamballe-Armor",
+      "code": "22093",
+      "codesPostaux": ["22400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5201, 48.4859]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5171, 48.4687]
+      },
+      "population": 16911,
+      "surface": 13198.17,
+      "radius": 6.48
+    },
+    {
+      "nom": "Lancieux",
+      "code": "22094",
+      "codesPostaux": ["22770"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1479, 48.6034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1507, 48.6047]
+      },
+      "population": 1602,
+      "surface": 655.18,
+      "radius": 1.44
+    },
+    {
+      "nom": "Landebaëron",
+      "code": "22095",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2067, 48.6394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2088, 48.6366]
+      },
+      "population": 169,
+      "surface": 642.58,
+      "radius": 1.43
+    },
+    {
+      "nom": "Landébia",
+      "code": "22096",
+      "codesPostaux": ["22130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3349, 48.5171]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.336, 48.5108]
+      },
+      "population": 442,
+      "surface": 356.55,
+      "radius": 1.07
+    },
+    {
+      "nom": "Landéhen",
+      "code": "22098",
+      "codesPostaux": ["22400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5441, 48.4188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5399, 48.4299]
+      },
+      "population": 1445,
+      "surface": 1205.57,
+      "radius": 1.96
+    },
+    {
+      "nom": "Lanfains",
+      "code": "22099",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.912, 48.3699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9143, 48.3515]
+      },
+      "population": 1091,
+      "surface": 2235.31,
+      "radius": 2.67
+    },
+    {
+      "nom": "Langoat",
+      "code": "22101",
+      "codesPostaux": ["22450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3001, 48.7325]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.282, 48.7508]
+      },
+      "population": 1161,
+      "surface": 1870.31,
+      "radius": 2.44
+    },
+    {
+      "nom": "Langrolay-sur-Rance",
+      "code": "22103",
+      "codesPostaux": ["22490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0151, 48.5547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0028, 48.5534]
+      },
+      "population": 992,
+      "surface": 529.99,
+      "radius": 1.3
+    },
+    {
+      "nom": "Languédias",
+      "code": "22104",
+      "codesPostaux": ["22980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2064, 48.3936]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2115, 48.3892]
+      },
+      "population": 558,
+      "surface": 871.76,
+      "radius": 1.67
+    },
+    {
+      "nom": "Languenan",
+      "code": "22105",
+      "codesPostaux": ["22130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1344, 48.5127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1269, 48.5113]
+      },
+      "population": 1160,
+      "surface": 1608.44,
+      "radius": 2.26
+    },
+    {
+      "nom": "Langueux",
+      "code": "22106",
+      "codesPostaux": ["22360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7087, 48.502]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7146, 48.4942]
+      },
+      "population": 7947,
+      "surface": 921.66,
+      "radius": 1.71
+    },
+    {
+      "nom": "Lanleff",
+      "code": "22108",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0447, 48.6928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0457, 48.695]
+      },
+      "population": 121,
+      "surface": 222.35,
+      "radius": 0.84
+    },
+    {
+      "nom": "Lanloup",
+      "code": "22109",
+      "codesPostaux": ["22580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9706, 48.7096]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9642, 48.7136]
+      },
+      "population": 251,
+      "surface": 253.88,
+      "radius": 0.9
+    },
+    {
+      "nom": "Lanmérin",
+      "code": "22110",
+      "codesPostaux": ["22300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3539, 48.7394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3512, 48.741]
+      },
+      "population": 573,
+      "surface": 422.34,
+      "radius": 1.16
+    },
+    {
+      "nom": "Lanmodez",
+      "code": "22111",
+      "codesPostaux": ["22610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0778, 48.8486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1069, 48.842]
+      },
+      "population": 400,
+      "surface": 416.25,
+      "radius": 1.15
+    },
+    {
+      "nom": "Lannebert",
+      "code": "22112",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0118, 48.6498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0097, 48.6579]
+      },
+      "population": 431,
+      "surface": 706.41,
+      "radius": 1.5
+    },
+    {
+      "nom": "Lannion",
+      "code": "22113",
+      "codesPostaux": ["22300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4697, 48.7454]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4593, 48.7321]
+      },
+      "population": 20525,
+      "surface": 4684.03,
+      "radius": 3.86
+    },
+    {
+      "nom": "Lanrelas",
+      "code": "22114",
+      "codesPostaux": ["22250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.296, 48.2518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2951, 48.2511]
+      },
+      "population": 866,
+      "surface": 3004.18,
+      "radius": 3.09
+    },
+    {
+      "nom": "Lanrivain",
+      "code": "22115",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2086, 48.351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.215, 48.3474]
+      },
+      "population": 465,
+      "surface": 3752.65,
+      "radius": 3.46
+    },
+    {
+      "nom": "Lanrodec",
+      "code": "22116",
+      "codesPostaux": ["22170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0434, 48.4977]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0315, 48.5173]
+      },
+      "population": 1380,
+      "surface": 3196.66,
+      "radius": 3.19
+    },
+    {
+      "nom": "Lantic",
+      "code": "22117",
+      "codesPostaux": ["22410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8969, 48.6057]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8972, 48.5987]
+      },
+      "population": 1799,
+      "surface": 1590.99,
+      "radius": 2.25
+    },
+    {
+      "nom": "Lanvallay",
+      "code": "22118",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0018, 48.4533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0279, 48.4557]
+      },
+      "population": 4235,
+      "surface": 1487.19,
+      "radius": 2.18
+    },
+    {
+      "nom": "Lanvellec",
+      "code": "22119",
+      "codesPostaux": ["22420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5285, 48.6069]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5396, 48.6202]
+      },
+      "population": 602,
+      "surface": 1891.97,
+      "radius": 2.45
+    },
+    {
+      "nom": "Lanvollon",
+      "code": "22121",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9913, 48.6342]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9858, 48.6321]
+      },
+      "population": 1907,
+      "surface": 507.39,
+      "radius": 1.27
+    },
+    {
+      "nom": "Laurenan",
+      "code": "22122",
+      "codesPostaux": ["22230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5092, 48.214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5343, 48.1996]
+      },
+      "population": 742,
+      "surface": 3113.75,
+      "radius": 3.15
+    },
+    {
+      "nom": "Le Bodéo",
+      "code": "22009",
+      "codesPostaux": ["22320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9196, 48.3266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9345, 48.3224]
+      },
+      "population": 178,
+      "surface": 1025.65,
+      "radius": 1.81
+    },
+    {
+      "nom": "Le Faouët",
+      "code": "22057",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0726, 48.6798]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0741, 48.6842]
+      },
+      "population": 410,
+      "surface": 766.04,
+      "radius": 1.56
+    },
+    {
+      "nom": "Le Fœil",
+      "code": "22059",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9055, 48.4153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9148, 48.4289]
+      },
+      "population": 1382,
+      "surface": 2187.77,
+      "radius": 2.64
+    },
+    {
+      "nom": "Le Haut-Corlay",
+      "code": "22074",
+      "codesPostaux": ["22320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0347, 48.343]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0573, 48.3218]
+      },
+      "population": 650,
+      "surface": 2601.46,
+      "radius": 2.88
+    },
+    {
+      "nom": "Le Hinglé",
+      "code": "22082",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0815, 48.3993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0834, 48.3941]
+      },
+      "population": 912,
+      "surface": 341.73,
+      "radius": 1.04
+    },
+    {
+      "nom": "Le Leslay",
+      "code": "22126",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9629, 48.4222]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9662, 48.4297]
+      },
+      "population": 154,
+      "surface": 508.69,
+      "radius": 1.27
+    },
+    {
+      "nom": "Le Mené",
+      "code": "22046",
+      "codesPostaux": ["22330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5144, 48.2837]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5221, 48.2953]
+      },
+      "population": 6420,
+      "surface": 16336.53,
+      "radius": 7.21
+    },
+    {
+      "nom": "Le Merzer",
+      "code": "22150",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0778, 48.5804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0675, 48.5758]
+      },
+      "population": 974,
+      "surface": 1291.59,
+      "radius": 2.03
+    },
+    {
+      "nom": "Le Moustoir",
+      "code": "22157",
+      "codesPostaux": ["22340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4855, 48.2729]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5083, 48.2671]
+      },
+      "population": 659,
+      "surface": 1487.77,
+      "radius": 2.18
+    },
+    {
+      "nom": "Le Quillio",
+      "code": "22260",
+      "codesPostaux": ["22460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9033, 48.2439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8843, 48.2409]
+      },
+      "population": 591,
+      "surface": 1640.02,
+      "radius": 2.28
+    },
+    {
+      "nom": "Le Quiou",
+      "code": "22263",
+      "codesPostaux": ["22630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9963, 48.3464]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0074, 48.3511]
+      },
+      "population": 355,
+      "surface": 524.68,
+      "radius": 1.29
+    },
+    {
+      "nom": "Le Vieux-Bourg",
+      "code": "22386",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.997, 48.3902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0024, 48.3882]
+      },
+      "population": 760,
+      "surface": 2568.31,
+      "radius": 2.86
+    },
+    {
+      "nom": "Le Vieux-Marché",
+      "code": "22387",
+      "codesPostaux": ["22420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.44, 48.6148]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4504, 48.6074]
+      },
+      "population": 1276,
+      "surface": 2232.45,
+      "radius": 2.67
+    },
+    {
+      "nom": "Les Champs-Géraux",
+      "code": "22035",
+      "codesPostaux": ["22630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9759, 48.4271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.97, 48.4177]
+      },
+      "population": 1053,
+      "surface": 1966.98,
+      "radius": 2.5
+    },
+    {
+      "nom": "Lescouët-Gouarec",
+      "code": "22124",
+      "codesPostaux": ["22570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2064, 48.17]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2371, 48.1608]
+      },
+      "population": 215,
+      "surface": 1913.75,
+      "radius": 2.47
+    },
+    {
+      "nom": "Lézardrieux",
+      "code": "22127",
+      "codesPostaux": ["22740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1051, 48.8048]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1056, 48.7865]
+      },
+      "population": 1632,
+      "surface": 1205.14,
+      "radius": 1.96
+    },
+    {
+      "nom": "Loc-Envel",
+      "code": "22129",
+      "codesPostaux": ["22810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4107, 48.5095]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4094, 48.5164]
+      },
+      "population": 74,
+      "surface": 339.69,
+      "radius": 1.04
+    },
+    {
+      "nom": "Locarn",
+      "code": "22128",
+      "codesPostaux": ["22340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4177, 48.3317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.423, 48.3202]
+      },
+      "population": 421,
+      "surface": 3255.03,
+      "radius": 3.22
+    },
+    {
+      "nom": "Loguivy-Plougras",
+      "code": "22131",
+      "codesPostaux": ["22780"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4824, 48.511]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4869, 48.522]
+      },
+      "population": 788,
+      "surface": 4878.16,
+      "radius": 3.94
+    },
+    {
+      "nom": "Lohuec",
+      "code": "22132",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5294, 48.4627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5213, 48.4599]
+      },
+      "population": 246,
+      "surface": 1751.03,
+      "radius": 2.36
+    },
+    {
+      "nom": "Loscouët-sur-Meu",
+      "code": "22133",
+      "codesPostaux": ["22230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2559, 48.1792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2432, 48.1798]
+      },
+      "population": 644,
+      "surface": 2221.49,
+      "radius": 2.66
+    },
+    {
+      "nom": "Louannec",
+      "code": "22134",
+      "codesPostaux": ["22700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4104, 48.7791]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4128, 48.7944]
+      },
+      "population": 3053,
+      "surface": 1421.96,
+      "radius": 2.13
+    },
+    {
+      "nom": "Louargat",
+      "code": "22135",
+      "codesPostaux": ["22540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3359, 48.5631]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3402, 48.5667]
+      },
+      "population": 2393,
+      "surface": 5838.05,
+      "radius": 4.31
+    },
+    {
+      "nom": "Loudéac",
+      "code": "22136",
+      "codesPostaux": ["22600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7442, 48.1737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.752, 48.1765]
+      },
+      "population": 9875,
+      "surface": 8187.23,
+      "radius": 5.1
+    },
+    {
+      "nom": "Maël-Carhaix",
+      "code": "22137",
+      "codesPostaux": ["22340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4168, 48.2902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4235, 48.2831]
+      },
+      "population": 1455,
+      "surface": 3696.51,
+      "radius": 3.43
+    },
+    {
+      "nom": "Maël-Pestivien",
+      "code": "22138",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2949, 48.4101]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2957, 48.394]
+      },
+      "population": 360,
+      "surface": 3182.62,
+      "radius": 3.18
+    },
+    {
+      "nom": "Magoar",
+      "code": "22139",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.176, 48.4017]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1871, 48.3969]
+      },
+      "population": 75,
+      "surface": 786.52,
+      "radius": 1.58
+    },
+    {
+      "nom": "Mantallot",
+      "code": "22141",
+      "codesPostaux": ["22450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.291, 48.7081]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2984, 48.7067]
+      },
+      "population": 234,
+      "surface": 286.99,
+      "radius": 0.96
+    },
+    {
+      "nom": "Matignon",
+      "code": "22143",
+      "codesPostaux": ["22550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2916, 48.6023]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.288, 48.5945]
+      },
+      "population": 1738,
+      "surface": 1463.95,
+      "radius": 2.16
+    },
+    {
+      "nom": "Mégrit",
+      "code": "22145",
+      "codesPostaux": ["22270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2714, 48.3883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2468, 48.3755]
+      },
+      "population": 809,
+      "surface": 2121.66,
+      "radius": 2.6
+    },
+    {
+      "nom": "Mellionnec",
+      "code": "22146",
+      "codesPostaux": ["22110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.296, 48.168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.297, 48.1748]
+      },
+      "population": 420,
+      "surface": 2443.52,
+      "radius": 2.79
+    },
+    {
+      "nom": "Merdrignac",
+      "code": "22147",
+      "codesPostaux": ["22230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3946, 48.1961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4111, 48.1909]
+      },
+      "population": 2950,
+      "surface": 6923.97,
+      "radius": 4.69
+    },
+    {
+      "nom": "Mérillac",
+      "code": "22148",
+      "codesPostaux": ["22230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3873, 48.2511]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3962, 48.2568]
+      },
+      "population": 242,
+      "surface": 1402.31,
+      "radius": 2.11
+    },
+    {
+      "nom": "Merléac",
+      "code": "22149",
+      "codesPostaux": ["22460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9112, 48.2721]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8991, 48.2785]
+      },
+      "population": 463,
+      "surface": 3043.47,
+      "radius": 3.11
+    },
+    {
+      "nom": "Minihy-Tréguier",
+      "code": "22152",
+      "codesPostaux": ["22220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2578, 48.7696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2285, 48.7753]
+      },
+      "population": 1263,
+      "surface": 1279.29,
+      "radius": 2.02
+    },
+    {
+      "nom": "Moncontour",
+      "code": "22153",
+      "codesPostaux": ["22510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6348, 48.3585]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6314, 48.3615]
+      },
+      "population": 742,
+      "surface": 48.1,
+      "radius": 0.39
+    },
+    {
+      "nom": "Moustéru",
+      "code": "22156",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2329, 48.5282]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2402, 48.518]
+      },
+      "population": 642,
+      "surface": 1447.06,
+      "radius": 2.15
+    },
+    {
+      "nom": "Noyal",
+      "code": "22160",
+      "codesPostaux": ["22400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.4641, 48.4513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4857, 48.447]
+      },
+      "population": 981,
+      "surface": 709.75,
+      "radius": 1.5
+    },
+    {
+      "nom": "Pabu",
+      "code": "22161",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1445, 48.5861]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1365, 48.5866]
+      },
+      "population": 2769,
+      "surface": 798.03,
+      "radius": 1.59
+    },
+    {
+      "nom": "Paimpol",
+      "code": "22162",
+      "codesPostaux": ["22500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0472, 48.7789]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0488, 48.7798]
+      },
+      "population": 7266,
+      "surface": 2384.76,
+      "radius": 2.76
+    },
+    {
+      "nom": "Paule",
+      "code": "22163",
+      "codesPostaux": ["22340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.461, 48.2242]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4436, 48.2361]
+      },
+      "population": 674,
+      "surface": 3800.5,
+      "radius": 3.48
+    },
+    {
+      "nom": "Pédernec",
+      "code": "22164",
+      "codesPostaux": ["22540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2754, 48.5869]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2708, 48.5979]
+      },
+      "population": 1891,
+      "surface": 2700.32,
+      "radius": 2.93
+    },
+    {
+      "nom": "Penguily",
+      "code": "22165",
+      "codesPostaux": ["22510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.4949, 48.3755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4958, 48.3727]
+      },
+      "population": 608,
+      "surface": 1075.39,
+      "radius": 1.85
+    },
+    {
+      "nom": "Penvénan",
+      "code": "22166",
+      "codesPostaux": ["22710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3016, 48.8223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2972, 48.812]
+      },
+      "population": 2548,
+      "surface": 2022.85,
+      "radius": 2.54
+    },
+    {
+      "nom": "Perros-Guirec",
+      "code": "22168",
+      "codesPostaux": ["22700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.476, 48.8376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4448, 48.8155]
+      },
+      "population": 7260,
+      "surface": 1495.32,
+      "radius": 2.18
+    },
+    {
+      "nom": "Peumerit-Quintin",
+      "code": "22169",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2923, 48.368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2734, 48.3613]
+      },
+      "population": 184,
+      "surface": 1491.26,
+      "radius": 2.18
+    },
+    {
+      "nom": "Plaine-Haute",
+      "code": "22170",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.861, 48.4458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8552, 48.4461]
+      },
+      "population": 1705,
+      "surface": 1589.42,
+      "radius": 2.25
+    },
+    {
+      "nom": "Plaintel",
+      "code": "22171",
+      "codesPostaux": ["22940"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8072, 48.4054]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8181, 48.4077]
+      },
+      "population": 4571,
+      "surface": 2751.57,
+      "radius": 2.96
+    },
+    {
+      "nom": "Plancoët",
+      "code": "22172",
+      "codesPostaux": ["22130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2184, 48.5176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2358, 48.5219]
+      },
+      "population": 3095,
+      "surface": 1157.66,
+      "radius": 1.92
+    },
+    {
+      "nom": "Pléboulle",
+      "code": "22174",
+      "codesPostaux": ["22550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.33, 48.5951]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3367, 48.6088]
+      },
+      "population": 716,
+      "surface": 1417.82,
+      "radius": 2.12
+    },
+    {
+      "nom": "Plédéliac",
+      "code": "22175",
+      "codesPostaux": ["22270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3675, 48.4645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3879, 48.4489]
+      },
+      "population": 1602,
+      "surface": 5274.57,
+      "radius": 4.1
+    },
+    {
+      "nom": "Plédran",
+      "code": "22176",
+      "codesPostaux": ["22960"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7381, 48.4426]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7457, 48.4461]
+      },
+      "population": 6909,
+      "surface": 3463.98,
+      "radius": 3.32
+    },
+    {
+      "nom": "Pléguien",
+      "code": "22177",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9527, 48.6351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9405, 48.6365]
+      },
+      "population": 1440,
+      "surface": 1568.96,
+      "radius": 2.23
+    },
+    {
+      "nom": "Pléhédel",
+      "code": "22178",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0068, 48.6969]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.009, 48.6964]
+      },
+      "population": 1317,
+      "surface": 1270.23,
+      "radius": 2.01
+    },
+    {
+      "nom": "Plélan-le-Petit",
+      "code": "22180",
+      "codesPostaux": ["22980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2256, 48.4274]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2189, 48.4334]
+      },
+      "population": 1947,
+      "surface": 2176.78,
+      "radius": 2.63
+    },
+    {
+      "nom": "Plélauff",
+      "code": "22181",
+      "codesPostaux": ["22570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1933, 48.1954]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2105, 48.2073]
+      },
+      "population": 687,
+      "surface": 2594.69,
+      "radius": 2.87
+    },
+    {
+      "nom": "Plélo",
+      "code": "22182",
+      "codesPostaux": ["22170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9183, 48.5567]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9459, 48.5562]
+      },
+      "population": 3283,
+      "surface": 4446.14,
+      "radius": 3.76
+    },
+    {
+      "nom": "Plémet",
+      "code": "22183",
+      "codesPostaux": ["22210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.596, 48.1732]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5901, 48.1786]
+      },
+      "population": 3751,
+      "surface": 5759.81,
+      "radius": 4.28
+    },
+    {
+      "nom": "Plémy",
+      "code": "22184",
+      "codesPostaux": ["22150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6716, 48.337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6831, 48.3359]
+      },
+      "population": 1583,
+      "surface": 3995.74,
+      "radius": 3.57
+    },
+    {
+      "nom": "Plénée-Jugon",
+      "code": "22185",
+      "codesPostaux": ["22640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.412, 48.3537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4, 48.3635]
+      },
+      "population": 2533,
+      "surface": 6237.69,
+      "radius": 4.46
+    },
+    {
+      "nom": "Pléneuf-Val-André",
+      "code": "22186",
+      "codesPostaux": ["22370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5351, 48.5854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5406, 48.5859]
+      },
+      "population": 4094,
+      "surface": 1697.88,
+      "radius": 2.32
+    },
+    {
+      "nom": "Plérin",
+      "code": "22187",
+      "codesPostaux": ["22190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7818, 48.5467]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7702, 48.535]
+      },
+      "population": 14527,
+      "surface": 2754.63,
+      "radius": 2.96
+    },
+    {
+      "nom": "Plerneuf",
+      "code": "22188",
+      "codesPostaux": ["22170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8824, 48.5051]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8855, 48.516]
+      },
+      "population": 1119,
+      "surface": 852.51,
+      "radius": 1.65
+    },
+    {
+      "nom": "Plésidy",
+      "code": "22189",
+      "codesPostaux": ["22720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1292, 48.4444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1221, 48.4481]
+      },
+      "population": 562,
+      "surface": 2620.99,
+      "radius": 2.89
+    },
+    {
+      "nom": "Pleslin-Trigavou",
+      "code": "22190",
+      "codesPostaux": ["22490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0706, 48.5285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0572, 48.5326]
+      },
+      "population": 4043,
+      "surface": 2194.69,
+      "radius": 2.64
+    },
+    {
+      "nom": "Plestan",
+      "code": "22193",
+      "codesPostaux": ["22640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.428, 48.4135]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4465, 48.4234]
+      },
+      "population": 1637,
+      "surface": 3336.76,
+      "radius": 3.26
+    },
+    {
+      "nom": "Plestin-les-Grèves",
+      "code": "22194",
+      "codesPostaux": ["22310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.6197, 48.6508]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.6307, 48.6541]
+      },
+      "population": 3649,
+      "surface": 3440.71,
+      "radius": 3.31
+    },
+    {
+      "nom": "Pleubian",
+      "code": "22195",
+      "codesPostaux": ["22610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1176, 48.8537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1396, 48.8422]
+      },
+      "population": 2334,
+      "surface": 2006.11,
+      "radius": 2.53
+    },
+    {
+      "nom": "Pleudaniel",
+      "code": "22196",
+      "codesPostaux": ["22740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1537, 48.7617]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1427, 48.769]
+      },
+      "population": 925,
+      "surface": 1878.51,
+      "radius": 2.45
+    },
+    {
+      "nom": "Pleudihen-sur-Rance",
+      "code": "22197",
+      "codesPostaux": ["22690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9451, 48.5138]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.953, 48.5107]
+      },
+      "population": 2974,
+      "surface": 2480.8,
+      "radius": 2.81
+    },
+    {
+      "nom": "Pleumeur-Bodou",
+      "code": "22198",
+      "codesPostaux": ["22560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5389, 48.7895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.517, 48.7738]
+      },
+      "population": 3828,
+      "surface": 2735.61,
+      "radius": 2.95
+    },
+    {
+      "nom": "Pleumeur-Gautier",
+      "code": "22199",
+      "codesPostaux": ["22740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.148, 48.7986]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1584, 48.8042]
+      },
+      "population": 1186,
+      "surface": 1925.72,
+      "radius": 2.48
+    },
+    {
+      "nom": "Plévenon",
+      "code": "22201",
+      "codesPostaux": ["22240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3171, 48.6581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3313, 48.6551]
+      },
+      "population": 757,
+      "surface": 1407.37,
+      "radius": 2.12
+    },
+    {
+      "nom": "Plévin",
+      "code": "22202",
+      "codesPostaux": ["22340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5191, 48.22]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5039, 48.2271]
+      },
+      "population": 754,
+      "surface": 2777.94,
+      "radius": 2.97
+    },
+    {
+      "nom": "Plœuc-L'Hermitage",
+      "code": "22203",
+      "codesPostaux": ["22150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8172, 48.3353]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7568, 48.3469]
+      },
+      "population": 4117,
+      "surface": 8406.91,
+      "radius": 5.17
+    },
+    {
+      "nom": "Ploëzal",
+      "code": "22204",
+      "codesPostaux": ["22260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1805, 48.7179]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2044, 48.7145]
+      },
+      "population": 1227,
+      "surface": 2683.84,
+      "radius": 2.92
+    },
+    {
+      "nom": "Plorec-sur-Arguenon",
+      "code": "22205",
+      "codesPostaux": ["22130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3024, 48.4653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2975, 48.4792]
+      },
+      "population": 445,
+      "surface": 1386.94,
+      "radius": 2.1
+    },
+    {
+      "nom": "Plouaret",
+      "code": "22207",
+      "codesPostaux": ["22420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4832, 48.6161]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4732, 48.6115]
+      },
+      "population": 2230,
+      "surface": 3063.34,
+      "radius": 3.12
+    },
+    {
+      "nom": "Plouasne",
+      "code": "22208",
+      "codesPostaux": ["22830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0102, 48.3118]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0067, 48.3002]
+      },
+      "population": 1749,
+      "surface": 3453.8,
+      "radius": 3.32
+    },
+    {
+      "nom": "Ploubazlanec",
+      "code": "22210",
+      "codesPostaux": ["22620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0308, 48.8047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0292, 48.8018]
+      },
+      "population": 2985,
+      "surface": 1531.45,
+      "radius": 2.21
+    },
+    {
+      "nom": "Ploubezre",
+      "code": "22211",
+      "codesPostaux": ["22300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4509, 48.6877]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4481, 48.7039]
+      },
+      "population": 3741,
+      "surface": 3110.41,
+      "radius": 3.15
+    },
+    {
+      "nom": "Plouëc-du-Trieux",
+      "code": "22212",
+      "codesPostaux": ["22260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1889, 48.6719]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1911, 48.6748]
+      },
+      "population": 1140,
+      "surface": 1854.14,
+      "radius": 2.43
+    },
+    {
+      "nom": "Plouër-sur-Rance",
+      "code": "22213",
+      "codesPostaux": ["22490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0064, 48.5254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.004, 48.528]
+      },
+      "population": 3423,
+      "surface": 2021.07,
+      "radius": 2.54
+    },
+    {
+      "nom": "Plouézec",
+      "code": "22214",
+      "codesPostaux": ["22470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.976, 48.745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9844, 48.7498]
+      },
+      "population": 3129,
+      "surface": 2841.08,
+      "radius": 3.01
+    },
+    {
+      "nom": "Ploufragan",
+      "code": "22215",
+      "codesPostaux": ["22440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8001, 48.4915]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7945, 48.489]
+      },
+      "population": 11347,
+      "surface": 2685.14,
+      "radius": 2.92
+    },
+    {
+      "nom": "Plougonver",
+      "code": "22216",
+      "codesPostaux": ["22810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3859, 48.4848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3777, 48.4849]
+      },
+      "population": 766,
+      "surface": 3639.98,
+      "radius": 3.4
+    },
+    {
+      "nom": "Plougras",
+      "code": "22217",
+      "codesPostaux": ["22780"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5655, 48.5031]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5618, 48.5106]
+      },
+      "population": 428,
+      "surface": 2703.1,
+      "radius": 2.93
+    },
+    {
+      "nom": "Plougrescant",
+      "code": "22218",
+      "codesPostaux": ["22820"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2275, 48.8423]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2282, 48.8422]
+      },
+      "population": 1198,
+      "surface": 1614.93,
+      "radius": 2.27
+    },
+    {
+      "nom": "Plouguenast-Langast",
+      "code": "22219",
+      "codesPostaux": ["22150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6933, 48.2802]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7036, 48.2809]
+      },
+      "population": 2390,
+      "surface": 5547.01,
+      "radius": 4.2
+    },
+    {
+      "nom": "Plouguernével",
+      "code": "22220",
+      "codesPostaux": ["22110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2395, 48.2296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2538, 48.2383]
+      },
+      "population": 1602,
+      "surface": 4177.6,
+      "radius": 3.65
+    },
+    {
+      "nom": "Plouguiel",
+      "code": "22221",
+      "codesPostaux": ["22220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2455, 48.8065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2379, 48.7974]
+      },
+      "population": 1745,
+      "surface": 2042.49,
+      "radius": 2.55
+    },
+    {
+      "nom": "Plouha",
+      "code": "22222",
+      "codesPostaux": ["22580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9335, 48.6855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.932, 48.6759]
+      },
+      "population": 4677,
+      "surface": 4131.22,
+      "radius": 3.63
+    },
+    {
+      "nom": "Plouisy",
+      "code": "22223",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1885, 48.5775]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1845, 48.5787]
+      },
+      "population": 2013,
+      "surface": 2394.02,
+      "radius": 2.76
+    },
+    {
+      "nom": "Ploulec'h",
+      "code": "22224",
+      "codesPostaux": ["22300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5001, 48.7182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5041, 48.7184]
+      },
+      "population": 1591,
+      "surface": 979.88,
+      "radius": 1.77
+    },
+    {
+      "nom": "Ploumagoar",
+      "code": "22225",
+      "codesPostaux": ["22970"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1096, 48.5295]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1318, 48.5444]
+      },
+      "population": 5418,
+      "surface": 3211.57,
+      "radius": 3.2
+    },
+    {
+      "nom": "Ploumilliau",
+      "code": "22226",
+      "codesPostaux": ["22300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5116, 48.6869]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5232, 48.6793]
+      },
+      "population": 2460,
+      "surface": 3473.66,
+      "radius": 3.33
+    },
+    {
+      "nom": "Plounérin",
+      "code": "22227",
+      "codesPostaux": ["22780"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5472, 48.5667]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5418, 48.5664]
+      },
+      "population": 799,
+      "surface": 2633.11,
+      "radius": 2.9
+    },
+    {
+      "nom": "Plounévez-Moëdec",
+      "code": "22228",
+      "codesPostaux": ["22810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4499, 48.55]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4434, 48.5556]
+      },
+      "population": 1473,
+      "surface": 4104.54,
+      "radius": 3.61
+    },
+    {
+      "nom": "Plounévez-Quintin",
+      "code": "22229",
+      "codesPostaux": ["22110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2384, 48.2898]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2311, 48.2903]
+      },
+      "population": 1057,
+      "surface": 4326.49,
+      "radius": 3.71
+    },
+    {
+      "nom": "Plourac'h",
+      "code": "22231",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5531, 48.416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5457, 48.4161]
+      },
+      "population": 350,
+      "surface": 3258.87,
+      "radius": 3.22
+    },
+    {
+      "nom": "Plourhan",
+      "code": "22232",
+      "codesPostaux": ["22410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8839, 48.6303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8692, 48.6305]
+      },
+      "population": 2137,
+      "surface": 1726.83,
+      "radius": 2.34
+    },
+    {
+      "nom": "Plourivo",
+      "code": "22233",
+      "codesPostaux": ["22860"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0972, 48.7388]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0721, 48.7454]
+      },
+      "population": 2267,
+      "surface": 2900.21,
+      "radius": 3.04
+    },
+    {
+      "nom": "Plouvara",
+      "code": "22234",
+      "codesPostaux": ["22170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9259, 48.4962]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.915, 48.5088]
+      },
+      "population": 1149,
+      "surface": 2299.96,
+      "radius": 2.71
+    },
+    {
+      "nom": "Plouzélambre",
+      "code": "22235",
+      "codesPostaux": ["22420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5346, 48.6476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5454, 48.6438]
+      },
+      "population": 202,
+      "surface": 778.91,
+      "radius": 1.57
+    },
+    {
+      "nom": "Pludual",
+      "code": "22236",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9868, 48.6653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.982, 48.6667]
+      },
+      "population": 737,
+      "surface": 959.29,
+      "radius": 1.75
+    },
+    {
+      "nom": "Plufur",
+      "code": "22238",
+      "codesPostaux": ["22310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5756, 48.6141]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5759, 48.6068]
+      },
+      "population": 533,
+      "surface": 1749.94,
+      "radius": 2.36
+    },
+    {
+      "nom": "Plumaudan",
+      "code": "22239",
+      "codesPostaux": ["22350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1179, 48.3542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1246, 48.3579]
+      },
+      "population": 1403,
+      "surface": 1915.06,
+      "radius": 2.47
+    },
+    {
+      "nom": "Plumaugat",
+      "code": "22240",
+      "codesPostaux": ["22250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2322, 48.2451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2393, 48.2554]
+      },
+      "population": 1156,
+      "surface": 4377.41,
+      "radius": 3.73
+    },
+    {
+      "nom": "Plumieux",
+      "code": "22241",
+      "codesPostaux": ["22210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5885, 48.0957]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5808, 48.1017]
+      },
+      "population": 1021,
+      "surface": 7475.36,
+      "radius": 4.88
+    },
+    {
+      "nom": "Plurien",
+      "code": "22242",
+      "codesPostaux": ["22240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3959, 48.6115]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4013, 48.6265]
+      },
+      "population": 1513,
+      "surface": 2162.48,
+      "radius": 2.62
+    },
+    {
+      "nom": "Plusquellec",
+      "code": "22243",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4821, 48.3968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4842, 48.3855]
+      },
+      "population": 557,
+      "surface": 2683.52,
+      "radius": 2.92
+    },
+    {
+      "nom": "Plussulien",
+      "code": "22244",
+      "codesPostaux": ["22320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0608, 48.2763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0702, 48.2828]
+      },
+      "population": 507,
+      "surface": 2273.04,
+      "radius": 2.69
+    },
+    {
+      "nom": "Pluzunet",
+      "code": "22245",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3765, 48.6368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3714, 48.6421]
+      },
+      "population": 984,
+      "surface": 2359.34,
+      "radius": 2.74
+    },
+    {
+      "nom": "Pommeret",
+      "code": "22246",
+      "codesPostaux": ["22120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6215, 48.4599]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6255, 48.4623]
+      },
+      "population": 2119,
+      "surface": 1356.93,
+      "radius": 2.08
+    },
+    {
+      "nom": "Pommerit-le-Vicomte",
+      "code": "22248",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0959, 48.6182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0907, 48.6207]
+      },
+      "population": 1842,
+      "surface": 3367.44,
+      "radius": 3.27
+    },
+    {
+      "nom": "Pont-Melvez",
+      "code": "22249",
+      "codesPostaux": ["22390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2837, 48.475]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.307, 48.4601]
+      },
+      "population": 600,
+      "surface": 2354.67,
+      "radius": 2.74
+    },
+    {
+      "nom": "Pontrieux",
+      "code": "22250",
+      "codesPostaux": ["22260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1602, 48.7]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1627, 48.6972]
+      },
+      "population": 1004,
+      "surface": 104.55,
+      "radius": 0.58
+    },
+    {
+      "nom": "Pordic",
+      "code": "22251",
+      "codesPostaux": ["22590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.825, 48.5695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8174, 48.5692]
+      },
+      "population": 7393,
+      "surface": 3374.44,
+      "radius": 3.28
+    },
+    {
+      "nom": "Prat",
+      "code": "22254",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2922, 48.6804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.298, 48.6775]
+      },
+      "population": 1090,
+      "surface": 2227.73,
+      "radius": 2.66
+    },
+    {
+      "nom": "Quemper-Guézennec",
+      "code": "22256",
+      "codesPostaux": ["22260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1023, 48.7011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1073, 48.704]
+      },
+      "population": 1089,
+      "surface": 2341.23,
+      "radius": 2.73
+    },
+    {
+      "nom": "Quemperven",
+      "code": "22257",
+      "codesPostaux": ["22450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3357, 48.7267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3229, 48.724]
+      },
+      "population": 416,
+      "surface": 797.6,
+      "radius": 1.59
+    },
+    {
+      "nom": "Quessoy",
+      "code": "22258",
+      "codesPostaux": ["22120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6587, 48.4273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6576, 48.4213]
+      },
+      "population": 3930,
+      "surface": 3014.34,
+      "radius": 3.1
+    },
+    {
+      "nom": "Quévert",
+      "code": "22259",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0852, 48.466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0859, 48.465]
+      },
+      "population": 3963,
+      "surface": 1282.63,
+      "radius": 2.02
+    },
+    {
+      "nom": "Quintenic",
+      "code": "22261",
+      "codesPostaux": ["22400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.4249, 48.5104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4276, 48.5155]
+      },
+      "population": 364,
+      "surface": 751.65,
+      "radius": 1.55
+    },
+    {
+      "nom": "Quintin",
+      "code": "22262",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9132, 48.4029]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9128, 48.4035]
+      },
+      "population": 2743,
+      "surface": 310.85,
+      "radius": 0.99
+    },
+    {
+      "nom": "Rospez",
+      "code": "22265",
+      "codesPostaux": ["22300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3862, 48.7385]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3832, 48.731]
+      },
+      "population": 1790,
+      "surface": 1340.02,
+      "radius": 2.07
+    },
+    {
+      "nom": "Rostrenen",
+      "code": "22266",
+      "codesPostaux": ["22110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3105, 48.2223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3214, 48.2367]
+      },
+      "population": 3282,
+      "surface": 3234.11,
+      "radius": 3.21
+    },
+    {
+      "nom": "Rouillac",
+      "code": "22267",
+      "codesPostaux": ["22250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3661, 48.308]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3654, 48.3094]
+      },
+      "population": 402,
+      "surface": 1607.88,
+      "radius": 2.26
+    },
+    {
+      "nom": "Ruca",
+      "code": "22268",
+      "codesPostaux": ["22550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.336, 48.5598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3387, 48.5675]
+      },
+      "population": 596,
+      "surface": 1227.98,
+      "radius": 1.98
+    },
+    {
+      "nom": "Runan",
+      "code": "22269",
+      "codesPostaux": ["22260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2284, 48.6857]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2162, 48.694]
+      },
+      "population": 253,
+      "surface": 527.19,
+      "radius": 1.3
+    },
+    {
+      "nom": "Saint-Adrien",
+      "code": "22271",
+      "codesPostaux": ["22390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1318, 48.4931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1355, 48.489]
+      },
+      "population": 367,
+      "surface": 1001.55,
+      "radius": 1.79
+    },
+    {
+      "nom": "Saint-Agathon",
+      "code": "22272",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0995, 48.5664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1053, 48.5597]
+      },
+      "population": 2202,
+      "surface": 1462.49,
+      "radius": 2.16
+    },
+    {
+      "nom": "Saint-Alban",
+      "code": "22273",
+      "codesPostaux": ["22400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5174, 48.5556]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5329, 48.5574]
+      },
+      "population": 2376,
+      "surface": 3031.2,
+      "radius": 3.11
+    },
+    {
+      "nom": "Saint-André-des-Eaux",
+      "code": "22274",
+      "codesPostaux": ["22630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0131, 48.3745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0089, 48.3717]
+      },
+      "population": 395,
+      "surface": 553.47,
+      "radius": 1.33
+    },
+    {
+      "nom": "Saint-Barnabé",
+      "code": "22275",
+      "codesPostaux": ["22600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6995, 48.1387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7026, 48.1366]
+      },
+      "population": 1219,
+      "surface": 2327.85,
+      "radius": 2.72
+    },
+    {
+      "nom": "Saint-Bihy",
+      "code": "22276",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9697, 48.3763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9711, 48.3792]
+      },
+      "population": 261,
+      "surface": 837.5,
+      "radius": 1.63
+    },
+    {
+      "nom": "Saint-Brandan",
+      "code": "22277",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8736, 48.3904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8703, 48.39]
+      },
+      "population": 2285,
+      "surface": 2553.24,
+      "radius": 2.85
+    },
+    {
+      "nom": "Saint-Brieuc",
+      "code": "22278",
+      "codesPostaux": ["22000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7657, 48.5108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7641, 48.5137]
+      },
+      "population": 44607,
+      "surface": 1922.19,
+      "radius": 2.47
+    },
+    {
+      "nom": "Saint-Caradec",
+      "code": "22279",
+      "codesPostaux": ["22600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8653, 48.1993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8498, 48.1915]
+      },
+      "population": 1132,
+      "surface": 2217.7,
+      "radius": 2.66
+    },
+    {
+      "nom": "Saint-Carné",
+      "code": "22280",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0517, 48.4193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0648, 48.4156]
+      },
+      "population": 1140,
+      "surface": 852.12,
+      "radius": 1.65
+    },
+    {
+      "nom": "Saint-Carreuc",
+      "code": "22281",
+      "codesPostaux": ["22150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7471, 48.4017]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7333, 48.3972]
+      },
+      "population": 1554,
+      "surface": 1323.32,
+      "radius": 2.05
+    },
+    {
+      "nom": "Saint-Cast-le-Guildo",
+      "code": "22282",
+      "codesPostaux": ["22380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2499, 48.6077]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2635, 48.6276]
+      },
+      "population": 3353,
+      "surface": 2280.04,
+      "radius": 2.69
+    },
+    {
+      "nom": "Saint-Clet",
+      "code": "22283",
+      "codesPostaux": ["22260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1348, 48.6694]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.133, 48.6643]
+      },
+      "population": 868,
+      "surface": 1482.99,
+      "radius": 2.17
+    },
+    {
+      "nom": "Saint-Connan",
+      "code": "22284",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0786, 48.4108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0633, 48.4178]
+      },
+      "population": 297,
+      "surface": 1370.07,
+      "radius": 2.09
+    },
+    {
+      "nom": "Saint-Connec",
+      "code": "22285",
+      "codesPostaux": ["22530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9259, 48.1821]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9204, 48.1776]
+      },
+      "population": 258,
+      "surface": 1123.92,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Denoual",
+      "code": "22286",
+      "codesPostaux": ["22400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3811, 48.5193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4017, 48.5289]
+      },
+      "population": 490,
+      "surface": 870.31,
+      "radius": 1.66
+    },
+    {
+      "nom": "Saint-Donan",
+      "code": "22287",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8856, 48.4633]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8838, 48.4705]
+      },
+      "population": 1467,
+      "surface": 2289.25,
+      "radius": 2.7
+    },
+    {
+      "nom": "Saint-Étienne-du-Gué-de-l'Isle",
+      "code": "22288",
+      "codesPostaux": ["22210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6398, 48.0816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6466, 48.1024]
+      },
+      "population": 372,
+      "surface": 1516.99,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Fiacre",
+      "code": "22289",
+      "codesPostaux": ["22720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0546, 48.456]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.06, 48.4624]
+      },
+      "population": 212,
+      "surface": 978.28,
+      "radius": 1.76
+    },
+    {
+      "nom": "Saint-Gildas",
+      "code": "22291",
+      "codesPostaux": ["22800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0014, 48.4255]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0041, 48.4229]
+      },
+      "population": 242,
+      "surface": 1602.46,
+      "radius": 2.26
+    },
+    {
+      "nom": "Saint-Gilles-les-Bois",
+      "code": "22293",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0884, 48.6569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1051, 48.6526]
+      },
+      "population": 389,
+      "surface": 958.72,
+      "radius": 1.75
+    },
+    {
+      "nom": "Saint-Gilles-Pligeaux",
+      "code": "22294",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0836, 48.3767]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0943, 48.3807]
+      },
+      "population": 304,
+      "surface": 1995.9,
+      "radius": 2.52
+    },
+    {
+      "nom": "Saint-Gilles-Vieux-Marché",
+      "code": "22295",
+      "codesPostaux": ["22530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.973, 48.2481]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9742, 48.2438]
+      },
+      "population": 315,
+      "surface": 2224.87,
+      "radius": 2.66
+    },
+    {
+      "nom": "Saint-Glen",
+      "code": "22296",
+      "codesPostaux": ["22510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5266, 48.3468]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5233, 48.3596]
+      },
+      "population": 667,
+      "surface": 1110.51,
+      "radius": 1.88
+    },
+    {
+      "nom": "Saint-Hélen",
+      "code": "22299",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.9639, 48.466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9594, 48.4714]
+      },
+      "population": 1535,
+      "surface": 1714.97,
+      "radius": 2.34
+    },
+    {
+      "nom": "Saint-Hervé",
+      "code": "22300",
+      "codesPostaux": ["22460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8122, 48.2761]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8271, 48.2762]
+      },
+      "population": 413,
+      "surface": 998.35,
+      "radius": 1.78
+    },
+    {
+      "nom": "Saint-Igeaux",
+      "code": "22334",
+      "codesPostaux": ["22570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.118, 48.278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1062, 48.2732]
+      },
+      "population": 124,
+      "surface": 1290.76,
+      "radius": 2.03
+    },
+    {
+      "nom": "Saint-Jacut-de-la-Mer",
+      "code": "22302",
+      "codesPostaux": ["22750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1943, 48.6001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1899, 48.5976]
+      },
+      "population": 909,
+      "surface": 298.33,
+      "radius": 0.97
+    },
+    {
+      "nom": "Saint-Jean-Kerdaniel",
+      "code": "22304",
+      "codesPostaux": ["22170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0334, 48.5513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0221, 48.5657]
+      },
+      "population": 691,
+      "surface": 1114.42,
+      "radius": 1.88
+    },
+    {
+      "nom": "Saint-Jouan-de-l'Isle",
+      "code": "22305",
+      "codesPostaux": ["22350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1788, 48.2645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1614, 48.267]
+      },
+      "population": 456,
+      "surface": 835.07,
+      "radius": 1.63
+    },
+    {
+      "nom": "Saint-Judoce",
+      "code": "22306",
+      "codesPostaux": ["22630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-1.952, 48.3646]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-1.9535, 48.3635]
+      },
+      "population": 590,
+      "surface": 1043.51,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-Julien",
+      "code": "22307",
+      "codesPostaux": ["22940"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8177, 48.4486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8165, 48.4525]
+      },
+      "population": 2072,
+      "surface": 561.21,
+      "radius": 1.34
+    },
+    {
+      "nom": "Saint-Juvat",
+      "code": "22308",
+      "codesPostaux": ["22630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0573, 48.3663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0446, 48.353]
+      },
+      "population": 649,
+      "surface": 1804.01,
+      "radius": 2.4
+    },
+    {
+      "nom": "Saint-Laurent",
+      "code": "22310",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2472, 48.6204]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2341, 48.6201]
+      },
+      "population": 533,
+      "surface": 896.56,
+      "radius": 1.69
+    },
+    {
+      "nom": "Saint-Lormel",
+      "code": "22311",
+      "codesPostaux": ["22130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2375, 48.5494]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.231, 48.5472]
+      },
+      "population": 883,
+      "surface": 980.19,
+      "radius": 1.77
+    },
+    {
+      "nom": "Saint-Maden",
+      "code": "22312",
+      "codesPostaux": ["22350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0655, 48.3363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0754, 48.3305]
+      },
+      "population": 220,
+      "surface": 676.63,
+      "radius": 1.47
+    },
+    {
+      "nom": "Saint-Martin-des-Prés",
+      "code": "22313",
+      "codesPostaux": ["22320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9674, 48.3031]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9548, 48.3073]
+      },
+      "population": 321,
+      "surface": 2060.32,
+      "radius": 2.56
+    },
+    {
+      "nom": "Saint-Maudan",
+      "code": "22314",
+      "codesPostaux": ["22600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7672, 48.1071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7752, 48.1125]
+      },
+      "population": 399,
+      "surface": 683.76,
+      "radius": 1.48
+    },
+    {
+      "nom": "Saint-Maudez",
+      "code": "22315",
+      "codesPostaux": ["22980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1798, 48.4549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1814, 48.453]
+      },
+      "population": 285,
+      "surface": 537.68,
+      "radius": 1.31
+    },
+    {
+      "nom": "Saint-Mayeux",
+      "code": "22316",
+      "codesPostaux": ["22320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.021, 48.264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0057, 48.2555]
+      },
+      "population": 460,
+      "surface": 3076.57,
+      "radius": 3.13
+    },
+    {
+      "nom": "Saint-Méloir-des-Bois",
+      "code": "22317",
+      "codesPostaux": ["22980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2559, 48.4376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2502, 48.4573]
+      },
+      "population": 272,
+      "surface": 633.81,
+      "radius": 1.42
+    },
+    {
+      "nom": "Saint-Michel-de-Plélan",
+      "code": "22318",
+      "codesPostaux": ["22980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.219, 48.4617]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2145, 48.4654]
+      },
+      "population": 320,
+      "surface": 772.47,
+      "radius": 1.57
+    },
+    {
+      "nom": "Saint-Michel-en-Grève",
+      "code": "22319",
+      "codesPostaux": ["22300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5563, 48.6758]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5651, 48.6847]
+      },
+      "population": 447,
+      "surface": 468.96,
+      "radius": 1.22
+    },
+    {
+      "nom": "Saint-Nicodème",
+      "code": "22320",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.342, 48.3602]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3391, 48.3425]
+      },
+      "population": 168,
+      "surface": 1723.97,
+      "radius": 2.34
+    },
+    {
+      "nom": "Saint-Nicolas-du-Pélem",
+      "code": "22321",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.166, 48.3265]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1638, 48.3147]
+      },
+      "population": 1536,
+      "surface": 4145.81,
+      "radius": 3.63
+    },
+    {
+      "nom": "Saint-Péver",
+      "code": "22322",
+      "codesPostaux": ["22720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0878, 48.4819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1012, 48.4814]
+      },
+      "population": 388,
+      "surface": 1313.98,
+      "radius": 2.05
+    },
+    {
+      "nom": "Saint-Pôtan",
+      "code": "22323",
+      "codesPostaux": ["22550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2977, 48.5589]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2922, 48.5575]
+      },
+      "population": 833,
+      "surface": 2020.16,
+      "radius": 2.54
+    },
+    {
+      "nom": "Saint-Quay-Perros",
+      "code": "22324",
+      "codesPostaux": ["22700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4493, 48.7787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4467, 48.792]
+      },
+      "population": 1289,
+      "surface": 474.71,
+      "radius": 1.23
+    },
+    {
+      "nom": "Saint-Quay-Portrieux",
+      "code": "22325",
+      "codesPostaux": ["22410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8403, 48.6552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8311, 48.6519]
+      },
+      "population": 3253,
+      "surface": 401.31,
+      "radius": 1.13
+    },
+    {
+      "nom": "Saint-Rieul",
+      "code": "22326",
+      "codesPostaux": ["22270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.4235, 48.4413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4187, 48.4431]
+      },
+      "population": 548,
+      "surface": 642.97,
+      "radius": 1.43
+    },
+    {
+      "nom": "Saint-Samson-sur-Rance",
+      "code": "22327",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0172, 48.49]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0273, 48.492]
+      },
+      "population": 1630,
+      "surface": 636.27,
+      "radius": 1.42
+    },
+    {
+      "nom": "Saint-Servais",
+      "code": "22328",
+      "codesPostaux": ["22160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3753, 48.3819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.387, 48.388]
+      },
+      "population": 427,
+      "surface": 2828.11,
+      "radius": 3
+    },
+    {
+      "nom": "Saint-Thélo",
+      "code": "22330",
+      "codesPostaux": ["22460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8381, 48.246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8556, 48.2289]
+      },
+      "population": 377,
+      "surface": 1465.29,
+      "radius": 2.16
+    },
+    {
+      "nom": "Saint-Trimoël",
+      "code": "22332",
+      "codesPostaux": ["22510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5427, 48.3928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5503, 48.3868]
+      },
+      "population": 521,
+      "surface": 860.87,
+      "radius": 1.66
+    },
+    {
+      "nom": "Saint-Vran",
+      "code": "22333",
+      "codesPostaux": ["22230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.459, 48.2428]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4413, 48.2381]
+      },
+      "population": 755,
+      "surface": 2834.74,
+      "radius": 3
+    },
+    {
+      "nom": "Sainte-Tréphine",
+      "code": "22331",
+      "codesPostaux": ["22480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1687, 48.2632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1543, 48.2688]
+      },
+      "population": 187,
+      "surface": 1267.36,
+      "radius": 2.01
+    },
+    {
+      "nom": "Senven-Léhart",
+      "code": "22335",
+      "codesPostaux": ["22720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0609, 48.4356]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0692, 48.4265]
+      },
+      "population": 241,
+      "surface": 1271.81,
+      "radius": 2.01
+    },
+    {
+      "nom": "Sévignac",
+      "code": "22337",
+      "codesPostaux": ["22250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3244, 48.3312]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.3383, 48.3327]
+      },
+      "population": 1116,
+      "surface": 4393.32,
+      "radius": 3.74
+    },
+    {
+      "nom": "Squiffiec",
+      "code": "22338",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1659, 48.6385]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1535, 48.6285]
+      },
+      "population": 752,
+      "surface": 1082.37,
+      "radius": 1.86
+    },
+    {
+      "nom": "Taden",
+      "code": "22339",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0536, 48.4867]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0176, 48.4747]
+      },
+      "population": 2599,
+      "surface": 2033.55,
+      "radius": 2.54
+    },
+    {
+      "nom": "Tonquédec",
+      "code": "22340",
+      "codesPostaux": ["22140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3962, 48.6782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3956, 48.6707]
+      },
+      "population": 1201,
+      "surface": 1849.54,
+      "radius": 2.43
+    },
+    {
+      "nom": "Tramain",
+      "code": "22341",
+      "codesPostaux": ["22640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3877, 48.4001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.4032, 48.4002]
+      },
+      "population": 700,
+      "surface": 937.11,
+      "radius": 1.73
+    },
+    {
+      "nom": "Trébédan",
+      "code": "22342",
+      "codesPostaux": ["22980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1622, 48.4056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1713, 48.3999]
+      },
+      "population": 439,
+      "surface": 1118.01,
+      "radius": 1.89
+    },
+    {
+      "nom": "Trébeurden",
+      "code": "22343",
+      "codesPostaux": ["22560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5653, 48.772]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5661, 48.7692]
+      },
+      "population": 3821,
+      "surface": 1371.57,
+      "radius": 2.09
+    },
+    {
+      "nom": "Trébrivan",
+      "code": "22344",
+      "codesPostaux": ["22340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4806, 48.3116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4748, 48.3085]
+      },
+      "population": 763,
+      "surface": 2300.76,
+      "radius": 2.71
+    },
+    {
+      "nom": "Trébry",
+      "code": "22345",
+      "codesPostaux": ["22510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.5589, 48.343]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.5536, 48.355]
+      },
+      "population": 822,
+      "surface": 2550.28,
+      "radius": 2.85
+    },
+    {
+      "nom": "Trédaniel",
+      "code": "22346",
+      "codesPostaux": ["22510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6039, 48.3482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6187, 48.3599]
+      },
+      "population": 896,
+      "surface": 1597.84,
+      "radius": 2.26
+    },
+    {
+      "nom": "Trédarzec",
+      "code": "22347",
+      "codesPostaux": ["22220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2008, 48.7922]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1997, 48.787]
+      },
+      "population": 1069,
+      "surface": 1255.49,
+      "radius": 2
+    },
+    {
+      "nom": "Trédias",
+      "code": "22348",
+      "codesPostaux": ["22250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2243, 48.367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2376, 48.3584]
+      },
+      "population": 504,
+      "surface": 1132.59,
+      "radius": 1.9
+    },
+    {
+      "nom": "Trédrez-Locquémeau",
+      "code": "22349",
+      "codesPostaux": ["22300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5623, 48.7094]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5666, 48.6985]
+      },
+      "population": 1468,
+      "surface": 1067.53,
+      "radius": 1.84
+    },
+    {
+      "nom": "Tréduder",
+      "code": "22350",
+      "codesPostaux": ["22310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5663, 48.6559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5643, 48.6501]
+      },
+      "population": 201,
+      "surface": 481.46,
+      "radius": 1.24
+    },
+    {
+      "nom": "Treffrin",
+      "code": "22351",
+      "codesPostaux": ["22340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5308, 48.3001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.517, 48.2999]
+      },
+      "population": 524,
+      "surface": 751.27,
+      "radius": 1.55
+    },
+    {
+      "nom": "Tréfumel",
+      "code": "22352",
+      "codesPostaux": ["22630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0236, 48.3401]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0264, 48.3388]
+      },
+      "population": 279,
+      "surface": 598.96,
+      "radius": 1.38
+    },
+    {
+      "nom": "Trégastel",
+      "code": "22353",
+      "codesPostaux": ["22730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.512, 48.8166]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5138, 48.8171]
+      },
+      "population": 2532,
+      "surface": 720.83,
+      "radius": 1.51
+    },
+    {
+      "nom": "Tréglamus",
+      "code": "22354",
+      "codesPostaux": ["22540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2523, 48.5534]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2731, 48.557]
+      },
+      "population": 1100,
+      "surface": 1925.79,
+      "radius": 2.48
+    },
+    {
+      "nom": "Trégomeur",
+      "code": "22356",
+      "codesPostaux": ["22590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8857, 48.5666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8834, 48.5663]
+      },
+      "population": 947,
+      "surface": 1071.61,
+      "radius": 1.85
+    },
+    {
+      "nom": "Trégonneau",
+      "code": "22358",
+      "codesPostaux": ["22200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.1644, 48.6144]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.1646, 48.6121]
+      },
+      "population": 523,
+      "surface": 628.53,
+      "radius": 1.41
+    },
+    {
+      "nom": "Trégrom",
+      "code": "22359",
+      "codesPostaux": ["22420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.4042, 48.5962]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.4045, 48.6003]
+      },
+      "population": 447,
+      "surface": 1688.08,
+      "radius": 2.32
+    },
+    {
+      "nom": "Trégueux",
+      "code": "22360",
+      "codesPostaux": ["22950"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.7454, 48.4769]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7371, 48.49]
+      },
+      "population": 8462,
+      "surface": 1446.04,
+      "radius": 2.15
+    },
+    {
+      "nom": "Tréguidel",
+      "code": "22361",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9436, 48.5996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9439, 48.6028]
+      },
+      "population": 630,
+      "surface": 665.21,
+      "radius": 1.46
+    },
+    {
+      "nom": "Tréguier",
+      "code": "22362",
+      "codesPostaux": ["22220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2326, 48.7848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2315, 48.7883]
+      },
+      "population": 2349,
+      "surface": 184.33,
+      "radius": 0.77
+    },
+    {
+      "nom": "Trélévern",
+      "code": "22363",
+      "codesPostaux": ["22660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3689, 48.8014]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3726, 48.8089]
+      },
+      "population": 1240,
+      "surface": 705.13,
+      "radius": 1.5
+    },
+    {
+      "nom": "Trélivan",
+      "code": "22364",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1025, 48.427]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1176, 48.4338]
+      },
+      "population": 2875,
+      "surface": 1132.71,
+      "radius": 1.9
+    },
+    {
+      "nom": "Trémargat",
+      "code": "22365",
+      "codesPostaux": ["22110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.268, 48.3265]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2674, 48.3321]
+      },
+      "population": 182,
+      "surface": 1398.81,
+      "radius": 2.11
+    },
+    {
+      "nom": "Trémel",
+      "code": "22366",
+      "codesPostaux": ["22310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.6219, 48.6052]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.6123, 48.6043]
+      },
+      "population": 406,
+      "surface": 1189.96,
+      "radius": 1.95
+    },
+    {
+      "nom": "Tréméreuc",
+      "code": "22368",
+      "codesPostaux": ["22490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0634, 48.5601]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0631, 48.5585]
+      },
+      "population": 728,
+      "surface": 415.59,
+      "radius": 1.15
+    },
+    {
+      "nom": "Trémeur",
+      "code": "22369",
+      "codesPostaux": ["22250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2668, 48.3535]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2634, 48.3471]
+      },
+      "population": 806,
+      "surface": 1488.03,
+      "radius": 2.18
+    },
+    {
+      "nom": "Tréméven",
+      "code": "22370",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0323, 48.6709]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.029, 48.674]
+      },
+      "population": 355,
+      "surface": 517.9,
+      "radius": 1.28
+    },
+    {
+      "nom": "Trémorel",
+      "code": "22371",
+      "codesPostaux": ["22230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.3007, 48.1891]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2903, 48.1977]
+      },
+      "population": 1154,
+      "surface": 3393.36,
+      "radius": 3.29
+    },
+    {
+      "nom": "Trémuson",
+      "code": "22372",
+      "codesPostaux": ["22440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8476, 48.5246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.848, 48.5238]
+      },
+      "population": 2238,
+      "surface": 630.11,
+      "radius": 1.42
+    },
+    {
+      "nom": "Tréogan",
+      "code": "22373",
+      "codesPostaux": ["22340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.5316, 48.1879]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.5195, 48.188]
+      },
+      "population": 107,
+      "surface": 711.61,
+      "radius": 1.51
+    },
+    {
+      "nom": "Tressignaux",
+      "code": "22375",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.9743, 48.6085]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.9841, 48.6156]
+      },
+      "population": 682,
+      "surface": 740.64,
+      "radius": 1.54
+    },
+    {
+      "nom": "Trévé",
+      "code": "22376",
+      "codesPostaux": ["22600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8074, 48.2139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.7954, 48.2125]
+      },
+      "population": 1680,
+      "surface": 2669.46,
+      "radius": 2.91
+    },
+    {
+      "nom": "Tréveneuc",
+      "code": "22377",
+      "codesPostaux": ["22410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8733, 48.6599]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8717, 48.6635]
+      },
+      "population": 813,
+      "surface": 669.72,
+      "radius": 1.46
+    },
+    {
+      "nom": "Trévérec",
+      "code": "22378",
+      "codesPostaux": ["22290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0572, 48.6619]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0589, 48.6561]
+      },
+      "population": 224,
+      "surface": 435.75,
+      "radius": 1.18
+    },
+    {
+      "nom": "Trévou-Tréguignec",
+      "code": "22379",
+      "codesPostaux": ["22660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.3451, 48.811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3579, 48.8116]
+      },
+      "population": 1581,
+      "surface": 665.69,
+      "radius": 1.46
+    },
+    {
+      "nom": "Trévron",
+      "code": "22380",
+      "codesPostaux": ["22100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.0682, 48.3909]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.0646, 48.3896]
+      },
+      "population": 681,
+      "surface": 981.41,
+      "radius": 1.77
+    },
+    {
+      "nom": "Trézény",
+      "code": "22381",
+      "codesPostaux": ["22450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.361, 48.7546]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.3669, 48.7582]
+      },
+      "population": 355,
+      "surface": 330.49,
+      "radius": 1.03
+    },
+    {
+      "nom": "Troguéry",
+      "code": "22383",
+      "codesPostaux": ["22450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.2262, 48.7612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.2247, 48.7539]
+      },
+      "population": 219,
+      "surface": 359.99,
+      "radius": 1.07
+    },
+    {
+      "nom": "Uzel",
+      "code": "22384",
+      "codesPostaux": ["22460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.8487, 48.2794]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.8408, 48.2804]
+      },
+      "population": 1134,
+      "surface": 695.01,
+      "radius": 1.49
+    },
+    {
+      "nom": "Val-d'Arguenon",
+      "code": "22237",
+      "codesPostaux": ["22130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.2946, 48.516]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.2682, 48.532]
+      },
+      "population": 2205,
+      "surface": 3853.65,
+      "radius": 3.5
+    },
+    {
+      "nom": "Vildé-Guingalan",
+      "code": "22388",
+      "codesPostaux": ["22980"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1532, 48.4351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1559, 48.4389]
+      },
+      "population": 1294,
+      "surface": 753.2,
+      "radius": 1.55
+    },
+    {
+      "nom": "Yffiniac",
+      "code": "22389",
+      "codesPostaux": ["22120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.6862, 48.4692]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.6766, 48.4845]
+      },
+      "population": 4980,
+      "surface": 1732.04,
+      "radius": 2.35
+    },
+    {
+      "nom": "Yvias",
+      "code": "22390",
+      "codesPostaux": ["22930"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-3.0449, 48.7193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-3.0525, 48.7151]
+      },
+      "population": 770,
+      "surface": 1175.48,
+      "radius": 1.93
+    },
+    {
+      "nom": "Yvignac-la-Tour",
+      "code": "22391",
+      "codesPostaux": ["22350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-2.1661, 48.3496]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-2.1747, 48.3466]
+      },
+      "population": 1106,
+      "surface": 3635.34,
+      "radius": 3.4
+    }
+  ],
+  "postalCodes": {
+    "22000": {
+      "communes": ["Saint-Brieuc"],
+      "communeCount": 1,
+      "center": [-2.7641, 48.5137],
+      "coverageRadius": 2.47,
+      "totalPopulation": 44607,
+      "totalSurface": 1922
+    },
+    "22100": {
+      "communes": [
+        "Aucaleuc",
+        "Bobital",
+        "Brusvily",
+        "Calorguen",
+        "Dinan",
+        "Le Hinglé",
+        "Lanvallay",
+        "Quévert",
+        "Saint-Carné",
+        "Saint-Hélen",
+        "Saint-Samson-sur-Rance",
+        "Taden",
+        "Trélivan",
+        "Trévron"
+      ],
+      "communeCount": 14,
+      "center": [-2.0554, 48.45],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 48.3896,
+        "maxLat": 48.492,
+        "minLon": -2.1303,
+        "maxLon": -1.9594
+      },
+      "totalPopulation": 38509,
+      "totalSurface": 14566
+    },
+    "22110": {
+      "communes": [
+        "Glomel",
+        "Kergrist-Moëlou",
+        "Mellionnec",
+        "Plouguernével",
+        "Plounévez-Quintin",
+        "Rostrenen",
+        "Trémargat"
+      ],
+      "communeCount": 7,
+      "center": [-3.3071, 48.2458],
+      "coverageRadius": 10.1,
+      "boundingBox": {
+        "minLat": 48.1748,
+        "maxLat": 48.3321,
+        "minLon": -3.3942,
+        "maxLon": -3.2311
+      },
+      "totalPopulation": 8591,
+      "totalSurface": 28206
+    },
+    "22120": {
+      "communes": ["Hillion", "Pommeret", "Quessoy", "Yffiniac"],
+      "communeCount": 4,
+      "center": [-2.6622, 48.4733],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 48.4213,
+        "maxLat": 48.5133,
+        "minLon": -2.6766,
+        "maxLon": -2.6255
+      },
+      "totalPopulation": 15333,
+      "totalSurface": 8568
+    },
+    "22130": {
+      "communes": [
+        "Bourseul",
+        "Corseul",
+        "Créhen",
+        "Landébia",
+        "Languenan",
+        "Plancoët",
+        "Plorec-sur-Arguenon",
+        "Val-d'Arguenon",
+        "Saint-Lormel"
+      ],
+      "communeCount": 9,
+      "center": [-2.2248, 48.5151],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 48.4792,
+        "maxLat": 48.5472,
+        "minLon": -2.336,
+        "maxLon": -2.1269
+      },
+      "totalPopulation": 13411,
+      "totalSurface": 17644
+    },
+    "22140": {
+      "communes": [
+        "Bégard",
+        "Berhet",
+        "Brélidy",
+        "Cavan",
+        "Coatascorn",
+        "Kermoroc'h",
+        "Landebaëron",
+        "Pluzunet",
+        "Prat",
+        "Saint-Laurent",
+        "Tonquédec"
+      ],
+      "communeCount": 11,
+      "center": [-3.3116, 48.6483],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 48.6201,
+        "maxLat": 48.6951,
+        "minLon": -3.3956,
+        "maxLon": -3.2064
+      },
+      "totalPopulation": 11655,
+      "totalSurface": 15884
+    },
+    "22150": {
+      "communes": ["Gausson", "Hénon", "Plémy", "Plœuc-L'Hermitage", "Plouguenast-Langast", "Saint-Carreuc"],
+      "communeCount": 6,
+      "center": [-2.7211, 48.3439],
+      "coverageRadius": 7.2,
+      "boundingBox": {
+        "minLat": 48.2809,
+        "maxLat": 48.3972,
+        "minLon": -2.7568,
+        "maxLon": -2.6831
+      },
+      "totalPopulation": 12607,
+      "totalSurface": 25152
+    },
+    "22160": {
+      "communes": [
+        "Bulat-Pestivien",
+        "Calanhel",
+        "Callac",
+        "Carnoët",
+        "La Chapelle-Neuve",
+        "Duault",
+        "Lohuec",
+        "Maël-Pestivien",
+        "Plourac'h",
+        "Plusquellec",
+        "Saint-Nicodème",
+        "Saint-Servais"
+      ],
+      "communeCount": 12,
+      "center": [-3.4356, 48.4022],
+      "coverageRadius": 10.4,
+      "boundingBox": {
+        "minLat": 48.3425,
+        "maxLat": 48.4617,
+        "minLon": -3.5457,
+        "maxLon": -3.2957
+      },
+      "totalPopulation": 6485,
+      "totalSurface": 32213
+    },
+    "22170": {
+      "communes": [
+        "Boqueho",
+        "Bringolo",
+        "Lanrodec",
+        "Plélo",
+        "Plerneuf",
+        "Châtelaudren-Plouagat",
+        "Plouvara",
+        "Saint-Jean-Kerdaniel"
+      ],
+      "communeCount": 8,
+      "center": [-2.9704, 48.5341],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 48.4833,
+        "maxLat": 48.5765,
+        "minLon": -3.0315,
+        "maxLon": -2.8855
+      },
+      "totalPopulation": 13154,
+      "totalSurface": 18890
+    },
+    "22190": {
+      "communes": ["Plérin"],
+      "communeCount": 1,
+      "center": [-2.7702, 48.535],
+      "coverageRadius": 2.96,
+      "totalPopulation": 14527,
+      "totalSurface": 2755
+    },
+    "22200": {
+      "communes": [
+        "Grâces",
+        "Guingamp",
+        "Le Merzer",
+        "Moustéru",
+        "Pabu",
+        "Plouisy",
+        "Pommerit-le-Vicomte",
+        "Saint-Agathon",
+        "Squiffiec",
+        "Trégonneau"
+      ],
+      "communeCount": 10,
+      "center": [-3.1448, 48.5736],
+      "coverageRadius": 9.4,
+      "boundingBox": {
+        "minLat": 48.518,
+        "maxLat": 48.6285,
+        "minLon": -3.2402,
+        "maxLon": -3.0675
+      },
+      "totalPopulation": 21432,
+      "totalSurface": 14234
+    },
+    "22210": {
+      "communes": ["La Chèze", "Plémet", "Plumieux", "La Prénessaye", "Saint-Étienne-du-Gué-de-l'Isle"],
+      "communeCount": 5,
+      "center": [-2.6037, 48.1587],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 48.1017,
+        "maxLat": 48.1818,
+        "minLon": -2.6576,
+        "maxLon": -2.5808
+      },
+      "totalPopulation": 6586,
+      "totalSurface": 16741
+    },
+    "22220": {
+      "communes": ["Minihy-Tréguier", "Plouguiel", "Trédarzec", "Tréguier"],
+      "communeCount": 4,
+      "center": [-3.2274, 48.788],
+      "coverageRadius": 2.1,
+      "boundingBox": {
+        "minLat": 48.7753,
+        "maxLat": 48.7974,
+        "minLon": -3.2379,
+        "maxLon": -3.1997
+      },
+      "totalPopulation": 6426,
+      "totalSurface": 4762
+    },
+    "22230": {
+      "communes": [
+        "Gomené",
+        "Illifaut",
+        "Laurenan",
+        "Loscouët-sur-Meu",
+        "Merdrignac",
+        "Mérillac",
+        "Saint-Vran",
+        "Trémorel"
+      ],
+      "communeCount": 8,
+      "center": [-2.3931, 48.1933],
+      "coverageRadius": 11.3,
+      "boundingBox": {
+        "minLat": 48.1461,
+        "maxLat": 48.2568,
+        "minLon": -2.5343,
+        "maxLon": -2.2432
+      },
+      "totalPopulation": 7724,
+      "totalSurface": 25150
+    },
+    "22240": {
+      "communes": ["La Bouillie", "Fréhel", "Plévenon", "Plurien"],
+      "communeCount": 4,
+      "center": [-2.3842, 48.6221],
+      "coverageRadius": 6.7,
+      "boundingBox": {
+        "minLat": 48.5736,
+        "maxLat": 48.6551,
+        "minLon": -2.4372,
+        "maxLon": -2.3313
+      },
+      "totalPopulation": 4726,
+      "totalSurface": 6601
+    },
+    "22250": {
+      "communes": ["Broons", "Éréac", "Lanrelas", "Plumaugat", "Rouillac", "Sévignac", "Trédias", "Trémeur"],
+      "communeCount": 8,
+      "center": [-2.2828, 48.3055],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 48.2511,
+        "maxLat": 48.3584,
+        "minLon": -2.3654,
+        "maxLon": -2.2376
+      },
+      "totalPopulation": 8457,
+      "totalSurface": 21725
+    },
+    "22260": {
+      "communes": ["Ploëzal", "Plouëc-du-Trieux", "Pontrieux", "Quemper-Guézennec", "Runan", "Saint-Clet"],
+      "communeCount": 6,
+      "center": [-3.1647, 48.6925],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 48.6643,
+        "maxLat": 48.7145,
+        "minLon": -3.2162,
+        "maxLon": -3.1073
+      },
+      "totalPopulation": 5581,
+      "totalSurface": 8994
+    },
+    "22270": {
+      "communes": ["Jugon-les-Lacs", "Mégrit", "Plédéliac", "Saint-Rieul"],
+      "communeCount": 4,
+      "center": [-2.3408, 48.419],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 48.3755,
+        "maxLat": 48.4489,
+        "minLon": -2.4187,
+        "maxLon": -2.2468
+      },
+      "totalPopulation": 5487,
+      "totalSurface": 11914
+    },
+    "22290": {
+      "communes": [
+        "Le Faouët",
+        "Gommenec'h",
+        "Goudelin",
+        "Lanleff",
+        "Lannebert",
+        "Lanvollon",
+        "Pléguien",
+        "Pléhédel",
+        "Pludual",
+        "Saint-Gilles-les-Bois",
+        "Tréguidel",
+        "Tréméven",
+        "Tressignaux",
+        "Trévérec"
+      ],
+      "communeCount": 14,
+      "center": [-2.9999, 48.6425],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 48.6028,
+        "maxLat": 48.6964,
+        "minLon": -3.1051,
+        "maxLon": -2.9405
+      },
+      "totalPopulation": 10911,
+      "totalSurface": 12850
+    },
+    "22300": {
+      "communes": [
+        "Caouënnec-Lanvézéac",
+        "Lanmérin",
+        "Lannion",
+        "Ploubezre",
+        "Ploulec'h",
+        "Ploumilliau",
+        "Rospez",
+        "Saint-Michel-en-Grève",
+        "Trédrez-Locquémeau"
+      ],
+      "communeCount": 9,
+      "center": [-3.4628, 48.7217],
+      "coverageRadius": 8.6,
+      "boundingBox": {
+        "minLat": 48.6793,
+        "maxLat": 48.741,
+        "minLon": -3.5666,
+        "maxLon": -3.3512
+      },
+      "totalPopulation": 33499,
+      "totalSurface": 16272
+    },
+    "22310": {
+      "communes": ["Plestin-les-Grèves", "Plufur", "Tréduder", "Trémel"],
+      "communeCount": 4,
+      "center": [-3.6203, 48.6444],
+      "coverageRadius": 5.4,
+      "boundingBox": {
+        "minLat": 48.6043,
+        "maxLat": 48.6541,
+        "minLon": -3.6307,
+        "maxLon": -3.5643
+      },
+      "totalPopulation": 4789,
+      "totalSurface": 6862
+    },
+    "22320": {
+      "communes": [
+        "Le Bodéo",
+        "Corlay",
+        "La Harmoye",
+        "Le Haut-Corlay",
+        "Plussulien",
+        "Saint-Martin-des-Prés",
+        "Saint-Mayeux"
+      ],
+      "communeCount": 7,
+      "center": [-3.0259, 48.3063],
+      "coverageRadius": 7,
+      "boundingBox": {
+        "minLat": 48.2555,
+        "maxLat": 48.3357,
+        "minLon": -3.0702,
+        "maxLon": -2.9345
+      },
+      "totalPopulation": 3408,
+      "totalSurface": 14233
+    },
+    "22330": {
+      "communes": ["Le Mené"],
+      "communeCount": 1,
+      "center": [-2.5221, 48.2953],
+      "coverageRadius": 7.21,
+      "totalPopulation": 6420,
+      "totalSurface": 16337
+    },
+    "22340": {
+      "communes": ["Locarn", "Maël-Carhaix", "Le Moustoir", "Paule", "Plévin", "Trébrivan", "Treffrin", "Tréogan"],
+      "communeCount": 8,
+      "center": [-3.4661, 48.2736],
+      "coverageRadius": 10.4,
+      "boundingBox": {
+        "minLat": 48.188,
+        "maxLat": 48.3202,
+        "minLon": -3.5195,
+        "maxLon": -3.423
+      },
+      "totalPopulation": 5357,
+      "totalSurface": 18781
+    },
+    "22350": {
+      "communes": [
+        "Caulnes",
+        "La Chapelle-Blanche",
+        "Guenroc",
+        "Guitté",
+        "Plumaudan",
+        "Saint-Jouan-de-l'Isle",
+        "Saint-Maden",
+        "Yvignac-la-Tour"
+      ],
+      "communeCount": 8,
+      "center": [-2.1411, 48.3133],
+      "coverageRadius": 5.4,
+      "boundingBox": {
+        "minLat": 48.266,
+        "maxLat": 48.3579,
+        "minLon": -2.1747,
+        "maxLon": -2.0754
+      },
+      "totalPopulation": 6830,
+      "totalSurface": 13374
+    },
+    "22360": {
+      "communes": ["Langueux"],
+      "communeCount": 1,
+      "center": [-2.7146, 48.4942],
+      "coverageRadius": 1.71,
+      "totalPopulation": 7947,
+      "totalSurface": 922
+    },
+    "22370": {
+      "communes": ["Pléneuf-Val-André"],
+      "communeCount": 1,
+      "center": [-2.5406, 48.5859],
+      "coverageRadius": 2.32,
+      "totalPopulation": 4094,
+      "totalSurface": 1698
+    },
+    "22380": {
+      "communes": ["Saint-Cast-le-Guildo"],
+      "communeCount": 1,
+      "center": [-2.2635, 48.6276],
+      "coverageRadius": 2.69,
+      "totalPopulation": 3353,
+      "totalSurface": 2280
+    },
+    "22390": {
+      "communes": ["Bourbriac", "Gurunhuel", "Pont-Melvez", "Saint-Adrien"],
+      "communeCount": 4,
+      "center": [-3.2161, 48.478],
+      "coverageRadius": 7.5,
+      "boundingBox": {
+        "minLat": 48.4601,
+        "maxLat": 48.5157,
+        "minLon": -3.307,
+        "maxLon": -3.1355
+      },
+      "totalPopulation": 3499,
+      "totalSurface": 12667
+    },
+    "22400": {
+      "communes": [
+        "Andel",
+        "Coëtmieux",
+        "Hénansal",
+        "Lamballe-Armor",
+        "Landéhen",
+        "Noyal",
+        "Quintenic",
+        "Saint-Alban",
+        "Saint-Denoual"
+      ],
+      "communeCount": 9,
+      "center": [-2.5193, 48.4813],
+      "coverageRadius": 10.2,
+      "boundingBox": {
+        "minLat": 48.4299,
+        "maxLat": 48.5574,
+        "minLon": -2.6011,
+        "maxLon": -2.4017
+      },
+      "totalPopulation": 26840,
+      "totalSurface": 24755
+    },
+    "22410": {
+      "communes": ["Lantic", "Plourhan", "Saint-Quay-Portrieux", "Tréveneuc"],
+      "communeCount": 4,
+      "center": [-2.8603, 48.6354],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 48.5987,
+        "maxLat": 48.6635,
+        "minLon": -2.8972,
+        "maxLon": -2.8311
+      },
+      "totalPopulation": 8002,
+      "totalSurface": 4389
+    },
+    "22420": {
+      "communes": ["Lanvellec", "Plouaret", "Plouzélambre", "Trégrom", "Le Vieux-Marché"],
+      "communeCount": 5,
+      "center": [-3.4721, 48.6118],
+      "coverageRadius": 6.5,
+      "boundingBox": {
+        "minLat": 48.6003,
+        "maxLat": 48.6438,
+        "minLon": -3.5454,
+        "maxLon": -3.4045
+      },
+      "totalPopulation": 4757,
+      "totalSurface": 9655
+    },
+    "22430": {
+      "communes": ["Erquy"],
+      "communeCount": 1,
+      "center": [-2.4657, 48.6284],
+      "coverageRadius": 2.9,
+      "totalPopulation": 3929,
+      "totalSurface": 2644
+    },
+    "22440": {
+      "communes": ["La Méaugon", "Ploufragan", "Trémuson"],
+      "communeCount": 3,
+      "center": [-2.8066, 48.4952],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 48.489,
+        "maxLat": 48.5238,
+        "minLon": -2.848,
+        "maxLon": -2.7945
+      },
+      "totalPopulation": 14911,
+      "totalSurface": 3989
+    },
+    "22450": {
+      "communes": [
+        "Camlez",
+        "Coatréven",
+        "Kermaria-Sulard",
+        "Langoat",
+        "Mantallot",
+        "Quemperven",
+        "La Roche-Jaudy",
+        "Trézény",
+        "Troguéry"
+      ],
+      "communeCount": 9,
+      "center": [-3.3006, 48.7544],
+      "coverageRadius": 5.7,
+      "boundingBox": {
+        "minLat": 48.7067,
+        "maxLat": 48.7769,
+        "minLon": -3.3723,
+        "maxLon": -3.2247
+      },
+      "totalPopulation": 7459,
+      "totalSurface": 9697
+    },
+    "22460": {
+      "communes": ["Allineuc", "Grâce-Uzel", "Merléac", "Le Quillio", "Saint-Hervé", "Saint-Thélo", "Uzel"],
+      "communeCount": 7,
+      "center": [-2.8545, 48.2694],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 48.2289,
+        "maxLat": 48.3109,
+        "minLon": -2.8991,
+        "maxLon": -2.8006
+      },
+      "totalPopulation": 3999,
+      "totalSurface": 11092
+    },
+    "22470": {
+      "communes": ["Plouézec"],
+      "communeCount": 1,
+      "center": [-2.9844, 48.7498],
+      "coverageRadius": 3.01,
+      "totalPopulation": 3129,
+      "totalSurface": 2841
+    },
+    "22480": {
+      "communes": [
+        "Canihuel",
+        "Kerien",
+        "Kerpert",
+        "Lanrivain",
+        "Magoar",
+        "Peumerit-Quintin",
+        "Saint-Connan",
+        "Saint-Gilles-Pligeaux",
+        "Saint-Nicolas-du-Pélem",
+        "Sainte-Tréphine"
+      ],
+      "communeCount": 10,
+      "center": [-3.1579, 48.3443],
+      "coverageRadius": 10.8,
+      "boundingBox": {
+        "minLat": 48.2688,
+        "maxLat": 48.4178,
+        "minLon": -3.2734,
+        "maxLon": -3.0633
+      },
+      "totalPopulation": 3912,
+      "totalSurface": 22392
+    },
+    "22490": {
+      "communes": ["Langrolay-sur-Rance", "Pleslin-Trigavou", "Plouër-sur-Rance", "Tréméreuc"],
+      "communeCount": 4,
+      "center": [-2.032, 48.5352],
+      "coverageRadius": 3.5,
+      "boundingBox": {
+        "minLat": 48.528,
+        "maxLat": 48.5585,
+        "minLon": -2.0631,
+        "maxLon": -2.0028
+      },
+      "totalPopulation": 9186,
+      "totalSurface": 5161
+    },
+    "22500": {
+      "communes": ["Kerfot", "Paimpol"],
+      "communeCount": 2,
+      "center": [-3.0471, 48.7764],
+      "coverageRadius": 4.6,
+      "boundingBox": {
+        "minLat": 48.7373,
+        "maxLat": 48.7798,
+        "minLon": -3.0488,
+        "maxLon": -3.0279
+      },
+      "totalPopulation": 7900,
+      "totalSurface": 2968
+    },
+    "22510": {
+      "communes": ["Bréhand", "Moncontour", "Penguily", "Saint-Glen", "Saint-Trimoël", "Trébry", "Trédaniel"],
+      "communeCount": 7,
+      "center": [-2.5704, 48.3753],
+      "coverageRadius": 5.6,
+      "boundingBox": {
+        "minLat": 48.355,
+        "maxLat": 48.4029,
+        "minLon": -2.6314,
+        "maxLon": -2.4958
+      },
+      "totalPopulation": 5951,
+      "totalSurface": 9832
+    },
+    "22520": {
+      "communes": ["Binic-Étables-sur-Mer"],
+      "communeCount": 1,
+      "center": [-2.8352, 48.6266],
+      "coverageRadius": 2.19,
+      "totalPopulation": 7020,
+      "totalSurface": 1505
+    },
+    "22530": {
+      "communes": ["Caurel", "Guerlédan", "Saint-Connec", "Saint-Gilles-Vieux-Marché"],
+      "communeCount": 4,
+      "center": [-2.9861, 48.2052],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 48.1776,
+        "maxLat": 48.2438,
+        "minLon": -3.0354,
+        "maxLon": -2.9204
+      },
+      "totalPopulation": 3456,
+      "totalSurface": 9578
+    },
+    "22540": {
+      "communes": ["Louargat", "Pédernec", "Tréglamus"],
+      "communeCount": 3,
+      "center": [-3.3021, 48.5757],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 48.557,
+        "maxLat": 48.5979,
+        "minLon": -3.3402,
+        "maxLon": -3.2708
+      },
+      "totalPopulation": 5384,
+      "totalSurface": 10464
+    },
+    "22550": {
+      "communes": ["Hénanbihen", "Matignon", "Pléboulle", "Ruca", "Saint-Pôtan"],
+      "communeCount": 5,
+      "center": [-2.3254, 48.5786],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 48.5575,
+        "maxLat": 48.6088,
+        "minLon": -2.3792,
+        "maxLon": -2.288
+      },
+      "totalPopulation": 5312,
+      "totalSurface": 9311
+    },
+    "22560": {
+      "communes": ["Pleumeur-Bodou", "Trébeurden"],
+      "communeCount": 2,
+      "center": [-3.5415, 48.7715],
+      "coverageRadius": 1.9,
+      "boundingBox": {
+        "minLat": 48.7692,
+        "maxLat": 48.7738,
+        "minLon": -3.5661,
+        "maxLon": -3.517
+      },
+      "totalPopulation": 7649,
+      "totalSurface": 4107
+    },
+    "22570": {
+      "communes": ["Gouarec", "Bon Repos sur Blavet", "Lescouët-Gouarec", "Plélauff", "Saint-Igeaux"],
+      "communeCount": 5,
+      "center": [-3.165, 48.2256],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 48.1608,
+        "maxLat": 48.2732,
+        "minLon": -3.2371,
+        "maxLon": -3.1062
+      },
+      "totalPopulation": 3175,
+      "totalSurface": 11971
+    },
+    "22580": {
+      "communes": ["Lanloup", "Plouha"],
+      "communeCount": 2,
+      "center": [-2.9336, 48.6778],
+      "coverageRadius": 4.6,
+      "boundingBox": {
+        "minLat": 48.6759,
+        "maxLat": 48.7136,
+        "minLon": -2.9642,
+        "maxLon": -2.932
+      },
+      "totalPopulation": 4928,
+      "totalSurface": 4385
+    },
+    "22590": {
+      "communes": ["Pordic", "Trégomeur"],
+      "communeCount": 2,
+      "center": [-2.8249, 48.5689],
+      "coverageRadius": 4.4,
+      "boundingBox": {
+        "minLat": 48.5663,
+        "maxLat": 48.5692,
+        "minLon": -2.8834,
+        "maxLon": -2.8174
+      },
+      "totalPopulation": 8340,
+      "totalSurface": 4446
+    },
+    "22600": {
+      "communes": ["Hémonstoir", "Loudéac", "La Motte", "Saint-Barnabé", "Saint-Caradec", "Saint-Maudan", "Trévé"],
+      "communeCount": 7,
+      "center": [-2.7607, 48.1835],
+      "coverageRadius": 8,
+      "boundingBox": {
+        "minLat": 48.1125,
+        "maxLat": 48.2359,
+        "minLon": -2.8498,
+        "maxLon": -2.7026
+      },
+      "totalPopulation": 17172,
+      "totalSurface": 21855
+    },
+    "22610": {
+      "communes": ["Kerbors", "Lanmodez", "Pleubian"],
+      "communeCount": 3,
+      "center": [-3.1395, 48.8409],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 48.8288,
+        "maxLat": 48.8422,
+        "minLon": -3.1838,
+        "maxLon": -3.1069
+      },
+      "totalPopulation": 3020,
+      "totalSurface": 3126
+    },
+    "22620": {
+      "communes": ["Ploubazlanec"],
+      "communeCount": 1,
+      "center": [-3.0292, 48.8018],
+      "coverageRadius": 2.21,
+      "totalPopulation": 2985,
+      "totalSurface": 1531
+    },
+    "22630": {
+      "communes": [
+        "Les Champs-Géraux",
+        "Évran",
+        "Le Quiou",
+        "Saint-André-des-Eaux",
+        "Saint-Judoce",
+        "Saint-Juvat",
+        "Tréfumel"
+      ],
+      "communeCount": 7,
+      "center": [-1.9902, 48.3781],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 48.3388,
+        "maxLat": 48.4177,
+        "minLon": -2.0446,
+        "maxLon": -1.9535
+      },
+      "totalPopulation": 5108,
+      "totalSurface": 8922
+    },
+    "22640": {
+      "communes": ["La Malhoure", "Plénée-Jugon", "Plestan", "Tramain"],
+      "communeCount": 4,
+      "center": [-2.425, 48.3898],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 48.3635,
+        "maxLat": 48.4234,
+        "minLon": -2.4952,
+        "maxLon": -2.4
+      },
+      "totalPopulation": 5491,
+      "totalSurface": 11028
+    },
+    "22650": {
+      "communes": ["Beaussais-sur-Mer"],
+      "communeCount": 1,
+      "center": [-2.1394, 48.5791],
+      "coverageRadius": 3.65,
+      "totalPopulation": 4379,
+      "totalSurface": 4188
+    },
+    "22660": {
+      "communes": ["Trélévern", "Trévou-Tréguignec"],
+      "communeCount": 2,
+      "center": [-3.3644, 48.8104],
+      "coverageRadius": 0.7,
+      "boundingBox": {
+        "minLat": 48.8089,
+        "maxLat": 48.8116,
+        "minLon": -3.3726,
+        "maxLon": -3.3579
+      },
+      "totalPopulation": 2821,
+      "totalSurface": 1371
+    },
+    "22680": {
+      "communes": ["Binic-Étables-sur-Mer"],
+      "communeCount": 1,
+      "center": [-2.8352, 48.6266],
+      "coverageRadius": 2.19,
+      "totalPopulation": 7020,
+      "totalSurface": 1505
+    },
+    "22690": {
+      "communes": ["Pleudihen-sur-Rance", "La Vicomté-sur-Rance"],
+      "communeCount": 2,
+      "center": [-1.9611, 48.5042],
+      "coverageRadius": 2.5,
+      "boundingBox": {
+        "minLat": 48.4873,
+        "maxLat": 48.5107,
+        "minLon": -1.9822,
+        "maxLon": -1.953
+      },
+      "totalPopulation": 4116,
+      "totalSurface": 2946
+    },
+    "22700": {
+      "communes": ["Louannec", "Perros-Guirec", "Saint-Quay-Perros"],
+      "communeCount": 3,
+      "center": [-3.4366, 48.8073],
+      "coverageRadius": 2.3,
+      "boundingBox": {
+        "minLat": 48.792,
+        "maxLat": 48.8155,
+        "minLon": -3.4467,
+        "maxLon": -3.4128
+      },
+      "totalPopulation": 11602,
+      "totalSurface": 3392
+    },
+    "22710": {
+      "communes": ["Penvénan"],
+      "communeCount": 1,
+      "center": [-3.2972, 48.812],
+      "coverageRadius": 2.54,
+      "totalPopulation": 2548,
+      "totalSurface": 2023
+    },
+    "22720": {
+      "communes": ["Plésidy", "Saint-Fiacre", "Saint-Péver", "Senven-Léhart"],
+      "communeCount": 4,
+      "center": [-3.0978, 48.4558],
+      "coverageRadius": 3.9,
+      "boundingBox": {
+        "minLat": 48.4265,
+        "maxLat": 48.4814,
+        "minLon": -3.1221,
+        "maxLon": -3.06
+      },
+      "totalPopulation": 1403,
+      "totalSurface": 6185
+    },
+    "22730": {
+      "communes": ["Trégastel"],
+      "communeCount": 1,
+      "center": [-3.5138, 48.8171],
+      "coverageRadius": 1.51,
+      "totalPopulation": 2532,
+      "totalSurface": 721
+    },
+    "22740": {
+      "communes": ["Lézardrieux", "Pleudaniel", "Pleumeur-Gautier"],
+      "communeCount": 3,
+      "center": [-3.1315, 48.7878],
+      "coverageRadius": 2.7,
+      "boundingBox": {
+        "minLat": 48.769,
+        "maxLat": 48.8042,
+        "minLon": -3.1584,
+        "maxLon": -3.1056
+      },
+      "totalPopulation": 3743,
+      "totalSurface": 5009
+    },
+    "22750": {
+      "communes": ["Saint-Jacut-de-la-Mer"],
+      "communeCount": 1,
+      "center": [-2.1899, 48.5976],
+      "coverageRadius": 0.97,
+      "totalPopulation": 909,
+      "totalSurface": 298
+    },
+    "22770": {
+      "communes": ["Lancieux"],
+      "communeCount": 1,
+      "center": [-2.1507, 48.6047],
+      "coverageRadius": 1.44,
+      "totalPopulation": 1602,
+      "totalSurface": 655
+    },
+    "22780": {
+      "communes": ["Loguivy-Plougras", "Plougras", "Plounérin"],
+      "communeCount": 3,
+      "center": [-3.5246, 48.5372],
+      "coverageRadius": 4.1,
+      "boundingBox": {
+        "minLat": 48.5106,
+        "maxLat": 48.5664,
+        "minLon": -3.5618,
+        "maxLon": -3.4869
+      },
+      "totalPopulation": 2015,
+      "totalSurface": 10214
+    },
+    "22800": {
+      "communes": [
+        "Cohiniac",
+        "Le Fœil",
+        "Lanfains",
+        "Le Leslay",
+        "Plaine-Haute",
+        "Quintin",
+        "Saint-Bihy",
+        "Saint-Brandan",
+        "Saint-Donan",
+        "Saint-Gildas",
+        "Le Vieux-Bourg"
+      ],
+      "communeCount": 11,
+      "center": [-2.9044, 48.4141],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 48.3515,
+        "maxLat": 48.4705,
+        "minLon": -3.0041,
+        "maxLon": -2.8552
+      },
+      "totalPopulation": 12487,
+      "totalSurface": 17939
+    },
+    "22810": {
+      "communes": ["Belle-Isle-en-Terre", "Loc-Envel", "Plougonver", "Plounévez-Moëdec"],
+      "communeCount": 4,
+      "center": [-3.4128, 48.5348],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 48.4849,
+        "maxLat": 48.5556,
+        "minLon": -3.4434,
+        "maxLon": -3.3777
+      },
+      "totalPopulation": 3344,
+      "totalSurface": 9517
+    },
+    "22820": {
+      "communes": ["Plougrescant"],
+      "communeCount": 1,
+      "center": [-3.2282, 48.8422],
+      "coverageRadius": 2.27,
+      "totalPopulation": 1198,
+      "totalSurface": 1615
+    },
+    "22830": {
+      "communes": ["Plouasne"],
+      "communeCount": 1,
+      "center": [-2.0067, 48.3002],
+      "coverageRadius": 3.32,
+      "totalPopulation": 1749,
+      "totalSurface": 3454
+    },
+    "22860": {
+      "communes": ["Plourivo"],
+      "communeCount": 1,
+      "center": [-3.0721, 48.7454],
+      "coverageRadius": 3.04,
+      "totalPopulation": 2267,
+      "totalSurface": 2900
+    },
+    "22870": {
+      "communes": ["Île-de-Bréhat"],
+      "communeCount": 1,
+      "center": [-3.0012, 48.8435],
+      "coverageRadius": 1,
+      "totalPopulation": 427,
+      "totalSurface": 316
+    },
+    "22930": {
+      "communes": ["Yvias"],
+      "communeCount": 1,
+      "center": [-3.0525, 48.7151],
+      "coverageRadius": 1.93,
+      "totalPopulation": 770,
+      "totalSurface": 1175
+    },
+    "22940": {
+      "communes": ["Plaintel", "Saint-Julien"],
+      "communeCount": 2,
+      "center": [-2.8176, 48.4217],
+      "coverageRadius": 3.5,
+      "boundingBox": {
+        "minLat": 48.4077,
+        "maxLat": 48.4525,
+        "minLon": -2.8181,
+        "maxLon": -2.8165
+      },
+      "totalPopulation": 6643,
+      "totalSurface": 3313
+    },
+    "22950": {
+      "communes": ["Trégueux"],
+      "communeCount": 1,
+      "center": [-2.7371, 48.49],
+      "coverageRadius": 2.15,
+      "totalPopulation": 8462,
+      "totalSurface": 1446
+    },
+    "22960": {
+      "communes": ["Plédran"],
+      "communeCount": 1,
+      "center": [-2.7457, 48.4461],
+      "coverageRadius": 3.32,
+      "totalPopulation": 6909,
+      "totalSurface": 3464
+    },
+    "22970": {
+      "communes": ["Coadout", "Ploumagoar"],
+      "communeCount": 2,
+      "center": [-3.1369, 48.542],
+      "coverageRadius": 4.7,
+      "boundingBox": {
+        "minLat": 48.5177,
+        "maxLat": 48.5444,
+        "minLon": -3.1878,
+        "maxLon": -3.1318
+      },
+      "totalPopulation": 5956,
+      "totalSurface": 4200
+    },
+    "22980": {
+      "communes": [
+        "La Landec",
+        "Languédias",
+        "Plélan-le-Petit",
+        "Saint-Maudez",
+        "Saint-Méloir-des-Bois",
+        "Saint-Michel-de-Plélan",
+        "Trébédan",
+        "Vildé-Guingalan"
+      ],
+      "communeCount": 8,
+      "center": [-2.195, 48.4319],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 48.3892,
+        "maxLat": 48.4654,
+        "minLon": -2.2502,
+        "maxLon": -2.1559
+      },
+      "totalPopulation": 5864,
+      "totalSurface": 7638
+    }
+  }
+}

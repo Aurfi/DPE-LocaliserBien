@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.npm
+
+# Production build
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+department-fetch.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output
+
+# Cache
+.eslintcache
+.cache/
+
+# Claude AI
+.claude/
+
+# Backups
+backups/
+
+# Documentation/Reference files
+ADEME_API_REFERENCE.md
+
+# Production-specific files (keep examples only)
+nginx.conf
+.htaccess.production
+public/.htaccess
+public/sitemap.xml
+public/robots.txt

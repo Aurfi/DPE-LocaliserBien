@@ -1,0 +1,8381 @@
+{
+  "departmentCode": "32",
+  "departmentName": "Gers",
+  "stats": {
+    "communeCount": 458,
+    "totalPopulation": 192450,
+    "totalSurface": 630230
+  },
+  "communes": [
+    {
+      "nom": "Aignan",
+      "code": "32001",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.091, 43.699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0828, 43.6973]
+      },
+      "population": 722,
+      "surface": 3215.39,
+      "radius": 3.2
+    },
+    {
+      "nom": "Ansan",
+      "code": "32002",
+      "codesPostaux": ["32270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7843, 43.686]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.774, 43.6907]
+      },
+      "population": 74,
+      "surface": 777.42,
+      "radius": 1.57
+    },
+    {
+      "nom": "Antras",
+      "code": "32003",
+      "codesPostaux": ["32360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4465, 43.7304]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.448, 43.7291]
+      },
+      "population": 41,
+      "surface": 675.9,
+      "radius": 1.47
+    },
+    {
+      "nom": "Arblade-le-Bas",
+      "code": "32004",
+      "codesPostaux": ["32720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1759, 43.7049]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1781, 43.7069]
+      },
+      "population": 131,
+      "surface": 760.17,
+      "radius": 1.56
+    },
+    {
+      "nom": "Arblade-le-Haut",
+      "code": "32005",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.066, 43.7415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0597, 43.7386]
+      },
+      "population": 319,
+      "surface": 1239.64,
+      "radius": 1.99
+    },
+    {
+      "nom": "Ardizas",
+      "code": "32007",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9977, 43.7262]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0011, 43.7164]
+      },
+      "population": 219,
+      "surface": 854.53,
+      "radius": 1.65
+    },
+    {
+      "nom": "Armentieux",
+      "code": "32008",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0966, 43.5219]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0911, 43.5199]
+      },
+      "population": 71,
+      "surface": 488.04,
+      "radius": 1.25
+    },
+    {
+      "nom": "Armous-et-Cau",
+      "code": "32009",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1883, 43.5707]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1909, 43.5718]
+      },
+      "population": 95,
+      "surface": 927.42,
+      "radius": 1.72
+    },
+    {
+      "nom": "Arrouède",
+      "code": "32010",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5835, 43.3599]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5854, 43.3597]
+      },
+      "population": 86,
+      "surface": 651.78,
+      "radius": 1.44
+    },
+    {
+      "nom": "Aubiet",
+      "code": "32012",
+      "codesPostaux": ["32270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7809, 43.6516]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7837, 43.6467]
+      },
+      "population": 1127,
+      "surface": 3919.71,
+      "radius": 3.53
+    },
+    {
+      "nom": "Auch",
+      "code": "32013",
+      "codesPostaux": ["32000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5673, 43.6602]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5831, 43.6469]
+      },
+      "population": 22825,
+      "surface": 7342.92,
+      "radius": 4.83
+    },
+    {
+      "nom": "Augnax",
+      "code": "32014",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7746, 43.7246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7747, 43.7227]
+      },
+      "population": 126,
+      "surface": 402.4,
+      "radius": 1.13
+    },
+    {
+      "nom": "Aujan-Mournède",
+      "code": "32015",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5016, 43.3748]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5025, 43.3817]
+      },
+      "population": 90,
+      "surface": 874.91,
+      "radius": 1.67
+    },
+    {
+      "nom": "Auradé",
+      "code": "32016",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0768, 43.5621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.058, 43.566]
+      },
+      "population": 676,
+      "surface": 2163.44,
+      "radius": 2.62
+    },
+    {
+      "nom": "Aurensan",
+      "code": "32017",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.204, 43.62]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2034, 43.6175]
+      },
+      "population": 132,
+      "surface": 633.96,
+      "radius": 1.42
+    },
+    {
+      "nom": "Aurimont",
+      "code": "32018",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8289, 43.5664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8222, 43.5726]
+      },
+      "population": 215,
+      "surface": 815.73,
+      "radius": 1.61
+    },
+    {
+      "nom": "Aussos",
+      "code": "32468",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6434, 43.3768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6525, 43.3752]
+      },
+      "population": 64,
+      "surface": 815.39,
+      "radius": 1.61
+    },
+    {
+      "nom": "Auterive",
+      "code": "32019",
+      "codesPostaux": ["32550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6325, 43.578]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6145, 43.5827]
+      },
+      "population": 530,
+      "surface": 1094.2,
+      "radius": 1.87
+    },
+    {
+      "nom": "Aux-Aussat",
+      "code": "32020",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2625, 43.4413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2684, 43.436]
+      },
+      "population": 272,
+      "surface": 1278.97,
+      "radius": 2.02
+    },
+    {
+      "nom": "Avensac",
+      "code": "32021",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9007, 43.83]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9022, 43.8315]
+      },
+      "population": 73,
+      "surface": 485.49,
+      "radius": 1.24
+    },
+    {
+      "nom": "Avéron-Bergelle",
+      "code": "32022",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0647, 43.7581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0689, 43.7465]
+      },
+      "population": 182,
+      "surface": 1458.13,
+      "radius": 2.15
+    },
+    {
+      "nom": "Avezan",
+      "code": "32023",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.802, 43.8824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7949, 43.8761]
+      },
+      "population": 87,
+      "surface": 568.88,
+      "radius": 1.35
+    },
+    {
+      "nom": "Ayguetinte",
+      "code": "32024",
+      "codesPostaux": ["32410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4159, 43.8308]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4281, 43.8344]
+      },
+      "population": 157,
+      "surface": 631.64,
+      "radius": 1.42
+    },
+    {
+      "nom": "Ayzieu",
+      "code": "32025",
+      "codesPostaux": ["32800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0257, 43.8586]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0176, 43.8498]
+      },
+      "population": 159,
+      "surface": 1385.28,
+      "radius": 2.1
+    },
+    {
+      "nom": "Bajonnette",
+      "code": "32026",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7663, 43.8127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7666, 43.8093]
+      },
+      "population": 108,
+      "surface": 757.13,
+      "radius": 1.55
+    },
+    {
+      "nom": "Barcelonne-du-Gers",
+      "code": "32027",
+      "codesPostaux": ["32720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2065, 43.695]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.236, 43.7035]
+      },
+      "population": 1378,
+      "surface": 2054.68,
+      "radius": 2.56
+    },
+    {
+      "nom": "Barcugnan",
+      "code": "32028",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3973, 43.3753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4053, 43.3772]
+      },
+      "population": 104,
+      "surface": 921.23,
+      "radius": 1.71
+    },
+    {
+      "nom": "Barran",
+      "code": "32029",
+      "codesPostaux": ["32350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4487, 43.6236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.443, 43.6165]
+      },
+      "population": 673,
+      "surface": 5249.9,
+      "radius": 4.09
+    },
+    {
+      "nom": "Bars",
+      "code": "32030",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3005, 43.5118]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2962, 43.5125]
+      },
+      "population": 124,
+      "surface": 1077.85,
+      "radius": 1.85
+    },
+    {
+      "nom": "Bascous",
+      "code": "32031",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1383, 43.7968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1446, 43.796]
+      },
+      "population": 171,
+      "surface": 1029.33,
+      "radius": 1.81
+    },
+    {
+      "nom": "Bassoues",
+      "code": "32032",
+      "codesPostaux": ["32320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2461, 43.5735]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2462, 43.5792]
+      },
+      "population": 331,
+      "surface": 3266.06,
+      "radius": 3.22
+    },
+    {
+      "nom": "Bazian",
+      "code": "32033",
+      "codesPostaux": ["32320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3187, 43.6679]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3222, 43.6694]
+      },
+      "population": 103,
+      "surface": 1267.56,
+      "radius": 2.01
+    },
+    {
+      "nom": "Bazugues",
+      "code": "32034",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3427, 43.4521]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3443, 43.4476]
+      },
+      "population": 62,
+      "surface": 540.91,
+      "radius": 1.31
+    },
+    {
+      "nom": "Beaucaire",
+      "code": "32035",
+      "codesPostaux": ["32410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3721, 43.8336]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3851, 43.8377]
+      },
+      "population": 246,
+      "surface": 1599.04,
+      "radius": 2.26
+    },
+    {
+      "nom": "Beaumarchés",
+      "code": "32036",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1029, 43.5907]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0894, 43.5852]
+      },
+      "population": 679,
+      "surface": 3289.77,
+      "radius": 3.24
+    },
+    {
+      "nom": "Beaumont",
+      "code": "32037",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2882, 43.937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.286, 43.9465]
+      },
+      "population": 125,
+      "surface": 759.34,
+      "radius": 1.55
+    },
+    {
+      "nom": "Beaupuy",
+      "code": "32038",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0172, 43.647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0065, 43.6441]
+      },
+      "population": 212,
+      "surface": 658.68,
+      "radius": 1.45
+    },
+    {
+      "nom": "Beccas",
+      "code": "32039",
+      "codesPostaux": ["32730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1558, 43.4323]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1543, 43.4301]
+      },
+      "population": 122,
+      "surface": 339.08,
+      "radius": 1.04
+    },
+    {
+      "nom": "Bédéchan",
+      "code": "32040",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.789, 43.5741]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8002, 43.5732]
+      },
+      "population": 133,
+      "surface": 790.68,
+      "radius": 1.59
+    },
+    {
+      "nom": "Bellegarde",
+      "code": "32041",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6329, 43.4307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6245, 43.4248]
+      },
+      "population": 159,
+      "surface": 1482.37,
+      "radius": 2.17
+    },
+    {
+      "nom": "Belloc-Saint-Clamens",
+      "code": "32042",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.438, 43.4562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4348, 43.4569]
+      },
+      "population": 137,
+      "surface": 1059.27,
+      "radius": 1.84
+    },
+    {
+      "nom": "Belmont",
+      "code": "32043",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2399, 43.6886]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2386, 43.6881]
+      },
+      "population": 150,
+      "surface": 1518.51,
+      "radius": 2.2
+    },
+    {
+      "nom": "Béraut",
+      "code": "32044",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4106, 43.9221]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4065, 43.9175]
+      },
+      "population": 296,
+      "surface": 1247.65,
+      "radius": 1.99
+    },
+    {
+      "nom": "Berdoues",
+      "code": "32045",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4004, 43.4685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4066, 43.4818]
+      },
+      "population": 421,
+      "surface": 1802.67,
+      "radius": 2.4
+    },
+    {
+      "nom": "Bernède",
+      "code": "32046",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.22, 43.6723]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2201, 43.6681]
+      },
+      "population": 186,
+      "surface": 824.96,
+      "radius": 1.62
+    },
+    {
+      "nom": "Berrac",
+      "code": "32047",
+      "codesPostaux": ["32480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5501, 44.0093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5497, 44.0126]
+      },
+      "population": 114,
+      "surface": 803.53,
+      "radius": 1.6
+    },
+    {
+      "nom": "Betcave-Aguin",
+      "code": "32048",
+      "codesPostaux": ["32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6795, 43.448]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6912, 43.4413]
+      },
+      "population": 91,
+      "surface": 1003.36,
+      "radius": 1.79
+    },
+    {
+      "nom": "Bétous",
+      "code": "32049",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0241, 43.7184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0266, 43.7169]
+      },
+      "population": 72,
+      "surface": 518.79,
+      "radius": 1.29
+    },
+    {
+      "nom": "Betplan",
+      "code": "32050",
+      "codesPostaux": ["32730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2093, 43.4202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2004, 43.4132]
+      },
+      "population": 101,
+      "surface": 554.02,
+      "radius": 1.33
+    },
+    {
+      "nom": "Bézéril",
+      "code": "32051",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8811, 43.5333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.877, 43.5437]
+      },
+      "population": 106,
+      "surface": 965.99,
+      "radius": 1.75
+    },
+    {
+      "nom": "Bezolles",
+      "code": "32052",
+      "codesPostaux": ["32310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.355, 43.8209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3503, 43.823]
+      },
+      "population": 132,
+      "surface": 1107.14,
+      "radius": 1.88
+    },
+    {
+      "nom": "Bézues-Bajon",
+      "code": "32053",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6103, 43.3875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6004, 43.3852]
+      },
+      "population": 185,
+      "surface": 1326.22,
+      "radius": 2.05
+    },
+    {
+      "nom": "Biran",
+      "code": "32054",
+      "codesPostaux": ["32350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4021, 43.6908]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4176, 43.6957]
+      },
+      "population": 377,
+      "surface": 3659.11,
+      "radius": 3.41
+    },
+    {
+      "nom": "Bivès",
+      "code": "32055",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8087, 43.8317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8054, 43.8333]
+      },
+      "population": 119,
+      "surface": 1002.52,
+      "radius": 1.79
+    },
+    {
+      "nom": "Blanquefort",
+      "code": "32056",
+      "codesPostaux": ["32270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8063, 43.6737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.807, 43.6743]
+      },
+      "population": 43,
+      "surface": 337.1,
+      "radius": 1.04
+    },
+    {
+      "nom": "Blaziert",
+      "code": "32057",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4826, 43.9272]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4767, 43.9342]
+      },
+      "population": 128,
+      "surface": 1099.11,
+      "radius": 1.87
+    },
+    {
+      "nom": "Blousson-Sérian",
+      "code": "32058",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1943, 43.4595]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1948, 43.4597]
+      },
+      "population": 34,
+      "surface": 531.29,
+      "radius": 1.3
+    },
+    {
+      "nom": "Bonas",
+      "code": "32059",
+      "codesPostaux": ["32410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4068, 43.7808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.413, 43.7792]
+      },
+      "population": 116,
+      "surface": 1014.86,
+      "radius": 1.8
+    },
+    {
+      "nom": "Boucagnères",
+      "code": "32060",
+      "codesPostaux": ["32550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6171, 43.5613]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6148, 43.563]
+      },
+      "population": 205,
+      "surface": 617.09,
+      "radius": 1.4
+    },
+    {
+      "nom": "Boulaur",
+      "code": "32061",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7646, 43.5503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7733, 43.5407]
+      },
+      "population": 179,
+      "surface": 905.56,
+      "radius": 1.7
+    },
+    {
+      "nom": "Bourrouillan",
+      "code": "32062",
+      "codesPostaux": ["32370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0094, 43.8282]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0125, 43.8196]
+      },
+      "population": 167,
+      "surface": 869.21,
+      "radius": 1.66
+    },
+    {
+      "nom": "Bouzon-Gellenave",
+      "code": "32063",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0289, 43.6865]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.032, 43.6875]
+      },
+      "population": 163,
+      "surface": 1036.03,
+      "radius": 1.82
+    },
+    {
+      "nom": "Bretagne-d'Armagnac",
+      "code": "32064",
+      "codesPostaux": ["32800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1327, 43.8896]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1382, 43.8861]
+      },
+      "population": 400,
+      "surface": 1230.55,
+      "radius": 1.98
+    },
+    {
+      "nom": "Brugnens",
+      "code": "32066",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7192, 43.844]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7262, 43.8411]
+      },
+      "population": 255,
+      "surface": 1351.6,
+      "radius": 2.07
+    },
+    {
+      "nom": "Cadeilhan",
+      "code": "32068",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7682, 43.8312]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7712, 43.8283]
+      },
+      "population": 145,
+      "surface": 844.5,
+      "radius": 1.64
+    },
+    {
+      "nom": "Cadeillan",
+      "code": "32069",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8385, 43.4217]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8459, 43.4203]
+      },
+      "population": 78,
+      "surface": 440.86,
+      "radius": 1.18
+    },
+    {
+      "nom": "Cahuzac-sur-Adour",
+      "code": "32070",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0256, 43.6385]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0223, 43.6387]
+      },
+      "population": 198,
+      "surface": 673.7,
+      "radius": 1.46
+    },
+    {
+      "nom": "Caillavet",
+      "code": "32071",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3435, 43.7071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3321, 43.7125]
+      },
+      "population": 166,
+      "surface": 1462.43,
+      "radius": 2.16
+    },
+    {
+      "nom": "Callian",
+      "code": "32072",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2641, 43.6311]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.277, 43.6286]
+      },
+      "population": 53,
+      "surface": 787.79,
+      "radius": 1.58
+    },
+    {
+      "nom": "Campagne-d'Armagnac",
+      "code": "32073",
+      "codesPostaux": ["32800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0068, 43.8604]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0019, 43.8638]
+      },
+      "population": 212,
+      "surface": 552.34,
+      "radius": 1.33
+    },
+    {
+      "nom": "Cap d'Astarac",
+      "code": "32365",
+      "codesPostaux": ["32140", "32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6679, 43.3627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6473, 43.3442]
+      },
+      "population": 281,
+      "surface": 3247.6,
+      "radius": 3.22
+    },
+    {
+      "nom": "Cassaigne",
+      "code": "32075",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.344, 43.9036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3375, 43.9078]
+      },
+      "population": 227,
+      "surface": 860.63,
+      "radius": 1.66
+    },
+    {
+      "nom": "Castelnau d'Auzan Labarrère",
+      "code": "32079",
+      "codesPostaux": ["32250", "32440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1097, 43.9544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.084, 43.9491]
+      },
+      "population": 1185,
+      "surface": 5713.19,
+      "radius": 4.26
+    },
+    {
+      "nom": "Castelnau-Barbarens",
+      "code": "32076",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7295, 43.5842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7243, 43.576]
+      },
+      "population": 579,
+      "surface": 4273.75,
+      "radius": 3.69
+    },
+    {
+      "nom": "Castelnau-d'Anglès",
+      "code": "32077",
+      "codesPostaux": ["32320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2998, 43.6176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2953, 43.6088]
+      },
+      "population": 91,
+      "surface": 1199.17,
+      "radius": 1.95
+    },
+    {
+      "nom": "Castelnau-d'Arbieu",
+      "code": "32078",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6909, 43.8852]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.704, 43.8828]
+      },
+      "population": 226,
+      "surface": 1627.53,
+      "radius": 2.28
+    },
+    {
+      "nom": "Castelnau-sur-l'Auvignon",
+      "code": "32080",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4699, 43.9631]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4579, 43.9717]
+      },
+      "population": 147,
+      "surface": 1018.71,
+      "radius": 1.8
+    },
+    {
+      "nom": "Castelnavet",
+      "code": "32081",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1401, 43.6733]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1306, 43.6733]
+      },
+      "population": 116,
+      "surface": 1805.05,
+      "radius": 2.4
+    },
+    {
+      "nom": "Castéra-Lectourois",
+      "code": "32082",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6144, 43.9902]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6098, 43.9755]
+      },
+      "population": 337,
+      "surface": 1891.19,
+      "radius": 2.45
+    },
+    {
+      "nom": "Castéra-Verduzan",
+      "code": "32083",
+      "codesPostaux": ["32410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4327, 43.8026]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4306, 43.8046]
+      },
+      "population": 1042,
+      "surface": 2010.09,
+      "radius": 2.53
+    },
+    {
+      "nom": "Castéron",
+      "code": "32084",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8741, 43.9044]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8609, 43.8922]
+      },
+      "population": 52,
+      "surface": 1112.3,
+      "radius": 1.88
+    },
+    {
+      "nom": "Castet-Arrouy",
+      "code": "32085",
+      "codesPostaux": ["32340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7313, 43.9815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7142, 43.9798]
+      },
+      "population": 174,
+      "surface": 802.4,
+      "radius": 1.6
+    },
+    {
+      "nom": "Castex",
+      "code": "32086",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.312, 43.3811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3095, 43.3785]
+      },
+      "population": 76,
+      "surface": 545.51,
+      "radius": 1.32
+    },
+    {
+      "nom": "Castex-d'Armagnac",
+      "code": "32087",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1681, 43.8669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1676, 43.8694]
+      },
+      "population": 141,
+      "surface": 1235.73,
+      "radius": 1.98
+    },
+    {
+      "nom": "Castillon-Debats",
+      "code": "32088",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2277, 43.7287]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2166, 43.7293]
+      },
+      "population": 333,
+      "surface": 3547.31,
+      "radius": 3.36
+    },
+    {
+      "nom": "Castillon-Massas",
+      "code": "32089",
+      "codesPostaux": ["32360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5431, 43.7159]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5438, 43.7192]
+      },
+      "population": 225,
+      "surface": 979.42,
+      "radius": 1.77
+    },
+    {
+      "nom": "Castillon-Savès",
+      "code": "32090",
+      "codesPostaux": ["32490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9848, 43.5642]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9851, 43.5694]
+      },
+      "population": 335,
+      "surface": 1203.16,
+      "radius": 1.96
+    },
+    {
+      "nom": "Castin",
+      "code": "32091",
+      "codesPostaux": ["32810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5363, 43.6914]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5475, 43.6915]
+      },
+      "population": 345,
+      "surface": 1135.73,
+      "radius": 1.9
+    },
+    {
+      "nom": "Catonvielle",
+      "code": "32092",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9593, 43.6556]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9627, 43.6597]
+      },
+      "population": 105,
+      "surface": 311.11,
+      "radius": 1
+    },
+    {
+      "nom": "Caumont",
+      "code": "32093",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1113, 43.6933]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.103, 43.6907]
+      },
+      "population": 103,
+      "surface": 714.01,
+      "radius": 1.51
+    },
+    {
+      "nom": "Caupenne-d'Armagnac",
+      "code": "32094",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0701, 43.7864]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0666, 43.7879]
+      },
+      "population": 446,
+      "surface": 2166.58,
+      "radius": 2.63
+    },
+    {
+      "nom": "Caussens",
+      "code": "32095",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4405, 43.9477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4236, 43.943]
+      },
+      "population": 587,
+      "surface": 1340.11,
+      "radius": 2.07
+    },
+    {
+      "nom": "Cazaubon",
+      "code": "32096",
+      "codesPostaux": ["32150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0336, 43.9285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.072, 43.9339]
+      },
+      "population": 1663,
+      "surface": 5602.54,
+      "radius": 4.22
+    },
+    {
+      "nom": "Cazaux-d'Anglès",
+      "code": "32097",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2634, 43.6574]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2596, 43.658]
+      },
+      "population": 112,
+      "surface": 1256.09,
+      "radius": 2
+    },
+    {
+      "nom": "Cazaux-Savès",
+      "code": "32098",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.979, 43.5447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9831, 43.5417]
+      },
+      "population": 329,
+      "surface": 565.01,
+      "radius": 1.34
+    },
+    {
+      "nom": "Cazaux-Villecomtal",
+      "code": "32099",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1754, 43.4471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1742, 43.4533]
+      },
+      "population": 72,
+      "surface": 409.28,
+      "radius": 1.14
+    },
+    {
+      "nom": "Cazeneuve",
+      "code": "32100",
+      "codesPostaux": ["32800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.166, 43.8891]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1614, 43.8864]
+      },
+      "population": 170,
+      "surface": 838.04,
+      "radius": 1.63
+    },
+    {
+      "nom": "Céran",
+      "code": "32101",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6981, 43.816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6865, 43.817]
+      },
+      "population": 229,
+      "surface": 1054.41,
+      "radius": 1.83
+    },
+    {
+      "nom": "Cézan",
+      "code": "32102",
+      "codesPostaux": ["32410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4991, 43.8035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.499, 43.8125]
+      },
+      "population": 203,
+      "surface": 1235.1,
+      "radius": 1.98
+    },
+    {
+      "nom": "Chélan",
+      "code": "32103",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5441, 43.3532]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5439, 43.345]
+      },
+      "population": 173,
+      "surface": 1398.19,
+      "radius": 2.11
+    },
+    {
+      "nom": "Clermont-Pouyguillès",
+      "code": "32104",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5282, 43.4751]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5221, 43.4711]
+      },
+      "population": 159,
+      "surface": 1283.97,
+      "radius": 2.02
+    },
+    {
+      "nom": "Clermont-Savès",
+      "code": "32105",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0107, 43.62]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0309, 43.6175]
+      },
+      "population": 402,
+      "surface": 520.48,
+      "radius": 1.29
+    },
+    {
+      "nom": "Cologne",
+      "code": "32106",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9759, 43.7197]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9767, 43.7219]
+      },
+      "population": 920,
+      "surface": 655.91,
+      "radius": 1.44
+    },
+    {
+      "nom": "Condom",
+      "code": "32107",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3782, 43.9653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3743, 43.9563]
+      },
+      "population": 6454,
+      "surface": 9769.71,
+      "radius": 5.58
+    },
+    {
+      "nom": "Corneillan",
+      "code": "32108",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1841, 43.6547]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1798, 43.6574]
+      },
+      "population": 156,
+      "surface": 842.25,
+      "radius": 1.64
+    },
+    {
+      "nom": "Couloumé-Mondebat",
+      "code": "32109",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1148, 43.6354]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0925, 43.6408]
+      },
+      "population": 203,
+      "surface": 2322.34,
+      "radius": 2.72
+    },
+    {
+      "nom": "Courrensan",
+      "code": "32110",
+      "codesPostaux": ["32330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2338, 43.8419]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2438, 43.8488]
+      },
+      "population": 394,
+      "surface": 2546.95,
+      "radius": 2.85
+    },
+    {
+      "nom": "Courties",
+      "code": "32111",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1535, 43.5744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1567, 43.575]
+      },
+      "population": 46,
+      "surface": 607.72,
+      "radius": 1.39
+    },
+    {
+      "nom": "Crastes",
+      "code": "32112",
+      "codesPostaux": ["32270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7332, 43.7158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.729, 43.7235]
+      },
+      "population": 261,
+      "surface": 1947.15,
+      "radius": 2.49
+    },
+    {
+      "nom": "Cravencères",
+      "code": "32113",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.03, 43.7766]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.036, 43.7657]
+      },
+      "population": 93,
+      "surface": 918.59,
+      "radius": 1.71
+    },
+    {
+      "nom": "Cuélas",
+      "code": "32114",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4473, 43.351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4506, 43.3516]
+      },
+      "population": 125,
+      "surface": 666.5,
+      "radius": 1.46
+    },
+    {
+      "nom": "Dému",
+      "code": "32115",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1687, 43.761]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1662, 43.7653]
+      },
+      "population": 318,
+      "surface": 2883.86,
+      "radius": 3.03
+    },
+    {
+      "nom": "Duffort",
+      "code": "32116",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4209, 43.3427]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4141, 43.3448]
+      },
+      "population": 131,
+      "surface": 996.72,
+      "radius": 1.78
+    },
+    {
+      "nom": "Duran",
+      "code": "32117",
+      "codesPostaux": ["32810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5624, 43.672]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5643, 43.6688]
+      },
+      "population": 857,
+      "surface": 659.32,
+      "radius": 1.45
+    },
+    {
+      "nom": "Durban",
+      "code": "32118",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5706, 43.5396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5793, 43.5385]
+      },
+      "population": 136,
+      "surface": 1731.73,
+      "radius": 2.35
+    },
+    {
+      "nom": "Eauze",
+      "code": "32119",
+      "codesPostaux": ["32800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1057, 43.8614]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1015, 43.8614]
+      },
+      "population": 4060,
+      "surface": 7026.21,
+      "radius": 4.73
+    },
+    {
+      "nom": "Encausse",
+      "code": "32120",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0306, 43.6923]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0403, 43.6982]
+      },
+      "population": 444,
+      "surface": 1582,
+      "radius": 2.24
+    },
+    {
+      "nom": "Endoufielle",
+      "code": "32121",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0196, 43.5489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0227, 43.5509]
+      },
+      "population": 516,
+      "surface": 1729.11,
+      "radius": 2.35
+    },
+    {
+      "nom": "Esclassan-Labastide",
+      "code": "32122",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5505, 43.4174]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.558, 43.4217]
+      },
+      "population": 345,
+      "surface": 1201.72,
+      "radius": 1.96
+    },
+    {
+      "nom": "Escornebœuf",
+      "code": "32123",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9019, 43.6467]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9141, 43.6543]
+      },
+      "population": 570,
+      "surface": 2569.44,
+      "radius": 2.86
+    },
+    {
+      "nom": "Espaon",
+      "code": "32124",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8699, 43.4306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8674, 43.4192]
+      },
+      "population": 186,
+      "surface": 903.01,
+      "radius": 1.7
+    },
+    {
+      "nom": "Espas",
+      "code": "32125",
+      "codesPostaux": ["32370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0903, 43.7769]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0709, 43.7807]
+      },
+      "population": 132,
+      "surface": 1531.53,
+      "radius": 2.21
+    },
+    {
+      "nom": "Estampes",
+      "code": "32126",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2791, 43.4016]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2757, 43.3991]
+      },
+      "population": 162,
+      "surface": 1101.69,
+      "radius": 1.87
+    },
+    {
+      "nom": "Estang",
+      "code": "32127",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1043, 43.8761]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1075, 43.8661]
+      },
+      "population": 664,
+      "surface": 2281.65,
+      "radius": 2.69
+    },
+    {
+      "nom": "Estipouy",
+      "code": "32128",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3885, 43.5511]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3804, 43.55]
+      },
+      "population": 206,
+      "surface": 1190.05,
+      "radius": 1.95
+    },
+    {
+      "nom": "Estramiac",
+      "code": "32129",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8481, 43.8355]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.849, 43.8364]
+      },
+      "population": 122,
+      "surface": 976.82,
+      "radius": 1.76
+    },
+    {
+      "nom": "Faget-Abbatial",
+      "code": "32130",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.69, 43.5075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6937, 43.5052]
+      },
+      "population": 215,
+      "surface": 1757.08,
+      "radius": 2.36
+    },
+    {
+      "nom": "Flamarens",
+      "code": "32131",
+      "codesPostaux": ["32340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7941, 44.0234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7928, 44.0175]
+      },
+      "population": 136,
+      "surface": 1447.69,
+      "radius": 2.15
+    },
+    {
+      "nom": "Fleurance",
+      "code": "32132",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6405, 43.8432]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6633, 43.8494]
+      },
+      "population": 6130,
+      "surface": 4354.08,
+      "radius": 3.72
+    },
+    {
+      "nom": "Fourcès",
+      "code": "32133",
+      "codesPostaux": ["32250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2305, 43.9958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.23, 43.9929]
+      },
+      "population": 261,
+      "surface": 2373.57,
+      "radius": 2.75
+    },
+    {
+      "nom": "Frégouville",
+      "code": "32134",
+      "codesPostaux": ["32490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9601, 43.575]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9545, 43.5886]
+      },
+      "population": 359,
+      "surface": 1228.91,
+      "radius": 1.98
+    },
+    {
+      "nom": "Fustérouau",
+      "code": "32135",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0048, 43.6856]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.012, 43.6848]
+      },
+      "population": 130,
+      "surface": 795.65,
+      "radius": 1.59
+    },
+    {
+      "nom": "Galiax",
+      "code": "32136",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0104, 43.611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0141, 43.6151]
+      },
+      "population": 184,
+      "surface": 618.46,
+      "radius": 1.4
+    },
+    {
+      "nom": "Garravet",
+      "code": "32138",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9101, 43.4201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9146, 43.414]
+      },
+      "population": 148,
+      "surface": 933.16,
+      "radius": 1.72
+    },
+    {
+      "nom": "Gaudonville",
+      "code": "32139",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8446, 43.8844]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8456, 43.8839]
+      },
+      "population": 106,
+      "surface": 741.59,
+      "radius": 1.54
+    },
+    {
+      "nom": "Gaujac",
+      "code": "32140",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8232, 43.4749]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8307, 43.477]
+      },
+      "population": 75,
+      "surface": 504.77,
+      "radius": 1.27
+    },
+    {
+      "nom": "Gaujan",
+      "code": "32141",
+      "codesPostaux": ["32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7234, 43.3992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7221, 43.4082]
+      },
+      "population": 119,
+      "surface": 1079.09,
+      "radius": 1.85
+    },
+    {
+      "nom": "Gavarret-sur-Aulouste",
+      "code": "32142",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6614, 43.7806]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6522, 43.7699]
+      },
+      "population": 138,
+      "surface": 836.28,
+      "radius": 1.63
+    },
+    {
+      "nom": "Gazaupouy",
+      "code": "32143",
+      "codesPostaux": ["32480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.472, 44.0129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4518, 44.0077]
+      },
+      "population": 245,
+      "surface": 2117.33,
+      "radius": 2.6
+    },
+    {
+      "nom": "Gazax-et-Baccarisse",
+      "code": "32144",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.197, 43.6018]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1917, 43.608]
+      },
+      "population": 69,
+      "surface": 949.2,
+      "radius": 1.74
+    },
+    {
+      "nom": "Gée-Rivière",
+      "code": "32145",
+      "codesPostaux": ["32720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1871, 43.6757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1892, 43.678]
+      },
+      "population": 44,
+      "surface": 272.34,
+      "radius": 0.93
+    },
+    {
+      "nom": "Gimbrède",
+      "code": "32146",
+      "codesPostaux": ["32340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7192, 44.0382]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7183, 44.0405]
+      },
+      "population": 285,
+      "surface": 2496.42,
+      "radius": 2.82
+    },
+    {
+      "nom": "Gimont",
+      "code": "32147",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8815, 43.6175]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8769, 43.6262]
+      },
+      "population": 3110,
+      "surface": 2786.54,
+      "radius": 2.98
+    },
+    {
+      "nom": "Giscaro",
+      "code": "32148",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9345, 43.6065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9294, 43.607]
+      },
+      "population": 91,
+      "surface": 547.08,
+      "radius": 1.32
+    },
+    {
+      "nom": "Gondrin",
+      "code": "32149",
+      "codesPostaux": ["32330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2487, 43.8778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2376, 43.8866]
+      },
+      "population": 1179,
+      "surface": 3491.74,
+      "radius": 3.33
+    },
+    {
+      "nom": "Goutz",
+      "code": "32150",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.732, 43.8083]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7348, 43.8049]
+      },
+      "population": 213,
+      "surface": 842.45,
+      "radius": 1.64
+    },
+    {
+      "nom": "Goux",
+      "code": "32151",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0222, 43.6158]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0212, 43.618]
+      },
+      "population": 63,
+      "surface": 542.77,
+      "radius": 1.31
+    },
+    {
+      "nom": "Haget",
+      "code": "32152",
+      "codesPostaux": ["32730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1612, 43.4164]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1603, 43.4192]
+      },
+      "population": 353,
+      "surface": 925.2,
+      "radius": 1.72
+    },
+    {
+      "nom": "Haulies",
+      "code": "32153",
+      "codesPostaux": ["32550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6685, 43.557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6681, 43.5564]
+      },
+      "population": 152,
+      "surface": 1024.7,
+      "radius": 1.81
+    },
+    {
+      "nom": "Homps",
+      "code": "32154",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.845, 43.8103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8503, 43.8092]
+      },
+      "population": 111,
+      "surface": 936.99,
+      "radius": 1.73
+    },
+    {
+      "nom": "Idrac-Respaillès",
+      "code": "32156",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4704, 43.5168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.457, 43.5243]
+      },
+      "population": 214,
+      "surface": 1310.45,
+      "radius": 2.04
+    },
+    {
+      "nom": "Izotges",
+      "code": "32161",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0197, 43.6543]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0119, 43.6517]
+      },
+      "population": 86,
+      "surface": 305.06,
+      "radius": 0.99
+    },
+    {
+      "nom": "Jegun",
+      "code": "32162",
+      "codesPostaux": ["32360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4374, 43.7637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4589, 43.7576]
+      },
+      "population": 1182,
+      "surface": 3923.85,
+      "radius": 3.53
+    },
+    {
+      "nom": "Jû-Belloc",
+      "code": "32163",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0162, 43.5761]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0054, 43.583]
+      },
+      "population": 283,
+      "surface": 1015.81,
+      "radius": 1.8
+    },
+    {
+      "nom": "Juillac",
+      "code": "32164",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1221, 43.5447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1272, 43.543]
+      },
+      "population": 116,
+      "surface": 756.93,
+      "radius": 1.55
+    },
+    {
+      "nom": "Juilles",
+      "code": "32165",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8268, 43.6071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8298, 43.6015]
+      },
+      "population": 229,
+      "surface": 1397.95,
+      "radius": 2.11
+    },
+    {
+      "nom": "Justian",
+      "code": "32166",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2995, 43.8148]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2995, 43.8161]
+      },
+      "population": 107,
+      "surface": 631.74,
+      "radius": 1.42
+    },
+    {
+      "nom": "L'Isle-Arné",
+      "code": "32157",
+      "codesPostaux": ["32270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7862, 43.6167]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7728, 43.6151]
+      },
+      "population": 187,
+      "surface": 694.04,
+      "radius": 1.49
+    },
+    {
+      "nom": "L'Isle-Bouzon",
+      "code": "32158",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7383, 43.9254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7285, 43.9265]
+      },
+      "population": 248,
+      "surface": 1602.33,
+      "radius": 2.26
+    },
+    {
+      "nom": "L'Isle-de-Noé",
+      "code": "32159",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4284, 43.5866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.413, 43.5868]
+      },
+      "population": 543,
+      "surface": 2587.98,
+      "radius": 2.87
+    },
+    {
+      "nom": "L'Isle-Jourdain",
+      "code": "32160",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0826, 43.6159]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0816, 43.6134]
+      },
+      "population": 9499,
+      "surface": 7090.39,
+      "radius": 4.75
+    },
+    {
+      "nom": "La Romieu",
+      "code": "32345",
+      "codesPostaux": ["32480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4998, 43.9881]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.499, 43.9812]
+      },
+      "population": 547,
+      "surface": 2782.4,
+      "radius": 2.98
+    },
+    {
+      "nom": "La Sauvetat",
+      "code": "32417",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5369, 43.8497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5283, 43.8533]
+      },
+      "population": 418,
+      "surface": 2760.88,
+      "radius": 2.96
+    },
+    {
+      "nom": "Laas",
+      "code": "32167",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.302, 43.4735]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3108, 43.4698]
+      },
+      "population": 318,
+      "surface": 1102.93,
+      "radius": 1.87
+    },
+    {
+      "nom": "Labarthe",
+      "code": "32169",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5764, 43.4699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5784, 43.4728]
+      },
+      "population": 147,
+      "surface": 654.54,
+      "radius": 1.44
+    },
+    {
+      "nom": "Labarthète",
+      "code": "32170",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1639, 43.6285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1567, 43.6297]
+      },
+      "population": 146,
+      "surface": 1109.64,
+      "radius": 1.88
+    },
+    {
+      "nom": "Labastide-Savès",
+      "code": "32171",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9775, 43.522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9804, 43.5192]
+      },
+      "population": 187,
+      "surface": 362.95,
+      "radius": 1.07
+    },
+    {
+      "nom": "Labéjan",
+      "code": "32172",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5072, 43.5395]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4995, 43.5385]
+      },
+      "population": 291,
+      "surface": 1897.01,
+      "radius": 2.46
+    },
+    {
+      "nom": "Labrihe",
+      "code": "32173",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8752, 43.7652]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8754, 43.7704]
+      },
+      "population": 213,
+      "surface": 955.86,
+      "radius": 1.74
+    },
+    {
+      "nom": "Ladevèze-Rivière",
+      "code": "32174",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0855, 43.5515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0737, 43.552]
+      },
+      "population": 220,
+      "surface": 1364.04,
+      "radius": 2.08
+    },
+    {
+      "nom": "Ladevèze-Ville",
+      "code": "32175",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0642, 43.5407]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0575, 43.5332]
+      },
+      "population": 214,
+      "surface": 905.93,
+      "radius": 1.7
+    },
+    {
+      "nom": "Lagarde",
+      "code": "32176",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5625, 43.9706]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5554, 43.9637]
+      },
+      "population": 123,
+      "surface": 887.54,
+      "radius": 1.68
+    },
+    {
+      "nom": "Lagarde-Hachan",
+      "code": "32177",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4995, 43.407]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4933, 43.4085]
+      },
+      "population": 167,
+      "surface": 854.4,
+      "radius": 1.65
+    },
+    {
+      "nom": "Lagardère",
+      "code": "32178",
+      "codesPostaux": ["32310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3226, 43.8401]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3262, 43.8405]
+      },
+      "population": 78,
+      "surface": 504.5,
+      "radius": 1.27
+    },
+    {
+      "nom": "Lagraulet-du-Gers",
+      "code": "32180",
+      "codesPostaux": ["32330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1981, 43.8868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2119, 43.9028]
+      },
+      "population": 559,
+      "surface": 2739.11,
+      "radius": 2.95
+    },
+    {
+      "nom": "Laguian-Mazous",
+      "code": "32181",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2579, 43.4136]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2588, 43.4206]
+      },
+      "population": 248,
+      "surface": 1014.86,
+      "radius": 1.8
+    },
+    {
+      "nom": "Lahas",
+      "code": "32182",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9009, 43.5644]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.891, 43.5546]
+      },
+      "population": 181,
+      "surface": 1469.11,
+      "radius": 2.16
+    },
+    {
+      "nom": "Lahitte",
+      "code": "32183",
+      "codesPostaux": ["32810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6798, 43.658]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6807, 43.6604]
+      },
+      "population": 233,
+      "surface": 508.47,
+      "radius": 1.27
+    },
+    {
+      "nom": "Lalanne",
+      "code": "32184",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6765, 43.8063]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6844, 43.7959]
+      },
+      "population": 132,
+      "surface": 548.79,
+      "radius": 1.32
+    },
+    {
+      "nom": "Lalanne-Arqué",
+      "code": "32185",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6399, 43.3264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6405, 43.3286]
+      },
+      "population": 149,
+      "surface": 1109.48,
+      "radius": 1.88
+    },
+    {
+      "nom": "Lamaguère",
+      "code": "32186",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6843, 43.4862]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6728, 43.4913]
+      },
+      "population": 80,
+      "surface": 667.96,
+      "radius": 1.46
+    },
+    {
+      "nom": "Lamazère",
+      "code": "32187",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.452, 43.5625]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4518, 43.5574]
+      },
+      "population": 130,
+      "surface": 746.43,
+      "radius": 1.54
+    },
+    {
+      "nom": "Lamothe-Goas",
+      "code": "32188",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5711, 43.8716]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5591, 43.8643]
+      },
+      "population": 80,
+      "surface": 720.84,
+      "radius": 1.51
+    },
+    {
+      "nom": "Lanne-Soubiran",
+      "code": "32191",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1031, 43.7404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1095, 43.7472]
+      },
+      "population": 145,
+      "surface": 680.08,
+      "radius": 1.47
+    },
+    {
+      "nom": "Lannemaignan",
+      "code": "32189",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2145, 43.8995]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2003, 43.9008]
+      },
+      "population": 105,
+      "surface": 866.22,
+      "radius": 1.66
+    },
+    {
+      "nom": "Lannepax",
+      "code": "32190",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2229, 43.8084]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.227, 43.8]
+      },
+      "population": 532,
+      "surface": 3111.16,
+      "radius": 3.15
+    },
+    {
+      "nom": "Lannux",
+      "code": "32192",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2271, 43.6453]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2179, 43.6474]
+      },
+      "population": 220,
+      "surface": 1291.93,
+      "radius": 2.03
+    },
+    {
+      "nom": "Larée",
+      "code": "32193",
+      "codesPostaux": ["32150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0572, 43.9075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0548, 43.9055]
+      },
+      "population": 237,
+      "surface": 1299.91,
+      "radius": 2.03
+    },
+    {
+      "nom": "Larressingle",
+      "code": "32194",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3176, 43.9385]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3104, 43.9443]
+      },
+      "population": 213,
+      "surface": 851.3,
+      "radius": 1.65
+    },
+    {
+      "nom": "Larroque-Engalin",
+      "code": "32195",
+      "codesPostaux": ["32480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5485, 43.9897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5429, 43.9896]
+      },
+      "population": 45,
+      "surface": 625.53,
+      "radius": 1.41
+    },
+    {
+      "nom": "Larroque-Saint-Sernin",
+      "code": "32196",
+      "codesPostaux": ["32410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4711, 43.8285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4652, 43.8256]
+      },
+      "population": 161,
+      "surface": 1792.89,
+      "radius": 2.39
+    },
+    {
+      "nom": "Larroque-sur-l'Osse",
+      "code": "32197",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.281, 43.9752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2747, 43.9717]
+      },
+      "population": 218,
+      "surface": 1517.65,
+      "radius": 2.2
+    },
+    {
+      "nom": "Lartigue",
+      "code": "32198",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7009, 43.5371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7196, 43.5298]
+      },
+      "population": 196,
+      "surface": 1521.16,
+      "radius": 2.2
+    },
+    {
+      "nom": "Lasséran",
+      "code": "32200",
+      "codesPostaux": ["32550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.529, 43.6025]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5374, 43.5922]
+      },
+      "population": 350,
+      "surface": 1493.55,
+      "radius": 2.18
+    },
+    {
+      "nom": "Lasserrade",
+      "code": "32199",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0572, 43.6294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0628, 43.6252]
+      },
+      "population": 180,
+      "surface": 1272.46,
+      "radius": 2.01
+    },
+    {
+      "nom": "Lasseube-Propre",
+      "code": "32201",
+      "codesPostaux": ["32550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5786, 43.5715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5958, 43.5754]
+      },
+      "population": 336,
+      "surface": 1444.2,
+      "radius": 2.14
+    },
+    {
+      "nom": "Laujuzan",
+      "code": "32202",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1167, 43.8035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1147, 43.8063]
+      },
+      "population": 290,
+      "surface": 1145.51,
+      "radius": 1.91
+    },
+    {
+      "nom": "Lauraët",
+      "code": "32203",
+      "codesPostaux": ["32330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.257, 43.927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2486, 43.9344]
+      },
+      "population": 247,
+      "surface": 1274.34,
+      "radius": 2.01
+    },
+    {
+      "nom": "Lavardens",
+      "code": "32204",
+      "codesPostaux": ["32360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5241, 43.7628]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5117, 43.7605]
+      },
+      "population": 365,
+      "surface": 3049.47,
+      "radius": 3.12
+    },
+    {
+      "nom": "Laveraët",
+      "code": "32205",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2129, 43.5286]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2131, 43.5304]
+      },
+      "population": 102,
+      "surface": 1202.37,
+      "radius": 1.96
+    },
+    {
+      "nom": "Laymont",
+      "code": "32206",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9988, 43.4209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9849, 43.4219]
+      },
+      "population": 230,
+      "surface": 1105.39,
+      "radius": 1.88
+    },
+    {
+      "nom": "Le Brouilh-Monbert",
+      "code": "32065",
+      "codesPostaux": ["32350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4004, 43.6587]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.393, 43.6661]
+      },
+      "population": 236,
+      "surface": 1290.98,
+      "radius": 2.03
+    },
+    {
+      "nom": "Le Houga",
+      "code": "32155",
+      "codesPostaux": ["32460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1836, 43.773]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1804, 43.7747]
+      },
+      "population": 1186,
+      "surface": 3187.97,
+      "radius": 3.19
+    },
+    {
+      "nom": "Leboulin",
+      "code": "32207",
+      "codesPostaux": ["32810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6608, 43.6728]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.665, 43.6664]
+      },
+      "population": 344,
+      "surface": 901.28,
+      "radius": 1.69
+    },
+    {
+      "nom": "Lectoure",
+      "code": "32208",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6524, 43.945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6237, 43.9336]
+      },
+      "population": 3685,
+      "surface": 8606.09,
+      "radius": 5.23
+    },
+    {
+      "nom": "Lelin-Lapujolle",
+      "code": "32209",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1391, 43.7086]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1459, 43.7061]
+      },
+      "population": 276,
+      "surface": 1356.5,
+      "radius": 2.08
+    },
+    {
+      "nom": "Lias",
+      "code": "32210",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1279, 43.568]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1357, 43.5624]
+      },
+      "population": 778,
+      "surface": 1086.19,
+      "radius": 1.86
+    },
+    {
+      "nom": "Lias-d'Armagnac",
+      "code": "32211",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0646, 43.859]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0733, 43.864]
+      },
+      "population": 202,
+      "surface": 1202.72,
+      "radius": 1.96
+    },
+    {
+      "nom": "Ligardes",
+      "code": "32212",
+      "codesPostaux": ["32480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4792, 44.0413]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4815, 44.0407]
+      },
+      "population": 206,
+      "surface": 1155,
+      "radius": 1.92
+    },
+    {
+      "nom": "Lombez",
+      "code": "32213",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8995, 43.4641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9121, 43.4758]
+      },
+      "population": 2188,
+      "surface": 1966.69,
+      "radius": 2.5
+    },
+    {
+      "nom": "Loubédat",
+      "code": "32214",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0301, 43.744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.026, 43.7465]
+      },
+      "population": 111,
+      "surface": 964.4,
+      "radius": 1.75
+    },
+    {
+      "nom": "Loubersan",
+      "code": "32215",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5103, 43.5022]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4989, 43.4971]
+      },
+      "population": 161,
+      "surface": 1084.72,
+      "radius": 1.86
+    },
+    {
+      "nom": "Lourties-Monbrun",
+      "code": "32216",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5464, 43.4576]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5404, 43.4567]
+      },
+      "population": 156,
+      "surface": 961.26,
+      "radius": 1.75
+    },
+    {
+      "nom": "Louslitges",
+      "code": "32217",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1555, 43.6021]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1643, 43.5946]
+      },
+      "population": 61,
+      "surface": 1218.9,
+      "radius": 1.97
+    },
+    {
+      "nom": "Loussous-Débat",
+      "code": "32218",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0783, 43.6568]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0731, 43.6534]
+      },
+      "population": 73,
+      "surface": 509.08,
+      "radius": 1.27
+    },
+    {
+      "nom": "Lupiac",
+      "code": "32219",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1863, 43.6894]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1815, 43.6821]
+      },
+      "population": 310,
+      "surface": 3450.07,
+      "radius": 3.31
+    },
+    {
+      "nom": "Luppé-Violles",
+      "code": "32220",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1399, 43.7351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1382, 43.7356]
+      },
+      "population": 132,
+      "surface": 767.03,
+      "radius": 1.56
+    },
+    {
+      "nom": "Lussan",
+      "code": "32221",
+      "codesPostaux": ["32270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.739, 43.618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7348, 43.6252]
+      },
+      "population": 226,
+      "surface": 1283.65,
+      "radius": 2.02
+    },
+    {
+      "nom": "Magnan",
+      "code": "32222",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1141, 43.7632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.124, 43.7698]
+      },
+      "population": 231,
+      "surface": 1141.68,
+      "radius": 1.91
+    },
+    {
+      "nom": "Magnas",
+      "code": "32223",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7234, 43.892]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.729, 43.8941]
+      },
+      "population": 58,
+      "surface": 318.79,
+      "radius": 1.01
+    },
+    {
+      "nom": "Maignaut-Tauzia",
+      "code": "32224",
+      "codesPostaux": ["32310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.399, 43.8872]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4068, 43.8892]
+      },
+      "population": 215,
+      "surface": 1123.95,
+      "radius": 1.89
+    },
+    {
+      "nom": "Malabat",
+      "code": "32225",
+      "codesPostaux": ["32730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1922, 43.4318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1853, 43.4351]
+      },
+      "population": 97,
+      "surface": 544.99,
+      "radius": 1.32
+    },
+    {
+      "nom": "Manas-Bastanous",
+      "code": "32226",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3683, 43.3665]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3655, 43.371]
+      },
+      "population": 83,
+      "surface": 760.65,
+      "radius": 1.56
+    },
+    {
+      "nom": "Manciet",
+      "code": "32227",
+      "codesPostaux": ["32370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0599, 43.8186]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0408, 43.7992]
+      },
+      "population": 761,
+      "surface": 4260.36,
+      "radius": 3.68
+    },
+    {
+      "nom": "Manent-Montané",
+      "code": "32228",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6, 43.3339]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6002, 43.3336]
+      },
+      "population": 87,
+      "surface": 760.55,
+      "radius": 1.56
+    },
+    {
+      "nom": "Mansempuy",
+      "code": "32229",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8085, 43.7433]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.812, 43.7401]
+      },
+      "population": 58,
+      "surface": 650.86,
+      "radius": 1.44
+    },
+    {
+      "nom": "Mansencôme",
+      "code": "32230",
+      "codesPostaux": ["32310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3315, 43.8743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3396, 43.8721]
+      },
+      "population": 45,
+      "surface": 405.97,
+      "radius": 1.14
+    },
+    {
+      "nom": "Marambat",
+      "code": "32231",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3222, 43.7779]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3137, 43.777]
+      },
+      "population": 424,
+      "surface": 979.44,
+      "radius": 1.77
+    },
+    {
+      "nom": "Maravat",
+      "code": "32232",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7708, 43.7598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7521, 43.7561]
+      },
+      "population": 46,
+      "surface": 653.86,
+      "radius": 1.44
+    },
+    {
+      "nom": "Marciac",
+      "code": "32233",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1544, 43.5209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1609, 43.5245]
+      },
+      "population": 1209,
+      "surface": 2089.41,
+      "radius": 2.58
+    },
+    {
+      "nom": "Marestaing",
+      "code": "32234",
+      "codesPostaux": ["32490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0135, 43.5853]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0183, 43.5788]
+      },
+      "population": 349,
+      "surface": 849.39,
+      "radius": 1.64
+    },
+    {
+      "nom": "Margouët-Meymes",
+      "code": "32235",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1211, 43.7284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1029, 43.7249]
+      },
+      "population": 159,
+      "surface": 1781.23,
+      "radius": 2.38
+    },
+    {
+      "nom": "Marguestau",
+      "code": "32236",
+      "codesPostaux": ["32150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0392, 43.8821]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0408, 43.8852]
+      },
+      "population": 56,
+      "surface": 322.39,
+      "radius": 1.01
+    },
+    {
+      "nom": "Marsan",
+      "code": "32237",
+      "codesPostaux": ["32270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7248, 43.6467]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7207, 43.6563]
+      },
+      "population": 464,
+      "surface": 1510.81,
+      "radius": 2.19
+    },
+    {
+      "nom": "Marseillan",
+      "code": "32238",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3114, 43.4885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3165, 43.4881]
+      },
+      "population": 83,
+      "surface": 438.59,
+      "radius": 1.18
+    },
+    {
+      "nom": "Marsolan",
+      "code": "32239",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5337, 43.9426]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5398, 43.9432]
+      },
+      "population": 442,
+      "surface": 2663.93,
+      "radius": 2.91
+    },
+    {
+      "nom": "Mas-d'Auvignon",
+      "code": "32241",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5022, 43.8927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5028, 43.8906]
+      },
+      "population": 169,
+      "surface": 1375.12,
+      "radius": 2.09
+    },
+    {
+      "nom": "Mascaras",
+      "code": "32240",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2229, 43.5551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2321, 43.5453]
+      },
+      "population": 59,
+      "surface": 602.02,
+      "radius": 1.38
+    },
+    {
+      "nom": "Masseube",
+      "code": "32242",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5857, 43.4268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5797, 43.4297]
+      },
+      "population": 1525,
+      "surface": 2149.98,
+      "radius": 2.62
+    },
+    {
+      "nom": "Mauléon-d'Armagnac",
+      "code": "32243",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1553, 43.9033]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1528, 43.9023]
+      },
+      "population": 266,
+      "surface": 3539.06,
+      "radius": 3.36
+    },
+    {
+      "nom": "Maulichères",
+      "code": "32244",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0838, 43.6878]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0875, 43.6907]
+      },
+      "population": 157,
+      "surface": 621.19,
+      "radius": 1.41
+    },
+    {
+      "nom": "Maumusson-Laguian",
+      "code": "32245",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0923, 43.6107]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1018, 43.6089]
+      },
+      "population": 143,
+      "surface": 940.9,
+      "radius": 1.73
+    },
+    {
+      "nom": "Maupas",
+      "code": "32246",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1295, 43.844]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1354, 43.8467]
+      },
+      "population": 198,
+      "surface": 986.52,
+      "radius": 1.77
+    },
+    {
+      "nom": "Maurens",
+      "code": "32247",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9137, 43.5842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9182, 43.5951]
+      },
+      "population": 302,
+      "surface": 1296.26,
+      "radius": 2.03
+    },
+    {
+      "nom": "Mauroux",
+      "code": "32248",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8226, 43.9092]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8106, 43.9122]
+      },
+      "population": 141,
+      "surface": 1009.65,
+      "radius": 1.79
+    },
+    {
+      "nom": "Mauvezin",
+      "code": "32249",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8644, 43.735]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8772, 43.7303]
+      },
+      "population": 2275,
+      "surface": 3292.53,
+      "radius": 3.24
+    },
+    {
+      "nom": "Meilhan",
+      "code": "32250",
+      "codesPostaux": ["32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6755, 43.4187]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6819, 43.4229]
+      },
+      "population": 76,
+      "surface": 681.9,
+      "radius": 1.47
+    },
+    {
+      "nom": "Mérens",
+      "code": "32251",
+      "codesPostaux": ["32360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5521, 43.7509]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5383, 43.7534]
+      },
+      "population": 68,
+      "surface": 421.05,
+      "radius": 1.16
+    },
+    {
+      "nom": "Miélan",
+      "code": "32252",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3089, 43.4254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3076, 43.4297]
+      },
+      "population": 1132,
+      "surface": 2221.07,
+      "radius": 2.66
+    },
+    {
+      "nom": "Miradoux",
+      "code": "32253",
+      "codesPostaux": ["32340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7564, 43.9982]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7556, 43.9988]
+      },
+      "population": 532,
+      "surface": 3480.09,
+      "radius": 3.33
+    },
+    {
+      "nom": "Miramont-d'Astarac",
+      "code": "32254",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4638, 43.5482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4681, 43.5461]
+      },
+      "population": 351,
+      "surface": 1493.98,
+      "radius": 2.18
+    },
+    {
+      "nom": "Miramont-Latour",
+      "code": "32255",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6918, 43.7763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6834, 43.774]
+      },
+      "population": 144,
+      "surface": 978.24,
+      "radius": 1.76
+    },
+    {
+      "nom": "Mirande",
+      "code": "32256",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4053, 43.52]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4008, 43.5138]
+      },
+      "population": 3442,
+      "surface": 2366.56,
+      "radius": 2.74
+    },
+    {
+      "nom": "Mirannes",
+      "code": "32257",
+      "codesPostaux": ["32350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3815, 43.6223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3831, 43.6191]
+      },
+      "population": 64,
+      "surface": 789.89,
+      "radius": 1.59
+    },
+    {
+      "nom": "Mirepoix",
+      "code": "32258",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6706, 43.7443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6716, 43.7447]
+      },
+      "population": 229,
+      "surface": 733.97,
+      "radius": 1.53
+    },
+    {
+      "nom": "Monblanc",
+      "code": "32261",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9966, 43.4655]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9909, 43.4638]
+      },
+      "population": 391,
+      "surface": 1298.41,
+      "radius": 2.03
+    },
+    {
+      "nom": "Monbrun",
+      "code": "32262",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0372, 43.6654]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0256, 43.6617]
+      },
+      "population": 405,
+      "surface": 1083.32,
+      "radius": 1.86
+    },
+    {
+      "nom": "Moncassin",
+      "code": "32263",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4778, 43.4477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4792, 43.4535]
+      },
+      "population": 124,
+      "surface": 1387.97,
+      "radius": 2.1
+    },
+    {
+      "nom": "Monclar",
+      "code": "32264",
+      "codesPostaux": ["32150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0998, 43.9143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1074, 43.9192]
+      },
+      "population": 225,
+      "surface": 1012.18,
+      "radius": 1.79
+    },
+    {
+      "nom": "Monclar-sur-Losse",
+      "code": "32265",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.336, 43.5251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3336, 43.5315]
+      },
+      "population": 111,
+      "surface": 1049.57,
+      "radius": 1.83
+    },
+    {
+      "nom": "Moncorneil-Grazan",
+      "code": "32266",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6504, 43.4519]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6533, 43.4531]
+      },
+      "population": 147,
+      "surface": 723.98,
+      "radius": 1.52
+    },
+    {
+      "nom": "Monferran-Plavès",
+      "code": "32267",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.641, 43.495]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6393, 43.4923]
+      },
+      "population": 107,
+      "surface": 1129.89,
+      "radius": 1.9
+    },
+    {
+      "nom": "Monferran-Savès",
+      "code": "32268",
+      "codesPostaux": ["32490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9827, 43.6142]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9825, 43.5981]
+      },
+      "population": 802,
+      "surface": 2505.59,
+      "radius": 2.82
+    },
+    {
+      "nom": "Monfort",
+      "code": "32269",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8127, 43.788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8219, 43.7949]
+      },
+      "population": 513,
+      "surface": 2270.99,
+      "radius": 2.69
+    },
+    {
+      "nom": "Mongausy",
+      "code": "32270",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8036, 43.5011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8076, 43.5073]
+      },
+      "population": 90,
+      "surface": 745.77,
+      "radius": 1.54
+    },
+    {
+      "nom": "Monguilhem",
+      "code": "32271",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1882, 43.8557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1802, 43.8549]
+      },
+      "population": 286,
+      "surface": 578.48,
+      "radius": 1.36
+    },
+    {
+      "nom": "Monlaur-Bernet",
+      "code": "32272",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5165, 43.3468]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.512, 43.3515]
+      },
+      "population": 162,
+      "surface": 1256.61,
+      "radius": 2
+    },
+    {
+      "nom": "Monlezun",
+      "code": "32273",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2177, 43.4956]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2135, 43.5]
+      },
+      "population": 162,
+      "surface": 1761.43,
+      "radius": 2.37
+    },
+    {
+      "nom": "Monlezun-d'Armagnac",
+      "code": "32274",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1492, 43.8272]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1477, 43.8243]
+      },
+      "population": 188,
+      "surface": 650.1,
+      "radius": 1.44
+    },
+    {
+      "nom": "Monpardiac",
+      "code": "32275",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2445, 43.4644]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2433, 43.4637]
+      },
+      "population": 38,
+      "surface": 353.28,
+      "radius": 1.06
+    },
+    {
+      "nom": "Mont-d'Astarac",
+      "code": "32280",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5792, 43.3323]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5682, 43.3281]
+      },
+      "population": 91,
+      "surface": 834.99,
+      "radius": 1.63
+    },
+    {
+      "nom": "Mont-de-Marrast",
+      "code": "32281",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3726, 43.3886]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3593, 43.3834]
+      },
+      "population": 106,
+      "surface": 709.44,
+      "radius": 1.5
+    },
+    {
+      "nom": "Montadet",
+      "code": "32276",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9049, 43.4351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.91, 43.432]
+      },
+      "population": 66,
+      "surface": 517.83,
+      "radius": 1.28
+    },
+    {
+      "nom": "Montamat",
+      "code": "32277",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8555, 43.4888]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8437, 43.4859]
+      },
+      "population": 109,
+      "surface": 657.36,
+      "radius": 1.45
+    },
+    {
+      "nom": "Montaut",
+      "code": "32278",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4206, 43.3998]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4185, 43.3942]
+      },
+      "population": 123,
+      "surface": 847.46,
+      "radius": 1.64
+    },
+    {
+      "nom": "Montaut-les-Créneaux",
+      "code": "32279",
+      "codesPostaux": ["32810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6652, 43.7067]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6581, 43.6941]
+      },
+      "population": 714,
+      "surface": 2655.6,
+      "radius": 2.91
+    },
+    {
+      "nom": "Montégut",
+      "code": "32282",
+      "codesPostaux": ["32550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6709, 43.6432]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6461, 43.6515]
+      },
+      "population": 588,
+      "surface": 1142.58,
+      "radius": 1.91
+    },
+    {
+      "nom": "Montégut-Arros",
+      "code": "32283",
+      "codesPostaux": ["32730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2224, 43.3847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2165, 43.3812]
+      },
+      "population": 279,
+      "surface": 1553.5,
+      "radius": 2.22
+    },
+    {
+      "nom": "Montégut-Savès",
+      "code": "32284",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9637, 43.4372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9606, 43.4415]
+      },
+      "population": 69,
+      "surface": 368.49,
+      "radius": 1.08
+    },
+    {
+      "nom": "Montesquiou",
+      "code": "32285",
+      "codesPostaux": ["32320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3292, 43.5728]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3274, 43.5787]
+      },
+      "population": 569,
+      "surface": 4715.03,
+      "radius": 3.87
+    },
+    {
+      "nom": "Montestruc-sur-Gers",
+      "code": "32286",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.632, 43.7941]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6292, 43.7928]
+      },
+      "population": 700,
+      "surface": 1637.62,
+      "radius": 2.28
+    },
+    {
+      "nom": "Monties",
+      "code": "32287",
+      "codesPostaux": ["32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6877, 43.392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6744, 43.3891]
+      },
+      "population": 82,
+      "surface": 1051.21,
+      "radius": 1.83
+    },
+    {
+      "nom": "Montiron",
+      "code": "32288",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8553, 43.5888]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8466, 43.5855]
+      },
+      "population": 138,
+      "surface": 1060.1,
+      "radius": 1.84
+    },
+    {
+      "nom": "Montpezat",
+      "code": "32289",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9756, 43.3867]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9682, 43.3937]
+      },
+      "population": 242,
+      "surface": 1568.49,
+      "radius": 2.23
+    },
+    {
+      "nom": "Montréal",
+      "code": "32290",
+      "codesPostaux": ["32250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2097, 43.961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2006, 43.95]
+      },
+      "population": 1176,
+      "surface": 6340.55,
+      "radius": 4.49
+    },
+    {
+      "nom": "Mormès",
+      "code": "32291",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1517, 43.7965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1542, 43.7973]
+      },
+      "population": 108,
+      "surface": 917.85,
+      "radius": 1.71
+    },
+    {
+      "nom": "Mouchan",
+      "code": "32292",
+      "codesPostaux": ["32330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3011, 43.8999]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2973, 43.9027]
+      },
+      "population": 385,
+      "surface": 1322.92,
+      "radius": 2.05
+    },
+    {
+      "nom": "Mouchès",
+      "code": "32293",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4222, 43.5581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4119, 43.5584]
+      },
+      "population": 79,
+      "surface": 314.82,
+      "radius": 1
+    },
+    {
+      "nom": "Mourède",
+      "code": "32294",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2911, 43.8015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2963, 43.7998]
+      },
+      "population": 70,
+      "surface": 494.84,
+      "radius": 1.26
+    },
+    {
+      "nom": "Nizas",
+      "code": "32295",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9906, 43.4955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9994, 43.498]
+      },
+      "population": 137,
+      "surface": 417.9,
+      "radius": 1.15
+    },
+    {
+      "nom": "Nogaro",
+      "code": "32296",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0295, 43.7646]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0345, 43.758]
+      },
+      "population": 2226,
+      "surface": 1123.39,
+      "radius": 1.89
+    },
+    {
+      "nom": "Noilhan",
+      "code": "32297",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9359, 43.5306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9317, 43.5349]
+      },
+      "population": 391,
+      "surface": 1818.97,
+      "radius": 2.41
+    },
+    {
+      "nom": "Nougaroulet",
+      "code": "32298",
+      "codesPostaux": ["32270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7275, 43.6903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7314, 43.6932]
+      },
+      "population": 385,
+      "surface": 1593.87,
+      "radius": 2.25
+    },
+    {
+      "nom": "Noulens",
+      "code": "32299",
+      "codesPostaux": ["32800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1592, 43.8016]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1654, 43.8102]
+      },
+      "population": 102,
+      "surface": 580.69,
+      "radius": 1.36
+    },
+    {
+      "nom": "Orbessan",
+      "code": "32300",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6129, 43.546]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6091, 43.5434]
+      },
+      "population": 270,
+      "surface": 822.47,
+      "radius": 1.62
+    },
+    {
+      "nom": "Ordan-Larroque",
+      "code": "32301",
+      "codesPostaux": ["32350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4814, 43.6819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4601, 43.6872]
+      },
+      "population": 868,
+      "surface": 4299.9,
+      "radius": 3.7
+    },
+    {
+      "nom": "Ornézan",
+      "code": "32302",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5975, 43.5131]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6014, 43.5103]
+      },
+      "population": 206,
+      "surface": 1219.94,
+      "radius": 1.97
+    },
+    {
+      "nom": "Pallanne",
+      "code": "32303",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2663, 43.5036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2503, 43.5063]
+      },
+      "population": 62,
+      "surface": 525.3,
+      "radius": 1.29
+    },
+    {
+      "nom": "Panassac",
+      "code": "32304",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5693, 43.3861]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5661, 43.3849]
+      },
+      "population": 285,
+      "surface": 928.5,
+      "radius": 1.72
+    },
+    {
+      "nom": "Panjas",
+      "code": "32305",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0792, 43.827]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0884, 43.8207]
+      },
+      "population": 429,
+      "surface": 1995.92,
+      "radius": 2.52
+    },
+    {
+      "nom": "Pauilhac",
+      "code": "32306",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6231, 43.8834]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6121, 43.8757]
+      },
+      "population": 601,
+      "surface": 2545.43,
+      "radius": 2.85
+    },
+    {
+      "nom": "Pavie",
+      "code": "32307",
+      "codesPostaux": ["32550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5857, 43.6055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5917, 43.6099]
+      },
+      "population": 2540,
+      "surface": 2479.33,
+      "radius": 2.81
+    },
+    {
+      "nom": "Pébées",
+      "code": "32308",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0272, 43.4601]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0265, 43.4597]
+      },
+      "population": 100,
+      "surface": 404.97,
+      "radius": 1.14
+    },
+    {
+      "nom": "Pellefigue",
+      "code": "32309",
+      "codesPostaux": ["32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7881, 43.4822]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7935, 43.4748]
+      },
+      "population": 107,
+      "surface": 1280.23,
+      "radius": 2.02
+    },
+    {
+      "nom": "Perchède",
+      "code": "32310",
+      "codesPostaux": ["32460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1412, 43.7774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1377, 43.777]
+      },
+      "population": 105,
+      "surface": 530.02,
+      "radius": 1.3
+    },
+    {
+      "nom": "Pergain-Taillac",
+      "code": "32311",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5946, 44.0562]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5872, 44.0584]
+      },
+      "population": 335,
+      "surface": 1923.41,
+      "radius": 2.47
+    },
+    {
+      "nom": "Pessan",
+      "code": "32312",
+      "codesPostaux": ["32550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6671, 43.6039]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6488, 43.6201]
+      },
+      "population": 659,
+      "surface": 2670.97,
+      "radius": 2.92
+    },
+    {
+      "nom": "Pessoulens",
+      "code": "32313",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.885, 43.8617]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8779, 43.8516]
+      },
+      "population": 138,
+      "surface": 1266.7,
+      "radius": 2.01
+    },
+    {
+      "nom": "Peyrecave",
+      "code": "32314",
+      "codesPostaux": ["32340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8075, 43.9956]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8198, 43.9968]
+      },
+      "population": 70,
+      "surface": 509.45,
+      "radius": 1.27
+    },
+    {
+      "nom": "Peyrusse-Grande",
+      "code": "32315",
+      "codesPostaux": ["32320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2233, 43.6303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2138, 43.6325]
+      },
+      "population": 149,
+      "surface": 2554.54,
+      "radius": 2.85
+    },
+    {
+      "nom": "Peyrusse-Massas",
+      "code": "32316",
+      "codesPostaux": ["32360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5573, 43.7404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.553, 43.7379]
+      },
+      "population": 114,
+      "surface": 659.3,
+      "radius": 1.45
+    },
+    {
+      "nom": "Peyrusse-Vieille",
+      "code": "32317",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.173, 43.63]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1807, 43.6296]
+      },
+      "population": 64,
+      "surface": 1118.92,
+      "radius": 1.89
+    },
+    {
+      "nom": "Pis",
+      "code": "32318",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7081, 43.7854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7097, 43.7842]
+      },
+      "population": 95,
+      "surface": 542.44,
+      "radius": 1.31
+    },
+    {
+      "nom": "Plaisance",
+      "code": "32319",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0475, 43.6015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0488, 43.6064]
+      },
+      "population": 1426,
+      "surface": 1375.37,
+      "radius": 2.09
+    },
+    {
+      "nom": "Plieux",
+      "code": "32320",
+      "codesPostaux": ["32340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7492, 43.9532]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.735, 43.95]
+      },
+      "population": 159,
+      "surface": 1230.85,
+      "radius": 1.98
+    },
+    {
+      "nom": "Polastron",
+      "code": "32321",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8446, 43.5326]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8442, 43.5309]
+      },
+      "population": 269,
+      "surface": 1517.57,
+      "radius": 2.2
+    },
+    {
+      "nom": "Pompiac",
+      "code": "32322",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0057, 43.5201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0074, 43.5129]
+      },
+      "population": 207,
+      "surface": 1022.18,
+      "radius": 1.8
+    },
+    {
+      "nom": "Ponsampère",
+      "code": "32323",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3717, 43.4576]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.377, 43.4563]
+      },
+      "population": 97,
+      "surface": 906.68,
+      "radius": 1.7
+    },
+    {
+      "nom": "Ponsan-Soubiran",
+      "code": "32324",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4815, 43.3508]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4824, 43.3515]
+      },
+      "population": 73,
+      "surface": 709.46,
+      "radius": 1.5
+    },
+    {
+      "nom": "Pouy-Loubrin",
+      "code": "32327",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.618, 43.4678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6164, 43.4665]
+      },
+      "population": 84,
+      "surface": 975.71,
+      "radius": 1.76
+    },
+    {
+      "nom": "Pouy-Roquelaure",
+      "code": "32328",
+      "codesPostaux": ["32480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5217, 44.0391]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5209, 44.0382]
+      },
+      "population": 115,
+      "surface": 1104.81,
+      "radius": 1.88
+    },
+    {
+      "nom": "Pouydraguin",
+      "code": "32325",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0357, 43.659]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0359, 43.6577]
+      },
+      "population": 123,
+      "surface": 976.48,
+      "radius": 1.76
+    },
+    {
+      "nom": "Pouylebon",
+      "code": "32326",
+      "codesPostaux": ["32320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3035, 43.5469]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2957, 43.5483]
+      },
+      "population": 147,
+      "surface": 1458.62,
+      "radius": 2.15
+    },
+    {
+      "nom": "Préchac",
+      "code": "32329",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5672, 43.7939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5753, 43.7902]
+      },
+      "population": 156,
+      "surface": 1274.7,
+      "radius": 2.01
+    },
+    {
+      "nom": "Préchac-sur-Adour",
+      "code": "32330",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0032, 43.6016]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0028, 43.6021]
+      },
+      "population": 195,
+      "surface": 443.36,
+      "radius": 1.19
+    },
+    {
+      "nom": "Preignan",
+      "code": "32331",
+      "codesPostaux": ["32810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6361, 43.7205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6306, 43.7124]
+      },
+      "population": 1217,
+      "surface": 1078.83,
+      "radius": 1.85
+    },
+    {
+      "nom": "Préneron",
+      "code": "32332",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2718, 43.729]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.277, 43.7271]
+      },
+      "population": 119,
+      "surface": 872.13,
+      "radius": 1.67
+    },
+    {
+      "nom": "Projan",
+      "code": "32333",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2325, 43.6093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.2366, 43.5986]
+      },
+      "population": 182,
+      "surface": 1178.34,
+      "radius": 1.94
+    },
+    {
+      "nom": "Pujaudran",
+      "code": "32334",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1679, 43.592]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1521, 43.5903]
+      },
+      "population": 1708,
+      "surface": 1769.4,
+      "radius": 2.37
+    },
+    {
+      "nom": "Puycasquier",
+      "code": "32335",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7539, 43.7507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7476, 43.7461]
+      },
+      "population": 428,
+      "surface": 2025.6,
+      "radius": 2.54
+    },
+    {
+      "nom": "Puylausic",
+      "code": "32336",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9319, 43.4436]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9308, 43.4478]
+      },
+      "population": 159,
+      "surface": 976.77,
+      "radius": 1.76
+    },
+    {
+      "nom": "Puységur",
+      "code": "32337",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5875, 43.7751]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.605, 43.7768]
+      },
+      "population": 73,
+      "surface": 731.64,
+      "radius": 1.53
+    },
+    {
+      "nom": "Ramouzens",
+      "code": "32338",
+      "codesPostaux": ["32800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1862, 43.8082]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1853, 43.813]
+      },
+      "population": 185,
+      "surface": 1669.1,
+      "radius": 2.3
+    },
+    {
+      "nom": "Razengues",
+      "code": "32339",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9838, 43.6437]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9963, 43.6413]
+      },
+      "population": 250,
+      "surface": 438.43,
+      "radius": 1.18
+    },
+    {
+      "nom": "Réans",
+      "code": "32340",
+      "codesPostaux": ["32800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0362, 43.8737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0277, 43.8629]
+      },
+      "population": 290,
+      "surface": 1230.04,
+      "radius": 1.98
+    },
+    {
+      "nom": "Réjaumont",
+      "code": "32341",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5481, 43.8147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5504, 43.8137]
+      },
+      "population": 247,
+      "surface": 1377.17,
+      "radius": 2.09
+    },
+    {
+      "nom": "Ricourt",
+      "code": "32342",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1761, 43.4887]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.177, 43.4876]
+      },
+      "population": 47,
+      "surface": 795.22,
+      "radius": 1.59
+    },
+    {
+      "nom": "Riguepeu",
+      "code": "32343",
+      "codesPostaux": ["32320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3308, 43.6602]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3438, 43.6494]
+      },
+      "population": 164,
+      "surface": 2154.54,
+      "radius": 2.62
+    },
+    {
+      "nom": "Riscle",
+      "code": "32344",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0777, 43.6392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0867, 43.6586]
+      },
+      "population": 1643,
+      "surface": 3690.25,
+      "radius": 3.43
+    },
+    {
+      "nom": "Roquebrune",
+      "code": "32346",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.296, 43.7078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3, 43.7202]
+      },
+      "population": 208,
+      "surface": 1836.47,
+      "radius": 2.42
+    },
+    {
+      "nom": "Roquefort",
+      "code": "32347",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5867, 43.7569]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6027, 43.7591]
+      },
+      "population": 277,
+      "surface": 732.37,
+      "radius": 1.53
+    },
+    {
+      "nom": "Roquelaure",
+      "code": "32348",
+      "codesPostaux": ["32810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5904, 43.7234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5792, 43.7198]
+      },
+      "population": 577,
+      "surface": 2145.38,
+      "radius": 2.61
+    },
+    {
+      "nom": "Roquelaure-Saint-Aubin",
+      "code": "32349",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9841, 43.6637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.981, 43.667]
+      },
+      "population": 95,
+      "surface": 425.17,
+      "radius": 1.16
+    },
+    {
+      "nom": "Roquepine",
+      "code": "32350",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.469, 43.9084]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.466, 43.9115]
+      },
+      "population": 36,
+      "surface": 378.56,
+      "radius": 1.1
+    },
+    {
+      "nom": "Roques",
+      "code": "32351",
+      "codesPostaux": ["32310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2983, 43.8402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2967, 43.8477]
+      },
+      "population": 105,
+      "surface": 854.09,
+      "radius": 1.65
+    },
+    {
+      "nom": "Rozès",
+      "code": "32352",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.362, 43.8002]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3711, 43.8077]
+      },
+      "population": 113,
+      "surface": 1085.33,
+      "radius": 1.86
+    },
+    {
+      "nom": "Sabaillan",
+      "code": "32353",
+      "codesPostaux": ["32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8158, 43.4437]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8114, 43.4425]
+      },
+      "population": 154,
+      "surface": 1092.68,
+      "radius": 1.86
+    },
+    {
+      "nom": "Sabazan",
+      "code": "32354",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0482, 43.7103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0477, 43.7058]
+      },
+      "population": 127,
+      "surface": 830.45,
+      "radius": 1.63
+    },
+    {
+      "nom": "Sadeillan",
+      "code": "32355",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3464, 43.3978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3465, 43.3921]
+      },
+      "population": 83,
+      "surface": 600.37,
+      "radius": 1.38
+    },
+    {
+      "nom": "Saint-André",
+      "code": "32356",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8548, 43.5583]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8563, 43.5621]
+      },
+      "population": 126,
+      "surface": 560.98,
+      "radius": 1.34
+    },
+    {
+      "nom": "Saint-Antoine",
+      "code": "32358",
+      "codesPostaux": ["32340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8312, 44.0404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8397, 44.0358]
+      },
+      "population": 192,
+      "surface": 981.08,
+      "radius": 1.77
+    },
+    {
+      "nom": "Saint-Antonin",
+      "code": "32359",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8225, 43.7199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8145, 43.7234]
+      },
+      "population": 155,
+      "surface": 1150.33,
+      "radius": 1.91
+    },
+    {
+      "nom": "Saint-Arailles",
+      "code": "32360",
+      "codesPostaux": ["32350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3429, 43.625]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3573, 43.6264]
+      },
+      "population": 137,
+      "surface": 1328.57,
+      "radius": 2.06
+    },
+    {
+      "nom": "Saint-Arroman",
+      "code": "32361",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5211, 43.4344]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5204, 43.4387]
+      },
+      "population": 126,
+      "surface": 1221.87,
+      "radius": 1.97
+    },
+    {
+      "nom": "Saint-Aunix-Lengros",
+      "code": "32362",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0563, 43.5731]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0504, 43.5774]
+      },
+      "population": 148,
+      "surface": 545.08,
+      "radius": 1.32
+    },
+    {
+      "nom": "Saint-Avit-Frandat",
+      "code": "32364",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6597, 43.9822]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6521, 43.9778]
+      },
+      "population": 97,
+      "surface": 763.1,
+      "radius": 1.56
+    },
+    {
+      "nom": "Saint-Brès",
+      "code": "32366",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7688, 43.785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7687, 43.78]
+      },
+      "population": 71,
+      "surface": 595.82,
+      "radius": 1.38
+    },
+    {
+      "nom": "Saint-Caprais",
+      "code": "32467",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7945, 43.5956]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7862, 43.5938]
+      },
+      "population": 146,
+      "surface": 790.32,
+      "radius": 1.59
+    },
+    {
+      "nom": "Saint-Christaud",
+      "code": "32367",
+      "codesPostaux": ["32320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2614, 43.525]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2633, 43.5293]
+      },
+      "population": 63,
+      "surface": 1088.12,
+      "radius": 1.86
+    },
+    {
+      "nom": "Saint-Clar",
+      "code": "32370",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7678, 43.896]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7708, 43.8919]
+      },
+      "population": 1052,
+      "surface": 1793.02,
+      "radius": 2.39
+    },
+    {
+      "nom": "Saint-Créac",
+      "code": "32371",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7941, 43.9168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8005, 43.9221]
+      },
+      "population": 87,
+      "surface": 830.67,
+      "radius": 1.63
+    },
+    {
+      "nom": "Saint-Cricq",
+      "code": "32372",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9884, 43.698]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9981, 43.7]
+      },
+      "population": 290,
+      "surface": 303.98,
+      "radius": 0.98
+    },
+    {
+      "nom": "Saint-Élix-d'Astarac",
+      "code": "32374",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7721, 43.4949]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7746, 43.4933]
+      },
+      "population": 184,
+      "surface": 815.97,
+      "radius": 1.61
+    },
+    {
+      "nom": "Saint-Élix-Theux",
+      "code": "32375",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4684, 43.4285]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4695, 43.4285]
+      },
+      "population": 87,
+      "surface": 846.22,
+      "radius": 1.64
+    },
+    {
+      "nom": "Saint-Georges",
+      "code": "32377",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9295, 43.7374]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9358, 43.7277]
+      },
+      "population": 195,
+      "surface": 1598.26,
+      "radius": 2.26
+    },
+    {
+      "nom": "Saint-Germé",
+      "code": "32378",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1499, 43.6753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1461, 43.6794]
+      },
+      "population": 509,
+      "surface": 958.13,
+      "radius": 1.75
+    },
+    {
+      "nom": "Saint-Germier",
+      "code": "32379",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9581, 43.6733]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9503, 43.6668]
+      },
+      "population": 216,
+      "surface": 712.11,
+      "radius": 1.51
+    },
+    {
+      "nom": "Saint-Griède",
+      "code": "32380",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0969, 43.7249]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0935, 43.7265]
+      },
+      "population": 141,
+      "surface": 762.77,
+      "radius": 1.56
+    },
+    {
+      "nom": "Saint-Jean-le-Comtal",
+      "code": "32381",
+      "codesPostaux": ["32550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5116, 43.5762]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5206, 43.5772]
+      },
+      "population": 386,
+      "surface": 1735.57,
+      "radius": 2.35
+    },
+    {
+      "nom": "Saint-Jean-Poutge",
+      "code": "32382",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3825, 43.7368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3782, 43.7247]
+      },
+      "population": 310,
+      "surface": 1078.08,
+      "radius": 1.85
+    },
+    {
+      "nom": "Saint-Justin",
+      "code": "32383",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1517, 43.4847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1508, 43.4825]
+      },
+      "population": 132,
+      "surface": 1333.68,
+      "radius": 2.06
+    },
+    {
+      "nom": "Saint-Lary",
+      "code": "32384",
+      "codesPostaux": ["32360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4966, 43.7189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4987, 43.7221]
+      },
+      "population": 274,
+      "surface": 979.85,
+      "radius": 1.77
+    },
+    {
+      "nom": "Saint-Léonard",
+      "code": "32385",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7694, 43.8559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7683, 43.8593]
+      },
+      "population": 185,
+      "surface": 1336.85,
+      "radius": 2.06
+    },
+    {
+      "nom": "Saint-Lizier-du-Planté",
+      "code": "32386",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.945, 43.4077]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9515, 43.4139]
+      },
+      "population": 148,
+      "surface": 1045.91,
+      "radius": 1.82
+    },
+    {
+      "nom": "Saint-Loube",
+      "code": "32387",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0058, 43.44]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9916, 43.4387]
+      },
+      "population": 99,
+      "surface": 610.59,
+      "radius": 1.39
+    },
+    {
+      "nom": "Saint-Martin",
+      "code": "32389",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3758, 43.5096]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3759, 43.5068]
+      },
+      "population": 442,
+      "surface": 925.5,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saint-Martin-d'Armagnac",
+      "code": "32390",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0634, 43.7131]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0623, 43.7143]
+      },
+      "population": 231,
+      "surface": 1085.77,
+      "radius": 1.86
+    },
+    {
+      "nom": "Saint-Martin-de-Goyne",
+      "code": "32391",
+      "codesPostaux": ["32480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5736, 44.0022]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5659, 44.0044]
+      },
+      "population": 126,
+      "surface": 571.85,
+      "radius": 1.35
+    },
+    {
+      "nom": "Saint-Martin-Gimois",
+      "code": "32392",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8126, 43.521]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8071, 43.5184]
+      },
+      "population": 84,
+      "surface": 675.46,
+      "radius": 1.47
+    },
+    {
+      "nom": "Saint-Maur",
+      "code": "32393",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3509, 43.483]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3428, 43.4779]
+      },
+      "population": 136,
+      "surface": 1402.48,
+      "radius": 2.11
+    },
+    {
+      "nom": "Saint-Médard",
+      "code": "32394",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4622, 43.4855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4607, 43.49]
+      },
+      "population": 345,
+      "surface": 1730.6,
+      "radius": 2.35
+    },
+    {
+      "nom": "Saint-Mézard",
+      "code": "32396",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5719, 44.0363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.558, 44.0319]
+      },
+      "population": 247,
+      "surface": 1516.01,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Michel",
+      "code": "32397",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3988, 43.4299]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4148, 43.4286]
+      },
+      "population": 246,
+      "surface": 1679.93,
+      "radius": 2.31
+    },
+    {
+      "nom": "Saint-Mont",
+      "code": "32398",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1442, 43.6399]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1476, 43.6505]
+      },
+      "population": 313,
+      "surface": 1258.84,
+      "radius": 2
+    },
+    {
+      "nom": "Saint-Orens",
+      "code": "32399",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9164, 43.7128]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9078, 43.714]
+      },
+      "population": 80,
+      "surface": 438.41,
+      "radius": 1.18
+    },
+    {
+      "nom": "Saint-Orens-Pouy-Petit",
+      "code": "32400",
+      "codesPostaux": ["32100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4382, 43.9126]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4356, 43.9166]
+      },
+      "population": 178,
+      "surface": 1137.56,
+      "radius": 1.9
+    },
+    {
+      "nom": "Saint-Ost",
+      "code": "32401",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4661, 43.3754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4702, 43.3781]
+      },
+      "population": 91,
+      "surface": 691.45,
+      "radius": 1.48
+    },
+    {
+      "nom": "Saint-Paul-de-Baïse",
+      "code": "32402",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3714, 43.7811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.372, 43.7751]
+      },
+      "population": 108,
+      "surface": 1011.52,
+      "radius": 1.79
+    },
+    {
+      "nom": "Saint-Pierre-d'Aubézies",
+      "code": "32403",
+      "codesPostaux": ["32290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1601, 43.6501]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1664, 43.6434]
+      },
+      "population": 59,
+      "surface": 839.69,
+      "radius": 1.63
+    },
+    {
+      "nom": "Saint-Puy",
+      "code": "32404",
+      "codesPostaux": ["32310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4585, 43.8705]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4611, 43.8759]
+      },
+      "population": 587,
+      "surface": 3664.35,
+      "radius": 3.42
+    },
+    {
+      "nom": "Saint-Sauvy",
+      "code": "32406",
+      "codesPostaux": ["32270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8091, 43.6959]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8205, 43.6937]
+      },
+      "population": 353,
+      "surface": 1762.04,
+      "radius": 2.37
+    },
+    {
+      "nom": "Saint-Soulan",
+      "code": "32407",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8637, 43.5093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8565, 43.508]
+      },
+      "population": 155,
+      "surface": 1221.53,
+      "radius": 1.97
+    },
+    {
+      "nom": "Sainte-Anne",
+      "code": "32357",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9714, 43.745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9662, 43.7445]
+      },
+      "population": 125,
+      "surface": 684.93,
+      "radius": 1.48
+    },
+    {
+      "nom": "Sainte-Aurence-Cazaux",
+      "code": "32363",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4274, 43.3736]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4192, 43.3745]
+      },
+      "population": 90,
+      "surface": 975.69,
+      "radius": 1.76
+    },
+    {
+      "nom": "Sainte-Christie",
+      "code": "32368",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.632, 43.7549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6315, 43.7551]
+      },
+      "population": 542,
+      "surface": 996.64,
+      "radius": 1.78
+    },
+    {
+      "nom": "Sainte-Christie-d'Armagnac",
+      "code": "32369",
+      "codesPostaux": ["32370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0048, 43.7944]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0085, 43.7847]
+      },
+      "population": 379,
+      "surface": 2284.6,
+      "radius": 2.7
+    },
+    {
+      "nom": "Sainte-Dode",
+      "code": "32373",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3677, 43.4193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.364, 43.4199]
+      },
+      "population": 227,
+      "surface": 1892.26,
+      "radius": 2.45
+    },
+    {
+      "nom": "Sainte-Gemme",
+      "code": "32376",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7901, 43.775]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7993, 43.7813]
+      },
+      "population": 118,
+      "surface": 1041.11,
+      "radius": 1.82
+    },
+    {
+      "nom": "Sainte-Marie",
+      "code": "32388",
+      "codesPostaux": ["32200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8633, 43.6747]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8742, 43.6607]
+      },
+      "population": 391,
+      "surface": 2240.15,
+      "radius": 2.67
+    },
+    {
+      "nom": "Sainte-Mère",
+      "code": "32395",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6843, 44.0008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6686, 44.0028]
+      },
+      "population": 204,
+      "surface": 950.77,
+      "radius": 1.74
+    },
+    {
+      "nom": "Sainte-Radegonde",
+      "code": "32405",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5867, 43.8407]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5873, 43.8378]
+      },
+      "population": 175,
+      "surface": 987.62,
+      "radius": 1.77
+    },
+    {
+      "nom": "Salles-d'Armagnac",
+      "code": "32408",
+      "codesPostaux": ["32370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.045, 43.8133]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0429, 43.8107]
+      },
+      "population": 123,
+      "surface": 621.9,
+      "radius": 1.41
+    },
+    {
+      "nom": "Samaran",
+      "code": "32409",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5314, 43.3929]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5187, 43.3908]
+      },
+      "population": 76,
+      "surface": 870.67,
+      "radius": 1.66
+    },
+    {
+      "nom": "Samatan",
+      "code": "32410",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9279, 43.4928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9308, 43.4919]
+      },
+      "population": 2478,
+      "surface": 3375.21,
+      "radius": 3.28
+    },
+    {
+      "nom": "Sansan",
+      "code": "32411",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6082, 43.5277]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.609, 43.5303]
+      },
+      "population": 100,
+      "surface": 368.82,
+      "radius": 1.08
+    },
+    {
+      "nom": "Saramon",
+      "code": "32412",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.764, 43.5266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7646, 43.5226]
+      },
+      "population": 863,
+      "surface": 1307.45,
+      "radius": 2.04
+    },
+    {
+      "nom": "Sarragachies",
+      "code": "32414",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.051, 43.685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0533, 43.6828]
+      },
+      "population": 220,
+      "surface": 1292.07,
+      "radius": 2.03
+    },
+    {
+      "nom": "Sarraguzan",
+      "code": "32415",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3441, 43.3663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3371, 43.3571]
+      },
+      "population": 87,
+      "surface": 875.18,
+      "radius": 1.67
+    },
+    {
+      "nom": "Sarrant",
+      "code": "32416",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9317, 43.7698]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9297, 43.7737]
+      },
+      "population": 361,
+      "surface": 2009.6,
+      "radius": 2.53
+    },
+    {
+      "nom": "Sauveterre",
+      "code": "32418",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8503, 43.4533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8571, 43.4565]
+      },
+      "population": 281,
+      "surface": 1671.74,
+      "radius": 2.31
+    },
+    {
+      "nom": "Sauviac",
+      "code": "32419",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4586, 43.4107]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.454, 43.4052]
+      },
+      "population": 105,
+      "surface": 644.3,
+      "radius": 1.43
+    },
+    {
+      "nom": "Sauvimont",
+      "code": "32420",
+      "codesPostaux": ["32220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9675, 43.4496]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9687, 43.4483]
+      },
+      "population": 66,
+      "surface": 348.87,
+      "radius": 1.05
+    },
+    {
+      "nom": "Savignac-Mona",
+      "code": "32421",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0092, 43.4852]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.008, 43.4891]
+      },
+      "population": 145,
+      "surface": 691.26,
+      "radius": 1.48
+    },
+    {
+      "nom": "Scieurac-et-Flourès",
+      "code": "32422",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1979, 43.5561]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.206, 43.5595]
+      },
+      "population": 42,
+      "surface": 545.95,
+      "radius": 1.32
+    },
+    {
+      "nom": "Séailles",
+      "code": "32423",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1115, 43.751]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1132, 43.7499]
+      },
+      "population": 68,
+      "surface": 819.12,
+      "radius": 1.61
+    },
+    {
+      "nom": "Ségos",
+      "code": "32424",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.2601, 43.6315]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.258, 43.6255]
+      },
+      "population": 248,
+      "surface": 877.43,
+      "radius": 1.67
+    },
+    {
+      "nom": "Ségoufielle",
+      "code": "32425",
+      "codesPostaux": ["32600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1308, 43.6292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1325, 43.6324]
+      },
+      "population": 1174,
+      "surface": 528.01,
+      "radius": 1.3
+    },
+    {
+      "nom": "Seissan",
+      "code": "32426",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5757, 43.5011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5919, 43.4927]
+      },
+      "population": 1098,
+      "surface": 1887.53,
+      "radius": 2.45
+    },
+    {
+      "nom": "Sembouès",
+      "code": "32427",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1714, 43.4672]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1646, 43.4601]
+      },
+      "population": 58,
+      "surface": 261.6,
+      "radius": 0.91
+    },
+    {
+      "nom": "Sémézies-Cachan",
+      "code": "32428",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7335, 43.5017]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7312, 43.5094]
+      },
+      "population": 54,
+      "surface": 696.48,
+      "radius": 1.49
+    },
+    {
+      "nom": "Sempesserre",
+      "code": "32429",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6452, 44.0214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6484, 44.0154]
+      },
+      "population": 313,
+      "surface": 2107.18,
+      "radius": 2.59
+    },
+    {
+      "nom": "Sère",
+      "code": "32430",
+      "codesPostaux": ["32140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6493, 43.4045]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6485, 43.4121]
+      },
+      "population": 77,
+      "surface": 889.8,
+      "radius": 1.68
+    },
+    {
+      "nom": "Sérempuy",
+      "code": "32431",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8234, 43.7628]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8238, 43.7608]
+      },
+      "population": 42,
+      "surface": 334.63,
+      "radius": 1.03
+    },
+    {
+      "nom": "Seysses-Savès",
+      "code": "32432",
+      "codesPostaux": ["32130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0454, 43.5139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0412, 43.5063]
+      },
+      "population": 245,
+      "surface": 1324.48,
+      "radius": 2.05
+    },
+    {
+      "nom": "Simorre",
+      "code": "32433",
+      "codesPostaux": ["32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7417, 43.4586]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.734, 43.4499]
+      },
+      "population": 695,
+      "surface": 3572.89,
+      "radius": 3.37
+    },
+    {
+      "nom": "Sion",
+      "code": "32434",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0055, 43.7384]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0089, 43.7394]
+      },
+      "population": 96,
+      "surface": 715.93,
+      "radius": 1.51
+    },
+    {
+      "nom": "Sirac",
+      "code": "32435",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9522, 43.7014]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9522, 43.7099]
+      },
+      "population": 162,
+      "surface": 804.47,
+      "radius": 1.6
+    },
+    {
+      "nom": "Solomiac",
+      "code": "32436",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8867, 43.8036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8976, 43.8058]
+      },
+      "population": 499,
+      "surface": 1387.7,
+      "radius": 2.1
+    },
+    {
+      "nom": "Sorbets",
+      "code": "32437",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0187, 43.7127]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0154, 43.7213]
+      },
+      "population": 201,
+      "surface": 935.52,
+      "radius": 1.73
+    },
+    {
+      "nom": "Tachoires",
+      "code": "32438",
+      "codesPostaux": ["32260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6572, 43.4734]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6641, 43.4722]
+      },
+      "population": 112,
+      "surface": 951.7,
+      "radius": 1.74
+    },
+    {
+      "nom": "Tarsac",
+      "code": "32439",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1146, 43.6678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1127, 43.6682]
+      },
+      "population": 158,
+      "surface": 454.94,
+      "radius": 1.2
+    },
+    {
+      "nom": "Tasque",
+      "code": "32440",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0121, 43.6372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.021, 43.64]
+      },
+      "population": 245,
+      "surface": 998.77,
+      "radius": 1.78
+    },
+    {
+      "nom": "Taybosc",
+      "code": "32441",
+      "codesPostaux": ["32120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7424, 43.7866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7373, 43.7825]
+      },
+      "population": 66,
+      "surface": 593.47,
+      "radius": 1.37
+    },
+    {
+      "nom": "Termes-d'Armagnac",
+      "code": "32443",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0128, 43.6755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0102, 43.671]
+      },
+      "population": 199,
+      "surface": 1005.5,
+      "radius": 1.79
+    },
+    {
+      "nom": "Terraube",
+      "code": "32442",
+      "codesPostaux": ["32700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.5495, 43.8999]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.5516, 43.906]
+      },
+      "population": 361,
+      "surface": 2523.79,
+      "radius": 2.83
+    },
+    {
+      "nom": "Thoux",
+      "code": "32444",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9926, 43.6808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9937, 43.6822]
+      },
+      "population": 261,
+      "surface": 606.1,
+      "radius": 1.39
+    },
+    {
+      "nom": "Tieste-Uragnoux",
+      "code": "32445",
+      "codesPostaux": ["32160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.0313, 43.5521]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.0373, 43.5497]
+      },
+      "population": 149,
+      "surface": 624.62,
+      "radius": 1.41
+    },
+    {
+      "nom": "Tillac",
+      "code": "32446",
+      "codesPostaux": ["32170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2631, 43.4781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2762, 43.4745]
+      },
+      "population": 278,
+      "surface": 1256.03,
+      "radius": 2
+    },
+    {
+      "nom": "Tirent-Pontéjac",
+      "code": "32447",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7929, 43.5457]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7942, 43.5569]
+      },
+      "population": 81,
+      "surface": 751.11,
+      "radius": 1.55
+    },
+    {
+      "nom": "Touget",
+      "code": "32448",
+      "codesPostaux": ["32430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9159, 43.6846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9151, 43.6905]
+      },
+      "population": 501,
+      "surface": 1781.09,
+      "radius": 2.38
+    },
+    {
+      "nom": "Toujouse",
+      "code": "32449",
+      "codesPostaux": ["32240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1826, 43.8229]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1798, 43.8348]
+      },
+      "population": 306,
+      "surface": 1483.34,
+      "radius": 2.17
+    },
+    {
+      "nom": "Tourdun",
+      "code": "32450",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.1611, 43.5453]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1517, 43.5486]
+      },
+      "population": 126,
+      "surface": 697.78,
+      "radius": 1.49
+    },
+    {
+      "nom": "Tournan",
+      "code": "32451",
+      "codesPostaux": ["32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7913, 43.426]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7848, 43.4322]
+      },
+      "population": 178,
+      "surface": 1243.51,
+      "radius": 1.99
+    },
+    {
+      "nom": "Tournecoupe",
+      "code": "32452",
+      "codesPostaux": ["32380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8302, 43.8615]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8108, 43.8633]
+      },
+      "population": 262,
+      "surface": 1917.68,
+      "radius": 2.47
+    },
+    {
+      "nom": "Tourrenquets",
+      "code": "32453",
+      "codesPostaux": ["32390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7017, 43.7486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6926, 43.7535]
+      },
+      "population": 103,
+      "surface": 721.19,
+      "radius": 1.52
+    },
+    {
+      "nom": "Traversères",
+      "code": "32454",
+      "codesPostaux": ["32450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.651, 43.5341]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6496, 43.5359]
+      },
+      "population": 71,
+      "surface": 1061.86,
+      "radius": 1.84
+    },
+    {
+      "nom": "Troncens",
+      "code": "32455",
+      "codesPostaux": ["32230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2202, 43.4542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2152, 43.4605]
+      },
+      "population": 162,
+      "surface": 1308.74,
+      "radius": 2.04
+    },
+    {
+      "nom": "Tudelle",
+      "code": "32456",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2878, 43.6829]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.2894, 43.6792]
+      },
+      "population": 56,
+      "surface": 516.6,
+      "radius": 1.28
+    },
+    {
+      "nom": "Urdens",
+      "code": "32457",
+      "codesPostaux": ["32500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7097, 43.8641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7027, 43.8555]
+      },
+      "population": 267,
+      "surface": 773.36,
+      "radius": 1.57
+    },
+    {
+      "nom": "Urgosse",
+      "code": "32458",
+      "codesPostaux": ["32110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.0214, 43.7402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.0243, 43.7364]
+      },
+      "population": 239,
+      "surface": 678.45,
+      "radius": 1.47
+    },
+    {
+      "nom": "Valence-sur-Baïse",
+      "code": "32459",
+      "codesPostaux": ["32310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.3637, 43.8722]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3813, 43.8827]
+      },
+      "population": 1137,
+      "surface": 2753.61,
+      "radius": 2.96
+    },
+    {
+      "nom": "Vergoignan",
+      "code": "32460",
+      "codesPostaux": ["32720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1899, 43.7243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1983, 43.7184]
+      },
+      "population": 316,
+      "surface": 1055.8,
+      "radius": 1.83
+    },
+    {
+      "nom": "Verlus",
+      "code": "32461",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.198, 43.6004]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1957, 43.6014]
+      },
+      "population": 122,
+      "surface": 620.71,
+      "radius": 1.41
+    },
+    {
+      "nom": "Vic-Fezensac",
+      "code": "32462",
+      "codesPostaux": ["32190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2903, 43.7662]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.3034, 43.7578]
+      },
+      "population": 3578,
+      "surface": 5470.27,
+      "radius": 4.17
+    },
+    {
+      "nom": "Viella",
+      "code": "32463",
+      "codesPostaux": ["32400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-0.1425, 43.6025]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-0.1432, 43.5966]
+      },
+      "population": 523,
+      "surface": 2217.41,
+      "radius": 2.66
+    },
+    {
+      "nom": "Villecomtal-sur-Arros",
+      "code": "32464",
+      "codesPostaux": ["32730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.2069, 43.3989]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.1992, 43.4015]
+      },
+      "population": 833,
+      "surface": 1124.2,
+      "radius": 1.89
+    },
+    {
+      "nom": "Villefranche-d'Astarac",
+      "code": "32465",
+      "codesPostaux": ["32420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7326, 43.4219]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7271, 43.4249]
+      },
+      "population": 168,
+      "surface": 1260.89,
+      "radius": 2
+    },
+    {
+      "nom": "Viozan",
+      "code": "32466",
+      "codesPostaux": ["32300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.4672, 43.3966]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.4727, 43.3944]
+      },
+      "population": 94,
+      "surface": 683.42,
+      "radius": 1.47
+    }
+  ],
+  "postalCodes": {
+    "32000": {
+      "communes": ["Auch"],
+      "communeCount": 1,
+      "center": [0.5831, 43.6469],
+      "coverageRadius": 4.83,
+      "totalPopulation": 22825,
+      "totalSurface": 7343
+    },
+    "32100": {
+      "communes": [
+        "Beaumont",
+        "Béraut",
+        "Blaziert",
+        "Cassaigne",
+        "Castelnau-sur-l'Auvignon",
+        "Caussens",
+        "Condom",
+        "Larressingle",
+        "Larroque-sur-l'Osse",
+        "Roquepine",
+        "Saint-Orens-Pouy-Petit"
+      ],
+      "communeCount": 11,
+      "center": [0.377, 43.9517],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 43.9078,
+        "maxLat": 43.9717,
+        "minLon": 0.2747,
+        "maxLon": 0.4767
+      },
+      "totalPopulation": 8609,
+      "totalSurface": 19980
+    },
+    "32110": {
+      "communes": [
+        "Arblade-le-Haut",
+        "Bétous",
+        "Caupenne-d'Armagnac",
+        "Cravencères",
+        "Lanne-Soubiran",
+        "Laujuzan",
+        "Loubédat",
+        "Luppé-Violles",
+        "Magnan",
+        "Nogaro",
+        "Panjas",
+        "Saint-Griède",
+        "Saint-Martin-d'Armagnac",
+        "Sion",
+        "Sorbets",
+        "Urgosse"
+      ],
+      "communeCount": 16,
+      "center": [-0.0531, 43.7606],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 43.7143,
+        "maxLat": 43.8207,
+        "minLon": -0.1382,
+        "maxLon": 0.036
+      },
+      "totalPopulation": 5402,
+      "totalSurface": 16840
+    },
+    "32120": {
+      "communes": [
+        "Augnax",
+        "Avensac",
+        "Bajonnette",
+        "Homps",
+        "Labrihe",
+        "Mansempuy",
+        "Maravat",
+        "Mauvezin",
+        "Monfort",
+        "Puycasquier",
+        "Saint-Antonin",
+        "Saint-Brès",
+        "Sainte-Gemme",
+        "Saint-Orens",
+        "Sarrant",
+        "Sérempuy",
+        "Solomiac",
+        "Taybosc"
+      ],
+      "communeCount": 18,
+      "center": [0.8536, 43.7563],
+      "coverageRadius": 9.8,
+      "boundingBox": {
+        "minLat": 43.714,
+        "maxLat": 43.8315,
+        "minLon": 0.7373,
+        "maxLon": 0.9297
+      },
+      "totalPopulation": 5343,
+      "totalSurface": 19983
+    },
+    "32130": {
+      "communes": [
+        "Bézéril",
+        "Cazaux-Savès",
+        "Labastide-Savès",
+        "Lahas",
+        "Monblanc",
+        "Nizas",
+        "Noilhan",
+        "Pébées",
+        "Polastron",
+        "Pompiac",
+        "Samatan",
+        "Savignac-Mona",
+        "Seysses-Savès"
+      ],
+      "communeCount": 13,
+      "center": [0.9477, 43.5035],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 43.4597,
+        "maxLat": 43.5546,
+        "minLon": 0.8442,
+        "maxLon": 1.0412
+      },
+      "totalPopulation": 5166,
+      "totalSurface": 15234
+    },
+    "32140": {
+      "communes": [
+        "Arrouède",
+        "Bellegarde",
+        "Bézues-Bajon",
+        "Chélan",
+        "Esclassan-Labastide",
+        "Lalanne-Arqué",
+        "Lourties-Monbrun",
+        "Manent-Montané",
+        "Masseube",
+        "Monlaur-Bernet",
+        "Mont-d'Astarac",
+        "Panassac",
+        "Cap d'Astarac",
+        "Samaran",
+        "Sère",
+        "Aussos"
+      ],
+      "communeCount": 16,
+      "center": [0.5825, 43.3994],
+      "coverageRadius": 9.2,
+      "boundingBox": {
+        "minLat": 43.3281,
+        "maxLat": 43.4567,
+        "minLon": 0.512,
+        "maxLon": 0.6525
+      },
+      "totalPopulation": 3901,
+      "totalSurface": 19885
+    },
+    "32150": {
+      "communes": ["Cazaubon", "Larée", "Marguestau", "Monclar"],
+      "communeCount": 4,
+      "center": [-0.073, 43.928],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 43.8852,
+        "maxLat": 43.9339,
+        "minLon": -0.1074,
+        "maxLon": -0.0408
+      },
+      "totalPopulation": 2181,
+      "totalSurface": 8237
+    },
+    "32160": {
+      "communes": [
+        "Beaumarchés",
+        "Couloumé-Mondebat",
+        "Galiax",
+        "Jû-Belloc",
+        "Lasserrade",
+        "Plaisance",
+        "Préchac-sur-Adour",
+        "Saint-Aunix-Lengros",
+        "Tasque",
+        "Tieste-Uragnoux"
+      ],
+      "communeCount": 10,
+      "center": [0.0493, 43.6025],
+      "coverageRadius": 6,
+      "boundingBox": {
+        "minLat": 43.5497,
+        "maxLat": 43.6408,
+        "minLon": -0.0028,
+        "maxLon": 0.0925
+      },
+      "totalPopulation": 3692,
+      "totalSurface": 12506
+    },
+    "32170": {
+      "communes": [
+        "Aux-Aussat",
+        "Barcugnan",
+        "Bazugues",
+        "Castex",
+        "Duffort",
+        "Estampes",
+        "Laas",
+        "Laguian-Mazous",
+        "Manas-Bastanous",
+        "Marseillan",
+        "Miélan",
+        "Monpardiac",
+        "Mont-de-Marrast",
+        "Sadeillan",
+        "Sainte-Dode",
+        "Sarraguzan",
+        "Tillac"
+      ],
+      "communeCount": 17,
+      "center": [0.3128, 43.4254],
+      "coverageRadius": 12.2,
+      "boundingBox": {
+        "minLat": 43.3448,
+        "maxLat": 43.4881,
+        "minLon": 0.2433,
+        "maxLon": 0.4141
+      },
+      "totalPopulation": 3490,
+      "totalSurface": 16610
+    },
+    "32190": {
+      "communes": [
+        "Bascous",
+        "Belmont",
+        "Caillavet",
+        "Callian",
+        "Castillon-Debats",
+        "Cazaux-d'Anglès",
+        "Dému",
+        "Justian",
+        "Lannepax",
+        "Marambat",
+        "Mourède",
+        "Préneron",
+        "Roquebrune",
+        "Rozès",
+        "Saint-Jean-Poutge",
+        "Saint-Paul-de-Baïse",
+        "Séailles",
+        "Tudelle",
+        "Vic-Fezensac"
+      ],
+      "communeCount": 19,
+      "center": [0.2852, 43.7555],
+      "coverageRadius": 14.2,
+      "boundingBox": {
+        "minLat": 43.6286,
+        "maxLat": 43.8161,
+        "minLon": 0.1132,
+        "maxLon": 0.3782
+      },
+      "totalPopulation": 6996,
+      "totalSurface": 30392
+    },
+    "32200": {
+      "communes": [
+        "Catonvielle",
+        "Escornebœuf",
+        "Gimont",
+        "Giscaro",
+        "Juilles",
+        "Maurens",
+        "Montiron",
+        "Saint-André",
+        "Saint-Germier",
+        "Sainte-Marie",
+        "Saint-Caprais"
+      ],
+      "communeCount": 11,
+      "center": [0.8827, 43.6274],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 43.5621,
+        "maxLat": 43.6668,
+        "minLon": 0.7862,
+        "maxLon": 0.9627
+      },
+      "totalPopulation": 5424,
+      "totalSurface": 14272
+    },
+    "32220": {
+      "communes": [
+        "Cadeillan",
+        "Espaon",
+        "Garravet",
+        "Gaujac",
+        "Laymont",
+        "Lombez",
+        "Mongausy",
+        "Montadet",
+        "Montamat",
+        "Montégut-Savès",
+        "Montpezat",
+        "Puylausic",
+        "Saint-Lizier-du-Planté",
+        "Saint-Loube",
+        "Saint-Soulan",
+        "Sauveterre",
+        "Sauvimont"
+      ],
+      "communeCount": 17,
+      "center": [0.9107, 43.4582],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 43.3937,
+        "maxLat": 43.508,
+        "minLon": 0.8076,
+        "maxLon": 0.9916
+      },
+      "totalPopulation": 4389,
+      "totalSurface": 15587
+    },
+    "32230": {
+      "communes": [
+        "Armentieux",
+        "Armous-et-Cau",
+        "Blousson-Sérian",
+        "Cazaux-Villecomtal",
+        "Courties",
+        "Gazax-et-Baccarisse",
+        "Juillac",
+        "Ladevèze-Rivière",
+        "Ladevèze-Ville",
+        "Laveraët",
+        "Louslitges",
+        "Marciac",
+        "Mascaras",
+        "Monlezun",
+        "Pallanne",
+        "Peyrusse-Vieille",
+        "Ricourt",
+        "Saint-Justin",
+        "Scieurac-et-Flourès",
+        "Sembouès",
+        "Tourdun",
+        "Troncens"
+      ],
+      "communeCount": 22,
+      "center": [0.1581, 43.5263],
+      "coverageRadius": 11.7,
+      "boundingBox": {
+        "minLat": 43.4533,
+        "maxLat": 43.6296,
+        "minLon": 0.0575,
+        "maxLon": 0.2503
+      },
+      "totalPopulation": 3223,
+      "totalSurface": 20401
+    },
+    "32240": {
+      "communes": [
+        "Castex-d'Armagnac",
+        "Estang",
+        "Lannemaignan",
+        "Lias-d'Armagnac",
+        "Mauléon-d'Armagnac",
+        "Maupas",
+        "Monguilhem",
+        "Monlezun-d'Armagnac",
+        "Mormès",
+        "Toujouse"
+      ],
+      "communeCount": 10,
+      "center": [-0.1418, 43.8586],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 43.7973,
+        "maxLat": 43.9023,
+        "minLon": -0.2003,
+        "maxLon": -0.0733
+      },
+      "totalPopulation": 2464,
+      "totalSurface": 13742
+    },
+    "32250": {
+      "communes": ["Castelnau d'Auzan Labarrère", "Fourcès", "Montréal"],
+      "communeCount": 3,
+      "center": [0.1508, 43.9539],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 43.9491,
+        "maxLat": 43.9929,
+        "minLon": 0.084,
+        "maxLon": 0.23
+      },
+      "totalPopulation": 2622,
+      "totalSurface": 14427
+    },
+    "32260": {
+      "communes": [
+        "Durban",
+        "Labarthe",
+        "Lamaguère",
+        "Moncorneil-Grazan",
+        "Monferran-Plavès",
+        "Orbessan",
+        "Ornézan",
+        "Pouy-Loubrin",
+        "Sansan",
+        "Seissan",
+        "Tachoires"
+      ],
+      "communeCount": 11,
+      "center": [0.6061, 43.4983],
+      "coverageRadius": 6.4,
+      "boundingBox": {
+        "minLat": 43.4531,
+        "maxLat": 43.5434,
+        "minLon": 0.5784,
+        "maxLon": 0.6728
+      },
+      "totalPopulation": 2487,
+      "totalSurface": 11134
+    },
+    "32270": {
+      "communes": [
+        "Ansan",
+        "Aubiet",
+        "Blanquefort",
+        "Crastes",
+        "L'Isle-Arné",
+        "Lussan",
+        "Marsan",
+        "Nougaroulet",
+        "Saint-Sauvy"
+      ],
+      "communeCount": 9,
+      "center": [0.7634, 43.6636],
+      "coverageRadius": 7.3,
+      "boundingBox": {
+        "minLat": 43.6151,
+        "maxLat": 43.7235,
+        "minLon": 0.7207,
+        "maxLon": 0.8205
+      },
+      "totalPopulation": 3120,
+      "totalSurface": 13826
+    },
+    "32290": {
+      "communes": [
+        "Aignan",
+        "Avéron-Bergelle",
+        "Bouzon-Gellenave",
+        "Castelnavet",
+        "Loussous-Débat",
+        "Lupiac",
+        "Margouët-Meymes",
+        "Pouydraguin",
+        "Sabazan",
+        "Saint-Pierre-d'Aubézies"
+      ],
+      "communeCount": 10,
+      "center": [0.0939, 43.6944],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 43.6434,
+        "maxLat": 43.7465,
+        "minLon": 0.032,
+        "maxLon": 0.1815
+      },
+      "totalPopulation": 2034,
+      "totalSurface": 15902
+    },
+    "32300": {
+      "communes": [
+        "Aujan-Mournède",
+        "Bars",
+        "Belloc-Saint-Clamens",
+        "Berdoues",
+        "Clermont-Pouyguillès",
+        "Cuélas",
+        "Estipouy",
+        "Idrac-Respaillès",
+        "L'Isle-de-Noé",
+        "Labéjan",
+        "Lagarde-Hachan",
+        "Lamazère",
+        "Loubersan",
+        "Miramont-d'Astarac",
+        "Mirande",
+        "Moncassin",
+        "Monclar-sur-Losse",
+        "Montaut",
+        "Mouchès",
+        "Ponsampère",
+        "Ponsan-Soubiran",
+        "Saint-Arroman",
+        "Sainte-Aurence-Cazaux",
+        "Saint-Élix-Theux",
+        "Saint-Martin",
+        "Saint-Maur",
+        "Saint-Médard",
+        "Saint-Michel",
+        "Saint-Ost",
+        "Sauviac",
+        "Viozan"
+      ],
+      "communeCount": 31,
+      "center": [0.422, 43.4978],
+      "coverageRadius": 17,
+      "boundingBox": {
+        "minLat": 43.3515,
+        "maxLat": 43.5868,
+        "minLon": 0.2962,
+        "maxLon": 0.5221
+      },
+      "totalPopulation": 8930,
+      "totalSurface": 36314
+    },
+    "32310": {
+      "communes": [
+        "Bezolles",
+        "Lagardère",
+        "Maignaut-Tauzia",
+        "Mansencôme",
+        "Roques",
+        "Saint-Puy",
+        "Valence-sur-Baïse"
+      ],
+      "communeCount": 7,
+      "center": [0.3957, 43.8749],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 43.823,
+        "maxLat": 43.8892,
+        "minLon": 0.2967,
+        "maxLon": 0.4611
+      },
+      "totalPopulation": 2299,
+      "totalSurface": 10414
+    },
+    "32320": {
+      "communes": [
+        "Bassoues",
+        "Bazian",
+        "Castelnau-d'Anglès",
+        "Montesquiou",
+        "Peyrusse-Grande",
+        "Pouylebon",
+        "Riguepeu",
+        "Saint-Christaud"
+      ],
+      "communeCount": 8,
+      "center": [0.2945, 43.5937],
+      "coverageRadius": 8.8,
+      "boundingBox": {
+        "minLat": 43.5293,
+        "maxLat": 43.6694,
+        "minLon": 0.2138,
+        "maxLon": 0.3438
+      },
+      "totalPopulation": 1617,
+      "totalSurface": 17704
+    },
+    "32330": {
+      "communes": ["Courrensan", "Gondrin", "Lagraulet-du-Gers", "Lauraët", "Mouchan"],
+      "communeCount": 5,
+      "center": [0.2426, 43.891],
+      "coverageRadius": 4.9,
+      "boundingBox": {
+        "minLat": 43.8488,
+        "maxLat": 43.9344,
+        "minLon": 0.2119,
+        "maxLon": 0.2973
+      },
+      "totalPopulation": 2764,
+      "totalSurface": 11375
+    },
+    "32340": {
+      "communes": ["Castet-Arrouy", "Flamarens", "Gimbrède", "Miradoux", "Peyrecave", "Plieux", "Saint-Antoine"],
+      "communeCount": 7,
+      "center": [0.7586, 44.0055],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 43.95,
+        "maxLat": 44.0405,
+        "minLon": 0.7142,
+        "maxLon": 0.8397
+      },
+      "totalPopulation": 1548,
+      "totalSurface": 10948
+    },
+    "32350": {
+      "communes": ["Barran", "Biran", "Le Brouilh-Monbert", "Mirannes", "Ordan-Larroque", "Saint-Arailles"],
+      "communeCount": 6,
+      "center": [0.4336, 43.6609],
+      "coverageRadius": 7.3,
+      "boundingBox": {
+        "minLat": 43.6165,
+        "maxLat": 43.6957,
+        "minLon": 0.3573,
+        "maxLon": 0.4601
+      },
+      "totalPopulation": 2355,
+      "totalSurface": 16618
+    },
+    "32360": {
+      "communes": ["Antras", "Castillon-Massas", "Jegun", "Lavardens", "Mérens", "Peyrusse-Massas", "Saint-Lary"],
+      "communeCount": 7,
+      "center": [0.4875, 43.7483],
+      "coverageRadius": 5.6,
+      "boundingBox": {
+        "minLat": 43.7192,
+        "maxLat": 43.7605,
+        "minLon": 0.448,
+        "maxLon": 0.553
+      },
+      "totalPopulation": 2269,
+      "totalSurface": 10689
+    },
+    "32370": {
+      "communes": ["Bourrouillan", "Espas", "Manciet", "Sainte-Christie-d'Armagnac", "Salles-d'Armagnac"],
+      "communeCount": 5,
+      "center": [0.0191, 43.7972],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 43.7807,
+        "maxLat": 43.8196,
+        "minLon": -0.0429,
+        "maxLon": 0.0709
+      },
+      "totalPopulation": 1562,
+      "totalSurface": 9568
+    },
+    "32380": {
+      "communes": [
+        "Avezan",
+        "Bivès",
+        "Cadeilhan",
+        "Castéron",
+        "Estramiac",
+        "Gaudonville",
+        "L'Isle-Bouzon",
+        "Magnas",
+        "Mauroux",
+        "Pessoulens",
+        "Saint-Clar",
+        "Saint-Créac",
+        "Saint-Léonard",
+        "Tournecoupe"
+      ],
+      "communeCount": 14,
+      "center": [0.7881, 43.8812],
+      "coverageRadius": 8,
+      "boundingBox": {
+        "minLat": 43.8283,
+        "maxLat": 43.9265,
+        "minLon": 0.7285,
+        "maxLon": 0.8779
+      },
+      "totalPopulation": 2802,
+      "totalSurface": 15322
+    },
+    "32390": {
+      "communes": [
+        "Gavarret-sur-Aulouste",
+        "Miramont-Latour",
+        "Mirepoix",
+        "Montestruc-sur-Gers",
+        "Préchac",
+        "Puységur",
+        "Réjaumont",
+        "Roquefort",
+        "Sainte-Christie",
+        "Tourrenquets"
+      ],
+      "communeCount": 10,
+      "center": [0.6259, 43.7747],
+      "coverageRadius": 7.5,
+      "boundingBox": {
+        "minLat": 43.7447,
+        "maxLat": 43.8137,
+        "minLon": 0.5504,
+        "maxLon": 0.6926
+      },
+      "totalPopulation": 2609,
+      "totalSurface": 10020
+    },
+    "32400": {
+      "communes": [
+        "Aurensan",
+        "Bernède",
+        "Cahuzac-sur-Adour",
+        "Caumont",
+        "Corneillan",
+        "Fustérouau",
+        "Goux",
+        "Izotges",
+        "Labarthète",
+        "Lannux",
+        "Lelin-Lapujolle",
+        "Maulichères",
+        "Maumusson-Laguian",
+        "Projan",
+        "Riscle",
+        "Saint-Germé",
+        "Saint-Mont",
+        "Sarragachies",
+        "Ségos",
+        "Tarsac",
+        "Termes-d'Armagnac",
+        "Verlus",
+        "Viella"
+      ],
+      "communeCount": 23,
+      "center": [-0.1229, 43.6519],
+      "coverageRadius": 11.5,
+      "boundingBox": {
+        "minLat": 43.5966,
+        "maxLat": 43.7061,
+        "minLon": -0.258,
+        "maxLon": 0.012
+      },
+      "totalPopulation": 6113,
+      "totalSurface": 24206
+    },
+    "32410": {
+      "communes": ["Ayguetinte", "Beaucaire", "Bonas", "Castéra-Verduzan", "Cézan", "Larroque-Saint-Sernin"],
+      "communeCount": 6,
+      "center": [0.4336, 43.8123],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 43.7792,
+        "maxLat": 43.8377,
+        "minLon": 0.3851,
+        "maxLon": 0.499
+      },
+      "totalPopulation": 1925,
+      "totalSurface": 8284
+    },
+    "32420": {
+      "communes": [
+        "Betcave-Aguin",
+        "Gaujan",
+        "Meilhan",
+        "Monties",
+        "Pellefigue",
+        "Sabaillan",
+        "Cap d'Astarac",
+        "Simorre",
+        "Tournan",
+        "Villefranche-d'Astarac"
+      ],
+      "communeCount": 10,
+      "center": [0.7277, 43.4251],
+      "coverageRadius": 11.1,
+      "boundingBox": {
+        "minLat": 43.3442,
+        "maxLat": 43.4748,
+        "minLon": 0.6473,
+        "maxLon": 0.8114
+      },
+      "totalPopulation": 1951,
+      "totalSurface": 15513
+    },
+    "32430": {
+      "communes": [
+        "Ardizas",
+        "Cologne",
+        "Encausse",
+        "Roquelaure-Saint-Aubin",
+        "Sainte-Anne",
+        "Saint-Cricq",
+        "Saint-Georges",
+        "Sirac",
+        "Thoux",
+        "Touget"
+      ],
+      "communeCount": 10,
+      "center": [0.9769, 43.7072],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 43.667,
+        "maxLat": 43.7445,
+        "minLon": 0.9151,
+        "maxLon": 1.0403
+      },
+      "totalPopulation": 3212,
+      "totalSurface": 9296
+    },
+    "32440": {
+      "communes": ["Castelnau d'Auzan Labarrère"],
+      "communeCount": 1,
+      "center": [0.084, 43.9491],
+      "coverageRadius": 4.26,
+      "totalPopulation": 1185,
+      "totalSurface": 5713
+    },
+    "32450": {
+      "communes": [
+        "Aurimont",
+        "Bédéchan",
+        "Boulaur",
+        "Castelnau-Barbarens",
+        "Faget-Abbatial",
+        "Lartigue",
+        "Saint-Élix-d'Astarac",
+        "Saint-Martin-Gimois",
+        "Saramon",
+        "Sémézies-Cachan",
+        "Tirent-Pontéjac",
+        "Traversères"
+      ],
+      "communeCount": 12,
+      "center": [0.7538, 43.5389],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 43.4933,
+        "maxLat": 43.576,
+        "minLon": 0.6496,
+        "maxLon": 0.8222
+      },
+      "totalPopulation": 2854,
+      "totalSurface": 15372
+    },
+    "32460": {
+      "communes": ["Le Houga", "Perchède"],
+      "communeCount": 2,
+      "center": [-0.1769, 43.7749],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 43.7747,
+        "maxLat": 43.777,
+        "minLon": -0.1804,
+        "maxLon": -0.1377
+      },
+      "totalPopulation": 1291,
+      "totalSurface": 3718
+    },
+    "32480": {
+      "communes": [
+        "Berrac",
+        "Gazaupouy",
+        "Larroque-Engalin",
+        "Ligardes",
+        "Pouy-Roquelaure",
+        "La Romieu",
+        "Saint-Martin-de-Goyne"
+      ],
+      "communeCount": 7,
+      "center": [0.5015, 44.0042],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 43.9812,
+        "maxLat": 44.0407,
+        "minLon": 0.4518,
+        "maxLon": 0.5659
+      },
+      "totalPopulation": 1398,
+      "totalSurface": 9160
+    },
+    "32490": {
+      "communes": ["Castillon-Savès", "Frégouville", "Marestaing", "Monferran-Savès"],
+      "communeCount": 4,
+      "center": [0.9843, 43.5874],
+      "coverageRadius": 3,
+      "boundingBox": {
+        "minLat": 43.5694,
+        "maxLat": 43.5981,
+        "minLon": 0.9545,
+        "maxLon": 1.0183
+      },
+      "totalPopulation": 1845,
+      "totalSurface": 5787
+    },
+    "32500": {
+      "communes": [
+        "Brugnens",
+        "Castelnau-d'Arbieu",
+        "Céran",
+        "Fleurance",
+        "Goutz",
+        "Lalanne",
+        "Lamothe-Goas",
+        "Pauilhac",
+        "Pis",
+        "Sainte-Radegonde",
+        "La Sauvetat",
+        "Urdens"
+      ],
+      "communeCount": 12,
+      "center": [0.6582, 43.8487],
+      "coverageRadius": 10.5,
+      "boundingBox": {
+        "minLat": 43.7842,
+        "maxLat": 43.8828,
+        "minLon": 0.5283,
+        "maxLon": 0.7348
+      },
+      "totalPopulation": 8821,
+      "totalSurface": 18109
+    },
+    "32550": {
+      "communes": [
+        "Auterive",
+        "Boucagnères",
+        "Haulies",
+        "Lasséran",
+        "Lasseube-Propre",
+        "Montégut",
+        "Pavie",
+        "Pessan",
+        "Saint-Jean-le-Comtal"
+      ],
+      "communeCount": 9,
+      "center": [0.6009, 43.6044],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 43.5564,
+        "maxLat": 43.6515,
+        "minLon": 0.5206,
+        "maxLon": 0.6681
+      },
+      "totalPopulation": 5746,
+      "totalSurface": 13702
+    },
+    "32600": {
+      "communes": [
+        "Auradé",
+        "Beaupuy",
+        "Clermont-Savès",
+        "Endoufielle",
+        "L'Isle-Jourdain",
+        "Lias",
+        "Monbrun",
+        "Pujaudran",
+        "Razengues",
+        "Ségoufielle"
+      ],
+      "communeCount": 10,
+      "center": [1.0877, 43.6079],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 43.5509,
+        "maxLat": 43.6617,
+        "minLon": 0.9963,
+        "maxLon": 1.1521
+      },
+      "totalPopulation": 15620,
+      "totalSurface": 17067
+    },
+    "32700": {
+      "communes": [
+        "Castéra-Lectourois",
+        "Lagarde",
+        "Lectoure",
+        "Marsolan",
+        "Mas-d'Auvignon",
+        "Pergain-Taillac",
+        "Saint-Avit-Frandat",
+        "Sainte-Mère",
+        "Saint-Mézard",
+        "Sempesserre",
+        "Terraube"
+      ],
+      "communeCount": 11,
+      "center": [0.607, 43.9518],
+      "coverageRadius": 12,
+      "boundingBox": {
+        "minLat": 43.8906,
+        "maxLat": 44.0584,
+        "minLon": 0.5028,
+        "maxLon": 0.6686
+      },
+      "totalPopulation": 6313,
+      "totalSurface": 25208
+    },
+    "32720": {
+      "communes": ["Arblade-le-Bas", "Barcelonne-du-Gers", "Gée-Rivière", "Vergoignan"],
+      "communeCount": 4,
+      "center": [-0.2245, 43.7057],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 43.678,
+        "maxLat": 43.7184,
+        "minLon": -0.236,
+        "maxLon": -0.1781
+      },
+      "totalPopulation": 1869,
+      "totalSurface": 4143
+    },
+    "32730": {
+      "communes": ["Beccas", "Betplan", "Haget", "Malabat", "Montégut-Arros", "Villecomtal-sur-Arros"],
+      "communeCount": 6,
+      "center": [0.1905, 43.4063],
+      "coverageRadius": 4,
+      "boundingBox": {
+        "minLat": 43.3812,
+        "maxLat": 43.4351,
+        "minLon": 0.1543,
+        "maxLon": 0.2165
+      },
+      "totalPopulation": 1785,
+      "totalSurface": 5041
+    },
+    "32800": {
+      "communes": [
+        "Ayzieu",
+        "Bretagne-d'Armagnac",
+        "Campagne-d'Armagnac",
+        "Cazeneuve",
+        "Eauze",
+        "Noulens",
+        "Ramouzens",
+        "Réans"
+      ],
+      "communeCount": 8,
+      "center": [0.0987, 43.8612],
+      "coverageRadius": 9.5,
+      "boundingBox": {
+        "minLat": 43.8102,
+        "maxLat": 43.8864,
+        "minLon": -0.0176,
+        "maxLon": 0.1853
+      },
+      "totalPopulation": 5578,
+      "totalSurface": 14512
+    },
+    "32810": {
+      "communes": ["Castin", "Duran", "Lahitte", "Leboulin", "Montaut-les-Créneaux", "Preignan", "Roquelaure"],
+      "communeCount": 7,
+      "center": [0.6138, 43.6934],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 43.6604,
+        "maxLat": 43.7198,
+        "minLon": 0.5475,
+        "maxLon": 0.6807
+      },
+      "totalPopulation": 4287,
+      "totalSurface": 9085
+    }
+  }
+}

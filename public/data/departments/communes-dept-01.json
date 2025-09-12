@@ -1,0 +1,7373 @@
+{
+  "departmentCode": "01",
+  "departmentName": "Ain",
+  "stats": {
+    "communeCount": 391,
+    "totalPopulation": 671115,
+    "totalSurface": 578341
+  },
+  "communes": [
+    {
+      "nom": "Ambérieu-en-Bugey",
+      "code": "01004",
+      "codesPostaux": ["01500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3706, 45.9575]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3596, 45.9584]
+      },
+      "population": 15554,
+      "surface": 2454.8,
+      "radius": 2.8
+    },
+    {
+      "nom": "Ambérieux-en-Dombes",
+      "code": "01005",
+      "codesPostaux": ["01330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9119, 45.9992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.903, 45.9959]
+      },
+      "population": 1917,
+      "surface": 1603.97,
+      "radius": 2.26
+    },
+    {
+      "nom": "Ambléon",
+      "code": "01006",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5928, 45.7483]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6011, 45.7477]
+      },
+      "population": 114,
+      "surface": 604.01,
+      "radius": 1.39
+    },
+    {
+      "nom": "Ambronay",
+      "code": "01007",
+      "codesPostaux": ["01500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3627, 46.0099]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3611, 46.0078]
+      },
+      "population": 2828,
+      "surface": 3370.53,
+      "radius": 3.28
+    },
+    {
+      "nom": "Ambutrix",
+      "code": "01008",
+      "codesPostaux": ["01500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3359, 45.9347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3369, 45.9388]
+      },
+      "population": 764,
+      "surface": 518.27,
+      "radius": 1.28
+    },
+    {
+      "nom": "Andert-et-Condon",
+      "code": "01009",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6607, 45.7841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6555, 45.7941]
+      },
+      "population": 335,
+      "surface": 700.67,
+      "radius": 1.49
+    },
+    {
+      "nom": "Anglefort",
+      "code": "01010",
+      "codesPostaux": ["01350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7948, 45.9086]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.8094, 45.914]
+      },
+      "population": 1150,
+      "surface": 2955.54,
+      "radius": 3.07
+    },
+    {
+      "nom": "Apremont",
+      "code": "01011",
+      "codesPostaux": ["01100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6619, 46.2045]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6586, 46.2075]
+      },
+      "population": 399,
+      "surface": 1507.23,
+      "radius": 2.19
+    },
+    {
+      "nom": "Aranc",
+      "code": "01012",
+      "codesPostaux": ["01110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.514, 45.9972]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.508, 46.0031]
+      },
+      "population": 329,
+      "surface": 2171.31,
+      "radius": 2.63
+    },
+    {
+      "nom": "Arandas",
+      "code": "01013",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4982, 45.8885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4858, 45.8966]
+      },
+      "population": 140,
+      "surface": 1405.34,
+      "radius": 2.12
+    },
+    {
+      "nom": "Arbent",
+      "code": "01014",
+      "codesPostaux": ["01100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6879, 46.2838]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6819, 46.2954]
+      },
+      "population": 3482,
+      "surface": 2366.87,
+      "radius": 2.74
+    },
+    {
+      "nom": "Arbigny",
+      "code": "01016",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9613, 46.4808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9708, 46.4699]
+      },
+      "population": 459,
+      "surface": 1754.36,
+      "radius": 2.36
+    },
+    {
+      "nom": "Arboys en Bugey",
+      "code": "01015",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6404, 45.7189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6504, 45.7287]
+      },
+      "population": 688,
+      "surface": 2260.53,
+      "radius": 2.68
+    },
+    {
+      "nom": "Argis",
+      "code": "01017",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4819, 45.9322]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4895, 45.9341]
+      },
+      "population": 420,
+      "surface": 781.9,
+      "radius": 1.58
+    },
+    {
+      "nom": "Armix",
+      "code": "01019",
+      "codesPostaux": ["01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5837, 45.8523]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.586, 45.8489]
+      },
+      "population": 25,
+      "surface": 696.88,
+      "radius": 1.49
+    },
+    {
+      "nom": "Ars-sur-Formans",
+      "code": "01021",
+      "codesPostaux": ["01480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8195, 45.9904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8221, 45.9932]
+      },
+      "population": 1513,
+      "surface": 551.98,
+      "radius": 1.33
+    },
+    {
+      "nom": "Artemare",
+      "code": "01022",
+      "codesPostaux": ["01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.692, 45.8701]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6934, 45.8752]
+      },
+      "population": 1141,
+      "surface": 332.29,
+      "radius": 1.03
+    },
+    {
+      "nom": "Arvière-en-Valromey",
+      "code": "01453",
+      "codesPostaux": ["01260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7346, 45.9153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7241, 45.9087]
+      },
+      "population": 715,
+      "surface": 4129.88,
+      "radius": 3.63
+    },
+    {
+      "nom": "Asnières-sur-Saône",
+      "code": "01023",
+      "codesPostaux": ["01570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.882, 46.3859]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.883, 46.383]
+      },
+      "population": 77,
+      "surface": 466.77,
+      "radius": 1.22
+    },
+    {
+      "nom": "Attignat",
+      "code": "01024",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1823, 46.2858]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1586, 46.2895]
+      },
+      "population": 3372,
+      "surface": 1894.31,
+      "radius": 2.46
+    },
+    {
+      "nom": "Bâgé-Dommartin",
+      "code": "01025",
+      "codesPostaux": ["01380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9704, 46.3277]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9468, 46.3167]
+      },
+      "population": 4057,
+      "surface": 5701.1,
+      "radius": 4.26
+    },
+    {
+      "nom": "Bâgé-le-Châtel",
+      "code": "01026",
+      "codesPostaux": ["01380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9305, 46.3081]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9289, 46.3077]
+      },
+      "population": 987,
+      "surface": 87.64,
+      "radius": 0.53
+    },
+    {
+      "nom": "Balan",
+      "code": "01027",
+      "codesPostaux": ["01360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1076, 45.8268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0968, 45.8331]
+      },
+      "population": 2878,
+      "surface": 1799.48,
+      "radius": 2.39
+    },
+    {
+      "nom": "Baneins",
+      "code": "01028",
+      "codesPostaux": ["01990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9045, 46.1117]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9013, 46.1108]
+      },
+      "population": 618,
+      "surface": 907.01,
+      "radius": 1.7
+    },
+    {
+      "nom": "Béard-Géovreissiat",
+      "code": "01170",
+      "codesPostaux": ["01460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5497, 46.1884]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5547, 46.1896]
+      },
+      "population": 1048,
+      "surface": 469.07,
+      "radius": 1.22
+    },
+    {
+      "nom": "Beaupont",
+      "code": "01029",
+      "codesPostaux": ["01270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2634, 46.4274]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2647, 46.4102]
+      },
+      "population": 717,
+      "surface": 1415.51,
+      "radius": 2.12
+    },
+    {
+      "nom": "Beauregard",
+      "code": "01030",
+      "codesPostaux": ["01480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7567, 46.0012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7512, 46.003]
+      },
+      "population": 826,
+      "surface": 98.18,
+      "radius": 0.56
+    },
+    {
+      "nom": "Béligneux",
+      "code": "01032",
+      "codesPostaux": ["01360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1415, 45.8622]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1288, 45.8521]
+      },
+      "population": 3484,
+      "surface": 1335.68,
+      "radius": 2.06
+    },
+    {
+      "nom": "Belley",
+      "code": "01034",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6927, 45.743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6863, 45.7609]
+      },
+      "population": 9270,
+      "surface": 2254.61,
+      "radius": 2.68
+    },
+    {
+      "nom": "Belleydoux",
+      "code": "01035",
+      "codesPostaux": ["01130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7816, 46.2519]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7773, 46.2529]
+      },
+      "population": 306,
+      "surface": 1781.95,
+      "radius": 2.38
+    },
+    {
+      "nom": "Bellignat",
+      "code": "01031",
+      "codesPostaux": ["01100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6371, 46.2402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6292, 46.242]
+      },
+      "population": 3581,
+      "surface": 781.94,
+      "radius": 1.58
+    },
+    {
+      "nom": "Bénonces",
+      "code": "01037",
+      "codesPostaux": ["01470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4834, 45.842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4778, 45.8268]
+      },
+      "population": 311,
+      "surface": 1536.02,
+      "radius": 2.21
+    },
+    {
+      "nom": "Bény",
+      "code": "01038",
+      "codesPostaux": ["01370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2789, 46.3189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2841, 46.3209]
+      },
+      "population": 769,
+      "surface": 1828.16,
+      "radius": 2.41
+    },
+    {
+      "nom": "Béréziat",
+      "code": "01040",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0431, 46.3699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0461, 46.367]
+      },
+      "population": 481,
+      "surface": 1127.05,
+      "radius": 1.89
+    },
+    {
+      "nom": "Bettant",
+      "code": "01041",
+      "codesPostaux": ["01500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3648, 45.9366]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3627, 45.9433]
+      },
+      "population": 762,
+      "surface": 343.27,
+      "radius": 1.05
+    },
+    {
+      "nom": "Bey",
+      "code": "01042",
+      "codesPostaux": ["01290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.844, 46.2182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8459, 46.2197]
+      },
+      "population": 290,
+      "surface": 277.57,
+      "radius": 0.94
+    },
+    {
+      "nom": "Beynost",
+      "code": "01043",
+      "codesPostaux": ["01700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9964, 45.8359]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0014, 45.8403]
+      },
+      "population": 4936,
+      "surface": 1068.97,
+      "radius": 1.84
+    },
+    {
+      "nom": "Billiat",
+      "code": "01044",
+      "codesPostaux": ["01200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7632, 46.0778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7842, 46.078]
+      },
+      "population": 669,
+      "surface": 1404.11,
+      "radius": 2.11
+    },
+    {
+      "nom": "Birieux",
+      "code": "01045",
+      "codesPostaux": ["01330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0401, 45.9509]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0387, 45.9531]
+      },
+      "population": 280,
+      "surface": 1577.34,
+      "radius": 2.24
+    },
+    {
+      "nom": "Biziat",
+      "code": "01046",
+      "codesPostaux": ["01290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9393, 46.224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9437, 46.2169]
+      },
+      "population": 897,
+      "surface": 1158.05,
+      "radius": 1.92
+    },
+    {
+      "nom": "Blyes",
+      "code": "01047",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2515, 45.8442]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2495, 45.8461]
+      },
+      "population": 1351,
+      "surface": 942.45,
+      "radius": 1.73
+    },
+    {
+      "nom": "Bohas-Meyriat-Rignat",
+      "code": "01245",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.375, 46.1422]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3911, 46.1369]
+      },
+      "population": 951,
+      "surface": 2342.28,
+      "radius": 2.73
+    },
+    {
+      "nom": "Boissey",
+      "code": "01050",
+      "codesPostaux": ["01190", "01380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9975, 46.3723]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.997, 46.3812]
+      },
+      "population": 390,
+      "surface": 945.41,
+      "radius": 1.73
+    },
+    {
+      "nom": "Bolozon",
+      "code": "01051",
+      "codesPostaux": ["01450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4701, 46.1971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4731, 46.192]
+      },
+      "population": 99,
+      "surface": 497.27,
+      "radius": 1.26
+    },
+    {
+      "nom": "Bouligneux",
+      "code": "01052",
+      "codesPostaux": ["01330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9957, 46.0202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9911, 46.0222]
+      },
+      "population": 323,
+      "surface": 2623.93,
+      "radius": 2.89
+    },
+    {
+      "nom": "Bourg-en-Bresse",
+      "code": "01053",
+      "codesPostaux": ["01000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2469, 46.2027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2247, 46.2053]
+      },
+      "population": 42065,
+      "surface": 2403.23,
+      "radius": 2.77
+    },
+    {
+      "nom": "Bourg-Saint-Christophe",
+      "code": "01054",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1393, 45.8842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1578, 45.8898]
+      },
+      "population": 1540,
+      "surface": 899.82,
+      "radius": 1.69
+    },
+    {
+      "nom": "Boyeux-Saint-Jérôme",
+      "code": "01056",
+      "codesPostaux": ["01640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4616, 46.0356]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.459, 46.0299]
+      },
+      "population": 362,
+      "surface": 1671.47,
+      "radius": 2.31
+    },
+    {
+      "nom": "Boz",
+      "code": "01057",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9166, 46.4089]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9105, 46.407]
+      },
+      "population": 509,
+      "surface": 769.11,
+      "radius": 1.56
+    },
+    {
+      "nom": "Brégnier-Cordon",
+      "code": "01058",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6174, 45.6406]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6192, 45.6483]
+      },
+      "population": 812,
+      "surface": 1125.73,
+      "radius": 1.89
+    },
+    {
+      "nom": "Brénod",
+      "code": "01060",
+      "codesPostaux": ["01110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6116, 46.0791]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6057, 46.0595]
+      },
+      "population": 547,
+      "surface": 2402.27,
+      "radius": 2.77
+    },
+    {
+      "nom": "Brens",
+      "code": "01061",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.69, 45.7163]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6956, 45.7184]
+      },
+      "population": 1117,
+      "surface": 688.48,
+      "radius": 1.48
+    },
+    {
+      "nom": "Bresse Vallons",
+      "code": "01130",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1822, 46.3271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.166, 46.3078]
+      },
+      "population": 2393,
+      "surface": 2616.65,
+      "radius": 2.89
+    },
+    {
+      "nom": "Bressolles",
+      "code": "01062",
+      "codesPostaux": ["01360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0984, 45.8714]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0957, 45.8671]
+      },
+      "population": 1003,
+      "surface": 765.56,
+      "radius": 1.56
+    },
+    {
+      "nom": "Brion",
+      "code": "01063",
+      "codesPostaux": ["01460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5477, 46.1689]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5533, 46.171]
+      },
+      "population": 591,
+      "surface": 448.64,
+      "radius": 1.2
+    },
+    {
+      "nom": "Briord",
+      "code": "01064",
+      "codesPostaux": ["01470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4832, 45.768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4592, 45.7825]
+      },
+      "population": 1102,
+      "surface": 1231.56,
+      "radius": 1.98
+    },
+    {
+      "nom": "Buellas",
+      "code": "01065",
+      "codesPostaux": ["01310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1468, 46.2116]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1348, 46.2093]
+      },
+      "population": 1884,
+      "surface": 1024.78,
+      "radius": 1.81
+    },
+    {
+      "nom": "Ceignes",
+      "code": "01067",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4957, 46.1258]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5002, 46.1204]
+      },
+      "population": 263,
+      "surface": 1016.7,
+      "radius": 1.8
+    },
+    {
+      "nom": "Cerdon",
+      "code": "01068",
+      "codesPostaux": ["01450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4755, 46.075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4649, 46.0806]
+      },
+      "population": 755,
+      "surface": 1209.81,
+      "radius": 1.96
+    },
+    {
+      "nom": "Certines",
+      "code": "01069",
+      "codesPostaux": ["01240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2638, 46.1336]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2645, 46.1322]
+      },
+      "population": 1518,
+      "surface": 1602.12,
+      "radius": 2.26
+    },
+    {
+      "nom": "Cessy",
+      "code": "01071",
+      "codesPostaux": ["01170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.082, 46.3157]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.0699, 46.3169]
+      },
+      "population": 5570,
+      "surface": 640.24,
+      "radius": 1.43
+    },
+    {
+      "nom": "Ceyzériat",
+      "code": "01072",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3191, 46.1822]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3225, 46.1793]
+      },
+      "population": 3306,
+      "surface": 922.86,
+      "radius": 1.71
+    },
+    {
+      "nom": "Ceyzérieu",
+      "code": "01073",
+      "codesPostaux": ["01350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7197, 45.8368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7263, 45.8353]
+      },
+      "population": 1028,
+      "surface": 1985.6,
+      "radius": 2.51
+    },
+    {
+      "nom": "Chalamont",
+      "code": "01074",
+      "codesPostaux": ["01320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1735, 46.0149]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1701, 45.9961]
+      },
+      "population": 2544,
+      "surface": 3299.24,
+      "radius": 3.24
+    },
+    {
+      "nom": "Chaleins",
+      "code": "01075",
+      "codesPostaux": ["01480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7999, 46.0361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8048, 46.0305]
+      },
+      "population": 1436,
+      "surface": 1709.37,
+      "radius": 2.33
+    },
+    {
+      "nom": "Chaley",
+      "code": "01076",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5408, 45.9511]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5304, 45.9551]
+      },
+      "population": 127,
+      "surface": 463.59,
+      "radius": 1.21
+    },
+    {
+      "nom": "Challes-la-Montagne",
+      "code": "01077",
+      "codesPostaux": ["01450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.456, 46.1237]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.463, 46.1249]
+      },
+      "population": 185,
+      "surface": 776.42,
+      "radius": 1.57
+    },
+    {
+      "nom": "Challex",
+      "code": "01078",
+      "codesPostaux": ["01630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9735, 46.1765]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.9722, 46.1812]
+      },
+      "population": 1628,
+      "surface": 871.43,
+      "radius": 1.67
+    },
+    {
+      "nom": "Champagne-en-Valromey",
+      "code": "01079",
+      "codesPostaux": ["01260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6921, 45.9317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6789, 45.905]
+      },
+      "population": 826,
+      "surface": 1833.17,
+      "radius": 2.42
+    },
+    {
+      "nom": "Champdor-Corcelles",
+      "code": "01080",
+      "codesPostaux": ["01110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5882, 46.0371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5971, 46.0177]
+      },
+      "population": 655,
+      "surface": 3148.7,
+      "radius": 3.17
+    },
+    {
+      "nom": "Champfromier",
+      "code": "01081",
+      "codesPostaux": ["01410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.8216, 46.2264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.8168, 46.194]
+      },
+      "population": 709,
+      "surface": 3192.15,
+      "radius": 3.19
+    },
+    {
+      "nom": "Chanay",
+      "code": "01082",
+      "codesPostaux": ["01420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7674, 46.0024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7827, 46.0044]
+      },
+      "population": 595,
+      "surface": 1839.96,
+      "radius": 2.42
+    },
+    {
+      "nom": "Chaneins",
+      "code": "01083",
+      "codesPostaux": ["01990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8517, 46.0947]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.851, 46.0974]
+      },
+      "population": 1041,
+      "surface": 1272.92,
+      "radius": 2.01
+    },
+    {
+      "nom": "Chanoz-Châtenay",
+      "code": "01084",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0302, 46.1868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0299, 46.1841]
+      },
+      "population": 943,
+      "surface": 1336.06,
+      "radius": 2.06
+    },
+    {
+      "nom": "Charix",
+      "code": "01087",
+      "codesPostaux": ["01130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6773, 46.1893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6851, 46.1826]
+      },
+      "population": 280,
+      "surface": 1861.16,
+      "radius": 2.43
+    },
+    {
+      "nom": "Charnoz-sur-Ain",
+      "code": "01088",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2251, 45.8756]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2218, 45.8672]
+      },
+      "population": 925,
+      "surface": 659.99,
+      "radius": 1.45
+    },
+    {
+      "nom": "Château-Gaillard",
+      "code": "01089",
+      "codesPostaux": ["01500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3091, 45.9723]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.305, 45.9735]
+      },
+      "population": 2408,
+      "surface": 1606.78,
+      "radius": 2.26
+    },
+    {
+      "nom": "Châtenay",
+      "code": "01090",
+      "codesPostaux": ["01320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2085, 46.0276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2006, 46.0338]
+      },
+      "population": 358,
+      "surface": 1521.67,
+      "radius": 2.2
+    },
+    {
+      "nom": "Châtillon-la-Palud",
+      "code": "01092",
+      "codesPostaux": ["01320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.246, 45.9757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2545, 45.9726]
+      },
+      "population": 1675,
+      "surface": 1409.8,
+      "radius": 2.12
+    },
+    {
+      "nom": "Châtillon-sur-Chalaronne",
+      "code": "01093",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9549, 46.1264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9577, 46.1195]
+      },
+      "population": 5154,
+      "surface": 1808.06,
+      "radius": 2.4
+    },
+    {
+      "nom": "Chavannes-sur-Reyssouze",
+      "code": "01094",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0069, 46.4403]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9971, 46.4312]
+      },
+      "population": 746,
+      "surface": 1650.7,
+      "radius": 2.29
+    },
+    {
+      "nom": "Chaveyriat",
+      "code": "01096",
+      "codesPostaux": ["01660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0534, 46.1991]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0613, 46.1981]
+      },
+      "population": 1057,
+      "surface": 1678.48,
+      "radius": 2.31
+    },
+    {
+      "nom": "Chazey-Bons",
+      "code": "01098",
+      "codesPostaux": ["01300", "01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6678, 45.8007]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6829, 45.8044]
+      },
+      "population": 1165,
+      "surface": 1557,
+      "radius": 2.23
+    },
+    {
+      "nom": "Chazey-sur-Ain",
+      "code": "01099",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2604, 45.8937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2551, 45.8927]
+      },
+      "population": 1613,
+      "surface": 2208,
+      "radius": 2.65
+    },
+    {
+      "nom": "Cheignieu-la-Balme",
+      "code": "01100",
+      "codesPostaux": ["01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6022, 45.8233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6097, 45.8264]
+      },
+      "population": 130,
+      "surface": 596.09,
+      "radius": 1.38
+    },
+    {
+      "nom": "Chevillard",
+      "code": "01101",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5815, 46.1087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5805, 46.1104]
+      },
+      "population": 149,
+      "surface": 663.5,
+      "radius": 1.45
+    },
+    {
+      "nom": "Chevroux",
+      "code": "01102",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9598, 46.3822]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9479, 46.3808]
+      },
+      "population": 981,
+      "surface": 1720.39,
+      "radius": 2.34
+    },
+    {
+      "nom": "Chevry",
+      "code": "01103",
+      "codesPostaux": ["01170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.0474, 46.2841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.0364, 46.28]
+      },
+      "population": 2301,
+      "surface": 582.26,
+      "radius": 1.36
+    },
+    {
+      "nom": "Chézery-Forens",
+      "code": "01104",
+      "codesPostaux": ["01200", "01410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.8693, 46.2244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.8676, 46.2224]
+      },
+      "population": 436,
+      "surface": 4660.9,
+      "radius": 3.85
+    },
+    {
+      "nom": "Civrieux",
+      "code": "01105",
+      "codesPostaux": ["01390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8895, 45.9208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8825, 45.9205]
+      },
+      "population": 1986,
+      "surface": 2017.17,
+      "radius": 2.53
+    },
+    {
+      "nom": "Cize",
+      "code": "01106",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.45, 46.2015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4468, 46.2058]
+      },
+      "population": 175,
+      "surface": 454.64,
+      "radius": 1.2
+    },
+    {
+      "nom": "Cleyzieu",
+      "code": "01107",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4317, 45.9027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4309, 45.9081]
+      },
+      "population": 144,
+      "surface": 772.3,
+      "radius": 1.57
+    },
+    {
+      "nom": "Coligny",
+      "code": "01108",
+      "codesPostaux": ["01270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3352, 46.3889]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3459, 46.3829]
+      },
+      "population": 1294,
+      "surface": 1688.01,
+      "radius": 2.32
+    },
+    {
+      "nom": "Collonges",
+      "code": "01109",
+      "codesPostaux": ["01550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9007, 46.1397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.904, 46.1383]
+      },
+      "population": 2260,
+      "surface": 1633.03,
+      "radius": 2.28
+    },
+    {
+      "nom": "Colomieu",
+      "code": "01110",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6269, 45.7338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6208, 45.7326]
+      },
+      "population": 164,
+      "surface": 588.34,
+      "radius": 1.37
+    },
+    {
+      "nom": "Conand",
+      "code": "01111",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4787, 45.8836]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4731, 45.8923]
+      },
+      "population": 136,
+      "surface": 1533.55,
+      "radius": 2.21
+    },
+    {
+      "nom": "Condamine",
+      "code": "01112",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5596, 46.1056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5508, 46.1083]
+      },
+      "population": 477,
+      "surface": 453.91,
+      "radius": 1.2
+    },
+    {
+      "nom": "Condeissiat",
+      "code": "01113",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0863, 46.1541]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0799, 46.157]
+      },
+      "population": 815,
+      "surface": 2175.58,
+      "radius": 2.63
+    },
+    {
+      "nom": "Confort",
+      "code": "01114",
+      "codesPostaux": ["01200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.8358, 46.1536]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.8229, 46.1508]
+      },
+      "population": 676,
+      "surface": 1129.47,
+      "radius": 1.9
+    },
+    {
+      "nom": "Confrançon",
+      "code": "01115",
+      "codesPostaux": ["01310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.06, 46.2732]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0657, 46.2648]
+      },
+      "population": 1357,
+      "surface": 1817.9,
+      "radius": 2.41
+    },
+    {
+      "nom": "Contrevoz",
+      "code": "01116",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6164, 45.7971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6284, 45.8044]
+      },
+      "population": 489,
+      "surface": 1423.66,
+      "radius": 2.13
+    },
+    {
+      "nom": "Conzieu",
+      "code": "01117",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.602, 45.7246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.607, 45.7278]
+      },
+      "population": 148,
+      "surface": 713.11,
+      "radius": 1.51
+    },
+    {
+      "nom": "Corbonod",
+      "code": "01118",
+      "codesPostaux": ["01420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7902, 45.9668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.8105, 45.9696]
+      },
+      "population": 1315,
+      "surface": 3206.46,
+      "radius": 3.19
+    },
+    {
+      "nom": "Corlier",
+      "code": "01121",
+      "codesPostaux": ["01110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5003, 46.0369]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4988, 46.0306]
+      },
+      "population": 116,
+      "surface": 554.59,
+      "radius": 1.33
+    },
+    {
+      "nom": "Cormoranche-sur-Saône",
+      "code": "01123",
+      "codesPostaux": ["01290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8305, 46.2459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8311, 46.2406]
+      },
+      "population": 1165,
+      "surface": 994.41,
+      "radius": 1.78
+    },
+    {
+      "nom": "Cormoz",
+      "code": "01124",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2209, 46.4375]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2329, 46.4496]
+      },
+      "population": 704,
+      "surface": 1967.43,
+      "radius": 2.5
+    },
+    {
+      "nom": "Corveissiat",
+      "code": "01125",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4771, 46.2514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4823, 46.244]
+      },
+      "population": 587,
+      "surface": 2303.38,
+      "radius": 2.71
+    },
+    {
+      "nom": "Courmangoux",
+      "code": "01127",
+      "codesPostaux": ["01370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3585, 46.3243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3703, 46.3312]
+      },
+      "population": 513,
+      "surface": 1503.91,
+      "radius": 2.19
+    },
+    {
+      "nom": "Courtes",
+      "code": "01128",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1128, 46.4564]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1012, 46.459]
+      },
+      "population": 293,
+      "surface": 896.3,
+      "radius": 1.69
+    },
+    {
+      "nom": "Crans",
+      "code": "01129",
+      "codesPostaux": ["01320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1917, 45.9667]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1928, 45.9639]
+      },
+      "population": 316,
+      "surface": 1325.37,
+      "radius": 2.05
+    },
+    {
+      "nom": "Cressin-Rochefort",
+      "code": "01133",
+      "codesPostaux": ["01350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.765, 45.7833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7653, 45.7843]
+      },
+      "population": 384,
+      "surface": 779.48,
+      "radius": 1.58
+    },
+    {
+      "nom": "Crottet",
+      "code": "01134",
+      "codesPostaux": ["01290", "01750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.876, 46.2848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8928, 46.2775]
+      },
+      "population": 1844,
+      "surface": 1227.14,
+      "radius": 1.98
+    },
+    {
+      "nom": "Crozet",
+      "code": "01135",
+      "codesPostaux": ["01170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9929, 46.2906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.014, 46.2794]
+      },
+      "population": 2354,
+      "surface": 2724.74,
+      "radius": 2.95
+    },
+    {
+      "nom": "Cruzilles-lès-Mépillat",
+      "code": "01136",
+      "codesPostaux": ["01290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.876, 46.2233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8822, 46.2237]
+      },
+      "population": 951,
+      "surface": 1192.01,
+      "radius": 1.95
+    },
+    {
+      "nom": "Culoz-Béon",
+      "code": "01138",
+      "codesPostaux": ["01350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7716, 45.8553]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.781, 45.8474]
+      },
+      "population": 3416,
+      "surface": 2930.71,
+      "radius": 3.05
+    },
+    {
+      "nom": "Curciat-Dongalon",
+      "code": "01139",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1666, 46.4883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1593, 46.4748]
+      },
+      "population": 462,
+      "surface": 2397.19,
+      "radius": 2.76
+    },
+    {
+      "nom": "Curtafond",
+      "code": "01140",
+      "codesPostaux": ["01310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1051, 46.2742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.09, 46.2708]
+      },
+      "population": 805,
+      "surface": 1274.4,
+      "radius": 2.01
+    },
+    {
+      "nom": "Cuzieu",
+      "code": "01141",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6802, 45.8216]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6742, 45.819]
+      },
+      "population": 423,
+      "surface": 486.45,
+      "radius": 1.24
+    },
+    {
+      "nom": "Dagneux",
+      "code": "01142",
+      "codesPostaux": ["01120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0748, 45.854]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0753, 45.8509]
+      },
+      "population": 4741,
+      "surface": 683.38,
+      "radius": 1.47
+    },
+    {
+      "nom": "Divonne-les-Bains",
+      "code": "01143",
+      "codesPostaux": ["01220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.1114, 46.3754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.1361, 46.3582]
+      },
+      "population": 10300,
+      "surface": 3388.66,
+      "radius": 3.28
+    },
+    {
+      "nom": "Dompierre-sur-Chalaronne",
+      "code": "01146",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9004, 46.142]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8976, 46.1393]
+      },
+      "population": 453,
+      "surface": 477.49,
+      "radius": 1.23
+    },
+    {
+      "nom": "Dompierre-sur-Veyle",
+      "code": "01145",
+      "codesPostaux": ["01240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2167, 46.0672]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2055, 46.0715]
+      },
+      "population": 1225,
+      "surface": 2914.56,
+      "radius": 3.05
+    },
+    {
+      "nom": "Domsure",
+      "code": "01147",
+      "codesPostaux": ["01270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2945, 46.4211]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2943, 46.419]
+      },
+      "population": 540,
+      "surface": 1528.72,
+      "radius": 2.21
+    },
+    {
+      "nom": "Dortan",
+      "code": "01148",
+      "codesPostaux": ["01590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6443, 46.3184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6596, 46.3189]
+      },
+      "population": 2013,
+      "surface": 1877.66,
+      "radius": 2.44
+    },
+    {
+      "nom": "Douvres",
+      "code": "01149",
+      "codesPostaux": ["01500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3724, 45.9847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3735, 45.989]
+      },
+      "population": 1108,
+      "surface": 519.78,
+      "radius": 1.29
+    },
+    {
+      "nom": "Drom",
+      "code": "01150",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3674, 46.2202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3668, 46.218]
+      },
+      "population": 215,
+      "surface": 783.6,
+      "radius": 1.58
+    },
+    {
+      "nom": "Druillat",
+      "code": "01151",
+      "codesPostaux": ["01160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2947, 46.0691]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3176, 46.0595]
+      },
+      "population": 1144,
+      "surface": 2087.09,
+      "radius": 2.58
+    },
+    {
+      "nom": "Échallon",
+      "code": "01152",
+      "codesPostaux": ["01130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7346, 46.2293]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7406, 46.2102]
+      },
+      "population": 774,
+      "surface": 2815.41,
+      "radius": 2.99
+    },
+    {
+      "nom": "Échenevex",
+      "code": "01153",
+      "codesPostaux": ["01170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.018, 46.3197]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.0361, 46.3088]
+      },
+      "population": 2227,
+      "surface": 1644.74,
+      "radius": 2.29
+    },
+    {
+      "nom": "Évosges",
+      "code": "01155",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5008, 45.963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4981, 45.9605]
+      },
+      "population": 143,
+      "surface": 1202.71,
+      "radius": 1.96
+    },
+    {
+      "nom": "Faramans",
+      "code": "01156",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.126, 45.9086]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1251, 45.9042]
+      },
+      "population": 905,
+      "surface": 1123.17,
+      "radius": 1.89
+    },
+    {
+      "nom": "Fareins",
+      "code": "01157",
+      "codesPostaux": ["01480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7682, 46.0235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7614, 46.0195]
+      },
+      "population": 2524,
+      "surface": 826.26,
+      "radius": 1.62
+    },
+    {
+      "nom": "Farges",
+      "code": "01158",
+      "codesPostaux": ["01550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9054, 46.1657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.9052, 46.1674]
+      },
+      "population": 1065,
+      "surface": 1419.8,
+      "radius": 2.13
+    },
+    {
+      "nom": "Feillens",
+      "code": "01159",
+      "codesPostaux": ["01570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8866, 46.3393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8876, 46.336]
+      },
+      "population": 3388,
+      "surface": 1489.6,
+      "radius": 2.18
+    },
+    {
+      "nom": "Ferney-Voltaire",
+      "code": "01160",
+      "codesPostaux": ["01210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.1061, 46.252]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.108, 46.2557]
+      },
+      "population": 11530,
+      "surface": 478.65,
+      "radius": 1.23
+    },
+    {
+      "nom": "Flaxieu",
+      "code": "01162",
+      "codesPostaux": ["01350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7466, 45.8125]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7344, 45.8091]
+      },
+      "population": 64,
+      "surface": 292.05,
+      "radius": 0.96
+    },
+    {
+      "nom": "Foissiat",
+      "code": "01163",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1851, 46.3792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.175, 46.3694]
+      },
+      "population": 2024,
+      "surface": 4013.96,
+      "radius": 3.57
+    },
+    {
+      "nom": "Francheleins",
+      "code": "01165",
+      "codesPostaux": ["01090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8111, 46.0707]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8089, 46.0736]
+      },
+      "population": 1593,
+      "surface": 1366.25,
+      "radius": 2.09
+    },
+    {
+      "nom": "Frans",
+      "code": "01166",
+      "codesPostaux": ["01480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7819, 45.9905]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.773, 45.991]
+      },
+      "population": 2547,
+      "surface": 808.91,
+      "radius": 1.6
+    },
+    {
+      "nom": "Garnerans",
+      "code": "01167",
+      "codesPostaux": ["01140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8289, 46.2124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8402, 46.2052]
+      },
+      "population": 685,
+      "surface": 862.93,
+      "radius": 1.66
+    },
+    {
+      "nom": "Genouilleux",
+      "code": "01169",
+      "codesPostaux": ["01090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7926, 46.1211]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7871, 46.119]
+      },
+      "population": 675,
+      "surface": 410.48,
+      "radius": 1.14
+    },
+    {
+      "nom": "Géovreisset",
+      "code": "01171",
+      "codesPostaux": ["01100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6163, 46.2518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6175, 46.2554]
+      },
+      "population": 843,
+      "surface": 327.86,
+      "radius": 1.02
+    },
+    {
+      "nom": "Gex",
+      "code": "01173",
+      "codesPostaux": ["01170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.0488, 46.3515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.0582, 46.334]
+      },
+      "population": 13455,
+      "surface": 3193.77,
+      "radius": 3.19
+    },
+    {
+      "nom": "Giron",
+      "code": "01174",
+      "codesPostaux": ["01130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7891, 46.2209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7741, 46.2251]
+      },
+      "population": 174,
+      "surface": 943.76,
+      "radius": 1.73
+    },
+    {
+      "nom": "Gorrevod",
+      "code": "01175",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9507, 46.4157]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9452, 46.4181]
+      },
+      "population": 782,
+      "surface": 688.56,
+      "radius": 1.48
+    },
+    {
+      "nom": "Grand-Corent",
+      "code": "01177",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4388, 46.2089]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4318, 46.202]
+      },
+      "population": 186,
+      "surface": 703.12,
+      "radius": 1.5
+    },
+    {
+      "nom": "Grièges",
+      "code": "01179",
+      "codesPostaux": ["01290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8475, 46.2669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8512, 46.2553]
+      },
+      "population": 1909,
+      "surface": 1478.15,
+      "radius": 2.17
+    },
+    {
+      "nom": "Grilly",
+      "code": "01180",
+      "codesPostaux": ["01220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.1139, 46.3318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.1147, 46.3314]
+      },
+      "population": 873,
+      "surface": 751.47,
+      "radius": 1.55
+    },
+    {
+      "nom": "Groissiat",
+      "code": "01181",
+      "codesPostaux": ["01100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6179, 46.227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6126, 46.2292]
+      },
+      "population": 1216,
+      "surface": 619.27,
+      "radius": 1.4
+    },
+    {
+      "nom": "Groslée-Saint-Benoit",
+      "code": "01338",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5823, 45.7011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5875, 45.695]
+      },
+      "population": 1232,
+      "surface": 2868.44,
+      "radius": 3.02
+    },
+    {
+      "nom": "Guéreins",
+      "code": "01183",
+      "codesPostaux": ["01090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7839, 46.106]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7804, 46.1091]
+      },
+      "population": 1503,
+      "surface": 447.83,
+      "radius": 1.19
+    },
+    {
+      "nom": "Haut Valromey",
+      "code": "01187",
+      "codesPostaux": ["01260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6846, 46.0436]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6919, 45.9972]
+      },
+      "population": 603,
+      "surface": 12179.88,
+      "radius": 6.23
+    },
+    {
+      "nom": "Hautecourt-Romanèche",
+      "code": "01184",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4311, 46.1592]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4173, 46.159]
+      },
+      "population": 754,
+      "surface": 2141.96,
+      "radius": 2.61
+    },
+    {
+      "nom": "Illiat",
+      "code": "01188",
+      "codesPostaux": ["01140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8884, 46.1838]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8886, 46.19]
+      },
+      "population": 696,
+      "surface": 2040.87,
+      "radius": 2.55
+    },
+    {
+      "nom": "Injoux-Génissiat",
+      "code": "01189",
+      "codesPostaux": ["01200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7678, 46.0505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.8031, 46.0509]
+      },
+      "population": 1123,
+      "surface": 2961.65,
+      "radius": 3.07
+    },
+    {
+      "nom": "Innimond",
+      "code": "01190",
+      "codesPostaux": ["01680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5723, 45.7875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5724, 45.7825]
+      },
+      "population": 92,
+      "surface": 1324.75,
+      "radius": 2.05
+    },
+    {
+      "nom": "Izenave",
+      "code": "01191",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5234, 46.038]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.526, 46.0388]
+      },
+      "population": 159,
+      "surface": 1314.12,
+      "radius": 2.05
+    },
+    {
+      "nom": "Izernore",
+      "code": "01192",
+      "codesPostaux": ["01580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5609, 46.216]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5546, 46.2195]
+      },
+      "population": 2262,
+      "surface": 2133.06,
+      "radius": 2.61
+    },
+    {
+      "nom": "Izieu",
+      "code": "01193",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6387, 45.6555]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6401, 45.6518]
+      },
+      "population": 223,
+      "surface": 776.81,
+      "radius": 1.57
+    },
+    {
+      "nom": "Jassans-Riottier",
+      "code": "01194",
+      "codesPostaux": ["01480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7626, 45.9771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7591, 45.9832]
+      },
+      "population": 6315,
+      "surface": 502.24,
+      "radius": 1.26
+    },
+    {
+      "nom": "Jasseron",
+      "code": "01195",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.317, 46.2176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3251, 46.2115]
+      },
+      "population": 1900,
+      "surface": 1894.55,
+      "radius": 2.46
+    },
+    {
+      "nom": "Jayat",
+      "code": "01196",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1117, 46.3698]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1193, 46.3683]
+      },
+      "population": 1276,
+      "surface": 1628.55,
+      "radius": 2.28
+    },
+    {
+      "nom": "Journans",
+      "code": "01197",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3333, 46.1455]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3299, 46.1442]
+      },
+      "population": 384,
+      "surface": 244.09,
+      "radius": 0.88
+    },
+    {
+      "nom": "Joyeux",
+      "code": "01198",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0998, 45.946]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1001, 45.9614]
+      },
+      "population": 262,
+      "surface": 1660.12,
+      "radius": 2.3
+    },
+    {
+      "nom": "Jujurieux",
+      "code": "01199",
+      "codesPostaux": ["01640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4122, 46.0503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4102, 46.039]
+      },
+      "population": 2209,
+      "surface": 1551.32,
+      "radius": 2.22
+    },
+    {
+      "nom": "L'Abergement-Clémenciat",
+      "code": "01001",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9306, 46.1517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9209, 46.1508]
+      },
+      "population": 859,
+      "surface": 1564.5,
+      "radius": 2.23
+    },
+    {
+      "nom": "L'Abergement-de-Varey",
+      "code": "01002",
+      "codesPostaux": ["01640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4247, 46.0071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4233, 46.0072]
+      },
+      "population": 273,
+      "surface": 919.01,
+      "radius": 1.71
+    },
+    {
+      "nom": "La Boisse",
+      "code": "01049",
+      "codesPostaux": ["01120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0262, 45.8483]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0324, 45.8417]
+      },
+      "population": 3401,
+      "surface": 942.46,
+      "radius": 1.73
+    },
+    {
+      "nom": "La Burbanche",
+      "code": "01066",
+      "codesPostaux": ["01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.548, 45.8629]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5613, 45.8458]
+      },
+      "population": 97,
+      "surface": 1101.52,
+      "radius": 1.87
+    },
+    {
+      "nom": "La Chapelle-du-Châtelard",
+      "code": "01085",
+      "codesPostaux": ["01240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0174, 46.0683]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0238, 46.0703]
+      },
+      "population": 391,
+      "surface": 1368.93,
+      "radius": 2.09
+    },
+    {
+      "nom": "La Tranclière",
+      "code": "01425",
+      "codesPostaux": ["01160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2656, 46.0915]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2613, 46.1105]
+      },
+      "population": 288,
+      "surface": 1477.66,
+      "radius": 2.17
+    },
+    {
+      "nom": "Labalme",
+      "code": "01200",
+      "codesPostaux": ["01450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4945, 46.0915]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4831, 46.0932]
+      },
+      "population": 207,
+      "surface": 893.12,
+      "radius": 1.69
+    },
+    {
+      "nom": "Lagnieu",
+      "code": "01202",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3396, 45.8863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3487, 45.9039]
+      },
+      "population": 7321,
+      "surface": 2737.06,
+      "radius": 2.95
+    },
+    {
+      "nom": "Laiz",
+      "code": "01203",
+      "codesPostaux": ["01290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9006, 46.2462]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8901, 46.2483]
+      },
+      "population": 1292,
+      "surface": 1039.1,
+      "radius": 1.82
+    },
+    {
+      "nom": "Lantenay",
+      "code": "01206",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5379, 46.0531]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5447, 46.0575]
+      },
+      "population": 265,
+      "surface": 650.51,
+      "radius": 1.44
+    },
+    {
+      "nom": "Lapeyrouse",
+      "code": "01207",
+      "codesPostaux": ["01330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9821, 45.9849]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.975, 45.9826]
+      },
+      "population": 337,
+      "surface": 2019.16,
+      "radius": 2.54
+    },
+    {
+      "nom": "Lavours",
+      "code": "01208",
+      "codesPostaux": ["01350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7707, 45.8108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7737, 45.8092]
+      },
+      "population": 138,
+      "surface": 621.7,
+      "radius": 1.41
+    },
+    {
+      "nom": "Le Montellier",
+      "code": "01260",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0699, 45.9284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0723, 45.9305]
+      },
+      "population": 329,
+      "surface": 1532.99,
+      "radius": 2.21
+    },
+    {
+      "nom": "Le Plantay",
+      "code": "01299",
+      "codesPostaux": ["01330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0891, 46.0236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0898, 46.021]
+      },
+      "population": 569,
+      "surface": 2077.03,
+      "radius": 2.57
+    },
+    {
+      "nom": "Le Poizat-Lalleyriat",
+      "code": "01204",
+      "codesPostaux": ["01130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6955, 46.1392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7136, 46.1539]
+      },
+      "population": 740,
+      "surface": 3319.16,
+      "radius": 3.25
+    },
+    {
+      "nom": "Léaz",
+      "code": "01209",
+      "codesPostaux": ["01200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.8768, 46.1114]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.8841, 46.0986]
+      },
+      "population": 887,
+      "surface": 1142.31,
+      "radius": 1.91
+    },
+    {
+      "nom": "Lélex",
+      "code": "01210",
+      "codesPostaux": ["01410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9274, 46.2856]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.9407, 46.3031]
+      },
+      "population": 236,
+      "surface": 1773.54,
+      "radius": 2.38
+    },
+    {
+      "nom": "Lent",
+      "code": "01211",
+      "codesPostaux": ["01240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1974, 46.1165]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1954, 46.1205]
+      },
+      "population": 1459,
+      "surface": 3174.09,
+      "radius": 3.18
+    },
+    {
+      "nom": "Les Neyrolles",
+      "code": "01274",
+      "codesPostaux": ["01130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6354, 46.1367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6329, 46.1409]
+      },
+      "population": 623,
+      "surface": 958.36,
+      "radius": 1.75
+    },
+    {
+      "nom": "Lescheroux",
+      "code": "01212",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1573, 46.4089]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1432, 46.4072]
+      },
+      "population": 720,
+      "surface": 2023.52,
+      "radius": 2.54
+    },
+    {
+      "nom": "Leyment",
+      "code": "01213",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2927, 45.9287]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2931, 45.9232]
+      },
+      "population": 1417,
+      "surface": 1429.88,
+      "radius": 2.13
+    },
+    {
+      "nom": "Leyssard",
+      "code": "01214",
+      "codesPostaux": ["01450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4767, 46.1605]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4757, 46.1565]
+      },
+      "population": 163,
+      "surface": 933.13,
+      "radius": 1.72
+    },
+    {
+      "nom": "Lhuis",
+      "code": "01216",
+      "codesPostaux": ["01680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5398, 45.7469]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5348, 45.7458]
+      },
+      "population": 891,
+      "surface": 2465.17,
+      "radius": 2.8
+    },
+    {
+      "nom": "Lompnas",
+      "code": "01219",
+      "codesPostaux": ["01680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5263, 45.8118]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.519, 45.8028]
+      },
+      "population": 162,
+      "surface": 1264.32,
+      "radius": 2.01
+    },
+    {
+      "nom": "Loyettes",
+      "code": "01224",
+      "codesPostaux": ["01360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2163, 45.7953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2035, 45.7743]
+      },
+      "population": 3468,
+      "surface": 2127.66,
+      "radius": 2.6
+    },
+    {
+      "nom": "Lurcy",
+      "code": "01225",
+      "codesPostaux": ["01090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7802, 46.0628]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7819, 46.0636]
+      },
+      "population": 404,
+      "surface": 478.9,
+      "radius": 1.23
+    },
+    {
+      "nom": "Magnieu",
+      "code": "01227",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7197, 45.7763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7186, 45.7768]
+      },
+      "population": 651,
+      "surface": 1145.92,
+      "radius": 1.91
+    },
+    {
+      "nom": "Maillat",
+      "code": "01228",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.535, 46.1204]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5392, 46.1301]
+      },
+      "population": 693,
+      "surface": 1151.84,
+      "radius": 1.91
+    },
+    {
+      "nom": "Malafretaz",
+      "code": "01229",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1462, 46.3299]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1461, 46.3233]
+      },
+      "population": 1235,
+      "surface": 925.91,
+      "radius": 1.72
+    },
+    {
+      "nom": "Mantenay-Montlin",
+      "code": "01230",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1064, 46.4318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0985, 46.4244]
+      },
+      "population": 320,
+      "surface": 1088.01,
+      "radius": 1.86
+    },
+    {
+      "nom": "Manziat",
+      "code": "01231",
+      "codesPostaux": ["01570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9026, 46.3651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9065, 46.3593]
+      },
+      "population": 1985,
+      "surface": 1272.18,
+      "radius": 2.01
+    },
+    {
+      "nom": "Marboz",
+      "code": "01232",
+      "codesPostaux": ["01851"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2461, 46.3452]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2566, 46.342]
+      },
+      "population": 2262,
+      "surface": 4032.06,
+      "radius": 3.58
+    },
+    {
+      "nom": "Marchamp",
+      "code": "01233",
+      "codesPostaux": ["01680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5509, 45.7762]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5482, 45.7784]
+      },
+      "population": 135,
+      "surface": 1321.22,
+      "radius": 2.05
+    },
+    {
+      "nom": "Marignieu",
+      "code": "01234",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.718, 45.8023]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7193, 45.7967]
+      },
+      "population": 164,
+      "surface": 350.47,
+      "radius": 1.06
+    },
+    {
+      "nom": "Marlieux",
+      "code": "01235",
+      "codesPostaux": ["01240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0756, 46.0542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0732, 46.064]
+      },
+      "population": 1186,
+      "surface": 1722.59,
+      "radius": 2.34
+    },
+    {
+      "nom": "Marsonnas",
+      "code": "01236",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0608, 46.3401]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0706, 46.3409]
+      },
+      "population": 1034,
+      "surface": 1835.46,
+      "radius": 2.42
+    },
+    {
+      "nom": "Martignat",
+      "code": "01237",
+      "codesPostaux": ["01100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6099, 46.203]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6104, 46.209]
+      },
+      "population": 1667,
+      "surface": 1308.09,
+      "radius": 2.04
+    },
+    {
+      "nom": "Massieux",
+      "code": "01238",
+      "codesPostaux": ["01600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8279, 45.9101]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8329, 45.9095]
+      },
+      "population": 2733,
+      "surface": 315.45,
+      "radius": 1
+    },
+    {
+      "nom": "Massignieu-de-Rives",
+      "code": "01239",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7566, 45.7564]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7668, 45.7543]
+      },
+      "population": 653,
+      "surface": 916.31,
+      "radius": 1.71
+    },
+    {
+      "nom": "Matafelon-Granges",
+      "code": "01240",
+      "codesPostaux": ["01580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5272, 46.2505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5554, 46.2622]
+      },
+      "population": 630,
+      "surface": 2176.48,
+      "radius": 2.63
+    },
+    {
+      "nom": "Meillonnas",
+      "code": "01241",
+      "codesPostaux": ["01370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3347, 46.2451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3514, 46.2457]
+      },
+      "population": 1383,
+      "surface": 1785.88,
+      "radius": 2.38
+    },
+    {
+      "nom": "Mérignat",
+      "code": "01242",
+      "codesPostaux": ["01450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4425, 46.065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4369, 46.0693]
+      },
+      "population": 133,
+      "surface": 316.75,
+      "radius": 1
+    },
+    {
+      "nom": "Messimy-sur-Saône",
+      "code": "01243",
+      "codesPostaux": ["01480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7609, 46.048]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.765, 46.05]
+      },
+      "population": 1312,
+      "surface": 596.46,
+      "radius": 1.38
+    },
+    {
+      "nom": "Meximieux",
+      "code": "01244",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2116, 45.9047]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1959, 45.9051]
+      },
+      "population": 8198,
+      "surface": 1357.25,
+      "radius": 2.08
+    },
+    {
+      "nom": "Mézériat",
+      "code": "01246",
+      "codesPostaux": ["01660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0481, 46.2424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0473, 46.2344]
+      },
+      "population": 2179,
+      "surface": 1924.64,
+      "radius": 2.48
+    },
+    {
+      "nom": "Mijoux",
+      "code": "01247",
+      "codesPostaux": ["01170", "01410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.0106, 46.3593]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.9967, 46.3664]
+      },
+      "population": 297,
+      "surface": 2205.63,
+      "radius": 2.65
+    },
+    {
+      "nom": "Mionnay",
+      "code": "01248",
+      "codesPostaux": ["01390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9274, 45.8959]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9297, 45.8952]
+      },
+      "population": 2309,
+      "surface": 2002.3,
+      "radius": 2.52
+    },
+    {
+      "nom": "Miribel",
+      "code": "01249",
+      "codesPostaux": ["01700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.941, 45.8444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9529, 45.8225]
+      },
+      "population": 10450,
+      "surface": 2445.57,
+      "radius": 2.79
+    },
+    {
+      "nom": "Misérieux",
+      "code": "01250",
+      "codesPostaux": ["01600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8138, 45.9745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8116, 45.974]
+      },
+      "population": 2010,
+      "surface": 745.68,
+      "radius": 1.54
+    },
+    {
+      "nom": "Mogneneins",
+      "code": "01252",
+      "codesPostaux": ["01140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8203, 46.1454]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8104, 46.1409]
+      },
+      "population": 824,
+      "surface": 852.74,
+      "radius": 1.65
+    },
+    {
+      "nom": "Montagnat",
+      "code": "01254",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2776, 46.172]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.284, 46.1705]
+      },
+      "population": 2164,
+      "surface": 1386.6,
+      "radius": 2.1
+    },
+    {
+      "nom": "Montagnieu",
+      "code": "01255",
+      "codesPostaux": ["01470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4598, 45.802]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4687, 45.7932]
+      },
+      "population": 684,
+      "surface": 621.42,
+      "radius": 1.41
+    },
+    {
+      "nom": "Montanges",
+      "code": "01257",
+      "codesPostaux": ["01200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7903, 46.171]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.8011, 46.165]
+      },
+      "population": 348,
+      "surface": 1368,
+      "radius": 2.09
+    },
+    {
+      "nom": "Montceaux",
+      "code": "01258",
+      "codesPostaux": ["01090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8041, 46.0978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7975, 46.0963]
+      },
+      "population": 1202,
+      "surface": 1006.72,
+      "radius": 1.79
+    },
+    {
+      "nom": "Montcet",
+      "code": "01259",
+      "codesPostaux": ["01310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1123, 46.2199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1115, 46.2124]
+      },
+      "population": 715,
+      "surface": 656.68,
+      "radius": 1.45
+    },
+    {
+      "nom": "Monthieux",
+      "code": "01261",
+      "codesPostaux": ["01390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.948, 45.9631]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9403, 45.958]
+      },
+      "population": 673,
+      "surface": 1076.21,
+      "radius": 1.85
+    },
+    {
+      "nom": "Montluel",
+      "code": "01262",
+      "codesPostaux": ["01120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0185, 45.8868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0561, 45.8532]
+      },
+      "population": 6879,
+      "surface": 4015.74,
+      "radius": 3.58
+    },
+    {
+      "nom": "Montmerle-sur-Saône",
+      "code": "01263",
+      "codesPostaux": ["01090"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.759, 46.0843]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7597, 46.0793]
+      },
+      "population": 3798,
+      "surface": 413.59,
+      "radius": 1.15
+    },
+    {
+      "nom": "Montracol",
+      "code": "01264",
+      "codesPostaux": ["01310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1234, 46.182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1225, 46.1981]
+      },
+      "population": 1008,
+      "surface": 1467.76,
+      "radius": 2.16
+    },
+    {
+      "nom": "Montréal-la-Cluse",
+      "code": "01265",
+      "codesPostaux": ["01460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5976, 46.181]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5769, 46.1839]
+      },
+      "population": 3584,
+      "surface": 1246.11,
+      "radius": 1.99
+    },
+    {
+      "nom": "Montrevel-en-Bresse",
+      "code": "01266",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1122, 46.3262]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1306, 46.3374]
+      },
+      "population": 2661,
+      "surface": 1000.02,
+      "radius": 1.78
+    },
+    {
+      "nom": "Murs-et-Gélignieux",
+      "code": "01268",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6585, 45.6404]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6606, 45.6424]
+      },
+      "population": 239,
+      "surface": 604.12,
+      "radius": 1.39
+    },
+    {
+      "nom": "Nantua",
+      "code": "01269",
+      "codesPostaux": ["01130", "01460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6079, 46.1486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6058, 46.1549]
+      },
+      "population": 3431,
+      "surface": 1453.12,
+      "radius": 2.15
+    },
+    {
+      "nom": "Neuville-les-Dames",
+      "code": "01272",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0103, 46.1599]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0049, 46.1624]
+      },
+      "population": 1540,
+      "surface": 2627.22,
+      "radius": 2.89
+    },
+    {
+      "nom": "Neuville-sur-Ain",
+      "code": "01273",
+      "codesPostaux": ["01160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3702, 46.0909]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3717, 46.0817]
+      },
+      "population": 1798,
+      "surface": 1989.57,
+      "radius": 2.52
+    },
+    {
+      "nom": "Neyron",
+      "code": "01275",
+      "codesPostaux": ["01700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9356, 45.8204]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9326, 45.8147]
+      },
+      "population": 2479,
+      "surface": 530.01,
+      "radius": 1.3
+    },
+    {
+      "nom": "Niévroz",
+      "code": "01276",
+      "codesPostaux": ["01120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0615, 45.8241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0632, 45.8264]
+      },
+      "population": 1648,
+      "surface": 1043.38,
+      "radius": 1.82
+    },
+    {
+      "nom": "Nivigne et Suran",
+      "code": "01095",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4323, 46.2824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4266, 46.2643]
+      },
+      "population": 822,
+      "surface": 3121.42,
+      "radius": 3.15
+    },
+    {
+      "nom": "Nivollet-Montgriffon",
+      "code": "01277",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4567, 46.0002]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4462, 45.993]
+      },
+      "population": 119,
+      "surface": 846.1,
+      "radius": 1.64
+    },
+    {
+      "nom": "Nurieux-Volognat",
+      "code": "01267",
+      "codesPostaux": ["01460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5155, 46.1855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5218, 46.1804]
+      },
+      "population": 973,
+      "surface": 1951.81,
+      "radius": 2.49
+    },
+    {
+      "nom": "Oncieu",
+      "code": "01279",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4716, 45.9685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4742, 45.9595]
+      },
+      "population": 72,
+      "surface": 755.65,
+      "radius": 1.55
+    },
+    {
+      "nom": "Ordonnaz",
+      "code": "01280",
+      "codesPostaux": ["01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5439, 45.8357]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5381, 45.8371]
+      },
+      "population": 146,
+      "surface": 1479.23,
+      "radius": 2.17
+    },
+    {
+      "nom": "Ornex",
+      "code": "01281",
+      "codesPostaux": ["01210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.0953, 46.2779]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.0931, 46.2763]
+      },
+      "population": 4903,
+      "surface": 568.6,
+      "radius": 1.35
+    },
+    {
+      "nom": "Outriaz",
+      "code": "01282",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5543, 46.0631]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5474, 46.0673]
+      },
+      "population": 258,
+      "surface": 590.22,
+      "radius": 1.37
+    },
+    {
+      "nom": "Oyonnax",
+      "code": "01283",
+      "codesPostaux": ["01100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6517, 46.2599]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6556, 46.2576]
+      },
+      "population": 22378,
+      "surface": 3612.33,
+      "radius": 3.39
+    },
+    {
+      "nom": "Ozan",
+      "code": "01284",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9191, 46.3863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9151, 46.3918]
+      },
+      "population": 721,
+      "surface": 658.5,
+      "radius": 1.45
+    },
+    {
+      "nom": "Parcieux",
+      "code": "01285",
+      "codesPostaux": ["01600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8299, 45.9197]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.824, 45.9155]
+      },
+      "population": 1317,
+      "surface": 316.31,
+      "radius": 1
+    },
+    {
+      "nom": "Parves et Nattages",
+      "code": "01286",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7495, 45.7318]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7426, 45.7437]
+      },
+      "population": 943,
+      "surface": 1585.98,
+      "radius": 2.25
+    },
+    {
+      "nom": "Péron",
+      "code": "01288",
+      "codesPostaux": ["01630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9141, 46.1933]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.9264, 46.1893]
+      },
+      "population": 2900,
+      "surface": 2598.92,
+      "radius": 2.88
+    },
+    {
+      "nom": "Péronnas",
+      "code": "01289",
+      "codesPostaux": ["01960"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2195, 46.1693]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2035, 46.1791]
+      },
+      "population": 6437,
+      "surface": 1789.91,
+      "radius": 2.39
+    },
+    {
+      "nom": "Pérouges",
+      "code": "01290",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1791, 45.8789]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1785, 45.9031]
+      },
+      "population": 1382,
+      "surface": 1932.3,
+      "radius": 2.48
+    },
+    {
+      "nom": "Perrex",
+      "code": "01291",
+      "codesPostaux": ["01540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9718, 46.2462]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9798, 46.2448]
+      },
+      "population": 861,
+      "surface": 1119.19,
+      "radius": 1.89
+    },
+    {
+      "nom": "Peyriat",
+      "code": "01293",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.506, 46.1486]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5123, 46.1547]
+      },
+      "population": 150,
+      "surface": 610.7,
+      "radius": 1.39
+    },
+    {
+      "nom": "Peyrieu",
+      "code": "01294",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6829, 45.674]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6766, 45.6779]
+      },
+      "population": 918,
+      "surface": 1414.28,
+      "radius": 2.12
+    },
+    {
+      "nom": "Peyzieux-sur-Saône",
+      "code": "01295",
+      "codesPostaux": ["01140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8192, 46.1227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8165, 46.1283]
+      },
+      "population": 656,
+      "surface": 867.65,
+      "radius": 1.66
+    },
+    {
+      "nom": "Pirajoux",
+      "code": "01296",
+      "codesPostaux": ["01270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2703, 46.386]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2992, 46.3712]
+      },
+      "population": 400,
+      "surface": 1303.98,
+      "radius": 2.04
+    },
+    {
+      "nom": "Pizay",
+      "code": "01297",
+      "codesPostaux": ["01120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0901, 45.8906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0906, 45.8891]
+      },
+      "population": 922,
+      "surface": 1122.3,
+      "radius": 1.89
+    },
+    {
+      "nom": "Plagne",
+      "code": "01298",
+      "codesPostaux": ["01130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7179, 46.1889]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7284, 46.1922]
+      },
+      "population": 166,
+      "surface": 605.52,
+      "radius": 1.39
+    },
+    {
+      "nom": "Plateau d'Hauteville",
+      "code": "01185",
+      "codesPostaux": ["01110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5775, 45.9305]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6017, 45.9772]
+      },
+      "population": 4790,
+      "surface": 10638.44,
+      "radius": 5.82
+    },
+    {
+      "nom": "Polliat",
+      "code": "01301",
+      "codesPostaux": ["01310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1355, 46.2504]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1257, 46.2489]
+      },
+      "population": 2694,
+      "surface": 2024.57,
+      "radius": 2.54
+    },
+    {
+      "nom": "Pollieu",
+      "code": "01302",
+      "codesPostaux": ["01350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7463, 45.7953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.744, 45.7972]
+      },
+      "population": 167,
+      "surface": 364.81,
+      "radius": 1.08
+    },
+    {
+      "nom": "Poncin",
+      "code": "01303",
+      "codesPostaux": ["01450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4129, 46.0918]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4071, 46.0863]
+      },
+      "population": 1766,
+      "surface": 1992.21,
+      "radius": 2.52
+    },
+    {
+      "nom": "Pont-d'Ain",
+      "code": "01304",
+      "codesPostaux": ["01160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3491, 46.0556]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.341, 46.0494]
+      },
+      "population": 2862,
+      "surface": 1123.61,
+      "radius": 1.89
+    },
+    {
+      "nom": "Pont-de-Vaux",
+      "code": "01305",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9265, 46.4415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9379, 46.4301]
+      },
+      "population": 2184,
+      "surface": 775.66,
+      "radius": 1.57
+    },
+    {
+      "nom": "Pont-de-Veyle",
+      "code": "01306",
+      "codesPostaux": ["01290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8818, 46.2647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8847, 46.2657]
+      },
+      "population": 1600,
+      "surface": 195.67,
+      "radius": 0.79
+    },
+    {
+      "nom": "Port",
+      "code": "01307",
+      "codesPostaux": ["01460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.581, 46.1535]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5728, 46.1628]
+      },
+      "population": 843,
+      "surface": 428.83,
+      "radius": 1.17
+    },
+    {
+      "nom": "Pougny",
+      "code": "01308",
+      "codesPostaux": ["01550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9492, 46.1457]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.9515, 46.139]
+      },
+      "population": 792,
+      "surface": 757.23,
+      "radius": 1.55
+    },
+    {
+      "nom": "Pouillat",
+      "code": "01309",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4243, 46.3263]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4284, 46.3273]
+      },
+      "population": 79,
+      "surface": 641.24,
+      "radius": 1.43
+    },
+    {
+      "nom": "Prémeyzel",
+      "code": "01310",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6423, 45.6827]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6474, 45.6828]
+      },
+      "population": 245,
+      "surface": 762.42,
+      "radius": 1.56
+    },
+    {
+      "nom": "Prémillieu",
+      "code": "01311",
+      "codesPostaux": ["01110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5657, 45.8785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5718, 45.8744]
+      },
+      "population": 47,
+      "surface": 850.66,
+      "radius": 1.65
+    },
+    {
+      "nom": "Prévessin-Moëns",
+      "code": "01313",
+      "codesPostaux": ["01280"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.0722, 46.2594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.0811, 46.2542]
+      },
+      "population": 9081,
+      "surface": 1208.95,
+      "radius": 1.96
+    },
+    {
+      "nom": "Priay",
+      "code": "01314",
+      "codesPostaux": ["01160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2829, 46.019]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2896, 46.003]
+      },
+      "population": 1803,
+      "surface": 1573.54,
+      "radius": 2.24
+    },
+    {
+      "nom": "Ramasse",
+      "code": "01317",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3569, 46.1893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3561, 46.1927]
+      },
+      "population": 332,
+      "surface": 958.55,
+      "radius": 1.75
+    },
+    {
+      "nom": "Rancé",
+      "code": "01318",
+      "codesPostaux": ["01390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8665, 45.9674]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8685, 45.9656]
+      },
+      "population": 760,
+      "surface": 959.54,
+      "radius": 1.75
+    },
+    {
+      "nom": "Relevant",
+      "code": "01319",
+      "codesPostaux": ["01990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9399, 46.0808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9489, 46.0887]
+      },
+      "population": 467,
+      "surface": 1236.37,
+      "radius": 1.98
+    },
+    {
+      "nom": "Replonges",
+      "code": "01320",
+      "codesPostaux": ["01750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8784, 46.307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8816, 46.309]
+      },
+      "population": 3929,
+      "surface": 1668.17,
+      "radius": 2.3
+    },
+    {
+      "nom": "Revonnas",
+      "code": "01321",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3351, 46.1637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3318, 46.1627]
+      },
+      "population": 905,
+      "surface": 778.2,
+      "radius": 1.57
+    },
+    {
+      "nom": "Reyrieux",
+      "code": "01322",
+      "codesPostaux": ["01600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8314, 45.9368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8249, 45.9353]
+      },
+      "population": 5228,
+      "surface": 1569.79,
+      "radius": 2.24
+    },
+    {
+      "nom": "Reyssouze",
+      "code": "01323",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9145, 46.4284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9203, 46.433]
+      },
+      "population": 1003,
+      "surface": 962.87,
+      "radius": 1.75
+    },
+    {
+      "nom": "Rignieux-le-Franc",
+      "code": "01325",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1675, 45.9513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1896, 45.9406]
+      },
+      "population": 1131,
+      "surface": 1509.69,
+      "radius": 2.19
+    },
+    {
+      "nom": "Romans",
+      "code": "01328",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0217, 46.1216]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0241, 46.1219]
+      },
+      "population": 628,
+      "surface": 2210.3,
+      "radius": 2.65
+    },
+    {
+      "nom": "Rossillon",
+      "code": "01329",
+      "codesPostaux": ["01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5987, 45.8359]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.592, 45.8333]
+      },
+      "population": 164,
+      "surface": 807.91,
+      "radius": 1.6
+    },
+    {
+      "nom": "Saint-Alban",
+      "code": "01331",
+      "codesPostaux": ["01450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4568, 46.0968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4537, 46.0945]
+      },
+      "population": 195,
+      "surface": 822.56,
+      "radius": 1.62
+    },
+    {
+      "nom": "Saint-André-d'Huiriat",
+      "code": "01334",
+      "codesPostaux": ["01290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9144, 46.2163]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9107, 46.213]
+      },
+      "population": 671,
+      "surface": 906.81,
+      "radius": 1.7
+    },
+    {
+      "nom": "Saint-André-de-Bâgé",
+      "code": "01332",
+      "codesPostaux": ["01380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9132, 46.2975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9173, 46.2945]
+      },
+      "population": 819,
+      "surface": 271.49,
+      "radius": 0.93
+    },
+    {
+      "nom": "Saint-André-de-Corcy",
+      "code": "01333",
+      "codesPostaux": ["01390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9529, 45.9287]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9534, 45.9282]
+      },
+      "population": 3369,
+      "surface": 2097.6,
+      "radius": 2.58
+    },
+    {
+      "nom": "Saint-André-le-Bouchoux",
+      "code": "01335",
+      "codesPostaux": ["01240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0775, 46.1137]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0783, 46.117]
+      },
+      "population": 427,
+      "surface": 929.76,
+      "radius": 1.72
+    },
+    {
+      "nom": "Saint-André-sur-Vieux-Jonc",
+      "code": "01336",
+      "codesPostaux": ["01960"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.143, 46.15]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1464, 46.1574]
+      },
+      "population": 1216,
+      "surface": 2453.61,
+      "radius": 2.79
+    },
+    {
+      "nom": "Saint-Bénigne",
+      "code": "01337",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.952, 46.4517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9606, 46.4449]
+      },
+      "population": 1351,
+      "surface": 1648.39,
+      "radius": 2.29
+    },
+    {
+      "nom": "Saint-Bernard",
+      "code": "01339",
+      "codesPostaux": ["01600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7419, 45.95]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7362, 45.9451]
+      },
+      "population": 1544,
+      "surface": 320.82,
+      "radius": 1.01
+    },
+    {
+      "nom": "Saint-Cyr-sur-Menthon",
+      "code": "01343",
+      "codesPostaux": ["01380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9669, 46.2751]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9743, 46.2754]
+      },
+      "population": 1867,
+      "surface": 1704.05,
+      "radius": 2.33
+    },
+    {
+      "nom": "Saint-Denis-en-Bugey",
+      "code": "01345",
+      "codesPostaux": ["01500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.326, 45.9497]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3302, 45.9522]
+      },
+      "population": 2258,
+      "surface": 261.36,
+      "radius": 0.91
+    },
+    {
+      "nom": "Saint-Denis-lès-Bourg",
+      "code": "01344",
+      "codesPostaux": ["01000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1825, 46.2097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1897, 46.2026]
+      },
+      "population": 6078,
+      "surface": 1263.39,
+      "radius": 2.01
+    },
+    {
+      "nom": "Saint-Didier-d'Aussiat",
+      "code": "01346",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0536, 46.3075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0619, 46.3078]
+      },
+      "population": 845,
+      "surface": 1514.26,
+      "radius": 2.2
+    },
+    {
+      "nom": "Saint-Didier-de-Formans",
+      "code": "01347",
+      "codesPostaux": ["01600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7767, 45.9587]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7795, 45.9564]
+      },
+      "population": 2176,
+      "surface": 660.18,
+      "radius": 1.45
+    },
+    {
+      "nom": "Saint-Didier-sur-Chalaronne",
+      "code": "01348",
+      "codesPostaux": ["01140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.823, 46.1877]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8169, 46.178]
+      },
+      "population": 2969,
+      "surface": 2515.15,
+      "radius": 2.83
+    },
+    {
+      "nom": "Saint-Éloi",
+      "code": "01349",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1507, 45.9343]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1533, 45.9314]
+      },
+      "population": 524,
+      "surface": 1411.89,
+      "radius": 2.12
+    },
+    {
+      "nom": "Saint-Étienne-du-Bois",
+      "code": "01350",
+      "codesPostaux": ["01370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2793, 46.2755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2929, 46.2883]
+      },
+      "population": 2569,
+      "surface": 2864.53,
+      "radius": 3.02
+    },
+    {
+      "nom": "Saint-Étienne-sur-Chalaronne",
+      "code": "01351",
+      "codesPostaux": ["01140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8694, 46.1451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.866, 46.1478]
+      },
+      "population": 1625,
+      "surface": 2110.06,
+      "radius": 2.59
+    },
+    {
+      "nom": "Saint-Étienne-sur-Reyssouze",
+      "code": "01352",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0031, 46.3998]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0011, 46.4121]
+      },
+      "population": 576,
+      "surface": 1400.17,
+      "radius": 2.11
+    },
+    {
+      "nom": "Saint-Genis-Pouilly",
+      "code": "01354",
+      "codesPostaux": ["01630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.0368, 46.2556]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.0252, 46.2437]
+      },
+      "population": 14584,
+      "surface": 980.82,
+      "radius": 1.77
+    },
+    {
+      "nom": "Saint-Genis-sur-Menthon",
+      "code": "01355",
+      "codesPostaux": ["01380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0162, 46.281]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0087, 46.2822]
+      },
+      "population": 488,
+      "surface": 1168.45,
+      "radius": 1.93
+    },
+    {
+      "nom": "Saint-Georges-sur-Renon",
+      "code": "01356",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0286, 46.1033]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0309, 46.1059]
+      },
+      "population": 214,
+      "surface": 564.72,
+      "radius": 1.34
+    },
+    {
+      "nom": "Saint-Germain-de-Joux",
+      "code": "01357",
+      "codesPostaux": ["01130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7435, 46.1812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7379, 46.1784]
+      },
+      "population": 505,
+      "surface": 1147.81,
+      "radius": 1.91
+    },
+    {
+      "nom": "Saint-Germain-les-Paroisses",
+      "code": "01358",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6191, 45.773]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6193, 45.7737]
+      },
+      "population": 423,
+      "surface": 1637.52,
+      "radius": 2.28
+    },
+    {
+      "nom": "Saint-Germain-sur-Renon",
+      "code": "01359",
+      "codesPostaux": ["01240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0626, 46.0764]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.057, 46.0806]
+      },
+      "population": 262,
+      "surface": 1644.77,
+      "radius": 2.29
+    },
+    {
+      "nom": "Saint-Jean-de-Gonville",
+      "code": "01360",
+      "codesPostaux": ["01630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9395, 46.2184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.9536, 46.2117]
+      },
+      "population": 2042,
+      "surface": 1223.75,
+      "radius": 1.97
+    },
+    {
+      "nom": "Saint-Jean-de-Niost",
+      "code": "01361",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2066, 45.8384]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2176, 45.8403]
+      },
+      "population": 1862,
+      "surface": 1406.33,
+      "radius": 2.12
+    },
+    {
+      "nom": "Saint-Jean-de-Thurigneux",
+      "code": "01362",
+      "codesPostaux": ["01390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8959, 45.9597]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8833, 45.9519]
+      },
+      "population": 850,
+      "surface": 1620.66,
+      "radius": 2.27
+    },
+    {
+      "nom": "Saint-Jean-le-Vieux",
+      "code": "01363",
+      "codesPostaux": ["01640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3799, 46.028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3894, 46.0287]
+      },
+      "population": 1799,
+      "surface": 1531.12,
+      "radius": 2.21
+    },
+    {
+      "nom": "Saint-Jean-sur-Reyssouze",
+      "code": "01364",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0582, 46.3912]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0633, 46.3973]
+      },
+      "population": 764,
+      "surface": 2751.17,
+      "radius": 2.96
+    },
+    {
+      "nom": "Saint-Jean-sur-Veyle",
+      "code": "01365",
+      "codesPostaux": ["01290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9203, 46.2687]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9137, 46.2569]
+      },
+      "population": 1154,
+      "surface": 1130.19,
+      "radius": 1.9
+    },
+    {
+      "nom": "Saint-Julien-sur-Reyssouze",
+      "code": "01367",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1062, 46.3977]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1119, 46.4018]
+      },
+      "population": 687,
+      "surface": 750.35,
+      "radius": 1.55
+    },
+    {
+      "nom": "Saint-Julien-sur-Veyle",
+      "code": "01368",
+      "codesPostaux": ["01540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9559, 46.2072]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9542, 46.2036]
+      },
+      "population": 853,
+      "surface": 987.79,
+      "radius": 1.77
+    },
+    {
+      "nom": "Saint-Just",
+      "code": "01369",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.285, 46.1948]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2787, 46.1921]
+      },
+      "population": 953,
+      "surface": 343.08,
+      "radius": 1.05
+    },
+    {
+      "nom": "Saint-Laurent-sur-Saône",
+      "code": "01370",
+      "codesPostaux": ["01750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8395, 46.3053]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8418, 46.3055]
+      },
+      "population": 1735,
+      "surface": 51.58,
+      "radius": 0.41
+    },
+    {
+      "nom": "Saint-Marcel",
+      "code": "01371",
+      "codesPostaux": ["01390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9862, 45.9485]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9853, 45.9485]
+      },
+      "population": 1300,
+      "surface": 1167.47,
+      "radius": 1.93
+    },
+    {
+      "nom": "Saint-Martin-de-Bavel",
+      "code": "01372",
+      "codesPostaux": ["01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6779, 45.8467]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6808, 45.8497]
+      },
+      "population": 431,
+      "surface": 858.82,
+      "radius": 1.65
+    },
+    {
+      "nom": "Saint-Martin-du-Frêne",
+      "code": "01373",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5711, 46.1345]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5534, 46.14]
+      },
+      "population": 1027,
+      "surface": 1950.42,
+      "radius": 2.49
+    },
+    {
+      "nom": "Saint-Martin-du-Mont",
+      "code": "01374",
+      "codesPostaux": ["01160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.33, 46.1063]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3277, 46.1016]
+      },
+      "population": 1953,
+      "surface": 2813.14,
+      "radius": 2.99
+    },
+    {
+      "nom": "Saint-Martin-le-Châtel",
+      "code": "01375",
+      "codesPostaux": ["01310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1206, 46.2903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1174, 46.2816]
+      },
+      "population": 784,
+      "surface": 1266.5,
+      "radius": 2.01
+    },
+    {
+      "nom": "Saint-Maurice-de-Beynost",
+      "code": "01376",
+      "codesPostaux": ["01700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9763, 45.8325]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9756, 45.8307]
+      },
+      "population": 4243,
+      "surface": 695.53,
+      "radius": 1.49
+    },
+    {
+      "nom": "Saint-Maurice-de-Gourdans",
+      "code": "01378",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.172, 45.819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1941, 45.8207]
+      },
+      "population": 2826,
+      "surface": 2555,
+      "radius": 2.85
+    },
+    {
+      "nom": "Saint-Maurice-de-Rémens",
+      "code": "01379",
+      "codesPostaux": ["01500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2706, 45.9542]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2755, 45.9591]
+      },
+      "population": 758,
+      "surface": 1034.05,
+      "radius": 1.81
+    },
+    {
+      "nom": "Saint-Nizier-le-Bouchoux",
+      "code": "01380",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1716, 46.4549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.151, 46.4597]
+      },
+      "population": 589,
+      "surface": 2818.03,
+      "radius": 3
+    },
+    {
+      "nom": "Saint-Nizier-le-Désert",
+      "code": "01381",
+      "codesPostaux": ["01320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1471, 46.0518]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.148, 46.0551]
+      },
+      "population": 922,
+      "surface": 2500.11,
+      "radius": 2.82
+    },
+    {
+      "nom": "Saint-Paul-de-Varax",
+      "code": "01383",
+      "codesPostaux": ["01240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1309, 46.0949]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1292, 46.0994]
+      },
+      "population": 1637,
+      "surface": 2590.36,
+      "radius": 2.87
+    },
+    {
+      "nom": "Saint-Rambert-en-Bugey",
+      "code": "01384",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4418, 45.953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4396, 45.9486]
+      },
+      "population": 2179,
+      "surface": 2878.55,
+      "radius": 3.03
+    },
+    {
+      "nom": "Saint-Rémy",
+      "code": "01385",
+      "codesPostaux": ["01310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1646, 46.1857]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1679, 46.1896]
+      },
+      "population": 922,
+      "surface": 738.84,
+      "radius": 1.53
+    },
+    {
+      "nom": "Saint-Sorlin-en-Bugey",
+      "code": "01386",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.369, 45.8863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3716, 45.8848]
+      },
+      "population": 1140,
+      "surface": 917.06,
+      "radius": 1.71
+    },
+    {
+      "nom": "Saint-Sulpice",
+      "code": "01387",
+      "codesPostaux": ["01340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0406, 46.3215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0399, 46.3219]
+      },
+      "population": 259,
+      "surface": 517.24,
+      "radius": 1.28
+    },
+    {
+      "nom": "Saint-Trivier-de-Courtes",
+      "code": "01388",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0672, 46.458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0809, 46.4593]
+      },
+      "population": 1122,
+      "surface": 1650.32,
+      "radius": 2.29
+    },
+    {
+      "nom": "Saint-Trivier-sur-Moignans",
+      "code": "01389",
+      "codesPostaux": ["01990"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8984, 46.0632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8976, 46.0719]
+      },
+      "population": 1910,
+      "surface": 4232.41,
+      "radius": 3.67
+    },
+    {
+      "nom": "Saint-Vulbas",
+      "code": "01390",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.267, 45.8234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2936, 45.8361]
+      },
+      "population": 1229,
+      "surface": 2157.17,
+      "radius": 2.62
+    },
+    {
+      "nom": "Sainte-Croix",
+      "code": "01342",
+      "codesPostaux": ["01120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0477, 45.8978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0531, 45.8949]
+      },
+      "population": 548,
+      "surface": 1067.9,
+      "radius": 1.84
+    },
+    {
+      "nom": "Sainte-Euphémie",
+      "code": "01353",
+      "codesPostaux": ["01600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7927, 45.9651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7961, 45.9727]
+      },
+      "population": 1741,
+      "surface": 464.01,
+      "radius": 1.22
+    },
+    {
+      "nom": "Sainte-Julie",
+      "code": "01366",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2837, 45.8802]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2775, 45.8892]
+      },
+      "population": 1092,
+      "surface": 1144.59,
+      "radius": 1.91
+    },
+    {
+      "nom": "Sainte-Olive",
+      "code": "01382",
+      "codesPostaux": ["01330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9349, 46.0147]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9335, 46.0186]
+      },
+      "population": 357,
+      "surface": 742.78,
+      "radius": 1.54
+    },
+    {
+      "nom": "Salavre",
+      "code": "01391",
+      "codesPostaux": ["01270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3457, 46.363]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3465, 46.3639]
+      },
+      "population": 295,
+      "surface": 778.69,
+      "radius": 1.57
+    },
+    {
+      "nom": "Samognat",
+      "code": "01392",
+      "codesPostaux": ["01580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5826, 46.2732]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5756, 46.2583]
+      },
+      "population": 645,
+      "surface": 1425.2,
+      "radius": 2.13
+    },
+    {
+      "nom": "Sandrans",
+      "code": "01393",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9824, 46.0709]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9788, 46.0638]
+      },
+      "population": 578,
+      "surface": 2934.85,
+      "radius": 3.06
+    },
+    {
+      "nom": "Sault-Brénaz",
+      "code": "01396",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4007, 45.8612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4061, 45.8571]
+      },
+      "population": 1007,
+      "surface": 567.79,
+      "radius": 1.34
+    },
+    {
+      "nom": "Sauverny",
+      "code": "01397",
+      "codesPostaux": ["01220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.1102, 46.3132]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.1143, 46.3158]
+      },
+      "population": 1003,
+      "surface": 188.36,
+      "radius": 0.77
+    },
+    {
+      "nom": "Savigneux",
+      "code": "01398",
+      "codesPostaux": ["01480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8559, 45.9946]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8492, 46.0015]
+      },
+      "population": 1459,
+      "surface": 1488.18,
+      "radius": 2.18
+    },
+    {
+      "nom": "Ségny",
+      "code": "01399",
+      "codesPostaux": ["01170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.0732, 46.2944]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.0735, 46.2964]
+      },
+      "population": 2676,
+      "surface": 326.28,
+      "radius": 1.02
+    },
+    {
+      "nom": "Seillonnaz",
+      "code": "01400",
+      "codesPostaux": ["01470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.504, 45.8006]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.49, 45.8066]
+      },
+      "population": 136,
+      "surface": 969.03,
+      "radius": 1.76
+    },
+    {
+      "nom": "Sergy",
+      "code": "01401",
+      "codesPostaux": ["01630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9872, 46.2615]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.9991, 46.252]
+      },
+      "population": 2279,
+      "surface": 979.76,
+      "radius": 1.77
+    },
+    {
+      "nom": "Sermoyer",
+      "code": "01402",
+      "codesPostaux": ["01190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9733, 46.4987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9794, 46.4968]
+      },
+      "population": 659,
+      "surface": 1694.02,
+      "radius": 2.32
+    },
+    {
+      "nom": "Serrières-de-Briord",
+      "code": "01403",
+      "codesPostaux": ["01470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4424, 45.8129]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4532, 45.8071]
+      },
+      "population": 1329,
+      "surface": 852.38,
+      "radius": 1.65
+    },
+    {
+      "nom": "Serrières-sur-Ain",
+      "code": "01404",
+      "codesPostaux": ["01450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4472, 46.149]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4525, 46.1522]
+      },
+      "population": 135,
+      "surface": 835.75,
+      "radius": 1.63
+    },
+    {
+      "nom": "Servas",
+      "code": "01405",
+      "codesPostaux": ["01960"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1845, 46.1366]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1653, 46.1327]
+      },
+      "population": 1287,
+      "surface": 1303.35,
+      "radius": 2.04
+    },
+    {
+      "nom": "Servignat",
+      "code": "01406",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0587, 46.4354]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0692, 46.4345]
+      },
+      "population": 180,
+      "surface": 794.58,
+      "radius": 1.59
+    },
+    {
+      "nom": "Seyssel",
+      "code": "01407",
+      "codesPostaux": ["01420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.8257, 45.9477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.832, 45.9558]
+      },
+      "population": 997,
+      "surface": 239.12,
+      "radius": 0.87
+    },
+    {
+      "nom": "Simandre-sur-Suran",
+      "code": "01408",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4214, 46.235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4165, 46.2247]
+      },
+      "population": 664,
+      "surface": 1635.48,
+      "radius": 2.28
+    },
+    {
+      "nom": "Sonthonnax-la-Montagne",
+      "code": "01410",
+      "codesPostaux": ["01580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5015, 46.2235]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5239, 46.231]
+      },
+      "population": 287,
+      "surface": 1425.76,
+      "radius": 2.13
+    },
+    {
+      "nom": "Souclin",
+      "code": "01411",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4368, 45.8811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4164, 45.8765]
+      },
+      "population": 263,
+      "surface": 1330.72,
+      "radius": 2.06
+    },
+    {
+      "nom": "Sulignat",
+      "code": "01412",
+      "codesPostaux": ["01400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9601, 46.1727]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9636, 46.1767]
+      },
+      "population": 605,
+      "surface": 1076.9,
+      "radius": 1.85
+    },
+    {
+      "nom": "Surjoux-Lhopital",
+      "code": "01215",
+      "codesPostaux": ["01420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7666, 46.0302]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7779, 46.0222]
+      },
+      "population": 140,
+      "surface": 805.1,
+      "radius": 1.6
+    },
+    {
+      "nom": "Talissieu",
+      "code": "01415",
+      "codesPostaux": ["01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7199, 45.8627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7197, 45.8687]
+      },
+      "population": 514,
+      "surface": 493.93,
+      "radius": 1.25
+    },
+    {
+      "nom": "Tenay",
+      "code": "01416",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5147, 45.9222]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.509, 45.9181]
+      },
+      "population": 1024,
+      "surface": 1319.99,
+      "radius": 2.05
+    },
+    {
+      "nom": "Thil",
+      "code": "01418",
+      "codesPostaux": ["01120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0189, 45.8184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.021, 45.8142]
+      },
+      "population": 1208,
+      "surface": 516.09,
+      "radius": 1.28
+    },
+    {
+      "nom": "Thoiry",
+      "code": "01419",
+      "codesPostaux": ["01710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.9685, 46.2448]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.9799, 46.2363]
+      },
+      "population": 6356,
+      "surface": 2876.53,
+      "radius": 3.03
+    },
+    {
+      "nom": "Thoissey",
+      "code": "01420",
+      "codesPostaux": ["01140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7963, 46.1697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.801, 46.1719]
+      },
+      "population": 1644,
+      "surface": 133.25,
+      "radius": 0.65
+    },
+    {
+      "nom": "Torcieu",
+      "code": "01421",
+      "codesPostaux": ["01230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4056, 45.9189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3968, 45.9207]
+      },
+      "population": 744,
+      "surface": 1095.67,
+      "radius": 1.87
+    },
+    {
+      "nom": "Tossiat",
+      "code": "01422",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3076, 46.1355]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3167, 46.1396]
+      },
+      "population": 1389,
+      "surface": 1018.88,
+      "radius": 1.8
+    },
+    {
+      "nom": "Toussieux",
+      "code": "01423",
+      "codesPostaux": ["01600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8289, 45.961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.828, 45.9608]
+      },
+      "population": 1228,
+      "surface": 478.92,
+      "radius": 1.23
+    },
+    {
+      "nom": "Tramoyes",
+      "code": "01424",
+      "codesPostaux": ["01390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9624, 45.8742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9644, 45.8747]
+      },
+      "population": 1845,
+      "surface": 1313.2,
+      "radius": 2.04
+    },
+    {
+      "nom": "Trévoux",
+      "code": "01427",
+      "codesPostaux": ["01600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.771, 45.9398]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7763, 45.9406]
+      },
+      "population": 6931,
+      "surface": 563.37,
+      "radius": 1.34
+    },
+    {
+      "nom": "Val-Revermont",
+      "code": "01426",
+      "codesPostaux": ["01370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3537, 46.2816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3685, 46.2713]
+      },
+      "population": 2494,
+      "surface": 4578.9,
+      "radius": 3.82
+    },
+    {
+      "nom": "Valeins",
+      "code": "01428",
+      "codesPostaux": ["01140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8646, 46.1145]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8704, 46.1123]
+      },
+      "population": 131,
+      "surface": 435.79,
+      "radius": 1.18
+    },
+    {
+      "nom": "Valromey-sur-Séran",
+      "code": "01036",
+      "codesPostaux": ["01260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6626, 45.9236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6641, 45.8821]
+      },
+      "population": 1350,
+      "surface": 5660.41,
+      "radius": 4.24
+    },
+    {
+      "nom": "Valserhône",
+      "code": "01033",
+      "codesPostaux": ["01200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7944, 46.1234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.8262, 46.1076]
+      },
+      "population": 16162,
+      "surface": 6286.07,
+      "radius": 4.47
+    },
+    {
+      "nom": "Vandeins",
+      "code": "01429",
+      "codesPostaux": ["01660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0786, 46.2155]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0789, 46.215]
+      },
+      "population": 725,
+      "surface": 933.81,
+      "radius": 1.72
+    },
+    {
+      "nom": "Varambon",
+      "code": "01430",
+      "codesPostaux": ["01160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2909, 46.0443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3171, 46.0401]
+      },
+      "population": 664,
+      "surface": 800.26,
+      "radius": 1.6
+    },
+    {
+      "nom": "Vaux-en-Bugey",
+      "code": "01431",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3612, 45.9184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3537, 45.9275]
+      },
+      "population": 1218,
+      "surface": 829.94,
+      "radius": 1.63
+    },
+    {
+      "nom": "Verjon",
+      "code": "01432",
+      "codesPostaux": ["01270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3472, 46.3466]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3493, 46.3471]
+      },
+      "population": 343,
+      "surface": 510.5,
+      "radius": 1.27
+    },
+    {
+      "nom": "Vernoux",
+      "code": "01433",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1036, 46.4861]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1099, 46.4805]
+      },
+      "population": 296,
+      "surface": 1025,
+      "radius": 1.81
+    },
+    {
+      "nom": "Versailleux",
+      "code": "01434",
+      "codesPostaux": ["01330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.115, 45.9883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1046, 45.9801]
+      },
+      "population": 500,
+      "surface": 1935.62,
+      "radius": 2.48
+    },
+    {
+      "nom": "Versonnex",
+      "code": "01435",
+      "codesPostaux": ["01210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.1008, 46.2992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.0981, 46.3046]
+      },
+      "population": 2222,
+      "surface": 584.43,
+      "radius": 1.36
+    },
+    {
+      "nom": "Vesancy",
+      "code": "01436",
+      "codesPostaux": ["01170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.0856, 46.3634]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.089, 46.348]
+      },
+      "population": 513,
+      "surface": 1073.39,
+      "radius": 1.85
+    },
+    {
+      "nom": "Vescours",
+      "code": "01437",
+      "codesPostaux": ["01560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0286, 46.4743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0248, 46.4752]
+      },
+      "population": 215,
+      "surface": 1254.06,
+      "radius": 2
+    },
+    {
+      "nom": "Vésines",
+      "code": "01439",
+      "codesPostaux": ["01570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8638, 46.3593]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8669, 46.3593]
+      },
+      "population": 97,
+      "surface": 384.28,
+      "radius": 1.11
+    },
+    {
+      "nom": "Vieu-d'Izenave",
+      "code": "01441",
+      "codesPostaux": ["01430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5555, 46.0823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5298, 46.0812]
+      },
+      "population": 727,
+      "surface": 2009.94,
+      "radius": 2.53
+    },
+    {
+      "nom": "Villars-les-Dombes",
+      "code": "01443",
+      "codesPostaux": ["01330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0443, 46]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0299, 46.0014]
+      },
+      "population": 5059,
+      "surface": 2472.61,
+      "radius": 2.81
+    },
+    {
+      "nom": "Villebois",
+      "code": "01444",
+      "codesPostaux": ["01150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4483, 45.8499]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4343, 45.8488]
+      },
+      "population": 1200,
+      "surface": 1410.65,
+      "radius": 2.12
+    },
+    {
+      "nom": "Villemotier",
+      "code": "01445",
+      "codesPostaux": ["01270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3087, 46.3418]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3208, 46.3473]
+      },
+      "population": 607,
+      "surface": 1386.31,
+      "radius": 2.1
+    },
+    {
+      "nom": "Villeneuve",
+      "code": "01446",
+      "codesPostaux": ["01480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8598, 46.0346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8374, 46.0216]
+      },
+      "population": 1603,
+      "surface": 2696.11,
+      "radius": 2.93
+    },
+    {
+      "nom": "Villereversure",
+      "code": "01447",
+      "codesPostaux": ["01250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3936, 46.1939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3961, 46.1919]
+      },
+      "population": 1391,
+      "surface": 1751.57,
+      "radius": 2.36
+    },
+    {
+      "nom": "Villes",
+      "code": "01448",
+      "codesPostaux": ["01200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7598, 46.0952]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7862, 46.0897]
+      },
+      "population": 390,
+      "surface": 901.08,
+      "radius": 1.69
+    },
+    {
+      "nom": "Villette-sur-Ain",
+      "code": "01449",
+      "codesPostaux": ["01320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.254, 46.0125]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2691, 45.9883]
+      },
+      "population": 763,
+      "surface": 1976.63,
+      "radius": 2.51
+    },
+    {
+      "nom": "Villieu-Loyes-Mollon",
+      "code": "01450",
+      "codesPostaux": ["01800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2265, 45.929]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2235, 45.9217]
+      },
+      "population": 3831,
+      "surface": 1585.74,
+      "radius": 2.25
+    },
+    {
+      "nom": "Viriat",
+      "code": "01451",
+      "codesPostaux": ["01440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2257, 46.2522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2166, 46.2533]
+      },
+      "population": 6955,
+      "surface": 4534.2,
+      "radius": 3.8
+    },
+    {
+      "nom": "Virieu-le-Grand",
+      "code": "01452",
+      "codesPostaux": ["01510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.639, 45.8465]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6516, 45.8484]
+      },
+      "population": 1110,
+      "surface": 1265.38,
+      "radius": 2.01
+    },
+    {
+      "nom": "Virignin",
+      "code": "01454",
+      "codesPostaux": ["01300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7149, 45.7282]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7104, 45.721]
+      },
+      "population": 1122,
+      "surface": 786.98,
+      "radius": 1.58
+    },
+    {
+      "nom": "Vongnes",
+      "code": "01456",
+      "codesPostaux": ["01350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.7255, 45.8122]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.7256, 45.815]
+      },
+      "population": 71,
+      "surface": 210.19,
+      "radius": 0.82
+    },
+    {
+      "nom": "Vonnas",
+      "code": "01457",
+      "codesPostaux": ["01540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9945, 46.2132]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9924, 46.22]
+      },
+      "population": 3233,
+      "surface": 1817.21,
+      "radius": 2.41
+    }
+  ],
+  "postalCodes": {
+    "01400": {
+      "communes": [
+        "L'Abergement-Clémenciat",
+        "Chanoz-Châtenay",
+        "Châtillon-sur-Chalaronne",
+        "Condeissiat",
+        "Dompierre-sur-Chalaronne",
+        "Neuville-les-Dames",
+        "Romans",
+        "Saint-Georges-sur-Renon",
+        "Sandrans",
+        "Sulignat"
+      ],
+      "communeCount": 10,
+      "center": [4.9793, 46.136],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 46.0638,
+        "maxLat": 46.1841,
+        "minLon": 4.8976,
+        "maxLon": 5.0799
+      },
+      "totalPopulation": 11789,
+      "totalSurface": 16776
+    },
+    "01640": {
+      "communes": ["L'Abergement-de-Varey", "Boyeux-Saint-Jérôme", "Jujurieux", "Saint-Jean-le-Vieux"],
+      "communeCount": 4,
+      "center": [5.4067, 46.0324],
+      "coverageRadius": 4.1,
+      "boundingBox": {
+        "minLat": 46.0072,
+        "maxLat": 46.039,
+        "minLon": 5.3894,
+        "maxLon": 5.459
+      },
+      "totalPopulation": 4643,
+      "totalSurface": 5673
+    },
+    "01500": {
+      "communes": [
+        "Ambérieu-en-Bugey",
+        "Ambronay",
+        "Ambutrix",
+        "Bettant",
+        "Château-Gaillard",
+        "Douvres",
+        "Saint-Denis-en-Bugey",
+        "Saint-Maurice-de-Rémens"
+      ],
+      "communeCount": 8,
+      "center": [5.3499, 45.9648],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 45.9388,
+        "maxLat": 46.0078,
+        "minLon": 5.2755,
+        "maxLon": 5.3735
+      },
+      "totalPopulation": 26440,
+      "totalSurface": 10109
+    },
+    "01330": {
+      "communes": [
+        "Ambérieux-en-Dombes",
+        "Birieux",
+        "Bouligneux",
+        "Lapeyrouse",
+        "Le Plantay",
+        "Sainte-Olive",
+        "Versailleux",
+        "Villars-les-Dombes"
+      ],
+      "communeCount": 8,
+      "center": [5.0048, 45.9996],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 45.9531,
+        "maxLat": 46.0222,
+        "minLon": 4.903,
+        "maxLon": 5.1046
+      },
+      "totalPopulation": 9342,
+      "totalSurface": 15052
+    },
+    "01300": {
+      "communes": [
+        "Ambléon",
+        "Andert-et-Condon",
+        "Arboys en Bugey",
+        "Belley",
+        "Brégnier-Cordon",
+        "Brens",
+        "Chazey-Bons",
+        "Colomieu",
+        "Contrevoz",
+        "Conzieu",
+        "Cuzieu",
+        "Izieu",
+        "Magnieu",
+        "Marignieu",
+        "Massignieu-de-Rives",
+        "Murs-et-Gélignieux",
+        "Parves et Nattages",
+        "Peyrieu",
+        "Prémeyzel",
+        "Groslée-Saint-Benoit",
+        "Saint-Germain-les-Paroisses",
+        "Virignin"
+      ],
+      "communeCount": 22,
+      "center": [5.6782, 45.7452],
+      "coverageRadius": 11.8,
+      "boundingBox": {
+        "minLat": 45.6424,
+        "maxLat": 45.819,
+        "minLon": 5.5875,
+        "maxLon": 5.7668
+      },
+      "totalPopulation": 21538,
+      "totalSurface": 25252
+    },
+    "01350": {
+      "communes": [
+        "Anglefort",
+        "Ceyzérieu",
+        "Cressin-Rochefort",
+        "Culoz-Béon",
+        "Flaxieu",
+        "Lavours",
+        "Pollieu",
+        "Vongnes"
+      ],
+      "communeCount": 8,
+      "center": [5.7742, 45.8508],
+      "coverageRadius": 7.6,
+      "boundingBox": {
+        "minLat": 45.7843,
+        "maxLat": 45.914,
+        "minLon": 5.7256,
+        "maxLon": 5.8094
+      },
+      "totalPopulation": 6418,
+      "totalSurface": 10140
+    },
+    "01100": {
+      "communes": ["Apremont", "Arbent", "Bellignat", "Géovreisset", "Groissiat", "Martignat", "Oyonnax"],
+      "communeCount": 7,
+      "center": [5.6508, 46.2558],
+      "coverageRadius": 6.1,
+      "boundingBox": {
+        "minLat": 46.2075,
+        "maxLat": 46.2954,
+        "minLon": 5.6104,
+        "maxLon": 5.6819
+      },
+      "totalPopulation": 33566,
+      "totalSurface": 10524
+    },
+    "01110": {
+      "communes": ["Aranc", "Brénod", "Champdor-Corcelles", "Corlier", "Plateau d'Hauteville", "Prémillieu"],
+      "communeCount": 6,
+      "center": [5.5948, 45.9898],
+      "coverageRadius": 13,
+      "boundingBox": {
+        "minLat": 45.8744,
+        "maxLat": 46.0595,
+        "minLon": 5.4988,
+        "maxLon": 5.6057
+      },
+      "totalPopulation": 6484,
+      "totalSurface": 19766
+    },
+    "01230": {
+      "communes": [
+        "Arandas",
+        "Argis",
+        "Chaley",
+        "Cleyzieu",
+        "Conand",
+        "Évosges",
+        "Nivollet-Montgriffon",
+        "Oncieu",
+        "Saint-Rambert-en-Bugey",
+        "Tenay",
+        "Torcieu"
+      ],
+      "communeCount": 11,
+      "center": [5.4573, 45.9352],
+      "coverageRadius": 6.5,
+      "boundingBox": {
+        "minLat": 45.8923,
+        "maxLat": 45.993,
+        "minLon": 5.3968,
+        "maxLon": 5.5304
+      },
+      "totalPopulation": 5248,
+      "totalSurface": 13055
+    },
+    "01190": {
+      "communes": [
+        "Arbigny",
+        "Boissey",
+        "Boz",
+        "Chavannes-sur-Reyssouze",
+        "Chevroux",
+        "Gorrevod",
+        "Ozan",
+        "Pont-de-Vaux",
+        "Reyssouze",
+        "Saint-Bénigne",
+        "Saint-Étienne-sur-Reyssouze",
+        "Sermoyer"
+      ],
+      "communeCount": 12,
+      "center": [4.9518, 46.4262],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 46.3808,
+        "maxLat": 46.4968,
+        "minLon": 4.9105,
+        "maxLon": 5.0011
+      },
+      "totalPopulation": 10361,
+      "totalSurface": 14668
+    },
+    "01510": {
+      "communes": [
+        "Armix",
+        "Artemare",
+        "La Burbanche",
+        "Chazey-Bons",
+        "Cheignieu-la-Balme",
+        "Ordonnaz",
+        "Rossillon",
+        "Saint-Martin-de-Bavel",
+        "Talissieu",
+        "Virieu-le-Grand"
+      ],
+      "communeCount": 10,
+      "center": [5.6698, 45.845],
+      "coverageRadius": 10.3,
+      "boundingBox": {
+        "minLat": 45.8044,
+        "maxLat": 45.8752,
+        "minLon": 5.5381,
+        "maxLon": 5.7197
+      },
+      "totalPopulation": 4923,
+      "totalSurface": 9189
+    },
+    "01480": {
+      "communes": [
+        "Ars-sur-Formans",
+        "Beauregard",
+        "Chaleins",
+        "Fareins",
+        "Frans",
+        "Jassans-Riottier",
+        "Messimy-sur-Saône",
+        "Savigneux",
+        "Villeneuve"
+      ],
+      "communeCount": 9,
+      "center": [4.7827, 46.003],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 45.9832,
+        "maxLat": 46.05,
+        "minLon": 4.7512,
+        "maxLon": 4.8492
+      },
+      "totalPopulation": 19535,
+      "totalSurface": 9278
+    },
+    "01570": {
+      "communes": ["Asnières-sur-Saône", "Feillens", "Manziat", "Vésines"],
+      "communeCount": 4,
+      "center": [4.8939, 46.3454],
+      "coverageRadius": 4.3,
+      "boundingBox": {
+        "minLat": 46.336,
+        "maxLat": 46.383,
+        "minLon": 4.8669,
+        "maxLon": 4.9065
+      },
+      "totalPopulation": 5547,
+      "totalSurface": 3613
+    },
+    "01340": {
+      "communes": [
+        "Attignat",
+        "Béréziat",
+        "Bresse Vallons",
+        "Foissiat",
+        "Jayat",
+        "Malafretaz",
+        "Marsonnas",
+        "Montrevel-en-Bresse",
+        "Saint-Didier-d'Aussiat",
+        "Saint-Sulpice"
+      ],
+      "communeCount": 10,
+      "center": [5.1363, 46.3273],
+      "coverageRadius": 8.3,
+      "boundingBox": {
+        "minLat": 46.2895,
+        "maxLat": 46.3694,
+        "minLon": 5.0399,
+        "maxLon": 5.175
+      },
+      "totalPopulation": 15580,
+      "totalSurface": 17073
+    },
+    "01380": {
+      "communes": [
+        "Bâgé-Dommartin",
+        "Bâgé-le-Châtel",
+        "Boissey",
+        "Saint-André-de-Bâgé",
+        "Saint-Cyr-sur-Menthon",
+        "Saint-Genis-sur-Menthon"
+      ],
+      "communeCount": 6,
+      "center": [4.9537, 46.3056],
+      "coverageRadius": 9.1,
+      "boundingBox": {
+        "minLat": 46.2754,
+        "maxLat": 46.3812,
+        "minLon": 4.9173,
+        "maxLon": 5.0087
+      },
+      "totalPopulation": 8608,
+      "totalSurface": 9878
+    },
+    "01360": {
+      "communes": ["Balan", "Béligneux", "Bressolles", "Loyettes"],
+      "communeCount": 4,
+      "center": [5.1411, 45.8235],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 45.7743,
+        "maxLat": 45.8671,
+        "minLon": 5.0957,
+        "maxLon": 5.2035
+      },
+      "totalPopulation": 10833,
+      "totalSurface": 6028
+    },
+    "01990": {
+      "communes": ["Baneins", "Chaneins", "Relevant", "Saint-Trivier-sur-Moignans"],
+      "communeCount": 4,
+      "center": [4.8921, 46.0864],
+      "coverageRadius": 4.4,
+      "boundingBox": {
+        "minLat": 46.0719,
+        "maxLat": 46.1108,
+        "minLon": 4.851,
+        "maxLon": 4.9489
+      },
+      "totalPopulation": 4036,
+      "totalSurface": 7649
+    },
+    "01270": {
+      "communes": ["Beaupont", "Coligny", "Domsure", "Pirajoux", "Salavre", "Verjon", "Villemotier"],
+      "communeCount": 7,
+      "center": [5.3176, 46.3817],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 46.3471,
+        "maxLat": 46.419,
+        "minLon": 5.2647,
+        "maxLon": 5.3493
+      },
+      "totalPopulation": 4196,
+      "totalSurface": 8612
+    },
+    "01200": {
+      "communes": [
+        "Valserhône",
+        "Billiat",
+        "Chézery-Forens",
+        "Confort",
+        "Injoux-Génissiat",
+        "Léaz",
+        "Montanges",
+        "Villes"
+      ],
+      "communeCount": 8,
+      "center": [5.8257, 46.1076],
+      "coverageRadius": 13.2,
+      "boundingBox": {
+        "minLat": 46.0509,
+        "maxLat": 46.2224,
+        "minLon": 5.7842,
+        "maxLon": 5.8841
+      },
+      "totalPopulation": 20691,
+      "totalSurface": 19854
+    },
+    "01130": {
+      "communes": [
+        "Belleydoux",
+        "Charix",
+        "Échallon",
+        "Giron",
+        "Le Poizat-Lalleyriat",
+        "Nantua",
+        "Les Neyrolles",
+        "Plagne",
+        "Saint-Germain-de-Joux"
+      ],
+      "communeCount": 9,
+      "center": [5.6618, 46.1694],
+      "coverageRadius": 12.9,
+      "boundingBox": {
+        "minLat": 46.1409,
+        "maxLat": 46.2529,
+        "minLon": 5.6058,
+        "maxLon": 5.7773
+      },
+      "totalPopulation": 6999,
+      "totalSurface": 14886
+    },
+    "01260": {
+      "communes": ["Valromey-sur-Séran", "Champagne-en-Valromey", "Haut Valromey", "Arvière-en-Valromey"],
+      "communeCount": 4,
+      "center": [5.6847, 45.9128],
+      "coverageRadius": 9.4,
+      "boundingBox": {
+        "minLat": 45.8821,
+        "maxLat": 45.9972,
+        "minLon": 5.6641,
+        "maxLon": 5.7241
+      },
+      "totalPopulation": 3494,
+      "totalSurface": 23803
+    },
+    "01470": {
+      "communes": ["Bénonces", "Briord", "Montagnieu", "Seillonnaz", "Serrières-de-Briord"],
+      "communeCount": 5,
+      "center": [5.4616, 45.7985],
+      "coverageRadius": 3.4,
+      "boundingBox": {
+        "minLat": 45.7825,
+        "maxLat": 45.8268,
+        "minLon": 5.4532,
+        "maxLon": 5.49
+      },
+      "totalPopulation": 3562,
+      "totalSurface": 5210
+    },
+    "01370": {
+      "communes": ["Bény", "Courmangoux", "Meillonnas", "Saint-Étienne-du-Bois", "Val-Revermont"],
+      "communeCount": 5,
+      "center": [5.332, 46.2813],
+      "coverageRadius": 6.3,
+      "boundingBox": {
+        "minLat": 46.2457,
+        "maxLat": 46.3312,
+        "minLon": 5.2841,
+        "maxLon": 5.3703
+      },
+      "totalPopulation": 7728,
+      "totalSurface": 12561
+    },
+    "01290": {
+      "communes": [
+        "Bey",
+        "Biziat",
+        "Cormoranche-sur-Saône",
+        "Crottet",
+        "Cruzilles-lès-Mépillat",
+        "Grièges",
+        "Laiz",
+        "Pont-de-Veyle",
+        "Saint-André-d'Huiriat",
+        "Saint-Jean-sur-Veyle"
+      ],
+      "communeCount": 10,
+      "center": [4.8835, 46.2494],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 46.213,
+        "maxLat": 46.2775,
+        "minLon": 4.8311,
+        "maxLon": 4.9437
+      },
+      "totalPopulation": 11773,
+      "totalSurface": 9599
+    },
+    "01700": {
+      "communes": ["Beynost", "Miribel", "Neyron", "Saint-Maurice-de-Beynost"],
+      "communeCount": 4,
+      "center": [4.9658, 45.8272],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 45.8147,
+        "maxLat": 45.8403,
+        "minLon": 4.9326,
+        "maxLon": 5.0014
+      },
+      "totalPopulation": 22108,
+      "totalSurface": 4740
+    },
+    "01150": {
+      "communes": [
+        "Blyes",
+        "Chazey-sur-Ain",
+        "Lagnieu",
+        "Leyment",
+        "Sainte-Julie",
+        "Saint-Sorlin-en-Bugey",
+        "Saint-Vulbas",
+        "Sault-Brénaz",
+        "Souclin",
+        "Vaux-en-Bugey",
+        "Villebois"
+      ],
+      "communeCount": 11,
+      "center": [5.3329, 45.889],
+      "coverageRadius": 9.1,
+      "boundingBox": {
+        "minLat": 45.8361,
+        "maxLat": 45.9275,
+        "minLon": 5.2495,
+        "maxLon": 5.4343
+      },
+      "totalPopulation": 18851,
+      "totalSurface": 15675
+    },
+    "01120": {
+      "communes": ["La Boisse", "Dagneux", "Montluel", "Niévroz", "Pizay", "Sainte-Croix", "Thil"],
+      "communeCount": 7,
+      "center": [5.0566, 45.8488],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 45.8142,
+        "maxLat": 45.8949,
+        "minLon": 5.021,
+        "maxLon": 5.0906
+      },
+      "totalPopulation": 19347,
+      "totalSurface": 9391
+    },
+    "01450": {
+      "communes": [
+        "Bolozon",
+        "Cerdon",
+        "Challes-la-Montagne",
+        "Labalme",
+        "Leyssard",
+        "Mérignat",
+        "Poncin",
+        "Saint-Alban",
+        "Serrières-sur-Ain"
+      ],
+      "communeCount": 9,
+      "center": [5.4364, 46.0958],
+      "coverageRadius": 11.1,
+      "boundingBox": {
+        "minLat": 46.0693,
+        "maxLat": 46.192,
+        "minLon": 5.4071,
+        "maxLon": 5.4831
+      },
+      "totalPopulation": 3638,
+      "totalSurface": 8277
+    },
+    "01000": {
+      "communes": ["Bourg-en-Bresse", "Saint-Denis-lès-Bourg"],
+      "communeCount": 2,
+      "center": [5.2203, 46.205],
+      "coverageRadius": 2.4,
+      "boundingBox": {
+        "minLat": 46.2026,
+        "maxLat": 46.2053,
+        "minLon": 5.1897,
+        "maxLon": 5.2247
+      },
+      "totalPopulation": 48143,
+      "totalSurface": 3667
+    },
+    "01800": {
+      "communes": [
+        "Bourg-Saint-Christophe",
+        "Charnoz-sur-Ain",
+        "Faramans",
+        "Joyeux",
+        "Meximieux",
+        "Le Montellier",
+        "Pérouges",
+        "Rignieux-le-Franc",
+        "Saint-Éloi",
+        "Saint-Jean-de-Niost",
+        "Saint-Maurice-de-Gourdans",
+        "Villieu-Loyes-Mollon"
+      ],
+      "communeCount": 12,
+      "center": [5.1927, 45.8933],
+      "coverageRadius": 10.5,
+      "boundingBox": {
+        "minLat": 45.8207,
+        "maxLat": 45.9614,
+        "minLon": 5.0723,
+        "maxLon": 5.2235
+      },
+      "totalPopulation": 23715,
+      "totalSurface": 17634
+    },
+    "01460": {
+      "communes": ["Brion", "Béard-Géovreissiat", "Montréal-la-Cluse", "Nurieux-Volognat", "Nantua", "Port"],
+      "communeCount": 6,
+      "center": [5.5774, 46.1722],
+      "coverageRadius": 4.4,
+      "boundingBox": {
+        "minLat": 46.1549,
+        "maxLat": 46.1896,
+        "minLon": 5.5218,
+        "maxLon": 5.6058
+      },
+      "totalPopulation": 10470,
+      "totalSurface": 5998
+    },
+    "01310": {
+      "communes": [
+        "Buellas",
+        "Confrançon",
+        "Curtafond",
+        "Montcet",
+        "Montracol",
+        "Polliat",
+        "Saint-Martin-le-Châtel",
+        "Saint-Rémy"
+      ],
+      "communeCount": 8,
+      "center": [5.1184, 46.235],
+      "coverageRadius": 6.4,
+      "boundingBox": {
+        "minLat": 46.1896,
+        "maxLat": 46.2816,
+        "minLon": 5.0657,
+        "maxLon": 5.1679
+      },
+      "totalPopulation": 10169,
+      "totalSurface": 10271
+    },
+    "01430": {
+      "communes": [
+        "Ceignes",
+        "Chevillard",
+        "Condamine",
+        "Izenave",
+        "Lantenay",
+        "Maillat",
+        "Outriaz",
+        "Peyriat",
+        "Saint-Martin-du-Frêne",
+        "Vieu-d'Izenave"
+      ],
+      "communeCount": 10,
+      "center": [5.5408, 46.1091],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 46.0388,
+        "maxLat": 46.1547,
+        "minLon": 5.5002,
+        "maxLon": 5.5805
+      },
+      "totalPopulation": 4168,
+      "totalSurface": 10412
+    },
+    "01240": {
+      "communes": [
+        "Certines",
+        "La Chapelle-du-Châtelard",
+        "Dompierre-sur-Veyle",
+        "Lent",
+        "Marlieux",
+        "Saint-André-le-Bouchoux",
+        "Saint-Germain-sur-Renon",
+        "Saint-Paul-de-Varax"
+      ],
+      "communeCount": 8,
+      "center": [5.1597, 46.0989],
+      "coverageRadius": 11,
+      "boundingBox": {
+        "minLat": 46.064,
+        "maxLat": 46.1322,
+        "minLon": 5.0238,
+        "maxLon": 5.2645
+      },
+      "totalPopulation": 8105,
+      "totalSurface": 15947
+    },
+    "01170": {
+      "communes": ["Cessy", "Chevry", "Crozet", "Échenevex", "Gex", "Mijoux", "Ségny", "Vesancy"],
+      "communeCount": 8,
+      "center": [6.0548, 46.3174],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 46.2794,
+        "maxLat": 46.3664,
+        "minLon": 5.9967,
+        "maxLon": 6.089
+      },
+      "totalPopulation": 29393,
+      "totalSurface": 12391
+    },
+    "01250": {
+      "communes": [
+        "Ceyzériat",
+        "Nivigne et Suran",
+        "Cize",
+        "Corveissiat",
+        "Drom",
+        "Grand-Corent",
+        "Hautecourt-Romanèche",
+        "Jasseron",
+        "Journans",
+        "Bohas-Meyriat-Rignat",
+        "Montagnat",
+        "Pouillat",
+        "Ramasse",
+        "Revonnas",
+        "Saint-Just",
+        "Simandre-sur-Suran",
+        "Tossiat",
+        "Villereversure"
+      ],
+      "communeCount": 18,
+      "center": [5.3479, 46.1854],
+      "coverageRadius": 17,
+      "boundingBox": {
+        "minLat": 46.1369,
+        "maxLat": 46.3273,
+        "minLon": 5.2787,
+        "maxLon": 5.4823
+      },
+      "totalPopulation": 17157,
+      "totalSurface": 23426
+    },
+    "01320": {
+      "communes": [
+        "Chalamont",
+        "Châtenay",
+        "Châtillon-la-Palud",
+        "Crans",
+        "Saint-Nizier-le-Désert",
+        "Villette-sur-Ain"
+      ],
+      "communeCount": 6,
+      "center": [5.2027, 45.998],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 45.9639,
+        "maxLat": 46.0551,
+        "minLon": 5.148,
+        "maxLon": 5.2691
+      },
+      "totalPopulation": 6578,
+      "totalSurface": 12033
+    },
+    "01630": {
+      "communes": ["Challex", "Péron", "Saint-Genis-Pouilly", "Saint-Jean-de-Gonville", "Sergy"],
+      "communeCount": 5,
+      "center": [6.0005, 46.2306],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 46.1812,
+        "maxLat": 46.252,
+        "minLon": 5.9264,
+        "maxLon": 6.0252
+      },
+      "totalPopulation": 23433,
+      "totalSurface": 6655
+    },
+    "01410": {
+      "communes": ["Champfromier", "Chézery-Forens", "Lélex", "Mijoux"],
+      "communeCount": 4,
+      "center": [5.8793, 46.2472],
+      "coverageRadius": 16.1,
+      "boundingBox": {
+        "minLat": 46.194,
+        "maxLat": 46.3664,
+        "minLon": 5.8168,
+        "maxLon": 5.9967
+      },
+      "totalPopulation": 1678,
+      "totalSurface": 11832
+    },
+    "01420": {
+      "communes": ["Chanay", "Corbonod", "Surjoux-Lhopital", "Seyssel"],
+      "communeCount": 4,
+      "center": [5.8106, 45.9743],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 45.9558,
+        "maxLat": 46.0222,
+        "minLon": 5.7779,
+        "maxLon": 5.832
+      },
+      "totalPopulation": 3047,
+      "totalSurface": 6091
+    },
+    "01660": {
+      "communes": ["Chaveyriat", "Mézériat", "Vandeins"],
+      "communeCount": 3,
+      "center": [5.0568, 46.2212],
+      "coverageRadius": 2.6,
+      "boundingBox": {
+        "minLat": 46.1981,
+        "maxLat": 46.2344,
+        "minLon": 5.0473,
+        "maxLon": 5.0789
+      },
+      "totalPopulation": 3961,
+      "totalSurface": 4537
+    },
+    "01390": {
+      "communes": [
+        "Civrieux",
+        "Mionnay",
+        "Monthieux",
+        "Rancé",
+        "Saint-André-de-Corcy",
+        "Saint-Jean-de-Thurigneux",
+        "Saint-Marcel",
+        "Tramoyes"
+      ],
+      "communeCount": 8,
+      "center": [4.933, 45.9209],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 45.8747,
+        "maxLat": 45.9656,
+        "minLon": 4.8685,
+        "maxLon": 4.9853
+      },
+      "totalPopulation": 13092,
+      "totalSurface": 12254
+    },
+    "01550": {
+      "communes": ["Collonges", "Farges", "Pougny"],
+      "communeCount": 3,
+      "center": [5.9134, 46.146],
+      "coverageRadius": 3.1,
+      "boundingBox": {
+        "minLat": 46.1383,
+        "maxLat": 46.1674,
+        "minLon": 5.904,
+        "maxLon": 5.9515
+      },
+      "totalPopulation": 4117,
+      "totalSurface": 3810
+    },
+    "01560": {
+      "communes": [
+        "Cormoz",
+        "Courtes",
+        "Curciat-Dongalon",
+        "Lescheroux",
+        "Mantenay-Montlin",
+        "Saint-Jean-sur-Reyssouze",
+        "Saint-Julien-sur-Reyssouze",
+        "Saint-Nizier-le-Bouchoux",
+        "Saint-Trivier-de-Courtes",
+        "Servignat",
+        "Vernoux",
+        "Vescours"
+      ],
+      "communeCount": 12,
+      "center": [5.1192, 46.4389],
+      "coverageRadius": 8.8,
+      "boundingBox": {
+        "minLat": 46.3973,
+        "maxLat": 46.4805,
+        "minLon": 5.0248,
+        "maxLon": 5.2329
+      },
+      "totalPopulation": 6352,
+      "totalSurface": 19416
+    },
+    "01750": {
+      "communes": ["Crottet", "Replonges", "Saint-Laurent-sur-Saône"],
+      "communeCount": 3,
+      "center": [4.8752, 46.3005],
+      "coverageRadius": 2.9,
+      "boundingBox": {
+        "minLat": 46.2775,
+        "maxLat": 46.309,
+        "minLon": 4.8418,
+        "maxLon": 4.8928
+      },
+      "totalPopulation": 7508,
+      "totalSurface": 2947
+    },
+    "01220": {
+      "communes": ["Divonne-les-Bains", "Grilly", "Sauverny"],
+      "communeCount": 3,
+      "center": [6.1328, 46.3528],
+      "coverageRadius": 4.4,
+      "boundingBox": {
+        "minLat": 46.3158,
+        "maxLat": 46.3582,
+        "minLon": 6.1143,
+        "maxLon": 6.1361
+      },
+      "totalPopulation": 12176,
+      "totalSurface": 4328
+    },
+    "01590": {
+      "communes": ["Dortan"],
+      "communeCount": 1,
+      "center": [5.6596, 46.3189],
+      "coverageRadius": 2.44,
+      "totalPopulation": 2013,
+      "totalSurface": 1878
+    },
+    "01160": {
+      "communes": [
+        "Druillat",
+        "Neuville-sur-Ain",
+        "Pont-d'Ain",
+        "Priay",
+        "Saint-Martin-du-Mont",
+        "La Tranclière",
+        "Varambon"
+      ],
+      "communeCount": 7,
+      "center": [5.3287, 46.0589],
+      "coverageRadius": 7.8,
+      "boundingBox": {
+        "minLat": 46.003,
+        "maxLat": 46.1105,
+        "minLon": 5.2613,
+        "maxLon": 5.3717
+      },
+      "totalPopulation": 10512,
+      "totalSurface": 11865
+    },
+    "01210": {
+      "communes": ["Ferney-Voltaire", "Ornex", "Versonnex"],
+      "communeCount": 3,
+      "center": [6.1029, 46.2669],
+      "coverageRadius": 4.3,
+      "boundingBox": {
+        "minLat": 46.2557,
+        "maxLat": 46.3046,
+        "minLon": 6.0931,
+        "maxLon": 6.108
+      },
+      "totalPopulation": 18655,
+      "totalSurface": 1632
+    },
+    "01090": {
+      "communes": ["Francheleins", "Genouilleux", "Guéreins", "Lurcy", "Montceaux", "Montmerle-sur-Saône"],
+      "communeCount": 6,
+      "center": [4.7796, 46.0876],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 46.0636,
+        "maxLat": 46.119,
+        "minLon": 4.7597,
+        "maxLon": 4.8089
+      },
+      "totalPopulation": 9175,
+      "totalSurface": 4124
+    },
+    "01140": {
+      "communes": [
+        "Garnerans",
+        "Illiat",
+        "Mogneneins",
+        "Peyzieux-sur-Saône",
+        "Saint-Didier-sur-Chalaronne",
+        "Saint-Étienne-sur-Chalaronne",
+        "Thoissey",
+        "Valeins"
+      ],
+      "communeCount": 8,
+      "center": [4.83, 46.1667],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 46.1123,
+        "maxLat": 46.2052,
+        "minLon": 4.801,
+        "maxLon": 4.8886
+      },
+      "totalPopulation": 9230,
+      "totalSurface": 9818
+    },
+    "01680": {
+      "communes": ["Innimond", "Lhuis", "Lompnas", "Marchamp"],
+      "communeCount": 4,
+      "center": [5.5369, 45.7591],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 45.7458,
+        "maxLat": 45.8028,
+        "minLon": 5.519,
+        "maxLon": 5.5724
+      },
+      "totalPopulation": 1280,
+      "totalSurface": 6375
+    },
+    "01580": {
+      "communes": ["Izernore", "Matafelon-Granges", "Samognat", "Sonthonnax-la-Montagne"],
+      "communeCount": 4,
+      "center": [5.556, 46.2339],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 46.2195,
+        "maxLat": 46.2622,
+        "minLon": 5.5239,
+        "maxLon": 5.5756
+      },
+      "totalPopulation": 3824,
+      "totalSurface": 7161
+    },
+    "01851": {
+      "communes": ["Marboz"],
+      "communeCount": 1,
+      "center": [5.2566, 46.342],
+      "coverageRadius": 3.58,
+      "totalPopulation": 2262,
+      "totalSurface": 4032
+    },
+    "01600": {
+      "communes": [
+        "Massieux",
+        "Misérieux",
+        "Parcieux",
+        "Reyrieux",
+        "Saint-Bernard",
+        "Saint-Didier-de-Formans",
+        "Sainte-Euphémie",
+        "Toussieux",
+        "Trévoux"
+      ],
+      "communeCount": 9,
+      "center": [4.7998, 45.9423],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 45.9095,
+        "maxLat": 45.974,
+        "minLon": 4.7362,
+        "maxLon": 4.8329
+      },
+      "totalPopulation": 24908,
+      "totalSurface": 5435
+    },
+    "01960": {
+      "communes": ["Péronnas", "Saint-André-sur-Vieux-Jonc", "Servas"],
+      "communeCount": 3,
+      "center": [5.1902, 46.1695],
+      "coverageRadius": 4.6,
+      "boundingBox": {
+        "minLat": 46.1327,
+        "maxLat": 46.1791,
+        "minLon": 5.1464,
+        "maxLon": 5.2035
+      },
+      "totalPopulation": 8940,
+      "totalSurface": 5547
+    },
+    "01540": {
+      "communes": ["Perrex", "Saint-Julien-sur-Veyle", "Vonnas"],
+      "communeCount": 3,
+      "center": [4.9836, 46.2215],
+      "coverageRadius": 3.1,
+      "boundingBox": {
+        "minLat": 46.2036,
+        "maxLat": 46.2448,
+        "minLon": 4.9542,
+        "maxLon": 4.9924
+      },
+      "totalPopulation": 4947,
+      "totalSurface": 3924
+    },
+    "01280": {
+      "communes": ["Prévessin-Moëns"],
+      "communeCount": 1,
+      "center": [6.0811, 46.2542],
+      "coverageRadius": 1.96,
+      "totalPopulation": 9081,
+      "totalSurface": 1209
+    },
+    "01710": {
+      "communes": ["Thoiry"],
+      "communeCount": 1,
+      "center": [5.9799, 46.2363],
+      "coverageRadius": 3.03,
+      "totalPopulation": 6356,
+      "totalSurface": 2877
+    },
+    "01440": {
+      "communes": ["Viriat"],
+      "communeCount": 1,
+      "center": [5.2166, 46.2533],
+      "coverageRadius": 3.8,
+      "totalPopulation": 6955,
+      "totalSurface": 4534
+    }
+  }
+}

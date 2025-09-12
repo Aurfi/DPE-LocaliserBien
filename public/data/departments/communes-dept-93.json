@@ -1,0 +1,965 @@
+{
+  "departmentCode": "93",
+  "departmentName": "Seine-Saint-Denis",
+  "stats": {
+    "communeCount": 39,
+    "totalPopulation": 1648055,
+    "totalSurface": 23669
+  },
+  "communes": [
+    {
+      "nom": "Aubervilliers",
+      "code": "93001",
+      "codesPostaux": ["93300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3886, 48.9128]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3818, 48.9146]
+      },
+      "population": 89489,
+      "surface": 576.7,
+      "radius": 1.35
+    },
+    {
+      "nom": "Aulnay-sous-Bois",
+      "code": "93005",
+      "codesPostaux": ["93600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4918, 48.9457]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5001, 48.9342]
+      },
+      "population": 86360,
+      "surface": 1615.42,
+      "radius": 2.27
+    },
+    {
+      "nom": "Bagnolet",
+      "code": "93006",
+      "codesPostaux": ["93170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4252, 48.8671]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4164, 48.869]
+      },
+      "population": 41776,
+      "surface": 256.63,
+      "radius": 0.9
+    },
+    {
+      "nom": "Bobigny",
+      "code": "93008",
+      "codesPostaux": ["93000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4432, 48.9073]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4452, 48.9062]
+      },
+      "population": 55270,
+      "surface": 677.82,
+      "radius": 1.47
+    },
+    {
+      "nom": "Bondy",
+      "code": "93010",
+      "codesPostaux": ["93140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4846, 48.9036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4811, 48.9019]
+      },
+      "population": 51066,
+      "surface": 546.28,
+      "radius": 1.32
+    },
+    {
+      "nom": "Clichy-sous-Bois",
+      "code": "93014",
+      "codesPostaux": ["93390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5432, 48.9081]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5459, 48.9108]
+      },
+      "population": 29551,
+      "surface": 396.04,
+      "radius": 1.12
+    },
+    {
+      "nom": "Coubron",
+      "code": "93015",
+      "codesPostaux": ["93470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5759, 48.9173]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5768, 48.9159]
+      },
+      "population": 5156,
+      "surface": 417.25,
+      "radius": 1.15
+    },
+    {
+      "nom": "Drancy",
+      "code": "93029",
+      "codesPostaux": ["93700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4446, 48.925]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.445, 48.9234]
+      },
+      "population": 71312,
+      "surface": 776.13,
+      "radius": 1.57
+    },
+    {
+      "nom": "Dugny",
+      "code": "93030",
+      "codesPostaux": ["93440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4255, 48.9494]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4176, 48.9554]
+      },
+      "population": 11723,
+      "surface": 387.26,
+      "radius": 1.11
+    },
+    {
+      "nom": "Épinay-sur-Seine",
+      "code": "93031",
+      "codesPostaux": ["93800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3172, 48.9544]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3134, 48.9515]
+      },
+      "population": 53564,
+      "surface": 457.59,
+      "radius": 1.21
+    },
+    {
+      "nom": "Gagny",
+      "code": "93032",
+      "codesPostaux": ["93220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.545, 48.8826]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5366, 48.8847]
+      },
+      "population": 40790,
+      "surface": 696.5,
+      "radius": 1.49
+    },
+    {
+      "nom": "Gournay-sur-Marne",
+      "code": "93033",
+      "codesPostaux": ["93460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5761, 48.8607]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5728, 48.8646]
+      },
+      "population": 7101,
+      "surface": 168.11,
+      "radius": 0.73
+    },
+    {
+      "nom": "L'Île-Saint-Denis",
+      "code": "93039",
+      "codesPostaux": ["93450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3204, 48.9465]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3405, 48.9356]
+      },
+      "population": 8682,
+      "surface": 174.22,
+      "radius": 0.74
+    },
+    {
+      "nom": "La Courneuve",
+      "code": "93027",
+      "codesPostaux": ["93120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3986, 48.9341]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3896, 48.9267]
+      },
+      "population": 47086,
+      "surface": 751.63,
+      "radius": 1.55
+    },
+    {
+      "nom": "Le Blanc-Mesnil",
+      "code": "93007",
+      "codesPostaux": ["93150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4576, 48.9372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4637, 48.9388]
+      },
+      "population": 59912,
+      "surface": 807.79,
+      "radius": 1.6
+    },
+    {
+      "nom": "Le Bourget",
+      "code": "93013",
+      "codesPostaux": ["93350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4287, 48.9378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.425, 48.9346]
+      },
+      "population": 15052,
+      "surface": 207.89,
+      "radius": 0.81
+    },
+    {
+      "nom": "Le Pré-Saint-Gervais",
+      "code": "93061",
+      "codesPostaux": ["93310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4054, 48.884]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4029, 48.8828]
+      },
+      "population": 16733,
+      "surface": 70.23,
+      "radius": 0.47
+    },
+    {
+      "nom": "Le Raincy",
+      "code": "93062",
+      "codesPostaux": ["93340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5196, 48.8959]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5161, 48.8985]
+      },
+      "population": 14778,
+      "surface": 222.73,
+      "radius": 0.84
+    },
+    {
+      "nom": "Les Lilas",
+      "code": "93045",
+      "codesPostaux": ["93260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4207, 48.8821]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4159, 48.8794]
+      },
+      "population": 23262,
+      "surface": 125.58,
+      "radius": 0.63
+    },
+    {
+      "nom": "Les Pavillons-sous-Bois",
+      "code": "93057",
+      "codesPostaux": ["93320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5057, 48.907]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.507, 48.9026]
+      },
+      "population": 24872,
+      "surface": 292.2,
+      "radius": 0.96
+    },
+    {
+      "nom": "Livry-Gargan",
+      "code": "93046",
+      "codesPostaux": ["93190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5351, 48.9184]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5365, 48.9191]
+      },
+      "population": 46507,
+      "surface": 736.74,
+      "radius": 1.53
+    },
+    {
+      "nom": "Montfermeil",
+      "code": "93047",
+      "codesPostaux": ["93370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5678, 48.8976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5707, 48.9024]
+      },
+      "population": 28257,
+      "surface": 543.99,
+      "radius": 1.32
+    },
+    {
+      "nom": "Montreuil",
+      "code": "93048",
+      "codesPostaux": ["93100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4491, 48.8637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.441, 48.8624]
+      },
+      "population": 110758,
+      "surface": 890.68,
+      "radius": 1.68
+    },
+    {
+      "nom": "Neuilly-Plaisance",
+      "code": "93049",
+      "codesPostaux": ["93360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5097, 48.8641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5064, 48.8608]
+      },
+      "population": 21914,
+      "surface": 341.27,
+      "radius": 1.04
+    },
+    {
+      "nom": "Neuilly-sur-Marne",
+      "code": "93050",
+      "codesPostaux": ["93330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5419, 48.8645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5285, 48.8569]
+      },
+      "population": 38799,
+      "surface": 695.34,
+      "radius": 1.49
+    },
+    {
+      "nom": "Noisy-le-Grand",
+      "code": "93051",
+      "codesPostaux": ["93160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.556, 48.8327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5523, 48.8494]
+      },
+      "population": 71632,
+      "surface": 1312.94,
+      "radius": 2.04
+    },
+    {
+      "nom": "Noisy-le-Sec",
+      "code": "93053",
+      "codesPostaux": ["93130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4578, 48.8917]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4519, 48.89]
+      },
+      "population": 45915,
+      "surface": 504.37,
+      "radius": 1.27
+    },
+    {
+      "nom": "Pantin",
+      "code": "93055",
+      "codesPostaux": ["93500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4085, 48.9006]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4012, 48.8969]
+      },
+      "population": 60954,
+      "surface": 500.44,
+      "radius": 1.26
+    },
+    {
+      "nom": "Romainville",
+      "code": "93063",
+      "codesPostaux": ["93230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4391, 48.8849]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.435, 48.8856]
+      },
+      "population": 35314,
+      "surface": 344.17,
+      "radius": 1.05
+    },
+    {
+      "nom": "Rosny-sous-Bois",
+      "code": "93064",
+      "codesPostaux": ["93110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4872, 48.8744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.488, 48.872]
+      },
+      "population": 45947,
+      "surface": 591.15,
+      "radius": 1.37
+    },
+    {
+      "nom": "Saint-Denis",
+      "code": "93066",
+      "codesPostaux": ["93200", "93210", "93380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3657, 48.9378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3584, 48.9362]
+      },
+      "population": 115237,
+      "surface": 1577.25,
+      "radius": 2.24
+    },
+    {
+      "nom": "Saint-Ouen-sur-Seine",
+      "code": "93070",
+      "codesPostaux": ["93400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3329, 48.9118]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3344, 48.9117]
+      },
+      "population": 53041,
+      "surface": 430.25,
+      "radius": 1.17
+    },
+    {
+      "nom": "Sevran",
+      "code": "93071",
+      "codesPostaux": ["93270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5311, 48.9378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5258, 48.9395]
+      },
+      "population": 51640,
+      "surface": 725.61,
+      "radius": 1.52
+    },
+    {
+      "nom": "Stains",
+      "code": "93072",
+      "codesPostaux": ["93240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3868, 48.9578]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3823, 48.9554]
+      },
+      "population": 40600,
+      "surface": 540.87,
+      "radius": 1.31
+    },
+    {
+      "nom": "Tremblay-en-France",
+      "code": "93073",
+      "codesPostaux": ["93290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5481, 48.9744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5708, 48.9512]
+      },
+      "population": 38210,
+      "surface": 2266,
+      "radius": 2.69
+    },
+    {
+      "nom": "Vaujours",
+      "code": "93074",
+      "codesPostaux": ["93410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5799, 48.9338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5672, 48.9322]
+      },
+      "population": 7743,
+      "surface": 371.34,
+      "radius": 1.09
+    },
+    {
+      "nom": "Villemomble",
+      "code": "93077",
+      "codesPostaux": ["93250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5085, 48.8866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5079, 48.8821]
+      },
+      "population": 29973,
+      "surface": 403.82,
+      "radius": 1.13
+    },
+    {
+      "nom": "Villepinte",
+      "code": "93078",
+      "codesPostaux": ["93420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5323, 48.956]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5345, 48.9637]
+      },
+      "population": 39647,
+      "surface": 1038.37,
+      "radius": 1.82
+    },
+    {
+      "nom": "Villetaneuse",
+      "code": "93079",
+      "codesPostaux": ["93430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3441, 48.9574]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3439, 48.9612]
+      },
+      "population": 12432,
+      "surface": 230.39,
+      "radius": 0.86
+    }
+  ],
+  "postalCodes": {
+    "93000": {
+      "communes": ["Bobigny"],
+      "communeCount": 1,
+      "center": [2.4452, 48.9062],
+      "coverageRadius": 1.47,
+      "totalPopulation": 55270,
+      "totalSurface": 678
+    },
+    "93100": {
+      "communes": ["Montreuil"],
+      "communeCount": 1,
+      "center": [2.441, 48.8624],
+      "coverageRadius": 1.68,
+      "totalPopulation": 110758,
+      "totalSurface": 891
+    },
+    "93110": {
+      "communes": ["Rosny-sous-Bois"],
+      "communeCount": 1,
+      "center": [2.488, 48.872],
+      "coverageRadius": 1.37,
+      "totalPopulation": 45947,
+      "totalSurface": 591
+    },
+    "93120": {
+      "communes": ["La Courneuve"],
+      "communeCount": 1,
+      "center": [2.3896, 48.9267],
+      "coverageRadius": 1.55,
+      "totalPopulation": 47086,
+      "totalSurface": 752
+    },
+    "93130": {
+      "communes": ["Noisy-le-Sec"],
+      "communeCount": 1,
+      "center": [2.4519, 48.89],
+      "coverageRadius": 1.27,
+      "totalPopulation": 45915,
+      "totalSurface": 504
+    },
+    "93140": {
+      "communes": ["Bondy"],
+      "communeCount": 1,
+      "center": [2.4811, 48.9019],
+      "coverageRadius": 1.32,
+      "totalPopulation": 51066,
+      "totalSurface": 546
+    },
+    "93150": {
+      "communes": ["Le Blanc-Mesnil"],
+      "communeCount": 1,
+      "center": [2.4637, 48.9388],
+      "coverageRadius": 1.6,
+      "totalPopulation": 59912,
+      "totalSurface": 808
+    },
+    "93160": {
+      "communes": ["Noisy-le-Grand"],
+      "communeCount": 1,
+      "center": [2.5523, 48.8494],
+      "coverageRadius": 2.04,
+      "totalPopulation": 71632,
+      "totalSurface": 1313
+    },
+    "93170": {
+      "communes": ["Bagnolet"],
+      "communeCount": 1,
+      "center": [2.4164, 48.869],
+      "coverageRadius": 0.9,
+      "totalPopulation": 41776,
+      "totalSurface": 257
+    },
+    "93190": {
+      "communes": ["Livry-Gargan"],
+      "communeCount": 1,
+      "center": [2.5365, 48.9191],
+      "coverageRadius": 1.53,
+      "totalPopulation": 46507,
+      "totalSurface": 737
+    },
+    "93200": {
+      "communes": ["Saint-Denis"],
+      "communeCount": 1,
+      "center": [2.3584, 48.9362],
+      "coverageRadius": 2.24,
+      "totalPopulation": 115237,
+      "totalSurface": 1577
+    },
+    "93210": {
+      "communes": ["Saint-Denis"],
+      "communeCount": 1,
+      "center": [2.3584, 48.9362],
+      "coverageRadius": 2.24,
+      "totalPopulation": 115237,
+      "totalSurface": 1577
+    },
+    "93220": {
+      "communes": ["Gagny"],
+      "communeCount": 1,
+      "center": [2.5366, 48.8847],
+      "coverageRadius": 1.49,
+      "totalPopulation": 40790,
+      "totalSurface": 697
+    },
+    "93230": {
+      "communes": ["Romainville"],
+      "communeCount": 1,
+      "center": [2.435, 48.8856],
+      "coverageRadius": 1.05,
+      "totalPopulation": 35314,
+      "totalSurface": 344
+    },
+    "93240": {
+      "communes": ["Stains"],
+      "communeCount": 1,
+      "center": [2.3823, 48.9554],
+      "coverageRadius": 1.31,
+      "totalPopulation": 40600,
+      "totalSurface": 541
+    },
+    "93250": {
+      "communes": ["Villemomble"],
+      "communeCount": 1,
+      "center": [2.5079, 48.8821],
+      "coverageRadius": 1.13,
+      "totalPopulation": 29973,
+      "totalSurface": 404
+    },
+    "93260": {
+      "communes": ["Les Lilas"],
+      "communeCount": 1,
+      "center": [2.4159, 48.8794],
+      "coverageRadius": 0.63,
+      "totalPopulation": 23262,
+      "totalSurface": 126
+    },
+    "93270": {
+      "communes": ["Sevran"],
+      "communeCount": 1,
+      "center": [2.5258, 48.9395],
+      "coverageRadius": 1.52,
+      "totalPopulation": 51640,
+      "totalSurface": 726
+    },
+    "93290": {
+      "communes": ["Tremblay-en-France"],
+      "communeCount": 1,
+      "center": [2.5708, 48.9512],
+      "coverageRadius": 2.69,
+      "totalPopulation": 38210,
+      "totalSurface": 2266
+    },
+    "93300": {
+      "communes": ["Aubervilliers"],
+      "communeCount": 1,
+      "center": [2.3818, 48.9146],
+      "coverageRadius": 1.35,
+      "totalPopulation": 89489,
+      "totalSurface": 577
+    },
+    "93310": {
+      "communes": ["Le Pré-Saint-Gervais"],
+      "communeCount": 1,
+      "center": [2.4029, 48.8828],
+      "coverageRadius": 0.47,
+      "totalPopulation": 16733,
+      "totalSurface": 70
+    },
+    "93320": {
+      "communes": ["Les Pavillons-sous-Bois"],
+      "communeCount": 1,
+      "center": [2.507, 48.9026],
+      "coverageRadius": 0.96,
+      "totalPopulation": 24872,
+      "totalSurface": 292
+    },
+    "93330": {
+      "communes": ["Neuilly-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.5285, 48.8569],
+      "coverageRadius": 1.49,
+      "totalPopulation": 38799,
+      "totalSurface": 695
+    },
+    "93340": {
+      "communes": ["Le Raincy"],
+      "communeCount": 1,
+      "center": [2.5161, 48.8985],
+      "coverageRadius": 0.84,
+      "totalPopulation": 14778,
+      "totalSurface": 223
+    },
+    "93350": {
+      "communes": ["Le Bourget"],
+      "communeCount": 1,
+      "center": [2.425, 48.9346],
+      "coverageRadius": 0.81,
+      "totalPopulation": 15052,
+      "totalSurface": 208
+    },
+    "93360": {
+      "communes": ["Neuilly-Plaisance"],
+      "communeCount": 1,
+      "center": [2.5064, 48.8608],
+      "coverageRadius": 1.04,
+      "totalPopulation": 21914,
+      "totalSurface": 341
+    },
+    "93370": {
+      "communes": ["Montfermeil"],
+      "communeCount": 1,
+      "center": [2.5707, 48.9024],
+      "coverageRadius": 1.32,
+      "totalPopulation": 28257,
+      "totalSurface": 544
+    },
+    "93380": {
+      "communes": ["Saint-Denis"],
+      "communeCount": 1,
+      "center": [2.3584, 48.9362],
+      "coverageRadius": 2.24,
+      "totalPopulation": 115237,
+      "totalSurface": 1577
+    },
+    "93390": {
+      "communes": ["Clichy-sous-Bois"],
+      "communeCount": 1,
+      "center": [2.5459, 48.9108],
+      "coverageRadius": 1.12,
+      "totalPopulation": 29551,
+      "totalSurface": 396
+    },
+    "93400": {
+      "communes": ["Saint-Ouen-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.3344, 48.9117],
+      "coverageRadius": 1.17,
+      "totalPopulation": 53041,
+      "totalSurface": 430
+    },
+    "93410": {
+      "communes": ["Vaujours"],
+      "communeCount": 1,
+      "center": [2.5672, 48.9322],
+      "coverageRadius": 1.09,
+      "totalPopulation": 7743,
+      "totalSurface": 371
+    },
+    "93420": {
+      "communes": ["Villepinte"],
+      "communeCount": 1,
+      "center": [2.5345, 48.9637],
+      "coverageRadius": 1.82,
+      "totalPopulation": 39647,
+      "totalSurface": 1038
+    },
+    "93430": {
+      "communes": ["Villetaneuse"],
+      "communeCount": 1,
+      "center": [2.3439, 48.9612],
+      "coverageRadius": 0.86,
+      "totalPopulation": 12432,
+      "totalSurface": 230
+    },
+    "93440": {
+      "communes": ["Dugny"],
+      "communeCount": 1,
+      "center": [2.4176, 48.9554],
+      "coverageRadius": 1.11,
+      "totalPopulation": 11723,
+      "totalSurface": 387
+    },
+    "93450": {
+      "communes": ["L'Île-Saint-Denis"],
+      "communeCount": 1,
+      "center": [2.3405, 48.9356],
+      "coverageRadius": 0.74,
+      "totalPopulation": 8682,
+      "totalSurface": 174
+    },
+    "93460": {
+      "communes": ["Gournay-sur-Marne"],
+      "communeCount": 1,
+      "center": [2.5728, 48.8646],
+      "coverageRadius": 0.73,
+      "totalPopulation": 7101,
+      "totalSurface": 168
+    },
+    "93470": {
+      "communes": ["Coubron"],
+      "communeCount": 1,
+      "center": [2.5768, 48.9159],
+      "coverageRadius": 1.15,
+      "totalPopulation": 5156,
+      "totalSurface": 417
+    },
+    "93500": {
+      "communes": ["Pantin"],
+      "communeCount": 1,
+      "center": [2.4012, 48.8969],
+      "coverageRadius": 1.26,
+      "totalPopulation": 60954,
+      "totalSurface": 500
+    },
+    "93600": {
+      "communes": ["Aulnay-sous-Bois"],
+      "communeCount": 1,
+      "center": [2.5001, 48.9342],
+      "coverageRadius": 2.27,
+      "totalPopulation": 86360,
+      "totalSurface": 1615
+    },
+    "93700": {
+      "communes": ["Drancy"],
+      "communeCount": 1,
+      "center": [2.445, 48.9234],
+      "coverageRadius": 1.57,
+      "totalPopulation": 71312,
+      "totalSurface": 776
+    },
+    "93800": {
+      "communes": ["Épinay-sur-Seine"],
+      "communeCount": 1,
+      "center": [2.3134, 48.9515],
+      "coverageRadius": 1.21,
+      "totalPopulation": 53564,
+      "totalSurface": 458
+    }
+  }
+}

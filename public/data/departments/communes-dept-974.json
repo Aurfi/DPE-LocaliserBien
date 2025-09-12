@@ -1,0 +1,693 @@
+{
+  "departmentCode": "974",
+  "departmentName": "La Réunion",
+  "stats": {
+    "communeCount": 24,
+    "totalPopulation": 881348,
+    "totalSurface": 251618
+  },
+  "communes": [
+    {
+      "nom": "Bras-Panon",
+      "code": "97402",
+      "codesPostaux": ["97412"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.6265, -21.0316]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.6762, -20.9952]
+      },
+      "population": 13131,
+      "surface": 8777.26,
+      "radius": 5.29
+    },
+    {
+      "nom": "Cilaos",
+      "code": "97424",
+      "codesPostaux": ["97413"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.4555, -21.1403]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.4699, -21.1366]
+      },
+      "population": 5215,
+      "surface": 8481.65,
+      "radius": 5.2
+    },
+    {
+      "nom": "Entre-Deux",
+      "code": "97403",
+      "codesPostaux": ["97414"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.4937, -21.2108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.4703, -21.2488]
+      },
+      "population": 7115,
+      "surface": 5166.34,
+      "radius": 4.06
+    },
+    {
+      "nom": "L'Étang-Salé",
+      "code": "97404",
+      "codesPostaux": ["97427"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.358, -21.2348]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.3668, -21.266]
+      },
+      "population": 14329,
+      "surface": 3855.84,
+      "radius": 3.5
+    },
+    {
+      "nom": "La Plaine-des-Palmistes",
+      "code": "97406",
+      "codesPostaux": ["97431"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.6442, -21.153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.6258, -21.135]
+      },
+      "population": 6920,
+      "surface": 8350.85,
+      "radius": 5.16
+    },
+    {
+      "nom": "La Possession",
+      "code": "97408",
+      "codesPostaux": ["97419"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.3918, -20.9965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.3359, -20.9265]
+      },
+      "population": 36390,
+      "surface": 11939.04,
+      "radius": 6.16
+    },
+    {
+      "nom": "Le Port",
+      "code": "97407",
+      "codesPostaux": ["97420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.3038, -20.9459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.2903, -20.9353]
+      },
+      "population": 33670,
+      "surface": 1618.02,
+      "radius": 2.27
+    },
+    {
+      "nom": "Le Tampon",
+      "code": "97422",
+      "codesPostaux": ["97418", "97430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.5701, -21.225]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.5153, -21.2782]
+      },
+      "population": 81964,
+      "surface": 18209.44,
+      "radius": 7.61
+    },
+    {
+      "nom": "Les Avirons",
+      "code": "97401",
+      "codesPostaux": ["97425"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.3629, -21.2019]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.3334, -21.2418]
+      },
+      "population": 11445,
+      "surface": 2640.1,
+      "radius": 2.9
+    },
+    {
+      "nom": "Les Trois-Bassins",
+      "code": "97423",
+      "codesPostaux": ["97426"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.3378, -21.1138]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.2949, -21.1058]
+      },
+      "population": 7113,
+      "surface": 4274.76,
+      "radius": 3.69
+    },
+    {
+      "nom": "Petite-Île",
+      "code": "97405",
+      "codesPostaux": ["97429"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.5706, -21.333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.566, -21.3558]
+      },
+      "population": 12920,
+      "surface": 3415.41,
+      "radius": 3.3
+    },
+    {
+      "nom": "Saint-André",
+      "code": "97409",
+      "codesPostaux": ["97440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.6374, -20.9568]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.6505, -20.9604]
+      },
+      "population": 57546,
+      "surface": 5465.79,
+      "radius": 4.17
+    },
+    {
+      "nom": "Saint-Benoît",
+      "code": "97410",
+      "codesPostaux": ["97437", "97470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.6313, -21.0887]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.7126, -21.034]
+      },
+      "population": 37585,
+      "surface": 23105.83,
+      "radius": 8.58
+    },
+    {
+      "nom": "Saint-Denis",
+      "code": "97411",
+      "codesPostaux": ["97400", "97417", "97490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.4444, -20.9434]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.4478, -20.8794]
+      },
+      "population": 156149,
+      "surface": 14233.04,
+      "radius": 6.73
+    },
+    {
+      "nom": "Saint-Joseph",
+      "code": "97412",
+      "codesPostaux": ["97480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.644, -21.2921]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.6193, -21.3786]
+      },
+      "population": 38992,
+      "surface": 17874.19,
+      "radius": 7.54
+    },
+    {
+      "nom": "Saint-Leu",
+      "code": "97413",
+      "codesPostaux": ["97416", "97424", "97436"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.3432, -21.1816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.2869, -21.1662]
+      },
+      "population": 35597,
+      "surface": 11874.15,
+      "radius": 6.15
+    },
+    {
+      "nom": "Saint-Louis",
+      "code": "97414",
+      "codesPostaux": ["97421", "97450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.4224, -21.2254]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.4092, -21.2866]
+      },
+      "population": 54478,
+      "surface": 9932.67,
+      "radius": 5.62
+    },
+    {
+      "nom": "Saint-Paul",
+      "code": "97415",
+      "codesPostaux": ["97411", "97422", "97423", "97434", "97435", "97460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.3402, -21.0366]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.2696, -21.0097]
+      },
+      "population": 106220,
+      "surface": 24164.14,
+      "radius": 8.77
+    },
+    {
+      "nom": "Saint-Philippe",
+      "code": "97417",
+      "codesPostaux": ["97442"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.7436, -21.3084]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.7677, -21.3594]
+      },
+      "population": 5093,
+      "surface": 15547.06,
+      "radius": 7.03
+    },
+    {
+      "nom": "Saint-Pierre",
+      "code": "97416",
+      "codesPostaux": ["97410", "97432"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.5044, -21.309]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.4778, -21.3418]
+      },
+      "population": 85254,
+      "surface": 9683.7,
+      "radius": 5.55
+    },
+    {
+      "nom": "Sainte-Marie",
+      "code": "97418",
+      "codesPostaux": ["97438"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.5234, -20.9463]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.5493, -20.8969]
+      },
+      "population": 35584,
+      "surface": 8900.28,
+      "radius": 5.32
+    },
+    {
+      "nom": "Sainte-Rose",
+      "code": "97419",
+      "codesPostaux": ["97439"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.7418, -21.1778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.7933, -21.1277]
+      },
+      "population": 6450,
+      "surface": 17849.98,
+      "radius": 7.54
+    },
+    {
+      "nom": "Sainte-Suzanne",
+      "code": "97420",
+      "codesPostaux": ["97441"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.5936, -20.9507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.6075, -20.9056]
+      },
+      "population": 24855,
+      "surface": 5814.03,
+      "radius": 4.3
+    },
+    {
+      "nom": "Salazie",
+      "code": "97421",
+      "codesPostaux": ["97433"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [55.5145, -21.0524]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [55.5391, -21.0276]
+      },
+      "population": 7333,
+      "surface": 10444,
+      "radius": 5.77
+    }
+  ],
+  "postalCodes": {
+    "97400": {
+      "communes": ["Saint-Denis"],
+      "communeCount": 1,
+      "center": [55.4478, -20.8794],
+      "coverageRadius": 6.73,
+      "totalPopulation": 156149,
+      "totalSurface": 14233
+    },
+    "97410": {
+      "communes": ["Saint-Pierre"],
+      "communeCount": 1,
+      "center": [55.4778, -21.3418],
+      "coverageRadius": 5.55,
+      "totalPopulation": 85254,
+      "totalSurface": 9684
+    },
+    "97411": {
+      "communes": ["Saint-Paul"],
+      "communeCount": 1,
+      "center": [55.2696, -21.0097],
+      "coverageRadius": 8.77,
+      "totalPopulation": 106220,
+      "totalSurface": 24164
+    },
+    "97412": {
+      "communes": ["Bras-Panon"],
+      "communeCount": 1,
+      "center": [55.6762, -20.9952],
+      "coverageRadius": 5.29,
+      "totalPopulation": 13131,
+      "totalSurface": 8777
+    },
+    "97413": {
+      "communes": ["Cilaos"],
+      "communeCount": 1,
+      "center": [55.4699, -21.1366],
+      "coverageRadius": 5.2,
+      "totalPopulation": 5215,
+      "totalSurface": 8482
+    },
+    "97414": {
+      "communes": ["Entre-Deux"],
+      "communeCount": 1,
+      "center": [55.4703, -21.2488],
+      "coverageRadius": 4.06,
+      "totalPopulation": 7115,
+      "totalSurface": 5166
+    },
+    "97416": {
+      "communes": ["Saint-Leu"],
+      "communeCount": 1,
+      "center": [55.2869, -21.1662],
+      "coverageRadius": 6.15,
+      "totalPopulation": 35597,
+      "totalSurface": 11874
+    },
+    "97417": {
+      "communes": ["Saint-Denis"],
+      "communeCount": 1,
+      "center": [55.4478, -20.8794],
+      "coverageRadius": 6.73,
+      "totalPopulation": 156149,
+      "totalSurface": 14233
+    },
+    "97418": {
+      "communes": ["Le Tampon"],
+      "communeCount": 1,
+      "center": [55.5153, -21.2782],
+      "coverageRadius": 7.61,
+      "totalPopulation": 81964,
+      "totalSurface": 18209
+    },
+    "97419": {
+      "communes": ["La Possession"],
+      "communeCount": 1,
+      "center": [55.3359, -20.9265],
+      "coverageRadius": 6.16,
+      "totalPopulation": 36390,
+      "totalSurface": 11939
+    },
+    "97420": {
+      "communes": ["Le Port"],
+      "communeCount": 1,
+      "center": [55.2903, -20.9353],
+      "coverageRadius": 2.27,
+      "totalPopulation": 33670,
+      "totalSurface": 1618
+    },
+    "97421": {
+      "communes": ["Saint-Louis"],
+      "communeCount": 1,
+      "center": [55.4092, -21.2866],
+      "coverageRadius": 5.62,
+      "totalPopulation": 54478,
+      "totalSurface": 9933
+    },
+    "97422": {
+      "communes": ["Saint-Paul"],
+      "communeCount": 1,
+      "center": [55.2696, -21.0097],
+      "coverageRadius": 8.77,
+      "totalPopulation": 106220,
+      "totalSurface": 24164
+    },
+    "97423": {
+      "communes": ["Saint-Paul"],
+      "communeCount": 1,
+      "center": [55.2696, -21.0097],
+      "coverageRadius": 8.77,
+      "totalPopulation": 106220,
+      "totalSurface": 24164
+    },
+    "97424": {
+      "communes": ["Saint-Leu"],
+      "communeCount": 1,
+      "center": [55.2869, -21.1662],
+      "coverageRadius": 6.15,
+      "totalPopulation": 35597,
+      "totalSurface": 11874
+    },
+    "97425": {
+      "communes": ["Les Avirons"],
+      "communeCount": 1,
+      "center": [55.3334, -21.2418],
+      "coverageRadius": 2.9,
+      "totalPopulation": 11445,
+      "totalSurface": 2640
+    },
+    "97426": {
+      "communes": ["Les Trois-Bassins"],
+      "communeCount": 1,
+      "center": [55.2949, -21.1058],
+      "coverageRadius": 3.69,
+      "totalPopulation": 7113,
+      "totalSurface": 4275
+    },
+    "97427": {
+      "communes": ["L'Étang-Salé"],
+      "communeCount": 1,
+      "center": [55.3668, -21.266],
+      "coverageRadius": 3.5,
+      "totalPopulation": 14329,
+      "totalSurface": 3856
+    },
+    "97429": {
+      "communes": ["Petite-Île"],
+      "communeCount": 1,
+      "center": [55.566, -21.3558],
+      "coverageRadius": 3.3,
+      "totalPopulation": 12920,
+      "totalSurface": 3415
+    },
+    "97430": {
+      "communes": ["Le Tampon"],
+      "communeCount": 1,
+      "center": [55.5153, -21.2782],
+      "coverageRadius": 7.61,
+      "totalPopulation": 81964,
+      "totalSurface": 18209
+    },
+    "97431": {
+      "communes": ["La Plaine-des-Palmistes"],
+      "communeCount": 1,
+      "center": [55.6258, -21.135],
+      "coverageRadius": 5.16,
+      "totalPopulation": 6920,
+      "totalSurface": 8351
+    },
+    "97432": {
+      "communes": ["Saint-Pierre"],
+      "communeCount": 1,
+      "center": [55.4778, -21.3418],
+      "coverageRadius": 5.55,
+      "totalPopulation": 85254,
+      "totalSurface": 9684
+    },
+    "97433": {
+      "communes": ["Salazie"],
+      "communeCount": 1,
+      "center": [55.5391, -21.0276],
+      "coverageRadius": 5.77,
+      "totalPopulation": 7333,
+      "totalSurface": 10444
+    },
+    "97434": {
+      "communes": ["Saint-Paul"],
+      "communeCount": 1,
+      "center": [55.2696, -21.0097],
+      "coverageRadius": 8.77,
+      "totalPopulation": 106220,
+      "totalSurface": 24164
+    },
+    "97435": {
+      "communes": ["Saint-Paul"],
+      "communeCount": 1,
+      "center": [55.2696, -21.0097],
+      "coverageRadius": 8.77,
+      "totalPopulation": 106220,
+      "totalSurface": 24164
+    },
+    "97436": {
+      "communes": ["Saint-Leu"],
+      "communeCount": 1,
+      "center": [55.2869, -21.1662],
+      "coverageRadius": 6.15,
+      "totalPopulation": 35597,
+      "totalSurface": 11874
+    },
+    "97437": {
+      "communes": ["Saint-Benoît"],
+      "communeCount": 1,
+      "center": [55.7126, -21.034],
+      "coverageRadius": 8.58,
+      "totalPopulation": 37585,
+      "totalSurface": 23106
+    },
+    "97438": {
+      "communes": ["Sainte-Marie"],
+      "communeCount": 1,
+      "center": [55.5493, -20.8969],
+      "coverageRadius": 5.32,
+      "totalPopulation": 35584,
+      "totalSurface": 8900
+    },
+    "97439": {
+      "communes": ["Sainte-Rose"],
+      "communeCount": 1,
+      "center": [55.7933, -21.1277],
+      "coverageRadius": 7.54,
+      "totalPopulation": 6450,
+      "totalSurface": 17850
+    },
+    "97440": {
+      "communes": ["Saint-André"],
+      "communeCount": 1,
+      "center": [55.6505, -20.9604],
+      "coverageRadius": 4.17,
+      "totalPopulation": 57546,
+      "totalSurface": 5466
+    },
+    "97441": {
+      "communes": ["Sainte-Suzanne"],
+      "communeCount": 1,
+      "center": [55.6075, -20.9056],
+      "coverageRadius": 4.3,
+      "totalPopulation": 24855,
+      "totalSurface": 5814
+    },
+    "97442": {
+      "communes": ["Saint-Philippe"],
+      "communeCount": 1,
+      "center": [55.7677, -21.3594],
+      "coverageRadius": 7.03,
+      "totalPopulation": 5093,
+      "totalSurface": 15547
+    },
+    "97450": {
+      "communes": ["Saint-Louis"],
+      "communeCount": 1,
+      "center": [55.4092, -21.2866],
+      "coverageRadius": 5.62,
+      "totalPopulation": 54478,
+      "totalSurface": 9933
+    },
+    "97460": {
+      "communes": ["Saint-Paul"],
+      "communeCount": 1,
+      "center": [55.2696, -21.0097],
+      "coverageRadius": 8.77,
+      "totalPopulation": 106220,
+      "totalSurface": 24164
+    },
+    "97470": {
+      "communes": ["Saint-Benoît"],
+      "communeCount": 1,
+      "center": [55.7126, -21.034],
+      "coverageRadius": 8.58,
+      "totalPopulation": 37585,
+      "totalSurface": 23106
+    },
+    "97480": {
+      "communes": ["Saint-Joseph"],
+      "communeCount": 1,
+      "center": [55.6193, -21.3786],
+      "coverageRadius": 7.54,
+      "totalPopulation": 38992,
+      "totalSurface": 17874
+    },
+    "97490": {
+      "communes": ["Saint-Denis"],
+      "communeCount": 1,
+      "center": [55.4478, -20.8794],
+      "coverageRadius": 6.73,
+      "totalPopulation": 156149,
+      "totalSurface": 14233
+    }
+  }
+}

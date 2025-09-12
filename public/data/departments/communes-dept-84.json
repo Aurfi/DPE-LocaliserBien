@@ -1,0 +1,3119 @@
+{
+  "departmentCode": "84",
+  "departmentName": "Vaucluse",
+  "stats": {
+    "communeCount": 151,
+    "totalPopulation": 568702,
+    "totalSurface": 357867
+  },
+  "communes": [
+    {
+      "nom": "Althen-des-Paluds",
+      "code": "84001",
+      "codesPostaux": ["84210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9585, 44.0055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9572, 44.0051]
+      },
+      "population": 2881,
+      "surface": 653.02,
+      "radius": 1.44
+    },
+    {
+      "nom": "Ansouis",
+      "code": "84002",
+      "codesPostaux": ["84240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4682, 43.7338]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4648, 43.738]
+      },
+      "population": 1066,
+      "surface": 1758.57,
+      "radius": 2.37
+    },
+    {
+      "nom": "Apt",
+      "code": "84003",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3814, 43.8815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3944, 43.876]
+      },
+      "population": 10297,
+      "surface": 4517.33,
+      "radius": 3.79
+    },
+    {
+      "nom": "Aubignan",
+      "code": "84004",
+      "codesPostaux": ["84810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0331, 44.0962]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0248, 44.0994]
+      },
+      "population": 5962,
+      "surface": 1571.58,
+      "radius": 2.24
+    },
+    {
+      "nom": "Aurel",
+      "code": "84005",
+      "codesPostaux": ["84390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3906, 44.1357]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4275, 44.128]
+      },
+      "population": 186,
+      "surface": 2929.22,
+      "radius": 3.05
+    },
+    {
+      "nom": "Auribeau",
+      "code": "84006",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4444, 43.8275]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4584, 43.8364]
+      },
+      "population": 70,
+      "surface": 752.98,
+      "radius": 1.55
+    },
+    {
+      "nom": "Avignon",
+      "code": "84007",
+      "codesPostaux": ["84000", "84140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8333, 43.9416]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8053, 43.9493]
+      },
+      "population": 91760,
+      "surface": 6506.28,
+      "radius": 4.55
+    },
+    {
+      "nom": "Beaumes-de-Venise",
+      "code": "84012",
+      "codesPostaux": ["84190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0279, 44.1224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0278, 44.1215]
+      },
+      "population": 2428,
+      "surface": 1897.32,
+      "radius": 2.46
+    },
+    {
+      "nom": "Beaumettes",
+      "code": "84013",
+      "codesPostaux": ["84220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.202, 43.8632]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2021, 43.8581]
+      },
+      "population": 308,
+      "surface": 266.07,
+      "radius": 0.92
+    },
+    {
+      "nom": "Beaumont-de-Pertuis",
+      "code": "84014",
+      "codesPostaux": ["84120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6978, 43.7372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6906, 43.737]
+      },
+      "population": 1102,
+      "surface": 5384.29,
+      "radius": 4.14
+    },
+    {
+      "nom": "Beaumont-du-Ventoux",
+      "code": "84015",
+      "codesPostaux": ["84340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2197, 44.182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1664, 44.1843]
+      },
+      "population": 307,
+      "surface": 2812.6,
+      "radius": 2.99
+    },
+    {
+      "nom": "Bédarrides",
+      "code": "84016",
+      "codesPostaux": ["84370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9029, 44.0478]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.898, 44.0411]
+      },
+      "population": 5521,
+      "surface": 2496.55,
+      "radius": 2.82
+    },
+    {
+      "nom": "Bédoin",
+      "code": "84017",
+      "codesPostaux": ["84410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2342, 44.1337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1805, 44.1241]
+      },
+      "population": 3077,
+      "surface": 9061.3,
+      "radius": 5.37
+    },
+    {
+      "nom": "Blauvac",
+      "code": "84018",
+      "codesPostaux": ["84570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2418, 44.0356]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1997, 44.0295]
+      },
+      "population": 555,
+      "surface": 2106.14,
+      "radius": 2.59
+    },
+    {
+      "nom": "Bollène",
+      "code": "84019",
+      "codesPostaux": ["84500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.751, 44.2885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7484, 44.2804]
+      },
+      "population": 13871,
+      "surface": 5439.08,
+      "radius": 4.16
+    },
+    {
+      "nom": "Bonnieux",
+      "code": "84020",
+      "codesPostaux": ["84480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3172, 43.8327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3065, 43.8231]
+      },
+      "population": 1166,
+      "surface": 5137.48,
+      "radius": 4.04
+    },
+    {
+      "nom": "Brantes",
+      "code": "84021",
+      "codesPostaux": ["84390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3315, 44.1861]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3341, 44.1935]
+      },
+      "population": 86,
+      "surface": 2824.18,
+      "radius": 3
+    },
+    {
+      "nom": "Buisson",
+      "code": "84022",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9985, 44.2759]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.998, 44.2798]
+      },
+      "population": 256,
+      "surface": 947.22,
+      "radius": 1.74
+    },
+    {
+      "nom": "Buoux",
+      "code": "84023",
+      "codesPostaux": ["84480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3745, 43.8207]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3778, 43.8314]
+      },
+      "population": 103,
+      "surface": 1760.7,
+      "radius": 2.37
+    },
+    {
+      "nom": "Cabrières-d'Aigues",
+      "code": "84024",
+      "codesPostaux": ["84240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4891, 43.7882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4977, 43.7844]
+      },
+      "population": 947,
+      "surface": 1891.54,
+      "radius": 2.45
+    },
+    {
+      "nom": "Cabrières-d'Avignon",
+      "code": "84025",
+      "codesPostaux": ["84220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1494, 43.9034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.15, 43.8901]
+      },
+      "population": 1741,
+      "surface": 1456.27,
+      "radius": 2.15
+    },
+    {
+      "nom": "Cadenet",
+      "code": "84026",
+      "codesPostaux": ["84160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.386, 43.7299]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3744, 43.7356]
+      },
+      "population": 4327,
+      "surface": 2579.09,
+      "radius": 2.87
+    },
+    {
+      "nom": "Caderousse",
+      "code": "84027",
+      "codesPostaux": ["84860"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.746, 44.1155]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.757, 44.1025]
+      },
+      "population": 2541,
+      "surface": 3244.25,
+      "radius": 3.21
+    },
+    {
+      "nom": "Cairanne",
+      "code": "84028",
+      "codesPostaux": ["84290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9339, 44.2277]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9315, 44.2302]
+      },
+      "population": 1121,
+      "surface": 2274.87,
+      "radius": 2.69
+    },
+    {
+      "nom": "Camaret-sur-Aigues",
+      "code": "84029",
+      "codesPostaux": ["84850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8911, 44.1551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8731, 44.164]
+      },
+      "population": 4549,
+      "surface": 1837.2,
+      "radius": 2.42
+    },
+    {
+      "nom": "Caromb",
+      "code": "84030",
+      "codesPostaux": ["84330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1078, 44.11]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.106, 44.1114]
+      },
+      "population": 3469,
+      "surface": 1788.25,
+      "radius": 2.39
+    },
+    {
+      "nom": "Carpentras",
+      "code": "84031",
+      "codesPostaux": ["84200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0584, 44.0629]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0488, 44.0556]
+      },
+      "population": 30854,
+      "surface": 3792.1,
+      "radius": 3.47
+    },
+    {
+      "nom": "Caseneuve",
+      "code": "84032",
+      "codesPostaux": ["84750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4833, 43.8859]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.487, 43.8853]
+      },
+      "population": 519,
+      "surface": 1809.47,
+      "radius": 2.4
+    },
+    {
+      "nom": "Castellet-en-Luberon",
+      "code": "84033",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4876, 43.8336]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4778, 43.8392]
+      },
+      "population": 114,
+      "surface": 955.08,
+      "radius": 1.74
+    },
+    {
+      "nom": "Caumont-sur-Durance",
+      "code": "84034",
+      "codesPostaux": ["84510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.955, 43.8813]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9446, 43.8931]
+      },
+      "population": 5499,
+      "surface": 1828.36,
+      "radius": 2.41
+    },
+    {
+      "nom": "Cavaillon",
+      "code": "84035",
+      "codesPostaux": ["84300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0333, 43.8485]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0376, 43.8355]
+      },
+      "population": 25890,
+      "surface": 4592.26,
+      "radius": 3.82
+    },
+    {
+      "nom": "Châteauneuf-de-Gadagne",
+      "code": "84036",
+      "codesPostaux": ["84470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9435, 43.9307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.944, 43.9277]
+      },
+      "population": 3495,
+      "surface": 1349.08,
+      "radius": 2.07
+    },
+    {
+      "nom": "Châteauneuf-du-Pape",
+      "code": "84037",
+      "codesPostaux": ["84230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8263, 44.0602]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8316, 44.0563]
+      },
+      "population": 2045,
+      "surface": 2482.8,
+      "radius": 2.81
+    },
+    {
+      "nom": "Cheval-Blanc",
+      "code": "84038",
+      "codesPostaux": ["84460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1204, 43.7875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0635, 43.8003]
+      },
+      "population": 4340,
+      "surface": 5852.98,
+      "radius": 4.32
+    },
+    {
+      "nom": "Courthézon",
+      "code": "84039",
+      "codesPostaux": ["84350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8868, 44.0876]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8831, 44.0902]
+      },
+      "population": 6245,
+      "surface": 3278.43,
+      "radius": 3.23
+    },
+    {
+      "nom": "Crestet",
+      "code": "84040",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0859, 44.2112]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0975, 44.2178]
+      },
+      "population": 418,
+      "surface": 1144.6,
+      "radius": 1.91
+    },
+    {
+      "nom": "Crillon-le-Brave",
+      "code": "84041",
+      "codesPostaux": ["84410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.152, 44.1187]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1433, 44.1181]
+      },
+      "population": 489,
+      "surface": 765.67,
+      "radius": 1.56
+    },
+    {
+      "nom": "Cucuron",
+      "code": "84042",
+      "codesPostaux": ["84160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4401, 43.7801]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4386, 43.7733]
+      },
+      "population": 1849,
+      "surface": 3249.69,
+      "radius": 3.22
+    },
+    {
+      "nom": "Entraigues-sur-la-Sorgue",
+      "code": "84043",
+      "codesPostaux": ["84320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9347, 43.9959]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9277, 44.0036]
+      },
+      "population": 8888,
+      "surface": 1685.34,
+      "radius": 2.32
+    },
+    {
+      "nom": "Entrechaux",
+      "code": "84044",
+      "codesPostaux": ["84340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1364, 44.2238]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1369, 44.2177]
+      },
+      "population": 1164,
+      "surface": 1490.58,
+      "radius": 2.18
+    },
+    {
+      "nom": "Faucon",
+      "code": "84045",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1404, 44.2524]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1464, 44.2599]
+      },
+      "population": 454,
+      "surface": 874.47,
+      "radius": 1.67
+    },
+    {
+      "nom": "Flassan",
+      "code": "84046",
+      "codesPostaux": ["84410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2613, 44.0995]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2429, 44.0986]
+      },
+      "population": 455,
+      "surface": 2086.48,
+      "radius": 2.58
+    },
+    {
+      "nom": "Fontaine-de-Vaucluse",
+      "code": "84139",
+      "codesPostaux": ["84800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1307, 43.9244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1271, 43.9222]
+      },
+      "population": 576,
+      "surface": 717.37,
+      "radius": 1.51
+    },
+    {
+      "nom": "Gargas",
+      "code": "84047",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3435, 43.8939]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3584, 43.9022]
+      },
+      "population": 3020,
+      "surface": 1488,
+      "radius": 2.18
+    },
+    {
+      "nom": "Gignac",
+      "code": "84048",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.526, 43.9283]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5274, 43.9192]
+      },
+      "population": 73,
+      "surface": 814.65,
+      "radius": 1.61
+    },
+    {
+      "nom": "Gigondas",
+      "code": "84049",
+      "codesPostaux": ["84190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0153, 44.164]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0043, 44.1631]
+      },
+      "population": 435,
+      "surface": 2712.68,
+      "radius": 2.94
+    },
+    {
+      "nom": "Gordes",
+      "code": "84050",
+      "codesPostaux": ["84220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.204, 43.9074]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2007, 43.9121]
+      },
+      "population": 1664,
+      "surface": 4892.1,
+      "radius": 3.95
+    },
+    {
+      "nom": "Goult",
+      "code": "84051",
+      "codesPostaux": ["84220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2448, 43.8675]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.246, 43.8619]
+      },
+      "population": 1067,
+      "surface": 2384.29,
+      "radius": 2.75
+    },
+    {
+      "nom": "Grambois",
+      "code": "84052",
+      "codesPostaux": ["84240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6022, 43.7581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5888, 43.7627]
+      },
+      "population": 1204,
+      "surface": 3125.36,
+      "radius": 3.15
+    },
+    {
+      "nom": "Grillon",
+      "code": "84053",
+      "codesPostaux": ["84600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9355, 44.3946]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9296, 44.394]
+      },
+      "population": 1724,
+      "surface": 1503.69,
+      "radius": 2.19
+    },
+    {
+      "nom": "Jonquerettes",
+      "code": "84055",
+      "codesPostaux": ["84450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9433, 43.9496]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9329, 43.9467]
+      },
+      "population": 1597,
+      "surface": 257.84,
+      "radius": 0.91
+    },
+    {
+      "nom": "Jonquières",
+      "code": "84056",
+      "codesPostaux": ["84150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9144, 44.1324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9001, 44.1153]
+      },
+      "population": 5213,
+      "surface": 2430.12,
+      "radius": 2.78
+    },
+    {
+      "nom": "Joucas",
+      "code": "84057",
+      "codesPostaux": ["84220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2522, 43.9223]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2513, 43.9257]
+      },
+      "population": 348,
+      "surface": 843.87,
+      "radius": 1.64
+    },
+    {
+      "nom": "L'Isle-sur-la-Sorgue",
+      "code": "84054",
+      "codesPostaux": ["84800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0588, 43.9191]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0506, 43.9195]
+      },
+      "population": 20315,
+      "surface": 4462.01,
+      "radius": 3.77
+    },
+    {
+      "nom": "La Bastide-des-Jourdans",
+      "code": "84009",
+      "codesPostaux": ["84240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6443, 43.7954]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6329, 43.7847]
+      },
+      "population": 1723,
+      "surface": 2767.18,
+      "radius": 2.97
+    },
+    {
+      "nom": "La Bastidonne",
+      "code": "84010",
+      "codesPostaux": ["84120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5791, 43.6927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5676, 43.7002]
+      },
+      "population": 914,
+      "surface": 590.86,
+      "radius": 1.37
+    },
+    {
+      "nom": "La Motte-d'Aigues",
+      "code": "84084",
+      "codesPostaux": ["84240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5237, 43.7817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5223, 43.7742]
+      },
+      "population": 1418,
+      "surface": 1467.05,
+      "radius": 2.16
+    },
+    {
+      "nom": "La Roque-Alric",
+      "code": "84100",
+      "codesPostaux": ["84190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0683, 44.1458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.064, 44.1432]
+      },
+      "population": 51,
+      "surface": 490.11,
+      "radius": 1.25
+    },
+    {
+      "nom": "La Roque-sur-Pernes",
+      "code": "84101",
+      "codesPostaux": ["84210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.104, 43.9782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1075, 43.9789]
+      },
+      "population": 431,
+      "surface": 1107.37,
+      "radius": 1.88
+    },
+    {
+      "nom": "La Tour-d'Aigues",
+      "code": "84133",
+      "codesPostaux": ["84240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5682, 43.7128]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5481, 43.7258]
+      },
+      "population": 4375,
+      "surface": 4128.81,
+      "radius": 3.63
+    },
+    {
+      "nom": "Lacoste",
+      "code": "84058",
+      "codesPostaux": ["84480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2645, 43.8236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.273, 43.8316]
+      },
+      "population": 453,
+      "surface": 1069.39,
+      "radius": 1.84
+    },
+    {
+      "nom": "Lafare",
+      "code": "84059",
+      "codesPostaux": ["84190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0501, 44.1535]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0516, 44.146]
+      },
+      "population": 127,
+      "surface": 452.8,
+      "radius": 1.2
+    },
+    {
+      "nom": "Lagarde-d'Apt",
+      "code": "84060",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4769, 43.9842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4731, 43.9836]
+      },
+      "population": 30,
+      "surface": 2219.98,
+      "radius": 2.66
+    },
+    {
+      "nom": "Lagarde-Paréol",
+      "code": "84061",
+      "codesPostaux": ["84290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8481, 44.2287]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8506, 44.2278]
+      },
+      "population": 321,
+      "surface": 929.25,
+      "radius": 1.72
+    },
+    {
+      "nom": "Lagnes",
+      "code": "84062",
+      "codesPostaux": ["84800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1181, 43.9044]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1135, 43.8923]
+      },
+      "population": 1707,
+      "surface": 1687.49,
+      "radius": 2.32
+    },
+    {
+      "nom": "Lamotte-du-Rhône",
+      "code": "84063",
+      "codesPostaux": ["84840"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6804, 44.2798]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.6796, 44.265]
+      },
+      "population": 397,
+      "surface": 1206.88,
+      "radius": 1.96
+    },
+    {
+      "nom": "Lapalud",
+      "code": "84064",
+      "codesPostaux": ["84840"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.6821, 44.3073]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.687, 44.3051]
+      },
+      "population": 3831,
+      "surface": 1758.38,
+      "radius": 2.37
+    },
+    {
+      "nom": "Lauris",
+      "code": "84065",
+      "codesPostaux": ["84360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3019, 43.7611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3149, 43.7475]
+      },
+      "population": 3929,
+      "surface": 2250.67,
+      "radius": 2.68
+    },
+    {
+      "nom": "Le Barroux",
+      "code": "84008",
+      "codesPostaux": ["84330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1046, 44.1591]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1004, 44.1375]
+      },
+      "population": 663,
+      "surface": 1604.61,
+      "radius": 2.26
+    },
+    {
+      "nom": "Le Beaucet",
+      "code": "84011",
+      "codesPostaux": ["84210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1341, 43.9761]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1197, 43.983]
+      },
+      "population": 381,
+      "surface": 903.94,
+      "radius": 1.7
+    },
+    {
+      "nom": "Le Pontet",
+      "code": "84092",
+      "codesPostaux": ["84130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8614, 43.9707]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8638, 43.959]
+      },
+      "population": 17985,
+      "surface": 1074.57,
+      "radius": 1.85
+    },
+    {
+      "nom": "Le Thor",
+      "code": "84132",
+      "codesPostaux": ["84250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9939, 43.9236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9933, 43.9283]
+      },
+      "population": 8887,
+      "surface": 3549.93,
+      "radius": 3.36
+    },
+    {
+      "nom": "Lioux",
+      "code": "84066",
+      "codesPostaux": ["84220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3122, 43.9782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3018, 43.9466]
+      },
+      "population": 287,
+      "surface": 3884.93,
+      "radius": 3.52
+    },
+    {
+      "nom": "Loriol-du-Comtat",
+      "code": "84067",
+      "codesPostaux": ["84870"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0049, 44.0759]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0001, 44.0763]
+      },
+      "population": 2481,
+      "surface": 1127.94,
+      "radius": 1.89
+    },
+    {
+      "nom": "Lourmarin",
+      "code": "84068",
+      "codesPostaux": ["84160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3625, 43.7785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3633, 43.7633]
+      },
+      "population": 1031,
+      "surface": 2021.19,
+      "radius": 2.54
+    },
+    {
+      "nom": "Malaucène",
+      "code": "84069",
+      "codesPostaux": ["84340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1559, 44.1804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.132, 44.1745]
+      },
+      "population": 2759,
+      "surface": 4534.23,
+      "radius": 3.8
+    },
+    {
+      "nom": "Malemort-du-Comtat",
+      "code": "84070",
+      "codesPostaux": ["84570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1646, 44.0171]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1578, 44.022]
+      },
+      "population": 1952,
+      "surface": 1198.13,
+      "radius": 1.95
+    },
+    {
+      "nom": "Maubec",
+      "code": "84071",
+      "codesPostaux": ["84660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1357, 43.8384]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1403, 43.844]
+      },
+      "population": 1915,
+      "surface": 918.39,
+      "radius": 1.71
+    },
+    {
+      "nom": "Mazan",
+      "code": "84072",
+      "codesPostaux": ["84380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1333, 44.0528]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1261, 44.0568]
+      },
+      "population": 6272,
+      "surface": 3796.11,
+      "radius": 3.48
+    },
+    {
+      "nom": "Ménerbes",
+      "code": "84073",
+      "codesPostaux": ["84560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2172, 43.8271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.204, 43.8342]
+      },
+      "population": 967,
+      "surface": 3044.76,
+      "radius": 3.11
+    },
+    {
+      "nom": "Mérindol",
+      "code": "84074",
+      "codesPostaux": ["84360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1884, 43.7648]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2026, 43.7559]
+      },
+      "population": 2273,
+      "surface": 2710.4,
+      "radius": 2.94
+    },
+    {
+      "nom": "Méthamis",
+      "code": "84075",
+      "codesPostaux": ["84570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2483, 44.0153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.224, 44.0145]
+      },
+      "population": 453,
+      "surface": 3706.51,
+      "radius": 3.43
+    },
+    {
+      "nom": "Mirabeau",
+      "code": "84076",
+      "codesPostaux": ["84120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.6482, 43.7035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.6563, 43.7051]
+      },
+      "population": 1434,
+      "surface": 3159.32,
+      "radius": 3.17
+    },
+    {
+      "nom": "Modène",
+      "code": "84077",
+      "codesPostaux": ["84330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1285, 44.1092]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.123, 44.1034]
+      },
+      "population": 461,
+      "surface": 476.61,
+      "radius": 1.23
+    },
+    {
+      "nom": "Mondragon",
+      "code": "84078",
+      "codesPostaux": ["84430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7326, 44.2407]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7116, 44.2373]
+      },
+      "population": 3756,
+      "surface": 4052.92,
+      "radius": 3.59
+    },
+    {
+      "nom": "Monieux",
+      "code": "84079",
+      "codesPostaux": ["84390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.345, 44.052]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3607, 44.0694]
+      },
+      "population": 268,
+      "surface": 4755.07,
+      "radius": 3.89
+    },
+    {
+      "nom": "Monteux",
+      "code": "84080",
+      "codesPostaux": ["84170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9862, 44.033]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9954, 44.0345]
+      },
+      "population": 13159,
+      "surface": 3947.26,
+      "radius": 3.54
+    },
+    {
+      "nom": "Morières-lès-Avignon",
+      "code": "84081",
+      "codesPostaux": ["84310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9078, 43.9298]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9052, 43.9425]
+      },
+      "population": 8996,
+      "surface": 1039.67,
+      "radius": 1.82
+    },
+    {
+      "nom": "Mormoiron",
+      "code": "84082",
+      "codesPostaux": ["84570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1918, 44.0686]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1839, 44.0676]
+      },
+      "population": 1882,
+      "surface": 2522.77,
+      "radius": 2.83
+    },
+    {
+      "nom": "Mornas",
+      "code": "84083",
+      "codesPostaux": ["84550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7438, 44.1997]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7278, 44.203]
+      },
+      "population": 2530,
+      "surface": 2605.7,
+      "radius": 2.88
+    },
+    {
+      "nom": "Murs",
+      "code": "84085",
+      "codesPostaux": ["84220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2432, 43.965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2419, 43.9514]
+      },
+      "population": 390,
+      "surface": 3140.05,
+      "radius": 3.16
+    },
+    {
+      "nom": "Oppède",
+      "code": "84086",
+      "codesPostaux": ["84580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1707, 43.8331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1688, 43.8434]
+      },
+      "population": 1285,
+      "surface": 2439.27,
+      "radius": 2.79
+    },
+    {
+      "nom": "Orange",
+      "code": "84087",
+      "codesPostaux": ["84100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8031, 44.1264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8072, 44.1375]
+      },
+      "population": 29357,
+      "surface": 7440.78,
+      "radius": 4.87
+    },
+    {
+      "nom": "Pernes-les-Fontaines",
+      "code": "84088",
+      "codesPostaux": ["84210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0289, 43.9966]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0604, 43.9973]
+      },
+      "population": 10433,
+      "surface": 5105.89,
+      "radius": 4.03
+    },
+    {
+      "nom": "Pertuis",
+      "code": "84089",
+      "codesPostaux": ["84120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5345, 43.6931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.503, 43.6947]
+      },
+      "population": 19764,
+      "surface": 5937.49,
+      "radius": 4.35
+    },
+    {
+      "nom": "Peypin-d'Aigues",
+      "code": "84090",
+      "codesPostaux": ["84240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5617, 43.7962]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5696, 43.7876]
+      },
+      "population": 663,
+      "surface": 1728.44,
+      "radius": 2.35
+    },
+    {
+      "nom": "Piolenc",
+      "code": "84091",
+      "codesPostaux": ["84420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7587, 44.1784]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.7614, 44.1783]
+      },
+      "population": 5679,
+      "surface": 2468.84,
+      "radius": 2.8
+    },
+    {
+      "nom": "Puget",
+      "code": "84093",
+      "codesPostaux": ["84360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2572, 43.7699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2698, 43.7556]
+      },
+      "population": 881,
+      "surface": 1956.31,
+      "radius": 2.5
+    },
+    {
+      "nom": "Puyméras",
+      "code": "84094",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.124, 44.2883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1282, 44.2707]
+      },
+      "population": 584,
+      "surface": 1472.65,
+      "radius": 2.17
+    },
+    {
+      "nom": "Puyvert",
+      "code": "84095",
+      "codesPostaux": ["84160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3384, 43.7519]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3427, 43.7592]
+      },
+      "population": 842,
+      "surface": 1006.04,
+      "radius": 1.79
+    },
+    {
+      "nom": "Rasteau",
+      "code": "84096",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9794, 44.2336]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.986, 44.2311]
+      },
+      "population": 791,
+      "surface": 1903.17,
+      "radius": 2.46
+    },
+    {
+      "nom": "Richerenches",
+      "code": "84097",
+      "codesPostaux": ["84600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9034, 44.3555]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9116, 44.3599]
+      },
+      "population": 539,
+      "surface": 1107.28,
+      "radius": 1.88
+    },
+    {
+      "nom": "Roaix",
+      "code": "84098",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0125, 44.2539]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0139, 44.2431]
+      },
+      "population": 622,
+      "surface": 587.98,
+      "radius": 1.37
+    },
+    {
+      "nom": "Robion",
+      "code": "84099",
+      "codesPostaux": ["84440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1066, 43.8429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1119, 43.8443]
+      },
+      "population": 4803,
+      "surface": 1784.99,
+      "radius": 2.38
+    },
+    {
+      "nom": "Roussillon",
+      "code": "84102",
+      "codesPostaux": ["84220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2906, 43.8959]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.293, 43.9025]
+      },
+      "population": 1318,
+      "surface": 3025.68,
+      "radius": 3.1
+    },
+    {
+      "nom": "Rustrel",
+      "code": "84103",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4759, 43.9315]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.484, 43.9249]
+      },
+      "population": 682,
+      "surface": 2879.34,
+      "radius": 3.03
+    },
+    {
+      "nom": "Sablet",
+      "code": "84104",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9962, 44.1927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0066, 44.1951]
+      },
+      "population": 1433,
+      "surface": 1111.78,
+      "radius": 1.88
+    },
+    {
+      "nom": "Saignon",
+      "code": "84105",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4405, 43.868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4297, 43.8626]
+      },
+      "population": 922,
+      "surface": 1978.46,
+      "radius": 2.51
+    },
+    {
+      "nom": "Saint-Christol",
+      "code": "84107",
+      "codesPostaux": ["84390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4923, 44.0216]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4928, 44.028]
+      },
+      "population": 1416,
+      "surface": 4642.95,
+      "radius": 3.84
+    },
+    {
+      "nom": "Saint-Didier",
+      "code": "84108",
+      "codesPostaux": ["84210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1093, 44.0108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1104, 44.0055]
+      },
+      "population": 2192,
+      "surface": 365.99,
+      "radius": 1.08
+    },
+    {
+      "nom": "Saint-Hippolyte-le-Graveyron",
+      "code": "84109",
+      "codesPostaux": ["84330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0775, 44.1175]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0744, 44.1229]
+      },
+      "population": 170,
+      "surface": 494.3,
+      "radius": 1.25
+    },
+    {
+      "nom": "Saint-Léger-du-Ventoux",
+      "code": "84110",
+      "codesPostaux": ["84390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2749, 44.2027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2756, 44.2119]
+      },
+      "population": 27,
+      "surface": 1950.82,
+      "radius": 2.49
+    },
+    {
+      "nom": "Saint-Marcellin-lès-Vaison",
+      "code": "84111",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1024, 44.2368]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0986, 44.2306]
+      },
+      "population": 335,
+      "surface": 355.29,
+      "radius": 1.06
+    },
+    {
+      "nom": "Saint-Martin-de-Castillon",
+      "code": "84112",
+      "codesPostaux": ["84750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5141, 43.8557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5124, 43.8597]
+      },
+      "population": 695,
+      "surface": 3836.92,
+      "radius": 3.49
+    },
+    {
+      "nom": "Saint-Martin-de-la-Brasque",
+      "code": "84113",
+      "codesPostaux": ["84760"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5401, 43.7656]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5362, 43.7695]
+      },
+      "population": 811,
+      "surface": 560.96,
+      "radius": 1.34
+    },
+    {
+      "nom": "Saint-Pantaléon",
+      "code": "84114",
+      "codesPostaux": ["84220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2154, 43.8787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2164, 43.8812]
+      },
+      "population": 207,
+      "surface": 79.16,
+      "radius": 0.5
+    },
+    {
+      "nom": "Saint-Pierre-de-Vassols",
+      "code": "84115",
+      "codesPostaux": ["84330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1463, 44.0983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.137, 44.1002]
+      },
+      "population": 504,
+      "surface": 499.89,
+      "radius": 1.26
+    },
+    {
+      "nom": "Saint-Romain-en-Viennois",
+      "code": "84116",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0995, 44.2625]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1084, 44.2581]
+      },
+      "population": 860,
+      "surface": 908.98,
+      "radius": 1.7
+    },
+    {
+      "nom": "Saint-Roman-de-Malegarde",
+      "code": "84117",
+      "codesPostaux": ["84290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9592, 44.2642]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9647, 44.2706]
+      },
+      "population": 339,
+      "surface": 852.71,
+      "radius": 1.65
+    },
+    {
+      "nom": "Saint-Saturnin-lès-Apt",
+      "code": "84118",
+      "codesPostaux": ["84490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3566, 43.961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.3836, 43.944]
+      },
+      "population": 2986,
+      "surface": 7682.46,
+      "radius": 4.95
+    },
+    {
+      "nom": "Saint-Saturnin-lès-Avignon",
+      "code": "84119",
+      "codesPostaux": ["84450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9447, 43.9625]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9297, 43.9563]
+      },
+      "population": 5211,
+      "surface": 621.81,
+      "radius": 1.41
+    },
+    {
+      "nom": "Saint-Trinit",
+      "code": "84120",
+      "codesPostaux": ["84390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4747, 44.0913]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4656, 44.1021]
+      },
+      "population": 120,
+      "surface": 1690.17,
+      "radius": 2.32
+    },
+    {
+      "nom": "Sainte-Cécile-les-Vignes",
+      "code": "84106",
+      "codesPostaux": ["84290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8949, 44.2344]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8868, 44.2452]
+      },
+      "population": 2639,
+      "surface": 1997.9,
+      "radius": 2.52
+    },
+    {
+      "nom": "Sannes",
+      "code": "84121",
+      "codesPostaux": ["84240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4917, 43.7588]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4907, 43.7575]
+      },
+      "population": 292,
+      "surface": 457.43,
+      "radius": 1.21
+    },
+    {
+      "nom": "Sarrians",
+      "code": "84122",
+      "codesPostaux": ["84260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9541, 44.1018]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9721, 44.0831]
+      },
+      "population": 5834,
+      "surface": 3759.71,
+      "radius": 3.46
+    },
+    {
+      "nom": "Sault",
+      "code": "84123",
+      "codesPostaux": ["84390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3892, 44.0774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4087, 44.0919]
+      },
+      "population": 1348,
+      "surface": 11219.47,
+      "radius": 5.98
+    },
+    {
+      "nom": "Saumane-de-Vaucluse",
+      "code": "84124",
+      "codesPostaux": ["84800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1201, 43.9334]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1063, 43.9359]
+      },
+      "population": 890,
+      "surface": 2095.58,
+      "radius": 2.58
+    },
+    {
+      "nom": "Savoillan",
+      "code": "84125",
+      "codesPostaux": ["84390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.3707, 44.1778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.375, 44.1795]
+      },
+      "population": 74,
+      "surface": 878.53,
+      "radius": 1.67
+    },
+    {
+      "nom": "Séguret",
+      "code": "84126",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0257, 44.2161]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0201, 44.2071]
+      },
+      "population": 773,
+      "surface": 2114.6,
+      "radius": 2.59
+    },
+    {
+      "nom": "Sérignan-du-Comtat",
+      "code": "84127",
+      "codesPostaux": ["84830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8496, 44.1933]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8445, 44.1894]
+      },
+      "population": 2896,
+      "surface": 2022.55,
+      "radius": 2.54
+    },
+    {
+      "nom": "Sivergues",
+      "code": "84128",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.418, 43.8231]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4042, 43.8277]
+      },
+      "population": 44,
+      "surface": 943.5,
+      "radius": 1.73
+    },
+    {
+      "nom": "Sorgues",
+      "code": "84129",
+      "codesPostaux": ["84700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.8555, 44.016]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8778, 44.0072]
+      },
+      "population": 19030,
+      "surface": 3355.38,
+      "radius": 3.27
+    },
+    {
+      "nom": "Suzette",
+      "code": "84130",
+      "codesPostaux": ["84190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0563, 44.1728]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0684, 44.168]
+      },
+      "population": 111,
+      "surface": 678.73,
+      "radius": 1.47
+    },
+    {
+      "nom": "Taillades",
+      "code": "84131",
+      "codesPostaux": ["84300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0965, 43.8312]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0932, 43.8342]
+      },
+      "population": 1998,
+      "surface": 689.6,
+      "radius": 1.48
+    },
+    {
+      "nom": "Travaillan",
+      "code": "84134",
+      "codesPostaux": ["84850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9055, 44.1912]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9008, 44.1822]
+      },
+      "population": 721,
+      "surface": 1788.87,
+      "radius": 2.39
+    },
+    {
+      "nom": "Uchaux",
+      "code": "84135",
+      "codesPostaux": ["84100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.7983, 44.2096]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.8003, 44.2096]
+      },
+      "population": 1702,
+      "surface": 1876.68,
+      "radius": 2.44
+    },
+    {
+      "nom": "Vacqueyras",
+      "code": "84136",
+      "codesPostaux": ["84190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9764, 44.1444]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9844, 44.1377]
+      },
+      "population": 1192,
+      "surface": 899.84,
+      "radius": 1.69
+    },
+    {
+      "nom": "Vaison-la-Romaine",
+      "code": "84137",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0586, 44.2395]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0741, 44.2416]
+      },
+      "population": 5920,
+      "surface": 2717.93,
+      "radius": 2.94
+    },
+    {
+      "nom": "Valréas",
+      "code": "84138",
+      "codesPostaux": ["84600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9973, 44.379]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9899, 44.3833]
+      },
+      "population": 9285,
+      "surface": 5867.21,
+      "radius": 4.32
+    },
+    {
+      "nom": "Vaugines",
+      "code": "84140",
+      "codesPostaux": ["84160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4081, 43.7738]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4153, 43.7791]
+      },
+      "population": 556,
+      "surface": 1553.91,
+      "radius": 2.22
+    },
+    {
+      "nom": "Vedène",
+      "code": "84141",
+      "codesPostaux": ["84270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9055, 43.9736]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9041, 43.978]
+      },
+      "population": 11799,
+      "surface": 1136.69,
+      "radius": 1.9
+    },
+    {
+      "nom": "Velleron",
+      "code": "84142",
+      "codesPostaux": ["84740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0145, 43.9604]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.029, 43.957]
+      },
+      "population": 3138,
+      "surface": 1643.14,
+      "radius": 2.29
+    },
+    {
+      "nom": "Venasque",
+      "code": "84143",
+      "codesPostaux": ["84210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.1684, 43.9866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.1467, 43.9958]
+      },
+      "population": 1069,
+      "surface": 3507.05,
+      "radius": 3.34
+    },
+    {
+      "nom": "Viens",
+      "code": "84144",
+      "codesPostaux": ["84750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5595, 43.9]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5649, 43.896]
+      },
+      "population": 624,
+      "surface": 3515.76,
+      "radius": 3.35
+    },
+    {
+      "nom": "Villars",
+      "code": "84145",
+      "codesPostaux": ["84400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.434, 43.9573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4052, 43.9231]
+      },
+      "population": 770,
+      "surface": 3029.1,
+      "radius": 3.11
+    },
+    {
+      "nom": "Villedieu",
+      "code": "84146",
+      "codesPostaux": ["84110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.0468, 44.2899]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.0338, 44.2842]
+      },
+      "population": 480,
+      "surface": 1156.43,
+      "radius": 1.92
+    },
+    {
+      "nom": "Villelaure",
+      "code": "84147",
+      "codesPostaux": ["84530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.4266, 43.7066]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.4332, 43.7101]
+      },
+      "population": 3395,
+      "surface": 1810.15,
+      "radius": 2.4
+    },
+    {
+      "nom": "Villes-sur-Auzon",
+      "code": "84148",
+      "codesPostaux": ["84570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.2572, 44.0658]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.2338, 44.0574]
+      },
+      "population": 1292,
+      "surface": 2719.43,
+      "radius": 2.94
+    },
+    {
+      "nom": "Violès",
+      "code": "84149",
+      "codesPostaux": ["84150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9511, 44.1764]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9526, 44.1619]
+      },
+      "population": 1745,
+      "surface": 1462.58,
+      "radius": 2.16
+    },
+    {
+      "nom": "Visan",
+      "code": "84150",
+      "codesPostaux": ["84820"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [4.9477, 44.3288]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [4.9511, 44.3137]
+      },
+      "population": 1875,
+      "surface": 4219.01,
+      "radius": 3.66
+    },
+    {
+      "nom": "Vitrolles-en-Lubéron",
+      "code": "84151",
+      "codesPostaux": ["84240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [5.5985, 43.8068]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [5.5954, 43.8112]
+      },
+      "population": 199,
+      "surface": 1609.37,
+      "radius": 2.26
+    }
+  ],
+  "postalCodes": {
+    "84000": {
+      "communes": ["Avignon"],
+      "communeCount": 1,
+      "center": [4.8053, 43.9493],
+      "coverageRadius": 4.55,
+      "totalPopulation": 91760,
+      "totalSurface": 6506
+    },
+    "84100": {
+      "communes": ["Orange", "Uchaux"],
+      "communeCount": 2,
+      "center": [4.8068, 44.1415],
+      "coverageRadius": 7.6,
+      "boundingBox": {
+        "minLat": 44.1375,
+        "maxLat": 44.2096,
+        "minLon": 4.8003,
+        "maxLon": 4.8072
+      },
+      "totalPopulation": 31059,
+      "totalSurface": 9317
+    },
+    "84110": {
+      "communes": [
+        "Buisson",
+        "Crestet",
+        "Faucon",
+        "Puyméras",
+        "Rasteau",
+        "Roaix",
+        "Sablet",
+        "Saint-Marcellin-lès-Vaison",
+        "Saint-Romain-en-Viennois",
+        "Séguret",
+        "Vaison-la-Romaine",
+        "Villedieu"
+      ],
+      "communeCount": 12,
+      "center": [5.0608, 44.2382],
+      "coverageRadius": 7.3,
+      "boundingBox": {
+        "minLat": 44.1951,
+        "maxLat": 44.2842,
+        "minLon": 4.986,
+        "maxLon": 5.1464
+      },
+      "totalPopulation": 12926,
+      "totalSurface": 15295
+    },
+    "84120": {
+      "communes": ["La Bastidonne", "Beaumont-de-Pertuis", "Mirabeau", "Pertuis"],
+      "communeCount": 4,
+      "center": [5.5239, 43.6976],
+      "coverageRadius": 14.1,
+      "boundingBox": {
+        "minLat": 43.6947,
+        "maxLat": 43.737,
+        "minLon": 5.503,
+        "maxLon": 5.6906
+      },
+      "totalPopulation": 23214,
+      "totalSurface": 15072
+    },
+    "84130": {
+      "communes": ["Le Pontet"],
+      "communeCount": 1,
+      "center": [4.8638, 43.959],
+      "coverageRadius": 1.85,
+      "totalPopulation": 17985,
+      "totalSurface": 1075
+    },
+    "84140": {
+      "communes": ["Avignon"],
+      "communeCount": 1,
+      "center": [4.8053, 43.9493],
+      "coverageRadius": 4.55,
+      "totalPopulation": 91760,
+      "totalSurface": 6506
+    },
+    "84150": {
+      "communes": ["Jonquières", "Violès"],
+      "communeCount": 2,
+      "center": [4.9133, 44.127],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 44.1153,
+        "maxLat": 44.1619,
+        "minLon": 4.9001,
+        "maxLon": 4.9526
+      },
+      "totalPopulation": 6958,
+      "totalSurface": 3893
+    },
+    "84160": {
+      "communes": ["Cadenet", "Cucuron", "Lourmarin", "Puyvert", "Vaugines"],
+      "communeCount": 5,
+      "center": [5.3864, 43.7521],
+      "coverageRadius": 4.9,
+      "boundingBox": {
+        "minLat": 43.7356,
+        "maxLat": 43.7791,
+        "minLon": 5.3427,
+        "maxLon": 5.4386
+      },
+      "totalPopulation": 8605,
+      "totalSurface": 10410
+    },
+    "84170": {
+      "communes": ["Monteux"],
+      "communeCount": 1,
+      "center": [4.9954, 44.0345],
+      "coverageRadius": 3.54,
+      "totalPopulation": 13159,
+      "totalSurface": 3947
+    },
+    "84190": {
+      "communes": ["Beaumes-de-Venise", "Gigondas", "Lafare", "La Roque-Alric", "Suzette", "Vacqueyras"],
+      "communeCount": 6,
+      "center": [5.0157, 44.1323],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 44.1215,
+        "maxLat": 44.168,
+        "minLon": 4.9844,
+        "maxLon": 5.0684
+      },
+      "totalPopulation": 4344,
+      "totalSurface": 7131
+    },
+    "84200": {
+      "communes": ["Carpentras"],
+      "communeCount": 1,
+      "center": [5.0488, 44.0556],
+      "coverageRadius": 3.47,
+      "totalPopulation": 30854,
+      "totalSurface": 3792
+    },
+    "84210": {
+      "communes": [
+        "Althen-des-Paluds",
+        "Le Beaucet",
+        "Pernes-les-Fontaines",
+        "La Roque-sur-Pernes",
+        "Saint-Didier",
+        "Venasque"
+      ],
+      "communeCount": 6,
+      "center": [5.0574, 43.9988],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 43.9789,
+        "maxLat": 44.0055,
+        "minLon": 4.9572,
+        "maxLon": 5.1467
+      },
+      "totalPopulation": 17387,
+      "totalSurface": 11643
+    },
+    "84220": {
+      "communes": [
+        "Beaumettes",
+        "Cabrières-d'Avignon",
+        "Gordes",
+        "Goult",
+        "Joucas",
+        "Lioux",
+        "Murs",
+        "Roussillon",
+        "Saint-Pantaléon"
+      ],
+      "communeCount": 9,
+      "center": [5.2209, 43.8988],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 43.8581,
+        "maxLat": 43.9514,
+        "minLon": 5.15,
+        "maxLon": 5.3018
+      },
+      "totalPopulation": 7330,
+      "totalSurface": 19972
+    },
+    "84230": {
+      "communes": ["Châteauneuf-du-Pape"],
+      "communeCount": 1,
+      "center": [4.8316, 44.0563],
+      "coverageRadius": 2.81,
+      "totalPopulation": 2045,
+      "totalSurface": 2483
+    },
+    "84240": {
+      "communes": [
+        "Ansouis",
+        "La Bastide-des-Jourdans",
+        "Cabrières-d'Aigues",
+        "Grambois",
+        "La Motte-d'Aigues",
+        "Peypin-d'Aigues",
+        "Sannes",
+        "La Tour-d'Aigues",
+        "Vitrolles-en-Lubéron"
+      ],
+      "communeCount": 9,
+      "center": [5.5505, 43.7553],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 43.7258,
+        "maxLat": 43.8112,
+        "minLon": 5.4648,
+        "maxLon": 5.6329
+      },
+      "totalPopulation": 11887,
+      "totalSurface": 18934
+    },
+    "84250": {
+      "communes": ["Le Thor"],
+      "communeCount": 1,
+      "center": [4.9933, 43.9283],
+      "coverageRadius": 3.36,
+      "totalPopulation": 8887,
+      "totalSurface": 3550
+    },
+    "84260": {
+      "communes": ["Sarrians"],
+      "communeCount": 1,
+      "center": [4.9721, 44.0831],
+      "coverageRadius": 3.46,
+      "totalPopulation": 5834,
+      "totalSurface": 3760
+    },
+    "84270": {
+      "communes": ["Vedène"],
+      "communeCount": 1,
+      "center": [4.9041, 43.978],
+      "coverageRadius": 1.9,
+      "totalPopulation": 11799,
+      "totalSurface": 1137
+    },
+    "84290": {
+      "communes": ["Cairanne", "Lagarde-Paréol", "Sainte-Cécile-les-Vignes", "Saint-Roman-de-Malegarde"],
+      "communeCount": 4,
+      "center": [4.9015, 44.2421],
+      "coverageRadius": 6,
+      "boundingBox": {
+        "minLat": 44.2278,
+        "maxLat": 44.2706,
+        "minLon": 4.8506,
+        "maxLon": 4.9647
+      },
+      "totalPopulation": 4420,
+      "totalSurface": 6055
+    },
+    "84300": {
+      "communes": ["Cavaillon", "Taillades"],
+      "communeCount": 2,
+      "center": [5.0416, 43.8354],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 43.8342,
+        "maxLat": 43.8355,
+        "minLon": 5.0376,
+        "maxLon": 5.0932
+      },
+      "totalPopulation": 27888,
+      "totalSurface": 5282
+    },
+    "84310": {
+      "communes": ["Morières-lès-Avignon"],
+      "communeCount": 1,
+      "center": [4.9052, 43.9425],
+      "coverageRadius": 1.82,
+      "totalPopulation": 8996,
+      "totalSurface": 1040
+    },
+    "84320": {
+      "communes": ["Entraigues-sur-la-Sorgue"],
+      "communeCount": 1,
+      "center": [4.9277, 44.0036],
+      "coverageRadius": 2.32,
+      "totalPopulation": 8888,
+      "totalSurface": 1685
+    },
+    "84330": {
+      "communes": ["Le Barroux", "Caromb", "Modène", "Saint-Hippolyte-le-Graveyron", "Saint-Pierre-de-Vassols"],
+      "communeCount": 5,
+      "center": [5.1087, 44.1133],
+      "coverageRadius": 3,
+      "boundingBox": {
+        "minLat": 44.1002,
+        "maxLat": 44.1375,
+        "minLon": 5.0744,
+        "maxLon": 5.137
+      },
+      "totalPopulation": 5267,
+      "totalSurface": 4864
+    },
+    "84340": {
+      "communes": ["Beaumont-du-Ventoux", "Entrechaux", "Malaucène"],
+      "communeCount": 3,
+      "center": [5.1358, 44.1871],
+      "coverageRadius": 3.5,
+      "boundingBox": {
+        "minLat": 44.1745,
+        "maxLat": 44.2177,
+        "minLon": 5.132,
+        "maxLon": 5.1664
+      },
+      "totalPopulation": 4230,
+      "totalSurface": 8837
+    },
+    "84350": {
+      "communes": ["Courthézon"],
+      "communeCount": 1,
+      "center": [4.8831, 44.0902],
+      "coverageRadius": 3.23,
+      "totalPopulation": 6245,
+      "totalSurface": 3278
+    },
+    "84360": {
+      "communes": ["Lauris", "Mérindol", "Puget"],
+      "communeCount": 3,
+      "center": [5.2733, 43.7512],
+      "coverageRadius": 5.7,
+      "boundingBox": {
+        "minLat": 43.7475,
+        "maxLat": 43.7559,
+        "minLon": 5.2026,
+        "maxLon": 5.3149
+      },
+      "totalPopulation": 7083,
+      "totalSurface": 6917
+    },
+    "84370": {
+      "communes": ["Bédarrides"],
+      "communeCount": 1,
+      "center": [4.898, 44.0411],
+      "coverageRadius": 2.82,
+      "totalPopulation": 5521,
+      "totalSurface": 2497
+    },
+    "84380": {
+      "communes": ["Mazan"],
+      "communeCount": 1,
+      "center": [5.1261, 44.0568],
+      "coverageRadius": 3.48,
+      "totalPopulation": 6272,
+      "totalSurface": 3796
+    },
+    "84390": {
+      "communes": [
+        "Aurel",
+        "Brantes",
+        "Monieux",
+        "Saint-Christol",
+        "Saint-Léger-du-Ventoux",
+        "Saint-Trinit",
+        "Sault",
+        "Savoillan"
+      ],
+      "communeCount": 8,
+      "center": [5.4382, 44.072],
+      "coverageRadius": 20.3,
+      "boundingBox": {
+        "minLat": 44.028,
+        "maxLat": 44.2119,
+        "minLon": 5.2756,
+        "maxLon": 5.4928
+      },
+      "totalPopulation": 3525,
+      "totalSurface": 30890
+    },
+    "84400": {
+      "communes": [
+        "Apt",
+        "Auribeau",
+        "Castellet-en-Luberon",
+        "Gargas",
+        "Gignac",
+        "Lagarde-d'Apt",
+        "Rustrel",
+        "Saignon",
+        "Sivergues",
+        "Villars"
+      ],
+      "communeCount": 10,
+      "center": [5.3956, 43.8843],
+      "coverageRadius": 12.7,
+      "boundingBox": {
+        "minLat": 43.8277,
+        "maxLat": 43.9836,
+        "minLon": 5.3584,
+        "maxLon": 5.5274
+      },
+      "totalPopulation": 16022,
+      "totalSurface": 19578
+    },
+    "84410": {
+      "communes": ["Bédoin", "Crillon-le-Brave", "Flassan"],
+      "communeCount": 3,
+      "center": [5.183, 44.1205],
+      "coverageRadius": 5.4,
+      "boundingBox": {
+        "minLat": 44.0986,
+        "maxLat": 44.1241,
+        "minLon": 5.1433,
+        "maxLon": 5.2429
+      },
+      "totalPopulation": 4021,
+      "totalSurface": 11913
+    },
+    "84420": {
+      "communes": ["Piolenc"],
+      "communeCount": 1,
+      "center": [4.7614, 44.1783],
+      "coverageRadius": 2.8,
+      "totalPopulation": 5679,
+      "totalSurface": 2469
+    },
+    "84430": {
+      "communes": ["Mondragon"],
+      "communeCount": 1,
+      "center": [4.7116, 44.2373],
+      "coverageRadius": 3.59,
+      "totalPopulation": 3756,
+      "totalSurface": 4053
+    },
+    "84440": {
+      "communes": ["Robion"],
+      "communeCount": 1,
+      "center": [5.1119, 43.8443],
+      "coverageRadius": 2.38,
+      "totalPopulation": 4803,
+      "totalSurface": 1785
+    },
+    "84450": {
+      "communes": ["Jonquerettes", "Saint-Saturnin-lès-Avignon"],
+      "communeCount": 2,
+      "center": [4.9305, 43.954],
+      "coverageRadius": 0.9,
+      "boundingBox": {
+        "minLat": 43.9467,
+        "maxLat": 43.9563,
+        "minLon": 4.9297,
+        "maxLon": 4.9329
+      },
+      "totalPopulation": 6808,
+      "totalSurface": 880
+    },
+    "84460": {
+      "communes": ["Cheval-Blanc"],
+      "communeCount": 1,
+      "center": [5.0635, 43.8003],
+      "coverageRadius": 4.32,
+      "totalPopulation": 4340,
+      "totalSurface": 5853
+    },
+    "84470": {
+      "communes": ["Châteauneuf-de-Gadagne"],
+      "communeCount": 1,
+      "center": [4.944, 43.9277],
+      "coverageRadius": 2.07,
+      "totalPopulation": 3495,
+      "totalSurface": 1349
+    },
+    "84480": {
+      "communes": ["Bonnieux", "Buoux", "Lacoste"],
+      "communeCount": 3,
+      "center": [5.302, 43.8258],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 43.8231,
+        "maxLat": 43.8316,
+        "minLon": 5.273,
+        "maxLon": 5.3778
+      },
+      "totalPopulation": 1722,
+      "totalSurface": 7968
+    },
+    "84490": {
+      "communes": ["Saint-Saturnin-lès-Apt"],
+      "communeCount": 1,
+      "center": [5.3836, 43.944],
+      "coverageRadius": 4.95,
+      "totalPopulation": 2986,
+      "totalSurface": 7682
+    },
+    "84500": {
+      "communes": ["Bollène"],
+      "communeCount": 1,
+      "center": [4.7484, 44.2804],
+      "coverageRadius": 4.16,
+      "totalPopulation": 13871,
+      "totalSurface": 5439
+    },
+    "84510": {
+      "communes": ["Caumont-sur-Durance"],
+      "communeCount": 1,
+      "center": [4.9446, 43.8931],
+      "coverageRadius": 2.41,
+      "totalPopulation": 5499,
+      "totalSurface": 1828
+    },
+    "84530": {
+      "communes": ["Villelaure"],
+      "communeCount": 1,
+      "center": [5.4332, 43.7101],
+      "coverageRadius": 2.4,
+      "totalPopulation": 3395,
+      "totalSurface": 1810
+    },
+    "84550": {
+      "communes": ["Mornas"],
+      "communeCount": 1,
+      "center": [4.7278, 44.203],
+      "coverageRadius": 2.88,
+      "totalPopulation": 2530,
+      "totalSurface": 2606
+    },
+    "84560": {
+      "communes": ["Ménerbes"],
+      "communeCount": 1,
+      "center": [5.204, 43.8342],
+      "coverageRadius": 3.11,
+      "totalPopulation": 967,
+      "totalSurface": 3045
+    },
+    "84570": {
+      "communes": ["Blauvac", "Malemort-du-Comtat", "Méthamis", "Mormoiron", "Villes-sur-Auzon"],
+      "communeCount": 5,
+      "center": [5.1905, 44.0436],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 44.0145,
+        "maxLat": 44.0676,
+        "minLon": 5.1578,
+        "maxLon": 5.2338
+      },
+      "totalPopulation": 6134,
+      "totalSurface": 12253
+    },
+    "84580": {
+      "communes": ["Oppède"],
+      "communeCount": 1,
+      "center": [5.1688, 43.8434],
+      "coverageRadius": 2.79,
+      "totalPopulation": 1285,
+      "totalSurface": 2439
+    },
+    "84600": {
+      "communes": ["Grillon", "Richerenches", "Valréas"],
+      "communeCount": 3,
+      "center": [4.9772, 44.3838],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 44.3599,
+        "maxLat": 44.394,
+        "minLon": 4.9116,
+        "maxLon": 4.9899
+      },
+      "totalPopulation": 11548,
+      "totalSurface": 8478
+    },
+    "84660": {
+      "communes": ["Maubec"],
+      "communeCount": 1,
+      "center": [5.1403, 43.844],
+      "coverageRadius": 1.71,
+      "totalPopulation": 1915,
+      "totalSurface": 918
+    },
+    "84700": {
+      "communes": ["Sorgues"],
+      "communeCount": 1,
+      "center": [4.8778, 44.0072],
+      "coverageRadius": 3.27,
+      "totalPopulation": 19030,
+      "totalSurface": 3355
+    },
+    "84740": {
+      "communes": ["Velleron"],
+      "communeCount": 1,
+      "center": [5.029, 43.957],
+      "coverageRadius": 2.29,
+      "totalPopulation": 3138,
+      "totalSurface": 1643
+    },
+    "84750": {
+      "communes": ["Caseneuve", "Saint-Martin-de-Castillon", "Viens"],
+      "communeCount": 3,
+      "center": [5.5231, 43.8793],
+      "coverageRadius": 3.9,
+      "boundingBox": {
+        "minLat": 43.8597,
+        "maxLat": 43.896,
+        "minLon": 5.487,
+        "maxLon": 5.5649
+      },
+      "totalPopulation": 1838,
+      "totalSurface": 9162
+    },
+    "84760": {
+      "communes": ["Saint-Martin-de-la-Brasque"],
+      "communeCount": 1,
+      "center": [5.5362, 43.7695],
+      "coverageRadius": 1.34,
+      "totalPopulation": 811,
+      "totalSurface": 561
+    },
+    "84800": {
+      "communes": ["L'Isle-sur-la-Sorgue", "Lagnes", "Saumane-de-Vaucluse", "Fontaine-de-Vaucluse"],
+      "communeCount": 4,
+      "center": [5.0592, 43.9182],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 43.8923,
+        "maxLat": 43.9359,
+        "minLon": 5.0506,
+        "maxLon": 5.1271
+      },
+      "totalPopulation": 23488,
+      "totalSurface": 8962
+    },
+    "84810": {
+      "communes": ["Aubignan"],
+      "communeCount": 1,
+      "center": [5.0248, 44.0994],
+      "coverageRadius": 2.24,
+      "totalPopulation": 5962,
+      "totalSurface": 1572
+    },
+    "84820": {
+      "communes": ["Visan"],
+      "communeCount": 1,
+      "center": [4.9511, 44.3137],
+      "coverageRadius": 3.66,
+      "totalPopulation": 1875,
+      "totalSurface": 4219
+    },
+    "84830": {
+      "communes": ["Sérignan-du-Comtat"],
+      "communeCount": 1,
+      "center": [4.8445, 44.1894],
+      "coverageRadius": 2.54,
+      "totalPopulation": 2896,
+      "totalSurface": 2023
+    },
+    "84840": {
+      "communes": ["Lamotte-du-Rhône", "Lapalud"],
+      "communeCount": 2,
+      "center": [4.6863, 44.3013],
+      "coverageRadius": 4.1,
+      "boundingBox": {
+        "minLat": 44.265,
+        "maxLat": 44.3051,
+        "minLon": 4.6796,
+        "maxLon": 4.687
+      },
+      "totalPopulation": 4228,
+      "totalSurface": 2965
+    },
+    "84850": {
+      "communes": ["Camaret-sur-Aigues", "Travaillan"],
+      "communeCount": 2,
+      "center": [4.8769, 44.1665],
+      "coverageRadius": 2.6,
+      "boundingBox": {
+        "minLat": 44.164,
+        "maxLat": 44.1822,
+        "minLon": 4.8731,
+        "maxLon": 4.9008
+      },
+      "totalPopulation": 5270,
+      "totalSurface": 3626
+    },
+    "84860": {
+      "communes": ["Caderousse"],
+      "communeCount": 1,
+      "center": [4.757, 44.1025],
+      "coverageRadius": 3.21,
+      "totalPopulation": 2541,
+      "totalSurface": 3244
+    },
+    "84870": {
+      "communes": ["Loriol-du-Comtat"],
+      "communeCount": 1,
+      "center": [5.0001, 44.0763],
+      "coverageRadius": 1.89,
+      "totalPopulation": 2481,
+      "totalSurface": 1128
+    }
+  }
+}

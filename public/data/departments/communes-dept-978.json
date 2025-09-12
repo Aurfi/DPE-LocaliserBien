@@ -1,0 +1,37 @@
+{
+  "departmentCode": "978",
+  "departmentName": "Département 978",
+  "stats": {
+    "communeCount": 1,
+    "totalPopulation": 31951,
+    "totalSurface": 4891
+  },
+  "communes": [
+    {
+      "nom": "Saint-Martin",
+      "code": "97801",
+      "codesPostaux": ["97150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [-63.0619, 18.0859]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [-63.0513, 18.0855]
+      },
+      "population": 31951,
+      "surface": 4890.51,
+      "radius": 3.95
+    }
+  ],
+  "postalCodes": {
+    "97150": {
+      "communes": ["Saint-Martin"],
+      "communeCount": 1,
+      "center": [-63.0513, 18.0855],
+      "coverageRadius": 3.95,
+      "totalPopulation": 31951,
+      "totalSurface": 4891
+    }
+  }
+}

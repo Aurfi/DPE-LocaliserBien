@@ -1,0 +1,3352 @@
+{
+  "departmentCode": "06",
+  "departmentName": "Alpes-Maritimes",
+  "stats": {
+    "communeCount": 163,
+    "totalPopulation": 1114579,
+    "totalSurface": 429515
+  },
+  "communes": [
+    {
+      "nom": "Aiglun",
+      "code": "06001",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9348, 43.8552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9146, 43.8577]
+      },
+      "population": 99,
+      "surface": 1539.2,
+      "radius": 2.21
+    },
+    {
+      "nom": "Amirat",
+      "code": "06002",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8108, 43.8973]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8265, 43.8903]
+      },
+      "population": 49,
+      "surface": 1297.04,
+      "radius": 2.03
+    },
+    {
+      "nom": "Andon",
+      "code": "06003",
+      "codesPostaux": ["06750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8211, 43.7755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7863, 43.7733]
+      },
+      "population": 652,
+      "surface": 5437.28,
+      "radius": 4.16
+    },
+    {
+      "nom": "Antibes",
+      "code": "06004",
+      "codesPostaux": ["06160", "06600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1048, 43.5823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1279, 43.5813]
+      },
+      "population": 76612,
+      "surface": 2676.39,
+      "radius": 2.92
+    },
+    {
+      "nom": "Ascros",
+      "code": "06005",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0159, 43.9171]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0143, 43.9212]
+      },
+      "population": 180,
+      "surface": 1747.39,
+      "radius": 2.36
+    },
+    {
+      "nom": "Aspremont",
+      "code": "06006",
+      "codesPostaux": ["06790"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2423, 43.7772]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2436, 43.7846]
+      },
+      "population": 2321,
+      "surface": 927.59,
+      "radius": 1.72
+    },
+    {
+      "nom": "Auribeau-sur-Siagne",
+      "code": "06007",
+      "codesPostaux": ["06810"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9118, 43.6105]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.911, 43.6003]
+      },
+      "population": 3346,
+      "surface": 529.89,
+      "radius": 1.3
+    },
+    {
+      "nom": "Auvare",
+      "code": "06008",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9133, 44.0062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9085, 43.9884]
+      },
+      "population": 50,
+      "surface": 1796.23,
+      "radius": 2.39
+    },
+    {
+      "nom": "Bairols",
+      "code": "06009",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1174, 43.9856]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1263, 43.9827]
+      },
+      "population": 133,
+      "surface": 1505.36,
+      "radius": 2.19
+    },
+    {
+      "nom": "Beaulieu-sur-Mer",
+      "code": "06011",
+      "codesPostaux": ["06310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3324, 43.7081]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3353, 43.7066]
+      },
+      "population": 3835,
+      "surface": 106.61,
+      "radius": 0.58
+    },
+    {
+      "nom": "Beausoleil",
+      "code": "06012",
+      "codesPostaux": ["06240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4227, 43.7471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4256, 43.7436]
+      },
+      "population": 12430,
+      "surface": 278.8,
+      "radius": 0.94
+    },
+    {
+      "nom": "Belvédère",
+      "code": "06013",
+      "codesPostaux": ["06450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3612, 44.0615]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.32, 44.015]
+      },
+      "population": 595,
+      "surface": 7536.54,
+      "radius": 4.9
+    },
+    {
+      "nom": "Bendejun",
+      "code": "06014",
+      "codesPostaux": ["06390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2841, 43.8309]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.295, 43.8355]
+      },
+      "population": 961,
+      "surface": 629.31,
+      "radius": 1.42
+    },
+    {
+      "nom": "Berre-les-Alpes",
+      "code": "06015",
+      "codesPostaux": ["06390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3306, 43.8342]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3271, 43.8303]
+      },
+      "population": 1234,
+      "surface": 947.65,
+      "radius": 1.74
+    },
+    {
+      "nom": "Beuil",
+      "code": "06016",
+      "codesPostaux": ["06470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9693, 44.1176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9899, 44.0946]
+      },
+      "population": 553,
+      "surface": 7454.38,
+      "radius": 4.87
+    },
+    {
+      "nom": "Bézaudun-les-Alpes",
+      "code": "06017",
+      "codesPostaux": ["06510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0908, 43.8026]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0967, 43.8085]
+      },
+      "population": 260,
+      "surface": 2163.02,
+      "radius": 2.62
+    },
+    {
+      "nom": "Biot",
+      "code": "06018",
+      "codesPostaux": ["06410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0821, 43.6273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0962, 43.6284]
+      },
+      "population": 10196,
+      "surface": 1548.05,
+      "radius": 2.22
+    },
+    {
+      "nom": "Blausasc",
+      "code": "06019",
+      "codesPostaux": ["06440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.357, 43.7938]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.363, 43.8057]
+      },
+      "population": 1664,
+      "surface": 1011.21,
+      "radius": 1.79
+    },
+    {
+      "nom": "Bonson",
+      "code": "06021",
+      "codesPostaux": ["06830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1786, 43.8613]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1887, 43.8631]
+      },
+      "population": 728,
+      "surface": 667.04,
+      "radius": 1.46
+    },
+    {
+      "nom": "Bouyon",
+      "code": "06022",
+      "codesPostaux": ["06510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.125, 43.8272]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1233, 43.8254]
+      },
+      "population": 550,
+      "surface": 1238.7,
+      "radius": 1.99
+    },
+    {
+      "nom": "Breil-sur-Roya",
+      "code": "06023",
+      "codesPostaux": ["06540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4996, 43.9379]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.5139, 43.9373]
+      },
+      "population": 2292,
+      "surface": 8188.47,
+      "radius": 5.11
+    },
+    {
+      "nom": "Briançonnet",
+      "code": "06024",
+      "codesPostaux": ["06850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.7325, 43.8654]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7575, 43.8639]
+      },
+      "population": 168,
+      "surface": 2458.46,
+      "radius": 2.8
+    },
+    {
+      "nom": "Cabris",
+      "code": "06026",
+      "codesPostaux": ["06530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8782, 43.6602]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8756, 43.6561]
+      },
+      "population": 1421,
+      "surface": 542.95,
+      "radius": 1.31
+    },
+    {
+      "nom": "Cagnes-sur-Mer",
+      "code": "06027",
+      "codesPostaux": ["06800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1502, 43.6712]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1488, 43.6637]
+      },
+      "population": 52852,
+      "surface": 1814.36,
+      "radius": 2.4
+    },
+    {
+      "nom": "Caille",
+      "code": "06028",
+      "codesPostaux": ["06750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.7544, 43.7686]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7298, 43.7789]
+      },
+      "population": 423,
+      "surface": 1700.58,
+      "radius": 2.33
+    },
+    {
+      "nom": "Cannes",
+      "code": "06029",
+      "codesPostaux": ["06150", "06400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0152, 43.5454]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0126, 43.5514]
+      },
+      "population": 74040,
+      "surface": 2077.08,
+      "radius": 2.57
+    },
+    {
+      "nom": "Cantaron",
+      "code": "06031",
+      "codesPostaux": ["06340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3147, 43.7694]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3177, 43.7616]
+      },
+      "population": 1276,
+      "surface": 731.9,
+      "radius": 1.53
+    },
+    {
+      "nom": "Cap-d'Ail",
+      "code": "06032",
+      "codesPostaux": ["06320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4008, 43.7256]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4068, 43.7223]
+      },
+      "population": 4491,
+      "surface": 211.98,
+      "radius": 0.82
+    },
+    {
+      "nom": "Carros",
+      "code": "06033",
+      "codesPostaux": ["06510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1798, 43.785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1925, 43.7728]
+      },
+      "population": 13729,
+      "surface": 1542.53,
+      "radius": 2.22
+    },
+    {
+      "nom": "Castagniers",
+      "code": "06034",
+      "codesPostaux": ["06670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2298, 43.79]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2314, 43.7907]
+      },
+      "population": 1674,
+      "surface": 698.76,
+      "radius": 1.49
+    },
+    {
+      "nom": "Castellar",
+      "code": "06035",
+      "codesPostaux": ["06500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4989, 43.8227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4967, 43.8034]
+      },
+      "population": 1042,
+      "surface": 1228.32,
+      "radius": 1.98
+    },
+    {
+      "nom": "Castillon",
+      "code": "06036",
+      "codesPostaux": ["06500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4627, 43.8371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4726, 43.8337]
+      },
+      "population": 422,
+      "surface": 755.86,
+      "radius": 1.55
+    },
+    {
+      "nom": "Caussols",
+      "code": "06037",
+      "codesPostaux": ["06460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9071, 43.7387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9001, 43.7409]
+      },
+      "population": 322,
+      "surface": 2767.46,
+      "radius": 2.97
+    },
+    {
+      "nom": "Châteauneuf-d'Entraunes",
+      "code": "06040",
+      "codesPostaux": ["06470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8405, 44.1584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8324, 44.1285]
+      },
+      "population": 63,
+      "surface": 2949.66,
+      "radius": 3.06
+    },
+    {
+      "nom": "Châteauneuf-Grasse",
+      "code": "06038",
+      "codesPostaux": ["06740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9792, 43.6626]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9751, 43.6749]
+      },
+      "population": 3765,
+      "surface": 902.05,
+      "radius": 1.69
+    },
+    {
+      "nom": "Châteauneuf-Villevieille",
+      "code": "06039",
+      "codesPostaux": ["06390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2951, 43.8007]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2965, 43.8086]
+      },
+      "population": 985,
+      "surface": 841.9,
+      "radius": 1.64
+    },
+    {
+      "nom": "Cipières",
+      "code": "06041",
+      "codesPostaux": ["06620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9229, 43.7665]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9561, 43.7828]
+      },
+      "population": 398,
+      "surface": 3826.04,
+      "radius": 3.49
+    },
+    {
+      "nom": "Clans",
+      "code": "06042",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1827, 44.003]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1472, 43.995]
+      },
+      "population": 688,
+      "surface": 3764.86,
+      "radius": 3.46
+    },
+    {
+      "nom": "Coaraze",
+      "code": "06043",
+      "codesPostaux": ["06390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3014, 43.8693]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2945, 43.8642]
+      },
+      "population": 822,
+      "surface": 1700.86,
+      "radius": 2.33
+    },
+    {
+      "nom": "Collongues",
+      "code": "06045",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8642, 43.8934]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8632, 43.8887]
+      },
+      "population": 80,
+      "surface": 1086.45,
+      "radius": 1.86
+    },
+    {
+      "nom": "Colomars",
+      "code": "06046",
+      "codesPostaux": ["06670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2212, 43.757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2223, 43.7636]
+      },
+      "population": 3507,
+      "surface": 622.15,
+      "radius": 1.41
+    },
+    {
+      "nom": "Conségudes",
+      "code": "06047",
+      "codesPostaux": ["06510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0395, 43.8395]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0474, 43.8437]
+      },
+      "population": 99,
+      "surface": 1251.37,
+      "radius": 2
+    },
+    {
+      "nom": "Contes",
+      "code": "06048",
+      "codesPostaux": ["06390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3263, 43.8133]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3144, 43.8116]
+      },
+      "population": 7722,
+      "surface": 1952.38,
+      "radius": 2.49
+    },
+    {
+      "nom": "Courmes",
+      "code": "06049",
+      "codesPostaux": ["06620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0196, 43.7514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0085, 43.7426]
+      },
+      "population": 108,
+      "surface": 1588.96,
+      "radius": 2.25
+    },
+    {
+      "nom": "Coursegoules",
+      "code": "06050",
+      "codesPostaux": ["06140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0384, 43.7898]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0402, 43.7947]
+      },
+      "population": 545,
+      "surface": 4123.07,
+      "radius": 3.62
+    },
+    {
+      "nom": "Cuébris",
+      "code": "06052",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9955, 43.889]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0203, 43.8866]
+      },
+      "population": 132,
+      "surface": 2297.52,
+      "radius": 2.7
+    },
+    {
+      "nom": "Daluis",
+      "code": "06053",
+      "codesPostaux": ["06470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8045, 44.0426]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8118, 44.027]
+      },
+      "population": 145,
+      "surface": 3959.8,
+      "radius": 3.55
+    },
+    {
+      "nom": "Drap",
+      "code": "06054",
+      "codesPostaux": ["06340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3395, 43.7587]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3201, 43.7557]
+      },
+      "population": 5300,
+      "surface": 549.9,
+      "radius": 1.32
+    },
+    {
+      "nom": "Duranus",
+      "code": "06055",
+      "codesPostaux": ["06670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2796, 43.8954]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2582, 43.8942]
+      },
+      "population": 159,
+      "surface": 1607.3,
+      "radius": 2.26
+    },
+    {
+      "nom": "Entraunes",
+      "code": "06056",
+      "codesPostaux": ["06470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.763, 44.2215]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7481, 44.188]
+      },
+      "population": 130,
+      "surface": 8006,
+      "radius": 5.05
+    },
+    {
+      "nom": "Escragnolles",
+      "code": "06058",
+      "codesPostaux": ["06460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.7758, 43.7236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.783, 43.7304]
+      },
+      "population": 621,
+      "surface": 2630.19,
+      "radius": 2.89
+    },
+    {
+      "nom": "Èze",
+      "code": "06059",
+      "codesPostaux": ["06360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3566, 43.7299]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3615, 43.7292]
+      },
+      "population": 2155,
+      "surface": 949.78,
+      "radius": 1.74
+    },
+    {
+      "nom": "Falicon",
+      "code": "06060",
+      "codesPostaux": ["06950"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.266, 43.7533]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2788, 43.7489]
+      },
+      "population": 2170,
+      "surface": 493.9,
+      "radius": 1.25
+    },
+    {
+      "nom": "Fontan",
+      "code": "06062",
+      "codesPostaux": ["06540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.5527, 44.0213]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.5538, 44.0026]
+      },
+      "population": 309,
+      "surface": 4951.36,
+      "radius": 3.97
+    },
+    {
+      "nom": "Gars",
+      "code": "06063",
+      "codesPostaux": ["06850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8202, 43.8612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8032, 43.8655]
+      },
+      "population": 70,
+      "surface": 1542.36,
+      "radius": 2.22
+    },
+    {
+      "nom": "Gattières",
+      "code": "06064",
+      "codesPostaux": ["06510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1675, 43.769]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1768, 43.7604]
+      },
+      "population": 4345,
+      "surface": 1018.68,
+      "radius": 1.8
+    },
+    {
+      "nom": "Gilette",
+      "code": "06066",
+      "codesPostaux": ["06830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1602, 43.8436]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1633, 43.8494]
+      },
+      "population": 1617,
+      "surface": 1058.75,
+      "radius": 1.84
+    },
+    {
+      "nom": "Gorbio",
+      "code": "06067",
+      "codesPostaux": ["06500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4476, 43.787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4443, 43.7866]
+      },
+      "population": 1568,
+      "surface": 704.67,
+      "radius": 1.5
+    },
+    {
+      "nom": "Gourdon",
+      "code": "06068",
+      "codesPostaux": ["06620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9622, 43.7266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9738, 43.7233]
+      },
+      "population": 365,
+      "surface": 2255.34,
+      "radius": 2.68
+    },
+    {
+      "nom": "Grasse",
+      "code": "06069",
+      "codesPostaux": ["06130", "06520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.937, 43.656]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9247, 43.6581]
+      },
+      "population": 48669,
+      "surface": 4423.35,
+      "radius": 3.75
+    },
+    {
+      "nom": "Gréolières",
+      "code": "06070",
+      "codesPostaux": ["06620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9296, 43.8037]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9432, 43.795]
+      },
+      "population": 606,
+      "surface": 5293.28,
+      "radius": 4.1
+    },
+    {
+      "nom": "Guillaumes",
+      "code": "06071",
+      "codesPostaux": ["06470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8673, 44.1007]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8538, 44.0893]
+      },
+      "population": 586,
+      "surface": 8647.43,
+      "radius": 5.25
+    },
+    {
+      "nom": "Ilonse",
+      "code": "06072",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0901, 44.0319]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1009, 44.0317]
+      },
+      "population": 137,
+      "surface": 4062.2,
+      "radius": 3.6
+    },
+    {
+      "nom": "Isola",
+      "code": "06073",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0835, 44.1903]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0527, 44.1864]
+      },
+      "population": 652,
+      "surface": 9963.57,
+      "radius": 5.63
+    },
+    {
+      "nom": "L'Escarène",
+      "code": "06057",
+      "codesPostaux": ["06440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3665, 43.8303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3557, 43.8339]
+      },
+      "population": 2563,
+      "surface": 1051.27,
+      "radius": 1.83
+    },
+    {
+      "nom": "La Bollène-Vésubie",
+      "code": "06020",
+      "codesPostaux": ["06450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3749, 43.9945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3323, 43.991]
+      },
+      "population": 659,
+      "surface": 3535.68,
+      "radius": 3.35
+    },
+    {
+      "nom": "La Brigue",
+      "code": "06162",
+      "codesPostaux": ["06430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.6496, 44.0897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.614, 44.063]
+      },
+      "population": 741,
+      "surface": 9348.65,
+      "radius": 5.46
+    },
+    {
+      "nom": "La Colle-sur-Loup",
+      "code": "06044",
+      "codesPostaux": ["06480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0975, 43.6869]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1035, 43.6868]
+      },
+      "population": 8143,
+      "surface": 983,
+      "radius": 1.77
+    },
+    {
+      "nom": "La Croix-sur-Roudoule",
+      "code": "06051",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.871, 44.0032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8743, 43.9873]
+      },
+      "population": 98,
+      "surface": 2989.24,
+      "radius": 3.08
+    },
+    {
+      "nom": "La Gaude",
+      "code": "06065",
+      "codesPostaux": ["06610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1605, 43.7177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1527, 43.7222]
+      },
+      "population": 7194,
+      "surface": 1346.12,
+      "radius": 2.07
+    },
+    {
+      "nom": "La Penne",
+      "code": "06093",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9361, 43.9202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9484, 43.9279]
+      },
+      "population": 256,
+      "surface": 1798.18,
+      "radius": 2.39
+    },
+    {
+      "nom": "La Roque-en-Provence",
+      "code": "06107",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9916, 43.8494]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0055, 43.8725]
+      },
+      "population": 66,
+      "surface": 2382.23,
+      "radius": 2.75
+    },
+    {
+      "nom": "La Roquette-sur-Siagne",
+      "code": "06108",
+      "codesPostaux": ["06550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9475, 43.5853]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.956, 43.5805]
+      },
+      "population": 5552,
+      "surface": 623.48,
+      "radius": 1.41
+    },
+    {
+      "nom": "La Roquette-sur-Var",
+      "code": "06109",
+      "codesPostaux": ["06670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2072, 43.8328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1979, 43.8279]
+      },
+      "population": 933,
+      "surface": 420.03,
+      "radius": 1.16
+    },
+    {
+      "nom": "La Tour",
+      "code": "06144",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.196, 43.9645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1838, 43.9463]
+      },
+      "population": 540,
+      "surface": 3628.45,
+      "radius": 3.4
+    },
+    {
+      "nom": "La Trinité",
+      "code": "06149",
+      "codesPostaux": ["06340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3413, 43.7415]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3137, 43.7431]
+      },
+      "population": 10485,
+      "surface": 1475.92,
+      "radius": 2.17
+    },
+    {
+      "nom": "La Turbie",
+      "code": "06150",
+      "codesPostaux": ["06320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3973, 43.7462]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3997, 43.7453]
+      },
+      "population": 3012,
+      "surface": 738.37,
+      "radius": 1.53
+    },
+    {
+      "nom": "Lantosque",
+      "code": "06074",
+      "codesPostaux": ["06450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3121, 43.9787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3122, 43.9743]
+      },
+      "population": 1197,
+      "surface": 4473.14,
+      "radius": 3.77
+    },
+    {
+      "nom": "Le Bar-sur-Loup",
+      "code": "06010",
+      "codesPostaux": ["06620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9674, 43.6993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9891, 43.7015]
+      },
+      "population": 2960,
+      "surface": 1446.61,
+      "radius": 2.15
+    },
+    {
+      "nom": "Le Broc",
+      "code": "06025",
+      "codesPostaux": ["06510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1621, 43.8146]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1701, 43.8085]
+      },
+      "population": 1432,
+      "surface": 1874.2,
+      "radius": 2.44
+    },
+    {
+      "nom": "Le Cannet",
+      "code": "06030",
+      "codesPostaux": ["06110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.001, 43.5745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0191, 43.5766]
+      },
+      "population": 40198,
+      "surface": 769.67,
+      "radius": 1.57
+    },
+    {
+      "nom": "Le Mas",
+      "code": "06081",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8572, 43.8388]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8584, 43.843]
+      },
+      "population": 98,
+      "surface": 3227.28,
+      "radius": 3.21
+    },
+    {
+      "nom": "Le Rouret",
+      "code": "06112",
+      "codesPostaux": ["06650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0081, 43.6803]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0057, 43.6745]
+      },
+      "population": 4198,
+      "surface": 718.87,
+      "radius": 1.51
+    },
+    {
+      "nom": "Le Tignet",
+      "code": "06140",
+      "codesPostaux": ["06530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8538, 43.6257]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.843, 43.6294]
+      },
+      "population": 3158,
+      "surface": 1131.83,
+      "radius": 1.9
+    },
+    {
+      "nom": "Les Ferres",
+      "code": "06061",
+      "codesPostaux": ["06510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0966, 43.8424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.093, 43.8467]
+      },
+      "population": 93,
+      "surface": 1380.82,
+      "radius": 2.1
+    },
+    {
+      "nom": "Les Mujouls",
+      "code": "06087",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8649, 43.8728]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8616, 43.8836]
+      },
+      "population": 38,
+      "surface": 1458.12,
+      "radius": 2.15
+    },
+    {
+      "nom": "Levens",
+      "code": "06075",
+      "codesPostaux": ["06670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2358, 43.8501]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2265, 43.8588]
+      },
+      "population": 5366,
+      "surface": 2968.47,
+      "radius": 3.07
+    },
+    {
+      "nom": "Lieuche",
+      "code": "06076",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0361, 44.0001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0163, 43.9954]
+      },
+      "population": 51,
+      "surface": 1313.74,
+      "radius": 2.04
+    },
+    {
+      "nom": "Lucéram",
+      "code": "06077",
+      "codesPostaux": ["06440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3506, 43.8997]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3608, 43.8842]
+      },
+      "population": 1249,
+      "surface": 6519.71,
+      "radius": 4.56
+    },
+    {
+      "nom": "Malaussène",
+      "code": "06078",
+      "codesPostaux": ["06710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1389, 43.9146]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1301, 43.9274]
+      },
+      "population": 327,
+      "surface": 1946.28,
+      "radius": 2.49
+    },
+    {
+      "nom": "Mandelieu-la-Napoule",
+      "code": "06079",
+      "codesPostaux": ["06210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.918, 43.5334]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.932, 43.5428]
+      },
+      "population": 21201,
+      "surface": 3207.88,
+      "radius": 3.2
+    },
+    {
+      "nom": "Marie",
+      "code": "06080",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1668, 44.0319]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1348, 44.0319]
+      },
+      "population": 103,
+      "surface": 1464.05,
+      "radius": 2.16
+    },
+    {
+      "nom": "Massoins",
+      "code": "06082",
+      "codesPostaux": ["06710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1305, 43.9552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1256, 43.9427]
+      },
+      "population": 127,
+      "surface": 1192.77,
+      "radius": 1.95
+    },
+    {
+      "nom": "Menton",
+      "code": "06083",
+      "codesPostaux": ["06500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.498, 43.7961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.5029, 43.7757]
+      },
+      "population": 30326,
+      "surface": 1422.35,
+      "radius": 2.13
+    },
+    {
+      "nom": "Mouans-Sartoux",
+      "code": "06084",
+      "codesPostaux": ["06370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9677, 43.6192]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9703, 43.6205]
+      },
+      "population": 10847,
+      "surface": 1262.85,
+      "radius": 2
+    },
+    {
+      "nom": "Mougins",
+      "code": "06085",
+      "codesPostaux": ["06250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0046, 43.5931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9946, 43.5994]
+      },
+      "population": 19481,
+      "surface": 2608.95,
+      "radius": 2.88
+    },
+    {
+      "nom": "Moulinet",
+      "code": "06086",
+      "codesPostaux": ["06380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4128, 43.9503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4126, 43.9403]
+      },
+      "population": 253,
+      "surface": 4099.3,
+      "radius": 3.61
+    },
+    {
+      "nom": "Nice",
+      "code": "06088",
+      "codesPostaux": ["06000", "06100", "06200", "06300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2528, 43.7032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2715, 43.696]
+      },
+      "population": 353701,
+      "surface": 7380.49,
+      "radius": 4.85
+    },
+    {
+      "nom": "Opio",
+      "code": "06089",
+      "codesPostaux": ["06650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0094, 43.6574]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.982, 43.6687]
+      },
+      "population": 2408,
+      "surface": 934.15,
+      "radius": 1.72
+    },
+    {
+      "nom": "Pégomas",
+      "code": "06090",
+      "codesPostaux": ["06580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9213, 43.5886]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9276, 43.5938]
+      },
+      "population": 8143,
+      "surface": 1110.52,
+      "radius": 1.88
+    },
+    {
+      "nom": "Peille",
+      "code": "06091",
+      "codesPostaux": ["06440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4088, 43.8043]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4016, 43.8028]
+      },
+      "population": 2205,
+      "surface": 4281.79,
+      "radius": 3.69
+    },
+    {
+      "nom": "Peillon",
+      "code": "06092",
+      "codesPostaux": ["06440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3668, 43.7727]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3671, 43.7685]
+      },
+      "population": 1427,
+      "surface": 868.04,
+      "radius": 1.66
+    },
+    {
+      "nom": "Péone",
+      "code": "06094",
+      "codesPostaux": ["06470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.925, 44.1333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9066, 44.1163]
+      },
+      "population": 1079,
+      "surface": 4844.67,
+      "radius": 3.93
+    },
+    {
+      "nom": "Peymeinade",
+      "code": "06095",
+      "codesPostaux": ["06530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8807, 43.6289]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8757, 43.6422]
+      },
+      "population": 8491,
+      "surface": 992.11,
+      "radius": 1.78
+    },
+    {
+      "nom": "Pierlas",
+      "code": "06096",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0177, 44.035]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0356, 44.0313]
+      },
+      "population": 99,
+      "surface": 3138.39,
+      "radius": 3.16
+    },
+    {
+      "nom": "Pierrefeu",
+      "code": "06097",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0743, 43.8883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0919, 43.8639]
+      },
+      "population": 339,
+      "surface": 2215.6,
+      "radius": 2.66
+    },
+    {
+      "nom": "Puget-Rostang",
+      "code": "06098",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9333, 44.0056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9189, 43.974]
+      },
+      "population": 121,
+      "surface": 2240.16,
+      "radius": 2.67
+    },
+    {
+      "nom": "Puget-Théniers",
+      "code": "06099",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9049, 43.9498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8934, 43.9558]
+      },
+      "population": 1803,
+      "surface": 2135.02,
+      "radius": 2.61
+    },
+    {
+      "nom": "Revest-les-Roches",
+      "code": "06100",
+      "codesPostaux": ["06830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1693, 43.8823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1561, 43.8815]
+      },
+      "population": 235,
+      "surface": 871.95,
+      "radius": 1.67
+    },
+    {
+      "nom": "Rigaud",
+      "code": "06101",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.976, 43.9942]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9913, 43.9902]
+      },
+      "population": 167,
+      "surface": 3223.68,
+      "radius": 3.2
+    },
+    {
+      "nom": "Rimplas",
+      "code": "06102",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1449, 44.0997]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1317, 44.0637]
+      },
+      "population": 154,
+      "surface": 2483.98,
+      "radius": 2.81
+    },
+    {
+      "nom": "Roquebillière",
+      "code": "06103",
+      "codesPostaux": ["06450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2885, 44.0282]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3075, 44.0128]
+      },
+      "population": 1816,
+      "surface": 2567.93,
+      "radius": 2.86
+    },
+    {
+      "nom": "Roquebrune-Cap-Martin",
+      "code": "06104",
+      "codesPostaux": ["06190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4576, 43.7638]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4737, 43.7578]
+      },
+      "population": 12419,
+      "surface": 948.36,
+      "radius": 1.74
+    },
+    {
+      "nom": "Roquefort-les-Pins",
+      "code": "06105",
+      "codesPostaux": ["06330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0565, 43.6723]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0508, 43.6659]
+      },
+      "population": 7284,
+      "surface": 2166.64,
+      "radius": 2.63
+    },
+    {
+      "nom": "Roquestéron",
+      "code": "06106",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0232, 43.8696]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0057, 43.8739]
+      },
+      "population": 557,
+      "surface": 634.06,
+      "radius": 1.42
+    },
+    {
+      "nom": "Roubion",
+      "code": "06110",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0233, 44.1121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0504, 44.0927]
+      },
+      "population": 114,
+      "surface": 2698.3,
+      "radius": 2.93
+    },
+    {
+      "nom": "Roure",
+      "code": "06111",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0603, 44.1139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0877, 44.0896]
+      },
+      "population": 111,
+      "surface": 3966.12,
+      "radius": 3.55
+    },
+    {
+      "nom": "Saint-André-de-la-Roche",
+      "code": "06114",
+      "codesPostaux": ["06730"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2875, 43.7455]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.288, 43.7386]
+      },
+      "population": 5877,
+      "surface": 284.7,
+      "radius": 0.95
+    },
+    {
+      "nom": "Saint-Antonin",
+      "code": "06115",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9739, 43.9085]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9805, 43.9105]
+      },
+      "population": 84,
+      "surface": 638.24,
+      "radius": 1.43
+    },
+    {
+      "nom": "Saint-Auban",
+      "code": "06116",
+      "codesPostaux": ["06850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.7367, 43.8319]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7266, 43.8486]
+      },
+      "population": 204,
+      "surface": 4276.28,
+      "radius": 3.69
+    },
+    {
+      "nom": "Saint-Blaise",
+      "code": "06117",
+      "codesPostaux": ["06670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2283, 43.8132]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2394, 43.8213]
+      },
+      "population": 1391,
+      "surface": 796.97,
+      "radius": 1.59
+    },
+    {
+      "nom": "Saint-Cézaire-sur-Siagne",
+      "code": "06118",
+      "codesPostaux": ["06530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8049, 43.6592]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7924, 43.65]
+      },
+      "population": 3971,
+      "surface": 2994.95,
+      "radius": 3.09
+    },
+    {
+      "nom": "Saint-Dalmas-le-Selvage",
+      "code": "06119",
+      "codesPostaux": ["06660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8452, 44.281]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8658, 44.2844]
+      },
+      "population": 102,
+      "surface": 8096.7,
+      "radius": 5.08
+    },
+    {
+      "nom": "Saint-Étienne-de-Tinée",
+      "code": "06120",
+      "codesPostaux": ["06660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9252, 44.2597]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9256, 44.2556]
+      },
+      "population": 1269,
+      "surface": 17274.3,
+      "radius": 7.42
+    },
+    {
+      "nom": "Saint-Jean-Cap-Ferrat",
+      "code": "06121",
+      "codesPostaux": ["06230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3349, 43.6883]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3326, 43.6917]
+      },
+      "population": 1476,
+      "surface": 264.55,
+      "radius": 0.92
+    },
+    {
+      "nom": "Saint-Jeannet",
+      "code": "06122",
+      "codesPostaux": ["06640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1477, 43.7619]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.143, 43.7475]
+      },
+      "population": 4378,
+      "surface": 1459.08,
+      "radius": 2.16
+    },
+    {
+      "nom": "Saint-Laurent-du-Var",
+      "code": "06123",
+      "codesPostaux": ["06700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1822, 43.6865]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1919, 43.6752]
+      },
+      "population": 31645,
+      "surface": 948.57,
+      "radius": 1.74
+    },
+    {
+      "nom": "Saint-Léger",
+      "code": "06124",
+      "codesPostaux": ["06260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8189, 44.0014]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8277, 44.0006]
+      },
+      "population": 57,
+      "surface": 451.3,
+      "radius": 1.2
+    },
+    {
+      "nom": "Saint-Martin-d'Entraunes",
+      "code": "06125",
+      "codesPostaux": ["06470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.7492, 44.1453]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7609, 44.143]
+      },
+      "population": 146,
+      "surface": 3967.68,
+      "radius": 3.55
+    },
+    {
+      "nom": "Saint-Martin-du-Var",
+      "code": "06126",
+      "codesPostaux": ["06670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2012, 43.8168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1912, 43.8225]
+      },
+      "population": 3403,
+      "surface": 487.93,
+      "radius": 1.25
+    },
+    {
+      "nom": "Saint-Martin-Vésubie",
+      "code": "06127",
+      "codesPostaux": ["06450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.307, 44.0944]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2566, 44.0702]
+      },
+      "population": 1379,
+      "surface": 9765.73,
+      "radius": 5.58
+    },
+    {
+      "nom": "Saint-Paul-de-Vence",
+      "code": "06128",
+      "codesPostaux": ["06570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1196, 43.6928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1222, 43.6969]
+      },
+      "population": 3190,
+      "surface": 726.76,
+      "radius": 1.52
+    },
+    {
+      "nom": "Saint-Sauveur-sur-Tinée",
+      "code": "06129",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1226, 44.1163]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1049, 44.0834]
+      },
+      "population": 295,
+      "surface": 3218.43,
+      "radius": 3.2
+    },
+    {
+      "nom": "Saint-Vallier-de-Thiey",
+      "code": "06130",
+      "codesPostaux": ["06460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8516, 43.6994]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.848, 43.6987]
+      },
+      "population": 3662,
+      "surface": 5208.31,
+      "radius": 4.07
+    },
+    {
+      "nom": "Sainte-Agnès",
+      "code": "06113",
+      "codesPostaux": ["06500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4605, 43.8046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4689, 43.7893]
+      },
+      "population": 1365,
+      "surface": 945.56,
+      "radius": 1.73
+    },
+    {
+      "nom": "Sallagriffon",
+      "code": "06131",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9117, 43.8805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9063, 43.8834]
+      },
+      "population": 47,
+      "surface": 961.76,
+      "radius": 1.75
+    },
+    {
+      "nom": "Saorge",
+      "code": "06132",
+      "codesPostaux": ["06540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.5403, 43.9935]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.5515, 43.9883]
+      },
+      "population": 432,
+      "surface": 8457.19,
+      "radius": 5.19
+    },
+    {
+      "nom": "Sauze",
+      "code": "06133",
+      "codesPostaux": ["06470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.7987, 44.0862]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8359, 44.0877]
+      },
+      "population": 69,
+      "surface": 2753.14,
+      "radius": 2.96
+    },
+    {
+      "nom": "Séranon",
+      "code": "06134",
+      "codesPostaux": ["06750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.6892, 43.7655]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7042, 43.7743]
+      },
+      "population": 537,
+      "surface": 2324.95,
+      "radius": 2.72
+    },
+    {
+      "nom": "Sigale",
+      "code": "06135",
+      "codesPostaux": ["06910"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9652, 43.8742]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9648, 43.8719]
+      },
+      "population": 202,
+      "surface": 554.96,
+      "radius": 1.33
+    },
+    {
+      "nom": "Sospel",
+      "code": "06136",
+      "codesPostaux": ["06380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.4493, 43.8872]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.4497, 43.8773]
+      },
+      "population": 3807,
+      "surface": 6234.83,
+      "radius": 4.45
+    },
+    {
+      "nom": "Spéracèdes",
+      "code": "06137",
+      "codesPostaux": ["06530"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.8573, 43.652]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.8578, 43.6482]
+      },
+      "population": 1180,
+      "surface": 345.63,
+      "radius": 1.05
+    },
+    {
+      "nom": "Tende",
+      "code": "06163",
+      "codesPostaux": ["06430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.5499, 44.0971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.5934, 44.0892]
+      },
+      "population": 1898,
+      "surface": 17725.33,
+      "radius": 7.51
+    },
+    {
+      "nom": "Théoule-sur-Mer",
+      "code": "06138",
+      "codesPostaux": ["06590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.9303, 43.499]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.9401, 43.5059]
+      },
+      "population": 1418,
+      "surface": 1069.61,
+      "radius": 1.85
+    },
+    {
+      "nom": "Thiéry",
+      "code": "06139",
+      "codesPostaux": ["06710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0365, 43.9759]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0297, 43.9783]
+      },
+      "population": 100,
+      "surface": 2198.45,
+      "radius": 2.65
+    },
+    {
+      "nom": "Toudon",
+      "code": "06141",
+      "codesPostaux": ["06830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1094, 43.8857]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1126, 43.9014]
+      },
+      "population": 353,
+      "surface": 1848.99,
+      "radius": 2.43
+    },
+    {
+      "nom": "Touët-de-l'Escarène",
+      "code": "06142",
+      "codesPostaux": ["06440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3799, 43.8516]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.364, 43.8481]
+      },
+      "population": 303,
+      "surface": 458.83,
+      "radius": 1.21
+    },
+    {
+      "nom": "Touët-sur-Var",
+      "code": "06143",
+      "codesPostaux": ["06710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0091, 43.9433]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0067, 43.9479]
+      },
+      "population": 743,
+      "surface": 1441.49,
+      "radius": 2.14
+    },
+    {
+      "nom": "Tourette-du-Château",
+      "code": "06145",
+      "codesPostaux": ["06830"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1365, 43.8812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1427, 43.8824]
+      },
+      "population": 147,
+      "surface": 961.86,
+      "radius": 1.75
+    },
+    {
+      "nom": "Tournefort",
+      "code": "06146",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1596, 43.942]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1505, 43.9472]
+      },
+      "population": 147,
+      "surface": 990.14,
+      "radius": 1.78
+    },
+    {
+      "nom": "Tourrette-Levens",
+      "code": "06147",
+      "codesPostaux": ["06690"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.275, 43.7882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2762, 43.7871]
+      },
+      "population": 4633,
+      "surface": 1653.86,
+      "radius": 2.29
+    },
+    {
+      "nom": "Tourrettes-sur-Loup",
+      "code": "06148",
+      "codesPostaux": ["06140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0353, 43.718]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0589, 43.7158]
+      },
+      "population": 4126,
+      "surface": 2935.58,
+      "radius": 3.06
+    },
+    {
+      "nom": "Utelle",
+      "code": "06151",
+      "codesPostaux": ["06450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2458, 43.9392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2635, 43.9189]
+      },
+      "population": 824,
+      "surface": 6785.57,
+      "radius": 4.65
+    },
+    {
+      "nom": "Valbonne",
+      "code": "06152",
+      "codesPostaux": ["06560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0291, 43.6267]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0076, 43.6401]
+      },
+      "population": 12389,
+      "surface": 2010.05,
+      "radius": 2.53
+    },
+    {
+      "nom": "Valdeblore",
+      "code": "06153",
+      "codesPostaux": ["06420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.1949, 44.1152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1711, 44.0709]
+      },
+      "population": 834,
+      "surface": 9300.88,
+      "radius": 5.44
+    },
+    {
+      "nom": "Valderoure",
+      "code": "06154",
+      "codesPostaux": ["06750"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.7038, 43.7943]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7066, 43.7961]
+      },
+      "population": 517,
+      "surface": 2526.78,
+      "radius": 2.84
+    },
+    {
+      "nom": "Vallauris",
+      "code": "06155",
+      "codesPostaux": ["06220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0604, 43.5787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0555, 43.5798]
+      },
+      "population": 28579,
+      "surface": 1318.01,
+      "radius": 2.05
+    },
+    {
+      "nom": "Venanson",
+      "code": "06156",
+      "codesPostaux": ["06450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.2386, 44.0412]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.2526, 44.0533]
+      },
+      "population": 197,
+      "surface": 1797.4,
+      "radius": 2.39
+    },
+    {
+      "nom": "Vence",
+      "code": "06157",
+      "codesPostaux": ["06140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0995, 43.7373]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1135, 43.7228]
+      },
+      "population": 19856,
+      "surface": 3941.33,
+      "radius": 3.54
+    },
+    {
+      "nom": "Villars-sur-Var",
+      "code": "06158",
+      "codesPostaux": ["06710"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.076, 43.9564]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.0974, 43.9368]
+      },
+      "population": 783,
+      "surface": 2543.18,
+      "radius": 2.85
+    },
+    {
+      "nom": "Villefranche-sur-Mer",
+      "code": "06159",
+      "codesPostaux": ["06230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.3243, 43.7081]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.3111, 43.7014]
+      },
+      "population": 5012,
+      "surface": 489.67,
+      "radius": 1.25
+    },
+    {
+      "nom": "Villeneuve-d'Entraunes",
+      "code": "06160",
+      "codesPostaux": ["06470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [6.774, 44.1301]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [6.7957, 44.1203]
+      },
+      "population": 87,
+      "surface": 2798.51,
+      "radius": 2.98
+    },
+    {
+      "nom": "Villeneuve-Loubet",
+      "code": "06161",
+      "codesPostaux": ["06270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [7.0984, 43.647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [7.1219, 43.6581]
+      },
+      "population": 16729,
+      "surface": 1989.77,
+      "radius": 2.52
+    }
+  ],
+  "postalCodes": {
+    "06910": {
+      "communes": [
+        "Aiglun",
+        "Amirat",
+        "Collongues",
+        "Cuébris",
+        "Le Mas",
+        "Les Mujouls",
+        "Pierrefeu",
+        "Roquestéron",
+        "La Roque-en-Provence",
+        "Sallagriffon",
+        "Sigale"
+      ],
+      "communeCount": 11,
+      "center": [6.9876, 43.8715],
+      "coverageRadius": 13.1,
+      "boundingBox": {
+        "minLat": 43.843,
+        "maxLat": 43.8903,
+        "minLon": 6.8265,
+        "maxLon": 7.0919
+      },
+      "totalPopulation": 1707,
+      "totalSurface": 17654
+    },
+    "06750": {
+      "communes": ["Andon", "Caille", "Séranon", "Valderoure"],
+      "communeCount": 4,
+      "center": [6.735, 43.7802],
+      "coverageRadius": 4.2,
+      "boundingBox": {
+        "minLat": 43.7733,
+        "maxLat": 43.7961,
+        "minLon": 6.7042,
+        "maxLon": 6.7863
+      },
+      "totalPopulation": 2129,
+      "totalSurface": 11990
+    },
+    "06160": {
+      "communes": ["Antibes"],
+      "communeCount": 1,
+      "center": [7.1279, 43.5813],
+      "coverageRadius": 2.92,
+      "totalPopulation": 76612,
+      "totalSurface": 2676
+    },
+    "06600": {
+      "communes": ["Antibes"],
+      "communeCount": 1,
+      "center": [7.1279, 43.5813],
+      "coverageRadius": 2.92,
+      "totalPopulation": 76612,
+      "totalSurface": 2676
+    },
+    "06260": {
+      "communes": [
+        "Ascros",
+        "Auvare",
+        "La Croix-sur-Roudoule",
+        "Lieuche",
+        "La Penne",
+        "Pierlas",
+        "Puget-Rostang",
+        "Puget-Théniers",
+        "Rigaud",
+        "Saint-Antonin",
+        "Saint-Léger"
+      ],
+      "communeCount": 11,
+      "center": [6.9197, 43.9583],
+      "coverageRadius": 12.4,
+      "boundingBox": {
+        "minLat": 43.9105,
+        "maxLat": 44.0313,
+        "minLon": 6.8277,
+        "maxLon": 7.0356
+      },
+      "totalPopulation": 2966,
+      "totalSurface": 21472
+    },
+    "06790": {
+      "communes": ["Aspremont"],
+      "communeCount": 1,
+      "center": [7.2436, 43.7846],
+      "coverageRadius": 1.72,
+      "totalPopulation": 2321,
+      "totalSurface": 928
+    },
+    "06810": {
+      "communes": ["Auribeau-sur-Siagne"],
+      "communeCount": 1,
+      "center": [6.911, 43.6003],
+      "coverageRadius": 1.3,
+      "totalPopulation": 3346,
+      "totalSurface": 530
+    },
+    "06420": {
+      "communes": [
+        "Bairols",
+        "Clans",
+        "Ilonse",
+        "Isola",
+        "Marie",
+        "Rimplas",
+        "Roubion",
+        "Roure",
+        "Saint-Sauveur-sur-Tinée",
+        "La Tour",
+        "Tournefort",
+        "Valdeblore"
+      ],
+      "communeCount": 12,
+      "center": [7.1307, 44.0514],
+      "coverageRadius": 16.3,
+      "boundingBox": {
+        "minLat": 43.9463,
+        "maxLat": 44.1864,
+        "minLon": 7.0504,
+        "maxLon": 7.1838
+      },
+      "totalPopulation": 3908,
+      "totalSurface": 47046
+    },
+    "06620": {
+      "communes": ["Le Bar-sur-Loup", "Cipières", "Courmes", "Gourdon", "Gréolières"],
+      "communeCount": 5,
+      "center": [6.9791, 43.7244],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 43.7015,
+        "maxLat": 43.795,
+        "minLon": 6.9432,
+        "maxLon": 7.0085
+      },
+      "totalPopulation": 4437,
+      "totalSurface": 14410
+    },
+    "06310": {
+      "communes": ["Beaulieu-sur-Mer"],
+      "communeCount": 1,
+      "center": [7.3353, 43.7066],
+      "coverageRadius": 0.58,
+      "totalPopulation": 3835,
+      "totalSurface": 107
+    },
+    "06240": {
+      "communes": ["Beausoleil"],
+      "communeCount": 1,
+      "center": [7.4256, 43.7436],
+      "coverageRadius": 0.94,
+      "totalPopulation": 12430,
+      "totalSurface": 279
+    },
+    "06450": {
+      "communes": [
+        "Belvédère",
+        "La Bollène-Vésubie",
+        "Lantosque",
+        "Roquebillière",
+        "Saint-Martin-Vésubie",
+        "Utelle",
+        "Venanson"
+      ],
+      "communeCount": 7,
+      "center": [7.2943, 44.0054],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 43.9189,
+        "maxLat": 44.0702,
+        "minLon": 7.2526,
+        "maxLon": 7.3323
+      },
+      "totalPopulation": 6667,
+      "totalSurface": 36462
+    },
+    "06390": {
+      "communes": ["Bendejun", "Berre-les-Alpes", "Châteauneuf-Villevieille", "Coaraze", "Contes"],
+      "communeCount": 5,
+      "center": [7.3112, 43.819],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 43.8086,
+        "maxLat": 43.8642,
+        "minLon": 7.2945,
+        "maxLon": 7.3271
+      },
+      "totalPopulation": 11724,
+      "totalSurface": 6072
+    },
+    "06470": {
+      "communes": [
+        "Beuil",
+        "Châteauneuf-d'Entraunes",
+        "Daluis",
+        "Entraunes",
+        "Guillaumes",
+        "Péone",
+        "Saint-Martin-d'Entraunes",
+        "Sauze",
+        "Villeneuve-d'Entraunes"
+      ],
+      "communeCount": 9,
+      "center": [6.8857, 44.1064],
+      "coverageRadius": 14.3,
+      "boundingBox": {
+        "minLat": 44.027,
+        "maxLat": 44.188,
+        "minLon": 6.7481,
+        "maxLon": 6.9899
+      },
+      "totalPopulation": 2858,
+      "totalSurface": 45381
+    },
+    "06510": {
+      "communes": ["Bézaudun-les-Alpes", "Bouyon", "Le Broc", "Carros", "Conségudes", "Les Ferres", "Gattières"],
+      "communeCount": 7,
+      "center": [7.1834, 43.7752],
+      "coverageRadius": 13.4,
+      "boundingBox": {
+        "minLat": 43.7604,
+        "maxLat": 43.8467,
+        "minLon": 7.0474,
+        "maxLon": 7.1925
+      },
+      "totalPopulation": 20508,
+      "totalSurface": 10469
+    },
+    "06410": {
+      "communes": ["Biot"],
+      "communeCount": 1,
+      "center": [7.0962, 43.6284],
+      "coverageRadius": 2.22,
+      "totalPopulation": 10196,
+      "totalSurface": 1548
+    },
+    "06440": {
+      "communes": ["Blausasc", "L'Escarène", "Lucéram", "Peille", "Peillon", "Touët-de-l'Escarène"],
+      "communeCount": 6,
+      "center": [7.3704, 43.8188],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 43.7685,
+        "maxLat": 43.8842,
+        "minLon": 7.3557,
+        "maxLon": 7.4016
+      },
+      "totalPopulation": 9411,
+      "totalSurface": 14191
+    },
+    "06830": {
+      "communes": ["Bonson", "Gilette", "Revest-les-Roches", "Toudon", "Tourette-du-Château"],
+      "communeCount": 5,
+      "center": [7.162, 43.8626],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 43.8494,
+        "maxLat": 43.9014,
+        "minLon": 7.1126,
+        "maxLon": 7.1887
+      },
+      "totalPopulation": 3080,
+      "totalSurface": 5409
+    },
+    "06540": {
+      "communes": ["Breil-sur-Roya", "Fontan", "Saorge"],
+      "communeCount": 3,
+      "center": [7.5233, 43.9512],
+      "coverageRadius": 6.3,
+      "boundingBox": {
+        "minLat": 43.9373,
+        "maxLat": 44.0026,
+        "minLon": 7.5139,
+        "maxLon": 7.5538
+      },
+      "totalPopulation": 3033,
+      "totalSurface": 21597
+    },
+    "06850": {
+      "communes": ["Briançonnet", "Gars", "Saint-Auban"],
+      "communeCount": 3,
+      "center": [6.7505, 43.8571],
+      "coverageRadius": 4.4,
+      "boundingBox": {
+        "minLat": 43.8486,
+        "maxLat": 43.8655,
+        "minLon": 6.7266,
+        "maxLon": 6.8032
+      },
+      "totalPopulation": 442,
+      "totalSurface": 8277
+    },
+    "06530": {
+      "communes": ["Cabris", "Peymeinade", "Saint-Cézaire-sur-Siagne", "Spéracèdes", "Le Tignet"],
+      "communeCount": 5,
+      "center": [6.8507, 43.6432],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": 43.6294,
+        "maxLat": 43.6561,
+        "minLon": 6.7924,
+        "maxLon": 6.8757
+      },
+      "totalPopulation": 18221,
+      "totalSurface": 6007
+    },
+    "06800": {
+      "communes": ["Cagnes-sur-Mer"],
+      "communeCount": 1,
+      "center": [7.1488, 43.6637],
+      "coverageRadius": 2.4,
+      "totalPopulation": 52852,
+      "totalSurface": 1814
+    },
+    "06150": {
+      "communes": ["Cannes"],
+      "communeCount": 1,
+      "center": [7.0126, 43.5514],
+      "coverageRadius": 2.57,
+      "totalPopulation": 74040,
+      "totalSurface": 2077
+    },
+    "06400": {
+      "communes": ["Cannes"],
+      "communeCount": 1,
+      "center": [7.0126, 43.5514],
+      "coverageRadius": 2.57,
+      "totalPopulation": 74040,
+      "totalSurface": 2077
+    },
+    "06110": {
+      "communes": ["Le Cannet"],
+      "communeCount": 1,
+      "center": [7.0191, 43.5766],
+      "coverageRadius": 1.57,
+      "totalPopulation": 40198,
+      "totalSurface": 770
+    },
+    "06340": {
+      "communes": ["Cantaron", "Drap", "La Trinité"],
+      "communeCount": 3,
+      "center": [7.316, 43.7484],
+      "coverageRadius": 1.5,
+      "boundingBox": {
+        "minLat": 43.7431,
+        "maxLat": 43.7616,
+        "minLon": 7.3137,
+        "maxLon": 7.3201
+      },
+      "totalPopulation": 17061,
+      "totalSurface": 2758
+    },
+    "06320": {
+      "communes": ["Cap-d'Ail", "La Turbie"],
+      "communeCount": 2,
+      "center": [7.4039, 43.7315],
+      "coverageRadius": 1.6,
+      "boundingBox": {
+        "minLat": 43.7223,
+        "maxLat": 43.7453,
+        "minLon": 7.3997,
+        "maxLon": 7.4068
+      },
+      "totalPopulation": 7503,
+      "totalSurface": 950
+    },
+    "06670": {
+      "communes": [
+        "Castagniers",
+        "Colomars",
+        "Duranus",
+        "Levens",
+        "La Roquette-sur-Var",
+        "Saint-Blaise",
+        "Saint-Martin-du-Var"
+      ],
+      "communeCount": 7,
+      "center": [7.2186, 43.8194],
+      "coverageRadius": 8.9,
+      "boundingBox": {
+        "minLat": 43.7636,
+        "maxLat": 43.8942,
+        "minLon": 7.1912,
+        "maxLon": 7.2582
+      },
+      "totalPopulation": 16433,
+      "totalSurface": 7602
+    },
+    "06500": {
+      "communes": ["Castellar", "Castillon", "Gorbio", "Menton", "Sainte-Agnès"],
+      "communeCount": 5,
+      "center": [7.4984, 43.7783],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 43.7757,
+        "maxLat": 43.8337,
+        "minLon": 7.4443,
+        "maxLon": 7.5029
+      },
+      "totalPopulation": 34723,
+      "totalSurface": 5057
+    },
+    "06460": {
+      "communes": ["Caussols", "Escragnolles", "Saint-Vallier-de-Thiey"],
+      "communeCount": 3,
+      "center": [6.8429, 43.7059],
+      "coverageRadius": 6.1,
+      "boundingBox": {
+        "minLat": 43.6987,
+        "maxLat": 43.7409,
+        "minLon": 6.783,
+        "maxLon": 6.9001
+      },
+      "totalPopulation": 4605,
+      "totalSurface": 10606
+    },
+    "06740": {
+      "communes": ["Châteauneuf-Grasse"],
+      "communeCount": 1,
+      "center": [6.9751, 43.6749],
+      "coverageRadius": 1.69,
+      "totalPopulation": 3765,
+      "totalSurface": 902
+    },
+    "06480": {
+      "communes": ["La Colle-sur-Loup"],
+      "communeCount": 1,
+      "center": [7.1035, 43.6868],
+      "coverageRadius": 1.77,
+      "totalPopulation": 8143,
+      "totalSurface": 983
+    },
+    "06140": {
+      "communes": ["Coursegoules", "Tourrettes-sur-Loup", "Vence"],
+      "communeCount": 3,
+      "center": [7.1027, 43.7232],
+      "coverageRadius": 9.4,
+      "boundingBox": {
+        "minLat": 43.7158,
+        "maxLat": 43.7947,
+        "minLon": 7.0402,
+        "maxLon": 7.1135
+      },
+      "totalPopulation": 24527,
+      "totalSurface": 11000
+    },
+    "06360": {
+      "communes": ["Èze"],
+      "communeCount": 1,
+      "center": [7.3615, 43.7292],
+      "coverageRadius": 1.74,
+      "totalPopulation": 2155,
+      "totalSurface": 950
+    },
+    "06950": {
+      "communes": ["Falicon"],
+      "communeCount": 1,
+      "center": [7.2788, 43.7489],
+      "coverageRadius": 1.25,
+      "totalPopulation": 2170,
+      "totalSurface": 494
+    },
+    "06610": {
+      "communes": ["La Gaude"],
+      "communeCount": 1,
+      "center": [7.1527, 43.7222],
+      "coverageRadius": 2.07,
+      "totalPopulation": 7194,
+      "totalSurface": 1346
+    },
+    "06130": {
+      "communes": ["Grasse"],
+      "communeCount": 1,
+      "center": [6.9247, 43.6581],
+      "coverageRadius": 3.75,
+      "totalPopulation": 48669,
+      "totalSurface": 4423
+    },
+    "06520": {
+      "communes": ["Grasse"],
+      "communeCount": 1,
+      "center": [6.9247, 43.6581],
+      "coverageRadius": 3.75,
+      "totalPopulation": 48669,
+      "totalSurface": 4423
+    },
+    "06710": {
+      "communes": ["Malaussène", "Massoins", "Thiéry", "Touët-sur-Var", "Villars-sur-Var"],
+      "communeCount": 5,
+      "center": [7.0686, 43.9416],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": 43.9274,
+        "maxLat": 43.9783,
+        "minLon": 7.0067,
+        "maxLon": 7.1301
+      },
+      "totalPopulation": 2080,
+      "totalSurface": 9322
+    },
+    "06210": {
+      "communes": ["Mandelieu-la-Napoule"],
+      "communeCount": 1,
+      "center": [6.932, 43.5428],
+      "coverageRadius": 3.2,
+      "totalPopulation": 21201,
+      "totalSurface": 3208
+    },
+    "06370": {
+      "communes": ["Mouans-Sartoux"],
+      "communeCount": 1,
+      "center": [6.9703, 43.6205],
+      "coverageRadius": 2,
+      "totalPopulation": 10847,
+      "totalSurface": 1263
+    },
+    "06250": {
+      "communes": ["Mougins"],
+      "communeCount": 1,
+      "center": [6.9946, 43.5994],
+      "coverageRadius": 2.88,
+      "totalPopulation": 19481,
+      "totalSurface": 2609
+    },
+    "06380": {
+      "communes": ["Moulinet", "Sospel"],
+      "communeCount": 2,
+      "center": [7.4474, 43.8812],
+      "coverageRadius": 7.2,
+      "boundingBox": {
+        "minLat": 43.8773,
+        "maxLat": 43.9403,
+        "minLon": 7.4126,
+        "maxLon": 7.4497
+      },
+      "totalPopulation": 4060,
+      "totalSurface": 10334
+    },
+    "06000": {
+      "communes": ["Nice"],
+      "communeCount": 1,
+      "center": [7.2715, 43.696],
+      "coverageRadius": 4.85,
+      "totalPopulation": 353701,
+      "totalSurface": 7380
+    },
+    "06100": {
+      "communes": ["Nice"],
+      "communeCount": 1,
+      "center": [7.2715, 43.696],
+      "coverageRadius": 4.85,
+      "totalPopulation": 353701,
+      "totalSurface": 7380
+    },
+    "06200": {
+      "communes": ["Nice"],
+      "communeCount": 1,
+      "center": [7.2715, 43.696],
+      "coverageRadius": 4.85,
+      "totalPopulation": 353701,
+      "totalSurface": 7380
+    },
+    "06300": {
+      "communes": ["Nice"],
+      "communeCount": 1,
+      "center": [7.2715, 43.696],
+      "coverageRadius": 4.85,
+      "totalPopulation": 353701,
+      "totalSurface": 7380
+    },
+    "06650": {
+      "communes": ["Opio", "Le Rouret"],
+      "communeCount": 2,
+      "center": [6.9971, 43.6724],
+      "coverageRadius": 1.3,
+      "boundingBox": {
+        "minLat": 43.6687,
+        "maxLat": 43.6745,
+        "minLon": 6.982,
+        "maxLon": 7.0057
+      },
+      "totalPopulation": 6606,
+      "totalSurface": 1653
+    },
+    "06580": {
+      "communes": ["Pégomas"],
+      "communeCount": 1,
+      "center": [6.9276, 43.5938],
+      "coverageRadius": 1.88,
+      "totalPopulation": 8143,
+      "totalSurface": 1111
+    },
+    "06190": {
+      "communes": ["Roquebrune-Cap-Martin"],
+      "communeCount": 1,
+      "center": [7.4737, 43.7578],
+      "coverageRadius": 1.74,
+      "totalPopulation": 12419,
+      "totalSurface": 948
+    },
+    "06330": {
+      "communes": ["Roquefort-les-Pins"],
+      "communeCount": 1,
+      "center": [7.0508, 43.6659],
+      "coverageRadius": 2.63,
+      "totalPopulation": 7284,
+      "totalSurface": 2167
+    },
+    "06550": {
+      "communes": ["La Roquette-sur-Siagne"],
+      "communeCount": 1,
+      "center": [6.956, 43.5805],
+      "coverageRadius": 1.41,
+      "totalPopulation": 5552,
+      "totalSurface": 623
+    },
+    "06730": {
+      "communes": ["Saint-André-de-la-Roche"],
+      "communeCount": 1,
+      "center": [7.288, 43.7386],
+      "coverageRadius": 0.95,
+      "totalPopulation": 5877,
+      "totalSurface": 285
+    },
+    "06660": {
+      "communes": ["Saint-Dalmas-le-Selvage", "Saint-Étienne-de-Tinée"],
+      "communeCount": 2,
+      "center": [6.9212, 44.2577],
+      "coverageRadius": 5.4,
+      "boundingBox": {
+        "minLat": 44.2556,
+        "maxLat": 44.2844,
+        "minLon": 6.8658,
+        "maxLon": 6.9256
+      },
+      "totalPopulation": 1371,
+      "totalSurface": 25371
+    },
+    "06230": {
+      "communes": ["Saint-Jean-Cap-Ferrat", "Villefranche-sur-Mer"],
+      "communeCount": 2,
+      "center": [7.316, 43.6992],
+      "coverageRadius": 1.6,
+      "boundingBox": {
+        "minLat": 43.6917,
+        "maxLat": 43.7014,
+        "minLon": 7.3111,
+        "maxLon": 7.3326
+      },
+      "totalPopulation": 6488,
+      "totalSurface": 754
+    },
+    "06640": {
+      "communes": ["Saint-Jeannet"],
+      "communeCount": 1,
+      "center": [7.143, 43.7475],
+      "coverageRadius": 2.16,
+      "totalPopulation": 4378,
+      "totalSurface": 1459
+    },
+    "06700": {
+      "communes": ["Saint-Laurent-du-Var"],
+      "communeCount": 1,
+      "center": [7.1919, 43.6752],
+      "coverageRadius": 1.74,
+      "totalPopulation": 31645,
+      "totalSurface": 949
+    },
+    "06570": {
+      "communes": ["Saint-Paul-de-Vence"],
+      "communeCount": 1,
+      "center": [7.1222, 43.6969],
+      "coverageRadius": 1.52,
+      "totalPopulation": 3190,
+      "totalSurface": 727
+    },
+    "06590": {
+      "communes": ["Théoule-sur-Mer"],
+      "communeCount": 1,
+      "center": [6.9401, 43.5059],
+      "coverageRadius": 1.85,
+      "totalPopulation": 1418,
+      "totalSurface": 1070
+    },
+    "06690": {
+      "communes": ["Tourrette-Levens"],
+      "communeCount": 1,
+      "center": [7.2762, 43.7871],
+      "coverageRadius": 2.29,
+      "totalPopulation": 4633,
+      "totalSurface": 1654
+    },
+    "06560": {
+      "communes": ["Valbonne"],
+      "communeCount": 1,
+      "center": [7.0076, 43.6401],
+      "coverageRadius": 2.53,
+      "totalPopulation": 12389,
+      "totalSurface": 2010
+    },
+    "06220": {
+      "communes": ["Vallauris"],
+      "communeCount": 1,
+      "center": [7.0555, 43.5798],
+      "coverageRadius": 2.05,
+      "totalPopulation": 28579,
+      "totalSurface": 1318
+    },
+    "06270": {
+      "communes": ["Villeneuve-Loubet"],
+      "communeCount": 1,
+      "center": [7.1219, 43.6581],
+      "coverageRadius": 2.52,
+      "totalPopulation": 16729,
+      "totalSurface": 1990
+    },
+    "06430": {
+      "communes": ["La Brigue", "Tende"],
+      "communeCount": 2,
+      "center": [7.5992, 44.0818],
+      "coverageRadius": 2.5,
+      "boundingBox": {
+        "minLat": 44.063,
+        "maxLat": 44.0892,
+        "minLon": 7.5934,
+        "maxLon": 7.614
+      },
+      "totalPopulation": 2639,
+      "totalSurface": 27074
+    }
+  }
+}

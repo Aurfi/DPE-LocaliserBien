@@ -1,0 +1,24 @@
+{
+  "name": "DPE Property Locator",
+  "short_name": "DPE Locator",
+  "description": "Free service for locating real estate properties in France using public DPE data",
+  "theme_color": "#3B82F6",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "lang": "fr-FR"
+}

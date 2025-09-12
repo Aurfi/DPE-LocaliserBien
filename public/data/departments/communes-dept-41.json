@@ -1,0 +1,4963 @@
+{
+  "departmentCode": "41",
+  "departmentName": "Loir-et-Cher",
+  "stats": {
+    "communeCount": 267,
+    "totalPopulation": 328953,
+    "totalSurface": 641802
+  },
+  "communes": [
+    {
+      "nom": "Ambloy",
+      "code": "41001",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9704, 47.7094]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.965, 47.7127]
+      },
+      "population": 187,
+      "surface": 1321.26,
+      "radius": 2.05
+    },
+    {
+      "nom": "Angé",
+      "code": "41002",
+      "codesPostaux": ["41400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.242, 47.3142]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2435, 47.3321]
+      },
+      "population": 801,
+      "surface": 1736.02,
+      "radius": 2.35
+    },
+    {
+      "nom": "Areines",
+      "code": "41003",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1021, 47.7976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0938, 47.8024]
+      },
+      "population": 580,
+      "surface": 485.84,
+      "radius": 1.24
+    },
+    {
+      "nom": "Artins",
+      "code": "41004",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7534, 47.7496]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7401, 47.7448]
+      },
+      "population": 269,
+      "surface": 1196.21,
+      "radius": 1.95
+    },
+    {
+      "nom": "Autainville",
+      "code": "41006",
+      "codesPostaux": ["41240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4221, 47.8841]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.416, 47.8815]
+      },
+      "population": 429,
+      "surface": 2522.47,
+      "radius": 2.83
+    },
+    {
+      "nom": "Authon",
+      "code": "41007",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8907, 47.6378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8945, 47.645]
+      },
+      "population": 749,
+      "surface": 3230.77,
+      "radius": 3.21
+    },
+    {
+      "nom": "Avaray",
+      "code": "41008",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5491, 47.7221]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5654, 47.7224]
+      },
+      "population": 680,
+      "surface": 1394.53,
+      "radius": 2.11
+    },
+    {
+      "nom": "Averdon",
+      "code": "41009",
+      "codesPostaux": ["41330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3038, 47.6875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2947, 47.6848]
+      },
+      "population": 677,
+      "surface": 2930.56,
+      "radius": 3.05
+    },
+    {
+      "nom": "Azé",
+      "code": "41010",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9986, 47.8587]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9964, 47.8506]
+      },
+      "population": 986,
+      "surface": 3189.96,
+      "radius": 3.19
+    },
+    {
+      "nom": "Baillou",
+      "code": "41012",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8534, 47.9819]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8414, 47.9674]
+      },
+      "population": 205,
+      "surface": 1956.88,
+      "radius": 2.5
+    },
+    {
+      "nom": "Bauzy",
+      "code": "41013",
+      "codesPostaux": ["41250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6099, 47.5244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6087, 47.5358]
+      },
+      "population": 271,
+      "surface": 2579.97,
+      "radius": 2.87
+    },
+    {
+      "nom": "Beauce la Romaine",
+      "code": "41173",
+      "codesPostaux": ["41160", "41240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4605, 47.936]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5242, 47.9122]
+      },
+      "population": 3350,
+      "surface": 13675.51,
+      "radius": 6.6
+    },
+    {
+      "nom": "Beauchêne",
+      "code": "41014",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9709, 47.9405]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9697, 47.9399]
+      },
+      "population": 165,
+      "surface": 1000.62,
+      "radius": 1.78
+    },
+    {
+      "nom": "Billy",
+      "code": "41016",
+      "codesPostaux": ["41130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5523, 47.3142]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5387, 47.3111]
+      },
+      "population": 1102,
+      "surface": 2656.37,
+      "radius": 2.91
+    },
+    {
+      "nom": "Binas",
+      "code": "41017",
+      "codesPostaux": ["41240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4592, 47.9021]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4615, 47.9041]
+      },
+      "population": 658,
+      "surface": 2629.07,
+      "radius": 2.89
+    },
+    {
+      "nom": "Blois",
+      "code": "41018",
+      "codesPostaux": ["41000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3049, 47.5813]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3371, 47.5886]
+      },
+      "population": 47092,
+      "surface": 3761.64,
+      "radius": 3.46
+    },
+    {
+      "nom": "Boisseau",
+      "code": "41019",
+      "codesPostaux": ["41290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3065, 47.7744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2983, 47.7728]
+      },
+      "population": 104,
+      "surface": 815.11,
+      "radius": 1.61
+    },
+    {
+      "nom": "Bonneveau",
+      "code": "41020",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7593, 47.8135]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7489, 47.8125]
+      },
+      "population": 455,
+      "surface": 1099.59,
+      "radius": 1.87
+    },
+    {
+      "nom": "Bouffry",
+      "code": "41022",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0889, 48.0084]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0964, 48.0087]
+      },
+      "population": 136,
+      "surface": 1846.13,
+      "radius": 2.42
+    },
+    {
+      "nom": "Boursay",
+      "code": "41024",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9812, 48.0185]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9692, 48.0193]
+      },
+      "population": 179,
+      "surface": 2261.2,
+      "radius": 2.68
+    },
+    {
+      "nom": "Bracieux",
+      "code": "41025",
+      "codesPostaux": ["41250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5437, 47.5504]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.543, 47.5487]
+      },
+      "population": 1341,
+      "surface": 296.38,
+      "radius": 0.97
+    },
+    {
+      "nom": "Brévainville",
+      "code": "41026",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2612, 47.9477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2825, 47.953]
+      },
+      "population": 161,
+      "surface": 1620.14,
+      "radius": 2.27
+    },
+    {
+      "nom": "Briou",
+      "code": "41027",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4726, 47.8165]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4789, 47.8133]
+      },
+      "population": 143,
+      "surface": 1020.05,
+      "radius": 1.8
+    },
+    {
+      "nom": "Busloup",
+      "code": "41028",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.139, 47.9033]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1322, 47.8927]
+      },
+      "population": 496,
+      "surface": 1902.27,
+      "radius": 2.46
+    },
+    {
+      "nom": "Candé-sur-Beuvron",
+      "code": "41029",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2677, 47.5062]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2619, 47.4958]
+      },
+      "population": 1487,
+      "surface": 1451.93,
+      "radius": 2.15
+    },
+    {
+      "nom": "Cellé",
+      "code": "41030",
+      "codesPostaux": ["41360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8005, 47.8331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7828, 47.8355]
+      },
+      "population": 225,
+      "surface": 1267.6,
+      "radius": 2.01
+    },
+    {
+      "nom": "Cellettes",
+      "code": "41031",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3814, 47.5263]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3847, 47.5277]
+      },
+      "population": 2700,
+      "surface": 2097.6,
+      "radius": 2.58
+    },
+    {
+      "nom": "Chailles",
+      "code": "41032",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3128, 47.5392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.307, 47.5328]
+      },
+      "population": 2708,
+      "surface": 1853.36,
+      "radius": 2.43
+    },
+    {
+      "nom": "Chambord",
+      "code": "41034",
+      "codesPostaux": ["41250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5374, 47.6208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5159, 47.615]
+      },
+      "population": 99,
+      "surface": 5463.83,
+      "radius": 4.17
+    },
+    {
+      "nom": "Champigny-en-Beauce",
+      "code": "41035",
+      "codesPostaux": ["41330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2581, 47.7193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2552, 47.7114]
+      },
+      "population": 607,
+      "surface": 2248.09,
+      "radius": 2.68
+    },
+    {
+      "nom": "Chaon",
+      "code": "41036",
+      "codesPostaux": ["41600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1668, 47.6099]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1754, 47.609]
+      },
+      "population": 440,
+      "surface": 3189.58,
+      "radius": 3.19
+    },
+    {
+      "nom": "Châteauvieux",
+      "code": "41042",
+      "codesPostaux": ["41110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3623, 47.219]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3825, 47.2321]
+      },
+      "population": 524,
+      "surface": 3361.83,
+      "radius": 3.27
+    },
+    {
+      "nom": "Châtillon-sur-Cher",
+      "code": "41043",
+      "codesPostaux": ["41130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4812, 47.2895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4949, 47.277]
+      },
+      "population": 1661,
+      "surface": 2978.58,
+      "radius": 3.08
+    },
+    {
+      "nom": "Châtres-sur-Cher",
+      "code": "41044",
+      "codesPostaux": ["41320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.926, 47.2957]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9045, 47.2651]
+      },
+      "population": 1134,
+      "surface": 3532.03,
+      "radius": 3.35
+    },
+    {
+      "nom": "Chaumont-sur-Loire",
+      "code": "41045",
+      "codesPostaux": ["41150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1966, 47.4647]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1829, 47.4801]
+      },
+      "population": 1091,
+      "surface": 2677.08,
+      "radius": 2.92
+    },
+    {
+      "nom": "Chaumont-sur-Tharonne",
+      "code": "41046",
+      "codesPostaux": ["41600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9216, 47.6212]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9037, 47.6095]
+      },
+      "population": 1045,
+      "surface": 8042.96,
+      "radius": 5.06
+    },
+    {
+      "nom": "Chauvigny-du-Perche",
+      "code": "41048",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.086, 47.9589]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0797, 47.9571]
+      },
+      "population": 230,
+      "surface": 2407.39,
+      "radius": 2.77
+    },
+    {
+      "nom": "Chémery",
+      "code": "41049",
+      "codesPostaux": ["41700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4848, 47.3597]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4789, 47.3458]
+      },
+      "population": 944,
+      "surface": 3567.35,
+      "radius": 3.37
+    },
+    {
+      "nom": "Cheverny",
+      "code": "41050",
+      "codesPostaux": ["41700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4579, 47.4802]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4602, 47.4996]
+      },
+      "population": 908,
+      "surface": 3307.33,
+      "radius": 3.24
+    },
+    {
+      "nom": "Chissay-en-Touraine",
+      "code": "41051",
+      "codesPostaux": ["41400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1369, 47.3573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.133, 47.3371]
+      },
+      "population": 1076,
+      "surface": 1830.94,
+      "radius": 2.41
+    },
+    {
+      "nom": "Chitenay",
+      "code": "41052",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3639, 47.4917]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3714, 47.4979]
+      },
+      "population": 1136,
+      "surface": 1585.68,
+      "radius": 2.25
+    },
+    {
+      "nom": "Choue",
+      "code": "41053",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9344, 47.9918]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9286, 47.9984]
+      },
+      "population": 515,
+      "surface": 3658.86,
+      "radius": 3.41
+    },
+    {
+      "nom": "Choussy",
+      "code": "41054",
+      "codesPostaux": ["41700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3491, 47.364]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3452, 47.3721]
+      },
+      "population": 352,
+      "surface": 1555.54,
+      "radius": 2.23
+    },
+    {
+      "nom": "Conan",
+      "code": "41057",
+      "codesPostaux": ["41290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2954, 47.7359]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2863, 47.7487]
+      },
+      "population": 161,
+      "surface": 1537.23,
+      "radius": 2.21
+    },
+    {
+      "nom": "Concriers",
+      "code": "41058",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4824, 47.7784]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4752, 47.7714]
+      },
+      "population": 188,
+      "surface": 484.26,
+      "radius": 1.24
+    },
+    {
+      "nom": "Cormenon",
+      "code": "41060",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.909, 47.9625]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8929, 47.9699]
+      },
+      "population": 690,
+      "surface": 562.76,
+      "radius": 1.34
+    },
+    {
+      "nom": "Cormeray",
+      "code": "41061",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4062, 47.4871]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4065, 47.492]
+      },
+      "population": 1568,
+      "surface": 1033.03,
+      "radius": 1.81
+    },
+    {
+      "nom": "Couddes",
+      "code": "41062",
+      "codesPostaux": ["41700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4045, 47.3638]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4039, 47.3631]
+      },
+      "population": 534,
+      "surface": 1871.01,
+      "radius": 2.44
+    },
+    {
+      "nom": "Couëtron-au-Perche",
+      "code": "41248",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.894, 48.0573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8649, 48.0363]
+      },
+      "population": 1045,
+      "surface": 8612.25,
+      "radius": 5.24
+    },
+    {
+      "nom": "Couffy",
+      "code": "41063",
+      "codesPostaux": ["41110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4373, 47.248]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4396, 47.2476]
+      },
+      "population": 503,
+      "surface": 1496.59,
+      "radius": 2.18
+    },
+    {
+      "nom": "Coulommiers-la-Tour",
+      "code": "41065",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1356, 47.78]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.142, 47.7826]
+      },
+      "population": 575,
+      "surface": 1215.11,
+      "radius": 1.97
+    },
+    {
+      "nom": "Cour-Cheverny",
+      "code": "41067",
+      "codesPostaux": ["41700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4725, 47.5057]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4576, 47.5087]
+      },
+      "population": 2830,
+      "surface": 2965.18,
+      "radius": 3.07
+    },
+    {
+      "nom": "Cour-sur-Loire",
+      "code": "41069",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4161, 47.6584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4327, 47.6553]
+      },
+      "population": 252,
+      "surface": 595.49,
+      "radius": 1.38
+    },
+    {
+      "nom": "Courbouzon",
+      "code": "41066",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.537, 47.6941]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5441, 47.7134]
+      },
+      "population": 424,
+      "surface": 772.95,
+      "radius": 1.57
+    },
+    {
+      "nom": "Courmemin",
+      "code": "41068",
+      "codesPostaux": ["41230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6284, 47.4715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6286, 47.4714]
+      },
+      "population": 498,
+      "surface": 2608.45,
+      "radius": 2.88
+    },
+    {
+      "nom": "Crouy-sur-Cosson",
+      "code": "41071",
+      "codesPostaux": ["41220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6204, 47.6598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.608, 47.6501]
+      },
+      "population": 521,
+      "surface": 2825.58,
+      "radius": 3
+    },
+    {
+      "nom": "Crucheray",
+      "code": "41072",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0918, 47.7331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0876, 47.7287]
+      },
+      "population": 422,
+      "surface": 2562.77,
+      "radius": 2.86
+    },
+    {
+      "nom": "Danzé",
+      "code": "41073",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0091, 47.904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0277, 47.8923]
+      },
+      "population": 671,
+      "surface": 4272.98,
+      "radius": 3.69
+    },
+    {
+      "nom": "Dhuizon",
+      "code": "41074",
+      "codesPostaux": ["41220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6825, 47.5849]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6578, 47.5896]
+      },
+      "population": 1200,
+      "surface": 4576.5,
+      "radius": 3.82
+    },
+    {
+      "nom": "Droué",
+      "code": "41075",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0685, 48.029]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0763, 48.0406]
+      },
+      "population": 1027,
+      "surface": 2443.32,
+      "radius": 2.79
+    },
+    {
+      "nom": "Épiais",
+      "code": "41077",
+      "codesPostaux": ["41290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2489, 47.812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2497, 47.807]
+      },
+      "population": 119,
+      "surface": 868.92,
+      "radius": 1.66
+    },
+    {
+      "nom": "Épuisay",
+      "code": "41078",
+      "codesPostaux": ["41360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9297, 47.8971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9297, 47.9013]
+      },
+      "population": 790,
+      "surface": 2371.66,
+      "radius": 2.75
+    },
+    {
+      "nom": "Faverolles-sur-Cher",
+      "code": "41080",
+      "codesPostaux": ["41400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1873, 47.3132]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1856, 47.3207]
+      },
+      "population": 1426,
+      "surface": 1551.19,
+      "radius": 2.22
+    },
+    {
+      "nom": "Faye",
+      "code": "41081",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1887, 47.8061]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1767, 47.8024]
+      },
+      "population": 220,
+      "surface": 881.85,
+      "radius": 1.68
+    },
+    {
+      "nom": "Fontaine-les-Coteaux",
+      "code": "41087",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8316, 47.7976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8279, 47.7989]
+      },
+      "population": 326,
+      "surface": 2208.85,
+      "radius": 2.65
+    },
+    {
+      "nom": "Fontaine-Raoul",
+      "code": "41088",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1324, 47.9749]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1396, 47.9898]
+      },
+      "population": 235,
+      "surface": 2198.87,
+      "radius": 2.65
+    },
+    {
+      "nom": "Fontaines-en-Sologne",
+      "code": "41086",
+      "codesPostaux": ["41250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5466, 47.4894]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5501, 47.5106]
+      },
+      "population": 659,
+      "surface": 5059.35,
+      "radius": 4.01
+    },
+    {
+      "nom": "Fortan",
+      "code": "41090",
+      "codesPostaux": ["41360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9138, 47.8431]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9158, 47.8442]
+      },
+      "population": 253,
+      "surface": 595.18,
+      "radius": 1.38
+    },
+    {
+      "nom": "Fossé",
+      "code": "41091",
+      "codesPostaux": ["41330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.275, 47.6333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2833, 47.6316]
+      },
+      "population": 1270,
+      "surface": 1019.85,
+      "radius": 1.8
+    },
+    {
+      "nom": "Françay",
+      "code": "41093",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1129, 47.6168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1249, 47.6185]
+      },
+      "population": 271,
+      "surface": 2048.96,
+      "radius": 2.55
+    },
+    {
+      "nom": "Fresnes",
+      "code": "41094",
+      "codesPostaux": ["41700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4143, 47.4402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4112, 47.4338]
+      },
+      "population": 1199,
+      "surface": 1635.22,
+      "radius": 2.28
+    },
+    {
+      "nom": "Fréteval",
+      "code": "41095",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.201, 47.8869]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.208, 47.8877]
+      },
+      "population": 1065,
+      "surface": 2059.36,
+      "radius": 2.56
+    },
+    {
+      "nom": "Gièvres",
+      "code": "41097",
+      "codesPostaux": ["41130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.67, 47.2898]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6666, 47.2756]
+      },
+      "population": 2290,
+      "surface": 3824.52,
+      "radius": 3.49
+    },
+    {
+      "nom": "Gombergean",
+      "code": "41098",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0678, 47.6517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0851, 47.6507]
+      },
+      "population": 163,
+      "surface": 1215.34,
+      "radius": 1.97
+    },
+    {
+      "nom": "Gy-en-Sologne",
+      "code": "41099",
+      "codesPostaux": ["41230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.594, 47.3451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5833, 47.3442]
+      },
+      "population": 496,
+      "surface": 3596.84,
+      "radius": 3.38
+    },
+    {
+      "nom": "Herbault",
+      "code": "41101",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1576, 47.6126]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1395, 47.6042]
+      },
+      "population": 1139,
+      "surface": 1321.61,
+      "radius": 2.05
+    },
+    {
+      "nom": "Houssay",
+      "code": "41102",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9484, 47.7424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9376, 47.7515]
+      },
+      "population": 371,
+      "surface": 1687.5,
+      "radius": 2.32
+    },
+    {
+      "nom": "Huisseau-en-Beauce",
+      "code": "41103",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0108, 47.7246]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0089, 47.7232]
+      },
+      "population": 410,
+      "surface": 901.31,
+      "radius": 1.69
+    },
+    {
+      "nom": "Huisseau-sur-Cosson",
+      "code": "41104",
+      "codesPostaux": ["41350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.458, 47.6001]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4535, 47.593]
+      },
+      "population": 2293,
+      "surface": 2275.11,
+      "radius": 2.69
+    },
+    {
+      "nom": "Josnes",
+      "code": "41105",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5314, 47.7945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.525, 47.797]
+      },
+      "population": 862,
+      "surface": 2069.33,
+      "radius": 2.57
+    },
+    {
+      "nom": "La Chapelle-Enchérie",
+      "code": "41037",
+      "codesPostaux": ["41290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2103, 47.8261]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.203, 47.8252]
+      },
+      "population": 211,
+      "surface": 1081.15,
+      "radius": 1.86
+    },
+    {
+      "nom": "La Chapelle-Montmartin",
+      "code": "41038",
+      "codesPostaux": ["41320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7558, 47.2572]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7397, 47.2715]
+      },
+      "population": 409,
+      "surface": 1095.85,
+      "radius": 1.87
+    },
+    {
+      "nom": "La Chapelle-Saint-Martin-en-Plaine",
+      "code": "41039",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4166, 47.7361]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.415, 47.7175]
+      },
+      "population": 693,
+      "surface": 2283.92,
+      "radius": 2.7
+    },
+    {
+      "nom": "La Chapelle-Vendômoise",
+      "code": "41040",
+      "codesPostaux": ["41330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2353, 47.6768]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2384, 47.6709]
+      },
+      "population": 797,
+      "surface": 1321.2,
+      "radius": 2.05
+    },
+    {
+      "nom": "La Chapelle-Vicomtesse",
+      "code": "41041",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0443, 47.9833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.035, 47.9907]
+      },
+      "population": 160,
+      "surface": 1541.82,
+      "radius": 2.22
+    },
+    {
+      "nom": "La Chaussée-Saint-Victor",
+      "code": "41047",
+      "codesPostaux": ["41260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3599, 47.6097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3657, 47.614]
+      },
+      "population": 4488,
+      "surface": 671.79,
+      "radius": 1.46
+    },
+    {
+      "nom": "La Ferté-Beauharnais",
+      "code": "41083",
+      "codesPostaux": ["41210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8548, 47.5393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8458, 47.5405]
+      },
+      "population": 582,
+      "surface": 251.26,
+      "radius": 0.89
+    },
+    {
+      "nom": "La Ferté-Imbault",
+      "code": "41084",
+      "codesPostaux": ["41300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9601, 47.4012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9545, 47.3858]
+      },
+      "population": 951,
+      "surface": 5138.63,
+      "radius": 4.04
+    },
+    {
+      "nom": "La Ferté-Saint-Cyr",
+      "code": "41085",
+      "codesPostaux": ["41220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6855, 47.6598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.674, 47.6554]
+      },
+      "population": 1078,
+      "surface": 5938.7,
+      "radius": 4.35
+    },
+    {
+      "nom": "La Fontenelle",
+      "code": "41089",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0167, 48.0536]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0255, 48.0616]
+      },
+      "population": 207,
+      "surface": 2004.03,
+      "radius": 2.53
+    },
+    {
+      "nom": "La Madeleine-Villefrouin",
+      "code": "41121",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3907, 47.7788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4134, 47.7854]
+      },
+      "population": 32,
+      "surface": 973.66,
+      "radius": 1.76
+    },
+    {
+      "nom": "La Marolle-en-Sologne",
+      "code": "41127",
+      "codesPostaux": ["41210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7933, 47.5808]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7802, 47.5834]
+      },
+      "population": 365,
+      "surface": 2518.48,
+      "radius": 2.83
+    },
+    {
+      "nom": "La Ville-aux-Clercs",
+      "code": "41275",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0977, 47.9185]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0868, 47.9189]
+      },
+      "population": 1223,
+      "surface": 2675.63,
+      "radius": 2.92
+    },
+    {
+      "nom": "Lamotte-Beuvron",
+      "code": "41106",
+      "codesPostaux": ["41600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0265, 47.6043]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0254, 47.6016]
+      },
+      "population": 4519,
+      "surface": 2335.33,
+      "radius": 2.73
+    },
+    {
+      "nom": "Lancé",
+      "code": "41107",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0678, 47.6863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.067, 47.6935]
+      },
+      "population": 474,
+      "surface": 1819.51,
+      "radius": 2.41
+    },
+    {
+      "nom": "Lancôme",
+      "code": "41108",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1327, 47.6524]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1244, 47.6487]
+      },
+      "population": 121,
+      "surface": 996.09,
+      "radius": 1.78
+    },
+    {
+      "nom": "Landes-le-Gaulois",
+      "code": "41109",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1722, 47.6577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1827, 47.6516]
+      },
+      "population": 727,
+      "surface": 2425.27,
+      "radius": 2.78
+    },
+    {
+      "nom": "Langon-sur-Cher",
+      "code": "41110",
+      "codesPostaux": ["41320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.845, 47.3099]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8271, 47.2838]
+      },
+      "population": 826,
+      "surface": 3873.51,
+      "radius": 3.51
+    },
+    {
+      "nom": "Lassay-sur-Croisne",
+      "code": "41112",
+      "codesPostaux": ["41230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6304, 47.3678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6224, 47.374]
+      },
+      "population": 243,
+      "surface": 1864.49,
+      "radius": 2.44
+    },
+    {
+      "nom": "Lavardin",
+      "code": "41113",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8847, 47.7372]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8864, 47.7416]
+      },
+      "population": 178,
+      "surface": 689.9,
+      "radius": 1.48
+    },
+    {
+      "nom": "Le Controis-en-Sologne",
+      "code": "41059",
+      "codesPostaux": ["41120", "41400", "41700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3851, 47.4327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4291, 47.4188]
+      },
+      "population": 6787,
+      "surface": 10069.87,
+      "radius": 5.66
+    },
+    {
+      "nom": "Le Gault-du-Perche",
+      "code": "41096",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9853, 48.0996]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.98, 48.0953]
+      },
+      "population": 319,
+      "surface": 2827.55,
+      "radius": 3
+    },
+    {
+      "nom": "Le Plessis-Dorin",
+      "code": "41177",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8505, 48.0837]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8645, 48.0895]
+      },
+      "population": 149,
+      "surface": 1376.5,
+      "radius": 2.09
+    },
+    {
+      "nom": "Le Plessis-l'Échelle",
+      "code": "41178",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4298, 47.81]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4286, 47.8131]
+      },
+      "population": 58,
+      "surface": 1167.66,
+      "radius": 1.93
+    },
+    {
+      "nom": "Le Poislay",
+      "code": "41179",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0685, 48.0687]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0669, 48.0666]
+      },
+      "population": 198,
+      "surface": 1600.79,
+      "radius": 2.26
+    },
+    {
+      "nom": "Le Temple",
+      "code": "41254",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9301, 47.9296]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.935, 47.9322]
+      },
+      "population": 173,
+      "surface": 1337.07,
+      "radius": 2.06
+    },
+    {
+      "nom": "Les Essarts",
+      "code": "41079",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7148, 47.7322]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7187, 47.7338]
+      },
+      "population": 98,
+      "surface": 451.47,
+      "radius": 1.2
+    },
+    {
+      "nom": "Les Hayes",
+      "code": "41100",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.776, 47.7007]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7764, 47.715]
+      },
+      "population": 172,
+      "surface": 1584.38,
+      "radius": 2.25
+    },
+    {
+      "nom": "Les Montils",
+      "code": "41147",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3034, 47.506]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2982, 47.4967]
+      },
+      "population": 1925,
+      "surface": 935.86,
+      "radius": 1.73
+    },
+    {
+      "nom": "Les Roches-l'Évêque",
+      "code": "41192",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8857, 47.7837]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8917, 47.7772]
+      },
+      "population": 289,
+      "surface": 240.61,
+      "radius": 0.88
+    },
+    {
+      "nom": "Lestiou",
+      "code": "41114",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5665, 47.7498]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5897, 47.7349]
+      },
+      "population": 288,
+      "surface": 836.37,
+      "radius": 1.63
+    },
+    {
+      "nom": "Lignières",
+      "code": "41115",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1967, 47.8655]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.184, 47.864]
+      },
+      "population": 409,
+      "surface": 1586.78,
+      "radius": 2.25
+    },
+    {
+      "nom": "Lisle",
+      "code": "41116",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1078, 47.8702]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1132, 47.8506]
+      },
+      "population": 186,
+      "surface": 664.56,
+      "radius": 1.45
+    },
+    {
+      "nom": "Loreux",
+      "code": "41118",
+      "codesPostaux": ["41200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8399, 47.4042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8304, 47.3984]
+      },
+      "population": 224,
+      "surface": 3217.5,
+      "radius": 3.2
+    },
+    {
+      "nom": "Lorges",
+      "code": "41119",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4982, 47.8177]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4972, 47.8245]
+      },
+      "population": 353,
+      "surface": 1354.85,
+      "radius": 2.08
+    },
+    {
+      "nom": "Lunay",
+      "code": "41120",
+      "codesPostaux": ["41360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9029, 47.8097]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.915, 47.8085]
+      },
+      "population": 1260,
+      "surface": 3855.22,
+      "radius": 3.5
+    },
+    {
+      "nom": "Maray",
+      "code": "41122",
+      "codesPostaux": ["41320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8654, 47.2352]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8837, 47.2464]
+      },
+      "population": 226,
+      "surface": 2851.22,
+      "radius": 3.01
+    },
+    {
+      "nom": "Marchenoir",
+      "code": "41123",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4145, 47.8345]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3964, 47.8228]
+      },
+      "population": 679,
+      "surface": 951.54,
+      "radius": 1.74
+    },
+    {
+      "nom": "Marcilly-en-Beauce",
+      "code": "41124",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0051, 47.7541]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0015, 47.7634]
+      },
+      "population": 323,
+      "surface": 637.45,
+      "radius": 1.42
+    },
+    {
+      "nom": "Marcilly-en-Gault",
+      "code": "41125",
+      "codesPostaux": ["41210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8713, 47.4624]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8732, 47.4655]
+      },
+      "population": 742,
+      "surface": 5687.03,
+      "radius": 4.25
+    },
+    {
+      "nom": "Mareuil-sur-Cher",
+      "code": "41126",
+      "codesPostaux": ["41110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3034, 47.2744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3306, 47.292]
+      },
+      "population": 1155,
+      "surface": 3187.26,
+      "radius": 3.19
+    },
+    {
+      "nom": "Marolles",
+      "code": "41128",
+      "codesPostaux": ["41330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3084, 47.6532]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3051, 47.6455]
+      },
+      "population": 721,
+      "surface": 1002.86,
+      "radius": 1.79
+    },
+    {
+      "nom": "Maslives",
+      "code": "41129",
+      "codesPostaux": ["41250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4867, 47.6328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4807, 47.6314]
+      },
+      "population": 661,
+      "surface": 732.95,
+      "radius": 1.53
+    },
+    {
+      "nom": "Maves",
+      "code": "41130",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3572, 47.7429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3644, 47.7435]
+      },
+      "population": 680,
+      "surface": 3333.93,
+      "radius": 3.26
+    },
+    {
+      "nom": "Mazangé",
+      "code": "41131",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9493, 47.8405]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9451, 47.8241]
+      },
+      "population": 816,
+      "surface": 2385.36,
+      "radius": 2.76
+    },
+    {
+      "nom": "Méhers",
+      "code": "41132",
+      "codesPostaux": ["41140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4573, 47.3315]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4564, 47.3277]
+      },
+      "population": 308,
+      "surface": 1840.63,
+      "radius": 2.42
+    },
+    {
+      "nom": "Menars",
+      "code": "41134",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4009, 47.6482]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4102, 47.6416]
+      },
+      "population": 620,
+      "surface": 452.23,
+      "radius": 1.2
+    },
+    {
+      "nom": "Mennetou-sur-Cher",
+      "code": "41135",
+      "codesPostaux": ["41320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8773, 47.2974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8651, 47.2695]
+      },
+      "population": 846,
+      "surface": 1627.63,
+      "radius": 2.28
+    },
+    {
+      "nom": "Mer",
+      "code": "41136",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5051, 47.7123]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5084, 47.6996]
+      },
+      "population": 6294,
+      "surface": 2647.23,
+      "radius": 2.9
+    },
+    {
+      "nom": "Mesland",
+      "code": "41137",
+      "codesPostaux": ["41150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0944, 47.5196]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1206, 47.5101]
+      },
+      "population": 549,
+      "surface": 2664.38,
+      "radius": 2.91
+    },
+    {
+      "nom": "Meslay",
+      "code": "41138",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1097, 47.8136]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0976, 47.8119]
+      },
+      "population": 302,
+      "surface": 715.08,
+      "radius": 1.51
+    },
+    {
+      "nom": "Meusnes",
+      "code": "41139",
+      "codesPostaux": ["41130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.501, 47.2419]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4967, 47.2496]
+      },
+      "population": 1039,
+      "surface": 1349.22,
+      "radius": 2.07
+    },
+    {
+      "nom": "Millançay",
+      "code": "41140",
+      "codesPostaux": ["41200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7873, 47.4502]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7729, 47.4478]
+      },
+      "population": 722,
+      "surface": 6183.62,
+      "radius": 4.44
+    },
+    {
+      "nom": "Moisy",
+      "code": "41141",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3177, 47.9192]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3137, 47.9137]
+      },
+      "population": 341,
+      "surface": 1733.93,
+      "radius": 2.35
+    },
+    {
+      "nom": "Mondoubleau",
+      "code": "41143",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8969, 47.9885]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8946, 47.9807]
+      },
+      "population": 1306,
+      "surface": 483.29,
+      "radius": 1.24
+    },
+    {
+      "nom": "Mont-près-Chambord",
+      "code": "41150",
+      "codesPostaux": ["41250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4469, 47.5565]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4572, 47.564]
+      },
+      "population": 3360,
+      "surface": 2851.23,
+      "radius": 3.01
+    },
+    {
+      "nom": "Monteaux",
+      "code": "41144",
+      "codesPostaux": ["41150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1084, 47.4842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1126, 47.4855]
+      },
+      "population": 723,
+      "surface": 623.34,
+      "radius": 1.41
+    },
+    {
+      "nom": "Monthou-sur-Bièvre",
+      "code": "41145",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2611, 47.4652]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2954, 47.4751]
+      },
+      "population": 793,
+      "surface": 1671.26,
+      "radius": 2.31
+    },
+    {
+      "nom": "Monthou-sur-Cher",
+      "code": "41146",
+      "codesPostaux": ["41400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2902, 47.3526]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2947, 47.3466]
+      },
+      "population": 993,
+      "surface": 2024.03,
+      "radius": 2.54
+    },
+    {
+      "nom": "Montlivault",
+      "code": "41148",
+      "codesPostaux": ["41350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4447, 47.6347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4445, 47.6391]
+      },
+      "population": 1307,
+      "surface": 1110.27,
+      "radius": 1.88
+    },
+    {
+      "nom": "Montoire-sur-le-Loir",
+      "code": "41149",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8431, 47.7648]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8624, 47.7526]
+      },
+      "population": 3678,
+      "surface": 2127.83,
+      "radius": 2.6
+    },
+    {
+      "nom": "Montrichard Val de Cher",
+      "code": "41151",
+      "codesPostaux": ["41400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1998, 47.3594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1838, 47.343]
+      },
+      "population": 3641,
+      "surface": 1914.61,
+      "radius": 2.47
+    },
+    {
+      "nom": "Montrieux-en-Sologne",
+      "code": "41152",
+      "codesPostaux": ["41210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.709, 47.556]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7251, 47.5542]
+      },
+      "population": 636,
+      "surface": 3413.53,
+      "radius": 3.3
+    },
+    {
+      "nom": "Montrouveau",
+      "code": "41153",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7148, 47.7056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7277, 47.7143]
+      },
+      "population": 141,
+      "surface": 1783.59,
+      "radius": 2.38
+    },
+    {
+      "nom": "Morée",
+      "code": "41154",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2544, 47.9143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2342, 47.9032]
+      },
+      "population": 1079,
+      "surface": 2592.08,
+      "radius": 2.87
+    },
+    {
+      "nom": "Muides-sur-Loire",
+      "code": "41155",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5326, 47.6669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5232, 47.6691]
+      },
+      "population": 1250,
+      "surface": 918.3,
+      "radius": 1.71
+    },
+    {
+      "nom": "Mulsans",
+      "code": "41156",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3812, 47.6924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3866, 47.6975]
+      },
+      "population": 514,
+      "surface": 1593.57,
+      "radius": 2.25
+    },
+    {
+      "nom": "Mur-de-Sologne",
+      "code": "41157",
+      "codesPostaux": ["41230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6094, 47.4241]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6077, 47.4124]
+      },
+      "population": 1518,
+      "surface": 5302.19,
+      "radius": 4.11
+    },
+    {
+      "nom": "Naveil",
+      "code": "41158",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0223, 47.788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0298, 47.7939]
+      },
+      "population": 2439,
+      "surface": 1347.9,
+      "radius": 2.07
+    },
+    {
+      "nom": "Neung-sur-Beuvron",
+      "code": "41159",
+      "codesPostaux": ["41210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.817, 47.537]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8063, 47.5348]
+      },
+      "population": 1263,
+      "surface": 6560.53,
+      "radius": 4.57
+    },
+    {
+      "nom": "Neuvy",
+      "code": "41160",
+      "codesPostaux": ["41250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5871, 47.5669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6029, 47.5628]
+      },
+      "population": 316,
+      "surface": 3137.84,
+      "radius": 3.16
+    },
+    {
+      "nom": "Nouan-le-Fuzelier",
+      "code": "41161",
+      "codesPostaux": ["41600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.03, 47.5307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0385, 47.5365]
+      },
+      "population": 2293,
+      "surface": 8776.84,
+      "radius": 5.29
+    },
+    {
+      "nom": "Nourray",
+      "code": "41163",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0526, 47.7193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0592, 47.7169]
+      },
+      "population": 126,
+      "surface": 1222.1,
+      "radius": 1.97
+    },
+    {
+      "nom": "Noyers-sur-Cher",
+      "code": "41164",
+      "codesPostaux": ["41140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4052, 47.2835]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4002, 47.2761]
+      },
+      "population": 2654,
+      "surface": 2280.93,
+      "radius": 2.69
+    },
+    {
+      "nom": "Oisly",
+      "code": "41166",
+      "codesPostaux": ["41700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3753, 47.3955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3795, 47.39]
+      },
+      "population": 390,
+      "surface": 1075.49,
+      "radius": 1.85
+    },
+    {
+      "nom": "Orçay",
+      "code": "41168",
+      "codesPostaux": ["41300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1258, 47.3068]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1104, 47.2903]
+      },
+      "population": 216,
+      "surface": 1877.74,
+      "radius": 2.44
+    },
+    {
+      "nom": "Oucques La Nouvelle",
+      "code": "41171",
+      "codesPostaux": ["41290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2756, 47.8104]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2936, 47.8232]
+      },
+      "population": 1647,
+      "surface": 4962.63,
+      "radius": 3.97
+    },
+    {
+      "nom": "Ouzouer-le-Doyen",
+      "code": "41172",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3368, 47.9428]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3416, 47.9413]
+      },
+      "population": 228,
+      "surface": 1638.16,
+      "radius": 2.28
+    },
+    {
+      "nom": "Périgny",
+      "code": "41174",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1486, 47.7523]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1484, 47.7412]
+      },
+      "population": 168,
+      "surface": 1039.36,
+      "radius": 1.82
+    },
+    {
+      "nom": "Pezou",
+      "code": "41175",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1477, 47.8681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1409, 47.8665]
+      },
+      "population": 1093,
+      "surface": 1407.91,
+      "radius": 2.12
+    },
+    {
+      "nom": "Pierrefitte-sur-Sauldre",
+      "code": "41176",
+      "codesPostaux": ["41300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1309, 47.5321]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1537, 47.5117]
+      },
+      "population": 752,
+      "surface": 7483.31,
+      "radius": 4.88
+    },
+    {
+      "nom": "Pontlevoy",
+      "code": "41180",
+      "codesPostaux": ["41400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2315, 47.4023]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2545, 47.3904]
+      },
+      "population": 1537,
+      "surface": 5135.38,
+      "radius": 4.04
+    },
+    {
+      "nom": "Pouillé",
+      "code": "41181",
+      "codesPostaux": ["41110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2811, 47.3057]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2877, 47.3187]
+      },
+      "population": 786,
+      "surface": 1804.79,
+      "radius": 2.4
+    },
+    {
+      "nom": "Pray",
+      "code": "41182",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.11, 47.6866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1161, 47.677]
+      },
+      "population": 280,
+      "surface": 1061.1,
+      "radius": 1.84
+    },
+    {
+      "nom": "Prunay-Cassereau",
+      "code": "41184",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9116, 47.6839]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9214, 47.6957]
+      },
+      "population": 587,
+      "surface": 3276.56,
+      "radius": 3.23
+    },
+    {
+      "nom": "Pruniers-en-Sologne",
+      "code": "41185",
+      "codesPostaux": ["41200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6672, 47.3432]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6708, 47.3222]
+      },
+      "population": 2281,
+      "surface": 4408.2,
+      "radius": 3.75
+    },
+    {
+      "nom": "Rahart",
+      "code": "41186",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0613, 47.8737]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0675, 47.8709]
+      },
+      "population": 301,
+      "surface": 1439.97,
+      "radius": 2.14
+    },
+    {
+      "nom": "Renay",
+      "code": "41187",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1781, 47.8382]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1661, 47.8434]
+      },
+      "population": 176,
+      "surface": 1208.61,
+      "radius": 1.96
+    },
+    {
+      "nom": "Rhodon",
+      "code": "41188",
+      "codesPostaux": ["41290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2702, 47.7523]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2673, 47.7525]
+      },
+      "population": 116,
+      "surface": 711.92,
+      "radius": 1.51
+    },
+    {
+      "nom": "Rilly-sur-Loire",
+      "code": "41189",
+      "codesPostaux": ["41150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1409, 47.4577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1335, 47.4666]
+      },
+      "population": 455,
+      "surface": 1020.93,
+      "radius": 1.8
+    },
+    {
+      "nom": "Rocé",
+      "code": "41190",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1517, 47.8119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1467, 47.806]
+      },
+      "population": 220,
+      "surface": 1026.63,
+      "radius": 1.81
+    },
+    {
+      "nom": "Roches",
+      "code": "41191",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4548, 47.7949]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4499, 47.7965]
+      },
+      "population": 64,
+      "surface": 880.1,
+      "radius": 1.67
+    },
+    {
+      "nom": "Romilly",
+      "code": "41193",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0287, 47.9517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.038, 47.9498]
+      },
+      "population": 155,
+      "surface": 1527.35,
+      "radius": 2.2
+    },
+    {
+      "nom": "Romorantin-Lanthenay",
+      "code": "41194",
+      "codesPostaux": ["41200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7368, 47.3725]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7475, 47.3586]
+      },
+      "population": 18377,
+      "surface": 4509.17,
+      "radius": 3.79
+    },
+    {
+      "nom": "Rougeou",
+      "code": "41195",
+      "codesPostaux": ["41230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5429, 47.3606]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.536, 47.3631]
+      },
+      "population": 151,
+      "surface": 786.24,
+      "radius": 1.58
+    },
+    {
+      "nom": "Ruan-sur-Egvonne",
+      "code": "41196",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1359, 48.0119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1467, 48.0124]
+      },
+      "population": 80,
+      "surface": 1137.41,
+      "radius": 1.9
+    },
+    {
+      "nom": "Saint-Aignan",
+      "code": "41198",
+      "codesPostaux": ["41110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.335, 47.2493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3723, 47.2679]
+      },
+      "population": 2826,
+      "surface": 1845.23,
+      "radius": 2.42
+    },
+    {
+      "nom": "Saint-Amand-Longpré",
+      "code": "41199",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9883, 47.6804]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0161, 47.6894]
+      },
+      "population": 1214,
+      "surface": 2145.5,
+      "radius": 2.61
+    },
+    {
+      "nom": "Saint-Arnoult",
+      "code": "41201",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8708, 47.7065]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8729, 47.7087]
+      },
+      "population": 310,
+      "surface": 960.78,
+      "radius": 1.75
+    },
+    {
+      "nom": "Saint-Bohaire",
+      "code": "41203",
+      "codesPostaux": ["41330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2373, 47.6412]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2645, 47.6465]
+      },
+      "population": 493,
+      "surface": 1384.48,
+      "radius": 2.1
+    },
+    {
+      "nom": "Saint-Claude-de-Diray",
+      "code": "41204",
+      "codesPostaux": ["41350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4191, 47.619]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4166, 47.6148]
+      },
+      "population": 1772,
+      "surface": 912.94,
+      "radius": 1.7
+    },
+    {
+      "nom": "Saint-Cyr-du-Gault",
+      "code": "41205",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0319, 47.6152]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.029, 47.6211]
+      },
+      "population": 174,
+      "surface": 2617.95,
+      "radius": 2.89
+    },
+    {
+      "nom": "Saint-Denis-sur-Loire",
+      "code": "41206",
+      "codesPostaux": ["41000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3755, 47.6344]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3853, 47.6266]
+      },
+      "population": 904,
+      "surface": 1248.85,
+      "radius": 1.99
+    },
+    {
+      "nom": "Saint-Dyé-sur-Loire",
+      "code": "41207",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4961, 47.6512]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4873, 47.6553]
+      },
+      "population": 1155,
+      "surface": 547.62,
+      "radius": 1.32
+    },
+    {
+      "nom": "Saint-Étienne-des-Guérets",
+      "code": "41208",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0586, 47.5964]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0623, 47.5995]
+      },
+      "population": 115,
+      "surface": 1155.71,
+      "radius": 1.92
+    },
+    {
+      "nom": "Saint-Firmin-des-Prés",
+      "code": "41209",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1039, 47.8441]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1129, 47.8422]
+      },
+      "population": 756,
+      "surface": 1397.37,
+      "radius": 2.11
+    },
+    {
+      "nom": "Saint-Georges-sur-Cher",
+      "code": "41211",
+      "codesPostaux": ["41400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1346, 47.3027]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1241, 47.3255]
+      },
+      "population": 2711,
+      "surface": 2375.56,
+      "radius": 2.75
+    },
+    {
+      "nom": "Saint-Gervais-la-Forêt",
+      "code": "41212",
+      "codesPostaux": ["41350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3582, 47.5642]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3603, 47.5682]
+      },
+      "population": 3184,
+      "surface": 897.58,
+      "radius": 1.69
+    },
+    {
+      "nom": "Saint-Gourgon",
+      "code": "41213",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0081, 47.6603]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0169, 47.6613]
+      },
+      "population": 96,
+      "surface": 1020.98,
+      "radius": 1.8
+    },
+    {
+      "nom": "Saint-Hilaire-la-Gravelle",
+      "code": "41214",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1785, 47.9308]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2078, 47.9245]
+      },
+      "population": 656,
+      "surface": 1750.9,
+      "radius": 2.36
+    },
+    {
+      "nom": "Saint-Jacques-des-Guérets",
+      "code": "41215",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7905, 47.7653]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7951, 47.7743]
+      },
+      "population": 92,
+      "surface": 182.51,
+      "radius": 0.76
+    },
+    {
+      "nom": "Saint-Jean-Froidmentel",
+      "code": "41216",
+      "codesPostaux": ["41160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2089, 47.9622]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2392, 47.9566]
+      },
+      "population": 507,
+      "surface": 1719.64,
+      "radius": 2.34
+    },
+    {
+      "nom": "Saint-Julien-de-Chédon",
+      "code": "41217",
+      "codesPostaux": ["41400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2063, 47.3188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.204, 47.3285]
+      },
+      "population": 777,
+      "surface": 988.82,
+      "radius": 1.77
+    },
+    {
+      "nom": "Saint-Julien-sur-Cher",
+      "code": "41218",
+      "codesPostaux": ["41320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7794, 47.2634]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.774, 47.2819]
+      },
+      "population": 756,
+      "surface": 1632.65,
+      "radius": 2.28
+    },
+    {
+      "nom": "Saint-Laurent-des-Bois",
+      "code": "41219",
+      "codesPostaux": ["41240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.468, 47.8581]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4481, 47.8517]
+      },
+      "population": 329,
+      "surface": 1838.36,
+      "radius": 2.42
+    },
+    {
+      "nom": "Saint-Laurent-Nouan",
+      "code": "41220",
+      "codesPostaux": ["41220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6332, 47.7056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6114, 47.717]
+      },
+      "population": 4249,
+      "surface": 6126.22,
+      "radius": 4.42
+    },
+    {
+      "nom": "Saint-Léonard-en-Beauce",
+      "code": "41221",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3651, 47.8287]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3802, 47.8324]
+      },
+      "population": 638,
+      "surface": 4086.49,
+      "radius": 3.61
+    },
+    {
+      "nom": "Saint-Loup",
+      "code": "41222",
+      "codesPostaux": ["41320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8268, 47.2538]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8386, 47.2644]
+      },
+      "population": 365,
+      "surface": 1499.85,
+      "radius": 2.18
+    },
+    {
+      "nom": "Saint-Lubin-en-Vergonnois",
+      "code": "41223",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2155, 47.6182]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2389, 47.6129]
+      },
+      "population": 776,
+      "surface": 1712.22,
+      "radius": 2.33
+    },
+    {
+      "nom": "Saint-Marc-du-Cor",
+      "code": "41224",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9696, 47.9677]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9528, 47.9716]
+      },
+      "population": 183,
+      "surface": 1299.52,
+      "radius": 2.03
+    },
+    {
+      "nom": "Saint-Martin-des-Bois",
+      "code": "41225",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8292, 47.7251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8259, 47.7236]
+      },
+      "population": 587,
+      "surface": 3711.24,
+      "radius": 3.44
+    },
+    {
+      "nom": "Saint-Ouen",
+      "code": "41226",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0673, 47.8238]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0817, 47.8098]
+      },
+      "population": 3016,
+      "surface": 1119.35,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Rimay",
+      "code": "41228",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9194, 47.7683]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9228, 47.7635]
+      },
+      "population": 294,
+      "surface": 734.26,
+      "radius": 1.53
+    },
+    {
+      "nom": "Saint-Romain-sur-Cher",
+      "code": "41229",
+      "codesPostaux": ["41140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3902, 47.3169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4002, 47.3183]
+      },
+      "population": 1458,
+      "surface": 3140.35,
+      "radius": 3.16
+    },
+    {
+      "nom": "Saint-Sulpice-de-Pommeray",
+      "code": "41230",
+      "codesPostaux": ["41000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.265, 47.6016]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2696, 47.6044]
+      },
+      "population": 1841,
+      "surface": 1164.78,
+      "radius": 1.93
+    },
+    {
+      "nom": "Saint-Viâtre",
+      "code": "41231",
+      "codesPostaux": ["41210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.937, 47.5119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9324, 47.5215]
+      },
+      "population": 1185,
+      "surface": 9980.95,
+      "radius": 5.64
+    },
+    {
+      "nom": "Sainte-Anne",
+      "code": "41200",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0844, 47.7598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0806, 47.7569]
+      },
+      "population": 478,
+      "surface": 513.46,
+      "radius": 1.28
+    },
+    {
+      "nom": "Salbris",
+      "code": "41232",
+      "codesPostaux": ["41300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0427, 47.4194]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0535, 47.425]
+      },
+      "population": 4880,
+      "surface": 10652.32,
+      "radius": 5.82
+    },
+    {
+      "nom": "Sambin",
+      "code": "41233",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2722, 47.4311]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2965, 47.4387]
+      },
+      "population": 872,
+      "surface": 2114.75,
+      "radius": 2.59
+    },
+    {
+      "nom": "Santenay",
+      "code": "41234",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0998, 47.5658]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1166, 47.5664]
+      },
+      "population": 293,
+      "surface": 3052.77,
+      "radius": 3.12
+    },
+    {
+      "nom": "Sargé-sur-Braye",
+      "code": "41235",
+      "codesPostaux": ["41170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.8646, 47.9351]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8514, 47.9246]
+      },
+      "population": 956,
+      "surface": 4209.72,
+      "radius": 3.66
+    },
+    {
+      "nom": "Sasnières",
+      "code": "41236",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9252, 47.7234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9345, 47.7194]
+      },
+      "population": 90,
+      "surface": 780.78,
+      "radius": 1.58
+    },
+    {
+      "nom": "Sassay",
+      "code": "41237",
+      "codesPostaux": ["41700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.443, 47.3922]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4414, 47.3953]
+      },
+      "population": 1110,
+      "surface": 1681.72,
+      "radius": 2.31
+    },
+    {
+      "nom": "Savigny-sur-Braye",
+      "code": "41238",
+      "codesPostaux": ["41360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.838, 47.8666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.8098, 47.8796]
+      },
+      "population": 1960,
+      "surface": 6722.89,
+      "radius": 4.63
+    },
+    {
+      "nom": "Seigy",
+      "code": "41239",
+      "codesPostaux": ["41110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3751, 47.2558]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3979, 47.2548]
+      },
+      "population": 982,
+      "surface": 811.3,
+      "radius": 1.61
+    },
+    {
+      "nom": "Selles-Saint-Denis",
+      "code": "41241",
+      "codesPostaux": ["41300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9022, 47.3851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9239, 47.3868]
+      },
+      "population": 1340,
+      "surface": 5117.35,
+      "radius": 4.04
+    },
+    {
+      "nom": "Selles-sur-Cher",
+      "code": "41242",
+      "codesPostaux": ["41130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5628, 47.2778]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5543, 47.2748]
+      },
+      "population": 4225,
+      "surface": 2574.24,
+      "radius": 2.86
+    },
+    {
+      "nom": "Selommes",
+      "code": "41243",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2101, 47.7652]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.193, 47.7561]
+      },
+      "population": 795,
+      "surface": 2807.71,
+      "radius": 2.99
+    },
+    {
+      "nom": "Séris",
+      "code": "41245",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5074, 47.7552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5018, 47.7572]
+      },
+      "population": 396,
+      "surface": 1753.47,
+      "radius": 2.36
+    },
+    {
+      "nom": "Seur",
+      "code": "41246",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3374, 47.514]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3342, 47.5034]
+      },
+      "population": 486,
+      "surface": 400.65,
+      "radius": 1.13
+    },
+    {
+      "nom": "Soings-en-Sologne",
+      "code": "41247",
+      "codesPostaux": ["41230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5245, 47.4151]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5245, 47.4125]
+      },
+      "population": 1570,
+      "surface": 3642.51,
+      "radius": 3.41
+    },
+    {
+      "nom": "Souesmes",
+      "code": "41249",
+      "codesPostaux": ["41300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1632, 47.4596]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1814, 47.4585]
+      },
+      "population": 1013,
+      "surface": 9982.13,
+      "radius": 5.64
+    },
+    {
+      "nom": "Sougé",
+      "code": "41250",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7231, 47.7812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7284, 47.7704]
+      },
+      "population": 478,
+      "surface": 1698.89,
+      "radius": 2.33
+    },
+    {
+      "nom": "Souvigny-en-Sologne",
+      "code": "41251",
+      "codesPostaux": ["41600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1732, 47.6427]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1655, 47.6444]
+      },
+      "population": 509,
+      "surface": 4141.34,
+      "radius": 3.63
+    },
+    {
+      "nom": "Suèvres",
+      "code": "41252",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4552, 47.685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4609, 47.6673]
+      },
+      "population": 1583,
+      "surface": 3674.23,
+      "radius": 3.42
+    },
+    {
+      "nom": "Talcy",
+      "code": "41253",
+      "codesPostaux": ["41370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4425, 47.7697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4452, 47.7701]
+      },
+      "population": 277,
+      "surface": 1522.41,
+      "radius": 2.2
+    },
+    {
+      "nom": "Ternay",
+      "code": "41255",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7721, 47.7356]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.7792, 47.7304]
+      },
+      "population": 330,
+      "surface": 1456.61,
+      "radius": 2.15
+    },
+    {
+      "nom": "Theillay",
+      "code": "41256",
+      "codesPostaux": ["41300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0409, 47.317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.039, 47.313]
+      },
+      "population": 1252,
+      "surface": 9638.56,
+      "radius": 5.54
+    },
+    {
+      "nom": "Thésée",
+      "code": "41258",
+      "codesPostaux": ["41140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3245, 47.3201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3061, 47.3282]
+      },
+      "population": 1171,
+      "surface": 1760.85,
+      "radius": 2.37
+    },
+    {
+      "nom": "Thoré-la-Rochette",
+      "code": "41259",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9716, 47.787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9633, 47.789]
+      },
+      "population": 817,
+      "surface": 1077.66,
+      "radius": 1.85
+    },
+    {
+      "nom": "Thoury",
+      "code": "41260",
+      "codesPostaux": ["41220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.606, 47.6194]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.596, 47.6304]
+      },
+      "population": 425,
+      "surface": 1554.22,
+      "radius": 2.22
+    },
+    {
+      "nom": "Tour-en-Sologne",
+      "code": "41262",
+      "codesPostaux": ["41250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.5137, 47.5509]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5005, 47.5382]
+      },
+      "population": 1133,
+      "surface": 2641.82,
+      "radius": 2.9
+    },
+    {
+      "nom": "Tourailles",
+      "code": "41261",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1547, 47.691]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1594, 47.6866]
+      },
+      "population": 129,
+      "surface": 748.87,
+      "radius": 1.54
+    },
+    {
+      "nom": "Troo",
+      "code": "41265",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.7765, 47.7924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.798, 47.7772]
+      },
+      "population": 304,
+      "surface": 1320.53,
+      "radius": 2.05
+    },
+    {
+      "nom": "Valaire",
+      "code": "41266",
+      "codesPostaux": ["41120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2543, 47.4752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2675, 47.4708]
+      },
+      "population": 84,
+      "surface": 663.1,
+      "radius": 1.45
+    },
+    {
+      "nom": "Valencisse",
+      "code": "41142",
+      "codesPostaux": ["41190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1968, 47.5715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2148, 47.5775]
+      },
+      "population": 2329,
+      "surface": 4389.11,
+      "radius": 3.74
+    },
+    {
+      "nom": "Vallée-de-Ronsard",
+      "code": "41070",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6659, 47.7464]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6872, 47.752]
+      },
+      "population": 527,
+      "surface": 2001.87,
+      "radius": 2.52
+    },
+    {
+      "nom": "Vallières-les-Grandes",
+      "code": "41267",
+      "codesPostaux": ["41400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1431, 47.409]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.147, 47.4232]
+      },
+      "population": 944,
+      "surface": 4078.16,
+      "radius": 3.6
+    },
+    {
+      "nom": "Valloire-sur-Cisse",
+      "code": "41055",
+      "codesPostaux": ["41150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2126, 47.53]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2459, 47.522]
+      },
+      "population": 2433,
+      "surface": 4022.54,
+      "radius": 3.58
+    },
+    {
+      "nom": "Veilleins",
+      "code": "41268",
+      "codesPostaux": ["41230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6901, 47.4279]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6701, 47.4212]
+      },
+      "population": 148,
+      "surface": 4649.79,
+      "radius": 3.85
+    },
+    {
+      "nom": "Vendôme",
+      "code": "41269",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0646, 47.7995]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0671, 47.7935]
+      },
+      "population": 15566,
+      "surface": 2386.48,
+      "radius": 2.76
+    },
+    {
+      "nom": "Vernou-en-Sologne",
+      "code": "41271",
+      "codesPostaux": ["41230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.6964, 47.4976]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.6807, 47.5003]
+      },
+      "population": 557,
+      "surface": 5477.79,
+      "radius": 4.18
+    },
+    {
+      "nom": "Veuzain-sur-Loire",
+      "code": "41167",
+      "codesPostaux": ["41150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.15, 47.5079]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.175, 47.4992]
+      },
+      "population": 3327,
+      "surface": 3811.98,
+      "radius": 3.48
+    },
+    {
+      "nom": "Vievy-le-Rayé",
+      "code": "41273",
+      "codesPostaux": ["41290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2936, 47.8681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3165, 47.8656]
+      },
+      "population": 466,
+      "surface": 4512.07,
+      "radius": 3.79
+    },
+    {
+      "nom": "Villavard",
+      "code": "41274",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9057, 47.7519]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9043, 47.7589]
+      },
+      "population": 125,
+      "surface": 521.87,
+      "radius": 1.29
+    },
+    {
+      "nom": "Villebarou",
+      "code": "41276",
+      "codesPostaux": ["41000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3187, 47.6252]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3245, 47.6227]
+      },
+      "population": 2558,
+      "surface": 909.82,
+      "radius": 1.7
+    },
+    {
+      "nom": "Villebout",
+      "code": "41277",
+      "codesPostaux": ["41270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1724, 47.9868]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1772, 47.9901]
+      },
+      "population": 119,
+      "surface": 1135.28,
+      "radius": 1.9
+    },
+    {
+      "nom": "Villechauve",
+      "code": "41278",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9439, 47.6476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9409, 47.649]
+      },
+      "population": 255,
+      "surface": 1108.74,
+      "radius": 1.88
+    },
+    {
+      "nom": "Villedieu-le-Château",
+      "code": "41279",
+      "codesPostaux": ["41800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.6374, 47.713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.6481, 47.72]
+      },
+      "population": 384,
+      "surface": 2967.57,
+      "radius": 3.07
+    },
+    {
+      "nom": "Villefranche-sur-Cher",
+      "code": "41280",
+      "codesPostaux": ["41200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.757, 47.3093]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7717, 47.2934]
+      },
+      "population": 2657,
+      "surface": 2722.09,
+      "radius": 2.94
+    },
+    {
+      "nom": "Villefrancœur",
+      "code": "41281",
+      "codesPostaux": ["41330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.2056, 47.6999]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.2187, 47.6931]
+      },
+      "population": 420,
+      "surface": 1829.95,
+      "radius": 2.41
+    },
+    {
+      "nom": "Villeherviers",
+      "code": "41282",
+      "codesPostaux": ["41200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8187, 47.3583]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7976, 47.3651]
+      },
+      "population": 412,
+      "surface": 3891.62,
+      "radius": 3.52
+    },
+    {
+      "nom": "Villemardy",
+      "code": "41283",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1894, 47.724]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1896, 47.7331]
+      },
+      "population": 269,
+      "surface": 1221.76,
+      "radius": 1.97
+    },
+    {
+      "nom": "Villeneuve-Frouville",
+      "code": "41284",
+      "codesPostaux": ["41290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3169, 47.7846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3107, 47.787]
+      },
+      "population": 65,
+      "surface": 432.9,
+      "radius": 1.17
+    },
+    {
+      "nom": "Villeny",
+      "code": "41285",
+      "codesPostaux": ["41220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.751, 47.6175]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7553, 47.6233]
+      },
+      "population": 494,
+      "surface": 3549.9,
+      "radius": 3.36
+    },
+    {
+      "nom": "Villeporcher",
+      "code": "41286",
+      "codesPostaux": ["41310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9928, 47.6439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9946, 47.6397]
+      },
+      "population": 146,
+      "surface": 1212.21,
+      "radius": 1.96
+    },
+    {
+      "nom": "Villerable",
+      "code": "41287",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.0363, 47.7588]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.0307, 47.7581]
+      },
+      "population": 490,
+      "surface": 1677.54,
+      "radius": 2.31
+    },
+    {
+      "nom": "Villerbon",
+      "code": "41288",
+      "codesPostaux": ["41000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3607, 47.6643]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3702, 47.6616]
+      },
+      "population": 832,
+      "surface": 1731.9,
+      "radius": 2.35
+    },
+    {
+      "nom": "Villermain",
+      "code": "41289",
+      "codesPostaux": ["41240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.532, 47.8579]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.5309, 47.8628]
+      },
+      "population": 388,
+      "surface": 2897.43,
+      "radius": 3.04
+    },
+    {
+      "nom": "Villeromain",
+      "code": "41290",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1463, 47.7199]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1424, 47.7281]
+      },
+      "population": 222,
+      "surface": 1304.27,
+      "radius": 2.04
+    },
+    {
+      "nom": "Villetrun",
+      "code": "41291",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.1635, 47.786]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.1602, 47.7865]
+      },
+      "population": 318,
+      "surface": 684.2,
+      "radius": 1.48
+    },
+    {
+      "nom": "Villexanton",
+      "code": "41292",
+      "codesPostaux": ["41500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.4471, 47.7411]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.4234, 47.7408]
+      },
+      "population": 203,
+      "surface": 1158.38,
+      "radius": 1.92
+    },
+    {
+      "nom": "Villiers-sur-Loir",
+      "code": "41294",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9951, 47.8076]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9949, 47.8065]
+      },
+      "population": 1115,
+      "surface": 1000.88,
+      "radius": 1.78
+    },
+    {
+      "nom": "Villiersfaux",
+      "code": "41293",
+      "codesPostaux": ["41100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [0.9801, 47.7456]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [0.9892, 47.7482]
+      },
+      "population": 246,
+      "surface": 721.34,
+      "radius": 1.52
+    },
+    {
+      "nom": "Vineuil",
+      "code": "41295",
+      "codesPostaux": ["41350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.3886, 47.5855]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.3777, 47.5811]
+      },
+      "population": 8050,
+      "surface": 2230.7,
+      "radius": 2.66
+    },
+    {
+      "nom": "Vouzon",
+      "code": "41296",
+      "codesPostaux": ["41600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0348, 47.6347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0586, 47.6452]
+      },
+      "population": 1424,
+      "surface": 7795.82,
+      "radius": 4.98
+    },
+    {
+      "nom": "Yvoy-le-Marron",
+      "code": "41297",
+      "codesPostaux": ["41600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8543, 47.6382]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8547, 47.6316]
+      },
+      "population": 757,
+      "surface": 5073.57,
+      "radius": 4.02
+    }
+  ],
+  "postalCodes": {
+    "41000": {
+      "communes": ["Blois", "Saint-Denis-sur-Loire", "Saint-Sulpice-de-Pommeray", "Villebarou", "Villerbon"],
+      "communeCount": 5,
+      "center": [1.3355, 47.5926],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 47.5886,
+        "maxLat": 47.6616,
+        "minLon": 1.2696,
+        "maxLon": 1.3853
+      },
+      "totalPopulation": 53227,
+      "totalSurface": 8817
+    },
+    "41100": {
+      "communes": [
+        "Areines",
+        "Azé",
+        "Coulommiers-la-Tour",
+        "Crucheray",
+        "Faye",
+        "Lisle",
+        "Marcilly-en-Beauce",
+        "Mazangé",
+        "Meslay",
+        "Naveil",
+        "Périgny",
+        "Pezou",
+        "Renay",
+        "Rocé",
+        "Sainte-Anne",
+        "Saint-Firmin-des-Prés",
+        "Saint-Ouen",
+        "Selommes",
+        "Thoré-la-Rochette",
+        "Vendôme",
+        "Villemardy",
+        "Villerable",
+        "Villeromain",
+        "Villetrun",
+        "Villiersfaux",
+        "Villiers-sur-Loir"
+      ],
+      "communeCount": 26,
+      "center": [1.0677, 47.7976],
+      "coverageRadius": 11.6,
+      "boundingBox": {
+        "minLat": 47.7281,
+        "maxLat": 47.8665,
+        "minLon": 0.9451,
+        "maxLon": 1.193
+      },
+      "totalPopulation": 32594,
+      "totalSurface": 34680
+    },
+    "41110": {
+      "communes": ["Châteauvieux", "Couffy", "Mareuil-sur-Cher", "Pouillé", "Saint-Aignan", "Seigy"],
+      "communeCount": 6,
+      "center": [1.3649, 47.2717],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 47.2321,
+        "maxLat": 47.3187,
+        "minLon": 1.2877,
+        "maxLon": 1.4396
+      },
+      "totalPopulation": 6776,
+      "totalSurface": 12507
+    },
+    "41120": {
+      "communes": [
+        "Candé-sur-Beuvron",
+        "Cellettes",
+        "Chailles",
+        "Chitenay",
+        "Le Controis-en-Sologne",
+        "Cormeray",
+        "Monthou-sur-Bièvre",
+        "Les Montils",
+        "Sambin",
+        "Seur",
+        "Valaire"
+      ],
+      "communeCount": 11,
+      "center": [1.3642, 47.4762],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 47.4188,
+        "maxLat": 47.5328,
+        "minLon": 1.2619,
+        "maxLon": 1.4291
+      },
+      "totalPopulation": 20546,
+      "totalSurface": 23877
+    },
+    "41130": {
+      "communes": ["Billy", "Châtillon-sur-Cher", "Gièvres", "Meusnes", "Selles-sur-Cher"],
+      "communeCount": 5,
+      "center": [1.5622, 47.2767],
+      "coverageRadius": 7.9,
+      "boundingBox": {
+        "minLat": 47.2496,
+        "maxLat": 47.3111,
+        "minLon": 1.4949,
+        "maxLon": 1.6666
+      },
+      "totalPopulation": 10317,
+      "totalSurface": 13383
+    },
+    "41140": {
+      "communes": ["Méhers", "Noyers-sur-Cher", "Saint-Romain-sur-Cher", "Thésée"],
+      "communeCount": 4,
+      "center": [1.3836, 47.3009],
+      "coverageRadius": 6.6,
+      "boundingBox": {
+        "minLat": 47.2761,
+        "maxLat": 47.3282,
+        "minLon": 1.3061,
+        "maxLon": 1.4564
+      },
+      "totalPopulation": 5591,
+      "totalSurface": 9023
+    },
+    "41150": {
+      "communes": [
+        "Chaumont-sur-Loire",
+        "Valloire-sur-Cisse",
+        "Mesland",
+        "Monteaux",
+        "Veuzain-sur-Loire",
+        "Rilly-sur-Loire"
+      ],
+      "communeCount": 6,
+      "center": [1.1852, 47.5011],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 47.4666,
+        "maxLat": 47.522,
+        "minLon": 1.1126,
+        "maxLon": 1.2459
+      },
+      "totalPopulation": 8578,
+      "totalSurface": 14820
+    },
+    "41160": {
+      "communes": [
+        "Brévainville",
+        "Busloup",
+        "Danzé",
+        "Fréteval",
+        "Lignières",
+        "Moisy",
+        "Morée",
+        "Ouzouer-le-Doyen",
+        "Beauce la Romaine",
+        "Rahart",
+        "Saint-Hilaire-la-Gravelle",
+        "Saint-Jean-Froidmentel",
+        "La Ville-aux-Clercs"
+      ],
+      "communeCount": 13,
+      "center": [1.2865, 47.9085],
+      "coverageRadius": 19.4,
+      "boundingBox": {
+        "minLat": 47.864,
+        "maxLat": 47.9566,
+        "minLon": 1.0277,
+        "maxLon": 1.5242
+      },
+      "totalPopulation": 10487,
+      "totalSurface": 38667
+    },
+    "41170": {
+      "communes": [
+        "Baillou",
+        "Beauchêne",
+        "Choue",
+        "Cormenon",
+        "Mondoubleau",
+        "Le Plessis-Dorin",
+        "Saint-Marc-du-Cor",
+        "Sargé-sur-Braye",
+        "Couëtron-au-Perche",
+        "Le Temple"
+      ],
+      "communeCount": 10,
+      "center": [0.8869, 47.9812],
+      "coverageRadius": 12.2,
+      "boundingBox": {
+        "minLat": 47.9246,
+        "maxLat": 48.0895,
+        "minLon": 0.8414,
+        "maxLon": 0.9697
+      },
+      "totalPopulation": 5387,
+      "totalSurface": 24497
+    },
+    "41190": {
+      "communes": [
+        "Françay",
+        "Herbault",
+        "Lancôme",
+        "Landes-le-Gaulois",
+        "Valencisse",
+        "Pray",
+        "Saint-Cyr-du-Gault",
+        "Saint-Étienne-des-Guérets",
+        "Saint-Lubin-en-Vergonnois",
+        "Santenay",
+        "Tourailles"
+      ],
+      "communeCount": 11,
+      "center": [1.1772, 47.6059],
+      "coverageRadius": 11.3,
+      "boundingBox": {
+        "minLat": 47.5664,
+        "maxLat": 47.6866,
+        "minLon": 1.029,
+        "maxLon": 1.2389
+      },
+      "totalPopulation": 6354,
+      "totalSurface": 21530
+    },
+    "41200": {
+      "communes": [
+        "Loreux",
+        "Millançay",
+        "Pruniers-en-Sologne",
+        "Romorantin-Lanthenay",
+        "Villefranche-sur-Cher",
+        "Villeherviers"
+      ],
+      "communeCount": 6,
+      "center": [1.7453, 47.3513],
+      "coverageRadius": 11,
+      "boundingBox": {
+        "minLat": 47.2934,
+        "maxLat": 47.4478,
+        "minLon": 1.6708,
+        "maxLon": 1.8304
+      },
+      "totalPopulation": 24673,
+      "totalSurface": 24932
+    },
+    "41210": {
+      "communes": [
+        "La Ferté-Beauharnais",
+        "Marcilly-en-Gault",
+        "La Marolle-en-Sologne",
+        "Montrieux-en-Sologne",
+        "Neung-sur-Beuvron",
+        "Saint-Viâtre"
+      ],
+      "communeCount": 6,
+      "center": [1.84, 47.5277],
+      "coverageRadius": 9.2,
+      "boundingBox": {
+        "minLat": 47.4655,
+        "maxLat": 47.5834,
+        "minLon": 1.7251,
+        "maxLon": 1.9324
+      },
+      "totalPopulation": 4773,
+      "totalSurface": 28412
+    },
+    "41220": {
+      "communes": ["Crouy-sur-Cosson", "Dhuizon", "La Ferté-Saint-Cyr", "Saint-Laurent-Nouan", "Thoury", "Villeny"],
+      "communeCount": 6,
+      "center": [1.6347, 47.6747],
+      "coverageRadius": 10.7,
+      "boundingBox": {
+        "minLat": 47.5896,
+        "maxLat": 47.717,
+        "minLon": 1.596,
+        "maxLon": 1.7553
+      },
+      "totalPopulation": 7967,
+      "totalSurface": 24571
+    },
+    "41230": {
+      "communes": [
+        "Courmemin",
+        "Gy-en-Sologne",
+        "Lassay-sur-Croisne",
+        "Mur-de-Sologne",
+        "Rougeou",
+        "Soings-en-Sologne",
+        "Veilleins",
+        "Vernou-en-Sologne"
+      ],
+      "communeCount": 8,
+      "center": [1.5904, 47.418],
+      "coverageRadius": 11.4,
+      "boundingBox": {
+        "minLat": 47.3442,
+        "maxLat": 47.5003,
+        "minLon": 1.5245,
+        "maxLon": 1.6807
+      },
+      "totalPopulation": 5181,
+      "totalSurface": 27928
+    },
+    "41240": {
+      "communes": ["Autainville", "Binas", "Beauce la Romaine", "Saint-Laurent-des-Bois", "Villermain"],
+      "communeCount": 5,
+      "center": [1.5028, 47.901],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 47.8517,
+        "maxLat": 47.9122,
+        "minLon": 1.416,
+        "maxLon": 1.5309
+      },
+      "totalPopulation": 5154,
+      "totalSurface": 23563
+    },
+    "41250": {
+      "communes": [
+        "Bauzy",
+        "Bracieux",
+        "Chambord",
+        "Fontaines-en-Sologne",
+        "Maslives",
+        "Mont-près-Chambord",
+        "Neuvy",
+        "Tour-en-Sologne"
+      ],
+      "communeCount": 8,
+      "center": [1.4998, 47.5585],
+      "coverageRadius": 8.6,
+      "boundingBox": {
+        "minLat": 47.5106,
+        "maxLat": 47.6314,
+        "minLon": 1.4572,
+        "maxLon": 1.6087
+      },
+      "totalPopulation": 7840,
+      "totalSurface": 22763
+    },
+    "41260": {
+      "communes": ["La Chaussée-Saint-Victor"],
+      "communeCount": 1,
+      "center": [1.3657, 47.614],
+      "coverageRadius": 1.46,
+      "totalPopulation": 4488,
+      "totalSurface": 672
+    },
+    "41270": {
+      "communes": [
+        "Bouffry",
+        "Boursay",
+        "La Chapelle-Vicomtesse",
+        "Chauvigny-du-Perche",
+        "Droué",
+        "Fontaine-Raoul",
+        "La Fontenelle",
+        "Le Gault-du-Perche",
+        "Le Poislay",
+        "Romilly",
+        "Ruan-sur-Egvonne",
+        "Villebout"
+      ],
+      "communeCount": 12,
+      "center": [1.0636, 48.0266],
+      "coverageRadius": 9.9,
+      "boundingBox": {
+        "minLat": 47.9498,
+        "maxLat": 48.0953,
+        "minLon": 0.9692,
+        "maxLon": 1.1772
+      },
+      "totalPopulation": 3045,
+      "totalSurface": 22931
+    },
+    "41290": {
+      "communes": [
+        "Boisseau",
+        "La Chapelle-Enchérie",
+        "Conan",
+        "Épiais",
+        "Oucques La Nouvelle",
+        "Rhodon",
+        "Vievy-le-Rayé",
+        "Villeneuve-Frouville"
+      ],
+      "communeCount": 8,
+      "center": [1.288, 47.8199],
+      "coverageRadius": 8,
+      "boundingBox": {
+        "minLat": 47.7487,
+        "maxLat": 47.8656,
+        "minLon": 1.203,
+        "maxLon": 1.3165
+      },
+      "totalPopulation": 2889,
+      "totalSurface": 14922
+    },
+    "41300": {
+      "communes": [
+        "La Ferté-Imbault",
+        "Orçay",
+        "Pierrefitte-sur-Sauldre",
+        "Salbris",
+        "Selles-Saint-Denis",
+        "Souesmes",
+        "Theillay"
+      ],
+      "communeCount": 7,
+      "center": [2.0469, 47.4098],
+      "coverageRadius": 14.2,
+      "boundingBox": {
+        "minLat": 47.2903,
+        "maxLat": 47.5117,
+        "minLon": 1.9239,
+        "maxLon": 2.1814
+      },
+      "totalPopulation": 10404,
+      "totalSurface": 49890
+    },
+    "41310": {
+      "communes": [
+        "Ambloy",
+        "Authon",
+        "Gombergean",
+        "Huisseau-en-Beauce",
+        "Lancé",
+        "Nourray",
+        "Prunay-Cassereau",
+        "Saint-Amand-Longpré",
+        "Saint-Gourgon",
+        "Sasnières",
+        "Villechauve",
+        "Villeporcher"
+      ],
+      "communeCount": 12,
+      "center": [0.9832, 47.6828],
+      "coverageRadius": 8.5,
+      "boundingBox": {
+        "minLat": 47.6397,
+        "maxLat": 47.7232,
+        "minLon": 0.8945,
+        "maxLon": 1.0851
+      },
+      "totalPopulation": 4497,
+      "totalSurface": 19255
+    },
+    "41320": {
+      "communes": [
+        "La Chapelle-Montmartin",
+        "Châtres-sur-Cher",
+        "Langon-sur-Cher",
+        "Maray",
+        "Mennetou-sur-Cher",
+        "Saint-Julien-sur-Cher",
+        "Saint-Loup"
+      ],
+      "communeCount": 7,
+      "center": [1.8405, 47.2717],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 47.2464,
+        "maxLat": 47.2838,
+        "minLon": 1.7397,
+        "maxLon": 1.9045
+      },
+      "totalPopulation": 4562,
+      "totalSurface": 16113
+    },
+    "41330": {
+      "communes": [
+        "Averdon",
+        "Champigny-en-Beauce",
+        "La Chapelle-Vendômoise",
+        "Fossé",
+        "Marolles",
+        "Saint-Bohaire",
+        "Villefrancœur"
+      ],
+      "communeCount": 7,
+      "center": [1.2701, 47.6635],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 47.6316,
+        "maxLat": 47.7114,
+        "minLon": 1.2187,
+        "maxLon": 1.3051
+      },
+      "totalPopulation": 4985,
+      "totalSurface": 11737
+    },
+    "41350": {
+      "communes": ["Huisseau-sur-Cosson", "Montlivault", "Saint-Claude-de-Diray", "Saint-Gervais-la-Forêt", "Vineuil"],
+      "communeCount": 5,
+      "center": [1.3942, 47.5884],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 47.5682,
+        "maxLat": 47.6391,
+        "minLon": 1.3603,
+        "maxLon": 1.4535
+      },
+      "totalPopulation": 16606,
+      "totalSurface": 7427
+    },
+    "41360": {
+      "communes": ["Cellé", "Épuisay", "Fortan", "Lunay", "Savigny-sur-Braye"],
+      "communeCount": 5,
+      "center": [0.8651, 47.8593],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 47.8085,
+        "maxLat": 47.9013,
+        "minLon": 0.7828,
+        "maxLon": 0.9297
+      },
+      "totalPopulation": 4488,
+      "totalSurface": 14813
+    },
+    "41370": {
+      "communes": [
+        "Briou",
+        "Concriers",
+        "Josnes",
+        "Lorges",
+        "La Madeleine-Villefrouin",
+        "Marchenoir",
+        "Le Plessis-l'Échelle",
+        "Roches",
+        "Saint-Léonard-en-Beauce",
+        "Talcy"
+      ],
+      "communeCount": 10,
+      "center": [1.4517, 47.8093],
+      "coverageRadius": 6,
+      "boundingBox": {
+        "minLat": 47.7701,
+        "maxLat": 47.8324,
+        "minLon": 1.3802,
+        "maxLon": 1.525
+      },
+      "totalPopulation": 3294,
+      "totalSurface": 14510
+    },
+    "41400": {
+      "communes": [
+        "Angé",
+        "Chissay-en-Touraine",
+        "Le Controis-en-Sologne",
+        "Faverolles-sur-Cher",
+        "Monthou-sur-Cher",
+        "Montrichard Val de Cher",
+        "Pontlevoy",
+        "Saint-Georges-sur-Cher",
+        "Saint-Julien-de-Chédon",
+        "Vallières-les-Grandes"
+      ],
+      "communeCount": 10,
+      "center": [1.2659, 47.3701],
+      "coverageRadius": 13.5,
+      "boundingBox": {
+        "minLat": 47.3207,
+        "maxLat": 47.4232,
+        "minLon": 1.1241,
+        "maxLon": 1.4291
+      },
+      "totalPopulation": 20693,
+      "totalSurface": 31705
+    },
+    "41500": {
+      "communes": [
+        "Avaray",
+        "La Chapelle-Saint-Martin-en-Plaine",
+        "Courbouzon",
+        "Cour-sur-Loire",
+        "Lestiou",
+        "Maves",
+        "Menars",
+        "Mer",
+        "Muides-sur-Loire",
+        "Mulsans",
+        "Saint-Dyé-sur-Loire",
+        "Séris",
+        "Suèvres",
+        "Villexanton"
+      ],
+      "communeCount": 14,
+      "center": [1.4865, 47.694],
+      "coverageRadius": 10.7,
+      "boundingBox": {
+        "minLat": 47.6416,
+        "maxLat": 47.7572,
+        "minLon": 1.3644,
+        "maxLon": 1.5897
+      },
+      "totalPopulation": 15032,
+      "totalSurface": 21962
+    },
+    "41600": {
+      "communes": [
+        "Chaon",
+        "Chaumont-sur-Tharonne",
+        "Lamotte-Beuvron",
+        "Nouan-le-Fuzelier",
+        "Souvigny-en-Sologne",
+        "Vouzon",
+        "Yvoy-le-Marron"
+      ],
+      "communeCount": 7,
+      "center": [2.0216, 47.5988],
+      "coverageRadius": 13.1,
+      "boundingBox": {
+        "minLat": 47.5365,
+        "maxLat": 47.6452,
+        "minLon": 1.8547,
+        "maxLon": 2.1754
+      },
+      "totalPopulation": 10987,
+      "totalSurface": 39355
+    },
+    "41700": {
+      "communes": [
+        "Chémery",
+        "Cheverny",
+        "Choussy",
+        "Le Controis-en-Sologne",
+        "Couddes",
+        "Cour-Cheverny",
+        "Fresnes",
+        "Oisly",
+        "Sassay"
+      ],
+      "communeCount": 9,
+      "center": [1.4348, 47.4316],
+      "coverageRadius": 10.2,
+      "boundingBox": {
+        "minLat": 47.3458,
+        "maxLat": 47.5087,
+        "minLon": 1.3452,
+        "maxLon": 1.4789
+      },
+      "totalPopulation": 15054,
+      "totalSurface": 27729
+    },
+    "41800": {
+      "communes": [
+        "Artins",
+        "Bonneveau",
+        "Vallée-de-Ronsard",
+        "Les Essarts",
+        "Fontaine-les-Coteaux",
+        "Les Hayes",
+        "Houssay",
+        "Lavardin",
+        "Montoire-sur-le-Loir",
+        "Montrouveau",
+        "Les Roches-l'Évêque",
+        "Saint-Arnoult",
+        "Saint-Jacques-des-Guérets",
+        "Saint-Martin-des-Bois",
+        "Saint-Rimay",
+        "Sougé",
+        "Ternay",
+        "Troo",
+        "Villavard",
+        "Villedieu-le-Château"
+      ],
+      "communeCount": 20,
+      "center": [0.8209, 47.7529],
+      "coverageRadius": 13.5,
+      "boundingBox": {
+        "minLat": 47.7087,
+        "maxLat": 47.8125,
+        "minLon": 0.6481,
+        "maxLon": 0.9376
+      },
+      "totalPopulation": 9408,
+      "totalSurface": 28626
+    }
+  }
+}

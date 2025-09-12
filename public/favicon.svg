@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <!-- Gradient for background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for pin -->
+    <linearGradient id="pinGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F3F4F6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0.5"/>
+      <feOffset dx="0" dy="1" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.2"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Inner shadow for depth -->
+    <filter id="innerShadow">
+      <feOffset dx="0" dy="1"/>
+      <feGaussianBlur stdDeviation="1" result="offset-blur"/>
+      <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+      <feFlood flood-color="#000" flood-opacity="0.15" result="color"/>
+      <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+  <!-- Background rounded square with gradient -->
+  <rect x="2" y="2" width="28" height="28" rx="7" ry="7" fill="url(#bgGradient)" filter="url(#shadow)"/>
+  
+  <!-- Subtle inner glow -->
+  <rect x="2" y="2" width="28" height="28" rx="7" ry="7" fill="none" stroke="url(#bgGradient)" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Map pin -->
+  <g transform="translate(16, 14)">
+    <!-- Pin shape with gradient -->
+    <path d="M0 -7C-3.3 -7 -6 -4.3 -6 -1C-6 1.5 -3 7.5 -1 10.5C-0.5 11.3 0.5 11.3 1 10.5C3 7.5 6 1.5 6 -1C6 -4.3 3.3 -7 0 -7Z" 
+          fill="url(#pinGradient)" 
+          filter="url(#innerShadow)"/>
+    
+    <!-- Inner circle -->
+    <circle cx="0" cy="-1" r="2.8" fill="#3B82F6" opacity="0.9"/>
+    <circle cx="0" cy="-1" r="2.3" fill="#60A5FA"/>
+    <circle cx="0" cy="-1" r="1.8" fill="#93C5FD"/>
+    
+    <!-- Highlight dot for glossy effect -->
+    <ellipse cx="-0.5" cy="-2" rx="0.8" ry="0.6" fill="white" opacity="0.7"/>
+  </g>
+  
+  <!-- Bottom subtle reflection -->
+  <ellipse cx="16" cy="28" rx="8" ry="2" fill="white" opacity="0.1"/>
+</svg>

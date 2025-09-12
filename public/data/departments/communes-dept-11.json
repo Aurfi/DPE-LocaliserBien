@@ -1,0 +1,7940 @@
+{
+  "departmentCode": "11",
+  "departmentName": "Aude",
+  "stats": {
+    "communeCount": 433,
+    "totalPopulation": 377773,
+    "totalSurface": 634416
+  },
+  "communes": [
+    {
+      "nom": "Aigues-Vives",
+      "code": "11001",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5359, 43.234]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5326, 43.2312]
+      },
+      "population": 536,
+      "surface": 1051.61,
+      "radius": 1.83
+    },
+    {
+      "nom": "Airoux",
+      "code": "11002",
+      "codesPostaux": ["11320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8739, 43.3667]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8659, 43.3634]
+      },
+      "population": 189,
+      "surface": 562.2,
+      "radius": 1.34
+    },
+    {
+      "nom": "Ajac",
+      "code": "11003",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1373, 43.0448]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1387, 43.0481]
+      },
+      "population": 198,
+      "surface": 544.66,
+      "radius": 1.32
+    },
+    {
+      "nom": "Alaigne",
+      "code": "11004",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0887, 43.0949]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0927, 43.1028]
+      },
+      "population": 331,
+      "surface": 1440.04,
+      "radius": 2.14
+    },
+    {
+      "nom": "Alairac",
+      "code": "11005",
+      "codesPostaux": ["11290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2387, 43.1848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2418, 43.1851]
+      },
+      "population": 1389,
+      "surface": 1663.79,
+      "radius": 2.3
+    },
+    {
+      "nom": "Albas",
+      "code": "11006",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7328, 43.0046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7339, 43.0069]
+      },
+      "population": 78,
+      "surface": 2286.25,
+      "radius": 2.7
+    },
+    {
+      "nom": "Albières",
+      "code": "11007",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.447, 42.9452]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4779, 42.9467]
+      },
+      "population": 111,
+      "surface": 1738.48,
+      "radius": 2.35
+    },
+    {
+      "nom": "Alet-les-Bains",
+      "code": "11008",
+      "codesPostaux": ["11580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2618, 42.9914]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2567, 42.995]
+      },
+      "population": 384,
+      "surface": 2424.82,
+      "radius": 2.78
+    },
+    {
+      "nom": "Alzonne",
+      "code": "11009",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1665, 43.2646]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1778, 43.2534]
+      },
+      "population": 1590,
+      "surface": 2224.74,
+      "radius": 2.66
+    },
+    {
+      "nom": "Antugnac",
+      "code": "11010",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2174, 42.9627]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2248, 42.9551]
+      },
+      "population": 292,
+      "surface": 984.02,
+      "radius": 1.77
+    },
+    {
+      "nom": "Aragon",
+      "code": "11011",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.303, 43.2974]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3143, 43.2959]
+      },
+      "population": 476,
+      "surface": 2137.28,
+      "radius": 2.61
+    },
+    {
+      "nom": "Argeliers",
+      "code": "11012",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9137, 43.309]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9117, 43.3124]
+      },
+      "population": 2128,
+      "surface": 1088.93,
+      "radius": 1.86
+    },
+    {
+      "nom": "Argens-Minervois",
+      "code": "11013",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7692, 43.2458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.766, 43.242]
+      },
+      "population": 375,
+      "surface": 460.98,
+      "radius": 1.21
+    },
+    {
+      "nom": "Armissan",
+      "code": "11014",
+      "codesPostaux": ["11110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0888, 43.1888]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0973, 43.1858]
+      },
+      "population": 1474,
+      "surface": 1244.27,
+      "radius": 1.99
+    },
+    {
+      "nom": "Arques",
+      "code": "11015",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3878, 42.9445]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.375, 42.9527]
+      },
+      "population": 253,
+      "surface": 1897.24,
+      "radius": 2.46
+    },
+    {
+      "nom": "Arquettes-en-Val",
+      "code": "11016",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4938, 43.1061]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.502, 43.1037]
+      },
+      "population": 79,
+      "surface": 962.15,
+      "radius": 1.75
+    },
+    {
+      "nom": "Artigues",
+      "code": "11017",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2044, 42.7895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2131, 42.8043]
+      },
+      "population": 73,
+      "surface": 653.8,
+      "radius": 1.44
+    },
+    {
+      "nom": "Arzens",
+      "code": "11018",
+      "codesPostaux": ["11290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2082, 43.1968]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2092, 43.2006]
+      },
+      "population": 1196,
+      "surface": 2180.83,
+      "radius": 2.63
+    },
+    {
+      "nom": "Aunat",
+      "code": "11019",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1018, 42.79]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0961, 42.7925]
+      },
+      "population": 61,
+      "surface": 1076.1,
+      "radius": 1.85
+    },
+    {
+      "nom": "Auriac",
+      "code": "11020",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4916, 42.9259]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4927, 42.9317]
+      },
+      "population": 33,
+      "surface": 2150.82,
+      "radius": 2.62
+    },
+    {
+      "nom": "Axat",
+      "code": "11021",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2412, 42.7958]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2344, 42.8046]
+      },
+      "population": 482,
+      "surface": 1199.14,
+      "radius": 1.95
+    },
+    {
+      "nom": "Azille",
+      "code": "11022",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6581, 43.2763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6594, 43.278]
+      },
+      "population": 1125,
+      "surface": 2428.14,
+      "radius": 2.78
+    },
+    {
+      "nom": "Badens",
+      "code": "11023",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5073, 43.2229]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5077, 43.2186]
+      },
+      "population": 729,
+      "surface": 993,
+      "radius": 1.78
+    },
+    {
+      "nom": "Bages",
+      "code": "11024",
+      "codesPostaux": ["11100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9702, 43.1163]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9923, 43.1236]
+      },
+      "population": 750,
+      "surface": 2214.58,
+      "radius": 2.66
+    },
+    {
+      "nom": "Bagnoles",
+      "code": "11025",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4466, 43.2668]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4357, 43.2715]
+      },
+      "population": 315,
+      "surface": 578.62,
+      "radius": 1.36
+    },
+    {
+      "nom": "Baraigne",
+      "code": "11026",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8191, 43.3293]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8242, 43.3297]
+      },
+      "population": 164,
+      "surface": 470.71,
+      "radius": 1.22
+    },
+    {
+      "nom": "Barbaira",
+      "code": "11027",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5162, 43.1774]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5114, 43.1855]
+      },
+      "population": 787,
+      "surface": 936.15,
+      "radius": 1.73
+    },
+    {
+      "nom": "Belcaire",
+      "code": "11028",
+      "codesPostaux": ["11340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9368, 42.8289]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9576, 42.8153]
+      },
+      "population": 369,
+      "surface": 3172.35,
+      "radius": 3.18
+    },
+    {
+      "nom": "Belcastel-et-Buc",
+      "code": "11029",
+      "codesPostaux": ["11580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3528, 43.0251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.34, 43.038]
+      },
+      "population": 60,
+      "surface": 1462.38,
+      "radius": 2.16
+    },
+    {
+      "nom": "Belflou",
+      "code": "11030",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.796, 43.3214]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7864, 43.3175]
+      },
+      "population": 111,
+      "surface": 937.37,
+      "radius": 1.73
+    },
+    {
+      "nom": "Belfort-sur-Rebenty",
+      "code": "11031",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0497, 42.8304]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0458, 42.8257]
+      },
+      "population": 24,
+      "surface": 521.33,
+      "radius": 1.29
+    },
+    {
+      "nom": "Bellegarde-du-Razès",
+      "code": "11032",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0508, 43.1059]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0449, 43.1088]
+      },
+      "population": 252,
+      "surface": 673.69,
+      "radius": 1.46
+    },
+    {
+      "nom": "Belpech",
+      "code": "11033",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7624, 43.2018]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7512, 43.1979]
+      },
+      "population": 1339,
+      "surface": 4388.87,
+      "radius": 3.74
+    },
+    {
+      "nom": "Belvèze-du-Razès",
+      "code": "11034",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0891, 43.1236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0948, 43.1248]
+      },
+      "population": 841,
+      "surface": 454.2,
+      "radius": 1.2
+    },
+    {
+      "nom": "Belvianes-et-Cavirac",
+      "code": "11035",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2139, 42.8473]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2004, 42.8519]
+      },
+      "population": 259,
+      "surface": 1192.59,
+      "radius": 1.95
+    },
+    {
+      "nom": "Belvis",
+      "code": "11036",
+      "codesPostaux": ["11340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0798, 42.8573]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0766, 42.8497]
+      },
+      "population": 162,
+      "surface": 2414.89,
+      "radius": 2.77
+    },
+    {
+      "nom": "Berriac",
+      "code": "11037",
+      "codesPostaux": ["11000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4053, 43.2153]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4126, 43.2176]
+      },
+      "population": 958,
+      "surface": 268.69,
+      "radius": 0.92
+    },
+    {
+      "nom": "Bessède-de-Sault",
+      "code": "11038",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1419, 42.7915]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1257, 42.7886]
+      },
+      "population": 57,
+      "surface": 1548.51,
+      "radius": 2.22
+    },
+    {
+      "nom": "Bizanet",
+      "code": "11040",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8704, 43.1445]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.871, 43.1644]
+      },
+      "population": 1749,
+      "surface": 3756.68,
+      "radius": 3.46
+    },
+    {
+      "nom": "Bize-Minervois",
+      "code": "11041",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8719, 43.3364]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8707, 43.3182]
+      },
+      "population": 1292,
+      "surface": 2099.11,
+      "radius": 2.58
+    },
+    {
+      "nom": "Blomac",
+      "code": "11042",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5889, 43.2134]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5963, 43.2041]
+      },
+      "population": 254,
+      "surface": 844.08,
+      "radius": 1.64
+    },
+    {
+      "nom": "Bouilhonnac",
+      "code": "11043",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4462, 43.233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4398, 43.2313]
+      },
+      "population": 222,
+      "surface": 611.66,
+      "radius": 1.4
+    },
+    {
+      "nom": "Bouisse",
+      "code": "11044",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4259, 42.9899]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4542, 42.987]
+      },
+      "population": 103,
+      "surface": 2622.55,
+      "radius": 2.89
+    },
+    {
+      "nom": "Bouriège",
+      "code": "11045",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1575, 42.9938]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1647, 42.9852]
+      },
+      "population": 151,
+      "surface": 1091.01,
+      "radius": 1.86
+    },
+    {
+      "nom": "Bourigeole",
+      "code": "11046",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1206, 42.9864]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1337, 42.9886]
+      },
+      "population": 55,
+      "surface": 934.67,
+      "radius": 1.72
+    },
+    {
+      "nom": "Boutenac",
+      "code": "11048",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7993, 43.1469]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.792, 43.1499]
+      },
+      "population": 739,
+      "surface": 2318.9,
+      "radius": 2.72
+    },
+    {
+      "nom": "Bram",
+      "code": "11049",
+      "codesPostaux": ["11150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1108, 43.2511]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1143, 43.2447]
+      },
+      "population": 3252,
+      "surface": 1786.32,
+      "radius": 2.38
+    },
+    {
+      "nom": "Brézilhac",
+      "code": "11051",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0746, 43.1666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.079, 43.1682]
+      },
+      "population": 176,
+      "surface": 720.87,
+      "radius": 1.51
+    },
+    {
+      "nom": "Brousses-et-Villaret",
+      "code": "11052",
+      "codesPostaux": ["11390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2454, 43.3433]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2548, 43.3437]
+      },
+      "population": 352,
+      "surface": 1156.72,
+      "radius": 1.92
+    },
+    {
+      "nom": "Brugairolles",
+      "code": "11053",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.165, 43.1331]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1577, 43.1248]
+      },
+      "population": 301,
+      "surface": 881.24,
+      "radius": 1.67
+    },
+    {
+      "nom": "Bugarach",
+      "code": "11055",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3554, 42.8735]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3505, 42.8759]
+      },
+      "population": 242,
+      "surface": 2744.3,
+      "radius": 2.96
+    },
+    {
+      "nom": "Cabrespine",
+      "code": "11056",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4771, 43.3746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4604, 43.3628]
+      },
+      "population": 179,
+      "surface": 1816.66,
+      "radius": 2.4
+    },
+    {
+      "nom": "Cahuzac",
+      "code": "11057",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8548, 43.1909]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8513, 43.1922]
+      },
+      "population": 30,
+      "surface": 314.16,
+      "radius": 1
+    },
+    {
+      "nom": "Cailhau",
+      "code": "11058",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1325, 43.1448]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1376, 43.1471]
+      },
+      "population": 250,
+      "surface": 1009.59,
+      "radius": 1.79
+    },
+    {
+      "nom": "Cailhavel",
+      "code": "11059",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1234, 43.1669]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.126, 43.1615]
+      },
+      "population": 150,
+      "surface": 564.55,
+      "radius": 1.34
+    },
+    {
+      "nom": "Cailla",
+      "code": "11060",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2008, 42.809]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1977, 42.8155]
+      },
+      "population": 52,
+      "surface": 771.1,
+      "radius": 1.57
+    },
+    {
+      "nom": "Cambieure",
+      "code": "11061",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1267, 43.1268]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1335, 43.1262]
+      },
+      "population": 322,
+      "surface": 336.11,
+      "radius": 1.03
+    },
+    {
+      "nom": "Campagna-de-Sault",
+      "code": "11062",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0512, 42.7564]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0537, 42.7593]
+      },
+      "population": 19,
+      "surface": 1076.86,
+      "radius": 1.85
+    },
+    {
+      "nom": "Campagne-sur-Aude",
+      "code": "11063",
+      "codesPostaux": ["11260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2021, 42.9134]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.206, 42.9161]
+      },
+      "population": 616,
+      "surface": 610.86,
+      "radius": 1.39
+    },
+    {
+      "nom": "Camplong-d'Aude",
+      "code": "11064",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6495, 43.1303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6531, 43.129]
+      },
+      "population": 385,
+      "surface": 1263.42,
+      "radius": 2.01
+    },
+    {
+      "nom": "Camps-sur-l'Agly",
+      "code": "11065",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4179, 42.8659]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4344, 42.8593]
+      },
+      "population": 61,
+      "surface": 2650.16,
+      "radius": 2.9
+    },
+    {
+      "nom": "Camurac",
+      "code": "11066",
+      "codesPostaux": ["11340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9252, 42.8015]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9155, 42.7983]
+      },
+      "population": 108,
+      "surface": 1154.13,
+      "radius": 1.92
+    },
+    {
+      "nom": "Canet",
+      "code": "11067",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8291, 43.2248]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.849, 43.2303]
+      },
+      "population": 1853,
+      "surface": 1400.21,
+      "radius": 2.11
+    },
+    {
+      "nom": "Capendu",
+      "code": "11068",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5554, 43.1821]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5577, 43.1841]
+      },
+      "population": 1461,
+      "surface": 1592.17,
+      "radius": 2.25
+    },
+    {
+      "nom": "Carcassonne",
+      "code": "11069",
+      "codesPostaux": ["11000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3491, 43.2078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3529, 43.2121]
+      },
+      "population": 46429,
+      "surface": 6513.35,
+      "radius": 4.55
+    },
+    {
+      "nom": "Carlipa",
+      "code": "11070",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1222, 43.3071]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1271, 43.3066]
+      },
+      "population": 338,
+      "surface": 549.81,
+      "radius": 1.32
+    },
+    {
+      "nom": "Cascastel-des-Corbières",
+      "code": "11071",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7521, 42.9779]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7603, 42.9847]
+      },
+      "population": 216,
+      "surface": 1571.3,
+      "radius": 2.24
+    },
+    {
+      "nom": "Cassaignes",
+      "code": "11073",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2942, 42.948]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2989, 42.9456]
+      },
+      "population": 59,
+      "surface": 385.7,
+      "radius": 1.11
+    },
+    {
+      "nom": "Castans",
+      "code": "11075",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.489, 43.4098]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.483, 43.407]
+      },
+      "population": 127,
+      "surface": 1744.77,
+      "radius": 2.36
+    },
+    {
+      "nom": "Castelnau-d'Aude",
+      "code": "11077",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6779, 43.2345]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6729, 43.2309]
+      },
+      "population": 494,
+      "surface": 746.21,
+      "radius": 1.54
+    },
+    {
+      "nom": "Castelnaudary",
+      "code": "11076",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9613, 43.3201]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.953, 43.3172]
+      },
+      "population": 12212,
+      "surface": 4784.36,
+      "radius": 3.9
+    },
+    {
+      "nom": "Castelreng",
+      "code": "11078",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1254, 43.0208]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1383, 43.029]
+      },
+      "population": 207,
+      "surface": 1135.53,
+      "radius": 1.9
+    },
+    {
+      "nom": "Caudebronde",
+      "code": "11079",
+      "codesPostaux": ["11390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2989, 43.3866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3099, 43.3779]
+      },
+      "population": 220,
+      "surface": 651.69,
+      "radius": 1.44
+    },
+    {
+      "nom": "Caunes-Minervois",
+      "code": "11081",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5179, 43.3419]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5284, 43.3269]
+      },
+      "population": 1571,
+      "surface": 2883.16,
+      "radius": 3.03
+    },
+    {
+      "nom": "Caunette-sur-Lauquet",
+      "code": "11082",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4218, 43.0279]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4154, 43.0307]
+      },
+      "population": 11,
+      "surface": 508.8,
+      "radius": 1.27
+    },
+    {
+      "nom": "Caunettes-en-Val",
+      "code": "11083",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5629, 43.0657]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5536, 43.0633]
+      },
+      "population": 56,
+      "surface": 873.88,
+      "radius": 1.67
+    },
+    {
+      "nom": "Caux-et-Sauzens",
+      "code": "11084",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2575, 43.227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2554, 43.2251]
+      },
+      "population": 1013,
+      "surface": 915.42,
+      "radius": 1.71
+    },
+    {
+      "nom": "Cavanac",
+      "code": "11085",
+      "codesPostaux": ["11570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3353, 43.1699]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3271, 43.1682]
+      },
+      "population": 1012,
+      "surface": 895.25,
+      "radius": 1.69
+    },
+    {
+      "nom": "Caves",
+      "code": "11086",
+      "codesPostaux": ["11510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9624, 42.9392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9778, 42.9319]
+      },
+      "population": 879,
+      "surface": 897.96,
+      "radius": 1.69
+    },
+    {
+      "nom": "Cazalrenoux",
+      "code": "11087",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9485, 43.1897]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9486, 43.1977]
+      },
+      "population": 102,
+      "surface": 1377.12,
+      "radius": 2.09
+    },
+    {
+      "nom": "Cazilhac",
+      "code": "11088",
+      "codesPostaux": ["11570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3594, 43.1781]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3639, 43.185]
+      },
+      "population": 1637,
+      "surface": 411.84,
+      "radius": 1.14
+    },
+    {
+      "nom": "Cenne-Monestiés",
+      "code": "11089",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1294, 43.3216]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1168, 43.3316]
+      },
+      "population": 411,
+      "surface": 775.67,
+      "radius": 1.57
+    },
+    {
+      "nom": "Cépie",
+      "code": "11090",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2397, 43.1074]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2446, 43.1033]
+      },
+      "population": 603,
+      "surface": 683.62,
+      "radius": 1.48
+    },
+    {
+      "nom": "Chalabre",
+      "code": "11091",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0183, 42.9813]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0066, 42.9822]
+      },
+      "population": 1115,
+      "surface": 1602.93,
+      "radius": 2.26
+    },
+    {
+      "nom": "Citou",
+      "code": "11092",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5311, 43.3726]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5415, 43.3753]
+      },
+      "population": 99,
+      "surface": 1770.21,
+      "radius": 2.37
+    },
+    {
+      "nom": "Clermont-sur-Lauquet",
+      "code": "11094",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4296, 43.0484]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4222, 43.0445]
+      },
+      "population": 30,
+      "surface": 1873.89,
+      "radius": 2.44
+    },
+    {
+      "nom": "Comigne",
+      "code": "11095",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5851, 43.1651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5797, 43.1702]
+      },
+      "population": 329,
+      "surface": 958.59,
+      "radius": 1.75
+    },
+    {
+      "nom": "Comus",
+      "code": "11096",
+      "codesPostaux": ["11340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8862, 42.8266]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.891, 42.8135]
+      },
+      "population": 33,
+      "surface": 1430.71,
+      "radius": 2.13
+    },
+    {
+      "nom": "Conilhac-Corbières",
+      "code": "11098",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7115, 43.1856]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7178, 43.1878]
+      },
+      "population": 947,
+      "surface": 1225.24,
+      "radius": 1.97
+    },
+    {
+      "nom": "Conques-sur-Orbiel",
+      "code": "11099",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.38, 43.2815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4019, 43.2693]
+      },
+      "population": 2549,
+      "surface": 2581.32,
+      "radius": 2.87
+    },
+    {
+      "nom": "Corbières",
+      "code": "11100",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0013, 43.0481]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9906, 43.0405]
+      },
+      "population": 36,
+      "surface": 876.98,
+      "radius": 1.67
+    },
+    {
+      "nom": "Coudons",
+      "code": "11101",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1217, 42.8637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1262, 42.8632]
+      },
+      "population": 53,
+      "surface": 973.08,
+      "radius": 1.76
+    },
+    {
+      "nom": "Couffoulens",
+      "code": "11102",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3056, 43.1494]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3075, 43.1557]
+      },
+      "population": 538,
+      "surface": 1017.48,
+      "radius": 1.8
+    },
+    {
+      "nom": "Couiza",
+      "code": "11103",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2714, 42.9324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2555, 42.9427]
+      },
+      "population": 1130,
+      "surface": 688.22,
+      "radius": 1.48
+    },
+    {
+      "nom": "Counozouls",
+      "code": "11104",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2284, 42.7007]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2284, 42.732]
+      },
+      "population": 56,
+      "surface": 2784.56,
+      "radius": 2.98
+    },
+    {
+      "nom": "Cournanel",
+      "code": "11105",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2343, 43.0308]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2336, 43.0317]
+      },
+      "population": 664,
+      "surface": 639.45,
+      "radius": 1.43
+    },
+    {
+      "nom": "Coursan",
+      "code": "11106",
+      "codesPostaux": ["11110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.062, 43.2458]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.057, 43.2338]
+      },
+      "population": 5762,
+      "surface": 2456.2,
+      "radius": 2.8
+    },
+    {
+      "nom": "Courtauly",
+      "code": "11107",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0492, 43.0387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0429, 43.0403]
+      },
+      "population": 76,
+      "surface": 780.18,
+      "radius": 1.58
+    },
+    {
+      "nom": "Coustaussa",
+      "code": "11109",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2884, 42.9379]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2785, 42.9409]
+      },
+      "population": 50,
+      "surface": 471.32,
+      "radius": 1.22
+    },
+    {
+      "nom": "Coustouge",
+      "code": "11110",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7425, 43.0549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7438, 43.0478]
+      },
+      "population": 116,
+      "surface": 973.93,
+      "radius": 1.76
+    },
+    {
+      "nom": "Cruscades",
+      "code": "11111",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8179, 43.2011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8155, 43.1916]
+      },
+      "population": 940,
+      "surface": 974.73,
+      "radius": 1.76
+    },
+    {
+      "nom": "Cubières-sur-Cinoble",
+      "code": "11112",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4712, 42.864]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4612, 42.8622]
+      },
+      "population": 81,
+      "surface": 1486.07,
+      "radius": 2.17
+    },
+    {
+      "nom": "Cucugnan",
+      "code": "11113",
+      "codesPostaux": ["11350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6179, 42.8593]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.603, 42.8506]
+      },
+      "population": 121,
+      "surface": 1509.4,
+      "radius": 2.19
+    },
+    {
+      "nom": "Cumiès",
+      "code": "11114",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8309, 43.2983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8421, 43.2954]
+      },
+      "population": 43,
+      "surface": 406.56,
+      "radius": 1.14
+    },
+    {
+      "nom": "Cuxac-Cabardès",
+      "code": "11115",
+      "codesPostaux": ["11390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2803, 43.3972]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2833, 43.3706]
+      },
+      "population": 953,
+      "surface": 2556.64,
+      "radius": 2.85
+    },
+    {
+      "nom": "Cuxac-d'Aude",
+      "code": "11116",
+      "codesPostaux": ["11590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0093, 43.2571]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9971, 43.2444]
+      },
+      "population": 4070,
+      "surface": 2177.19,
+      "radius": 2.63
+    },
+    {
+      "nom": "Davejean",
+      "code": "11117",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6096, 42.9597]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6054, 42.9598]
+      },
+      "population": 147,
+      "surface": 1364.72,
+      "radius": 2.08
+    },
+    {
+      "nom": "Dernacueillette",
+      "code": "11118",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5967, 42.9292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5978, 42.9286]
+      },
+      "population": 44,
+      "surface": 789.25,
+      "radius": 1.59
+    },
+    {
+      "nom": "Donazac",
+      "code": "11121",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1283, 43.0788]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1197, 43.0771]
+      },
+      "population": 111,
+      "surface": 523,
+      "radius": 1.29
+    },
+    {
+      "nom": "Douzens",
+      "code": "11122",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6096, 43.1757]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5977, 43.1856]
+      },
+      "population": 780,
+      "surface": 1468.84,
+      "radius": 2.16
+    },
+    {
+      "nom": "Duilhac-sous-Peyrepertuse",
+      "code": "11123",
+      "codesPostaux": ["11350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5624, 42.8703]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5666, 42.8635]
+      },
+      "population": 145,
+      "surface": 2117.47,
+      "radius": 2.6
+    },
+    {
+      "nom": "Durban-Corbières",
+      "code": "11124",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8116, 42.9975]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8135, 42.9958]
+      },
+      "population": 644,
+      "surface": 2563.69,
+      "radius": 2.86
+    },
+    {
+      "nom": "Embres-et-Castelmaure",
+      "code": "11125",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8142, 42.9278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8132, 42.9389]
+      },
+      "population": 158,
+      "surface": 3259.79,
+      "radius": 3.22
+    },
+    {
+      "nom": "Escales",
+      "code": "11126",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7033, 43.2232]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6963, 43.2239]
+      },
+      "population": 497,
+      "surface": 1032.09,
+      "radius": 1.81
+    },
+    {
+      "nom": "Escouloubre",
+      "code": "11127",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1343, 42.7145]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1261, 42.7389]
+      },
+      "population": 69,
+      "surface": 3229.56,
+      "radius": 3.21
+    },
+    {
+      "nom": "Escueillens-et-Saint-Just-de-Bélengard",
+      "code": "11128",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0168, 43.0987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0207, 43.1085]
+      },
+      "population": 151,
+      "surface": 1168.89,
+      "radius": 1.93
+    },
+    {
+      "nom": "Espéraza",
+      "code": "11129",
+      "codesPostaux": ["11260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2204, 42.9297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2206, 42.9352]
+      },
+      "population": 1695,
+      "surface": 1059.74,
+      "radius": 1.84
+    },
+    {
+      "nom": "Espezel",
+      "code": "11130",
+      "codesPostaux": ["11340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0256, 42.8455]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0208, 42.8209]
+      },
+      "population": 233,
+      "surface": 1455.29,
+      "radius": 2.15
+    },
+    {
+      "nom": "Fabrezan",
+      "code": "11132",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7139, 43.1282]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7, 43.1374]
+      },
+      "population": 1254,
+      "surface": 2887.43,
+      "radius": 3.03
+    },
+    {
+      "nom": "Fajac-en-Val",
+      "code": "11133",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4663, 43.1203]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4575, 43.1215]
+      },
+      "population": 51,
+      "surface": 1408.66,
+      "radius": 2.12
+    },
+    {
+      "nom": "Fajac-la-Relenque",
+      "code": "11134",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7244, 43.284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7244, 43.2799]
+      },
+      "population": 51,
+      "surface": 368.28,
+      "radius": 1.08
+    },
+    {
+      "nom": "Fanjeaux",
+      "code": "11136",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0359, 43.1921]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0346, 43.1872]
+      },
+      "population": 886,
+      "surface": 2498.79,
+      "radius": 2.82
+    },
+    {
+      "nom": "Félines-Termenès",
+      "code": "11137",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6148, 42.9851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6155, 42.9892]
+      },
+      "population": 133,
+      "surface": 1031.21,
+      "radius": 1.81
+    },
+    {
+      "nom": "Fendeille",
+      "code": "11138",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9503, 43.2707]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9438, 43.2694]
+      },
+      "population": 613,
+      "surface": 733.56,
+      "radius": 1.53
+    },
+    {
+      "nom": "Fenouillet-du-Razès",
+      "code": "11139",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0259, 43.1551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0295, 43.1571]
+      },
+      "population": 76,
+      "surface": 752.93,
+      "radius": 1.55
+    },
+    {
+      "nom": "Ferrals-les-Corbières",
+      "code": "11140",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7383, 43.1432]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7273, 43.1478]
+      },
+      "population": 1267,
+      "surface": 1612.87,
+      "radius": 2.27
+    },
+    {
+      "nom": "Ferran",
+      "code": "11141",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0854, 43.1522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0898, 43.1524]
+      },
+      "population": 132,
+      "surface": 611.2,
+      "radius": 1.39
+    },
+    {
+      "nom": "Festes-et-Saint-André",
+      "code": "11142",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1167, 42.9616]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1446, 42.9731]
+      },
+      "population": 187,
+      "surface": 1849.56,
+      "radius": 2.43
+    },
+    {
+      "nom": "Feuilla",
+      "code": "11143",
+      "codesPostaux": ["11510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9025, 42.9273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.909, 42.9311]
+      },
+      "population": 107,
+      "surface": 2422.52,
+      "radius": 2.78
+    },
+    {
+      "nom": "Fitou",
+      "code": "11144",
+      "codesPostaux": ["11510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9572, 42.8992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9826, 42.8944]
+      },
+      "population": 1147,
+      "surface": 3039.41,
+      "radius": 3.11
+    },
+    {
+      "nom": "Fleury",
+      "code": "11145",
+      "codesPostaux": ["11560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1766, 43.2141]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1352, 43.2284]
+      },
+      "population": 4071,
+      "surface": 5166.83,
+      "radius": 4.06
+    },
+    {
+      "nom": "Floure",
+      "code": "11146",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.484, 43.176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4898, 43.1834]
+      },
+      "population": 427,
+      "surface": 463.74,
+      "radius": 1.21
+    },
+    {
+      "nom": "Fontanès-de-Sault",
+      "code": "11147",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0818, 42.7659]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.082, 42.7685]
+      },
+      "population": 5,
+      "surface": 552.19,
+      "radius": 1.33
+    },
+    {
+      "nom": "Fontcouverte",
+      "code": "11148",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6904, 43.1693]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6899, 43.1685]
+      },
+      "population": 574,
+      "surface": 1020.13,
+      "radius": 1.8
+    },
+    {
+      "nom": "Fonters-du-Razès",
+      "code": "11149",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.923, 43.2389]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9351, 43.2287]
+      },
+      "population": 74,
+      "surface": 1259.46,
+      "radius": 2
+    },
+    {
+      "nom": "Fontiers-Cabardès",
+      "code": "11150",
+      "codesPostaux": ["11390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2502, 43.3735]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2477, 43.3696]
+      },
+      "population": 467,
+      "surface": 881.28,
+      "radius": 1.67
+    },
+    {
+      "nom": "Fontiès-d'Aude",
+      "code": "11151",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4561, 43.188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4531, 43.1873]
+      },
+      "population": 555,
+      "surface": 612.69,
+      "radius": 1.4
+    },
+    {
+      "nom": "Fontjoncouse",
+      "code": "11152",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7945, 43.0424]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.789, 43.0481]
+      },
+      "population": 139,
+      "surface": 2771.76,
+      "radius": 2.97
+    },
+    {
+      "nom": "Fournes-Cabardès",
+      "code": "11154",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4111, 43.3546]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3967, 43.3486]
+      },
+      "population": 52,
+      "surface": 1278.33,
+      "radius": 2.02
+    },
+    {
+      "nom": "Fourtou",
+      "code": "11155",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.443, 42.9106]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4286, 42.9077]
+      },
+      "population": 78,
+      "surface": 2098.94,
+      "radius": 2.58
+    },
+    {
+      "nom": "Fraisse-Cabardès",
+      "code": "11156",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2718, 43.3323]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.271, 43.3251]
+      },
+      "population": 104,
+      "surface": 740.01,
+      "radius": 1.53
+    },
+    {
+      "nom": "Fraissé-des-Corbières",
+      "code": "11157",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8711, 42.9553]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8581, 42.9618]
+      },
+      "population": 221,
+      "surface": 1904.35,
+      "radius": 2.46
+    },
+    {
+      "nom": "Gaja-et-Villedieu",
+      "code": "11158",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1842, 43.0794]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1884, 43.0811]
+      },
+      "population": 309,
+      "surface": 797.66,
+      "radius": 1.59
+    },
+    {
+      "nom": "Gaja-la-Selve",
+      "code": "11159",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8856, 43.2024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8961, 43.1949]
+      },
+      "population": 136,
+      "surface": 1175.9,
+      "radius": 1.93
+    },
+    {
+      "nom": "Galinagues",
+      "code": "11160",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0477, 42.8044]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0449, 42.8086]
+      },
+      "population": 31,
+      "surface": 420.24,
+      "radius": 1.16
+    },
+    {
+      "nom": "Gardie",
+      "code": "11161",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2993, 43.0743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2985, 43.0749]
+      },
+      "population": 128,
+      "surface": 477.57,
+      "radius": 1.23
+    },
+    {
+      "nom": "Generville",
+      "code": "11162",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9309, 43.211]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9317, 43.2124]
+      },
+      "population": 51,
+      "surface": 1044.11,
+      "radius": 1.82
+    },
+    {
+      "nom": "Gincla",
+      "code": "11163",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3298, 42.7658]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3248, 42.7628]
+      },
+      "population": 47,
+      "surface": 785.96,
+      "radius": 1.58
+    },
+    {
+      "nom": "Ginestas",
+      "code": "11164",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.883, 43.2779]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8713, 43.2663]
+      },
+      "population": 1579,
+      "surface": 952.89,
+      "radius": 1.74
+    },
+    {
+      "nom": "Ginoles",
+      "code": "11165",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.153, 42.8637]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1598, 42.8684]
+      },
+      "population": 298,
+      "surface": 638.62,
+      "radius": 1.43
+    },
+    {
+      "nom": "Gourvieille",
+      "code": "11166",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7879, 43.3366]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7823, 43.3396]
+      },
+      "population": 69,
+      "surface": 319.08,
+      "radius": 1.01
+    },
+    {
+      "nom": "Gramazie",
+      "code": "11167",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0989, 43.1376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0967, 43.1391]
+      },
+      "population": 128,
+      "surface": 196.71,
+      "radius": 0.79
+    },
+    {
+      "nom": "Granès",
+      "code": "11168",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.256, 42.8966]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2475, 42.896]
+      },
+      "population": 116,
+      "surface": 556.48,
+      "radius": 1.33
+    },
+    {
+      "nom": "Greffeil",
+      "code": "11169",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3983, 43.0752]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3773, 43.0786]
+      },
+      "population": 94,
+      "surface": 1421.56,
+      "radius": 2.13
+    },
+    {
+      "nom": "Gruissan",
+      "code": "11170",
+      "codesPostaux": ["11430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0871, 43.1042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0864, 43.106]
+      },
+      "population": 5068,
+      "surface": 6210.07,
+      "radius": 4.45
+    },
+    {
+      "nom": "Homps",
+      "code": "11172",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7247, 43.2685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7208, 43.2676]
+      },
+      "population": 604,
+      "surface": 308.92,
+      "radius": 0.99
+    },
+    {
+      "nom": "Hounoux",
+      "code": "11173",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0065, 43.137]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0017, 43.1288]
+      },
+      "population": 133,
+      "surface": 791.68,
+      "radius": 1.59
+    },
+    {
+      "nom": "Issel",
+      "code": "11175",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0012, 43.3681]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9902, 43.3679]
+      },
+      "population": 484,
+      "surface": 1824.33,
+      "radius": 2.41
+    },
+    {
+      "nom": "Jonquières",
+      "code": "11176",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7265, 43.0421]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7291, 43.0394]
+      },
+      "population": 46,
+      "surface": 1356.31,
+      "radius": 2.08
+    },
+    {
+      "nom": "Joucou",
+      "code": "11177",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0854, 42.8244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0878, 42.8268]
+      },
+      "population": 30,
+      "surface": 675.62,
+      "radius": 1.47
+    },
+    {
+      "nom": "La Bezole",
+      "code": "11039",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0952, 43.0249]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1077, 43.0338]
+      },
+      "population": 47,
+      "surface": 670.32,
+      "radius": 1.46
+    },
+    {
+      "nom": "La Cassaigne",
+      "code": "11072",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9914, 43.1942]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9953, 43.2025]
+      },
+      "population": 188,
+      "surface": 1257.79,
+      "radius": 2
+    },
+    {
+      "nom": "La Courtète",
+      "code": "11108",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0317, 43.1425]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0443, 43.1457]
+      },
+      "population": 48,
+      "surface": 567.17,
+      "radius": 1.34
+    },
+    {
+      "nom": "La Digne-d'Amont",
+      "code": "11119",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1619, 43.0387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.16, 43.0411]
+      },
+      "population": 290,
+      "surface": 376.37,
+      "radius": 1.09
+    },
+    {
+      "nom": "La Digne-d'Aval",
+      "code": "11120",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1762, 43.0456]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1781, 43.0462]
+      },
+      "population": 526,
+      "surface": 324.68,
+      "radius": 1.02
+    },
+    {
+      "nom": "La Fajolle",
+      "code": "11135",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9642, 42.7548]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9641, 42.7711]
+      },
+      "population": 13,
+      "surface": 1583.4,
+      "radius": 2.25
+    },
+    {
+      "nom": "La Force",
+      "code": "11153",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0864, 43.1992]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0936, 43.194]
+      },
+      "population": 259,
+      "surface": 474.61,
+      "radius": 1.23
+    },
+    {
+      "nom": "La Louvière-Lauragais",
+      "code": "11208",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7502, 43.2684]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7527, 43.2633]
+      },
+      "population": 80,
+      "surface": 621.33,
+      "radius": 1.41
+    },
+    {
+      "nom": "La Palme",
+      "code": "11188",
+      "codesPostaux": ["11480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9946, 42.9672]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.992, 42.9743]
+      },
+      "population": 1889,
+      "surface": 3261.94,
+      "radius": 3.22
+    },
+    {
+      "nom": "La Pomarède",
+      "code": "11292",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9426, 43.4077]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9505, 43.4046]
+      },
+      "population": 184,
+      "surface": 1336.7,
+      "radius": 2.06
+    },
+    {
+      "nom": "La Redorte",
+      "code": "11190",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6515, 43.2422]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6567, 43.2506]
+      },
+      "population": 1275,
+      "surface": 1362.76,
+      "radius": 2.08
+    },
+    {
+      "nom": "La Serpent",
+      "code": "11376",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1753, 42.9651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1826, 42.9668]
+      },
+      "population": 95,
+      "surface": 1004.29,
+      "radius": 1.79
+    },
+    {
+      "nom": "La Tourette-Cabardès",
+      "code": "11391",
+      "codesPostaux": ["11380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3277, 43.3815]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3345, 43.3806]
+      },
+      "population": 22,
+      "surface": 520.74,
+      "radius": 1.29
+    },
+    {
+      "nom": "Labastide-d'Anjou",
+      "code": "11178",
+      "codesPostaux": ["11320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8538, 43.3462]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8515, 43.3465]
+      },
+      "population": 1261,
+      "surface": 863.84,
+      "radius": 1.66
+    },
+    {
+      "nom": "Labastide-en-Val",
+      "code": "11179",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4668, 43.066]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4735, 43.0755]
+      },
+      "population": 89,
+      "surface": 1208.15,
+      "radius": 1.96
+    },
+    {
+      "nom": "Labastide-Esparbairenque",
+      "code": "11180",
+      "codesPostaux": ["11380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4085, 43.3953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3942, 43.3811]
+      },
+      "population": 62,
+      "surface": 1717.31,
+      "radius": 2.34
+    },
+    {
+      "nom": "Labécède-Lauragais",
+      "code": "11181",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0105, 43.398]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0054, 43.3911]
+      },
+      "population": 419,
+      "surface": 2046.67,
+      "radius": 2.55
+    },
+    {
+      "nom": "Lacombe",
+      "code": "11182",
+      "codesPostaux": ["11310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2415, 43.4076]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2335, 43.3976]
+      },
+      "population": 184,
+      "surface": 1550,
+      "radius": 2.22
+    },
+    {
+      "nom": "Ladern-sur-Lauquet",
+      "code": "11183",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3908, 43.1021]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3507, 43.1041]
+      },
+      "population": 257,
+      "surface": 2548.8,
+      "radius": 2.85
+    },
+    {
+      "nom": "Lafage",
+      "code": "11184",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8659, 43.1651]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8622, 43.1739]
+      },
+      "population": 96,
+      "surface": 1293.97,
+      "radius": 2.03
+    },
+    {
+      "nom": "Lagrasse",
+      "code": "11185",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5914, 43.1048]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6203, 43.0926]
+      },
+      "population": 548,
+      "surface": 3250.02,
+      "radius": 3.22
+    },
+    {
+      "nom": "Lairière",
+      "code": "11186",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.481, 43.028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.484, 43.0159]
+      },
+      "population": 52,
+      "surface": 1350.27,
+      "radius": 2.07
+    },
+    {
+      "nom": "Lanet",
+      "code": "11187",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4868, 42.965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4953, 42.9642]
+      },
+      "population": 59,
+      "surface": 888.02,
+      "radius": 1.68
+    },
+    {
+      "nom": "Laprade",
+      "code": "11189",
+      "codesPostaux": ["11390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2522, 43.4405]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2588, 43.4428]
+      },
+      "population": 116,
+      "surface": 472.46,
+      "radius": 1.23
+    },
+    {
+      "nom": "Laroque-de-Fa",
+      "code": "11191",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5547, 42.9545]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5643, 42.9562]
+      },
+      "population": 141,
+      "surface": 2081.52,
+      "radius": 2.57
+    },
+    {
+      "nom": "Lasbordes",
+      "code": "11192",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0616, 43.3008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0456, 43.294]
+      },
+      "population": 824,
+      "surface": 1554.39,
+      "radius": 2.22
+    },
+    {
+      "nom": "Lasserre-de-Prouille",
+      "code": "11193",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0837, 43.1816]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.085, 43.1785]
+      },
+      "population": 290,
+      "surface": 438.64,
+      "radius": 1.18
+    },
+    {
+      "nom": "Lastours",
+      "code": "11194",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3794, 43.3273]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3791, 43.334]
+      },
+      "population": 148,
+      "surface": 282.18,
+      "radius": 0.95
+    },
+    {
+      "nom": "Laurabuc",
+      "code": "11195",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9919, 43.2625]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.981, 43.2471]
+      },
+      "population": 411,
+      "surface": 837.46,
+      "radius": 1.63
+    },
+    {
+      "nom": "Laurac",
+      "code": "11196",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9681, 43.2304]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9752, 43.2276]
+      },
+      "population": 180,
+      "surface": 1207.95,
+      "radius": 1.96
+    },
+    {
+      "nom": "Lauraguel",
+      "code": "11197",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1698, 43.0964]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1739, 43.098]
+      },
+      "population": 621,
+      "surface": 724.38,
+      "radius": 1.52
+    },
+    {
+      "nom": "Laure-Minervois",
+      "code": "11198",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5144, 43.2678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5199, 43.27]
+      },
+      "population": 1030,
+      "surface": 4069.43,
+      "radius": 3.6
+    },
+    {
+      "nom": "Lavalette",
+      "code": "11199",
+      "codesPostaux": ["11290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2717, 43.1932]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2671, 43.1853]
+      },
+      "population": 1572,
+      "surface": 677.15,
+      "radius": 1.47
+    },
+    {
+      "nom": "Le Bousquet",
+      "code": "11047",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1771, 42.7074]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.163, 42.7433]
+      },
+      "population": 44,
+      "surface": 2605.58,
+      "radius": 2.88
+    },
+    {
+      "nom": "Le Clat",
+      "code": "11093",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1733, 42.7877]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.168, 42.7855]
+      },
+      "population": 28,
+      "surface": 1061.24,
+      "radius": 1.84
+    },
+    {
+      "nom": "Les Brunels",
+      "code": "11054",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0466, 43.4109]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0491, 43.4038]
+      },
+      "population": 268,
+      "surface": 1226.34,
+      "radius": 1.98
+    },
+    {
+      "nom": "Les Cassés",
+      "code": "11074",
+      "codesPostaux": ["11320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8701, 43.429]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.867, 43.4266]
+      },
+      "population": 317,
+      "surface": 734.51,
+      "radius": 1.53
+    },
+    {
+      "nom": "Les Ilhes",
+      "code": "11174",
+      "codesPostaux": ["11380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3726, 43.3557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3783, 43.3511]
+      },
+      "population": 61,
+      "surface": 417.21,
+      "radius": 1.15
+    },
+    {
+      "nom": "Les Martys",
+      "code": "11221",
+      "codesPostaux": ["11390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3106, 43.4222]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.306, 43.4162]
+      },
+      "population": 307,
+      "surface": 1951.89,
+      "radius": 2.49
+    },
+    {
+      "nom": "Lespinassière",
+      "code": "11200",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5533, 43.4075]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5379, 43.4046]
+      },
+      "population": 136,
+      "surface": 1656.5,
+      "radius": 2.3
+    },
+    {
+      "nom": "Leuc",
+      "code": "11201",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3394, 43.1402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3217, 43.1474]
+      },
+      "population": 823,
+      "surface": 1168.19,
+      "radius": 1.93
+    },
+    {
+      "nom": "Leucate",
+      "code": "11202",
+      "codesPostaux": ["11370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0232, 42.9076]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0274, 42.9092]
+      },
+      "population": 4531,
+      "surface": 4703.36,
+      "radius": 3.87
+    },
+    {
+      "nom": "Lézignan-Corbières",
+      "code": "11203",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7649, 43.1983]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7578, 43.2005]
+      },
+      "population": 10855,
+      "surface": 3817.44,
+      "radius": 3.49
+    },
+    {
+      "nom": "Lignairolles",
+      "code": "11204",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0037, 43.0944]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9949, 43.0968]
+      },
+      "population": 34,
+      "surface": 748.35,
+      "radius": 1.54
+    },
+    {
+      "nom": "Limousis",
+      "code": "11205",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4074, 43.3262]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4018, 43.3341]
+      },
+      "population": 124,
+      "surface": 1028.83,
+      "radius": 1.81
+    },
+    {
+      "nom": "Limoux",
+      "code": "11206",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2452, 43.0464]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2182, 43.0533]
+      },
+      "population": 10339,
+      "surface": 3250.67,
+      "radius": 3.22
+    },
+    {
+      "nom": "Loupia",
+      "code": "11207",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1267, 43.0621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1119, 43.0621]
+      },
+      "population": 253,
+      "surface": 462.5,
+      "radius": 1.21
+    },
+    {
+      "nom": "Luc-sur-Aude",
+      "code": "11209",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.285, 42.9636]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2698, 42.9588]
+      },
+      "population": 253,
+      "surface": 798.9,
+      "radius": 1.59
+    },
+    {
+      "nom": "Luc-sur-Orbieu",
+      "code": "11210",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7886, 43.1743]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7873, 43.178]
+      },
+      "population": 1159,
+      "surface": 984.99,
+      "radius": 1.77
+    },
+    {
+      "nom": "Magrie",
+      "code": "11211",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2071, 43.0271]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2, 43.0279]
+      },
+      "population": 543,
+      "surface": 1028.15,
+      "radius": 1.81
+    },
+    {
+      "nom": "Mailhac",
+      "code": "11212",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8283, 43.3067]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8271, 43.3026]
+      },
+      "population": 585,
+      "surface": 1056.59,
+      "radius": 1.83
+    },
+    {
+      "nom": "Maisons",
+      "code": "11213",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6406, 42.9292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6339, 42.9268]
+      },
+      "population": 52,
+      "surface": 1227.11,
+      "radius": 1.98
+    },
+    {
+      "nom": "Malras",
+      "code": "11214",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1702, 43.0611]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1729, 43.063]
+      },
+      "population": 437,
+      "surface": 439.29,
+      "radius": 1.18
+    },
+    {
+      "nom": "Malves-en-Minervois",
+      "code": "11215",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4512, 43.2496]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4422, 43.2521]
+      },
+      "population": 880,
+      "surface": 506.69,
+      "radius": 1.27
+    },
+    {
+      "nom": "Malviès",
+      "code": "11216",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.188, 43.1178]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1848, 43.1182]
+      },
+      "population": 362,
+      "surface": 746.35,
+      "radius": 1.54
+    },
+    {
+      "nom": "Marcorignan",
+      "code": "11217",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9141, 43.2233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9225, 43.225]
+      },
+      "population": 1318,
+      "surface": 571.16,
+      "radius": 1.35
+    },
+    {
+      "nom": "Marquein",
+      "code": "11218",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7238, 43.2978]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.726, 43.3047]
+      },
+      "population": 80,
+      "surface": 569.88,
+      "radius": 1.35
+    },
+    {
+      "nom": "Marsa",
+      "code": "11219",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1411, 42.8211]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1545, 42.8225]
+      },
+      "population": 22,
+      "surface": 1988.96,
+      "radius": 2.52
+    },
+    {
+      "nom": "Marseillette",
+      "code": "11220",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5438, 43.2119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5421, 43.2029]
+      },
+      "population": 706,
+      "surface": 1117.07,
+      "radius": 1.89
+    },
+    {
+      "nom": "Mas-Cabardès",
+      "code": "11222",
+      "codesPostaux": ["11380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3613, 43.3973]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.363, 43.3711]
+      },
+      "population": 173,
+      "surface": 929.27,
+      "radius": 1.72
+    },
+    {
+      "nom": "Mas-des-Cours",
+      "code": "11223",
+      "codesPostaux": ["11570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4259, 43.13]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4235, 43.1291]
+      },
+      "population": 23,
+      "surface": 755.28,
+      "radius": 1.55
+    },
+    {
+      "nom": "Mas-Saintes-Puelles",
+      "code": "11225",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8808, 43.3119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.877, 43.3124]
+      },
+      "population": 937,
+      "surface": 2897.61,
+      "radius": 3.04
+    },
+    {
+      "nom": "Massac",
+      "code": "11224",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5558, 42.9174]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.572, 42.918]
+      },
+      "population": 28,
+      "surface": 1231.05,
+      "radius": 1.98
+    },
+    {
+      "nom": "Mayreville",
+      "code": "11226",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8473, 43.2297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8407, 43.2393]
+      },
+      "population": 86,
+      "surface": 826.3,
+      "radius": 1.62
+    },
+    {
+      "nom": "Mayronnes",
+      "code": "11227",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.528, 43.0487]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5256, 43.0564]
+      },
+      "population": 44,
+      "surface": 1224.12,
+      "radius": 1.97
+    },
+    {
+      "nom": "Mazerolles-du-Razès",
+      "code": "11228",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0656, 43.1371]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.072, 43.1392]
+      },
+      "population": 154,
+      "surface": 857.17,
+      "radius": 1.65
+    },
+    {
+      "nom": "Mazuby",
+      "code": "11229",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0346, 42.7886]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0327, 42.8018]
+      },
+      "population": 23,
+      "surface": 887.03,
+      "radius": 1.68
+    },
+    {
+      "nom": "Mérial",
+      "code": "11230",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9528, 42.7702]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9788, 42.7874]
+      },
+      "population": 30,
+      "surface": 1656.04,
+      "radius": 2.3
+    },
+    {
+      "nom": "Mézerville",
+      "code": "11231",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7851, 43.2513]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7922, 43.2598]
+      },
+      "population": 97,
+      "surface": 764.92,
+      "radius": 1.56
+    },
+    {
+      "nom": "Miraval-Cabardès",
+      "code": "11232",
+      "codesPostaux": ["11380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3377, 43.3848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.346, 43.3822]
+      },
+      "population": 55,
+      "surface": 1252.61,
+      "radius": 2
+    },
+    {
+      "nom": "Mirepeisset",
+      "code": "11233",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8966, 43.2846]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8961, 43.2851]
+      },
+      "population": 743,
+      "surface": 528.98,
+      "radius": 1.3
+    },
+    {
+      "nom": "Mireval-Lauragais",
+      "code": "11234",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.966, 43.2671]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9582, 43.2544]
+      },
+      "population": 193,
+      "surface": 1065.76,
+      "radius": 1.84
+    },
+    {
+      "nom": "Missègre",
+      "code": "11235",
+      "codesPostaux": ["11580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3743, 43.0036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3724, 43.0034]
+      },
+      "population": 64,
+      "surface": 749.1,
+      "radius": 1.54
+    },
+    {
+      "nom": "Molandier",
+      "code": "11236",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7248, 43.251]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7178, 43.2456]
+      },
+      "population": 251,
+      "surface": 2061.52,
+      "radius": 2.56
+    },
+    {
+      "nom": "Molleville",
+      "code": "11238",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8354, 43.3121]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8349, 43.3113]
+      },
+      "population": 136,
+      "surface": 358.01,
+      "radius": 1.07
+    },
+    {
+      "nom": "Montauriol",
+      "code": "11239",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.834, 43.2755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8358, 43.2775]
+      },
+      "population": 84,
+      "surface": 836.23,
+      "radius": 1.63
+    },
+    {
+      "nom": "Montazels",
+      "code": "11240",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2435, 42.9551]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2461, 42.9451]
+      },
+      "population": 537,
+      "surface": 443.34,
+      "radius": 1.19
+    },
+    {
+      "nom": "Montbrun-des-Corbières",
+      "code": "11241",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6843, 43.2011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6845, 43.1985]
+      },
+      "population": 340,
+      "surface": 1064.8,
+      "radius": 1.84
+    },
+    {
+      "nom": "Montclar",
+      "code": "11242",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2456, 43.1411]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2476, 43.1344]
+      },
+      "population": 177,
+      "surface": 1161.68,
+      "radius": 1.92
+    },
+    {
+      "nom": "Montferrand",
+      "code": "11243",
+      "codesPostaux": ["11320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.833, 43.3665]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8213, 43.3647]
+      },
+      "population": 648,
+      "surface": 1796.5,
+      "radius": 2.39
+    },
+    {
+      "nom": "Montfort-sur-Boulzane",
+      "code": "11244",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3112, 42.7288]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3082, 42.7426]
+      },
+      "population": 88,
+      "surface": 3405.42,
+      "radius": 3.29
+    },
+    {
+      "nom": "Montgaillard",
+      "code": "11245",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6311, 42.9018]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6249, 42.9093]
+      },
+      "population": 37,
+      "surface": 1685.51,
+      "radius": 2.32
+    },
+    {
+      "nom": "Montgradail",
+      "code": "11246",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0307, 43.1233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0254, 43.1217]
+      },
+      "population": 49,
+      "surface": 448.75,
+      "radius": 1.2
+    },
+    {
+      "nom": "Monthaut",
+      "code": "11247",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0584, 43.0849]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0624, 43.0774]
+      },
+      "population": 37,
+      "surface": 706.25,
+      "radius": 1.5
+    },
+    {
+      "nom": "Montirat",
+      "code": "11248",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4372, 43.1703]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4389, 43.1729]
+      },
+      "population": 67,
+      "surface": 1309.67,
+      "radius": 2.04
+    },
+    {
+      "nom": "Montjardin",
+      "code": "11249",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0489, 42.9794]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0285, 42.9827]
+      },
+      "population": 80,
+      "surface": 1453.29,
+      "radius": 2.15
+    },
+    {
+      "nom": "Montjoi",
+      "code": "11250",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4789, 42.9941]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4823, 42.9929]
+      },
+      "population": 40,
+      "surface": 740.4,
+      "radius": 1.54
+    },
+    {
+      "nom": "Montmaur",
+      "code": "11252",
+      "codesPostaux": ["11320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8437, 43.3985]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8459, 43.3923]
+      },
+      "population": 350,
+      "surface": 1317.03,
+      "radius": 2.05
+    },
+    {
+      "nom": "Montolieu",
+      "code": "11253",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2183, 43.3139]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.215, 43.3102]
+      },
+      "population": 829,
+      "surface": 2465.87,
+      "radius": 2.8
+    },
+    {
+      "nom": "Montréal",
+      "code": "11254",
+      "codesPostaux": ["11290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1448, 43.1967]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1411, 43.1998]
+      },
+      "population": 2116,
+      "surface": 5635.77,
+      "radius": 4.24
+    },
+    {
+      "nom": "Montredon-des-Corbières",
+      "code": "11255",
+      "codesPostaux": ["11100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9237, 43.1817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9237, 43.1908]
+      },
+      "population": 1477,
+      "surface": 1741.82,
+      "radius": 2.35
+    },
+    {
+      "nom": "Montséret",
+      "code": "11256",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8101, 43.1049]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8122, 43.1029]
+      },
+      "population": 620,
+      "surface": 1142.08,
+      "radius": 1.91
+    },
+    {
+      "nom": "Monze",
+      "code": "11257",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4624, 43.1539]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4597, 43.157]
+      },
+      "population": 243,
+      "surface": 1463.22,
+      "radius": 2.16
+    },
+    {
+      "nom": "Moussan",
+      "code": "11258",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9583, 43.2303]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.949, 43.2301]
+      },
+      "population": 2079,
+      "surface": 1497.43,
+      "radius": 2.18
+    },
+    {
+      "nom": "Moussoulens",
+      "code": "11259",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2343, 43.2847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2315, 43.2798]
+      },
+      "population": 988,
+      "surface": 1953.36,
+      "radius": 2.49
+    },
+    {
+      "nom": "Mouthoumet",
+      "code": "11260",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5315, 42.9631]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5267, 42.9603]
+      },
+      "population": 115,
+      "surface": 1403.01,
+      "radius": 2.11
+    },
+    {
+      "nom": "Moux",
+      "code": "11261",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6475, 43.1741]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6528, 43.1799]
+      },
+      "population": 715,
+      "surface": 1607.4,
+      "radius": 2.26
+    },
+    {
+      "nom": "Narbonne",
+      "code": "11262",
+      "codesPostaux": ["11100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0337, 43.1493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0038, 43.1839]
+      },
+      "population": 56692,
+      "surface": 17477,
+      "radius": 7.46
+    },
+    {
+      "nom": "Nébias",
+      "code": "11263",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0964, 42.8927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1162, 42.8966]
+      },
+      "population": 257,
+      "surface": 1303.13,
+      "radius": 2.04
+    },
+    {
+      "nom": "Névian",
+      "code": "11264",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8836, 43.2059]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9044, 43.212]
+      },
+      "population": 1283,
+      "surface": 1432.58,
+      "radius": 2.14
+    },
+    {
+      "nom": "Niort-de-Sault",
+      "code": "11265",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9885, 42.7731]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0041, 42.8025]
+      },
+      "population": 36,
+      "surface": 2203.78,
+      "radius": 2.65
+    },
+    {
+      "nom": "Ornaisons",
+      "code": "11267",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8374, 43.1735]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8398, 43.1822]
+      },
+      "population": 1097,
+      "surface": 1081.77,
+      "radius": 1.86
+    },
+    {
+      "nom": "Orsans",
+      "code": "11268",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9792, 43.1516]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9821, 43.1608]
+      },
+      "population": 97,
+      "surface": 1027.74,
+      "radius": 1.81
+    },
+    {
+      "nom": "Ouveillan",
+      "code": "11269",
+      "codesPostaux": ["11590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9687, 43.2926]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9688, 43.2884]
+      },
+      "population": 2635,
+      "surface": 3016.4,
+      "radius": 3.1
+    },
+    {
+      "nom": "Padern",
+      "code": "11270",
+      "codesPostaux": ["11350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6493, 42.8673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6576, 42.8678]
+      },
+      "population": 142,
+      "surface": 3010.62,
+      "radius": 3.1
+    },
+    {
+      "nom": "Palairac",
+      "code": "11271",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6574, 42.9584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6611, 42.957]
+      },
+      "population": 31,
+      "surface": 1844.63,
+      "radius": 2.42
+    },
+    {
+      "nom": "Palaja",
+      "code": "11272",
+      "codesPostaux": ["11570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3905, 43.169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3873, 43.174]
+      },
+      "population": 2692,
+      "surface": 1498.64,
+      "radius": 2.18
+    },
+    {
+      "nom": "Paraza",
+      "code": "11273",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8133, 43.2561]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8314, 43.2507]
+      },
+      "population": 700,
+      "surface": 954.89,
+      "radius": 1.74
+    },
+    {
+      "nom": "Pauligne",
+      "code": "11274",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1486, 43.0767]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1599, 43.072]
+      },
+      "population": 363,
+      "surface": 631.28,
+      "radius": 1.42
+    },
+    {
+      "nom": "Payra-sur-l'Hers",
+      "code": "11275",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8692, 43.264]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8542, 43.2665]
+      },
+      "population": 208,
+      "surface": 2531.18,
+      "radius": 2.84
+    },
+    {
+      "nom": "Paziols",
+      "code": "11276",
+      "codesPostaux": ["11350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7135, 42.8552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7193, 42.8594]
+      },
+      "population": 528,
+      "surface": 2824.07,
+      "radius": 3
+    },
+    {
+      "nom": "Pech-Luna",
+      "code": "11278",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8381, 43.2105]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8433, 43.2162]
+      },
+      "population": 76,
+      "surface": 678.05,
+      "radius": 1.47
+    },
+    {
+      "nom": "Pécharic-et-le-Py",
+      "code": "11277",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8254, 43.1923]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.837, 43.1876]
+      },
+      "population": 29,
+      "surface": 595.04,
+      "radius": 1.38
+    },
+    {
+      "nom": "Pennautier",
+      "code": "11279",
+      "codesPostaux": ["11610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3083, 43.2522]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3193, 43.2442]
+      },
+      "population": 2875,
+      "surface": 1852.6,
+      "radius": 2.43
+    },
+    {
+      "nom": "Pépieux",
+      "code": "11280",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6829, 43.2987]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6798, 43.2972]
+      },
+      "population": 1105,
+      "surface": 1023.23,
+      "radius": 1.8
+    },
+    {
+      "nom": "Pexiora",
+      "code": "11281",
+      "codesPostaux": ["11150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0407, 43.2692]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0361, 43.2693]
+      },
+      "population": 1264,
+      "surface": 1366.54,
+      "radius": 2.09
+    },
+    {
+      "nom": "Peyrefitte-du-Razès",
+      "code": "11282",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0243, 43.0582]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0232, 43.0606]
+      },
+      "population": 54,
+      "surface": 695.1,
+      "radius": 1.49
+    },
+    {
+      "nom": "Peyrefitte-sur-l'Hers",
+      "code": "11283",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8156, 43.2491]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8285, 43.2476]
+      },
+      "population": 76,
+      "surface": 665.16,
+      "radius": 1.46
+    },
+    {
+      "nom": "Peyrens",
+      "code": "11284",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9607, 43.3612]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9596, 43.3622]
+      },
+      "population": 459,
+      "surface": 494.46,
+      "radius": 1.25
+    },
+    {
+      "nom": "Peyriac-de-Mer",
+      "code": "11285",
+      "codesPostaux": ["11440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9547, 43.0899]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9599, 43.0868]
+      },
+      "population": 1191,
+      "surface": 3547,
+      "radius": 3.36
+    },
+    {
+      "nom": "Peyriac-Minervois",
+      "code": "11286",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5714, 43.2951]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5661, 43.2915]
+      },
+      "population": 1142,
+      "surface": 1018.72,
+      "radius": 1.8
+    },
+    {
+      "nom": "Peyrolles",
+      "code": "11287",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3363, 42.9602]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3183, 42.9595]
+      },
+      "population": 89,
+      "surface": 1498.25,
+      "radius": 2.18
+    },
+    {
+      "nom": "Pezens",
+      "code": "11288",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.244, 43.2557]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2676, 43.2551]
+      },
+      "population": 1598,
+      "surface": 1123.18,
+      "radius": 1.89
+    },
+    {
+      "nom": "Pieusse",
+      "code": "11289",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2525, 43.0812]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2345, 43.0799]
+      },
+      "population": 967,
+      "surface": 1335.98,
+      "radius": 2.06
+    },
+    {
+      "nom": "Plaigne",
+      "code": "11290",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8059, 43.1697]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8122, 43.1735]
+      },
+      "population": 120,
+      "surface": 1368.64,
+      "radius": 2.09
+    },
+    {
+      "nom": "Plavilla",
+      "code": "11291",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9094, 43.1378]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9131, 43.1474]
+      },
+      "population": 142,
+      "surface": 1269.87,
+      "radius": 2.01
+    },
+    {
+      "nom": "Pomas",
+      "code": "11293",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2811, 43.1054]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.291, 43.1119]
+      },
+      "population": 985,
+      "surface": 1062.93,
+      "radius": 1.84
+    },
+    {
+      "nom": "Pomy",
+      "code": "11294",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.057, 43.0598]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0652, 43.0593]
+      },
+      "population": 51,
+      "surface": 606.65,
+      "radius": 1.39
+    },
+    {
+      "nom": "Port-la-Nouvelle",
+      "code": "11266",
+      "codesPostaux": ["11210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0363, 43.0225]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0422, 43.0203]
+      },
+      "population": 5882,
+      "surface": 3733.27,
+      "radius": 3.45
+    },
+    {
+      "nom": "Portel-des-Corbières",
+      "code": "11295",
+      "codesPostaux": ["11490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9056, 43.0515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9224, 43.0566]
+      },
+      "population": 1288,
+      "surface": 3497.43,
+      "radius": 3.34
+    },
+    {
+      "nom": "Pouzols-Minervois",
+      "code": "11296",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8158, 43.2858]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8271, 43.2875]
+      },
+      "population": 597,
+      "surface": 1017.32,
+      "radius": 1.8
+    },
+    {
+      "nom": "Pradelles-Cabardès",
+      "code": "11297",
+      "codesPostaux": ["11380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4374, 43.4077]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4459, 43.4086]
+      },
+      "population": 160,
+      "surface": 2133.48,
+      "radius": 2.61
+    },
+    {
+      "nom": "Preixan",
+      "code": "11299",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2781, 43.1437]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.288, 43.1454]
+      },
+      "population": 637,
+      "surface": 857.99,
+      "radius": 1.65
+    },
+    {
+      "nom": "Puginier",
+      "code": "11300",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9272, 43.3811]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9282, 43.377]
+      },
+      "population": 154,
+      "surface": 697.69,
+      "radius": 1.49
+    },
+    {
+      "nom": "Puichéric",
+      "code": "11301",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6078, 43.2243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6268, 43.227]
+      },
+      "population": 1194,
+      "surface": 1394.68,
+      "radius": 2.11
+    },
+    {
+      "nom": "Puilaurens",
+      "code": "11302",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2941, 42.8119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3069, 42.8099]
+      },
+      "population": 272,
+      "surface": 3378.19,
+      "radius": 3.28
+    },
+    {
+      "nom": "Puivert",
+      "code": "11303",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0634, 42.9074]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0465, 42.92]
+      },
+      "population": 461,
+      "surface": 4271.81,
+      "radius": 3.69
+    },
+    {
+      "nom": "Quillan",
+      "code": "11304",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1733, 42.8833]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1846, 42.8752]
+      },
+      "population": 2992,
+      "surface": 3596.29,
+      "radius": 3.38
+    },
+    {
+      "nom": "Quintillan",
+      "code": "11305",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6968, 42.9585]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7113, 42.9653]
+      },
+      "population": 57,
+      "surface": 1646.03,
+      "radius": 2.29
+    },
+    {
+      "nom": "Quirbajou",
+      "code": "11306",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1669, 42.8374]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1793, 42.8291]
+      },
+      "population": 50,
+      "surface": 1407.25,
+      "radius": 2.12
+    },
+    {
+      "nom": "Raissac-d'Aude",
+      "code": "11307",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.878, 43.2292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8793, 43.2279]
+      },
+      "population": 234,
+      "surface": 631.61,
+      "radius": 1.42
+    },
+    {
+      "nom": "Raissac-sur-Lampy",
+      "code": "11308",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1614, 43.2802]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1611, 43.2784]
+      },
+      "population": 466,
+      "surface": 545.22,
+      "radius": 1.32
+    },
+    {
+      "nom": "Rennes-le-Château",
+      "code": "11309",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2782, 42.9154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2638, 42.9275]
+      },
+      "population": 87,
+      "surface": 1503.92,
+      "radius": 2.19
+    },
+    {
+      "nom": "Rennes-les-Bains",
+      "code": "11310",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3468, 42.9227]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3192, 42.9182]
+      },
+      "population": 224,
+      "surface": 1930,
+      "radius": 2.48
+    },
+    {
+      "nom": "Ribaute",
+      "code": "11311",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6434, 43.1055]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.635, 43.1072]
+      },
+      "population": 264,
+      "surface": 945.14,
+      "radius": 1.73
+    },
+    {
+      "nom": "Ribouisse",
+      "code": "11312",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.91, 43.1663]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8973, 43.1828]
+      },
+      "population": 101,
+      "surface": 1051.76,
+      "radius": 1.83
+    },
+    {
+      "nom": "Ricaud",
+      "code": "11313",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8958, 43.3478]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8898, 43.3464]
+      },
+      "population": 328,
+      "surface": 618.51,
+      "radius": 1.4
+    },
+    {
+      "nom": "Rieux-en-Val",
+      "code": "11314",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5444, 43.0805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5311, 43.0819]
+      },
+      "population": 86,
+      "surface": 732.78,
+      "radius": 1.53
+    },
+    {
+      "nom": "Rieux-Minervois",
+      "code": "11315",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5906, 43.2667]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5869, 43.2824]
+      },
+      "population": 1966,
+      "surface": 2181.89,
+      "radius": 2.64
+    },
+    {
+      "nom": "Rivel",
+      "code": "11316",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0062, 42.9188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2, 42.9433]
+      },
+      "population": 218,
+      "surface": 2487.71,
+      "radius": 2.81
+    },
+    {
+      "nom": "Rodome",
+      "code": "11317",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0665, 42.7981]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0714, 42.7983]
+      },
+      "population": 99,
+      "surface": 1199.56,
+      "radius": 1.95
+    },
+    {
+      "nom": "Roquecourbe-Minervois",
+      "code": "11318",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6506, 43.2124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6495, 43.2199]
+      },
+      "population": 140,
+      "surface": 363.2,
+      "radius": 1.08
+    },
+    {
+      "nom": "Roquefère",
+      "code": "11319",
+      "codesPostaux": ["11380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.379, 43.3965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3791, 43.374]
+      },
+      "population": 71,
+      "surface": 822.33,
+      "radius": 1.62
+    },
+    {
+      "nom": "Roquefeuil",
+      "code": "11320",
+      "codesPostaux": ["11340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9895, 42.8454]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9945, 42.8203]
+      },
+      "population": 285,
+      "surface": 2266,
+      "radius": 2.69
+    },
+    {
+      "nom": "Roquefort-de-Sault",
+      "code": "11321",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2004, 42.7375]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2006, 42.7392]
+      },
+      "population": 82,
+      "surface": 2224.21,
+      "radius": 2.66
+    },
+    {
+      "nom": "Roquefort-des-Corbières",
+      "code": "11322",
+      "codesPostaux": ["11540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9371, 42.9963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9548, 42.9912]
+      },
+      "population": 1021,
+      "surface": 4545.26,
+      "radius": 3.8
+    },
+    {
+      "nom": "Roquetaillade-et-Conilhac",
+      "code": "11323",
+      "codesPostaux": ["11190", "11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2075, 42.9904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1995, 42.9944]
+      },
+      "population": 269,
+      "surface": 1634.11,
+      "radius": 2.28
+    },
+    {
+      "nom": "Roubia",
+      "code": "11324",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7977, 43.2507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8011, 43.2475]
+      },
+      "population": 514,
+      "surface": 756.78,
+      "radius": 1.55
+    },
+    {
+      "nom": "Rouffiac-d'Aude",
+      "code": "11325",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.283, 43.1249]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2992, 43.1278]
+      },
+      "population": 493,
+      "surface": 551.16,
+      "radius": 1.32
+    },
+    {
+      "nom": "Rouffiac-des-Corbières",
+      "code": "11326",
+      "codesPostaux": ["11350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5595, 42.8881]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.553, 42.88]
+      },
+      "population": 71,
+      "surface": 1612.67,
+      "radius": 2.27
+    },
+    {
+      "nom": "Roullens",
+      "code": "11327",
+      "codesPostaux": ["11290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2672, 43.1666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2715, 43.1648]
+      },
+      "population": 581,
+      "surface": 814,
+      "radius": 1.61
+    },
+    {
+      "nom": "Routier",
+      "code": "11328",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.136, 43.1042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1278, 43.107]
+      },
+      "population": 234,
+      "surface": 1187.35,
+      "radius": 1.94
+    },
+    {
+      "nom": "Rustiques",
+      "code": "11330",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4784, 43.2174]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.473, 43.2164]
+      },
+      "population": 515,
+      "surface": 657.83,
+      "radius": 1.45
+    },
+    {
+      "nom": "Saint-Amans",
+      "code": "11331",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8842, 43.2306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8863, 43.2273]
+      },
+      "population": 62,
+      "surface": 857.84,
+      "radius": 1.65
+    },
+    {
+      "nom": "Saint-André-de-Roquelongue",
+      "code": "11332",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8501, 43.0929]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8374, 43.1143]
+      },
+      "population": 1400,
+      "surface": 2996.69,
+      "radius": 3.09
+    },
+    {
+      "nom": "Saint-Benoît",
+      "code": "11333",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0619, 43.0038]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0644, 43.017]
+      },
+      "population": 108,
+      "surface": 2137.38,
+      "radius": 2.61
+    },
+    {
+      "nom": "Saint-Couat-d'Aude",
+      "code": "11337",
+      "codesPostaux": ["11700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6384, 43.2108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6318, 43.2016]
+      },
+      "population": 366,
+      "surface": 535.53,
+      "radius": 1.31
+    },
+    {
+      "nom": "Saint-Couat-du-Razès",
+      "code": "11338",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1105, 42.9964]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1107, 43.0009]
+      },
+      "population": 43,
+      "surface": 660.41,
+      "radius": 1.45
+    },
+    {
+      "nom": "Saint-Denis",
+      "code": "11339",
+      "codesPostaux": ["11310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2181, 43.357]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2202, 43.3603]
+      },
+      "population": 511,
+      "surface": 862.02,
+      "radius": 1.66
+    },
+    {
+      "nom": "Saint-Ferriol",
+      "code": "11341",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2245, 42.8965]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2241, 42.8928]
+      },
+      "population": 114,
+      "surface": 1008.17,
+      "radius": 1.79
+    },
+    {
+      "nom": "Saint-Frichoux",
+      "code": "11342",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5561, 43.245]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5525, 43.2517]
+      },
+      "population": 225,
+      "surface": 650.18,
+      "radius": 1.44
+    },
+    {
+      "nom": "Saint-Gaudéric",
+      "code": "11343",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9595, 43.1278]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9472, 43.1289]
+      },
+      "population": 108,
+      "surface": 1146.49,
+      "radius": 1.91
+    },
+    {
+      "nom": "Saint-Hilaire",
+      "code": "11344",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3371, 43.0756]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3103, 43.0941]
+      },
+      "population": 713,
+      "surface": 2382.97,
+      "radius": 2.75
+    },
+    {
+      "nom": "Saint-Jean-de-Barrou",
+      "code": "11345",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8262, 42.9623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8406, 42.9572]
+      },
+      "population": 269,
+      "surface": 758.03,
+      "radius": 1.55
+    },
+    {
+      "nom": "Saint-Jean-de-Paracol",
+      "code": "11346",
+      "codesPostaux": ["11260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1047, 42.937]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1143, 42.9356]
+      },
+      "population": 137,
+      "surface": 731.5,
+      "radius": 1.53
+    },
+    {
+      "nom": "Saint-Julia-de-Bec",
+      "code": "11347",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2556, 42.8616]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2457, 42.8681]
+      },
+      "population": 99,
+      "surface": 1416.33,
+      "radius": 2.12
+    },
+    {
+      "nom": "Saint-Julien-de-Briola",
+      "code": "11348",
+      "codesPostaux": ["11270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.941, 43.1628]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9419, 43.1597]
+      },
+      "population": 80,
+      "surface": 1170.91,
+      "radius": 1.93
+    },
+    {
+      "nom": "Saint-Just-et-le-Bézu",
+      "code": "11350",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2917, 42.8796]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2673, 42.8794]
+      },
+      "population": 50,
+      "surface": 1380.99,
+      "radius": 2.1
+    },
+    {
+      "nom": "Saint-Laurent-de-la-Cabrerisse",
+      "code": "11351",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7156, 43.0851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7006, 43.0846]
+      },
+      "population": 757,
+      "surface": 2528.88,
+      "radius": 2.84
+    },
+    {
+      "nom": "Saint-Louis-et-Parahou",
+      "code": "11352",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3253, 42.851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3197, 42.8485]
+      },
+      "population": 53,
+      "surface": 1602.28,
+      "radius": 2.26
+    },
+    {
+      "nom": "Saint-Marcel-sur-Aude",
+      "code": "11353",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.929, 43.252]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9242, 43.2442]
+      },
+      "population": 2019,
+      "surface": 844.82,
+      "radius": 1.64
+    },
+    {
+      "nom": "Saint-Martin-de-Villereglan",
+      "code": "11355",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2082, 43.1034]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2109, 43.1063]
+      },
+      "population": 386,
+      "surface": 968.9,
+      "radius": 1.76
+    },
+    {
+      "nom": "Saint-Martin-des-Puits",
+      "code": "11354",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5768, 43.036]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5667, 43.0408]
+      },
+      "population": 30,
+      "surface": 711.03,
+      "radius": 1.5
+    },
+    {
+      "nom": "Saint-Martin-Lalande",
+      "code": "11356",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0143, 43.3022]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0195, 43.2998]
+      },
+      "population": 1109,
+      "surface": 1272.19,
+      "radius": 2.01
+    },
+    {
+      "nom": "Saint-Martin-le-Vieil",
+      "code": "11357",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1556, 43.2931]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1445, 43.2948]
+      },
+      "population": 214,
+      "surface": 1371.76,
+      "radius": 2.09
+    },
+    {
+      "nom": "Saint-Martin-Lys",
+      "code": "11358",
+      "codesPostaux": ["11500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2367, 42.8242]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2263, 42.8275]
+      },
+      "population": 24,
+      "surface": 1026.66,
+      "radius": 1.81
+    },
+    {
+      "nom": "Saint-Michel-de-Lanès",
+      "code": "11359",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7516, 43.3269]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.756, 43.3252]
+      },
+      "population": 487,
+      "surface": 1301.8,
+      "radius": 2.04
+    },
+    {
+      "nom": "Saint-Nazaire-d'Aude",
+      "code": "11360",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8898, 43.2505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8969, 43.2443]
+      },
+      "population": 2104,
+      "surface": 876.2,
+      "radius": 1.67
+    },
+    {
+      "nom": "Saint-Papoul",
+      "code": "11361",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0437, 43.3376]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0355, 43.3313]
+      },
+      "population": 832,
+      "surface": 2732.31,
+      "radius": 2.95
+    },
+    {
+      "nom": "Saint-Paulet",
+      "code": "11362",
+      "codesPostaux": ["11320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8813, 43.4028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8777, 43.4062]
+      },
+      "population": 203,
+      "surface": 754.61,
+      "radius": 1.55
+    },
+    {
+      "nom": "Saint-Pierre-des-Champs",
+      "code": "11363",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6052, 43.0477]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6044, 43.0587]
+      },
+      "population": 202,
+      "surface": 1666.1,
+      "radius": 2.3
+    },
+    {
+      "nom": "Saint-Polycarpe",
+      "code": "11364",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3091, 43.0311]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2896, 43.0413]
+      },
+      "population": 160,
+      "surface": 1417.87,
+      "radius": 2.12
+    },
+    {
+      "nom": "Saint-Sernin",
+      "code": "11365",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8032, 43.2276]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8021, 43.2334]
+      },
+      "population": 42,
+      "surface": 683.1,
+      "radius": 1.47
+    },
+    {
+      "nom": "Sainte-Camelle",
+      "code": "11334",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7885, 43.2713]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8056, 43.2683]
+      },
+      "population": 124,
+      "surface": 986.77,
+      "radius": 1.77
+    },
+    {
+      "nom": "Sainte-Colombe-sur-Guette",
+      "code": "11335",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2494, 42.7441]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2343, 42.749]
+      },
+      "population": 40,
+      "surface": 2117.82,
+      "radius": 2.6
+    },
+    {
+      "nom": "Sainte-Colombe-sur-l'Hers",
+      "code": "11336",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9614, 42.947]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9672, 42.9523]
+      },
+      "population": 444,
+      "surface": 1091.84,
+      "radius": 1.86
+    },
+    {
+      "nom": "Sainte-Eulalie",
+      "code": "11340",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2061, 43.2439]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2116, 43.2475]
+      },
+      "population": 569,
+      "surface": 642.15,
+      "radius": 1.43
+    },
+    {
+      "nom": "Sainte-Valière",
+      "code": "11366",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8446, 43.2772]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8423, 43.2728]
+      },
+      "population": 524,
+      "surface": 655.29,
+      "radius": 1.44
+    },
+    {
+      "nom": "Saissac",
+      "code": "11367",
+      "codesPostaux": ["11310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1618, 43.3622]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1689, 43.3607]
+      },
+      "population": 909,
+      "surface": 5905.45,
+      "radius": 4.34
+    },
+    {
+      "nom": "Sallèles-Cabardès",
+      "code": "11368",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4109, 43.3217]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4204, 43.3238]
+      },
+      "population": 117,
+      "surface": 706.4,
+      "radius": 1.5
+    },
+    {
+      "nom": "Sallèles-d'Aude",
+      "code": "11369",
+      "codesPostaux": ["11590"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9342, 43.2712]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9459, 43.257]
+      },
+      "population": 3104,
+      "surface": 1250.65,
+      "radius": 2
+    },
+    {
+      "nom": "Salles-d'Aude",
+      "code": "11370",
+      "codesPostaux": ["11110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1082, 43.2349]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1184, 43.239]
+      },
+      "population": 3280,
+      "surface": 1829.14,
+      "radius": 2.41
+    },
+    {
+      "nom": "Salles-sur-l'Hers",
+      "code": "11371",
+      "codesPostaux": ["11410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.7803, 43.2963]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.7875, 43.2935]
+      },
+      "population": 752,
+      "surface": 2002.26,
+      "radius": 2.52
+    },
+    {
+      "nom": "Salsigne",
+      "code": "11372",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3605, 43.3243]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3583, 43.3297]
+      },
+      "population": 388,
+      "surface": 1182.35,
+      "radius": 1.94
+    },
+    {
+      "nom": "Salvezines",
+      "code": "11373",
+      "codesPostaux": ["11140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2799, 42.7727]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3065, 42.7806]
+      },
+      "population": 70,
+      "surface": 2024.7,
+      "radius": 2.54
+    },
+    {
+      "nom": "Salza",
+      "code": "11374",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5064, 42.9877]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4976, 42.9833]
+      },
+      "population": 28,
+      "surface": 850.11,
+      "radius": 1.64
+    },
+    {
+      "nom": "Seignalens",
+      "code": "11375",
+      "codesPostaux": ["11240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9673, 43.098]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.97, 43.0996]
+      },
+      "population": 30,
+      "surface": 638.92,
+      "radius": 1.43
+    },
+    {
+      "nom": "Serres",
+      "code": "11377",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3277, 42.9447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3239, 42.9465]
+      },
+      "population": 88,
+      "surface": 428.76,
+      "radius": 1.17
+    },
+    {
+      "nom": "Serviès-en-Val",
+      "code": "11378",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5261, 43.0955]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5205, 43.0893]
+      },
+      "population": 207,
+      "surface": 675.87,
+      "radius": 1.47
+    },
+    {
+      "nom": "Sigean",
+      "code": "11379",
+      "codesPostaux": ["11130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9793, 43.0344]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9798, 43.0286]
+      },
+      "population": 5620,
+      "surface": 4053.01,
+      "radius": 3.59
+    },
+    {
+      "nom": "Sonnac-sur-l'Hers",
+      "code": "11380",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0013, 43.0154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9928, 43.0041]
+      },
+      "population": 137,
+      "surface": 1378.44,
+      "radius": 2.09
+    },
+    {
+      "nom": "Sougraigne",
+      "code": "11381",
+      "codesPostaux": ["11190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3639, 42.906]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3544, 42.9012]
+      },
+      "population": 127,
+      "surface": 1898.35,
+      "radius": 2.46
+    },
+    {
+      "nom": "Souilhanels",
+      "code": "11382",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9178, 43.3552]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9181, 43.351]
+      },
+      "population": 356,
+      "surface": 282.12,
+      "radius": 0.95
+    },
+    {
+      "nom": "Souilhe",
+      "code": "11383",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9185, 43.3683]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9138, 43.3697]
+      },
+      "population": 342,
+      "surface": 436.19,
+      "radius": 1.18
+    },
+    {
+      "nom": "Soulatgé",
+      "code": "11384",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4993, 42.8766]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5048, 42.8783]
+      },
+      "population": 130,
+      "surface": 2470.05,
+      "radius": 2.8
+    },
+    {
+      "nom": "Soupex",
+      "code": "11385",
+      "codesPostaux": ["11320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8871, 43.3792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8947, 43.3786]
+      },
+      "population": 240,
+      "surface": 764.53,
+      "radius": 1.56
+    },
+    {
+      "nom": "Talairan",
+      "code": "11386",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6654, 43.0204]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6626, 43.0516]
+      },
+      "population": 436,
+      "surface": 3785.27,
+      "radius": 3.47
+    },
+    {
+      "nom": "Taurize",
+      "code": "11387",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5102, 43.0641]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5049, 43.0765]
+      },
+      "population": 106,
+      "surface": 860.41,
+      "radius": 1.65
+    },
+    {
+      "nom": "Termes",
+      "code": "11388",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5673, 43.0052]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.563, 43]
+      },
+      "population": 49,
+      "surface": 1910.47,
+      "radius": 2.47
+    },
+    {
+      "nom": "Terroles",
+      "code": "11389",
+      "codesPostaux": ["11580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3428, 42.9927]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3386, 42.9848]
+      },
+      "population": 14,
+      "surface": 686.23,
+      "radius": 1.48
+    },
+    {
+      "nom": "Thézan-des-Corbières",
+      "code": "11390",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7918, 43.0947]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7698, 43.1043]
+      },
+      "population": 568,
+      "surface": 2649.75,
+      "radius": 2.9
+    },
+    {
+      "nom": "Tournissan",
+      "code": "11392",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6612, 43.0847]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6643, 43.0806]
+      },
+      "population": 284,
+      "surface": 1197.49,
+      "radius": 1.95
+    },
+    {
+      "nom": "Tourouzelle",
+      "code": "11393",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7241, 43.2451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7237, 43.254]
+      },
+      "population": 493,
+      "surface": 1436.77,
+      "radius": 2.14
+    },
+    {
+      "nom": "Tourreilles",
+      "code": "11394",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1677, 43.0216]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1703, 43.0226]
+      },
+      "population": 132,
+      "surface": 645.06,
+      "radius": 1.43
+    },
+    {
+      "nom": "Trassanel",
+      "code": "11395",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4439, 43.3474]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4356, 43.3463]
+      },
+      "population": 26,
+      "surface": 451.37,
+      "radius": 1.2
+    },
+    {
+      "nom": "Trausse",
+      "code": "11396",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5675, 43.3202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5642, 43.3113]
+      },
+      "population": 609,
+      "surface": 1100.3,
+      "radius": 1.87
+    },
+    {
+      "nom": "Trèbes",
+      "code": "11397",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4653, 43.209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4431, 43.2094]
+      },
+      "population": 5386,
+      "surface": 1791.02,
+      "radius": 2.39
+    },
+    {
+      "nom": "Treilles",
+      "code": "11398",
+      "codesPostaux": ["11510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9492, 42.9181]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9447, 42.9232]
+      },
+      "population": 263,
+      "surface": 1261.06,
+      "radius": 2
+    },
+    {
+      "nom": "Tréville",
+      "code": "11399",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9533, 43.3835]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9532, 43.385]
+      },
+      "population": 109,
+      "surface": 548.36,
+      "radius": 1.32
+    },
+    {
+      "nom": "Tréziers",
+      "code": "11400",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9628, 43.054]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.955, 43.0563]
+      },
+      "population": 100,
+      "surface": 660.46,
+      "radius": 1.45
+    },
+    {
+      "nom": "Tuchan",
+      "code": "11401",
+      "codesPostaux": ["11350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7366, 42.9114]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7187, 42.8888]
+      },
+      "population": 790,
+      "surface": 5947.18,
+      "radius": 4.35
+    },
+    {
+      "nom": "Val de Lambronne",
+      "code": "11080",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9899, 43.0747]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9748, 43.0753]
+      },
+      "population": 171,
+      "surface": 1225.44,
+      "radius": 1.98
+    },
+    {
+      "nom": "Val-de-Dagne",
+      "code": "11251",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5498, 43.1283]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5578, 43.1286]
+      },
+      "population": 731,
+      "surface": 5171.39,
+      "radius": 4.06
+    },
+    {
+      "nom": "Val-du-Faby",
+      "code": "11131",
+      "codesPostaux": ["11260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1573, 42.9263]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1932, 42.9387]
+      },
+      "population": 580,
+      "surface": 2466.9,
+      "radius": 2.8
+    },
+    {
+      "nom": "Valmigère",
+      "code": "11402",
+      "codesPostaux": ["11580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3868, 42.9823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3769, 42.9819]
+      },
+      "population": 27,
+      "surface": 600.69,
+      "radius": 1.38
+    },
+    {
+      "nom": "Ventenac-Cabardès",
+      "code": "11404",
+      "codesPostaux": ["11610"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2787, 43.2777]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2846, 43.2663]
+      },
+      "population": 959,
+      "surface": 1081.57,
+      "radius": 1.86
+    },
+    {
+      "nom": "Ventenac-en-Minervois",
+      "code": "11405",
+      "codesPostaux": ["11120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8544, 43.2512]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8605, 43.2485]
+      },
+      "population": 587,
+      "surface": 613.9,
+      "radius": 1.4
+    },
+    {
+      "nom": "Véraza",
+      "code": "11406",
+      "codesPostaux": ["11580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3047, 42.9936]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3056, 42.9862]
+      },
+      "population": 32,
+      "surface": 1504.51,
+      "radius": 2.19
+    },
+    {
+      "nom": "Verdun-en-Lauragais",
+      "code": "11407",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0785, 43.3667]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0586, 43.3658]
+      },
+      "population": 289,
+      "surface": 2066.92,
+      "radius": 2.56
+    },
+    {
+      "nom": "Verzeille",
+      "code": "11408",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3306, 43.1209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.323, 43.1244]
+      },
+      "population": 457,
+      "surface": 544.31,
+      "radius": 1.32
+    },
+    {
+      "nom": "Vignevieille",
+      "code": "11409",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5339, 43.011]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5245, 43.006]
+      },
+      "population": 106,
+      "surface": 1690.54,
+      "radius": 2.32
+    },
+    {
+      "nom": "Villalier",
+      "code": "11410",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4191, 43.2507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4108, 43.2563]
+      },
+      "population": 968,
+      "surface": 804.23,
+      "radius": 1.6
+    },
+    {
+      "nom": "Villanière",
+      "code": "11411",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3392, 43.3505]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3617, 43.3414]
+      },
+      "population": 147,
+      "surface": 725.42,
+      "radius": 1.52
+    },
+    {
+      "nom": "Villar-en-Val",
+      "code": "11414",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.442, 43.0807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4588, 43.0828]
+      },
+      "population": 23,
+      "surface": 1177.44,
+      "radius": 1.94
+    },
+    {
+      "nom": "Villar-Saint-Anselme",
+      "code": "11415",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2979, 43.0572]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2982, 43.054]
+      },
+      "population": 117,
+      "surface": 606.72,
+      "radius": 1.39
+    },
+    {
+      "nom": "Villardebelle",
+      "code": "11412",
+      "codesPostaux": ["11580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4057, 43.0124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3931, 43.0208]
+      },
+      "population": 61,
+      "surface": 1341.81,
+      "radius": 2.07
+    },
+    {
+      "nom": "Villardonnel",
+      "code": "11413",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.314, 43.336]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3125, 43.3352]
+      },
+      "population": 510,
+      "surface": 1717.37,
+      "radius": 2.34
+    },
+    {
+      "nom": "Villarzel-Cabardès",
+      "code": "11416",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4686, 43.2844]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4584, 43.2789]
+      },
+      "population": 270,
+      "surface": 659.18,
+      "radius": 1.45
+    },
+    {
+      "nom": "Villarzel-du-Razès",
+      "code": "11417",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2009, 43.1447]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2072, 43.1401]
+      },
+      "population": 95,
+      "surface": 1297.29,
+      "radius": 2.03
+    },
+    {
+      "nom": "Villasavary",
+      "code": "11418",
+      "codesPostaux": ["11150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0341, 43.2294]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0397, 43.2198]
+      },
+      "population": 1216,
+      "surface": 3421.02,
+      "radius": 3.3
+    },
+    {
+      "nom": "Villautou",
+      "code": "11419",
+      "codesPostaux": ["11420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8388, 43.1635]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8319, 43.1597]
+      },
+      "population": 66,
+      "surface": 614.3,
+      "radius": 1.4
+    },
+    {
+      "nom": "Villebazy",
+      "code": "11420",
+      "codesPostaux": ["11250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3426, 43.058]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3242, 43.0659]
+      },
+      "population": 140,
+      "surface": 1255.9,
+      "radius": 2
+    },
+    {
+      "nom": "Villedaigne",
+      "code": "11421",
+      "codesPostaux": ["11200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8574, 43.2108]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8617, 43.2153]
+      },
+      "population": 573,
+      "surface": 251.03,
+      "radius": 0.89
+    },
+    {
+      "nom": "Villedubert",
+      "code": "11422",
+      "codesPostaux": ["11800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4175, 43.2306]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4217, 43.231]
+      },
+      "population": 340,
+      "surface": 321.94,
+      "radius": 1.01
+    },
+    {
+      "nom": "Villefloure",
+      "code": "11423",
+      "codesPostaux": ["11570"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3887, 43.1281]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3813, 43.1234]
+      },
+      "population": 157,
+      "surface": 1740.42,
+      "radius": 2.35
+    },
+    {
+      "nom": "Villefort",
+      "code": "11424",
+      "codesPostaux": ["11230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0496, 42.9517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0323, 42.9541]
+      },
+      "population": 86,
+      "surface": 1274.54,
+      "radius": 2.01
+    },
+    {
+      "nom": "Villegailhenc",
+      "code": "11425",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3484, 43.2728]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3575, 43.2683]
+      },
+      "population": 1687,
+      "surface": 504.45,
+      "radius": 1.27
+    },
+    {
+      "nom": "Villegly",
+      "code": "11426",
+      "codesPostaux": ["11600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4369, 43.2929]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4376, 43.2836]
+      },
+      "population": 1227,
+      "surface": 1029.2,
+      "radius": 1.81
+    },
+    {
+      "nom": "Villelongue-d'Aude",
+      "code": "11427",
+      "codesPostaux": ["11300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0959, 43.0619]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0954, 43.0556]
+      },
+      "population": 314,
+      "surface": 1356.93,
+      "radius": 2.08
+    },
+    {
+      "nom": "Villemagne",
+      "code": "11428",
+      "codesPostaux": ["11310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1088, 43.3664]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1109, 43.3584]
+      },
+      "population": 242,
+      "surface": 1106.44,
+      "radius": 1.88
+    },
+    {
+      "nom": "Villemoustaussou",
+      "code": "11429",
+      "codesPostaux": ["11620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3712, 43.2491]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3647, 43.2533]
+      },
+      "population": 4434,
+      "surface": 1263.48,
+      "radius": 2.01
+    },
+    {
+      "nom": "Villeneuve-la-Comptal",
+      "code": "11430",
+      "codesPostaux": ["11400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9175, 43.284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9217, 43.2861]
+      },
+      "population": 1424,
+      "surface": 1552.65,
+      "radius": 2.22
+    },
+    {
+      "nom": "Villeneuve-les-Corbières",
+      "code": "11431",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.765, 42.9624]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7773, 42.9772]
+      },
+      "population": 252,
+      "surface": 2427.85,
+      "radius": 2.78
+    },
+    {
+      "nom": "Villeneuve-lès-Montréal",
+      "code": "11432",
+      "codesPostaux": ["11290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1139, 43.1787]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1107, 43.1803]
+      },
+      "population": 337,
+      "surface": 219.95,
+      "radius": 0.84
+    },
+    {
+      "nom": "Villeneuve-Minervois",
+      "code": "11433",
+      "codesPostaux": ["11160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4702, 43.333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4633, 43.3148]
+      },
+      "population": 980,
+      "surface": 2461.24,
+      "radius": 2.8
+    },
+    {
+      "nom": "Villepinte",
+      "code": "11434",
+      "codesPostaux": ["11150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0967, 43.2809]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0879, 43.2819]
+      },
+      "population": 1252,
+      "surface": 1545.1,
+      "radius": 2.22
+    },
+    {
+      "nom": "Villerouge-Termenès",
+      "code": "11435",
+      "codesPostaux": ["11330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6344, 43.0038]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6267, 43.0064]
+      },
+      "population": 163,
+      "surface": 2001.47,
+      "radius": 2.52
+    },
+    {
+      "nom": "Villesèque-des-Corbières",
+      "code": "11436",
+      "codesPostaux": ["11360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8585, 43.0174]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8538, 43.0149]
+      },
+      "population": 379,
+      "surface": 3198.23,
+      "radius": 3.19
+    },
+    {
+      "nom": "Villesèquelande",
+      "code": "11437",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2286, 43.2317]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2321, 43.2376]
+      },
+      "population": 875,
+      "surface": 533.76,
+      "radius": 1.3
+    },
+    {
+      "nom": "Villesiscle",
+      "code": "11438",
+      "codesPostaux": ["11150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0896, 43.2284]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0937, 43.2285]
+      },
+      "population": 366,
+      "surface": 561.65,
+      "radius": 1.34
+    },
+    {
+      "nom": "Villespy",
+      "code": "11439",
+      "codesPostaux": ["11170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0974, 43.321]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0972, 43.3198]
+      },
+      "population": 425,
+      "surface": 666.68,
+      "radius": 1.46
+    },
+    {
+      "nom": "Villetritouls",
+      "code": "11440",
+      "codesPostaux": ["11220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4913, 43.0722]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4892, 43.0812]
+      },
+      "population": 34,
+      "surface": 483.14,
+      "radius": 1.24
+    },
+    {
+      "nom": "Vinassan",
+      "code": "11441",
+      "codesPostaux": ["11110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0969, 43.207]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0745, 43.2026]
+      },
+      "population": 2665,
+      "surface": 894.48,
+      "radius": 1.69
+    }
+  ],
+  "postalCodes": {
+    "11000": {
+      "communes": ["Berriac", "Carcassonne"],
+      "communeCount": 2,
+      "center": [2.3541, 43.2122],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": 43.2121,
+        "maxLat": 43.2176,
+        "minLon": 2.3529,
+        "maxLon": 2.4126
+      },
+      "totalPopulation": 47387,
+      "totalSurface": 6782
+    },
+    "11100": {
+      "communes": ["Bages", "Montredon-des-Corbières", "Narbonne"],
+      "communeCount": 3,
+      "center": [3.0016, 43.1833],
+      "coverageRadius": 6.7,
+      "boundingBox": {
+        "minLat": 43.1236,
+        "maxLat": 43.1908,
+        "minLon": 2.9237,
+        "maxLon": 3.0038
+      },
+      "totalPopulation": 58919,
+      "totalSurface": 21433
+    },
+    "11110": {
+      "communes": ["Armissan", "Coursan", "Salles-d'Aude", "Vinassan"],
+      "communeCount": 4,
+      "center": [3.0803, 43.2234],
+      "coverageRadius": 4.5,
+      "boundingBox": {
+        "minLat": 43.1858,
+        "maxLat": 43.239,
+        "minLon": 3.057,
+        "maxLon": 3.1184
+      },
+      "totalPopulation": 13181,
+      "totalSurface": 6424
+    },
+    "11120": {
+      "communes": [
+        "Argeliers",
+        "Bize-Minervois",
+        "Ginestas",
+        "Mailhac",
+        "Marcorignan",
+        "Mirepeisset",
+        "Moussan",
+        "Pouzols-Minervois",
+        "Saint-Marcel-sur-Aude",
+        "Saint-Nazaire-d'Aude",
+        "Sainte-Valière",
+        "Ventenac-en-Minervois"
+      ],
+      "communeCount": 12,
+      "center": [2.8983, 43.2654],
+      "coverageRadius": 7.1,
+      "boundingBox": {
+        "minLat": 43.225,
+        "maxLat": 43.3182,
+        "minLon": 2.8271,
+        "maxLon": 2.949
+      },
+      "totalPopulation": 15555,
+      "totalSurface": 11803
+    },
+    "11130": {
+      "communes": ["Sigean"],
+      "communeCount": 1,
+      "center": [2.9798, 43.0286],
+      "coverageRadius": 3.59,
+      "totalPopulation": 5620,
+      "totalSurface": 4053
+    },
+    "11140": {
+      "communes": [
+        "Artigues",
+        "Aunat",
+        "Axat",
+        "Belfort-sur-Rebenty",
+        "Bessède-de-Sault",
+        "Le Bousquet",
+        "Cailla",
+        "Campagna-de-Sault",
+        "Le Clat",
+        "Counozouls",
+        "Escouloubre",
+        "La Fajolle",
+        "Fontanès-de-Sault",
+        "Galinagues",
+        "Gincla",
+        "Joucou",
+        "Marsa",
+        "Mazuby",
+        "Mérial",
+        "Montfort-sur-Boulzane",
+        "Niort-de-Sault",
+        "Puilaurens",
+        "Rodome",
+        "Roquefort-de-Sault",
+        "Sainte-Colombe-sur-Guette",
+        "Salvezines"
+      ],
+      "communeCount": 26,
+      "center": [2.2025, 42.7888],
+      "coverageRadius": 19.6,
+      "boundingBox": {
+        "minLat": 42.732,
+        "maxLat": 42.8268,
+        "minLon": 1.9641,
+        "maxLon": 2.3248
+      },
+      "totalPopulation": 1853,
+      "totalSurface": 41631
+    },
+    "11150": {
+      "communes": ["Bram", "Pexiora", "Villasavary", "Villepinte", "Villesiscle"],
+      "communeCount": 5,
+      "center": [2.083, 43.2503],
+      "coverageRadius": 4.9,
+      "boundingBox": {
+        "minLat": 43.2198,
+        "maxLat": 43.2819,
+        "minLon": 2.0361,
+        "maxLon": 2.1143
+      },
+      "totalPopulation": 7350,
+      "totalSurface": 8681
+    },
+    "11160": {
+      "communes": [
+        "Cabrespine",
+        "Castans",
+        "Caunes-Minervois",
+        "Citou",
+        "Lespinassière",
+        "Peyriac-Minervois",
+        "Rieux-Minervois",
+        "Trassanel",
+        "Trausse",
+        "Villeneuve-Minervois"
+      ],
+      "communeCount": 10,
+      "center": [2.5428, 43.3098],
+      "coverageRadius": 11.9,
+      "boundingBox": {
+        "minLat": 43.2824,
+        "maxLat": 43.407,
+        "minLon": 2.4356,
+        "maxLon": 2.5869
+      },
+      "totalPopulation": 6835,
+      "totalSurface": 17085
+    },
+    "11170": {
+      "communes": [
+        "Alzonne",
+        "Carlipa",
+        "Caux-et-Sauzens",
+        "Cenne-Monestiés",
+        "Montolieu",
+        "Moussoulens",
+        "Pezens",
+        "Raissac-sur-Lampy",
+        "Sainte-Eulalie",
+        "Saint-Martin-le-Vieil",
+        "Villesèquelande",
+        "Villespy"
+      ],
+      "communeCount": 12,
+      "center": [2.208, 43.2672],
+      "coverageRadius": 10.8,
+      "boundingBox": {
+        "minLat": 43.2251,
+        "maxLat": 43.3316,
+        "minLon": 2.0972,
+        "maxLon": 2.2676
+      },
+      "totalPopulation": 9316,
+      "totalSurface": 13768
+    },
+    "11190": {
+      "communes": [
+        "Antugnac",
+        "Arques",
+        "Bugarach",
+        "Camps-sur-l'Agly",
+        "Cassaignes",
+        "Couiza",
+        "Coustaussa",
+        "Cubières-sur-Cinoble",
+        "Fourtou",
+        "Luc-sur-Aude",
+        "Montazels",
+        "Peyrolles",
+        "Rennes-le-Château",
+        "Rennes-les-Bains",
+        "Roquetaillade-et-Conilhac",
+        "La Serpent",
+        "Serres",
+        "Sougraigne"
+      ],
+      "communeCount": 18,
+      "center": [2.2816, 42.9395],
+      "coverageRadius": 17,
+      "boundingBox": {
+        "minLat": 42.8593,
+        "maxLat": 42.9944,
+        "minLon": 2.1826,
+        "maxLon": 2.4612
+      },
+      "totalPopulation": 4015,
+      "totalSurface": 24546
+    },
+    "11200": {
+      "communes": [
+        "Argens-Minervois",
+        "Bizanet",
+        "Boutenac",
+        "Camplong-d'Aude",
+        "Canet",
+        "Conilhac-Corbières",
+        "Cruscades",
+        "Escales",
+        "Fabrezan",
+        "Ferrals-les-Corbières",
+        "Homps",
+        "Lézignan-Corbières",
+        "Luc-sur-Orbieu",
+        "Montséret",
+        "Névian",
+        "Ornaisons",
+        "Paraza",
+        "Raissac-d'Aude",
+        "Roubia",
+        "Saint-André-de-Roquelongue",
+        "Thézan-des-Corbières",
+        "Tourouzelle",
+        "Villedaigne"
+      ],
+      "communeCount": 23,
+      "center": [2.7849, 43.1893],
+      "coverageRadius": 12.7,
+      "boundingBox": {
+        "minLat": 43.1029,
+        "maxLat": 43.2676,
+        "minLon": 2.6531,
+        "maxLon": 2.9044
+      },
+      "totalPopulation": 30106,
+      "totalSurface": 35378
+    },
+    "11210": {
+      "communes": ["Port-la-Nouvelle"],
+      "communeCount": 1,
+      "center": [3.0422, 43.0203],
+      "coverageRadius": 3.45,
+      "totalPopulation": 5882,
+      "totalSurface": 3733
+    },
+    "11220": {
+      "communes": [
+        "Arquettes-en-Val",
+        "Caunettes-en-Val",
+        "Coustouge",
+        "Fajac-en-Val",
+        "Jonquières",
+        "Labastide-en-Val",
+        "Lagrasse",
+        "Mayronnes",
+        "Val-de-Dagne",
+        "Ribaute",
+        "Rieux-en-Val",
+        "Saint-Laurent-de-la-Cabrerisse",
+        "Saint-Martin-des-Puits",
+        "Saint-Pierre-des-Champs",
+        "Serviès-en-Val",
+        "Talairan",
+        "Taurize",
+        "Tournissan",
+        "Villar-en-Val",
+        "Villetritouls"
+      ],
+      "communeCount": 20,
+      "center": [2.6148, 43.0879],
+      "coverageRadius": 13.4,
+      "boundingBox": {
+        "minLat": 43.0394,
+        "maxLat": 43.1286,
+        "minLon": 2.4575,
+        "maxLon": 2.7438
+      },
+      "totalPopulation": 4189,
+      "totalSurface": 31192
+    },
+    "11230": {
+      "communes": [
+        "Val de Lambronne",
+        "Chalabre",
+        "Corbières",
+        "Courtauly",
+        "Montjardin",
+        "Peyrefitte-du-Razès",
+        "Puivert",
+        "Rivel",
+        "Saint-Benoît",
+        "Sainte-Colombe-sur-l'Hers",
+        "Sonnac-sur-l'Hers",
+        "Tréziers",
+        "Villefort"
+      ],
+      "communeCount": 13,
+      "center": [2.0067, 42.9783],
+      "coverageRadius": 11.1,
+      "boundingBox": {
+        "minLat": 42.92,
+        "maxLat": 43.0753,
+        "minLon": 1.955,
+        "maxLon": 2.0644
+      },
+      "totalPopulation": 3086,
+      "totalSurface": 19936
+    },
+    "11240": {
+      "communes": [
+        "Alaigne",
+        "Bellegarde-du-Razès",
+        "Belvèze-du-Razès",
+        "Cailhau",
+        "Cailhavel",
+        "Cambieure",
+        "La Courtète",
+        "Donazac",
+        "Escueillens-et-Saint-Just-de-Bélengard",
+        "Fenouillet-du-Razès",
+        "Ferran",
+        "Gramazie",
+        "Hounoux",
+        "Lignairolles",
+        "Mazerolles-du-Razès",
+        "Montgradail",
+        "Monthaut",
+        "Routier",
+        "Seignalens"
+      ],
+      "communeCount": 19,
+      "center": [2.0886, 43.1237],
+      "coverageRadius": 10,
+      "boundingBox": {
+        "minLat": 43.0771,
+        "maxLat": 43.1615,
+        "minLon": 1.97,
+        "maxLon": 2.1376
+      },
+      "totalPopulation": 3463,
+      "totalSurface": 13677
+    },
+    "11250": {
+      "communes": [
+        "Caunette-sur-Lauquet",
+        "Clermont-sur-Lauquet",
+        "Couffoulens",
+        "Gardie",
+        "Greffeil",
+        "Ladern-sur-Lauquet",
+        "Leuc",
+        "Montclar",
+        "Pomas",
+        "Preixan",
+        "Rouffiac-d'Aude",
+        "Saint-Hilaire",
+        "Verzeille",
+        "Villar-Saint-Anselme",
+        "Villebazy"
+      ],
+      "communeCount": 15,
+      "center": [2.3075, 43.1214],
+      "coverageRadius": 13.4,
+      "boundingBox": {
+        "minLat": 43.0307,
+        "maxLat": 43.1557,
+        "minLon": 2.2476,
+        "maxLon": 2.4222
+      },
+      "totalPopulation": 5600,
+      "totalSurface": 17440
+    },
+    "11260": {
+      "communes": ["Campagne-sur-Aude", "Espéraza", "Val-du-Faby", "Saint-Jean-de-Paracol"],
+      "communeCount": 4,
+      "center": [2.2076, 42.932],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 42.9161,
+        "maxLat": 42.9387,
+        "minLon": 2.1143,
+        "maxLon": 2.2206
+      },
+      "totalPopulation": 3028,
+      "totalSurface": 4869
+    },
+    "11270": {
+      "communes": [
+        "Brézilhac",
+        "La Cassaigne",
+        "Cazalrenoux",
+        "Fanjeaux",
+        "La Force",
+        "Gaja-la-Selve",
+        "Generville",
+        "Lasserre-de-Prouille",
+        "Laurac",
+        "Orsans",
+        "Plavilla",
+        "Ribouisse",
+        "Saint-Amans",
+        "Saint-Gaudéric",
+        "Saint-Julien-de-Briola"
+      ],
+      "communeCount": 15,
+      "center": [2.0082, 43.1854],
+      "coverageRadius": 11,
+      "boundingBox": {
+        "minLat": 43.1289,
+        "maxLat": 43.2276,
+        "minLon": 1.8863,
+        "maxLon": 2.0936
+      },
+      "totalPopulation": 2858,
+      "totalSurface": 16720
+    },
+    "11290": {
+      "communes": ["Alairac", "Arzens", "Lavalette", "Montréal", "Roullens", "Villeneuve-lès-Montréal"],
+      "communeCount": 6,
+      "center": [2.2085, 43.1902],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 43.1648,
+        "maxLat": 43.2006,
+        "minLon": 2.1107,
+        "maxLon": 2.2715
+      },
+      "totalPopulation": 7191,
+      "totalSurface": 11191
+    },
+    "11300": {
+      "communes": [
+        "Ajac",
+        "La Bezole",
+        "Bouriège",
+        "Bourigeole",
+        "Brugairolles",
+        "Castelreng",
+        "Cépie",
+        "Cournanel",
+        "La Digne-d'Amont",
+        "La Digne-d'Aval",
+        "Festes-et-Saint-André",
+        "Gaja-et-Villedieu",
+        "Lauraguel",
+        "Limoux",
+        "Loupia",
+        "Magrie",
+        "Malras",
+        "Malviès",
+        "Pauligne",
+        "Pieusse",
+        "Pomy",
+        "Roquetaillade-et-Conilhac",
+        "Saint-Couat-du-Razès",
+        "Saint-Martin-de-Villereglan",
+        "Saint-Polycarpe",
+        "Tourreilles",
+        "Villarzel-du-Razès",
+        "Villelongue-d'Aude"
+      ],
+      "communeCount": 28,
+      "center": [2.2044, 43.0578],
+      "coverageRadius": 11.4,
+      "boundingBox": {
+        "minLat": 42.9731,
+        "maxLat": 43.1401,
+        "minLon": 2.0652,
+        "maxLon": 2.2896
+      },
+      "totalPopulation": 18873,
+      "totalSurface": 27135
+    },
+    "11310": {
+      "communes": ["Lacombe", "Saint-Denis", "Saissac", "Villemagne"],
+      "communeCount": 4,
+      "center": [2.1819, 43.364],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 43.3584,
+        "maxLat": 43.3976,
+        "minLon": 2.1109,
+        "maxLon": 2.2335
+      },
+      "totalPopulation": 1846,
+      "totalSurface": 9424
+    },
+    "11320": {
+      "communes": ["Airoux", "Les Cassés", "Labastide-d'Anjou", "Montferrand", "Montmaur", "Saint-Paulet", "Soupex"],
+      "communeCount": 7,
+      "center": [1.8521, 43.3703],
+      "coverageRadius": 6.4,
+      "boundingBox": {
+        "minLat": 43.3465,
+        "maxLat": 43.4266,
+        "minLon": 1.8213,
+        "maxLon": 1.8947
+      },
+      "totalPopulation": 3208,
+      "totalSurface": 6793
+    },
+    "11330": {
+      "communes": [
+        "Albières",
+        "Auriac",
+        "Bouisse",
+        "Davejean",
+        "Dernacueillette",
+        "Félines-Termenès",
+        "Lairière",
+        "Lanet",
+        "Laroque-de-Fa",
+        "Maisons",
+        "Massac",
+        "Montgaillard",
+        "Montjoi",
+        "Mouthoumet",
+        "Palairac",
+        "Salza",
+        "Soulatgé",
+        "Termes",
+        "Vignevieille",
+        "Villerouge-Termenès"
+      ],
+      "communeCount": 20,
+      "center": [2.5522, 42.964],
+      "coverageRadius": 10.3,
+      "boundingBox": {
+        "minLat": 42.8783,
+        "maxLat": 43.0159,
+        "minLon": 2.4542,
+        "maxLon": 2.6611
+      },
+      "totalPopulation": 1602,
+      "totalSurface": 31071
+    },
+    "11340": {
+      "communes": ["Belcaire", "Belvis", "Camurac", "Comus", "Espezel", "Roquefeuil"],
+      "communeCount": 6,
+      "center": [1.9893, 42.8207],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 42.7983,
+        "maxLat": 42.8497,
+        "minLon": 1.891,
+        "maxLon": 2.0766
+      },
+      "totalPopulation": 1190,
+      "totalSurface": 11893
+    },
+    "11350": {
+      "communes": ["Cucugnan", "Duilhac-sous-Peyrepertuse", "Padern", "Paziols", "Rouffiac-des-Corbières", "Tuchan"],
+      "communeCount": 6,
+      "center": [2.6874, 42.8735],
+      "coverageRadius": 11,
+      "boundingBox": {
+        "minLat": 42.8506,
+        "maxLat": 42.8888,
+        "minLon": 2.553,
+        "maxLon": 2.7193
+      },
+      "totalPopulation": 1797,
+      "totalSurface": 17021
+    },
+    "11360": {
+      "communes": [
+        "Albas",
+        "Cascastel-des-Corbières",
+        "Durban-Corbières",
+        "Embres-et-Castelmaure",
+        "Fontjoncouse",
+        "Fraissé-des-Corbières",
+        "Quintillan",
+        "Saint-Jean-de-Barrou",
+        "Villeneuve-les-Corbières",
+        "Villesèque-des-Corbières"
+      ],
+      "communeCount": 10,
+      "center": [2.812, 42.9874],
+      "coverageRadius": 8.6,
+      "boundingBox": {
+        "minLat": 42.9389,
+        "maxLat": 43.0481,
+        "minLon": 2.7113,
+        "maxLon": 2.8581
+      },
+      "totalPopulation": 2413,
+      "totalSurface": 22387
+    },
+    "11370": {
+      "communes": ["Leucate"],
+      "communeCount": 1,
+      "center": [3.0274, 42.9092],
+      "coverageRadius": 3.87,
+      "totalPopulation": 4531,
+      "totalSurface": 4703
+    },
+    "11380": {
+      "communes": [
+        "Les Ilhes",
+        "Labastide-Esparbairenque",
+        "Mas-Cabardès",
+        "Miraval-Cabardès",
+        "Pradelles-Cabardès",
+        "Roquefère",
+        "La Tourette-Cabardès"
+      ],
+      "communeCount": 7,
+      "center": [2.389, 43.3817],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 43.3511,
+        "maxLat": 43.4086,
+        "minLon": 2.3345,
+        "maxLon": 2.4459
+      },
+      "totalPopulation": 604,
+      "totalSurface": 7793
+    },
+    "11390": {
+      "communes": [
+        "Brousses-et-Villaret",
+        "Caudebronde",
+        "Cuxac-Cabardès",
+        "Fontiers-Cabardès",
+        "Laprade",
+        "Les Martys"
+      ],
+      "communeCount": 6,
+      "center": [2.2764, 43.3764],
+      "coverageRadius": 7.6,
+      "boundingBox": {
+        "minLat": 43.3437,
+        "maxLat": 43.4428,
+        "minLon": 2.2477,
+        "maxLon": 2.3099
+      },
+      "totalPopulation": 2415,
+      "totalSurface": 7671
+    },
+    "11400": {
+      "communes": [
+        "Les Brunels",
+        "Castelnaudary",
+        "Fendeille",
+        "Fonters-du-Razès",
+        "Issel",
+        "Labécède-Lauragais",
+        "Lasbordes",
+        "Laurabuc",
+        "Mas-Saintes-Puelles",
+        "Mireval-Lauragais",
+        "Peyrens",
+        "La Pomarède",
+        "Puginier",
+        "Ricaud",
+        "Saint-Martin-Lalande",
+        "Saint-Papoul",
+        "Souilhanels",
+        "Souilhe",
+        "Tréville",
+        "Verdun-en-Lauragais",
+        "Villeneuve-la-Comptal"
+      ],
+      "communeCount": 21,
+      "center": [1.9601, 43.3187],
+      "coverageRadius": 11.9,
+      "boundingBox": {
+        "minLat": 43.2287,
+        "maxLat": 43.4046,
+        "minLon": 1.877,
+        "maxLon": 2.0586
+      },
+      "totalPopulation": 22021,
+      "totalSurface": 30268
+    },
+    "11410": {
+      "communes": [
+        "Baraigne",
+        "Belflou",
+        "Cumiès",
+        "Fajac-la-Relenque",
+        "Gourvieille",
+        "La Louvière-Lauragais",
+        "Marquein",
+        "Mézerville",
+        "Molleville",
+        "Montauriol",
+        "Payra-sur-l'Hers",
+        "Sainte-Camelle",
+        "Saint-Michel-de-Lanès",
+        "Salles-sur-l'Hers"
+      ],
+      "communeCount": 14,
+      "center": [1.791, 43.2992],
+      "coverageRadius": 6.3,
+      "boundingBox": {
+        "minLat": 43.2598,
+        "maxLat": 43.3396,
+        "minLon": 1.7244,
+        "maxLon": 1.8542
+      },
+      "totalPopulation": 2486,
+      "totalSurface": 12474
+    },
+    "11420": {
+      "communes": [
+        "Belpech",
+        "Cahuzac",
+        "Lafage",
+        "Mayreville",
+        "Molandier",
+        "Pécharic-et-le-Py",
+        "Pech-Luna",
+        "Peyrefitte-sur-l'Hers",
+        "Plaigne",
+        "Saint-Sernin",
+        "Villautou"
+      ],
+      "communeCount": 11,
+      "center": [1.7707, 43.2042],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 43.1597,
+        "maxLat": 43.2476,
+        "minLon": 1.7178,
+        "maxLon": 1.8622
+      },
+      "totalPopulation": 2211,
+      "totalSurface": 13489
+    },
+    "11430": {
+      "communes": ["Gruissan"],
+      "communeCount": 1,
+      "center": [3.0864, 43.106],
+      "coverageRadius": 4.45,
+      "totalPopulation": 5068,
+      "totalSurface": 6210
+    },
+    "11440": {
+      "communes": ["Peyriac-de-Mer"],
+      "communeCount": 1,
+      "center": [2.9599, 43.0868],
+      "coverageRadius": 3.36,
+      "totalPopulation": 1191,
+      "totalSurface": 3547
+    },
+    "11480": {
+      "communes": ["La Palme"],
+      "communeCount": 1,
+      "center": [2.992, 42.9743],
+      "coverageRadius": 3.22,
+      "totalPopulation": 1889,
+      "totalSurface": 3262
+    },
+    "11490": {
+      "communes": ["Portel-des-Corbières"],
+      "communeCount": 1,
+      "center": [2.9224, 43.0566],
+      "coverageRadius": 3.34,
+      "totalPopulation": 1288,
+      "totalSurface": 3497
+    },
+    "11500": {
+      "communes": [
+        "Belvianes-et-Cavirac",
+        "Coudons",
+        "Ginoles",
+        "Granès",
+        "Nébias",
+        "Quillan",
+        "Quirbajou",
+        "Saint-Ferriol",
+        "Saint-Julia-de-Bec",
+        "Saint-Just-et-le-Bézu",
+        "Saint-Louis-et-Parahou",
+        "Saint-Martin-Lys"
+      ],
+      "communeCount": 12,
+      "center": [2.186, 42.8743],
+      "coverageRadius": 11.3,
+      "boundingBox": {
+        "minLat": 42.8275,
+        "maxLat": 42.8966,
+        "minLon": 2.1162,
+        "maxLon": 2.3197
+      },
+      "totalPopulation": 4365,
+      "totalSurface": 16102
+    },
+    "11510": {
+      "communes": ["Caves", "Feuilla", "Fitou", "Treilles"],
+      "communeCount": 4,
+      "center": [2.9734, 42.913],
+      "coverageRadius": 5.7,
+      "boundingBox": {
+        "minLat": 42.8944,
+        "maxLat": 42.9319,
+        "minLon": 2.909,
+        "maxLon": 2.9826
+      },
+      "totalPopulation": 2396,
+      "totalSurface": 7621
+    },
+    "11540": {
+      "communes": ["Roquefort-des-Corbières"],
+      "communeCount": 1,
+      "center": [2.9548, 42.9912],
+      "coverageRadius": 3.8,
+      "totalPopulation": 1021,
+      "totalSurface": 4545
+    },
+    "11560": {
+      "communes": ["Fleury"],
+      "communeCount": 1,
+      "center": [3.1352, 43.2284],
+      "coverageRadius": 4.06,
+      "totalPopulation": 4071,
+      "totalSurface": 5167
+    },
+    "11570": {
+      "communes": ["Cavanac", "Cazilhac", "Mas-des-Cours", "Palaja", "Villefloure"],
+      "communeCount": 5,
+      "center": [2.3693, 43.1746],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 43.1234,
+        "maxLat": 43.185,
+        "minLon": 2.3271,
+        "maxLon": 2.4235
+      },
+      "totalPopulation": 5521,
+      "totalSurface": 5301
+    },
+    "11580": {
+      "communes": [
+        "Alet-les-Bains",
+        "Belcastel-et-Buc",
+        "Missègre",
+        "Terroles",
+        "Valmigère",
+        "Véraza",
+        "Villardebelle"
+      ],
+      "communeCount": 7,
+      "center": [2.2983, 43.0011],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 42.9819,
+        "maxLat": 43.038,
+        "minLon": 2.2567,
+        "maxLon": 2.3931
+      },
+      "totalPopulation": 642,
+      "totalSurface": 8770
+    },
+    "11590": {
+      "communes": ["Cuxac-d'Aude", "Ouveillan", "Sallèles-d'Aude"],
+      "communeCount": 3,
+      "center": [2.9733, 43.2602],
+      "coverageRadius": 3.2,
+      "boundingBox": {
+        "minLat": 43.2444,
+        "maxLat": 43.2884,
+        "minLon": 2.9459,
+        "maxLon": 2.9971
+      },
+      "totalPopulation": 9809,
+      "totalSurface": 6444
+    },
+    "11600": {
+      "communes": [
+        "Aragon",
+        "Bagnoles",
+        "Conques-sur-Orbiel",
+        "Fournes-Cabardès",
+        "Fraisse-Cabardès",
+        "Lastours",
+        "Limousis",
+        "Malves-en-Minervois",
+        "Sallèles-Cabardès",
+        "Salsigne",
+        "Villalier",
+        "Villanière",
+        "Villardonnel",
+        "Villarzel-Cabardès",
+        "Villegailhenc",
+        "Villegly"
+      ],
+      "communeCount": 16,
+      "center": [2.3932, 43.2799],
+      "coverageRadius": 11.1,
+      "boundingBox": {
+        "minLat": 43.2521,
+        "maxLat": 43.3486,
+        "minLon": 2.271,
+        "maxLon": 2.4584
+      },
+      "totalPopulation": 9962,
+      "totalSurface": 16462
+    },
+    "11610": {
+      "communes": ["Pennautier", "Ventenac-Cabardès"],
+      "communeCount": 2,
+      "center": [2.3106, 43.2497],
+      "coverageRadius": 2.8,
+      "boundingBox": {
+        "minLat": 43.2442,
+        "maxLat": 43.2663,
+        "minLon": 2.2846,
+        "maxLon": 2.3193
+      },
+      "totalPopulation": 3834,
+      "totalSurface": 2934
+    },
+    "11620": {
+      "communes": ["Villemoustaussou"],
+      "communeCount": 1,
+      "center": [2.3647, 43.2533],
+      "coverageRadius": 2.01,
+      "totalPopulation": 4434,
+      "totalSurface": 1263
+    },
+    "11700": {
+      "communes": [
+        "Azille",
+        "Blomac",
+        "Capendu",
+        "Castelnau-d'Aude",
+        "Comigne",
+        "Douzens",
+        "Fontcouverte",
+        "La Redorte",
+        "Montbrun-des-Corbières",
+        "Moux",
+        "Pépieux",
+        "Puichéric",
+        "Roquecourbe-Minervois",
+        "Saint-Couat-d'Aude"
+      ],
+      "communeCount": 14,
+      "center": [2.6355, 43.2231],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 43.1685,
+        "maxLat": 43.2972,
+        "minLon": 2.5577,
+        "maxLon": 2.6899
+      },
+      "totalPopulation": 10152,
+      "totalSurface": 16410
+    },
+    "11800": {
+      "communes": [
+        "Aigues-Vives",
+        "Badens",
+        "Barbaira",
+        "Bouilhonnac",
+        "Floure",
+        "Fontiès-d'Aude",
+        "Laure-Minervois",
+        "Marseillette",
+        "Montirat",
+        "Monze",
+        "Rustiques",
+        "Saint-Frichoux",
+        "Trèbes",
+        "Villedubert"
+      ],
+      "communeCount": 14,
+      "center": [2.4736, 43.2132],
+      "coverageRadius": 7.7,
+      "boundingBox": {
+        "minLat": 43.157,
+        "maxLat": 43.27,
+        "minLon": 2.4217,
+        "maxLon": 2.5525
+      },
+      "totalPopulation": 11768,
+      "totalSurface": 16049
+    }
+  }
+}

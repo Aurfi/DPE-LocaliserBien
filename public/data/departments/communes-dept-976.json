@@ -1,0 +1,415 @@
+{
+  "departmentCode": "976",
+  "departmentName": "Mayotte",
+  "stats": {
+    "communeCount": 17,
+    "totalPopulation": 256518,
+    "totalSurface": 36868
+  },
+  "communes": [
+    {
+      "nom": "Acoua",
+      "code": "97601",
+      "codesPostaux": ["97630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.0678, -12.7249]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.0588, -12.7242]
+      },
+      "population": 5192,
+      "surface": 1254.11,
+      "radius": 2
+    },
+    {
+      "nom": "Bandraboua",
+      "code": "97602",
+      "codesPostaux": ["97650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1238, -12.7176]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.1218, -12.7042]
+      },
+      "population": 13989,
+      "surface": 3170.82,
+      "radius": 3.18
+    },
+    {
+      "nom": "Bandrele",
+      "code": "97603",
+      "codesPostaux": ["97660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1797, -12.9392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.1927, -12.9109]
+      },
+      "population": 10282,
+      "surface": 3495.03,
+      "radius": 3.34
+    },
+    {
+      "nom": "Bouéni",
+      "code": "97604",
+      "codesPostaux": ["97620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1021, -12.9279]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.0803, -12.9102]
+      },
+      "population": 6189,
+      "surface": 1390.8,
+      "radius": 2.1
+    },
+    {
+      "nom": "Chiconi",
+      "code": "97605",
+      "codesPostaux": ["97670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1125, -12.8209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.1152, -12.8324]
+      },
+      "population": 8295,
+      "surface": 816.96,
+      "radius": 1.61
+    },
+    {
+      "nom": "Chirongui",
+      "code": "97606",
+      "codesPostaux": ["97620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1428, -12.9179]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.1502, -12.9361]
+      },
+      "population": 8920,
+      "surface": 2587.93,
+      "radius": 2.87
+    },
+    {
+      "nom": "Dembeni",
+      "code": "97607",
+      "codesPostaux": ["97660"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1805, -12.853]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.1839, -12.8435]
+      },
+      "population": 15848,
+      "surface": 3826.54,
+      "radius": 3.49
+    },
+    {
+      "nom": "Dzaoudzi",
+      "code": "97608",
+      "codesPostaux": ["97615"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.2769, -12.7761]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.2725, -12.7883]
+      },
+      "population": 17831,
+      "surface": 644.13,
+      "radius": 1.43
+    },
+    {
+      "nom": "Kani-Kéli",
+      "code": "97609",
+      "codesPostaux": ["97625"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1207, -12.9746]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.1042, -12.9572]
+      },
+      "population": 5507,
+      "surface": 2043.24,
+      "radius": 2.55
+    },
+    {
+      "nom": "Koungou",
+      "code": "97610",
+      "codesPostaux": ["97600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1912, -12.7417]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.2037, -12.7334]
+      },
+      "population": 32156,
+      "surface": 2811.67,
+      "radius": 2.99
+    },
+    {
+      "nom": "M'Tsangamouji",
+      "code": "97613",
+      "codesPostaux": ["97650"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.0845, -12.755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.084, -12.7614]
+      },
+      "population": 6432,
+      "surface": 2154.4,
+      "radius": 2.62
+    },
+    {
+      "nom": "Mamoudzou",
+      "code": "97611",
+      "codesPostaux": ["97600", "97605"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1964, -12.7875]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.2324, -12.7807]
+      },
+      "population": 71437,
+      "surface": 4211.81,
+      "radius": 3.66
+    },
+    {
+      "nom": "Mtsamboro",
+      "code": "97612",
+      "codesPostaux": ["97630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.0601, -12.6754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.0693, -12.6974]
+      },
+      "population": 7705,
+      "surface": 1614.61,
+      "radius": 2.27
+    },
+    {
+      "nom": "Ouangani",
+      "code": "97614",
+      "codesPostaux": ["97670"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1384, -12.8393]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.1393, -12.8487]
+      },
+      "population": 10203,
+      "surface": 1850,
+      "radius": 2.43
+    },
+    {
+      "nom": "Pamandzi",
+      "code": "97615",
+      "codesPostaux": ["97615"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.2842, -12.801]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.2748, -12.7983]
+      },
+      "population": 11442,
+      "surface": 439.54,
+      "radius": 1.18
+    },
+    {
+      "nom": "Sada",
+      "code": "97616",
+      "codesPostaux": ["97640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1135, -12.8642]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.106, -12.8471]
+      },
+      "population": 11156,
+      "surface": 1107.73,
+      "radius": 1.88
+    },
+    {
+      "nom": "Tsingoni",
+      "code": "97617",
+      "codesPostaux": ["97680"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [45.1334, -12.7824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [45.1052, -12.7902]
+      },
+      "population": 13934,
+      "surface": 3448.32,
+      "radius": 3.31
+    }
+  ],
+  "postalCodes": {
+    "97600": {
+      "communes": ["Koungou", "Mamoudzou"],
+      "communeCount": 2,
+      "center": [45.2235, -12.766],
+      "coverageRadius": 4.3,
+      "boundingBox": {
+        "minLat": -12.7807,
+        "maxLat": -12.7334,
+        "minLon": 45.2037,
+        "maxLon": 45.2324
+      },
+      "totalPopulation": 103593,
+      "totalSurface": 7023
+    },
+    "97605": {
+      "communes": ["Mamoudzou"],
+      "communeCount": 1,
+      "center": [45.2324, -12.7807],
+      "coverageRadius": 3.66,
+      "totalPopulation": 71437,
+      "totalSurface": 4212
+    },
+    "97615": {
+      "communes": ["Dzaoudzi", "Pamandzi"],
+      "communeCount": 2,
+      "center": [45.2734, -12.7922],
+      "coverageRadius": 0.7,
+      "boundingBox": {
+        "minLat": -12.7983,
+        "maxLat": -12.7883,
+        "minLon": 45.2725,
+        "maxLon": 45.2748
+      },
+      "totalPopulation": 29273,
+      "totalSurface": 1084
+    },
+    "97620": {
+      "communes": ["Bouéni", "Chirongui"],
+      "communeCount": 2,
+      "center": [45.1216, -12.9255],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": -12.9361,
+        "maxLat": -12.9102,
+        "minLon": 45.0803,
+        "maxLon": 45.1502
+      },
+      "totalPopulation": 15109,
+      "totalSurface": 3979
+    },
+    "97625": {
+      "communes": ["Kani-Kéli"],
+      "communeCount": 1,
+      "center": [45.1042, -12.9572],
+      "coverageRadius": 2.55,
+      "totalPopulation": 5507,
+      "totalSurface": 2043
+    },
+    "97630": {
+      "communes": ["Acoua", "Mtsamboro"],
+      "communeCount": 2,
+      "center": [45.0651, -12.7082],
+      "coverageRadius": 2,
+      "boundingBox": {
+        "minLat": -12.7242,
+        "maxLat": -12.6974,
+        "minLon": 45.0588,
+        "maxLon": 45.0693
+      },
+      "totalPopulation": 12897,
+      "totalSurface": 2869
+    },
+    "97640": {
+      "communes": ["Sada"],
+      "communeCount": 1,
+      "center": [45.106, -12.8471],
+      "coverageRadius": 1.88,
+      "totalPopulation": 11156,
+      "totalSurface": 1108
+    },
+    "97650": {
+      "communes": ["Bandraboua", "M'Tsangamouji"],
+      "communeCount": 2,
+      "center": [45.1099, -12.7222],
+      "coverageRadius": 5.2,
+      "boundingBox": {
+        "minLat": -12.7614,
+        "maxLat": -12.7042,
+        "minLon": 45.084,
+        "maxLon": 45.1218
+      },
+      "totalPopulation": 20421,
+      "totalSurface": 5325
+    },
+    "97660": {
+      "communes": ["Bandrele", "Dembeni"],
+      "communeCount": 2,
+      "center": [45.1874, -12.87],
+      "coverageRadius": 4.6,
+      "boundingBox": {
+        "minLat": -12.9109,
+        "maxLat": -12.8435,
+        "minLon": 45.1839,
+        "maxLon": 45.1927
+      },
+      "totalPopulation": 26130,
+      "totalSurface": 7322
+    },
+    "97670": {
+      "communes": ["Chiconi", "Ouangani"],
+      "communeCount": 2,
+      "center": [45.1285, -12.8414],
+      "coverageRadius": 1.8,
+      "boundingBox": {
+        "minLat": -12.8487,
+        "maxLat": -12.8324,
+        "minLon": 45.1152,
+        "maxLon": 45.1393
+      },
+      "totalPopulation": 18498,
+      "totalSurface": 2667
+    },
+    "97680": {
+      "communes": ["Tsingoni"],
+      "communeCount": 1,
+      "center": [45.1052, -12.7902],
+      "coverageRadius": 3.31,
+      "totalPopulation": 13934,
+      "totalSurface": 3448
+    }
+  }
+}

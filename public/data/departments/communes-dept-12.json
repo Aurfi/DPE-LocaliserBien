@@ -1,0 +1,5499 @@
+{
+  "departmentCode": "12",
+  "departmentName": "Aveyron",
+  "stats": {
+    "communeCount": 285,
+    "totalPopulation": 279736,
+    "totalSurface": 877502
+  },
+  "communes": [
+    {
+      "nom": "Agen-d'Aveyron",
+      "code": "12001",
+      "codesPostaux": ["12630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6915, 44.3509]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6802, 44.3577]
+      },
+      "population": 1120,
+      "surface": 2209.95,
+      "radius": 2.65
+    },
+    {
+      "nom": "Aguessac",
+      "code": "12002",
+      "codesPostaux": ["12520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0669, 44.1584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0982, 44.156]
+      },
+      "population": 924,
+      "surface": 1775.48,
+      "radius": 2.38
+    },
+    {
+      "nom": "Almont-les-Junies",
+      "code": "12004",
+      "codesPostaux": ["12300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3172, 44.6007]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2937, 44.5962]
+      },
+      "population": 438,
+      "surface": 2379,
+      "radius": 2.75
+    },
+    {
+      "nom": "Alrance",
+      "code": "12006",
+      "codesPostaux": ["12430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6756, 44.1396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6828, 44.1314]
+      },
+      "population": 333,
+      "surface": 3592.11,
+      "radius": 3.38
+    },
+    {
+      "nom": "Ambeyrac",
+      "code": "12007",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9356, 44.4919]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9447, 44.5096]
+      },
+      "population": 181,
+      "surface": 1117.91,
+      "radius": 1.89
+    },
+    {
+      "nom": "Anglars-Saint-Félix",
+      "code": "12008",
+      "codesPostaux": ["12390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2352, 44.4143]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2186, 44.4232]
+      },
+      "population": 918,
+      "surface": 2222.99,
+      "radius": 2.66
+    },
+    {
+      "nom": "Argences en Aubrac",
+      "code": "12223",
+      "codesPostaux": ["12210", "12420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8098, 44.7813]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7589, 44.8037]
+      },
+      "population": 1597,
+      "surface": 15388.42,
+      "radius": 7
+    },
+    {
+      "nom": "Arnac-sur-Dourdou",
+      "code": "12009",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9484, 43.7189]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9336, 43.7264]
+      },
+      "population": 44,
+      "surface": 1653.65,
+      "radius": 2.29
+    },
+    {
+      "nom": "Arques",
+      "code": "12010",
+      "codesPostaux": ["12290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8063, 44.32]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7996, 44.3179]
+      },
+      "population": 165,
+      "surface": 1124.46,
+      "radius": 1.89
+    },
+    {
+      "nom": "Arvieu",
+      "code": "12011",
+      "codesPostaux": ["12120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6704, 44.1908]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.661, 44.1929]
+      },
+      "population": 765,
+      "surface": 4971.03,
+      "radius": 3.98
+    },
+    {
+      "nom": "Asprières",
+      "code": "12012",
+      "codesPostaux": ["12700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1412, 44.5517]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1445, 44.5451]
+      },
+      "population": 770,
+      "surface": 1723.76,
+      "radius": 2.34
+    },
+    {
+      "nom": "Aubin",
+      "code": "12013",
+      "codesPostaux": ["12110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2531, 44.5309]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2462, 44.5276]
+      },
+      "population": 3465,
+      "surface": 2716.23,
+      "radius": 2.94
+    },
+    {
+      "nom": "Auriac-Lagast",
+      "code": "12015",
+      "codesPostaux": ["12120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6002, 44.1421]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.58, 44.1461]
+      },
+      "population": 229,
+      "surface": 3061.66,
+      "radius": 3.12
+    },
+    {
+      "nom": "Auzits",
+      "code": "12016",
+      "codesPostaux": ["12390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.32, 44.4954]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3269, 44.5041]
+      },
+      "population": 813,
+      "surface": 2448.79,
+      "radius": 2.79
+    },
+    {
+      "nom": "Ayssènes",
+      "code": "12017",
+      "codesPostaux": ["12430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7619, 44.0916]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7797, 44.0685]
+      },
+      "population": 221,
+      "surface": 2311.23,
+      "radius": 2.71
+    },
+    {
+      "nom": "Balaguier-d'Olt",
+      "code": "12018",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9778, 44.5188]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9732, 44.5236]
+      },
+      "population": 175,
+      "surface": 1094.23,
+      "radius": 1.87
+    },
+    {
+      "nom": "Balaguier-sur-Rance",
+      "code": "12019",
+      "codesPostaux": ["12380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5761, 43.8945]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5767, 43.898]
+      },
+      "population": 89,
+      "surface": 975.09,
+      "radius": 1.76
+    },
+    {
+      "nom": "Baraqueville",
+      "code": "12056",
+      "codesPostaux": ["12160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4527, 44.2824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.432, 44.2779]
+      },
+      "population": 3168,
+      "surface": 3393.33,
+      "radius": 3.29
+    },
+    {
+      "nom": "Belcastel",
+      "code": "12024",
+      "codesPostaux": ["12390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.331, 44.397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3346, 44.3875]
+      },
+      "population": 190,
+      "surface": 1083.81,
+      "radius": 1.86
+    },
+    {
+      "nom": "Belmont-sur-Rance",
+      "code": "12025",
+      "codesPostaux": ["12370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7517, 43.8248]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7525, 43.817]
+      },
+      "population": 990,
+      "surface": 4423.36,
+      "radius": 3.75
+    },
+    {
+      "nom": "Bertholène",
+      "code": "12026",
+      "codesPostaux": ["12310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7926, 44.3904]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7771, 44.3946]
+      },
+      "population": 1049,
+      "surface": 4685.94,
+      "radius": 3.86
+    },
+    {
+      "nom": "Bessuéjouls",
+      "code": "12027",
+      "codesPostaux": ["12500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7104, 44.5168]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7285, 44.5262]
+      },
+      "population": 223,
+      "surface": 1132.89,
+      "radius": 1.9
+    },
+    {
+      "nom": "Boisse-Penchot",
+      "code": "12028",
+      "codesPostaux": ["12300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2129, 44.582]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2055, 44.5899]
+      },
+      "population": 515,
+      "surface": 453.03,
+      "radius": 1.2
+    },
+    {
+      "nom": "Bor-et-Bar",
+      "code": "12029",
+      "codesPostaux": ["12270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0822, 44.1971]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0759, 44.1882]
+      },
+      "population": 198,
+      "surface": 1305.95,
+      "radius": 2.04
+    },
+    {
+      "nom": "Bouillac",
+      "code": "12030",
+      "codesPostaux": ["12300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1768, 44.5745]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1622, 44.5742]
+      },
+      "population": 368,
+      "surface": 821.66,
+      "radius": 1.62
+    },
+    {
+      "nom": "Bournazel",
+      "code": "12031",
+      "codesPostaux": ["12390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3054, 44.4615]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2977, 44.4597]
+      },
+      "population": 325,
+      "surface": 1642.84,
+      "radius": 2.29
+    },
+    {
+      "nom": "Boussac",
+      "code": "12032",
+      "codesPostaux": ["12160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3846, 44.2961]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3676, 44.2807]
+      },
+      "population": 605,
+      "surface": 1809.18,
+      "radius": 2.4
+    },
+    {
+      "nom": "Bozouls",
+      "code": "12033",
+      "codesPostaux": ["12340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7142, 44.4724]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7203, 44.4698]
+      },
+      "population": 3006,
+      "surface": 6952.55,
+      "radius": 4.7
+    },
+    {
+      "nom": "Brandonnet",
+      "code": "12034",
+      "codesPostaux": ["12350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1383, 44.3842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1349, 44.3879]
+      },
+      "population": 291,
+      "surface": 1191.84,
+      "radius": 1.95
+    },
+    {
+      "nom": "Brasc",
+      "code": "12035",
+      "codesPostaux": ["12550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5777, 43.9803]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5734, 43.9776]
+      },
+      "population": 172,
+      "surface": 2025.73,
+      "radius": 2.54
+    },
+    {
+      "nom": "Brommat",
+      "code": "12036",
+      "codesPostaux": ["12600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7081, 44.8179]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6842, 44.8306]
+      },
+      "population": 632,
+      "surface": 4356.9,
+      "radius": 3.72
+    },
+    {
+      "nom": "Broquiès",
+      "code": "12037",
+      "codesPostaux": ["12480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7155, 44.024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6953, 44.0056]
+      },
+      "population": 612,
+      "surface": 3787.78,
+      "radius": 3.47
+    },
+    {
+      "nom": "Brousse-le-Château",
+      "code": "12038",
+      "codesPostaux": ["12480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6401, 44.0078]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6264, 43.9967]
+      },
+      "population": 165,
+      "surface": 1537.92,
+      "radius": 2.21
+    },
+    {
+      "nom": "Brusque",
+      "code": "12039",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9513, 43.7645]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9492, 43.7672]
+      },
+      "population": 259,
+      "surface": 3608.24,
+      "radius": 3.39
+    },
+    {
+      "nom": "Cabanès",
+      "code": "12041",
+      "codesPostaux": ["12800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2922, 44.193]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3059, 44.1848]
+      },
+      "population": 279,
+      "surface": 1595.58,
+      "radius": 2.25
+    },
+    {
+      "nom": "Calmels-et-le-Viala",
+      "code": "12042",
+      "codesPostaux": ["12400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7583, 43.9577]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7524, 43.9453]
+      },
+      "population": 186,
+      "surface": 2318.48,
+      "radius": 2.72
+    },
+    {
+      "nom": "Calmont",
+      "code": "12043",
+      "codesPostaux": ["12450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5256, 44.2643]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5129, 44.2488]
+      },
+      "population": 2208,
+      "surface": 3082.27,
+      "radius": 3.13
+    },
+    {
+      "nom": "Camarès",
+      "code": "12044",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8807, 43.8231]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8782, 43.8217]
+      },
+      "population": 1028,
+      "surface": 4202.73,
+      "radius": 3.66
+    },
+    {
+      "nom": "Camboulazet",
+      "code": "12045",
+      "codesPostaux": ["12160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4462, 44.2244]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4432, 44.2289]
+      },
+      "population": 401,
+      "surface": 1434.87,
+      "radius": 2.14
+    },
+    {
+      "nom": "Camjac",
+      "code": "12046",
+      "codesPostaux": ["12800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3985, 44.1739]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.38, 44.1752]
+      },
+      "population": 575,
+      "surface": 2305.31,
+      "radius": 2.71
+    },
+    {
+      "nom": "Campagnac",
+      "code": "12047",
+      "codesPostaux": ["12560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0889, 44.4033]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0853, 44.4176]
+      },
+      "population": 437,
+      "surface": 4182.59,
+      "radius": 3.65
+    },
+    {
+      "nom": "Campouriez",
+      "code": "12048",
+      "codesPostaux": ["12140", "12460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6165, 44.6814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.607, 44.6895]
+      },
+      "population": 330,
+      "surface": 1830.54,
+      "radius": 2.41
+    },
+    {
+      "nom": "Campuac",
+      "code": "12049",
+      "codesPostaux": ["12580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5808, 44.5656]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5899, 44.5694]
+      },
+      "population": 452,
+      "surface": 1913.07,
+      "radius": 2.47
+    },
+    {
+      "nom": "Canet-de-Salars",
+      "code": "12050",
+      "codesPostaux": ["12290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7379, 44.2392]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7524, 44.2352]
+      },
+      "population": 450,
+      "surface": 3405.29,
+      "radius": 3.29
+    },
+    {
+      "nom": "Cantoin",
+      "code": "12051",
+      "codesPostaux": ["12420"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8261, 44.8354]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8135, 44.8363]
+      },
+      "population": 312,
+      "surface": 4400.27,
+      "radius": 3.74
+    },
+    {
+      "nom": "Capdenac-Gare",
+      "code": "12052",
+      "codesPostaux": ["12700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0661, 44.5604]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0806, 44.5741]
+      },
+      "population": 4394,
+      "surface": 2024.11,
+      "radius": 2.54
+    },
+    {
+      "nom": "Cassagnes-Bégonhès",
+      "code": "12057",
+      "codesPostaux": ["12120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5175, 44.1738]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5301, 44.168]
+      },
+      "population": 946,
+      "surface": 3084.81,
+      "radius": 3.13
+    },
+    {
+      "nom": "Cassuéjouls",
+      "code": "12058",
+      "codesPostaux": ["12210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.811, 44.7233]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8189, 44.7262]
+      },
+      "population": 106,
+      "surface": 1047.05,
+      "radius": 1.83
+    },
+    {
+      "nom": "Castanet",
+      "code": "12059",
+      "codesPostaux": ["12240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3085, 44.2882]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2902, 44.2791]
+      },
+      "population": 525,
+      "surface": 3083.73,
+      "radius": 3.13
+    },
+    {
+      "nom": "Castelmary",
+      "code": "12060",
+      "codesPostaux": ["12800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2389, 44.1732]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.251, 44.1697]
+      },
+      "population": 118,
+      "surface": 1183.74,
+      "radius": 1.94
+    },
+    {
+      "nom": "Castelnau-de-Mandailles",
+      "code": "12061",
+      "codesPostaux": ["12500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8906, 44.5309]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8865, 44.5355]
+      },
+      "population": 567,
+      "surface": 3596.25,
+      "radius": 3.38
+    },
+    {
+      "nom": "Castelnau-Pégayrols",
+      "code": "12062",
+      "codesPostaux": ["12620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9304, 44.1456]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9302, 44.1303]
+      },
+      "population": 346,
+      "surface": 5305.51,
+      "radius": 4.11
+    },
+    {
+      "nom": "Causse-et-Diège",
+      "code": "12257",
+      "codesPostaux": ["12700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0322, 44.5249]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0256, 44.5396]
+      },
+      "population": 783,
+      "surface": 2998.03,
+      "radius": 3.09
+    },
+    {
+      "nom": "Centrès",
+      "code": "12065",
+      "codesPostaux": ["12120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.433, 44.1715]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4116, 44.163]
+      },
+      "population": 462,
+      "surface": 3676.02,
+      "radius": 3.42
+    },
+    {
+      "nom": "Clairvaux-d'Aveyron",
+      "code": "12066",
+      "codesPostaux": ["12330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4021, 44.4008]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4115, 44.428]
+      },
+      "population": 1154,
+      "surface": 2451.43,
+      "radius": 2.79
+    },
+    {
+      "nom": "Colombiès",
+      "code": "12068",
+      "codesPostaux": ["12240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3262, 44.3443]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3399, 44.3457]
+      },
+      "population": 880,
+      "surface": 5540.52,
+      "radius": 4.2
+    },
+    {
+      "nom": "Combret",
+      "code": "12069",
+      "codesPostaux": ["12370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6871, 43.8333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6725, 43.8414]
+      },
+      "population": 258,
+      "surface": 5009.52,
+      "radius": 3.99
+    },
+    {
+      "nom": "Compeyre",
+      "code": "12070",
+      "codesPostaux": ["12520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1026, 44.1771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0996, 44.1613]
+      },
+      "population": 526,
+      "surface": 1040.84,
+      "radius": 1.82
+    },
+    {
+      "nom": "Compolibat",
+      "code": "12071",
+      "codesPostaux": ["12350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1836, 44.3754]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1951, 44.3771]
+      },
+      "population": 334,
+      "surface": 1692.25,
+      "radius": 2.32
+    },
+    {
+      "nom": "Comprégnac",
+      "code": "12072",
+      "codesPostaux": ["12100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9806, 44.0966]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9606, 44.083]
+      },
+      "population": 217,
+      "surface": 1127.87,
+      "radius": 1.89
+    },
+    {
+      "nom": "Comps-la-Grand-Ville",
+      "code": "12073",
+      "codesPostaux": ["12120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5663, 44.2269]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5661, 44.2302]
+      },
+      "population": 637,
+      "surface": 2180.63,
+      "radius": 2.63
+    },
+    {
+      "nom": "Condom-d'Aubrac",
+      "code": "12074",
+      "codesPostaux": ["12470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8836, 44.6032]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8642, 44.6035]
+      },
+      "population": 289,
+      "surface": 4589.77,
+      "radius": 3.82
+    },
+    {
+      "nom": "Connac",
+      "code": "12075",
+      "codesPostaux": ["12170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5925, 44.0224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6014, 44.02]
+      },
+      "population": 101,
+      "surface": 1077.44,
+      "radius": 1.85
+    },
+    {
+      "nom": "Conques-en-Rouergue",
+      "code": "12218",
+      "codesPostaux": ["12320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3895, 44.5817]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.41, 44.5466]
+      },
+      "population": 1555,
+      "surface": 10640.52,
+      "radius": 5.82
+    },
+    {
+      "nom": "Cornus",
+      "code": "12077",
+      "codesPostaux": ["12540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2013, 43.8895]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1789, 43.9031]
+      },
+      "population": 513,
+      "surface": 9336.89,
+      "radius": 5.45
+    },
+    {
+      "nom": "Coubisou",
+      "code": "12079",
+      "codesPostaux": ["12190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.735, 44.5807]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7316, 44.5534]
+      },
+      "population": 475,
+      "surface": 3084.71,
+      "radius": 3.13
+    },
+    {
+      "nom": "Coupiac",
+      "code": "12080",
+      "codesPostaux": ["12550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5888, 43.9367]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5804, 43.9547]
+      },
+      "population": 358,
+      "surface": 2494.06,
+      "radius": 2.82
+    },
+    {
+      "nom": "Cransac",
+      "code": "12083",
+      "codesPostaux": ["12110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2901, 44.5175]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2818, 44.5254]
+      },
+      "population": 1464,
+      "surface": 695.5,
+      "radius": 1.49
+    },
+    {
+      "nom": "Creissels",
+      "code": "12084",
+      "codesPostaux": ["12100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0572, 44.0621]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0625, 44.0847]
+      },
+      "population": 1564,
+      "surface": 2863.49,
+      "radius": 3.02
+    },
+    {
+      "nom": "Crespin",
+      "code": "12085",
+      "codesPostaux": ["12800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2447, 44.1559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2847, 44.1618]
+      },
+      "population": 317,
+      "surface": 1845.53,
+      "radius": 2.42
+    },
+    {
+      "nom": "Curan",
+      "code": "12307",
+      "codesPostaux": ["12410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8642, 44.1999]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8551, 44.1996]
+      },
+      "population": 302,
+      "surface": 4092.6,
+      "radius": 3.61
+    },
+    {
+      "nom": "Curières",
+      "code": "12088",
+      "codesPostaux": ["12210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8954, 44.6398]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8651, 44.652]
+      },
+      "population": 214,
+      "surface": 3633.11,
+      "radius": 3.4
+    },
+    {
+      "nom": "Decazeville",
+      "code": "12089",
+      "codesPostaux": ["12300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2563, 44.5686]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2574, 44.5564]
+      },
+      "population": 5025,
+      "surface": 1396.96,
+      "radius": 2.11
+    },
+    {
+      "nom": "Druelle Balsac",
+      "code": "12090",
+      "codesPostaux": ["12000", "12510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4721, 44.3782]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5167, 44.3704]
+      },
+      "population": 3179,
+      "surface": 5118.86,
+      "radius": 4.04
+    },
+    {
+      "nom": "Drulhe",
+      "code": "12091",
+      "codesPostaux": ["12350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1361, 44.4524]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1292, 44.4623]
+      },
+      "population": 451,
+      "surface": 1802.87,
+      "radius": 2.4
+    },
+    {
+      "nom": "Durenque",
+      "code": "12092",
+      "codesPostaux": ["12170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6206, 44.0999]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6162, 44.1108]
+      },
+      "population": 524,
+      "surface": 3337.23,
+      "radius": 3.26
+    },
+    {
+      "nom": "Entraygues-sur-Truyère",
+      "code": "12094",
+      "codesPostaux": ["12140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5853, 44.6604]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5641, 44.6449]
+      },
+      "population": 970,
+      "surface": 3086.27,
+      "radius": 3.13
+    },
+    {
+      "nom": "Escandolières",
+      "code": "12095",
+      "codesPostaux": ["12390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3515, 44.4727]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3399, 44.4692]
+      },
+      "population": 222,
+      "surface": 1357.19,
+      "radius": 2.08
+    },
+    {
+      "nom": "Espalion",
+      "code": "12096",
+      "codesPostaux": ["12500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7624, 44.5191]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7614, 44.5205]
+      },
+      "population": 4607,
+      "surface": 3672.93,
+      "radius": 3.42
+    },
+    {
+      "nom": "Espeyrac",
+      "code": "12097",
+      "codesPostaux": ["12140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5164, 44.6137]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5097, 44.6121]
+      },
+      "population": 248,
+      "surface": 2221.2,
+      "radius": 2.66
+    },
+    {
+      "nom": "Estaing",
+      "code": "12098",
+      "codesPostaux": ["12190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6813, 44.5764]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.672, 44.5548]
+      },
+      "population": 507,
+      "surface": 1696.79,
+      "radius": 2.32
+    },
+    {
+      "nom": "Fayet",
+      "code": "12099",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9703, 43.8058]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9496, 43.8024]
+      },
+      "population": 236,
+      "surface": 1591.65,
+      "radius": 2.25
+    },
+    {
+      "nom": "Firmi",
+      "code": "12100",
+      "codesPostaux": ["12300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3268, 44.5451]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3072, 44.541]
+      },
+      "population": 2333,
+      "surface": 2922.12,
+      "radius": 3.05
+    },
+    {
+      "nom": "Flagnac",
+      "code": "12101",
+      "codesPostaux": ["12300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2631, 44.5924]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2467, 44.6043]
+      },
+      "population": 1081,
+      "surface": 1297.57,
+      "radius": 2.03
+    },
+    {
+      "nom": "Flavin",
+      "code": "12102",
+      "codesPostaux": ["12450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.631, 44.2871]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6034, 44.2892]
+      },
+      "population": 2376,
+      "surface": 5079.44,
+      "radius": 4.02
+    },
+    {
+      "nom": "Florentin-la-Capelle",
+      "code": "12103",
+      "codesPostaux": ["12140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6424, 44.6387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.631, 44.6292]
+      },
+      "population": 281,
+      "surface": 3676.27,
+      "radius": 3.42
+    },
+    {
+      "nom": "Foissac",
+      "code": "12104",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.016, 44.5028]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.004, 44.5103]
+      },
+      "population": 470,
+      "surface": 977.35,
+      "radius": 1.76
+    },
+    {
+      "nom": "Fondamente",
+      "code": "12155",
+      "codesPostaux": ["12540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1226, 43.8574]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1234, 43.8762]
+      },
+      "population": 335,
+      "surface": 5079.76,
+      "radius": 4.02
+    },
+    {
+      "nom": "Gabriac",
+      "code": "12106",
+      "codesPostaux": ["12340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8061, 44.4636]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7918, 44.4534]
+      },
+      "population": 558,
+      "surface": 2567,
+      "radius": 2.86
+    },
+    {
+      "nom": "Gaillac-d'Aveyron",
+      "code": "12107",
+      "codesPostaux": ["12310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9059, 44.3622]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.93, 44.3551]
+      },
+      "population": 326,
+      "surface": 2900.68,
+      "radius": 3.04
+    },
+    {
+      "nom": "Galgan",
+      "code": "12108",
+      "codesPostaux": ["12220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1814, 44.5037]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1785, 44.5025]
+      },
+      "population": 367,
+      "surface": 2039.33,
+      "radius": 2.55
+    },
+    {
+      "nom": "Gissac",
+      "code": "12109",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8996, 43.8702]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9321, 43.8465]
+      },
+      "population": 96,
+      "surface": 3122.83,
+      "radius": 3.15
+    },
+    {
+      "nom": "Golinhac",
+      "code": "12110",
+      "codesPostaux": ["12140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5921, 44.5972]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5826, 44.6051]
+      },
+      "population": 370,
+      "surface": 3226.86,
+      "radius": 3.2
+    },
+    {
+      "nom": "Goutrens",
+      "code": "12111",
+      "codesPostaux": ["12390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3651, 44.4377]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3703, 44.4426]
+      },
+      "population": 478,
+      "surface": 2602.75,
+      "radius": 2.88
+    },
+    {
+      "nom": "Gramond",
+      "code": "12113",
+      "codesPostaux": ["12160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3723, 44.2623]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3649, 44.2649]
+      },
+      "population": 539,
+      "surface": 1333.82,
+      "radius": 2.06
+    },
+    {
+      "nom": "Huparlac",
+      "code": "12116",
+      "codesPostaux": ["12460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7467, 44.7183]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7616, 44.7124]
+      },
+      "population": 252,
+      "surface": 2483.32,
+      "radius": 2.81
+    },
+    {
+      "nom": "L'Hospitalet-du-Larzac",
+      "code": "12115",
+      "codesPostaux": ["12230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2074, 43.9755]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1955, 43.9732]
+      },
+      "population": 344,
+      "surface": 1237.56,
+      "radius": 1.98
+    },
+    {
+      "nom": "La Bastide-Pradines",
+      "code": "12022",
+      "codesPostaux": ["12490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0549, 44.0098]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0467, 44.0015]
+      },
+      "population": 120,
+      "surface": 2056.98,
+      "radius": 2.56
+    },
+    {
+      "nom": "La Bastide-Solages",
+      "code": "12023",
+      "codesPostaux": ["12550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5243, 43.9488]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5237, 43.9457]
+      },
+      "population": 110,
+      "surface": 704.12,
+      "radius": 1.5
+    },
+    {
+      "nom": "La Capelle-Balaguier",
+      "code": "12053",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9266, 44.4402]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9364, 44.437]
+      },
+      "population": 345,
+      "surface": 1345.53,
+      "radius": 2.07
+    },
+    {
+      "nom": "La Capelle-Bleys",
+      "code": "12054",
+      "codesPostaux": ["12240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1758, 44.305]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1827, 44.2948]
+      },
+      "population": 355,
+      "surface": 1569.97,
+      "radius": 2.24
+    },
+    {
+      "nom": "La Capelle-Bonance",
+      "code": "12055",
+      "codesPostaux": ["12130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0258, 44.4515]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0121, 44.4415]
+      },
+      "population": 91,
+      "surface": 1385,
+      "radius": 2.1
+    },
+    {
+      "nom": "La Cavalerie",
+      "code": "12063",
+      "codesPostaux": ["12230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1746, 44.0148]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1587, 44.0087]
+      },
+      "population": 2208,
+      "surface": 4087.68,
+      "radius": 3.61
+    },
+    {
+      "nom": "La Couvertoirade",
+      "code": "12082",
+      "codesPostaux": ["12230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2848, 43.9307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3161, 43.9131]
+      },
+      "population": 200,
+      "surface": 6296.71,
+      "radius": 4.48
+    },
+    {
+      "nom": "La Cresse",
+      "code": "12086",
+      "codesPostaux": ["12640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1621, 44.169]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1293, 44.1776]
+      },
+      "population": 323,
+      "surface": 1932.57,
+      "radius": 2.48
+    },
+    {
+      "nom": "La Fouillade",
+      "code": "12105",
+      "codesPostaux": ["12270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0517, 44.2346]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0417, 44.2314]
+      },
+      "population": 1113,
+      "surface": 3294.24,
+      "radius": 3.24
+    },
+    {
+      "nom": "La Loubière",
+      "code": "12131",
+      "codesPostaux": ["12740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6588, 44.3889]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6307, 44.4069]
+      },
+      "population": 1529,
+      "surface": 2874.19,
+      "radius": 3.02
+    },
+    {
+      "nom": "La Roque-Sainte-Marguerite",
+      "code": "12204",
+      "codesPostaux": ["12100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2517, 44.1029]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2237, 44.1248]
+      },
+      "population": 178,
+      "surface": 4977.76,
+      "radius": 3.98
+    },
+    {
+      "nom": "La Rouquette",
+      "code": "12205",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9764, 44.311]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9726, 44.3029]
+      },
+      "population": 774,
+      "surface": 2989.38,
+      "radius": 3.08
+    },
+    {
+      "nom": "La Salvetat-Peyralès",
+      "code": "12258",
+      "codesPostaux": ["12440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1986, 44.2228]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1999, 44.2197]
+      },
+      "population": 1001,
+      "surface": 5459.04,
+      "radius": 4.17
+    },
+    {
+      "nom": "La Selve",
+      "code": "12267",
+      "codesPostaux": ["12170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5356, 44.1072]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5355, 44.1112]
+      },
+      "population": 583,
+      "surface": 4848.98,
+      "radius": 3.93
+    },
+    {
+      "nom": "La Serre",
+      "code": "12269",
+      "codesPostaux": ["12380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6537, 43.8959]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6827, 43.8849]
+      },
+      "population": 127,
+      "surface": 1850.75,
+      "radius": 2.43
+    },
+    {
+      "nom": "Lacroix-Barrez",
+      "code": "12118",
+      "codesPostaux": ["12600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.634, 44.769]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6361, 44.778]
+      },
+      "population": 531,
+      "surface": 2800.61,
+      "radius": 2.99
+    },
+    {
+      "nom": "Laguiole",
+      "code": "12119",
+      "codesPostaux": ["12210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8679, 44.6936]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.846, 44.6841]
+      },
+      "population": 1215,
+      "surface": 6389.53,
+      "radius": 4.51
+    },
+    {
+      "nom": "Laissac-Sévérac l'Église",
+      "code": "12120",
+      "codesPostaux": ["12310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8352, 44.3692]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8222, 44.381]
+      },
+      "population": 2148,
+      "surface": 3392.79,
+      "radius": 3.29
+    },
+    {
+      "nom": "Lanuéjouls",
+      "code": "12121",
+      "codesPostaux": ["12350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1615, 44.42]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1614, 44.4247]
+      },
+      "population": 761,
+      "surface": 1188.41,
+      "radius": 1.94
+    },
+    {
+      "nom": "Lapanouse-de-Cernon",
+      "code": "12122",
+      "codesPostaux": ["12230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0947, 44.0088]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0983, 43.9958]
+      },
+      "population": 121,
+      "surface": 2292.19,
+      "radius": 2.7
+    },
+    {
+      "nom": "Lassouts",
+      "code": "12124",
+      "codesPostaux": ["12500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8509, 44.484]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8629, 44.4875]
+      },
+      "population": 318,
+      "surface": 3091.24,
+      "radius": 3.14
+    },
+    {
+      "nom": "Laval-Roquecezière",
+      "code": "12125",
+      "codesPostaux": ["12380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6336, 43.8122]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6486, 43.8078]
+      },
+      "population": 294,
+      "surface": 3069.12,
+      "radius": 3.13
+    },
+    {
+      "nom": "Le Bas Ségala",
+      "code": "12021",
+      "codesPostaux": ["12200", "12240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1369, 44.3056]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1339, 44.3407]
+      },
+      "population": 1610,
+      "surface": 8238.92,
+      "radius": 5.12
+    },
+    {
+      "nom": "Le Cayrol",
+      "code": "12064",
+      "codesPostaux": ["12500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7865, 44.5866]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7917, 44.5855]
+      },
+      "population": 253,
+      "surface": 2240.9,
+      "radius": 2.67
+    },
+    {
+      "nom": "Le Clapier",
+      "code": "12067",
+      "codesPostaux": ["12540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1792, 43.8307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1735, 43.8309]
+      },
+      "population": 88,
+      "surface": 1966.03,
+      "radius": 2.5
+    },
+    {
+      "nom": "Le Fel",
+      "code": "12093",
+      "codesPostaux": ["12140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5153, 44.67]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5067, 44.6534]
+      },
+      "population": 192,
+      "surface": 2493.59,
+      "radius": 2.82
+    },
+    {
+      "nom": "Le Monastère",
+      "code": "12146",
+      "codesPostaux": ["12000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.59, 44.3315]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5803, 44.343]
+      },
+      "population": 2301,
+      "surface": 674.08,
+      "radius": 1.46
+    },
+    {
+      "nom": "Le Nayrac",
+      "code": "12172",
+      "codesPostaux": ["12190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6765, 44.6012]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6636, 44.6136]
+      },
+      "population": 546,
+      "surface": 3645.1,
+      "radius": 3.41
+    },
+    {
+      "nom": "Le Truel",
+      "code": "12284",
+      "codesPostaux": ["12430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7511, 44.0549]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7545, 44.0499]
+      },
+      "population": 349,
+      "surface": 2657.96,
+      "radius": 2.91
+    },
+    {
+      "nom": "Le Vibal",
+      "code": "12297",
+      "codesPostaux": ["12290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7286, 44.3166]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7558, 44.3156]
+      },
+      "population": 524,
+      "surface": 2593.41,
+      "radius": 2.87
+    },
+    {
+      "nom": "Lédergues",
+      "code": "12127",
+      "codesPostaux": ["12170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4442, 44.0856]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.44, 44.0888]
+      },
+      "population": 664,
+      "surface": 3657.19,
+      "radius": 3.41
+    },
+    {
+      "nom": "Les Albres",
+      "code": "12003",
+      "codesPostaux": ["12220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1801, 44.5401]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1729, 44.5376]
+      },
+      "population": 344,
+      "surface": 1530.06,
+      "radius": 2.21
+    },
+    {
+      "nom": "Les Costes-Gozon",
+      "code": "12078",
+      "codesPostaux": ["12400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7968, 44.0136]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8034, 44.017]
+      },
+      "population": 165,
+      "surface": 2044.63,
+      "radius": 2.55
+    },
+    {
+      "nom": "Lescure-Jaoul",
+      "code": "12128",
+      "codesPostaux": ["12440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1471, 44.2262]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1474, 44.2306]
+      },
+      "population": 222,
+      "surface": 1859.33,
+      "radius": 2.43
+    },
+    {
+      "nom": "Lestrade-et-Thouels",
+      "code": "12129",
+      "codesPostaux": ["12430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6403, 44.0516]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6587, 44.0592]
+      },
+      "population": 442,
+      "surface": 4215.03,
+      "radius": 3.66
+    },
+    {
+      "nom": "Livinhac-le-Haut",
+      "code": "12130",
+      "codesPostaux": ["12300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2118, 44.5993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2309, 44.5913]
+      },
+      "population": 1102,
+      "surface": 1093.56,
+      "radius": 1.87
+    },
+    {
+      "nom": "Luc-la-Primaube",
+      "code": "12133",
+      "codesPostaux": ["12450"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5379, 44.3046]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5354, 44.3141]
+      },
+      "population": 6054,
+      "surface": 2696.54,
+      "radius": 2.93
+    },
+    {
+      "nom": "Lugan",
+      "code": "12134",
+      "codesPostaux": ["12220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2592, 44.4858]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2599, 44.4816]
+      },
+      "population": 359,
+      "surface": 1262.85,
+      "radius": 2
+    },
+    {
+      "nom": "Lunac",
+      "code": "12135",
+      "codesPostaux": ["12270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1037, 44.239]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1123, 44.2356]
+      },
+      "population": 435,
+      "surface": 1889.07,
+      "radius": 2.45
+    },
+    {
+      "nom": "Maleville",
+      "code": "12136",
+      "codesPostaux": ["12350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1118, 44.3973]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1015, 44.3963]
+      },
+      "population": 953,
+      "surface": 3572.11,
+      "radius": 3.37
+    },
+    {
+      "nom": "Manhac",
+      "code": "12137",
+      "codesPostaux": ["12160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4782, 44.2576]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4705, 44.255]
+      },
+      "population": 873,
+      "surface": 1842.99,
+      "radius": 2.42
+    },
+    {
+      "nom": "Marcillac-Vallon",
+      "code": "12138",
+      "codesPostaux": ["12330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4612, 44.4776]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4628, 44.4745]
+      },
+      "population": 1714,
+      "surface": 1456.42,
+      "radius": 2.15
+    },
+    {
+      "nom": "Marnhagues-et-Latour",
+      "code": "12139",
+      "codesPostaux": ["12540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0453, 43.8814]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0285, 43.8727]
+      },
+      "population": 144,
+      "surface": 2195.06,
+      "radius": 2.64
+    },
+    {
+      "nom": "Martiel",
+      "code": "12140",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9186, 44.3763]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9234, 44.3767]
+      },
+      "population": 989,
+      "surface": 4678.46,
+      "radius": 3.86
+    },
+    {
+      "nom": "Martrin",
+      "code": "12141",
+      "codesPostaux": ["12550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6389, 43.928]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6203, 43.9388]
+      },
+      "population": 234,
+      "surface": 2338.31,
+      "radius": 2.73
+    },
+    {
+      "nom": "Mayran",
+      "code": "12142",
+      "codesPostaux": ["12390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3738, 44.3912]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3635, 44.3882]
+      },
+      "population": 614,
+      "surface": 1556.38,
+      "radius": 2.23
+    },
+    {
+      "nom": "Mélagues",
+      "code": "12143",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0136, 43.7307]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0182, 43.7389]
+      },
+      "population": 56,
+      "surface": 4482.47,
+      "radius": 3.78
+    },
+    {
+      "nom": "Meljac",
+      "code": "12144",
+      "codesPostaux": ["12120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4316, 44.1326]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4352, 44.138]
+      },
+      "population": 135,
+      "surface": 956.43,
+      "radius": 1.74
+    },
+    {
+      "nom": "Millau",
+      "code": "12145",
+      "codesPostaux": ["12100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1176, 44.0982]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0777, 44.1006]
+      },
+      "population": 21859,
+      "surface": 17022.94,
+      "radius": 7.36
+    },
+    {
+      "nom": "Montagnol",
+      "code": "12147",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0212, 43.828]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0131, 43.8379]
+      },
+      "population": 147,
+      "surface": 3470.27,
+      "radius": 3.32
+    },
+    {
+      "nom": "Montbazens",
+      "code": "12148",
+      "codesPostaux": ["12220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.214, 44.48]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2293, 44.4771]
+      },
+      "population": 1444,
+      "surface": 1745.31,
+      "radius": 2.36
+    },
+    {
+      "nom": "Montclar",
+      "code": "12149",
+      "codesPostaux": ["12550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6247, 43.9805]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6481, 43.9675]
+      },
+      "population": 140,
+      "surface": 1277.59,
+      "radius": 2.02
+    },
+    {
+      "nom": "Monteils",
+      "code": "12150",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9874, 44.2666]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9979, 44.2654]
+      },
+      "population": 469,
+      "surface": 1720.94,
+      "radius": 2.34
+    },
+    {
+      "nom": "Montézic",
+      "code": "12151",
+      "codesPostaux": ["12460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6469, 44.7206]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6403, 44.7084]
+      },
+      "population": 226,
+      "surface": 1868.03,
+      "radius": 2.44
+    },
+    {
+      "nom": "Montfranc",
+      "code": "12152",
+      "codesPostaux": ["12380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5802, 43.8407]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5679, 43.8425]
+      },
+      "population": 130,
+      "surface": 622.49,
+      "radius": 1.41
+    },
+    {
+      "nom": "Montjaux",
+      "code": "12153",
+      "codesPostaux": ["12490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9045, 44.0984]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9023, 44.1021]
+      },
+      "population": 435,
+      "surface": 3154.15,
+      "radius": 3.17
+    },
+    {
+      "nom": "Montlaur",
+      "code": "12154",
+      "codesPostaux": ["12400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8339, 43.8673]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.834, 43.8791]
+      },
+      "population": 660,
+      "surface": 4150.4,
+      "radius": 3.63
+    },
+    {
+      "nom": "Montpeyroux",
+      "code": "12156",
+      "codesPostaux": ["12210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7769, 44.6324]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8108, 44.6401]
+      },
+      "population": 519,
+      "surface": 6215.25,
+      "radius": 4.45
+    },
+    {
+      "nom": "Montrozier",
+      "code": "12157",
+      "codesPostaux": ["12630"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7088, 44.3859]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7076, 44.3945]
+      },
+      "population": 1748,
+      "surface": 4726.5,
+      "radius": 3.88
+    },
+    {
+      "nom": "Montsalès",
+      "code": "12158",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9784, 44.4848]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9615, 44.4918]
+      },
+      "population": 323,
+      "surface": 1251.94,
+      "radius": 2
+    },
+    {
+      "nom": "Morlhon-le-Haut",
+      "code": "12159",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0785, 44.3245]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0638, 44.3249]
+      },
+      "population": 555,
+      "surface": 2228.51,
+      "radius": 2.66
+    },
+    {
+      "nom": "Mostuéjouls",
+      "code": "12160",
+      "codesPostaux": ["12720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1842, 44.2333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1815, 44.2027]
+      },
+      "population": 329,
+      "surface": 3134.75,
+      "radius": 3.16
+    },
+    {
+      "nom": "Mounes-Prohencoux",
+      "code": "12192",
+      "codesPostaux": ["12370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8177, 43.7953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.852, 43.7871]
+      },
+      "population": 193,
+      "surface": 3789.35,
+      "radius": 3.47
+    },
+    {
+      "nom": "Mouret",
+      "code": "12161",
+      "codesPostaux": ["12330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5174, 44.5154]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5156, 44.5144]
+      },
+      "population": 558,
+      "surface": 3117.76,
+      "radius": 3.15
+    },
+    {
+      "nom": "Moyrazès",
+      "code": "12162",
+      "codesPostaux": ["12160"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.429, 44.328]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4395, 44.3423]
+      },
+      "population": 1085,
+      "surface": 4862.91,
+      "radius": 3.93
+    },
+    {
+      "nom": "Mur-de-Barrez",
+      "code": "12164",
+      "codesPostaux": ["12600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.685, 44.8705]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6604, 44.8447]
+      },
+      "population": 685,
+      "surface": 2031.37,
+      "radius": 2.54
+    },
+    {
+      "nom": "Murasson",
+      "code": "12163",
+      "codesPostaux": ["12370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7767, 43.7606]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7643, 43.7602]
+      },
+      "population": 213,
+      "surface": 4035.94,
+      "radius": 3.58
+    },
+    {
+      "nom": "Muret-le-Château",
+      "code": "12165",
+      "codesPostaux": ["12330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5702, 44.495]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5738, 44.4942]
+      },
+      "population": 365,
+      "surface": 1482.19,
+      "radius": 2.17
+    },
+    {
+      "nom": "Murols",
+      "code": "12166",
+      "codesPostaux": ["12600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5798, 44.7584]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5764, 44.7549]
+      },
+      "population": 102,
+      "surface": 1386.31,
+      "radius": 2.1
+    },
+    {
+      "nom": "Najac",
+      "code": "12167",
+      "codesPostaux": ["12270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9584, 44.2087]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9783, 44.2197]
+      },
+      "population": 736,
+      "surface": 5413.31,
+      "radius": 4.15
+    },
+    {
+      "nom": "Nant",
+      "code": "12168",
+      "codesPostaux": ["12230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2887, 44.0204]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3014, 44.0229]
+      },
+      "population": 1017,
+      "surface": 10935.7,
+      "radius": 5.9
+    },
+    {
+      "nom": "Naucelle",
+      "code": "12169",
+      "codesPostaux": ["12800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3468, 44.1863]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3417, 44.1981]
+      },
+      "population": 2017,
+      "surface": 2348.65,
+      "radius": 2.73
+    },
+    {
+      "nom": "Naussac",
+      "code": "12170",
+      "codesPostaux": ["12700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0946, 44.5041]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0941, 44.5205]
+      },
+      "population": 414,
+      "surface": 1482.87,
+      "radius": 2.17
+    },
+    {
+      "nom": "Nauviale",
+      "code": "12171",
+      "codesPostaux": ["12330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4313, 44.5119]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.429, 44.5202]
+      },
+      "population": 591,
+      "surface": 2552.22,
+      "radius": 2.85
+    },
+    {
+      "nom": "Olemps",
+      "code": "12174",
+      "codesPostaux": ["12510"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5504, 44.3391]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5541, 44.3384]
+      },
+      "population": 3531,
+      "surface": 1280.09,
+      "radius": 2.02
+    },
+    {
+      "nom": "Ols-et-Rinhodes",
+      "code": "12175",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9473, 44.4618]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9613, 44.4665]
+      },
+      "population": 168,
+      "surface": 1088.47,
+      "radius": 1.86
+    },
+    {
+      "nom": "Onet-le-Château",
+      "code": "12176",
+      "codesPostaux": ["12000", "12850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5614, 44.3824]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5931, 44.3655]
+      },
+      "population": 12062,
+      "surface": 4019.48,
+      "radius": 3.58
+    },
+    {
+      "nom": "Palmas d'Aveyron",
+      "code": "12177",
+      "codesPostaux": ["12310", "12340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8588, 44.4231]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8407, 44.3945]
+      },
+      "population": 1027,
+      "surface": 4351.25,
+      "radius": 3.72
+    },
+    {
+      "nom": "Paulhe",
+      "code": "12178",
+      "codesPostaux": ["12520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1141, 44.1487]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1027, 44.152]
+      },
+      "population": 365,
+      "surface": 486.06,
+      "radius": 1.24
+    },
+    {
+      "nom": "Peux-et-Couffouleux",
+      "code": "12179",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.877, 43.766]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8754, 43.7714]
+      },
+      "population": 87,
+      "surface": 2197.14,
+      "radius": 2.64
+    },
+    {
+      "nom": "Peyreleau",
+      "code": "12180",
+      "codesPostaux": ["12720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2066, 44.174]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2086, 44.1882]
+      },
+      "population": 71,
+      "surface": 1630.73,
+      "radius": 2.28
+    },
+    {
+      "nom": "Peyrusse-le-Roc",
+      "code": "12181",
+      "codesPostaux": ["12220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1342, 44.5002]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1406, 44.4969]
+      },
+      "population": 202,
+      "surface": 1379.53,
+      "radius": 2.1
+    },
+    {
+      "nom": "Pierrefiche",
+      "code": "12182",
+      "codesPostaux": ["12130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9233, 44.4347]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9481, 44.4434]
+      },
+      "population": 293,
+      "surface": 1709.18,
+      "radius": 2.33
+    },
+    {
+      "nom": "Plaisance",
+      "code": "12183",
+      "codesPostaux": ["12550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5626, 43.9283]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.548, 43.928]
+      },
+      "population": 221,
+      "surface": 1405.9,
+      "radius": 2.12
+    },
+    {
+      "nom": "Pomayrols",
+      "code": "12184",
+      "codesPostaux": ["12130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0563, 44.4898]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0242, 44.4711]
+      },
+      "population": 118,
+      "surface": 2315.55,
+      "radius": 2.71
+    },
+    {
+      "nom": "Pont-de-Salars",
+      "code": "12185",
+      "codesPostaux": ["12290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7171, 44.2771]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7282, 44.2806]
+      },
+      "population": 1630,
+      "surface": 4577.99,
+      "radius": 3.82
+    },
+    {
+      "nom": "Pousthomy",
+      "code": "12186",
+      "codesPostaux": ["12380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5972, 43.8489]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6124, 43.8584]
+      },
+      "population": 212,
+      "surface": 1740.66,
+      "radius": 2.35
+    },
+    {
+      "nom": "Prades-d'Aubrac",
+      "code": "12187",
+      "codesPostaux": ["12470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9714, 44.541]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.939, 44.5331]
+      },
+      "population": 310,
+      "surface": 4668.57,
+      "radius": 3.85
+    },
+    {
+      "nom": "Prades-Salars",
+      "code": "12188",
+      "codesPostaux": ["12290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7901, 44.2461]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7846, 44.2645]
+      },
+      "population": 315,
+      "surface": 3066.7,
+      "radius": 3.12
+    },
+    {
+      "nom": "Pradinas",
+      "code": "12189",
+      "codesPostaux": ["12240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2676, 44.2485]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2627, 44.2406]
+      },
+      "population": 359,
+      "surface": 2293.93,
+      "radius": 2.7
+    },
+    {
+      "nom": "Prévinquières",
+      "code": "12190",
+      "codesPostaux": ["12350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.244, 44.3683]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2299, 44.3747]
+      },
+      "population": 275,
+      "surface": 2083.83,
+      "radius": 2.58
+    },
+    {
+      "nom": "Privezac",
+      "code": "12191",
+      "codesPostaux": ["12350"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1976, 44.4103]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1892, 44.4114]
+      },
+      "population": 342,
+      "surface": 1097.15,
+      "radius": 1.87
+    },
+    {
+      "nom": "Pruines",
+      "code": "12193",
+      "codesPostaux": ["12320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4875, 44.5337]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5047, 44.5298]
+      },
+      "population": 287,
+      "surface": 1894.22,
+      "radius": 2.46
+    },
+    {
+      "nom": "Quins",
+      "code": "12194",
+      "codesPostaux": ["12800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.375, 44.2333]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3705, 44.2313]
+      },
+      "population": 885,
+      "surface": 3870.66,
+      "radius": 3.51
+    },
+    {
+      "nom": "Rebourguil",
+      "code": "12195",
+      "codesPostaux": ["12400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.753, 43.8853]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7741, 43.8874]
+      },
+      "population": 287,
+      "surface": 3532.88,
+      "radius": 3.35
+    },
+    {
+      "nom": "Réquista",
+      "code": "12197",
+      "codesPostaux": ["12170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5526, 44.0292]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5389, 44.0316]
+      },
+      "population": 1940,
+      "surface": 5947.75,
+      "radius": 4.35
+    },
+    {
+      "nom": "Rieupeyroux",
+      "code": "12198",
+      "codesPostaux": ["12240"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2347, 44.3038]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2366, 44.3063]
+      },
+      "population": 1922,
+      "surface": 5484.78,
+      "radius": 4.18
+    },
+    {
+      "nom": "Rignac",
+      "code": "12199",
+      "codesPostaux": ["12390"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2944, 44.4045]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2885, 44.41]
+      },
+      "population": 2019,
+      "surface": 3348.48,
+      "radius": 3.26
+    },
+    {
+      "nom": "Rivière-sur-Tarn",
+      "code": "12200",
+      "codesPostaux": ["12640"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.1302, 44.2136]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.13, 44.1889]
+      },
+      "population": 1045,
+      "surface": 2621.33,
+      "radius": 2.89
+    },
+    {
+      "nom": "Rodelle",
+      "code": "12201",
+      "codesPostaux": ["12340"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.627, 44.4792]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6274, 44.4892]
+      },
+      "population": 1097,
+      "surface": 5367.25,
+      "radius": 4.13
+    },
+    {
+      "nom": "Rodez",
+      "code": "12202",
+      "codesPostaux": ["12000"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5699, 44.3591]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.576, 44.3494]
+      },
+      "population": 24136,
+      "surface": 1126.24,
+      "radius": 1.89
+    },
+    {
+      "nom": "Roquefort-sur-Soulzon",
+      "code": "12203",
+      "codesPostaux": ["12250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9826, 43.9685]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9919, 43.9749]
+      },
+      "population": 502,
+      "surface": 1687.39,
+      "radius": 2.32
+    },
+    {
+      "nom": "Roussennac",
+      "code": "12206",
+      "codesPostaux": ["12220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2491, 44.4493]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2526, 44.4536]
+      },
+      "population": 618,
+      "surface": 1730.18,
+      "radius": 2.35
+    },
+    {
+      "nom": "Rullac-Saint-Cirq",
+      "code": "12207",
+      "codesPostaux": ["12120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4755, 44.1209]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4896, 44.1288]
+      },
+      "population": 342,
+      "surface": 3285.34,
+      "radius": 3.23
+    },
+    {
+      "nom": "Saint Geniez d'Olt et d'Aubrac",
+      "code": "12224",
+      "codesPostaux": ["12130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0077, 44.5112]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9727, 44.4656]
+      },
+      "population": 2167,
+      "surface": 8955.12,
+      "radius": 5.34
+    },
+    {
+      "nom": "Saint-Affrique",
+      "code": "12208",
+      "codesPostaux": ["12400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8533, 43.9571]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8868, 43.9582]
+      },
+      "population": 7924,
+      "surface": 11075.21,
+      "radius": 5.94
+    },
+    {
+      "nom": "Saint-Amans-des-Cots",
+      "code": "12209",
+      "codesPostaux": ["12460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6839, 44.6905]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6583, 44.6895]
+      },
+      "population": 732,
+      "surface": 4140.06,
+      "radius": 3.63
+    },
+    {
+      "nom": "Saint-André-de-Najac",
+      "code": "12210",
+      "codesPostaux": ["12270"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0209, 44.1797]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0392, 44.1917]
+      },
+      "population": 455,
+      "surface": 2530.88,
+      "radius": 2.84
+    },
+    {
+      "nom": "Saint-André-de-Vézines",
+      "code": "12211",
+      "codesPostaux": ["12720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.2731, 44.1476]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.2595, 44.1515]
+      },
+      "population": 132,
+      "surface": 3938.81,
+      "radius": 3.54
+    },
+    {
+      "nom": "Saint-Beaulize",
+      "code": "12212",
+      "codesPostaux": ["12540"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0926, 43.9085]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1086, 43.8971]
+      },
+      "population": 100,
+      "surface": 2009.62,
+      "radius": 2.53
+    },
+    {
+      "nom": "Saint-Beauzély",
+      "code": "12213",
+      "codesPostaux": ["12620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9574, 44.1676]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9581, 44.1658]
+      },
+      "population": 575,
+      "surface": 3100.85,
+      "radius": 3.14
+    },
+    {
+      "nom": "Saint-Chély-d'Aubrac",
+      "code": "12214",
+      "codesPostaux": ["12470"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9419, 44.5912]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9212, 44.5903]
+      },
+      "population": 517,
+      "surface": 7700.82,
+      "radius": 4.95
+    },
+    {
+      "nom": "Saint-Christophe-Vallon",
+      "code": "12215",
+      "codesPostaux": ["12330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3927, 44.4785]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4125, 44.4705]
+      },
+      "population": 1181,
+      "surface": 2334.27,
+      "radius": 2.73
+    },
+    {
+      "nom": "Saint-Côme-d'Olt",
+      "code": "12216",
+      "codesPostaux": ["12500"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8195, 44.5327]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8148, 44.5153]
+      },
+      "population": 1446,
+      "surface": 3011.95,
+      "radius": 3.1
+    },
+    {
+      "nom": "Saint-Félix-de-Lunel",
+      "code": "12221",
+      "codesPostaux": ["12320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5113, 44.5694]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.536, 44.5614]
+      },
+      "population": 384,
+      "surface": 1904.65,
+      "radius": 2.46
+    },
+    {
+      "nom": "Saint-Félix-de-Sorgues",
+      "code": "12222",
+      "codesPostaux": ["12400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9894, 43.8823]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9846, 43.8842]
+      },
+      "population": 193,
+      "surface": 3110.63,
+      "radius": 3.15
+    },
+    {
+      "nom": "Saint-Georges-de-Luzençon",
+      "code": "12225",
+      "codesPostaux": ["12100"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9875, 44.0567]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9849, 44.0634]
+      },
+      "population": 1584,
+      "surface": 4823.86,
+      "radius": 3.92
+    },
+    {
+      "nom": "Saint-Hippolyte",
+      "code": "12226",
+      "codesPostaux": ["12140"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5769, 44.7319]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5915, 44.7107]
+      },
+      "population": 426,
+      "surface": 3675.2,
+      "radius": 3.42
+    },
+    {
+      "nom": "Saint-Igest",
+      "code": "12227",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0904, 44.4459]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0868, 44.439]
+      },
+      "population": 181,
+      "surface": 1160.91,
+      "radius": 1.92
+    },
+    {
+      "nom": "Saint-Izaire",
+      "code": "12228",
+      "codesPostaux": ["12480"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7006, 43.9701]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7195, 43.9755]
+      },
+      "population": 318,
+      "surface": 3447.44,
+      "radius": 3.31
+    },
+    {
+      "nom": "Saint-Jean-d'Alcapiès",
+      "code": "12229",
+      "codesPostaux": ["12250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9647, 43.9507]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9739, 43.952]
+      },
+      "population": 223,
+      "surface": 860.95,
+      "radius": 1.66
+    },
+    {
+      "nom": "Saint-Jean-Delnous",
+      "code": "12230",
+      "codesPostaux": ["12170"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4912, 44.0391]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.492, 44.0438]
+      },
+      "population": 382,
+      "surface": 1841.71,
+      "radius": 2.42
+    },
+    {
+      "nom": "Saint-Jean-du-Bruel",
+      "code": "12231",
+      "codesPostaux": ["12230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3904, 44.024]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3613, 44.023]
+      },
+      "population": 665,
+      "surface": 3734.98,
+      "radius": 3.45
+    },
+    {
+      "nom": "Saint-Jean-et-Saint-Paul",
+      "code": "12232",
+      "codesPostaux": ["12250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0255, 43.9291]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0055, 43.9281]
+      },
+      "population": 284,
+      "surface": 3800.51,
+      "radius": 3.48
+    },
+    {
+      "nom": "Saint-Juéry",
+      "code": "12233",
+      "codesPostaux": ["12550"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6972, 43.9202]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6939, 43.9095]
+      },
+      "population": 276,
+      "surface": 2905.18,
+      "radius": 3.04
+    },
+    {
+      "nom": "Saint-Just-sur-Viaur",
+      "code": "12235",
+      "codesPostaux": ["12170", "12800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3874, 44.1205]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3693, 44.1253]
+      },
+      "population": 210,
+      "surface": 2548.81,
+      "radius": 2.85
+    },
+    {
+      "nom": "Saint-Laurent-d'Olt",
+      "code": "12237",
+      "codesPostaux": ["12560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0946, 44.4464]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1111, 44.446]
+      },
+      "population": 631,
+      "surface": 2878.25,
+      "radius": 3.03
+    },
+    {
+      "nom": "Saint-Laurent-de-Lévézou",
+      "code": "12236",
+      "codesPostaux": ["12620"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9422, 44.2124]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9586, 44.2077]
+      },
+      "population": 157,
+      "surface": 2335.03,
+      "radius": 2.73
+    },
+    {
+      "nom": "Saint-Léons",
+      "code": "12238",
+      "codesPostaux": ["12780"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9833, 44.2224]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9869, 44.216]
+      },
+      "population": 427,
+      "surface": 3289.39,
+      "radius": 3.24
+    },
+    {
+      "nom": "Saint-Martin-de-Lenne",
+      "code": "12239",
+      "codesPostaux": ["12130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9654, 44.4259]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9621, 44.4333]
+      },
+      "population": 334,
+      "surface": 944.62,
+      "radius": 1.73
+    },
+    {
+      "nom": "Saint-Parthem",
+      "code": "12240",
+      "codesPostaux": ["12300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2908, 44.6348]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3161, 44.6259]
+      },
+      "population": 406,
+      "surface": 1881.08,
+      "radius": 2.45
+    },
+    {
+      "nom": "Saint-Rémy",
+      "code": "12242",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0442, 44.396]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0397, 44.3992]
+      },
+      "population": 307,
+      "surface": 897.45,
+      "radius": 1.69
+    },
+    {
+      "nom": "Saint-Rome-de-Cernon",
+      "code": "12243",
+      "codesPostaux": ["12490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9876, 44.0099]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9646, 44.012]
+      },
+      "population": 961,
+      "surface": 3770.58,
+      "radius": 3.46
+    },
+    {
+      "nom": "Saint-Rome-de-Tarn",
+      "code": "12244",
+      "codesPostaux": ["12490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8923, 44.0362]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8982, 44.0483]
+      },
+      "population": 899,
+      "surface": 5221.33,
+      "radius": 4.08
+    },
+    {
+      "nom": "Saint-Santin",
+      "code": "12246",
+      "codesPostaux": ["12300"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2705, 44.6394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2182, 44.649]
+      },
+      "population": 517,
+      "surface": 2308.95,
+      "radius": 2.71
+    },
+    {
+      "nom": "Saint-Saturnin-de-Lenne",
+      "code": "12247",
+      "codesPostaux": ["12560"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0203, 44.4095]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0189, 44.4224]
+      },
+      "population": 325,
+      "surface": 3410.03,
+      "radius": 3.29
+    },
+    {
+      "nom": "Saint-Sernin-sur-Rance",
+      "code": "12248",
+      "codesPostaux": ["12380"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6248, 43.8793]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6024, 43.8822]
+      },
+      "population": 586,
+      "surface": 1116.86,
+      "radius": 1.89
+    },
+    {
+      "nom": "Saint-Sever-du-Moustier",
+      "code": "12249",
+      "codesPostaux": ["12370"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6918, 43.7753]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6992, 43.7763]
+      },
+      "population": 180,
+      "surface": 2598.27,
+      "radius": 2.88
+    },
+    {
+      "nom": "Saint-Symphorien-de-Thénières",
+      "code": "12250",
+      "codesPostaux": ["12460"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7072, 44.7387]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7294, 44.7372]
+      },
+      "population": 219,
+      "surface": 3148.99,
+      "radius": 3.17
+    },
+    {
+      "nom": "Saint-Victor-et-Melvieu",
+      "code": "12251",
+      "codesPostaux": ["12400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8074, 44.0502]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8307, 44.0512]
+      },
+      "population": 313,
+      "surface": 1808.69,
+      "radius": 2.4
+    },
+    {
+      "nom": "Sainte-Croix",
+      "code": "12217",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9642, 44.4115]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9664, 44.4264]
+      },
+      "population": 736,
+      "surface": 2618.98,
+      "radius": 2.89
+    },
+    {
+      "nom": "Sainte-Eulalie-d'Olt",
+      "code": "12219",
+      "codesPostaux": ["12130"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9231, 44.4662]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9464, 44.4646]
+      },
+      "population": 371,
+      "surface": 1754.66,
+      "radius": 2.36
+    },
+    {
+      "nom": "Sainte-Eulalie-de-Cernon",
+      "code": "12220",
+      "codesPostaux": ["12230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.155, 43.9605]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.1339, 43.9821]
+      },
+      "population": 321,
+      "surface": 4659.91,
+      "radius": 3.85
+    },
+    {
+      "nom": "Sainte-Juliette-sur-Viaur",
+      "code": "12234",
+      "codesPostaux": ["12120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5027, 44.2178]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5217, 44.2141]
+      },
+      "population": 634,
+      "surface": 1674.9,
+      "radius": 2.31
+    },
+    {
+      "nom": "Sainte-Radegonde",
+      "code": "12241",
+      "codesPostaux": ["12850"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6333, 44.3297]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6261, 44.3383]
+      },
+      "population": 1774,
+      "surface": 3087.64,
+      "radius": 3.14
+    },
+    {
+      "nom": "Salles-Courbatiès",
+      "code": "12252",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0869, 44.4842]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0769, 44.4718]
+      },
+      "population": 480,
+      "surface": 1355.66,
+      "radius": 2.08
+    },
+    {
+      "nom": "Salles-Curan",
+      "code": "12253",
+      "codesPostaux": ["12410"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7797, 44.1594]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7889, 44.1822]
+      },
+      "population": 1030,
+      "surface": 9938.35,
+      "radius": 5.62
+    },
+    {
+      "nom": "Salles-la-Source",
+      "code": "12254",
+      "codesPostaux": ["12330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5291, 44.4471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5138, 44.4379]
+      },
+      "population": 2313,
+      "surface": 7697.59,
+      "radius": 4.95
+    },
+    {
+      "nom": "Salmiech",
+      "code": "12255",
+      "codesPostaux": ["12120"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5851, 44.1959]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5712, 44.1804]
+      },
+      "population": 764,
+      "surface": 2822.43,
+      "radius": 3
+    },
+    {
+      "nom": "Salvagnac-Cajarc",
+      "code": "12256",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.8723, 44.455]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8476, 44.4755]
+      },
+      "population": 361,
+      "surface": 2322.99,
+      "radius": 2.72
+    },
+    {
+      "nom": "Sanvensa",
+      "code": "12259",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0434, 44.281]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0499, 44.2919]
+      },
+      "population": 643,
+      "surface": 2587.58,
+      "radius": 2.87
+    },
+    {
+      "nom": "Sauclières",
+      "code": "12260",
+      "codesPostaux": ["12230"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3829, 43.9794]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.3681, 43.9758]
+      },
+      "population": 182,
+      "surface": 3851.56,
+      "radius": 3.5
+    },
+    {
+      "nom": "Saujac",
+      "code": "12261",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9022, 44.4767]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.8915, 44.496]
+      },
+      "population": 125,
+      "surface": 1234.56,
+      "radius": 1.98
+    },
+    {
+      "nom": "Sauveterre-de-Rouergue",
+      "code": "12262",
+      "codesPostaux": ["12800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3151, 44.2503]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.3178, 44.22]
+      },
+      "population": 711,
+      "surface": 2375.42,
+      "radius": 2.75
+    },
+    {
+      "nom": "Savignac",
+      "code": "12263",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9596, 44.3616]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9663, 44.3613]
+      },
+      "population": 755,
+      "surface": 1530.77,
+      "radius": 2.21
+    },
+    {
+      "nom": "Sébazac-Concourès",
+      "code": "12264",
+      "codesPostaux": ["12740"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6156, 44.4236]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5979, 44.4052]
+      },
+      "population": 3266,
+      "surface": 2724.77,
+      "radius": 2.95
+    },
+    {
+      "nom": "Sébrazac",
+      "code": "12265",
+      "codesPostaux": ["12190"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6577, 44.5358]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6571, 44.5255]
+      },
+      "population": 533,
+      "surface": 2525.28,
+      "radius": 2.84
+    },
+    {
+      "nom": "Ségur",
+      "code": "12266",
+      "codesPostaux": ["12290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.834, 44.2879]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8345, 44.2914]
+      },
+      "population": 540,
+      "surface": 6765.11,
+      "radius": 4.64
+    },
+    {
+      "nom": "Sénergues",
+      "code": "12268",
+      "codesPostaux": ["12320"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4564, 44.5993]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.485, 44.6045]
+      },
+      "population": 424,
+      "surface": 4494.96,
+      "radius": 3.78
+    },
+    {
+      "nom": "Sévérac d'Aveyron",
+      "code": "12270",
+      "codesPostaux": ["12150"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0294, 44.3138]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0596, 44.3242]
+      },
+      "population": 4044,
+      "surface": 20966.26,
+      "radius": 8.17
+    },
+    {
+      "nom": "Sonnac",
+      "code": "12272",
+      "codesPostaux": ["12700"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1188, 44.5394]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1091, 44.5481]
+      },
+      "population": 517,
+      "surface": 1194.92,
+      "radius": 1.95
+    },
+    {
+      "nom": "Soulages-Bonneval",
+      "code": "12273",
+      "codesPostaux": ["12210"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7729, 44.6772]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7888, 44.6773]
+      },
+      "population": 302,
+      "surface": 1533.48,
+      "radius": 2.21
+    },
+    {
+      "nom": "Sylvanès",
+      "code": "12274",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9517, 43.8255]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9593, 43.8341]
+      },
+      "population": 116,
+      "surface": 1709.75,
+      "radius": 2.33
+    },
+    {
+      "nom": "Tauriac-de-Camarès",
+      "code": "12275",
+      "codesPostaux": ["12360"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0307, 43.7764]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0305, 43.7797]
+      },
+      "population": 35,
+      "surface": 2456.25,
+      "radius": 2.8
+    },
+    {
+      "nom": "Tauriac-de-Naucelle",
+      "code": "12276",
+      "codesPostaux": ["12800"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.3272, 44.1436]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.337, 44.1547]
+      },
+      "population": 386,
+      "surface": 2204.42,
+      "radius": 2.65
+    },
+    {
+      "nom": "Taussac",
+      "code": "12277",
+      "codesPostaux": ["12600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6375, 44.8253]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6416, 44.8288]
+      },
+      "population": 508,
+      "surface": 3949.09,
+      "radius": 3.55
+    },
+    {
+      "nom": "Tayrac",
+      "code": "12278",
+      "codesPostaux": ["12440"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2466, 44.2042]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2332, 44.2019]
+      },
+      "population": 188,
+      "surface": 1590.56,
+      "radius": 2.25
+    },
+    {
+      "nom": "Thérondels",
+      "code": "12280",
+      "codesPostaux": ["12600"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7398, 44.8951]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7593, 44.8963]
+      },
+      "population": 359,
+      "surface": 3871.75,
+      "radius": 3.51
+    },
+    {
+      "nom": "Toulonjac",
+      "code": "12281",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0013, 44.3799]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9998, 44.3803]
+      },
+      "population": 752,
+      "surface": 744.71,
+      "radius": 1.54
+    },
+    {
+      "nom": "Tournemire",
+      "code": "12282",
+      "codesPostaux": ["12250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0242, 43.9678]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0176, 43.9707]
+      },
+      "population": 420,
+      "surface": 892.5,
+      "radius": 1.69
+    },
+    {
+      "nom": "Trémouilles",
+      "code": "12283",
+      "codesPostaux": ["12290"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.6371, 44.2397]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.6453, 44.2456]
+      },
+      "population": 473,
+      "surface": 2902.48,
+      "radius": 3.04
+    },
+    {
+      "nom": "Vabres-l'Abbaye",
+      "code": "12286",
+      "codesPostaux": ["12400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8106, 43.9252]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8359, 43.9453]
+      },
+      "population": 1209,
+      "surface": 4130.59,
+      "radius": 3.63
+    },
+    {
+      "nom": "Vailhourles",
+      "code": "12287",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [1.9069, 44.31]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [1.9064, 44.3049]
+      },
+      "population": 651,
+      "surface": 3250.55,
+      "radius": 3.22
+    },
+    {
+      "nom": "Valady",
+      "code": "12288",
+      "codesPostaux": ["12330"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.4412, 44.4462]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.4269, 44.455]
+      },
+      "population": 1617,
+      "surface": 1542.21,
+      "radius": 2.22
+    },
+    {
+      "nom": "Valzergues",
+      "code": "12289",
+      "codesPostaux": ["12220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2195, 44.5074]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2226, 44.4998]
+      },
+      "population": 204,
+      "surface": 657.94,
+      "radius": 1.45
+    },
+    {
+      "nom": "Vaureilles",
+      "code": "12290",
+      "codesPostaux": ["12220"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.1874, 44.4559]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.1969, 44.4532]
+      },
+      "population": 489,
+      "surface": 1432.54,
+      "radius": 2.14
+    },
+    {
+      "nom": "Verrières",
+      "code": "12291",
+      "codesPostaux": ["12520"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.048, 44.2155]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0583, 44.2017]
+      },
+      "population": 364,
+      "surface": 5350.38,
+      "radius": 4.13
+    },
+    {
+      "nom": "Versols-et-Lapeyre",
+      "code": "12292",
+      "codesPostaux": ["12400"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9323, 43.9003]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.9338, 43.8963]
+      },
+      "population": 419,
+      "surface": 2798.27,
+      "radius": 2.98
+    },
+    {
+      "nom": "Veyreau",
+      "code": "12293",
+      "codesPostaux": ["12720"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.3013, 44.1744]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.299, 44.1853]
+      },
+      "population": 129,
+      "surface": 4156.42,
+      "radius": 3.64
+    },
+    {
+      "nom": "Vézins-de-Lévézou",
+      "code": "12294",
+      "codesPostaux": ["12780"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9426, 44.2628]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.952, 44.2787]
+      },
+      "population": 650,
+      "surface": 7898.37,
+      "radius": 5.01
+    },
+    {
+      "nom": "Viala-du-Pas-de-Jaux",
+      "code": "12295",
+      "codesPostaux": ["12250"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [3.0649, 43.953]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [3.0552, 43.957]
+      },
+      "population": 88,
+      "surface": 1898.98,
+      "radius": 2.46
+    },
+    {
+      "nom": "Viala-du-Tarn",
+      "code": "12296",
+      "codesPostaux": ["12490"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.8437, 44.0893]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.8781, 44.0719]
+      },
+      "population": 527,
+      "surface": 3852.57,
+      "radius": 3.5
+    },
+    {
+      "nom": "Villecomtal",
+      "code": "12298",
+      "codesPostaux": ["12580"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.5753, 44.5434]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.5638, 44.5396]
+      },
+      "population": 426,
+      "surface": 1396.15,
+      "radius": 2.11
+    },
+    {
+      "nom": "Villefranche-de-Panat",
+      "code": "12299",
+      "codesPostaux": ["12430"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.7148, 44.0851]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.7043, 44.088]
+      },
+      "population": 678,
+      "surface": 3056.17,
+      "radius": 3.12
+    },
+    {
+      "nom": "Villefranche-de-Rouergue",
+      "code": "12300",
+      "codesPostaux": ["12200"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0296, 44.3471]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0354, 44.3497]
+      },
+      "population": 11502,
+      "surface": 4575.97,
+      "radius": 3.82
+    },
+    {
+      "nom": "Villeneuve",
+      "code": "12301",
+      "codesPostaux": ["12260"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.0288, 44.4457]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.0332, 44.4375]
+      },
+      "population": 1952,
+      "surface": 6552.22,
+      "radius": 4.57
+    },
+    {
+      "nom": "Vimenet",
+      "code": "12303",
+      "codesPostaux": ["12310"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.9267, 44.4019]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.929, 44.3986]
+      },
+      "population": 249,
+      "surface": 2108.1,
+      "radius": 2.59
+    },
+    {
+      "nom": "Viviez",
+      "code": "12305",
+      "codesPostaux": ["12110"],
+      "centre": {
+        "type": "Point",
+        "coordinates": [2.2209, 44.5541]
+      },
+      "mairie": {
+        "type": "Point",
+        "coordinates": [2.2177, 44.5554]
+      },
+      "population": 1214,
+      "surface": 659.13,
+      "radius": 1.45
+    }
+  ],
+  "postalCodes": {
+    "12000": {
+      "communes": ["Druelle Balsac", "Le Monastère", "Onet-le-Château", "Rodez"],
+      "communeCount": 4,
+      "center": [2.5767, 44.3553],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 44.343,
+        "maxLat": 44.3704,
+        "minLon": 2.5167,
+        "maxLon": 2.5931
+      },
+      "totalPopulation": 41678,
+      "totalSurface": 10939
+    },
+    "12100": {
+      "communes": ["Comprégnac", "Creissels", "Millau", "La Roque-Sainte-Marguerite", "Saint-Georges-de-Luzençon"],
+      "communeCount": 5,
+      "center": [3.071, 44.0973],
+      "coverageRadius": 12.6,
+      "boundingBox": {
+        "minLat": 44.0634,
+        "maxLat": 44.1248,
+        "minLon": 2.9606,
+        "maxLon": 3.2237
+      },
+      "totalPopulation": 25402,
+      "totalSurface": 30816
+    },
+    "12110": {
+      "communes": ["Aubin", "Cransac", "Viviez"],
+      "communeCount": 3,
+      "center": [2.2491, 44.5326],
+      "coverageRadius": 3.6,
+      "boundingBox": {
+        "minLat": 44.5254,
+        "maxLat": 44.5554,
+        "minLon": 2.2177,
+        "maxLon": 2.2818
+      },
+      "totalPopulation": 6143,
+      "totalSurface": 4071
+    },
+    "12120": {
+      "communes": [
+        "Arvieu",
+        "Auriac-Lagast",
+        "Cassagnes-Bégonhès",
+        "Centrès",
+        "Comps-la-Grand-Ville",
+        "Meljac",
+        "Rullac-Saint-Cirq",
+        "Sainte-Juliette-sur-Viaur",
+        "Salmiech"
+      ],
+      "communeCount": 9,
+      "center": [2.5462, 44.1828],
+      "coverageRadius": 11,
+      "boundingBox": {
+        "minLat": 44.1288,
+        "maxLat": 44.2302,
+        "minLon": 2.4116,
+        "maxLon": 2.661
+      },
+      "totalPopulation": 4914,
+      "totalSurface": 25713
+    },
+    "12130": {
+      "communes": [
+        "La Capelle-Bonance",
+        "Pierrefiche",
+        "Pomayrols",
+        "Sainte-Eulalie-d'Olt",
+        "Saint Geniez d'Olt et d'Aubrac",
+        "Saint-Martin-de-Lenne"
+      ],
+      "communeCount": 6,
+      "center": [2.9695, 44.4599],
+      "coverageRadius": 4.6,
+      "boundingBox": {
+        "minLat": 44.4333,
+        "maxLat": 44.4711,
+        "minLon": 2.9464,
+        "maxLon": 3.0242
+      },
+      "totalPopulation": 3374,
+      "totalSurface": 17064
+    },
+    "12140": {
+      "communes": [
+        "Campouriez",
+        "Le Fel",
+        "Entraygues-sur-Truyère",
+        "Espeyrac",
+        "Florentin-la-Capelle",
+        "Golinhac",
+        "Saint-Hippolyte"
+      ],
+      "communeCount": 7,
+      "center": [2.5737, 44.651],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 44.6051,
+        "maxLat": 44.7107,
+        "minLon": 2.5067,
+        "maxLon": 2.631
+      },
+      "totalPopulation": 2817,
+      "totalSurface": 20210
+    },
+    "12150": {
+      "communes": ["Sévérac d'Aveyron"],
+      "communeCount": 1,
+      "center": [3.0596, 44.3242],
+      "coverageRadius": 8.17,
+      "totalPopulation": 4044,
+      "totalSurface": 20966
+    },
+    "12160": {
+      "communes": ["Boussac", "Camboulazet", "Baraqueville", "Gramond", "Manhac", "Moyrazès"],
+      "communeCount": 6,
+      "center": [2.4277, 44.2816],
+      "coverageRadius": 6.9,
+      "boundingBox": {
+        "minLat": 44.2289,
+        "maxLat": 44.3423,
+        "minLon": 2.3649,
+        "maxLon": 2.4705
+      },
+      "totalPopulation": 6671,
+      "totalSurface": 14677
+    },
+    "12170": {
+      "communes": [
+        "Connac",
+        "Durenque",
+        "Lédergues",
+        "Réquista",
+        "Saint-Jean-Delnous",
+        "Saint-Just-sur-Viaur",
+        "La Selve"
+      ],
+      "communeCount": 7,
+      "center": [2.522, 44.0654],
+      "coverageRadius": 13.9,
+      "boundingBox": {
+        "minLat": 44.02,
+        "maxLat": 44.1253,
+        "minLon": 2.3693,
+        "maxLon": 2.6162
+      },
+      "totalPopulation": 4404,
+      "totalSurface": 23259
+    },
+    "12190": {
+      "communes": ["Coubisou", "Estaing", "Le Nayrac", "Sébrazac"],
+      "communeCount": 4,
+      "center": [2.6797, 44.5625],
+      "coverageRadius": 5.9,
+      "boundingBox": {
+        "minLat": 44.5255,
+        "maxLat": 44.6136,
+        "minLon": 2.6571,
+        "maxLon": 2.7316
+      },
+      "totalPopulation": 2061,
+      "totalSurface": 10952
+    },
+    "12200": {
+      "communes": [
+        "Le Bas Ségala",
+        "Martiel",
+        "Monteils",
+        "Morlhon-le-Haut",
+        "La Rouquette",
+        "Saint-Rémy",
+        "Sanvensa",
+        "Savignac",
+        "Toulonjac",
+        "Vailhourles",
+        "Villefranche-de-Rouergue"
+      ],
+      "communeCount": 11,
+      "center": [2.0273, 44.3446],
+      "coverageRadius": 10.6,
+      "boundingBox": {
+        "minLat": 44.2654,
+        "maxLat": 44.3992,
+        "minLon": 1.9064,
+        "maxLon": 2.1339
+      },
+      "totalPopulation": 19007,
+      "totalSurface": 33443
+    },
+    "12210": {
+      "communes": ["Cassuéjouls", "Curières", "Laguiole", "Montpeyroux", "Argences en Aubrac", "Soulages-Bonneval"],
+      "communeCount": 6,
+      "center": [2.8021, 44.7255],
+      "coverageRadius": 9.6,
+      "boundingBox": {
+        "minLat": 44.6401,
+        "maxLat": 44.8037,
+        "minLon": 2.7589,
+        "maxLon": 2.8651
+      },
+      "totalPopulation": 3953,
+      "totalSurface": 34207
+    },
+    "12220": {
+      "communes": [
+        "Les Albres",
+        "Galgan",
+        "Lugan",
+        "Montbazens",
+        "Peyrusse-le-Roc",
+        "Roussennac",
+        "Valzergues",
+        "Vaureilles"
+      ],
+      "communeCount": 8,
+      "center": [2.2174, 44.4806],
+      "coverageRadius": 7.3,
+      "boundingBox": {
+        "minLat": 44.4532,
+        "maxLat": 44.5376,
+        "minLon": 2.1406,
+        "maxLon": 2.2599
+      },
+      "totalPopulation": 4027,
+      "totalSurface": 11778
+    },
+    "12230": {
+      "communes": [
+        "La Cavalerie",
+        "La Couvertoirade",
+        "L'Hospitalet-du-Larzac",
+        "Lapanouse-de-Cernon",
+        "Nant",
+        "Sainte-Eulalie-de-Cernon",
+        "Saint-Jean-du-Bruel",
+        "Sauclières"
+      ],
+      "communeCount": 8,
+      "center": [3.2273, 44.0041],
+      "coverageRadius": 12.4,
+      "boundingBox": {
+        "minLat": 43.9131,
+        "maxLat": 44.023,
+        "minLon": 3.0983,
+        "maxLon": 3.3681
+      },
+      "totalPopulation": 5058,
+      "totalSurface": 37096
+    },
+    "12240": {
+      "communes": ["Le Bas Ségala", "La Capelle-Bleys", "Castanet", "Colombiès", "Pradinas", "Rieupeyroux"],
+      "communeCount": 6,
+      "center": [2.2267, 44.3148],
+      "coverageRadius": 9.7,
+      "boundingBox": {
+        "minLat": 44.2406,
+        "maxLat": 44.3457,
+        "minLon": 2.1339,
+        "maxLon": 2.3399
+      },
+      "totalPopulation": 5651,
+      "totalSurface": 26212
+    },
+    "12250": {
+      "communes": [
+        "Roquefort-sur-Soulzon",
+        "Saint-Jean-d'Alcapiès",
+        "Saint-Jean-et-Saint-Paul",
+        "Tournemire",
+        "Viala-du-Pas-de-Jaux"
+      ],
+      "communeCount": 5,
+      "center": [3.0026, 43.9606],
+      "coverageRadius": 4.3,
+      "boundingBox": {
+        "minLat": 43.9281,
+        "maxLat": 43.9749,
+        "minLon": 2.9739,
+        "maxLon": 3.0552
+      },
+      "totalPopulation": 1517,
+      "totalSurface": 9140
+    },
+    "12260": {
+      "communes": [
+        "Ambeyrac",
+        "Balaguier-d'Olt",
+        "La Capelle-Balaguier",
+        "Foissac",
+        "Montsalès",
+        "Ols-et-Rinhodes",
+        "Sainte-Croix",
+        "Saint-Igest",
+        "Salles-Courbatiès",
+        "Salvagnac-Cajarc",
+        "Saujac",
+        "Villeneuve"
+      ],
+      "communeCount": 12,
+      "center": [1.9946, 44.4583],
+      "coverageRadius": 11.9,
+      "boundingBox": {
+        "minLat": 44.4264,
+        "maxLat": 44.5236,
+        "minLon": 1.8476,
+        "maxLon": 2.0868
+      },
+      "totalPopulation": 5497,
+      "totalSurface": 22121
+    },
+    "12270": {
+      "communes": ["Bor-et-Bar", "La Fouillade", "Lunac", "Najac", "Saint-André-de-Najac"],
+      "communeCount": 5,
+      "center": [2.0382, 44.22],
+      "coverageRadius": 6.2,
+      "boundingBox": {
+        "minLat": 44.1882,
+        "maxLat": 44.2356,
+        "minLon": 1.9783,
+        "maxLon": 2.1123
+      },
+      "totalPopulation": 2937,
+      "totalSurface": 14433
+    },
+    "12290": {
+      "communes": ["Arques", "Canet-de-Salars", "Pont-de-Salars", "Prades-Salars", "Ségur", "Trémouilles", "Le Vibal"],
+      "communeCount": 7,
+      "center": [2.746, 44.2777],
+      "coverageRadius": 8.8,
+      "boundingBox": {
+        "minLat": 44.2352,
+        "maxLat": 44.3179,
+        "minLon": 2.6453,
+        "maxLon": 2.8345
+      },
+      "totalPopulation": 4097,
+      "totalSurface": 24435
+    },
+    "12300": {
+      "communes": [
+        "Almont-les-Junies",
+        "Boisse-Penchot",
+        "Bouillac",
+        "Decazeville",
+        "Firmi",
+        "Flagnac",
+        "Livinhac-le-Haut",
+        "Saint-Parthem",
+        "Saint-Santin"
+      ],
+      "communeCount": 9,
+      "center": [2.2602, 44.571],
+      "coverageRadius": 9.3,
+      "boundingBox": {
+        "minLat": 44.541,
+        "maxLat": 44.649,
+        "minLon": 2.1622,
+        "maxLon": 2.3161
+      },
+      "totalPopulation": 11785,
+      "totalSurface": 14554
+    },
+    "12310": {
+      "communes": ["Bertholène", "Gaillac-d'Aveyron", "Laissac-Sévérac l'Église", "Palmas d'Aveyron", "Vimenet"],
+      "communeCount": 5,
+      "center": [2.8292, 44.386],
+      "coverageRadius": 8.8,
+      "boundingBox": {
+        "minLat": 44.3551,
+        "maxLat": 44.3986,
+        "minLon": 2.7771,
+        "maxLon": 2.93
+      },
+      "totalPopulation": 4799,
+      "totalSurface": 17439
+    },
+    "12320": {
+      "communes": ["Pruines", "Conques-en-Rouergue", "Saint-Félix-de-Lunel", "Sénergues"],
+      "communeCount": 4,
+      "center": [2.4505, 44.5562],
+      "coverageRadius": 6.8,
+      "boundingBox": {
+        "minLat": 44.5298,
+        "maxLat": 44.6045,
+        "minLon": 2.41,
+        "maxLon": 2.536
+      },
+      "totalPopulation": 2650,
+      "totalSurface": 18934
+    },
+    "12330": {
+      "communes": [
+        "Clairvaux-d'Aveyron",
+        "Marcillac-Vallon",
+        "Mouret",
+        "Muret-le-Château",
+        "Nauviale",
+        "Saint-Christophe-Vallon",
+        "Salles-la-Source",
+        "Valady"
+      ],
+      "communeCount": 8,
+      "center": [2.4619, 44.4621],
+      "coverageRadius": 9.6,
+      "boundingBox": {
+        "minLat": 44.428,
+        "maxLat": 44.5202,
+        "minLon": 2.4115,
+        "maxLon": 2.5738
+      },
+      "totalPopulation": 9493,
+      "totalSurface": 22634
+    },
+    "12340": {
+      "communes": ["Bozouls", "Gabriac", "Palmas d'Aveyron", "Rodelle"],
+      "communeCount": 4,
+      "center": [2.7311, 44.4583],
+      "coverageRadius": 11.3,
+      "boundingBox": {
+        "minLat": 44.3945,
+        "maxLat": 44.4892,
+        "minLon": 2.6274,
+        "maxLon": 2.8407
+      },
+      "totalPopulation": 5688,
+      "totalSurface": 19238
+    },
+    "12350": {
+      "communes": ["Brandonnet", "Compolibat", "Drulhe", "Lanuéjouls", "Maleville", "Prévinquières", "Privezac"],
+      "communeCount": 7,
+      "center": [2.1497, 44.4086],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 44.3747,
+        "maxLat": 44.4623,
+        "minLon": 2.1015,
+        "maxLon": 2.2299
+      },
+      "totalPopulation": 3407,
+      "totalSurface": 12628
+    },
+    "12360": {
+      "communes": [
+        "Arnac-sur-Dourdou",
+        "Brusque",
+        "Camarès",
+        "Fayet",
+        "Gissac",
+        "Mélagues",
+        "Montagnol",
+        "Peux-et-Couffouleux",
+        "Sylvanès",
+        "Tauriac-de-Camarès"
+      ],
+      "communeCount": 10,
+      "center": [2.9186, 43.8088],
+      "coverageRadius": 11.2,
+      "boundingBox": {
+        "minLat": 43.7264,
+        "maxLat": 43.8465,
+        "minLon": 2.8754,
+        "maxLon": 3.0305
+      },
+      "totalPopulation": 2104,
+      "totalSurface": 28495
+    },
+    "12370": {
+      "communes": ["Belmont-sur-Rance", "Combret", "Murasson", "Mounes-Prohencoux", "Saint-Sever-du-Moustier"],
+      "communeCount": 5,
+      "center": [2.7479, 43.8067],
+      "coverageRadius": 8.7,
+      "boundingBox": {
+        "minLat": 43.7602,
+        "maxLat": 43.8414,
+        "minLon": 2.6725,
+        "maxLon": 2.852
+      },
+      "totalPopulation": 1834,
+      "totalSurface": 19856
+    },
+    "12380": {
+      "communes": [
+        "Balaguier-sur-Rance",
+        "Laval-Roquecezière",
+        "Montfranc",
+        "Pousthomy",
+        "Saint-Sernin-sur-Rance",
+        "La Serre"
+      ],
+      "communeCount": 6,
+      "center": [2.6157, 43.8611],
+      "coverageRadius": 6.5,
+      "boundingBox": {
+        "minLat": 43.8078,
+        "maxLat": 43.898,
+        "minLon": 2.5679,
+        "maxLon": 2.6827
+      },
+      "totalPopulation": 1438,
+      "totalSurface": 9375
+    },
+    "12390": {
+      "communes": [
+        "Anglars-Saint-Félix",
+        "Auzits",
+        "Belcastel",
+        "Bournazel",
+        "Escandolières",
+        "Goutrens",
+        "Mayran",
+        "Rignac"
+      ],
+      "communeCount": 8,
+      "center": [2.302, 44.4308],
+      "coverageRadius": 8.4,
+      "boundingBox": {
+        "minLat": 44.3875,
+        "maxLat": 44.5041,
+        "minLon": 2.2186,
+        "maxLon": 2.3703
+      },
+      "totalPopulation": 5579,
+      "totalSurface": 16263
+    },
+    "12400": {
+      "communes": [
+        "Calmels-et-le-Viala",
+        "Les Costes-Gozon",
+        "Montlaur",
+        "Rebourguil",
+        "Saint-Affrique",
+        "Saint-Félix-de-Sorgues",
+        "Saint-Victor-et-Melvieu",
+        "Vabres-l'Abbaye",
+        "Versols-et-Lapeyre"
+      ],
+      "communeCount": 9,
+      "center": [2.8739, 43.9501],
+      "coverageRadius": 11.8,
+      "boundingBox": {
+        "minLat": 43.8791,
+        "maxLat": 44.0512,
+        "minLon": 2.7524,
+        "maxLon": 2.9846
+      },
+      "totalPopulation": 11356,
+      "totalSurface": 34970
+    },
+    "12410": {
+      "communes": ["Salles-Curan", "Curan"],
+      "communeCount": 2,
+      "center": [2.8039, 44.1861],
+      "coverageRadius": 4.4,
+      "boundingBox": {
+        "minLat": 44.1822,
+        "maxLat": 44.1996,
+        "minLon": 2.7889,
+        "maxLon": 2.8551
+      },
+      "totalPopulation": 1332,
+      "totalSurface": 14031
+    },
+    "12420": {
+      "communes": ["Cantoin", "Argences en Aubrac"],
+      "communeCount": 2,
+      "center": [2.7678, 44.809],
+      "coverageRadius": 4.8,
+      "boundingBox": {
+        "minLat": 44.8037,
+        "maxLat": 44.8363,
+        "minLon": 2.7589,
+        "maxLon": 2.8135
+      },
+      "totalPopulation": 1909,
+      "totalSurface": 19789
+    },
+    "12430": {
+      "communes": ["Alrance", "Ayssènes", "Lestrade-et-Thouels", "Le Truel", "Villefranche-de-Panat"],
+      "communeCount": 5,
+      "center": [2.7077, 44.0801],
+      "coverageRadius": 6.1,
+      "boundingBox": {
+        "minLat": 44.0499,
+        "maxLat": 44.1314,
+        "minLon": 2.6587,
+        "maxLon": 2.7797
+      },
+      "totalPopulation": 2023,
+      "totalSurface": 15832
+    },
+    "12440": {
+      "communes": ["Lescure-Jaoul", "La Salvetat-Peyralès", "Tayrac"],
+      "communeCount": 3,
+      "center": [2.1961, 44.219],
+      "coverageRadius": 4.1,
+      "boundingBox": {
+        "minLat": 44.2019,
+        "maxLat": 44.2306,
+        "minLon": 2.1474,
+        "maxLon": 2.2332
+      },
+      "totalPopulation": 1411,
+      "totalSurface": 8909
+    },
+    "12450": {
+      "communes": ["Calmont", "Flavin", "Luc-la-Primaube"],
+      "communeCount": 3,
+      "center": [2.5459, 44.295],
+      "coverageRadius": 5.8,
+      "boundingBox": {
+        "minLat": 44.2488,
+        "maxLat": 44.3141,
+        "minLon": 2.5129,
+        "maxLon": 2.6034
+      },
+      "totalPopulation": 10638,
+      "totalSurface": 10858
+    },
+    "12460": {
+      "communes": ["Campouriez", "Huparlac", "Montézic", "Saint-Amans-des-Cots", "Saint-Symphorien-de-Thénières"],
+      "communeCount": 5,
+      "center": [2.67, 44.7011],
+      "coverageRadius": 7.4,
+      "boundingBox": {
+        "minLat": 44.6895,
+        "maxLat": 44.7372,
+        "minLon": 2.607,
+        "maxLon": 2.7616
+      },
+      "totalPopulation": 1759,
+      "totalSurface": 13471
+    },
+    "12470": {
+      "communes": ["Condom-d'Aubrac", "Prades-d'Aubrac", "Saint-Chély-d'Aubrac"],
+      "communeCount": 3,
+      "center": [2.9114, 44.5778],
+      "coverageRadius": 5.5,
+      "boundingBox": {
+        "minLat": 44.5331,
+        "maxLat": 44.6035,
+        "minLon": 2.8642,
+        "maxLon": 2.939
+      },
+      "totalPopulation": 1116,
+      "totalSurface": 16959
+    },
+    "12480": {
+      "communes": ["Broquiès", "Brousse-le-Château", "Saint-Izaire"],
+      "communeCount": 3,
+      "center": [2.6919, 43.9955],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 43.9755,
+        "maxLat": 44.0056,
+        "minLon": 2.6264,
+        "maxLon": 2.7195
+      },
+      "totalPopulation": 1095,
+      "totalSurface": 8773
+    },
+    "12490": {
+      "communes": ["La Bastide-Pradines", "Montjaux", "Saint-Rome-de-Cernon", "Saint-Rome-de-Tarn", "Viala-du-Tarn"],
+      "communeCount": 5,
+      "center": [2.923, 44.0467],
+      "coverageRadius": 11.1,
+      "boundingBox": {
+        "minLat": 44.0015,
+        "maxLat": 44.1021,
+        "minLon": 2.8781,
+        "maxLon": 3.0467
+      },
+      "totalPopulation": 2942,
+      "totalSurface": 18056
+    },
+    "12500": {
+      "communes": ["Bessuéjouls", "Castelnau-de-Mandailles", "Le Cayrol", "Espalion", "Lassouts", "Saint-Côme-d'Olt"],
+      "communeCount": 6,
+      "center": [2.7858, 44.5216],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 44.4875,
+        "maxLat": 44.5855,
+        "minLon": 2.7285,
+        "maxLon": 2.8865
+      },
+      "totalPopulation": 7414,
+      "totalSurface": 16746
+    },
+    "12510": {
+      "communes": ["Druelle Balsac", "Olemps"],
+      "communeCount": 2,
+      "center": [2.5364, 44.3536],
+      "coverageRadius": 2.5,
+      "boundingBox": {
+        "minLat": 44.3384,
+        "maxLat": 44.3704,
+        "minLon": 2.5167,
+        "maxLon": 2.5541
+      },
+      "totalPopulation": 6710,
+      "totalSurface": 6399
+    },
+    "12520": {
+      "communes": ["Aguessac", "Compeyre", "Paulhe", "Verrières"],
+      "communeCount": 4,
+      "center": [3.0926, 44.1642],
+      "coverageRadius": 5,
+      "boundingBox": {
+        "minLat": 44.152,
+        "maxLat": 44.2017,
+        "minLon": 3.0583,
+        "maxLon": 3.1027
+      },
+      "totalPopulation": 2179,
+      "totalSurface": 8653
+    },
+    "12540": {
+      "communes": ["Le Clapier", "Cornus", "Marnhagues-et-Latour", "Fondamente", "Saint-Beaulize"],
+      "communeCount": 5,
+      "center": [3.1384, 43.8859],
+      "coverageRadius": 9,
+      "boundingBox": {
+        "minLat": 43.8309,
+        "maxLat": 43.9031,
+        "minLon": 3.0285,
+        "maxLon": 3.1789
+      },
+      "totalPopulation": 1180,
+      "totalSurface": 20587
+    },
+    "12550": {
+      "communes": ["La Bastide-Solages", "Brasc", "Coupiac", "Martrin", "Montclar", "Plaisance", "Saint-Juéry"],
+      "communeCount": 7,
+      "center": [2.6039, 43.9432],
+      "coverageRadius": 8.2,
+      "boundingBox": {
+        "minLat": 43.9095,
+        "maxLat": 43.9776,
+        "minLon": 2.5237,
+        "maxLon": 2.6939
+      },
+      "totalPopulation": 1511,
+      "totalSurface": 13151
+    },
+    "12560": {
+      "communes": ["Campagnac", "Saint-Laurent-d'Olt", "Saint-Saturnin-de-Lenne"],
+      "communeCount": 3,
+      "center": [3.0815, 44.4316],
+      "coverageRadius": 5.1,
+      "boundingBox": {
+        "minLat": 44.4176,
+        "maxLat": 44.446,
+        "minLon": 3.0189,
+        "maxLon": 3.1111
+      },
+      "totalPopulation": 1393,
+      "totalSurface": 10471
+    },
+    "12580": {
+      "communes": ["Campuac", "Villecomtal"],
+      "communeCount": 2,
+      "center": [2.5772, 44.5549],
+      "coverageRadius": 2.1,
+      "boundingBox": {
+        "minLat": 44.5396,
+        "maxLat": 44.5694,
+        "minLon": 2.5638,
+        "maxLon": 2.5899
+      },
+      "totalPopulation": 878,
+      "totalSurface": 3309
+    },
+    "12600": {
+      "communes": ["Brommat", "Lacroix-Barrez", "Mur-de-Barrez", "Murols", "Taussac", "Thérondels"],
+      "communeCount": 6,
+      "center": [2.6673, 44.8294],
+      "coverageRadius": 11,
+      "boundingBox": {
+        "minLat": 44.7549,
+        "maxLat": 44.8963,
+        "minLon": 2.5764,
+        "maxLon": 2.7593
+      },
+      "totalPopulation": 2817,
+      "totalSurface": 18396
+    },
+    "12620": {
+      "communes": ["Castelnau-Pégayrols", "Saint-Beauzély", "Saint-Laurent-de-Lévézou"],
+      "communeCount": 3,
+      "center": [2.9492, 44.1605],
+      "coverageRadius": 5.4,
+      "boundingBox": {
+        "minLat": 44.1303,
+        "maxLat": 44.2077,
+        "minLon": 2.9302,
+        "maxLon": 2.9586
+      },
+      "totalPopulation": 1078,
+      "totalSurface": 10741
+    },
+    "12630": {
+      "communes": ["Agen-d'Aveyron", "Montrozier"],
+      "communeCount": 2,
+      "center": [2.6969, 44.3801],
+      "coverageRadius": 2.9,
+      "boundingBox": {
+        "minLat": 44.3577,
+        "maxLat": 44.3945,
+        "minLon": 2.6802,
+        "maxLon": 2.7076
+      },
+      "totalPopulation": 2868,
+      "totalSurface": 6936
+    },
+    "12640": {
+      "communes": ["La Cresse", "Rivière-sur-Tarn"],
+      "communeCount": 2,
+      "center": [3.1298, 44.1862],
+      "coverageRadius": 1,
+      "boundingBox": {
+        "minLat": 44.1776,
+        "maxLat": 44.1889,
+        "minLon": 3.1293,
+        "maxLon": 3.13
+      },
+      "totalPopulation": 1368,
+      "totalSurface": 4554
+    },
+    "12700": {
+      "communes": ["Asprières", "Capdenac-Gare", "Naussac", "Causse-et-Diège", "Sonnac"],
+      "communeCount": 5,
+      "center": [2.0844, 44.5617],
+      "coverageRadius": 5.3,
+      "boundingBox": {
+        "minLat": 44.5205,
+        "maxLat": 44.5741,
+        "minLon": 2.0256,
+        "maxLon": 2.1445
+      },
+      "totalPopulation": 6878,
+      "totalSurface": 9424
+    },
+    "12720": {
+      "communes": ["Mostuéjouls", "Peyreleau", "Saint-André-de-Vézines", "Veyreau"],
+      "communeCount": 4,
+      "center": [3.2229, 44.1875],
+      "coverageRadius": 6.1,
+      "boundingBox": {
+        "minLat": 44.1515,
+        "maxLat": 44.2027,
+        "minLon": 3.1815,
+        "maxLon": 3.299
+      },
+      "totalPopulation": 661,
+      "totalSurface": 12861
+    },
+    "12740": {
+      "communes": ["La Loubière", "Sébazac-Concourès"],
+      "communeCount": 2,
+      "center": [2.6084, 44.4057],
+      "coverageRadius": 1.8,
+      "boundingBox": {
+        "minLat": 44.4052,
+        "maxLat": 44.4069,
+        "minLon": 2.5979,
+        "maxLon": 2.6307
+      },
+      "totalPopulation": 4795,
+      "totalSurface": 5599
+    },
+    "12780": {
+      "communes": ["Saint-Léons", "Vézins-de-Lévézou"],
+      "communeCount": 2,
+      "center": [2.9658, 44.2538],
+      "coverageRadius": 4.6,
+      "boundingBox": {
+        "minLat": 44.216,
+        "maxLat": 44.2787,
+        "minLon": 2.952,
+        "maxLon": 2.9869
+      },
+      "totalPopulation": 1077,
+      "totalSurface": 11188
+    },
+    "12800": {
+      "communes": [
+        "Cabanès",
+        "Camjac",
+        "Castelmary",
+        "Crespin",
+        "Naucelle",
+        "Quins",
+        "Saint-Just-sur-Viaur",
+        "Sauveterre-de-Rouergue",
+        "Tauriac-de-Naucelle"
+      ],
+      "communeCount": 9,
+      "center": [2.3409, 44.1947],
+      "coverageRadius": 8.1,
+      "boundingBox": {
+        "minLat": 44.1253,
+        "maxLat": 44.2313,
+        "minLon": 2.251,
+        "maxLon": 2.38
+      },
+      "totalPopulation": 5498,
+      "totalSurface": 20278
+    },
+    "12850": {
+      "communes": ["Onet-le-Château", "Sainte-Radegonde"],
+      "communeCount": 2,
+      "center": [2.5973, 44.362],
+      "coverageRadius": 3.5,
+      "boundingBox": {
+        "minLat": 44.3383,
+        "maxLat": 44.3655,
+        "minLon": 2.5931,
+        "maxLon": 2.6261
+      },
+      "totalPopulation": 13836,
+      "totalSurface": 7107
+    }
+  }
+}
