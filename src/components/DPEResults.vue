@@ -24,7 +24,7 @@
               <select 
                 v-model="sortBy"
                 @change="sortResults"
-                class="appearance-none bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
+                class="appearance-none bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
               >
                 <option value="score">Par score</option>
                 <option value="distance" v-if="hasDistanceData">Par distance</option>
@@ -1134,18 +1134,6 @@ export default {
 </script>
 
 <style scoped>
-/* Force light colors for select options when not in dark mode */
-:not(.dark) select option {
-  background-color: white !important;
-  color: rgb(55, 65, 81) !important;
-}
-
-/* Force dark colors for select options in dark mode */
-.dark select option {
-  background-color: rgb(55, 65, 81) !important;
-  color: rgb(229, 231, 235) !important;
-}
-
 /* Animations pour les résultats */
 .bg-white {
   animation: fadeInUp 0.6s ease-out;

@@ -17,7 +17,7 @@
             v-model="searchCriteria.address"
             type="text"
             placeholder="Ex: 15 rue de la Paix, 75002 Paris"
-            class="w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-400 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100"
+            class="w-full px-4 py-3 text-base bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-400 dark:placeholder-gray-300 text-gray-800 dark:text-gray-100"
             required
           />
         </div>
@@ -32,7 +32,7 @@
             </label>
             <select
               v-model="searchCriteria.monthsBack"
-              class="w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-900 dark:text-gray-100 dark-select"
+              class="w-full px-4 py-3 text-base bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-800 dark:text-gray-100"
             >
               <option value="1">1 mois</option>
               <option value="3">3 mois</option>
@@ -51,7 +51,7 @@
             </label>
             <select
               v-model="searchCriteria.radius"
-              class="w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-900 dark:text-gray-100 dark-select"
+              class="w-full px-4 py-3 text-base bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-800 dark:text-gray-100"
             >
               <option value="0.1">100 m</option>
               <option value="0.5">500 m</option>
@@ -76,7 +76,7 @@
               type="text"
               placeholder="Ex: 100 m²"
               @input="validateSurfaceInput"
-              class="w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-900 dark:text-gray-100 no-spinners"
+              class="w-full px-4 py-3 text-base bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-800 dark:text-gray-100 no-spinners"
             />
             <!-- Property type selector -->
             <div class="mt-1">
@@ -501,31 +501,13 @@ export default {
   appearance: textfield;
 }
 
-/* Force dark mode for select elements with better colors */
-@media (prefers-color-scheme: dark) {
-  select {
-    color-scheme: dark;
-  }
-  
-  select.dark-select {
-    background-color: rgb(17 24 39) !important; /* gray-900 */
-  }
-  
-  select.dark-select option {
-    background-color: rgb(17 24 39) !important; /* gray-900 */
-    color: rgb(229 231 235) !important; /* gray-200 */
-  }
-}
-
-:root.dark select.dark-select,
-.dark select.dark-select {
+/* Only apply dark styles when the website itself is in dark mode */
+.dark select {
   color-scheme: dark;
-  background-color: rgb(17 24 39) !important; /* gray-900 */
 }
 
-:root.dark select.dark-select option,
-.dark select.dark-select option {
-  background-color: rgb(17 24 39) !important; /* gray-900 */
-  color: rgb(229 231 235) !important; /* gray-200 */
+.dark select option {
+  background-color: rgb(31 41 55); /* gray-800 */
+  color: rgb(229 231 235); /* gray-200 */
 }
 </style>
