@@ -11,7 +11,7 @@
  * @returns {string} Google Maps embed URL
  */
 export function getGoogleMapsEmbedUrl(lat, lon, address = null, zoom = 18) {
-  // Prefer address to avoid misplacement for DOM-TOM or ambiguous coords
+  // Préférer l'adresse pour éviter les erreurs de placement pour DOM-TOM ou coordonnées ambiguës
   if (address) {
     const encodedAddress = encodeURIComponent(address)
     return `https://maps.google.com/maps?q=${encodedAddress}&output=embed&z=${zoom}&t=k`
@@ -32,7 +32,7 @@ export function getGoogleMapsEmbedUrl(lat, lon, address = null, zoom = 18) {
  * @returns {string}
  */
 export function getGoogleMapsSearchUrl(lat, lon, address = null) {
-  // Prefer address to disambiguate overseas territories
+  // Préférer l'adresse pour lever l'ambiguïté sur les territoires d'outre-mer
   if (address) return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
   const latNum = Number(lat)
   const lonNum = Number(lon)
@@ -90,6 +90,6 @@ export function getGoogleRegionLabel(postalCode) {
   if (code.startsWith('973')) return 'Guyane française'
   if (code.startsWith('974')) return 'La Réunion'
   if (code.startsWith('976')) return 'Mayotte'
-  // Corse uses normal FR
+  // La Corse utilise le FR normal
   return 'France'
 }

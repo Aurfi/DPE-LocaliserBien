@@ -250,7 +250,7 @@ export default {
     },
 
     getGESClassColor(classe) {
-      // Use same colors as energy classes for consistency
+      // Utiliser les mêmes couleurs que les classes énergétiques pour la cohérence
       return this.getEnergyClassColor(classe)
     },
 

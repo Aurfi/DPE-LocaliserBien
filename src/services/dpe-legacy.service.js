@@ -1,6 +1,6 @@
 /**
- * Service for searching pre-2021 DPE data (before July 2021)
- * Uses the dpe-france dataset with different field names
+ * Service pour rechercher les données DPE pré-2021 (avant juillet 2021)
+ * Utilise le jeu de données dpe-france avec des noms de champs différents
  */
 
 class DPELegacyService {
@@ -27,7 +27,7 @@ class DPELegacyService {
   }
 
   /**
-   * Load department data from local JSON
+   * Charger les données de département depuis un fichier JSON local
    */
   async loadDepartment(deptCode) {
     if (this.departmentCache[deptCode]) {
@@ -45,10 +45,10 @@ class DPELegacyService {
   }
 
   /**
-   * Get INSEE codes for a given postal code or commune name
-   * For multi-commune postal codes, returns the biggest commune by population
-   * @param {string} commune - Postal code or commune name
-   * @returns {Promise<Array>} Array of INSEE codes
+   * Obtenir les codes INSEE pour un code postal ou nom de commune donné
+   * Pour les codes postaux multi-communes, retourne la plus grande commune par population
+   * @param {string} commune - Code postal ou nom de commune
+   * @returns {Promise<Array>} Tableau des codes INSEE
    */
   async getINSEECodes(commune) {
     await this.ensureIndexLoaded()
@@ -58,20 +58,20 @@ class DPELegacyService {
       const isPostalCode = /^\d{5}$/.test(commune)
 
       if (isPostalCode) {
-        // Get department from postal code
+        // Obtenir le département depuis le code postal
         const deptCode = this.communesIndex.postalCodeToDepartment[commune]
         if (!deptCode) return []
 
-        // Load department data
+        // Charger les données du département
         const deptData = await this.loadDepartment(deptCode)
         if (!deptData) return []
 
-        // Find all communes with this postal code
+        // Trouver toutes les communes avec ce code postal
         const matchingCommunes = deptData.communes.filter(c => c.codesPostaux?.includes(commune))
 
         if (matchingCommunes.length === 0) return []
 
-        // For multiple communes, take the one with highest population
+        // Pour plusieurs communes, prendre celle avec la plus haute population
         if (matchingCommunes.length > 1) {
           const biggest = matchingCommunes.reduce((prev, current) =>
             current.population > prev.population ? current : prev
@@ -81,10 +81,10 @@ class DPELegacyService {
 
         return [matchingCommunes[0].code]
       } else {
-        // Search by commune name across ALL departments
+        // Rechercher par nom de commune dans TOUS les départements
         const normalizedSearch = commune.toLowerCase().trim()
 
-        // First check cached departments
+        // Vérifier d'abord les départements en cache
         for (const [_code, deptData] of Object.entries(this.departmentCache)) {
           const foundCommune = deptData.communes.find(
             c =>
@@ -97,7 +97,7 @@ class DPELegacyService {
           }
         }
 
-        // Search all departments (01 to 95 + 2A, 2B for Corsica)
+        // Rechercher tous les départements (01 à 95 + 2A, 2B pour la Corse)
         const allDeptCodes = []
         for (let i = 1; i <= 95; i++) {
           const code = i.toString().padStart(2, '0')
@@ -105,11 +105,11 @@ class DPELegacyService {
             allDeptCodes.push(code)
           }
         }
-        // Add Corsica if not cached
+        // Ajouter la Corse si pas en cache
         if (!this.departmentCache['2A']) allDeptCodes.push('2A')
         if (!this.departmentCache['2B']) allDeptCodes.push('2B')
 
-        // Search each uncached department
+        // Rechercher dans chaque département non mis en cache
         for (const deptCode of allDeptCodes) {
           try {
             const deptData = await this.loadDepartment(deptCode)
@@ -135,7 +135,7 @@ class DPELegacyService {
   }
 
   /**
-   * Parse comparison value (same as main service)
+   * Analyser la valeur de comparaison (comme le service principal)
    */
   parseComparisonValue(value) {
     if (!value) return null
@@ -157,7 +157,7 @@ class DPELegacyService {
   }
 
   /**
-   * Build range query (same as main service)
+   * Construire la requête de plage (comme le service principal)
    */
   buildRangeQuery(comparison, fieldName) {
     if (!comparison) return null
@@ -173,21 +173,21 @@ class DPELegacyService {
   }
 
   /**
-   * Search legacy DPE database with multiple strategies
-   * @param {Object} searchRequest - Search parameters
-   * @param {boolean} hasPostResults - Whether post-2021 search found results
-   * @returns {Promise<Object>} Search results
+   * Rechercher dans la base de données DPE legacy avec plusieurs stratégies
+   * @param {Object} searchRequest - Paramètres de recherche
+   * @param {boolean} hasPostResults - Si la recherche post-2021 a trouvé des résultats
+   * @returns {Promise<Object>} Résultats de recherche
    */
   async searchLegacy(searchRequest, hasPostResults = false) {
     try {
-      // Don't search if we already have perfect matches in post-2021
+      // Ne pas rechercher si nous avons déjà des correspondances parfaites en post-2021
       if (hasPostResults) {
         return { results: [], fromLegacy: true, skipped: true }
       }
 
       const startTime = Date.now()
 
-      // Get INSEE codes for the location
+      // Obtenir les codes INSEE pour l'emplacement
       const inseeCodes = await this.getINSEECodes(searchRequest.commune)
 
       if (!inseeCodes || inseeCodes.length === 0) {
@@ -201,14 +201,14 @@ class DPELegacyService {
       const _results = []
       let searchStrategy = 'NONE'
 
-      // Check if this is a class-based search
+      // Vérifier s'il s'agit d'une recherche par classe
       const isClassSearch = searchRequest.energyClass && !searchRequest.consommationEnergie
 
-      // Track all DPE numbers to avoid duplicates
+      // Suivre tous les numéros DPE pour éviter les doublons
       const seenDPEs = new Set()
       const allResults = []
 
-      // Helper to add unique results
+      // Fonction d'aide pour ajouter des résultats uniques
       const addUniqueResults = (newResults, _strategy) => {
         let added = 0
         for (const result of newResults) {
@@ -218,7 +218,7 @@ class DPELegacyService {
             allResults.push(result)
             added++
           } else if (!dpeNum) {
-            // Add results without DPE number (can't dedupe)
+            // Ajouter les résultats sans numéro DPE (impossible de dédupliquer)
             allResults.push(result)
             added++
           }
@@ -226,13 +226,13 @@ class DPELegacyService {
         return added > 0
       }
 
-      // STEP 1: Strict search (±1% surface tolerance)
+      // ÉTAPE 1 : Recherche stricte (tolérance de surface ±1%)
       const strictConditions = []
 
-      // INSEE code filter
+      // Filtre code INSEE
       strictConditions.push(`code_insee_commune_actualise:"${inseeCodes[0]}"`)
 
-      // Energy consumption or class
+      // Consommation d'énergie ou classe
       if (isClassSearch && searchRequest.energyClass) {
         strictConditions.push(`classe_consommation_energie:"${searchRequest.energyClass.toUpperCase()}"`)
       } else if (searchRequest.consommationEnergie) {
@@ -243,7 +243,7 @@ class DPELegacyService {
         }
       }
 
-      // GES emissions or class
+      // Émissions GES ou classe
       if (searchRequest.gesClass) {
         strictConditions.push(`classe_estimation_ges:"${searchRequest.gesClass.toUpperCase()}"`)
       } else if (searchRequest.emissionGES) {
@@ -254,7 +254,7 @@ class DPELegacyService {
         }
       }
 
-      // Building type
+      // Type de bâtiment
       if (searchRequest.typeBien) {
         if (searchRequest.typeBien === 'maison') {
           strictConditions.push(
@@ -267,7 +267,7 @@ class DPELegacyService {
         }
       }
 
-      // Surface with ±1% tolerance for strict search
+      // Surface avec tolérance ±1% pour la recherche stricte
       if (searchRequest.surfaceHabitable) {
         const surfaceComparison = this.parseComparisonValue(searchRequest.surfaceHabitable)
         if (surfaceComparison && surfaceComparison.value > 0) {
@@ -289,7 +289,7 @@ class DPELegacyService {
         searchStrategy = 'STRICT'
       }
 
-      // STEP 2: Expanded search if still need more results
+      // ÉTAPE 2 : Recherche élargie si encore besoin de plus de résultats
       if (allResults.length < 10) {
         const expandedConditions = []
 
@@ -303,7 +303,7 @@ class DPELegacyService {
             expandedConditions.push(`classe_estimation_ges:"${searchRequest.gesClass.toUpperCase()}"`)
           }
         } else {
-          // ±5% tolerance for energy/GES
+          // Tolérance ±5% pour énergie/GES
           if (searchRequest.consommationEnergie) {
             const min = Math.round(searchRequest.consommationEnergie * 0.95)
             const max = Math.round(searchRequest.consommationEnergie * 1.05)
@@ -328,7 +328,7 @@ class DPELegacyService {
           }
         }
 
-        // ±15% surface tolerance
+        // Tolérance de surface ±15%
         if (searchRequest.surfaceHabitable) {
           const min = Math.round(searchRequest.surfaceHabitable * 0.85)
           const max = Math.round(searchRequest.surfaceHabitable * 1.15)
@@ -343,7 +343,7 @@ class DPELegacyService {
         }
       }
 
-      // STEP 3: Regional search (department-wide) if still need more
+      // ÉTAPE 3 : Recherche régionale (à l'échelle du département) si encore besoin
       if (allResults.length < 20) {
         const deptCode = inseeCodes[0].substring(0, 2)
         const regionalConditions = []
@@ -358,7 +358,7 @@ class DPELegacyService {
             regionalConditions.push(`classe_estimation_ges:"${searchRequest.gesClass.toUpperCase()}"`)
           }
         } else {
-          // ±10% tolerance
+          // Tolérance ±10%
           if (searchRequest.consommationEnergie) {
             const min = Math.round(searchRequest.consommationEnergie * 0.9)
             const max = Math.round(searchRequest.consommationEnergie * 1.1)
@@ -383,7 +383,7 @@ class DPELegacyService {
           }
         }
 
-        // ±35% surface tolerance
+        // Tolérance de surface ±35%
         if (searchRequest.surfaceHabitable) {
           const min = Math.round(searchRequest.surfaceHabitable * 0.65)
           const max = Math.round(searchRequest.surfaceHabitable * 1.35)
@@ -398,14 +398,14 @@ class DPELegacyService {
         }
       }
 
-      // Map and score all unique results
+      // Mapper et noter tous les résultats uniques
       const mappedResults = allResults.map(r => this.mapLegacyResult(r, searchRequest))
 
-      // Sort by match score
+      // Trier par score de correspondance
       mappedResults.sort((a, b) => b.matchScore - a.matchScore)
 
       return {
-        results: mappedResults.slice(0, 20), // Limit to top 20
+        results: mappedResults.slice(0, 20), // Limiter aux 20 premiers
         totalFound: mappedResults.length,
         searchStrategy,
         executionTime: Date.now() - startTime,
@@ -422,7 +422,7 @@ class DPELegacyService {
   }
 
   /**
-   * Execute query against the legacy API
+   * Exécuter la requête contre l'API legacy
    */
   async executeQuery(query, size = 100) {
     try {
@@ -446,10 +446,10 @@ class DPELegacyService {
   }
 
   /**
-   * Map legacy result to current format
+   * Mapper le résultat legacy vers le format actuel
    */
   mapLegacyResult(legacyData, searchRequest) {
-    // Extract coordinates
+    // Extraire les coordonnées
     let latitude = legacyData.latitude || null
     let longitude = legacyData.longitude || null
 
@@ -459,48 +459,48 @@ class DPELegacyService {
       longitude = parseFloat(coords[1])
     }
 
-    // Calculate match score
+    // Calculer le score de correspondance
     const matchScore = this.calculateMatchScore(legacyData, searchRequest)
 
-    // Determine if we have incomplete data
+    // Déterminer si nous avons des données incomplètes
     const hasIncompleteData =
       !legacyData.geo_adresse || legacyData.geo_adresse === 'Adresse non disponible' || !latitude || !longitude
 
     return {
-      // Address information
+      // Informations d'adresse
       adresseComplete: legacyData.geo_adresse || 'Adresse non disponible',
       codePostal: this.extractPostalCodeFromAddress(legacyData.geo_adresse) || '',
       commune: this.extractCommuneFromAddress(legacyData.geo_adresse) || '',
       latitude,
       longitude,
 
-      // Energy data - map to post-2021 field names
+      // Données énergétiques - mapper vers les noms de champs post-2021
       consommationEnergie: legacyData.consommation_energie || 0,
       classeDPE: legacyData.classe_consommation_energie || '',
       emissionGES: legacyData.estimation_ges || 0,
       classeGES: legacyData.classe_estimation_ges || '',
 
-      // Building information
+      // Informations du bâtiment
       typeBien: this.mapBuildingType(legacyData.tr002_type_batiment_description),
       surfaceHabitable: legacyData.surface_thermique_lot || 0,
       anneeConstruction: legacyData.annee_construction || null,
 
-      // Metadata
+      // Métadonnées
       id: legacyData.numero_dpe || legacyData._id || '',
       numeroDPE: legacyData.numero_dpe || '',
       dateVisite: legacyData.date_etablissement_dpe,
 
-      // Scoring
+      // Notation
       matchScore,
       matchReasons: this.getMatchReasons(legacyData, searchRequest),
 
-      // Mark as legacy data with incomplete flag
+      // Marquer comme données legacy avec indicateur d'incomplétude
       isLegacyData: true,
       fromLegacy: true,
       hasIncompleteData,
       legacyNote: 'DPE avant juillet 2021',
 
-      // ADEME link for incomplete data
+      // Lien ADEME pour les données incomplètes
       ademeUrl: legacyData.numero_dpe
         ? `https://www.observatoire-dpe.fr/index.php/recherche-dpe?numero=${legacyData.numero_dpe}`
         : null
@@ -508,13 +508,13 @@ class DPELegacyService {
   }
 
   /**
-   * Calculate match score for legacy results (same logic as main service)
+   * Calculer le score de correspondance pour les résultats legacy (même logique que le service principal)
    */
   calculateMatchScore(legacyData, searchRequest) {
     let baseScore = 0
     let multiplier = 1.0
 
-    // Location match (10 points)
+    // Correspondance d'emplacement (10 points)
     if (searchRequest.commune && legacyData.geo_adresse) {
       const addressLower = legacyData.geo_adresse.toLowerCase()
       const communeLower = searchRequest.commune.toLowerCase()
@@ -524,11 +524,11 @@ class DPELegacyService {
       }
     }
 
-    // Check if class-based or value-based search
+    // Vérifier si la recherche est par classe ou par valeur
     const isClassSearch = searchRequest.energyClass && !searchRequest.consommationEnergie
 
     if (isClassSearch) {
-      // CLASS-BASED SEARCH
+      // RECHERCHE PAR CLASSE
 
       // Surface (30 points)
       if (searchRequest.surfaceHabitable && legacyData.surface_thermique_lot) {
@@ -545,7 +545,7 @@ class DPELegacyService {
         }
       }
 
-      // Energy class (40 points)
+      // Classe énergétique (40 points)
       if (searchRequest.energyClass && legacyData.classe_consommation_energie) {
         const requestClass = searchRequest.energyClass.toUpperCase()
         const dpeClass = legacyData.classe_consommation_energie.toUpperCase()
@@ -562,7 +562,7 @@ class DPELegacyService {
         }
       }
 
-      // GES class (20 points)
+      // Classe GES (20 points)
       if (searchRequest.gesClass && legacyData.classe_estimation_ges) {
         const requestGES = searchRequest.gesClass.toUpperCase()
         const dpeGES = legacyData.classe_estimation_ges.toUpperCase()
@@ -579,9 +579,9 @@ class DPELegacyService {
         }
       }
     } else {
-      // EXACT VALUE SEARCH
+      // RECHERCHE PAR VALEUR EXACTE
 
-      // Surface (up to 90 points)
+      // Surface (jusqu'à 90 points)
       if (searchRequest.surfaceHabitable && legacyData.surface_thermique_lot) {
         const surfaceDiff = Math.abs(legacyData.surface_thermique_lot - searchRequest.surfaceHabitable)
         const surfacePercent = (surfaceDiff / searchRequest.surfaceHabitable) * 100
@@ -598,12 +598,12 @@ class DPELegacyService {
         }
       }
 
-      // Energy penalty
+      // Pénalité énergétique
       if (searchRequest.consommationEnergie && legacyData.consommation_energie) {
         const kwhDiff = Math.abs(legacyData.consommation_energie - searchRequest.consommationEnergie)
 
         if (kwhDiff === 0) {
-          // Perfect match
+          // Correspondance parfaite
         } else if (kwhDiff === 1) {
           multiplier *= 0.75
         } else if (kwhDiff <= 9) {
@@ -614,12 +614,12 @@ class DPELegacyService {
         }
       }
 
-      // GES penalty
+      // Pénalité GES
       if (searchRequest.emissionGES && legacyData.estimation_ges) {
         const gesDiff = Math.abs(legacyData.estimation_ges - searchRequest.emissionGES)
 
         if (gesDiff === 0) {
-          // Perfect match
+          // Correspondance parfaite
         } else if (gesDiff === 1) {
           multiplier *= 0.75
         } else if (gesDiff <= 9) {
@@ -635,7 +635,7 @@ class DPELegacyService {
   }
 
   /**
-   * Get match reasons for display
+   * Obtenir les raisons de correspondance pour l'affichage
    */
   getMatchReasons(legacyData, searchRequest) {
     const reasons = []
@@ -686,7 +686,7 @@ class DPELegacyService {
   }
 
   /**
-   * Extract postal code from address string
+   * Extraire le code postal d'une chaîne d'adresse
    */
   extractPostalCodeFromAddress(address) {
     if (!address) return ''
@@ -695,7 +695,7 @@ class DPELegacyService {
   }
 
   /**
-   * Extract commune name from address string
+   * Extraire le nom de commune d'une chaîne d'adresse
    */
   extractCommuneFromAddress(address) {
     if (!address) return ''
@@ -708,7 +708,7 @@ class DPELegacyService {
   }
 
   /**
-   * Map building type to current format
+   * Mapper le type de bâtiment vers le format actuel
    */
   mapBuildingType(legacyType) {
     if (!legacyType) return ''

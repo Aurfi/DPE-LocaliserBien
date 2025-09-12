@@ -1,4 +1,4 @@
-// Global error handler
+// Gestionnaire d'erreurs global
 export class ErrorHandler {
   constructor() {
     this.errors = []
@@ -6,7 +6,7 @@ export class ErrorHandler {
   }
 
   setupGlobalHandlers() {
-    // Handle unhandled promise rejections
+    // Gérer les rejets de promesse non traités
     window.addEventListener('unhandledrejection', event => {
       this.logError({
         type: 'unhandledRejection',
@@ -16,7 +16,7 @@ export class ErrorHandler {
       event.preventDefault()
     })
 
-    // Handle global errors
+    // Gérer les erreurs globales
     window.addEventListener('error', event => {
       this.logError({
         type: 'globalError',
@@ -30,7 +30,7 @@ export class ErrorHandler {
   }
 
   logError(error) {
-    // In production, you might want to send this to a logging service
+    // En production, vous pourriez vouloir envoyer ceci à un service de journalisation
     const errorInfo = {
       ...error,
       timestamp: new Date().toISOString(),
@@ -40,14 +40,14 @@ export class ErrorHandler {
 
     this.errors.push(errorInfo)
 
-    // Keep only last 50 errors in memory
+    // Conserver seulement les 50 dernières erreurs en mémoire
     if (this.errors.length > 50) {
       this.errors.shift()
     }
 
-    // In development, log to console
+    // En développement, logger dans la console
     if (import.meta.env.DEV) {
-      // Error logged
+      // Erreur loggée
     }
   }
 
@@ -87,7 +87,7 @@ export class ErrorHandler {
   }
 }
 
-// Create singleton instance
+// Créer l'instance singleton
 export const errorHandler = new ErrorHandler()
 
 export default errorHandler

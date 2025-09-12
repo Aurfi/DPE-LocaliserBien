@@ -346,47 +346,47 @@ export default {
         index: null
       },
       hiddenResults: new Set(),
-      sortBy: 'score' // Default sort by score
+      sortBy: 'score' // Tri par défaut par score
     }
   },
   computed: {
     filteredResults() {
       if (!this.searchResult?.results) return []
 
-      // First filter out hidden results
+      // D'abord filtrer les résultats masqués
       let results = this.searchResult.results.filter((_, index) => !this.hiddenResults.has(index))
 
-      // Then apply sorting
+      // Ensuite appliquer le tri
       if (this.sortBy === 'distance' && this.hasDistanceData) {
-        // Sort by distance (ascending - closest first)
+        // Tri par distance (croissant - plus proche en premier)
         results = [...results].sort((a, b) => {
           const distA = a.distance !== undefined ? a.distance : Infinity
           const distB = b.distance !== undefined ? b.distance : Infinity
           return distA - distB
         })
       } else if (this.sortBy === 'surface') {
-        // Sort by surface (descending - largest first)
+        // Tri par surface (décroissant - plus grand en premier)
         results = [...results].sort((a, b) => {
           const surfA = a.surfaceHabitable || 0
           const surfB = b.surfaceHabitable || 0
           return surfB - surfA
         })
       } else if (this.sortBy === 'date-desc') {
-        // Sort by date (descending - most recent first)
+        // Tri par date (décroissant - plus récent en premier)
         results = [...results].sort((a, b) => {
           const dateA = a.dateVisite ? new Date(a.dateVisite).getTime() : 0
           const dateB = b.dateVisite ? new Date(b.dateVisite).getTime() : 0
           return dateB - dateA
         })
       } else if (this.sortBy === 'date-asc') {
-        // Sort by date (ascending - oldest first)
+        // Tri par date (croissant - plus ancien en premier)
         results = [...results].sort((a, b) => {
           const dateA = a.dateVisite ? new Date(a.dateVisite).getTime() : 0
           const dateB = b.dateVisite ? new Date(b.dateVisite).getTime() : 0
           return dateA - dateB
         })
       } else {
-        // Default: sort by score (descending - best match first)
+        // Par défaut : tri par score (décroissant - meilleure correspondance en premier)
         results = [...results].sort((a, b) => {
           const scoreA = a.matchScore || 0
           const scoreB = b.matchScore || 0
@@ -402,21 +402,21 @@ export default {
     }
   },
   mounted() {
-    // Add escape key listener
+    // Ajouter l'écouteur pour la touche Escape
     window.addEventListener('keydown', this.handleEscapeKey)
     window.addEventListener('click', this.hideContextMenu)
   },
   unmounted() {
-    // Clean up event listener
+    // Nettoyer l'écouteur d'événements
     window.removeEventListener('keydown', this.handleEscapeKey)
     window.removeEventListener('click', this.hideContextMenu)
-    // Clean up body overflow if modal was open
+    // Nettoyer le débordement du body si le modal était ouvert
     document.body.style.overflow = ''
   },
   methods: {
     sortResults() {
-      // The sorting is handled reactively in the computed property
-      // This method is just to trigger re-computation when dropdown changes
+      // Le tri est géré de manière réactive dans la propriété calculée
+      // Cette méthode sert juste à déclencher le recalcul lors du changement de la liste déroulante
     },
 
     shouldPulse(_result, index) {
@@ -505,27 +505,27 @@ export default {
       // Enlever le code postal et la ville de l'adresse s'ils sont présents
       let address = result.adresseComplete
 
-      // Fix encoding issues
+      // Corriger les problèmes d'encodage
       address = address.replace(/â€™/g, "'")
       address = address.replace(/â€/g, "'")
 
-      // Remove all postal codes (5 digits)
+      // Supprimer tous les codes postaux (5 chiffres)
       address = address.replace(/\s+\d{5}\s*/g, ' ')
 
-      // Remove city names - try both the enriched commune and the original ADEME commune
+      // Supprimer les noms de ville - essayer à la fois la commune enrichie et la commune ADEME originale
       if (result.communeADEME) {
-        // Remove the original ADEME city name
+        // Supprimer le nom de ville ADEME original
         const ademeRegex = new RegExp(`\\s*${result.communeADEME.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*`, 'gi')
         address = address.replace(ademeRegex, ' ')
       }
 
-      // Also try to remove just "Aix-en-Provence" if it's in the enriched commune
+      // Essayer aussi de supprimer juste "Aix-en-Provence" si c'est dans la commune enrichie
       address = address.replace(/\s*Aix-en-Provence\s*/gi, ' ')
 
-      // Remove any remaining city-like patterns at the end
+      // Supprimer tous les motifs de type ville restants à la fin
       address = address.replace(/\s+[A-Za-zÀ-ÿ-]+$/g, '')
 
-      // Clean up multiple spaces and trim
+      // Nettoyer les espaces multiples et couper
       address = address.trim().replace(/\s+/g, ' ')
 
       return address || 'Bien localisé'
@@ -544,18 +544,18 @@ export default {
     },
 
     showDetails(result) {
-      // Property data loaded
+      // Données de la propriété chargées
 
-      // Set the property - address should already be enriched from service
+      // Définir la propriété - l'adresse devrait déjà être enrichie depuis le service
       this.selectedProperty = result
 
-      // Prevent background scrolling when modal is open
+      // Empêcher le défilement de l'arrière-plan quand le modal est ouvert
       document.body.style.overflow = 'hidden'
     },
 
     closeModal() {
       this.selectedProperty = null
-      // Re-enable background scrolling
+      // Réactiver le défilement de l'arrière-plan
       document.body.style.overflow = ''
     },
 
@@ -581,7 +581,7 @@ export default {
 
     hideResult(index) {
       if (index !== null && index >= 0) {
-        // Find the original index in the unfiltered results
+        // Trouver l'index original dans les résultats non filtrés
         const originalIndex = this.searchResult.results.findIndex((_result, i) => {
           let count = 0
           for (let j = 0; j <= i; j++) {
@@ -680,7 +680,7 @@ export default {
     },
 
     getGoogleMapsUrl(result) {
-      // Force address-first query for Google to disambiguate DOM-TOM
+      // Forcer la requête par adresse pour que Google différencie les DOM-TOM
       const region = getGoogleRegionLabel(result.codePostal)
       const address = `${result.adresseComplete}, ${result.codePostal} ${result.commune}, ${region}`
       return getGoogleMapsSearchUrl(result.latitude, result.longitude, address)
@@ -699,7 +699,7 @@ export default {
     },
 
     getInsulationRating(quality) {
-      // Convert text ratings to numerical scale
+      // Convertir les évaluations textuelles en échelle numérique
       const ratings = {
         insuffisante: { level: 1, max: 5, label: 'Insuffisante', color: 'text-red-600 dark:text-red-400' },
         moyenne: { level: 3, max: 5, label: 'Moyenne', color: 'text-yellow-600 dark:text-yellow-400' },
@@ -707,10 +707,10 @@ export default {
         'très bonne': { level: 5, max: 5, label: 'Très bonne', color: 'text-green-700 dark:text-green-300' }
       }
 
-      // Normalize: lowercase, trim, and handle variations
+      // Normaliser : minuscules, supprimer espaces et gérer les variations
       const normalized = (quality || '').toLowerCase().trim().replace(/\s+/g, ' ')
 
-      // Also check without accents in case of encoding issues
+      // Vérifier aussi sans accents en cas de problèmes d'encodage
       const withoutAccents = normalized.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 
       return (
@@ -725,7 +725,7 @@ export default {
     },
 
     getConsumptionContext(value, type) {
-      // French averages for context
+      // Moyennes françaises pour contexte
       const averages = {
         chauffage: 110, // kWh/m²/an
         eauChaude: 35, // kWh/m²/an
@@ -745,7 +745,7 @@ export default {
     },
 
     getVentilationLabel(type) {
-      // Clarify ventilation terminology
+      // Clarifier la terminologie de ventilation
       const labels = {
         'Avant 2012': 'Ventilation naturelle ou VMC simple flux ancienne',
         'Après 2012': 'VMC conforme RT2012 (simple ou double flux)',
@@ -758,12 +758,12 @@ export default {
     },
 
     getScoreBadgeClass(score) {
-      // Handle NaN or invalid scores
+      // Gérer les scores NaN ou invalides
       if (Number.isNaN(score) || score === null || score === undefined) {
         return 'bg-gray-400 text-white'
       }
 
-      // Color based on actual score out of 100
+      // Couleur basée sur le score réel sur 100
       const roundedScore = Math.round(score)
       if (roundedScore >= 90) return 'bg-green-500 text-white'
       if (roundedScore >= 80) return 'bg-green-400 text-white'
@@ -777,12 +777,12 @@ export default {
     },
 
     getTooltipClass(score) {
-      // Handle NaN or invalid scores
+      // Gérer les scores NaN ou invalides
       if (Number.isNaN(score) || score === null || score === undefined) {
         return 'bg-gray-500/40 text-gray-700 dark:text-gray-300 border border-gray-500/50'
       }
 
-      // Glassmorphic tooltip with color matching the score - increased opacity for better visibility
+      // Infobulle glassmorphique avec couleur correspondant au score - opacité augmentée pour meilleure visibilité
       const roundedScore = Math.round(score)
       if (roundedScore >= 90) return 'bg-green-500/40 text-green-700 dark:text-green-300 border border-green-500/50'
       if (roundedScore >= 80) return 'bg-green-400/40 text-green-600 dark:text-green-300 border border-green-400/50'
@@ -808,7 +808,7 @@ export default {
     },
 
     getFloorDisplay(result) {
-      // If we have a direct etage field that is NOT 0, use it
+      // Si nous avons un champ etage direct qui n'est PAS 0, l'utiliser
       if (
         result.etage !== null &&
         result.etage !== undefined &&
@@ -819,33 +819,33 @@ export default {
         return `Étage: ${result.etage}`
       }
 
-      // Otherwise, ALWAYS try to parse from complementRefLogement (including RDC)
+      // Sinon, TOUJOURS essayer d'analyser depuis complementRefLogement (y compris RDC)
       const parsed = this.parseLocalisation(result.complementRefLogement)
       if (parsed) {
         return parsed
       }
 
-      // If we can't find anything, don't display anything
+      // Si rien n'est trouvé, ne rien afficher
       return null
     },
 
     parseLocalisation(text) {
       if (!text) return ''
 
-      // Convert to string and trim
+      // Convertir en chaîne et nettoyer
       const str = String(text).trim()
       if (!str) return ''
 
-      // Priority 1: Look for explicit "étage" or "etage" with a number
-      // This is the most reliable pattern
+      // Priorité 1 : Rechercher "étage" ou "etage" explicite avec un numéro
+      // C'est le motif le plus fiable
       const etageMatch = str.match(/[ÉEé]tage\s*[:;#n°]?\s*°?\s*(\d+)/i)
       if (etageMatch) {
         const floorNum = etageMatch[1]
         return floorNum === '0' ? 'RDC' : `Étage: ${floorNum}`
       }
 
-      // Priority 2: Look for ordinal patterns WITH the word "étage"
-      // e.g., "1er étage", "2ème étage", "3e étage"
+      // Priorité 2 : Rechercher les motifs ordinaux AVEC le mot "étage"
+      // ex. : "1er étage", "2ème étage", "3e étage"
       if (str.toLowerCase().includes('étage') || str.toLowerCase().includes('etage')) {
         const ordinalWithEtage = str.match(/(\d+)\s*(?:er|ère|eme|ème|e|è)\s*[éÉ]tage/i)
         if (ordinalWithEtage) {
@@ -853,52 +853,52 @@ export default {
         }
       }
 
-      // Priority 3: Check for RDC (ground floor) - various spellings
+      // Priorité 3 : Vérifier RDC (rez-de-chaussée) - diverses orthographes
       if (str.match(/\b(RDC|rez[\s-]?de[\s-]?chauss[ée]e?|res[\s-]?de[\s-]?chauss[ée]e?|rez|RC)\b/i)) {
         return 'RDC'
       }
 
-      // Priority 4: Look for standalone ordinals ONLY at the beginning and without other building terms
-      // e.g., "3ème gauche" but NOT "Bat. 3, 2ème"
+      // Priorité 4 : Rechercher les ordinaux autonomes UNIQUEMENT au début et sans autres termes de bâtiment
+      // ex. : "3ème gauche" mais PAS "Bat. 3, 2ème"
       const standaloneOrdinal = str.match(/^(\d+)\s*(?:er|ère|eme|ème|è|e)\s*(?:gauche|droite|fond|face)?$/i)
       if (standaloneOrdinal) {
         return `Étage: ${standaloneOrdinal[1]}`
       }
 
-      // Priority 5: Look for abbreviations like "Et. 3" or "Etg 2" but be strict
+      // Priorité 5 : Rechercher les abréviations comme "Et. 3" ou "Etg 2" mais être strict
       const abbreviationMatch = str.match(/\b[EÉé]t[g]?\.?\s+(\d+)\b/i)
       if (abbreviationMatch && !str.match(/\b(bat|esc|appt|stage|etagere)\b/i)) {
         return `Étage: ${abbreviationMatch[1]}`
       }
 
-      // If we can't confidently extract floor info, return empty string
-      // This is safer than showing potentially wrong information
+      // Si impossible d'extraire l'info étage avec confiance, retourner une chaîne vide
+      // C'est plus sûr que d'afficher une information potentiellement incorrecte
       return ''
     },
 
     getScoreTooltip(result) {
       if (!this.searchCriteria) return ''
 
-      // Only show "Correspondance exacte" if score is 100%
+      // Afficher "Correspondance exacte" uniquement si le score est de 100%
       if (result.matchScore && Math.round(result.matchScore) === 100) {
         return 'Correspondance exacte'
       }
 
-      // Build very short list of main differences
+      // Construire une liste très courte des principales différences
       const diffs = []
 
-      // Helper function to parse comparison values
+      // Fonction d'aide pour analyser les valeurs de comparaison
       const parseValue = value => {
         if (!value) return null
         const strValue = value.toString().trim()
-        // Remove < or > operators and parse the number
+        // Supprimer les opérateurs < ou > et analyser le nombre
         if (strValue.startsWith('<') || strValue.startsWith('>')) {
           return parseInt(strValue.substring(1), 10)
         }
         return parseInt(strValue, 10)
       }
 
-      // Surface difference
+      // Différence de surface
       if (this.searchCriteria.surfaceHabitable && result.surfaceHabitable) {
         const searchSurface = parseValue(this.searchCriteria.surfaceHabitable)
         if (searchSurface) {
@@ -910,7 +910,7 @@ export default {
         }
       }
 
-      // Consumption difference
+      // Différence de consommation
       if (this.searchCriteria.consommationEnergie && result.consommationEnergie) {
         const searchConso = parseValue(this.searchCriteria.consommationEnergie)
         if (searchConso) {
@@ -922,7 +922,7 @@ export default {
         }
       }
 
-      // GES difference
+      // Différence GES
       if (this.searchCriteria.emissionGES && result.emissionGES) {
         const searchGES = parseValue(this.searchCriteria.emissionGES)
         if (searchGES) {
@@ -934,14 +934,14 @@ export default {
         }
       }
 
-      // Check postal code
+      // Vérifier le code postal
       const searchPostal = this.searchCriteria.commune?.match(/\d{5}/)?.[0]
       const resultPostal = result.codePostal || result.codePostalADEME
       if (searchPostal && resultPostal && searchPostal !== resultPostal) {
-        diffs.push('📍') // Different location indicator
+        diffs.push('📍') // Indicateur de localisation différente
       }
 
-      // Return just the differences, very concise (or empty string if no diffs)
+      // Retourner seulement les différences, très concis (ou chaîne vide si aucune différence)
       return diffs.join(' ')
     },
 
@@ -956,16 +956,16 @@ export default {
       const absDiff = Math.abs(diff)
       const _percentDiff = Math.abs((diff / searchSurface) * 100)
 
-      // Tolerance: 1m² for properties <100m², 1% for larger properties
+      // Tolérance : 1m² pour les biens <100m², 1% pour les biens plus grands
       const tolerance = searchSurface < 100 ? 1 : searchSurface * 0.01
       const isMatch = absDiff <= tolerance
 
       if (isMatch) {
-        return this.iconComponents.Grid2x2Check // Within tolerance
+        return this.iconComponents.Grid2x2Check // Dans la tolérance
       } else if (diff > 0) {
-        return this.iconComponents.Grid2x2Plus // Extra m²
+        return this.iconComponents.Grid2x2Plus // m² supplémentaires
       } else {
-        return this.iconComponents.Grid2x2X // Missing m²
+        return this.iconComponents.Grid2x2X // m² manquants
       }
     },
 
@@ -979,24 +979,24 @@ export default {
       const percentDiff = Math.abs(((resultSurface - searchSurface) / searchSurface) * 100)
 
       if (percentDiff <= 1) {
-        return 'text-green-600' // Perfect match
+        return 'text-green-600' // Correspondance parfaite
       } else if (percentDiff <= 5) {
-        return 'text-green-500' // Light green
+        return 'text-green-500' // Vert clair
       } else if (percentDiff <= 10) {
-        return 'text-yellow-500' // Yellow
+        return 'text-yellow-500' // Jaune
       } else if (percentDiff <= 20) {
         return 'text-orange-500' // Orange
       } else if (percentDiff <= 50) {
-        return 'text-orange-600' // Dark orange
+        return 'text-orange-600' // Orange foncé
       } else {
-        return 'text-red-600' // Red for > 50% difference
+        return 'text-red-600' // Rouge pour > 50% de différence
       }
     },
 
     getDeptAverage(type) {
       if (!this.departmentAverages || !this.selectedProperty) return null
 
-      // Find the appropriate surface range
+      // Trouver la plage de surface appropriée
       const surface = this.selectedProperty.surfaceHabitable
       let range = null
 
@@ -1012,7 +1012,7 @@ export default {
         }
       }
 
-      // Handle edge cases for very small or very large surfaces
+      // Gérer les cas limites pour les surfaces très petites ou très grandes
       if (!range && this.departmentAverages.surfaceRanges.length > 0) {
         if (surface < 15) {
           range = this.departmentAverages.surfaceRanges[0]
@@ -1023,7 +1023,7 @@ export default {
 
       if (!range) return null
 
-      // Return the appropriate consumption value
+      // Retourner la valeur de consommation appropriée
       if (type === 'total') {
         return range.consumption.total
       } else if (type === 'chauffage') {
@@ -1040,7 +1040,7 @@ export default {
     formatDateRange(dateRange) {
       if (!dateRange) return 'sept. 2022 → présent'
 
-      // Parse the date range string (format: "2022-09-11 to present")
+      // Analyser la chaîne de plage de dates (format : "2022-09-11 to present")
       const match = dateRange.match(/(\d{4})-(\d{2})-(\d{2}) to (.+)/)
       if (!match) return dateRange
 
@@ -1069,7 +1069,7 @@ export default {
     getDeptRangeInfo() {
       if (!this.departmentAverages || !this.selectedProperty) return null
 
-      // Find the appropriate surface range
+      // Trouver la plage de surface appropriée
       const surface = this.selectedProperty.surfaceHabitable
       let range = null
 
@@ -1085,7 +1085,7 @@ export default {
         }
       }
 
-      // Handle edge cases for very small or very large surfaces
+      // Gérer les cas limites pour les surfaces très petites ou très grandes
       if (!range && this.departmentAverages.surfaceRanges.length > 0) {
         if (surface < 15) {
           range = this.departmentAverages.surfaceRanges[0]

@@ -12,7 +12,7 @@ class DPESearchService {
     this.communesIndex = null
     this.loadIndex()
 
-    // Initialize legacy service for pre-2021 data
+    // Initialiser le service legacy pour les données pré-2021
     this.legacyService = new DPELegacyService()
   }
 
@@ -46,7 +46,7 @@ class DPESearchService {
   }
 
   /**
-   * Fetch local averages for similar properties in the same area
+   * Récupérer les moyennes locales pour des propriétés similaires dans la même zone
    * @param {Object} searchRequest - Search criteria
    * @returns {Promise<Object>} - Local average statistics
    */
@@ -59,33 +59,33 @@ class DPESearchService {
         return null
       }
 
-      // Get department code from postal code (first 2 digits)
+      // Obtenir le code du département à partir du code postal (2 premiers chiffres)
       const codeDepartement = codePostal.substring(0, 2)
 
-      // Calculate ±15% range
+      // Calculer une fourchette de ±15%
       const minSurface = Math.round(surfaceHabitable * 0.85)
       const maxSurface = Math.round(surfaceHabitable * 1.15)
 
-      // Get date 2 years ago
+      // Obtenir la date d'il y a 2 ans
       const twoYearsAgo = new Date()
       twoYearsAgo.setFullYear(twoYearsAgo.getFullYear() - 2)
       const dateFilter = twoYearsAgo.toISOString().split('T')[0]
 
       const baseUrl = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/metric_agg'
 
-      // Build the query string for filtering
+      // Construire la chaîne de requête pour le filtrage
       const queryString = `code_departement_ban:${codeDepartement} AND surface_habitable_logement:[${minSurface} TO ${maxSurface}] AND date_etablissement_dpe:[${dateFilter} TO *]`
 
-      // Prepare all metric requests - only using per m² fields that exist
+      // Préparer toutes les requêtes de métriques - utilisant uniquement les champs par m² existants
       const requests = [
-        // Main metrics (already per m²)
+        // Métriques principales (déjà par m²)
         { field: 'conso_5_usages_par_m2_ep', name: 'totalConso' },
         { field: 'emission_ges_5_usages_par_m2', name: 'totalGES' },
-        // Count for sample size
+        // Comptage pour la taille de l'échantillon
         { field: 'numero_dpe', name: 'count', metric: 'count' }
       ]
 
-      // Create URL parameters for each request
+      // Créer les paramètres URL pour chaque requête
       const fetchPromises = requests.map(req => {
         const params = new URLSearchParams({
           metric: req.metric || 'avg',
@@ -98,10 +98,10 @@ class DPESearchService {
           .then(data => ({ name: req.name, value: data?.metric || data?.total || null }))
       })
 
-      // Fetch all metrics in parallel
+      // Récupérer toutes les métriques en parallèle
       const results = await Promise.all(fetchPromises)
 
-      // Build response object
+      // Construire l'objet de réponse
       const metrics = {}
       results.forEach(r => {
         if (r.name === 'count') {
@@ -120,7 +120,7 @@ class DPESearchService {
         }
       }
     } catch (_error) {
-      // Error fetching local averages - fail silently
+      // Erreur lors de la récupération des moyennes locales - échouer silencieusement
       return null
     }
   }
@@ -131,27 +131,27 @@ class DPESearchService {
    * @returns {Promise<Array>} - Résultats enrichis
    */
   async enrichResultsWithCorrectAddresses(results) {
-    // Use Government API - stable and reliable
+    // Utiliser l'API gouvernementale - stable et fiable
     const enrichedResults = []
 
-    // Only enrich first 3 results to avoid rate limiting
+    // Enrichir seulement les 3 premiers résultats pour éviter la limitation de taux
     const resultsToEnrich = results.slice(0, 3)
     const remainingResults = results.slice(3)
 
-    // Process only the first 3 results
+    // Traiter seulement les 3 premiers résultats
     for (let i = 0; i < resultsToEnrich.length; i++) {
       const batch = [resultsToEnrich[i]]
       const promises = batch.map(async result => {
         if (result.latitude && result.longitude) {
           try {
-            // Use Government API
+            // Utiliser l'API gouvernementale
             const response = await fetch(
               `https://api-adresse.data.gouv.fr/reverse/?lon=${result.longitude}&lat=${result.latitude}`
             )
 
-            // Check for rate limiting
+            // Vérifier la limitation de taux
             if (response.status === 429) {
-              // Rate limit hit for reverse geocoding, using original address
+              // Limitation de taux atteinte pour le géocodage inverse, utilisation de l'adresse originale
               return result
             }
 
@@ -160,31 +160,31 @@ class DPESearchService {
             if (data?.features && data.features.length > 0) {
               const props = data.features[0].properties
 
-              // Build display format: "District" if it contains city name, otherwise "District, City"
+              // Construire le format d'affichage : "District" s'il contient le nom de la ville, sinon "District, Ville"
               let displayCommune = props.city || result.commune
               if (props.district) {
-                // Check if district already contains the city name
+                // Vérifier si le district contient déjà le nom de la ville
                 if (props.district.includes(displayCommune)) {
-                  displayCommune = props.district // Just use district (e.g. "Paris 4e Arrondissement")
+                  displayCommune = props.district // Utiliser juste le district (ex. "Paris 4e Arrondissement")
                 } else if (props.district !== displayCommune) {
-                  displayCommune = `${props.district}, ${displayCommune}` // Both if different
+                  displayCommune = `${props.district}, ${displayCommune}` // Les deux si différents
                 }
               }
 
               return {
                 ...result,
-                // Keep original ADEME values unchanged for scoring
-                // Add display-only fields with 'Display' suffix
+                // Garder les valeurs ADEME originales inchangées pour le scoring
+                // Ajouter des champs d'affichage uniquement avec le suffixe 'Display'
                 codePostalDisplay: props.postcode || result.codePostal,
                 communeDisplay: displayCommune,
                 suburb: props.district || '',
-                // Keep originals for reference
+                // Garder les originaux pour référence
                 codePostalADEME: result.codePostal,
                 communeADEME: result.commune
               }
             }
           } catch (_error) {
-            // Error fetching correct address - fail silently
+            // Erreur lors de la récupération de l'adresse correcte - échouer silencieusement
           }
         }
         return result
@@ -194,7 +194,7 @@ class DPESearchService {
       enrichedResults.push(...batchResults)
     }
 
-    // Add remaining results without enrichment to avoid rate limiting
+    // Ajouter les résultats restants sans enrichissement pour éviter la limitation de taux
     enrichedResults.push(...remainingResults)
 
     return enrichedResults
@@ -210,13 +210,13 @@ class DPESearchService {
       // Pour l'instant, on simule un appel à notre service Node.js existant
       // En attendant la mise en place d'une véritable API REST
 
-      // Fetch local averages in parallel with main search
+      // Récupérer les moyennes locales en parallèle avec la recherche principale
       const localAveragesPromise = this.fetchLocalAverages(searchRequest)
 
       // Simulation de la recherche avec nos données réelles
       const searchResults = await this.simulateSearch(searchRequest)
 
-      // Add local averages to results
+      // Ajouter les moyennes locales aux résultats
       searchResults.localAverages = await localAveragesPromise
 
       return searchResults
@@ -236,38 +236,38 @@ class DPESearchService {
 
     const startTime = Date.now()
 
-    // Get commune coordinates to check if multi-commune
+    // Obtenir les coordonnées de la commune pour vérifier si multi-commune
     const communeCoords = await this.getCommuneCoordinates(searchRequest.commune)
 
-    // Extract or determine postal code
+    // Extraire ou déterminer le code postal
     let postalCode = null
     if (/^\d{5}$/.test(searchRequest.commune)) {
-      // If it's already a postal code
+      // Si c'est déjà un code postal
       postalCode = searchRequest.commune
     } else if (communeCoords) {
-      // Try to get postal code from commune data
+      // Essayer d'obtenir le code postal à partir des données de la commune
       postalCode = await this.getPostalCodeForCommune(searchRequest.commune)
     }
 
     // Simulation avec nos vraies stratégies de recherche
     let results = await this.performRealSearch(searchRequest)
 
-    // Check if we have perfect matches (score >= 90)
+    // Vérifier si nous avons des correspondances parfaites (score >= 90)
     const hasPerfectMatch = results?.some(r => r.matchScore >= 90)
 
-    // If no perfect matches in post-2021, try pre-2021 database
+    // Si aucune correspondance parfaite en post-2021, essayer la base de données pré-2021
     let legacyResults = []
     if (!hasPerfectMatch && this.legacyService) {
       const legacySearch = await this.legacyService.searchLegacy(searchRequest, false)
       if (legacySearch.results && legacySearch.results.length > 0) {
         legacyResults = legacySearch.results
 
-        // Combine and deduplicate results if we have some from both
+        // Combiner et dédupliquer les résultats si nous en avons des deux sources
         if (results && results.length > 0) {
-          // Create a Set of existing DPE numbers from post-2021 results
+          // Créer un Set des numéros DPE existants des résultats post-2021
           const existingDPEs = new Set(results.map(r => r.numeroDPE).filter(Boolean))
 
-          // Only add legacy results that don't have matching DPE numbers
+          // Ajouter uniquement les résultats legacy qui n'ont pas de numéros DPE correspondants
           const uniqueLegacyResults = legacyResults.filter(lr => !lr.numeroDPE || !existingDPEs.has(lr.numeroDPE))
           results = [...results, ...uniqueLegacyResults]
         } else {
@@ -315,19 +315,19 @@ class DPESearchService {
 
     const strValue = value.toString().trim()
 
-    // Check for < operator
+    // Vérifier l'opérateur <
     if (strValue.startsWith('<')) {
       const num = parseInt(strValue.substring(1), 10)
       return { operator: '<', value: num }
     }
 
-    // Check for > operator
+    // Vérifier l'opérateur >
     if (strValue.startsWith('>')) {
       const num = parseInt(strValue.substring(1), 10)
       return { operator: '>', value: num }
     }
 
-    // No operator, exact match
+    // Aucun opérateur, correspondance exacte
     const num = parseInt(strValue, 10)
     return { operator: '=', value: num }
   }
@@ -979,20 +979,20 @@ class DPESearchService {
     }
 
     const result = {
-      // Use adresse_ban first, but add street number from adresse_brut if missing
+      // Utiliser adresse_ban d'abord, mais ajouter le numéro de rue depuis adresse_brut si manquant
       adresseComplete: (() => {
-        // If adresse_ban already has a number, use it as is
+        // Si adresse_ban a déjà un numéro, l'utiliser tel quel
         if (ademeData.adresse_ban && /^\d/.test(ademeData.adresse_ban.trim())) {
           return ademeData.adresse_ban
         }
 
-        // If adresse_ban doesn't have a number but adresse_brut does, combine them
+        // Si adresse_ban n'a pas de numéro mais adresse_brut en a un, les combiner
         if (ademeData.adresse_ban && ademeData.adresse_brut && /^\d+/.test(ademeData.adresse_brut.trim())) {
           const streetNumber = ademeData.adresse_brut.match(/^\d+[a-z]?\s*/i)[0].trim()
           return `${streetNumber} ${ademeData.adresse_ban}`
         }
 
-        // Otherwise use adresse_ban or adresse_brut as fallback
+        // Sinon utiliser adresse_ban ou adresse_brut comme solution de repli
         return ademeData.adresse_ban || ademeData.adresse_brut || 'Adresse non disponible'
       })(),
       codePostal: ademeData.code_postal_ban || ademeData.code_postal_brut?.toString() || '',
@@ -1078,34 +1078,34 @@ class DPESearchService {
     let baseScore = 0
     let multiplier = 1.0
 
-    // 1. LOCATION (10 points) - Check both postal code AND city name
+    // 1. EMPLACEMENT (10 points) - Vérifier à la fois le code postal ET le nom de la ville
     const codePostalRequest = this.extractPostalCode(searchRequest.commune)
     const codePostalDPE = ademeData.code_postal_ban || ademeData.code_postal_brut?.toString()
 
-    // Extract commune name from search request (remove postal code if present)
+    // Extraire le nom de commune de la demande de recherche (supprimer le code postal si présent)
     let communeRequest = searchRequest.commune?.toLowerCase().trim()
     if (codePostalRequest) {
-      // Remove postal code from the commune string
+      // Supprimer le code postal de la chaîne de commune
       communeRequest = communeRequest.replace(codePostalRequest, '').trim()
     }
 
-    // Get DPE commune names
+    // Obtenir les noms de commune DPE
     const communeDPE = (ademeData.nom_commune_ban || ademeData.nom_commune_brut || '').toLowerCase().trim()
     const adresseCompleteDPE = (ademeData.adresse_ban || ademeData.adresse_brut || '').toLowerCase()
 
-    // Check location match
+    // Vérifier la correspondance d'emplacement
     if (codePostalRequest && codePostalRequest === codePostalDPE) {
-      baseScore += 10 // Postal code match
+      baseScore += 10 // Correspondance du code postal
     } else if (
       communeRequest &&
       (communeDPE.includes(communeRequest) ||
         communeRequest.includes(communeDPE) ||
         adresseCompleteDPE.includes(communeRequest))
     ) {
-      baseScore += 10 // City name match when no postal code
+      baseScore += 10 // Correspondance du nom de ville quand pas de code postal
     }
 
-    // Parse comparison values to get numeric values for scoring
+    // Analyser les valeurs de comparaison pour obtenir des valeurs numériques pour le scoring
     const parsedConso = searchRequest.consommationEnergie
       ? this.parseComparisonValue(searchRequest.consommationEnergie)
       : null
@@ -1114,11 +1114,11 @@ class DPESearchService {
       ? this.parseComparisonValue(searchRequest.surfaceHabitable)
       : null
 
-    // Check if searching by class or by exact kWh values
+    // Vérifier si la recherche se fait par classe ou par valeurs kWh exactes
     const isClassSearch = searchRequest.energyClass && !searchRequest.consommationEnergie
 
     if (isClassSearch) {
-      // CLASS-BASED SEARCH - Keep original scoring for classes
+      // RECHERCHE PAR CLASSE - Conserver le scoring original pour les classes
 
       // SURFACE (30 points)
       if (parsedSurface?.value && ademeData.surface_habitable_logement) {
@@ -1131,11 +1131,11 @@ class DPESearchService {
           baseScore += 30 - 15 * (surfacePercent / 100)
         } else {
           baseScore += 15
-          multiplier *= 0.5 // >100% difference caps score at 50%
+          multiplier *= 0.5 // >100% de différence limite le score à 50%
         }
       }
 
-      // ENERGY CLASS (40 points)
+      // CLASSE ÉNERGÉTIQUE (40 points)
       if (searchRequest.energyClass && ademeData.etiquette_dpe) {
         const requestClass = searchRequest.energyClass.toUpperCase()
         const dpeClass = ademeData.etiquette_dpe.toUpperCase()
@@ -1152,7 +1152,7 @@ class DPESearchService {
         }
       }
 
-      // GES CLASS (20 points)
+      // CLASSE GES (20 points)
       if (searchRequest.gesClass && ademeData.etiquette_ges) {
         const requestGES = searchRequest.gesClass.toUpperCase()
         const dpeGES = ademeData.etiquette_ges.toUpperCase()
@@ -1169,69 +1169,69 @@ class DPESearchService {
         }
       }
     } else {
-      // EXACT VALUE SEARCH - New adaptive scoring
+      // RECHERCHE PAR VALEUR EXACTE - Nouveau scoring adaptatif
 
-      // 2. SURFACE SCORING (up to 90 points when kWh/GES are perfect)
+      // 2. SCORING SURFACE (jusqu'à 90 points quand kWh/GES sont parfaits)
       if (parsedSurface?.value && ademeData.surface_habitable_logement) {
         const surfaceDiff = Math.abs(ademeData.surface_habitable_logement - parsedSurface.value)
         const surfacePercent = (surfaceDiff / parsedSurface.value) * 100
 
         if (surfaceDiff <= 1) {
-          baseScore += 90 // Perfect surface match
+          baseScore += 90 // Correspondance parfaite de surface
         } else if (surfacePercent <= 90) {
-          // Direct proportional: 9% difference = 9 points drop
+          // Proportionnel direct : 9% de différence = 9 points de baisse
           baseScore += 90 - surfacePercent
         } else if (surfacePercent <= 100) {
-          // Very small score for 90-100% difference
+          // Score très faible pour 90-100% de différence
           baseScore += Math.max(0, 10 - (surfacePercent - 90))
         } else {
-          // >100% difference gets 0 points and limits total score
+          // >100% de différence obtient 0 points et limite le score total
           baseScore += 0
-          multiplier *= 0.5 // Cap total score at 50%
+          multiplier *= 0.5 // Limiter le score total à 50%
         }
       }
 
-      // 3. ENERGY/GES PENALTIES - Applied as multipliers
+      // 3. PÉNALITÉS ÉNERGIE/GES - Appliquées comme multiplicateurs
 
-      // KWH Penalty
+      // Pénalité KWH
       if (parsedConso?.value && ademeData.conso_5_usages_par_m2_ep) {
         const kwhDiff = Math.abs(ademeData.conso_5_usages_par_m2_ep - parsedConso.value)
 
         if (kwhDiff === 0) {
-          // Perfect match - no penalty
+          // Correspondance parfaite - aucune pénalité
         } else if (kwhDiff === 1) {
-          multiplier *= 0.75 // 1 kWh off = max 75%
+          multiplier *= 0.75 // 1 kWh d'écart = max 75%
         } else if (kwhDiff <= 9) {
-          // Gentle decrease from 75% to 60% for 2-9 kWh difference
+          // Diminution douce de 75% à 60% pour 2-9 kWh de différence
           const factor = 0.75 - (0.15 * (kwhDiff - 1)) / 8
           multiplier *= factor
         } else {
-          // >9 kWh off = harsh penalty
+          // >9 kWh d'écart = pénalité sévère
           multiplier *= Math.max(0.3, 0.6 - (kwhDiff - 9) * 0.03)
         }
       }
 
-      // GES Penalty (same logic)
+      // Pénalité GES (même logique)
       if (parsedGES?.value && ademeData.emission_ges_5_usages_par_m2) {
         const gesDiff = Math.abs(ademeData.emission_ges_5_usages_par_m2 - parsedGES.value)
 
         if (gesDiff === 0) {
-          // Perfect match - no penalty
+          // Correspondance parfaite - aucune pénalité
         } else if (gesDiff === 1) {
-          multiplier *= 0.75 // 1 GES off = max 75%
+          multiplier *= 0.75 // 1 GES d'écart = max 75%
         } else if (gesDiff <= 9) {
-          // Gentle decrease from 75% to 60% for 2-9 GES difference
+          // Diminution douce de 75% à 60% pour 2-9 GES de différence
           const factor = 0.75 - (0.15 * (gesDiff - 1)) / 8
           multiplier *= factor
         } else {
-          // >9 GES off = harsh penalty
+          // >9 GES d'écart = pénalité sévère
           multiplier *= Math.max(0.3, 0.6 - (gesDiff - 9) * 0.03)
         }
       }
     }
 
     const finalScore = Math.round(baseScore * multiplier)
-    // Ensure we never return NaN, return 0 instead
+    // S'assurer qu'on ne retourne jamais NaN, retourner 0 à la place
     return Number.isNaN(finalScore) ? 0 : finalScore
   }
 

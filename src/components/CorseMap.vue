@@ -1,8 +1,8 @@
 <template>
-  <!-- Center the shape on the animation radar center (412,340) -->
-  <!-- Translate(-200,-780) roughly recenters the raw path around 0,0 before scaling -->
+  <!-- Centrer la forme sur le centre du radar d'animation (412,340) -->
+  <!-- Translate(-200,-780) recentre approximativement le chemin brut autour de 0,0 avant la mise à l'échelle -->
   <g class="corse-map" transform="translate(412, 340) scale(0.52, 0.52) translate(-230, -540)">
-    <!-- Actual Corsica shape from Corsica-locator.svg -->
+    <!-- Forme réelle de la Corse depuis Corsica-locator.svg -->
     <path 
       :fill="corseColor"
       :stroke="corseBorderColor"

@@ -228,12 +228,12 @@ export default {
       return import.meta.env.VITE_SITE_NAME || 'DPE Locator'
     },
     siteNameFirst() {
-      // For LocaliserBien, split as "Localiser" and "Bien"
+      // Pour LocaliserBien, séparer en "Localiser" et "Bien"
       const name = this.siteName
       if (name.includes('Localiser')) {
         return 'Localiser'
       }
-      // For other names, split at space or return first half
+      // Pour les autres noms, séparer par espace ou retourner la première moitié
       const parts = name.split(' ')
       return parts[0] || name.substring(0, Math.ceil(name.length / 2))
     },
@@ -247,20 +247,20 @@ export default {
     }
   },
   mounted() {
-    // Check for reduced motion preference
+    // Vérifier la préférence de mouvement réduit
     this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
-    // Detect low-end GPU/device
+    // Détecter GPU/appareil bas de gamme
     this.detectGPUPerformance()
 
-    // Check system preference
+    // Vérifier la préférence système
     this.systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 
-    // Get saved theme or default to auto
+    // Récupérer le thème sauvegardé ou utiliser auto par défaut
     const savedTheme = localStorage.getItem('theme')
     this.currentTheme = savedTheme || 'auto'
 
-    // Listen for system theme changes
+    // Écouter les changements de thème système
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
       this.systemPreference = e.matches ? 'dark' : 'light'
       if (this.currentTheme === 'auto') {
@@ -268,7 +268,7 @@ export default {
       }
     })
 
-    // Listen for modal events
+    // Écouter les événements de modal
     window.addEventListener('modal-open', () => {
       this.modalOpen = true
     })
@@ -280,17 +280,17 @@ export default {
   },
   methods: {
     handleLogoClick() {
-      // Always navigate to home
+      // Toujours naviguer vers l'accueil
       if (this.$route.path !== '/') {
         this.$router.push('/')
       }
-      // Emit a global event to reset search and close results
+      // Émettre un événement global pour réinitialiser la recherche et fermer les résultats
       window.dispatchEvent(new CustomEvent('reset-search'))
-      // Scroll to top
+      // Faire défiler vers le haut
       window.scrollTo({ top: 0, behavior: 'smooth' })
     },
     toggleTheme(theme) {
-      // If clicking the active theme, return to auto
+      // Si clic sur le thème actif, retourner à auto
       if (this.currentTheme === theme) {
         this.currentTheme = 'auto'
       } else {
@@ -316,34 +316,48 @@ export default {
     },
 
     detectGPUPerformance() {
-      // Check saved preference first
+      // Vérifier d'abord la préférence sauvegardée
       const savedPerf = localStorage.getItem('lowPerformance')
       if (savedPerf !== null) {
         this.lowPerformance = savedPerf === 'true'
         return
       }
 
-      // Auto-detect only REALLY low-end devices
+      // Détecter automatiquement les appareils très bas de gamme
       const canvas = document.createElement('canvas')
       const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
 
       if (gl) {
-        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info')
-        if (debugInfo) {
-          const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL).toLowerCase()
-          // Only disable for very old/weak GPUs
+        // Essayer l'approche moderne d'abord, puis utiliser l'ancienne méthode si nécessaire
+        let renderer = ''
+        try {
+          // Essayer la nouvelle constante RENDERER si disponible
+          if (gl.RENDERER) {
+            renderer = gl.getParameter(gl.RENDERER).toLowerCase()
+          } else {
+            // Solution de repli pour les navigateurs plus anciens
+            const debugInfo = gl.getExtension('WEBGL_debug_renderer_info')
+            if (debugInfo?.UNMASKED_RENDERER_WEBGL) {
+              renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL).toLowerCase()
+            }
+          }
+        } catch (_e) {
+          // Échec silencieux si les infos WebGL ne sont pas disponibles
+        }
+        if (renderer) {
+          // Désactiver uniquement pour les GPU très anciens ou faibles
           const veryLowEndIndicators = ['gma', 'mali-400', 'mali-450', 'adreno 2', 'adreno 3', 'powervr sgx']
           this.lowPerformance = veryLowEndIndicators.some(indicator => renderer.includes(indicator))
         }
       }
 
-      // Only check for VERY low memory (less than 2GB)
+      // Vérifier seulement pour très peu de mémoire (moins de 2GB)
       if (navigator.deviceMemory && navigator.deviceMemory < 2) {
         this.lowPerformance = true
       }
 
-      // Don't disable for mobile by default - modern phones are powerful
-      // Only check for very old browsers
+      // Ne pas désactiver par défaut sur mobile - les téléphones modernes sont puissants
+      // Vérifier seulement pour les très vieux navigateurs
       if (!window.requestAnimationFrame || !window.CSS || !window.CSS.supports) {
         this.lowPerformance = true
       }

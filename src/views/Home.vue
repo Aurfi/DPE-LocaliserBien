@@ -79,7 +79,7 @@ import RecentDPESearchHistory from '../components/RecentDPESearchHistory.vue'
 import RecentSearches from '../components/RecentSearches.vue'
 import TabNavigation from '../components/TabNavigation.vue'
 import TriangulationAnimation from '../components/TriangulationAnimation.vue'
-import DPESearchService from '../services/dpe-search.service.js' // Clear scoring system
+import DPESearchService from '../services/dpe-search.service.js' // Système de scoring clair
 
 export default {
   name: 'Home',
@@ -106,12 +106,12 @@ export default {
     }
   },
   mounted() {
-    // Listen for reset search event from logo click
+    // Écouter l'événement de réinitialisation de recherche depuis le clic sur le logo
     window.addEventListener('reset-search', this.handleNewSearch)
   },
 
   beforeUnmount() {
-    // Clean up event listener
+    // Nettoyer l'écouteur d'événement
     window.removeEventListener('reset-search', this.handleNewSearch)
   },
 
@@ -120,10 +120,10 @@ export default {
       // Stocker les critères pour l'animation
       this.searchCriteria = searchData
 
-      // Clear Recent DPE results to avoid confusion
+      // Effacer les résultats DPE récents pour éviter la confusion
       this.recentDPEResults = null
 
-      // Scroll to top to ensure animation is visible on small screens
+      // Faire défiler vers le haut pour s'assurer que l'animation soit visible sur les petits écrans
       window.scrollTo({ top: 0, behavior: 'smooth' })
 
       // Démarrer l'animation de triangulation
@@ -133,11 +133,11 @@ export default {
       try {
         this.searchResults = await this.dpeService.search(searchData)
 
-        // Load department averages if we have results
+        // Charger les moyennes départementales si nous avons des résultats
         if (this.searchResults) {
           let postalCode = null
 
-          // Try to get postal code from search results
+          // Essayer d'obtenir le code postal des résultats de recherche
           if (this.searchResults.postalCode) {
             postalCode = this.searchResults.postalCode
           } else if (this.searchResults.results?.length > 0) {
@@ -147,7 +147,7 @@ export default {
             }
           }
 
-          // Load department averages if we have a postal code
+          // Charger les moyennes départementales si nous avons un code postal
           if (postalCode) {
             const dept = postalCode.substring(0, 2)
             try {
@@ -156,7 +156,7 @@ export default {
                 this.searchResults.departmentAverages = await response.json()
               }
             } catch (_error) {
-              // Silent fail - department averages are optional
+              // Échec silencieux - les moyennes départementales sont optionnelles
             }
           }
         }
@@ -178,7 +178,7 @@ export default {
     },
 
     handleAnimationComplete() {
-      // Add a small delay to prevent the flash of home page
+      // Ajouter un petit délai pour éviter le flash de la page d'accueil
       setTimeout(() => {
         this.showAnimation = false
       }, 100)
@@ -203,30 +203,30 @@ export default {
     },
 
     handleRecentDPESearchStarted(searchCriteria) {
-      // Store search criteria and coordinates for animation
+      // Stocker les critères de recherche et les coordonnées pour l'animation
       this.recentDPESearchCriteria = searchCriteria
       this.recentDPESearchCoordinates = searchCriteria.coordinates
 
-      // Clear main search results to avoid confusion
+      // Effacer les résultats de recherche principaux pour éviter la confusion
       this.searchResults = null
 
-      // Scroll to top to ensure animation is visible
+      // Faire défiler vers le haut pour s'assurer que l'animation soit visible
       window.scrollTo({ top: 0, behavior: 'smooth' })
 
-      // Start triangulation animation immediately with coordinates
+      // Démarrer immédiatement l'animation de triangulation avec les coordonnées
       this.showAnimation = true
     },
 
     async handleRecentDPEResults(_searchCriteria, results) {
-      // Store results when they arrive
+      // Stocker les résultats quand ils arrivent
       this.recentDPEResults = results
 
-      // Load department averages if we have results
+      // Charger les moyennes départementales si nous avons des résultats
       if (results?.results && results.results.length > 0) {
-        // Get postal code from geocoding result (always available)
+        // Obtenir le code postal du résultat de géocodage (toujours disponible)
         let postalCode = results.postalCode
 
-        // Fallback to first result's postal code if needed
+        // Utiliser le code postal du premier résultat si nécessaire
         if (!postalCode && results.results[0].codePostal) {
           postalCode = results.results[0].codePostal
         }
@@ -239,16 +239,16 @@ export default {
               this.recentDPEResults.departmentAverages = await response.json()
             }
           } catch (_error) {
-            // Silent fail - department averages are optional
+            // Échec silencieux - les moyennes départementales sont optionnelles
           }
         }
       }
     },
 
     handleRecentDPESearchError(_error) {
-      // Handle search error - stop animation
+      // Gérer l'erreur de recherche - arrêter l'animation
       this.showAnimation = false
-      // Could show an error message here if needed
+      // Pourrait afficher un message d'erreur ici si nécessaire
     },
 
     handleClearRecentResults() {
@@ -310,7 +310,7 @@ export default {
           })
         )
       } catch (_error) {
-        // Error saving search to localStorage - silently continue
+        // Erreur lors de la sauvegarde de la recherche dans localStorage - continuer silencieusement
       }
     }
   }

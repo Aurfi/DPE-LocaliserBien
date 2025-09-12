@@ -1,4 +1,4 @@
-// Application configuration
+// Configuration de l'application
 export const config = {
   api: {
     ademe:

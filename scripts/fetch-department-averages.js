@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 /**
- * Script to fetch and store departmental DPE averages
- * Usage: node fetch-department-averages.js [--test] [--dept=XX]
- * --test: Only fetch for one department (75 by default)
- * --dept=XX: Specify which department to fetch (with --test)
+ * Script pour récupérer et stocker les moyennes DPE départementales
+ * Utilisation: node fetch-department-averages.js [--test] [--dept=XX]
+ * --test: Ne récupérer que pour un département (75 par défaut)
+ * --dept=XX: Spécifier quel département récupérer (avec --test)
  */
 
 import fs from 'node:fs'
@@ -24,17 +24,17 @@ const SURFACE_RANGES = [
   { label: '250m²+', min: 251, max: 500 }
 ]
 
-// Consumption fields to fetch (totals, not per m²)
+// Champs de consommation à récupérer (totaux, pas par m²)
 const CONSUMPTION_FIELDS = [
   { field: 'conso_5_usages_ep', name: 'total' },
   { field: 'conso_chauffage_ep', name: 'chauffage' },
   { field: 'conso_ecs_ep', name: 'eau_chaude' }
 ]
 
-// GES emissions field
+// Champ des émissions GES
 const GES_FIELD = 'emission_ges_5_usages'
 
-// All French departments
+// Tous les départements français
 const ALL_DEPARTMENTS = [
   '01',
   '02',
@@ -138,38 +138,38 @@ const ALL_DEPARTMENTS = [
   '976' // DOM-TOM
 ]
 
-// Parse command line arguments
+// Analyser les arguments de ligne de commande
 const args = process.argv.slice(2)
 const isTest = args.includes('--test')
 const deptArg = args.find(arg => arg.startsWith('--dept='))
 const testDept = deptArg ? deptArg.split('=')[1] : '75'
 
-// Departments to process
+// Départements à traiter
 const DEPARTMENTS = isTest ? [testDept] : ALL_DEPARTMENTS
 
-// Output directory
+// Répertoire de sortie
 const OUTPUT_DIR = path.join(__dirname, '..', 'dist', 'data', 'departments')
 
-// Ensure output directory exists
+// S'assurer que le répertoire de sortie existe
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true })
 }
 
-// Calculate date 3 years ago
+// Calculer la date d'il y a 3 ans
 const threeYearsAgo = new Date()
 threeYearsAgo.setFullYear(threeYearsAgo.getFullYear() - 3)
 const dateFilter = threeYearsAgo.toISOString().split('T')[0]
 
-// Base URL for ADEME API
+// URL de base pour l'API ADEME
 const BASE_URL = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/metric_agg'
 
 /**
- * Fetch a single metric from the API
+ * Récupérer une métrique unique depuis l'API
  */
 async function fetchMetric(dept, surfaceMin, surfaceMax, field, metric = 'sum', withACFilter = false) {
   let queryString = `code_departement_ban:${dept} AND surface_habitable_logement:[${surfaceMin} TO ${surfaceMax}] AND date_etablissement_dpe:[${dateFilter} TO *]`
 
-  // Add AC filter if requested
+  // Ajouter le filtre climatisation si demandé
   if (withACFilter) {
     queryString += ' AND conso_refroidissement_ep:>0'
   }
@@ -198,31 +198,31 @@ async function fetchMetric(dept, surfaceMin, surfaceMax, field, metric = 'sum', 
 }
 
 /**
- * Fetch all metrics for a surface range
+ * Récupérer toutes les métriques pour une gamme de surface
  */
 async function fetchSurfaceRangeData(dept, range) {
-  // Fetch metrics sequentially with delays to respect rate limit
+  // Récupérer les métriques séquentiellement avec des délais pour respecter la limite de débit
   const results = []
 
-  // Fetch total surface (this will also give us the count)
+  // Récupérer la surface totale (ceci nous donnera aussi le compte)
   results.push(await fetchMetric(dept, range.min, range.max, 'surface_habitable_logement', 'sum'))
   await new Promise(resolve => setTimeout(resolve, 25))
 
-  // Fetch consumption fields
+  // Récupérer les champs de consommation
   for (const field of CONSUMPTION_FIELDS) {
     results.push(await fetchMetric(dept, range.min, range.max, field.field, 'sum'))
     await new Promise(resolve => setTimeout(resolve, 25))
   }
 
-  // Fetch GES emissions
+  // Récupérer les émissions GES
   results.push(await fetchMetric(dept, range.min, range.max, GES_FIELD, 'sum'))
   await new Promise(resolve => setTimeout(resolve, 25))
 
-  // Fetch surface of properties WITH AC (to get count from total field)
-  results.push(await fetchMetric(dept, range.min, range.max, 'surface_habitable_logement', 'sum', true)) // With AC filter
+  // Récupérer la surface des propriétés AVEC climatisation (pour obtenir le compte depuis le champ total)
+  results.push(await fetchMetric(dept, range.min, range.max, 'surface_habitable_logement', 'sum', true)) // Avec filtre climatisation
   await new Promise(resolve => setTimeout(resolve, 25))
 
-  // Parse results - count comes from the first request's total field
+  // Analyser les résultats - le compte provient du champ total de la première requête
   const count = results[0]?.count || 0
   const totalSurface = results[0]?.value || 0
 
@@ -236,9 +236,9 @@ async function fetchSurfaceRangeData(dept, range) {
     }
   }
 
-  // Calculate per m² values
+  // Calculer les valeurs par m²
   const consumption = {}
-  let index = 1 // Start at 1 since 0 is surface
+  let index = 1 // Commencer à 1 car 0 est la surface
   for (const field of CONSUMPTION_FIELDS) {
     const totalValue = results[index]?.value || 0
     consumption[field.name] = totalValue > 0 ? Math.round(totalValue / totalSurface) : 0
@@ -248,7 +248,7 @@ async function fetchSurfaceRangeData(dept, range) {
   const totalGES = results[index]?.value || 0
   const gesPerM2 = totalGES > 0 ? Math.round(totalGES / totalSurface) : 0
 
-  // Calculate AC percentage (count comes from total field when using sum)
+  // Calculer le pourcentage de climatisation (le compte provient du champ total lors de l'utilisation de sum)
   const acCount = results[index + 1]?.count || 0
   const acPercentage = count > 0 ? Math.round((acCount / count) * 100) : 0
 
@@ -263,7 +263,7 @@ async function fetchSurfaceRangeData(dept, range) {
 }
 
 /**
- * Fetch all data for a department
+ * Récupérer toutes les données pour un département
  */
 async function fetchDepartmentData(dept) {
   const departmentData = {
@@ -273,12 +273,12 @@ async function fetchDepartmentData(dept) {
     surfaceRanges: []
   }
 
-  // Fetch data for each surface range
+  // Récupérer les données pour chaque gamme de surface
   for (const range of SURFACE_RANGES) {
     const rangeData = await fetchSurfaceRangeData(dept, range)
     departmentData.surfaceRanges.push(rangeData)
 
-    // Longer delay to avoid rate limiting (200ms between ranges)
+    // Délai plus long pour éviter la limitation de débit (200ms entre les gammes)
     await new Promise(resolve => setTimeout(resolve, 200))
   }
   const allSurfacesData = await fetchSurfaceRangeData(dept, { label: 'all', min: 1, max: 1000 })
@@ -288,7 +288,7 @@ async function fetchDepartmentData(dept) {
 }
 
 /**
- * Save department data to file
+ * Sauvegarder les données du département dans un fichier
  */
 function saveDepartmentData(dept, data) {
   const filename = path.join(OUTPUT_DIR, `dpe-averages-dept-${dept}.json`)
@@ -296,7 +296,7 @@ function saveDepartmentData(dept, data) {
 }
 
 /**
- * Main execution
+ * Exécution principale
  */
 async function main() {
   if (isTest) {
@@ -311,9 +311,9 @@ async function main() {
       saveDepartmentData(dept, data)
     } catch (_error) {}
 
-    // Longer delay between departments to avoid rate limiting
+    // Délai plus long entre les départements pour éviter la limitation de débit
     if (!isTest && DEPARTMENTS.indexOf(dept) < DEPARTMENTS.length - 1) {
-      await new Promise(resolve => setTimeout(resolve, 1000)) // 1 second between departments
+      await new Promise(resolve => setTimeout(resolve, 1000)) // 1 seconde entre les départements
     }
   }
 
@@ -323,7 +323,7 @@ async function main() {
   }
 }
 
-// Run the script
+// Exécuter le script
 main().catch(_error => {
   process.exit(1)
 })

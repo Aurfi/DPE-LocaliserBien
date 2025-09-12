@@ -221,7 +221,7 @@ export default {
   },
   computed: {
     isFormValid() {
-      // Parse numeric values for validation
+      // Analyser les valeurs numériques pour validation
       const surfaceValue = this.parseNumericValue(this.formData.surface)
       const consommationValue = this.parseNumericValue(this.formData.consommation)
 
@@ -251,7 +251,7 @@ export default {
     }
   },
   watch: {
-    // Clear selected class when user types a value
+    // Effacer la classe sélectionnée quand l'utilisateur tape une valeur
     'formData.consommation': function (newVal) {
       if (newVal && this.selectedEnergyClass) {
         this.selectedEnergyClass = null
@@ -280,7 +280,7 @@ export default {
         }
       }
 
-      // Vérifier si le formulaire est valide (avec les données custom ou exemple)
+      // Vérifier si le formulaire est valide (avec les données personnalisées ou d'exemple)
       if (!this.isFormValid) return
 
       this.isLoading = true
@@ -312,8 +312,8 @@ export default {
         this.formData.energyClass = null
       } else {
         this.selectedEnergyClass = classe
-        // Set as a special marker that will be handled by the search service
-        this.formData.consommation = null // Will be handled by service with range
+        // Définir comme un marqueur spécial qui sera géré par le service de recherche
+        this.formData.consommation = null // Sera géré par le service avec une plage
         this.formData.energyClass = classe
       }
     },
@@ -326,8 +326,8 @@ export default {
         this.formData.gesClass = null
       } else {
         this.selectedGESClass = classe
-        // Set as a special marker that will be handled by the search service
-        this.formData.ges = null // Will be handled by service with range
+        // Définir comme un marqueur spécial qui sera géré par le service de recherche
+        this.formData.ges = null // Sera géré par le service avec une plage
         this.formData.gesClass = classe
       }
     },
@@ -387,16 +387,16 @@ export default {
     // Sélection du type de bien
     selectPropertyType(type) {
       if (this.formData.typeBien === type) {
-        this.formData.typeBien = null // Deselect if already selected
+        this.formData.typeBien = null // Désélectionner si déjà sélectionné
       } else {
         this.formData.typeBien = type
       }
     },
 
-    // Validation methods for inputs
+    // Méthodes de validation pour les champs de saisie
     validateSurfaceInput(event) {
       const value = event.target.value
-      // Allow numbers and < > operators
+      // Autoriser les nombres et les opérateurs < >
       const cleaned = value.replace(/[^0-9<>]/g, '')
       this.formData.surface = cleaned
       event.target.value = cleaned
@@ -404,7 +404,7 @@ export default {
 
     validateConsommationInput(event) {
       const value = event.target.value
-      // Allow numbers and < > operators
+      // Autoriser les nombres et les opérateurs < >
       const cleaned = value.replace(/[^0-9<>]/g, '')
       this.formData.consommation = cleaned
       event.target.value = cleaned
@@ -412,22 +412,22 @@ export default {
 
     validateGESInput(event) {
       const value = event.target.value
-      // Allow numbers and < > operators
+      // Autoriser les nombres et les opérateurs < >
       const cleaned = value.replace(/[^0-9<>]/g, '')
       this.formData.ges = cleaned
       event.target.value = cleaned
     },
 
-    // Parse numeric values from strings with operators
+    // Analyser les valeurs numériques à partir de chaînes avec des opérateurs
     parseNumericValue(value) {
       if (!value) return null
-      // If it's already a number, return it
+      // Si c'est déjà un nombre, le retourner
       if (typeof value === 'number') return value
-      // If it contains < or >, return the string as is for the service to handle
+      // Si ça contient < ou >, retourner la chaîne telle quelle pour que le service la gère
       if (typeof value === 'string' && (value.includes('<') || value.includes('>'))) {
-        return value // The service will need to handle operators
+        return value // Le service devra gérer les opérateurs
       }
-      // Otherwise parse as number
+      // Sinon analyser comme un nombre
       const parsed = parseInt(value, 10)
       return Number.isNaN(parsed) ? null : parsed
     }

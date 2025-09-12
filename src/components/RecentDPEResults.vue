@@ -14,7 +14,7 @@
           </p>
         </div>
         <div class="flex items-center gap-3">
-          <!-- Sorting dropdown - only show if more than 3 results -->
+          <!-- Menu déroulant de tri - afficher seulement s'il y a plus de 3 résultats -->
           <div v-if="filteredResults.length > 3" class="relative">
             <select 
               v-model="sortBy"
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <!-- Context Menu -->
+    <!-- Menu contextuel -->
     <div 
       v-if="contextMenu.show"
       class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[120px]"
@@ -164,7 +164,7 @@
       @close="showDPEDetails = false"
     />
     
-    <!-- Floating scroll to top button -->
+    <!-- Bouton flottant pour remonter en haut -->
     <ScrollToTop />
   </div>
 </template>
@@ -218,39 +218,39 @@ export default {
       index: null
     })
     const hiddenResults = ref(new Set())
-    const sortBy = ref('distance') // Default sort by distance for recent searches
+    const sortBy = ref('distance') // Tri par défaut par distance pour les recherches récentes
 
-    // Computed property for filtered results with sorting
+    // Propriété calculée pour les résultats filtrés avec tri
     const filteredResults = computed(() => {
       if (!props.results?.results) return []
 
-      // First filter out hidden results
+      // D'abord filtrer les résultats masqués
       let results = props.results.results.filter((_, index) => !hiddenResults.value.has(index))
 
-      // Then apply sorting
+      // Puis appliquer le tri
       if (sortBy.value === 'surface') {
-        // Sort by surface (descending - largest first)
+        // Trier par surface (décroissant - plus grand en premier)
         results = [...results].sort((a, b) => {
           const surfA = a.surface_habitable_logement || 0
           const surfB = b.surface_habitable_logement || 0
           return surfB - surfA
         })
       } else if (sortBy.value === 'date-desc') {
-        // Sort by date (descending - most recent first)
+        // Trier par date (décroissant - plus récent en premier)
         results = [...results].sort((a, b) => {
           const dateA = a.date_etablissement_dpe ? new Date(a.date_etablissement_dpe).getTime() : 0
           const dateB = b.date_etablissement_dpe ? new Date(b.date_etablissement_dpe).getTime() : 0
           return dateB - dateA
         })
       } else if (sortBy.value === 'date-asc') {
-        // Sort by date (ascending - oldest first)
+        // Trier par date (croissant - plus ancien en premier)
         results = [...results].sort((a, b) => {
           const dateA = a.date_etablissement_dpe ? new Date(a.date_etablissement_dpe).getTime() : 0
           const dateB = b.date_etablissement_dpe ? new Date(b.date_etablissement_dpe).getTime() : 0
           return dateA - dateB
         })
       } else {
-        // Default: sort by distance (ascending - closest first)
+        // Par défaut : trier par distance (croissant - plus proche en premier)
         results = [...results].sort((a, b) => {
           const distA = a.distance !== undefined ? a.distance : Infinity
           const distB = b.distance !== undefined ? b.distance : Infinity
@@ -313,21 +313,21 @@ export default {
     const getFormattedAddress = dpe => {
       let address = ''
 
-      // If adresse_ban already has a number, use it as is
+      // Si adresse_ban a déjà un numéro, l'utiliser tel quel
       if (dpe.adresse_ban && /^\d/.test(dpe.adresse_ban.trim())) {
         address = dpe.adresse_ban
       }
-      // If adresse_ban doesn't have a number but adresse_brut does, combine them
+      // Si adresse_ban n'a pas de numéro mais adresse_brut en a, les combiner
       else if (dpe.adresse_ban && dpe.adresse_brut && /^\d+/.test(dpe.adresse_brut.trim())) {
         const streetNumber = dpe.adresse_brut.match(/^\d+[a-z]?\s*/i)[0].trim()
         address = `${streetNumber} ${dpe.adresse_ban}`
       }
-      // Otherwise use adresse_ban or adresse_brut as fallback
+      // Sinon utiliser adresse_ban ou adresse_brut comme solution de repli
       else {
         address = dpe.adresse_ban || dpe.adresse_brut || 'Adresse non disponible'
       }
 
-      // Fix encoding issues
+      // Corriger les problèmes d'encodage
       return address.replace(/â€™/g, "'")
     }
 
@@ -344,7 +344,7 @@ export default {
       if (!dpe) return ''
       const lat = getLatitudeFromGeopoint(dpe._geopoint)
       const lon = getLongitudeFromGeopoint(dpe._geopoint)
-      // Build region-aware address; prefer address for Google
+      // Construire une adresse adaptée à la région ; préférer l'adresse pour Google
       const region = getGoogleRegionLabel(dpe.code_postal_ban || dpe.code_postal_brut)
       const baseAddress = dpe.nom_rue_ban || dpe.adresse_ban || dpe.adresse_brut || ''
       const cityPart = `${dpe.code_postal_ban || dpe.code_postal_brut || ''} ${dpe.nom_commune_ban || ''}`.trim()
@@ -388,13 +388,13 @@ export default {
     }
 
     const sortResults = () => {
-      // The sorting is handled reactively in the computed property
-      // This method is just to trigger re-computation when dropdown changes
+      // Le tri est géré de manière réactive dans la propriété calculée
+      // Cette méthode sert juste à déclencher le recalcul quand le menu déroulant change
     }
 
     const hideResult = index => {
       if (index !== null && index >= 0) {
-        // Find the original index in the unfiltered results
+        // Trouver l'index original dans les résultats non filtrés
         const originalIndex = props.results.results.findIndex((_result, i) => {
           let count = 0
           for (let j = 0; j <= i; j++) {
@@ -413,7 +413,7 @@ export default {
       }
     }
 
-    // Add event listener for escape key when component is mounted
+    // Ajouter un écouteur d'événements pour la touche échap quand le composant est monté
     if (typeof window !== 'undefined') {
       window.addEventListener('keydown', handleEscapeKey)
       window.addEventListener('click', hideContextMenu)
@@ -438,6 +438,7 @@ export default {
       getLatitudeFromGeopoint,
       getLongitudeFromGeopoint,
       getGeoportailUrl,
+      getGoogleRegionLabel,
       showDetails,
       closeModal,
       handleShowDetails,
@@ -447,7 +448,7 @@ export default {
     }
   },
   unmounted() {
-    // Clean up event listener and body overflow
+    // Nettoyer l'écouteur d'événements et le débordement du body
     if (typeof window !== 'undefined') {
       window.removeEventListener('keydown', this.handleEscapeKey)
       window.removeEventListener('click', this.hideContextMenu)

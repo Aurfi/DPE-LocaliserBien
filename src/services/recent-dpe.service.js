@@ -1,8 +1,8 @@
 const ADEME_API_URL = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines'
 
 /**
- * Parse a value that may contain comparison operators
- * @param {string|number} value - Value that may have < or > operator
+ * Analyser une valeur qui peut contenir des opérateurs de comparaison
+ * @param {string|number} value - Valeur qui peut avoir un opérateur < ou >
  * @returns {Object} - {operator: '<'|'>'|'=', value: number}
  */
 function parseComparisonValue(value) {
@@ -10,28 +10,28 @@ function parseComparisonValue(value) {
 
   const strValue = value.toString().trim()
 
-  // Check for < operator
+  // Vérifier l'opérateur <
   if (strValue.startsWith('<')) {
     const num = parseInt(strValue.substring(1), 10)
     return { operator: '<', value: num }
   }
 
-  // Check for > operator
+  // Vérifier l'opérateur >
   if (strValue.startsWith('>')) {
     const num = parseInt(strValue.substring(1), 10)
     return { operator: '>', value: num }
   }
 
-  // No operator, exact match
+  // Aucun opérateur, correspondance exacte
   const num = parseInt(strValue, 10)
   return { operator: '=', value: num }
 }
 
 /**
- * Convert comparison to range query
+ * Convertir une comparaison en requête de plage
  * @param {Object} comparison - {operator, value}
- * @param {string} fieldName - Field name for the query
- * @returns {string} - Range query string or exact value
+ * @param {string} fieldName - Nom du champ pour la requête
+ * @returns {string} - Chaîne de requête de plage ou valeur exacte
  */
 function buildRangeQuery(comparison, fieldName) {
   if (!comparison) return null
@@ -42,7 +42,7 @@ function buildRangeQuery(comparison, fieldName) {
     case '>':
       return `${fieldName}:[${comparison.value} TO 9999]`
     default: {
-      // For exact match in recent search, use tolerance
+      // Pour une correspondance exacte dans la recherche récente, utiliser une tolérance
       const min = Math.round(comparison.value * 0.9)
       const max = Math.round(comparison.value * 1.1)
       return `${fieldName}:[${min} TO ${max}]`
@@ -134,23 +134,23 @@ function mapAdemeResult(ademeData) {
   }
 
   return {
-    // Keep raw data for compatibility
+    // Conserver les données brutes pour la compatibilité
     ...ademeData,
 
-    // Add mapped fields for consistency with DPESearchService
+    // Ajouter les champs mappés pour la cohérence avec DPESearchService
     adresseComplete: (() => {
-      // If adresse_ban already has a number, use it as is
+      // Si adresse_ban a déjà un numéro, l'utiliser tel quel
       if (ademeData.adresse_ban && /^\d/.test(ademeData.adresse_ban.trim())) {
         return ademeData.adresse_ban
       }
 
-      // If adresse_ban doesn't have a number but adresse_brut does, combine them
+      // Si adresse_ban n'a pas de numéro mais adresse_brut en a un, les combiner
       if (ademeData.adresse_ban && ademeData.adresse_brut && /^\d+/.test(ademeData.adresse_brut.trim())) {
         const streetNumber = ademeData.adresse_brut.match(/^\d+[a-z]?\s*/i)[0].trim()
         return `${streetNumber} ${ademeData.adresse_ban}`
       }
 
-      // Otherwise use adresse_ban or adresse_brut as fallback
+      // Sinon utiliser adresse_ban ou adresse_brut comme solution de repli
       return ademeData.adresse_ban || ademeData.adresse_brut || 'Adresse non disponible'
     })(),
     codePostal: ademeData.code_postal_ban || ademeData.code_postal_brut?.toString() || '',
@@ -219,7 +219,7 @@ function mapAdemeResult(ademeData) {
 }
 
 /**
- * Export geocodeAddress for external use
+ * Exporter geocodeAddress pour usage externe
  */
 export { geocodeAddress }
 
@@ -255,7 +255,7 @@ export async function searchRecentDPE(criteria) {
       const distance = calculateDistance(lat, lon, dpeLat, dpeLon)
       const matchScore = calculateMatchScore(dpe, criteria)
 
-      // Map ADEME fields to our consistent format
+      // Mapper les champs ADEME vers notre format cohérent
       const mappedResult = mapAdemeResult(dpe)
 
       return {
@@ -274,12 +274,12 @@ export async function searchRecentDPE(criteria) {
   })
 
   return {
-    results: results, // Return all results, no limit
+    results: results, // Retourner tous les résultats, sans limite
     searchAddress: formattedAddress,
     searchCoordinates: { lat, lon },
     totalFound: results.length,
     searchRadius: radius,
-    postalCode: postalCode, // Include postal code from geocoding
+    postalCode: postalCode, // Inclure le code postal du géocodage
     searchMetadata: {
       postalCode: postalCode,
       city: city
@@ -302,12 +302,12 @@ async function searchInRadius(lat, lon, radius, dateLimit, _monthsBack, criteria
     const surfaceComparison = parseComparisonValue(criteria.surface)
     if (surfaceComparison && surfaceComparison.value > 0) {
       if (surfaceComparison.operator === '=') {
-        // For exact match, use ±20% tolerance
+        // Pour une correspondance exacte, utiliser une tolérance de ±20%
         const minSurface = Math.round(surfaceComparison.value * 0.8)
         const maxSurface = Math.round(surfaceComparison.value * 1.2)
         qsFilter += ` AND surface_habitable_logement:[${minSurface} TO ${maxSurface}]`
       } else {
-        // For < or > operators, use range query
+        // Pour les opérateurs < ou >, utiliser une requête de plage
         const query = buildRangeQuery(surfaceComparison, 'surface_habitable_logement')
         if (query) qsFilter += ` AND ${query}`
       }

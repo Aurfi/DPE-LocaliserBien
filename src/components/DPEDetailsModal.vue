@@ -323,7 +323,7 @@ export default {
       immediate: true,
       handler(newVal) {
         if (newVal && Object.keys(newVal).length > 0) {
-          // Property data is available
+          // Données de propriété disponibles
         }
       }
     }
@@ -349,7 +349,7 @@ export default {
     getDeptAverage(type) {
       if (!this.departmentAverages || !this.property) return null
 
-      // Find the appropriate surface range
+      // Trouver la tranche de surface appropriée
       const surface = this.getSurface()
       let range = null
 
@@ -365,7 +365,7 @@ export default {
         }
       }
 
-      // Handle edge cases for very small or very large surfaces
+      // Gérer les cas particuliers pour les surfaces très petites ou très grandes
       if (!range && this.departmentAverages.surfaceRanges.length > 0) {
         if (surface < 15) {
           range = this.departmentAverages.surfaceRanges[0]
@@ -376,7 +376,7 @@ export default {
 
       if (!range) return null
 
-      // Return the appropriate consumption value
+      // Retourner la valeur de consommation appropriée
       if (type === 'total') {
         return range.consumption.total
       } else if (type === 'chauffage') {
@@ -393,7 +393,7 @@ export default {
     getDeptRangeInfo() {
       if (!this.departmentAverages || !this.property) return null
 
-      // Find the appropriate surface range
+      // Trouver la tranche de surface appropriée
       const surface = this.getSurface()
       let range = null
 
@@ -409,7 +409,7 @@ export default {
         }
       }
 
-      // Handle edge cases for very small or very large surfaces
+      // Gérer les cas particuliers pour les surfaces très petites ou très grandes
       if (!range && this.departmentAverages.surfaceRanges.length > 0) {
         if (surface < 15) {
           range = this.departmentAverages.surfaceRanges[0]
@@ -424,7 +424,7 @@ export default {
     formatDateRange(dateRange) {
       if (!dateRange) return 'sept. 2022 → présent'
 
-      // Parse the date range string (format: "2022-09-11 to present")
+      // Analyser la chaîne de plage de dates (format: "2022-09-11 to present")
       const match = dateRange.match(/(\d{4})-(\d{2})-(\d{2}) to (.+)/)
       if (!match) return dateRange
 
@@ -473,7 +473,7 @@ export default {
     getInsulationRating(value) {
       if (!value) return { level: 0, max: 5, label: 'Non renseigné', color: 'text-gray-500' }
 
-      // Handle text values like "bonne", "insuffisante", etc.
+      // Gérer les valeurs textuelles comme "bonne", "insuffisante", etc.
       const lowerValue = value.toLowerCase()
       const textRatings = {
         'très bonne': { level: 5, max: 5, label: 'Très bonne', color: 'text-green-600 dark:text-green-400' },
@@ -488,7 +488,7 @@ export default {
         return textRatings[lowerValue]
       }
 
-      // Handle numeric format like "3/5"
+      // Gérer le format numérique comme "3/5"
       if (value.includes('/')) {
         const [level, max] = value.split('/').map(n => parseInt(n, 10))
         const ratio = level / max
@@ -518,11 +518,11 @@ export default {
     },
 
     getFloorDisplay() {
-      // First check if complementRefLogement has actual floor info
+      // D'abord vérifier si complementRefLogement contient des informations d'étage réelles
       if (this.property.complementRefLogement) {
         return this.property.complementRefLogement
       }
-      // Only show etage if it's greater than 0 (0 is often just default/empty)
+      // Afficher uniquement l'étage s'il est supérieur à 0 (0 est souvent juste une valeur par défaut/vide)
       if (this.property.etage && this.property.etage > 0) {
         const floor = parseInt(this.property.etage, 10)
         if (floor === 1) return '1er étage'

@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import './style.css'
 import App from './App.vue'
 import FAQ from './views/FAQ.vue'
-// Import views
+// Import des vues
 import Home from './views/Home.vue'
 import MentionsLegales from './views/MentionsLegales.vue'
 
@@ -20,7 +20,7 @@ const routes = [
     component: FAQ,
     meta: { title: 'Informations - Localisateur de bien immobilier' }
   },
-  // Redirect old URL to new one
+  // Redirection de l'ancienne URL vers la nouvelle
   {
     path: '/faq',
     redirect: '/informations'
@@ -30,6 +30,11 @@ const routes = [
     name: 'MentionsLegales',
     component: MentionsLegales,
     meta: { title: 'Mentions Légales - Localisateur de bien immobilier' }
+  },
+  // Page 404 - Redirection vers la page d'accueil
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ]
 
@@ -46,7 +51,7 @@ const router = createRouter({
   }
 })
 
-// Mise à jour du titre de la page
+// Mise à jour dynamique du titre de la page
 router.beforeEach((to, _from, next) => {
   document.title = to.meta.title || 'Localisateur de bien immobilier'
   next()

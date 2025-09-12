@@ -217,16 +217,16 @@ export default {
     isDataReady(newVal) {
       if (newVal) {
         if (this.isLooping) {
-          // Data is ready, stop looping and complete animation
+          // Les données sont prêtes, arrêter la boucle et terminer l'animation
           this.isLooping = false
-          // Complete animation to 100%
+          // Terminer l'animation à 100%
           this.progress = 100
           setTimeout(() => {
             this.stopContinuousAnimations()
             this.onComplete()
           }, 500)
         }
-        // If not looping yet, the normal animation flow will handle completion
+        // Si pas encore en boucle, le flux d'animation normal gérera la fin
       }
     }
   },
@@ -241,7 +241,7 @@ export default {
     detectRegionType(department) {
       if (!department) return 'france'
 
-      // Corsica
+      // Corse
       if (department === '2A' || department === '2B') {
         return 'corsica'
       }
@@ -257,11 +257,11 @@ export default {
     startAnimation() {
       let lon, lat
 
-      // Use provided coordinates if available (for Recent DPE results with geocoding)
+      // Utiliser les coordonnées fournies si disponibles (pour les résultats DPE récents avec géocodage)
       if (this.coordinates?.lat && this.coordinates.lon) {
         lat = this.coordinates.lat
         lon = this.coordinates.lon
-        // Try to determine department from address for display
+        // Essayer de déterminer le département à partir de l'adresse pour l'affichage
         const postalMatch = this.commune.match(/\b\d{5}\b/)
         if (postalMatch) {
           this.targetDepartment = postalMatch[0].substring(0, 2)
@@ -269,7 +269,7 @@ export default {
           this.targetDepartment = getDepartmentFromCommune(this.commune)
         }
       } else {
-        // Fallback to department-based coordinates for regular search
+        // Solution de repli vers des coordonnées basées sur le département pour une recherche normale
         this.targetDepartment = getDepartmentFromCommune(this.commune)
         if (!this.targetDepartment) {
           this.$emit('complete')
@@ -283,18 +283,18 @@ export default {
         ;[lon, lat] = coords
       }
 
-      // Detect region type
+      // Détecter le type de région
       this.regionType = this.detectRegionType(this.targetDepartment)
 
       // Convertir les coordonnées géographiques vers l'espace SVG
       // France repositionnée: scale(1.0) + translate(150, 50) dans viewBox 800x600
-      // SVG path boundaries: X de ~9 à ~500, Y de ~5 à ~505
-      // Coordonnées France réelles: lon -5°W à 9°E, lat 42°N à 51°N
+      // Limites du chemin SVG : X de ~9 à ~500, Y de ~5 à ~505
+      // Coordonnées réelles de la France : lon -5°O à 9°E, lat 42°N à 51°N
 
-      // Mapper longitude vers X
+      // Mapper la longitude vers X
       const svgX = Math.round(150 + ((lon + 5.5) / 14) * 480)
 
-      // Mapper latitude vers Y - ajusté pour France décalée à Y=80
+      // Mapper la latitude vers Y - ajusté pour la France décalée à Y=80
       const svgY = Math.round(165 + ((51 - lat) / 9) * 400) // Ajusté pour position optimale
 
       this.targetCoords = this.adjustTargetCoordsForRegion(svgX, svgY)
@@ -307,7 +307,7 @@ export default {
     },
 
     adjustTargetCoordsForRegion(svgX, svgY) {
-      // Keep mainland coordinates for France map; center for Corsica and DOM-TOM placeholders
+      // Garder les coordonnées continentales pour la carte de France ; centrer pour les espaces réservés Corse et DOM-TOM
       if (this.regionType === 'corsica' || this.regionType === 'domtom') {
         return { x: 412, y: 340 }
       }
@@ -327,19 +327,19 @@ export default {
 
         this.progress = Math.floor((i / steps) * 100)
 
-        // Phase 2: Analyse (10-45%)
+        // Phase 2 : Analyse (10-45%)
         if (i === 6) {
           this.franceColor = 'rgba(99, 102, 241, 0.2)'
           this.franceBorderColor = '#6366F1'
         }
 
-        // Phase 3: Localisation (45-70%)
+        // Phase 3 : Localisation (45-70%)
         if (i === 27) {
           this.franceColor = 'rgba(139, 92, 246, 0.25)'
           this.franceBorderColor = '#8B5CF6'
         }
 
-        // Phase 4: Convergence (70-90%)
+        // Phase 4 : Convergence (70-90%)
         if (i === 42) {
           this.showEnergyConvergence = true
           this.generateEnergyParticles()
@@ -348,7 +348,7 @@ export default {
           this.franceBorderColor = '#A855F7'
         }
 
-        // Phase 5: Final (90-100%)
+        // Phase 5 : Final (90-100%)
         if (i === 54) {
           this.franceColor = 'rgba(16, 185, 129, 0.4)'
           this.franceBorderColor = '#10b981'
@@ -364,7 +364,7 @@ export default {
       // Si les données ne sont pas prêtes et qu'on attend, boucler sur les dernières étapes
       if (!this.isDataReady && this.waitingForResults) {
         await this.loopFinalSteps()
-        // Don't continue to completion here - let the watcher handle it when data arrives
+        // Ne pas continuer jusqu'à la fin ici - laisser le watcher s'en occuper quand les données arrivent
         return
       }
 
@@ -395,7 +395,7 @@ export default {
       while (!this.isDataReady && this.isLooping) {
         // Vérifier le timeout
         if (Date.now() - this.loopStartTime > maxLoopDuration) {
-          // Timeout reached - force completion
+          // Timeout atteint - forcer la fin
           this.isLooping = false
           this.progress = 100
           setTimeout(() => {
@@ -424,7 +424,7 @@ export default {
         this.currentTechMessage = loopMessages[loopIndex % loopMessages.length]
         loopIndex++
 
-        // Pulser les couleurs
+        // Faire pulser les couleurs
         if (loopIndex % 2 === 0) {
           this.franceColor = 'rgba(217, 119, 6, 0.4)'
           this.franceBorderColor = '#d97706'
@@ -434,7 +434,7 @@ export default {
         }
       }
 
-      // Finaliser à 100% seulement si on est encore en loop
+      // Finaliser à 100% seulement si on est encore en boucle
       if (this.isLooping) {
         this.progress = 100
       }
@@ -443,7 +443,7 @@ export default {
 
     startContinuousAnimations() {
       this.animationInterval = setInterval(() => {
-        // Animation particules d'énergie
+        // Animation des particules d'énergie
         if (this.showEnergyConvergence) {
           this.updateEnergyParticles()
           this.updateConvergenceRings()

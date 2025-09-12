@@ -246,7 +246,7 @@ export default {
       } else {
         selectedEnergyClasses.value.push(classe)
       }
-      // Clear consommation value when selecting classes
+      // Effacer la valeur de consommation lors de la sélection de classes
       if (selectedEnergyClasses.value.length > 0) {
         searchCriteria.value.consommation = null
       }
@@ -259,7 +259,7 @@ export default {
       } else {
         selectedGESClasses.value.push(classe)
       }
-      // Clear GES value when selecting classes
+      // Effacer la valeur GES lors de la sélection de classes
       if (selectedGESClasses.value.length > 0) {
         searchCriteria.value.ges = null
       }
@@ -283,10 +283,10 @@ export default {
       return getClasseColor(classe)
     }
 
-    // Calculate energy class from consumption value
+    // Calculer la classe énergétique à partir de la valeur de consommation
     const getEnergyClassFromValue = value => {
       if (!value) return null
-      // Remove operators if present
+      // Supprimer les opérateurs si présents
       const numValue = parseInt(value.toString().replace(/[<>]/g, ''), 10)
       if (Number.isNaN(numValue)) return null
 
@@ -299,10 +299,10 @@ export default {
       return 'G'
     }
 
-    // Calculate GES class from emission value
+    // Calculer la classe GES à partir de la valeur d'émission
     const getGESClassFromValue = value => {
       if (!value) return null
-      // Remove operators if present
+      // Supprimer les opérateurs si présents
       const numValue = parseInt(value.toString().replace(/[<>]/g, ''), 10)
       if (Number.isNaN(numValue)) return null
 
@@ -319,28 +319,28 @@ export default {
       loading.value = true
 
       try {
-        // First geocode the address to get coordinates
+        // D'abord géocoder l'adresse pour obtenir les coordonnées
         const geoData = await geocodeAddress(searchCriteria.value.address)
 
-        // Emit event to start animation with coordinates
+        // Émettre un événement pour démarrer l'animation avec les coordonnées
         emit('search-started', {
           ...searchCriteria.value,
           coordinates: { lat: geoData.lat, lon: geoData.lon }
         })
 
-        // Now fetch the actual DPE results
+        // Maintenant récupérer les vrais résultats DPE
         const results = await recentDPEService.searchRecentDPE({
           ...searchCriteria.value,
           energyClasses: selectedEnergyClasses.value,
           gesClasses: selectedGESClasses.value
         })
 
-        // Add postal code from geocoding if available
+        // Ajouter le code postal du géocodage s'il est disponible
         if (results?.searchMetadata?.postalCode) {
           results.postalCode = results.searchMetadata.postalCode
         }
 
-        // Pass both search criteria and results
+        // Passer à la fois les critères de recherche et les résultats
         emit('search-results', searchCriteria.value, results)
 
         // Sauvegarder la recherche dans l'historique si des résultats ont été trouvés
@@ -441,7 +441,7 @@ export default {
 
     const validateSurfaceInput = event => {
       const value = event.target.value
-      // Allow numbers and < > operators
+      // Autoriser les nombres et les opérateurs < >
       const cleaned = value.replace(/[^0-9<>]/g, '')
       searchCriteria.value.surface = cleaned
       event.target.value = cleaned
@@ -449,7 +449,7 @@ export default {
 
     const validateConsommationInput = event => {
       const value = event.target.value
-      // Allow numbers and < > operators
+      // Autoriser les nombres et les opérateurs < >
       const cleaned = value.replace(/[^0-9<>]/g, '')
       searchCriteria.value.consommation = cleaned
       event.target.value = cleaned
@@ -457,7 +457,7 @@ export default {
 
     const validateGESInput = event => {
       const value = event.target.value
-      // Allow numbers and < > operators
+      // Autoriser les nombres et les opérateurs < >
       const cleaned = value.replace(/[^0-9<>]/g, '')
       searchCriteria.value.ges = cleaned
       event.target.value = cleaned

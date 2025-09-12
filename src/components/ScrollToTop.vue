@@ -23,7 +23,7 @@ export default {
   props: {
     showAfter: {
       type: Number,
-      default: 300 // Show button after scrolling 300px
+      default: 300 // Afficher le bouton après avoir défilé de 300px
     }
   },
   setup(props) {
@@ -42,7 +42,7 @@ export default {
 
     onMounted(() => {
       window.addEventListener('scroll', handleScroll)
-      handleScroll() // Check initial scroll position
+      handleScroll() // Vérifier la position de défilement initiale
     })
 
     onUnmounted(() => {

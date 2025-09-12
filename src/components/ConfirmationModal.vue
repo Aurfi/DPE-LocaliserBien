@@ -56,8 +56,8 @@ export default {
   components: {
     Trash2
   },
-  // Don't dispatch modal events for confirmation modal
-  // as it doesn't need to hide the footer
+  // Ne pas envoyer d'événements de modal pour la modal de confirmation
+  // car elle n'a pas besoin de masquer le pied de page
   props: {
     show: {
       type: Boolean,
