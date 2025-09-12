@@ -21,7 +21,7 @@
               <select 
                 v-model="sortBy"
                 @change="sortResults"
-                class="appearance-none bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
+                class="appearance-none bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
               >
                 <option value="distance">Par distance</option>
                 <option value="surface">Par surface</option>
@@ -436,7 +436,7 @@ export default {
       const strValue = String(value)
       // Chercher le premier nombre à 4 chiffres
       const match = strValue.match(/(\d{4})/)
-      return match ? parseInt(match[1]) : null
+      return match ? parseInt(match[1], 10) : null
     }
 
     // Formater l'affichage de l'année (garder la plage complète pour l'affichage)
