@@ -79,15 +79,24 @@
           </h2>
           <div class="text-gray-600 dark:text-gray-400 space-y-3">
             <p>
-              <strong>Code source :</strong> Application développée avec des bibliothèques open source 
-              (Vue.js, Tailwind CSS, Vite, Lucide).
+              <strong>Code source :</strong> Application développée avec des bibliothèques open source :
             </p>
-            <p>
+            <ul class="list-disc list-inside space-y-1 ml-4 text-sm">
+              <li>Vue.js (licence MIT)</li>
+              <li>Tailwind CSS (licence MIT)</li>
+              <li>Vite (licence MIT)</li>
+              <li>Lucide Icons (licence ISC)</li>
+              <li>SQLite3 (licence BSD-3-Clause)</li>
+              <li>Biome (licence MIT/Apache-2.0)</li>
+            </ul>
+            <p class="mt-3">
+              <strong>Cartes SVG :</strong> Les cartes géographiques utilisées dans les animations proviennent de 
+              <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Wikimedia Commons</a> 
+              et sont disponibles sous licences libres.
+            </p>
+            <p class="mt-3">
               <strong>Données :</strong> Toutes les données affichées proviennent de sources publiques 
               officielles et sont librement réutilisables selon leurs licences respectives.
-            </p>
-            <p>
-              <strong>Interface :</strong> Icônes fournies par la bibliothèque Lucide (licence MIT).
             </p>
           </div>
         </section>

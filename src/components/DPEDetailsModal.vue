@@ -356,9 +356,10 @@ export default {
       for (const surfaceRange of this.departmentAverages.surfaceRanges) {
         const [min, max] = surfaceRange.range
           .replace('m²', '')
+          .replace('+', '-999')
           .split('-')
           .map(n => parseInt(n, 10))
-        if (surface >= min && surface <= max) {
+        if (surface >= min && (max === 999 || surface <= max)) {
           range = surfaceRange
           break
         }
@@ -399,9 +400,10 @@ export default {
       for (const surfaceRange of this.departmentAverages.surfaceRanges) {
         const [min, max] = surfaceRange.range
           .replace('m²', '')
+          .replace('+', '-999')
           .split('-')
           .map(n => parseInt(n, 10))
-        if (surface >= min && surface <= max) {
+        if (surface >= min && (max === 999 || surface <= max)) {
           range = surfaceRange
           break
         }

@@ -1,4 +1,6 @@
 // Service pour intégrer avec notre API DPE backend
+import DPELegacyService from './dpe-legacy.service'
+
 class DPESearchService {
   constructor() {
     // En développement, on utilise notre service Node.js local
@@ -9,6 +11,9 @@ class DPESearchService {
     this.departmentCache = {}
     this.communesIndex = null
     this.loadIndex()
+
+    // Initialize legacy service for pre-2021 data
+    this.legacyService = new DPELegacyService()
   }
 
   async loadIndex() {
@@ -245,7 +250,31 @@ class DPESearchService {
     }
 
     // Simulation avec nos vraies stratégies de recherche
-    const results = await this.performRealSearch(searchRequest)
+    let results = await this.performRealSearch(searchRequest)
+
+    // Check if we have perfect matches (score >= 90)
+    const hasPerfectMatch = results?.some(r => r.matchScore >= 90)
+
+    // If no perfect matches in post-2021, try pre-2021 database
+    let legacyResults = []
+    if (!hasPerfectMatch && this.legacyService) {
+      const legacySearch = await this.legacyService.searchLegacy(searchRequest, false)
+      if (legacySearch.results && legacySearch.results.length > 0) {
+        legacyResults = legacySearch.results
+
+        // Combine and deduplicate results if we have some from both
+        if (results && results.length > 0) {
+          // Create a Set of existing DPE numbers from post-2021 results
+          const existingDPEs = new Set(results.map(r => r.numeroDPE).filter(Boolean))
+
+          // Only add legacy results that don't have matching DPE numbers
+          const uniqueLegacyResults = legacyResults.filter(lr => !lr.numeroDPE || !existingDPEs.has(lr.numeroDPE))
+          results = [...results, ...uniqueLegacyResults]
+        } else {
+          results = legacyResults
+        }
+      }
+    }
 
     return {
       results: results || [],
@@ -254,7 +283,8 @@ class DPESearchService {
       executionTime: Date.now() - startTime,
       diagnostics: [`Recherche effectuée avec ${results?.length || 0} résultats`],
       isMultiCommune: communeCoords?.isMultiCommune || false,
-      postalCode: postalCode
+      postalCode: postalCode,
+      hasLegacyData: legacyResults.length > 0
     }
   }
 
@@ -356,6 +386,18 @@ class DPESearchService {
   }
 
   /**
+   * Sanitize string for use in Lucene query
+   * Escapes special characters that could break the query
+   * @param {string} str - String to sanitize
+   * @returns {string} Sanitized string
+   */
+  sanitizeForQuery(str) {
+    if (!str) return ''
+    // Escape Lucene special characters: + - && || ! ( ) { } [ ] ^ " ~ * ? : \ /
+    return str.replace(/[+\-&|!(){}[\]^"~*?:\\/]/g, '\\$&').trim()
+  }
+
+  /**
    * Vraie recherche utilisant l'API ADEME
    * @param {Object} searchRequest
    * @returns {Promise<Array>}
@@ -392,8 +434,9 @@ class DPESearchService {
     const conditions = []
 
     if (/^\d{5}$/.test(commune)) {
-      // Si c'est un code postal
-      conditions.push(`code_postal_ban:"${commune}"`)
+      // Si c'est un code postal - sanitize it
+      const sanitizedPostal = this.sanitizeForQuery(commune)
+      conditions.push(`code_postal_ban:"${sanitizedPostal}"`)
     } else if (commune && communeCoords && codePostal) {
       // Si on a trouvé un code postal via géocodage, l'utiliser pour une recherche plus précise
       conditions.push(`code_postal_ban:"${codePostal}"`)
@@ -507,8 +550,8 @@ class DPESearchService {
           })
         }
 
-        // Map results with Photon enrichment in parallel
-        results = await Promise.all(data.results.map(dpe => this.mapAdemeResultWithEnrichment(dpe, searchRequest)))
+        // Map results WITHOUT enrichment (will be done later for top 3 only)
+        results = data.results.map(dpe => this.mapAdemeResult(dpe, searchRequest))
 
         // Pas besoin de refiltrer, déjà strict dans la requête (±1%)
         // Les résultats sont déjà filtrés par l'API
@@ -607,9 +650,8 @@ class DPESearchService {
               })
             }
 
-            results = await Promise.all(
-              step2Data.results.map(dpe => this.mapAdemeResultWithEnrichment(dpe, searchRequest))
-            )
+            // Map results WITHOUT enrichment (will be done later for top 3 only)
+            results = step2Data.results.map(dpe => this.mapAdemeResult(dpe, searchRequest))
 
             // Pas besoin de refiltrer, déjà filtré à ±15% dans la requête
 
@@ -696,9 +738,8 @@ class DPESearchService {
                 })
               }
 
-              results = await Promise.all(
-                step3Data.results.map(dpe => this.mapAdemeResultWithEnrichment(dpe, searchRequest))
-              )
+              // Map results WITHOUT enrichment (will be done later for top 3 only)
+              results = step3Data.results.map(dpe => this.mapAdemeResult(dpe, searchRequest))
 
               // Les résultats sont déjà filtrés par geo_distance (30km) et surface (±35%)
               // Trier par score d'abord, puis par distance si égalité
@@ -747,26 +788,8 @@ class DPESearchService {
         // S'assurer que les résultats sont triés par score décroissant
         results.sort((a, b) => b.matchScore - a.matchScore)
 
-        // Si on a des résultats exacts (même code postal), être moins strict sur le score
-        const exactPostalCodeResults = results.filter(r => r.codePostal === codePostal)
-        if (exactPostalCodeResults.length > 0) {
-          // Trier par score avant de retourner
-          exactPostalCodeResults.sort((a, b) => b.matchScore - a.matchScore)
-          return await this.enrichResultsWithCorrectAddresses(exactPostalCodeResults.slice(0, 20)) // Retourner jusqu'à 20 résultats exacts enrichis
-        }
-
-        // Sinon, filtrage progressif
-        const highScoreResults = results.filter(r => r.matchScore > 85)
-        if (highScoreResults.length > 0) {
-          return await this.enrichResultsWithCorrectAddresses(highScoreResults)
-        }
-
-        const mediumScoreResults = results.filter(r => r.matchScore > 50)
-        if (mediumScoreResults.length > 0) {
-          return await this.enrichResultsWithCorrectAddresses(mediumScoreResults.slice(0, 10))
-        }
-
-        return await this.enrichResultsWithCorrectAddresses(results.slice(0, 10))
+        // Return ALL results (enrichResultsWithCorrectAddresses already limits enrichment to top 3)
+        return await this.enrichResultsWithCorrectAddresses(results)
       }
     } catch (_error) {
       return []
@@ -875,19 +898,8 @@ class DPESearchService {
       return b.matchScore - a.matchScore
     })
 
-    // Stratégie de filtrage progressive (même logique que recherche principale)
-    const highScoreResults = filteredResults.filter(r => r.matchScore > 85)
-    if (highScoreResults.length > 0) {
-      return await this.enrichResultsWithCorrectAddresses(highScoreResults)
-    }
-
-    const mediumScoreResults = filteredResults.filter(r => r.matchScore > 50)
-    if (mediumScoreResults.length > 0) {
-      return await this.enrichResultsWithCorrectAddresses(mediumScoreResults.slice(0, 10))
-    }
-
-    // Retourner tout ce qu'on a trouvé (même mauvais scores)
-    return await this.enrichResultsWithCorrectAddresses(filteredResults.slice(0, 10))
+    // Return ALL results sorted by score (enrichResultsWithCorrectAddresses already limits enrichment to top 3)
+    return await this.enrichResultsWithCorrectAddresses(filteredResults)
   }
 
   /**
@@ -1093,6 +1105,15 @@ class DPESearchService {
       baseScore += 10 // City name match when no postal code
     }
 
+    // Parse comparison values to get numeric values for scoring
+    const parsedConso = searchRequest.consommationEnergie
+      ? this.parseComparisonValue(searchRequest.consommationEnergie)
+      : null
+    const parsedGES = searchRequest.emissionGES ? this.parseComparisonValue(searchRequest.emissionGES) : null
+    const parsedSurface = searchRequest.surfaceHabitable
+      ? this.parseComparisonValue(searchRequest.surfaceHabitable)
+      : null
+
     // Check if searching by class or by exact kWh values
     const isClassSearch = searchRequest.energyClass && !searchRequest.consommationEnergie
 
@@ -1100,9 +1121,9 @@ class DPESearchService {
       // CLASS-BASED SEARCH - Keep original scoring for classes
 
       // SURFACE (30 points)
-      if (searchRequest.surfaceHabitable && ademeData.surface_habitable_logement) {
-        const surfaceDiff = Math.abs(ademeData.surface_habitable_logement - searchRequest.surfaceHabitable)
-        const surfacePercent = (surfaceDiff / searchRequest.surfaceHabitable) * 100
+      if (parsedSurface?.value && ademeData.surface_habitable_logement) {
+        const surfaceDiff = Math.abs(ademeData.surface_habitable_logement - parsedSurface.value)
+        const surfacePercent = (surfaceDiff / parsedSurface.value) * 100
 
         if (surfaceDiff <= 1) {
           baseScore += 30
@@ -1151,9 +1172,9 @@ class DPESearchService {
       // EXACT VALUE SEARCH - New adaptive scoring
 
       // 2. SURFACE SCORING (up to 90 points when kWh/GES are perfect)
-      if (searchRequest.surfaceHabitable && ademeData.surface_habitable_logement) {
-        const surfaceDiff = Math.abs(ademeData.surface_habitable_logement - searchRequest.surfaceHabitable)
-        const surfacePercent = (surfaceDiff / searchRequest.surfaceHabitable) * 100
+      if (parsedSurface?.value && ademeData.surface_habitable_logement) {
+        const surfaceDiff = Math.abs(ademeData.surface_habitable_logement - parsedSurface.value)
+        const surfacePercent = (surfaceDiff / parsedSurface.value) * 100
 
         if (surfaceDiff <= 1) {
           baseScore += 90 // Perfect surface match
@@ -1173,8 +1194,8 @@ class DPESearchService {
       // 3. ENERGY/GES PENALTIES - Applied as multipliers
 
       // KWH Penalty
-      if (searchRequest.consommationEnergie && ademeData.conso_5_usages_par_m2_ep) {
-        const kwhDiff = Math.abs(ademeData.conso_5_usages_par_m2_ep - searchRequest.consommationEnergie)
+      if (parsedConso?.value && ademeData.conso_5_usages_par_m2_ep) {
+        const kwhDiff = Math.abs(ademeData.conso_5_usages_par_m2_ep - parsedConso.value)
 
         if (kwhDiff === 0) {
           // Perfect match - no penalty
@@ -1191,8 +1212,8 @@ class DPESearchService {
       }
 
       // GES Penalty (same logic)
-      if (searchRequest.emissionGES && ademeData.emission_ges_5_usages_par_m2) {
-        const gesDiff = Math.abs(ademeData.emission_ges_5_usages_par_m2 - searchRequest.emissionGES)
+      if (parsedGES?.value && ademeData.emission_ges_5_usages_par_m2) {
+        const gesDiff = Math.abs(ademeData.emission_ges_5_usages_par_m2 - parsedGES.value)
 
         if (gesDiff === 0) {
           // Perfect match - no penalty
@@ -1209,7 +1230,9 @@ class DPESearchService {
       }
     }
 
-    return Math.round(baseScore * multiplier)
+    const finalScore = Math.round(baseScore * multiplier)
+    // Ensure we never return NaN, return 0 instead
+    return Number.isNaN(finalScore) ? 0 : finalScore
   }
 
   /**
@@ -1217,6 +1240,15 @@ class DPESearchService {
    */
   getMatchReasons(ademeData, searchRequest) {
     const reasons = []
+
+    // Parse comparison values to get numeric values
+    const parsedConso = searchRequest.consommationEnergie
+      ? this.parseComparisonValue(searchRequest.consommationEnergie)
+      : null
+    const parsedGES = searchRequest.emissionGES ? this.parseComparisonValue(searchRequest.emissionGES) : null
+    const parsedSurface = searchRequest.surfaceHabitable
+      ? this.parseComparisonValue(searchRequest.surfaceHabitable)
+      : null
 
     // Check if this is a class-based search
     const isClassSearch = searchRequest.energyClass && !searchRequest.consommationEnergie
@@ -1260,18 +1292,18 @@ class DPESearchService {
       }
     } else {
       // Exact value matches
-      if (searchRequest.consommationEnergie === ademeData.conso_5_usages_par_m2_ep) {
-        reasons.push(`Consommation exacte: ${searchRequest.consommationEnergie} kWh/m²/an`)
+      if (parsedConso && parsedConso.value === ademeData.conso_5_usages_par_m2_ep) {
+        reasons.push(`Consommation exacte: ${parsedConso.value} kWh/m²/an`)
       }
 
-      if (searchRequest.emissionGES === ademeData.emission_ges_5_usages_par_m2) {
-        reasons.push(`GES exact: ${searchRequest.emissionGES} kgCO²/m²/an`)
+      if (parsedGES && parsedGES.value === ademeData.emission_ges_5_usages_par_m2) {
+        reasons.push(`GES exact: ${parsedGES.value} kgCO²/m²/an`)
       }
     }
 
-    if (searchRequest.surfaceHabitable && ademeData.surface_habitable_logement) {
-      const ecart = Math.abs(ademeData.surface_habitable_logement - searchRequest.surfaceHabitable)
-      const pourcent = Math.round((ecart / searchRequest.surfaceHabitable) * 100)
+    if (parsedSurface?.value && ademeData.surface_habitable_logement) {
+      const ecart = Math.abs(ademeData.surface_habitable_logement - parsedSurface.value)
+      const pourcent = Math.round((ecart / parsedSurface.value) * 100)
       reasons.push(`Surface: ${ademeData.surface_habitable_logement}m² (écart: ${pourcent}%)`)
     }
 

@@ -122,7 +122,7 @@
             <input
               v-model="searchCriteria.consommation"
               type="text"
-              placeholder="ex : 300 ou <300"
+              placeholder="ex : 250 kWh/m²/an"
               @input="validateConsommationInput"
               :disabled="selectedEnergyClasses.length > 0"
               class="w-full px-4 py-3 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500/60 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"

@@ -3,7 +3,7 @@
     <!-- En-tête des résultats -->
     <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm px-5 py-4 mb-6">
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div>
+        <div class="flex-1">
           <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">
             {{ filteredResults.length }} résultat{{ filteredResults.length > 1 ? 's' : '' }} affiché{{ filteredResults.length > 1 ? 's' : '' }} 
             <span v-if="hiddenResults.size > 0" class="text-sm text-gray-500 dark:text-gray-400">({{ hiddenResults.size }} masqué{{ hiddenResults.size > 1 ? 's' : '' }})</span>
@@ -16,13 +16,32 @@
             <span v-if="searchCriteria?.distance" class="text-gray-400 dark:text-gray-500"> (rayon: {{ searchCriteria.distance }} km)</span>
           </p>
         </div>
-        <button 
-          @click="$emit('newSearch')"
-          class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-          title="Fermer"
-        >
-          <X class="w-6 h-6" />
-        </button>
+        <div class="flex items-center gap-3">
+          <!-- Sorting dropdown - only show if more than 3 results -->
+          <div v-if="filteredResults.length > 3" class="relative">
+            <select 
+              v-model="sortBy"
+              @change="sortResults"
+              class="appearance-none bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
+            >
+              <option value="score">Trier par score</option>
+              <option value="distance" v-if="hasDistanceData">Trier par distance</option>
+              <option value="surface">Trier par surface</option>
+              <option value="date-desc">Trier du plus récent au plus ancien</option>
+              <option value="date-asc">Trier du plus ancien au plus récent</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 dark:text-gray-400">
+              <ChevronDown class="w-4 h-4" />
+            </div>
+          </div>
+          <button 
+            @click="$emit('newSearch')"
+            class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            title="Fermer"
+          >
+            <X class="w-6 h-6" />
+          </button>
+        </div>
       </div>
     </div>
 
@@ -59,8 +78,9 @@
       <div 
         v-for="(result, index) in filteredResults" 
         :key="index"
-        class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col h-full"
-        @click="showDetails(result)"
+        class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all duration-200 flex flex-col h-full"
+        :class="{ 'cursor-pointer': !result.hasIncompleteData, 'cursor-not-allowed opacity-90': result.hasIncompleteData }"
+        @click="!result.hasIncompleteData && showDetails(result)"
         @contextmenu.prevent="showContextMenu($event, index)"
       >
         <div class="p-5 flex flex-col h-full">
@@ -92,7 +112,7 @@
                   :class="getScoreBadgeClass(result.matchScore)" 
                   class="inline-block px-2 py-0.5 rounded text-xs font-bold"
                 >
-                  {{ Math.round(result.matchScore) }}%
+                  {{ isNaN(result.matchScore) ? 0 : Math.round(result.matchScore) }}%
                 </span>
                 <!-- Glassmorphic tooltip -->
                 <div 
@@ -108,22 +128,54 @@
           
           <!-- Adresse -->
           <div class="min-h-[4rem] mb-4">
-            <h3 class="font-semibold text-gray-900 dark:text-gray-100 text-base mb-1 line-clamp-2">
+            <h3 v-if="!result.hasIncompleteData" class="font-semibold text-gray-900 dark:text-gray-100 text-base mb-1 line-clamp-2">
               {{ getFormattedAddress(result) }}
             </h3>
+            <h3 v-else class="font-semibold text-amber-700 dark:text-amber-400 text-base mb-1">
+              Adresse non disponible
+            </h3>
             <p class="text-sm text-gray-600 dark:text-gray-400">
-              {{ result.communeDisplay || result.commune }}
+              {{ result.communeDisplay || result.commune || 'Localisation inconnue' }}
             </p>
           </div>
           
+          <!-- Legacy DPE Warning -->
+          <div v-if="result.isLegacyData" class="mb-3">
+            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-lg px-3 py-2">
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <span class="text-xs font-medium text-amber-700 dark:text-amber-300">DPE Ancien (avant 07/2021)</span>
+              </div>
+              <div v-if="result.hasIncompleteData" class="mt-1.5">
+                <a 
+                  v-if="result.ademeUrl"
+                  :href="result.ademeUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-xs text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 underline inline-flex items-center gap-1"
+                  @click.stop
+                >
+                  Voir sur ADEME
+                  <ExternalLink class="w-3 h-3" />
+                </a>
+              </div>
+            </div>
+          </div>
+
           <!-- Informations clés -->
           <div class="flex items-center justify-between mb-4">
             <div>
               <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Surface</p>
               <p class="text-base font-semibold text-gray-900 dark:text-gray-100">{{ result.surfaceHabitable }} m²</p>
             </div>
+            <div v-if="result.anneeConstruction" class="text-center">
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Année</p>
+              <p class="text-base font-semibold text-gray-900 dark:text-gray-100">{{ result.anneeConstruction }}</p>
+            </div>
             <div v-if="result.typeBien === 'appartement' && getFloorDisplay(result)" class="text-right">
-              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">&nbsp;</p>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Étage</p>
               <p class="text-base font-semibold text-gray-900 dark:text-gray-100">
                 {{ getFloorDisplay(result) }}
               </p>
@@ -133,6 +185,7 @@
           <!-- Actions -->
           <div class="flex gap-3 mt-auto pt-3 border-t border-gray-100 dark:border-gray-700">
             <button
+              v-if="!result.hasIncompleteData"
               @click.stop="showDetails(result)"
               class="flex-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 font-medium text-sm py-2 transition-colors flex items-center justify-center gap-1"
             >
@@ -140,6 +193,18 @@
               Voir détails
             </button>
             <a 
+              v-if="result.hasIncompleteData && result.ademeUrl"
+              :href="result.ademeUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex-1 text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 font-medium text-sm py-2 transition-colors flex items-center justify-center gap-1"
+              @click.stop
+            >
+              <ExternalLink class="w-3.5 h-3.5" />
+              Voir sur ADEME
+            </a>
+            <a 
+              v-if="!result.hasIncompleteData"
               :href="getGoogleMapsUrl(result)"
               target="_blank"
               rel="noopener noreferrer"
@@ -198,6 +263,7 @@ import {
   Building2,
   Calendar,
   Check,
+  ChevronDown,
   ExternalLink,
   FileText,
   Globe,
@@ -212,7 +278,12 @@ import {
   Trophy,
   X
 } from 'lucide-vue-next'
-import { getGeoportailUrl, getGoogleMapsEmbedUrl } from '../utils/mapUtils'
+import {
+  getGeoportailUrl,
+  getGoogleMapsEmbedUrl,
+  getGoogleMapsSearchUrl,
+  getGoogleRegionLabel
+} from '../utils/mapUtils'
 import DPEDetailsModal from './DPEDetailsModal.vue'
 import Grid2x2Plus from './icons/Grid2x2Plus.vue'
 import PropertyModal from './PropertyModal.vue'
@@ -230,6 +301,7 @@ export default {
     Building,
     Calendar,
     Check,
+    ChevronDown,
     FileText,
     Globe,
     Grid2x2Check,
@@ -273,13 +345,60 @@ export default {
         y: 0,
         index: null
       },
-      hiddenResults: new Set()
+      hiddenResults: new Set(),
+      sortBy: 'score' // Default sort by score
     }
   },
   computed: {
     filteredResults() {
       if (!this.searchResult?.results) return []
-      return this.searchResult.results.filter((_, index) => !this.hiddenResults.has(index))
+
+      // First filter out hidden results
+      let results = this.searchResult.results.filter((_, index) => !this.hiddenResults.has(index))
+
+      // Then apply sorting
+      if (this.sortBy === 'distance' && this.hasDistanceData) {
+        // Sort by distance (ascending - closest first)
+        results = [...results].sort((a, b) => {
+          const distA = a.distance !== undefined ? a.distance : Infinity
+          const distB = b.distance !== undefined ? b.distance : Infinity
+          return distA - distB
+        })
+      } else if (this.sortBy === 'surface') {
+        // Sort by surface (descending - largest first)
+        results = [...results].sort((a, b) => {
+          const surfA = a.surfaceHabitable || 0
+          const surfB = b.surfaceHabitable || 0
+          return surfB - surfA
+        })
+      } else if (this.sortBy === 'date-desc') {
+        // Sort by date (descending - most recent first)
+        results = [...results].sort((a, b) => {
+          const dateA = a.dateVisite ? new Date(a.dateVisite).getTime() : 0
+          const dateB = b.dateVisite ? new Date(b.dateVisite).getTime() : 0
+          return dateB - dateA
+        })
+      } else if (this.sortBy === 'date-asc') {
+        // Sort by date (ascending - oldest first)
+        results = [...results].sort((a, b) => {
+          const dateA = a.dateVisite ? new Date(a.dateVisite).getTime() : 0
+          const dateB = b.dateVisite ? new Date(b.dateVisite).getTime() : 0
+          return dateA - dateB
+        })
+      } else {
+        // Default: sort by score (descending - best match first)
+        results = [...results].sort((a, b) => {
+          const scoreA = a.matchScore || 0
+          const scoreB = b.matchScore || 0
+          return scoreB - scoreA
+        })
+      }
+
+      return results
+    },
+
+    hasDistanceData() {
+      return this.searchResult?.results?.some(r => r.distance !== undefined)
     }
   },
   mounted() {
@@ -295,6 +414,11 @@ export default {
     document.body.style.overflow = ''
   },
   methods: {
+    sortResults() {
+      // The sorting is handled reactively in the computed property
+      // This method is just to trigger re-computation when dropdown changes
+    },
+
     shouldPulse(_result, index) {
       // Pulse seulement si c'est le premier ET qu'il est le seul avec le meilleur score
       if (index !== 0) return false
@@ -545,7 +669,8 @@ export default {
 
     getGoogleMapsEmbedUrlForProperty(property) {
       if (!property) return ''
-      const address = `${property.adresseComplete}, ${property.codePostal} ${property.commune}, France`
+      const region = getGoogleRegionLabel(property.codePostal)
+      const address = `${property.adresseComplete}, ${property.codePostal} ${property.commune}, ${region}`
       return getGoogleMapsEmbedUrl(property.latitude, property.longitude, address)
     },
 
@@ -555,13 +680,10 @@ export default {
     },
 
     getGoogleMapsUrl(result) {
-      // Use coordinates if available for more accurate location
-      if (result.latitude && result.longitude) {
-        return `https://www.google.com/maps/search/?api=1&query=${result.latitude},${result.longitude}`
-      }
-      // Fallback to address
-      const address = encodeURIComponent(`${result.adresseComplete}, ${result.codePostal} ${result.commune}, France`)
-      return `https://www.google.com/maps/search/?api=1&query=${address}`
+      // Force address-first query for Google to disambiguate DOM-TOM
+      const region = getGoogleRegionLabel(result.codePostal)
+      const address = `${result.adresseComplete}, ${result.codePostal} ${result.commune}, ${region}`
+      return getGoogleMapsSearchUrl(result.latitude, result.longitude, address)
     },
     getDPEBadgeClass(classe) {
       const styles = {
@@ -636,6 +758,11 @@ export default {
     },
 
     getScoreBadgeClass(score) {
+      // Handle NaN or invalid scores
+      if (Number.isNaN(score) || score === null || score === undefined) {
+        return 'bg-gray-400 text-white'
+      }
+
       // Color based on actual score out of 100
       const roundedScore = Math.round(score)
       if (roundedScore >= 90) return 'bg-green-500 text-white'
@@ -650,17 +777,22 @@ export default {
     },
 
     getTooltipClass(score) {
-      // Glassmorphic tooltip with color matching the score
+      // Handle NaN or invalid scores
+      if (Number.isNaN(score) || score === null || score === undefined) {
+        return 'bg-gray-500/40 text-gray-700 dark:text-gray-300 border border-gray-500/50'
+      }
+
+      // Glassmorphic tooltip with color matching the score - increased opacity for better visibility
       const roundedScore = Math.round(score)
-      if (roundedScore >= 90) return 'bg-green-500/20 text-green-700 border border-green-500/30'
-      if (roundedScore >= 80) return 'bg-green-400/20 text-green-600 border border-green-400/30'
-      if (roundedScore >= 70) return 'bg-yellow-400/20 text-yellow-700 border border-yellow-400/30'
-      if (roundedScore >= 60) return 'bg-orange-400/20 text-orange-700 border border-orange-400/30'
-      if (roundedScore >= 50) return 'bg-orange-500/20 text-orange-700 border border-orange-500/30'
-      if (roundedScore >= 40) return 'bg-orange-600/20 text-orange-800 border border-orange-600/30'
-      if (roundedScore >= 30) return 'bg-red-500/20 text-red-700 border border-red-500/30'
-      if (roundedScore >= 20) return 'bg-red-600/20 text-red-700 border border-red-600/30'
-      return 'bg-red-700/20 text-red-800 border border-red-700/30'
+      if (roundedScore >= 90) return 'bg-green-500/40 text-green-700 dark:text-green-300 border border-green-500/50'
+      if (roundedScore >= 80) return 'bg-green-400/40 text-green-600 dark:text-green-300 border border-green-400/50'
+      if (roundedScore >= 70) return 'bg-yellow-400/40 text-yellow-700 dark:text-yellow-300 border border-yellow-400/50'
+      if (roundedScore >= 60) return 'bg-orange-400/40 text-orange-700 dark:text-orange-300 border border-orange-400/50'
+      if (roundedScore >= 50) return 'bg-orange-500/40 text-orange-700 dark:text-orange-300 border border-orange-500/50'
+      if (roundedScore >= 40) return 'bg-orange-600/40 text-orange-800 dark:text-orange-300 border border-orange-600/50'
+      if (roundedScore >= 30) return 'bg-red-500/40 text-red-700 dark:text-red-300 border border-red-500/50'
+      if (roundedScore >= 20) return 'bg-red-600/40 text-red-700 dark:text-red-300 border border-red-600/50'
+      return 'bg-red-700/40 text-red-800 dark:text-red-300 border border-red-700/50'
     },
 
     getAddressType(result) {
@@ -755,30 +887,50 @@ export default {
       // Build very short list of main differences
       const diffs = []
 
+      // Helper function to parse comparison values
+      const parseValue = value => {
+        if (!value) return null
+        const strValue = value.toString().trim()
+        // Remove < or > operators and parse the number
+        if (strValue.startsWith('<') || strValue.startsWith('>')) {
+          return parseInt(strValue.substring(1), 10)
+        }
+        return parseInt(strValue, 10)
+      }
+
       // Surface difference
       if (this.searchCriteria.surfaceHabitable && result.surfaceHabitable) {
-        const diff = Math.round(result.surfaceHabitable - this.searchCriteria.surfaceHabitable)
-        if (Math.abs(diff) > 0) {
-          const sign = diff > 0 ? '+' : ''
-          diffs.push(`${sign}${diff}m²`)
+        const searchSurface = parseValue(this.searchCriteria.surfaceHabitable)
+        if (searchSurface) {
+          const diff = Math.round(result.surfaceHabitable - searchSurface)
+          if (Math.abs(diff) > 0) {
+            const sign = diff > 0 ? '+' : ''
+            diffs.push(`${sign}${diff}m²`)
+          }
         }
       }
 
       // Consumption difference
       if (this.searchCriteria.consommationEnergie && result.consommationEnergie) {
-        const diff = Math.round(result.consommationEnergie - this.searchCriteria.consommationEnergie)
-        if (diff !== 0) {
-          const sign = diff > 0 ? '+' : ''
-          diffs.push(`${sign}${diff}kWh`)
+        const searchConso = parseValue(this.searchCriteria.consommationEnergie)
+        if (searchConso) {
+          const diff = Math.round(result.consommationEnergie - searchConso)
+          if (diff !== 0) {
+            const sign = diff > 0 ? '+' : ''
+            diffs.push(`${sign}${diff}kWh`)
+          }
         }
       }
 
       // GES difference
       if (this.searchCriteria.emissionGES && result.emissionGES) {
-        const diff = Math.round(result.emissionGES - this.searchCriteria.emissionGES)
-        if (diff !== 0) {
-          const sign = diff > 0 ? '+' : ''
-          diffs.push(`${sign}${diff}kg`)
+        const searchGES = parseValue(this.searchCriteria.emissionGES)
+        if (searchGES) {
+          const diff = Math.round(result.emissionGES - searchGES)
+          if (diff !== 0) {
+            const sign = diff > 0 ? '+' : ''
+            diffs.push(`${sign}${diff}kg`)
+          }
         }
       }
 
@@ -851,9 +1003,10 @@ export default {
       for (const surfaceRange of this.departmentAverages.surfaceRanges) {
         const [min, max] = surfaceRange.range
           .replace('m²', '')
+          .replace('+', '-999')
           .split('-')
           .map(n => parseInt(n, 10))
-        if (surface >= min && surface <= max) {
+        if (surface >= min && (max === 999 || surface <= max)) {
           range = surfaceRange
           break
         }
@@ -923,9 +1076,10 @@ export default {
       for (const surfaceRange of this.departmentAverages.surfaceRanges) {
         const [min, max] = surfaceRange.range
           .replace('m²', '')
+          .replace('+', '-999')
           .split('-')
           .map(n => parseInt(n, 10))
-        if (surface >= min && surface <= max) {
+        if (surface >= min && (max === 999 || surface <= max)) {
           range = surfaceRange
           break
         }

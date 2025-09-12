@@ -38,8 +38,14 @@
             commune ou code postal, surface habitable et consommation énergétique. 
             Ces données sont croisées avec la base nationale de l'ADEME pour identifier les correspondances possibles.
             <br><br>
-            <strong class="text-orange-600 dark:text-orange-400">⚠️ Important :</strong> Ce service fonctionnera uniquement pour les DPE réalisés <strong>depuis juillet 2021</strong>. 
-            Selon la réglementation, les DPE réalisés avant le 30 juin 2021 ne sont plus valables depuis le 1er janvier 2025.
+            <strong class="text-green-600 dark:text-green-400">✓ Fiabilité optimale :</strong> Pour les DPE réalisés <strong>depuis juillet 2021</strong>, 
+            le service offre une précision maximale grâce aux données complètes et géolocalisées.
+            <br><br>
+            <strong class="text-blue-600 dark:text-blue-400">ℹ️ DPE anciens :</strong> Le service peut également retrouver des DPE réalisés <strong>avant juillet 2021</strong>, 
+            mais avec une fiabilité moindre car certaines données (géolocalisation, adresse précise) peuvent être manquantes. 
+            Ces résultats sont signalés avec la mention "DPE Ancien".
+            <br><br>
+            <strong class="text-orange-600 dark:text-orange-400">⚠️ Note :</strong> Selon la réglementation, les DPE réalisés avant le 30 juin 2021 ne sont plus valables depuis le 1er janvier 2025.
           </p>
         </div>
 

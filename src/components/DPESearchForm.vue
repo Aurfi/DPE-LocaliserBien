@@ -24,12 +24,12 @@
           <!-- Surface (en deuxième) -->
           <div class="w-full md:flex-1 md:min-w-[120px]">
             <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-              Surface m²
+              Surface
             </label>
             <input 
               v-model="formData.surface"
               type="text" 
-              placeholder="ex : 368 ou >368"
+              placeholder="ex : 100m²"
               @input="validateSurfaceInput"
               class="w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners"
             />
@@ -71,12 +71,12 @@
           <!-- Consommation énergétique (en troisième) -->
           <div class="w-full md:flex-1 md:min-w-[140px]">
             <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-              Consommation kWh/m²/an
+              Consommation primaire
             </label>
             <input 
               v-model="formData.consommation"
               type="text" 
-              :placeholder="selectedEnergyClass ? '' : 'ex : 300 ou <300'"
+              :placeholder="selectedEnergyClass ? '' : 'ex : 250 kWh/m²/an'"
               @input="validateConsommationInput"
               :disabled="selectedEnergyClass !== null"
               class="w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
@@ -363,12 +363,12 @@ export default {
     // Déterminer la classe énergétique à partir de la valeur
     getEnergyClassFromValue(value) {
       if (!value || this.selectedEnergyClass) return null
-      if (value <= 70) return 'A'
-      if (value <= 110) return 'B'
-      if (value <= 180) return 'C'
-      if (value <= 250) return 'D'
+      if (value <= 50) return 'A'
+      if (value <= 90) return 'B'
+      if (value <= 150) return 'C'
+      if (value <= 230) return 'D'
       if (value <= 330) return 'E'
-      if (value <= 420) return 'F'
+      if (value <= 450) return 'F'
       return 'G'
     },
 

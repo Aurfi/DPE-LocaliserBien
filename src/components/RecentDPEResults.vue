@@ -3,7 +3,7 @@
     <!-- En-tête des résultats -->
     <div class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 mb-6 border border-white/50 dark:border-gray-700/50">
       <div class="flex items-center justify-between">
-        <div>
+        <div class="flex-1">
           <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">
             {{ filteredResults.length }} résultat{{ filteredResults.length > 1 ? 's' : '' }} affiché{{ filteredResults.length > 1 ? 's' : '' }}
             <span v-if="hiddenResults.size > 0" class="text-sm text-gray-500 dark:text-gray-400">({{ hiddenResults.size }} masqué{{ hiddenResults.size > 1 ? 's' : '' }})</span>
@@ -13,12 +13,30 @@
             <span class="text-xs text-gray-500 dark:text-gray-500">(rayon: {{ results.searchRadius }} km)</span>
           </p>
         </div>
-        <button
-          @click="$emit('clear-results')"
-          class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
-        >
-          <X class="w-6 h-6" />
-        </button>
+        <div class="flex items-center gap-3">
+          <!-- Sorting dropdown - only show if more than 3 results -->
+          <div v-if="filteredResults.length > 3" class="relative">
+            <select 
+              v-model="sortBy"
+              @change="sortResults"
+              class="appearance-none bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
+            >
+              <option value="distance">Trier par distance</option>
+              <option value="surface">Trier par surface</option>
+              <option value="date-desc">Trier du plus récent au plus ancien</option>
+              <option value="date-asc">Trier du plus ancien au plus récent</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 dark:text-gray-400">
+              <ChevronDown class="w-4 h-4" />
+            </div>
+          </div>
+          <button
+            @click="$emit('clear-results')"
+            class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+          >
+            <X class="w-6 h-6" />
+          </button>
+        </div>
       </div>
     </div>
 
@@ -97,7 +115,12 @@
             Voir détails
           </button>
           <a
-            :href="`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getFormattedAddress(dpe) + ' ' + dpe.code_postal_ban + ' ' + dpe.nom_commune_ban)}`"
+            :href="(() => {
+              // Force address-first; include region label for DOM-TOM
+              const region = getGoogleRegionLabel(dpe.code_postal_ban || dpe.code_postal_brut)
+              const text = `${getFormattedAddress(dpe)} ${dpe.code_postal_ban || ''} ${dpe.nom_commune_ban || ''}, ${region}`
+              return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(text.trim())}`
+            })()"
             target="_blank"
             @click.stop
             class="flex-1 flex items-center justify-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
@@ -147,11 +170,12 @@
 </template>
 
 <script>
-import { Building2, Calendar, ExternalLink, Home, Trash2, X } from 'lucide-vue-next'
+import { Building2, Calendar, ChevronDown, ExternalLink, Home, Trash2, X } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 import {
   getGeoportailUrl,
   getGoogleMapsEmbedUrl,
+  getGoogleRegionLabel,
   getLatitudeFromGeopoint,
   getLongitudeFromGeopoint
 } from '../utils/mapUtils'
@@ -163,6 +187,7 @@ export default {
   name: 'RecentDPEResults',
   components: {
     Calendar,
+    ChevronDown,
     X,
     ExternalLink,
     Home,
@@ -193,11 +218,47 @@ export default {
       index: null
     })
     const hiddenResults = ref(new Set())
+    const sortBy = ref('distance') // Default sort by distance for recent searches
 
-    // Computed property for filtered results
+    // Computed property for filtered results with sorting
     const filteredResults = computed(() => {
       if (!props.results?.results) return []
-      return props.results.results.filter((_, index) => !hiddenResults.value.has(index))
+
+      // First filter out hidden results
+      let results = props.results.results.filter((_, index) => !hiddenResults.value.has(index))
+
+      // Then apply sorting
+      if (sortBy.value === 'surface') {
+        // Sort by surface (descending - largest first)
+        results = [...results].sort((a, b) => {
+          const surfA = a.surface_habitable_logement || 0
+          const surfB = b.surface_habitable_logement || 0
+          return surfB - surfA
+        })
+      } else if (sortBy.value === 'date-desc') {
+        // Sort by date (descending - most recent first)
+        results = [...results].sort((a, b) => {
+          const dateA = a.date_etablissement_dpe ? new Date(a.date_etablissement_dpe).getTime() : 0
+          const dateB = b.date_etablissement_dpe ? new Date(b.date_etablissement_dpe).getTime() : 0
+          return dateB - dateA
+        })
+      } else if (sortBy.value === 'date-asc') {
+        // Sort by date (ascending - oldest first)
+        results = [...results].sort((a, b) => {
+          const dateA = a.date_etablissement_dpe ? new Date(a.date_etablissement_dpe).getTime() : 0
+          const dateB = b.date_etablissement_dpe ? new Date(b.date_etablissement_dpe).getTime() : 0
+          return dateA - dateB
+        })
+      } else {
+        // Default: sort by distance (ascending - closest first)
+        results = [...results].sort((a, b) => {
+          const distA = a.distance !== undefined ? a.distance : Infinity
+          const distB = b.distance !== undefined ? b.distance : Infinity
+          return distA - distB
+        })
+      }
+
+      return results
     })
 
     const formatDate = dateStr => {
@@ -280,13 +341,14 @@ export default {
     }
 
     const getGoogleMapsEmbedUrlForDPE = dpe => {
-      if (!dpe || !dpe._geopoint) return ''
+      if (!dpe) return ''
       const lat = getLatitudeFromGeopoint(dpe._geopoint)
       const lon = getLongitudeFromGeopoint(dpe._geopoint)
-      // Use address as fallback if needed
-      const address = dpe.nom_rue_ban
-        ? `${dpe.nom_rue_ban}, ${dpe.code_postal_ban} ${dpe.nom_commune_ban}, France`
-        : null
+      // Build region-aware address; prefer address for Google
+      const region = getGoogleRegionLabel(dpe.code_postal_ban || dpe.code_postal_brut)
+      const baseAddress = dpe.nom_rue_ban || dpe.adresse_ban || dpe.adresse_brut || ''
+      const cityPart = `${dpe.code_postal_ban || dpe.code_postal_brut || ''} ${dpe.nom_commune_ban || ''}`.trim()
+      const address = `${baseAddress ? `${baseAddress}, ` : ''}${cityPart}${cityPart ? ', ' : ''}${region}`
       return getGoogleMapsEmbedUrl(lat, lon, address, 19)
     }
 
@@ -325,6 +387,11 @@ export default {
       contextMenu.value.show = false
     }
 
+    const sortResults = () => {
+      // The sorting is handled reactively in the computed property
+      // This method is just to trigger re-computation when dropdown changes
+    }
+
     const hideResult = index => {
       if (index !== null && index >= 0) {
         // Find the original index in the unfiltered results
@@ -358,6 +425,8 @@ export default {
       contextMenu,
       hiddenResults,
       filteredResults,
+      sortBy,
+      sortResults,
       departmentAverages: props.departmentAverages,
       formatDate,
       formatFullDate,

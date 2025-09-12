@@ -11,18 +11,35 @@
  * @returns {string} Google Maps embed URL
  */
 export function getGoogleMapsEmbedUrl(lat, lon, address = null, zoom = 18) {
-  // Use coordinates if available for more accurate location
-  if (lat && lon) {
-    return `https://maps.google.com/maps?q=${lat},${lon}&output=embed&z=${zoom}&t=k`
-  }
-
-  // Fallback to address if provided
+  // Prefer address to avoid misplacement for DOM-TOM or ambiguous coords
   if (address) {
     const encodedAddress = encodeURIComponent(address)
     return `https://maps.google.com/maps?q=${encodedAddress}&output=embed&z=${zoom}&t=k`
   }
-
+  const latNum = Number(lat)
+  const lonNum = Number(lon)
+  if (Number.isFinite(latNum) && Number.isFinite(lonNum)) {
+    return `https://maps.google.com/maps?q=${latNum},${lonNum}&output=embed&z=${zoom}&t=k`
+  }
   return ''
+}
+
+/**
+ * Generate a Google Maps search URL for opening in a new tab
+ * @param {number|string} lat - Latitude
+ * @param {number|string} lon - Longitude
+ * @param {string|null} address - Fallback address
+ * @returns {string}
+ */
+export function getGoogleMapsSearchUrl(lat, lon, address = null) {
+  // Prefer address to disambiguate overseas territories
+  if (address) return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+  const latNum = Number(lat)
+  const lonNum = Number(lon)
+  if (Number.isFinite(latNum) && Number.isFinite(lonNum)) {
+    return `https://www.google.com/maps/search/?api=1&query=${latNum},${lonNum}`
+  }
+  return 'https://www.google.com/maps'
 }
 
 /**
@@ -55,6 +72,24 @@ export function getLongitudeFromGeopoint(geopoint) {
  * @returns {string|null} Geoportail URL or null
  */
 export function getGeoportailUrl(lat, lon, zoom = 17) {
-  if (!lat || !lon) return null
-  return `https://explore.data.gouv.fr/fr/immobilier?onglet=carte&filtre=tous&lat=${lat}&lng=${lon}&zoom=${zoom}.00`
+  const latNum = Number(lat)
+  const lonNum = Number(lon)
+  if (!Number.isFinite(latNum) || !Number.isFinite(lonNum)) return null
+  return `https://explore.data.gouv.fr/fr/immobilier?onglet=carte&filtre=tous&lat=${latNum}&lng=${lonNum}&zoom=${zoom}.00`
+}
+
+/**
+ * Return the region/country label suitable for Google Maps based on postal code
+ * Ensures overseas territories are correctly targeted when using address queries.
+ */
+export function getGoogleRegionLabel(postalCode) {
+  if (!postalCode) return 'France'
+  const code = String(postalCode)
+  if (code.startsWith('971')) return 'Guadeloupe'
+  if (code.startsWith('972')) return 'Martinique'
+  if (code.startsWith('973')) return 'Guyane française'
+  if (code.startsWith('974')) return 'La Réunion'
+  if (code.startsWith('976')) return 'Mayotte'
+  // Corse uses normal FR
+  return 'France'
 }

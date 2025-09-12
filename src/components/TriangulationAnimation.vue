@@ -28,12 +28,32 @@
 
         <!-- Fond propre sans grille -->
 
-        <!-- Zone France avec coordonnées correctes -->
+        <!-- Zone de carte adaptée selon la région -->
         <svg class="absolute inset-0 w-full h-full" viewBox="0 0 800 600" ref="franceMap">
+          <!-- France métropolitaine -->
           <FranceMap 
+            v-if="regionType === 'france'"
             :france-color="franceColor"
             :france-border-color="franceBorderColor"
           />
+          
+          <!-- Carte de la Corse -->
+          <CorseMap 
+            v-else-if="regionType === 'corsica'"
+            :corse-color="franceColor"
+            :corse-border-color="franceBorderColor"
+          />
+          
+          <!-- Carte du monde pour DOM-TOM -->
+          <g v-else-if="regionType === 'domtom'">
+            <WorldMap 
+              :world-color="franceColor"
+              :world-border-color="franceBorderColor"
+            />
+            <text x="400" y="120" text-anchor="middle" class="text-lg font-bold fill-current text-gray-600 dark:text-gray-400">
+              {{ getDomTomName() }}
+            </text>
+          </g>
           
           <!-- Système de scan orbital avancé -->
           <g v-if="showScanning">
@@ -132,14 +152,18 @@
 import { MapPin, Search } from 'lucide-vue-next'
 import { getDepartmentCoords, getDepartmentFromCommune } from '../data/france-departments.js'
 import { getLoadingMessageSequence } from '../data/loading-messages.js'
+import CorseMap from './CorseMap.vue'
 import FranceMap from './FranceMap.vue'
+import WorldMap from './WorldMap.vue'
 
 export default {
   name: 'TriangulationAnimation',
   components: {
     Search,
     MapPin,
-    FranceMap
+    FranceMap,
+    WorldMap,
+    CorseMap
   },
   props: {
     commune: {
@@ -180,6 +204,7 @@ export default {
       convergenceRings: [],
       franceColor: 'rgba(59, 130, 246, 0.15)',
       franceBorderColor: '#3B82F6',
+      regionType: 'france', // 'france', 'corsica', or 'domtom'
       loadingMessages: [],
       messageIndex: 0,
       animationStep: 0,
@@ -213,6 +238,22 @@ export default {
     this.stopContinuousAnimations()
   },
   methods: {
+    detectRegionType(department) {
+      if (!department) return 'france'
+
+      // Corsica
+      if (department === '2A' || department === '2B') {
+        return 'corsica'
+      }
+
+      // DOM-TOM
+      if (['971', '972', '973', '974', '976'].includes(department)) {
+        return 'domtom'
+      }
+
+      return 'france'
+    },
+
     startAnimation() {
       let lon, lat
 
@@ -230,8 +271,20 @@ export default {
       } else {
         // Fallback to department-based coordinates for regular search
         this.targetDepartment = getDepartmentFromCommune(this.commune)
-        ;[lon, lat] = getDepartmentCoords(this.targetDepartment)
+        if (!this.targetDepartment) {
+          this.$emit('complete')
+          return
+        }
+        const coords = getDepartmentCoords(this.targetDepartment)
+        if (!coords) {
+          this.$emit('complete')
+          return
+        }
+        ;[lon, lat] = coords
       }
+
+      // Detect region type
+      this.regionType = this.detectRegionType(this.targetDepartment)
 
       // Convertir les coordonnées géographiques vers l'espace SVG
       // France repositionnée: scale(1.0) + translate(150, 50) dans viewBox 800x600
@@ -244,13 +297,21 @@ export default {
       // Mapper latitude vers Y - ajusté pour France décalée à Y=80
       const svgY = Math.round(165 + ((51 - lat) / 9) * 400) // Ajusté pour position optimale
 
-      this.targetCoords = { x: svgX, y: svgY }
+      this.targetCoords = this.adjustTargetCoordsForRegion(svgX, svgY)
 
       // Générer les messages techniques
       this.loadingMessages = getLoadingMessageSequence(8)
 
       // Démarrer l'animation progressive
       this.animateProgress()
+    },
+
+    adjustTargetCoordsForRegion(svgX, svgY) {
+      // Keep mainland coordinates for France map; center for Corsica and DOM-TOM placeholders
+      if (this.regionType === 'corsica' || this.regionType === 'domtom') {
+        return { x: 412, y: 340 }
+      }
+      return { x: svgX, y: svgY }
     },
 
     async animateProgress() {
@@ -459,8 +520,21 @@ export default {
 
     formatCoords() {
       if (!this.targetCoords) return ''
-      const [lon, lat] = getDepartmentCoords(this.targetDepartment)
+      const coords = getDepartmentCoords(this.targetDepartment)
+      if (!coords) return ''
+      const [lon, lat] = coords
       return `${lat.toFixed(4)}°N, ${lon.toFixed(4)}°E`
+    },
+
+    getDomTomName() {
+      const names = {
+        971: 'Guadeloupe',
+        972: 'Martinique',
+        973: 'Guyane',
+        974: 'La Réunion',
+        976: 'Mayotte'
+      }
+      return names[this.targetDepartment] || 'DOM-TOM'
     }
   }
 }
