@@ -94,13 +94,16 @@
               <span v-if="search.energyClass" class="px-2 py-0.5 text-xs font-bold rounded" :class="getEnergyClassColor(search.energyClass)">
                 {{ search.energyClass }}
               </span>
-              <span v-else-if="search.consommation" class="text-xs text-gray-500 dark:text-gray-400">
-                Classe {{ getEnergyClass(search.consommation) }}
+              <span v-else-if="search.consommation" class="px-2 py-0.5 text-xs font-bold rounded" :class="getEnergyClassColor(getEnergyClass(search.consommation))">
+                {{ getEnergyClass(search.consommation) }}
               </span>
               
               <!-- Classe GES -->
               <span v-if="search.gesClass" class="px-2 py-0.5 text-xs font-bold rounded" :class="getGESClassColor(search.gesClass)">
                 {{ search.gesClass }}
+              </span>
+              <span v-else-if="search.ges" class="px-2 py-0.5 text-xs font-bold rounded" :class="getGESClassColor(getGESClass(search.ges))">
+                {{ getGESClass(search.ges) }}
               </span>
             </div>
             <div class="flex items-center gap-1 text-xs text-gray-400">
@@ -234,6 +237,16 @@ export default {
         G: 'bg-purple-600 text-white'
       }
       return colors[classe?.toUpperCase()] || 'bg-gray-400 text-white'
+    },
+
+    getGESClass(emission) {
+      if (emission <= 5) return 'A'
+      if (emission <= 10) return 'B'
+      if (emission <= 25) return 'C'
+      if (emission <= 35) return 'D'
+      if (emission <= 55) return 'E'
+      if (emission <= 80) return 'F'
+      return 'G'
     },
 
     getGESClassColor(classe) {

@@ -2,9 +2,9 @@
   <div id="app" :class="['min-h-screen flex flex-col relative overflow-hidden', fancyUI ? 'bg-gradient-to-br from-blue-300 via-blue-200 to-purple-300 dark:from-blue-800 dark:via-blue-800 dark:to-purple-800' : 'bg-gray-50 dark:bg-gray-900']">
     <!-- Fancy background blobs for production -->
     <div v-if="fancyUI" class="absolute inset-0">
-      <div class="absolute top-0 -left-4 w-96 h-96 bg-gradient-to-r from-blue-400 to-purple-400 dark:from-blue-400 dark:to-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-30 animate-blob"></div>
-      <div class="absolute top-0 -right-4 w-96 h-96 bg-gradient-to-r from-indigo-400 to-blue-400 dark:from-indigo-400 dark:to-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-30 animate-blob animation-delay-2000"></div>
-      <div class="absolute -bottom-8 left-20 w-96 h-96 bg-gradient-to-r from-purple-400 to-pink-400 dark:from-purple-400 dark:to-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-30 animate-blob animation-delay-4000"></div>
+      <div :class="['absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-blue-400 to-purple-400 dark:from-blue-400 dark:to-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-30', (!reducedMotion && !lowPerformance) ? 'animate-blob' : '']"></div>
+      <div :class="['absolute top-40 right-32 w-96 h-96 bg-gradient-to-r from-indigo-400 to-blue-400 dark:from-indigo-400 dark:to-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-30', (!reducedMotion && !lowPerformance) ? 'animate-blob animation-delay-2000' : '']"></div>
+      <div :class="['absolute bottom-20 left-1/3 w-96 h-96 bg-gradient-to-r from-purple-400 to-pink-400 dark:from-purple-400 dark:to-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-30', (!reducedMotion && !lowPerformance) ? 'animate-blob animation-delay-4000' : '']"></div>
     </div>
     
     <!-- Overlay glassmorphism for fancy UI -->
@@ -200,7 +200,9 @@ export default {
     return {
       currentTheme: 'auto',
       systemPreference: 'light',
-      modalOpen: false
+      modalOpen: false,
+      reducedMotion: false,
+      lowPerformance: false
     }
   },
   computed: {
@@ -230,6 +232,12 @@ export default {
     }
   },
   mounted() {
+    // Check for reduced motion preference
+    this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    // Detect low-end GPU/device
+    this.detectGPUPerformance()
+
     // Check system preference
     this.systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 
@@ -289,6 +297,40 @@ export default {
         document.documentElement.classList.add('dark')
       } else {
         document.documentElement.classList.remove('dark')
+      }
+    },
+
+    detectGPUPerformance() {
+      // Check saved preference first
+      const savedPerf = localStorage.getItem('lowPerformance')
+      if (savedPerf !== null) {
+        this.lowPerformance = savedPerf === 'true'
+        return
+      }
+
+      // Auto-detect only REALLY low-end devices
+      const canvas = document.createElement('canvas')
+      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
+
+      if (gl) {
+        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info')
+        if (debugInfo) {
+          const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL).toLowerCase()
+          // Only disable for very old/weak GPUs
+          const veryLowEndIndicators = ['gma', 'mali-400', 'mali-450', 'adreno 2', 'adreno 3', 'powervr sgx']
+          this.lowPerformance = veryLowEndIndicators.some(indicator => renderer.includes(indicator))
+        }
+      }
+
+      // Only check for VERY low memory (less than 2GB)
+      if (navigator.deviceMemory && navigator.deviceMemory < 2) {
+        this.lowPerformance = true
+      }
+
+      // Don't disable for mobile by default - modern phones are powerful
+      // Only check for very old browsers
+      if (!window.requestAnimationFrame || !window.CSS || !window.CSS.supports) {
+        this.lowPerformance = true
       }
     }
   }

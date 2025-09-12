@@ -98,8 +98,15 @@ function calculateMatchScore(dpe, criteria) {
     else score -= 20
   }
 
-  // Score pour la classe énergétique (un écart = -10 points)
-  if (criteria.energyClasses && criteria.energyClasses.length > 0 && dpe.etiquette_dpe) {
+  // Score pour la classe énergétique SEULEMENT si pas de consommation ou GES précis
+  // Si l'utilisateur a fourni une consommation ou GES précis, on ne score pas sur la classe
+  const hasPreciseValues =
+    (criteria.consommation &&
+      !criteria.consommation.toString().includes('<') &&
+      !criteria.consommation.toString().includes('>')) ||
+    (criteria.ges && !criteria.ges.toString().includes('<') && !criteria.ges.toString().includes('>'))
+
+  if (!hasPreciseValues && criteria.energyClasses && criteria.energyClasses.length > 0 && dpe.etiquette_dpe) {
     const classesDPE = dpe.etiquette_dpe.toUpperCase()
     if (criteria.energyClasses.includes(classesDPE)) {
       score += 20

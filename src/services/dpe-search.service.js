@@ -129,10 +129,13 @@ class DPESearchService {
     // Use Government API - stable and reliable
     const enrichedResults = []
 
-    // Process in parallel batches for speed
-    const batchSize = 5
-    for (let i = 0; i < results.length && i < 20; i += batchSize) {
-      const batch = results.slice(i, i + batchSize)
+    // Only enrich first 3 results to avoid rate limiting
+    const resultsToEnrich = results.slice(0, 3)
+    const remainingResults = results.slice(3)
+
+    // Process only the first 3 results
+    for (let i = 0; i < resultsToEnrich.length; i++) {
+      const batch = [resultsToEnrich[i]]
       const promises = batch.map(async result => {
         if (result.latitude && result.longitude) {
           try {
@@ -184,17 +187,10 @@ class DPESearchService {
 
       const batchResults = await Promise.all(promises)
       enrichedResults.push(...batchResults)
-
-      // Add delay between batches to respect rate limits
-      if (i + batchSize < Math.min(results.length, 20)) {
-        await new Promise(resolve => setTimeout(resolve, 200))
-      }
     }
 
-    // Add remaining results without enrichment if any
-    if (results.length > 20) {
-      enrichedResults.push(...results.slice(20))
-    }
+    // Add remaining results without enrichment to avoid rate limiting
+    enrichedResults.push(...remainingResults)
 
     return enrichedResults
   }
@@ -1067,34 +1063,56 @@ class DPESearchService {
    * Calcul du score de matching
    */
   calculateMatchScore(ademeData, searchRequest) {
-    let score = 0 // Start at 0 for proper 100-point total
+    let baseScore = 0
+    let multiplier = 1.0
 
-    // SURFACE (20 points) - Much stricter with absolute m² thresholds
-    if (searchRequest.surfaceHabitable && ademeData.surface_habitable_logement) {
-      const ecartSurface = Math.abs(ademeData.surface_habitable_logement - searchRequest.surfaceHabitable)
-      const pourcentEcart = (ecartSurface / searchRequest.surfaceHabitable) * 100
+    // 1. LOCATION (10 points) - Check both postal code AND city name
+    const codePostalRequest = this.extractPostalCode(searchRequest.commune)
+    const codePostalDPE = ademeData.code_postal_ban || ademeData.code_postal_brut?.toString()
 
-      if (ecartSurface <= 1) {
-        score += 20 // Within ±1m² = 20 points (perfect)
-      } else if (ecartSurface <= 5) {
-        score += 15 // Within ±5m² = 15 points
-      } else if (ecartSurface <= 10) {
-        score += 10 // Within ±10m² = 10 points
-      } else if (pourcentEcart >= 100) {
-        score += 0 // 100% or more difference = 0 points
-      } else {
-        // Between 10m² and 100% difference: linear decrease from 10 to 0
-        const remainingRange = searchRequest.surfaceHabitable - 10 // Range from 10m² to 100% difference
-        const remainingEcart = ecartSurface - 10 // How far past 10m² we are
-        score += Math.max(0, Math.round(10 * (1 - remainingEcart / remainingRange)))
-      }
+    // Extract commune name from search request (remove postal code if present)
+    let communeRequest = searchRequest.commune?.toLowerCase().trim()
+    if (codePostalRequest) {
+      // Remove postal code from the commune string
+      communeRequest = communeRequest.replace(codePostalRequest, '').trim()
+    }
+
+    // Get DPE commune names
+    const communeDPE = (ademeData.nom_commune_ban || ademeData.nom_commune_brut || '').toLowerCase().trim()
+    const adresseCompleteDPE = (ademeData.adresse_ban || ademeData.adresse_brut || '').toLowerCase()
+
+    // Check location match
+    if (codePostalRequest && codePostalRequest === codePostalDPE) {
+      baseScore += 10 // Postal code match
+    } else if (
+      communeRequest &&
+      (communeDPE.includes(communeRequest) ||
+        communeRequest.includes(communeDPE) ||
+        adresseCompleteDPE.includes(communeRequest))
+    ) {
+      baseScore += 10 // City name match when no postal code
     }
 
     // Check if searching by class or by exact kWh values
     const isClassSearch = searchRequest.energyClass && !searchRequest.consommationEnergie
 
     if (isClassSearch) {
-      // CLASS-BASED SEARCH (40 points for energy class, 30 points for GES class)
+      // CLASS-BASED SEARCH - Keep original scoring for classes
+
+      // SURFACE (30 points)
+      if (searchRequest.surfaceHabitable && ademeData.surface_habitable_logement) {
+        const surfaceDiff = Math.abs(ademeData.surface_habitable_logement - searchRequest.surfaceHabitable)
+        const surfacePercent = (surfaceDiff / searchRequest.surfaceHabitable) * 100
+
+        if (surfaceDiff <= 1) {
+          baseScore += 30
+        } else if (surfacePercent <= 100) {
+          baseScore += 30 - 15 * (surfacePercent / 100)
+        } else {
+          baseScore += 15
+          multiplier *= 0.5 // >100% difference caps score at 50%
+        }
+      }
 
       // ENERGY CLASS (40 points)
       if (searchRequest.energyClass && ademeData.etiquette_dpe) {
@@ -1102,113 +1120,96 @@ class DPESearchService {
         const dpeClass = ademeData.etiquette_dpe.toUpperCase()
 
         if (requestClass === dpeClass) {
-          score += 40 // Perfect class match = 40 points
+          baseScore += 40
         } else {
-          // Calculate distance between classes
           const classes = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
-          const requestIndex = classes.indexOf(requestClass)
-          const dpeIndex = classes.indexOf(dpeClass)
-          const classDiff = Math.abs(requestIndex - dpeIndex)
+          const classDiff = Math.abs(classes.indexOf(requestClass) - classes.indexOf(dpeClass))
 
-          if (classDiff === 1) {
-            score += 20 // 1 class difference = 20 points
-          } else if (classDiff === 2) {
-            score += 10 // 2 class difference = 10 points
-          } else if (classDiff === 3) {
-            score += 5 // 3 class difference = 5 points
-          }
-          // More than 3 classes difference = 0 points
+          if (classDiff === 1) baseScore += 25
+          else if (classDiff === 2) baseScore += 10
+          else if (classDiff === 3) baseScore += 5
         }
       }
 
-      // GES CLASS (30 points)
+      // GES CLASS (20 points)
       if (searchRequest.gesClass && ademeData.etiquette_ges) {
         const requestGES = searchRequest.gesClass.toUpperCase()
         const dpeGES = ademeData.etiquette_ges.toUpperCase()
 
         if (requestGES === dpeGES) {
-          score += 30 // Perfect GES class match = 30 points
+          baseScore += 20
         } else {
-          // Calculate distance between classes
           const classes = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
-          const requestIndex = classes.indexOf(requestGES)
-          const dpeIndex = classes.indexOf(dpeGES)
-          const classDiff = Math.abs(requestIndex - dpeIndex)
+          const classDiff = Math.abs(classes.indexOf(requestGES) - classes.indexOf(dpeGES))
 
-          if (classDiff === 1) {
-            score += 15 // 1 class difference = 15 points
-          } else if (classDiff === 2) {
-            score += 8 // 2 class difference = 8 points
-          } else if (classDiff === 3) {
-            score += 4 // 3 class difference = 4 points
-          }
-          // More than 3 classes difference = 0 points
+          if (classDiff === 1) baseScore += 12
+          else if (classDiff === 2) baseScore += 6
+          else if (classDiff === 3) baseScore += 3
         }
-      } else if (!searchRequest.gesClass) {
-        // If no GES class specified, give full points
-        score += 30
       }
     } else {
-      // EXACT VALUE SEARCH (original scoring for kWh/GES values)
+      // EXACT VALUE SEARCH - New adaptive scoring
 
-      // CONSOMMATION (40 points) - Extremely strict scoring
+      // 2. SURFACE SCORING (up to 90 points when kWh/GES are perfect)
+      if (searchRequest.surfaceHabitable && ademeData.surface_habitable_logement) {
+        const surfaceDiff = Math.abs(ademeData.surface_habitable_logement - searchRequest.surfaceHabitable)
+        const surfacePercent = (surfaceDiff / searchRequest.surfaceHabitable) * 100
+
+        if (surfaceDiff <= 1) {
+          baseScore += 90 // Perfect surface match
+        } else if (surfacePercent <= 90) {
+          // Direct proportional: 9% difference = 9 points drop
+          baseScore += 90 - surfacePercent
+        } else if (surfacePercent <= 100) {
+          // Very small score for 90-100% difference
+          baseScore += Math.max(0, 10 - (surfacePercent - 90))
+        } else {
+          // >100% difference gets 0 points and limits total score
+          baseScore += 0
+          multiplier *= 0.5 // Cap total score at 50%
+        }
+      }
+
+      // 3. ENERGY/GES PENALTIES - Applied as multipliers
+
+      // KWH Penalty
       if (searchRequest.consommationEnergie && ademeData.conso_5_usages_par_m2_ep) {
-        const ecartConso = Math.abs(ademeData.conso_5_usages_par_m2_ep - searchRequest.consommationEnergie)
-        const pourcentEcartConso = (ecartConso / searchRequest.consommationEnergie) * 100
+        const kwhDiff = Math.abs(ademeData.conso_5_usages_par_m2_ep - searchRequest.consommationEnergie)
 
-        if (ecartConso === 0) {
-          score += 40 // EXACT match only
-        } else if (pourcentEcartConso > 0 && pourcentEcartConso <= 1) {
-          score += 25 // Up to 1% difference = 25 points (-15)
-        } else if (pourcentEcartConso > 1 && pourcentEcartConso <= 3) {
-          score += 15 // 1-3% difference = 15 points (-25)
-        } else if (pourcentEcartConso > 3 && pourcentEcartConso <= 5) {
-          score += 10 // 3-5% difference = 10 points (-30)
-        } else if (pourcentEcartConso > 5 && pourcentEcartConso <= 10) {
-          score += 5 // 5-10% difference = 5 points (-35)
-        } else if (pourcentEcartConso > 10 && pourcentEcartConso <= 20) {
-          score += 2 // 10-20% difference = 2 points (-38)
+        if (kwhDiff === 0) {
+          // Perfect match - no penalty
+        } else if (kwhDiff === 1) {
+          multiplier *= 0.75 // 1 kWh off = max 75%
+        } else if (kwhDiff <= 9) {
+          // Gentle decrease from 75% to 60% for 2-9 kWh difference
+          const factor = 0.75 - (0.15 * (kwhDiff - 1)) / 8
+          multiplier *= factor
         } else {
-          score += 0 // 20%+ difference = 0 points
+          // >9 kWh off = harsh penalty
+          multiplier *= Math.max(0.3, 0.6 - (kwhDiff - 9) * 0.03)
         }
       }
 
-      // GES (30 points) - Extremely strict scoring
+      // GES Penalty (same logic)
       if (searchRequest.emissionGES && ademeData.emission_ges_5_usages_par_m2) {
-        const ecartGES = Math.abs(ademeData.emission_ges_5_usages_par_m2 - searchRequest.emissionGES)
-        const pourcentEcartGES = (ecartGES / searchRequest.emissionGES) * 100
+        const gesDiff = Math.abs(ademeData.emission_ges_5_usages_par_m2 - searchRequest.emissionGES)
 
-        if (ecartGES === 0) {
-          score += 30 // EXACT match only
-        } else if (pourcentEcartGES > 0 && pourcentEcartGES <= 1) {
-          score += 20 // Up to 1% difference = 20 points (-10)
-        } else if (pourcentEcartGES > 1 && pourcentEcartGES <= 3) {
-          score += 12 // 1-3% difference = 12 points (-18)
-        } else if (pourcentEcartGES > 3 && pourcentEcartGES <= 5) {
-          score += 8 // 3-5% difference = 8 points (-22)
-        } else if (pourcentEcartGES > 5 && pourcentEcartGES <= 10) {
-          score += 4 // 5-10% difference = 4 points (-26)
-        } else if (pourcentEcartGES > 10 && pourcentEcartGES <= 20) {
-          score += 2 // 10-20% difference = 2 points (-28)
+        if (gesDiff === 0) {
+          // Perfect match - no penalty
+        } else if (gesDiff === 1) {
+          multiplier *= 0.75 // 1 GES off = max 75%
+        } else if (gesDiff <= 9) {
+          // Gentle decrease from 75% to 60% for 2-9 GES difference
+          const factor = 0.75 - (0.15 * (gesDiff - 1)) / 8
+          multiplier *= factor
         } else {
-          score += 0 // 20%+ difference = 0 points
+          // >9 GES off = harsh penalty
+          multiplier *= Math.max(0.3, 0.6 - (gesDiff - 9) * 0.03)
         }
-      } else if (!searchRequest.emissionGES) {
-        // If no GES provided by user, give all points (30)
-        score += 30
       }
     }
 
-    // LOCATION (10 points) - Binary: same postal code or not
-    // Use original ADEME postal code, NOT the enriched one from OpenStreetMap
-    const codePostalRequest = this.extractPostalCode(searchRequest.commune)
-    const codePostalDPE = ademeData.code_postal_ban || ademeData.code_postal_brut?.toString()
-    if (codePostalRequest === codePostalDPE) {
-      score += 10
-    }
-    // else 0 points for different postal code
-
-    return Math.min(100, score) // Cap at 100, no minimum
+    return Math.round(baseScore * multiplier)
   }
 
   /**
