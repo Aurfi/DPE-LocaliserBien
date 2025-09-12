@@ -20,12 +20,32 @@
       @cancel="showConfirmModal = false"
     />
     
+    <!-- Modal de renommage -->
+    <InputModal
+      :show="showRenameModal"
+      title="Renommer la recherche"
+      message="Entrez un nom personnalisé pour cette recherche"
+      :initial-value="renameInitialValue"
+      placeholder="Ex: Maison de vacances"
+      confirm-text="Renommer"
+      cancel-text="Annuler"
+      @confirm="confirmRename"
+      @cancel="showRenameModal = false"
+    />
+    
     <!-- Context Menu -->
     <div 
       v-if="contextMenu.show"
-      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[120px]"
+      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[140px]"
       :style="{ top: contextMenu.y + 'px', left: contextMenu.x + 'px' }"
     >
+      <button
+        @click="renameSearchItem(contextMenu.index)"
+        class="w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 flex items-center gap-2"
+      >
+        <Edit2 class="w-4 h-4" />
+        Renommer
+      </button>
       <button
         @click="deleteSearchItem(contextMenu.index)"
         class="w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 flex items-center gap-2"
@@ -54,7 +74,7 @@
           <div class="flex items-start gap-2">
             <MapPin class="w-4 h-4 text-gray-400 mt-0.5" />
             <span class="font-medium text-gray-900 dark:text-gray-100 text-sm leading-tight">
-              {{ formatAddress(search.address) }}
+              {{ search.displayName || formatAddress(search.address) }}
             </span>
           </div>
           
@@ -143,8 +163,9 @@
 </template>
 
 <script>
-import { Calendar, Circle, Clock, Home, MapPin, Trash2 } from 'lucide-vue-next'
+import { Calendar, Circle, Clock, Edit2, Home, MapPin, Trash2 } from 'lucide-vue-next'
 import ConfirmationModal from './ConfirmationModal.vue'
+import InputModal from './InputModal.vue'
 
 export default {
   name: 'RecentDPESearchHistory',
@@ -155,13 +176,18 @@ export default {
     Home,
     Clock,
     Trash2,
-    ConfirmationModal
+    Edit2,
+    ConfirmationModal,
+    InputModal
   },
   emits: ['relaunch-search'],
   data() {
     return {
       recentSearches: [],
       showConfirmModal: false,
+      showRenameModal: false,
+      renameIndex: null,
+      renameInitialValue: '',
       contextMenu: {
         show: false,
         x: 0,
@@ -239,6 +265,29 @@ export default {
         localStorage.setItem('recent_dpe_searches', JSON.stringify(this.recentSearches))
         this.hideContextMenu()
       }
+    },
+
+    renameSearchItem(index) {
+      if (index !== null && index >= 0 && index < this.recentSearches.length) {
+        const search = this.recentSearches[index]
+        this.renameIndex = index
+        this.renameInitialValue = search.displayName || this.formatAddress(search.address)
+        this.showRenameModal = true
+      }
+      this.hideContextMenu()
+    },
+
+    confirmRename(newName) {
+      if (this.renameIndex !== null && this.renameIndex >= 0 && this.renameIndex < this.recentSearches.length) {
+        if (newName?.trim()) {
+          this.recentSearches[this.renameIndex].displayName = newName.trim()
+        } else {
+          delete this.recentSearches[this.renameIndex].displayName
+        }
+        localStorage.setItem('recent_dpe_searches', JSON.stringify(this.recentSearches))
+      }
+      this.showRenameModal = false
+      this.renameIndex = null
     },
 
     formatAddress(address) {

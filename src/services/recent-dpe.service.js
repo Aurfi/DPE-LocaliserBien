@@ -227,22 +227,92 @@ export { geocodeAddress }
  * Recherche les DPE récents autour d'une adresse
  */
 export async function searchRecentDPE(criteria) {
-  // 1. Géocoder l'adresse
-  const { lat, lon, formattedAddress, postalCode, city } = await geocodeAddress(criteria.address)
-
-  // 2. Calculer la date limite
+  // 1. Calculer la date limite
   const dateLimit = new Date()
   dateLimit.setMonth(dateLimit.getMonth() - criteria.monthsBack)
   const dateLimitStr = dateLimit.toISOString().split('T')[0]
 
-  // 3. Recherche avec geo_distance dans le rayon demandé
-  const radius = criteria.radius
-  let results = await searchInRadius(lat, lon, radius, dateLimitStr, criteria.monthsBack, criteria)
+  // 2. Géocoder l'adresse pour obtenir les coordonnées (nécessaire pour la recherche par rayon)
+  const { lat, lon, formattedAddress, postalCode, city } = await geocodeAddress(criteria.address)
+
+  // 2b. Créer l'adresse combinée pour l'affichage et la recherche
+  let fullCombinedAddress = formattedAddress
+
+  // Vérifier si l'adresse géocodée contient déjà un numéro
+  const geocodedHasNumber = /^\d/.test(formattedAddress)
+
+  if (!geocodedHasNumber) {
+    // Si pas de numéro dans l'adresse géocodée, essayer d'en extraire un de l'input utilisateur
+    const numberMatch = criteria.address.match(/^(\d{1,4})\s+/)
+    if (numberMatch) {
+      fullCombinedAddress = `${numberMatch[1]} ${formattedAddress}`
+    }
+  }
+
+  // Créer une version simplifiée pour l'affichage
+  const displayAddress = fullCombinedAddress
+    .replace(/\s+\d{5}\s+/, ' ') // Enlever le code postal
+    .replace(/(\s+)([A-Z][a-zÀ-ÿ\-']{9,})/, (_match, space, city) => {
+      // Tronquer les noms de ville après 9 caractères
+      return `${space}${city.substring(0, 9)}...`
+    })
+
+  // 3. Faire les deux recherches en parallèle
+  const [exactAddressResults, radiusResults] = await Promise.all([
+    // Recherche par adresse exacte - passer l'adresse originale ET l'adresse géocodée
+    searchByAddress(criteria.address, formattedAddress, dateLimitStr, criteria),
+    // Recherche par rayon géographique
+    searchInRadius(lat, lon, criteria.radius, dateLimitStr, criteria.monthsBack, criteria)
+  ])
+
+  // 4. Combiner et dédupliquer les résultats
+  const resultsMap = new Map()
+
+  // D'abord ajouter les résultats de recherche exacte (avec distance 0)
+  if (exactAddressResults && exactAddressResults.length > 0) {
+    exactAddressResults.forEach(dpe => {
+      if (dpe.numero_dpe) {
+        resultsMap.set(dpe.numero_dpe, {
+          ...dpe,
+          _isExactMatch: true,
+          _distance: 0 // Les correspondances exactes ont toujours une distance de 0
+        })
+      }
+    })
+  }
+
+  // Ensuite ajouter les résultats du rayon (sans écraser les correspondances exactes)
+  if (radiusResults && radiusResults.length > 0) {
+    radiusResults.forEach(dpe => {
+      if (dpe.numero_dpe && !resultsMap.has(dpe.numero_dpe)) {
+        resultsMap.set(dpe.numero_dpe, {
+          ...dpe,
+          _isExactMatch: false
+        })
+      }
+    })
+  }
+
+  // Convertir la Map en array
+  let results = Array.from(resultsMap.values())
 
   // 5. Calculer les scores et distances ET mapper les résultats
   results = results
     .map(dpe => {
-      // Extraire les coordonnées GPS depuis _geopoint pour la distance
+      // Pour les correspondances exactes, garder la distance à 0
+      if (dpe._isExactMatch) {
+        const matchScore = calculateMatchScore(dpe, criteria)
+        const mappedResult = mapAdemeResult(dpe)
+        return {
+          ...mappedResult,
+          _distance: 0, // Distance 0 pour les correspondances exactes
+          _matchScore: matchScore,
+          _searchRadius: criteria.radius,
+          _isExactMatch: true
+        }
+      }
+
+      // Pour les autres, calculer la distance normale
       let dpeLat, dpeLon
       if (dpe._geopoint) {
         const coords = dpe._geopoint.split(',')
@@ -252,7 +322,7 @@ export async function searchRecentDPE(criteria) {
         return null
       }
 
-      const distance = calculateDistance(lat, lon, dpeLat, dpeLon)
+      const distance = dpe._distance !== undefined ? dpe._distance : calculateDistance(lat, lon, dpeLat, dpeLon)
       const matchScore = calculateMatchScore(dpe, criteria)
 
       // Mapper les champs ADEME vers notre format cohérent
@@ -262,28 +332,156 @@ export async function searchRecentDPE(criteria) {
         ...mappedResult,
         _distance: distance,
         _matchScore: matchScore,
-        _searchRadius: radius
+        _searchRadius: criteria.radius,
+        _isExactMatch: false
       }
     })
     .filter(r => r !== null)
 
-  // 6. Trier par distance (plus proche en premier)
+  // 6. Trier par distance (plus proche en premier, correspondances exactes d'abord)
   results.sort((a, b) => {
-    // Trier par distance croissante
+    // Les correspondances exactes viennent toujours en premier
+    if (a._isExactMatch && !b._isExactMatch) return -1
+    if (!a._isExactMatch && b._isExactMatch) return 1
+
+    // Sinon, trier par distance croissante
     return (a._distance || 0) - (b._distance || 0)
   })
 
   return {
     results: results, // Retourner tous les résultats, sans limite
-    searchAddress: formattedAddress,
+    searchAddress: displayAddress, // Version tronquée pour l'affichage
+    fullSearchAddress: fullCombinedAddress, // Version complète pour la comparaison
     searchCoordinates: { lat, lon },
     totalFound: results.length,
-    searchRadius: radius,
+    searchRadius: criteria.radius,
     postalCode: postalCode, // Inclure le code postal du géocodage
     searchMetadata: {
       postalCode: postalCode,
       city: city
     }
+  }
+}
+
+/**
+ * Effectue une recherche par adresse exacte
+ */
+async function searchByAddress(userInput, geocodedAddress, dateLimit, criteria) {
+  // Extraire le numéro de rue du début de l'input utilisateur (s'il existe)
+  let streetNumber = ''
+  const numberMatch = userInput.match(/^(\d{1,4})\s+/)
+  if (numberMatch) {
+    streetNumber = numberMatch[1]
+  }
+
+  // Construire l'adresse finale pour la recherche
+  let finalAddress
+  if (streetNumber && geocodedAddress) {
+    // Si on a un numéro et une adresse géocodée, combiner les deux
+    finalAddress = `${streetNumber} ${geocodedAddress}`
+  } else {
+    // Sinon utiliser l'input utilisateur tel quel
+    finalAddress = userInput
+  }
+
+  // Nettoyer légèrement l'adresse - garder les lettres, chiffres, espaces, tirets et apostrophes
+  // Normaliser les espaces multiples en un seul espace
+  const cleanedAddress = finalAddress
+    .replace(/[^\w\s\-']/g, ' ')
+    .replace(/\s+/g, ' ') // Remplacer les espaces multiples par un seul
+    .trim()
+
+  // Construire le filtre qs avec l'adresse et la date
+  // Utiliser une recherche plus stricte pour éviter trop de faux positifs
+  let qsFilter = `adresse_ban:"${cleanedAddress}" AND date_etablissement_dpe:>${dateLimit}`
+
+  // Ajouter les mêmes filtres que pour searchInRadius
+  // Ajouter le filtre de surface si spécifié (avec support des opérateurs)
+  if (criteria.surface) {
+    const surfaceComparison = parseComparisonValue(criteria.surface)
+    if (surfaceComparison && surfaceComparison.value > 0) {
+      if (surfaceComparison.operator === '=') {
+        // Pour une correspondance exacte, arrondir et utiliser ±1 m²
+        const roundedSurface = Math.round(surfaceComparison.value)
+        const minSurface = roundedSurface - 1
+        const maxSurface = roundedSurface + 1
+        qsFilter += ` AND surface_habitable_logement:[${minSurface} TO ${maxSurface}]`
+      } else {
+        // Pour les opérateurs < ou >, utiliser une requête de plage
+        const query = buildRangeQuery(surfaceComparison, 'surface_habitable_logement')
+        if (query) qsFilter += ` AND ${query}`
+      }
+    }
+  }
+
+  // Ajouter le filtre de consommation si spécifié
+  if (criteria.consommation) {
+    const consoComparison = parseComparisonValue(criteria.consommation)
+    if (consoComparison && consoComparison.value > 0) {
+      if (consoComparison.operator === '=') {
+        const exactValue = Math.round(consoComparison.value)
+        qsFilter += ` AND conso_5_usages_par_m2_ep:${exactValue}`
+      } else {
+        const query = buildRangeQuery(consoComparison, 'conso_5_usages_par_m2_ep')
+        if (query) qsFilter += ` AND ${query}`
+      }
+    }
+  }
+
+  // Ajouter le filtre GES si spécifié
+  if (criteria.ges) {
+    const gesComparison = parseComparisonValue(criteria.ges)
+    if (gesComparison && gesComparison.value > 0) {
+      if (gesComparison.operator === '=') {
+        const exactValue = Math.round(gesComparison.value)
+        qsFilter += ` AND emission_ges_5_usages_par_m2:${exactValue}`
+      } else {
+        const query = buildRangeQuery(gesComparison, 'emission_ges_5_usages_par_m2')
+        if (query) qsFilter += ` AND ${query}`
+      }
+    }
+  }
+
+  // Ajouter le filtre de type de bien si spécifié
+  if (criteria.typeBien) {
+    if (criteria.typeBien === 'maison') {
+      qsFilter += ` AND (type_batiment:"maison" OR type_batiment:"immeuble")`
+    } else if (criteria.typeBien === 'appartement') {
+      qsFilter += ` AND (type_batiment:"appartement" OR type_batiment:"immeuble")`
+    } else {
+      qsFilter += ` AND type_batiment:"${criteria.typeBien}"`
+    }
+  }
+
+  // Ajouter le filtre de classe énergétique si spécifié
+  if (criteria.energyClasses && criteria.energyClasses.length > 0) {
+    const classesFilter = criteria.energyClasses.map(c => c.toUpperCase()).join(' OR ')
+    qsFilter += ` AND etiquette_dpe:(${classesFilter})`
+  }
+
+  // Ajouter le filtre de classe GES si spécifié
+  if (criteria.gesClasses && criteria.gesClasses.length > 0) {
+    const gesClassesFilter = criteria.gesClasses.map(c => c.toUpperCase()).join(' OR ')
+    qsFilter += ` AND etiquette_ges:(${gesClassesFilter})`
+  }
+
+  const params = new URLSearchParams({
+    size: 100, // Limiter à 100 pour les correspondances exactes
+    sort: '-date_etablissement_dpe',
+    qs: qsFilter
+  })
+
+  const url = `${ADEME_API_URL}?${params}`
+
+  try {
+    const response = await fetch(url)
+    if (!response.ok) {
+      return [] // Retourner un tableau vide en cas d'erreur
+    }
+    const data = await response.json()
+    return data.results || []
+  } catch (_error) {
+    return [] // Retourner un tableau vide en cas d'erreur
   }
 }
 
@@ -302,9 +500,10 @@ async function searchInRadius(lat, lon, radius, dateLimit, _monthsBack, criteria
     const surfaceComparison = parseComparisonValue(criteria.surface)
     if (surfaceComparison && surfaceComparison.value > 0) {
       if (surfaceComparison.operator === '=') {
-        // Pour une correspondance exacte, utiliser une tolérance de ±20%
-        const minSurface = Math.round(surfaceComparison.value * 0.8)
-        const maxSurface = Math.round(surfaceComparison.value * 1.2)
+        // Pour une correspondance exacte, arrondir et utiliser ±1 m²
+        const roundedSurface = Math.round(surfaceComparison.value)
+        const minSurface = roundedSurface - 1
+        const maxSurface = roundedSurface + 1
         qsFilter += ` AND surface_habitable_logement:[${minSurface} TO ${maxSurface}]`
       } else {
         // Pour les opérateurs < ou >, utiliser une requête de plage
@@ -318,8 +517,14 @@ async function searchInRadius(lat, lon, radius, dateLimit, _monthsBack, criteria
   if (criteria.consommation) {
     const consoComparison = parseComparisonValue(criteria.consommation)
     if (consoComparison && consoComparison.value > 0) {
-      const query = buildRangeQuery(consoComparison, 'conso_5_usages_par_m2_ep')
-      if (query) qsFilter += ` AND ${query}`
+      if (consoComparison.operator === '=') {
+        // Pour une correspondance exacte de consommation, utiliser la valeur exacte
+        const exactValue = Math.round(consoComparison.value)
+        qsFilter += ` AND conso_5_usages_par_m2_ep:${exactValue}`
+      } else {
+        const query = buildRangeQuery(consoComparison, 'conso_5_usages_par_m2_ep')
+        if (query) qsFilter += ` AND ${query}`
+      }
     }
   }
 
@@ -327,8 +532,14 @@ async function searchInRadius(lat, lon, radius, dateLimit, _monthsBack, criteria
   if (criteria.ges) {
     const gesComparison = parseComparisonValue(criteria.ges)
     if (gesComparison && gesComparison.value > 0) {
-      const query = buildRangeQuery(gesComparison, 'emission_ges_5_usages_par_m2')
-      if (query) qsFilter += ` AND ${query}`
+      if (gesComparison.operator === '=') {
+        // Pour une correspondance exacte de GES, utiliser la valeur exacte
+        const exactValue = Math.round(gesComparison.value)
+        qsFilter += ` AND emission_ges_5_usages_par_m2:${exactValue}`
+      } else {
+        const query = buildRangeQuery(gesComparison, 'emission_ges_5_usages_par_m2')
+        if (query) qsFilter += ` AND ${query}`
+      }
     }
   }
 

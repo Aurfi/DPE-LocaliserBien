@@ -63,6 +63,7 @@
       <RecentDPEResults
         v-if="recentDPEResults"
         :results="recentDPEResults"
+        :searchCriteria="recentDPESearchCriteria"
         :departmentAverages="recentDPEResults.departmentAverages"
         @clear-results="handleClearRecentResults"
       />
@@ -163,7 +164,19 @@ export default {
 
         // Sauvegarder dans le cache si des résultats ont été trouvés
         if (this.searchResults && this.searchResults.totalFound > 0) {
-          this.saveToRecentSearches(searchData, this.searchResults.totalFound)
+          // Trouver le meilleur matchScore et compter les correspondances parfaites
+          let bestMatchScore = 0
+          let perfectMatchCount = 0
+
+          this.searchResults.results?.forEach(result => {
+            const score = result.matchScore || 0
+            bestMatchScore = Math.max(bestMatchScore, score)
+            if (score >= 99) {
+              perfectMatchCount++
+            }
+          })
+
+          this.saveToRecentSearches(searchData, this.searchResults.totalFound, bestMatchScore, perfectMatchCount)
         }
       } catch (error) {
         // En cas d'erreur, on peut afficher un message d'erreur
@@ -217,9 +230,10 @@ export default {
       this.showAnimation = true
     },
 
-    async handleRecentDPEResults(_searchCriteria, results) {
-      // Stocker les résultats quand ils arrivent
+    async handleRecentDPEResults(searchCriteria, results) {
+      // Stocker les résultats et les critères de recherche quand ils arrivent
       this.recentDPEResults = results
+      this.recentDPESearchCriteria = searchCriteria
 
       // Charger les moyennes départementales si nous avons des résultats
       if (results?.results && results.results.length > 0) {
@@ -262,7 +276,7 @@ export default {
       }
     },
 
-    saveToRecentSearches(searchData, resultCount) {
+    saveToRecentSearches(searchData, resultCount, matchScore = 0, perfectMatchCount = 0) {
       try {
         // Récupérer les recherches existantes
         const stored = localStorage.getItem('dpe_recent_searches')
@@ -276,7 +290,10 @@ export default {
           ges: searchData.emissionGES,
           energyClass: searchData.energyClass,
           gesClass: searchData.gesClass,
+          typeBien: searchData.typeBien,
           resultCount: resultCount,
+          matchScore: matchScore,
+          perfectMatchCount: perfectMatchCount,
           timestamp: Date.now()
         }
 
@@ -289,8 +306,12 @@ export default {
         )
 
         if (existingIndex !== -1) {
-          // Mettre à jour la recherche existante
+          // Mettre à jour la recherche existante en préservant le displayName
+          const existingDisplayName = searches[existingIndex].displayName
           searches[existingIndex] = newSearch
+          if (existingDisplayName) {
+            searches[existingIndex].displayName = existingDisplayName
+          }
         } else {
           // Ajouter en début de liste
           searches.unshift(newSearch)

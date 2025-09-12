@@ -2,45 +2,46 @@
   <div v-if="results" class="mt-8 max-w-6xl mx-auto">
     <!-- En-tête des résultats -->
     <div class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 mb-6 border border-white/50 dark:border-gray-700/50">
-      <div class="flex items-center justify-between">
-        <div class="flex-1">
-          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">
-            {{ filteredResults.length }} résultat{{ filteredResults.length > 1 ? 's' : '' }} affiché{{ filteredResults.length > 1 ? 's' : '' }}
-            <span v-if="hiddenResults.size > 0" class="text-sm text-gray-500 dark:text-gray-400">({{ hiddenResults.size }} masqué{{ hiddenResults.size > 1 ? 's' : '' }})</span>
-          </h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Autour de {{ results.searchAddress }}
-            <span class="text-xs text-gray-500 dark:text-gray-500">(rayon: {{ results.searchRadius }} km)</span>
-          </p>
-        </div>
-        <div class="flex items-center gap-3">
-          <!-- Menu déroulant de tri - afficher seulement s'il y a plus de 3 résultats -->
-          <div v-if="filteredResults.length > 3" class="flex items-center gap-2">
-            <span class="text-sm text-gray-600 dark:text-gray-400">Trier :</span>
-            <div class="relative">
-              <select 
-                v-model="sortBy"
-                @change="sortResults"
-                class="appearance-none bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
-              >
-                <option value="distance">Par distance</option>
-                <option value="surface">Par surface</option>
-                <option value="date-desc">Par DPE (récent)</option>
-                <option value="date-asc">Par DPE (ancien)</option>
-                <option value="construction-desc">Par année de construction (récent)</option>
-                <option value="construction-asc">Par année de construction (ancien)</option>
-              </select>
-              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 dark:text-gray-400">
-                <ChevronDown class="w-4 h-4" />
-              </div>
-            </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex-1">
+            <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">
+              {{ filteredResults.length }} résultat{{ filteredResults.length > 1 ? 's' : '' }} affiché{{ filteredResults.length > 1 ? 's' : '' }}
+              <span v-if="hiddenResults.size > 0" class="text-sm text-gray-500 dark:text-gray-400">({{ hiddenResults.size }} masqué{{ hiddenResults.size > 1 ? 's' : '' }})</span>
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+              Autour de {{ results.searchAddress }}
+              <span class="text-xs text-gray-500 dark:text-gray-500">(rayon: {{ results.searchRadius }} km)</span>
+            </p>
           </div>
           <button
             @click="$emit('clear-results')"
-            class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+            class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors sm:ml-4"
           >
             <X class="w-6 h-6" />
           </button>
+        </div>
+        
+        <!-- Menu déroulant de tri - moved to separate row on mobile -->
+        <div v-if="filteredResults.length > 3" class="flex items-center gap-2">
+          <span class="text-sm text-gray-600 dark:text-gray-400">Trier :</span>
+          <div class="relative flex-1 sm:flex-initial">
+            <select 
+              v-model="sortBy"
+              @change="sortResults"
+              class="w-full sm:w-auto appearance-none bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
+            >
+              <option value="distance">Distance</option>
+              <option value="surface">Surface</option>
+              <option value="date-desc">DPE récent</option>
+              <option value="date-asc">DPE ancien</option>
+              <option value="construction-desc">Construction récente</option>
+              <option value="construction-asc">Construction ancienne</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 dark:text-gray-400">
+              <ChevronDown class="w-4 h-4" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -205,6 +206,10 @@ export default {
       type: Object,
       default: null
     },
+    searchCriteria: {
+      type: Object,
+      default: null
+    },
     departmentAverages: {
       type: Object,
       default: null
@@ -232,12 +237,25 @@ export default {
 
       // Puis appliquer le tri
       if (sortBy.value === 'surface') {
-        // Trier par surface (décroissant - plus grand en premier)
-        results = [...results].sort((a, b) => {
-          const surfA = a.surfaceHabitable || 0
-          const surfB = b.surfaceHabitable || 0
-          return surfB - surfA
-        })
+        // Trier par proximité de surface par rapport à la valeur recherchée
+        const targetSurface = props.searchCriteria?.surface ? parseFloat(props.searchCriteria.surface) : null
+        if (targetSurface) {
+          // Trier par différence absolue avec la surface recherchée
+          results = [...results].sort((a, b) => {
+            const surfA = a.surfaceHabitable || 0
+            const surfB = b.surfaceHabitable || 0
+            const diffA = Math.abs(surfA - targetSurface)
+            const diffB = Math.abs(surfB - targetSurface)
+            return diffA - diffB
+          })
+        } else {
+          // Si pas de surface recherchée, trier par surface décroissante
+          results = [...results].sort((a, b) => {
+            const surfA = a.surfaceHabitable || 0
+            const surfB = b.surfaceHabitable || 0
+            return surfB - surfA
+          })
+        }
       } else if (sortBy.value === 'construction-asc') {
         // Trier par année de construction (croissant - ancien en premier)
         results = [...results].sort((a, b) => {
@@ -269,8 +287,24 @@ export default {
       } else {
         // Par défaut : trier par distance (croissant - plus proche en premier)
         results = [...results].sort((a, b) => {
-          const distA = a.distance !== undefined ? a.distance : Infinity
-          const distB = b.distance !== undefined ? b.distance : Infinity
+          // Vérifier si l'adresse ADEME correspond exactement à notre recherche
+          // Normaliser les adresses pour la comparaison (ignorer la casse et les espaces multiples)
+          const normalizeAddr = addr => (addr || '').toLowerCase().replace(/\s+/g, ' ').trim()
+          const searchAddr = normalizeAddr(props.results?.fullSearchAddress || props.results?.searchAddress || '')
+
+          const aMatchesSearch = normalizeAddr(a.adresse_ban || a.adresseComplete) === searchAddr
+          const bMatchesSearch = normalizeAddr(b.adresse_ban || b.adresseComplete) === searchAddr
+
+          // Les correspondances exactes (marquées ou détectées) viennent en premier
+          const aIsExact = a._isExactMatch || aMatchesSearch
+          const bIsExact = b._isExactMatch || bMatchesSearch
+
+          if (aIsExact && !bIsExact) return -1
+          if (!aIsExact && bIsExact) return 1
+
+          // Sinon trier par distance
+          const distA = a._distance !== undefined ? a._distance : a.distance !== undefined ? a.distance : Infinity
+          const distB = b._distance !== undefined ? b._distance : b.distance !== undefined ? b.distance : Infinity
           return distA - distB
         })
       }
@@ -361,11 +395,9 @@ export default {
       if (!dpe) return ''
       const lat = getLatitudeFromGeopoint(dpe._geopoint)
       const lon = getLongitudeFromGeopoint(dpe._geopoint)
-      // Construire une adresse adaptée à la région ; préférer l'adresse pour Google
+      // Utiliser directement adresse_ban qui contient l'adresse complète
       const region = getGoogleRegionLabel(dpe.code_postal_ban || dpe.code_postal_brut)
-      const baseAddress = dpe.nom_rue_ban || dpe.adresse_ban || dpe.adresse_brut || ''
-      const cityPart = `${dpe.code_postal_ban || dpe.code_postal_brut || ''} ${dpe.nom_commune_ban || ''}`.trim()
-      const address = `${baseAddress ? `${baseAddress}, ` : ''}${cityPart}${cityPart ? ', ' : ''}${region}`
+      const address = `${dpe.adresse_ban || ''}, ${region}`
       return getGoogleMapsEmbedUrl(lat, lon, address, 19)
     }
 

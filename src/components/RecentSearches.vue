@@ -20,12 +20,32 @@
       @cancel="showConfirmModal = false"
     />
     
+    <!-- Modal de renommage -->
+    <InputModal
+      :show="showRenameModal"
+      title="Renommer la recherche"
+      message="Entrez un nom personnalisé pour cette recherche"
+      :initial-value="renameInitialValue"
+      placeholder="Ex: Maison de vacances"
+      confirm-text="Renommer"
+      cancel-text="Annuler"
+      @confirm="confirmRename"
+      @cancel="showRenameModal = false"
+    />
+    
     <!-- Context Menu -->
     <div 
       v-if="contextMenu.show"
-      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[120px]"
+      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[140px]"
       :style="{ top: contextMenu.y + 'px', left: contextMenu.x + 'px' }"
     >
+      <button
+        @click="renameSearchItem(contextMenu.index)"
+        class="w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 flex items-center gap-2"
+      >
+        <Edit2 class="w-4 h-4" />
+        Renommer
+      </button>
       <button
         @click="deleteSearchItem(contextMenu.index)"
         class="w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 flex items-center gap-2"
@@ -43,10 +63,20 @@
         @contextmenu.prevent="showContextMenu($event, index)"
         class="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-[1.02] border border-gray-100 dark:border-gray-700"
       >
-        <!-- Badge nombre de résultats -->
-        <div class="absolute -top-2 -right-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">
-          {{ search.resultCount }} résultat{{ search.resultCount > 1 ? 's' : '' }}
+        <!-- Badge nombre de résultats (top-right) -->
+        <div class="absolute -top-2 right-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium px-2 py-1 rounded-full shadow-md flex items-center">
+          <span class="text-sm">{{ search.resultCount }}</span> <span class="text-sm ml-1">résultat{{ search.resultCount > 1 ? 's' : '' }}</span>
         </div>
+        
+        <!-- Badge correspondance parfaite/multiple (below top-right) -->
+        <div 
+          v-if="search.matchScore && search.matchScore >= 99"
+          class="absolute top-6 right-2 text-white font-medium px-2 py-1 rounded-full shadow-md flex items-center justify-center min-w-[24px]"
+          :class="search.perfectMatchCount > 1 ? 'bg-gradient-to-r from-yellow-500 to-yellow-600' : 'bg-gradient-to-r from-green-500 to-green-600'"
+        >
+          <span class="text-sm">{{ search.perfectMatchCount || 1 }}</span>
+        </div>
+        
         
         <!-- Contenu de la carte -->
         <div class="space-y-3">
@@ -54,20 +84,26 @@
           <div class="flex items-center gap-2">
             <MapPin class="w-4 h-4 text-gray-400" />
             <span class="font-medium text-gray-900 dark:text-gray-100 text-lg">
-              {{ formatCommune(search.commune) }}
+              {{ search.displayName || formatCommune(search.commune) }}
             </span>
           </div>
           
-          <!-- Infos DPE -->
-          <div class="grid grid-cols-2 gap-3 text-sm">
-            <!-- Surface -->
-            <div class="flex items-center gap-1.5">
-              <Home class="w-3.5 h-3.5 text-gray-400" />
-              <span class="text-gray-600 dark:text-gray-300">
-                {{ search.surface }} m²
-              </span>
-            </div>
-            
+          <!-- Infos DPE - Surface sur sa ligne -->
+          <div class="flex items-center gap-1.5 text-sm">
+            <!-- Icône selon le type de bien -->
+            <Home v-if="search.typeBien === 'maison'" class="w-3.5 h-3.5 text-gray-400" />
+            <Building2 v-else-if="search.typeBien === 'appartement'" class="w-3.5 h-3.5 text-gray-400" />
+            <svg v-else xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400">
+              <path d="M12 3v17a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1H3"/>
+              <path d="m16 19 2 2 4-4"/>
+            </svg>
+            <span class="text-gray-600 dark:text-gray-300">
+              {{ search.surface }} m²
+            </span>
+          </div>
+          
+          <!-- Consommation et GES sur la même ligne -->
+          <div class="flex items-center gap-4 text-sm">
             <!-- Consommation -->
             <div v-if="search.consommation" class="flex items-center gap-1.5">
               <Zap class="w-3.5 h-3.5 text-gray-400" />
@@ -131,24 +167,31 @@
 </template>
 
 <script>
-import { Clock, Home, MapPin, Trash2, Zap } from 'lucide-vue-next'
+import { Building2, Clock, Edit2, Home, MapPin, Trash2, Zap } from 'lucide-vue-next'
 import ConfirmationModal from './ConfirmationModal.vue'
+import InputModal from './InputModal.vue'
 
 export default {
   name: 'RecentSearches',
   components: {
     MapPin,
     Home,
+    Building2,
     Zap,
     Clock,
     Trash2,
-    ConfirmationModal
+    Edit2,
+    ConfirmationModal,
+    InputModal
   },
   emits: ['relaunch-search'],
   data() {
     return {
       recentSearches: [],
       showConfirmModal: false,
+      showRenameModal: false,
+      renameIndex: null,
+      renameInitialValue: '',
       contextMenu: {
         show: false,
         x: 0,
@@ -315,6 +358,29 @@ export default {
         localStorage.setItem('dpe_recent_searches', JSON.stringify(this.recentSearches))
         this.hideContextMenu()
       }
+    },
+
+    renameSearchItem(index) {
+      if (index !== null && index >= 0 && index < this.recentSearches.length) {
+        const search = this.recentSearches[index]
+        this.renameIndex = index
+        this.renameInitialValue = search.displayName || this.formatCommune(search.commune)
+        this.showRenameModal = true
+      }
+      this.hideContextMenu()
+    },
+
+    confirmRename(newName) {
+      if (this.renameIndex !== null && this.renameIndex >= 0 && this.renameIndex < this.recentSearches.length) {
+        if (newName?.trim()) {
+          this.recentSearches[this.renameIndex].displayName = newName.trim()
+        } else {
+          delete this.recentSearches[this.renameIndex].displayName
+        }
+        localStorage.setItem('dpe_recent_searches', JSON.stringify(this.recentSearches))
+      }
+      this.showRenameModal = false
+      this.renameIndex = null
     }
   }
 }

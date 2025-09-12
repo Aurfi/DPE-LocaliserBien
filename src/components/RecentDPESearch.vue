@@ -421,8 +421,12 @@ export default {
         )
 
         if (existingIndex !== -1) {
-          // Mettre à jour la recherche existante
+          // Mettre à jour la recherche existante en préservant le displayName
+          const existingDisplayName = searches[existingIndex].displayName
           searches[existingIndex] = newSearch
+          if (existingDisplayName) {
+            searches[existingIndex].displayName = existingDisplayName
+          }
         } else {
           // Ajouter en début de liste
           searches.unshift(newSearch)

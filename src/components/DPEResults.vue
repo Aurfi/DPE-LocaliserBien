@@ -29,50 +29,51 @@
 
     <!-- En-tête des résultats -->
     <div v-else class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm px-5 py-4 mb-6">
-      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div class="flex-1">
-          <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">
-            {{ filteredResults.length }} résultat{{ filteredResults.length > 1 ? 's' : '' }} affiché{{ filteredResults.length > 1 ? 's' : '' }} 
-            <span v-if="hiddenResults.size > 0" class="text-sm text-gray-500 dark:text-gray-400">({{ hiddenResults.size }} masqué{{ hiddenResults.size > 1 ? 's' : '' }})</span>
-          </h2>
-          <p class="text-sm mt-1" :class="getMatchStatusClass()">
-            {{ getMatchStatusText() }}
-          </p>
-          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-            Autour de {{ getSearchLocation() }}
-            <span v-if="searchCriteria?.distance" class="text-gray-400 dark:text-gray-500"> (rayon: {{ searchCriteria.distance }} km)</span>
-          </p>
-        </div>
-        <div class="flex items-center gap-3">
-          <!-- Sorting dropdown - only show if more than 3 results -->
-          <div v-if="filteredResults.length > 3" class="flex items-center gap-2">
-            <span class="text-sm text-gray-600 dark:text-gray-400">Trier :</span>
-            <div class="relative">
-              <select 
-                v-model="sortBy"
-                @change="sortResults"
-                class="appearance-none bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
-              >
-                <option value="score">Par score</option>
-                <option value="distance" v-if="hasDistanceData">Par distance</option>
-                <option value="surface">Par surface</option>
-                <option value="date-desc">Par DPE (récent)</option>
-                <option value="date-asc">Par DPE (ancien)</option>
-                <option value="construction-desc">Par année de construction (récent)</option>
-                <option value="construction-asc">Par année de construction (ancien)</option>
-              </select>
-              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 dark:text-gray-400">
-                <ChevronDown class="w-4 h-4" />
-              </div>
-            </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex-1">
+            <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">
+              {{ filteredResults.length }} résultat{{ filteredResults.length > 1 ? 's' : '' }} affiché{{ filteredResults.length > 1 ? 's' : '' }} 
+              <span v-if="hiddenResults.size > 0" class="text-sm text-gray-500 dark:text-gray-400">({{ hiddenResults.size }} masqué{{ hiddenResults.size > 1 ? 's' : '' }})</span>
+            </h2>
+            <p class="text-sm mt-1" :class="getMatchStatusClass()">
+              {{ getMatchStatusText() }}
+            </p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Autour de {{ getSearchLocation() }}
+              <span v-if="searchCriteria?.distance" class="text-gray-400 dark:text-gray-500"> (rayon: {{ searchCriteria.distance }} km)</span>
+            </p>
           </div>
           <button 
             @click="$emit('newSearch')"
-            class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors sm:ml-4"
             title="Fermer"
           >
             <X class="w-6 h-6" />
           </button>
+        </div>
+        
+        <!-- Sorting dropdown - moved to separate row on mobile -->
+        <div v-if="filteredResults.length > 3" class="flex items-center gap-2">
+          <span class="text-sm text-gray-600 dark:text-gray-400">Trier :</span>
+          <div class="relative flex-1 sm:flex-initial">
+            <select 
+              v-model="sortBy"
+              @change="sortResults"
+              class="w-full sm:w-auto appearance-none bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
+            >
+              <option value="score">Score</option>
+              <option value="distance" v-if="hasDistanceData">Distance</option>
+              <option value="surface">Surface</option>
+              <option value="date-desc">DPE récent</option>
+              <option value="date-asc">DPE ancien</option>
+              <option value="construction-desc">Construction récente</option>
+              <option value="construction-asc">Construction ancienne</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 dark:text-gray-400">
+              <ChevronDown class="w-4 h-4" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

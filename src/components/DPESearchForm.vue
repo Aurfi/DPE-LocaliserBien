@@ -25,9 +25,6 @@
                   : 'border-gray-200 dark:border-gray-700 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400'
               ]"
             />
-            <p v-if="communeError" class="mt-1 text-sm text-red-600 dark:text-red-400">
-              {{ communeError }}
-            </p>
           </div>
 
           <!-- Surface (en deuxième) -->
@@ -53,9 +50,6 @@
                 m²
               </span>
             </div>
-            <p v-if="surfaceError" class="mt-1 text-sm text-red-600 dark:text-red-400">
-              {{ surfaceError }}
-            </p>
             <!-- Property type selector -->
             <div class="mt-1">
               <div class="flex gap-1">
@@ -119,9 +113,6 @@
                 kWh/m²/an
               </span>
             </div>
-            <p v-if="consommationError" class="mt-1 text-sm text-red-600 dark:text-red-400">
-              {{ consommationError }}
-            </p>
             <!-- Sélection par classe énergétique -->
             <div class="mt-1">
               <div class="flex gap-1 flex-wrap">
@@ -323,14 +314,14 @@ export default {
     // Validation errors for each field
     communeError() {
       if (!this.touchedFields.commune) return null
-      if (!this.formData.commune) return 'La commune est requise'
+      if (!this.formData.commune) return true
       if (this.formData.commune.length < 2) return 'Minimum 2 caractères'
       return null
     },
 
     surfaceError() {
       if (!this.touchedFields.surface) return null
-      if (!this.formData.surface) return 'La surface est requise'
+      if (!this.formData.surface) return true
       const surfaceValue = this.parseNumericValue(this.formData.surface)
       if (surfaceValue && surfaceValue < 10 && !this.formData.surface?.includes('<')) {
         return 'Minimum 10 m²'
@@ -341,7 +332,7 @@ export default {
     consommationError() {
       if (!this.touchedFields.consommation) return null
       if (!this.formData.consommation && !this.selectedEnergyClass) {
-        return 'La consommation est requise'
+        return true
       }
       const consommationValue = this.parseNumericValue(this.formData.consommation)
       if (consommationValue && consommationValue < 10 && !this.formData.consommation?.includes('<')) {
