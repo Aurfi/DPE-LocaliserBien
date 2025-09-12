@@ -15,19 +15,24 @@
         </div>
         <div class="flex items-center gap-3">
           <!-- Menu déroulant de tri - afficher seulement s'il y a plus de 3 résultats -->
-          <div v-if="filteredResults.length > 3" class="relative">
-            <select 
-              v-model="sortBy"
-              @change="sortResults"
-              class="appearance-none bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
-            >
-              <option value="distance">Trier par distance</option>
-              <option value="surface">Trier par surface</option>
-              <option value="date-desc">Trier du plus récent au plus ancien</option>
-              <option value="date-asc">Trier du plus ancien au plus récent</option>
-            </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 dark:text-gray-400">
-              <ChevronDown class="w-4 h-4" />
+          <div v-if="filteredResults.length > 3" class="flex items-center gap-2">
+            <span class="text-sm text-gray-600 dark:text-gray-400">Trier :</span>
+            <div class="relative">
+              <select 
+                v-model="sortBy"
+                @change="sortResults"
+                class="appearance-none bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-sm rounded-lg px-3 py-2 pr-8 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors cursor-pointer"
+              >
+                <option value="distance">Par distance</option>
+                <option value="surface">Par surface</option>
+                <option value="date-desc">Par DPE (récent)</option>
+                <option value="date-asc">Par DPE (ancien)</option>
+                <option value="construction-desc">Par année de construction (récent)</option>
+                <option value="construction-asc">Par année de construction (ancien)</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 dark:text-gray-400">
+                <ChevronDown class="w-4 h-4" />
+              </div>
             </div>
           </div>
           <button
@@ -94,13 +99,11 @@
             <div class="font-bold text-gray-800 dark:text-gray-200">{{ Math.round(dpe.surface_habitable_logement) }} m²</div>
           </div>
 
-          <!-- Classe énergétique -->
+          <!-- Année de construction -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
-            <div class="text-xs text-gray-500 dark:text-gray-400">Classe</div>
-            <div class="flex items-center">
-              <span :class="['font-bold px-2 py-1 rounded text-sm', getClasseColor(dpe.etiquette_dpe)]">
-                {{ dpe.etiquette_dpe || 'N/A' }}
-              </span>
+            <div class="text-xs text-gray-500 dark:text-gray-400">Année</div>
+            <div class="font-bold text-gray-800 dark:text-gray-200">
+              {{ dpe.annee_construction || 'N/A' }}
             </div>
           </div>
         </div>
@@ -234,6 +237,20 @@ export default {
           const surfA = a.surface_habitable_logement || 0
           const surfB = b.surface_habitable_logement || 0
           return surfB - surfA
+        })
+      } else if (sortBy.value === 'construction-asc') {
+        // Trier par année de construction (croissant - ancien en premier)
+        results = [...results].sort((a, b) => {
+          const yearA = a.annee_construction || 9999
+          const yearB = b.annee_construction || 9999
+          return yearA - yearB
+        })
+      } else if (sortBy.value === 'construction-desc') {
+        // Trier par année de construction (décroissant - récent en premier)
+        results = [...results].sort((a, b) => {
+          const yearA = a.annee_construction || 0
+          const yearB = b.annee_construction || 0
+          return yearB - yearA
         })
       } else if (sortBy.value === 'date-desc') {
         // Trier par date (décroissant - plus récent en premier)
