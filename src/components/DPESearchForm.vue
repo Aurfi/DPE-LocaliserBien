@@ -26,13 +26,18 @@
             <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
               Surface
             </label>
-            <input 
-              v-model="formData.surface"
-              type="text" 
-              placeholder="ex : 100m²"
-              @input="validateSurfaceInput"
-              class="w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners"
-            />
+            <div class="relative">
+              <input 
+                v-model="formData.surface"
+                type="text" 
+                placeholder="ex : 100"
+                @input="validateSurfaceInput"
+                class="w-full px-4 py-3 pr-12 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners"
+              />
+              <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
+                m²
+              </span>
+            </div>
             <!-- Property type selector -->
             <div class="mt-1">
               <div class="flex gap-1">
@@ -73,14 +78,19 @@
             <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
               Consommation primaire
             </label>
-            <input 
-              v-model="formData.consommation"
-              type="text" 
-              :placeholder="selectedEnergyClass ? '' : 'ex : 250 kWh/m²/an'"
-              @input="validateConsommationInput"
-              :disabled="selectedEnergyClass !== null"
-              class="w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
-            />
+            <div class="relative">
+              <input 
+                v-model="formData.consommation"
+                type="text" 
+                :placeholder="selectedEnergyClass ? '' : 'ex : 250'"
+                @input="validateConsommationInput"
+                :disabled="selectedEnergyClass !== null"
+                class="w-full px-4 py-3 pr-24 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
+              />
+              <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
+                kWh/m²/an
+              </span>
+            </div>
             <!-- Sélection par classe énergétique -->
             <div class="mt-1">
               <div class="flex gap-1 flex-wrap">
@@ -110,16 +120,21 @@
           <!-- GES optionnel (en quatrième) -->
           <div class="w-full md:flex-1 md:min-w-[140px]">
             <label class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
-              GES kg CO₂/m²/an <span class="text-xs opacity-60">(optionnel)</span>
+              GES <span class="text-xs opacity-60">(optionnel)</span>
             </label>
-            <input 
-              v-model="formData.ges"
-              type="text" 
-              :placeholder="selectedGESClass ? '' : 'ex : 58'"
-              @input="validateGESInput"
-              :disabled="selectedGESClass !== null"
-              class="w-full px-4 py-3 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500/60 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
-            />
+            <div class="relative">
+              <input 
+                v-model="formData.ges"
+                type="text" 
+                :placeholder="selectedGESClass ? '' : 'ex : 58'"
+                @input="validateGESInput"
+                :disabled="selectedGESClass !== null"
+                class="w-full px-4 py-3 pr-28 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500/60 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
+              />
+              <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
+                kgCO₂/m²/an
+              </span>
+            </div>
             <!-- Sélection par classe GES -->
             <div class="mt-1">
               <div class="flex gap-1 flex-wrap">
