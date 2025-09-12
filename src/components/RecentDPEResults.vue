@@ -96,14 +96,14 @@
           <!-- Surface -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
             <div class="text-xs text-gray-500 dark:text-gray-400">Surface</div>
-            <div class="font-bold text-gray-800 dark:text-gray-200">{{ Math.round(dpe.surface_habitable_logement) }} m²</div>
+            <div class="font-bold text-gray-800 dark:text-gray-200">{{ Math.round(dpe.surfaceHabitable) }} m²</div>
           </div>
 
           <!-- Année de construction -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
             <div class="text-xs text-gray-500 dark:text-gray-400">Année</div>
             <div class="font-bold text-gray-800 dark:text-gray-200">
-              {{ dpe.annee_construction || 'N/A' }}
+              {{ formatYearDisplay(dpe.anneeConstruction) }}
             </div>
           </div>
         </div>
@@ -234,22 +234,22 @@ export default {
       if (sortBy.value === 'surface') {
         // Trier par surface (décroissant - plus grand en premier)
         results = [...results].sort((a, b) => {
-          const surfA = a.surface_habitable_logement || 0
-          const surfB = b.surface_habitable_logement || 0
+          const surfA = a.surfaceHabitable || 0
+          const surfB = b.surfaceHabitable || 0
           return surfB - surfA
         })
       } else if (sortBy.value === 'construction-asc') {
         // Trier par année de construction (croissant - ancien en premier)
         results = [...results].sort((a, b) => {
-          const yearA = a.annee_construction || 9999
-          const yearB = b.annee_construction || 9999
+          const yearA = extractYearFromValue(a.anneeConstruction) || 9999
+          const yearB = extractYearFromValue(b.anneeConstruction) || 9999
           return yearA - yearB
         })
       } else if (sortBy.value === 'construction-desc') {
         // Trier par année de construction (décroissant - récent en premier)
         results = [...results].sort((a, b) => {
-          const yearA = a.annee_construction || 0
-          const yearB = b.annee_construction || 0
+          const yearA = extractYearFromValue(a.anneeConstruction) || 0
+          const yearB = extractYearFromValue(b.anneeConstruction) || 0
           return yearB - yearA
         })
       } else if (sortBy.value === 'date-desc') {
@@ -430,6 +430,20 @@ export default {
       }
     }
 
+    // Extraire l'année d'une valeur qui peut être une année simple ou une plage (ex: "1948-1974")
+    const extractYearFromValue = value => {
+      if (!value) return null
+      const strValue = String(value)
+      // Chercher le premier nombre à 4 chiffres
+      const match = strValue.match(/(\d{4})/)
+      return match ? parseInt(match[1]) : null
+    }
+
+    // Formater l'affichage de l'année (garder la plage complète pour l'affichage)
+    const formatYearDisplay = value => {
+      return value || 'N/A'
+    }
+
     // Ajouter un écouteur d'événements pour la touche échap quand le composant est monté
     if (typeof window !== 'undefined') {
       window.addEventListener('keydown', handleEscapeKey)
@@ -461,7 +475,9 @@ export default {
       handleShowDetails,
       showContextMenu,
       hideContextMenu,
-      hideResult
+      hideResult,
+      extractYearFromValue,
+      formatYearDisplay
     }
   },
   unmounted() {

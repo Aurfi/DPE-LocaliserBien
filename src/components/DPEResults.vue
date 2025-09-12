@@ -177,7 +177,7 @@
             </div>
             <div v-if="result.anneeConstruction" class="text-center">
               <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Année</p>
-              <p class="text-base font-semibold text-gray-900 dark:text-gray-100">{{ result.anneeConstruction }}</p>
+              <p class="text-base font-semibold text-gray-900 dark:text-gray-100">{{ formatYearDisplay(result.anneeConstruction) }}</p>
             </div>
             <div v-if="result.typeBien === 'appartement' && getFloorDisplay(result)" class="text-right">
               <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Étage</p>
@@ -379,15 +379,15 @@ export default {
       } else if (this.sortBy === 'construction-asc') {
         // Tri par année de construction (croissant - ancien en premier)
         results = [...results].sort((a, b) => {
-          const yearA = a.anneeConstruction || 9999
-          const yearB = b.anneeConstruction || 9999
+          const yearA = this.extractYearFromValue(a.anneeConstruction) || 9999
+          const yearB = this.extractYearFromValue(b.anneeConstruction) || 9999
           return yearA - yearB
         })
       } else if (this.sortBy === 'construction-desc') {
         // Tri par année de construction (décroissant - récent en premier)
         results = [...results].sort((a, b) => {
-          const yearA = a.anneeConstruction || 0
-          const yearB = b.anneeConstruction || 0
+          const yearA = this.extractYearFromValue(a.anneeConstruction) || 0
+          const yearB = this.extractYearFromValue(b.anneeConstruction) || 0
           return yearB - yearA
         })
       } else if (this.sortBy === 'date-desc') {
@@ -433,6 +433,20 @@ export default {
     document.body.style.overflow = ''
   },
   methods: {
+    extractYearFromValue(value) {
+      // Extraire l'année d'une valeur qui peut être une année simple ou une plage (ex: "1948-1974")
+      if (!value) return null
+      const strValue = String(value)
+      // Chercher le premier nombre à 4 chiffres
+      const match = strValue.match(/(\d{4})/)
+      return match ? parseInt(match[1]) : null
+    },
+
+    formatYearDisplay(value) {
+      // Formater l'affichage de l'année (garder les plages comme "1948-1974")
+      return value || 'N/A'
+    },
+
     sortResults() {
       // Le tri est géré de manière réactive dans la propriété calculée
       // Cette méthode sert juste à déclencher le recalcul lors du changement de la liste déroulante
