@@ -17,8 +17,17 @@
               v-model="formData.commune"
               type="text" 
               placeholder="ex : 13080 ou Lyon"
-              class="w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100"
+              @blur="touchedFields.commune = true"
+              :class="[
+                'w-full px-4 py-3 text-base bg-gray-50 dark:bg-gray-900/50 border rounded-2xl focus:ring-2 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100',
+                communeError
+                  ? 'border-red-500 dark:border-red-400 focus:ring-red-500/20 focus:border-red-500 dark:focus:border-red-400'
+                  : 'border-gray-200 dark:border-gray-700 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400'
+              ]"
             />
+            <p v-if="communeError" class="mt-1 text-sm text-red-600 dark:text-red-400">
+              {{ communeError }}
+            </p>
           </div>
 
           <!-- Surface (en deuxième) -->
@@ -32,12 +41,21 @@
                 type="text" 
                 placeholder="ex : 100"
                 @input="validateSurfaceInput"
-                class="w-full px-4 py-3 pr-12 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners"
+                @blur="touchedFields.surface = true"
+                :class="[
+                  'w-full px-4 py-3 pr-12 text-base bg-gray-50 dark:bg-gray-900/50 border rounded-2xl focus:ring-2 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners',
+                  surfaceError
+                    ? 'border-red-500 dark:border-red-400 focus:ring-red-500/20 focus:border-red-500 dark:focus:border-red-400'
+                    : 'border-gray-200 dark:border-gray-700 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400'
+                ]"
               />
               <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
                 m²
               </span>
             </div>
+            <p v-if="surfaceError" class="mt-1 text-sm text-red-600 dark:text-red-400">
+              {{ surfaceError }}
+            </p>
             <!-- Property type selector -->
             <div class="mt-1">
               <div class="flex gap-1">
@@ -45,6 +63,8 @@
                   type="button"
                   tabindex="-1"
                   @click="selectPropertyType('maison')"
+                  aria-label="Rechercher une maison"
+                  :aria-pressed="formData.typeBien === 'maison'"
                   :class="[
                     'w-6 h-6 text-xs rounded font-semibold transition-all flex items-center justify-center',
                     formData.typeBien === 'maison'
@@ -59,6 +79,8 @@
                   type="button"
                   tabindex="-1"
                   @click="selectPropertyType('appartement')"
+                  aria-label="Rechercher un appartement"
+                  :aria-pressed="formData.typeBien === 'appartement'"
                   :class="[
                     'w-6 h-6 text-xs rounded font-semibold transition-all flex items-center justify-center',
                     formData.typeBien === 'appartement'
@@ -84,13 +106,22 @@
                 type="text" 
                 :placeholder="selectedEnergyClass ? '' : 'ex : 250'"
                 @input="validateConsommationInput"
+                @blur="touchedFields.consommation = true"
                 :disabled="selectedEnergyClass !== null"
-                class="w-full px-4 py-3 pr-24 text-base bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
+                :class="[
+                  'w-full px-4 py-3 pr-24 text-base bg-gray-50 dark:bg-gray-900/50 border rounded-2xl focus:ring-2 transition-all placeholder-gray-500 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed',
+                  consommationError
+                    ? 'border-red-500 dark:border-red-400 focus:ring-red-500/20 focus:border-red-500 dark:focus:border-red-400'
+                    : 'border-gray-200 dark:border-gray-700 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400'
+                ]"
               />
               <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
                 kWh/m²/an
               </span>
             </div>
+            <p v-if="consommationError" class="mt-1 text-sm text-red-600 dark:text-red-400">
+              {{ consommationError }}
+            </p>
             <!-- Sélection par classe énergétique -->
             <div class="mt-1">
               <div class="flex gap-1 flex-wrap">
@@ -100,6 +131,8 @@
                   type="button"
                   tabindex="-1"
                   @click="selectEnergyClass(classe)"
+                  :aria-label="`Classe énergétique ${classe}`"
+                  :aria-pressed="selectedEnergyClass === classe || getEnergyClassFromValue(formData.consommation) === classe"
                   :class="[
                     'px-1.5 py-0.5 text-xs rounded font-semibold transition-all',
                     selectedEnergyClass === classe || getEnergyClassFromValue(formData.consommation) === classe
@@ -180,6 +213,20 @@
             </span>
           </button>
         </div>
+        
+        <!-- Error message display -->
+        <div v-if="errorMessage" class="mt-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-4">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <svg class="h-5 w-5 text-red-400 dark:text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <div class="ml-3">
+              <p class="text-sm text-red-700 dark:text-red-300">{{ errorMessage }}</p>
+            </div>
+          </div>
+        </div>
       </form>
     </div>
   </div>
@@ -217,6 +264,7 @@ export default {
     return {
       // États de chargement
       isLoading: false,
+      errorMessage: null,
 
       // Données
       formData: {
@@ -231,7 +279,14 @@ export default {
 
       // Classes sélectionnées
       selectedEnergyClass: null,
-      selectedGESClass: null
+      selectedGESClass: null,
+
+      // Track which fields have been touched
+      touchedFields: {
+        commune: false,
+        surface: false,
+        consommation: false
+      }
     }
   },
   computed: {
@@ -263,6 +318,36 @@ export default {
         this.selectedEnergyClass !== null ||
         this.selectedGESClass !== null
       )
+    },
+
+    // Validation errors for each field
+    communeError() {
+      if (!this.touchedFields.commune) return null
+      if (!this.formData.commune) return 'La commune est requise'
+      if (this.formData.commune.length < 2) return 'Minimum 2 caractères'
+      return null
+    },
+
+    surfaceError() {
+      if (!this.touchedFields.surface) return null
+      if (!this.formData.surface) return 'La surface est requise'
+      const surfaceValue = this.parseNumericValue(this.formData.surface)
+      if (surfaceValue && surfaceValue < 10 && !this.formData.surface?.includes('<')) {
+        return 'Minimum 10 m²'
+      }
+      return null
+    },
+
+    consommationError() {
+      if (!this.touchedFields.consommation) return null
+      if (!this.formData.consommation && !this.selectedEnergyClass) {
+        return 'La consommation est requise'
+      }
+      const consommationValue = this.parseNumericValue(this.formData.consommation)
+      if (consommationValue && consommationValue < 10 && !this.formData.consommation?.includes('<')) {
+        return 'Minimum 10 kWh/m²/an'
+      }
+      return null
     }
   },
   watch: {
@@ -284,6 +369,9 @@ export default {
     // Gestion du formulaire
     handleSubmit() {
       if (this.isLoading) return
+
+      // Clear any previous error
+      this.errorMessage = null
 
       // Si aucun champ n'est rempli, utiliser les valeurs d'exemple
       if (!this.isPartiallyFilled) {

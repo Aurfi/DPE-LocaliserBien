@@ -5,10 +5,19 @@
 @layer base {
   html {
     font-family: "Inter", system-ui, sans-serif;
+    /* Light mode: Blue-purple gradient for iOS overscroll */
+    @apply bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600;
+  }
+  
+  /* Dark mode: Dark blue-purple gradient for iOS overscroll */
+  html.dark {
+    @apply bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900;
   }
 
   body {
     @apply bg-gray-50;
+    /* Dark mode background */
+    @apply dark:bg-gray-900;
   }
 }
 

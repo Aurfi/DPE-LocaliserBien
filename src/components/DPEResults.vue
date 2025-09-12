@@ -1,7 +1,34 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 py-6">
+    <!-- Error state -->
+    <div v-if="searchResult.searchStrategy === 'ERROR'" class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-2xl p-6 mb-6">
+      <div class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg class="h-6 w-6 text-red-400 dark:text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+        </div>
+        <div class="ml-3">
+          <h3 class="text-sm font-medium text-red-800 dark:text-red-200">
+            Erreur lors de la recherche
+          </h3>
+          <div class="mt-2 text-sm text-red-700 dark:text-red-300">
+            <p>{{ searchResult.diagnostics && searchResult.diagnostics[0] ? searchResult.diagnostics[0] : 'Une erreur est survenue lors de la recherche. Veuillez réessayer.' }}</p>
+          </div>
+          <div class="mt-4">
+            <button 
+              @click="$emit('newSearch')"
+              class="text-sm font-medium text-red-600 dark:text-red-400 hover:text-red-500 dark:hover:text-red-300"
+            >
+              Nouvelle recherche →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- En-tête des résultats -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm px-5 py-4 mb-6">
+    <div v-else class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm px-5 py-4 mb-6">
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div class="flex-1">
           <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">
