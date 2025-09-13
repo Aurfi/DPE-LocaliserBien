@@ -35,21 +35,21 @@
   <g transform="translate(16, 16)">
     <!-- Base hexagon with full gradient (filled only) -->
     <polygon
-      points="0,-12 10.4,-6 10.4,6 0,12 -10.4,6 -10.4,-6"
+      points="0,-15 13,-7.5 13,7.5 0,15 -13,7.5 -13,-7.5"
       fill="url(#fullGradient)"
       filter="url(#dropShadow)"
     />
     
     <!-- White stripe overlay in the middle -->
     <clipPath id="hexClip">
-      <polygon points="0,-12 10.4,-6 10.4,6 0,12 -10.4,6 -10.4,-6"/>
+      <polygon points="0,-15 13,-7.5 13,7.5 0,15 -13,7.5 -13,-7.5"/>
     </clipPath>
     
-    <rect x="-2" y="-12" width="4" height="24" fill="#FFFFFF" clip-path="url(#hexClip)"/>
+    <rect x="-2.5" y="-15" width="5" height="30" fill="#FFFFFF" clip-path="url(#hexClip)"/>
     
     <!-- Dark border on top of everything -->
     <polygon
-      points="0,-12 10.4,-6 10.4,6 0,12 -10.4,6 -10.4,-6"
+      points="0,-15 13,-7.5 13,7.5 0,15 -13,7.5 -13,-7.5"
       fill="none"
       stroke="#2E1065"
       stroke-width="0.4"
@@ -58,7 +58,7 @@
   </g>
   
   <!-- Location pin (centered on Paris area) -->
-  <g transform="translate(16, 14) scale(0.9)">
+  <g transform="translate(16, 14) scale(1.1)">
     <!-- Pin shadow -->
     <ellipse cx="0" cy="8" rx="2" ry="0.8" fill="black" opacity="0.25"/>
     
