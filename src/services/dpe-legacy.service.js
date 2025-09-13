@@ -502,7 +502,7 @@ class DPELegacyService {
 
       // Lien ADEME pour les données incomplètes
       ademeUrl: legacyData.numero_dpe
-        ? `https://www.observatoire-dpe.fr/index.php/recherche-dpe?numero=${legacyData.numero_dpe}`
+        ? `https://observatoire-dpe-audit.ademe.fr/afficher-dpe/${legacyData.numero_dpe}`
         : null
     }
   }
