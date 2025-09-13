@@ -2,6 +2,17 @@
 
 echo "🔍 Running pre-commit checks..."
 
+# Block committing .env files (secrets)
+echo "🛑 Checking for .env files in commit..."
+STAGED_ENV_FILES=$(git diff --cached --name-only | grep -E '(^|/)\.env(\..*)?$' | grep -Ev '\.env\.example$' || true)
+if [ -n "$STAGED_ENV_FILES" ]; then
+  echo "❌ Error: .env files detected in commit:"
+  echo "$STAGED_ENV_FILES" | sed 's/^/  - /'
+  echo "Please remove them from the commit (these files must never be committed)."
+  echo "Tip: git restore --staged <file>"
+  exit 1
+fi
+
 # Run linter
 echo "📝 Checking code style with Biome..."
 npm run lint || {

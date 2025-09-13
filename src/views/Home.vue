@@ -72,14 +72,20 @@
 </template>
 
 <script>
-import DPEResults from '../components/DPEResults.vue'
+// Composants critiques chargés immédiatement
+
+import { defineAsyncComponent } from 'vue'
 import DPESearchForm from '../components/DPESearchForm.vue'
-import RecentDPEResults from '../components/RecentDPEResults.vue'
-import RecentDPESearch from '../components/RecentDPESearch.vue'
-import RecentDPESearchHistory from '../components/RecentDPESearchHistory.vue'
-import RecentSearches from '../components/RecentSearches.vue'
-import TabNavigation from '../components/TabNavigation.vue'
-import TriangulationAnimation from '../components/TriangulationAnimation.vue'
+
+// Lazy loading des composants non-critiques pour améliorer le FCP
+const DPEResults = defineAsyncComponent(() => import('../components/ResultatsLocaliserDpe.vue'))
+const RecentDPEResults = defineAsyncComponent(() => import('../components/ResultatsDpeRecents.vue'))
+const RecentDPESearch = defineAsyncComponent(() => import('../components/RecentDPESearch.vue'))
+const RecentDPESearchHistory = defineAsyncComponent(() => import('../components/RecentDPESearchHistory.vue'))
+const RecentSearches = defineAsyncComponent(() => import('../components/RecentSearches.vue'))
+const TabNavigation = defineAsyncComponent(() => import('../components/TabNavigation.vue'))
+const TriangulationAnimation = defineAsyncComponent(() => import('../components/TriangulationAnimation.vue'))
+
 import DPESearchService from '../services/dpe-search.service.js' // Système de scoring clair
 
 export default {

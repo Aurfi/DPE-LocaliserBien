@@ -19,6 +19,9 @@
       <router-view />
     </main>
 
+    <!-- Bannière de guide pour nouveaux visiteurs -->
+    <GuideBanner />
+
     <!-- Footer -->
     <footer v-show="!modalOpen" class="relative z-10">
       <div class="max-w-4xl mx-auto px-4 py-4">
@@ -53,7 +56,7 @@
             
             <!-- À propos -->
             <div>
-              <a @click="handleLogoClick" class="flex items-center mb-2 group cursor-pointer">
+              <a href="/" @click.prevent="handleLogoClick" class="flex items-center mb-2 group cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2 transition-transform group-hover:scale-110">
             <defs>
               <linearGradient id="mapPinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -126,20 +129,7 @@
                     <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-green-100 dark:group-hover:bg-green-900/30 transition-colors mr-2">
                       <ExternalLink class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400" />
                     </span>
-                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">ADEME - Données DPE</span>
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href="https://geo.api.gouv.fr" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="footer-link group"
-                  >
-                    <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-green-100 dark:group-hover:bg-green-900/30 transition-colors mr-2">
-                      <ExternalLink class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400" />
-                    </span>
-                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">API Géographiques</span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">data.<strong>ademe</strong>.fr</span>
                   </a>
                 </li>
                 <li>
@@ -152,7 +142,20 @@
                     <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-green-100 dark:group-hover:bg-green-900/30 transition-colors mr-2">
                       <ExternalLink class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400" />
                     </span>
-                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">Open Data France</span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400"><strong>data</strong>.gouv.fr</span>
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://geo.api.gouv.fr" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="footer-link group"
+                  >
+                    <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-green-100 dark:group-hover:bg-green-900/30 transition-colors mr-2">
+                      <ExternalLink class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400" />
+                    </span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">geo.api.<strong>gouv</strong>.fr</span>
                   </a>
                 </li>
               </ul>
@@ -196,6 +199,7 @@
 
 <script>
 import { ExternalLink, FileText, HelpCircle, Moon, Search, Shield, Sun } from 'lucide-vue-next'
+import GuideBanner from './components/GuideBanner.vue'
 import InstallPWA from './components/InstallPWA.vue'
 
 export default {
@@ -208,7 +212,8 @@ export default {
     Shield,
     Sun,
     Moon,
-    InstallPWA
+    InstallPWA,
+    GuideBanner
   },
   data() {
     return {

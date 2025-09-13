@@ -13,10 +13,16 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
     
-    <!-- Inter Font -->
+    <!-- Performance optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://data.ademe.fr">
+    <link rel="dns-prefetch" href="https://geo.api.gouv.fr">
+
+    <!-- Inter Font - Load asynchronously to prevent render blocking -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
     
     <!-- Primary Meta Tags -->
     <title><%= VITE_APP_TITLE %></title>
@@ -25,9 +31,15 @@
     <meta name="keywords" content="<%= VITE_APP_KEYWORDS %>">
     <meta name="author" content="<%= VITE_SITE_NAME %>">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="French">
+    <meta name="language" content="fr-FR">
     <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="<%= VITE_SITE_URL %>/" />
+    
+    <!-- Geo-targeting for France -->
+    <meta name="geo.region" content="FR" />
+    <meta name="geo.placename" content="France" />
+    <meta name="geo.position" content="46.603354;1.888334" />
+    <meta name="ICBM" content="46.603354, 1.888334" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -35,19 +47,26 @@
     <meta property="og:site_name" content="<%= VITE_SITE_NAME %>">
     <meta property="og:title" content="<%= VITE_OG_TITLE %>">
     <meta property="og:description" content="<%= VITE_OG_DESCRIPTION %>">
-    <meta property="og:image" content="<%= VITE_SITE_URL %>/og-image.jpg">
+    <meta property="og:image" content="<%= VITE_SITE_URL %>/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="<%= VITE_SITE_URL %>/">
     <meta property="twitter:title" content="<%= VITE_TWITTER_TITLE %>">
     <meta property="twitter:description" content="<%= VITE_TWITTER_DESCRIPTION %>">
-    <meta property="twitter:image" content="<%= VITE_SITE_URL %>/og-image.jpg">
+    <meta property="twitter:image" content="<%= VITE_SITE_URL %>/og-image.png">
     <meta property="twitter:site" content="<%= VITE_TWITTER_HANDLE %>">
     
+    <!-- Critical CSS inline fallback for faster FCP -->
+    <style>
+      body { font-family: Inter, system-ui, -apple-system, sans-serif; margin: 0; }
+      .loading { display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    </style>
+
     <!-- Additional Meta Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -55,13 +74,6 @@
     <meta name="application-name" content="<%= VITE_SITE_NAME %>">
     <meta name="msapplication-TileColor" content="#3B82F6">
     <meta name="msapplication-config" content="/browserconfig.xml">
-    
-    <!-- Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://data.ademe.fr">
-    <link rel="preconnect" href="https://geo.api.gouv.fr">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- PWA -->
     <meta name="theme-color" content="#93C5FD">
@@ -105,6 +117,97 @@
           "urlTemplate": "<%= VITE_SITE_URL %>/?search={search_term_string}"
         },
         "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Organization Schema (Google recommended) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "<%= VITE_SITE_URL %>/#organization",
+      "name": "<%= VITE_SITE_NAME %>",
+      "url": "<%= VITE_SITE_URL %>",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "<%= VITE_SITE_URL %>/android-chrome-512x512.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Service gratuit de localisation de biens immobiliers à partir des données DPE publiques",
+      "sameAs": [
+        "https://github.com/Aurfi/DPE-LocaliserBien"
+      ]
+    }
+    </script>
+    
+    <!-- BreadcrumbList Schema (Google required for breadcrumbs) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "<%= VITE_SITE_URL %>"
+      }]
+    }
+    </script>
+    
+    <!-- FAQPage Schema (helps with rich snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Comment fonctionne LocaliserBien ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "LocaliserBien utilise les données DPE publiques de l'ADEME pour localiser précisément les biens immobiliers. Entrez le code postal, la surface et la consommation énergétique pour trouver l'adresse exacte."
+        }
+      },{
+        "@type": "Question",
+        "name": "Le service est-il gratuit ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, LocaliserBien est entièrement gratuit. Nous utilisons les données publiques mises à disposition par l'ADEME."
+        }
+      },{
+        "@type": "Question",
+        "name": "Quelle est la fiabilité des résultats ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les résultats sont basés sur les données officielles DPE de l'ADEME. La précision dépend de la qualité des informations saisies et de l'unicité des caractéristiques du bien."
+        }
+      }]
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Localisation de biens immobiliers par DPE",
+      "description": "Service de localisation de biens immobiliers basé sur les données DPE publiques de l'ADEME",
+      "provider": {
+        "@type": "Organization",
+        "name": "<%= VITE_SITE_NAME %>",
+        "url": "<%= VITE_SITE_URL %>"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "France"
+      },
+      "serviceType": "Real Estate Location Service",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
       }
     }
     </script>

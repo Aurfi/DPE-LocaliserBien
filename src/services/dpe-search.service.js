@@ -3,10 +3,6 @@ import DPELegacyService from './dpe-legacy.service'
 
 class DPESearchService {
   constructor() {
-    // En développement, on utilise notre service Node.js local
-    // En production, ça pourrait être une API dédiée
-    this.baseURL = 'http://localhost:3001/api/dpe' // Port différent pour éviter les conflits
-
     // Cache pour les départements chargés
     this.departmentCache = {}
     this.communesIndex = null
@@ -45,85 +41,8 @@ class DPESearchService {
     }
   }
 
-  /**
-   * Récupérer les moyennes locales pour des propriétés similaires dans la même zone
-   * @param {Object} searchRequest - Search criteria
-   * @returns {Promise<Object>} - Local average statistics
-   */
-  async fetchLocalAverages(searchRequest) {
-    try {
-      const { surfaceHabitable, commune } = searchRequest
-      const codePostal = this.extractPostalCode(commune)
-
-      if (!surfaceHabitable || !codePostal) {
-        return null
-      }
-
-      // Obtenir le code du département à partir du code postal (2 premiers chiffres)
-      const codeDepartement = codePostal.substring(0, 2)
-
-      // Calculer une fourchette de ±15%
-      const minSurface = Math.round(surfaceHabitable * 0.85)
-      const maxSurface = Math.round(surfaceHabitable * 1.15)
-
-      // Obtenir la date d'il y a 2 ans
-      const twoYearsAgo = new Date()
-      twoYearsAgo.setFullYear(twoYearsAgo.getFullYear() - 2)
-      const dateFilter = twoYearsAgo.toISOString().split('T')[0]
-
-      const baseUrl = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/metric_agg'
-
-      // Construire la chaîne de requête pour le filtrage
-      const queryString = `code_departement_ban:${codeDepartement} AND surface_habitable_logement:[${minSurface} TO ${maxSurface}] AND date_etablissement_dpe:[${dateFilter} TO *]`
-
-      // Préparer toutes les requêtes de métriques - utilisant uniquement les champs par m² existants
-      const requests = [
-        // Métriques principales (déjà par m²)
-        { field: 'conso_5_usages_par_m2_ep', name: 'totalConso' },
-        { field: 'emission_ges_5_usages_par_m2', name: 'totalGES' },
-        // Comptage pour la taille de l'échantillon
-        { field: 'numero_dpe', name: 'count', metric: 'count' }
-      ]
-
-      // Créer les paramètres URL pour chaque requête
-      const fetchPromises = requests.map(req => {
-        const params = new URLSearchParams({
-          metric: req.metric || 'avg',
-          field: req.field,
-          qs: queryString
-        })
-
-        return fetch(`${baseUrl}?${params}`)
-          .then(r => (r.ok ? r.json() : null))
-          .then(data => ({ name: req.name, value: data?.metric || data?.total || null }))
-      })
-
-      // Récupérer toutes les métriques en parallèle
-      const results = await Promise.all(fetchPromises)
-
-      // Construire l'objet de réponse
-      const metrics = {}
-      results.forEach(r => {
-        if (r.name === 'count') {
-          metrics.sampleSize = r.value || 0
-        } else {
-          metrics[r.name] = r.value ? Math.round(r.value) : null
-        }
-      })
-
-      return {
-        surfaceRange: `${minSurface}-${maxSurface}m²`,
-        dateRange: 'Dernières 2 années',
-        department: {
-          code: codeDepartement,
-          ...metrics
-        }
-      }
-    } catch (_error) {
-      // Erreur lors de la récupération des moyennes locales - échouer silencieusement
-      return null
-    }
-  }
+  // Méthode fetchLocalAverages supprimée: les moyennes affichées sont chargées
+  // depuis des JSON statiques (voir Home.vue) et non plus calculées dynamiquement.
 
   /**
    * Enrichit les résultats avec les adresses correctes via reverse geocoding
@@ -210,14 +129,12 @@ class DPESearchService {
       // Pour l'instant, on simule un appel à notre service Node.js existant
       // En attendant la mise en place d'une véritable API REST
 
-      // Récupérer les moyennes locales en parallèle avec la recherche principale
-      const localAveragesPromise = this.fetchLocalAverages(searchRequest)
-
       // Simulation de la recherche avec nos données réelles
       const searchResults = await this.simulateSearch(searchRequest)
 
-      // Ajouter les moyennes locales aux résultats
-      searchResults.localAverages = await localAveragesPromise
+      // Les moyennes départementales sont chargées au niveau de la vue (Home.vue)
+      // via les JSON statiques; on ne renseigne plus localAverages ici.
+      searchResults.localAverages = null
 
       return searchResults
     } catch (_error) {
@@ -236,15 +153,29 @@ class DPESearchService {
 
     const startTime = Date.now()
 
+    // Handle null or empty search requests
+    if (!searchRequest || Object.keys(searchRequest).length === 0) {
+      return {
+        results: [],
+        totalFound: 0,
+        searchStrategy: 'AUCUN',
+        executionTime: Date.now() - startTime,
+        diagnostics: ['Requête de recherche vide'],
+        isMultiCommune: false,
+        postalCode: null,
+        hasLegacyData: false
+      }
+    }
+
     // Obtenir les coordonnées de la commune pour vérifier si multi-commune
     const communeCoords = await this.getCommuneCoordinates(searchRequest.commune)
 
     // Extraire ou déterminer le code postal
     let postalCode = null
-    if (/^\d{5}$/.test(searchRequest.commune)) {
+    if (searchRequest.commune && /^\d{5}$/.test(searchRequest.commune)) {
       // Si c'est déjà un code postal
       postalCode = searchRequest.commune
-    } else if (communeCoords) {
+    } else if (communeCoords && searchRequest.commune) {
       // Essayer d'obtenir le code postal à partir des données de la commune
       postalCode = await this.getPostalCodeForCommune(searchRequest.commune)
     }
@@ -989,7 +920,7 @@ class DPESearchService {
 
         // Si adresse_ban n'a pas de numéro mais adresse_brut en a un, les combiner
         if (ademeData.adresse_ban && ademeData.adresse_brut && /^\d+/.test(ademeData.adresse_brut.trim())) {
-          const streetNumber = ademeData.adresse_brut.match(/^\d+[a-z]?\s*/i)[0].trim()
+          const streetNumber = ademeData.adresse_brut.match(/^\d+(?:\s*(?:bis|ter|quater|[a-z])?)?/i)[0].trim()
           return `${streetNumber} ${ademeData.adresse_ban}`
         }
 

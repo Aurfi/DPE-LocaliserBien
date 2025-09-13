@@ -4,12 +4,12 @@
     <div v-if="property" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[9999] p-4 backdrop-blur-sm" @click.self="$emit('close')">
       <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden border border-gray-100 dark:border-gray-700">
       <!-- En-tête de la modal -->
-      <div class="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-700 border-b border-gray-200 dark:border-gray-600 flex items-center justify-between">
-        <div class="flex-1">
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+      <div class="p-3 sm:p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-700 border-b border-gray-200 dark:border-gray-600 flex items-start justify-between gap-2">
+        <div class="flex-1 min-w-0">
+          <h3 class="text-lg sm:text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1 sm:mb-2 pr-2 line-clamp-2">
             {{ formattedAddress }}
           </h3>
-          <div class="flex items-center gap-4 text-gray-600 dark:text-gray-300">
+          <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-sm sm:text-base text-gray-600 dark:text-gray-300">
             <div class="flex items-center gap-1">
               <svg class="w-4 h-4 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
@@ -19,29 +19,32 @@
             </div>
             <span class="text-gray-400 dark:text-gray-500">•</span>
             <span class="font-medium">{{ surface }}m²</span>
-            <span class="text-gray-400 dark:text-gray-500">•</span>
+            <!-- Masquer sur mobile -->
+            <span class="hidden sm:inline text-gray-400 dark:text-gray-500">•</span>
             <a 
               :href="getGoogleMapsUrl()"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
+              class="hidden sm:inline text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
               @click.stop
             >
               Voir sur Maps
             </a>
-            <span v-if="matchScore" class="text-gray-400 dark:text-gray-500">•</span>
-            <span v-if="matchScore" :class="getScoreBadgeClass(matchScore)" class="inline-block px-2 py-0.5 rounded text-xs font-bold">
+            <!-- Score - masqué sur mobile -->
+            <span v-if="matchScore" class="hidden sm:inline text-gray-400 dark:text-gray-500">•</span>
+            <span v-if="matchScore" :class="getScoreBadgeClass(matchScore)" class="hidden sm:inline-block px-2 py-0.5 rounded text-xs font-bold">
               {{ Math.round(matchScore) }}%
             </span>
-            <span v-else-if="energyClass" class="text-gray-400 dark:text-gray-500">•</span>
-            <span v-else-if="energyClass" :class="getClasseColor(energyClass)" class="inline-block px-2 py-0.5 rounded text-xs font-bold">
+            <span v-else-if="energyClass" class="hidden sm:inline text-gray-400 dark:text-gray-500">•</span>
+            <span v-else-if="energyClass" :class="getClasseColor(energyClass)" class="hidden sm:inline-block px-2 py-0.5 rounded text-xs font-bold">
               Classe {{ energyClass }}
             </span>
           </div>
         </div>
+        <!-- Bouton fermer - toujours visible et avec une taille minimum garantie -->
         <button 
           @click="$emit('close')"
-          class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors bg-white dark:bg-gray-700 rounded-full p-2 hover:bg-gray-50 dark:hover:bg-gray-600"
+          class="flex-shrink-0 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors bg-white dark:bg-gray-700 rounded-full p-2 hover:bg-gray-50 dark:hover:bg-gray-600 min-w-[40px] min-h-[40px] flex items-center justify-center"
         >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>

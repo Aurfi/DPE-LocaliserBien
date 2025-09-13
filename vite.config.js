@@ -60,7 +60,7 @@ export default defineConfig(({ mode }) => {
       }
     },
     server: {
-      port: 3000,
+      port: Number(env.VITE_DEV_PORT || 3000),
       host: true,
       headers: {
         // En-têtes de sécurité pour le développement (relaxés pour Vite)

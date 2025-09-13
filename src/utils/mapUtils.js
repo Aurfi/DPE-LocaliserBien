@@ -11,16 +11,28 @@
  * @returns {string} Google Maps embed URL
  */
 export function getGoogleMapsEmbedUrl(lat, lon, address = null, zoom = 18) {
-  // Préférer l'adresse pour éviter les erreurs de placement pour DOM-TOM ou coordonnées ambiguës
-  if (address) {
+  const latNum = Number(lat)
+  const lonNum = Number(lon)
+  const hasValidCoords = Number.isFinite(latNum) && Number.isFinite(lonNum) && latNum !== 0 && lonNum !== 0
+
+  // If we have both coordinates and address, use both for best results
+  if (hasValidCoords && address && address.trim()) {
+    const encodedAddress = encodeURIComponent(address)
+    // Pass both coordinates (for accurate pin) and address (for display)
+    return `https://maps.google.com/maps?q=${encodedAddress}&ll=${latNum},${lonNum}&output=embed&z=${zoom}&t=k`
+  }
+
+  // If only address, use address alone
+  if (address?.trim()) {
     const encodedAddress = encodeURIComponent(address)
     return `https://maps.google.com/maps?q=${encodedAddress}&output=embed&z=${zoom}&t=k`
   }
-  const latNum = Number(lat)
-  const lonNum = Number(lon)
-  if (Number.isFinite(latNum) && Number.isFinite(lonNum)) {
+
+  // If only coordinates, use coordinates alone
+  if (hasValidCoords) {
     return `https://maps.google.com/maps?q=${latNum},${lonNum}&output=embed&z=${zoom}&t=k`
   }
+
   return ''
 }
 
@@ -50,7 +62,9 @@ export function getGoogleMapsSearchUrl(lat, lon, address = null) {
 export function getLatitudeFromGeopoint(geopoint) {
   if (!geopoint) return null
   const coords = geopoint.split(',')
-  return coords[0] ? parseFloat(coords[0]) : null
+  if (coords.length < 2 || !coords[0]) return null
+  const lat = parseFloat(coords[0].trim())
+  return Number.isFinite(lat) ? lat : null
 }
 
 /**
@@ -61,7 +75,9 @@ export function getLatitudeFromGeopoint(geopoint) {
 export function getLongitudeFromGeopoint(geopoint) {
   if (!geopoint) return null
   const coords = geopoint.split(',')
-  return coords[1] ? parseFloat(coords[1]) : null
+  if (coords.length < 2 || !coords[1]) return null
+  const lon = parseFloat(coords[1].trim())
+  return Number.isFinite(lon) ? lon : null
 }
 
 /**

@@ -86,7 +86,6 @@
               <li>Tailwind CSS (licence MIT)</li>
               <li>Vite (licence MIT)</li>
               <li>Lucide Icons (licence ISC)</li>
-              <li>SQLite3 (licence BSD-3-Clause)</li>
               <li>Biome (licence MIT/Apache-2.0)</li>
             </ul>
             <p class="mt-3">

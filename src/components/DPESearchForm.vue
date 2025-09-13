@@ -3,7 +3,7 @@
     <!-- Formulaire de recherche DPE -->
     <div class="bg-gray-50/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 mb-8 transition-all duration-500 border border-gray-100/50 dark:border-gray-700/50">
       <div class="text-center mb-6">
-        <p class="text-lg text-gray-800 dark:text-gray-200 font-medium">Localiser un bien immobilier grâce aux données de son DPE</p>
+        <p class="text-lg text-gray-800 dark:text-gray-200 font-medium">Localiser une annonce immobilière grâce aux données de son DPE</p>
       </div>
       <form @submit.prevent="handleSubmit" class="space-y-6" novalidate>
         <!-- Responsive grid: one field per line on mobile, flex on larger screens -->

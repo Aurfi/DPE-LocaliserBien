@@ -3,10 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import './style.css'
 import { registerSW } from 'virtual:pwa-register'
 import App from './App.vue'
-import FAQ from './views/FAQ.vue'
-// Import des vues
-import Home from './views/Home.vue'
-import MentionsLegales from './views/MentionsLegales.vue'
+
+// Lazy loading des vues pour réduire le bundle initial
+const Home = () => import('./views/Home.vue')
+const FAQ = () => import('./views/FAQ.vue')
+const MentionsLegales = () => import('./views/MentionsLegales.vue')
 
 const routes = [
   {
@@ -47,7 +48,12 @@ const router = createRouter({
     if (savedPosition) {
       return savedPosition
     } else {
-      return { top: 0, behavior: 'smooth' }
+      // Force le scroll même pour la navigation interne
+      return new Promise(resolve => {
+        setTimeout(() => {
+          resolve({ top: 0, behavior: 'smooth' })
+        }, 0)
+      })
     }
   }
 })

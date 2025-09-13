@@ -5,6 +5,15 @@ User-agent: *
 Allow: /$
 Allow: /informations
 Allow: /mentions-legales
+Allow: /favicon.ico
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /*.woff2$
 Disallow: /api/
 Disallow: /data/
 Disallow: /results/
@@ -13,44 +22,53 @@ Disallow: /*.json$
 Disallow: /*.db$
 Disallow: /*.sqlite$
 Disallow: /*?*
-Crawl-delay: 2
+Crawl-delay: 1
 
-# Protect user searches and results
+# Protect user searches and ADEME data
 Disallow: /*commune=*
 Disallow: /*surface=*
 Disallow: /*consommation=*
 Disallow: /*ges=*
+Disallow: /*code_postal=*
+Disallow: /*numero_dpe=*
+Disallow: /dpe/*
+Disallow: /ademe/*
 
 # Sitemap location
 Sitemap: {{SITE_URL}}/sitemap.xml
 
-# Major search engines - same rules apply
+# Google (no crawl-delay for Google)
 User-agent: Googlebot
 Allow: /$
 Allow: /informations
 Allow: /mentions-legales
+Allow: /favicon.ico
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /*.woff2$
 Disallow: /api/
 Disallow: /data/
-Disallow: /results/
-Disallow: /search/
-Disallow: /*.json$
-Disallow: /*.db$
+Disallow: /*commune=*
+Disallow: /*surface=*
+Disallow: /*consommation=*
 Disallow: /*?*
 
+# Bing
 User-agent: Bingbot
 Allow: /$
 Allow: /informations
 Allow: /mentions-legales
 Disallow: /api/
 Disallow: /data/
-Disallow: /results/
-Disallow: /search/
-Disallow: /*.json$
-Disallow: /*.db$
 Disallow: /*?*
-Crawl-delay: 2
+Crawl-delay: 1
 
-# Block scraping bots completely
+# Block AI crawlers and scrapers
 User-agent: GPTBot
 Disallow: /
 
@@ -64,4 +82,13 @@ User-agent: anthropic-ai
 Disallow: /
 
 User-agent: Claude-Web
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
 Disallow: /
