@@ -276,32 +276,45 @@
             </div>
           </div>
 
-          <!-- Lien vers ADEME -->
+          <!-- Bouton données brutes -->
           <div class="text-center pt-4">
-            <a 
-              :href="`https://observatoire-dpe-audit.ademe.fr/afficher-dpe/${property.numeroDPE || property.numero_dpe || property.id}`"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button 
+              @click="showRawData = true"
               class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
             >
-              <ExternalLink class="w-4 h-4" />
-              Voir le rapport complet sur ADEME
-            </a>
+              <Database class="w-4 h-4" />
+              Voir les données brutes
+            </button>
           </div>
         </div>
       </div>
     </div>
+    
+    <!-- Modal données brutes -->
+    <DonneesBrutesModal
+      :show="showRawData"
+      :dpeData="property"
+      @close="showRawData = false"
+    />
   </div>
 </template>
 
 <script>
-import { ExternalLink, X } from 'lucide-vue-next'
+import { Database, ExternalLink, X } from 'lucide-vue-next'
+import DonneesBrutesModal from './DonneesBrutesModal.vue'
 
 export default {
   name: 'DPEDetailsModal',
   components: {
+    Database,
+    DonneesBrutesModal,
     X,
     ExternalLink
+  },
+  data() {
+    return {
+      showRawData: false
+    }
   },
   props: {
     show: {

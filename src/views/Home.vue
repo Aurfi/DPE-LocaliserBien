@@ -240,9 +240,14 @@ export default {
         // Obtenir le code postal du résultat de géocodage (toujours disponible)
         let postalCode = results.postalCode
 
-        // Utiliser le code postal du premier résultat si nécessaire
-        if (!postalCode && results.results[0].codePostal) {
-          postalCode = results.results[0].codePostal
+        // Utiliser le code postal du premier résultat si nécessaire (essayer plusieurs champs)
+        if (!postalCode && results.results[0]) {
+          const firstResult = results.results[0]
+          postalCode =
+            firstResult.codePostal ||
+            firstResult.code_postal_ban ||
+            firstResult.code_postal_brut ||
+            firstResult.code_postal
         }
 
         if (postalCode) {

@@ -459,12 +459,12 @@ class DPELegacyService {
       longitude = parseFloat(coords[1])
     }
 
-    // Calculer le score de correspondance
-    const matchScore = this.calculateMatchScore(legacyData, searchRequest)
-
     // Déterminer si nous avons des données incomplètes
     const hasIncompleteData =
       !legacyData.geo_adresse || legacyData.geo_adresse === 'Adresse non disponible' || !latitude || !longitude
+
+    // Calculer le score de correspondance (0 si données incomplètes)
+    const matchScore = hasIncompleteData ? 0 : this.calculateMatchScore(legacyData, searchRequest)
 
     return {
       // Informations d'adresse
@@ -503,7 +503,10 @@ class DPELegacyService {
       // Lien ADEME pour les données incomplètes
       ademeUrl: legacyData.numero_dpe
         ? `https://observatoire-dpe-audit.ademe.fr/afficher-dpe/${legacyData.numero_dpe}`
-        : null
+        : null,
+
+      // Conserver toutes les données brutes pour le modal
+      rawData: legacyData
     }
   }
 

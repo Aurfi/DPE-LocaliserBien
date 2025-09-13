@@ -434,12 +434,12 @@ class DPESearchService {
     const conditions = []
 
     if (/^\d{5}$/.test(commune)) {
-      // Si c'est un code postal - sanitize it
+      // Si c'est un code postal - rechercher dans les deux champs
       const sanitizedPostal = this.sanitizeForQuery(commune)
-      conditions.push(`code_postal_ban:"${sanitizedPostal}"`)
+      conditions.push(`(code_postal_ban:"${sanitizedPostal}" OR code_postal_brut:"${sanitizedPostal}")`)
     } else if (commune && communeCoords && codePostal) {
-      // Si on a trouvé un code postal via géocodage, l'utiliser pour une recherche plus précise
-      conditions.push(`code_postal_ban:"${codePostal}"`)
+      // Si on a trouvé un code postal via géocodage, rechercher dans les deux champs
+      conditions.push(`(code_postal_ban:"${codePostal}" OR code_postal_brut:"${codePostal}")`)
     } else if (commune && communeCoords) {
       // Si c'est un nom de commune ET qu'on a trouvé ses coordonnées mais pas de code postal
       // On va utiliser geo_distance dès le début plutôt que de chercher par nom
@@ -494,9 +494,10 @@ class DPESearchService {
       const surfaceComparison = this.parseComparisonValue(surfaceHabitable)
       if (surfaceComparison && surfaceComparison.value > 0) {
         if (surfaceComparison.operator === '=') {
-          // For exact match, use ±1% tolerance
-          const minSurface = Math.round(surfaceComparison.value * 0.99)
-          const maxSurface = Math.round(surfaceComparison.value * 1.01)
+          // For exact match, use ±1m² tolerance (same as recent DPE search)
+          const roundedSurface = Math.round(surfaceComparison.value)
+          const minSurface = roundedSurface - 1
+          const maxSurface = roundedSurface + 1
           conditions.push(`surface_habitable_logement:[${minSurface} TO ${maxSurface}]`)
         } else {
           // For < or > operators, use range query
@@ -1060,7 +1061,10 @@ class DPESearchService {
 
       id: ademeData.numero_dpe || ademeData._id || '',
       numeroDPE: ademeData.numero_dpe || '',
-      dateVisite: ademeData.date_etablissement_dpe
+      dateVisite: ademeData.date_etablissement_dpe,
+
+      // Conserver toutes les données brutes pour le modal
+      rawData: ademeData
     }
 
     // Ajouter la distance si elle existe

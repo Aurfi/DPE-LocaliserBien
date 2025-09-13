@@ -33,6 +33,7 @@
             >
               <option value="distance">Distance</option>
               <option value="surface">Surface</option>
+              <option value="etage" v-if="shouldShowEtageSort">Étage</option>
               <option value="date-desc">DPE récent</option>
               <option value="date-asc">DPE ancien</option>
               <option value="construction-desc">Construction récente</option>
@@ -88,21 +89,34 @@
         </div>
 
         <!-- Adresse -->
-        <div class="font-semibold text-gray-800 dark:text-gray-200 mb-3 min-h-[3rem] line-clamp-2">
-          {{ getFormattedAddress(dpe) }}
+        <div class="min-h-[4rem] mb-3">
+          <h3 class="font-semibold text-gray-900 dark:text-gray-100 text-base mb-1 line-clamp-2">
+            {{ getAddressWithoutCityAndPostcode(dpe) }}
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            {{ (dpe.nom_commune_ban || dpe.nom_commune_brut || 'Localisation inconnue') + ' - ' + (dpe.code_postal_ban || dpe.code_postal_brut || '') }}
+          </p>
         </div>
 
         <!-- Infos principales -->
-        <div class="grid grid-cols-2 gap-3 mb-3">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-3">
           <!-- Surface -->
           <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
             <div class="text-xs text-gray-500 dark:text-gray-400">Surface</div>
             <div class="font-bold text-gray-800 dark:text-gray-200">{{ Math.round(dpe.surfaceHabitable) }} m²</div>
           </div>
 
+          <!-- Étage (si disponible) -->
+          <div v-if="getFloorDisplay(dpe)" class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
+            <div class="text-xs text-gray-500 dark:text-gray-400">Étage</div>
+            <div class="font-bold text-gray-800 dark:text-gray-200">
+              {{ getFloorDisplay(dpe) }}
+            </div>
+          </div>
+
           <!-- Année de construction -->
-          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
-            <div class="text-xs text-gray-500 dark:text-gray-400">Année</div>
+          <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2" :class="{ 'col-span-2 sm:col-span-1': !getFloorDisplay(dpe) }">
+            <div class="text-xs text-gray-500 dark:text-gray-400">Construction</div>
             <div class="font-bold text-gray-800 dark:text-gray-200">
               {{ formatYearDisplay(dpe.anneeConstruction) }}
             </div>
@@ -110,27 +124,14 @@
         </div>
 
         <!-- Actions -->
-        <div class="flex gap-2 mt-auto pt-3 border-t border-gray-100 dark:border-gray-700">
+        <div class="flex justify-center mt-auto pt-3 border-t border-gray-100 dark:border-gray-700">
           <button
             @click.stop="showDetails(dpe)"
-            class="flex-1 flex items-center justify-center gap-1 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 font-medium transition-colors"
+            class="text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 font-medium text-sm py-2 px-4 transition-colors flex items-center justify-center gap-1"
           >
             <ExternalLink class="w-4 h-4" />
             Voir détails
           </button>
-          <a
-            :href="(() => {
-              // Force address-first; include region label for DOM-TOM
-              const region = getGoogleRegionLabel(dpe.code_postal_ban || dpe.code_postal_brut)
-              const text = `${getFormattedAddress(dpe)} ${dpe.code_postal_ban || ''} ${dpe.nom_commune_ban || ''}, ${region}`
-              return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(text.trim())}`
-            })()"
-            target="_blank"
-            @click.stop
-            class="flex-1 flex items-center justify-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
-          >
-            Voir sur Maps
-          </a>
         </div>
       </div>
     </div>
@@ -142,7 +143,7 @@
       :property="selectedDPE"
       :formattedAddress="getFormattedAddress(selectedDPE)"
       :commune="selectedDPE.nom_commune_ban"
-      :surface="Math.round(selectedDPE.surface_habitable_logement)"
+      :surface="Math.round(selectedDPE.surfaceHabitable || selectedDPE.surface_habitable_logement || selectedDPE.surface_habitable || 0)"
       :energyClass="selectedDPE.etiquette_dpe"
       :mapUrl="selectedDPE._geopoint ? getGoogleMapsEmbedUrlForDPE(selectedDPE) : null"
       :geoportailUrl="getGeoportailUrl(getLatitudeFromGeopoint(selectedDPE._geopoint), getLongitudeFromGeopoint(selectedDPE._geopoint))"
@@ -153,8 +154,8 @@
       :numberOfLevels="selectedDPE.nombreNiveaux"
       :ceilingHeight="selectedDPE.hauteurSousPlafond"
       :diagnosisDate="selectedDPE.date_visite_diagnostiqueur ? formatFullDate(selectedDPE.date_visite_diagnostiqueur) : null"
-      :energyConsumption="selectedDPE.consommationEnergie ? Math.round(selectedDPE.consommationEnergie) : null"
-      :gesEmissions="selectedDPE.emissionGES ? Math.round(selectedDPE.emissionGES) : null"
+      :energyConsumption="Math.round(selectedDPE.consommationEnergie || selectedDPE.conso_5_usages_par_m2_ep || selectedDPE.consommation_energie || 0) || null"
+      :gesEmissions="Math.round(selectedDPE.emissionGES || selectedDPE.emission_ges_5_usages_par_m2 || selectedDPE.estimation_ges || 0) || null"
       :departmentAverages="departmentAverages"
       @close="closeModal()"
       @show-details="handleShowDetails"
@@ -175,7 +176,7 @@
 
 <script>
 import { Building2, Calendar, ChevronDown, ExternalLink, Home, Trash2, X } from 'lucide-vue-next'
-import { computed, ref } from 'vue'
+import { computed, ref, toRef } from 'vue'
 import {
   getGeoportailUrl,
   getGoogleMapsEmbedUrl,
@@ -228,6 +229,28 @@ export default {
     const hiddenResults = ref(new Set())
     const sortBy = ref('distance') // Tri par défaut par distance pour les recherches récentes
 
+    // Vérifier si on doit montrer l'option de tri par étage
+    const shouldShowEtageSort = computed(() => {
+      // Ne montrer l'option que si on a au moins 3 résultats avec des étages différents
+      if (!props.results?.results || props.results.results.length < 3) return false
+
+      const etages = props.results.results
+        .map(r => {
+          // Extraire l'étage numérique pour comparaison
+          const display = getFloorDisplay(r)
+          if (!display) return null
+          if (display === 'RDC') return 0
+          const match = display.match(/\d+/)
+          return match ? parseInt(match[0], 10) : null
+        })
+        .filter(e => e !== null)
+
+      // Vérifier qu'on a au moins 3 étages et qu'ils ne sont pas tous identiques
+      if (etages.length < 3) return false
+      const uniqueEtages = new Set(etages)
+      return uniqueEtages.size > 1
+    })
+
     // Propriété calculée pour les résultats filtrés avec tri
     const filteredResults = computed(() => {
       if (!props.results?.results) return []
@@ -256,6 +279,30 @@ export default {
             return surfB - surfA
           })
         }
+      } else if (sortBy.value === 'etage') {
+        // Trier par étage (croissant - RDC en premier, puis étages supérieurs)
+        results = [...results].sort((a, b) => {
+          // Extraire l'étage numérique
+          const getFloorNumber = result => {
+            const display = getFloorDisplay(result)
+            if (!display) return 999 // Mettre à la fin si pas d'étage
+            if (display === 'RDC') return 0
+            const match = display.match(/\d+/)
+            return match ? parseInt(match[0], 10) : 999
+          }
+
+          const floorA = getFloorNumber(a)
+          const floorB = getFloorNumber(b)
+
+          // Si même étage, trier par distance
+          if (floorA === floorB) {
+            const distA = a._distance !== undefined ? a._distance : Infinity
+            const distB = b._distance !== undefined ? b._distance : Infinity
+            return distA - distB
+          }
+
+          return floorA - floorB
+        })
       } else if (sortBy.value === 'construction-asc') {
         // Trier par année de construction (croissant - ancien en premier)
         results = [...results].sort((a, b) => {
@@ -322,7 +369,24 @@ export default {
       if (diffDays === 1) return 'Hier'
       if (diffDays < 7) return `Il y a ${diffDays} jours`
       if (diffDays < 30) return `Il y a ${Math.floor(diffDays / 7)} semaines`
-      if (diffDays < 365) return `Il y a ${Math.floor(diffDays / 30)} mois`
+
+      // Calculer les mois totaux
+      const totalMonths = Math.floor(diffDays / 30)
+
+      // Plus de 2 ans : afficher en années et mois
+      if (totalMonths >= 24) {
+        const years = Math.floor(totalMonths / 12)
+        const months = totalMonths % 12
+        if (months === 0) {
+          return `Il y a ${years} an${years > 1 ? 's' : ''}`
+        }
+        return `Il y a ${years} an${years > 1 ? 's' : ''} et ${months} mois`
+      }
+
+      // Moins de 2 ans : afficher en mois
+      if (totalMonths > 0) {
+        return `Il y a ${totalMonths} mois`
+      }
 
       return date.toLocaleDateString('fr-FR')
     }
@@ -380,6 +444,29 @@ export default {
 
       // Corriger les problèmes d'encodage
       return address.replace(/â€™/g, "'")
+    }
+
+    const getAddressWithoutCityAndPostcode = dpe => {
+      let address = getFormattedAddress(dpe)
+      const cityName = dpe.nom_commune_ban || dpe.nom_commune_brut
+      const postcode = dpe.code_postal_ban || dpe.code_postal_brut
+
+      // Retirer le code postal s'il est présent
+      if (postcode) {
+        address = address.replace(new RegExp(`\\b${postcode}\\b`, 'g'), '').trim()
+      }
+
+      // Retirer la ville si elle est présente
+      if (cityName) {
+        // Retirer la ville (peut être à la fin ou au milieu)
+        const cityRegex = new RegExp(`,?\\s*${cityName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*,?`, 'gi')
+        address = address.replace(cityRegex, ' ').trim()
+      }
+
+      // Nettoyer les virgules multiples ou finales
+      address = address.replace(/,\s*,/g, ',').replace(/,\s*$/, '').trim()
+
+      return address
     }
 
     const getPropertyType = dpe => {
@@ -476,6 +563,60 @@ export default {
       return value || 'N/A'
     }
 
+    // Récupérer l'affichage de l'étage
+    const getFloorDisplay = result => {
+      // Si nous avons un champ etage direct qui n'est PAS 0, l'utiliser
+      if (
+        result.etage !== null &&
+        result.etage !== undefined &&
+        result.etage !== '' &&
+        result.etage !== 0 &&
+        result.etage !== '0'
+      ) {
+        return result.etage
+      }
+
+      // Sinon, essayer d'analyser depuis complementRefLogement
+      const parsed = parseLocalisation(result.complementRefLogement)
+      if (parsed) {
+        return parsed
+      }
+
+      return null
+    }
+
+    // Parser la localisation pour extraire l'étage
+    const parseLocalisation = text => {
+      if (!text) return ''
+
+      // Convertir en chaîne et nettoyer
+      const str = String(text).trim()
+      if (!str) return ''
+
+      // Rechercher "étage" ou "etage" explicite avec un numéro
+      const etageMatch = str.match(/[ÉEé]tage\s*[:;#n°]?\s*°?\s*(\d+)/i)
+      if (etageMatch) {
+        const floorNum = etageMatch[1]
+        return floorNum === '0' ? 'RDC' : floorNum
+      }
+
+      // Rechercher les motifs ordinaux AVEC le mot "étage"
+      if (str.toLowerCase().includes('étage') || str.toLowerCase().includes('etage')) {
+        const ordinalMatch = str.match(/(\d+)(?:er|ère|eme|ème|e|è|é)/i)
+        if (ordinalMatch) {
+          const floorNum = ordinalMatch[1]
+          return floorNum === '1' ? '1er' : floorNum
+        }
+      }
+
+      // Rechercher RDC explicite
+      if (str.match(/\bRDC\b|Rez.?de.?chauss[eé]e/i)) {
+        return 'RDC'
+      }
+
+      return null
+    }
+
     // Ajouter un écouteur d'événements pour la touche échap quand le composant est monté
     if (typeof window !== 'undefined') {
       window.addEventListener('keydown', handleEscapeKey)
@@ -489,13 +630,15 @@ export default {
       hiddenResults,
       filteredResults,
       sortBy,
+      shouldShowEtageSort,
       sortResults,
-      departmentAverages: props.departmentAverages,
+      departmentAverages: toRef(props, 'departmentAverages'),
       formatDate,
       formatFullDate,
       getClasseColor,
       getGESColor,
       getFormattedAddress,
+      getAddressWithoutCityAndPostcode,
       getPropertyType,
       getGoogleMapsEmbedUrlForDPE,
       getLatitudeFromGeopoint,
@@ -509,7 +652,9 @@ export default {
       hideContextMenu,
       hideResult,
       extractYearFromValue,
-      formatYearDisplay
+      formatYearDisplay,
+      getFloorDisplay,
+      parseLocalisation
     }
   },
   unmounted() {

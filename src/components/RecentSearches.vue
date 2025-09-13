@@ -63,18 +63,12 @@
         @contextmenu.prevent="showContextMenu($event, index)"
         class="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-[1.02] border border-gray-100 dark:border-gray-700"
       >
-        <!-- Badge nombre de résultats (top-right) -->
-        <div class="absolute -top-2 right-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium px-2 py-1 rounded-full shadow-md flex items-center">
-          <span class="text-sm">{{ search.resultCount }}</span> <span class="text-sm ml-1">résultat{{ search.resultCount > 1 ? 's' : '' }}</span>
-        </div>
-        
-        <!-- Badge correspondance parfaite/multiple (below top-right) -->
+        <!-- Badge nombre de résultats avec couleur selon les correspondances parfaites -->
         <div 
-          v-if="search.matchScore && search.matchScore >= 99"
-          class="absolute top-6 right-2 text-white font-medium px-2 py-1 rounded-full shadow-md flex items-center justify-center min-w-[24px]"
-          :class="search.perfectMatchCount > 1 ? 'bg-gradient-to-r from-yellow-500 to-yellow-600' : 'bg-gradient-to-r from-green-500 to-green-600'"
+          class="absolute -top-2 right-2 text-white font-medium px-2 py-1 rounded-full shadow-md flex items-center"
+          :class="getResultBubbleColor(search)"
         >
-          <span class="text-sm">{{ search.perfectMatchCount || 1 }}</span>
+          <span class="text-sm">{{ search.resultCount }}</span> <span class="text-sm ml-1">résultat{{ search.resultCount > 1 ? 's' : '' }}</span>
         </div>
         
         
@@ -295,6 +289,19 @@ export default {
     getGESClassColor(classe) {
       // Utiliser les mêmes couleurs que les classes énergétiques pour la cohérence
       return this.getEnergyClassColor(classe)
+    },
+
+    getResultBubbleColor(search) {
+      // Vert si une correspondance parfaite
+      if (search.perfectMatchCount === 1 || (search.matchScore >= 99 && !search.perfectMatchCount)) {
+        return 'bg-green-500'
+      }
+      // Teal si plusieurs correspondances parfaites (bon mais pas unique)
+      if (search.perfectMatchCount > 1) {
+        return 'bg-teal-500'
+      }
+      // Bleu par défaut (pas de correspondance parfaite)
+      return 'bg-blue-500'
     },
 
     formatTimeAgo(timestamp) {

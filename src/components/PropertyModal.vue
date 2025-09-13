@@ -1,6 +1,8 @@
 <template>
-  <div v-if="property" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[9999] p-4 backdrop-blur-sm" @click.self="$emit('close')">
-    <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden border border-gray-100 dark:border-gray-700">
+  <div>
+    <!-- Modal principale -->
+    <div v-if="property" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[9999] p-4 backdrop-blur-sm" @click.self="$emit('close')">
+      <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden border border-gray-100 dark:border-gray-700">
       <!-- En-tête de la modal -->
       <div class="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-700 border-b border-gray-200 dark:border-gray-600 flex items-center justify-between">
         <div class="flex-1">
@@ -17,6 +19,16 @@
             </div>
             <span class="text-gray-400 dark:text-gray-500">•</span>
             <span class="font-medium">{{ surface }}m²</span>
+            <span class="text-gray-400 dark:text-gray-500">•</span>
+            <a 
+              :href="getGoogleMapsUrl()"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
+              @click.stop
+            >
+              Voir sur Maps
+            </a>
             <span v-if="matchScore" class="text-gray-400 dark:text-gray-500">•</span>
             <span v-if="matchScore" :class="getScoreBadgeClass(matchScore)" class="inline-block px-2 py-0.5 rounded text-xs font-bold">
               {{ Math.round(matchScore) }}%
@@ -68,11 +80,11 @@
                 :href="geoportailUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-xs text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 font-normal flex items-center gap-1 transition-colors"
+                class="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-normal flex items-center gap-1 transition-colors"
                 @click.stop
               >
-                <ExternalLink class="w-3 h-3" />
-                DVF ETALAB
+                <ExternalLink class="w-4 h-4" />
+                DVF Data.Gouv
               </a>
             </h4>
             <div class="space-y-1.5">
@@ -118,9 +130,9 @@
               </span>
               <button
                 @click="$emit('show-details')"
-                class="text-xs text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 font-normal flex items-center gap-1 transition-colors"
+                class="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-normal flex items-center gap-1 transition-colors"
               >
-                <ExternalLink class="w-3 h-3" />
+                <ExternalLink class="w-4 h-4" />
                 Détails complets
               </button>
             </h4>
@@ -153,6 +165,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -252,6 +265,15 @@ export default {
       }
 
       return range ? range.consumption.total : null
+    },
+
+    getGoogleMapsUrl() {
+      if (!this.property) return '#'
+
+      // Construire l'URL Google Maps avec l'adresse
+      const address = `${this.formattedAddress}, ${this.commune}`
+      const query = encodeURIComponent(address)
+      return `https://www.google.com/maps/search/?api=1&query=${query}`
     }
   }
 }

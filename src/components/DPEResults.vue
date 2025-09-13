@@ -65,6 +65,7 @@
               <option value="score">Score</option>
               <option value="distance" v-if="hasDistanceData">Distance</option>
               <option value="surface">Surface</option>
+              <option value="etage" v-if="shouldShowEtageSort">Étage</option>
               <option value="date-desc">DPE récent</option>
               <option value="date-asc">DPE ancien</option>
               <option value="construction-desc">Construction récente</option>
@@ -168,7 +169,7 @@
               Adresse non disponible
             </h3>
             <p class="text-sm text-gray-600 dark:text-gray-400">
-              {{ result.communeDisplay || result.commune || 'Localisation inconnue' }}
+              {{ (result.communeDisplay || result.commune || 'Localisation inconnue') + ' - ' + (result.codePostalDisplay || result.codePostal || result.codePostalADEME || '') }}
             </p>
           </div>
           
@@ -181,71 +182,50 @@
                 </svg>
                 <span class="text-xs font-medium text-amber-700 dark:text-amber-300">DPE Ancien (avant 07/2021)</span>
               </div>
-              <div v-if="result.hasIncompleteData" class="mt-1.5">
-                <a 
-                  v-if="result.ademeUrl"
-                  :href="result.ademeUrl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-xs text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 underline inline-flex items-center gap-1"
-                  @click.stop
-                >
-                  Voir sur ADEME
-                  <ExternalLink class="w-3 h-3" />
-                </a>
-              </div>
             </div>
           </div>
 
           <!-- Informations clés -->
-          <div class="flex items-center justify-between mb-4">
-            <div>
-              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Surface</p>
-              <p class="text-base font-semibold text-gray-900 dark:text-gray-100">{{ result.surfaceHabitable }} m²</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-3">
+            <!-- Surface -->
+            <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
+              <div class="text-xs text-gray-500 dark:text-gray-400">Surface</div>
+              <div class="font-bold text-gray-800 dark:text-gray-200">{{ result.surfaceHabitable }} m²</div>
             </div>
-            <div v-if="result.anneeConstruction" class="text-center">
-              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Année</p>
-              <p class="text-base font-semibold text-gray-900 dark:text-gray-100">{{ formatYearDisplay(result.anneeConstruction) }}</p>
-            </div>
-            <div v-if="result.typeBien === 'appartement' && getFloorDisplay(result)" class="text-right">
-              <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Étage</p>
-              <p class="text-base font-semibold text-gray-900 dark:text-gray-100">
+            
+            <!-- Étage (si disponible) -->
+            <div v-if="getFloorDisplay(result)" class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
+              <div class="text-xs text-gray-500 dark:text-gray-400">Étage</div>
+              <div class="font-bold text-gray-800 dark:text-gray-200">
                 {{ getFloorDisplay(result) }}
-              </p>
+              </div>
+            </div>
+            
+            <!-- Année de construction -->
+            <div v-if="result.anneeConstruction" class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2" :class="{ 'col-span-2 sm:col-span-1': !getFloorDisplay(result) }">
+              <div class="text-xs text-gray-500 dark:text-gray-400">Construction</div>
+              <div class="font-bold text-gray-800 dark:text-gray-200">{{ formatYearDisplay(result.anneeConstruction) }}</div>
             </div>
           </div>
 
           <!-- Actions -->
-          <div class="flex gap-3 mt-auto pt-3 border-t border-gray-100 dark:border-gray-700">
+          <div class="flex justify-center mt-auto pt-3 border-t border-gray-100 dark:border-gray-700">
             <button
               v-if="!result.hasIncompleteData"
               @click.stop="showDetails(result)"
-              class="flex-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 font-medium text-sm py-2 transition-colors flex items-center justify-center gap-1"
+              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 font-medium text-sm py-2 px-4 transition-colors flex items-center justify-center gap-1"
             >
               <ExternalLink class="w-3.5 h-3.5" />
               Voir détails
             </button>
-            <a 
-              v-if="result.hasIncompleteData && result.ademeUrl"
-              :href="result.ademeUrl"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="flex-1 text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 font-medium text-sm py-2 transition-colors flex items-center justify-center gap-1"
-              @click.stop
+            <button 
+              v-if="result.hasIncompleteData"
+              @click.stop="showRawDataForResult(result)"
+              class="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 font-medium text-sm py-2 px-4 transition-colors flex items-center justify-center gap-1"
             >
-              <ExternalLink class="w-3.5 h-3.5" />
-              Voir sur ADEME
-            </a>
-            <a 
-              v-if="!result.hasIncompleteData"
-              :href="getGoogleMapsUrl(result)"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="flex-1 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium text-sm py-2 transition-colors text-center"
-              @click.stop
-            >
-              Voir sur Maps
-            </a>
+              <Database class="w-3.5 h-3.5" />
+              Voir données brutes
+            </button>
           </div>
         </div>
       </div>
@@ -284,6 +264,13 @@
       @close="showDPEDetails = false"
     />
 
+    <!-- Modal données brutes -->
+    <DonneesBrutesModal
+      :show="showRawDataModal"
+      :dpeData="rawDataProperty"
+      @close="showRawDataModal = false"
+    />
+
     <!-- Floating scroll to top button -->
     <ScrollToTop />
 
@@ -297,6 +284,7 @@ import {
   Calendar,
   Check,
   ChevronDown,
+  Database,
   ExternalLink,
   FileText,
   Globe,
@@ -317,6 +305,7 @@ import {
   getGoogleMapsSearchUrl,
   getGoogleRegionLabel
 } from '../utils/mapUtils'
+import DonneesBrutesModal from './DonneesBrutesModal.vue'
 import DPEDetailsModal from './DPEDetailsModal.vue'
 import Grid2x2Plus from './icons/Grid2x2Plus.vue'
 import PropertyModal from './PropertyModal.vue'
@@ -335,6 +324,7 @@ export default {
     Calendar,
     Check,
     ChevronDown,
+    Database,
     FileText,
     Globe,
     Grid2x2Check,
@@ -344,6 +334,7 @@ export default {
     X,
     ExternalLink,
     Trash2,
+    DonneesBrutesModal,
     PropertyModal,
     DPEDetailsModal,
     ScrollToTop
@@ -367,6 +358,8 @@ export default {
     return {
       selectedProperty: null,
       showDPEDetails: false,
+      showRawDataModal: false,
+      rawDataProperty: null,
       iconComponents: {
         Grid2x2Check,
         Grid2x2X,
@@ -403,6 +396,30 @@ export default {
           const surfA = a.surfaceHabitable || 0
           const surfB = b.surfaceHabitable || 0
           return surfB - surfA
+        })
+      } else if (this.sortBy === 'etage') {
+        // Tri par étage (croissant - RDC en premier, puis étages supérieurs)
+        results = [...results].sort((a, b) => {
+          // Extraire l'étage numérique
+          const getFloorNumber = result => {
+            const display = this.getFloorDisplay(result)
+            if (!display) return 999 // Mettre à la fin si pas d'étage
+            if (display === 'RDC') return 0
+            const match = display.match(/\d+/)
+            return match ? parseInt(match[0], 10) : 999
+          }
+
+          const floorA = getFloorNumber(a)
+          const floorB = getFloorNumber(b)
+
+          // Si même étage, trier par score
+          if (floorA === floorB) {
+            const scoreA = a.matchScore || 0
+            const scoreB = b.matchScore || 0
+            return scoreB - scoreA
+          }
+
+          return floorA - floorB
         })
       } else if (this.sortBy === 'construction-asc') {
         // Tri par année de construction (croissant - ancien en premier)
@@ -446,6 +463,27 @@ export default {
 
     hasDistanceData() {
       return this.searchResult?.results?.some(r => r.distance !== undefined)
+    },
+
+    shouldShowEtageSort() {
+      // Ne montrer l'option que si on a au moins 3 résultats avec des étages différents
+      if (!this.searchResult?.results || this.searchResult.results.length < 3) return false
+
+      const etages = this.searchResult.results
+        .map(r => {
+          // Extraire l'étage numérique pour comparaison
+          const display = this.getFloorDisplay(r)
+          if (!display) return null
+          if (display === 'RDC') return 0
+          const match = display.match(/\d+/)
+          return match ? parseInt(match[0], 10) : null
+        })
+        .filter(e => e !== null)
+
+      // Vérifier qu'on a au moins 3 étages et qu'ils ne sont pas tous identiques
+      if (etages.length < 3) return false
+      const uniqueEtages = new Set(etages)
+      return uniqueEtages.size > 1
     }
   },
   mounted() {
@@ -620,6 +658,11 @@ export default {
       document.body.style.overflow = ''
     },
 
+    showRawDataForResult(result) {
+      this.rawDataProperty = result
+      this.showRawDataModal = true
+    },
+
     handleEscapeKey(event) {
       if (event.key === 'Escape' && this.selectedProperty) {
         this.closeModal()
@@ -725,13 +768,37 @@ export default {
       if (diffDays < 30) return '3 semaines'
       if (diffDays < 60) return '1 mois'
       if (diffDays < 90) return '2 mois'
-      return `${Math.floor(diffDays / 30)} mois`
+
+      // Plus de 2 ans : afficher en années et mois
+      const totalMonths = Math.floor(diffDays / 30)
+      if (totalMonths >= 24) {
+        const years = Math.floor(totalMonths / 12)
+        const months = totalMonths % 12
+        if (months === 0) {
+          return `${years} an${years > 1 ? 's' : ''}`
+        }
+        return `${years} an${years > 1 ? 's' : ''} et ${months} mois`
+      }
+
+      return `${totalMonths} mois`
     },
 
     getGoogleMapsEmbedUrlForProperty(property) {
       if (!property) return ''
-      const region = getGoogleRegionLabel(property.codePostal)
-      const address = `${property.adresseComplete}, ${property.codePostal} ${property.commune}, ${region}`
+
+      // Priorité: 1) adresse enrichie, 2) adresse BAN brute d'ADEME, 3) coordonnées
+      const adresse = property.adresseComplete || property.rawData?.adresse_ban || property.rawData?.geo_adresse
+      const codePostal = property.codePostal || property.rawData?.code_postal_ban || property.rawData?.code_postal_brut
+      const commune = property.commune || property.rawData?.nom_commune_ban || property.rawData?.nom_commune_brut
+
+      // Construire l'adresse complète pour Google Maps si on a une adresse
+      let address = null
+      if (adresse && codePostal && commune) {
+        const region = getGoogleRegionLabel(codePostal)
+        address = `${adresse}, ${codePostal} ${commune}, ${region}`
+      }
+
+      // Google Maps utilisera l'adresse si disponible, sinon les coordonnées
       return getGoogleMapsEmbedUrl(property.latitude, property.longitude, address)
     },
 
@@ -999,7 +1066,7 @@ export default {
       const searchPostal = this.searchCriteria.commune?.match(/\d{5}/)?.[0]
       const resultPostal = result.codePostal || result.codePostalADEME
       if (searchPostal && resultPostal && searchPostal !== resultPostal) {
-        diffs.push('📍') // Indicateur de localisation différente
+        diffs.push('Code Postal') // Indicateur de code postal différent
       }
 
       // Retourner seulement les différences, très concis (ou chaîne vide si aucune différence)
