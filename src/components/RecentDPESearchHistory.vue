@@ -101,7 +101,7 @@
           <div class="flex items-center justify-between">
             <!-- Surface si spécifiée -->
             <div v-if="search.surface" class="flex items-center gap-1.5">
-              <Home class="w-3.5 h-3.5 text-gray-400" />
+              <component :is="getSurfaceIcon(search)" class="w-3.5 h-3.5 text-gray-400" />
               <span class="text-sm text-gray-600 dark:text-gray-300">
                 {{ search.surface }} m²
               </span>
@@ -163,7 +163,7 @@
 </template>
 
 <script>
-import { Calendar, Circle, Clock, Edit2, Home, MapPin, Trash2 } from 'lucide-vue-next'
+import { Building, Calendar, Circle, Clock, Edit2, Grid2x2Check, Home, MapPin, Trash2 } from 'lucide-vue-next'
 import ConfirmationModal from './ConfirmationModal.vue'
 import InputModal from './InputModal.vue'
 
@@ -173,7 +173,9 @@ export default {
     MapPin,
     Calendar,
     Circle,
+    Grid2x2Check,
     Home,
+    Building,
     Clock,
     Trash2,
     Edit2,
@@ -208,6 +210,12 @@ export default {
     window.removeEventListener('click', this.hideContextMenu)
   },
   methods: {
+    getSurfaceIcon(search) {
+      const type = (search.typeBien || '').toLowerCase()
+      if (type === 'maison') return Home
+      if (type === 'appartement') return Building
+      return Grid2x2Check
+    },
     loadRecentSearches() {
       try {
         const stored = localStorage.getItem('recent_dpe_searches')

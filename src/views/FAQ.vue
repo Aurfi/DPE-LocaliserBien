@@ -9,7 +9,7 @@
           class="inline-flex items-center px-6 py-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium hover:scale-105 border border-white/50 dark:border-gray-700/50"
         >
           <Home class="w-5 h-5 mr-2" />
-          Retour à l'accueil
+          Accueil
         </router-link>
       </div>
       
@@ -119,8 +119,9 @@
             Protection de vos données
           </h3>
           <p class="text-gray-600 dark:text-gray-400">
-            Aucune donnée personnelle n'est collectée. Le service n'utilise pas de cookies de tracking 
-            et ne conserve aucun historique de recherche. Les requêtes sont traitées de manière anonyme et éphémère.
+            Aucune donnée personnelle n'est collectée. Le service n'utilise pas de cookies de tracking.
+            Les requêtes sont traitées de manière anonyme et votre historique de recherche est uniquement
+            sauvegardé dans le cache de votre navigateur.
           </p>
         </div>
 
@@ -144,9 +145,16 @@
             Remerciements
           </h3>
           <p class="text-gray-600 dark:text-gray-400">
-            • Les bibliothèques <strong>Open Source</strong> utilisées dans ce projet (Vue.js, Tailwind CSS, Vite, Lucide)
+            • Les bibliothèques 
+            <a href="https://www.fsf.org/fr" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline"><strong>Open Source</strong></a>
+            utilisées dans ce projet (
+            <a href="https://github.com/vuejs/core" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Vue.js</a>,
+            <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>,
+            <a href="https://github.com/vitejs/vite" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Vite</a>,
+            <a href="https://github.com/lucide-icons/lucide" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Lucide</a>
+            )
             <br>
-            • L'<span class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">ADEME</span> pour la mise à disposition des données DPE
+            • L'<a href="https://www.ademe.fr/" target="_blank" rel="noopener noreferrer" class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent hover:from-red-400 hover:to-red-500 transition-colors">ADEME</a> pour la mise à disposition des données DPE
             <br>
             • <a href="https://www.data.gouv.fr/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline"><strong>Data</strong>Gouv</a>, la plateforme des données publiques françaises
           </p>
@@ -156,9 +164,15 @@
 
       <!-- Navigation -->
       <div class="mt-6 text-center">
-        <router-link to="/" class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold px-6 py-3 rounded-2xl transition-all duration-200 hover:shadow-lg hover:scale-[1.02] inline-flex items-center shadow-md">
-          <Home class="w-4 h-4 mr-2" />
-          Retour à l'accueil
+        <p class="mb-3 text-xs text-gray-500 dark:text-gray-400">
+          Fait avec <Heart class="inline w-3 h-3 text-red-500 mx-1" /> par des neurones artificiels
+        </p>
+        <router-link 
+          to="/" 
+          class="inline-flex items-center px-6 py-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium hover:scale-105 border border-white/50 dark:border-gray-700/50"
+        >
+          <Home class="w-5 h-5 mr-2" />
+          Accueil
         </router-link>
       </div>
     </div>

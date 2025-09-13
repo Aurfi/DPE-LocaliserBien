@@ -9,7 +9,7 @@
           class="inline-flex items-center px-6 py-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium hover:scale-105 border border-white/50 dark:border-gray-700/50"
         >
           <Home class="w-5 h-5 mr-2" />
-          Retour à l'accueil
+          Accueil
         </router-link>
       </div>
       
@@ -189,6 +189,17 @@
           </p>
         </div>
       </section>
+
+      <!-- Bottom navigation -->
+      <div class="mt-6 text-center">
+        <router-link 
+          to="/" 
+          class="inline-flex items-center px-6 py-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium hover:scale-105 border border-white/50 dark:border-gray-700/50"
+        >
+          <Home class="w-5 h-5 mr-2" />
+          Accueil
+        </router-link>
+      </div>
 
     </div>
   </div>

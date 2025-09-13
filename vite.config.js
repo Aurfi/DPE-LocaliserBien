@@ -4,6 +4,7 @@ import { fileURLToPath, URL } from 'node:url'
 import vue from '@vitejs/plugin-vue'
 import { defineConfig, loadEnv } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
+import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
@@ -37,6 +38,20 @@ export default defineConfig(({ mode }) => {
             ...env
           }
         }
+      }),
+      // PWA: installable app without offline caching (runtime caching disabled)
+      VitePWA({
+        registerType: 'autoUpdate',
+        injectRegister: 'auto',
+        workbox: { runtimeCaching: [] },
+        includeAssets: [
+          'favicon.ico',
+          'favicon.svg',
+          'apple-touch-icon.png',
+          'android-chrome-192x192.png',
+          'android-chrome-512x512.png'
+        ]
+        // Using existing public/manifest.json
       })
     ],
     resolve: {
@@ -48,15 +63,15 @@ export default defineConfig(({ mode }) => {
       port: 3000,
       host: true,
       headers: {
-        // En-têtes de sécurité pour le développement
-        'X-Content-Type-Options': 'nosniff',
+        // En-têtes de sécurité pour le développement (relaxés pour Vite)
+        // Note: ne pas forcer nosniff en dev pour éviter les erreurs de type MIME avec les modules
         'X-Frame-Options': 'DENY',
         'X-XSS-Protection': '1; mode=block',
         'Referrer-Policy': 'strict-origin-when-cross-origin',
         'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
         // CSP basique pour le développement
         'Content-Security-Policy':
-          "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://geo.api.gouv.fr https://api-adresse.data.gouv.fr https://data.ademe.fr https://www.data.gouv.fr https://nominatim.openstreetmap.org https://photon.komoot.io; frame-src 'self' https://maps.google.com https://www.google.com;"
+          "default-src 'self'; worker-src 'self' blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://geo.api.gouv.fr https://api-adresse.data.gouv.fr https://data.ademe.fr https://www.data.gouv.fr https://nominatim.openstreetmap.org https://photon.komoot.io ws:; frame-src 'self' https://maps.google.com https://www.google.com;"
       }
     },
     build: {

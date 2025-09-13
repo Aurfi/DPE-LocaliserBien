@@ -68,7 +68,7 @@
           <!-- Surface (optionnel) -->
           <div>
             <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-              <Home class="w-4 h-4 inline mr-1" />
+              <Grid2x2Check class="w-4 h-4 inline mr-1" />
               Surface (optionnel)
             </label>
             <div class="relative">
@@ -226,7 +226,7 @@
 </template>
 
 <script>
-import { Building, Calendar, Circle, Home, Loader, MapPin, Search, Zap } from 'lucide-vue-next'
+import { Building, Calendar, Circle, Grid2x2Check, Home, Loader, MapPin, Search, Zap } from 'lucide-vue-next'
 import { ref } from 'vue'
 import * as recentDPEService from '../services/recent-dpe.service'
 import { geocodeAddress } from '../services/recent-dpe.service'
@@ -238,6 +238,7 @@ export default {
     Calendar,
     Circle,
     Home,
+    Grid2x2Check,
     Building,
     Zap,
     Search,
@@ -403,6 +404,7 @@ export default {
           monthsBack: criteria.monthsBack,
           radius: criteria.radius,
           surface: criteria.surface,
+          typeBien: criteria.typeBien || null,
           energyClasses: criteria.energyClasses || [],
           gesClasses: criteria.gesClasses || [],
           resultCount: resultCount,
@@ -416,6 +418,7 @@ export default {
             s.monthsBack === newSearch.monthsBack &&
             s.radius === newSearch.radius &&
             s.surface === newSearch.surface &&
+            (s.typeBien || null) === newSearch.typeBien &&
             JSON.stringify(s.energyClasses) === JSON.stringify(newSearch.energyClasses) &&
             JSON.stringify(s.gesClasses || []) === JSON.stringify(newSearch.gesClasses)
         )

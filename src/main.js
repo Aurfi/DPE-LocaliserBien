@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import './style.css'
+import { registerSW } from 'virtual:pwa-register'
 import App from './App.vue'
 import FAQ from './views/FAQ.vue'
 // Import des vues
@@ -60,3 +61,8 @@ router.beforeEach((to, _from, next) => {
 const app = createApp(App)
 app.use(router)
 app.mount('#app')
+
+// Register PWA service worker (vite-plugin-pwa)
+if ('serviceWorker' in navigator) {
+  registerSW({ immediate: true })
+}
