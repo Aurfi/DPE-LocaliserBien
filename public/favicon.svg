@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <defs>
-    <!-- Gradient for background -->
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    <!-- Full continuous gradient from blue to purple -->
+    <linearGradient id="fullGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
     </linearGradient>
     
     <!-- Gradient for pin -->
@@ -12,11 +13,11 @@
       <stop offset="100%" style="stop-color:#F3F4F6;stop-opacity:1" />
     </linearGradient>
     
-    <!-- Shadow filter -->
-    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="0.5"/>
-      <feOffset dx="0" dy="1" result="offsetblur"/>
-      <feFlood flood-color="#000000" flood-opacity="0.2"/>
+    <!-- Shadow filter for pin -->
+    <filter id="pinShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0.4"/>
+      <feOffset dx="0" dy="0.5" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.3"/>
       <feComposite in2="offsetblur" operator="in"/>
       <feMerge>
         <feMergeNode/>
@@ -24,39 +25,56 @@
       </feMerge>
     </filter>
     
-    <!-- Inner shadow for depth -->
-    <filter id="innerShadow">
-      <feOffset dx="0" dy="1"/>
-      <feGaussianBlur stdDeviation="1" result="offset-blur"/>
-      <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
-      <feFlood flood-color="#000" flood-opacity="0.15" result="color"/>
-      <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
-      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    <!-- Drop shadow for hexagon -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0.5" stdDeviation="0.8" flood-opacity="0.15"/>
     </filter>
   </defs>
   
-  <!-- Background rounded square with gradient -->
-  <rect x="2" y="2" width="28" height="28" rx="7" ry="7" fill="url(#bgGradient)" filter="url(#shadow)"/>
-  
-  <!-- Subtle inner glow -->
-  <rect x="2" y="2" width="28" height="28" rx="7" ry="7" fill="none" stroke="url(#bgGradient)" stroke-width="0.5" opacity="0.3"/>
-  
-  <!-- Map pin -->
-  <g transform="translate(16, 14)">
-    <!-- Pin shape with gradient -->
-    <path d="M0 -7C-3.3 -7 -6 -4.3 -6 -1C-6 1.5 -3 7.5 -1 10.5C-0.5 11.3 0.5 11.3 1 10.5C3 7.5 6 1.5 6 -1C6 -4.3 3.3 -7 0 -7Z" 
-          fill="url(#pinGradient)" 
-          filter="url(#innerShadow)"/>
+  <!-- Hexagonal France with gradient and white stripe -->
+  <g transform="translate(16, 16)">
+    <!-- Base hexagon with full gradient (filled only) -->
+    <polygon
+      points="0,-12 10.4,-6 10.4,6 0,12 -10.4,6 -10.4,-6"
+      fill="url(#fullGradient)"
+      filter="url(#dropShadow)"
+    />
     
-    <!-- Inner circle -->
-    <circle cx="0" cy="-1" r="2.8" fill="#3B82F6" opacity="0.9"/>
-    <circle cx="0" cy="-1" r="2.3" fill="#60A5FA"/>
-    <circle cx="0" cy="-1" r="1.8" fill="#93C5FD"/>
+    <!-- White stripe overlay in the middle -->
+    <clipPath id="hexClip">
+      <polygon points="0,-12 10.4,-6 10.4,6 0,12 -10.4,6 -10.4,-6"/>
+    </clipPath>
     
-    <!-- Highlight dot for glossy effect -->
-    <ellipse cx="-0.5" cy="-2" rx="0.8" ry="0.6" fill="white" opacity="0.7"/>
+    <rect x="-2" y="-12" width="4" height="24" fill="#FFFFFF" clip-path="url(#hexClip)"/>
+    
+    <!-- Dark border on top of everything -->
+    <polygon
+      points="0,-12 10.4,-6 10.4,6 0,12 -10.4,6 -10.4,-6"
+      fill="none"
+      stroke="#2E1065"
+      stroke-width="0.4"
+      stroke-linejoin="round"
+    />
   </g>
   
-  <!-- Bottom subtle reflection -->
-  <ellipse cx="16" cy="28" rx="8" ry="2" fill="white" opacity="0.1"/>
+  <!-- Location pin (centered on Paris area) -->
+  <g transform="translate(16, 14) scale(0.9)">
+    <!-- Pin shadow -->
+    <ellipse cx="0" cy="8" rx="2" ry="0.8" fill="black" opacity="0.25"/>
+    
+    <!-- Pin shape with black outline -->
+    <path d="M0 -6C-3 -6 -5.5 -3.5 -5.5 0C-5.5 2 -3 7 -1 9.5C-0.5 10.2 0.5 10.2 1 9.5C3 7 5.5 2 5.5 0C5.5 -3.5 3 -6 0 -6Z" 
+          fill="url(#pinGradient)" 
+          stroke="#000000"
+          stroke-width="0.4"
+          filter="url(#pinShadow)"/>
+    
+    <!-- Inner circle with red center -->
+    <circle cx="0" cy="0" r="2.8" fill="#DC2626" opacity="0.9"/>
+    <circle cx="0" cy="0" r="2" fill="#EF4444"/>
+    <circle cx="0" cy="0" r="1.4" fill="#F87171"/>
+    
+    <!-- Highlight for glossy effect -->
+    <ellipse cx="-0.7" cy="-1.5" rx="0.9" ry="0.6" fill="white" opacity="0.6"/>
+  </g>
 </svg>

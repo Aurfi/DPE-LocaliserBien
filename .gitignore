@@ -47,6 +47,8 @@ nginx.conf
 public/.htaccess
 public/sitemap.xml
 public/robots.txt
+public/manifest.json
+!public/manifest.example.json
 
 # Future features (not yet implemented)
 src/services/dvf-*.js

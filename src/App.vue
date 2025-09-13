@@ -224,7 +224,7 @@ export default {
       return import.meta.env.VITE_FANCY_UI === 'true'
     },
     siteName() {
-      return import.meta.env.VITE_SITE_NAME || 'DPE Locator'
+      return import.meta.env.VITE_SITE_NAME || 'DPE Property Locator'
     },
     siteNameFirst() {
       // Pour LocaliserBien, séparer en "Localiser" et "Bien"
@@ -309,8 +309,18 @@ export default {
 
       if (effectiveTheme === 'dark') {
         document.documentElement.classList.add('dark')
+        // Update PWA theme-color for dark mode
+        const themeColorMeta = document.querySelector('meta[name="theme-color"]')
+        if (themeColorMeta) {
+          themeColorMeta.content = '#000000' // Black for dark mode
+        }
       } else {
         document.documentElement.classList.remove('dark')
+        // Update PWA theme-color for light mode
+        const themeColorMeta = document.querySelector('meta[name="theme-color"]')
+        if (themeColorMeta) {
+          themeColorMeta.content = '#93C5FD' // Light blue (blue-300) for light mode
+        }
       }
     },
 
