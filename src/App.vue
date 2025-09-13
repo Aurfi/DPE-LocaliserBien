@@ -312,14 +312,14 @@ export default {
         // Update PWA theme-color for dark mode
         const themeColorMeta = document.querySelector('meta[name="theme-color"]')
         if (themeColorMeta) {
-          themeColorMeta.content = '#000000' // Black for dark mode
+          themeColorMeta.content = '#030712' // gray-950 for dark mode
         }
       } else {
         document.documentElement.classList.remove('dark')
         // Update PWA theme-color for light mode
         const themeColorMeta = document.querySelector('meta[name="theme-color"]')
         if (themeColorMeta) {
-          themeColorMeta.content = '#93C5FD' // Light blue (blue-300) for light mode
+          themeColorMeta.content = '#93C5FD' // blue-300 for light mode
         }
       }
     },
