@@ -1,5 +1,5 @@
-// Coordonnées réelles des départements français pour la triangulation
-// Format: [longitude, latitude] en coordonnées géographiques réelles
+// Coordonnées des départements français pour la triangulation
+// Format: [longitude, latitude] en coordonnées géographiques données par un LLM (Probablement des erreurs)
 export const DEPARTMENTS_COORDS = {
   // Auvergne-Rhône-Alpes
   '01': [5.2281, 46.2044], // Ain

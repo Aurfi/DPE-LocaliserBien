@@ -164,8 +164,8 @@
 
 <script>
 import { Building, Calendar, Circle, Clock, Edit2, Grid2x2Check, Home, MapPin, Trash2 } from 'lucide-vue-next'
-import ConfirmationModal from './ConfirmationModal.vue'
-import InputModal from './InputModal.vue'
+import ConfirmationModal from '../../base/ConfirmationModal.vue'
+import InputModal from '../../base/InputModal.vue'
 
 export default {
   name: 'RecentDPESearchHistory',

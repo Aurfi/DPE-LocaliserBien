@@ -75,16 +75,18 @@
 // Composants critiques chargés immédiatement
 
 import { defineAsyncComponent } from 'vue'
-import DPESearchForm from '../components/DPESearchForm.vue'
+import DPESearchForm from '../components/features/dpe/DPESearchForm.vue'
 
 // Lazy loading des composants non-critiques pour améliorer le FCP
-const DPEResults = defineAsyncComponent(() => import('../components/ResultatsLocaliserDpe.vue'))
-const RecentDPEResults = defineAsyncComponent(() => import('../components/ResultatsDpeRecents.vue'))
-const RecentDPESearch = defineAsyncComponent(() => import('../components/RecentDPESearch.vue'))
-const RecentDPESearchHistory = defineAsyncComponent(() => import('../components/RecentDPESearchHistory.vue'))
-const RecentSearches = defineAsyncComponent(() => import('../components/RecentSearches.vue'))
-const TabNavigation = defineAsyncComponent(() => import('../components/TabNavigation.vue'))
-const TriangulationAnimation = defineAsyncComponent(() => import('../components/TriangulationAnimation.vue'))
+const DPEResults = defineAsyncComponent(() => import('../components/features/location/ResultatsLocaliserDpe.vue'))
+const RecentDPEResults = defineAsyncComponent(() => import('../components/features/dpe/ResultatsDpeRecents.vue'))
+const RecentDPESearch = defineAsyncComponent(() => import('../components/features/dpe/RecentDPESearch.vue'))
+const RecentDPESearchHistory = defineAsyncComponent(
+  () => import('../components/features/dpe/RecentDPESearchHistory.vue')
+)
+const RecentSearches = defineAsyncComponent(() => import('../components/features/search/RecentSearches.vue'))
+const TabNavigation = defineAsyncComponent(() => import('../components/base/TabNavigation.vue'))
+const TriangulationAnimation = defineAsyncComponent(() => import('../components/animations/TriangulationAnimation.vue'))
 
 import DPESearchService from '../services/dpe-search.service.js' // Système de scoring clair
 

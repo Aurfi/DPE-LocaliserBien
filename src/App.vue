@@ -199,8 +199,8 @@
 
 <script>
 import { ExternalLink, FileText, HelpCircle, Moon, Search, Shield, Sun } from 'lucide-vue-next'
-import GuideBanner from './components/GuideBanner.vue'
-import InstallPWA from './components/InstallPWA.vue'
+import GuideBanner from './components/layout/GuideBanner.vue'
+import InstallPWA from './components/layout/InstallPWA.vue'
 
 export default {
   name: 'App',

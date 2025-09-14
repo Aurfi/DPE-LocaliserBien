@@ -102,7 +102,7 @@
 
 <script>
 import { OctagonX } from 'lucide-vue-next'
-import { useResultsHandling } from '../composables/useResultsHandling'
+import { useResultsHandling } from '../../../composables/useResultsHandling'
 import {
   cleanAddress,
   extractYearFromValue,
@@ -111,16 +111,16 @@ import {
   getDaysAgo,
   getFloorDisplay,
   getPropertyType
-} from '../utils/dpeFormatters'
-import { getGeoportailUrl, getGoogleMapsEmbedUrl } from '../utils/mapUtils'
-import DonneesBrutesModal from './DonneesBrutesModal.vue'
-import DPEDetailsModal from './DPEDetailsModal.vue'
-import PropertyModal from './PropertyModal.vue'
-import ErrorState from './results/ErrorState.vue'
-import ScrollToTop from './ScrollToTop.vue'
-import EmptyState from './shared/EmptyState.vue'
-import ResultCard from './shared/ResultCard.vue'
-import ResultsHeader from './shared/ResultsHeader.vue'
+} from '../../../utils/dpeFormatters'
+import { getGeoportailUrl, getGoogleMapsEmbedUrl } from '../../../utils/mapUtils'
+import ScrollToTop from '../../base/ScrollToTop.vue'
+import ErrorState from '../../results/ErrorState.vue'
+import EmptyState from '../../shared/EmptyState.vue'
+import ResultCard from '../../shared/ResultCard.vue'
+import ResultsHeader from '../../shared/ResultsHeader.vue'
+import DonneesBrutesModal from '../dpe/DonneesBrutesModal.vue'
+import DPEDetailsModal from '../dpe/DPEDetailsModal.vue'
+import PropertyModal from '../search/PropertyModal.vue'
 
 export default {
   name: 'ResultatsLocaliserDpe',

@@ -150,11 +150,11 @@
 
 <script>
 import { MapPin, Search } from 'lucide-vue-next'
-import { getDepartmentCoords, getDepartmentFromCommune } from '../data/france-departments.js'
-import { getLoadingMessageSequence } from '../data/loading-messages.js'
-import CorseMap from './CorseMap.vue'
-import FranceMap from './FranceMap.vue'
-import WorldMap from './WorldMap.vue'
+import { getDepartmentCoords, getDepartmentFromCommune } from '../../data/france-departments.js'
+import { getLoadingMessageSequence } from '../../data/loading-messages.js'
+import CorseMap from '../features/location/CorseMap.vue'
+import FranceMap from '../features/location/FranceMap.vue'
+import WorldMap from '../features/location/WorldMap.vue'
 
 export default {
   name: 'TriangulationAnimation',
