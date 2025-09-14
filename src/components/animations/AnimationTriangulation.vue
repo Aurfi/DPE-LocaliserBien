@@ -12,17 +12,17 @@
         <!-- Barre de progression en haut -->
         <div class="absolute top-4 left-6 right-6">
           <div class="bg-slate-200 dark:bg-gray-600 rounded-full h-3 mb-3 overflow-hidden">
-            <div 
+            <div
               class="bg-gradient-to-r from-blue-500 to-indigo-500 h-3 rounded-full transition-all duration-300"
               :style="`width: ${progress}%`"
             ></div>
           </div>
-          <div class="flex justify-between text-base text-slate-600 dark:text-gray-300">
+          <div class="flex justify-center text-base text-slate-600 dark:text-gray-300">
             <div class="flex items-center space-x-3">
               <div class="w-3 h-3 bg-green-400 rounded-full"></div>
-              <span class="font-medium">{{ progress }}% - {{ currentTechMessage }}</span>
+              <span class="font-medium min-w-[45px] text-right">{{ progress }}%</span>
+              <span class="font-medium">{{ currentTechMessage }}</span>
             </div>
-            <div class="font-semibold">{{ scannerStatus }}</div>
           </div>
         </div>
 
@@ -70,11 +70,30 @@
             
             <!-- Zone de convergence énergétique - Skip for DOM-TOM, limited for Corsica -->
             <g v-if="targetCoords && regionType !== 'domtom'">
-              <!-- Particules énergétiques - always visible once generated -->
-              <circle v-for="(particle, i) in energyParticles" :key="`particle-${i}`"
-                      :cx="particle.x" :cy="particle.y" :r="particle.size"
-                      :fill="particle.color" :opacity="particle.opacity"
-                      class="energy-particle"/>
+              <!-- Particules énergétiques avec effets améliorés -->
+              <g v-for="(particle, i) in energyParticles" :key="`particle-${i}`">
+                <!-- Glow effect -->
+                <circle :cx="particle.x" :cy="particle.y"
+                        :r="particle.size * 2.5"
+                        :fill="particle.color"
+                        :opacity="particle.opacity * 0.2"
+                        filter="blur(3px)"/>
+                <!-- Outer ring -->
+                <circle :cx="particle.x" :cy="particle.y"
+                        :r="particle.size * 1.5"
+                        :fill="particle.color"
+                        :opacity="particle.opacity * 0.4"/>
+                <!-- Core particle -->
+                <circle :cx="particle.x" :cy="particle.y"
+                        :r="particle.size"
+                        fill="white"
+                        :opacity="particle.opacity * 0.9"/>
+                <!-- Inner color -->
+                <circle :cx="particle.x" :cy="particle.y"
+                        :r="particle.size * 0.7"
+                        :fill="particle.color"
+                        :opacity="particle.opacity"/>
+              </g>
 
               <!-- Targeting effects only when convergence is active -->
               <g v-if="showEnergyConvergence">
@@ -238,6 +257,10 @@ export default {
     waitingForResults: {
       type: Boolean,
       default: false
+    },
+    resultsCount: {
+      type: Number,
+      default: null
     }
   },
   data() {
@@ -256,7 +279,7 @@ export default {
       energyParticles: [],
       convergenceRings: [],
       particleIdCounter: 0,
-      maxParticles: 65,
+      maxParticles: 35,
       particlesSpawned: 0,
       franceColor: 'rgba(59, 130, 246, 0.15)',
       franceBorderColor: '#3B82F6',
@@ -289,7 +312,12 @@ export default {
     }
   },
   mounted() {
-    this.startAnimation()
+    // Delay animation start to reduce initial CPU spike
+    this.$nextTick(() => {
+      setTimeout(() => {
+        this.startAnimation()
+      }, 150) // Small delay to let the browser settle
+    })
   },
 
   beforeUnmount() {
@@ -376,114 +404,169 @@ export default {
     },
 
     async animateProgress() {
-      const duration = 3000 // 3 secondes - animation plus rapide
-      const steps = 60 // Étapes ajustées pour nouvelle durée
-      const stepDuration = duration / steps
+      const firstHalfDuration = 2000 // 2s pour la première moitié (0-50%)
+      const secondHalfDuration = 1500 // 1.5s pour la seconde moitié (50-100%)
+      const frameInterval = 16 // ~60fps
+
+      // Small delay before starting animations to reduce CPU spike
+      await new Promise(resolve => setTimeout(resolve, 100))
 
       // Démarrer les animations continues
       this.startContinuousAnimations()
 
-      for (let i = 0; i <= steps; i++) {
-        await new Promise(resolve => setTimeout(resolve, stepDuration))
+      // Animation jusqu'à 50% d'abord (basée sur le temps réel)
+      const startTime = Date.now()
 
-        this.progress = Math.floor((i / steps) * 100)
+      while (true) {
+        const elapsed = Date.now() - startTime
+        const progress = Math.min(50, (elapsed / firstHalfDuration) * 50)
+        this.progress = Math.floor(progress)
 
-        // Phase 2 : Analyse - Start blue (10%)
-        if (i === 6) {
+        // Phases de couleur basées sur le progrès
+        if (this.progress >= 10 && this.progress < 11) {
           this.franceColor = 'rgba(99, 102, 241, 0.2)'
           this.franceBorderColor = '#6366F1'
         }
 
-        // Phase 2.5 : Transition to blue-purple (35%)
-        if (i === 21) {
+        if (this.progress >= 35 && this.progress < 36) {
           this.franceColor = 'rgba(119, 97, 244, 0.22)'
           this.franceBorderColor = '#7761F3'
         }
 
-        // Phase 3 : Localisation - Mid purple (55%)
-        if (i === 33) {
-          this.franceColor = 'rgba(139, 92, 246, 0.25)'
-          this.franceBorderColor = '#8B5CF6'
-        }
-
-        // Phase 1 : Generate particles when animation starts moving (1%) - Skip for DOM-TOM, limited for Corsica
-        if (i === 1 && this.regionType !== 'domtom') {
+        // Phase 1 : Generate particles when animation starts moving (1%) - Skip for DOM-TOM
+        if (this.progress === 1 && !this.particlesGenerated && this.regionType !== 'domtom') {
           this.generateEnergyParticles()
+          this.particlesGenerated = true
         }
 
-        // Phase 2 : Start showing convergence effects (visor) at 65% - only for mainland France
-        if (i === 39 && this.regionType === 'france') {
-          this.showEnergyConvergence = true
-          this.visorOpacity = 0.1 // Start with very low opacity
-        }
-
-        // Progressive visor fade-in from 65% to 78%
-        if (this.regionType === 'france' && i >= 39 && i <= 47) {
-          this.visorOpacity = Math.min(1, 0.1 + ((i - 39) / 8) * 0.9)
-        }
-
-        // Phase 4 : Deeper purple (70%)
-        if (i === 42) {
-          this.franceColor = 'rgba(153, 89, 247, 0.28)'
-          this.franceBorderColor = '#9959F7'
-        }
-
-        // Phase 4.5 : Add convergence rings for France at 70%
-        if (i === 42 && this.regionType === 'france') {
-          this.generateConvergenceRings()
-        }
-
-        // Phase 4.6 : Final purple at 78%
-        if (i === 47 && this.regionType === 'france') {
-          this.franceColor = 'rgba(168, 85, 247, 0.3)'
-          this.franceBorderColor = '#6366F1'
-          this.visorOpacity = 1 // Full opacity by this point
-        }
-
-        // Phase 4.5 : Color change for Corsica at 78%
-        if (i === 47 && this.regionType === 'corsica') {
-          this.franceColor = 'rgba(168, 85, 247, 0.3)'
-          this.franceBorderColor = '#6366F1'
-        }
-
-        // Phase 5 : Final (90-100%) - Keep purple for France/Corsica
-        if (i === 54) {
-          if (this.regionType === 'france' || this.regionType === 'corsica') {
-            // Stay purple for France/Corsica
-            this.franceColor = 'rgba(168, 85, 247, 0.35)'
-            this.franceBorderColor = '#6366F1'
-          } else {
-            // Green for other regions
-            this.franceColor = 'rgba(16, 185, 129, 0.4)'
-            this.franceBorderColor = '#10b981'
-          }
-        }
-
-        // Add new DPE data particles gradually until 60% (every 2 steps = less frequent)
-        // Skip spawning between 1-3% to let initial particles settle
-        if (i < 36 && i % 2 === 0 && this.regionType !== 'domtom' && (i < 1 || i > 2)) {
+        // Add new DPE data particles gradually until 50%
+        if (this.progress % 3 === 0 && this.progress < 50 && this.regionType !== 'domtom' && this.progress > 3) {
           this.addNewParticle()
         }
 
-        // Changer les messages techniques (plus lentement pour qu'on puisse les lire)
-        if (i % 20 === 0 && this.messageIndex < this.loadingMessages.length) {
-          this.currentTechMessage = this.loadingMessages[this.messageIndex]
-          this.messageIndex++
+        // Changer les messages techniques (minimum 2s par message)
+        const elapsedSeconds = elapsed / 1000
+        const messageIndex = Math.min(
+          Math.floor(elapsedSeconds / 2), // 2 seconds per message
+          Math.floor(this.progress / 20)
+        )
+        if (messageIndex < this.loadingMessages.length && messageIndex !== this.lastMessageIndex) {
+          this.currentTechMessage = this.loadingMessages[messageIndex]
+          this.lastMessageIndex = messageIndex
         }
+
+        // Arrêter à 50%
+        if (progress >= 50) {
+          this.progress = 50
+          break
+        }
+
+        await new Promise(resolve => setTimeout(resolve, frameInterval))
       }
 
-      // Si les données ne sont pas prêtes et qu'on attend, boucler sur les dernières étapes
+      // Phase 3 : Localisation - Mid purple (55%)
+      if (this.progress === 55) {
+        this.franceColor = 'rgba(139, 92, 246, 0.25)'
+        this.franceBorderColor = '#8B5CF6'
+      }
+
+      // À 50%, vérifier si on a des résultats
+      if (this.isDataReady && this.resultsCount === 0) {
+        // Aucun résultat - terminer l'animation immédiatement
+        this.currentTechMessage = 'Aucun résultat trouvé'
+        await new Promise(resolve => setTimeout(resolve, 500))
+        this.stopContinuousAnimations()
+        this.onComplete()
+        return
+      }
+
+      // Si les données ne sont pas prêtes et qu'on attend
       if (!this.isDataReady && this.waitingForResults) {
         await this.loopFinalSteps()
         // Ne pas continuer jusqu'à la fin ici - laisser le watcher s'en occuper quand les données arrivent
         return
       }
 
-      // Animation terminée si on n'attend pas de résultats
+      // Si les données sont prêtes avec des résultats OU qu'on n'attend pas de résultats, continuer de 50% à 100%
+      await this.animateSecondHalf()
+
+      // Animation terminée
       setTimeout(() => {
         this.stopContinuousAnimations()
         this.onComplete()
       }, 500)
+    },
+
+    async animateSecondHalf() {
+      const secondHalfDuration = 1500 // 1.5s pour la seconde moitié
+      const frameInterval = 16 // ~60fps
+      const startTime = Date.now()
+
+      while (true) {
+        const elapsed = Date.now() - startTime
+        const progress = Math.min(100, 50 + (elapsed / secondHalfDuration) * 50)
+        this.progress = Math.floor(progress)
+
+        // Phase 2 : Start showing convergence effects (visor) at 65% - only for mainland France
+        if (this.progress === 65 && this.regionType === 'france' && !this.showEnergyConvergence) {
+          this.showEnergyConvergence = true
+          this.visorOpacity = 0.1
+        }
+
+        // Progressive visor fade-in from 65% to 78%
+        if (this.regionType === 'france' && this.progress >= 65 && this.progress <= 78) {
+          this.visorOpacity = Math.min(1, 0.1 + ((this.progress - 65) / 13) * 0.9)
+        }
+
+        // Phase 4 : Deeper purple (70%)
+        if (this.progress === 70) {
+          this.franceColor = 'rgba(153, 89, 247, 0.28)'
+          this.franceBorderColor = '#9959F7'
+          if (this.regionType === 'france' && !this.ringsGenerated) {
+            this.generateConvergenceRings()
+            this.ringsGenerated = true
+          }
+        }
+
+        // Phase 4.6 : Final purple at 78%
+        if (this.progress === 78) {
+          this.franceColor = 'rgba(168, 85, 247, 0.3)'
+          this.franceBorderColor = '#6366F1'
+          if (this.regionType === 'france') {
+            this.visorOpacity = 1
+          }
+        }
+
+        // Phase 5 : Final (90-100%) - Keep purple for France/Corsica
+        if (this.progress >= 90) {
+          if (this.regionType === 'france' || this.regionType === 'corsica') {
+            this.franceColor = 'rgba(168, 85, 247, 0.35)'
+            this.franceBorderColor = '#6366F1'
+          } else {
+            this.franceColor = 'rgba(16, 185, 129, 0.4)'
+            this.franceBorderColor = '#10b981'
+          }
+        }
+
+        // Changer les messages techniques (minimum 2s par message)
+        const elapsedSeconds = elapsed / 1000
+        const messageIndex = Math.min(
+          Math.floor(elapsedSeconds / 2) + 3, // Continue from message 3, 2s per message
+          Math.floor((this.progress - 50) / 20) + 3
+        )
+        if (messageIndex < this.loadingMessages.length && messageIndex !== this.lastMessageIndex) {
+          this.currentTechMessage = this.loadingMessages[messageIndex]
+          this.lastMessageIndex = messageIndex
+        }
+
+        // Arrêter à 100%
+        if (progress >= 100) {
+          this.progress = 100
+          break
+        }
+
+        await new Promise(resolve => setTimeout(resolve, frameInterval))
+      }
     },
 
     async loopFinalSteps() {
@@ -493,15 +576,26 @@ export default {
 
       // Messages de boucle
       const loopMessages = [
-        "Finalisation de l'analyse...",
-        'Traitement des données...',
-        'Vérification des résultats...',
-        'Calibration finale...',
+        'Analyse des données en cours...',
+        'Traitement des résultats...',
+        'Calcul des corrélations...',
+        "Préparation de l'affichage...",
         'Synchronisation des données...',
         'Optimisation du signal...'
       ]
 
       let loopIndex = 0
+
+      // Pause à 50% au lieu de boucler à 90-99%
+      this.progress = 50
+      this.currentTechMessage = loopMessages[0]
+
+      // Faire revenir les particules en mode attente
+      if (this.energyParticles.length > 0) {
+        this.energyParticles.forEach(particle => {
+          particle.waitingMode = true
+        })
+      }
 
       while (!this.isDataReady && this.isLooping) {
         // Vérifier le timeout
@@ -516,38 +610,49 @@ export default {
           return
         }
 
-        // Osciller le progrès entre 90% et 99%
-        for (let p = 90; p <= 99; p++) {
-          if (this.isDataReady || !this.isLooping) break
-
-          this.progress = p
-          await new Promise(resolve => setTimeout(resolve, 50))
+        // Rester à 50% mais changer le message périodiquement
+        if (loopIndex % 40 === 0) {
+          // Changer le message toutes les 2 secondes environ
+          this.currentTechMessage = loopMessages[Math.floor(loopIndex / 40) % loopMessages.length]
         }
-
-        for (let p = 99; p >= 90; p--) {
-          if (this.isDataReady || !this.isLooping) break
-
-          this.progress = p
-          await new Promise(resolve => setTimeout(resolve, 50))
-        }
-
-        // Changer le message
-        this.currentTechMessage = loopMessages[loopIndex % loopMessages.length]
         loopIndex++
 
-        // Faire pulser les couleurs
-        if (loopIndex % 2 === 0) {
-          this.franceColor = 'rgba(217, 119, 6, 0.4)'
-          this.franceBorderColor = '#d97706'
-        } else {
-          this.franceColor = 'rgba(16, 185, 129, 0.4)'
-          this.franceBorderColor = '#10b981'
-        }
+        // Faire pulser doucement la couleur de la France
+        const pulse = Math.sin(loopIndex * 0.05) * 0.1 + 0.25
+        this.franceColor = `rgba(139, 92, 246, ${pulse})`
+
+        await new Promise(resolve => setTimeout(resolve, 50))
       }
 
-      // Finaliser à 100% seulement si on est encore en boucle
-      if (this.isLooping) {
-        this.progress = 100
+      // Quand les données arrivent, vérifier si on a des résultats
+      if (this.isDataReady && this.isLooping) {
+        this.isLooping = false
+
+        // Si aucun résultat, terminer immédiatement
+        if (this.resultsCount === 0) {
+          this.currentTechMessage = 'Aucun résultat trouvé'
+          await new Promise(resolve => setTimeout(resolve, 500))
+          this.stopContinuousAnimations()
+          this.onComplete()
+          return
+        }
+
+        // Réactiver le mouvement normal des particules
+        if (this.energyParticles.length > 0) {
+          this.energyParticles.forEach(particle => {
+            particle.waitingMode = false
+          })
+        }
+
+        // Continuer avec la seconde moitié de l'animation
+        await this.animateSecondHalf()
+
+        // Animation terminée
+        setTimeout(() => {
+          this.stopContinuousAnimations()
+          this.onComplete()
+        }, 500)
+        return
       }
       this.isLooping = false
     },
@@ -563,7 +668,7 @@ export default {
           this.updateConvergenceRings()
           this.updateVisor()
         }
-      }, 50)
+      }, 33)
     },
 
     stopContinuousAnimations() {
@@ -577,8 +682,8 @@ export default {
       this.energyParticles = []
       this.particleIdCounter = 0
       this.particlesSpawned = 0
-      // Start with even fewer DPE data points - 8 initially
-      for (let i = 0; i < 8; i++) {
+      // Start with even fewer DPE data points - 5 initially
+      for (let i = 0; i < 5; i++) {
         this.addNewParticle()
       }
     },
@@ -763,11 +868,13 @@ export default {
 
     updateEnergyParticles() {
       this.energyParticles.forEach(particle => {
-        if (this.progress < 35) {
-          // 0-35%: Slower erratic movement
-          particle.erraticTime += 0.08
-          particle.x += Math.cos(particle.erraticTime) * 1.5
-          particle.y += Math.sin(particle.erraticTime * 1.5) * 1.5
+        // Mouvement erratique jusqu'à 35% OU si en mode attente à 50%
+        if (this.progress < 35 || particle.waitingMode) {
+          // Slower erratic movement (encore plus lent en mode attente)
+          particle.erraticTime += particle.waitingMode ? 0.04 : 0.08
+          const movementScale = particle.waitingMode ? 0.7 : 1.5
+          particle.x += Math.cos(particle.erraticTime) * movementScale
+          particle.y += Math.sin(particle.erraticTime * 1.5) * movementScale
         } else if (this.progress < 75) {
           // 35-75%: Accelerating movement toward target
           const accelerationFactor = (this.progress - 35) / 40 // 0 to 1 over 35-75%
@@ -789,8 +896,8 @@ export default {
         if (distance < 3) {
           // Mark particle for removal when very close
           particle.shouldRemove = true
-        } else if (distance < 15 && this.progress < 95) {
-          // Reset particles that get too close during early phases
+        } else if (distance < 15 && this.progress < 80) {
+          // Reset particles that get too close during early phases (stop after 80%)
           const pos = this.getRandomPositionInMap()
           particle.x = pos.x
           particle.y = pos.y

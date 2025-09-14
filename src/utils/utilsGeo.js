@@ -67,54 +67,96 @@ export function calculateDistance(lat1, lon1, lat2, lon2) {
 export async function geocodeAddress(address, options = {}) {
   const { throwOnError = false, extendedFormat = false } = options
 
-  try {
-    const response = await fetch(`https://data.geopf.fr/geocodage/search?q=${encodeURIComponent(address)}&limit=1`)
+  // Retry logic for timeout errors
+  let retries = 2
+  let lastError = null
 
-    if (!response.ok) {
-      const errorMessage = `Geocoding API error: ${response.status}`
-      if (throwOnError) throw new Error(errorMessage)
-      return null
-    }
+  while (retries > 0) {
+    try {
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 8000) // 8 second timeout
 
-    const data = await response.json()
+      const response = await fetch(`https://data.geopf.fr/geocodage/search?q=${encodeURIComponent(address)}&limit=1`, {
+        signal: controller.signal
+      })
 
-    if (data.features && data.features.length > 0) {
-      const feature = data.features[0]
-      const [lon, lat] = feature.geometry.coordinates
-      const postalCode = feature.properties.postcode
-      const city = feature.properties.city || feature.properties.name
+      clearTimeout(timeoutId)
 
-      const baseResult = {
-        lat,
-        lon,
-        formattedAddress: feature.properties.label,
-        postalCode,
-        city
-      }
-
-      // Extended format for compatibility with DPE search service
-      if (extendedFormat) {
-        return {
-          ...baseResult,
-          centre: { lat, lon },
-          mairie: { lat, lon },
-          radius: 0,
-          coverageRadius: 0,
-          isMultiCommune: false
+      if (!response.ok) {
+        if (response.status === 504 || response.status === 503) {
+          lastError = new Error(
+            'Le service de géolocalisation est temporairement indisponible. Veuillez réessayer dans quelques instants.'
+          )
+          retries--
+          if (retries > 0) {
+            await new Promise(resolve => setTimeout(resolve, 1000)) // Wait 1 second before retry
+            continue
+          }
+        } else {
+          const errorMessage = 'Impossible de localiser cette adresse. Veuillez vérifier et réessayer.'
+          if (throwOnError) throw new Error(errorMessage)
+          return null
         }
       }
 
-      return baseResult
-    }
+      const data = await response.json()
 
-    // No results found
-    const errorMessage = 'Address not found'
-    if (throwOnError) throw new Error(errorMessage)
-    return null
-  } catch (error) {
-    if (throwOnError) throw error
-    return null
+      if (data.features && data.features.length > 0) {
+        const feature = data.features[0]
+        const [lon, lat] = feature.geometry.coordinates
+        const postalCode = feature.properties.postcode
+        const city = feature.properties.city || feature.properties.name
+
+        const baseResult = {
+          lat,
+          lon,
+          formattedAddress: feature.properties.label,
+          postalCode,
+          city
+        }
+
+        // Extended format for compatibility with DPE search service
+        if (extendedFormat) {
+          return {
+            ...baseResult,
+            centre: { lat, lon },
+            mairie: { lat, lon },
+            radius: 0,
+            coverageRadius: 0,
+            isMultiCommune: false
+          }
+        }
+
+        return baseResult
+      }
+
+      // No results found
+      const errorMessage = 'Aucune adresse trouvée. Veuillez vérifier votre saisie.'
+      if (throwOnError) throw new Error(errorMessage)
+      return null
+    } catch (error) {
+      // Handle abort/timeout errors
+      if (error.name === 'AbortError') {
+        lastError = new Error('La recherche prend trop de temps. Veuillez réessayer.')
+        retries--
+        if (retries > 0) {
+          await new Promise(resolve => setTimeout(resolve, 1000))
+          continue
+        }
+      }
+      lastError = error
+      retries--
+      if (retries > 0) {
+        await new Promise(resolve => setTimeout(resolve, 1000))
+      }
+    }
   }
+
+  // If we get here, all retries failed
+  if (throwOnError && lastError) {
+    throw lastError
+  }
+  return null
 }
 
 /**

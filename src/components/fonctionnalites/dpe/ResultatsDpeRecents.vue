@@ -335,6 +335,12 @@ export default {
     },
 
     getFormattedAddress(dpe) {
+      // Prioritize adresseComplete if it exists (it's the reconstructed clean address)
+      if (dpe.adresseComplete) {
+        return dpe.adresseComplete.replace(/â€™/g, "'")
+      }
+
+      // Fallback to original logic if adresseComplete doesn't exist
       let address = ''
       if (dpe.adresse_ban && /^\d/.test(dpe.adresse_ban.trim())) {
         address = dpe.adresse_ban

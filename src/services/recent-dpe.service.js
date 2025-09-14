@@ -110,19 +110,37 @@ function mapAdemeResult(ademeData) {
 
     // Ajouter les champs mappés pour la cohérence avec DPESearchService
     adresseComplete: (() => {
+      const adresseBan = ademeData.adresse_ban?.trim() || ''
+      const adresseBrut = ademeData.adresse_brut?.trim() || ''
+
+      // Check if adresse_ban is malformed (just city name, postal code, or too short)
+      const isBanMalformed =
+        !adresseBan ||
+        adresseBan.length < 9 ||
+        /^\d{5}$/.test(adresseBan) || // Just postal code
+        !adresseBan.includes(' ') || // Just one word (likely city name)
+        !/\d/.test(adresseBan) // No numbers at all (no street number)
+
+      // If adresse_ban is malformed, use adresse_brut entirely
+      if (isBanMalformed && adresseBrut) {
+        return adresseBrut
+      }
+
       // Si adresse_ban a déjà un numéro, l'utiliser tel quel
-      if (ademeData.adresse_ban && /^\d/.test(ademeData.adresse_ban.trim())) {
-        return ademeData.adresse_ban
+      if (adresseBan && /^\d/.test(adresseBan)) {
+        return adresseBan
       }
 
       // Si adresse_ban n'a pas de numéro mais adresse_brut en a un, les combiner
-      if (ademeData.adresse_ban && ademeData.adresse_brut && /^\d+/.test(ademeData.adresse_brut.trim())) {
-        const streetNumber = ademeData.adresse_brut.match(/^\d+[a-z]?\s*/i)[0].trim()
-        return `${streetNumber} ${ademeData.adresse_ban}`
+      if (adresseBan && adresseBrut && /^\d+/.test(adresseBrut)) {
+        const streetNumber = adresseBrut.match(/^\d+[a-z]?\s*/i)?.[0]?.trim()
+        if (streetNumber) {
+          return `${streetNumber} ${adresseBan}`
+        }
       }
 
       // Sinon utiliser adresse_ban ou adresse_brut comme solution de repli
-      return ademeData.adresse_ban || ademeData.adresse_brut || 'Adresse non disponible'
+      return adresseBan || adresseBrut || 'Adresse non disponible'
     })(),
     codePostal: ademeData.code_postal_ban || ademeData.code_postal_brut?.toString() || '',
     commune: ademeData.nom_commune_ban || ademeData.nom_commune_brut || '',

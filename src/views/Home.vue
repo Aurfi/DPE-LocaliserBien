@@ -1,13 +1,14 @@
 <template>
   <div>
     <!-- Animation de triangulation -->
-    <AnimationTriangulation 
+    <AnimationTriangulation
       v-if="showAnimation"
       :commune="searchCriteria?.commune || recentDPESearchCriteria?.address || ''"
       :coordinates="recentDPESearchCoordinates || recentDPEResults?.searchCoordinates || null"
       :onComplete="handleAnimationComplete"
       :isDataReady="searchResults !== null || recentDPEResults !== null"
       :waitingForResults="true"
+      :resultsCount="(searchResults?.results?.length ?? 0) + (recentDPEResults?.results?.length ?? 0)"
       class="relative z-10"
     />
     
