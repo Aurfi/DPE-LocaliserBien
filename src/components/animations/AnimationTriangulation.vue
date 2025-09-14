@@ -156,6 +156,7 @@
 <script>
 import { MapPin, Search } from 'lucide-vue-next'
 import { getDepartmentCoords, getDepartmentFromCommune } from '../../data/departements-france.js'
+import { departmentPositions } from '../../data/department-positions.js'
 import { getLoadingMessageSequence } from '../../data/messages-chargement.js'
 import CarteCorse from '../fonctionnalites/localisation/CarteCorse.vue'
 import CarteFrance from '../fonctionnalites/localisation/CarteFrance.vue'
@@ -294,16 +295,19 @@ export default {
       // Détecter le type de région
       this.regionType = this.detectRegionType(this.targetDepartment)
 
-      // Convertir les coordonnées géographiques vers l'espace SVG
-      // France repositionnée: scale(1.0) + translate(150, 50) dans viewBox 800x600
-      // Limites du chemin SVG : X de ~9 à ~500, Y de ~5 à ~505
-      // Coordonnées réelles de la France : lon -5°O à 9°E, lat 42°N à 51°N
+      // Utiliser les positions fixes des départements pour un meilleur alignement
+      let svgX, svgY
 
-      // Mapper la longitude vers X
-      const svgX = Math.round(150 + ((lon + 5.5) / 14) * 480)
-
-      // Mapper la latitude vers Y - ajusté pour la France décalée à Y=80
-      const svgY = Math.round(165 + ((51 - lat) / 9) * 400) // Ajusté pour position optimale
+      if (departmentPositions[this.targetDepartment]) {
+        // Utiliser la position fixe si disponible
+        const pos = departmentPositions[this.targetDepartment]
+        svgX = pos.x
+        svgY = pos.y
+      } else {
+        // Fallback sur l'ancienne formule si département non trouvé
+        svgX = Math.round(150 + ((lon + 5.5) / 14) * 480)
+        svgY = Math.round(165 + ((51 - lat) / 9) * 400)
+      }
 
       this.targetCoords = this.adjustTargetCoordsForRegion(svgX, svgY)
 
@@ -641,13 +645,22 @@ export default {
           '95'
         ]
         const randomDept = departments[Math.floor(Math.random() * departments.length)]
+
+        // Use fixed positions if available
+        if (departmentPositions[randomDept]) {
+          const pos = departmentPositions[randomDept]
+          const svgX = pos.x + (Math.random() - 0.5) * 40
+          const svgY = pos.y + (Math.random() - 0.5) * 40
+          return { x: Math.max(150, Math.min(650, svgX)), y: Math.max(100, Math.min(520, svgY)) }
+        }
+
+        // Fallback to formula if position not found
         const coords = getDepartmentCoords(randomDept)
         if (coords) {
           const [lon, lat] = coords
-          // Convert geo coordinates to SVG coordinates with random offset
           const svgX = Math.round(150 + ((lon + 5.5) / 14) * 480) + (Math.random() - 0.5) * 40
           const svgY = Math.round(165 + ((51 - lat) / 9) * 400) + (Math.random() - 0.5) * 40
-          return { x: Math.max(150, Math.min(550, svgX)), y: Math.max(100, Math.min(480, svgY)) }
+          return { x: Math.max(150, Math.min(650, svgX)), y: Math.max(100, Math.min(520, svgY)) }
         }
         // Fallback to random position in France area
         return {
