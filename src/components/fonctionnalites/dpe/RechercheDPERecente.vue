@@ -232,7 +232,7 @@ import * as recentDPEService from '../../../services/recent-dpe.service'
 import { geocodeAddress } from '../../../utils/utilsGeo.js'
 
 export default {
-  name: 'RecentDPESearch',
+  name: 'RechercheDPERecente',
   components: {
     MapPin,
     Calendar,

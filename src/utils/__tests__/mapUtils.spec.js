@@ -74,19 +74,19 @@ describe('utilsCartes', () => {
   describe('getGoogleMapsSearchUrl', () => {
     it('devrait générer une URL de recherche avec adresse quand fournie', () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522, '1 rue de la Paix, Paris')
-      const expected = 'https://www.google.com/maps/search/?api=1&query=1%20rue%20de%20la%20Paix%2C%20Paris'
+      const expected = 'https://www.google.com/maps/recherche/?api=1&query=1%20rue%20de%20la%20Paix%2C%20Paris'
       expect(result).toBe(expected)
     })
 
     it('devrait générer une URL de recherche avec coordonnées sans adresse', () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522)
-      const expected = 'https://www.google.com/maps/search/?api=1&query=48.8566,2.3522'
+      const expected = 'https://www.google.com/maps/recherche/?api=1&query=48.8566,2.3522'
       expect(result).toBe(expected)
     })
 
     it('devrait gérer les coordonnées en chaîne de caractères', () => {
       const result = getGoogleMapsSearchUrl('48.8566', '2.3522')
-      const expected = 'https://www.google.com/maps/search/?api=1&query=48.8566,2.3522'
+      const expected = 'https://www.google.com/maps/recherche/?api=1&query=48.8566,2.3522'
       expect(result).toBe(expected)
     })
 
@@ -97,19 +97,19 @@ describe('utilsCartes', () => {
 
     it("devrait préférer l'adresse aux coordonnées", () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522, 'Paris France')
-      const expected = 'https://www.google.com/maps/search/?api=1&query=Paris%20France'
+      const expected = 'https://www.google.com/maps/recherche/?api=1&query=Paris%20France'
       expect(result).toBe(expected)
     })
 
     it("devrait gérer les caractères spéciaux dans l'adresse", () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522, 'Café & Restaurant, Paris')
-      const expected = 'https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20%26%20Restaurant%2C%20Paris'
+      const expected = 'https://www.google.com/maps/recherche/?api=1&query=Caf%C3%A9%20%26%20Restaurant%2C%20Paris'
       expect(result).toBe(expected)
     })
 
     it("devrait gérer une chaîne d'adresse vide et utiliser les coordonnées", () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522, '')
-      const expected = 'https://www.google.com/maps/search/?api=1&query=48.8566,2.3522'
+      const expected = 'https://www.google.com/maps/recherche/?api=1&query=48.8566,2.3522'
       expect(result).toBe(expected)
     })
   })

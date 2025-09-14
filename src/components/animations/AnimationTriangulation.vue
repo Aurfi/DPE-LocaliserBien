@@ -152,9 +152,9 @@
 import { MapPin, Search } from 'lucide-vue-next'
 import { getDepartmentCoords, getDepartmentFromCommune } from '../../data/departements-france.js'
 import { getLoadingMessageSequence } from '../../data/messages-chargement.js'
-import CarteCorse from '../features/location/CarteCorse.vue'
-import CarteFrance from '../features/location/CarteFrance.vue'
-import CarteMonde from '../features/location/CarteMonde.vue'
+import CarteCorse from '../fonctionnalites/localisation/CarteCorse.vue'
+import CarteFrance from '../fonctionnalites/localisation/CarteFrance.vue'
+import CarteMonde from '../fonctionnalites/localisation/CarteMonde.vue'
 
 export default {
   name: 'TriangulationAnimation',

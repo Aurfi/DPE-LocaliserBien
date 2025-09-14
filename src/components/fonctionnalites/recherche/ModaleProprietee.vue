@@ -276,7 +276,7 @@ export default {
       // Construire l'URL Google Maps avec l'adresse
       const address = `${this.formattedAddress}, ${this.commune}`
       const query = encodeURIComponent(address)
-      return `https://www.google.com/maps/search/?api=1&query=${query}`
+      return `https://www.google.com/maps/recherche/?api=1&query=${query}`
     }
   }
 }

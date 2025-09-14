@@ -168,7 +168,7 @@ import ModaleConfirmation from '../../base/ModaleConfirmation.vue'
 import ModaleEntree from '../../base/ModaleEntree.vue'
 
 export default {
-  name: 'RecentDPESearchHistory',
+  name: 'RechercheDPERecenteHistory',
   components: {
     MapPin,
     Calendar,

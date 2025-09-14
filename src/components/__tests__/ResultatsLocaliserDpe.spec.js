@@ -1,10 +1,10 @@
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { ref as mockRef, nextTick } from 'vue'
-import ResultatsLocaliserDpe from '../features/location/ResultatsLocaliserDpe.vue'
+import ResultatsLocaliserDpe from '../fonctionnalites/localisation/ResultatsLocaliserDpe.vue'
 
 // Mock child components with realistic behavior
-vi.mock('../features/search/PropertyModal.vue', () => ({
+vi.mock('../fonctionnalites/recherche/PropertyModal.vue', () => ({
   default: {
     name: 'PropertyModal',
     template: `
@@ -41,7 +41,7 @@ vi.mock('../features/search/PropertyModal.vue', () => ({
   }
 }))
 
-vi.mock('../features/dpe/ModaleDetailsDPE.vue', () => ({
+vi.mock('../fonctionnalites/dpe/ModaleDetailsDPE.vue', () => ({
   default: {
     name: 'ModaleDetailsDPE',
     template: `
@@ -56,7 +56,7 @@ vi.mock('../features/dpe/ModaleDetailsDPE.vue', () => ({
   }
 }))
 
-vi.mock('../features/dpe/DonneesBrutesModal.vue', () => ({
+vi.mock('../fonctionnalites/dpe/DonneesBrutesModal.vue', () => ({
   default: {
     name: 'DonneesBrutesModal',
     template: `
@@ -77,7 +77,7 @@ vi.mock('../base/RetourEnHaut.vue', () => ({
   }
 }))
 
-vi.mock('../shared/ResultCard.vue', () => ({
+vi.mock('../partages/CarteBien.vue', () => ({
   default: {
     name: 'ResultCard',
     template: `
@@ -122,7 +122,7 @@ vi.mock('../shared/ResultCard.vue', () => ({
   }
 }))
 
-vi.mock('../shared/ResultsHeader.vue', () => ({
+vi.mock('../partages/EnteteResultats.vue', () => ({
   default: {
     name: 'ResultsHeader',
     template: `
@@ -152,7 +152,7 @@ vi.mock('../shared/ResultsHeader.vue', () => ({
   }
 }))
 
-vi.mock('../shared/EmptyState.vue', () => ({
+vi.mock('../partages/EtatVide.vue', () => ({
   default: {
     name: 'EmptyState',
     template: `
@@ -165,7 +165,7 @@ vi.mock('../shared/EmptyState.vue', () => ({
   }
 }))
 
-vi.mock('../results/ErrorState.vue', () => ({
+vi.mock('../resultats/EtatErreur.vue', () => ({
   default: {
     name: 'ErrorState',
     template: `
@@ -182,8 +182,16 @@ vi.mock('../results/ErrorState.vue', () => ({
 // Mock Lucide Vue icons
 vi.mock('lucide-vue-next', () => ({
   AlertTriangle: { template: '<div data-testid="alert-triangle-icon"></div>' },
+  Building2: { template: '<div data-testid="building2-icon"></div>' },
+  Calendar: { template: '<div data-testid="calendar-icon"></div>' },
+  ChevronDown: { template: '<div data-testid="chevron-down-icon"></div>' },
+  Database: { template: '<div data-testid="database-icon"></div>' },
+  ExternalLink: { template: '<div data-testid="external-link-icon"></div>' },
+  Home: { template: '<div data-testid="home-icon"></div>' },
   Search: { template: '<div data-testid="search-icon"></div>' },
-  OctagonX: { template: '<div data-testid="octagon-x-icon"></div>' }
+  OctagonX: { template: '<div data-testid="octagon-x-icon"></div>' },
+  Trash2: { template: '<div data-testid="trash2-icon"></div>' },
+  X: { template: '<div data-testid="x-icon"></div>' }
 }))
 
 // Mock utilsCartes

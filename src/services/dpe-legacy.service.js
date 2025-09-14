@@ -9,6 +9,8 @@ class DPELegacyService {
   constructor() {
     this.baseURL = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe-france/lines'
     this.departmentCache = {}
+    this.communesIndex = null
+    this.indexPromise = null
   }
 
   /**
@@ -26,6 +28,34 @@ class DPELegacyService {
       return deptData
     } catch (_error) {
       return null
+    }
+  }
+
+  /**
+   * Charge l'index des communes
+   */
+  async loadIndex() {
+    try {
+      const response = await fetch('/data/communes-index.json')
+      if (response.ok) {
+        this.communesIndex = await response.json()
+      } else {
+        this.communesIndex = null
+      }
+    } catch (_error) {
+      this.communesIndex = null
+    }
+  }
+
+  /**
+   * S'assure que l'index est chargé
+   */
+  async ensureIndexLoaded() {
+    if (!this.communesIndex) {
+      if (!this.indexPromise) {
+        this.indexPromise = this.loadIndex()
+      }
+      await this.indexPromise
     }
   }
 

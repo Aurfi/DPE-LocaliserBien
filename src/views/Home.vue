@@ -37,15 +37,15 @@
       
       <!-- Tab: DPE récents -->
       <div v-show="activeTab === 'recent' && !recentDPEResults">
-        <RecentDPESearch
+        <RechercheDPERecente
           ref="recentFormulaireRechercheDPE"
-          @search-started="handleRecentDPESearchStarted"
+          @search-started="handleRechercheDPERecenteStarted"
           @search-results="handleRecentDPEResults"
-          @search-error="handleRecentDPESearchError"
+          @search-error="handleRechercheDPERecenteError"
         />
         
         <!-- Historique des recherches DPE récents -->
-        <RecentDPESearchHistory
+        <HistoriqueRechercheDPE
           @relaunch-search="handleRelaunchRecentSearch"
         />
       </div>
@@ -75,16 +75,22 @@
 // Composants critiques chargés immédiatement
 
 import { defineAsyncComponent } from 'vue'
-import FormulaireRechercheDPE from '../components/features/dpe/FormulaireRechercheDPE.vue'
+import FormulaireRechercheDPE from '../components/fonctionnalites/dpe/FormulaireRechercheDPE.vue'
 
 // Lazy loading des composants non-critiques pour améliorer le FCP
-const DPEResults = defineAsyncComponent(() => import('../components/features/location/ResultatsLocaliserDpe.vue'))
-const RecentDPEResults = defineAsyncComponent(() => import('../components/features/dpe/ResultatsDpeRecents.vue'))
-const RecentDPESearch = defineAsyncComponent(() => import('../components/features/dpe/RecentDPESearch.vue'))
-const RecentDPESearchHistory = defineAsyncComponent(
-  () => import('../components/features/dpe/RecentDPESearchHistory.vue')
+const DPEResults = defineAsyncComponent(
+  () => import('../components/fonctionnalites/localisation/ResultatsLocaliserDpe.vue')
 )
-const RecherchesRecentes = defineAsyncComponent(() => import('../components/features/search/RecherchesRecentes.vue'))
+const RecentDPEResults = defineAsyncComponent(() => import('../components/fonctionnalites/dpe/ResultatsDpeRecents.vue'))
+const RechercheDPERecente = defineAsyncComponent(
+  () => import('../components/fonctionnalites/dpe/RechercheDPERecente.vue')
+)
+const HistoriqueRechercheDPE = defineAsyncComponent(
+  () => import('../components/fonctionnalites/dpe/HistoriqueRechercheDPE.vue')
+)
+const RecherchesRecentes = defineAsyncComponent(
+  () => import('../components/fonctionnalites/recherche/RecherchesRecentes.vue')
+)
 const NavigationOnglets = defineAsyncComponent(() => import('../components/base/NavigationOnglets.vue'))
 const AnimationTriangulation = defineAsyncComponent(() => import('../components/animations/AnimationTriangulation.vue'))
 
@@ -98,9 +104,9 @@ export default {
     AnimationTriangulation,
     RecherchesRecentes,
     NavigationOnglets,
-    RecentDPESearch,
+    RechercheDPERecente,
     RecentDPEResults,
-    RecentDPESearchHistory
+    HistoriqueRechercheDPE
   },
   data() {
     return {
@@ -223,7 +229,7 @@ export default {
       this.activeTab = tab
     },
 
-    handleRecentDPESearchStarted(searchCriteria) {
+    handleRechercheDPERecenteStarted(searchCriteria) {
       // Stocker les critères de recherche et les coordonnées pour l'animation
       this.recentDPESearchCriteria = searchCriteria
       this.recentDPESearchCoordinates = searchCriteria.coordinates
@@ -272,7 +278,7 @@ export default {
       }
     },
 
-    handleRecentDPESearchError(_error) {
+    handleRechercheDPERecenteError(_error) {
       // Gérer l'erreur de recherche - arrêter l'animation
       this.showAnimation = false
       // Pourrait afficher un message d'erreur ici si nécessaire

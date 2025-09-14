@@ -94,10 +94,10 @@ import {
   getLongitudeFromGeopoint
 } from '../../../utils/utilsCartes'
 import RetourEnHaut from '../../base/RetourEnHaut.vue'
-import CarteBien from '../../shared/CarteBien.vue'
-import EnteteResultats from '../../shared/EnteteResultats.vue'
-import EtatVide from '../../shared/EtatVide.vue'
-import ModaleProprietee from '../search/ModaleProprietee.vue'
+import CarteBien from '../../partages/CarteBien.vue'
+import EnteteResultats from '../../partages/EnteteResultats.vue'
+import EtatVide from '../../partages/EtatVide.vue'
+import ModaleProprietee from '../recherche/ModaleProprietee.vue'
 import ModaleDetailsDPE from './ModaleDetailsDPE.vue'
 
 export default {

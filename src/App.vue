@@ -199,8 +199,8 @@
 
 <script>
 import { ExternalLink, FileText, HelpCircle, Moon, Search, Shield, Sun } from 'lucide-vue-next'
-import BanniereGuide from './components/layout/BanniereGuide.vue'
-import InstallationPWA from './components/layout/InstallationPWA.vue'
+import BanniereGuide from './components/mise-en-page/BanniereGuide.vue'
+import InstallationPWA from './components/mise-en-page/InstallationPWA.vue'
 
 export default {
   name: 'App',

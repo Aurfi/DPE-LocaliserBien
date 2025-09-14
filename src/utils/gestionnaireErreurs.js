@@ -89,5 +89,6 @@ export class ErrorHandler {
 
 // Créer l'instance singleton
 export const errorHandler = new ErrorHandler()
+export const gestionnaireErreurs = errorHandler
 
 export default errorHandler

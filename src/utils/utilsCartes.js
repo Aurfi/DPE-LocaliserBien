@@ -45,11 +45,11 @@ export function getGoogleMapsEmbedUrl(lat, lon, address = null, zoom = 18) {
  */
 export function getGoogleMapsSearchUrl(lat, lon, address = null) {
   // Préférer l'adresse pour lever l'ambiguïté sur les territoires d'outre-mer
-  if (address) return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+  if (address) return `https://www.google.com/maps/recherche/?api=1&query=${encodeURIComponent(address)}`
   const latNum = Number(lat)
   const lonNum = Number(lon)
   if (Number.isFinite(latNum) && Number.isFinite(lonNum)) {
-    return `https://www.google.com/maps/search/?api=1&query=${latNum},${lonNum}`
+    return `https://www.google.com/maps/recherche/?api=1&query=${latNum},${lonNum}`
   }
   return 'https://www.google.com/maps'
 }

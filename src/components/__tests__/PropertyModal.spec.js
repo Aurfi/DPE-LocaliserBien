@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import PropertyModal from '../features/search/ModaleProprietee.vue'
+import PropertyModal from '../fonctionnalites/recherche/ModaleProprietee.vue'
 
 // Mock des icônes Lucide Vue
 vi.mock('lucide-vue-next', () => ({

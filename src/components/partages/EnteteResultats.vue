@@ -39,7 +39,7 @@
 
 <script>
 import { X } from 'lucide-vue-next'
-import ListeDeroulanteTri from '../results/ListeDeroulanteTri.vue'
+import ListeDeroulanteTri from '../resultats/ListeDeroulanteTri.vue'
 
 export default {
   name: 'EnteteResultats',
