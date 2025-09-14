@@ -79,35 +79,82 @@
               <!-- Targeting effects only when convergence is active -->
               <g v-if="showEnergyConvergence">
 
-                <!-- Targeting system only for mainland France -->
-                <!-- Point de verrouillage central -->
-                <circle :cx="targetCoords.x" :cy="targetCoords.y" r="4"
-                        class="target-lock" fill="#ff0000" filter="url(#energyGlow)"/>
+                <!-- Modern 2025 Targeting System -->
 
-                <!-- Anneaux de convergence -->
-                <circle v-for="ring in convergenceRings" :key="`ring-${ring.id}`"
-                        :cx="targetCoords.x" :cy="targetCoords.y" :r="ring.radius"
-                        fill="none" :stroke="ring.color" stroke-width="2"
-                        :opacity="ring.opacity" class="convergence-ring"/>
+                <!-- Dynamic energy rings -->
+                <g v-for="(ring, idx) in convergenceRings" :key="`ring-${ring.id}`">
+                  <circle :cx="targetCoords.x" :cy="targetCoords.y" :r="ring.radius"
+                          fill="none" :stroke="ring.color" stroke-width="1.5"
+                          :opacity="ring.opacity" class="convergence-ring">
+                    <animate attributeName="r"
+                             :values="`${ring.radius};${ring.radius + 10};${ring.radius}`"
+                             dur="2s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-width"
+                             values="1.5;0.5;1.5"
+                             dur="2s" repeatCount="indefinite"/>
+                  </circle>
+                </g>
 
-                <!-- Croix de visée avancée -->
-                <g class="targeting-system">
-                  <line :x1="targetCoords.x - 30" :y1="targetCoords.y"
-                        :x2="targetCoords.x + 30" :y2="targetCoords.y"
-                        stroke="#ff0000" stroke-width="2" stroke-dasharray="8,4"/>
-                  <line :x1="targetCoords.x" :y1="targetCoords.y - 30"
-                        :x2="targetCoords.x" :y2="targetCoords.y + 30"
-                        stroke="#ff0000" stroke-width="2" stroke-dasharray="8,4"/>
+                <!-- Advanced HUD Targeting Interface -->
+                <g class="targeting-hud" :opacity="visorOpacity">
+                  <!-- Rotating scanner arcs -->
+                  <g :transform="`translate(${targetCoords.x}, ${targetCoords.y}) rotate(${visorRotation})`">
+                    <path d="M -35 0 A 35 35 0 0 1 0 -35"
+                          fill="none" stroke="#A855F7" stroke-width="2" opacity="0.6"/>
+                    <path d="M 35 0 A 35 35 0 0 1 0 35"
+                          fill="none" stroke="#A855F7" stroke-width="2" opacity="0.6"/>
+                  </g>
 
-                  <!-- Coins de verrouillage -->
-                  <rect :x="targetCoords.x - 25" :y="targetCoords.y - 25"
-                        width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
-                  <rect :x="targetCoords.x + 13" :y="targetCoords.y - 25"
-                        width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
-                  <rect :x="targetCoords.x - 25" :y="targetCoords.y + 13"
-                        width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
-                  <rect :x="targetCoords.x + 13" :y="targetCoords.y + 13"
-                        width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
+                  <g :transform="`translate(${targetCoords.x}, ${targetCoords.y}) rotate(${-visorRotation * 0.7})`">
+                    <path d="M 0 -35 A 35 35 0 0 1 35 0"
+                          fill="none" stroke="#A855F7" stroke-width="1.5" opacity="0.4"/>
+                    <path d="M 0 35 A 35 35 0 0 1 -35 0"
+                          fill="none" stroke="#A855F7" stroke-width="1.5" opacity="0.4"/>
+                  </g>
+
+                  <!-- Corner brackets with glow -->
+                  <g class="corner-brackets">
+                    <!-- Top-left -->
+                    <path :d="`M ${targetCoords.x - 35} ${targetCoords.y - 25}
+                              L ${targetCoords.x - 35} ${targetCoords.y - 35}
+                              L ${targetCoords.x - 25} ${targetCoords.y - 35}`"
+                          fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Top-right -->
+                    <path :d="`M ${targetCoords.x + 25} ${targetCoords.y - 35}
+                              L ${targetCoords.x + 35} ${targetCoords.y - 35}
+                              L ${targetCoords.x + 35} ${targetCoords.y - 25}`"
+                          fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Bottom-left -->
+                    <path :d="`M ${targetCoords.x - 35} ${targetCoords.y + 25}
+                              L ${targetCoords.x - 35} ${targetCoords.y + 35}
+                              L ${targetCoords.x - 25} ${targetCoords.y + 35}`"
+                          fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Bottom-right -->
+                    <path :d="`M ${targetCoords.x + 25} ${targetCoords.y + 35}
+                              L ${targetCoords.x + 35} ${targetCoords.y + 35}
+                              L ${targetCoords.x + 35} ${targetCoords.y + 25}`"
+                          fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"/>
+                  </g>
+
+                  <!-- Hexagonal targeting frame -->
+                  <polygon :points="getHexagonPoints(targetCoords.x, targetCoords.y, 40)"
+                           fill="none" stroke="rgba(0, 255, 255, 0.3)" stroke-width="1"
+                           stroke-dasharray="5,5">
+                    <animateTransform attributeName="transform"
+                                      attributeType="XML"
+                                      type="rotate"
+                                      :values="`0 ${targetCoords.x} ${targetCoords.y};360 ${targetCoords.x} ${targetCoords.y}`"
+                                      dur="20s"
+                                      repeatCount="indefinite"/>
+                  </polygon>
+
+                  <!-- Data readout lines -->
+                  <line :x1="targetCoords.x - 45" :y1="targetCoords.y"
+                        :x2="targetCoords.x - 35" :y2="targetCoords.y"
+                        stroke="#A855F7" stroke-width="1" opacity="0.8"/>
+                  <line :x1="targetCoords.x + 35" :y1="targetCoords.y"
+                        :x2="targetCoords.x + 45" :y2="targetCoords.y"
+                        stroke="#A855F7" stroke-width="1" opacity="0.8"/>
                 </g>
               </g>
             </g>
@@ -219,7 +266,9 @@ export default {
       animationStep: 0,
       animationInterval: null,
       isLooping: false,
-      loopStartTime: null
+      loopStartTime: null,
+      visorRotation: 0,
+      visorOpacity: 0
     }
   },
   watch: {
@@ -339,14 +388,20 @@ export default {
 
         this.progress = Math.floor((i / steps) * 100)
 
-        // Phase 2 : Analyse (10-45%)
+        // Phase 2 : Analyse - Start blue (10%)
         if (i === 6) {
           this.franceColor = 'rgba(99, 102, 241, 0.2)'
           this.franceBorderColor = '#6366F1'
         }
 
-        // Phase 3 : Localisation (45-70%)
-        if (i === 27) {
+        // Phase 2.5 : Transition to blue-purple (35%)
+        if (i === 21) {
+          this.franceColor = 'rgba(119, 97, 244, 0.22)'
+          this.franceBorderColor = '#7761F3'
+        }
+
+        // Phase 3 : Localisation - Mid purple (55%)
+        if (i === 33) {
           this.franceColor = 'rgba(139, 92, 246, 0.25)'
           this.franceBorderColor = '#8B5CF6'
         }
@@ -356,16 +411,33 @@ export default {
           this.generateEnergyParticles()
         }
 
-        // Phase 2 : Show convergence effects (visor) at 75% - only for mainland France
-        if (i === 45 && this.regionType === 'france') {
+        // Phase 2 : Start showing convergence effects (visor) at 65% - only for mainland France
+        if (i === 39 && this.regionType === 'france') {
           this.showEnergyConvergence = true
+          this.visorOpacity = 0.1 // Start with very low opacity
         }
 
-        // Phase 4.5 : Add convergence rings for France at 78%
-        if (i === 47 && this.regionType === 'france') {
+        // Progressive visor fade-in from 65% to 78%
+        if (this.regionType === 'france' && i >= 39 && i <= 47) {
+          this.visorOpacity = Math.min(1, 0.1 + ((i - 39) / 8) * 0.9)
+        }
+
+        // Phase 4 : Deeper purple (70%)
+        if (i === 42) {
+          this.franceColor = 'rgba(153, 89, 247, 0.28)'
+          this.franceBorderColor = '#9959F7'
+        }
+
+        // Phase 4.5 : Add convergence rings for France at 70%
+        if (i === 42 && this.regionType === 'france') {
           this.generateConvergenceRings()
+        }
+
+        // Phase 4.6 : Final purple at 78%
+        if (i === 47 && this.regionType === 'france') {
           this.franceColor = 'rgba(168, 85, 247, 0.3)'
           this.franceBorderColor = '#A855F7'
+          this.visorOpacity = 1 // Full opacity by this point
         }
 
         // Phase 4.5 : Color change for Corsica at 78%
@@ -374,10 +446,17 @@ export default {
           this.franceBorderColor = '#A855F7'
         }
 
-        // Phase 5 : Final (90-100%)
+        // Phase 5 : Final (90-100%) - Keep purple for France/Corsica
         if (i === 54) {
-          this.franceColor = 'rgba(16, 185, 129, 0.4)'
-          this.franceBorderColor = '#10b981'
+          if (this.regionType === 'france' || this.regionType === 'corsica') {
+            // Stay purple for France/Corsica
+            this.franceColor = 'rgba(168, 85, 247, 0.35)'
+            this.franceBorderColor = '#A855F7'
+          } else {
+            // Green for other regions
+            this.franceColor = 'rgba(16, 185, 129, 0.4)'
+            this.franceBorderColor = '#10b981'
+          }
         }
 
         // Add new DPE data particles gradually until 60% (every 2 steps = less frequent)
@@ -482,6 +561,7 @@ export default {
         // Only update convergence rings when energy convergence is active
         if (this.showEnergyConvergence && this.regionType === 'france') {
           this.updateConvergenceRings()
+          this.updateVisor()
         }
       }, 50)
     },
@@ -514,6 +594,17 @@ export default {
         x: (Math.random() - 0.5) * 30, // ±15 pixel radius
         y: (Math.random() - 0.5) * 30 // ±15 pixel radius
       }
+      // DPE color distribution: red (3/6), yellow (2/6), green (1/6) - green is rare
+      const colorRandom = Math.random()
+      let particleColor
+      if (colorRandom < 0.5) {
+        particleColor = '#ff0000' // Red - 50% (3/6)
+      } else if (colorRandom < 0.833) {
+        particleColor = '#ffff00' // Yellow - 33.3% (2/6)
+      } else {
+        particleColor = '#00ff00' // Green - 16.7% (1/6)
+      }
+
       this.energyParticles.push({
         id: this.particleIdCounter++,
         x: position.x,
@@ -521,7 +612,7 @@ export default {
         targetX: this.targetCoords.x + randomOffset.x,
         targetY: this.targetCoords.y + randomOffset.y,
         size: 2 + Math.random() * 3,
-        color: ['#ff0000', '#ff4400', '#ffff00', '#00ff00', '#00ff88'][Math.floor(Math.random() * 5)],
+        color: particleColor,
         opacity: 0.8,
         erraticTime: Math.random() * Math.PI * 2
       })
@@ -732,7 +823,7 @@ export default {
         this.convergenceRings.push({
           id: i,
           radius: 15 + i * 10,
-          color: ['#ff0000', '#ff4400', '#ffff00', '#00ff00', '#00ffff'][i],
+          color: '#A855F7', // Monochromatic purple
           opacity: 0.8 - i * 0.15,
           pulsePhase: i * 0.5
         })
@@ -764,6 +855,27 @@ export default {
         976: 'Mayotte'
       }
       return names[this.targetDepartment] || 'DOM-TOM'
+    },
+
+    updateVisor() {
+      // Rotate the visor elements
+      this.visorRotation += 2
+
+      // Fade in the visor when energy convergence becomes active
+      if (this.showEnergyConvergence && this.visorOpacity < 1) {
+        this.visorOpacity = Math.min(1, this.visorOpacity + 0.05)
+      }
+    },
+
+    getHexagonPoints(cx, cy, radius) {
+      const points = []
+      for (let i = 0; i < 6; i++) {
+        const angle = (Math.PI / 3) * i - Math.PI / 6
+        const x = cx + radius * Math.cos(angle)
+        const y = cy + radius * Math.sin(angle)
+        points.push(`${x},${y}`)
+      }
+      return points.join(' ')
     }
   }
 }
