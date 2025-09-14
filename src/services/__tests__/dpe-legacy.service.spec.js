@@ -101,8 +101,8 @@ describe('Service DPE Legacy', () => {
       expect(dpeLegacyService.departmentCache).toEqual({})
     })
 
-    it('devrait initialiser communesIndex avec les données chargées', () => {
-      expect(dpeLegacyService.communesIndex).toEqual(mockCommunesIndex)
+    it('devrait initialiser communesIndex à null au démarrage', () => {
+      expect(dpeLegacyService.communesIndex).toBeNull()
     })
 
     it('devrait avoir indexPromise défini', () => {
