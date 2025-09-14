@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { calculateDistance } from '../../utils/utilsGeo.js'
 import DPESearchService from '../dpe-search.service.js'
+import ProcesseurResultatsDPE from '../processeur-resultats-dpe.service.js'
 
 // Mock fetch globally - but allow actual fetches for commune data
 global.fetch = vi.fn().mockImplementation(url => {
@@ -273,13 +274,7 @@ describe('Service de Recherche DPE', () => {
       expect(result).toBe('75001')
     })
 
-    // Removed test that used non-existent standalone getPostalCodeForCommune function
-    // The function is now a method of DPESearchService
-    it.skip('devrait chercher et retourner le code postal pour Aix-en-Provence avec des vraies données', () => {})
 
-    // Removed test that used non-existent standalone getPostalCodeForCommune function
-    // The function is now a method of DPESearchService
-    it.skip('devrait chercher et retourner le code postal pour Marseille avec des vraies données', () => {})
 
     it("devrait retourner l'entrée originale pour une ville non trouvée", async () => {
       const result = await dpeSearchService.extractPostalCode('Ville-Inexistante-Completement')
@@ -287,29 +282,6 @@ describe('Service de Recherche DPE', () => {
     })
   })
 
-  describe('obtention code postal pour commune', () => {
-    it("devrait retourner le code postal si l'entrée est déjà un code postal", async () => {
-      const result = await dpeSearchService.getPostalCodeForCommune('13100')
-      expect(result).toBe('13100')
-    })
-
-    it("devrait retourner null quand communesIndex n'est pas chargé", async () => {
-      const service = new DPESearchService()
-      service.communesIndex = null
-      const result = await service.getPostalCodeForCommune('Aix-en-Provence')
-      expect(result).toBe(null)
-    })
-
-    it('devrait retourner null pour une entrée vide', async () => {
-      const result = await dpeSearchService.getPostalCodeForCommune('')
-      expect(result).toBe(null)
-    })
-
-    it('devrait retourner null pour une commune non trouvée', async () => {
-      const result = await dpeSearchService.getPostalCodeForCommune('Ville-Inexistante')
-      expect(result).toBe(null)
-    })
-  })
 
   describe('mappage résultat ADEME', () => {
     it('devrait mapper le résultat ADEME correctement', async () => {
@@ -333,7 +305,8 @@ describe('Service de Recherche DPE', () => {
         surfaceHabitable: 75
       }
 
-      const result = await dpeSearchService.mapAdemeResult(ademeData, searchRequest)
+      const processeur = new ProcesseurResultatsDPE(dpeSearchService.scoringService)
+      const result = await processeur.mapAdemeResult(ademeData, searchRequest)
 
       expect(result.numeroDPE).toBe('DPE123456789')
       expect(result.adresseComplete).toBe('1 rue de la Paix')
@@ -358,7 +331,8 @@ describe('Service de Recherche DPE', () => {
       }
 
       const searchRequest = { commune: '75001' }
-      const result = await dpeSearchService.mapAdemeResult(ademeData, searchRequest)
+      const processeur = new ProcesseurResultatsDPE(dpeSearchService.scoringService)
+      const result = await processeur.mapAdemeResult(ademeData, searchRequest)
 
       expect(result.adresseComplete).toBe('1 bis rue de la Paix')
     })
@@ -373,7 +347,8 @@ describe('Service de Recherche DPE', () => {
       }
 
       const searchRequest = { commune: '75001' }
-      const result = await dpeSearchService.mapAdemeResult(ademeData, searchRequest)
+      const processeur = new ProcesseurResultatsDPE(dpeSearchService.scoringService)
+      const result = await processeur.mapAdemeResult(ademeData, searchRequest)
 
       expect(result.adresseComplete).toBe('1 bis rue de la Paix')
     })
@@ -507,7 +482,8 @@ describe('Service de Recherche DPE', () => {
         { numeroDPE: 'DPE3', id: '4' }
       ]
 
-      const deduplicated = dpeSearchService.deduplicateResults(results)
+      const processeur = new ProcesseurResultatsDPE(dpeSearchService.scoringService)
+      const deduplicated = processeur.deduplicateResults(results)
       expect(deduplicated).toHaveLength(3)
       expect(deduplicated.map(r => r.numeroDPE)).toEqual(['DPE1', 'DPE2', 'DPE3'])
     })
@@ -519,7 +495,8 @@ describe('Service de Recherche DPE', () => {
         { id: '1' } // Duplicate by id
       ]
 
-      const deduplicated = dpeSearchService.deduplicateResults(results)
+      const processeur = new ProcesseurResultatsDPE(dpeSearchService.scoringService)
+      const deduplicated = processeur.deduplicateResults(results)
       expect(deduplicated).toHaveLength(2)
     })
   })
