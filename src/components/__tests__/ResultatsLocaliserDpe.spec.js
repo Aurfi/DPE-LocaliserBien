@@ -1,10 +1,10 @@
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { ref as mockRef, nextTick } from 'vue'
-import ResultatsLocaliserDpe from '../ResultatsLocaliserDpe.vue'
+import ResultatsLocaliserDpe from '../features/location/ResultatsLocaliserDpe.vue'
 
 // Mock child components with realistic behavior
-vi.mock('../PropertyModal.vue', () => ({
+vi.mock('../features/search/PropertyModal.vue', () => ({
   default: {
     name: 'PropertyModal',
     template: `
@@ -41,7 +41,7 @@ vi.mock('../PropertyModal.vue', () => ({
   }
 }))
 
-vi.mock('../DPEDetailsModal.vue', () => ({
+vi.mock('../features/dpe/DPEDetailsModal.vue', () => ({
   default: {
     name: 'DPEDetailsModal',
     template: `
@@ -56,7 +56,7 @@ vi.mock('../DPEDetailsModal.vue', () => ({
   }
 }))
 
-vi.mock('../DonneesBrutesModal.vue', () => ({
+vi.mock('../features/dpe/DonneesBrutesModal.vue', () => ({
   default: {
     name: 'DonneesBrutesModal',
     template: `
@@ -70,7 +70,7 @@ vi.mock('../DonneesBrutesModal.vue', () => ({
   }
 }))
 
-vi.mock('../ScrollToTop.vue', () => ({
+vi.mock('../base/ScrollToTop.vue', () => ({
   default: {
     name: 'ScrollToTop',
     template: '<div data-testid="scroll-to-top"></div>'

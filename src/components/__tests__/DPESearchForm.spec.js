@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import DPESearchForm from '../DPESearchForm.vue'
+import DPESearchForm from '../features/dpe/DPESearchForm.vue'
 
 // Mock Lucide Vue icons
 vi.mock('lucide-vue-next', () => ({
