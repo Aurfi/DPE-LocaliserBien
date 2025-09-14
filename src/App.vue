@@ -146,16 +146,16 @@
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="https://geo.api.gouv.fr" 
-                    target="_blank" 
+                  <a
+                    href="https://data.geopf.fr"
+                    target="_blank"
                     rel="noopener noreferrer"
                     class="footer-link group"
                   >
                     <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-green-100 dark:group-hover:bg-green-900/30 transition-colors mr-2">
                       <ExternalLink class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400" />
                     </span>
-                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">geo.api.<strong>gouv</strong>.fr</span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">data.<strong>geopf</strong>.fr</span>
                   </a>
                 </li>
               </ul>

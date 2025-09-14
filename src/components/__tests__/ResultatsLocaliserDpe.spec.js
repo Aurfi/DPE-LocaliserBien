@@ -70,9 +70,9 @@ vi.mock('../features/dpe/DonneesBrutesModal.vue', () => ({
   }
 }))
 
-vi.mock('../base/ScrollToTop.vue', () => ({
+vi.mock('../base/RetourEnHaut.vue', () => ({
   default: {
-    name: 'ScrollToTop',
+    name: 'RetourEnHaut',
     template: '<div data-testid="scroll-to-top"></div>'
   }
 }))

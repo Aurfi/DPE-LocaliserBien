@@ -143,8 +143,10 @@ export function getFloorDisplay(result) {
     return parsed
   }
 
-  // For apartments only: use nombreNiveaux as fallback if > 1
-  if (result.typeBien?.toLowerCase().includes('appartement')) {
+  // Only fallback to nombreNiveaux if complementRefLogement is empty/null AND it's an apartment
+  // Don't fallback if complementRefLogement had content but we couldn't parse it (it might indicate a house)
+  const hasLocationInfo = result.complementRefLogement?.trim()
+  if (!hasLocationInfo && result.typeBien?.toLowerCase().includes('appartement')) {
     if (result.nombreNiveaux && result.nombreNiveaux > 1) {
       return result.nombreNiveaux.toString()
     }

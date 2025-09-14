@@ -1,3 +1,5 @@
+import { calculateDistance, geocodeAddress } from '../utils/geoUtils.js'
+
 const ADEME_API_URL = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines'
 
 /**
@@ -48,37 +50,6 @@ function buildRangeQuery(comparison, fieldName) {
       return `${fieldName}:[${min} TO ${max}]`
     }
   }
-}
-
-/**
- * Convertit une adresse en coordonnées GPS via l'API gouv
- */
-async function geocodeAddress(address) {
-  const response = await fetch(`https://api-adresse.data.gouv.fr/search/?q=${encodeURIComponent(address)}&limit=1`)
-  const data = await response.json()
-
-  if (data.features && data.features.length > 0) {
-    const feature = data.features[0]
-    const [lon, lat] = feature.geometry.coordinates
-    const postalCode = feature.properties.postcode
-    const city = feature.properties.city
-    return { lat, lon, formattedAddress: feature.properties.label, postalCode, city }
-  }
-  throw new Error('Adresse non trouvée')
-}
-
-/**
- * Calcule la distance entre deux points GPS (formule de Haversine)
- */
-function calculateDistance(lat1, lon1, lat2, lon2) {
-  const R = 6371 // Rayon de la Terre en km
-  const dLat = ((lat2 - lat1) * Math.PI) / 180
-  const dLon = ((lon2 - lon1) * Math.PI) / 180
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLon / 2) * Math.sin(dLon / 2)
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
-  return R * c
 }
 
 /**
@@ -219,11 +190,6 @@ function mapAdemeResult(ademeData) {
 }
 
 /**
- * Exporter geocodeAddress pour usage externe
- */
-export { geocodeAddress }
-
-/**
  * Recherche les DPE récents autour d'une adresse
  */
 export async function searchRecentDPE(criteria) {
@@ -233,7 +199,9 @@ export async function searchRecentDPE(criteria) {
   const dateLimitStr = dateLimit.toISOString().split('T')[0]
 
   // 2. Géocoder l'adresse pour obtenir les coordonnées (nécessaire pour la recherche par rayon)
-  const { lat, lon, formattedAddress, postalCode, city } = await geocodeAddress(criteria.address)
+  const { lat, lon, formattedAddress, postalCode, city } = await geocodeAddress(criteria.address, {
+    throwOnError: true
+  })
 
   // 2b. Créer l'adresse combinée pour l'affichage et la recherche
   let fullCombinedAddress = formattedAddress

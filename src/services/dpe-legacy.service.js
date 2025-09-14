@@ -3,27 +3,12 @@
  * Utilise le jeu de données dpe-france avec des noms de champs différents
  */
 
+import { getDepartmentFromPostalCode } from '../utils/geoUtils.js'
+
 class DPELegacyService {
   constructor() {
     this.baseURL = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe-france/lines'
-    this.communesIndex = null
     this.departmentCache = {}
-    this.indexPromise = this.loadIndex()
-  }
-
-  async loadIndex() {
-    try {
-      const response = await fetch('/data/communes-index.json')
-      this.communesIndex = await response.json()
-    } catch (_error) {
-      this.communesIndex = null
-    }
-  }
-
-  async ensureIndexLoaded() {
-    if (!this.communesIndex && this.indexPromise) {
-      await this.indexPromise
-    }
   }
 
   /**
@@ -51,15 +36,14 @@ class DPELegacyService {
    * @returns {Promise<Array>} Tableau des codes INSEE
    */
   async getINSEECodes(commune) {
-    await this.ensureIndexLoaded()
-    if (!commune || !this.communesIndex) return []
+    if (!commune) return []
 
     try {
       const isPostalCode = /^\d{5}$/.test(commune)
 
       if (isPostalCode) {
         // Obtenir le département depuis le code postal
-        const deptCode = this.communesIndex.postalCodeToDepartment[commune]
+        const deptCode = getDepartmentFromPostalCode(commune)
         if (!deptCode) return []
 
         // Charger les données du département

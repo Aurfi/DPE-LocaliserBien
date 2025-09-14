@@ -71,7 +71,7 @@ export default defineConfig(({ mode }) => {
         'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
         // CSP basique pour le développement
         'Content-Security-Policy':
-          "default-src 'self'; worker-src 'self' blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://geo.api.gouv.fr https://api-adresse.data.gouv.fr https://data.ademe.fr https://www.data.gouv.fr https://nominatim.openstreetmap.org https://photon.komoot.io ws:; frame-src 'self' https://maps.google.com https://www.google.com;"
+          "default-src 'self'; worker-src 'self' blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://data.geopf.fr https://data.ademe.fr https://www.data.gouv.fr ws:; frame-src 'self' https://maps.google.com https://www.google.com;"
       }
     },
     build: {

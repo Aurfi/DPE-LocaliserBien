@@ -4,7 +4,7 @@ export const config = {
     ademe:
       import.meta.env.VITE_ADEME_API_URL ||
       'https://data.ademe.fr/data-fair/api/v1/datasets/dpe-v2-logements-existants/lines',
-    geo: import.meta.env.VITE_GEO_API_URL || 'https://geo.api.gouv.fr'
+    geo: import.meta.env.VITE_GEO_API_URL || 'https://data.geopf.fr/geocodage'
   },
   app: {
     title: import.meta.env.VITE_APP_TITLE || 'DPE Property Locator',

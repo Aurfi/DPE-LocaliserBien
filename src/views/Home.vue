@@ -30,7 +30,7 @@
         />
         
         <!-- Recherches récentes -->
-        <RecentSearches
+        <RecherchesRecentes
           @relaunch-search="handleSearch"
         />
       </div>
@@ -84,7 +84,7 @@ const RecentDPESearch = defineAsyncComponent(() => import('../components/feature
 const RecentDPESearchHistory = defineAsyncComponent(
   () => import('../components/features/dpe/RecentDPESearchHistory.vue')
 )
-const RecentSearches = defineAsyncComponent(() => import('../components/features/search/RecentSearches.vue'))
+const RecherchesRecentes = defineAsyncComponent(() => import('../components/features/search/RecherchesRecentes.vue'))
 const TabNavigation = defineAsyncComponent(() => import('../components/base/TabNavigation.vue'))
 const TriangulationAnimation = defineAsyncComponent(() => import('../components/animations/TriangulationAnimation.vue'))
 
@@ -96,7 +96,7 @@ export default {
     DPESearchForm,
     DPEResults,
     TriangulationAnimation,
-    RecentSearches,
+    RecherchesRecentes,
     TabNavigation,
     RecentDPESearch,
     RecentDPEResults,

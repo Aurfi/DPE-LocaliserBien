@@ -1,7 +1,7 @@
 <template>
   <div v-if="results" class="mt-8 max-w-6xl mx-auto">
     <!-- Header -->
-    <ResultsHeader
+    <EnteteResultats
       :title="`${filteredResults.length} résultat${filteredResults.length > 1 ? 's' : ''} affiché${filteredResults.length > 1 ? 's' : ''}`"
       :hiddenCount="hiddenResults.size"
       :subtitle="`Autour de ${results.searchAddress}`"
@@ -23,7 +23,7 @@
 
     <!-- Results grid -->
     <div v-if="filteredResults.length > 0" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      <ResultCard
+      <CarteBien
         v-for="(dpe, index) in filteredResults"
         :key="dpe.numero_dpe"
         :result="dpe"
@@ -45,7 +45,7 @@
     </div>
 
     <!-- Modals -->
-    <PropertyModal
+    <ModaleProprietee
       v-if="selectedProperty"
       :property="selectedProperty"
       :formattedAddress="selectedProperty.adresse_ban || selectedProperty.adresse_brut || getFormattedAddress(selectedProperty)"
@@ -75,7 +75,7 @@
       @close="showDPEDetails = false"
     />
 
-    <ScrollToTop />
+    <RetourEnHaut />
   </div>
 </template>
 
@@ -93,22 +93,22 @@ import {
   getLatitudeFromGeopoint,
   getLongitudeFromGeopoint
 } from '../../../utils/mapUtils'
-import ScrollToTop from '../../base/ScrollToTop.vue'
+import RetourEnHaut from '../../base/RetourEnHaut.vue'
+import CarteBien from '../../shared/CarteBien.vue'
 import EmptyState from '../../shared/EmptyState.vue'
-import ResultCard from '../../shared/ResultCard.vue'
-import ResultsHeader from '../../shared/ResultsHeader.vue'
-import PropertyModal from '../search/PropertyModal.vue'
+import EnteteResultats from '../../shared/EnteteResultats.vue'
+import ModaleProprietee from '../search/ModaleProprietee.vue'
 import DPEDetailsModal from './DPEDetailsModal.vue'
 
 export default {
   name: 'ResultatsDpeRecents',
   components: {
-    PropertyModal,
+    ModaleProprietee,
     DPEDetailsModal,
-    ScrollToTop,
+    RetourEnHaut,
     EmptyState,
-    ResultCard,
-    ResultsHeader
+    CarteBien,
+    EnteteResultats
   },
   props: {
     results: {

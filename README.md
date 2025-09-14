@@ -50,8 +50,9 @@ VITE_SITE_NAME=VotreNom
 VITE_CONTACT_EMAIL=contact@votre-domaine.fr
 
 # API Configuration
+# Important: For address search, use api-adresse (BAN)
 VITE_ADEME_API_URL=https://data.ademe.fr/data-fair/api/v1/datasets/dpe-v2-logements-existants/lines
-VITE_GEO_API_URL=https://geo.api.gouv.fr
+VITE_GEO_API_URL=https://data.geopf.fr/geocodage
 ```
 
 ## 📂 Structure du Projet
@@ -112,4 +113,3 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 ## 📞 Support
 
 Pour toute question ou problème, ouvrez une issue sur GitHub.
-

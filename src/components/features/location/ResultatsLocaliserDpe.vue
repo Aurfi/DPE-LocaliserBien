@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 py-6">
     <!-- Error state -->
-    <ErrorState
+    <EtatErreur
       v-if="searchResult.searchStrategy === 'ERROR'"
       title="Erreur lors de la recherche"
       :message="searchResult.diagnostics && searchResult.diagnostics[0] ? searchResult.diagnostics[0] : 'Une erreur est survenue lors de la recherche. Veuillez réessayer.'"
@@ -9,7 +9,7 @@
     />
 
     <!-- Header -->
-    <ResultsHeader
+    <EnteteResultats
       v-if="searchResult.searchStrategy !== 'ERROR'"
       :title="`${filteredResults.length} résultat${filteredResults.length > 1 ? 's' : ''} affiché${filteredResults.length > 1 ? 's' : ''}`"
       :hiddenCount="hiddenResults.size"
@@ -24,7 +24,7 @@
     />
 
     <!-- Empty state -->
-    <EmptyState
+    <EtatVide
       v-if="filteredResults.length === 0 && searchResult.searchStrategy !== 'ERROR'"
       :icon="OctagonX"
       title="Aucun résultat trouvé"
@@ -33,7 +33,7 @@
 
     <!-- Results grid -->
     <div v-if="searchResult.searchStrategy !== 'ERROR' && filteredResults.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-      <ResultCard
+      <CarteBien
         v-for="(result, index) in filteredResults"
         :key="index"
         :result="result"
@@ -59,7 +59,7 @@
     </div>
 
     <!-- Modals -->
-    <PropertyModal
+    <ModaleProprietee
       v-if="selectedProperty"
       :property="selectedProperty"
       :formattedAddress="selectedProperty.adresseComplete || getFormattedAddress(selectedProperty)"
@@ -96,7 +96,7 @@
       @close="showRawDataModal = false"
     />
 
-    <ScrollToTop />
+    <RetourEnHaut />
   </div>
 </template>
 
@@ -113,26 +113,26 @@ import {
   getPropertyType
 } from '../../../utils/dpeFormatters'
 import { getGeoportailUrl, getGoogleMapsEmbedUrl } from '../../../utils/mapUtils'
-import ScrollToTop from '../../base/ScrollToTop.vue'
-import ErrorState from '../../results/ErrorState.vue'
-import EmptyState from '../../shared/EmptyState.vue'
-import ResultCard from '../../shared/ResultCard.vue'
-import ResultsHeader from '../../shared/ResultsHeader.vue'
+import RetourEnHaut from '../../base/RetourEnHaut.vue'
+import EtatErreur from '../../results/EtatErreur.vue'
+import CarteBien from '../../shared/CarteBien.vue'
+import EnteteResultats from '../../shared/EnteteResultats.vue'
+import EtatVide from '../../shared/EtatVide.vue'
 import DonneesBrutesModal from '../dpe/DonneesBrutesModal.vue'
 import DPEDetailsModal from '../dpe/DPEDetailsModal.vue'
-import PropertyModal from '../search/PropertyModal.vue'
+import ModaleProprietee from '../search/ModaleProprietee.vue'
 
 export default {
   name: 'ResultatsLocaliserDpe',
   components: {
     DonneesBrutesModal,
-    PropertyModal,
+    ModaleProprietee,
     DPEDetailsModal,
-    ScrollToTop,
-    ErrorState,
-    EmptyState,
-    ResultCard,
-    ResultsHeader
+    RetourEnHaut,
+    EtatErreur,
+    EtatVide,
+    CarteBien,
+    EnteteResultats
   },
   props: {
     searchResult: {

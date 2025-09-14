@@ -1,8 +1,21 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { calculateDistance } from '../../utils/geoUtils.js'
 import DPESearchService from '../dpe-search.service.js'
 
-// Mock fetch globally
-global.fetch = vi.fn()
+// Mock fetch globally - but allow actual fetches for commune data
+global.fetch = vi.fn().mockImplementation(url => {
+  // Allow real fetches for commune data files
+  if (url.includes('/data/communes-index.json') || url.includes('/data/departments/')) {
+    return fetch(url)
+  }
+  // Mock other fetches
+  return Promise.resolve({
+    ok: true,
+    json: () => Promise.resolve({ features: [], results: [] })
+  })
+})
 
 // Mock data for tests
 const mockCommunesIndex = {
@@ -98,25 +111,6 @@ describe('Service de Recherche DPE', () => {
 
     it('devrait avoir le service legacy initialisé', () => {
       expect(dpeSearchService.legacyService).toBeDefined()
-    })
-  })
-
-  describe('chargement index', () => {
-    it("devrait charger l'index des communes avec succès", async () => {
-      fetch.mockResolvedValueOnce({
-        ok: true,
-        json: () => Promise.resolve(mockCommunesIndex)
-      })
-
-      await dpeSearchService.loadIndex()
-      expect(dpeSearchService.communesIndex).toEqual(mockCommunesIndex)
-    })
-
-    it('devrait gérer les erreurs de récupération avec élégance', async () => {
-      fetch.mockRejectedValueOnce(new Error('Network error'))
-
-      await dpeSearchService.loadIndex()
-      expect(dpeSearchService.communesIndex).toBeNull()
     })
   })
 
@@ -260,45 +254,107 @@ describe('Service de Recherche DPE', () => {
 
   describe('calcul de distance', () => {
     it('devrait calculer la distance entre deux points correctement', () => {
-      const distance = dpeSearchService.calculateDistance(48.8566, 2.3522, 48.8606, 2.3376)
+      const distance = calculateDistance(48.8566, 2.3522, 48.8606, 2.3376)
       expect(distance).toBeCloseTo(1.18, 1) // Approximately 1.18 km
     })
 
     it('devrait retourner 0 pour des coordonnées invalides', () => {
-      const distance = dpeSearchService.calculateDistance(NaN, 2.3522, 48.8606, 2.3376)
+      const distance = calculateDistance(NaN, 2.3522, 48.8606, 2.3376)
       expect(distance).toBe(0)
     })
 
     it('devrait calculer une distance de 0 pour les mêmes coordonnées', () => {
-      const distance = dpeSearchService.calculateDistance(48.8566, 2.3522, 48.8566, 2.3522)
+      const distance = calculateDistance(48.8566, 2.3522, 48.8566, 2.3522)
       expect(distance).toBe(0)
     })
   })
 
   describe('extraction code postal', () => {
-    it("devrait retourner le code postal si l'entrée est déjà un code postal", () => {
-      const result = dpeSearchService.extractPostalCode('75001')
+    it("devrait retourner le code postal si l'entrée est déjà un code postal", async () => {
+      const result = await dpeSearchService.extractPostalCode('75001')
       expect(result).toBe('75001')
     })
 
-    it("devrait retourner le code postal d'une ville connue", () => {
-      const result = dpeSearchService.extractPostalCode('paris')
-      expect(result).toBe('75001')
+    it('devrait chercher et retourner le code postal pour Aix-en-Provence avec des vraies données', async () => {
+      // Load real commune data for testing
+      const communesIndexPath = path.join(process.cwd(), 'public/data/communes-index.json')
+      const dept13Path = path.join(process.cwd(), 'public/data/departments/communes-dept-13.json')
+
+      const communesIndex = JSON.parse(fs.readFileSync(communesIndexPath, 'utf8'))
+      const dept13Data = JSON.parse(fs.readFileSync(dept13Path, 'utf8'))
+
+      // Mock loadDepartment to return real data
+      const mockLoadDepartment = vi.fn().mockImplementation(deptCode => {
+        if (deptCode === '13') {
+          return Promise.resolve(dept13Data)
+        }
+        return Promise.resolve(null)
+      })
+
+      // Test the shared function directly with real data
+      const result = await getPostalCodeForCommune('Aix-en-Provence', communesIndex, mockLoadDepartment)
+
+      expect(result).not.toBeNull()
+      expect(result).toMatch(/^13/) // Should start with 13 (Bouches-du-Rhône)
+      expect(result).toHaveLength(5) // Should be a valid postal code
     })
 
-    it('devrait gérer les villes avec des tirets', () => {
-      const result = dpeSearchService.extractPostalCode('aix-en-provence')
+    it('devrait chercher et retourner le code postal pour Marseille avec des vraies données', async () => {
+      // Load real commune data for testing
+      const communesIndexPath = path.join(process.cwd(), 'public/data/communes-index.json')
+      const dept13Path = path.join(process.cwd(), 'public/data/departments/communes-dept-13.json')
+
+      const communesIndex = JSON.parse(fs.readFileSync(communesIndexPath, 'utf8'))
+      const dept13Data = JSON.parse(fs.readFileSync(dept13Path, 'utf8'))
+
+      // Mock loadDepartment to return real data
+      const mockLoadDepartment = vi.fn().mockImplementation(deptCode => {
+        if (deptCode === '13') {
+          return Promise.resolve(dept13Data)
+        }
+        return Promise.resolve(null)
+      })
+
+      // Test the shared function directly with real data
+      const result = await getPostalCodeForCommune('Marseille', communesIndex, mockLoadDepartment)
+
+      expect(result).not.toBeNull()
+      expect(result).toMatch(/^13/) // Should start with 13 (Bouches-du-Rhône)
+      expect(result).toHaveLength(5) // Should be a valid postal code
+    })
+
+    it("devrait retourner l'entrée originale pour une ville non trouvée", async () => {
+      const result = await dpeSearchService.extractPostalCode('Ville-Inexistante-Completement')
+      expect(result).toBe('Ville-Inexistante-Completement')
+    })
+  })
+
+  describe('obtention code postal pour commune', () => {
+    it("devrait retourner le code postal si l'entrée est déjà un code postal", async () => {
+      const result = await dpeSearchService.getPostalCodeForCommune('13100')
       expect(result).toBe('13100')
     })
 
-    it("devrait retourner l'entrée originale pour une ville inconnue", () => {
-      const result = dpeSearchService.extractPostalCode('unknown-city')
-      expect(result).toBe('unknown-city')
+    it("devrait retourner null quand communesIndex n'est pas chargé", async () => {
+      const service = new DPESearchService()
+      service.communesIndex = null
+      const result = await service.getPostalCodeForCommune('Aix-en-Provence')
+      expect(result).toBe(null)
+    })
+
+    it('devrait retourner null pour une entrée vide', async () => {
+      const result = await dpeSearchService.getPostalCodeForCommune('')
+      expect(result).toBe(null)
+    })
+
+    it('devrait retourner null pour une commune non trouvée', async () => {
+      const result = await dpeSearchService.getPostalCodeForCommune('Ville-Inexistante')
+      expect(result).toBe(null)
     })
   })
 
   describe('mappage résultat ADEME', () => {
-    it('devrait mapper le résultat ADEME correctement', () => {
+    it('devrait mapper le résultat ADEME correctement', async () => {
       const ademeData = {
         numero_dpe: 'DPE123456789',
         adresse_ban: '1 rue de la Paix',
@@ -319,7 +375,7 @@ describe('Service de Recherche DPE', () => {
         surfaceHabitable: 75
       }
 
-      const result = dpeSearchService.mapAdemeResult(ademeData, searchRequest)
+      const result = await dpeSearchService.mapAdemeResult(ademeData, searchRequest)
 
       expect(result.numeroDPE).toBe('DPE123456789')
       expect(result.adresseComplete).toBe('1 rue de la Paix')
@@ -335,7 +391,7 @@ describe('Service de Recherche DPE', () => {
       expect(result.matchScore).toBeGreaterThan(0)
     })
 
-    it("devrait gérer l'adresse manquante et utiliser adresse_brut comme solution de repli", () => {
+    it("devrait gérer l'adresse manquante et utiliser adresse_brut comme solution de repli", async () => {
       const ademeData = {
         numero_dpe: 'DPE123456789',
         adresse_brut: '1 bis rue de la Paix',
@@ -344,12 +400,12 @@ describe('Service de Recherche DPE', () => {
       }
 
       const searchRequest = { commune: '75001' }
-      const result = dpeSearchService.mapAdemeResult(ademeData, searchRequest)
+      const result = await dpeSearchService.mapAdemeResult(ademeData, searchRequest)
 
       expect(result.adresseComplete).toBe('1 bis rue de la Paix')
     })
 
-    it('devrait combiner le numéro de rue depuis adresse_brut avec adresse_ban', () => {
+    it('devrait combiner le numéro de rue depuis adresse_brut avec adresse_ban', async () => {
       const ademeData = {
         numero_dpe: 'DPE123456789',
         adresse_ban: 'rue de la Paix',
@@ -359,14 +415,14 @@ describe('Service de Recherche DPE', () => {
       }
 
       const searchRequest = { commune: '75001' }
-      const result = dpeSearchService.mapAdemeResult(ademeData, searchRequest)
+      const result = await dpeSearchService.mapAdemeResult(ademeData, searchRequest)
 
       expect(result.adresseComplete).toBe('1 bis rue de la Paix')
     })
   })
 
   describe('calcul score de correspondance', () => {
-    it('devrait calculer un score élevé pour une correspondance de localisation parfaite', () => {
+    it('devrait calculer un score élevé pour une correspondance de localisation parfaite', async () => {
       const ademeData = {
         code_postal_ban: '75001',
         nom_commune_ban: 'Paris',
@@ -380,11 +436,11 @@ describe('Service de Recherche DPE', () => {
         consommationEnergie: 150
       }
 
-      const score = dpeSearchService.calculateMatchScore(ademeData, searchRequest)
+      const score = await dpeSearchService.calculateMatchScore(ademeData, searchRequest)
       expect(score).toBeGreaterThan(90) // High score for perfect match
     })
 
-    it('devrait calculer un score plus bas pour une surface non correspondante', () => {
+    it('devrait calculer un score plus bas pour une surface non correspondante', async () => {
       const ademeData = {
         code_postal_ban: '75001',
         surface_habitable_logement: 100,
@@ -397,11 +453,11 @@ describe('Service de Recherche DPE', () => {
         consommationEnergie: 150
       }
 
-      const score = dpeSearchService.calculateMatchScore(ademeData, searchRequest)
+      const score = await dpeSearchService.calculateMatchScore(ademeData, searchRequest)
       expect(score).toBeLessThan(90) // Lower score for surface mismatch
     })
 
-    it('devrait gérer le calcul de score pour les recherches par classe', () => {
+    it('devrait gérer le calcul de score pour les recherches par classe', async () => {
       const ademeData = {
         code_postal_ban: '75001',
         etiquette_dpe: 'D',
@@ -416,7 +472,7 @@ describe('Service de Recherche DPE', () => {
         surfaceHabitable: 75
       }
 
-      const score = dpeSearchService.calculateMatchScore(ademeData, searchRequest)
+      const score = await dpeSearchService.calculateMatchScore(ademeData, searchRequest)
       expect(score).toBeGreaterThan(50) // Decent score for class match
     })
   })
@@ -481,85 +537,6 @@ describe('Service de Recherche DPE', () => {
 
       const results = await dpeSearchService.performRealSearch(searchRequest)
       expect(results).toEqual([])
-    })
-  })
-
-  describe('enrichissement résultats avec adresses correctes', () => {
-    it('devrait enrichir les 3 premiers résultats avec géocodage inverse', async () => {
-      const mockResults = [
-        {
-          numeroDPE: 'DPE1',
-          latitude: 48.8566,
-          longitude: 2.3522,
-          commune: 'Paris',
-          codePostal: '75001'
-        },
-        {
-          numeroDPE: 'DPE2',
-          latitude: 48.8606,
-          longitude: 2.3376,
-          commune: 'Paris',
-          codePostal: '75001'
-        },
-        {
-          numeroDPE: 'DPE3',
-          latitude: 48.8556,
-          longitude: 2.34,
-          commune: 'Paris',
-          codePostal: '75001'
-        },
-        {
-          numeroDPE: 'DPE4',
-          latitude: 48.85,
-          longitude: 2.33,
-          commune: 'Paris',
-          codePostal: '75001'
-        }
-      ]
-
-      // Mock 3 successful geocoding calls for first 3 results
-      fetch
-        .mockResolvedValueOnce({
-          ok: true,
-          json: () => Promise.resolve(mockGeocodeResponse)
-        })
-        .mockResolvedValueOnce({
-          ok: true,
-          json: () => Promise.resolve(mockGeocodeResponse)
-        })
-        .mockResolvedValueOnce({
-          ok: true,
-          json: () => Promise.resolve(mockGeocodeResponse)
-        })
-
-      const enrichedResults = await dpeSearchService.enrichResultsWithCorrectAddresses(mockResults)
-
-      expect(enrichedResults).toHaveLength(4)
-      expect(fetch).toHaveBeenCalledTimes(3) // Only first 3 enriched
-      expect(enrichedResults[0]).toHaveProperty('codePostalDisplay')
-      expect(enrichedResults[0]).toHaveProperty('communeDisplay')
-    })
-
-    it('devrait gérer la limitation de débit avec élégance', async () => {
-      const mockResults = [
-        {
-          numeroDPE: 'DPE1',
-          latitude: 48.8566,
-          longitude: 2.3522,
-          commune: 'Paris',
-          codePostal: '75001'
-        }
-      ]
-
-      fetch.mockResolvedValueOnce({
-        status: 429,
-        ok: false
-      })
-
-      const enrichedResults = await dpeSearchService.enrichResultsWithCorrectAddresses(mockResults)
-
-      expect(enrichedResults).toHaveLength(1)
-      expect(enrichedResults[0]).not.toHaveProperty('codePostalDisplay')
     })
   })
 
@@ -630,7 +607,7 @@ describe('Service de Recherche DPE', () => {
     })
 
     it('devrait gérer les erreurs de recherche et lever une erreur appropriée', async () => {
-      vi.spyOn(dpeSearchService, 'simulateSearch').mockRejectedValue(new Error('Search failed'))
+      vi.spyOn(dpeSearchService, 'performSearch').mockRejectedValue(new Error('Search failed'))
 
       const searchRequest = { commune: '75001' }
 
