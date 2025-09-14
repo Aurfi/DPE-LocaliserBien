@@ -10,7 +10,7 @@
     </div>
     
     <!-- Modal de confirmation -->
-    <ConfirmationModal
+    <ModaleConfirmation
       :show="showConfirmModal"
       title="Effacer l'historique"
       message="Cette action est irréversible. Toutes vos recherches récentes de DPE seront supprimées."
@@ -21,7 +21,7 @@
     />
     
     <!-- Modal de renommage -->
-    <InputModal
+    <ModaleEntree
       :show="showRenameModal"
       title="Renommer la recherche"
       message="Entrez un nom personnalisé pour cette recherche"
@@ -164,8 +164,8 @@
 
 <script>
 import { Building, Calendar, Circle, Clock, Edit2, Grid2x2Check, Home, MapPin, Trash2 } from 'lucide-vue-next'
-import ConfirmationModal from '../../base/ConfirmationModal.vue'
-import InputModal from '../../base/InputModal.vue'
+import ModaleConfirmation from '../../base/ModaleConfirmation.vue'
+import ModaleEntree from '../../base/ModaleEntree.vue'
 
 export default {
   name: 'RecentDPESearchHistory',
@@ -179,8 +179,8 @@ export default {
     Clock,
     Trash2,
     Edit2,
-    ConfirmationModal,
-    InputModal
+    ModaleConfirmation,
+    ModaleEntree
   },
   emits: ['relaunch-search'],
   data() {

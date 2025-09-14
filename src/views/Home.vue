@@ -15,7 +15,7 @@
     <div v-show="!showAnimation" class="container mx-auto px-4 py-4 min-h-screen">
       
       <!-- Navigation par onglets -->
-      <TabNavigation 
+      <NavigationOnglets 
         v-if="!searchResults && !recentDPEResults && !showAnimation"
         :activeTab="activeTab"
         @tab-change="handleTabChange"
@@ -85,7 +85,7 @@ const RecentDPESearchHistory = defineAsyncComponent(
   () => import('../components/features/dpe/RecentDPESearchHistory.vue')
 )
 const RecherchesRecentes = defineAsyncComponent(() => import('../components/features/search/RecherchesRecentes.vue'))
-const TabNavigation = defineAsyncComponent(() => import('../components/base/TabNavigation.vue'))
+const NavigationOnglets = defineAsyncComponent(() => import('../components/base/NavigationOnglets.vue'))
 const TriangulationAnimation = defineAsyncComponent(() => import('../components/animations/TriangulationAnimation.vue'))
 
 import DPESearchService from '../services/dpe-search.service.js' // Système de scoring clair
@@ -97,7 +97,7 @@ export default {
     DPEResults,
     TriangulationAnimation,
     RecherchesRecentes,
-    TabNavigation,
+    NavigationOnglets,
     RecentDPESearch,
     RecentDPEResults,
     RecentDPESearchHistory
