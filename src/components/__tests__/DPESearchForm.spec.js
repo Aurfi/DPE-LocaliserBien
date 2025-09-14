@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import DPESearchForm from '../features/dpe/DPESearchForm.vue'
+import FormulaireRechercheDPE from '../features/dpe/FormulaireRechercheDPE.vue'
 
 // Mock Lucide Vue icons
 vi.mock('lucide-vue-next', () => ({
@@ -12,11 +12,11 @@ vi.mock('lucide-vue-next', () => ({
   Search: { template: '<div data-testid="search-icon"></div>' }
 }))
 
-describe('DPESearchForm', () => {
+describe('FormulaireRechercheDPE', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(DPESearchForm)
+    wrapper = mount(FormulaireRechercheDPE)
   })
 
   afterEach(() => {

@@ -14,7 +14,7 @@
     />
 
     <!-- Empty state -->
-    <EmptyState
+    <EtatVide
       v-if="filteredResults.length === 0"
       :icon="OctagonX"
       title="Aucun résultat trouvé"
@@ -68,7 +68,7 @@
       @show-details="showDPEDetails = true"
     />
 
-    <DPEDetailsModal
+    <ModaleDetailsDPE
       :show="showDPEDetails && !!selectedProperty"
       :property="selectedProperty || {}"
       :departmentAverages="departmentAverages"
@@ -95,18 +95,18 @@ import {
 } from '../../../utils/mapUtils'
 import RetourEnHaut from '../../base/RetourEnHaut.vue'
 import CarteBien from '../../shared/CarteBien.vue'
-import EmptyState from '../../shared/EmptyState.vue'
 import EnteteResultats from '../../shared/EnteteResultats.vue'
+import EtatVide from '../../shared/EtatVide.vue'
 import ModaleProprietee from '../search/ModaleProprietee.vue'
-import DPEDetailsModal from './DPEDetailsModal.vue'
+import ModaleDetailsDPE from './ModaleDetailsDPE.vue'
 
 export default {
   name: 'ResultatsDpeRecents',
   components: {
     ModaleProprietee,
-    DPEDetailsModal,
+    ModaleDetailsDPE,
     RetourEnHaut,
-    EmptyState,
+    EtatVide,
     CarteBien,
     EnteteResultats
   },

@@ -83,7 +83,7 @@
       @show-details="showDPEDetails = true"
     />
 
-    <DPEDetailsModal
+    <ModaleDetailsDPE
       :show="showDPEDetails"
       :property="selectedProperty"
       :departmentAverages="departmentAverages"
@@ -119,7 +119,7 @@ import CarteBien from '../../shared/CarteBien.vue'
 import EnteteResultats from '../../shared/EnteteResultats.vue'
 import EtatVide from '../../shared/EtatVide.vue'
 import DonneesBrutesModal from '../dpe/DonneesBrutesModal.vue'
-import DPEDetailsModal from '../dpe/DPEDetailsModal.vue'
+import ModaleDetailsDPE from '../dpe/ModaleDetailsDPE.vue'
 import ModaleProprietee from '../search/ModaleProprietee.vue'
 
 export default {
@@ -127,7 +127,7 @@ export default {
   components: {
     DonneesBrutesModal,
     ModaleProprietee,
-    DPEDetailsModal,
+    ModaleDetailsDPE,
     RetourEnHaut,
     EtatErreur,
     EtatVide,

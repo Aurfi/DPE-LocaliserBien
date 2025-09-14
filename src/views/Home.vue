@@ -24,7 +24,7 @@
       <!-- Tab: Localiser un bien -->
       <div v-if="activeTab === 'locate' && !searchResults">
         <!-- Formulaire de recherche -->
-        <DPESearchForm 
+        <FormulaireRechercheDPE 
           ref="searchForm"
           @search="handleSearch"
         />
@@ -38,7 +38,7 @@
       <!-- Tab: DPE récents -->
       <div v-show="activeTab === 'recent' && !recentDPEResults">
         <RecentDPESearch
-          ref="recentDPESearchForm"
+          ref="recentFormulaireRechercheDPE"
           @search-started="handleRecentDPESearchStarted"
           @search-results="handleRecentDPEResults"
           @search-error="handleRecentDPESearchError"
@@ -75,7 +75,7 @@
 // Composants critiques chargés immédiatement
 
 import { defineAsyncComponent } from 'vue'
-import DPESearchForm from '../components/features/dpe/DPESearchForm.vue'
+import FormulaireRechercheDPE from '../components/features/dpe/FormulaireRechercheDPE.vue'
 
 // Lazy loading des composants non-critiques pour améliorer le FCP
 const DPEResults = defineAsyncComponent(() => import('../components/features/location/ResultatsLocaliserDpe.vue'))
@@ -93,7 +93,7 @@ import DPESearchService from '../services/dpe-search.service.js' // Système de 
 export default {
   name: 'Home',
   components: {
-    DPESearchForm,
+    FormulaireRechercheDPE,
     DPEResults,
     TriangulationAnimation,
     RecherchesRecentes,
@@ -208,8 +208,8 @@ export default {
       if (this.searchResults && this.$refs.searchForm) {
         this.$refs.searchForm.resetLoading()
       }
-      if (this.recentDPEResults && this.$refs.recentDPESearchForm) {
-        this.$refs.recentDPESearchForm.resetLoading()
+      if (this.recentDPEResults && this.$refs.recentFormulaireRechercheDPE) {
+        this.$refs.recentFormulaireRechercheDPE.resetLoading()
       }
     },
 
@@ -284,8 +284,8 @@ export default {
 
     handleRelaunchRecentSearch(savedSearch) {
       // Passer la recherche sauvegardée au formulaire
-      if (this.$refs.recentDPESearchForm) {
-        this.$refs.recentDPESearchForm.relaunchSearch(savedSearch)
+      if (this.$refs.recentFormulaireRechercheDPE) {
+        this.$refs.recentFormulaireRechercheDPE.relaunchSearch(savedSearch)
       }
     },
 

@@ -41,9 +41,9 @@ vi.mock('../features/search/PropertyModal.vue', () => ({
   }
 }))
 
-vi.mock('../features/dpe/DPEDetailsModal.vue', () => ({
+vi.mock('../features/dpe/ModaleDetailsDPE.vue', () => ({
   default: {
-    name: 'DPEDetailsModal',
+    name: 'ModaleDetailsDPE',
     template: `
       <div v-if="show && property" data-testid="dpe-details-modal">
         <div class="dpe-energy">{{ property.consommationEnergie }} kWh</div>
