@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { calculateDistance } from '../../utils/geoUtils.js'
+import { calculateDistance } from '../../utils/utilsGeo.js'
 import DPESearchService from '../dpe-search.service.js'
 
 // Mock fetch globally - but allow actual fetches for commune data

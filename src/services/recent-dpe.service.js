@@ -1,4 +1,4 @@
-import { calculateDistance, geocodeAddress } from '../utils/geoUtils.js'
+import { calculateDistance, geocodeAddress } from '../utils/utilsGeo.js'
 
 const ADEME_API_URL = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines'
 

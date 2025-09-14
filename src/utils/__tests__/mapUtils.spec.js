@@ -6,9 +6,9 @@ import {
   getGoogleRegionLabel,
   getLatitudeFromGeopoint,
   getLongitudeFromGeopoint
-} from '../mapUtils.js'
+} from '../utilsCartes.js'
 
-describe('mapUtils', () => {
+describe('utilsCartes', () => {
   describe('getGoogleMapsEmbedUrl', () => {
     it('devrait générer une URL embed avec adresse quand fournie', () => {
       const result = getGoogleMapsEmbedUrl(48.8566, 2.3522, '1 rue de la Paix, Paris')

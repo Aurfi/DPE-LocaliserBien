@@ -3,7 +3,7 @@
  * Extracted from dpe-search.service.js to improve code organization
  */
 
-import { extractPostalCode } from '../utils/geoUtils.js'
+import { extractPostalCode } from '../utils/utilsGeo.js'
 
 class DPEScoringService {
   /**

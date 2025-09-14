@@ -3,7 +3,7 @@
  * Utilise le jeu de données dpe-france avec des noms de champs différents
  */
 
-import { getDepartmentFromPostalCode } from '../utils/geoUtils.js'
+import { getDepartmentFromPostalCode } from '../utils/utilsGeo.js'
 
 class DPELegacyService {
   constructor() {

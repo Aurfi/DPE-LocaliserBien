@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { ErrorHandler, errorHandler } from '../errorHandler.js'
+import { ErrorHandler, gestionnaireErreurs } from '../gestionnaireErreurs.js'
 
 // Mock window and navigator
 Object.defineProperty(window, 'addEventListener', {
@@ -28,11 +28,11 @@ vi.stubGlobal('import.meta', {
 })
 
 describe("Gestionnaire d'erreurs", () => {
-  let errorHandlerInstance
+  let gestionnaireErreursInstance
 
   beforeEach(() => {
     vi.clearAllMocks()
-    errorHandlerInstance = new ErrorHandler()
+    gestionnaireErreursInstance = new ErrorHandler()
   })
 
   afterEach(() => {
@@ -41,7 +41,7 @@ describe("Gestionnaire d'erreurs", () => {
 
   describe('Constructeur et configuration', () => {
     it("doit initialiser avec un tableau d'erreurs vide", () => {
-      expect(errorHandlerInstance.errors).toEqual([])
+      expect(gestionnaireErreursInstance.errors).toEqual([])
     })
 
     it("doit configurer les écouteurs d'événements globaux", () => {
@@ -67,10 +67,10 @@ describe("Gestionnaire d'erreurs", () => {
         stack: 'Error stack trace'
       }
 
-      errorHandlerInstance.logError(testError)
+      gestionnaireErreursInstance.logError(testError)
 
-      expect(errorHandlerInstance.errors).toHaveLength(1)
-      expect(errorHandlerInstance.errors[0]).toEqual({
+      expect(gestionnaireErreursInstance.errors).toHaveLength(1)
+      expect(gestionnaireErreursInstance.errors[0]).toEqual({
         type: 'testError',
         message: 'Test error message',
         stack: 'Error stack trace',
@@ -83,15 +83,15 @@ describe("Gestionnaire d'erreurs", () => {
     it('doit limiter les erreurs à un maximum de 50 entrées', () => {
       // Add 55 errors
       for (let i = 0; i < 55; i++) {
-        errorHandlerInstance.logError({
+        gestionnaireErreursInstance.logError({
           type: 'testError',
           message: `Error ${i}`
         })
       }
 
-      expect(errorHandlerInstance.errors).toHaveLength(50)
-      expect(errorHandlerInstance.errors[0].message).toBe('Error 5') // Les 5 premières doivent être supprimées
-      expect(errorHandlerInstance.errors[49].message).toBe('Error 54')
+      expect(gestionnaireErreursInstance.errors).toHaveLength(50)
+      expect(gestionnaireErreursInstance.errors[0].message).toBe('Error 5') // Les 5 premières doivent être supprimées
+      expect(gestionnaireErreursInstance.errors[49].message).toBe('Error 54')
     })
 
     it('doit gérer les erreurs sans trace de pile', () => {
@@ -100,10 +100,10 @@ describe("Gestionnaire d'erreurs", () => {
         message: 'Test error without stack'
       }
 
-      errorHandlerInstance.logError(testError)
+      gestionnaireErreursInstance.logError(testError)
 
-      expect(errorHandlerInstance.errors[0]).not.toHaveProperty('stack')
-      expect(errorHandlerInstance.errors[0].message).toBe('Test error without stack')
+      expect(gestionnaireErreursInstance.errors[0]).not.toHaveProperty('stack')
+      expect(gestionnaireErreursInstance.errors[0].message).toBe('Test error without stack')
     })
   })
 
@@ -112,11 +112,11 @@ describe("Gestionnaire d'erreurs", () => {
       Object.defineProperty(navigator, 'onLine', { value: false })
 
       const error = new Error('Failed to fetch')
-      const userMessage = errorHandlerInstance.handleApiError(error, 'API call')
+      const userMessage = gestionnaireErreursInstance.handleApiError(error, 'API call')
 
       expect(userMessage).toBe('Erreur de connexion. Vérifiez votre connexion internet.')
-      expect(errorHandlerInstance.errors).toHaveLength(1)
-      expect(errorHandlerInstance.errors[0]).toMatchObject({
+      expect(gestionnaireErreursInstance.errors).toHaveLength(1)
+      expect(gestionnaireErreursInstance.errors[0]).toMatchObject({
         type: 'apiError',
         context: 'API call',
         message: 'Failed to fetch',
@@ -128,7 +128,7 @@ describe("Gestionnaire d'erreurs", () => {
       Object.defineProperty(navigator, 'onLine', { value: true })
 
       const error = new Error('Failed to fetch')
-      const userMessage = errorHandlerInstance.handleApiError(error)
+      const userMessage = gestionnaireErreursInstance.handleApiError(error)
 
       expect(userMessage).toBe('Erreur de connexion. Vérifiez votre connexion internet.')
     })
@@ -139,10 +139,10 @@ describe("Gestionnaire d'erreurs", () => {
         response: { status: 404 }
       }
 
-      const userMessage = errorHandlerInstance.handleApiError(error, 'Get user data')
+      const userMessage = gestionnaireErreursInstance.handleApiError(error, 'Get user data')
 
       expect(userMessage).toBe('Ressource non trouvée')
-      expect(errorHandlerInstance.errors[0]).toMatchObject({
+      expect(gestionnaireErreursInstance.errors[0]).toMatchObject({
         type: 'apiError',
         context: 'Get user data',
         status: 404,
@@ -156,10 +156,10 @@ describe("Gestionnaire d'erreurs", () => {
         status: 429
       }
 
-      const userMessage = errorHandlerInstance.handleApiError(error)
+      const userMessage = gestionnaireErreursInstance.handleApiError(error)
 
       expect(userMessage).toBe('Trop de requêtes. Veuillez patienter quelques instants.')
-      expect(errorHandlerInstance.errors[0].status).toBe(429)
+      expect(gestionnaireErreursInstance.errors[0].status).toBe(429)
     })
 
     it('doit gérer les erreurs serveur 500', () => {
@@ -168,10 +168,10 @@ describe("Gestionnaire d'erreurs", () => {
         response: { status: 500 }
       }
 
-      const userMessage = errorHandlerInstance.handleApiError(error)
+      const userMessage = gestionnaireErreursInstance.handleApiError(error)
 
       expect(userMessage).toBe('Erreur serveur. Veuillez réessayer plus tard.')
-      expect(errorHandlerInstance.errors[0].status).toBe(500)
+      expect(gestionnaireErreursInstance.errors[0].status).toBe(500)
     })
 
     it('doit gérer les erreurs 502 bad gateway', () => {
@@ -180,7 +180,7 @@ describe("Gestionnaire d'erreurs", () => {
         response: { status: 502 }
       }
 
-      const userMessage = errorHandlerInstance.handleApiError(error)
+      const userMessage = gestionnaireErreursInstance.handleApiError(error)
 
       expect(userMessage).toBe('Erreur serveur. Veuillez réessayer plus tard.')
     })
@@ -190,10 +190,10 @@ describe("Gestionnaire d'erreurs", () => {
         message: 'Unknown error'
       }
 
-      const userMessage = errorHandlerInstance.handleApiError(error)
+      const userMessage = gestionnaireErreursInstance.handleApiError(error)
 
       expect(userMessage).toBe('Une erreur est survenue')
-      expect(errorHandlerInstance.errors[0].status).toBeUndefined()
+      expect(gestionnaireErreursInstance.errors[0].status).toBeUndefined()
     })
 
     it('doit gérer les erreurs avec statut mais sans objet réponse', () => {
@@ -202,10 +202,10 @@ describe("Gestionnaire d'erreurs", () => {
         status: 404
       }
 
-      const userMessage = errorHandlerInstance.handleApiError(error)
+      const userMessage = gestionnaireErreursInstance.handleApiError(error)
 
       expect(userMessage).toBe('Ressource non trouvée')
-      expect(errorHandlerInstance.errors[0].status).toBe(404)
+      expect(gestionnaireErreursInstance.errors[0].status).toBe(404)
     })
   })
 
@@ -214,10 +214,10 @@ describe("Gestionnaire d'erreurs", () => {
       const error1 = { type: 'error1', message: 'First error' }
       const error2 = { type: 'error2', message: 'Second error' }
 
-      errorHandlerInstance.logError(error1)
-      errorHandlerInstance.logError(error2)
+      gestionnaireErreursInstance.logError(error1)
+      gestionnaireErreursInstance.logError(error2)
 
-      const errors = errorHandlerInstance.getErrors()
+      const errors = gestionnaireErreursInstance.getErrors()
 
       expect(errors).toHaveLength(2)
       expect(errors[0].message).toBe('First error')
@@ -225,30 +225,30 @@ describe("Gestionnaire d'erreurs", () => {
     })
 
     it("doit retourner un tableau vide quand aucune erreur n'est journalisée", () => {
-      const errors = errorHandlerInstance.getErrors()
+      const errors = gestionnaireErreursInstance.getErrors()
       expect(errors).toEqual([])
     })
   })
 
   describe('clearErrors - effacement des erreurs', () => {
     it('doit effacer toutes les erreurs journalisées', () => {
-      errorHandlerInstance.logError({ type: 'test', message: 'Test error' })
-      expect(errorHandlerInstance.errors).toHaveLength(1)
+      gestionnaireErreursInstance.logError({ type: 'test', message: 'Test error' })
+      expect(gestionnaireErreursInstance.errors).toHaveLength(1)
 
-      errorHandlerInstance.clearErrors()
-      expect(errorHandlerInstance.errors).toEqual([])
+      gestionnaireErreursInstance.clearErrors()
+      expect(gestionnaireErreursInstance.errors).toEqual([])
     })
   })
 
   describe("Gestionnaires d'événements globaux", () => {
     let unhandledRejectionHandler
-    let errorHandler
+    let gestionnaireErreurs
 
     beforeEach(() => {
       // Récupérer les gestionnaires qui ont été enregistrés
       const calls = window.addEventListener.mock.calls
       unhandledRejectionHandler = calls.find(call => call[0] === 'unhandledrejection')?.[1]
-      errorHandler = calls.find(call => call[0] === 'error')?.[1]
+      gestionnaireErreurs = calls.find(call => call[0] === 'error')?.[1]
     })
 
     it('doit gérer les rejets de promesses non traités', () => {
@@ -263,8 +263,8 @@ describe("Gestionnaire d'erreurs", () => {
       unhandledRejectionHandler(mockEvent)
 
       expect(mockEvent.preventDefault).toHaveBeenCalled()
-      expect(errorHandlerInstance.errors).toHaveLength(1)
-      expect(errorHandlerInstance.errors[0]).toMatchObject({
+      expect(gestionnaireErreursInstance.errors).toHaveLength(1)
+      expect(gestionnaireErreursInstance.errors[0]).toMatchObject({
         type: 'unhandledRejection',
         message: 'Unhandled promise rejection',
         stack: 'Promise rejection stack'
@@ -279,7 +279,7 @@ describe("Gestionnaire d'erreurs", () => {
 
       unhandledRejectionHandler(mockEvent)
 
-      expect(errorHandlerInstance.errors[0]).toMatchObject({
+      expect(gestionnaireErreursInstance.errors[0]).toMatchObject({
         type: 'unhandledRejection',
         message: 'Unknown error'
       })
@@ -296,10 +296,10 @@ describe("Gestionnaire d'erreurs", () => {
         colno: 15
       }
 
-      errorHandler(mockEvent)
+      gestionnaireErreurs(mockEvent)
 
-      expect(errorHandlerInstance.errors).toHaveLength(1)
-      expect(errorHandlerInstance.errors[0]).toMatchObject({
+      expect(gestionnaireErreursInstance.errors).toHaveLength(1)
+      expect(gestionnaireErreursInstance.errors[0]).toMatchObject({
         type: 'globalError',
         message: 'Global error message',
         stack: 'Global error stack',
@@ -318,9 +318,9 @@ describe("Gestionnaire d'erreurs", () => {
         colno: 15
       }
 
-      errorHandler(mockEvent)
+      gestionnaireErreurs(mockEvent)
 
-      expect(errorHandlerInstance.errors[0]).toMatchObject({
+      expect(gestionnaireErreursInstance.errors[0]).toMatchObject({
         type: 'globalError',
         message: 'Global error without error object',
         filename: 'test.js',
@@ -331,17 +331,17 @@ describe("Gestionnaire d'erreurs", () => {
   })
 
   describe('Export singleton', () => {
-    it('doit exporter une instance singleton errorHandler', () => {
-      expect(errorHandler).toBeInstanceOf(ErrorHandler)
-      expect(errorHandler.errors).toEqual([])
+    it('doit exporter une instance singleton gestionnaireErreurs', () => {
+      expect(gestionnaireErreurs).toBeInstanceOf(ErrorHandler)
+      expect(gestionnaireErreurs.errors).toEqual([])
     })
 
     it('doit utiliser la même instance à travers les imports', () => {
-      errorHandler.logError({ type: 'test', message: 'Singleton test' })
-      expect(errorHandler.errors).toHaveLength(1)
+      gestionnaireErreurs.logError({ type: 'test', message: 'Singleton test' })
+      expect(gestionnaireErreurs.errors).toHaveLength(1)
 
       // Le singleton doit maintenir son état
-      expect(errorHandler.getErrors()).toHaveLength(1)
+      expect(gestionnaireErreurs.getErrors()).toHaveLength(1)
     })
   })
 
@@ -358,22 +358,22 @@ describe("Gestionnaire d'erreurs", () => {
     })
 
     it('doit gérer les objets erreur mal formés', () => {
-      errorHandlerInstance.logError(null)
-      errorHandlerInstance.logError(undefined)
-      errorHandlerInstance.logError({})
+      gestionnaireErreursInstance.logError(null)
+      gestionnaireErreursInstance.logError(undefined)
+      gestionnaireErreursInstance.logError({})
 
-      expect(errorHandlerInstance.errors).toHaveLength(3)
-      expect(errorHandlerInstance.errors[0]).toHaveProperty('timestamp')
-      expect(errorHandlerInstance.errors[1]).toHaveProperty('timestamp')
-      expect(errorHandlerInstance.errors[2]).toHaveProperty('timestamp')
+      expect(gestionnaireErreursInstance.errors).toHaveLength(3)
+      expect(gestionnaireErreursInstance.errors[0]).toHaveProperty('timestamp')
+      expect(gestionnaireErreursInstance.errors[1]).toHaveProperty('timestamp')
+      expect(gestionnaireErreursInstance.errors[2]).toHaveProperty('timestamp')
     })
 
     it("doit gérer les messages d'erreur très longs", () => {
       const longMessage = 'A'.repeat(10000)
-      errorHandlerInstance.logError({ type: 'long', message: longMessage })
+      gestionnaireErreursInstance.logError({ type: 'long', message: longMessage })
 
-      expect(errorHandlerInstance.errors[0].message).toBe(longMessage)
-      expect(errorHandlerInstance.errors).toHaveLength(1)
+      expect(gestionnaireErreursInstance.errors[0].message).toBe(longMessage)
+      expect(gestionnaireErreursInstance.errors).toHaveLength(1)
     })
   })
 })

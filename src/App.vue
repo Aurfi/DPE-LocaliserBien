@@ -20,7 +20,7 @@
     </main>
 
     <!-- Bannière de guide pour nouveaux visiteurs -->
-    <GuideBanner />
+    <BanniereGuide />
 
     <!-- Footer -->
     <footer v-show="!modalOpen" class="relative z-10">
@@ -80,7 +80,7 @@
                 Service gratuit de localisation d'annonce immobilière
               </p>
               <div class="mt-2">
-                <InstallPWA variant="link" />
+                <InstallationPWA variant="link" />
               </div>
             </div>
 
@@ -178,7 +178,7 @@
                   </svg>
                   <span class="font-semibold">GitHub</span>
                 </a>
-                <InstallPWA />
+                <InstallationPWA />
               </div>
               
               <div class="flex items-center">
@@ -199,8 +199,8 @@
 
 <script>
 import { ExternalLink, FileText, HelpCircle, Moon, Search, Shield, Sun } from 'lucide-vue-next'
-import GuideBanner from './components/layout/GuideBanner.vue'
-import InstallPWA from './components/layout/InstallPWA.vue'
+import BanniereGuide from './components/layout/BanniereGuide.vue'
+import InstallationPWA from './components/layout/InstallationPWA.vue'
 
 export default {
   name: 'App',
@@ -212,8 +212,8 @@ export default {
     Shield,
     Sun,
     Moon,
-    InstallPWA,
-    GuideBanner
+    InstallationPWA,
+    BanniereGuide
   },
   data() {
     return {

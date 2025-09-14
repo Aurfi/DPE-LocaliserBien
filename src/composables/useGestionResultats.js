@@ -3,7 +3,7 @@
  */
 import { ref } from 'vue'
 
-export function useResultsHandling() {
+export function useGestionResultats() {
   const selectedProperty = ref(null)
   const showDPEDetails = ref(false)
   const showRawDataModal = ref(false)

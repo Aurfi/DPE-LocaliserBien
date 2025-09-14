@@ -27,7 +27,7 @@
       <!-- Sorting dropdown -->
       <div v-if="showSort && sortOptions.length > 0" class="flex items-center gap-2">
         <span class="text-sm text-gray-600 dark:text-gray-400">Trier :</span>
-        <SortDropdown
+        <ListeDeroulanteTri
           :modelValue="sortBy"
           :options="sortOptions"
           @update:modelValue="$emit('update:sortBy', $event)"
@@ -39,13 +39,13 @@
 
 <script>
 import { X } from 'lucide-vue-next'
-import SortDropdown from '../results/SortDropdown.vue'
+import ListeDeroulanteTri from '../results/ListeDeroulanteTri.vue'
 
 export default {
   name: 'EnteteResultats',
   components: {
     X,
-    SortDropdown
+    ListeDeroulanteTri
   },
   props: {
     title: {

@@ -229,7 +229,7 @@
 import { Building, Calendar, Circle, Grid2x2Check, Home, Loader, MapPin, Search, Zap } from 'lucide-vue-next'
 import { ref } from 'vue'
 import * as recentDPEService from '../../../services/recent-dpe.service'
-import { geocodeAddress } from '../../../utils/geoUtils.js'
+import { geocodeAddress } from '../../../utils/utilsGeo.js'
 
 export default {
   name: 'RecentDPESearch',

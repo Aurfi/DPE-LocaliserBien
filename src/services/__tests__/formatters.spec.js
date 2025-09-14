@@ -9,7 +9,7 @@ import {
   getFloorDisplay,
   getPropertyType,
   parseLocalisation
-} from '../../utils/dpeFormatters.js'
+} from '../../utils/formateursDPE.js'
 
 describe('Formatteurs de données DPE', () => {
   describe("extractYearFromValue - extraction d'année", () => {

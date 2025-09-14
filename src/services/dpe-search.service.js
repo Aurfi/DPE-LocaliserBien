@@ -1,6 +1,6 @@
 // Service pour intégrer avec notre API DPE backend
 
-import { calculateDistance, extractPostalCode, geocodeAddress, getCommuneCoordinates } from '../utils/geoUtils.js'
+import { calculateDistance, extractPostalCode, geocodeAddress, getCommuneCoordinates } from '../utils/utilsGeo.js'
 import DPELegacyService from './dpe-legacy.service'
 import DPEScoringService from './dpe-scoring.service'
 

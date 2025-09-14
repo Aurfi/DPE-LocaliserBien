@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Animation de triangulation -->
-    <TriangulationAnimation 
+    <AnimationTriangulation 
       v-if="showAnimation"
       :commune="searchCriteria?.commune || recentDPESearchCriteria?.address || ''"
       :coordinates="recentDPESearchCoordinates || recentDPEResults?.searchCoordinates || null"
@@ -86,7 +86,7 @@ const RecentDPESearchHistory = defineAsyncComponent(
 )
 const RecherchesRecentes = defineAsyncComponent(() => import('../components/features/search/RecherchesRecentes.vue'))
 const NavigationOnglets = defineAsyncComponent(() => import('../components/base/NavigationOnglets.vue'))
-const TriangulationAnimation = defineAsyncComponent(() => import('../components/animations/TriangulationAnimation.vue'))
+const AnimationTriangulation = defineAsyncComponent(() => import('../components/animations/AnimationTriangulation.vue'))
 
 import DPESearchService from '../services/dpe-search.service.js' // Système de scoring clair
 
@@ -95,7 +95,7 @@ export default {
   components: {
     FormulaireRechercheDPE,
     DPEResults,
-    TriangulationAnimation,
+    AnimationTriangulation,
     RecherchesRecentes,
     NavigationOnglets,
     RecentDPESearch,

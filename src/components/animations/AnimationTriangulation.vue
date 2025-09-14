@@ -31,14 +31,14 @@
         <!-- Zone de carte adaptée selon la région -->
         <svg class="absolute inset-0 w-full h-full" viewBox="0 0 800 600" ref="franceMap">
           <!-- France métropolitaine -->
-          <FranceMap 
+          <CarteFrance 
             v-if="regionType === 'france'"
             :france-color="franceColor"
             :france-border-color="franceBorderColor"
           />
           
           <!-- Carte de la Corse -->
-          <CorseMap 
+          <CarteCorse 
             v-else-if="regionType === 'corsica'"
             :corse-color="franceColor"
             :corse-border-color="franceBorderColor"
@@ -46,7 +46,7 @@
           
           <!-- Carte du monde pour DOM-TOM -->
           <g v-else-if="regionType === 'domtom'">
-            <WorldMap 
+            <CarteMonde 
               :world-color="franceColor"
               :world-border-color="franceBorderColor"
             />
@@ -150,20 +150,20 @@
 
 <script>
 import { MapPin, Search } from 'lucide-vue-next'
-import { getDepartmentCoords, getDepartmentFromCommune } from '../../data/france-departments.js'
-import { getLoadingMessageSequence } from '../../data/loading-messages.js'
-import CorseMap from '../features/location/CorseMap.vue'
-import FranceMap from '../features/location/FranceMap.vue'
-import WorldMap from '../features/location/WorldMap.vue'
+import { getDepartmentCoords, getDepartmentFromCommune } from '../../data/departements-france.js'
+import { getLoadingMessageSequence } from '../../data/messages-chargement.js'
+import CarteCorse from '../features/location/CarteCorse.vue'
+import CarteFrance from '../features/location/CarteFrance.vue'
+import CarteMonde from '../features/location/CarteMonde.vue'
 
 export default {
   name: 'TriangulationAnimation',
   components: {
     Search,
     MapPin,
-    FranceMap,
-    WorldMap,
-    CorseMap
+    CarteFrance,
+    CarteMonde,
+    CarteCorse
   },
   props: {
     commune: {

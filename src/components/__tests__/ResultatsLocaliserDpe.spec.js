@@ -181,12 +181,13 @@ vi.mock('../results/ErrorState.vue', () => ({
 
 // Mock Lucide Vue icons
 vi.mock('lucide-vue-next', () => ({
+  AlertTriangle: { template: '<div data-testid="alert-triangle-icon"></div>' },
   Search: { template: '<div data-testid="search-icon"></div>' },
   OctagonX: { template: '<div data-testid="octagon-x-icon"></div>' }
 }))
 
-// Mock mapUtils
-vi.mock('../../utils/mapUtils', () => ({
+// Mock utilsCartes
+vi.mock('../../utils/utilsCartes', () => ({
   getGeoportailUrl: vi.fn((lat, lon) => `https://geoportail.gouv.fr/carte?c=${lon},${lat}&z=18`),
   getGoogleMapsEmbedUrl: vi.fn((lat, lon, address) => {
     if (address && lat && lon) {
@@ -200,8 +201,8 @@ vi.mock('../../utils/mapUtils', () => ({
   })
 }))
 
-// Mock dpeFormatters with actual logic
-vi.mock('../../utils/dpeFormatters', () => ({
+// Mock formateursDPE with actual logic
+vi.mock('../../utils/formateursDPE', () => ({
   extractYearFromValue: vi.fn(value => {
     if (!value) return null
     const strValue = String(value)

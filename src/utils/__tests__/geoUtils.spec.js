@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { calculateDistance, extractPostalCode } from '../geoUtils.js'
+import { calculateDistance, extractPostalCode } from '../utilsGeo.js'
 
-describe('geoUtils', () => {
+describe('utilsGeo', () => {
   describe('calculateDistance', () => {
     it('should calculate correct distance between two points', () => {
       // Distance between Paris (48.8566, 2.3522) and Lyon (45.7640, 4.8357)

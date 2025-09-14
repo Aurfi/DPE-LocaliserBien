@@ -3,7 +3,7 @@
     class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all duration-200 flex flex-col h-full"
     :class="{ 'cursor-pointer': !hasIncompleteData, 'cursor-not-allowed opacity-90': hasIncompleteData }"
     @click="!hasIncompleteData && $emit('click', result)"
-    @contextmenu.prevent="showContextMenu($event)"
+    @contextmenu.prevent="showMenuContextuel($event)"
   >
     <div class="px-5 pt-4 pb-5 flex flex-col h-full">
       <!-- Date, distance et score -->
@@ -185,26 +185,26 @@ export default {
     }
   },
   mounted() {
-    window.addEventListener('click', this.hideContextMenu)
+    window.addEventListener('click', this.hideMenuContextuel)
   },
   unmounted() {
-    window.removeEventListener('click', this.hideContextMenu)
+    window.removeEventListener('click', this.hideMenuContextuel)
   },
   methods: {
-    showContextMenu(event) {
+    showMenuContextuel(event) {
       event.stopPropagation()
       this.contextMenuShow = true
       this.contextMenuX = event.clientX
       this.contextMenuY = event.clientY
     },
 
-    hideContextMenu() {
+    hideMenuContextuel() {
       this.contextMenuShow = false
     },
 
     hideResult() {
       this.$emit('hide', this.index)
-      this.hideContextMenu()
+      this.hideMenuContextuel()
     },
 
     formatFloor(floor) {

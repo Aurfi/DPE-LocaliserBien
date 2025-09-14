@@ -102,7 +102,7 @@
 
 <script>
 import { OctagonX } from 'lucide-vue-next'
-import { useResultsHandling } from '../../../composables/useResultsHandling'
+import { useGestionResultats } from '../../../composables/useGestionResultats'
 import {
   cleanAddress,
   extractYearFromValue,
@@ -111,8 +111,8 @@ import {
   getDaysAgo,
   getFloorDisplay,
   getPropertyType
-} from '../../../utils/dpeFormatters'
-import { getGeoportailUrl, getGoogleMapsEmbedUrl } from '../../../utils/mapUtils'
+} from '../../../utils/formateursDPE'
+import { getGeoportailUrl, getGoogleMapsEmbedUrl } from '../../../utils/utilsCartes'
 import RetourEnHaut from '../../base/RetourEnHaut.vue'
 import EtatErreur from '../../results/EtatErreur.vue'
 import CarteBien from '../../shared/CarteBien.vue'
@@ -161,7 +161,7 @@ export default {
       showRawDataForResult,
       setupEventListeners,
       cleanupEventListeners
-    } = useResultsHandling()
+    } = useGestionResultats()
 
     return {
       OctagonX,
