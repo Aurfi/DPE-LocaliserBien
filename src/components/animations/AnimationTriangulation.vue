@@ -100,16 +100,16 @@
                   <!-- Rotating scanner arcs -->
                   <g :transform="`translate(${targetCoords.x}, ${targetCoords.y}) rotate(${visorRotation})`">
                     <path d="M -35 0 A 35 35 0 0 1 0 -35"
-                          fill="none" stroke="#A855F7" stroke-width="2" opacity="0.6"/>
+                          fill="none" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
                     <path d="M 35 0 A 35 35 0 0 1 0 35"
-                          fill="none" stroke="#A855F7" stroke-width="2" opacity="0.6"/>
+                          fill="none" stroke="#6366F1" stroke-width="2" opacity="0.6"/>
                   </g>
 
                   <g :transform="`translate(${targetCoords.x}, ${targetCoords.y}) rotate(${-visorRotation * 0.7})`">
                     <path d="M 0 -35 A 35 35 0 0 1 35 0"
-                          fill="none" stroke="#A855F7" stroke-width="1.5" opacity="0.4"/>
+                          fill="none" stroke="#6366F1" stroke-width="1.5" opacity="0.4"/>
                     <path d="M 0 35 A 35 35 0 0 1 -35 0"
-                          fill="none" stroke="#A855F7" stroke-width="1.5" opacity="0.4"/>
+                          fill="none" stroke="#6366F1" stroke-width="1.5" opacity="0.4"/>
                   </g>
 
                   <!-- Corner brackets with glow -->
@@ -118,22 +118,22 @@
                     <path :d="`M ${targetCoords.x - 35} ${targetCoords.y - 25}
                               L ${targetCoords.x - 35} ${targetCoords.y - 35}
                               L ${targetCoords.x - 25} ${targetCoords.y - 35}`"
-                          fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"/>
+                          fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
                     <!-- Top-right -->
                     <path :d="`M ${targetCoords.x + 25} ${targetCoords.y - 35}
                               L ${targetCoords.x + 35} ${targetCoords.y - 35}
                               L ${targetCoords.x + 35} ${targetCoords.y - 25}`"
-                          fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"/>
+                          fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
                     <!-- Bottom-left -->
                     <path :d="`M ${targetCoords.x - 35} ${targetCoords.y + 25}
                               L ${targetCoords.x - 35} ${targetCoords.y + 35}
                               L ${targetCoords.x - 25} ${targetCoords.y + 35}`"
-                          fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"/>
+                          fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
                     <!-- Bottom-right -->
                     <path :d="`M ${targetCoords.x + 25} ${targetCoords.y + 35}
                               L ${targetCoords.x + 35} ${targetCoords.y + 35}
                               L ${targetCoords.x + 35} ${targetCoords.y + 25}`"
-                          fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round"/>
+                          fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
                   </g>
 
                   <!-- Hexagonal targeting frame -->
@@ -151,10 +151,10 @@
                   <!-- Data readout lines -->
                   <line :x1="targetCoords.x - 45" :y1="targetCoords.y"
                         :x2="targetCoords.x - 35" :y2="targetCoords.y"
-                        stroke="#A855F7" stroke-width="1" opacity="0.8"/>
+                        stroke="#6366F1" stroke-width="1" opacity="0.8"/>
                   <line :x1="targetCoords.x + 35" :y1="targetCoords.y"
                         :x2="targetCoords.x + 45" :y2="targetCoords.y"
-                        stroke="#A855F7" stroke-width="1" opacity="0.8"/>
+                        stroke="#6366F1" stroke-width="1" opacity="0.8"/>
                 </g>
               </g>
             </g>
@@ -189,7 +189,7 @@
             <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.9"/>
               <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.8"/>
-              <stop offset="100%" stop-color="#A855F7" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#6366F1" stop-opacity="0.7"/>
             </linearGradient>
           </defs>
         </svg>
@@ -436,14 +436,14 @@ export default {
         // Phase 4.6 : Final purple at 78%
         if (i === 47 && this.regionType === 'france') {
           this.franceColor = 'rgba(168, 85, 247, 0.3)'
-          this.franceBorderColor = '#A855F7'
+          this.franceBorderColor = '#6366F1'
           this.visorOpacity = 1 // Full opacity by this point
         }
 
         // Phase 4.5 : Color change for Corsica at 78%
         if (i === 47 && this.regionType === 'corsica') {
           this.franceColor = 'rgba(168, 85, 247, 0.3)'
-          this.franceBorderColor = '#A855F7'
+          this.franceBorderColor = '#6366F1'
         }
 
         // Phase 5 : Final (90-100%) - Keep purple for France/Corsica
@@ -451,7 +451,7 @@ export default {
           if (this.regionType === 'france' || this.regionType === 'corsica') {
             // Stay purple for France/Corsica
             this.franceColor = 'rgba(168, 85, 247, 0.35)'
-            this.franceBorderColor = '#A855F7'
+            this.franceBorderColor = '#6366F1'
           } else {
             // Green for other regions
             this.franceColor = 'rgba(16, 185, 129, 0.4)'
@@ -823,7 +823,7 @@ export default {
         this.convergenceRings.push({
           id: i,
           radius: 15 + i * 10,
-          color: '#A855F7', // Monochromatic purple
+          color: '#6366F1', // Monochromatic purple
           opacity: 0.8 - i * 0.15,
           pulsePhase: i * 0.5
         })
