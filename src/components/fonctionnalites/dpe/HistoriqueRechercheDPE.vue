@@ -164,6 +164,7 @@
 
 <script>
 import { Building, Calendar, Circle, Clock, Edit2, Grid2x2Check, Home, MapPin, Trash2 } from 'lucide-vue-next'
+import { useRecherches } from '../../../stores/useRecherches.js'
 import ModaleConfirmation from '../../base/ModaleConfirmation.vue'
 import ModaleEntree from '../../base/ModaleEntree.vue'
 
@@ -183,9 +184,14 @@ export default {
     ModaleEntree
   },
   emits: ['relaunch-search'],
+  setup() {
+    const recherchesStore = useRecherches()
+    return {
+      recherchesStore
+    }
+  },
   data() {
     return {
-      recentSearches: [],
       showConfirmModal: false,
       showRenameModal: false,
       renameIndex: null,
@@ -198,15 +204,17 @@ export default {
       }
     }
   },
+  computed: {
+    recentSearches() {
+      const searches = this.recherchesStore.recentDPESearches.value || []
+      return Array.isArray(searches) ? searches : []
+    }
+  },
   mounted() {
-    this.loadRecentSearches()
-
-    // Écouter les changements du localStorage
-    window.addEventListener('storage', this.handleStorageChange)
+    // Les données sont automatiquement chargées par le store réactif
     window.addEventListener('click', this.hideContextMenu)
   },
   beforeUnmount() {
-    window.removeEventListener('storage', this.handleStorageChange)
     window.removeEventListener('click', this.hideContextMenu)
   },
   methods: {
@@ -215,21 +223,6 @@ export default {
       if (type === 'maison') return Home
       if (type === 'appartement') return Building
       return Grid2x2Check
-    },
-    loadRecentSearches() {
-      try {
-        const stored = localStorage.getItem('recent_dpe_searches')
-        this.recentSearches = stored ? JSON.parse(stored) : []
-      } catch (_error) {
-        // Erreur chargement historique - gérée silencieusement
-        this.recentSearches = []
-      }
-    },
-
-    handleStorageChange(e) {
-      if (e.key === 'recent_dpe_searches') {
-        this.loadRecentSearches()
-      }
     },
 
     relaunchSearch(search) {
@@ -248,8 +241,7 @@ export default {
     },
 
     confirmClearHistory() {
-      localStorage.removeItem('recent_dpe_searches')
-      this.recentSearches = []
+      this.recherchesStore.clearSearchHistory('dpe')
       this.showConfirmModal = false
     },
 
@@ -269,8 +261,7 @@ export default {
 
     deleteSearchItem(index) {
       if (index !== null && index >= 0 && index < this.recentSearches.length) {
-        this.recentSearches.splice(index, 1)
-        localStorage.setItem('recent_dpe_searches', JSON.stringify(this.recentSearches))
+        this.recherchesStore.removeSearch(index, 'dpe')
         this.hideContextMenu()
       }
     },
@@ -287,12 +278,8 @@ export default {
 
     confirmRename(newName) {
       if (this.renameIndex !== null && this.renameIndex >= 0 && this.renameIndex < this.recentSearches.length) {
-        if (newName?.trim()) {
-          this.recentSearches[this.renameIndex].displayName = newName.trim()
-        } else {
-          delete this.recentSearches[this.renameIndex].displayName
-        }
-        localStorage.setItem('recent_dpe_searches', JSON.stringify(this.recentSearches))
+        const displayName = newName?.trim() || null
+        this.recherchesStore.updateSearchDisplayName(this.renameIndex, displayName, 'dpe')
       }
       this.showRenameModal = false
       this.renameIndex = null

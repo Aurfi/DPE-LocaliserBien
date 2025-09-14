@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department Position Visualization</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .map-container { display: flex; flex-wrap: wrap; gap: 20px; }
+        .map-section { border: 1px solid #ccc; padding: 10px; }
+        .map-section h3 { margin-top: 0; }
+        svg { border: 1px solid #ddd; }
+        .dept-point { fill: red; opacity: 0.7; }
+        .dept-label { font-size: 8px; fill: blue; }
+        .key-points { fill: green; opacity: 1; }
+    </style>
+</head>
+<body>
+    <h1>Department Position Testing on Real France Map</h1>
+
+    <div class="map-container">
+        <!-- Current Formula -->
+        <div class="map-section">
+            <h3>Current Formula</h3>
+            <p>svgX = 150 + ((lon + 5.5) / 14) * 480<br>
+               svgY = 165 + ((51 - lat) / 9) * 400</p>
+            <div id="current-map"></div>
+        </div>
+
+        <!-- New Formula (more spread) -->
+        <div class="map-section">
+            <h3>New Formula (More Spread)</h3>
+            <p>svgX = 120 + ((lon + 6) / 12) * 520<br>
+               svgY = 140 + ((52 - lat) / 10) * 440</p>
+            <div id="new-map"></div>
+        </div>
+
+        <!-- Even More Spread -->
+        <div class="map-section">
+            <h3>Maximum Spread</h3>
+            <p>svgX = 100 + ((lon + 6.5) / 11) * 580<br>
+               svgY = 120 + ((52.5 - lat) / 10.5) * 480</p>
+            <div id="max-map"></div>
+        </div>
+    </div>
+
+    <script>
+        // Department coordinates from our data
+        const departments = {
+            // Key departments for testing
+            '13': [5.5, 43.5333, 'Marseille'],    // Bouches-du-Rhône
+            '29': [-4.0967, 48.1967, 'Brest'],    // Finistère
+            '67': [7.75, 48.5833, 'Strasbourg'],  // Bas-Rhin
+            '34': [3.8667, 43.6167, 'Montpellier'], // Hérault
+            '44': [-1.5667, 47.2167, 'Nantes'],   // Loire-Atlantique
+            '75': [2.3522, 48.8566, 'Paris'],     // Paris
+            '59': [3.0667, 50.6333, 'Lille'],     // Nord
+            '06': [7.2667, 43.7, 'Nice'],         // Alpes-Maritimes
+            '22': [-2.7833, 48.5167, 'St-Brieuc'], // Côtes-d'Armor
+            '66': [2.8833, 42.7, 'Perpignan']     // Pyrénées-Orientales
+        };
+
+        // Conversion formulas
+        const formulas = [
+            {
+                name: 'current',
+                convertX: (lon) => Math.round(150 + ((lon + 5.5) / 14) * 480),
+                convertY: (lat) => Math.round(165 + ((51 - lat) / 9) * 400)
+            },
+            {
+                name: 'new',
+                convertX: (lon) => Math.round(120 + ((lon + 6) / 12) * 520),
+                convertY: (lat) => Math.round(140 + ((52 - lat) / 10) * 440)
+            },
+            {
+                name: 'max',
+                convertX: (lon) => Math.round(100 + ((lon + 6.5) / 11) * 580),
+                convertY: (lat) => Math.round(120 + ((52.5 - lat) / 10.5) * 480)
+            }
+        ];
+
+        // Load the France SVG and create visualizations
+        fetch('./france_blank.svg')
+            .then(response => response.text())
+            .then(svgContent => {
+                formulas.forEach(formula => {
+                    createVisualization(formula, svgContent);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading France SVG:', error);
+                // Fallback: create simple SVG maps
+                formulas.forEach(formula => {
+                    createSimpleVisualization(formula);
+                });
+            });
+
+        function createVisualization(formula, franceSvg) {
+            const container = document.getElementById(`${formula.name}-map`);
+
+            // Parse the SVG content
+            const parser = new DOMParser();
+            const svgDoc = parser.parseFromString(franceSvg, 'image/svg+xml');
+            const svgElement = svgDoc.documentElement;
+
+            // Scale down the SVG if it's too large
+            svgElement.setAttribute('width', '400');
+            svgElement.setAttribute('height', '400');
+            svgElement.setAttribute('viewBox', '0 0 800 800');
+
+            // Add department points
+            Object.entries(departments).forEach(([code, [lon, lat, name]]) => {
+                const x = formula.convertX(lon);
+                const y = formula.convertY(lat);
+
+                // Create point
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circle.setAttribute('cx', x);
+                circle.setAttribute('cy', y);
+                circle.setAttribute('r', '4');
+                circle.setAttribute('class', code === '13' || code === '29' || code === '67' ? 'key-points' : 'dept-point');
+
+                // Create label
+                const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                text.setAttribute('x', x + 5);
+                text.setAttribute('y', y - 5);
+                text.setAttribute('class', 'dept-label');
+                text.textContent = name;
+
+                svgElement.appendChild(circle);
+                svgElement.appendChild(text);
+
+                console.log(`${formula.name}: ${name} (${code}) -> ${x}, ${y}`);
+            });
+
+            container.appendChild(svgElement);
+        }
+
+        function createSimpleVisualization(formula) {
+            const container = document.getElementById(`${formula.name}-map`);
+
+            // Create a simple SVG if France map fails to load
+            const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            svg.setAttribute('width', '400');
+            svg.setAttribute('height', '400');
+            svg.setAttribute('viewBox', '0 0 800 800');
+            svg.style.backgroundColor = '#f0f0f0';
+
+            // Add department points
+            Object.entries(departments).forEach(([code, [lon, lat, name]]) => {
+                const x = formula.convertX(lon);
+                const y = formula.convertY(lat);
+
+                // Create point
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circle.setAttribute('cx', x);
+                circle.setAttribute('cy', y);
+                circle.setAttribute('r', '4');
+                circle.setAttribute('class', code === '13' || code === '29' || code === '67' ? 'key-points' : 'dept-point');
+
+                // Create label
+                const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                text.setAttribute('x', x + 5);
+                text.setAttribute('y', y - 5);
+                text.setAttribute('class', 'dept-label');
+                text.textContent = name;
+
+                svg.appendChild(circle);
+                svg.appendChild(text);
+            });
+
+            container.appendChild(svg);
+        }
+    </script>
+</body>
+</html>

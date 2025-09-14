@@ -543,8 +543,6 @@ describe('ResultatsLocaliserDpe', () => {
     })
   })
 
-  describe('Interactions utilisateur', () => {
-
   describe('Fonctionnalité de tri', () => {
     let manyResults
 
@@ -906,6 +904,4 @@ describe('ResultatsLocaliserDpe', () => {
       expect(cards[0].props('distanceTooltip')).toContain('depuis le centre')
     })
   })
-
-  describe('Cycle de vie et nettoyage', () => {
 })

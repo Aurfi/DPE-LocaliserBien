@@ -229,6 +229,7 @@
 import { Building, Calendar, Circle, Grid2x2Check, Home, Loader, MapPin, Search, Zap } from 'lucide-vue-next'
 import { ref } from 'vue'
 import * as recentDPEService from '../../../services/recent-dpe.service'
+import { useRecherches } from '../../../stores/useRecherches.js'
 import { geocodeAddress } from '../../../utils/utilsGeo.js'
 
 export default {
@@ -246,6 +247,7 @@ export default {
   },
   emits: ['search-results', 'search-started', 'search-error'],
   setup(_props, { emit }) {
+    const recherchesStore = useRecherches()
     const loading = ref(false)
     const errorMessage = ref(null)
     const searchCriteria = ref({
@@ -395,62 +397,19 @@ export default {
     }
 
     const saveToHistory = (criteria, resultCount) => {
-      try {
-        const stored = localStorage.getItem('recent_dpe_searches')
-        let searches = stored ? JSON.parse(stored) : []
-
-        const newSearch = {
-          address: criteria.address,
-          monthsBack: criteria.monthsBack,
-          radius: criteria.radius,
-          surface: criteria.surface,
-          typeBien: criteria.typeBien || null,
-          energyClasses: criteria.energyClasses || [],
-          gesClasses: criteria.gesClasses || [],
-          resultCount: resultCount,
-          timestamp: Date.now()
-        }
-
-        // Vérifier si une recherche identique existe déjà
-        const existingIndex = searches.findIndex(
-          s =>
-            s.address === newSearch.address &&
-            s.monthsBack === newSearch.monthsBack &&
-            s.radius === newSearch.radius &&
-            s.surface === newSearch.surface &&
-            (s.typeBien || null) === newSearch.typeBien &&
-            JSON.stringify(s.energyClasses) === JSON.stringify(newSearch.energyClasses) &&
-            JSON.stringify(s.gesClasses || []) === JSON.stringify(newSearch.gesClasses)
-        )
-
-        if (existingIndex !== -1) {
-          // Mettre à jour la recherche existante en préservant le displayName
-          const existingDisplayName = searches[existingIndex].displayName
-          searches[existingIndex] = newSearch
-          if (existingDisplayName) {
-            searches[existingIndex].displayName = existingDisplayName
-          }
-        } else {
-          // Ajouter en début de liste
-          searches.unshift(newSearch)
-        }
-
-        // Limiter à 10 recherches récentes
-        searches = searches.slice(0, 10)
-
-        // Sauvegarder
-        localStorage.setItem('recent_dpe_searches', JSON.stringify(searches))
-
-        // Déclencher un événement pour mettre à jour le composant d'historique
-        window.dispatchEvent(
-          new StorageEvent('storage', {
-            key: 'recent_dpe_searches',
-            newValue: JSON.stringify(searches)
-          })
-        )
-      } catch (_error) {
-        // Erreur lors de la sauvegarde de la recherche - gérée silencieusement
+      const searchData = {
+        address: criteria.address,
+        coordinates: criteria.coordinates,
+        monthsBack: criteria.monthsBack,
+        radius: criteria.radius,
+        surface: criteria.surface,
+        typeBien: criteria.typeBien || null,
+        energyClasses: criteria.energyClasses || [],
+        gesClasses: criteria.gesClasses || []
       }
+
+      const results = { results: { length: resultCount } }
+      recherchesStore.saveRecentDPESearch(searchData, results)
     }
 
     const relaunchSearch = savedSearch => {

@@ -3,60 +3,21 @@
  * Utilise le jeu de données dpe-france avec des noms de champs différents
  */
 
+import { useDepartements } from '../stores/useDepartements.js'
 import { getDepartmentFromPostalCode } from '../utils/utilsGeo.js'
 
 class DPELegacyService {
   constructor() {
     this.baseURL = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe-france/lines'
-    this.departmentCache = {}
-    this.communesIndex = null
-    this.indexPromise = null
+    // Utiliser le store centralisé pour les départements
+    this.departmentStore = useDepartements()
   }
 
   /**
-   * Charger les données de département depuis un fichier JSON local
+   * Charger les données de département via le store centralisé
    */
   async loadDepartment(deptCode) {
-    if (this.departmentCache[deptCode]) {
-      return this.departmentCache[deptCode]
-    }
-
-    try {
-      const response = await fetch(`/data/departments/communes-dept-${deptCode}.json`)
-      const deptData = await response.json()
-      this.departmentCache[deptCode] = deptData
-      return deptData
-    } catch (_error) {
-      return null
-    }
-  }
-
-  /**
-   * Charge l'index des communes
-   */
-  async loadIndex() {
-    try {
-      const response = await fetch('/data/communes-index.json')
-      if (response.ok) {
-        this.communesIndex = await response.json()
-      } else {
-        this.communesIndex = null
-      }
-    } catch (_error) {
-      this.communesIndex = null
-    }
-  }
-
-  /**
-   * S'assure que l'index est chargé
-   */
-  async ensureIndexLoaded() {
-    if (!this.communesIndex) {
-      if (!this.indexPromise) {
-        this.indexPromise = this.loadIndex()
-      }
-      await this.indexPromise
-    }
+    return await this.departmentStore.loadDepartment(deptCode)
   }
 
   /**
@@ -98,32 +59,16 @@ class DPELegacyService {
         // Rechercher par nom de commune dans TOUS les départements
         const normalizedSearch = commune.toLowerCase().trim()
 
-        // Vérifier d'abord les départements en cache
-        for (const [_code, deptData] of Object.entries(this.departmentCache)) {
-          const foundCommune = deptData.communes.find(
-            c =>
-              c.nom &&
-              (c.nom.toLowerCase() === normalizedSearch ||
-                c.nom.toLowerCase().replace(/[-\s]/g, '') === normalizedSearch.replace(/[-\s]/g, ''))
-          )
-          if (foundCommune) {
-            return [foundCommune.code]
-          }
-        }
-
-        // Rechercher tous les départements (01 à 95 + 2A, 2B pour la Corse)
+        // Rechercher dans tous les départements (01 à 95 + 2A, 2B pour la Corse)
         const allDeptCodes = []
         for (let i = 1; i <= 95; i++) {
           const code = i.toString().padStart(2, '0')
-          if (!this.departmentCache[code]) {
-            allDeptCodes.push(code)
-          }
+          allDeptCodes.push(code)
         }
-        // Ajouter la Corse si pas en cache
-        if (!this.departmentCache['2A']) allDeptCodes.push('2A')
-        if (!this.departmentCache['2B']) allDeptCodes.push('2B')
+        // Ajouter la Corse
+        allDeptCodes.push('2A', '2B')
 
-        // Rechercher dans chaque département non mis en cache
+        // Rechercher dans chaque département
         for (const deptCode of allDeptCodes) {
           try {
             const deptData = await this.loadDepartment(deptCode)

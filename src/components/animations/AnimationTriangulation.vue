@@ -68,42 +68,47 @@
             </g>
             
             
-            <!-- Zone de convergence énergétique -->
-            <g v-if="showEnergyConvergence && targetCoords">
-              <!-- Particules énergétiques convergentes -->
+            <!-- Zone de convergence énergétique - Skip for DOM-TOM, limited for Corsica -->
+            <g v-if="targetCoords && regionType !== 'domtom'">
+              <!-- Particules énergétiques - always visible once generated -->
               <circle v-for="(particle, i) in energyParticles" :key="`particle-${i}`"
                       :cx="particle.x" :cy="particle.y" :r="particle.size"
                       :fill="particle.color" :opacity="particle.opacity"
                       class="energy-particle"/>
-              
-              <!-- Point de verrouillage central -->
-              <circle :cx="targetCoords.x" :cy="targetCoords.y" r="8"
-                      class="target-lock" fill="#ff0000" filter="url(#energyGlow)"/>
-              
-              <!-- Anneaux de convergence -->
-              <circle v-for="ring in convergenceRings" :key="`ring-${ring.id}`"
-                      :cx="targetCoords.x" :cy="targetCoords.y" :r="ring.radius"
-                      fill="none" :stroke="ring.color" stroke-width="2"
-                      :opacity="ring.opacity" class="convergence-ring"/>
-                      
-              <!-- Croix de visée avancée -->
-              <g class="targeting-system">
-                <line :x1="targetCoords.x - 30" :y1="targetCoords.y" 
-                      :x2="targetCoords.x + 30" :y2="targetCoords.y"
-                      stroke="#ff0000" stroke-width="2" stroke-dasharray="8,4"/>
-                <line :x1="targetCoords.x" :y1="targetCoords.y - 30" 
-                      :x2="targetCoords.x" :y2="targetCoords.y + 30"
-                      stroke="#ff0000" stroke-width="2" stroke-dasharray="8,4"/>
-                      
-                <!-- Coins de verrouillage -->
-                <rect :x="targetCoords.x - 25" :y="targetCoords.y - 25" 
-                      width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
-                <rect :x="targetCoords.x + 13" :y="targetCoords.y - 25" 
-                      width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
-                <rect :x="targetCoords.x - 25" :y="targetCoords.y + 13" 
-                      width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
-                <rect :x="targetCoords.x + 13" :y="targetCoords.y + 13" 
-                      width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
+
+              <!-- Targeting effects only when convergence is active -->
+              <g v-if="showEnergyConvergence">
+
+                <!-- Targeting system only for mainland France -->
+                <!-- Point de verrouillage central -->
+                <circle :cx="targetCoords.x" :cy="targetCoords.y" r="4"
+                        class="target-lock" fill="#ff0000" filter="url(#energyGlow)"/>
+
+                <!-- Anneaux de convergence -->
+                <circle v-for="ring in convergenceRings" :key="`ring-${ring.id}`"
+                        :cx="targetCoords.x" :cy="targetCoords.y" :r="ring.radius"
+                        fill="none" :stroke="ring.color" stroke-width="2"
+                        :opacity="ring.opacity" class="convergence-ring"/>
+
+                <!-- Croix de visée avancée -->
+                <g class="targeting-system">
+                  <line :x1="targetCoords.x - 30" :y1="targetCoords.y"
+                        :x2="targetCoords.x + 30" :y2="targetCoords.y"
+                        stroke="#ff0000" stroke-width="2" stroke-dasharray="8,4"/>
+                  <line :x1="targetCoords.x" :y1="targetCoords.y - 30"
+                        :x2="targetCoords.x" :y2="targetCoords.y + 30"
+                        stroke="#ff0000" stroke-width="2" stroke-dasharray="8,4"/>
+
+                  <!-- Coins de verrouillage -->
+                  <rect :x="targetCoords.x - 25" :y="targetCoords.y - 25"
+                        width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
+                  <rect :x="targetCoords.x + 13" :y="targetCoords.y - 25"
+                        width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
+                  <rect :x="targetCoords.x - 25" :y="targetCoords.y + 13"
+                        width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
+                  <rect :x="targetCoords.x + 13" :y="targetCoords.y + 13"
+                        width="12" height="12" fill="none" stroke="#ff0000" stroke-width="2"/>
+                </g>
               </g>
             </g>
           </g>
@@ -202,6 +207,9 @@ export default {
       radarAngle: 0,
       energyParticles: [],
       convergenceRings: [],
+      particleIdCounter: 0,
+      maxParticles: 65,
+      particlesSpawned: 0,
       franceColor: 'rgba(59, 130, 246, 0.15)',
       franceBorderColor: '#3B82F6',
       regionType: 'france', // 'france', 'corsica', or 'domtom'
@@ -339,11 +347,25 @@ export default {
           this.franceBorderColor = '#8B5CF6'
         }
 
-        // Phase 4 : Convergence (70-90%)
-        if (i === 42) {
-          this.showEnergyConvergence = true
+        // Phase 1 : Generate particles when animation starts moving (1%) - Skip for DOM-TOM, limited for Corsica
+        if (i === 1 && this.regionType !== 'domtom') {
           this.generateEnergyParticles()
+        }
+
+        // Phase 2 : Show convergence effects (visor) at 75% - only for mainland France
+        if (i === 45 && this.regionType === 'france') {
+          this.showEnergyConvergence = true
+        }
+
+        // Phase 4.5 : Add convergence rings for France at 78%
+        if (i === 47 && this.regionType === 'france') {
           this.generateConvergenceRings()
+          this.franceColor = 'rgba(168, 85, 247, 0.3)'
+          this.franceBorderColor = '#A855F7'
+        }
+
+        // Phase 4.5 : Color change for Corsica at 78%
+        if (i === 47 && this.regionType === 'corsica') {
           this.franceColor = 'rgba(168, 85, 247, 0.3)'
           this.franceBorderColor = '#A855F7'
         }
@@ -352,6 +374,12 @@ export default {
         if (i === 54) {
           this.franceColor = 'rgba(16, 185, 129, 0.4)'
           this.franceBorderColor = '#10b981'
+        }
+
+        // Add new DPE data particles gradually until 60% (every 2 steps = less frequent)
+        // Skip spawning between 1-3% to let initial particles settle
+        if (i < 36 && i % 2 === 0 && this.regionType !== 'domtom' && (i < 1 || i > 2)) {
+          this.addNewParticle()
         }
 
         // Changer les messages techniques (plus lentement pour qu'on puisse les lire)
@@ -443,9 +471,12 @@ export default {
 
     startContinuousAnimations() {
       this.animationInterval = setInterval(() => {
-        // Animation des particules d'énergie
-        if (this.showEnergyConvergence) {
+        // Always update particles if they exist - Skip for DOM-TOM only
+        if (this.energyParticles.length > 0 && this.regionType !== 'domtom') {
           this.updateEnergyParticles()
+        }
+        // Only update convergence rings when energy convergence is active
+        if (this.showEnergyConvergence && this.regionType === 'france') {
           this.updateConvergenceRings()
         }
       }, 50)
@@ -460,40 +491,225 @@ export default {
 
     generateEnergyParticles() {
       this.energyParticles = []
-      for (let i = 0; i < 20; i++) {
-        const angle = (i / 20) * Math.PI * 2
-        const distance = 150 + Math.random() * 200
-        this.energyParticles.push({
-          id: i,
-          baseX: this.targetCoords.x + Math.cos(angle) * distance,
-          baseY: this.targetCoords.y + Math.sin(angle) * distance,
-          x: this.targetCoords.x + Math.cos(angle) * distance,
-          y: this.targetCoords.y + Math.sin(angle) * distance,
-          targetX: this.targetCoords.x,
-          targetY: this.targetCoords.y,
-          size: 2 + Math.random() * 3,
-          color: ['#ff0000', '#ff4400', '#ffff00'][Math.floor(Math.random() * 3)],
-          opacity: 0.8,
-          speed: 0.02 + Math.random() * 0.03
-        })
+      this.particleIdCounter = 0
+      this.particlesSpawned = 0
+      // Start with even fewer DPE data points - 8 initially
+      for (let i = 0; i < 8; i++) {
+        this.addNewParticle()
+      }
+    },
+
+    addNewParticle() {
+      if (this.particlesSpawned >= this.maxParticles) {
+        return // Don't spawn more particles if we've reached the limit
+      }
+
+      const position = this.getRandomPositionInMap()
+      // Add some randomness to target position within credible radius of department
+      const randomOffset = {
+        x: (Math.random() - 0.5) * 30, // ±15 pixel radius
+        y: (Math.random() - 0.5) * 30 // ±15 pixel radius
+      }
+      this.energyParticles.push({
+        id: this.particleIdCounter++,
+        x: position.x,
+        y: position.y,
+        targetX: this.targetCoords.x + randomOffset.x,
+        targetY: this.targetCoords.y + randomOffset.y,
+        size: 2 + Math.random() * 3,
+        color: ['#ff0000', '#ff4400', '#ffff00', '#00ff00', '#00ff88'][Math.floor(Math.random() * 5)],
+        opacity: 0.8,
+        erraticTime: Math.random() * Math.PI * 2
+      })
+      this.particlesSpawned++
+    },
+
+    getRandomPositionInMap() {
+      if (this.regionType === 'corsica') {
+        // Corsica departments: 2A and 2B with proper map coverage
+        const corsicaDepts = ['2A', '2B']
+        const randomDept = corsicaDepts[Math.floor(Math.random() * corsicaDepts.length)]
+        const coords = getDepartmentCoords(randomDept)
+        if (coords) {
+          // For Corsica, use the full displayed map area (centered around 412, 340)
+          return {
+            x: 350 + Math.random() * 124, // Full Corsica map width
+            y: 250 + Math.random() * 180 // Full Corsica map height
+          }
+        }
+        // Fallback to center of Corsica map
+        return {
+          x: 400 + (Math.random() - 0.5) * 80,
+          y: 340 + (Math.random() - 0.5) * 60
+        }
+      } else {
+        // France mainland - use random department coordinates
+        const departments = [
+          '01',
+          '02',
+          '03',
+          '04',
+          '05',
+          '06',
+          '07',
+          '08',
+          '09',
+          '10',
+          '11',
+          '12',
+          '13',
+          '14',
+          '15',
+          '16',
+          '17',
+          '18',
+          '19',
+          '21',
+          '22',
+          '23',
+          '24',
+          '25',
+          '26',
+          '27',
+          '28',
+          '29',
+          '30',
+          '31',
+          '32',
+          '33',
+          '34',
+          '35',
+          '36',
+          '37',
+          '38',
+          '39',
+          '40',
+          '41',
+          '42',
+          '43',
+          '44',
+          '45',
+          '46',
+          '47',
+          '48',
+          '49',
+          '50',
+          '51',
+          '52',
+          '53',
+          '54',
+          '55',
+          '56',
+          '57',
+          '58',
+          '59',
+          '60',
+          '61',
+          '62',
+          '63',
+          '64',
+          '65',
+          '66',
+          '67',
+          '68',
+          '69',
+          '70',
+          '71',
+          '72',
+          '73',
+          '74',
+          '75',
+          '76',
+          '77',
+          '78',
+          '79',
+          '80',
+          '81',
+          '82',
+          '83',
+          '84',
+          '85',
+          '86',
+          '87',
+          '88',
+          '89',
+          '90',
+          '91',
+          '92',
+          '93',
+          '94',
+          '95'
+        ]
+        const randomDept = departments[Math.floor(Math.random() * departments.length)]
+        const coords = getDepartmentCoords(randomDept)
+        if (coords) {
+          const [lon, lat] = coords
+          // Convert geo coordinates to SVG coordinates with random offset
+          const svgX = Math.round(150 + ((lon + 5.5) / 14) * 480) + (Math.random() - 0.5) * 40
+          const svgY = Math.round(165 + ((51 - lat) / 9) * 400) + (Math.random() - 0.5) * 40
+          return { x: Math.max(150, Math.min(550, svgX)), y: Math.max(100, Math.min(480, svgY)) }
+        }
+        // Fallback to random position in France area
+        return {
+          x: 200 + Math.random() * 300,
+          y: 150 + Math.random() * 300
+        }
       }
     },
 
     updateEnergyParticles() {
       this.energyParticles.forEach(particle => {
-        const dx = particle.targetX - particle.x
-        const dy = particle.targetY - particle.y
-        particle.x += dx * particle.speed
-        particle.y += dy * particle.speed
-
-        const distance = Math.sqrt(dx * dx + dy * dy)
-        if (distance < 10) {
-          // Réinitialiser la particule
-          const angle = Math.random() * Math.PI * 2
-          const distance = 150 + Math.random() * 200
-          particle.x = particle.targetX + Math.cos(angle) * distance
-          particle.y = particle.targetY + Math.sin(angle) * distance
+        if (this.progress < 35) {
+          // 0-35%: Slower erratic movement
+          particle.erraticTime += 0.08
+          particle.x += Math.cos(particle.erraticTime) * 1.5
+          particle.y += Math.sin(particle.erraticTime * 1.5) * 1.5
+        } else if (this.progress < 75) {
+          // 35-75%: Accelerating movement toward target
+          const accelerationFactor = (this.progress - 35) / 40 // 0 to 1 over 35-75%
+          const speed = 0.003 + accelerationFactor * 0.057 // 0.3% to 6% speed (slower acceleration)
+          const dx = particle.targetX - particle.x
+          const dy = particle.targetY - particle.y
+          particle.x += dx * speed
+          particle.y += dy * speed
+        } else {
+          // 75%+: Very fast movement toward target
+          const dx = particle.targetX - particle.x
+          const dy = particle.targetY - particle.y
+          particle.x += dx * 0.08
+          particle.y += dy * 0.08
         }
+
+        // Handle particles near target
+        const distance = Math.sqrt((particle.targetX - particle.x) ** 2 + (particle.targetY - particle.y) ** 2)
+        if (distance < 3) {
+          // Mark particle for removal when very close
+          particle.shouldRemove = true
+        } else if (distance < 15 && this.progress < 95) {
+          // Reset particles that get too close during early phases
+          const pos = this.getRandomPositionInMap()
+          particle.x = pos.x
+          particle.y = pos.y
+        }
+      })
+
+      // Remove particles that reached the target
+      this.energyParticles = this.energyParticles.filter(particle => !particle.shouldRemove)
+    },
+
+    activateErraticMovement() {
+      // Activate erratic movement for all particles at 15%
+      this.energyParticles.forEach(particle => {
+        particle.isMoving = true
+        particle.isErratic = true
+      })
+    },
+
+    activateTargetingMovement() {
+      // Activate targeting movement for all particles at 30%
+      this.energyParticles.forEach(particle => {
+        particle.isTargeting = true
+        particle.currentSpeed = particle.baseSpeed
       })
     },
 

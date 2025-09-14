@@ -1,13 +1,14 @@
 // Service pour intégrer avec notre API DPE backend
 
-import { calculateDistance, extractPostalCode, geocodeAddress, getCommuneCoordinates } from '../utils/utilsGeo.js'
+import { useDepartements } from '../stores/useDepartements.js'
+import { extractPostalCode, geocodeAddress, getCommuneCoordinates } from '../utils/utilsGeo.js'
 import DPELegacyService from './dpe-legacy.service'
 import DPEScoringService from './dpe-scoring.service'
 
 class DPESearchService {
   constructor() {
-    // Cache pour les départements chargés
-    this.departmentCache = {}
+    // Utiliser le store centralisé pour les départements
+    this.departmentStore = useDepartements()
 
     // Initialiser le service legacy pour les données pré-2021
     this.legacyService = new DPELegacyService()
@@ -17,25 +18,13 @@ class DPESearchService {
   }
 
   /**
-   * Charge un département spécifique
+   * Charge un département spécifique via le store centralisé
    * @param {string} deptCode - Code du département (ex: '13', '2A')
    * @returns {Promise<Object>} Données du département
    */
   async loadDepartment(deptCode) {
-    if (this.departmentCache[deptCode]) {
-      return this.departmentCache[deptCode]
-    }
-
-    try {
-      const response = await fetch(`/data/departments/communes-dept-${deptCode}.json`)
-      const deptData = await response.json()
-      this.departmentCache[deptCode] = deptData
-      return deptData
-    } catch (_error) {
-      return null
-    }
+    return await this.departmentStore.loadDepartment(deptCode)
   }
-
 
   /**
    * Délégation vers le service de scoring
@@ -47,7 +36,6 @@ class DPESearchService {
   getMatchReasons(result, searchRequest) {
     return this.scoringService.getMatchReasons(result, searchRequest)
   }
-
 
   /**
    * Recherche DPE dans les données ADEME
@@ -143,7 +131,6 @@ class DPESearchService {
     }
   }
 
-
   /**
    * Parse a value that may contain comparison operators
    * Delegates to scoring service
@@ -169,14 +156,18 @@ class DPESearchService {
     return await geocodeAddress(address, { extendedFormat: true })
   }
 
-
   /**
    * Wrapper pour maintenir la compatibilité
    * @param {string} communeInput - Code postal ou nom de commune
    * @returns {Promise<Object|null>} Coordonnées {lat, lon} ou null
    */
   async getCommuneCoordinates(communeInput) {
-    return await getCommuneCoordinates(communeInput, this.loadDepartment.bind(this), this.departmentCache)
+    // Utiliser le store pour accéder au cache des départements
+    const cacheAccess = {
+      has: key => this.departmentStore.getCachedDepartment(key) !== null,
+      get: key => this.departmentStore.getCachedDepartment(key)
+    }
+    return await getCommuneCoordinates(communeInput, this.loadDepartment.bind(this), cacheAccess)
   }
 
   /**

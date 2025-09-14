@@ -76,6 +76,7 @@
 
 import { defineAsyncComponent } from 'vue'
 import FormulaireRechercheDPE from '../components/fonctionnalites/dpe/FormulaireRechercheDPE.vue'
+import { useRecherches } from '../stores/useRecherches.js'
 
 // Lazy loading des composants non-critiques pour améliorer le FCP
 const DPEResults = defineAsyncComponent(
@@ -118,6 +119,15 @@ export default {
       recentDPESearchCoordinates: null,
       activeTab: 'locate',
       dpeService: new DPESearchService()
+    }
+  },
+
+  setup() {
+    // Utiliser le store centralisé pour les recherches
+    const recherchesStore = useRecherches()
+
+    return {
+      recherchesStore
     }
   },
   mounted() {
@@ -190,7 +200,7 @@ export default {
             }
           })
 
-          this.saveToRecentSearches(searchData, this.searchResults.totalFound, bestMatchScore, perfectMatchCount)
+          this.recherchesStore.saveSearch(searchData, this.searchResults.totalFound, bestMatchScore, perfectMatchCount)
         }
       } catch (error) {
         // En cas d'erreur, on peut afficher un message d'erreur
@@ -292,65 +302,6 @@ export default {
       // Passer la recherche sauvegardée au formulaire
       if (this.$refs.recentFormulaireRechercheDPE) {
         this.$refs.recentFormulaireRechercheDPE.relaunchSearch(savedSearch)
-      }
-    },
-
-    saveToRecentSearches(searchData, resultCount, matchScore = 0, perfectMatchCount = 0) {
-      try {
-        // Récupérer les recherches existantes
-        const stored = localStorage.getItem('dpe_recent_searches')
-        let searches = stored ? JSON.parse(stored) : []
-
-        // Créer la nouvelle entrée
-        const newSearch = {
-          commune: searchData.commune,
-          surface: searchData.surfaceHabitable,
-          consommation: searchData.consommationEnergie,
-          ges: searchData.emissionGES,
-          energyClass: searchData.energyClass,
-          gesClass: searchData.gesClass,
-          typeBien: searchData.typeBien,
-          resultCount: resultCount,
-          matchScore: matchScore,
-          perfectMatchCount: perfectMatchCount,
-          timestamp: Date.now()
-        }
-
-        // Vérifier si une recherche identique existe déjà
-        const existingIndex = searches.findIndex(
-          s =>
-            s.commune === newSearch.commune &&
-            s.surface === newSearch.surface &&
-            s.consommation === newSearch.consommation
-        )
-
-        if (existingIndex !== -1) {
-          // Mettre à jour la recherche existante en préservant le displayName
-          const existingDisplayName = searches[existingIndex].displayName
-          searches[existingIndex] = newSearch
-          if (existingDisplayName) {
-            searches[existingIndex].displayName = existingDisplayName
-          }
-        } else {
-          // Ajouter en début de liste
-          searches.unshift(newSearch)
-        }
-
-        // Limiter à 10 recherches récentes
-        searches = searches.slice(0, 10)
-
-        // Sauvegarder
-        localStorage.setItem('dpe_recent_searches', JSON.stringify(searches))
-
-        // Déclencher un événement pour mettre à jour le composant RecentSearches
-        window.dispatchEvent(
-          new StorageEvent('storage', {
-            key: 'dpe_recent_searches',
-            newValue: JSON.stringify(searches)
-          })
-        )
-      } catch (_error) {
-        // Erreur lors de la sauvegarde de la recherche dans localStorage - continuer silencieusement
       }
     }
   }
