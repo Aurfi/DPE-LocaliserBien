@@ -114,7 +114,6 @@
                         :r="particle.size"
                         fill="white"
                         :opacity="particle.opacity * 0.9"/>
-                <!-- Inner color -->
                 <circle :cx="particle.x" :cy="particle.y"
                         :r="particle.size * 0.7"
                         :fill="particle.color"
@@ -448,7 +447,7 @@ export default {
         const elapsed = Date.now() - startTime
 
         // Calculer la progression cible basée sur le temps
-        let baseProgress = Math.min(100, (elapsed / normalDuration) * 100)
+        const baseProgress = Math.min(100, (elapsed / normalDuration) * 100)
 
         // Si pas de données après 30% et avant 90%, ralentir progressivement
         if (baseProgress >= 30 && baseProgress < 90 && !this.isDataReady) {
@@ -457,7 +456,7 @@ export default {
           const slowdownFactor = 1 + slowdownRange * 2 // 1x à 3x plus lent
 
           // Ajuster la vitesse de progression
-          const slowedProgress = 30 + ((baseProgress - 30) / slowdownFactor)
+          const slowedProgress = 30 + (baseProgress - 30) / slowdownFactor
           targetProgress = slowedProgress
         } else {
           targetProgress = baseProgress
@@ -551,7 +550,10 @@ export default {
         // Vérifier si on a des résultats et terminer
         if (this.isDataReady && this.progress >= 95) {
           this.progress = 100
-          this.currentTechMessage = this.resultsCount > 0 ? `${this.resultsCount} résultat${this.resultsCount > 1 ? 's' : ''} trouvé${this.resultsCount > 1 ? 's' : ''}` : 'Aucun résultat trouvé'
+          this.currentTechMessage =
+            this.resultsCount > 0
+              ? `${this.resultsCount} résultat${this.resultsCount > 1 ? 's' : ''} trouvé${this.resultsCount > 1 ? 's' : ''}`
+              : 'Aucun résultat trouvé'
           await new Promise(resolve => setTimeout(resolve, 500))
           this.stopContinuousAnimations()
           this.onComplete()

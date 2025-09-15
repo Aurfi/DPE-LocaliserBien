@@ -348,9 +348,6 @@ export default {
         clearTimeout(this.animationTimeout)
         this.animationTimeout = null
       }
-
-      // Optionnel : afficher un message d'erreur ou notification
-      console.log('Animation timed out after 10 seconds')
     },
 
     handleClearRecentResults() {

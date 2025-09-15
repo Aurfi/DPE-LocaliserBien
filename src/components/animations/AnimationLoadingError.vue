@@ -107,7 +107,7 @@ export default {
     state: {
       type: String,
       default: 'loading',
-      validator: (value) => ['loading', 'error', 'empty'].includes(value)
+      validator: value => ['loading', 'error', 'empty'].includes(value)
     },
     errorMessage: {
       type: String,
