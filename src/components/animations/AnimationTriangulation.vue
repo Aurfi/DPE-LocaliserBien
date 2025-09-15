@@ -1,35 +1,61 @@
 <template>
-  <div class="fixed inset-0 z-50 flex items-center justify-center">
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-transparent md:relative md:min-h-screen">
     <!-- Animation principale -->
-    <div class="relative w-full max-w-4xl h-full flex flex-col items-center justify-start pt-8 px-8">
-      
+    <div class="relative w-full h-full flex flex-col items-center justify-center px-4 py-4 md:px-8 md:py-8 bg-transparent">
+
 
       <!-- Zone d'analyse moderne -->
-      <div class="relative w-full max-w-7xl h-[750px] mb-8">
-        <!-- Fond moderne -->
-        <div class="absolute inset-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-gray-700 shadow-lg"></div>
-        
+      <div class="relative w-full max-w-6xl h-[75vh] md:aspect-[4/3] md:h-auto flex flex-col">
+        <!-- Fond moderne (z-index 0) -->
+        <div class="absolute inset-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-gray-700 shadow-lg z-0"></div>
+
         <!-- Barre de progression en haut -->
-        <div class="absolute top-4 left-6 right-6">
-          <div class="bg-slate-200 dark:bg-gray-600 rounded-full h-3 mb-3 overflow-hidden">
+        <div class="absolute top-3 sm:top-6 left-4 right-4 sm:left-6 sm:right-6 z-50">
+          <div class="bg-slate-200 dark:bg-gray-600 rounded-full h-2 sm:h-3 overflow-hidden shadow-inner">
             <div
-              class="bg-gradient-to-r from-blue-500 to-indigo-500 h-3 rounded-full transition-all duration-300"
+              class="bg-gradient-to-r from-blue-500 to-indigo-500 h-2 sm:h-3 rounded-full transition-all duration-300 shadow-sm"
               :style="`width: ${progress}%`"
             ></div>
           </div>
-          <div class="flex justify-center text-base text-slate-600 dark:text-gray-300">
-            <div class="flex items-center space-x-3">
-              <div class="w-3 h-3 bg-green-400 rounded-full"></div>
-              <span class="font-medium min-w-[45px] text-right">{{ progress }}%</span>
-              <span class="font-medium">{{ currentTechMessage }}</span>
+        </div>
+
+        <!-- Conteneur d'infos juste sous la barre de progression -->
+        <div class="absolute top-8 sm:top-12 left-4 right-4 sm:left-6 sm:right-6 z-50 flex justify-center">
+          <!-- Mobile: texte seulement dans un petit conteneur -->
+          <div class="sm:hidden bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-full px-3 py-1 border border-slate-200 dark:border-gray-600 shadow-sm">
+            <span class="text-xs font-medium text-slate-600 dark:text-gray-300">
+              {{ currentTechMessage }}
+            </span>
+          </div>
+
+          <!-- Desktop: conteneur complet avec indicateur et pourcentage -->
+          <div class="hidden sm:inline-flex flex-row items-center gap-3 px-4 py-2 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-full border border-slate-300 dark:border-gray-600 shadow-md">
+            <!-- Indicateur de statut animé -->
+            <div class="relative flex items-center justify-center">
+              <div class="absolute w-3 h-3 bg-green-400 rounded-full animate-ping opacity-75"></div>
+              <div class="relative w-3 h-3 bg-green-400 rounded-full"></div>
             </div>
+
+            <!-- Pourcentage avec style moderne -->
+            <div class="flex items-baseline gap-1">
+              <span class="text-lg font-bold text-slate-700 dark:text-gray-200">{{ progress }}</span>
+              <span class="text-sm font-medium text-slate-500 dark:text-gray-400">%</span>
+            </div>
+
+            <!-- Séparateur vertical subtil -->
+            <div class="w-px h-4 bg-slate-300 dark:bg-gray-600"></div>
+
+            <!-- Message technique -->
+            <span class="text-sm font-medium text-slate-600 dark:text-gray-300 max-w-xs truncate">
+              {{ currentTechMessage }}
+            </span>
           </div>
         </div>
 
         <!-- Fond propre sans grille -->
 
-        <!-- Zone de carte adaptée selon la région -->
-        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 800 600" ref="franceMap">
+        <!-- Zone de carte adaptée selon la région (z-index 10 to be above background) -->
+        <svg class="relative z-10 w-full h-full pt-14 p-8 sm:p-16 sm:pb-20" viewBox="0 0 800 650" preserveAspectRatio="xMidYMid meet" ref="franceMap">
           <!-- France métropolitaine -->
           <CarteFrance 
             v-if="regionType === 'france'"
@@ -404,8 +430,7 @@ export default {
     },
 
     async animateProgress() {
-      const firstHalfDuration = 2000 // 2s pour la première moitié (0-50%)
-      const secondHalfDuration = 1500 // 1.5s pour la seconde moitié (50-100%)
+      const normalDuration = 3500 // 3.5s pour 0-100% normalement
       const frameInterval = 16 // ~60fps
 
       // Small delay before starting animations to reduce CPU spike
@@ -414,13 +439,34 @@ export default {
       // Démarrer les animations continues
       this.startContinuousAnimations()
 
-      // Animation jusqu'à 50% d'abord (basée sur le temps réel)
+      // Animation continue de 0 à 100%
       const startTime = Date.now()
+      let lastProgress = 0
+      let targetProgress = 0
 
       while (true) {
         const elapsed = Date.now() - startTime
-        const progress = Math.min(50, (elapsed / firstHalfDuration) * 50)
-        this.progress = Math.floor(progress)
+
+        // Calculer la progression cible basée sur le temps
+        let baseProgress = Math.min(100, (elapsed / normalDuration) * 100)
+
+        // Si pas de données après 30% et avant 90%, ralentir progressivement
+        if (baseProgress >= 30 && baseProgress < 90 && !this.isDataReady) {
+          // Ralentissement plus doux (maximum 3x plus lent au lieu de 8x)
+          const slowdownRange = (baseProgress - 30) / 60 // 0 à 1 entre 30% et 90%
+          const slowdownFactor = 1 + slowdownRange * 2 // 1x à 3x plus lent
+
+          // Ajuster la vitesse de progression
+          const slowedProgress = 30 + ((baseProgress - 30) / slowdownFactor)
+          targetProgress = slowedProgress
+        } else {
+          targetProgress = baseProgress
+        }
+
+        // Interpolation douce pour éviter les sauts
+        const smoothingFactor = 0.15
+        lastProgress = lastProgress + (targetProgress - lastProgress) * smoothingFactor
+        this.progress = Math.floor(lastProgress)
 
         // Phases de couleur basées sur le progrès
         if (this.progress >= 10 && this.progress < 11) {
@@ -455,55 +501,105 @@ export default {
           this.lastMessageIndex = messageIndex
         }
 
-        // Arrêter à 50%
-        if (progress >= 50) {
-          this.progress = 50
+        // Phase 3 : Localisation - Mid purple (55%)
+        if (this.progress === 55) {
+          this.franceColor = 'rgba(139, 92, 246, 0.25)'
+          this.franceBorderColor = '#8B5CF6'
+        }
+
+        // Phase 2 : Start showing convergence effects (visor) at 65% - only for mainland France
+        if (this.progress === 65 && this.regionType === 'france' && !this.showEnergyConvergence) {
+          this.showEnergyConvergence = true
+          this.visorOpacity = 0.1
+        }
+
+        // Progressive visor fade-in from 65% to 78%
+        if (this.regionType === 'france' && this.progress >= 65 && this.progress <= 78) {
+          this.visorOpacity = Math.min(1, 0.1 + ((this.progress - 65) / 13) * 0.9)
+        }
+
+        // Phase 4 : Deeper purple (70%)
+        if (this.progress === 70) {
+          this.franceColor = 'rgba(153, 89, 247, 0.28)'
+          this.franceBorderColor = '#9959F7'
+          if (this.regionType === 'france' && !this.ringsGenerated) {
+            this.generateConvergenceRings()
+            this.ringsGenerated = true
+          }
+        }
+
+        // Phase 4.6 : Final purple at 78%
+        if (this.progress === 78) {
+          this.franceColor = 'rgba(168, 85, 247, 0.3)'
+          this.franceBorderColor = '#6366F1'
+          if (this.regionType === 'france') {
+            this.visorOpacity = 1
+          }
+        }
+
+        // Phase 5 : Final (90-100%) - Keep purple for France/Corsica
+        if (this.progress >= 90) {
+          if (this.regionType === 'france' || this.regionType === 'corsica') {
+            this.franceColor = 'rgba(168, 85, 247, 0.35)'
+            this.franceBorderColor = '#6366F1'
+          } else {
+            this.franceColor = 'rgba(16, 185, 129, 0.4)'
+            this.franceBorderColor = '#10B981'
+          }
+        }
+
+        // Vérifier si on a des résultats et terminer
+        if (this.isDataReady && this.progress >= 95) {
+          this.progress = 100
+          this.currentTechMessage = this.resultsCount > 0 ? `${this.resultsCount} résultat${this.resultsCount > 1 ? 's' : ''} trouvé${this.resultsCount > 1 ? 's' : ''}` : 'Aucun résultat trouvé'
+          await new Promise(resolve => setTimeout(resolve, 500))
+          this.stopContinuousAnimations()
+          this.onComplete()
           break
+        }
+
+        // Arrêter à 100% et attendre les données si nécessaire
+        if (this.progress >= 100) {
+          this.progress = 100
+          if (!this.isDataReady) {
+            // Attendre les données
+            this.currentTechMessage = 'Finalisation de la recherche...'
+            // Continue looping at 100% until data is ready
+          } else {
+            await new Promise(resolve => setTimeout(resolve, 500))
+            this.stopContinuousAnimations()
+            this.onComplete()
+            break
+          }
         }
 
         await new Promise(resolve => setTimeout(resolve, frameInterval))
       }
-
-      // Phase 3 : Localisation - Mid purple (55%)
-      if (this.progress === 55) {
-        this.franceColor = 'rgba(139, 92, 246, 0.25)'
-        this.franceBorderColor = '#8B5CF6'
-      }
-
-      // À 50%, vérifier si on a des résultats
-      if (this.isDataReady && this.resultsCount === 0) {
-        // Aucun résultat - terminer l'animation immédiatement
-        this.currentTechMessage = 'Aucun résultat trouvé'
-        await new Promise(resolve => setTimeout(resolve, 500))
-        this.stopContinuousAnimations()
-        this.onComplete()
-        return
-      }
-
-      // Si les données ne sont pas prêtes et qu'on attend
-      if (!this.isDataReady && this.waitingForResults) {
-        await this.loopFinalSteps()
-        // Ne pas continuer jusqu'à la fin ici - laisser le watcher s'en occuper quand les données arrivent
-        return
-      }
-
-      // Si les données sont prêtes avec des résultats OU qu'on n'attend pas de résultats, continuer de 50% à 100%
-      await this.animateSecondHalf()
-
-      // Animation terminée
-      setTimeout(() => {
-        this.stopContinuousAnimations()
-        this.onComplete()
-      }, 500)
     },
 
     async animateSecondHalf() {
-      const secondHalfDuration = 1500 // 1.5s pour la seconde moitié
+      const minDuration = 2000 // Minimum 2s pour la seconde moitié
+      const normalDuration = 1500 // 1.5s normalement
       const frameInterval = 16 // ~60fps
+
+      // Si on a attendu à 50%, utiliser la durée minimale pour éviter une animation trop rapide
+      const wasWaiting = this.progress === 50 && this.isLooping
+      const secondHalfDuration = wasWaiting ? minDuration : normalDuration
+
       const startTime = Date.now()
+      let lastFrameTime = startTime
 
       while (true) {
-        const elapsed = Date.now() - startTime
+        const now = Date.now()
+        const elapsed = now - startTime
+
+        // Limiter le framerate pour éviter le rattrapage trop rapide
+        if (now - lastFrameTime < frameInterval) {
+          await new Promise(resolve => setTimeout(resolve, frameInterval - (now - lastFrameTime)))
+          continue
+        }
+        lastFrameTime = now
+
         const progress = Math.min(100, 50 + (elapsed / secondHalfDuration) * 50)
         this.progress = Math.floor(progress)
 

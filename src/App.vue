@@ -23,7 +23,7 @@
     <BanniereGuide />
 
     <!-- Footer -->
-    <footer v-show="!modalOpen" class="relative z-10">
+    <footer v-show="!modalOpen && (!showAnimation || !isMobile)" class="relative z-10">
       <div class="max-w-4xl mx-auto px-4 py-4">
         <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-2xl shadow-lg border border-white/50 dark:border-gray-700/50 p-4 relative">
           <!-- Theme toggle - absolute positioned top right -->
@@ -147,7 +147,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://data.geopf.fr"
+                    href="https://geoservices.ign.fr/"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="footer-link group"
@@ -155,7 +155,7 @@
                     <span class="p-1 bg-gray-100 dark:bg-gray-700 rounded group-hover:bg-green-100 dark:group-hover:bg-green-900/30 transition-colors mr-2">
                       <ExternalLink class="w-3 h-3 text-gray-600 dark:text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400" />
                     </span>
-                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400">data.<strong>geopf</strong>.fr</span>
+                    <span class="text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400"><strong>IGN</strong> Géoservices</span>
                   </a>
                 </li>
               </ul>
@@ -221,7 +221,9 @@ export default {
       systemPreference: 'light',
       modalOpen: false,
       reducedMotion: false,
-      lowPerformance: false
+      lowPerformance: false,
+      showAnimation: false,
+      isMobile: false
     }
   },
   computed: {
@@ -251,6 +253,10 @@ export default {
     }
   },
   mounted() {
+    // Détecter si on est sur mobile
+    this.checkMobile()
+    window.addEventListener('resize', this.checkMobile)
+
     // Vérifier la préférence de mouvement réduit
     this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
@@ -280,9 +286,24 @@ export default {
       this.modalOpen = false
     })
 
+    // Écouter les événements d'animation
+    window.addEventListener('animation-start', () => {
+      this.showAnimation = true
+      if (this.isMobile) {
+        document.body.style.overflow = 'hidden'
+      }
+    })
+    window.addEventListener('animation-end', () => {
+      this.showAnimation = false
+      document.body.style.overflow = ''
+    })
+
     this.applyTheme()
   },
   methods: {
+    checkMobile() {
+      this.isMobile = window.innerWidth < 768
+    },
     handleLogoClick() {
       // Toujours naviguer vers l'accueil
       if (this.$route.path !== '/') {

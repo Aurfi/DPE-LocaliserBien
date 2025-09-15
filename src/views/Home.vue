@@ -9,35 +9,38 @@
       :isDataReady="searchResults !== null || recentDPEResults !== null"
       :waitingForResults="true"
       :resultsCount="(searchResults?.results?.length ?? 0) + (recentDPEResults?.results?.length ?? 0)"
-      class="relative z-10"
+      class="relative z-10 min-h-screen"
     />
     
     <!-- Interface principale -->
     <div v-show="!showAnimation" class="container mx-auto px-4 py-4 min-h-screen">
-      
-      <!-- Navigation par onglets -->
-      <NavigationOnglets 
-        v-if="!searchResults && !recentDPEResults && !showAnimation"
-        :activeTab="activeTab"
-        @tab-change="handleTabChange"
-      />
-      
+
+      <!-- Navigation par onglets avec padding adaptatif -->
+      <div class="pt-2 lg:pt-6">
+        <NavigationOnglets
+          v-if="!searchResults && !recentDPEResults && !showAnimation"
+          :activeTab="activeTab"
+          @tab-change="handleTabChange"
+        />
+      </div>
+
       <!-- Tab: Localiser un bien -->
-      <div v-if="activeTab === 'locate' && !searchResults">
+      <div v-if="activeTab === 'locate' && !searchResults" class="mt-4 lg:mt-16 xl:mt-20">
         <!-- Formulaire de recherche -->
-        <FormulaireRechercheDPE 
+        <FormulaireRechercheDPE
           ref="searchForm"
           @search="handleSearch"
         />
-        
+
         <!-- Recherches récentes -->
         <RecherchesRecentes
+          class="mt-6 lg:mt-12"
           @relaunch-search="handleSearch"
         />
       </div>
       
       <!-- Tab: DPE récents -->
-      <div v-show="activeTab === 'recent' && !recentDPEResults">
+      <div v-show="activeTab === 'recent' && !recentDPEResults" class="mt-4 lg:mt-16 xl:mt-20">
         <RechercheDPERecente
           ref="recentFormulaireRechercheDPE"
           @search-started="handleRechercheDPERecenteStarted"
@@ -113,6 +116,7 @@ export default {
   data() {
     return {
       showAnimation: false,
+      animationTimeout: null,
       searchCriteria: null,
       searchResults: null,
       recentDPEResults: null,
@@ -154,6 +158,12 @@ export default {
 
       // Démarrer l'animation de triangulation
       this.showAnimation = true
+      window.dispatchEvent(new CustomEvent('animation-start'))
+
+      // Ajouter un timeout de 10 secondes pour l'animation
+      this.animationTimeout = setTimeout(() => {
+        this.handleAnimationTimeout()
+      }, 10000)
 
       // Lancer la vraie recherche en arrière-plan
       try {
@@ -216,9 +226,16 @@ export default {
     },
 
     handleAnimationComplete() {
+      // Nettoyer le timeout si l'animation se termine normalement
+      if (this.animationTimeout) {
+        clearTimeout(this.animationTimeout)
+        this.animationTimeout = null
+      }
+
       // Ajouter un petit délai pour éviter le flash de la page d'accueil
       setTimeout(() => {
         this.showAnimation = false
+        window.dispatchEvent(new CustomEvent('animation-end'))
       }, 100)
 
       // Reset du formulaire
@@ -234,6 +251,13 @@ export default {
       this.searchResults = null
       this.searchCriteria = null
       this.showAnimation = false
+      window.dispatchEvent(new CustomEvent('animation-end'))
+
+      // Nettoyer le timeout si actif
+      if (this.animationTimeout) {
+        clearTimeout(this.animationTimeout)
+        this.animationTimeout = null
+      }
     },
 
     handleTabChange(tab) {
@@ -253,6 +277,12 @@ export default {
 
       // Démarrer immédiatement l'animation de triangulation avec les coordonnées
       this.showAnimation = true
+      window.dispatchEvent(new CustomEvent('animation-start'))
+
+      // Ajouter un timeout de 10 secondes pour l'animation
+      this.animationTimeout = setTimeout(() => {
+        this.handleAnimationTimeout()
+      }, 10000)
     },
 
     async handleRecentDPEResults(searchCriteria, results) {
@@ -292,7 +322,35 @@ export default {
     handleRechercheDPERecenteError(_error) {
       // Gérer l'erreur de recherche - arrêter l'animation
       this.showAnimation = false
+      window.dispatchEvent(new CustomEvent('animation-end'))
+
+      // Nettoyer le timeout si l'animation se termine par erreur
+      if (this.animationTimeout) {
+        clearTimeout(this.animationTimeout)
+        this.animationTimeout = null
+      }
       // Pourrait afficher un message d'erreur ici si nécessaire
+    },
+
+    handleAnimationTimeout() {
+      // Arrêter l'animation après le timeout
+      this.showAnimation = false
+      window.dispatchEvent(new CustomEvent('animation-end'))
+
+      // Réinitialiser les états de recherche
+      this.searchResults = null
+      this.searchCriteria = null
+      this.recentDPEResults = null
+      this.recentDPESearchCriteria = null
+
+      // Nettoyer le timeout
+      if (this.animationTimeout) {
+        clearTimeout(this.animationTimeout)
+        this.animationTimeout = null
+      }
+
+      // Optionnel : afficher un message d'erreur ou notification
+      console.log('Animation timed out after 10 seconds')
     },
 
     handleClearRecentResults() {
