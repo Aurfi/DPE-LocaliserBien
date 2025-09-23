@@ -129,8 +129,12 @@ describe('PropertyModal', () => {
     })
 
     it('affiche le bouton de fermeture', () => {
-      const closeButton = wrapper.find('button svg[viewBox="0 0 24 24"]')
+      // Find the button that emits close event
+      const closeButton = wrapper.find('button.flex-shrink-0')
       expect(closeButton.exists()).toBe(true)
+      // Check it has the SVG icon
+      const svg = closeButton.find('svg')
+      expect(svg.exists()).toBe(true)
     })
   })
 
@@ -180,8 +184,8 @@ describe('PropertyModal', () => {
   // Tests d'émission d'événements
   describe("Émission d'événements", () => {
     it("émet l'événement close quand le bouton de fermeture est cliqué", async () => {
-      const _closeButton = wrapper.find('button svg[viewBox="0 0 24 24"]').element.parentElement
-      await wrapper.find('button').trigger('click')
+      const closeButton = wrapper.find('button.flex-shrink-0')
+      await closeButton.trigger('click')
 
       expect(wrapper.emitted('close')).toBeTruthy()
       expect(wrapper.emitted('close')).toHaveLength(1)
