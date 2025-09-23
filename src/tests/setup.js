@@ -8,20 +8,37 @@ config.global.mocks = {
 // Setup fetch for tests
 const originalFetch = global.fetch
 global.fetch = vi.fn((url, options) => {
-  // For local data files in CI, return empty data since no dev server
+  // For local data files in CI, return appropriate responses
   if (url.startsWith('/data/departments/')) {
-    // In CI environment, return empty response
+    // In CI environment, return appropriate response based on file type
     if (process.env.CI) {
+      // For DPE averages, return 404 to trigger null response
+      if (url.includes('dpe-averages')) {
+        return Promise.resolve({
+          ok: false,
+          status: 404
+        })
+      }
+      // For communes, return empty array
       return Promise.resolve({
         ok: true,
         json: () => Promise.resolve([])
       })
     }
     // In local dev, try to use the real dev server
-    return originalFetch(`http://localhost:3000${url}`, options).catch(() => ({
-      ok: true,
-      json: () => Promise.resolve([])
-    }))
+    return originalFetch(`http://localhost:3000${url}`, options).catch(() => {
+      // On error, return 404 for averages, empty array for communes
+      if (url.includes('dpe-averages')) {
+        return Promise.resolve({
+          ok: false,
+          status: 404
+        })
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve([])
+      })
+    })
   }
   // For ADEME API, use real fetch
   if (url.includes('data.ademe.fr')) {
