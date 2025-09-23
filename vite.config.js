@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 import vue from '@vitejs/plugin-vue'
+import { visualizer } from 'rollup-plugin-visualizer'
 import { defineConfig, loadEnv } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -38,6 +39,13 @@ export default defineConfig(({ mode }) => {
             ...env
           }
         }
+      }),
+      // Bundle analyzer - generates stats.html after build
+      visualizer({
+        filename: 'dist/stats.html',
+        open: false,
+        gzipSize: true,
+        brotliSize: true
       }),
       // PWA: installable app without offline caching (runtime caching disabled)
       VitePWA({
@@ -85,9 +93,31 @@ export default defineConfig(({ mode }) => {
       },
       rollupOptions: {
         output: {
-          manualChunks: {
-            'vue-vendor': ['vue', 'vue-router'],
-            'ui-vendor': ['@headlessui/vue', 'lucide-vue-next']
+          manualChunks: id => {
+            // Vue core libraries
+            if (id.includes('vue') && !id.includes('lucide-vue')) {
+              return 'vue-vendor'
+            }
+            // UI libraries
+            if (id.includes('@headlessui/vue') || id.includes('lucide-vue-next')) {
+              return 'ui-vendor'
+            }
+            // Animation components (split separately)
+            if (id.includes('AnimationTriangulation')) {
+              return 'animation'
+            }
+            // Modal components (split separately)
+            if (id.includes('ModaleProprietee') || id.includes('ModaleEntree')) {
+              return 'modals'
+            }
+            // Search and results components
+            if (id.includes('ResultatsLocaliserDpe') || id.includes('ResultatsDpeRecents')) {
+              return 'search-results'
+            }
+          },
+          chunkFileNames: chunkInfo => {
+            const facadeModuleId = chunkInfo.facadeModuleId ? chunkInfo.facadeModuleId.split('/').pop() : 'chunk'
+            return `assets/${facadeModuleId}-[hash].js`
           }
         }
       },
