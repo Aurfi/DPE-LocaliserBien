@@ -299,6 +299,7 @@ export default {
       showEnergyConvergence: false,
       targetDepartment: null,
       targetCoords: null,
+      coordinatesResolved: false,
       radarRadius: 285,
       radarAngle: 0,
       energyParticles: [],
@@ -365,7 +366,16 @@ export default {
       return 'france'
     },
 
-    startAnimation() {
+    async startAnimation() {
+      // Start animation immediately with basic setup
+      this.loadingMessages = getLoadingMessageSequence(8)
+      this.animateProgress()
+
+      // Resolve coordinates asynchronously
+      await this.resolveCoordinates()
+    },
+
+    async resolveCoordinates() {
       let lon, lat
 
       // Utiliser les coordonnées fournies si disponibles (pour les résultats DPE récents avec géocodage)
@@ -376,24 +386,50 @@ export default {
         const postalMatch = this.commune.match(/\b\d{5}\b/)
         if (postalMatch) {
           this.targetDepartment = postalMatch[0].substring(0, 2)
+          // Coordinates already provided, resolve immediately
+          this.finishCoordinateResolution(lat, lon)
+          return
         } else {
-          this.targetDepartment = getDepartmentFromCommune(this.commune)
+          // For city names, try to get department without blocking
+          this.targetDepartment = await this.getDepartmentFromCommuneAsync(this.commune)
+          this.finishCoordinateResolution(lat, lon)
+          return
         }
       } else {
-        // Solution de repli vers des coordonnées basées sur le département pour une recherche normale
-        this.targetDepartment = getDepartmentFromCommune(this.commune)
+        // Pour les codes postaux, résolution rapide
+        if (/^\d{5}$/.test(this.commune)) {
+          this.targetDepartment = getDepartmentFromCommune(this.commune)
+          if (this.targetDepartment) {
+            const coords = getDepartmentCoords(this.targetDepartment)
+            if (coords) {
+              ;[lon, lat] = coords
+              // Fast resolution for postal codes
+              this.finishCoordinateResolution(lat, lon)
+              return
+            }
+          }
+        } else {
+          // Pour les noms de ville, résolution asynchrone
+          this.currentTechMessage = 'Géolocalisation en cours...'
+          this.targetDepartment = await this.getDepartmentFromCommuneAsync(this.commune)
+          if (this.targetDepartment) {
+            const coords = getDepartmentCoords(this.targetDepartment)
+            if (coords) {
+              ;[lon, lat] = coords
+              this.finishCoordinateResolution(lat, lon)
+              return
+            }
+          }
+        }
+
         if (!this.targetDepartment) {
           this.$emit('complete')
           return
         }
-        const coords = getDepartmentCoords(this.targetDepartment)
-        if (!coords) {
-          this.$emit('complete')
-          return
-        }
-        ;[lon, lat] = coords
       }
+    },
 
+    finishCoordinateResolution(lat, lon) {
       // Détecter le type de région
       this.regionType = this.detectRegionType(this.targetDepartment)
 
@@ -405,19 +441,42 @@ export default {
         const pos = departmentPositions[this.targetDepartment]
         svgX = pos.x
         svgY = pos.y
-      } else {
+      } else if (lon && lat) {
         // Fallback sur l'ancienne formule si département non trouvé
         svgX = Math.round(150 + ((lon + 5.5) / 14) * 480)
         svgY = Math.round(165 + ((51 - lat) / 9) * 400)
+      } else {
+        // Fallback to center if no coordinates available
+        svgX = 412
+        svgY = 340
       }
 
       this.targetCoords = this.adjustTargetCoordsForRegion(svgX, svgY)
+      this.coordinatesResolved = true
+    },
 
-      // Générer les messages techniques
-      this.loadingMessages = getLoadingMessageSequence(8)
+    async getDepartmentFromCommuneAsync(commune) {
+      try {
+        // For postal codes, use the fast synchronous method
+        if (/^\d{5}$/.test(commune)) {
+          return getDepartmentFromCommune(commune)
+        }
 
-      // Démarrer l'animation progressive
-      this.animateProgress()
+        // For city names, we need to use the geocoding API
+        // Import the service here to avoid circular dependencies
+        const { getDepartmentFromPostalCode, geocodeAddress } = await import('../../utils/utilsGeo.js')
+
+        const geoResult = await geocodeAddress(commune)
+        if (geoResult?.postalCode) {
+          return getDepartmentFromPostalCode(geoResult.postalCode)
+        }
+
+        // Fallback to the original method
+        return getDepartmentFromCommune(commune)
+      } catch (error) {
+        // Fallback to the original method on error
+        return getDepartmentFromCommune(commune)
+      }
     },
 
     adjustTargetCoordsForRegion(svgX, svgY) {
@@ -476,6 +535,13 @@ export default {
         if (this.progress >= 35 && this.progress < 36) {
           this.franceColor = 'rgba(119, 97, 244, 0.22)'
           this.franceBorderColor = '#7761F3'
+        }
+
+        // Wait for coordinates before starting coordinate-dependent animations
+        if (!this.coordinatesResolved) {
+          // Continue with progress but skip coordinate-dependent effects
+          await new Promise(resolve => setTimeout(resolve, frameInterval))
+          continue
         }
 
         // Phase 1 : Generate particles when animation starts moving (1%) - Skip for DOM-TOM
@@ -780,8 +846,8 @@ export default {
       this.energyParticles = []
       this.particleIdCounter = 0
       this.particlesSpawned = 0
-      // Start with even fewer DPE data points - 5 initially
-      for (let i = 0; i < 5; i++) {
+      // Start with more DPE data points - 12 initially for better visual impact
+      for (let i = 0; i < 12; i++) {
         this.addNewParticle()
       }
     },
