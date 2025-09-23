@@ -95,15 +95,17 @@ class DPESearchService {
     const constructeur = new ConstructeurRechercheAdeme(this.scoringService)
     let results = await constructeur.executerRecherche(searchRequest, communeCoords)
 
-    // Vérifier si nous avons des correspondances parfaites (score >= 90)
-    const hasPerfectMatch = results?.some(r => r.matchScore >= 90)
-
-    // Si aucune correspondance parfaite en post-2021, essayer la base de données pré-2021
+    // Toujours rechercher dans la base de données pré-2021 pour une recherche plus complète
     let legacyResults = []
-    if (!hasPerfectMatch && this.legacyService) {
+    if (this.legacyService) {
       const legacySearch = await this.legacyService.searchLegacy(searchRequest, false)
       if (legacySearch.results && legacySearch.results.length > 0) {
-        legacyResults = legacySearch.results
+        // Appliquer une pénalité de 15% aux scores des résultats legacy
+        legacyResults = legacySearch.results.map(result => ({
+          ...result,
+          matchScore: Math.round(result.matchScore * 0.85),
+          matchReasons: [...(result.matchReasons || []), 'Score réduit de 15% (données pré-2021)']
+        }))
 
         // Combiner et dédupliquer les résultats si nous en avons des deux sources
         if (results && results.length > 0) {

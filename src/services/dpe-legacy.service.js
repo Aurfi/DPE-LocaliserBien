@@ -134,16 +134,11 @@ class DPELegacyService {
   /**
    * Rechercher dans la base de données DPE legacy avec plusieurs stratégies
    * @param {Object} searchRequest - Paramètres de recherche
-   * @param {boolean} hasPostResults - Si la recherche post-2021 a trouvé des résultats
+   * @param {boolean} hasPostResults - Si la recherche post-2021 a trouvé des résultats (paramètre conservé pour compatibilité)
    * @returns {Promise<Object>} Résultats de recherche
    */
-  async searchLegacy(searchRequest, hasPostResults = false) {
+  async searchLegacy(searchRequest, _hasPostResults = false) {
     try {
-      // Ne pas rechercher si nous avons déjà des correspondances parfaites en post-2021
-      if (hasPostResults) {
-        return { results: [], fromLegacy: true, skipped: true }
-      }
-
       const startTime = Date.now()
 
       // Obtenir les codes INSEE pour l'emplacement

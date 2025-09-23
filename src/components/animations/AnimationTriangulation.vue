@@ -473,7 +473,7 @@ export default {
 
         // Fallback to the original method
         return getDepartmentFromCommune(commune)
-      } catch (error) {
+      } catch (_error) {
         // Fallback to the original method on error
         return getDepartmentFromCommune(commune)
       }
