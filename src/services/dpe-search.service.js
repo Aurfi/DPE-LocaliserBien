@@ -109,6 +109,14 @@ class DPESearchService {
 
         // Combiner et dédupliquer les résultats si nous en avons des deux sources
         if (results && results.length > 0) {
+          // Vérifier si nous avons des correspondances parfaites (score >= 90) dans les résultats modernes
+          const hasPerfectMatch = results.some(r => r.matchScore >= 90)
+
+          // Si des correspondances parfaites existent, filtrer les résultats legacy avec score < 50
+          if (hasPerfectMatch) {
+            legacyResults = legacyResults.filter(lr => lr.matchScore >= 50)
+          }
+
           // Créer un Set des numéros DPE existants des résultats post-2021
           const existingDPEs = new Set(results.map(r => r.numeroDPE).filter(Boolean))
 
