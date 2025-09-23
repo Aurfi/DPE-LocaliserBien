@@ -52,4 +52,8 @@ public/manifest.json
 
 # Future features (not yet implemented)
 src/services/dvf-*.js
-src/routes/api/dvf-*.jstest-results/
+src/routes/api/dvf-*.js
+
+# Test results
+test-results/
+playwright-report/
