@@ -1,0 +1,294 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main [ref=e9]:
+    - generic [ref=e11]:
+      - link "Accueil" [ref=e13] [cursor=pointer]:
+        - /url: /
+        - img [ref=e14] [cursor=pointer]
+        - text: Accueil
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - img [ref=e19]
+          - heading "Informations" [level=1] [ref=e22]
+        - paragraph [ref=e23]: Guide d'utilisation et informations pratiques
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "Guide d'utilisation" [level=2] [ref=e26]:
+            - img [ref=e27]
+            - text: Guide d'utilisation
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - heading "1 Qu'est-ce qu'un DPE ?" [level=3] [ref=e32]:
+                - generic [ref=e33]: "1"
+                - text: Qu'est-ce qu'un DPE ?
+              - paragraph [ref=e34]:
+                - text: Le
+                - strong [ref=e35]: DPE (Diagnostic de Performance Énergétique)
+                - text: "est un document obligatoire qui évalue la consommation d'énergie d'un logement. Il attribue une classe énergétique de A à G :"
+              - generic [ref=e36]:
+                - generic [ref=e37]: A < 50 kWh/m²/an
+                - generic [ref=e38]: B 51-90
+                - generic [ref=e39]: C 91-150
+                - generic [ref=e40]: D 151-230
+                - generic [ref=e41]: E 231-330
+                - generic [ref=e42]: F 331-450
+                - generic [ref=e43]: G > 450
+            - generic [ref=e44]:
+              - heading "2 Où trouver ces informations sur une annonce ?" [level=3] [ref=e45]:
+                - generic [ref=e46]: "2"
+                - text: Où trouver ces informations sur une annonce ?
+              - paragraph [ref=e47]: "Sur les sites d'annonces immobilières, recherchez :"
+              - list [ref=e48]:
+                - listitem [ref=e49]:
+                  - img [ref=e50]
+                  - generic [ref=e53]:
+                    - strong [ref=e54]: La ville ou le code postal
+                    - text: du bien
+                - listitem [ref=e55]:
+                  - img [ref=e56]
+                  - generic [ref=e61]:
+                    - strong [ref=e62]: La surface habitable
+                    - text: "en m² (ex: 65m²)"
+                - listitem [ref=e63]:
+                  - img [ref=e64]
+                  - generic [ref=e66]:
+                    - strong [ref=e67]: La consommation énergétique
+                    - text: "en kWh/m²/an (ex: 173 kWh/m²/an)"
+              - paragraph [ref=e69]:
+                - strong [ref=e70]: "💡 Astuce :"
+                - text: Ces informations sont souvent affichées avec l'étiquette énergie colorée (de A en vert à G en rouge).
+            - generic [ref=e71]:
+              - heading "3 Comment faire votre recherche ?" [level=3] [ref=e72]:
+                - generic [ref=e73]: "3"
+                - text: Comment faire votre recherche ?
+              - list [ref=e74]:
+                - listitem [ref=e75]:
+                  - generic [ref=e76]: "1."
+                  - generic [ref=e77]:
+                    - text: Entrez le
+                    - strong [ref=e78]: code postal
+                    - text: ou sélectionnez la
+                    - strong [ref=e79]: commune
+                - listitem [ref=e80]:
+                  - generic [ref=e81]: "2."
+                  - generic [ref=e82]:
+                    - text: Indiquez la
+                    - strong [ref=e83]: surface
+                    - text: exacte du bien
+                - listitem [ref=e84]:
+                  - generic [ref=e85]: "3."
+                  - generic [ref=e86]:
+                    - text: Renseignez la
+                    - strong [ref=e87]: consommation énergétique
+                    - text: précise
+                - listitem [ref=e88]:
+                  - generic [ref=e89]: "4."
+                  - generic [ref=e90]:
+                    - text: Cliquez sur
+                    - strong [ref=e91]: "\"Rechercher\""
+              - paragraph [ref=e93]:
+                - strong [ref=e94]: "✅ Résultat :"
+                - text: Le service vous affichera l'adresse exacte du bien, avec une vue satellite pour vérification.
+            - generic [ref=e95]:
+              - heading "📍 Exemple pratique" [level=3] [ref=e96]
+              - paragraph [ref=e97]: "Une annonce indique : \"Appartement T3 à Marseille 13008, 65m², classe D (173 kWh/m²/an)\""
+              - paragraph [ref=e98]:
+                - text: "Vous recherchez avec :"
+                - strong [ref=e99]: "13008"
+                - text: •
+                - strong [ref=e100]: 65m²
+                - text: •
+                - strong [ref=e101]: 173 kWh/m²/an
+              - paragraph [ref=e102]: → LocaliserBien trouve l'adresse exacte de cet appartement !
+        - link "Accueil" [ref=e104] [cursor=pointer]:
+          - /url: /
+          - img [ref=e105] [cursor=pointer]
+          - text: Accueil
+        - generic [ref=e108]:
+          - heading "Fonctionnement technique du service" [level=3] [ref=e109]:
+            - img [ref=e110]
+            - text: Fonctionnement technique du service
+          - paragraph [ref=e113]:
+            - text: Le service croise les données saisies avec la base nationale de l'ADEME pour identifier les correspondances possibles.
+            - strong [ref=e114]: "✓ Fiabilité optimale :"
+            - text: Pour les DPE réalisés
+            - strong [ref=e115]: depuis juillet 2021
+            - text: ", le service offre une précision maximale grâce aux données complètes et géolocalisées."
+            - strong [ref=e116]: "ℹ️ DPE anciens :"
+            - text: Le service peut également retrouver des DPE réalisés
+            - strong [ref=e117]: avant juillet 2021
+            - text: ", mais avec une fiabilité moindre car certaines données (géolocalisation, adresse précise) peuvent être manquantes. Ces résultats sont signalés avec la mention \"DPE Ancien\"."
+            - strong [ref=e118]: "⚠️ Note :"
+            - text: Selon la réglementation, les DPE réalisés avant le 30 juin 2021 ne sont plus valables depuis le 1er janvier 2025.
+        - generic [ref=e119]:
+          - heading "Fiabilité des résultats" [level=3] [ref=e120]:
+            - img [ref=e121]
+            - text: Fiabilité des résultats
+          - paragraph [ref=e125]: La précision de notre service dépend directement de l'exactitude des données publiées dans les annonces. La combinaison surface + consommation permet généralement d'identifier le bien correspondant au DPE affiché. Dans les zones denses (immeubles, grandes villes), plusieurs biens peuvent présenter des caractéristiques similaires. L'utilisation de la vue satellite et la vérification de l'adresse permettent alors de confirmer l'identification.
+        - generic [ref=e126]:
+          - heading "Sources des données" [level=3] [ref=e127]:
+            - img [ref=e128]
+            - text: Sources des données
+          - paragraph [ref=e132]:
+            - text: Les données proviennent de la base publique officielle des
+            - strong [ref=e133]: DPE
+            - text: de l'
+            - generic [ref=e134]: ADEME
+            - text: (
+            - generic [ref=e135]: A
+            - text: gence
+            - generic [ref=e136]: D
+            - text: e la
+            - generic [ref=e137]: T
+            - text: ransition
+            - generic [ref=e138]: É
+            - text: cologique). Ces données sont officielles, vérifiées et mises à jour régulièrement, comme leur nom.
+        - generic [ref=e139]:
+          - heading "Gratuité du service" [level=3] [ref=e140]:
+            - img [ref=e141]
+            - text: Gratuité du service
+          - paragraph [ref=e143]: Le service est entièrement gratuit et sans publicité. Aucune inscription n'est requise pour l'utiliser.
+        - generic [ref=e144]:
+          - heading "Absence de résultats" [level=3] [ref=e145]:
+            - img [ref=e146]
+            - text: Absence de résultats
+          - paragraph [ref=e148]: "Plusieurs raisons possibles : le DPE est peut-être trop récent (délai de publication), ou les valeurs annoncées ne correspondent pas exactement au document officiel. Vérifiez notamment que les consommations correspondent précisément aux valeurs du DPE."
+        - generic [ref=e149]:
+          - heading "Actualisation des données" [level=3] [ref=e150]:
+            - img [ref=e151]
+            - text: Actualisation des données
+          - paragraph [ref=e154]: Les diagnostics récents mettent entre 1 et 3 semaines à être intégrés dans la base officielle de l'ADEME. Pour un DPE réalisé très récemment, il est normal qu'il n'apparaisse pas encore.
+        - generic [ref=e155]:
+          - heading "Protection de vos données" [level=3] [ref=e156]:
+            - img [ref=e157]
+            - text: Protection de vos données
+          - paragraph [ref=e160]: Aucune donnée personnelle n'est collectée. Le service n'utilise pas de cookies de tracking. Les requêtes sont traitées de manière anonyme et votre historique de recherche est uniquement sauvegardé dans le cache de votre navigateur.
+        - generic [ref=e161]:
+          - heading "Résultats multiples" [level=3] [ref=e162]:
+            - img [ref=e163]
+            - text: Résultats multiples
+          - paragraph [ref=e165]: Plusieurs biens peuvent correspondre aux critères saisis, particulièrement dans les zones urbaines denses. L'adresse, l'étage et la date du diagnostic permettent d'affiner l'identification. Les résultats sont présentés par ordre de correspondance décroissante.
+        - generic [ref=e166]:
+          - heading "Remerciements" [level=3] [ref=e167]:
+            - img [ref=e168]
+            - text: Remerciements
+          - paragraph [ref=e170]:
+            - text: • Les bibliothèques
+            - link "Open Source" [ref=e171] [cursor=pointer]:
+              - /url: https://www.fsf.org/fr
+              - strong [ref=e172] [cursor=pointer]: Open Source
+            - text: utilisées dans ce projet (
+            - link "Vue.js" [ref=e173] [cursor=pointer]:
+              - /url: https://github.com/vuejs/core
+            - text: ","
+            - link "Tailwind CSS" [ref=e174] [cursor=pointer]:
+              - /url: https://github.com/tailwindlabs/tailwindcss
+            - text: ","
+            - link "Vite" [ref=e175] [cursor=pointer]:
+              - /url: https://github.com/vitejs/vite
+            - text: ","
+            - link "Lucide" [ref=e176] [cursor=pointer]:
+              - /url: https://github.com/lucide-icons/lucide
+            - text: )
+            - text: • L'
+            - link "ADEME" [ref=e177] [cursor=pointer]:
+              - /url: https://www.ademe.fr/
+            - text: pour la mise à disposition des données DPE
+            - text: •
+            - link "datagouv*" [ref=e178] [cursor=pointer]:
+              - /url: https://www.data.gouv.fr/
+              - strong [ref=e179] [cursor=pointer]: data
+              - text: gouv*
+            - text: ", la plateforme des données publiques françaises"
+      - generic [ref=e180]:
+        - paragraph [ref=e181]:
+          - text: Fait avec
+          - img [ref=e182]
+          - text: par des neurones artificiels
+        - link "Accueil" [ref=e184] [cursor=pointer]:
+          - /url: /
+          - img [ref=e185] [cursor=pointer]
+          - text: Accueil
+  - generic [ref=e191]:
+    - generic [ref=e192]:
+      - img [ref=e194]
+      - paragraph [ref=e197]:
+        - text: Première visite ?
+        - generic [ref=e198]: Découvrez comment Localiser un Bien en quelques clics.
+    - generic [ref=e199]:
+      - link "Voir le guide" [ref=e200] [cursor=pointer]:
+        - /url: /informations
+        - generic [ref=e201] [cursor=pointer]: Voir le guide
+      - button "Fermer" [ref=e202] [cursor=pointer]:
+        - img [ref=e203] [cursor=pointer]
+  - contentinfo [ref=e206]:
+    - generic [ref=e208]:
+      - generic [ref=e209]:
+        - button "Mode clair" [ref=e210] [cursor=pointer]:
+          - img [ref=e211] [cursor=pointer]
+        - button "Mode sombre" [ref=e217] [cursor=pointer]:
+          - img [ref=e218] [cursor=pointer]
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - link "LocaliserBien" [ref=e222] [cursor=pointer]:
+            - /url: /
+            - img [ref=e223] [cursor=pointer]
+            - heading "LocaliserBien" [level=3] [ref=e226] [cursor=pointer]:
+              - generic [ref=e227] [cursor=pointer]: Localiser
+              - generic [ref=e228] [cursor=pointer]: Bien
+          - paragraph [ref=e229]: Service gratuit de localisation d'annonce immobilière
+        - generic [ref=e230]:
+          - heading "Navigation" [level=3] [ref=e231]
+          - list [ref=e232]:
+            - listitem [ref=e233]:
+              - link "Accueil" [ref=e234] [cursor=pointer]:
+                - /url: /
+                - img [ref=e236] [cursor=pointer]
+                - generic [ref=e239] [cursor=pointer]: Accueil
+            - listitem [ref=e240]:
+              - link "Informations" [active] [ref=e241] [cursor=pointer]:
+                - /url: /informations
+                - img [ref=e243] [cursor=pointer]
+                - generic [ref=e246] [cursor=pointer]: Informations
+            - listitem [ref=e247]:
+              - link "Mentions légales" [ref=e248] [cursor=pointer]:
+                - /url: /mentions-legales
+                - img [ref=e250] [cursor=pointer]
+                - generic [ref=e253] [cursor=pointer]: Mentions légales
+        - generic [ref=e254]:
+          - heading "Sources" [level=3] [ref=e255]
+          - list [ref=e256]:
+            - listitem [ref=e257]:
+              - link "data.ademe.fr" [ref=e258] [cursor=pointer]:
+                - /url: https://data.ademe.fr
+                - img [ref=e260] [cursor=pointer]
+                - generic [ref=e264] [cursor=pointer]:
+                  - text: data.
+                  - strong [ref=e265] [cursor=pointer]: ademe
+                  - text: .fr
+            - listitem [ref=e266]:
+              - link "data.gouv.fr" [ref=e267] [cursor=pointer]:
+                - /url: https://data.gouv.fr
+                - img [ref=e269] [cursor=pointer]
+                - generic [ref=e273] [cursor=pointer]:
+                  - strong [ref=e274] [cursor=pointer]: data
+                  - text: .gouv.fr
+            - listitem [ref=e275]:
+              - link "IGN Géoservices" [ref=e276] [cursor=pointer]:
+                - /url: https://geoservices.ign.fr/
+                - img [ref=e278] [cursor=pointer]
+                - generic [ref=e282] [cursor=pointer]:
+                  - strong [ref=e283] [cursor=pointer]: IGN
+                  - text: Géoservices
+      - generic [ref=e285]:
+        - link "GitHub" [ref=e287] [cursor=pointer]:
+          - /url: https://github.com/Aurfi/DPE-LocaliserBien
+          - img [ref=e288] [cursor=pointer]
+          - generic [ref=e290] [cursor=pointer]: GitHub
+        - generic [ref=e292]:
+          - text: Données mises à disposition par l'
+          - link "ADEME" [ref=e293] [cursor=pointer]:
+            - /url: https://www.ademe.fr/
+```

@@ -1,0 +1,143 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main [ref=e9]:
+    - generic [ref=e11]:
+      - generic [ref=e14]:
+        - button "Trouver un bien" [ref=e15] [cursor=pointer]:
+          - img [ref=e16] [cursor=pointer]
+          - text: Trouver un bien
+        - button "Biens à proximité" [ref=e19] [cursor=pointer]:
+          - img [ref=e20] [cursor=pointer]
+          - text: Biens à proximité
+      - generic [ref=e25]:
+        - paragraph [ref=e27]: Localiser une annonce immobilière grâce aux données de son DPE
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - generic [ref=e31]: Commune
+              - 'textbox "ex : 13080 ou Lyon" [ref=e32]'
+            - generic [ref=e33]:
+              - generic [ref=e34]: Surface
+              - generic [ref=e35]:
+                - 'textbox "ex : 100" [ref=e36]'
+                - generic: m²
+              - generic [ref=e38]:
+                - button "Rechercher une maison" [ref=e39] [cursor=pointer]:
+                  - img [ref=e40] [cursor=pointer]
+                - button "Rechercher un appartement" [ref=e43] [cursor=pointer]:
+                  - img [ref=e44] [cursor=pointer]
+            - generic [ref=e48]:
+              - generic [ref=e49]: Consommation primaire
+              - generic [ref=e50]:
+                - 'textbox "ex : 250" [ref=e51]'
+                - generic: kWh/m²/an
+              - generic [ref=e53]:
+                - button "Classe énergétique A" [ref=e54] [cursor=pointer]: A
+                - button "Classe énergétique B" [ref=e55] [cursor=pointer]: B
+                - button "Classe énergétique C" [ref=e56] [cursor=pointer]: C
+                - button "Classe énergétique D" [ref=e57] [cursor=pointer]: D
+                - button "Classe énergétique E" [ref=e58] [cursor=pointer]: E
+                - button "Classe énergétique F" [ref=e59] [cursor=pointer]: F
+                - button "Classe énergétique G" [ref=e60] [cursor=pointer]: G
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - text: GES
+                - generic [ref=e63]: (optionnel)
+              - generic [ref=e64]:
+                - 'textbox "ex : 58" [ref=e65]'
+                - generic: kgCO₂/m²/an
+              - generic [ref=e67]:
+                - button "A" [ref=e68] [cursor=pointer]
+                - button "B" [ref=e69] [cursor=pointer]
+                - button "C" [ref=e70] [cursor=pointer]
+                - button "D" [ref=e71] [cursor=pointer]
+                - button "E" [ref=e72] [cursor=pointer]
+                - button "F" [ref=e73] [cursor=pointer]
+                - button "G" [ref=e74] [cursor=pointer]
+          - button "Localiser" [ref=e76] [cursor=pointer]:
+            - generic [ref=e77] [cursor=pointer]:
+              - img [ref=e78] [cursor=pointer]
+              - generic [ref=e81] [cursor=pointer]: Localiser
+  - generic [ref=e85]:
+    - generic [ref=e86]:
+      - img [ref=e88]
+      - paragraph [ref=e91]:
+        - text: Première visite ?
+        - generic [ref=e92]: Découvrez comment Localiser un Bien en quelques clics.
+    - generic [ref=e93]:
+      - link "Voir le guide" [ref=e94] [cursor=pointer]:
+        - /url: /informations
+        - generic [ref=e95] [cursor=pointer]: Voir le guide
+      - button "Fermer" [ref=e96] [cursor=pointer]:
+        - img [ref=e97] [cursor=pointer]
+  - contentinfo [ref=e100]:
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - button "Mode clair" [ref=e104] [cursor=pointer]:
+          - img [ref=e105] [cursor=pointer]
+        - button "Mode sombre" [ref=e111] [cursor=pointer]:
+          - img [ref=e112] [cursor=pointer]
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - link "LocaliserBien" [ref=e116] [cursor=pointer]:
+            - /url: /
+            - img [ref=e117] [cursor=pointer]
+            - heading "LocaliserBien" [level=3] [ref=e120] [cursor=pointer]:
+              - generic [ref=e121] [cursor=pointer]: Localiser
+              - generic [ref=e122] [cursor=pointer]: Bien
+          - paragraph [ref=e123]: Service gratuit de localisation d'annonce immobilière
+        - generic [ref=e124]:
+          - heading "Navigation" [level=3] [ref=e125]
+          - list [ref=e126]:
+            - listitem [ref=e127]:
+              - link "Accueil" [ref=e128] [cursor=pointer]:
+                - /url: /
+                - img [ref=e130] [cursor=pointer]
+                - generic [ref=e133] [cursor=pointer]: Accueil
+            - listitem [ref=e134]:
+              - link "Informations" [ref=e135] [cursor=pointer]:
+                - /url: /informations
+                - img [ref=e137] [cursor=pointer]
+                - generic [ref=e140] [cursor=pointer]: Informations
+            - listitem [ref=e141]:
+              - link "Mentions légales" [ref=e142] [cursor=pointer]:
+                - /url: /mentions-legales
+                - img [ref=e144] [cursor=pointer]
+                - generic [ref=e147] [cursor=pointer]: Mentions légales
+        - generic [ref=e148]:
+          - heading "Sources" [level=3] [ref=e149]
+          - list [ref=e150]:
+            - listitem [ref=e151]:
+              - link "data.ademe.fr" [ref=e152] [cursor=pointer]:
+                - /url: https://data.ademe.fr
+                - img [ref=e154] [cursor=pointer]
+                - generic [ref=e158] [cursor=pointer]:
+                  - text: data.
+                  - strong [ref=e159] [cursor=pointer]: ademe
+                  - text: .fr
+            - listitem [ref=e160]:
+              - link "data.gouv.fr" [ref=e161] [cursor=pointer]:
+                - /url: https://data.gouv.fr
+                - img [ref=e163] [cursor=pointer]
+                - generic [ref=e167] [cursor=pointer]:
+                  - strong [ref=e168] [cursor=pointer]: data
+                  - text: .gouv.fr
+            - listitem [ref=e169]:
+              - link "IGN Géoservices" [ref=e170] [cursor=pointer]:
+                - /url: https://geoservices.ign.fr/
+                - img [ref=e172] [cursor=pointer]
+                - generic [ref=e176] [cursor=pointer]:
+                  - strong [ref=e177] [cursor=pointer]: IGN
+                  - text: Géoservices
+      - generic [ref=e179]:
+        - link "GitHub" [ref=e181] [cursor=pointer]:
+          - /url: https://github.com/Aurfi/DPE-LocaliserBien
+          - img [ref=e182] [cursor=pointer]
+          - generic [ref=e184] [cursor=pointer]: GitHub
+        - generic [ref=e186]:
+          - text: Données mises à disposition par l'
+          - link "ADEME" [ref=e187] [cursor=pointer]:
+            - /url: https://www.ademe.fr/
+```
