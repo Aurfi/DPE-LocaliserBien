@@ -5,43 +5,34 @@ config.global.mocks = {
   $t: msg => msg // Mock translations if needed
 }
 
-// Setup fetch for tests
+// Setup fetch for tests — serve local data files from disk, external APIs via real fetch
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
+
 const originalFetch = global.fetch
+const publicDir = resolve(process.cwd(), 'public')
+
 global.fetch = vi.fn((url, options) => {
-  // For local data files in CI, return appropriate responses
-  if (url.startsWith('/data/departments/')) {
-    // In CI environment, return appropriate response based on file type
-    if (process.env.CI) {
-      // For DPE averages, return 404 to trigger null response
-      if (url.includes('dpe-averages')) {
-        return Promise.resolve({
-          ok: false,
-          status: 404
-        })
-      }
-      // For communes, return empty array
+  // For local data files, read directly from public/ on disk
+  if (url.startsWith('/data/')) {
+    const filePath = resolve(publicDir, url.slice(1)) // remove leading /
+    try {
+      const content = readFileSync(filePath, 'utf-8')
+      const data = JSON.parse(content)
       return Promise.resolve({
         ok: true,
-        json: () => Promise.resolve([])
+        status: 200,
+        json: () => Promise.resolve(data)
+      })
+    } catch (_err) {
+      return Promise.resolve({
+        ok: false,
+        status: 404
       })
     }
-    // In local dev, try to use the real dev server
-    return originalFetch(`http://localhost:3000${url}`, options).catch(() => {
-      // On error, return 404 for averages, empty array for communes
-      if (url.includes('dpe-averages')) {
-        return Promise.resolve({
-          ok: false,
-          status: 404
-        })
-      }
-      return Promise.resolve({
-        ok: true,
-        json: () => Promise.resolve([])
-      })
-    })
   }
-  // For ADEME API, use real fetch
-  if (url.includes('data.ademe.fr')) {
+  // For ADEME API and geo APIs, use real fetch
+  if (url.includes('data.ademe.fr') || url.includes('data.geopf.fr') || url.includes('geo.api.gouv.fr')) {
     return originalFetch(url, options)
   }
   // For other URLs, return a rejected promise
