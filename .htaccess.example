@@ -108,7 +108,7 @@
 Options -Indexes
 
 # Security: Protect sensitive files
-<FilesMatch "\.(env|json|lock|md|gitignore|gitattributes|log|bak|sql|ini|config|conf)$">
+<FilesMatch "^(package(-lock)?\.json|tsconfig\.json|\.env.*)$">
     Order allow,deny
     Deny from all
 </FilesMatch>

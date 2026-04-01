@@ -3,6 +3,7 @@
  * Extrait de dpe-search.service.js pour améliorer les performances par chargement paresseux
  */
 
+import errorHandler from '../utils/gestionnaireErreurs.js'
 import { calculateDistance, extractPostalCode } from '../utils/utilsGeo.js'
 
 class ConstructeurRechercheAdeme {
@@ -29,8 +30,12 @@ class ConstructeurRechercheAdeme {
    * @returns {Promise<Array>}
    */
   async executerRecherche(searchRequest, communeCoords = null) {
-    const { consommationEnergie, energyClass, commune, emissionGES, gesClass, surfaceHabitable, typeBien } =
-      searchRequest
+    let { consommationEnergie, energyClass, commune, emissionGES, gesClass, surfaceHabitable, typeBien } = searchRequest
+
+    // Allowlist validation for energy/GES classes
+    const VALID_CLASSES = new Set(['A', 'B', 'C', 'D', 'E', 'F', 'G'])
+    if (energyClass && !VALID_CLASSES.has(energyClass.toUpperCase())) energyClass = null
+    if (gesClass && !VALID_CLASSES.has(gesClass.toUpperCase())) gesClass = null
 
     // Si on a toujours pas de coordonnées pour un nom de commune, on ne peut pas faire de recherche fiable
     if (commune && !/^\d{5}$/.test(commune) && !communeCoords) {
@@ -73,13 +78,13 @@ class ConstructeurRechercheAdeme {
       // On utilisera geo_distance dans les params plus bas
     } else if (commune) {
       // Fallback: essayer quand même avec le nom tel quel
-      conditions.push(`nom_commune_ban:"${commune}"`)
+      conditions.push(`nom_commune_ban:"${this.nettoyerPourRequete(commune)}"`)
     }
 
     // Handle energy consumption or class
     if (energyClass) {
       // Use native etiquette_dpe field for class search
-      conditions.push(`etiquette_dpe:"${energyClass}"`)
+      conditions.push(`etiquette_dpe:"${this.nettoyerPourRequete(energyClass)}"`)
     } else if (consommationEnergie) {
       // Parse for comparison operators
       const consoComparison = this.scoringService.parseComparisonValue(consommationEnergie)
@@ -92,7 +97,7 @@ class ConstructeurRechercheAdeme {
     // Handle GES emissions or class
     if (gesClass) {
       // Use native etiquette_ges field for class search
-      conditions.push(`etiquette_ges:"${gesClass}"`)
+      conditions.push(`etiquette_ges:"${this.nettoyerPourRequete(gesClass)}"`)
     } else if (emissionGES) {
       // Parse for comparison operators
       const gesComparison = this.scoringService.parseComparisonValue(emissionGES)
@@ -109,8 +114,8 @@ class ConstructeurRechercheAdeme {
       } else if (typeBien === 'appartement') {
         conditions.push(`(type_batiment:"appartement" OR type_batiment:"immeuble")`)
       } else {
-        // For any other value, use it directly
-        conditions.push(`type_batiment:"${typeBien}"`)
+        // For any other value, sanitize and use it
+        conditions.push(`type_batiment:"${this.nettoyerPourRequete(typeBien)}"`)
       }
     }
 
@@ -200,18 +205,26 @@ class ConstructeurRechercheAdeme {
 
         const isClassSearch = energyClass && !consommationEnergie
 
+        // Parse operator strings into numeric values for arithmetic
+        const consoParsed = this.scoringService.parseComparisonValue(consommationEnergie)
+        const consoNum = consoParsed ? consoParsed.value : null
+        const gesParsed = this.scoringService.parseComparisonValue(emissionGES)
+        const gesNum = gesParsed ? gesParsed.value : null
+        const surfaceParsed = this.scoringService.parseComparisonValue(surfaceHabitable)
+        const surfaceNum = surfaceParsed ? surfaceParsed.value : null
+
         const step2Conditions = []
 
         if (isClassSearch) {
-          step2Conditions.push(`etiquette_dpe:"${energyClass}"`)
+          step2Conditions.push(`etiquette_dpe:"${this.nettoyerPourRequete(energyClass)}"`)
           if (gesClass) {
-            step2Conditions.push(`etiquette_ges:"${gesClass}"`)
+            step2Conditions.push(`etiquette_ges:"${this.nettoyerPourRequete(gesClass)}"`)
           }
         } else {
-          const consoMin = consommationEnergie > 0 ? Math.round(consommationEnergie * 0.95) : null
-          const consoMax = consommationEnergie > 0 ? Math.round(consommationEnergie * 1.05) : null
-          const gesMin = emissionGES > 0 ? Math.round(emissionGES * 0.95) : null
-          const gesMax = emissionGES > 0 ? Math.round(emissionGES * 1.05) : null
+          const consoMin = consoNum > 0 ? Math.round(consoNum * 0.95) : null
+          const consoMax = consoNum > 0 ? Math.round(consoNum * 1.05) : null
+          const gesMin = gesNum > 0 ? Math.round(gesNum * 0.95) : null
+          const gesMax = gesNum > 0 ? Math.round(gesNum * 1.05) : null
 
           if (consoMin && consoMax) {
             step2Conditions.push(`conso_5_usages_par_m2_ep:[${consoMin} TO ${consoMax}]`)
@@ -226,14 +239,14 @@ class ConstructeurRechercheAdeme {
           } else if (typeBien === 'appartement') {
             step2Conditions.push(`(type_batiment:"appartement" OR type_batiment:"immeuble")`)
           } else {
-            step2Conditions.push(`type_batiment:"${typeBien}"`)
+            step2Conditions.push(`type_batiment:"${this.nettoyerPourRequete(typeBien)}"`)
           }
         }
 
         // Ajouter le filtre de surface avec tolérance ±15% pour step 2
-        if (surfaceHabitable && surfaceHabitable > 0) {
-          const minSurface = Math.round(surfaceHabitable * 0.85)
-          const maxSurface = Math.round(surfaceHabitable * 1.15)
+        if (surfaceNum && surfaceNum > 0) {
+          const minSurface = Math.round(surfaceNum * 0.85)
+          const maxSurface = Math.round(surfaceNum * 1.15)
           step2Conditions.push(`surface_habitable_logement:[${minSurface} TO ${maxSurface}]`)
         }
 
@@ -297,10 +310,18 @@ class ConstructeurRechercheAdeme {
         // ÉTAPE 3: Recherche élargie avec geo_distance 30km et tolérance ±10%
 
         if (communeCoords) {
-          const consoMin = consommationEnergie > 0 ? Math.round(consommationEnergie * 0.9) : null
-          const consoMax = consommationEnergie > 0 ? Math.round(consommationEnergie * 1.1) : null
-          const gesMin = emissionGES > 0 ? Math.round(emissionGES * 0.9) : null
-          const gesMax = emissionGES > 0 ? Math.round(emissionGES * 1.1) : null
+          // Parse operator strings into numeric values for arithmetic
+          const consoParsed3 = this.scoringService.parseComparisonValue(consommationEnergie)
+          const consoNum3 = consoParsed3 ? consoParsed3.value : null
+          const gesParsed3 = this.scoringService.parseComparisonValue(emissionGES)
+          const gesNum3 = gesParsed3 ? gesParsed3.value : null
+          const surfaceParsed3 = this.scoringService.parseComparisonValue(surfaceHabitable)
+          const surfaceNum3 = surfaceParsed3 ? surfaceParsed3.value : null
+
+          const consoMin = consoNum3 > 0 ? Math.round(consoNum3 * 0.9) : null
+          const consoMax = consoNum3 > 0 ? Math.round(consoNum3 * 1.1) : null
+          const gesMin = gesNum3 > 0 ? Math.round(gesNum3 * 0.9) : null
+          const gesMax = gesNum3 > 0 ? Math.round(gesNum3 * 1.1) : null
 
           const step3Conditions = []
 
@@ -316,14 +337,14 @@ class ConstructeurRechercheAdeme {
             } else if (typeBien === 'appartement') {
               step3Conditions.push(`(type_batiment:"appartement" OR type_batiment:"immeuble")`)
             } else {
-              step3Conditions.push(`type_batiment:"${typeBien}"`)
+              step3Conditions.push(`type_batiment:"${this.nettoyerPourRequete(typeBien)}"`)
             }
           }
 
           // Ajouter le filtre de surface avec tolérance ±35% pour step 3
-          if (surfaceHabitable && surfaceHabitable > 0) {
-            const minSurface = Math.round(surfaceHabitable * 0.65)
-            const maxSurface = Math.round(surfaceHabitable * 1.35)
+          if (surfaceNum3 && surfaceNum3 > 0) {
+            const minSurface = Math.round(surfaceNum3 * 0.65)
+            const maxSurface = Math.round(surfaceNum3 * 1.35)
             step3Conditions.push(`surface_habitable_logement:[${minSurface} TO ${maxSurface}]`)
           }
 
@@ -407,7 +428,8 @@ class ConstructeurRechercheAdeme {
         // Return ALL results
         return results
       }
-    } catch (_error) {
+    } catch (error) {
+      errorHandler.handleApiError(error, 'executerRecherche')
       return []
     }
   }
@@ -442,7 +464,7 @@ class ConstructeurRechercheAdeme {
         }
         if (conso) conditions.push(`conso_5_usages_par_m2_ep:${conso}`)
         if (ges) conditions.push(`emission_ges_5_usages_par_m2:${ges}`)
-        if (typeBien) conditions.push(`type_batiment:"${typeBien}"`)
+        if (typeBien) conditions.push(`type_batiment:"${this.nettoyerPourRequete(typeBien)}"`)
 
         const qsQuery = conditions.join(' AND ')
 

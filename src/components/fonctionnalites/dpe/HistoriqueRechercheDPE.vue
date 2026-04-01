@@ -319,7 +319,7 @@ export default {
     getClasseColor(classe) {
       const colors = {
         A: 'bg-green-500 text-white',
-        B: 'bg-green-400 text-white',
+        B: 'bg-green-600 text-white',
         C: 'bg-yellow-400 text-gray-800',
         D: 'bg-orange-400 text-white',
         E: 'bg-orange-500 text-white',

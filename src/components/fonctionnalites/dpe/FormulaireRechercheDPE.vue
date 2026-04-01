@@ -92,7 +92,7 @@
           <!-- Consommation énergétique (en troisième) -->
           <div class="w-full md:flex-1 md:min-w-[140px]">
             <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-              Consommation primaire
+              Consommation énergétique (kWh/m²/an)
             </label>
             <div class="relative">
               <input 
@@ -144,7 +144,7 @@
           <!-- GES optionnel (en quatrième) -->
           <div class="w-full md:flex-1 md:min-w-[140px]">
             <label class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
-              GES <span class="text-xs opacity-60">(optionnel)</span>
+              GES <span class="text-xs text-gray-400">(optionnel)</span>
             </label>
             <div class="relative">
               <input 
@@ -153,7 +153,7 @@
                 :placeholder="selectedGESClass ? '' : 'ex : 58'"
                 @input="validateGESInput"
                 :disabled="selectedGESClass !== null"
-                class="w-full px-4 py-3 pr-28 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500/60 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
+                class="w-full px-4 py-3 pr-28 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-400 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
                 kgCO₂/m²/an
@@ -239,6 +239,7 @@
 
 <script>
 import { AlertCircle, Building2, Home, Loader2, MapPin, Search } from 'lucide-vue-next'
+import { getGESClass as _getGESClassFromThresholds } from '../../../utils/dpe-thresholds.js'
 
 export default {
   name: 'DPESearchForm',
@@ -430,7 +431,7 @@ export default {
     getEnergyClassColor(classe) {
       const colors = {
         A: 'bg-green-500 text-white',
-        B: 'bg-green-400 text-white',
+        B: 'bg-green-600 text-white',
         C: 'bg-yellow-400 text-gray-800',
         D: 'bg-orange-400 text-white',
         E: 'bg-orange-500 text-white',
@@ -444,7 +445,7 @@ export default {
     getGESClassColor(classe) {
       const colors = {
         A: 'bg-green-500 text-white',
-        B: 'bg-green-400 text-white',
+        B: 'bg-green-600 text-white',
         C: 'bg-yellow-400 text-gray-800',
         D: 'bg-orange-400 text-white',
         E: 'bg-orange-500 text-white',
@@ -469,13 +470,7 @@ export default {
     // Déterminer la classe GES à partir de la valeur
     getGESClassFromValue(value) {
       if (!value || this.selectedGESClass) return null
-      if (value <= 6) return 'A'
-      if (value <= 11) return 'B'
-      if (value <= 30) return 'C'
-      if (value <= 50) return 'D'
-      if (value <= 70) return 'E'
-      if (value <= 100) return 'F'
-      return 'G'
+      return _getGESClassFromThresholds(value)
     },
 
     // Sélection du type de bien

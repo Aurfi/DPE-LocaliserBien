@@ -47,7 +47,7 @@
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span class="px-3 py-1 bg-green-500 text-white rounded-lg font-bold text-sm">A < 50 kWh/m²/an</span>
-                <span class="px-3 py-1 bg-green-400 text-white rounded-lg font-bold text-sm">B 51-90</span>
+                <span class="px-3 py-1 bg-green-600 text-white rounded-lg font-bold text-sm">B 51-90</span>
                 <span class="px-3 py-1 bg-yellow-400 text-gray-800 rounded-lg font-bold text-sm">C 91-150</span>
                 <span class="px-3 py-1 bg-orange-400 text-white rounded-lg font-bold text-sm">D 151-230</span>
                 <span class="px-3 py-1 bg-orange-500 text-white rounded-lg font-bold text-sm">E 231-330</span>
@@ -185,8 +185,8 @@
             Sources des données
           </h3>
           <p class="text-gray-600 dark:text-gray-400">
-            Les données proviennent de la base publique officielle des <strong>DPE</strong> de l'<span class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">ADEME</span> 
-            (<span class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">A</span>gence <span class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">D</span>e la <span class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">T</span>ransition <span class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">É</span>cologique). Ces données sont officielles, vérifiées et mises à jour régulièrement, comme leur nom.
+            Les données proviennent de la base publique officielle des <strong>DPE</strong> de l'<span class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">ADEME</span>
+            (Agence de la transition écologique). Ces données sont officielles, vérifiées et mises à jour régulièrement.
           </p>
         </div>
 

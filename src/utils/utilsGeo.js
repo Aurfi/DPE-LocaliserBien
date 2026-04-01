@@ -21,6 +21,11 @@ export function getDepartmentFromPostalCode(postalCode) {
     return parseInt(postalCode, 10) < 20200 ? '2A' : '2B'
   }
 
+  // DOM-TOM: 3-digit department codes
+  if (postalCode.startsWith('97') || postalCode.startsWith('98')) {
+    return postalCode.substring(0, 3)
+  }
+
   // All other departments: first 2 digits = department code
   return postalCode.substring(0, 2)
 }

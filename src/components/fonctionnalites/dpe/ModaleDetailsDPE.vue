@@ -1,14 +1,15 @@
 <template>
   <div v-if="show && property" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[9999] p-4 backdrop-blur-sm overflow-y-auto" @click.self="$emit('close')">
-    <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl max-w-5xl w-full max-h-[90vh] overflow-hidden border border-gray-100 dark:border-gray-700 my-auto">
+    <div role="dialog" aria-modal="true" aria-labelledby="modale-details-titre" class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl max-w-5xl w-full max-h-[90vh] overflow-hidden border border-gray-100 dark:border-gray-700 my-auto">
       <!-- En-tête -->
       <div class="p-4 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-gray-700 dark:to-gray-700 border-b border-gray-200 dark:border-gray-600">
         <div class="flex items-center justify-between">
-          <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">
+          <h3 id="modale-details-titre" class="text-xl font-bold text-gray-900 dark:text-gray-100">
             Rapport DPE Complet - {{ property.numeroDPE || property.id }}
           </h3>
-          <button 
+          <button
             @click="$emit('close')"
+            aria-label="Fermer"
             class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors bg-white dark:bg-gray-700 rounded-full p-2 hover:bg-gray-50 dark:hover:bg-gray-600"
           >
             <X class="w-6 h-6" />
@@ -547,7 +548,7 @@ export default {
     getDPEBadgeClass(classe) {
       const classes = {
         A: 'bg-green-500 text-white',
-        B: 'bg-green-400 text-white',
+        B: 'bg-green-600 text-white',
         C: 'bg-yellow-400 text-gray-800',
         D: 'bg-orange-400 text-white',
         E: 'bg-orange-500 text-white',

@@ -230,6 +230,7 @@ import { Building, Calendar, Circle, Grid2x2Check, Home, Loader, MapPin, Search,
 import { ref } from 'vue'
 import * as recentDPEService from '../../../services/recent-dpe.service'
 import { useRecherches } from '../../../stores/useRecherches.js'
+import { getGESClass as _getGESClassFromThresholds } from '../../../utils/dpe-thresholds.js'
 import { geocodeAddress } from '../../../utils/utilsGeo.js'
 
 export default {
@@ -301,7 +302,7 @@ export default {
     const getClasseColor = classe => {
       const colors = {
         A: 'bg-green-500 text-white',
-        B: 'bg-green-400 text-white',
+        B: 'bg-green-600 text-white',
         C: 'bg-yellow-400 text-gray-800',
         D: 'bg-orange-400 text-white',
         E: 'bg-orange-500 text-white',
@@ -339,13 +340,7 @@ export default {
       const numValue = parseInt(value.toString().replace(/[<>]/g, ''), 10)
       if (Number.isNaN(numValue)) return null
 
-      if (numValue <= 5) return 'A'
-      if (numValue <= 10) return 'B'
-      if (numValue <= 25) return 'C'
-      if (numValue <= 45) return 'D'
-      if (numValue <= 70) return 'E'
-      if (numValue <= 100) return 'F'
-      return 'G'
+      return _getGESClassFromThresholds(numValue)
     }
 
     const searchRecentDPE = async () => {

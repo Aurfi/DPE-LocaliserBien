@@ -165,36 +165,25 @@ describe('getDepartmentFromPostalCode', () => {
     })
   })
 
-  describe('DOM-TOM — BUG CONNU : retourne "97" au lieu du code à 3 chiffres', () => {
-    /**
-     * COMPORTEMENT ACTUEL (bugué) : getDepartmentFromPostalCode applique
-     * simplement postalCode.substring(0, 2) pour tous les codes non-corses,
-     * ce qui donne "97" pour tous les codes postaux d'outre-mer.
-     *
-     * COMPORTEMENT ATTENDU : les codes postaux 971xx→"971", 972xx→"972", etc.
-     *
-     * Ces tests documentent le comportement réel afin qu'une correction future
-     * puisse détecter la régression.
-     */
-    it('BUG: retourne "97" (et non "971") pour 97100 (Guadeloupe)', () => {
-      // Comportement actuel buggué — à corriger
-      expect(getDepartmentFromPostalCode('97100')).toBe('97')
+  describe('DOM-TOM — codes département à 3 chiffres', () => {
+    it('retourne "971" pour 97100 (Guadeloupe)', () => {
+      expect(getDepartmentFromPostalCode('97100')).toBe('971')
     })
 
-    it('BUG: retourne "97" (et non "972") pour 97200 (Martinique)', () => {
-      expect(getDepartmentFromPostalCode('97200')).toBe('97')
+    it('retourne "972" pour 97200 (Martinique)', () => {
+      expect(getDepartmentFromPostalCode('97200')).toBe('972')
     })
 
-    it('BUG: retourne "97" (et non "973") pour 97300 (Guyane)', () => {
-      expect(getDepartmentFromPostalCode('97300')).toBe('97')
+    it('retourne "973" pour 97300 (Guyane)', () => {
+      expect(getDepartmentFromPostalCode('97300')).toBe('973')
     })
 
-    it('BUG: retourne "97" (et non "974") pour 97400 (La Réunion)', () => {
-      expect(getDepartmentFromPostalCode('97400')).toBe('97')
+    it('retourne "974" pour 97400 (La Réunion)', () => {
+      expect(getDepartmentFromPostalCode('97400')).toBe('974')
     })
 
-    it('BUG: retourne "97" (et non "976") pour 97600 (Mayotte)', () => {
-      expect(getDepartmentFromPostalCode('97600')).toBe('97')
+    it('retourne "976" pour 97600 (Mayotte)', () => {
+      expect(getDepartmentFromPostalCode('97600')).toBe('976')
     })
   })
 

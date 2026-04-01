@@ -5,6 +5,8 @@
 
 import { computed, reactive } from 'vue'
 
+let cleanupRegistered = false
+
 // État global réactif pour les données départementales
 const departmentState = reactive({
   cache: new Map(),
@@ -244,7 +246,8 @@ export function useDepartements() {
   })
 
   // Nettoyage automatique du cache toutes les heures
-  if (typeof window !== 'undefined') {
+  if (typeof window !== 'undefined' && !cleanupRegistered) {
+    cleanupRegistered = true
     setInterval(() => cleanupCache(), 60 * 60 * 1000)
   }
 

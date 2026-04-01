@@ -237,7 +237,7 @@ export default {
       }
       const roundedScore = Math.round(score)
       if (roundedScore >= 90) return 'bg-green-500 text-white'
-      if (roundedScore >= 80) return 'bg-green-400 text-white'
+      if (roundedScore >= 80) return 'bg-green-600 text-white'
       if (roundedScore >= 70) return 'bg-yellow-400 text-gray-900'
       if (roundedScore >= 60) return 'bg-orange-400 text-white'
       if (roundedScore >= 50) return 'bg-orange-500 text-white'

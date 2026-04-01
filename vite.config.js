@@ -8,7 +8,7 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '')
+  const env = loadEnv(mode, process.cwd(), 'VITE_')
 
   // Plugin personnalisé pour traiter les fichiers de modèles
   const processTemplates = () => ({

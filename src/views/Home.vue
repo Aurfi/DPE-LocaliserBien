@@ -333,6 +333,12 @@ export default {
     },
 
     handleAnimationTimeout() {
+      if (this.searchResults !== null || this.recentDPEResults !== null) {
+        // Results already arrived — just end the animation, don't clear results
+        this.showAnimation = false
+        return
+      }
+
       // Arrêter l'animation après le timeout
       this.showAnimation = false
       window.dispatchEvent(new CustomEvent('animation-end'))

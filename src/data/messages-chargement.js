@@ -4,7 +4,7 @@ export const LOADING_MESSAGES = [
   'Reconstruction 3D des flux convectifs...',
   'Calibrage des détecteurs quantiques...',
   'Synchronisation avec les données géothermiques...',
-  'Interprétion des signatures thermiques...',
+  'Interprétation des signatures thermiques...',
   'Validation des algorithmes de Deep Learning...',
   'Croisement avec les bases militaires classifiées...',
   "Consultation d'un joueur pro Geoguessr...",

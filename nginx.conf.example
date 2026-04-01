@@ -26,8 +26,10 @@ server {
     add_header X-XSS-Protection "1; mode=block" always;
     add_header Referrer-Policy "strict-origin-when-cross-origin" always;
     
-    # Protection des données - Article R*. 112 A-3 du LPF
-    add_header X-Robots-Tag "noindex, nofollow, noarchive" always;
+    # NOTE: This X-Robots-Tag contradicts the <meta name="robots" content="index, follow">
+    # in index.html. Remove or comment out this header to allow search engine indexing,
+    # which is appropriate for this public data tool.
+    # add_header X-Robots-Tag "noindex, nofollow, noarchive" always;
     
     # Gzip compression
     gzip on;

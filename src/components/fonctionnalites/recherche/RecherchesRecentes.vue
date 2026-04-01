@@ -163,6 +163,7 @@
 <script>
 import { Building2, Clock, Edit2, Home, MapPin, Trash2, Zap } from 'lucide-vue-next'
 import { useRecherches } from '../../../stores/useRecherches.js'
+import { getGESClass as _getGESClassFromThresholds } from '../../../utils/dpe-thresholds.js'
 import ModaleConfirmation from '../../base/ModaleConfirmation.vue'
 import ModaleEntree from '../../base/ModaleEntree.vue'
 
@@ -258,7 +259,7 @@ export default {
     getEnergyClassColor(classe) {
       const colors = {
         A: 'bg-green-500 text-white',
-        B: 'bg-green-400 text-white',
+        B: 'bg-green-600 text-white',
         C: 'bg-yellow-400 text-gray-800',
         D: 'bg-orange-400 text-white',
         E: 'bg-orange-500 text-white',
@@ -269,13 +270,7 @@ export default {
     },
 
     getGESClass(emission) {
-      if (emission <= 5) return 'A'
-      if (emission <= 10) return 'B'
-      if (emission <= 25) return 'C'
-      if (emission <= 35) return 'D'
-      if (emission <= 55) return 'E'
-      if (emission <= 80) return 'F'
-      return 'G'
+      return _getGESClassFromThresholds(emission)
     },
 
     getGESClassColor(classe) {

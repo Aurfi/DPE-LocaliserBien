@@ -2,11 +2,11 @@
   <div>
     <!-- Modal principale -->
     <div v-if="property" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[9999] p-4 backdrop-blur-sm" @click.self="$emit('close')">
-      <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden border border-gray-100 dark:border-gray-700">
+      <div role="dialog" aria-modal="true" aria-labelledby="modale-propriete-titre" class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden border border-gray-100 dark:border-gray-700">
       <!-- En-tête de la modal -->
       <div class="p-3 sm:p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-700 border-b border-gray-200 dark:border-gray-600 flex items-start justify-between gap-2">
         <div class="flex-1 min-w-0">
-          <h3 class="text-lg sm:text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1 sm:mb-2 pr-2 line-clamp-2">
+          <h3 id="modale-propriete-titre" class="text-lg sm:text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1 sm:mb-2 pr-2 line-clamp-2">
             {{ formattedAddress }}
           </h3>
           <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-sm sm:text-base text-gray-600 dark:text-gray-300">
@@ -19,13 +19,12 @@
             </div>
             <span class="text-gray-400 dark:text-gray-500">•</span>
             <span class="font-medium">{{ surface }}m²</span>
-            <!-- Masquer sur mobile -->
-            <span class="hidden sm:inline text-gray-400 dark:text-gray-500">•</span>
-            <a 
+            <span class="inline text-gray-400 dark:text-gray-500">•</span>
+            <a
               :href="getGoogleMapsUrl()"
               target="_blank"
               rel="noopener noreferrer"
-              class="hidden sm:inline text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
+              class="inline text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
               @click.stop
             >
               Voir sur Maps
@@ -42,8 +41,9 @@
           </div>
         </div>
         <!-- Bouton fermer - toujours visible et avec une taille minimum garantie -->
-        <button 
+        <button
           @click="$emit('close')"
+          aria-label="Fermer"
           class="flex-shrink-0 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors bg-white dark:bg-gray-700 rounded-full p-2 hover:bg-gray-50 dark:hover:bg-gray-600 min-w-[40px] min-h-[40px] flex items-center justify-center"
         >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,13 +56,14 @@
       <div class="p-4 space-y-4 bg-gray-50 dark:bg-gray-900 overflow-y-auto" style="max-height: calc(85vh - 100px);">
         <!-- Vue satellite Google Maps -->
         <div v-if="mapUrl" class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700" style="height: 350px;">
-          <iframe 
+          <iframe
             :src="mapUrl"
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
+            :title="`Vue satellite de ${formattedAddress}`"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
@@ -234,7 +235,7 @@ export default {
     getClasseColor(classe) {
       const colors = {
         A: 'bg-green-500 text-white',
-        B: 'bg-green-400 text-white',
+        B: 'bg-green-600 text-white',
         C: 'bg-yellow-400 text-gray-800',
         D: 'bg-orange-400 text-white',
         E: 'bg-orange-500 text-white',

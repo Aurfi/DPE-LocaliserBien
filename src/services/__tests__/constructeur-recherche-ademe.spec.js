@@ -18,6 +18,13 @@ vi.mock('../../utils/utilsGeo.js', () => ({
   extractPostalCode: vi.fn(commune => (/^\d{5}$/.test(commune) ? commune : null))
 }))
 
+// Mock du gestionnaire d'erreurs
+vi.mock('../../utils/gestionnaireErreurs.js', () => ({
+  default: {
+    handleApiError: vi.fn()
+  }
+}))
+
 // Mock du ProcesseurResultatsDPE chargé dynamiquement (import())
 vi.mock('../processeur-resultats-dpe.service.js', () => {
   const mockProcesseur = {
@@ -591,24 +598,24 @@ describe('ConstructeurRechercheAdeme', () => {
       expect(appelEtape2).toMatch(/geo_distance=.*%3A1[5-9]000/)
     })
 
-    // BUG CONNU : surfaceHabitable est traitée comme un nombre à l'étape 2
-    // mais peut être une chaîne d'opérateur type ">80" depuis la requête de l'utilisateur
-    it('BUG : surfaceHabitable avec opérateur ">80" est traité comme nombre à l\'étape 2 (comparaison directe > 0)', async () => {
+    // FIX: surfaceHabitable with operator string ">80" is now correctly parsed
+    // via parseComparisonValue before arithmetic in step 2
+    it('FIXED: surfaceHabitable avec opérateur ">80" est correctement parsé à l\'étape 2', async () => {
       global.fetch = vi
         .fn()
         .mockResolvedValueOnce(reponseFetchVide())
         .mockResolvedValueOnce(reponseFetchOk([creerDpeAdeme()]))
 
       // La valeur ">80" est passée comme surfaceHabitable
-      // À l'étape 2, le code fait `surfaceHabitable > 0` sur la chaîne ">80"
-      // En JavaScript, ">80" > 0 est false (NaN), donc la plage de surface n'est PAS ajoutée
+      // Désormais parseComparisonValue extrait la valeur numérique 80
+      // et le filtre surface est correctement ajouté avec la tolérance ±15%
       await service.executerRecherche({ commune: '75001', surfaceHabitable: '>80' }, COORDS_PARIS)
 
-      // L'URL de l'étape 2 ne doit PAS contenir de filtre surface car ">80" > 0 est false
       const appelEtape2 = global.fetch.mock.calls[1][0]
-      // Ce test documente le comportement bugué : le filtre surface est ignoré silencieusement
-      // La condition `surfaceHabitable && surfaceHabitable > 0` est false pour ">80"
-      expect(appelEtape2).not.toContain('surface_habitable_logement')
+      // 80 * 0.85 = 68, 80 * 1.15 = 92
+      expect(appelEtape2).toContain('surface_habitable_logement')
+      expect(appelEtape2).toContain('68')
+      expect(appelEtape2).toContain('92')
     })
 
     it("doit construire une plage ±15% pour surfaceHabitable numérique à l'étape 2", async () => {
@@ -719,7 +726,7 @@ describe('ConstructeurRechercheAdeme', () => {
       expect(appelEtape3).toContain('32000')
     })
 
-    it('BUG : surfaceHabitable avec chaîne ">80" est ignoré à l\'étape 3 (même bogue qu\'étape 2)', async () => {
+    it('FIXED: surfaceHabitable avec chaîne ">80" est correctement parsé à l\'étape 3', async () => {
       global.fetch = vi
         .fn()
         .mockResolvedValueOnce(reponseFetchVide())
@@ -729,8 +736,11 @@ describe('ConstructeurRechercheAdeme', () => {
       await service.executerRecherche({ commune: '75001', surfaceHabitable: '>80' }, COORDS_PARIS)
 
       const appelEtape3 = global.fetch.mock.calls[2][0]
-      // ">80" > 0 est false, donc le filtre surface est ignoré
-      expect(appelEtape3).not.toContain('surface_habitable_logement')
+      // parseComparisonValue extracts 80 from ">80", then applies ±35% tolerance
+      // 80 * 0.65 = 52, 80 * 1.35 = 108
+      expect(appelEtape3).toContain('surface_habitable_logement')
+      expect(appelEtape3).toContain('52')
+      expect(appelEtape3).toContain('108')
     })
 
     it("doit construire une plage ±35% pour surfaceHabitable numérique à l'étape 3", async () => {

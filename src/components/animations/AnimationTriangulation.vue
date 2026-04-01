@@ -4,6 +4,11 @@
     <div class="relative w-full h-full flex flex-col items-center justify-center px-4 py-4 md:px-8 md:py-8 bg-transparent">
 
 
+      <!-- Bouton Passer -->
+      <button @click="skipAnimation" class="absolute bottom-8 right-8 z-50 px-4 py-2 bg-white/80 backdrop-blur-sm text-gray-700 rounded-xl hover:bg-white transition-all text-sm font-medium shadow-lg">
+        Passer
+      </button>
+
       <!-- Zone d'analyse moderne -->
       <div class="relative w-full max-w-6xl h-[75vh] md:aspect-[4/3] md:h-auto flex flex-col">
         <!-- Fond moderne (z-index 0) -->
@@ -350,6 +355,11 @@ export default {
     this.stopContinuousAnimations()
   },
   methods: {
+    skipAnimation() {
+      this.stopContinuousAnimations()
+      this.onComplete()
+    },
+
     detectRegionType(department) {
       if (!department) return 'france'
 
@@ -1297,5 +1307,14 @@ export default {
   0%, 80% { opacity: 1; }
   90% { opacity: 0.3; }
   100% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-ring, .pulse-ring-delayed, .pulse-ring-delayed-2,
+  .scan-overlay, .laser-beam, .energy-particle, .target-lock,
+  .convergence-ring, .targeting-system, .matrix-bg, .scan-line,
+  .radar-sweep, .animate-blink, .animate-typing {
+    animation: none !important;
+  }
 }
 </style>

@@ -3,6 +3,17 @@ import { calculateDistance, geocodeAddress } from '../utils/utilsGeo.js'
 const ADEME_API_URL = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines'
 
 /**
+ * Nettoie une chaîne pour utilisation dans une requête Lucene
+ * Échappe les caractères spéciaux qui pourraient casser la requête
+ * @param {string} str - Chaîne à nettoyer
+ * @returns {string} Chaîne nettoyée
+ */
+function escapeLucene(str) {
+  if (!str) return ''
+  return str.replace(/[+\-&|!(){}[\]^"~*?:\\/]/g, '\\$&').trim()
+}
+
+/**
  * Analyser une valeur qui peut contenir des opérateurs de comparaison
  * @param {string|number} value - Valeur qui peut avoir un opérateur < ou >
  * @returns {Object} - {operator: '<'|'>'|'=', value: number}
@@ -373,7 +384,7 @@ async function searchByAddress(userInput, geocodedAddress, dateLimit, criteria) 
   // Nettoyer légèrement l'adresse - garder les lettres, chiffres, espaces, tirets et apostrophes
   // Normaliser les espaces multiples en un seul espace
   const cleanedAddress = finalAddress
-    .replace(/[^\w\s\-']/g, ' ')
+    .replace(/[^\w\s\-'\u00C0-\u024F]/gu, ' ')
     .replace(/\s+/g, ' ') // Remplacer les espaces multiples par un seul
     .trim()
 
@@ -435,7 +446,7 @@ async function searchByAddress(userInput, geocodedAddress, dateLimit, criteria) 
     } else if (criteria.typeBien === 'appartement') {
       qsFilter += ` AND (type_batiment:"appartement" OR type_batiment:"immeuble")`
     } else {
-      qsFilter += ` AND type_batiment:"${criteria.typeBien}"`
+      qsFilter += ` AND type_batiment:"${escapeLucene(criteria.typeBien)}"`
     }
   }
 
@@ -537,7 +548,7 @@ async function searchInRadius(lat, lon, radius, dateLimit, _monthsBack, criteria
     } else if (criteria.typeBien === 'appartement') {
       qsFilter += ` AND (type_batiment:"appartement" OR type_batiment:"immeuble")`
     } else {
-      qsFilter += ` AND type_batiment:"${criteria.typeBien}"`
+      qsFilter += ` AND type_batiment:"${escapeLucene(criteria.typeBien)}"`
     }
   }
 

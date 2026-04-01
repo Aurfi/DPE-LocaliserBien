@@ -15,7 +15,7 @@
 
 
     <!-- Contenu principal -->
-    <main class="flex-1 relative z-10">
+    <main id="contenu-principal" class="flex-1 relative z-10">
       <router-view />
     </main>
 
