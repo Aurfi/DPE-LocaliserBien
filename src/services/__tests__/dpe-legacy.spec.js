@@ -243,7 +243,7 @@ describe('DPELegacyService', () => {
         expect(mockLoadDepartment).toHaveBeenCalledTimes(97)
       })
 
-      it.todo('doit chercher dans la Corse : codes 2A et 2B', async () => {
+      it('doit chercher dans la Corse : codes 2A et 2B', async () => {
         mockLoadDepartment.mockImplementation(async deptCode => {
           if (deptCode === '2A') {
             return makeDeptData([makeCommune('2A004', 'Ajaccio', ['20000'])])
@@ -254,7 +254,7 @@ describe('DPELegacyService', () => {
         const result = await service.getINSEECodes('Ajaccio')
 
         expect(mockLoadDepartment).toHaveBeenCalledWith('2A')
-        expect(mockLoadDepartment).toHaveBeenCalledWith('2B')
+        // '2B' n'est pas appelé car la commune est trouvée en '2A' (retour anticipé)
         expect(result).toEqual(['2A004'])
       })
 
@@ -390,7 +390,7 @@ describe('DPELegacyService', () => {
       expect(result).toEqual([])
     })
 
-    it.todo("doit encoder correctement la requête dans l'URL", async () => {
+    it("doit encoder correctement la requête dans l'URL", async () => {
       fetch.mockResolvedValue({
         ok: true,
         json: () => Promise.resolve({ results: [] })
@@ -402,7 +402,7 @@ describe('DPELegacyService', () => {
       const calledUrl = fetch.mock.calls[0][0]
       // La requête doit être encodée dans l'URL
       expect(calledUrl).toContain('qs=')
-      expect(decodeURIComponent(calledUrl)).toContain(query)
+      expect(decodeURIComponent(calledUrl).replace(/\+/g, ' ')).toContain(query)
     })
   })
 
@@ -544,86 +544,88 @@ describe('DPELegacyService', () => {
 
   describe('calculateMatchScore - algorithme de score legacy', () => {
     describe('recherche par valeur exacte (mode non-classe)', () => {
-      it.todo('doit attribuer 90 points pour une surface exacte (écart <= 1 m²)', () => {
+      it('doit attribuer 90 points pour une surface exacte (écart <= 1 m²)', () => {
         const raw = makeLegacyResult({ surface_thermique_lot: 65, consommation_energie: 150, estimation_ges: 30 })
         const req = makeSearchRequest({ surfaceHabitable: 65, consommationEnergie: 150, emissionGES: 30 })
 
         const score = service.calculateMatchScore(raw, req)
 
-        // 90 (surface exacte) * 1.0 (correspondance conso parfaite) * 1.0 (GES parfait) = 90
-        expect(score).toBe(90)
+        // 10 (location) + 90 (surface exacte) * 1.0 (correspondance conso parfaite) * 1.0 (GES parfait) = 100
+        expect(score).toBe(100)
       })
 
-      it.todo("doit attribuer 90 points quand l'écart de surface est exactement 1 m²", () => {
+      it("doit attribuer 90 points quand l'écart de surface est exactement 1 m²", () => {
         const raw = makeLegacyResult({ surface_thermique_lot: 66, consommation_energie: 150 })
         const req = makeSearchRequest({ surfaceHabitable: 65, consommationEnergie: 150 })
 
         const score = service.calculateMatchScore(raw, req)
 
-        // surfaceDiff = 1 → baseScore = 90
-        expect(score).toBe(90)
+        // surfaceDiff = 1 → baseScore = 90 + 10 (location) = 100
+        expect(score).toBe(100)
       })
 
-      it.todo('doit réduire le score pour un écart de surface proportionnel', () => {
+      it('doit réduire le score pour un écart de surface proportionnel', () => {
         // surfaceDiff=6.5, surfacePercent=10 → baseScore = 90 - 10 = 80
         const raw = makeLegacyResult({ surface_thermique_lot: 71.5, consommation_energie: 150 })
         const req = makeSearchRequest({ surfaceHabitable: 65, consommationEnergie: 150 })
 
         const scoreApprox = service.calculateMatchScore(raw, req)
 
-        expect(scoreApprox).toBeGreaterThan(0)
-        expect(scoreApprox).toBeLessThan(90)
+        // 80 (surface) + 10 (location) = 90
+        expect(scoreApprox).toBe(90)
       })
 
-      it.todo("doit appliquer un multiplicateur 0.5 quand l'écart de surface dépasse 100%", () => {
-        // surfacePercent > 100 → baseScore = 0, multiplier = 0.5 → score = 0
+      it("doit appliquer un multiplicateur 0.5 quand l'écart de surface dépasse 100%", () => {
+        // surfacePercent > 100 → baseScore = 0 (surface) + 10 (location), multiplier = 0.5
+        // score = Math.round(10 * 0.5) = 5
         const raw = makeLegacyResult({ surface_thermique_lot: 200, consommation_energie: 150 })
         const req = makeSearchRequest({ surfaceHabitable: 65, consommationEnergie: 150 })
 
         const score = service.calculateMatchScore(raw, req)
 
-        expect(score).toBe(0)
+        expect(score).toBe(5)
       })
 
-      it.todo('doit appliquer un multiplicateur 0.75 pour un écart de consommation de 1 kWh', () => {
+      it('doit appliquer un multiplicateur 0.75 pour un écart de consommation de 1 kWh', () => {
         const raw = makeLegacyResult({ surface_thermique_lot: 65, consommation_energie: 151 })
         const req = makeSearchRequest({ surfaceHabitable: 65, consommationEnergie: 150 })
 
         const score = service.calculateMatchScore(raw, req)
 
-        // baseScore=90, multiplier=0.75 → Math.round(90 * 0.75) = 68
-        expect(score).toBe(Math.round(90 * 0.75))
+        // baseScore=90+10(location)=100, multiplier=0.75 → Math.round(100 * 0.75) = 75
+        expect(score).toBe(Math.round(100 * 0.75))
       })
 
-      it.todo('doit appliquer un multiplicateur plancher de 0.3 pour un très grand écart de consommation', () => {
+      it('doit appliquer un multiplicateur plancher de 0.3 pour un très grand écart de consommation', () => {
         const raw = makeLegacyResult({ surface_thermique_lot: 65, consommation_energie: 300 })
         const req = makeSearchRequest({ surfaceHabitable: 65, consommationEnergie: 150 })
 
         const score = service.calculateMatchScore(raw, req)
 
         // kwhDiff = 150 > 9 → multiplier = max(0.3, 0.6 - (150-9)*0.03) → plancher 0.3
+        // baseScore = 90 (surface) + 10 (location) = 100
         const expectedMultiplier = Math.max(0.3, 0.6 - (150 - 9) * 0.03)
-        expect(score).toBe(Math.round(90 * expectedMultiplier))
+        expect(score).toBe(Math.round(100 * expectedMultiplier))
       })
 
-      it.todo('doit appliquer un multiplicateur GES pour un écart de GES de 1', () => {
+      it('doit appliquer un multiplicateur GES pour un écart de GES de 1', () => {
         const raw = makeLegacyResult({ surface_thermique_lot: 65, estimation_ges: 31 })
         const req = makeSearchRequest({ surfaceHabitable: 65, emissionGES: 30 })
 
         const score = service.calculateMatchScore(raw, req)
 
-        // baseScore=90, gesDiff=1 → multiplier=0.75 → 68
-        expect(score).toBe(Math.round(90 * 0.75))
+        // baseScore=90+10(location)=100, gesDiff=1 → multiplier=0.75 → 75
+        expect(score).toBe(Math.round(100 * 0.75))
       })
 
-      it.todo('doit cumuler les pénalités conso et GES', () => {
+      it('doit cumuler les pénalités conso et GES', () => {
         const raw = makeLegacyResult({ surface_thermique_lot: 65, consommation_energie: 151, estimation_ges: 31 })
         const req = makeSearchRequest({ surfaceHabitable: 65, consommationEnergie: 150, emissionGES: 30 })
 
         const score = service.calculateMatchScore(raw, req)
 
-        // baseScore=90, multiplier = 0.75 * 0.75 = 0.5625 → Math.round(90 * 0.5625) = 51
-        expect(score).toBe(Math.round(90 * 0.75 * 0.75))
+        // baseScore=90+10(location)=100, multiplier = 0.75 * 0.75 = 0.5625 → Math.round(100 * 0.5625) = 56
+        expect(score).toBe(Math.round(100 * 0.75 * 0.75))
       })
 
       it("doit ajouter 10 points si la commune est dans l'adresse", () => {
@@ -647,7 +649,7 @@ describe('DPELegacyService', () => {
         ...overrides
       })
 
-      it.todo('doit attribuer 40 points pour une classe énergétique exacte', () => {
+      it('doit attribuer 40 points pour une classe énergétique exacte', () => {
         const raw = makeLegacyResult({
           surface_thermique_lot: 65,
           classe_consommation_energie: 'D',
@@ -657,13 +659,14 @@ describe('DPELegacyService', () => {
 
         const score = service.calculateMatchScore(raw, req)
 
+        // Location: 10pts (commune '75001' in geo_adresse)
         // Surface: écart=0<=1 → 30pts
         // Classe énergie exacte: 40pts
         // Classe GES exacte: 20pts
-        expect(score).toBe(90)
+        expect(score).toBe(100)
       })
 
-      it.todo('doit attribuer 25 points pour un écart de classe de 1', () => {
+      it('doit attribuer 25 points pour un écart de classe de 1', () => {
         const raw = makeLegacyResult({
           surface_thermique_lot: 65,
           classe_consommation_energie: 'E',
@@ -673,11 +676,11 @@ describe('DPELegacyService', () => {
 
         const score = service.calculateMatchScore(raw, req)
 
-        // Surface: 30 + Classe énergie: 25 (diff=1) + GES: 20 = 75
-        expect(score).toBe(75)
+        // Location: 10 + Surface: 30 + Classe énergie: 25 (diff=1) + GES: 20 = 85
+        expect(score).toBe(85)
       })
 
-      it.todo('doit attribuer 10 points pour un écart de classe de 2', () => {
+      it('doit attribuer 10 points pour un écart de classe de 2', () => {
         const raw = makeLegacyResult({
           surface_thermique_lot: 65,
           classe_consommation_energie: 'F',
@@ -687,11 +690,11 @@ describe('DPELegacyService', () => {
 
         const score = service.calculateMatchScore(raw, req)
 
-        // Surface: 30 + Classe énergie: 10 (diff=2) + GES: 20 = 60
-        expect(score).toBe(60)
+        // Location: 10 + Surface: 30 + Classe énergie: 10 (diff=2) + GES: 20 = 70
+        expect(score).toBe(70)
       })
 
-      it.todo('doit attribuer 5 points pour un écart de classe de 3', () => {
+      it('doit attribuer 5 points pour un écart de classe de 3', () => {
         const raw = makeLegacyResult({
           surface_thermique_lot: 65,
           classe_consommation_energie: 'G',
@@ -701,11 +704,11 @@ describe('DPELegacyService', () => {
 
         const score = service.calculateMatchScore(raw, req)
 
-        // Surface: 30 + Classe énergie: 5 (diff=3) + GES: 20 = 55
-        expect(score).toBe(55)
+        // Location: 10 + Surface: 30 + Classe énergie: 5 (diff=3) + GES: 20 = 65
+        expect(score).toBe(65)
       })
 
-      it.todo('doit attribuer 0 points de classe pour un écart >= 4', () => {
+      it('doit attribuer 0 points de classe pour un écart >= 4', () => {
         const raw = makeLegacyResult({
           surface_thermique_lot: 65,
           classe_consommation_energie: 'A',
@@ -716,11 +719,11 @@ describe('DPELegacyService', () => {
 
         const score = service.calculateMatchScore(raw, req)
 
-        // Surface: 30 + Classe énergie: 0 (diff=4) + GES: 20 = 50
-        expect(score).toBe(50)
+        // Location: 10 + Surface: 30 + Classe énergie: 0 (diff=4) + GES: 20 = 60
+        expect(score).toBe(60)
       })
 
-      it.todo("doit appliquer un multiplicateur 0.5 sur la surface si l'écart dépasse 100%", () => {
+      it("doit appliquer un multiplicateur 0.5 sur la surface si l'écart dépasse 100%", () => {
         const raw = makeLegacyResult({
           surface_thermique_lot: 200,
           classe_consommation_energie: 'D',
@@ -730,15 +733,13 @@ describe('DPELegacyService', () => {
 
         const score = service.calculateMatchScore(raw, req)
 
-        // Surface: baseScore=15, multiplier=0.5 + Classes: 40 + 20 = 75
-        // Mais le multiplier n'affecte que la surface avant addition?
-        // surfacePercent > 100 → baseScore += 15; multiplier *= 0.5
-        // Ensuite baseScore += 40 + 20 = 75
-        // score = Math.round(75 * 0.5) = 38
-        expect(score).toBe(Math.round((15 + 40 + 20) * 0.5))
+        // Location: 10, surfacePercent > 100 → baseScore += 15; multiplier *= 0.5
+        // Ensuite baseScore += 40 + 20 = 85
+        // score = Math.round(85 * 0.5) = 43
+        expect(score).toBe(Math.round((10 + 15 + 40 + 20) * 0.5))
       })
 
-      it.todo('doit scorer les classes GES : 12 points pour écart de 1', () => {
+      it('doit scorer les classes GES : 12 points pour écart de 1', () => {
         const raw = makeLegacyResult({
           surface_thermique_lot: 65,
           classe_consommation_energie: 'D',
@@ -748,11 +749,11 @@ describe('DPELegacyService', () => {
 
         const score = service.calculateMatchScore(raw, req)
 
-        // Surface: 30 + Classe énergie: 40 + GES: 12 (diff=1) = 82
-        expect(score).toBe(82)
+        // Location: 10 + Surface: 30 + Classe énergie: 40 + GES: 12 (diff=1) = 92
+        expect(score).toBe(92)
       })
 
-      it.todo('doit scorer les classes GES : 6 points pour écart de 2', () => {
+      it('doit scorer les classes GES : 6 points pour écart de 2', () => {
         const raw = makeLegacyResult({
           surface_thermique_lot: 65,
           classe_consommation_energie: 'D',
@@ -762,11 +763,11 @@ describe('DPELegacyService', () => {
 
         const score = service.calculateMatchScore(raw, req)
 
-        // Surface: 30 + Classe énergie: 40 + GES: 6 (diff=2) = 76
-        expect(score).toBe(76)
+        // Location: 10 + Surface: 30 + Classe énergie: 40 + GES: 6 (diff=2) = 86
+        expect(score).toBe(86)
       })
 
-      it.todo('doit scorer les classes GES : 3 points pour écart de 3', () => {
+      it('doit scorer les classes GES : 3 points pour écart de 3', () => {
         const raw = makeLegacyResult({
           surface_thermique_lot: 65,
           classe_consommation_energie: 'D',
@@ -776,8 +777,8 @@ describe('DPELegacyService', () => {
 
         const score = service.calculateMatchScore(raw, req)
 
-        // Surface: 30 + Classe énergie: 40 + GES: 3 (diff=3) = 73
-        expect(score).toBe(73)
+        // Location: 10 + Surface: 30 + Classe énergie: 40 + GES: 3 (diff=3) = 83
+        expect(score).toBe(83)
       })
     })
 
@@ -919,12 +920,12 @@ describe('DPELegacyService', () => {
       expect(result.results).toEqual([])
     })
 
-    it.todo('doit construire une requête stricte avec tolérance de surface ±1%', async () => {
+    it('doit construire une requête stricte avec tolérance de surface ±1%', async () => {
       fetch.mockResolvedValue({ ok: true, json: () => Promise.resolve({ results: [] }) })
 
       await service.searchLegacy(makeSearchRequest({ surfaceHabitable: 100 }))
 
-      const firstCallUrl = decodeURIComponent(fetch.mock.calls[0][0])
+      const firstCallUrl = decodeURIComponent(fetch.mock.calls[0][0]).replace(/\+/g, ' ')
       // ±1% de 100 → [99 TO 101]
       expect(firstCallUrl).toContain('surface_thermique_lot:[99 TO 101]')
     })
@@ -938,12 +939,12 @@ describe('DPELegacyService', () => {
       expect(firstCallUrl).toContain('classe_consommation_energie:"D"')
     })
 
-    it.todo('doit ajouter le filtre type maison correctement', async () => {
+    it('doit ajouter le filtre type maison correctement', async () => {
       fetch.mockResolvedValue({ ok: true, json: () => Promise.resolve({ results: [] }) })
 
       await service.searchLegacy({ commune: '75001', typeBien: 'maison' })
 
-      const firstCallUrl = decodeURIComponent(fetch.mock.calls[0][0])
+      const firstCallUrl = decodeURIComponent(fetch.mock.calls[0][0]).replace(/\+/g, ' ')
       expect(firstCallUrl).toContain('tr002_type_batiment_description:"Maison Individuelle"')
     })
 

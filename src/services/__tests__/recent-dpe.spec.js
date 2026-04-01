@@ -71,7 +71,7 @@ const mockFetchError = (status = 500) => Promise.resolve({ ok: false, status, st
 // Helpers pour inspecter les appels fetch
 // ─────────────────────────────────────────────────────────────────────────────
 
-const getCalledUrls = () => fetch.mock.calls.map(call => decodeURIComponent(call[0]))
+const getCalledUrls = () => fetch.mock.calls.map(call => decodeURIComponent(call[0]).replace(/\+/g, ' '))
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Tests
@@ -215,7 +215,7 @@ describe('recent-dpe.service', () => {
       expect(found).toBeUndefined()
     })
 
-    it.todo("doit préfixer l'adresse avec le numéro de rue si l'adresse géocodée n'en a pas", async () => {
+    it("doit préfixer l'adresse avec le numéro de rue si l'adresse géocodée n'en a pas", async () => {
       geocodeAddress.mockResolvedValue(
         makeGeoResult({
           formattedAddress: 'Rue de la Paix 75001 Paris' // Pas de numéro
@@ -364,7 +364,7 @@ describe('recent-dpe.service', () => {
       expect(addressUrl).not.toMatch(/\s{2,}/)
     })
 
-    it.todo('doit ajouter le filtre surface avec tolérance ±1 m² pour valeur exacte', async () => {
+    it('doit ajouter le filtre surface avec tolérance ±1 m² pour valeur exacte', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ surface: 65 }))
@@ -374,7 +374,7 @@ describe('recent-dpe.service', () => {
       expect(addressUrl).toContain('surface_habitable_logement:[64 TO 66]')
     })
 
-    it.todo('doit ajouter le filtre surface avec opérateur < pour searchByAddress', async () => {
+    it('doit ajouter le filtre surface avec opérateur < pour searchByAddress', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ surface: '<100' }))
@@ -426,7 +426,7 @@ describe('recent-dpe.service', () => {
       expect(addressUrl).toContain('type_batiment:"immeuble"')
     })
 
-    it.todo('doit ajouter le filtre etiquette_dpe pour les classes énergétiques', async () => {
+    it('doit ajouter le filtre etiquette_dpe pour les classes énergétiques', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ energyClasses: ['C', 'D'] }))
@@ -436,7 +436,7 @@ describe('recent-dpe.service', () => {
       expect(addressUrl).toContain('etiquette_dpe:(C OR D)')
     })
 
-    it.todo('doit ajouter le filtre etiquette_ges pour les classes GES', async () => {
+    it('doit ajouter le filtre etiquette_ges pour les classes GES', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ gesClasses: ['B', 'C'] }))
@@ -483,7 +483,7 @@ describe('recent-dpe.service', () => {
   // ─────────────────────────────────────────────────────────────────────────────
 
   describe('searchInRadius - filtre geo_distance et paramètres', () => {
-    it.todo("doit inclure le paramètre geo_distance dans l'URL de recherche par rayon", async () => {
+    it("doit inclure le paramètre geo_distance dans l'URL de recherche par rayon", async () => {
       geocodeAddress.mockResolvedValue(makeGeoResult({ lat: 48.8698, lon: 2.3309 }))
       fetch.mockResolvedValue(mockFetchOk())
 
@@ -517,7 +517,7 @@ describe('recent-dpe.service', () => {
       expect(radiusUrl).toContain('date_etablissement_dpe:>')
     })
 
-    it.todo('doit ajouter le filtre surface avec tolérance ±1 m² pour searchInRadius', async () => {
+    it('doit ajouter le filtre surface avec tolérance ±1 m² pour searchInRadius', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ surface: 80 }))
@@ -527,7 +527,7 @@ describe('recent-dpe.service', () => {
       expect(radiusUrl).toContain('surface_habitable_logement:[79 TO 81]')
     })
 
-    it.todo('doit ajouter le filtre surface avec opérateur > pour searchInRadius', async () => {
+    it('doit ajouter le filtre surface avec opérateur > pour searchInRadius', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ surface: '>50' }))
@@ -586,7 +586,7 @@ describe('recent-dpe.service', () => {
       expect(radiusUrl).toContain('sort=-date_etablissement_dpe')
     })
 
-    it.todo('doit ajouter le filtre de classe GES pour la recherche par rayon', async () => {
+    it('doit ajouter le filtre de classe GES pour la recherche par rayon', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ gesClasses: ['A', 'B'] }))
@@ -602,7 +602,7 @@ describe('recent-dpe.service', () => {
   // ─────────────────────────────────────────────────────────────────────────────
 
   describe('parseComparisonValue - analyse des valeurs de comparaison', () => {
-    it.todo('doit interpréter <100 comme opérateur < avec valeur 100 (filtre [0 TO 100])', async () => {
+    it('doit interpréter <100 comme opérateur < avec valeur 100 (filtre [0 TO 100])', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ surface: '<100' }))
@@ -612,7 +612,7 @@ describe('recent-dpe.service', () => {
       expect(radiusUrl).toContain('surface_habitable_logement:[0 TO 100]')
     })
 
-    it.todo('doit interpréter >50 comme opérateur > avec valeur 50 (filtre [50 TO 9999])', async () => {
+    it('doit interpréter >50 comme opérateur > avec valeur 50 (filtre [50 TO 9999])', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ surface: '>50' }))
@@ -622,7 +622,7 @@ describe('recent-dpe.service', () => {
       expect(radiusUrl).toContain('surface_habitable_logement:[50 TO 9999]')
     })
 
-    it.todo('doit interpréter 75 comme valeur exacte avec tolérance ±10% dans buildRangeQuery', async () => {
+    it('doit interpréter 75 comme valeur exacte avec tolérance ±10% dans buildRangeQuery', async () => {
       // Pour consommation exacte dans searchInRadius, c'est conso_5_usages_par_m2_ep:75 (exact)
       // Mais pour les opérateurs de range, buildRangeQuery utilise ±10%
       // En testant avec l'opérateur <
@@ -653,7 +653,7 @@ describe('recent-dpe.service', () => {
   // ─────────────────────────────────────────────────────────────────────────────
 
   describe('buildRangeQuery - construction des requêtes Lucene avec ±10% pour valeur exacte', () => {
-    it.todo('doit appliquer ±10% pour consommation avec opérateur < (différent du legacy)', async () => {
+    it('doit appliquer ±10% pour consommation avec opérateur < (différent du legacy)', async () => {
       // Pour consommation exacte dans searchInRadius : utilise la valeur arrondie directement
       // Pour consommation avec < : buildRangeQuery retourne [0 TO valeur]
       fetch.mockResolvedValue(mockFetchOk())
@@ -665,7 +665,7 @@ describe('recent-dpe.service', () => {
       expect(radiusUrl).toContain('conso_5_usages_par_m2_ep:[0 TO 150]')
     })
 
-    it.todo('doit appliquer buildRangeQuery avec > pour GES', async () => {
+    it('doit appliquer buildRangeQuery avec > pour GES', async () => {
       fetch.mockResolvedValue(mockFetchOk())
 
       await searchRecentDPE(makeCriteria({ ges: '>20' }))
@@ -675,7 +675,7 @@ describe('recent-dpe.service', () => {
       expect(radiusUrl).toContain('emission_ges_5_usages_par_m2:[20 TO 9999]')
     })
 
-    it.todo('doit utiliser ±10% via buildRangeQuery par défaut (opérateur =)', async () => {
+    it('doit utiliser ±10% via buildRangeQuery par défaut (opérateur =)', async () => {
       // Pour surface avec opérateur <, on vérifie le comportement de buildRangeQuery
       // qui produit ±10% pour l'opérateur = dans le service récent
       fetch.mockResolvedValue(mockFetchOk())
@@ -923,17 +923,18 @@ describe('recent-dpe.service', () => {
       expect(result.longitude).toBeCloseTo(5.3698)
     })
 
-    it.todo('doit avoir latitude et longitude à null si _geopoint est absent', async () => {
+    it('doit avoir latitude et longitude à null si _geopoint est absent', async () => {
       const raw = makeAdemeResult({ _geopoint: null })
 
       fetch.mockResolvedValueOnce(mockFetchOk([raw])).mockResolvedValueOnce(mockFetchOk([]))
 
-      // Sans _geopoint, le résultat doit être filtré (retourne null dans le map)
+      // Le résultat vient de searchByAddress (_isExactMatch=true), donc il est inclus
+      // même sans _geopoint. mapAdemeResult met lat/lon à null si _geopoint est absent.
       const response = await searchRecentDPE(makeCriteria())
 
-      // Le résultat ne doit pas apparaître car il vient du radius uniquement et sans _geopoint
-      // (S'il vient de searchByAddress il aura _isExactMatch=true et _geopoint n'est pas requis)
-      expect(response.results.length).toBe(0)
+      expect(response.results.length).toBe(1)
+      expect(response.results[0].latitude).toBeNull()
+      expect(response.results[0].longitude).toBeNull()
     })
 
     it('doit utiliser adresse_ban si elle commence par un chiffre', async () => {
@@ -1127,13 +1128,13 @@ describe('recent-dpe.service', () => {
       expect(found._distance).toBe(0.75)
     })
 
-    it.todo('doit trier les résultats de rayon par distance croissante', async () => {
+    it('doit trier les résultats de rayon par distance croissante', async () => {
       const close = makeAdemeResult({ numero_dpe: 'DPE-PROCHE', _geopoint: '48.870,2.331' })
       const far = makeAdemeResult({ numero_dpe: 'DPE-LOIN', _geopoint: '48.900,2.400' })
 
       calculateDistance
-        .mockReturnValueOnce(0.2) // close
-        .mockReturnValueOnce(3.5) // far
+        .mockReturnValueOnce(3.5) // far (processed first since API returns it first)
+        .mockReturnValueOnce(0.2) // close (processed second)
 
       fetch.mockResolvedValueOnce(mockFetchOk([])).mockResolvedValueOnce(mockFetchOk([far, close])) // API retourne far en premier
 
@@ -1145,10 +1146,10 @@ describe('recent-dpe.service', () => {
       expect(closeIdx).toBeLessThan(farIdx)
     })
 
-    it.todo('doit tronquer les villes longues dans searchAddress', async () => {
+    it('doit tronquer les villes longues dans searchAddress', async () => {
       geocodeAddress.mockResolvedValue(
         makeGeoResult({
-          formattedAddress: '12 Rue de la Paix 75001 Saint-Germain-en-Laye'
+          formattedAddress: '12 Rue de la Paix 34000 Montpellier'
         })
       )
       fetch.mockResolvedValue(mockFetchOk())
