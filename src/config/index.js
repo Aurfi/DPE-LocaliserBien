@@ -1,9 +1,7 @@
 // Configuration de l'application
 export const config = {
   api: {
-    ademe:
-      import.meta.env.VITE_ADEME_API_URL ||
-      'https://data.ademe.fr/data-fair/api/v1/datasets/dpe-v2-logements-existants/lines',
+    ademe: import.meta.env.VITE_ADEME_API_URL || 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines',
     geo: import.meta.env.VITE_GEO_API_URL || 'https://data.geopf.fr/geocodage'
   },
   app: {

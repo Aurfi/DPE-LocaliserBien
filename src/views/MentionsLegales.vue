@@ -20,7 +20,7 @@
           <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Mentions Légales</h1>
         </div>
         <p class="text-lg text-gray-600 dark:text-gray-400">
-          Dernière mise à jour : Septembre 2025
+          Dernière mise à jour : Avril 2026
         </p>
       </div>
 
