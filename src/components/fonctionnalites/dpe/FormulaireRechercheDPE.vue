@@ -92,7 +92,7 @@
           <!-- Consommation énergétique (en troisième) -->
           <div class="w-full md:flex-1 md:min-w-[140px]">
             <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-              Consommation énergétique (kWh/m²/an)
+              Consommation énergétique
             </label>
             <div class="relative">
               <input 
