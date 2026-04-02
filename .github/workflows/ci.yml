@@ -38,8 +38,29 @@ jobs:
     
     - name: 🏗️ Build project
       run: |
-        # Copy example env file for build
-        cp .env.example .env
+        cat > .env << 'ENVEOF'
+        VITE_SITE_URL=https://localiserbien.fr
+        VITE_SITE_NAME=LocaliserBien
+        VITE_SITE_DOMAIN=localiserbien.fr
+        VITE_CONTACT_EMAIL=contact@localiserbien.fr
+        VITE_GITHUB_URL=https://github.com/Aurfi/DPE-LocaliserBien
+        VITE_DIRECTOR_NAME=AurFi
+        VITE_TWITTER_HANDLE=@Aurfi
+        VITE_ADEME_API_URL=https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines
+        VITE_GEO_API_URL=https://data.geopf.fr/geocodage
+        VITE_APP_TITLE=Localisateur de bien immobilier - Trouvez l'adresse d'un bien
+        VITE_APP_DESCRIPTION=Service gratuit de localisation de biens immobiliers en France. Retrouvez l'adresse exacte d'une annonce à partir des données DPE publiques.
+        VITE_APP_KEYWORDS=localisation bien immobilier,DPE,adresse bien,recherche immobilier,diagnostic performance énergétique,France,localiser bien
+        VITE_OG_TITLE=LocaliserBien - Trouvez l'adresse de n'importe quel bien immobilier
+        VITE_OG_DESCRIPTION=Service gratuit de localisation de biens immobiliers en France à partir des données DPE publiques.
+        VITE_TWITTER_TITLE=LocaliserBien - Trouvez l'adresse d'un bien immobilier
+        VITE_TWITTER_DESCRIPTION=Service gratuit de localisation de biens immobiliers en France à partir des données DPE publiques.
+        VITE_HOST_NAME=OVH
+        VITE_HOST_ADDRESS=2 rue Kellermann, 59100 Roubaix, France
+        VITE_ENABLE_ANALYTICS=false
+        VITE_FANCY_UI=false
+        VITE_DEV_PORT=3000
+        ENVEOF
         npm run build
       env:
         CI: true
