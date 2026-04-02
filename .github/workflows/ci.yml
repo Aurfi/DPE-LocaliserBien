@@ -58,7 +58,7 @@ jobs:
         VITE_HOST_NAME=OVH
         VITE_HOST_ADDRESS=2 rue Kellermann, 59100 Roubaix, France
         VITE_ENABLE_ANALYTICS=false
-        VITE_FANCY_UI=false
+        VITE_FANCY_UI=true
         VITE_DEV_PORT=3000
         ENVEOF
         npm run build
