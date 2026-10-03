@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import PropertyModal from '../fonctionnalites/recherche/ModaleProprietee.vue'
 
 // Mock des icônes Lucide Vue
@@ -33,7 +33,7 @@ describe('PropertyModal', () => {
     surface: 100,
     matchScore: 95,
     energyClass: 'D',
-    mapUrl: 'https://maps.google.com/test',
+    mapUrl: 'https://maps.google.com/maps?q=48.8566,2.3522&output=embed&z=18&t=k',
     geoportailUrl: 'https://geoportail.gouv.fr/test',
     propertyType: 'Appartement',
     floor: '2',
@@ -73,6 +73,8 @@ describe('PropertyModal', () => {
     })
   })
 
+  afterEach(() => wrapper.unmount())
+
   // Tests de rendu du composant
   describe('Rendu du composant', () => {
     it('affiche le composant quand la propriété est fournie', () => {
@@ -100,11 +102,50 @@ describe('PropertyModal', () => {
       }
     })
 
-    it('ne charge aucune carte intégrée même quand une URL est fournie', () => {
-      expect(wrapper.find('iframe').exists()).toBe(false)
+    it('affiche automatiquement un aperçu nommé sans transmettre la page référente', () => {
+      const frame = wrapper.get('iframe')
+      expect(frame.attributes('src')).toBe(defaultProps.mapUrl)
+      expect(frame.attributes('title')).toBe('Vue satellite de 123 Rue de la Paix')
+      expect(frame.attributes('loading')).toBe('lazy')
+      expect(frame.attributes('referrerpolicy')).toBe('no-referrer')
       const link = wrapper.findAll('a').find(link => link.text().includes('Voir sur Maps'))
       expect(link.attributes('target')).toBe('_blank')
       expect(link.attributes('rel')).toBe('noopener noreferrer')
+    })
+
+    it('conserve le lien de secours pendant le chargement et après un échec de la carte', async () => {
+      const fallback = wrapper.get('[data-map-preview] a')
+      expect(fallback.attributes('href')).toContain('https://www.google.com/maps/search/')
+      expect(fallback.attributes('target')).toBe('_blank')
+      expect(fallback.attributes('rel')).toBe('noopener noreferrer')
+      await wrapper.get('iframe').trigger('error')
+      expect(fallback.exists()).toBe(true)
+      await wrapper.get('iframe').trigger('load')
+      expect(fallback.exists()).toBe(true)
+      // A cross-origin load event does not prove the provider rendered a map.
+      expect(wrapper.text()).not.toContain('Carte chargée')
+    })
+
+    it('retire la carte en fermant et la recrée pour une autre sélection', async () => {
+      const original = wrapper.get('iframe').element
+      await wrapper.setProps({ property: null })
+      expect(wrapper.find('iframe').exists()).toBe(false)
+      const nextUrl = 'https://maps.google.com/maps?q=43.2965,5.3698&output=embed&z=18&t=k'
+      await wrapper.setProps({ property: {}, mapUrl: nextUrl, formattedAddress: 'Marseille' })
+      expect(wrapper.get('iframe').attributes('src')).toBe(nextUrl)
+      expect(wrapper.get('iframe').attributes('title')).toBe('Vue satellite de Marseille')
+      expect(wrapper.get('iframe').element).not.toBe(original)
+    })
+
+    it('ne conserve pas la carte du bien précédent quand la nouvelle sélection change', async () => {
+      const original = wrapper.get('iframe').element
+      const nextUrl = 'https://maps.google.com/maps?q=Lyon&output=embed&z=18&t=k'
+      await wrapper.setProps({ property: {}, mapUrl: nextUrl, formattedAddress: 'Lyon' })
+      expect(wrapper.get('iframe').attributes('src')).toBe(nextUrl)
+      expect(wrapper.get('iframe').element).not.toBe(original)
+      await wrapper.setProps({ mapUrl: '' })
+      expect(wrapper.find('iframe').exists()).toBe(false)
+      expect(wrapper.findAll('a').find(link => link.text() === 'Voir sur Maps')).toBeDefined()
     })
 
     it('affiche la section des caractéristiques', () => {
@@ -257,6 +298,31 @@ describe('PropertyModal', () => {
     })
   })
 
+  describe('Contexte du diagnostic', () => {
+    it.each(['isLegacyData', 'fromLegacy'])(
+      'garde la mention ancien diagnostic visible sans modifier sa classe publiée : %s',
+      async legacyFlag => {
+        await wrapper.setProps({
+          property: { ...defaultProps.property, [legacyFlag]: true },
+          matchScore: null,
+          energyClass: 'A',
+          diagnosisDate: '15 juin 2015'
+        })
+        const legacy = wrapper.get('[data-legacy-dpe]')
+        expect(legacy.text()).toBe('DPE ancien')
+        expect(legacy.classes()).not.toContain('hidden')
+        expect(wrapper.text()).toContain('Classe A')
+        expect(wrapper.text()).toContain('15 juin 2015')
+        await wrapper.setProps({ property: { ...defaultProps.property, isLegacyData: false } })
+        expect(wrapper.find('[data-legacy-dpe]').exists()).toBe(false)
+      }
+    )
+
+    it('ne répète pas l’avertissement complet de la liste dans la fiche', () => {
+      expect(wrapper.find('[data-score-explanation]').exists()).toBe(false)
+    })
+  })
+
   // Tests d'affichage de la classe énergétique
   describe('Affichage de la classe énergétique', () => {
     it('affiche la bonne couleur pour la classe A', async () => {
@@ -351,6 +417,15 @@ describe('PropertyModal', () => {
       expect(dvfLink).toBeUndefined()
     })
 
+    it('utilise les coordonnées réelles en secours sans inventer une adresse', async () => {
+      await wrapper.setProps({ formattedAddress: undefined, commune: undefined })
+      expect(wrapper.get('[data-map-preview] a').attributes('href')).toContain('query=48.8566,2.3522')
+      await wrapper.setProps({ property: { _geopoint: '43.2965,5.3698' } })
+      expect(wrapper.get('[data-map-preview] a').attributes('href')).toContain('query=43.2965,5.3698')
+      await wrapper.setProps({ property: {} })
+      expect(wrapper.get('[data-map-preview] a').attributes('href')).toBe('https://www.google.com/maps')
+    })
+
     it("utilise l'adresse formatée pour le lien Google Maps", () => {
       const mapLinks = wrapper.findAll('a')
       const mapLink = mapLinks.find(link => link.text().includes('Voir sur Maps'))
@@ -387,7 +462,7 @@ describe('PropertyModal', () => {
 
     it('affiche toutes les sections quand toutes les données sont fournies', () => {
       // Vérifier que toutes les sections principales sont présentes
-      expect(wrapper.find('iframe').exists()).toBe(false) // Maps opens only through the external link
+      expect(wrapper.find('iframe').exists()).toBe(true)
       expect(wrapper.text()).toContain('Caractéristiques') // Caractéristiques
       expect(wrapper.text()).toContain('Performance énergétique') // Performance
       const mapLinks = wrapper.findAll('a')

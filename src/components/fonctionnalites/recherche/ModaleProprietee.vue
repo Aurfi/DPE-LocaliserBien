@@ -30,15 +30,21 @@
             >
               Voir sur Maps
             </a>
+            <span v-if="property.isLegacyData || property.fromLegacy" class="text-gray-400 dark:text-gray-500">•</span>
+            <span v-if="property.isLegacyData || property.fromLegacy" data-legacy-dpe class="font-medium text-amber-700 dark:text-amber-300" title="Méthode antérieure à juillet 2021">DPE ancien</span>
             <!-- Score - masqué sur mobile -->
-            <span v-if="matchScore" class="hidden sm:inline text-gray-400 dark:text-gray-500">•</span>
-            <span v-if="matchScore" :class="getScoreBadgeClass(matchScore)" :aria-label="`Score de similarité : ${Math.round(matchScore)} sur 100`" class="score-badge hidden sm:inline-block whitespace-nowrap px-2 py-0.5 rounded text-xs font-bold">
-              Score {{ Math.round(matchScore) }}/100
-            </span>
-            <span v-else-if="energyClass" class="hidden sm:inline text-gray-400 dark:text-gray-500">•</span>
-            <span v-else-if="energyClass" :class="getClasseColor(energyClass)" class="hidden sm:inline-block px-2 py-0.5 rounded text-xs font-bold">
-              Classe {{ energyClass }}
-            </span>
+            <template v-if="matchScore">
+              <span class="hidden sm:inline text-gray-400 dark:text-gray-500">•</span>
+              <span :class="getScoreBadgeClass(matchScore)" :aria-label="`Score de similarité : ${Math.round(matchScore)} sur 100`" class="score-badge hidden sm:inline-block whitespace-nowrap px-2 py-0.5 rounded text-xs font-bold">
+                Score {{ Math.round(matchScore) }}/100
+              </span>
+            </template>
+            <template v-else-if="energyClass">
+              <span class="hidden sm:inline text-gray-400 dark:text-gray-500">•</span>
+              <span :class="getClasseColor(energyClass)" class="hidden sm:inline-block px-2 py-0.5 rounded text-xs font-bold">
+                Classe {{ energyClass }}
+              </span>
+            </template>
           </div>
         </div>
         <!-- Bouton fermer - toujours visible et avec une taille minimum garantie -->
@@ -55,20 +61,37 @@
       
       <!-- Contenu de la modal -->
       <div class="p-4 space-y-4 bg-gray-50 dark:bg-gray-900 overflow-y-auto" style="max-height: calc(85vh - 100px);">
-        <p v-if="matchScore" data-score-explanation class="text-sm text-gray-600 dark:text-gray-400">
-          Le score de similarité compare les critères saisis. Même à 100/100, il ne confirme pas l’identité du bien.
-        </p>
+        <!-- La carte ne se monte qu’à l’ouverture de la fiche du bien. -->
+        <section v-if="mapUrl" data-map-preview class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700" aria-label="Localisation du bien">
+          <div class="flex flex-wrap items-center justify-between gap-2 p-3">
+            <h4 class="text-base font-semibold text-gray-900 dark:text-gray-100">Aperçu Google Maps</h4>
+            <a
+              :href="getGoogleMapsUrl()"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Ouvrir Google Maps dans un nouvel onglet"
+              class="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
+            >
+              Ouvrir dans Maps
+            </a>
+          </div>
+          <iframe
+            :key="mapUrl"
+            :src="mapUrl"
+            :title="`Vue satellite de ${formattedAddress || commune || 'ce bien'}`"
+            class="block w-full"
+            style="height: clamp(240px, 42vh, 350px); border: 0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          ></iframe>
+        </section>
         <!-- Informations sur le bien -->
         <div class="grid md:grid-cols-2 gap-4">
           <!-- Informations principales -->
           <div class="bg-white dark:bg-gray-800 rounded-xl p-3  border border-gray-200 dark:border-gray-700">
             <h4 class="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-5 0H3m2 0h-2M9 7h6m-6 4h6m-6 4h6"></path>
-                </svg>
-                Caractéristiques
-              </span>
+              <span>Caractéristiques</span>
               <a 
                 v-if="geoportailUrl"
                 :href="geoportailUrl"
@@ -116,12 +139,7 @@
           <!-- Performance énergétique -->
           <div class="bg-white dark:bg-gray-800 rounded-xl p-3  border border-gray-200 dark:border-gray-700">
             <h4 class="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
-              <span class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-                Performance énergétique
-              </span>
+              <span>Performance énergétique</span>
               <button
                 @click="$emit('show-details')"
                 class="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-normal flex items-center gap-1 transition-colors"
@@ -168,6 +186,11 @@
 import { ExternalLink } from 'lucide-vue-next'
 import { useModalLayer } from '../../../composables/useModalLayer.js'
 import { formatYearDisplay } from '../../../utils/formateursDPE.js'
+import {
+  getGoogleMapsSearchUrl,
+  getLatitudeFromGeopoint,
+  getLongitudeFromGeopoint
+} from '../../../utils/utilsCartes.js'
 
 export default {
   name: 'ModaleProprietee',
@@ -262,12 +285,14 @@ export default {
     },
 
     getGoogleMapsUrl() {
-      if (!this.property) return '#'
-
-      // Construire l'URL Google Maps avec l'adresse
-      const address = `${this.formattedAddress}, ${this.commune}`
-      const query = encodeURIComponent(address)
-      return `https://www.google.com/maps/search/?api=1&query=${query}`
+      const address = [this.formattedAddress, this.commune]
+        .filter(value => typeof value === 'string' && value.trim())
+        .join(', ')
+      return getGoogleMapsSearchUrl(
+        this.property?.latitude ?? getLatitudeFromGeopoint(this.property?._geopoint),
+        this.property?.longitude ?? getLongitudeFromGeopoint(this.property?._geopoint),
+        address
+      )
     }
   }
 }

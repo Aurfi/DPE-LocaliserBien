@@ -24,8 +24,13 @@ afterEach(() => {
   vi.unstubAllGlobals()
 })
 
-async function renderMappedSurface(surface) {
-  const raw = { numero_dpe: 'sparse', adresse_ban: '12 rue du Test 75001 Paris', surface_habitable_logement: surface }
+async function renderMappedSurface(surface, fields = {}) {
+  const raw = {
+    numero_dpe: 'sparse',
+    adresse_ban: '12 rue du Test 75001 Paris',
+    surface_habitable_logement: surface,
+    ...fields
+  }
   fetch
     .mockResolvedValueOnce({ ok: true, json: async () => ({ results: [raw] }) })
     .mockResolvedValueOnce({ ok: true, json: async () => ({ results: [] }) })
@@ -56,12 +61,48 @@ describe('recent DPE sparse API rows through real service mapping and dialogs', 
   it.each([
     [0, 0],
     ['0', 0],
-    [65.4, 65],
-    ['65.7', 66]
-  ])('preserves a known source surface %s as %s in cards and dialogs', async (surface, rounded) => {
+    [65.4, 65.4],
+    ['65.7', 65.7]
+  ])('preserves a known source surface %s as %s in cards and dialogs', async (surface, exact) => {
     const { card } = await renderMappedSurface(surface)
-    expect(card.props('surface')).toBe(rounded)
+    expect(card.props('surface')).toBe(exact)
     await card.trigger('click')
-    expect(wrapper.get('[role="dialog"]').text()).toContain(`${rounded}m²`)
+    expect(wrapper.get('[role="dialog"]').text()).toContain(`${exact}m²`)
   })
+})
+
+describe('nearby card and dialog retain the diagnostic source fields', () => {
+  it('keeps fractional surface and establishment date when the visit was on a different day', async () => {
+    const { card, mapped } = await renderMappedSurface(65.9, {
+      date_etablissement_dpe: '2024-05-12',
+      date_visite_diagnostiqueur: '2024-05-07'
+    })
+    expect(mapped.surfaceHabitable).toBe(65.9)
+    expect(mapped.dateVisite).toBe('2024-05-12')
+    expect(card.props('surface')).toBe(65.9)
+    expect(card.text()).toContain('65.9 m²')
+    expect(card.props('dateTooltip')).toBe('12 mai 2024')
+    await card.trigger('click')
+    const dialog = wrapper.get('[data-modal-layer="property"]')
+    expect(dialog.text()).toContain('65.9m²')
+    expect(dialog.text()).toContain('12 mai 2024')
+    expect(dialog.text()).not.toContain('7 mai 2024')
+  })
+
+  it.each([undefined, null, '', 'invalid'])(
+    'does not relabel a visit date as the diagnostic date when establishment is %j',
+    async date => {
+      const { card, mapped } = await renderMappedSurface(null, {
+        date_etablissement_dpe: date,
+        date_visite_diagnostiqueur: '2024-05-07'
+      })
+      expect(mapped.date_visite_diagnostiqueur).toBe('2024-05-07')
+      expect(card.props('dateTooltip')).toBeNull()
+      await card.trigger('click')
+      const dialog = wrapper.get('[data-modal-layer="property"]')
+      expect(dialog.text()).toContain('Surface non renseignée')
+      expect(dialog.text()).not.toContain('Date du diagnostic')
+      expect(dialog.text()).not.toContain('7 mai 2024')
+    }
+  )
 })

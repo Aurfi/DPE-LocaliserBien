@@ -29,13 +29,13 @@ const fixture = (template, script = '', css = '.known { color: red }') =>
     ['src/styles/app-components.css', css]
   ])
 
-test('the application has 38 finite class bindings across 10 files, including every helper output and prop source', () => {
+test('the application has 34 finite class bindings across 10 files, including every helper output and prop source', () => {
   const result = analyzeClasses(baseline)
   assert.deepEqual(result.errors, [])
   assert.equal(result.components, 32)
   assert.equal(result.retainedClasses, 528)
   const dynamic = result.bindings.filter(binding => binding.kind === 'dynamic')
-  assert.equal(dynamic.length, 38)
+  assert.equal(dynamic.length, 34)
   assert.equal(new Set(dynamic.map(binding => binding.file)).size, 10)
   const status = dynamic.find(binding => binding.file === header && binding.source === 'statusClass')
   for (const name of [

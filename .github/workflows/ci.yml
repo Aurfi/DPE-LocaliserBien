@@ -160,6 +160,32 @@ jobs:
       run: node scripts/pwa/provenance.mjs record
     - name: Test real installation, open-tab upgrade, cleanup and offline boundaries
       run: npm run test:pwa
+    - name: Test page copy, mobile filters and inline-map lifecycle
+      run: npx --no-install playwright test e2e/map-preview.spec.js e2e/product-pages.spec.js --project=chromium --retries=0 --output=test-results/ui
+      env:
+        PLAYWRIGHT_HTML_OUTPUT_DIR: playwright-report/ui
+        PLAYWRIGHT_HTML_OPEN: never
+        # Vite preview validates config metadata; it serves the downloaded build unchanged.
+        VITE_SITE_URL: "https://localiserbien.fr"
+        VITE_SITE_NAME: "LocaliserBien"
+        VITE_APP_TITLE: "LocaliserBien - Recherchez des correspondances DPE"
+        VITE_APP_DESCRIPTION: "Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien."
+        VITE_APP_KEYWORDS: "localisation bien immobilier,DPE,adresse bien,recherche immobilier,diagnostic performance énergétique,France,localiser bien"
+        VITE_OG_TITLE: "LocaliserBien - Recherchez des correspondances DPE"
+        VITE_OG_DESCRIPTION: "Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien."
+        VITE_TWITTER_TITLE: "LocaliserBien - Recherchez des correspondances DPE"
+        VITE_TWITTER_DESCRIPTION: "Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien."
+    - name: Retain product browser evidence even on failure
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: product-browser-evidence
+        path: |
+          test-results/ui/
+          test-results/e2e-results.json
+          test-results/e2e-junit.xml
+          playwright-report/ui/
+        retention-days: 14
     - name: Retain PWA browser evidence even on failure
       if: always()
       uses: actions/upload-artifact@v4

@@ -96,6 +96,7 @@
 <script>
 import { Search, X } from 'lucide-vue-next'
 import { useModalLayer } from '../../../composables/useModalLayer.js'
+import { finiteNonNegativeNumber } from '../../../utils/dpeConsumptionDetails.js'
 
 export default {
   name: 'DonneesBrutesModal',
@@ -131,18 +132,20 @@ export default {
     // Champs importants à toujours afficher en haut
     importantFields() {
       const fields = []
-      const data = this.getAllData()
+      const data = this.dpeData?.rawData ?? this.getAllData()
 
       // DPE et GES
       const dpeClass = data.etiquette_dpe || data.classeDPE || data.classe_consommation_energie
       const gesClass = data.etiquette_ges || data.classeGES || data.classe_estimation_ges
-      const conso = data.conso_5_usages_par_m2_ep || data.consommationEnergie || data.consommation_energie
-      const ges = data.emission_ges_5_usages_par_m2 || data.emissionGES || data.estimation_ges
+      const conso = data.conso_5_usages_par_m2_ep ?? data.consommationEnergie ?? data.consommation_energie
+      const ges = data.emission_ges_5_usages_par_m2 ?? data.emissionGES ?? data.estimation_ges
 
       if (dpeClass) fields.push({ key: 'classe_dpe', label: 'Classe DPE', value: dpeClass })
-      if (conso) fields.push({ key: 'consommation', label: 'Consommation', value: `${Math.round(conso)} kWh/m²/an` })
+      if (finiteNonNegativeNumber(conso) !== null)
+        fields.push({ key: 'consommation', label: 'Consommation', value: `${conso} kWh/m²/an` })
       if (gesClass) fields.push({ key: 'classe_ges', label: 'Classe GES', value: gesClass })
-      if (ges) fields.push({ key: 'emissions', label: 'Émissions GES', value: `${Math.round(ges)} kg CO₂/m²/an` })
+      if (finiteNonNegativeNumber(ges) !== null)
+        fields.push({ key: 'emissions', label: 'Émissions GES', value: `${ges} kg CO₂/m²/an` })
 
       return fields
     },
@@ -232,7 +235,7 @@ export default {
       const mappedData = { ...this.dpeData }
       delete mappedData.rawData // Éviter la duplication
 
-      return { ...rawData, ...mappedData }
+      return { ...mappedData, ...rawData }
     },
 
     formatValue(value) {

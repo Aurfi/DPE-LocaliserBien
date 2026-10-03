@@ -27,7 +27,8 @@ test('searches fractional criteria and closes nested dialogs with keyboard focus
   await details.click()
   await expect(page.getByRole('dialog')).toHaveCount(1)
   await expect(page.getByRole('dialog').locator('[data-construction-year]')).toHaveText('Inconnue')
-  await expect(page.locator('iframe')).toHaveCount(0)
+  await expect(page.locator('iframe')).toHaveCount(1)
+  await expect(page.locator('iframe')).toHaveAttribute('referrerpolicy', 'no-referrer')
   await page.getByRole('button', { name: 'Détails complets', exact: true }).click()
   await expect(page.locator('[role="dialog"]')).toHaveCount(2)
   await expect(page.getByRole('dialog')).toHaveCount(1) // Only the top layer is exposed.

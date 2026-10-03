@@ -1,320 +1,234 @@
 <template>
-  <div>
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
+  <article class="information-page">
+    <router-link to="/" class="information-back quiet-link">Revenir à la recherche</router-link>
 
-      <!-- Bouton retour -->
-      <div class="mb-8">
-        <router-link
-          to="/"
-          class="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800  rounded-lg   transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium  border border-white/50 dark:border-gray-700/50"
-        >
+    <header class="information-header">
+      <h1 class="search-heading">Guide et informations</h1>
+      <p>Deux façons de rechercher un bien dans les données DPE. Gratuit, sans compte.</p>
+    </header>
 
-          Accueil
-        </router-link>
-      </div>
-
-      <!-- En-tête -->
-      <div class="mb-8">
-        <div class="mb-3">
-
-          <h1 class="text-2xl font-semibold text-gray-900 dark:text-white">Informations</h1>
+    <section class="information-guide" aria-labelledby="guide-annonce">
+      <h2 id="guide-annonce">Retrouver un bien à partir d’une annonce</h2>
+      <p>Dans l’onglet <strong>Trouver un bien</strong>, recopiez les informations de l’annonce.</p>
+      <dl class="information-criteria">
+        <div>
+          <dt>Commune et surface</dt>
+          <dd>La ville ou le code postal, puis la surface en m².</dd>
         </div>
-        <p class="text-base text-gray-600 dark:text-gray-400">
-          Guide d'utilisation et informations pratiques
-        </p>
-      </div>
+        <div>
+          <dt>Consommation</dt>
+          <dd>La valeur en kWh/m²/an, près de l’étiquette DPE. Si seule une lettre est indiquée, choisissez sa classe de A à G.</dd>
+        </div>
+        <div>
+          <dt>Pour affiner</dt>
+          <dd>Ajoutez le type de bien et, si vous les connaissez, les GES en kgCO₂/m²/an ou la classe climat. Ces critères sont facultatifs.</dd>
+        </div>
+      </dl>
+      <p>Cliquez sur <strong>Localiser</strong>, puis comparez les résultats avec l’annonce.</p>
+      <p class="information-example">Exemple : Marseille 13008 · 65 m² · 173 kWh/m²/an.</p>
+    </section>
 
-      <!-- Questions et Réponses -->
-      <div class="space-y-6">
+    <section class="information-section" aria-labelledby="guide-proximite">
+      <h2 id="guide-proximite">Explorer les biens à proximité</h2>
+      <p>Dans <strong>Biens à proximité</strong>, saisissez une adresse, choisissez un rayon et une période. Vous pouvez affiner par surface, type de bien, consommation ou GES.</p>
+      <p>Vérifiez l’adresse retenue en tête des résultats. Un DPE récent ne signifie pas que le logement est en vente ou en location.</p>
+    </section>
 
-        <!-- Guide d'utilisation -->
-        <div class="bg-white dark:bg-gray-800 rounded-xl  p-5 sm:p-7 border border-gray-200 dark:border-gray-700">
-          <h2 class="flex items-center text-2xl font-bold text-gray-900 dark:text-white mb-6">
+    <section id="resultats" class="information-section" aria-labelledby="guide-resultats">
+      <h2 id="guide-resultats">Lire les résultats</h2>
+      <p>Plusieurs biens peuvent correspondre. Comparez la surface, les valeurs DPE, le type de bien et la date du diagnostic avec l’annonce.</p>
+      <p>Le score mesure la proximité des critères, pas une probabilité d’identification. La carte aide à situer un résultat, sans confirmer qu’il s’agit du bien recherché.</p>
+    </section>
 
-            Guide d'utilisation
-          </h2>
-
-          <div class="space-y-6">
-            <!-- Étape 1: Qu'est-ce qu'un DPE -->
-            <div class="bg-white dark:bg-gray-700/80 rounded-lg p-5">
-              <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-3 flex items-center">
-                <span class="bg-blue-600 text-white rounded-full w-7 h-7 flex items-center justify-center mr-3 text-sm font-bold">1</span>
-                Qu'est-ce qu'un DPE ?
-              </h3>
-              <p class="text-gray-600 dark:text-gray-400 mb-4">
-                Le <strong>DPE (Diagnostic de Performance Énergétique)</strong> classe un logement de A à G.
-                Depuis juillet 2021, la note tient compte de sa consommation d’énergie et de ses émissions de gaz à effet de serre.
-                La consommation seule ne suffit donc pas à retrouver sa note officielle.
-              </p>
-              <p class="text-gray-600 dark:text-gray-400 mb-4">
-                Recopiez la valeur ou la classe figurant dans l’annonce. Certaines règles dépendent notamment de la surface du logement et de la date du diagnostic.
-                Une attestation officielle peut aussi actualiser une ancienne étiquette.
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-400">
-                En 2026, le coefficient de conversion de l’électricité est passé de 2,3 à 1,9. Ne convertissez pas vous-même la consommation totale de l’annonce : elle peut combiner plusieurs énergies.
-                <a href="https://www.ecologie.gouv.fr/actualites/evolutions-du-calcul-du-dpe-reponses-vos-questions" target="_blank" rel="noopener noreferrer" class="quiet-link underline">Explications officielles sur l’évolution du DPE</a>.
-              </p>
-            </div>
-
-            <!-- Étape 2: Où trouver les infos -->
-            <div class="bg-white dark:bg-gray-700/80 rounded-lg p-5">
-              <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-3 flex items-center">
-                <span class="bg-blue-600 text-white rounded-full w-7 h-7 flex items-center justify-center mr-3 text-sm font-bold">2</span>
-                Où trouver ces informations sur une annonce ?
-              </h3>
-              <p class="text-gray-600 dark:text-gray-400 mb-3">
-                Sur les sites d'annonces immobilières, recherchez :
-              </p>
-              <ul class="space-y-2 text-gray-600 dark:text-gray-400">
-                <li class="flex items-start">
-                  <MapPin class="w-5 h-5 mr-2 text-blue-500 mt-0.5 flex-shrink-0" />
-                  <span><strong>La ville ou le code postal</strong> du bien</span>
-                </li>
-                <li class="flex items-start">
-                  <Maximize2 class="w-5 h-5 mr-2 text-green-500 mt-0.5 flex-shrink-0" />
-                  <span><strong>La surface habitable</strong> en m² (ex: 65m²)</span>
-                </li>
-                <li class="flex items-start">
-                  <Zap class="w-5 h-5 mr-2 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span><strong>La consommation énergétique</strong> en kWh/m²/an (ex: 173 kWh/m²/an)</span>
-                </li>
-              </ul>
-              <div class="mt-4 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl border border-blue-200 dark:border-blue-700">
-                <p class="text-sm text-blue-700 dark:text-blue-300">
-                  <strong>💡 Astuce :</strong> Ces informations sont souvent affichées avec l'étiquette énergie colorée (de A en vert à G en rouge).
-                </p>
-              </div>
-            </div>
-
-            <!-- Étape 3: Comment rechercher -->
-            <div class="bg-white dark:bg-gray-700/80 rounded-lg p-5">
-              <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-3 flex items-center">
-                <span class="bg-blue-600 text-white rounded-full w-7 h-7 flex items-center justify-center mr-3 text-sm font-bold">3</span>
-                Comment faire votre recherche ?
-              </h3>
-              <ol class="space-y-3 text-gray-600 dark:text-gray-400">
-                <li class="flex items-start">
-                  <span class="font-bold mr-2">1.</span>
-                  <span>Entrez le <strong>code postal</strong> ou sélectionnez la <strong>commune</strong></span>
-                </li>
-                <li class="flex items-start">
-                  <span class="font-bold mr-2">2.</span>
-                  <span>Indiquez la <strong>surface</strong> exacte du bien</span>
-                </li>
-                <li class="flex items-start">
-                  <span class="font-bold mr-2">3.</span>
-                  <span>Renseignez la <strong>consommation énergétique</strong> précise</span>
-                </li>
-                <li class="flex items-start">
-                  <span class="font-bold mr-2">4.</span>
-                  <span>Cliquez sur <strong>"Localiser"</strong></span>
-                </li>
-              </ol>
-              <div class="mt-4 p-3 bg-green-50 dark:bg-green-900/30 rounded-xl border border-green-200 dark:border-green-700">
-                <p class="text-sm text-green-700 dark:text-green-300">
-                  <strong>✅ Résultat :</strong> Le service affiche des biens correspondant aux critères saisis. Comparez leurs caractéristiques avec l’annonce pour affiner votre recherche.
-                </p>
-              </div>
-            </div>
-
-            <!-- Exemple pratique -->
-            <div class="bg-gray-50 dark:bg-gray-900 rounded-lg p-5 border border-indigo-200 dark:border-indigo-700">
-              <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-3">📍 Exemple pratique</h3>
-              <p class="text-gray-600 dark:text-gray-400">
-                Une annonce indique : "Appartement T3 à Marseille 13008, 65m², 173 kWh/m²/an"
-              </p>
-              <p class="text-gray-600 dark:text-gray-400 mt-2">
-                Vous recherchez avec : <strong>13008</strong> • <strong>65m²</strong> • <strong>173 kWh/m²/an</strong>
-              </p>
-              <p class="text-gray-600 dark:text-gray-400 mt-2">
-                → LocaliserBien recherche les diagnostics proches de ces valeurs. Plusieurs biens peuvent correspondre.
-              </p>
-            </div>
+    <section class="information-section" aria-labelledby="guide-questions">
+      <h2 id="guide-questions">Questions utiles</h2>
+      <div class="information-questions">
+        <details>
+          <summary>Pourquoi n’ai-je aucun résultat ?</summary>
+          <div class="information-answer">
+            <p>Vérifiez la commune, la surface et les unités : la consommation est en kWh/m²/an, les GES en kgCO₂/m²/an. Une annonce peut arrondir les valeurs ou afficher une étiquette actualisée.</p>
+            <p>Un diagnostic très récent peut aussi ne pas être encore disponible. Demandez le DPE complet à l’annonceur pour comparer les valeurs.</p>
           </div>
-        </div>
-
-        <!-- Sections techniques (déplacées en bas) -->
-        <div class="mt-12 flex justify-center mb-6">
-          <router-link
-            to="/"
-            class="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800  rounded-lg   transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium  border border-white/50 dark:border-gray-700/50"
-          >
-
-            Accueil
-          </router-link>
-        </div>
-
-        <!-- Fonctionnement technique du service -->
-        <div class="bg-white dark:bg-gray-800  rounded-xl  p-6 border border-white/50 dark:border-gray-700/50">
-          <h3 class="flex items-center text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-
-            Fonctionnement technique du service
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Le service croise les données saisies avec la base nationale de l'ADEME pour identifier les correspondances possibles.
-            <br><br>
-            <strong class="text-green-600 dark:text-green-400">DPE depuis juillet 2021 :</strong> Pour les DPE réalisés <strong>depuis juillet 2021</strong>,
-            les données peuvent inclure une adresse et une géolocalisation. Leur présence ne garantit pas que le résultat soit le bien de l’annonce.
-            <br><br>
-            <strong class="text-blue-600 dark:text-blue-400">ℹ️ DPE anciens :</strong> Le service peut également retrouver des DPE réalisés <strong>avant juillet 2021</strong>,
-            mais avec une fiabilité moindre car certaines données (géolocalisation, adresse précise) peuvent être manquantes.
-            Ces résultats sont signalés avec la mention "DPE Ancien".
-            <br><br>
-            <strong class="text-orange-600 dark:text-orange-400">⚠️ Note :</strong> Selon la réglementation, les DPE réalisés avant le 30 juin 2021 ne sont plus valables depuis le 1er janvier 2025.
-          </p>
-        </div>
-
-        <!-- Question 2 -->
-        <div class="bg-white dark:bg-gray-800  rounded-xl  p-6 border border-white/50 dark:border-gray-700/50">
-          <h3 class="flex items-center text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Target class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Fiabilité des résultats
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            La précision de notre service dépend directement de l'exactitude des données publiées dans les annonces.
-            La combinaison surface + consommation permet de rapprocher des diagnostics de vos critères.
-            Dans les zones denses (immeubles, grandes villes), plusieurs biens peuvent présenter des caractéristiques similaires.
-            Le score indique une proximité entre critères, pas une probabilité d’identification. Une carte peut aider à comparer les lieux, mais ne confirme pas à elle seule le bien.
-          </p>
-        </div>
-
-        <!-- Question 3 -->
-        <div class="bg-white dark:bg-gray-800  rounded-xl  p-6 border border-white/50 dark:border-gray-700/50">
-          <h3 class="flex items-center text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Database class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Sources des données
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Les données proviennent de la base publique officielle des <strong>DPE</strong> de l'<span class="font-semibold text-gray-800 dark:text-gray-200">ADEME</span>
-            (Agence de la transition écologique). La base est officielle ; les diagnostics et adresses peuvent toutefois comporter des erreurs ou des données manquantes.
-          </p>
-        </div>
-
-        <!-- Question 4 -->
-        <div class="bg-white dark:bg-gray-800  rounded-xl  p-6 border border-white/50 dark:border-gray-700/50">
-          <h3 class="flex items-center text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-
-            Gratuité du service
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Le service est entièrement gratuit et sans publicité.
-            Aucune inscription n'est requise pour l'utiliser.
-          </p>
-        </div>
-
-        <!-- Question 5 -->
-        <div class="bg-white dark:bg-gray-800  rounded-xl  p-6 border border-white/50 dark:border-gray-700/50">
-          <h3 class="flex items-center text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <AlertCircle class="w-5 h-5 mr-2 text-orange-500 dark:text-orange-400" />
-            Absence de résultats
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Plusieurs raisons possibles : le DPE est peut-être trop récent (délai de publication),
-            ou les valeurs annoncées ne correspondent pas exactement au document officiel.
-            Vérifiez notamment que les consommations correspondent précisément aux valeurs du DPE.
-          </p>
-        </div>
-
-        <!-- Question 6 -->
-        <div class="bg-white dark:bg-gray-800  rounded-xl  p-6 border border-white/50 dark:border-gray-700/50">
-          <h3 class="flex items-center text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Clock class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Actualisation des données
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Un délai peut exister entre la réalisation, la transmission et la disponibilité d’un diagnostic dans les données consultables.
-            Pour un DPE réalisé très récemment, il est normal qu'il n'apparaisse pas encore.
-          </p>
-        </div>
-
-        <!-- Question 7 -->
-        <div class="bg-white dark:bg-gray-800  rounded-xl  p-6 border border-white/50 dark:border-gray-700/50">
-          <h3 class="flex items-center text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Lock class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Protection de vos données
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Le service fonctionne sans compte utilisateur. L’historique local est facultatif et peut être effacé depuis le site.
-            Les recherches contactent directement l’ADEME et, selon le cas, l’IGN. Les cartes externes ne sont ouvertes que si vous suivez le lien correspondant.
-            Consultez la rubrique Vie privée pour connaître les données échangées et vos possibilités de contrôle.
-          </p>
-        </div>
-
-        <!-- Question 8 -->
-        <div class="bg-white dark:bg-gray-800  rounded-xl  p-6 border border-white/50 dark:border-gray-700/50">
-          <h3 class="flex items-center text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Zap class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Résultats multiples
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Plusieurs biens peuvent correspondre aux critères saisis, particulièrement dans les zones urbaines denses.
-            L'adresse, l'étage et la date du diagnostic permettent d'affiner l'identification.
-            Les résultats sont présentés par ordre de correspondance décroissante.
-          </p>
-        </div>
-
-        <!-- Question 9 -->
-        <div class="bg-white dark:bg-gray-800  rounded-xl  p-6 border border-white/50 dark:border-gray-700/50">
-          <h3 class="flex items-center text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Heart class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Remerciements
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            • Les bibliothèques
-            <a href="https://www.fsf.org/fr" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline"><strong>Open Source</strong></a>
-            utilisées dans ce projet (
-            <a href="https://github.com/vuejs/core" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Vue.js</a>,
-            <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>,
-            <a href="https://github.com/vitejs/vite" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Vite</a>,
-            <a href="https://github.com/lucide-icons/lucide" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Lucide</a>
-            )
-            <br>
-            • L'<a href="https://www.ademe.fr/" target="_blank" rel="noopener noreferrer" class="font-semibold text-gray-800 dark:text-gray-200">ADEME</a> pour la mise à disposition des données DPE
-            <br>
-            • <a href="https://www.data.gouv.fr/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline"><strong>data</strong>gouv*</a>, la plateforme des données publiques françaises
-          </p>
-        </div>
-
+        </details>
+        <details>
+          <summary>Quelle valeur ou classe DPE faut-il saisir ?</summary>
+          <div class="information-answer">
+            <p>Recopiez celle de l’annonce ou du diagnostic. Depuis juillet 2021, la classe DPE tient compte de la consommation et des émissions de gaz à effet de serre. La consommation seule ne suffit donc pas à retrouver la classe officielle.</p>
+            <p>En 2026, le coefficient de conversion de l’électricité est passé de 2,3 à 1,9. Ne convertissez pas vous-même la consommation totale : un logement peut utiliser plusieurs énergies. Une attestation officielle peut actualiser son étiquette.</p>
+            <p><a href="https://www.ecologie.gouv.fr/actualites/evolutions-du-calcul-du-dpe-reponses-vos-questions" target="_blank" rel="noopener noreferrer">Comprendre l’évolution du DPE en 2026</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>D’où viennent les diagnostics ?</summary>
+          <div class="information-answer">
+            <p>Ils proviennent des <a href="https://data.ademe.fr/" target="_blank" rel="noopener noreferrer">données publiques de l’ADEME</a>. Certaines adresses ou caractéristiques peuvent être manquantes ou erronées, notamment dans les anciens diagnostics.</p>
+            <p>Avec son numéro, vous pouvez <a href="https://observatoire-dpe-audit.ademe.fr/" target="_blank" rel="noopener noreferrer">vérifier un DPE et retrouver son attestation sur l’Observatoire de l’ADEME</a>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Mes recherches sont-elles enregistrées ?</summary>
+          <div class="information-answer">
+            <p>L’historique est désactivé par défaut. Vous pouvez l’activer ou l’effacer en bas de page ; il reste enregistré dans votre navigateur.</p>
+            <p>Les recherches interrogent l’ADEME et, selon le mode, l’IGN. Ouvrir la fiche d’un résultat charge une carte Google Maps : Google reçoit la localisation du bien et des informations techniques de connexion.</p>
+            <p><router-link to="/mentions-legales#vie-privee">Consulter les informations sur la vie privée</router-link>.</p>
+          </div>
+        </details>
       </div>
-
-      <!-- Navigation -->
-      <div class="mt-6 text-center">
-        <p class="mb-3 text-xs text-gray-500 dark:text-gray-400">
-          LocaliserBien · Données publiques, accès gratuit
-        </p>
-        <router-link
-          to="/"
-          class="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800  rounded-lg   transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium  border border-white/50 dark:border-gray-700/50"
-        >
-
-          Accueil
-        </router-link>
-      </div>
-    </div>
-  </div>
+    </section>
+  </article>
 </template>
 
 <script>
-import { AlertCircle, Clock, Database, Heart, Lock, MapPin, Maximize2, Target, Zap } from 'lucide-vue-next'
-
 export default {
-  name: 'Informations',
-  components: {
-    MapPin,
-    Maximize2,
-    Target,
-    Database,
-    AlertCircle,
-    Lock,
-    Clock,
-    Zap,
-    Heart
-  }
+  name: 'Informations'
 }
 </script>
 
 <style scoped>
-.container {
-  max-width: 1200px;
+.information-page {
+  width: min(100% - 2rem, 896px);
+  margin: 0 auto;
+  padding-block: 1.25rem 0;
+  color: #4b5563;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.information-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+}
+
+.information-header {
+  margin-block: 0.75rem 1.5rem;
+}
+
+.information-header p {
+  margin-top: 0.5rem;
+}
+
+.information-page h2 {
+  color: #111827;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.information-page strong,
+.information-criteria dt {
+  color: #374151;
+  font-weight: 600;
+}
+
+.information-guide {
+  padding: 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.information-criteria {
+  margin-block: 1.125rem;
+}
+
+.information-criteria > div + div {
+  margin-top: 0.875rem;
+}
+
+.information-criteria dt {
+  margin-bottom: 0.125rem;
+}
+
+.information-example {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.information-section {
+  margin-top: 1.75rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.information-section p + p {
+  margin-top: 0.625rem;
+}
+
+.information-questions {
+  border-top: 1px solid #d1d5db;
+}
+
+.information-questions details {
+  border-bottom: 1px solid #d1d5db;
+}
+
+.information-questions summary {
+  min-height: 48px;
+  padding-block: 0.875rem;
+  color: #374151;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.information-questions summary::marker {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.information-answer {
+  padding: 0 0 1rem 1.125rem;
+}
+
+.information-answer a {
+  color: #244a68;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+:global(.dark .information-page) {
+  color: #cbd5e1;
+}
+
+:global(.dark .information-page h2),
+:global(.dark .information-page strong),
+:global(.dark .information-criteria dt),
+:global(.dark .information-questions summary) {
+  color: #f3f4f6;
+}
+
+:global(.dark .information-guide) {
+  border-color: #374151;
+  background: #1f2937;
+}
+
+:global(.dark .information-questions),
+:global(.dark .information-questions details) {
+  border-color: #4b5563;
+}
+
+:global(.dark .information-questions summary::marker) {
+  color: #9ca3af;
+}
+
+:global(.dark .information-answer a) {
+  color: #9bc0de;
+}
+
+@media (min-width: 640px) {
+  .information-page {
+    padding-top: 1.75rem;
+  }
+
+  .information-guide {
+    padding: 1.5rem;
+  }
+
+  .information-criteria > div {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    gap: 1rem;
+  }
 }
 </style>

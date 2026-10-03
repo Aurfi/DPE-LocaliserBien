@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import './style.css'
 import { registerSW } from 'virtual:pwa-register'
 import App from './App.vue'
+import { navigationScroll } from './utils/navigationScroll.js'
 
 // Lazy loading des vues pour réduire le bundle initial
 const Home = () => import('./views/Home.vue')
@@ -43,19 +44,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior(_to, _from, savedPosition) {
-    // Toujours scroller en haut lors de la navigation
-    if (savedPosition) {
-      return savedPosition
-    } else {
-      // Force le scroll même pour la navigation interne
-      return new Promise(resolve => {
-        setTimeout(() => {
-          resolve({ top: 0, behavior: 'smooth' })
-        }, 0)
-      })
-    }
-  }
+  scrollBehavior: navigationScroll
 })
 
 // Mise à jour dynamique du titre de la page

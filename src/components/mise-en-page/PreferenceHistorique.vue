@@ -11,8 +11,7 @@
       Conserver mes recherches sur cet appareil
     </label>
     <p id="history-explanation" class="mt-1 max-w-2xl">
-      Option désactivée par défaut. L'historique est enregistré uniquement dans ce navigateur, jusqu'à 10 recherches par mode.
-      La désactivation arrête l'enregistrement et masque les anciennes recherches sans les supprimer.
+      Option désactivée par défaut. L'historique est enregistré uniquement dans ce navigateur.
     </p>
     <div v-if="confirmClear" class="mt-2">
       <p>Effacer définitivement les recherches enregistrées dans les deux modes ?</p>

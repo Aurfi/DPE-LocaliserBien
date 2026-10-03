@@ -130,8 +130,8 @@ describe('recent DPE result list rendering', () => {
   it.each([undefined, null, []])('renders an empty state for absent or empty rows: %s', rows => {
     const wrapper = renderResults(rows)
     expect(wrapper.get('h2').text()).toBe('0 résultat affiché')
-    expect(wrapper.text()).toContain('Aucun résultat trouvé')
-    expect(wrapper.text()).toContain('Impossible de trouver un DPE correspondant à ces informations.')
+    expect(wrapper.text()).toContain('Aucun DPE trouvé avec ces critères.')
+    expect(wrapper.text()).toContain('Essayez une période ou un rayon plus large.')
     expect(cards(wrapper)).toHaveLength(0)
     expect(wrapper.find('select').exists()).toBe(false)
   })
@@ -157,6 +157,25 @@ describe('recent DPE result list rendering', () => {
     const wrapper = renderResults([dpe('one')])
     await wrapper.get('button[title="Nouvelle recherche"]').trigger('click')
     expect(wrapper.emitted('clear-results')).toEqual([[]])
+  })
+})
+
+describe('recent search criteria context', () => {
+  it('shows the actual short radius and active month beside a plain empty state', () => {
+    const wrapper = renderResults([], {
+      results: search([], { searchRadius: 0.1 }),
+      searchCriteria: { monthsBack: 1 }
+    })
+    expect(wrapper.findComponent(EnteteResultats).props('subtitle')).toContain('Rayon : 100 m · Dernier mois')
+    expect(wrapper.text()).toContain('Essayez une période ou un rayon plus large.')
+    expect(wrapper.find('svg.lucide-octagon-x').exists()).toBe(false)
+  })
+
+  it('shows a known larger period and leaves missing or invalid criteria out', async () => {
+    const wrapper = renderResults([], { searchCriteria: { monthsBack: 6 } })
+    expect(wrapper.findComponent(EnteteResultats).props('subtitle')).toContain('Rayon : 2 km · 6 derniers mois')
+    await wrapper.setProps({ results: search([], { searchRadius: NaN }), searchCriteria: { monthsBack: -1 } })
+    expect(wrapper.findComponent(EnteteResultats).props('subtitle')).toBe('Autour de 10 avenue de la Recherche')
   })
 })
 
@@ -330,7 +349,7 @@ describe('recent DPE sorting through the displayed dropdown', () => {
 })
 
 describe('recent result card formatting', () => {
-  it('renders rounded surface, distance, floor and source construction period', () => {
+  it('renders exact surface, rounded distance, floor and source construction period', () => {
     const wrapper = renderResults([
       dpe('42', {
         surfaceHabitable: 69.7,
@@ -343,7 +362,7 @@ describe('recent result card formatting', () => {
     expect(card.props()).toMatchObject({
       address: '42 rue des Tests',
       location: 'Paris - 75001',
-      surface: 70,
+      surface: 69.7,
       distance: 0.75,
       floor: 'Étage: 3',
       yearBuilt: '1948-1974',
@@ -351,7 +370,7 @@ describe('recent result card formatting', () => {
       hasIncompleteData: false,
       isLegacy: false
     })
-    expect(card.text()).toContain('70 m²')
+    expect(card.text()).toContain('69.7 m²')
     expect(card.text()).toContain('0.8 km')
     expect(card.get('[data-construction-year]').text()).toBe('1948-1974')
     expect(card.text()).not.toContain('DPE Ancien')
@@ -457,7 +476,7 @@ describe('recent result hiding and dialog lifecycle', () => {
     expect(wrapper.get('h2').text()).toBe('1 résultat affiché (2 masqués)')
     await hideCard(wrapper, 0)
     expect(cards(wrapper)).toHaveLength(0)
-    expect(wrapper.text()).toContain('Aucun résultat trouvé')
+    expect(wrapper.text()).toContain('Aucun DPE trouvé avec ces critères.')
     expect(wrapper.get('h2').text()).toBe('0 résultat affiché (3 masqués)')
     expect(rows.map(row => row.numero_dpe)).toEqual(['first', 'second', 'third'])
   })
@@ -478,6 +497,7 @@ describe('recent result hiding and dialog lifecycle', () => {
       nombreNiveaux: 4,
       hauteurSousPlafond: 2.6,
       complementRefLogement: 'Bâtiment A',
+      date_etablissement_dpe: '2026-10-01',
       date_visite_diagnostiqueur: '2026-09-01T12:00:00',
       consommationEnergie: 142.6,
       emissionGES: 25.4,
@@ -493,7 +513,7 @@ describe('recent result hiding and dialog lifecycle', () => {
       property,
       formattedAddress: property.adresse_ban,
       commune: 'Paris',
-      surface: 65,
+      surface: 65.4,
       energyClass: 'C',
       propertyType: 'appartement',
       floor: '2',
@@ -501,9 +521,9 @@ describe('recent result hiding and dialog lifecycle', () => {
       yearBuilt: '1985',
       numberOfLevels: 4,
       ceilingHeight: 2.6,
-      diagnosisDate: '1 septembre 2026',
-      energyConsumption: 143,
-      gesEmissions: 25,
+      diagnosisDate: '1 octobre 2026',
+      energyConsumption: 142.6,
+      gesEmissions: 25.4,
       departmentAverages: averages
     })
     const map = new URL(wrapper.findComponent(PropertyDialog).props('mapUrl'))
@@ -548,14 +568,15 @@ describe('recent result hiding and dialog lifecycle', () => {
   it.each([
     [
       { surface_habitable_logement: 78.7, conso_5_usages_par_m2_ep: 198.7, emission_ges_5_usages_par_m2: 14.6 },
-      79,
-      199,
-      15
+      78.7,
+      198.7,
+      14.6
     ],
-    [{ surface_habitable: 54.2, consommation_energie: 112.2, estimation_ges: 8.4 }, 54, 112, 8],
+    [{ surface_habitable: 54.2, consommation_energie: 112.2, estimation_ges: 8.4 }, 54.2, 112.2, 8.4],
     [{}, null, null, null]
   ])('passes safe normalized modal values for raw or missing metrics: %j', async (raw, surface, energy, ges) => {
     const property = dpe('raw', {
+      date_etablissement_dpe: '2026-10-01',
       surfaceHabitable: null,
       adresse_ban: undefined,
       adresse_brut: '15 rue Brute',
@@ -575,8 +596,8 @@ describe('recent result hiding and dialog lifecycle', () => {
       propertyType: 'Maison',
       floor: null,
       yearBuilt: null,
-      diagnosisDate: null,
-      mapUrl: null
+      diagnosisDate: '1 octobre 2026',
+      mapUrl: 'https://maps.google.com/maps?q=15%20rue%20Brute&output=embed&z=19&t=k'
     })
   })
 
@@ -788,7 +809,7 @@ describe('recent result regression fixes', () => {
     }
   )
 
-  it.each([0, '0', ' 0 ', 0.1])('preserves known zero or rounded-zero values: %j', async value => {
+  it.each([0, '0', ' 0 ', 0.1])('preserves known zero or fractional values: %j', async value => {
     const wrapper = renderResults([
       dpe('zero', {
         surfaceHabitable: value,
@@ -796,12 +817,12 @@ describe('recent result regression fixes', () => {
         _distance: value
       })
     ])
-    expect(cards(wrapper)[0].props('surface')).toBe(0)
-    expect(cards(wrapper)[0].text()).toContain('0 m²')
+    expect(cards(wrapper)[0].props('surface')).toBe(Number(value))
+    expect(cards(wrapper)[0].text()).toContain(`${Number(value)} m²`)
     expect(cards(wrapper)[0].props('distance')).toBe(Number(value))
     await cards(wrapper)[0].trigger('click')
     expect(wrapper.findComponent(PropertyDialog).props()).toMatchObject({
-      surface: 0
+      surface: Number(value)
     })
   })
 
@@ -812,10 +833,10 @@ describe('recent result regression fixes', () => {
         surface_habitable_logement: ' 78.7 '
       })
     ])
-    expect(cards(wrapper)[0].props('surface')).toBe(79)
+    expect(cards(wrapper)[0].props('surface')).toBe(78.7)
     await cards(wrapper)[0].trigger('click')
     expect(wrapper.findComponent(PropertyDialog).props()).toMatchObject({
-      surface: 79
+      surface: 78.7
     })
   })
 

@@ -5,7 +5,7 @@ Application web pour localiser des biens immobiliers en France à partir des don
 ## ✨ Fonctionnalités
 
 - **Recherche précise** : Trouvez un bien par surface, consommation énergétique et localisation
-- **Lien cartographique** : Ouverture volontaire de Google Maps, sans carte intégrée
+- **Aperçu cartographique** : Vue satellite Google Maps dans la fiche d’un bien, avec un lien externe toujours disponible
 - **Mode sombre** : Interface adaptative jour/nuit
 - **100% gratuit** : Sans compte ni publicité ; historique local facultatif
 - **Responsive** : Optimisé pour mobile, tablette et desktop
@@ -98,7 +98,11 @@ Licence Ouverte 2.0 (Etalab) - Voir le fichier [LICENSE](LICENSE) pour plus de d
 
 Les recherches interrogent directement l’ADEME et, selon le mode, l’IGN : ces
 services reçoivent les critères nécessaires et les informations techniques de
-connexion. L’application ne charge pas Google Fonts ou une carte Google intégrée.
+connexion. À l’ouverture d’une fiche de bien, un aperçu Google Maps charge
+l’adresse et/ou les coordonnées du bien ainsi que les informations techniques de
+connexion, dont l’adresse IP. Aucun aperçu ne se charge sur la page d’accueil ou
+sur chaque carte de résultat. Le lien « Voir sur Maps » ouvre Google Maps dans un
+nouvel onglet. L’application ne charge pas Google Fonts.
 Les journaux de l’hébergement et la messagerie doivent être documentés séparément.
 La notice du candidat reste un projet, à finaliser avant la mise en production.
 

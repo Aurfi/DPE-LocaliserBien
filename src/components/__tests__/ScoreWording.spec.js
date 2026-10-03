@@ -5,8 +5,6 @@ import ResultatsLocaliserDpe from '../fonctionnalites/localisation/ResultatsLoca
 import ModaleProprietee from '../fonctionnalites/recherche/ModaleProprietee.vue'
 import CarteBien from '../partages/CarteBien.vue'
 
-const explanation =
-  'Le score de similarité compare les critères saisis. Même à 100/100, il ne confirme pas l’identité du bien.'
 const criteria = Object.freeze({
   commune: '13080',
   surfaceHabitable: 65.5,
@@ -47,7 +45,10 @@ describe('similarity score wording', () => {
     })
     expect(wrapper.text()).toContain('Une correspondance forte avec vos critères')
     expect(wrapper.get('.score-badge').text()).toBe('Score 100/100')
-    expect(wrapper.get('[data-score-explanation]').text()).toBe(explanation)
+    expect(wrapper.get('[data-score-explanation]').text()).toContain('Résultats indicatifs.')
+    const help = wrapper.get('a[href="/informations#resultats"]')
+    expect(help.text()).toBe('Comprendre le score')
+    expect(help.attributes('target')).toBe('_blank')
     expect(wrapper.get('[data-score-explanation]').isVisible()).toBe(true)
     expect(wrapper.text()).toContain('65.6 m²')
     expect(wrapper.text()).not.toMatch(/correspondance (parfaite|exacte)|100%/i)
@@ -83,12 +84,22 @@ describe('similarity score wording', () => {
     expect(wrapper.text()).not.toContain(`${score}%`)
   })
 
+  it.each([
+    ['maison', 'Maison'],
+    ['appartement', 'Appartement']
+  ])('names the property type %s without a decorative icon', (propertyType, label) => {
+    wrapper = mount(CarteBien, { props: { result, index: 0, propertyType, location: 'Paris' } })
+    expect(wrapper.get('[data-property-type]').text()).toContain(label)
+    expect(wrapper.find('.lucide-building-2').exists()).toBe(false)
+    expect(wrapper.find('.lucide-house').exists()).toBe(false)
+  })
+
   it('does not introduce a score on cards where none was supplied', () => {
     wrapper = mount(CarteBien, { props: { result, index: 0, surface: 65.6 } })
     expect(wrapper.find('.score-badge').exists()).toBe(false)
   })
 
-  it('also explains similarity within the property dialog', () => {
+  it('keeps the dialog score label without repeating the result-header explanation', () => {
     wrapper = mount(ModaleProprietee, {
       props: {
         property: result,
@@ -100,8 +111,7 @@ describe('similarity score wording', () => {
     })
     expect(wrapper.get('.score-badge').text()).toBe('Score 100/100')
     expect(wrapper.get('.score-badge').attributes('aria-label')).toBe('Score de similarité : 100 sur 100')
-    expect(wrapper.get('[data-score-explanation]').text()).toBe(explanation)
-    expect(wrapper.get('[data-score-explanation]').isVisible()).toBe(true)
+    expect(wrapper.find('[data-score-explanation]').exists()).toBe(false)
     expect(wrapper.text()).not.toContain('100%')
   })
 

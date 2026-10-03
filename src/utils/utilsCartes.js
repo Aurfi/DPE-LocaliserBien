@@ -11,19 +11,22 @@
  * @returns {string} Google Maps embed URL
  */
 export function getGoogleMapsEmbedUrl(lat, lon, address = null, zoom = 18) {
-  const latNum = Number(lat)
-  const lonNum = Number(lon)
-  const hasValidCoords = Number.isFinite(latNum) && Number.isFinite(lonNum) && latNum !== 0 && lonNum !== 0
+  const latNum = getCoordinate(lat, 90)
+  const lonNum = getCoordinate(lon, 180)
+  // Reject absent/out-of-range coordinates and the 0,0 sentinel, but preserve
+  // real locations on the Greenwich meridian or the equator.
+  const hasValidCoords = latNum !== null && lonNum !== null && (latNum !== 0 || lonNum !== 0)
+  const hasAddress = typeof address === 'string' && address.trim()
 
   // If we have both coordinates and address, use both for best results
-  if (hasValidCoords && address && address.trim()) {
+  if (hasValidCoords && hasAddress) {
     const encodedAddress = encodeURIComponent(address)
     // Pass both coordinates (for accurate pin) and address (for display)
     return `https://maps.google.com/maps?q=${encodedAddress}&ll=${latNum},${lonNum}&output=embed&z=${zoom}&t=k`
   }
 
   // If only address, use address alone
-  if (address?.trim()) {
+  if (hasAddress) {
     const encodedAddress = encodeURIComponent(address)
     return `https://maps.google.com/maps?q=${encodedAddress}&output=embed&z=${zoom}&t=k`
   }
@@ -45,11 +48,13 @@ export function getGoogleMapsEmbedUrl(lat, lon, address = null, zoom = 18) {
  */
 export function getGoogleMapsSearchUrl(lat, lon, address = null) {
   // Préférer l'adresse pour lever l'ambiguïté sur les territoires d'outre-mer
-  if (address) return `https://www.google.com/maps/recherche/?api=1&query=${encodeURIComponent(address)}`
-  const latNum = Number(lat)
-  const lonNum = Number(lon)
-  if (Number.isFinite(latNum) && Number.isFinite(lonNum)) {
-    return `https://www.google.com/maps/recherche/?api=1&query=${latNum},${lonNum}`
+  if (typeof address === 'string' && address.trim()) {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+  }
+  const latNum = getCoordinate(lat, 90)
+  const lonNum = getCoordinate(lon, 180)
+  if (latNum !== null && lonNum !== null && (latNum !== 0 || lonNum !== 0)) {
+    return `https://www.google.com/maps/search/?api=1&query=${latNum},${lonNum}`
   }
   return 'https://www.google.com/maps'
 }

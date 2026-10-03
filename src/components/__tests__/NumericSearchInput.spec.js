@@ -31,6 +31,9 @@ async function mountValidForm(config) {
     await wrapper.get('#search-consommation').setValue('173')
   } else {
     await wrapper.get('#nearby-address').setValue('Lyon')
+    const optionalFilters = wrapper.get('details')
+    optionalFilters.element.open = true
+    await optionalFilters.trigger('toggle')
   }
 }
 

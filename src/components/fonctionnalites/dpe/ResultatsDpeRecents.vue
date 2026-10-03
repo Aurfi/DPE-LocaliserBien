@@ -4,8 +4,7 @@
     <EnteteResultats
       :title="`${filteredResults.length} résultat${filteredResults.length > 1 ? 's' : ''} affiché${filteredResults.length > 1 ? 's' : ''}`"
       :hiddenCount="hiddenResults.size"
-      :subtitle="`Autour de ${results.searchAddress}`"
-      :subtitleExtra="`(rayon: ${results.searchRadius} km)`"
+      :subtitle="searchContext"
       :showCloseButton="true"
       :showSort="filteredResults.length > 3"
       v-model:sortBy="sortBy"
@@ -14,12 +13,10 @@
     />
 
     <!-- Empty state -->
-    <EtatVide
-      v-if="filteredResults.length === 0"
-      :icon="OctagonX"
-      title="Aucun résultat trouvé"
-      description="Impossible de trouver un DPE correspondant à ces informations."
-    />
+    <section v-if="filteredResults.length === 0" class="py-8 text-center">
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Aucun DPE trouvé avec ces critères.</h3>
+      <p class="text-gray-600 dark:text-gray-400">Essayez une période ou un rayon plus large.</p>
+    </section>
 
     <!-- Results grid -->
     <div v-if="filteredResults.length > 0" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -52,7 +49,7 @@
       :commune="selectedProperty.nom_commune_ban || selectedProperty.nom_commune_brut"
       :surface="getSurface(selectedProperty)"
       :energyClass="selectedProperty.etiquette_dpe"
-      :mapUrl="selectedProperty._geopoint ? getGoogleMapsEmbedUrlForDPE(selectedProperty) : null"
+      :mapUrl="getGoogleMapsEmbedUrlForDPE(selectedProperty)"
       :geoportailUrl="getGeoportailUrl(getLatitudeFromGeopoint(selectedProperty._geopoint), getLongitudeFromGeopoint(selectedProperty._geopoint))"
       :propertyType="selectedProperty.typeBien || selectedProperty.type_batiment"
       :floor="selectedProperty.typeBien && selectedProperty.typeBien.toLowerCase().includes('appartement') && selectedProperty.etage ? selectedProperty.etage : null"
@@ -60,9 +57,9 @@
       :yearBuilt="selectedProperty.anneeConstruction ? String(selectedProperty.anneeConstruction) : null"
       :numberOfLevels="selectedProperty.nombreNiveaux"
       :ceilingHeight="selectedProperty.hauteurSousPlafond"
-      :diagnosisDate="selectedProperty.date_visite_diagnostiqueur ? formatFullDate(selectedProperty.date_visite_diagnostiqueur) : null"
-      :energyConsumption="Math.round(selectedProperty.consommationEnergie || selectedProperty.conso_5_usages_par_m2_ep || selectedProperty.consommation_energie || 0) || null"
-      :gesEmissions="Math.round(selectedProperty.emissionGES || selectedProperty.emission_ges_5_usages_par_m2 || selectedProperty.estimation_ges || 0) || null"
+      :diagnosisDate="formatFullDate(selectedProperty.date_etablissement_dpe)"
+      :energyConsumption="getMetric(selectedProperty, ['conso_5_usages_par_m2_ep', 'consommationEnergie', 'consommation_energie'])"
+      :gesEmissions="getMetric(selectedProperty, ['emission_ges_5_usages_par_m2', 'emissionGES', 'estimation_ges'])"
       :departmentAverages="departmentAverages"
       @close="closeModal()"
       @show-details="showDPEDetails = true"
@@ -80,7 +77,6 @@
 </template>
 
 <script>
-import { OctagonX } from 'lucide-vue-next'
 import { watch } from 'vue'
 import { useGestionResultats } from '../../../composables/useGestionResultats'
 import { formatDpeDate, getDpeAgeDays, getDpeDateSortValue } from '../../../utils/datesDPE.js'
@@ -98,7 +94,6 @@ import {
 import RetourEnHaut from '../../base/RetourEnHaut.vue'
 import CarteBien from '../../partages/CarteBien.vue'
 import EnteteResultats from '../../partages/EnteteResultats.vue'
-import EtatVide from '../../partages/EtatVide.vue'
 import ModaleProprietee from '../recherche/ModaleProprietee.vue'
 import ModaleDetailsDPE from './ModaleDetailsDPE.vue'
 
@@ -108,7 +103,6 @@ export default {
     ModaleProprietee,
     ModaleDetailsDPE,
     RetourEnHaut,
-    EtatVide,
     CarteBien,
     EnteteResultats
   },
@@ -138,7 +132,6 @@ export default {
     })
 
     return {
-      OctagonX,
       selectedProperty,
       showDPEDetails,
       hiddenResults,
@@ -152,6 +145,18 @@ export default {
     }
   },
   computed: {
+    searchContext() {
+      const parts = this.results?.searchAddress ? [`Autour de ${this.results.searchAddress}`] : []
+      const radius = this.getFiniteNumber(this.results?.searchRadius)
+      if (radius !== null && radius > 0) {
+        parts.push(radius < 1 ? `Rayon : ${radius * 1000} m` : `Rayon : ${radius} km`)
+      }
+      const months = this.getFiniteNumber(this.searchCriteria?.monthsBack)
+      if (months !== null && Number.isInteger(months) && months > 0) {
+        parts.push(months === 1 ? 'Dernier mois' : `${months} derniers mois`)
+      }
+      return parts.join(' · ')
+    },
     sortOptions() {
       const options = [
         { value: 'distance', label: 'Distance' },
@@ -289,10 +294,18 @@ export default {
       return Number.isFinite(number) ? number : null
     },
 
+    getMetric(dpe, keys) {
+      for (const key of keys) {
+        const value = this.getFiniteNumber(dpe[key])
+        if (value !== null && value >= 0) return value
+      }
+      return null
+    },
+
     getSurface(dpe) {
       for (const value of [dpe.surfaceHabitable, dpe.surface_habitable_logement, dpe.surface_habitable]) {
         const number = this.getFiniteNumber(value)
-        if (number !== null && number >= 0) return Math.round(number)
+        if (number !== null && number >= 0) return number
       }
       return null
     },

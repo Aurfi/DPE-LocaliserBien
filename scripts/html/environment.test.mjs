@@ -112,7 +112,7 @@ test('every native HTML placeholder has a context-specific alias and no EJS rema
   assert.equal((template.match(/type="application\/ld\+json"/g) || []).length, 6)
 })
 
-test('native Vite output preserves baseline SEO metadata and all six parsed schemas', async () => {
+test('native Vite output preserves SEO metadata and schemas with the reviewed FAQ wording', async () => {
   const html = await nativeHtml(baseline.environment)
   assert.doesNotMatch(html, /%VITE_[A-Z_]+%|<%/)
   const { window, document } = parseHtml(html)
@@ -125,12 +125,16 @@ test('native Vite output preserves baseline SEO metadata and all six parsed sche
     const expected = structuredClone(baseline.structuredData)
     assert.equal(expected.length, 6)
     // The old HTML-escaped EJS values were not decoded inside script raw text.
-    // Correct only these two documented descriptions; every other field must
-    // remain structurally identical to the frozen production output.
+    // Correct the two escaped descriptions and the reviewed FAQ answer below.
+    // All remaining fields stay identical to the frozen production output.
     for (const schema of expected.slice(0, 2)) {
       assert.match(schema.description, /l&#39;identification/)
       schema.description = baseline.environment.VITE_APP_DESCRIPTION
     }
+    const faq = expected.find(schema => schema['@type'] === 'FAQPage')
+    assert.match(faq.mainEntity[0].acceptedAnswer.text, /localiser précisément/)
+    faq.mainEntity[0].acceptedAnswer.text =
+      'LocaliserBien compare les critères d’une annonce aux données DPE publiques de l’ADEME. Saisissez la commune, la surface et la consommation ou une classe DPE, puis consultez les correspondances proposées.'
     assert.deepEqual(structuredData(document), expected)
   } finally {
     await window.happyDOM.close()

@@ -27,7 +27,8 @@ const Harness = defineComponent({
       <button data-testid="open-property" @click="showDetails(property)">Voir le bien</button>
       <button data-testid="open-raw" @click="showRawDataForResult(property)">Données seules</button>
       <ModaleProprietee v-if="selectedProperty" :property="selectedProperty" formatted-address="1 rue Test"
-        commune="Lyon" :surface="65" @close="closeModal" @show-details="showDPEDetails = true" />
+        commune="Lyon" :surface="65" map-url="https://maps.google.com/maps?q=Lyon&output=embed"
+        @close="closeModal" @show-details="showDPEDetails = true" />
       <div data-testid="persistent-dpe-wrapper">
         <ModaleDetailsDPE :show="showDPEDetails" :property="selectedProperty" @close="showDPEDetails = false" />
       </div>
@@ -105,6 +106,7 @@ describe('actual property, DPE and raw-data modal layers', () => {
   it('focuses the title, gives the dialog a unique name and makes background branches inert', async () => {
     await openProperty()
     expectActive('property')
+    expect(dialog('property').get('iframe').attributes('title')).toBe('Vue satellite de 1 rue Test')
     expect(document.activeElement.hasAttribute('data-modal-initial-focus')).toBe(true)
     expect(background.hasAttribute('inert')).toBe(true)
     expect(background.getAttribute('aria-hidden')).toBe('true')
