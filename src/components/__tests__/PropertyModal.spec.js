@@ -100,9 +100,11 @@ describe('PropertyModal', () => {
       }
     })
 
-    it("affiche l'iframe Google Maps quand l'URL est fournie", () => {
-      const iframe = wrapper.find('iframe[src="https://maps.google.com/test"]')
-      expect(iframe.exists()).toBe(true)
+    it('ne charge aucune carte intégrée même quand une URL est fournie', () => {
+      expect(wrapper.find('iframe').exists()).toBe(false)
+      const link = wrapper.findAll('a').find(link => link.text().includes('Voir sur Maps'))
+      expect(link.attributes('target')).toBe('_blank')
+      expect(link.attributes('rel')).toBe('noopener noreferrer')
     })
 
     it('affiche la section des caractéristiques', () => {
@@ -199,7 +201,7 @@ describe('PropertyModal', () => {
     })
 
     it("n'émet pas l'événement close quand on clique sur le contenu de la modal", async () => {
-      const modalContent = wrapper.find('.bg-white.dark\\:bg-gray-800.rounded-3xl')
+      const modalContent = wrapper.find('[role="dialog"]')
       await modalContent.trigger('click')
 
       expect(wrapper.emitted('close')).toBeFalsy()
@@ -219,13 +221,10 @@ describe('PropertyModal', () => {
 
   // Tests du badge de score
   describe('Badge de score', () => {
-    it('affiche la bonne classe de badge pour un score élevé', () => {
-      const scoreBadges = wrapper.findAll('.hidden.sm\\:inline-block')
-      const scoreBadge = scoreBadges.find(badge => badge.text().includes('95%'))
-      if (scoreBadge) {
-        expect(scoreBadge.classes()).toContain('bg-blue-100')
-        expect(scoreBadge.text()).toContain('95%')
-      }
+    it('affiche la bonne classe et un score sur 100 pour un score élevé', () => {
+      const scoreBadge = wrapper.get('.score-badge')
+      expect(scoreBadge.classes()).toContain('bg-blue-100')
+      expect(scoreBadge.text()).toBe('Score 95/100')
     })
 
     it("affiche la classe énergétique quand le score n'est pas fourni", async () => {
@@ -240,38 +239,21 @@ describe('PropertyModal', () => {
       })
       // Without score or energy class, neither badge should appear
       const scoreBadges = wrapper.findAll('.hidden.sm\\:inline-block')
-      const hasScoreBadge = scoreBadges.some(badge => badge.text().includes('%'))
+      const hasScoreBadge = scoreBadges.some(badge => badge.text().startsWith('Score '))
       const hasClassBadge = scoreBadges.some(badge => badge.text().includes('Classe'))
       expect(hasScoreBadge).toBe(false)
       expect(hasClassBadge).toBe(false)
     })
 
-    it('affiche différentes couleurs selon le score', async () => {
-      // Score élevé (bleu pour 95)
-      await wrapper.setProps({ matchScore: 95 })
-      let scoreBadges = wrapper.findAll('.hidden.sm\\:inline-block')
-      let scoreBadge = scoreBadges.find(badge => badge.text().includes('95%'))
-      if (scoreBadge) {
-        expect(scoreBadge.classes()).toContain('bg-blue-100')
-      }
-
-      // Score moyen (jaune)
-      await wrapper.setProps({ matchScore: 75 })
-      await wrapper.vm.$nextTick()
-      scoreBadges = wrapper.findAll('.hidden.sm\\:inline-block')
-      scoreBadge = scoreBadges.find(badge => badge.text().includes('75%'))
-      if (scoreBadge) {
-        expect(scoreBadge.classes()).toContain('bg-yellow-100')
-      }
-
-      // Score faible (orange)
-      await wrapper.setProps({ matchScore: 45 })
-      await wrapper.vm.$nextTick()
-      scoreBadges = wrapper.findAll('.hidden.sm\\:inline-block')
-      scoreBadge = scoreBadges.find(badge => badge.text().includes('45%'))
-      if (scoreBadge) {
-        expect(scoreBadge.classes()).toContain('bg-orange-100')
-      }
+    it.each([
+      [95, 'bg-blue-100'],
+      [75, 'bg-yellow-100'],
+      [45, 'bg-orange-100']
+    ])('conserve la couleur pour le score %s', async (score, color) => {
+      await wrapper.setProps({ matchScore: score })
+      const scoreBadge = wrapper.get('.score-badge')
+      expect(scoreBadge.text()).toBe(`Score ${score}/100`)
+      expect(scoreBadge.classes()).toContain(color)
     })
   })
 
@@ -405,7 +387,7 @@ describe('PropertyModal', () => {
 
     it('affiche toutes les sections quand toutes les données sont fournies', () => {
       // Vérifier que toutes les sections principales sont présentes
-      expect(wrapper.find('iframe').exists()).toBe(true) // Map
+      expect(wrapper.find('iframe').exists()).toBe(false) // Maps opens only through the external link
       expect(wrapper.text()).toContain('Caractéristiques') // Caractéristiques
       expect(wrapper.text()).toContain('Performance énergétique') // Performance
       const mapLinks = wrapper.findAll('a')
@@ -418,5 +400,31 @@ describe('PropertyModal', () => {
       const darkClasses = wrapper.find('.dark\\:bg-gray-800')
       expect(darkClasses.exists()).toBe(true)
     })
+  })
+})
+
+describe('property modal missing and zero surface', () => {
+  it.each([null, undefined])('labels an absent surface without inventing a measurement: %s', surface => {
+    const wrapper = mount(PropertyModal, { props: { property: {}, surface } })
+    try {
+      expect(wrapper.text()).toContain('Surface non renseignée')
+      expect(wrapper.text()).not.toMatch(/NaN|0m²/)
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('displays a known zero surface without changing missing energy defaults', () => {
+    const wrapper = mount(PropertyModal, {
+      props: { property: {}, surface: 0, energyConsumption: 0, gesEmissions: 0 }
+    })
+    try {
+      expect(wrapper.text()).toContain('0m²')
+      expect(wrapper.text()).not.toContain('0 kWh/m²/an')
+      expect(wrapper.text()).not.toContain('0 kg/m²/an')
+      expect(wrapper.text()).not.toContain('Surface non renseignée')
+    } finally {
+      wrapper.unmount()
+    }
   })
 })

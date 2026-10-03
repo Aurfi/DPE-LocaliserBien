@@ -1,0 +1,1191 @@
+{
+  "schema": 1,
+  "source_commit": "68c927b466726839fd7f30990d35355f35ea75fd",
+  "files": [
+    {
+      "path": "android-chrome-192x192.png",
+      "sha256": "353f586ed6732752c517f084378b13ad9aea088f45279aba7b08823955cabc5d",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/android-chrome-192x192.png"
+    },
+    {
+      "path": "android-chrome-512x512.png",
+      "sha256": "c132aef828d3d9308651a6112ceca903710087fd7180a574bc8a9010d03f5d3f",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/android-chrome-512x512.png"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "sha256": "55ae5feb53f56cdcac8fcbd074398bcf8481db8e080ded5653b7915c219849e9",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/apple-touch-icon.png"
+    },
+    {
+      "path": "assets/chunk-0w7zFA4J.js",
+      "sha256": "e8b3f5be8c63ab4314c088951557ca34acd8814d5d88943a1b713fc79797d276",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/assets/chunk-0w7zFA4J.js"
+    },
+    {
+      "path": "assets/chunk-BgqpM-LO.js",
+      "sha256": "376b7fb3e2bc82b516f297473e19454b1d95cb00bc71822d6cc5146aca9dcfe8",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/assets/chunk-BgqpM-LO.js"
+    },
+    {
+      "path": "assets/constructeur-recherche-ademe.service.js-mrUENbLP.js",
+      "sha256": "dc2c48f8f754ce92673877bdd8ef53711c43aff8095565a3c849abd1f8740984",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/assets/constructeur-recherche-ademe.service.js-mrUENbLP.js"
+    },
+    {
+      "path": "assets/index-CH8I-eK1.css",
+      "sha256": "b3a1cbf986cc2e7006b3ecd3e40fe893b3a88677a34ffff5410661989a1197f5",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/assets/index-CH8I-eK1.css"
+    },
+    {
+      "path": "assets/index-OUuVS716.js",
+      "sha256": "f4215ec4c5a587937c498aa856ca9edf5fbc70bce3b800a65da60e310eb8356d",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/assets/index-OUuVS716.js"
+    },
+    {
+      "path": "assets/processeur-resultats-dpe.service.js-DVDJ9zaS.js",
+      "sha256": "bae19f8e07b605b48724d0b54593947f1630e1498bf9258d1f0d2a14752266e6",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/assets/processeur-resultats-dpe.service.js-DVDJ9zaS.js"
+    },
+    {
+      "path": "assets/vue-vendor-DL4s8WPt.css",
+      "sha256": "c8fbfc809b93b2885af4f95ec9bc9c5961c009434b457815372b693e6f65a5df",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/assets/vue-vendor-DL4s8WPt.css"
+    },
+    {
+      "path": "assets/workbox-window.prod.es5.mjs-DMXp7Fa7.js",
+      "sha256": "4038d186a6074420177754216e641a0aca59b78afc93fa2a122741e1dbf79bc6",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/assets/workbox-window.prod.es5.mjs-DMXp7Fa7.js"
+    },
+    {
+      "path": "data/departments/communes-dept-01.json",
+      "sha256": "ccff53f91d58a1e2175c04df7c39bcae5d21ef6030bc195d4673193f1e4873bd",
+      "source": "public/data/departments/communes-dept-01.json"
+    },
+    {
+      "path": "data/departments/communes-dept-02.json",
+      "sha256": "cb29b010ac2566b00138038fba066d2e9bed2903f74e04746946128101a44e8b",
+      "source": "public/data/departments/communes-dept-02.json"
+    },
+    {
+      "path": "data/departments/communes-dept-03.json",
+      "sha256": "95b73d1c92f441b8697464ff080af772623bede84d4c409737be7f8330302756",
+      "source": "public/data/departments/communes-dept-03.json"
+    },
+    {
+      "path": "data/departments/communes-dept-04.json",
+      "sha256": "5b11d01c85db7183945ff06186aa65dddd42cee47fc76cb803c092da874c0e93",
+      "source": "public/data/departments/communes-dept-04.json"
+    },
+    {
+      "path": "data/departments/communes-dept-05.json",
+      "sha256": "c2cf6bc7bbbd1a3dbbaab1170d670c5f6605f76f8645d2aab1def5118511cec8",
+      "source": "public/data/departments/communes-dept-05.json"
+    },
+    {
+      "path": "data/departments/communes-dept-06.json",
+      "sha256": "045b524e1be03f27918cae46acd9d2f0286f818d0783bd9ead4766446110ec4d",
+      "source": "public/data/departments/communes-dept-06.json"
+    },
+    {
+      "path": "data/departments/communes-dept-07.json",
+      "sha256": "3beb5f067784330829606d1cfe0f3c306ccab494cf4389ce42dbe1e63a794483",
+      "source": "public/data/departments/communes-dept-07.json"
+    },
+    {
+      "path": "data/departments/communes-dept-08.json",
+      "sha256": "704f894ea39b24c42f302777b981bdf42464f9b7957183b1b0926984a4d8b8e9",
+      "source": "public/data/departments/communes-dept-08.json"
+    },
+    {
+      "path": "data/departments/communes-dept-09.json",
+      "sha256": "a02a1bcdbbf55d55731af763cda36a7120ca0668e7c54823400dd9aabe3bca5c",
+      "source": "public/data/departments/communes-dept-09.json"
+    },
+    {
+      "path": "data/departments/communes-dept-10.json",
+      "sha256": "281cf78ec7dc12f77dadf64db1c37715509dcb88225c25aa132931377cf507cc",
+      "source": "public/data/departments/communes-dept-10.json"
+    },
+    {
+      "path": "data/departments/communes-dept-11.json",
+      "sha256": "3ba1f0ca1e19b19d95e0d42bd14c62963b570853ba6aa0e264d3d8b4fde1d5de",
+      "source": "public/data/departments/communes-dept-11.json"
+    },
+    {
+      "path": "data/departments/communes-dept-12.json",
+      "sha256": "bbfa0beccbcfa6313b674206cdbde035a83f938b539b8f7243723e60888a64a9",
+      "source": "public/data/departments/communes-dept-12.json"
+    },
+    {
+      "path": "data/departments/communes-dept-13.json",
+      "sha256": "6e1099721e2817efd2ca6ac6cf555cac5c49dc12563a3bd49bf9bef648b2d445",
+      "source": "public/data/departments/communes-dept-13.json"
+    },
+    {
+      "path": "data/departments/communes-dept-14.json",
+      "sha256": "f06df4cfdb927a1a810590304c5d4fd2451bfdf3aaf5f589c02756c0e2b044f1",
+      "source": "public/data/departments/communes-dept-14.json"
+    },
+    {
+      "path": "data/departments/communes-dept-15.json",
+      "sha256": "ef4972104198a07712db264b85a6b89a3ce3706a12591ece33385af7c58851f1",
+      "source": "public/data/departments/communes-dept-15.json"
+    },
+    {
+      "path": "data/departments/communes-dept-16.json",
+      "sha256": "30caa5c652d50bd641b10f0218f8180aaaa2d1d95180e1fc6c38fd22666b633d",
+      "source": "public/data/departments/communes-dept-16.json"
+    },
+    {
+      "path": "data/departments/communes-dept-17.json",
+      "sha256": "547132aa84353e373d6a748cadac2f2a56595c1ca02265ab6b08e4fd5676b68d",
+      "source": "public/data/departments/communes-dept-17.json"
+    },
+    {
+      "path": "data/departments/communes-dept-18.json",
+      "sha256": "d29875bf01e1d12a2015fb0669b47ecf02432525a23de67d8067cd44a756b8cf",
+      "source": "public/data/departments/communes-dept-18.json"
+    },
+    {
+      "path": "data/departments/communes-dept-19.json",
+      "sha256": "677edef0557189ecbeeea81119219f269d447b6069cf89cc6be36723b8b6b3ca",
+      "source": "public/data/departments/communes-dept-19.json"
+    },
+    {
+      "path": "data/departments/communes-dept-21.json",
+      "sha256": "26ca0cf720dbe3e33b0e41a5a1cf5ce7d3eec414caa61836f3f35e751d9a7115",
+      "source": "public/data/departments/communes-dept-21.json"
+    },
+    {
+      "path": "data/departments/communes-dept-22.json",
+      "sha256": "16f6519f632aefd2899392d42701925a1a43ec322e78a281e240436e280a603e",
+      "source": "public/data/departments/communes-dept-22.json"
+    },
+    {
+      "path": "data/departments/communes-dept-23.json",
+      "sha256": "da86e5143f1c04ee74af29a690726051221ef4689ff93a9f5baf3617829bbb53",
+      "source": "public/data/departments/communes-dept-23.json"
+    },
+    {
+      "path": "data/departments/communes-dept-24.json",
+      "sha256": "dd2ad8dd6eb5b5fd326f72b559776170a14f4f108dc99f8d53b45ef477b857be",
+      "source": "public/data/departments/communes-dept-24.json"
+    },
+    {
+      "path": "data/departments/communes-dept-25.json",
+      "sha256": "c6d0d24ccf5157a62b6cade6efec61bb9854dd07df906efc1a40c72edafe9a22",
+      "source": "public/data/departments/communes-dept-25.json"
+    },
+    {
+      "path": "data/departments/communes-dept-26.json",
+      "sha256": "5c69b02bc99d1643b58952a808b722e99d1517c45ce8224c3185d8e0ce969726",
+      "source": "public/data/departments/communes-dept-26.json"
+    },
+    {
+      "path": "data/departments/communes-dept-27.json",
+      "sha256": "7d99a7d70ab71d6ef8b78ebedef4af68d79bf6a359ec4693e9bae27ff314bbe2",
+      "source": "public/data/departments/communes-dept-27.json"
+    },
+    {
+      "path": "data/departments/communes-dept-28.json",
+      "sha256": "eb33e43bcf9b3f5c6a8f7326babbf0017a656ece5fdbee081512e604e3b09dfe",
+      "source": "public/data/departments/communes-dept-28.json"
+    },
+    {
+      "path": "data/departments/communes-dept-29.json",
+      "sha256": "8948d6816c06cff4536fae35e25257034597958405d85214787a975d667d404a",
+      "source": "public/data/departments/communes-dept-29.json"
+    },
+    {
+      "path": "data/departments/communes-dept-2A.json",
+      "sha256": "184975452f55f0175d11e748c03461fba87d772bfa672143809515eabec65282",
+      "source": "public/data/departments/communes-dept-2A.json"
+    },
+    {
+      "path": "data/departments/communes-dept-2B.json",
+      "sha256": "c91b5ac7865919db96b6e65789c0ccee6647fbd8e46c8958f28614ed93b1596f",
+      "source": "public/data/departments/communes-dept-2B.json"
+    },
+    {
+      "path": "data/departments/communes-dept-30.json",
+      "sha256": "6d8aa5edc980212106d67d8ad3e8cd6e3776de18d540381c0484392b89ec76d2",
+      "source": "public/data/departments/communes-dept-30.json"
+    },
+    {
+      "path": "data/departments/communes-dept-31.json",
+      "sha256": "b611503e4778490cddec1f6eaa2eabf7418f464d8aecd77ef24883a91aabf6ce",
+      "source": "public/data/departments/communes-dept-31.json"
+    },
+    {
+      "path": "data/departments/communes-dept-32.json",
+      "sha256": "f46b6ea7e03c553600b859f1dedb0db4201ac80b91974e81a6b99bea57e2598b",
+      "source": "public/data/departments/communes-dept-32.json"
+    },
+    {
+      "path": "data/departments/communes-dept-33.json",
+      "sha256": "fdc2a780bc2002318f7236fe34395e93d396a487bb2dc76743525df80f1f6424",
+      "source": "public/data/departments/communes-dept-33.json"
+    },
+    {
+      "path": "data/departments/communes-dept-34.json",
+      "sha256": "1f9ddb3a76be6fb08ac10fd9b09326a80010c80e280172fecc4787e72da9fb8a",
+      "source": "public/data/departments/communes-dept-34.json"
+    },
+    {
+      "path": "data/departments/communes-dept-35.json",
+      "sha256": "67ad93496d2001f6dc8193d8832fdc3b7990a7f9a569484fefd5fbd443217b60",
+      "source": "public/data/departments/communes-dept-35.json"
+    },
+    {
+      "path": "data/departments/communes-dept-36.json",
+      "sha256": "eb08fbe631af9fc50a236a8b91cf136bca3ac7352183c1d9f9ab45fc753f8a95",
+      "source": "public/data/departments/communes-dept-36.json"
+    },
+    {
+      "path": "data/departments/communes-dept-37.json",
+      "sha256": "4f89d4062a7122baba71a1f6635f876b3efbc296fe71153270c4195155784bf9",
+      "source": "public/data/departments/communes-dept-37.json"
+    },
+    {
+      "path": "data/departments/communes-dept-38.json",
+      "sha256": "634eea42b3dce1e1f6cfda203b618429a52d2e8a55acda37f9f0bcd2884dc605",
+      "source": "public/data/departments/communes-dept-38.json"
+    },
+    {
+      "path": "data/departments/communes-dept-39.json",
+      "sha256": "1285d865d5f21aab4cccff1e43487826d4778ec052f8248b9b21d16a31a08f2d",
+      "source": "public/data/departments/communes-dept-39.json"
+    },
+    {
+      "path": "data/departments/communes-dept-40.json",
+      "sha256": "39a6d6ae2f41b9f373ba0b0bc57cc58c5f60e88612b14796fbc7c57f97f49fa6",
+      "source": "public/data/departments/communes-dept-40.json"
+    },
+    {
+      "path": "data/departments/communes-dept-41.json",
+      "sha256": "1ada54f45109038cdce78bb940fe7667b567f6a4cf91d8f28c5e976707c9b470",
+      "source": "public/data/departments/communes-dept-41.json"
+    },
+    {
+      "path": "data/departments/communes-dept-42.json",
+      "sha256": "b6bd991eda06855b912cdcd03d7073de1990da33af21be5bc3f2b4780182beb5",
+      "source": "public/data/departments/communes-dept-42.json"
+    },
+    {
+      "path": "data/departments/communes-dept-43.json",
+      "sha256": "10580c2dd1573dfc2b747b9ce872758ce295cd3c58f09b1f91fe72595ba68fb5",
+      "source": "public/data/departments/communes-dept-43.json"
+    },
+    {
+      "path": "data/departments/communes-dept-44.json",
+      "sha256": "c9e9bfc6c8fc255ec19f16d3f631146668430a16d37b90e48717b0af91813757",
+      "source": "public/data/departments/communes-dept-44.json"
+    },
+    {
+      "path": "data/departments/communes-dept-45.json",
+      "sha256": "13e3d15d76f63444738569ef128c83d78f2fdc8a574ad380e3acbcc16a95cb36",
+      "source": "public/data/departments/communes-dept-45.json"
+    },
+    {
+      "path": "data/departments/communes-dept-46.json",
+      "sha256": "b45db6c0b143a4a04cb27526f155ced0123dd5f25318f623b8efe6c76bf9d86b",
+      "source": "public/data/departments/communes-dept-46.json"
+    },
+    {
+      "path": "data/departments/communes-dept-47.json",
+      "sha256": "915f7fd86fc3f8688ad6f9287bb6fcffa0f05874ff307e2f0eeaf4bbc6fb9227",
+      "source": "public/data/departments/communes-dept-47.json"
+    },
+    {
+      "path": "data/departments/communes-dept-48.json",
+      "sha256": "918cde01016609437f4afbb5a4149951cea76c734e57481ff56555ffcdfabc2a",
+      "source": "public/data/departments/communes-dept-48.json"
+    },
+    {
+      "path": "data/departments/communes-dept-49.json",
+      "sha256": "c67caf331a1dfb876a0c3f2e1d6b3ad1bdec1b58be47440ef64dcc4867780bb5",
+      "source": "public/data/departments/communes-dept-49.json"
+    },
+    {
+      "path": "data/departments/communes-dept-50.json",
+      "sha256": "9353ea68768d00025b260a8970241d402310e12e90741b6538f3041af48d4acf",
+      "source": "public/data/departments/communes-dept-50.json"
+    },
+    {
+      "path": "data/departments/communes-dept-51.json",
+      "sha256": "086de2b52a80fd0084a9c6e123c290174d84a68ac9f7a2bde8040025520688a9",
+      "source": "public/data/departments/communes-dept-51.json"
+    },
+    {
+      "path": "data/departments/communes-dept-52.json",
+      "sha256": "3208882c4bd6160577201b3f79a19f3ccb8d41f51f73e241c0152f07b3e1046a",
+      "source": "public/data/departments/communes-dept-52.json"
+    },
+    {
+      "path": "data/departments/communes-dept-53.json",
+      "sha256": "542dcbe33bf96b935f4d44c0a0b83e5acc5f813949590c8157b7b83a735a69e0",
+      "source": "public/data/departments/communes-dept-53.json"
+    },
+    {
+      "path": "data/departments/communes-dept-54.json",
+      "sha256": "62f6d3e30b8b79c6641e5b5faa9057666dd22e10850f779cdedbccf1efed5816",
+      "source": "public/data/departments/communes-dept-54.json"
+    },
+    {
+      "path": "data/departments/communes-dept-55.json",
+      "sha256": "835f20399485492f4b0daa4a67c4101ee3bb712230c20519c8482de3d45166b1",
+      "source": "public/data/departments/communes-dept-55.json"
+    },
+    {
+      "path": "data/departments/communes-dept-56.json",
+      "sha256": "a20453184f2851135b51794ce7bf53823d77e92246daead8a3a8889c14358620",
+      "source": "public/data/departments/communes-dept-56.json"
+    },
+    {
+      "path": "data/departments/communes-dept-57.json",
+      "sha256": "f4fcc3f16c93d1f120e6761b70ccfa954e71a994178f0c110b2eed1d46e6f4b5",
+      "source": "public/data/departments/communes-dept-57.json"
+    },
+    {
+      "path": "data/departments/communes-dept-58.json",
+      "sha256": "09198fb21ee4dc7cd98b405ff2dba78e9533dc30def5014f3dd05faa40dca2d3",
+      "source": "public/data/departments/communes-dept-58.json"
+    },
+    {
+      "path": "data/departments/communes-dept-59.json",
+      "sha256": "2384c052a0718a13dbeabaddece6e4f2e453631d2efb58a2c9345d304022a43f",
+      "source": "public/data/departments/communes-dept-59.json"
+    },
+    {
+      "path": "data/departments/communes-dept-60.json",
+      "sha256": "e75e53e93cbb5378e09f199cd118f2adfc6890097ea04d493e3036384451d019",
+      "source": "public/data/departments/communes-dept-60.json"
+    },
+    {
+      "path": "data/departments/communes-dept-61.json",
+      "sha256": "ef2a545893c28a8eea22e1d545b21a3822538e4c3e912920bb9a279c940a77fe",
+      "source": "public/data/departments/communes-dept-61.json"
+    },
+    {
+      "path": "data/departments/communes-dept-62.json",
+      "sha256": "403841c7d118e86ce02ac93ec2d52224d25ccda3f8b81bac63ac2fb1819a99e7",
+      "source": "public/data/departments/communes-dept-62.json"
+    },
+    {
+      "path": "data/departments/communes-dept-63.json",
+      "sha256": "f19103875223b85c775f2153de6a95a2d7891d00552c1b25ac702c251837e652",
+      "source": "public/data/departments/communes-dept-63.json"
+    },
+    {
+      "path": "data/departments/communes-dept-64.json",
+      "sha256": "afa467d1f0c35b1a59949f475d7630a1f6796b199daf279d801343e3d25585b5",
+      "source": "public/data/departments/communes-dept-64.json"
+    },
+    {
+      "path": "data/departments/communes-dept-65.json",
+      "sha256": "8aa8c35adb6bda4b6e6876a3fcb9b29c74f42bd44831dd2a6a0c2501ed553b1e",
+      "source": "public/data/departments/communes-dept-65.json"
+    },
+    {
+      "path": "data/departments/communes-dept-66.json",
+      "sha256": "c874d75fca2d857ec77ec8b17913d08a6f0b0bdcd1e45fb133166bf354cdc78f",
+      "source": "public/data/departments/communes-dept-66.json"
+    },
+    {
+      "path": "data/departments/communes-dept-67.json",
+      "sha256": "f9c0dc1a779b73ae2ce6b087df37dccf7342ee646bb9a1c75ab8a35706670eb6",
+      "source": "public/data/departments/communes-dept-67.json"
+    },
+    {
+      "path": "data/departments/communes-dept-68.json",
+      "sha256": "d8eb12b5ba90900ec2cb2017938ab4d080d1cff62140e8b4d68ad6a0774e367c",
+      "source": "public/data/departments/communes-dept-68.json"
+    },
+    {
+      "path": "data/departments/communes-dept-69.json",
+      "sha256": "f78be27baa532edbf1943ea93825750afe116e9236aab37a255f6c237f95ea29",
+      "source": "public/data/departments/communes-dept-69.json"
+    },
+    {
+      "path": "data/departments/communes-dept-70.json",
+      "sha256": "511a109940bad0800ebae4e88c71b0fa687b9bcf3074912e9952a3b1e0fcd253",
+      "source": "public/data/departments/communes-dept-70.json"
+    },
+    {
+      "path": "data/departments/communes-dept-71.json",
+      "sha256": "f0470ea01ab646c8fe2c6f44d91ae8ebdf4ed5b97de420296fb2ef8f6c1b1116",
+      "source": "public/data/departments/communes-dept-71.json"
+    },
+    {
+      "path": "data/departments/communes-dept-72.json",
+      "sha256": "3260153f1ff001463923825085c203bb23ed9a0511f83eb0eeccbb9e2d36a29f",
+      "source": "public/data/departments/communes-dept-72.json"
+    },
+    {
+      "path": "data/departments/communes-dept-73.json",
+      "sha256": "2a978a5b4eb6872eca55cf4ac1ddc4ad4e0f348dc0d8b8a029c6ec2fb887c3a4",
+      "source": "public/data/departments/communes-dept-73.json"
+    },
+    {
+      "path": "data/departments/communes-dept-74.json",
+      "sha256": "3cc3c63f0553b4e59812cd6562090eaddea40e4abc5b3a32e67147e4c4a15d70",
+      "source": "public/data/departments/communes-dept-74.json"
+    },
+    {
+      "path": "data/departments/communes-dept-75.json",
+      "sha256": "3517803bbbb9ba677af6cd8c74b3c30deaff5b090156602a610c491025091060",
+      "source": "public/data/departments/communes-dept-75.json"
+    },
+    {
+      "path": "data/departments/communes-dept-76.json",
+      "sha256": "69e989055963f9ca7317cd0e49524ee25fd153042595a41d3ece368c658fbb1a",
+      "source": "public/data/departments/communes-dept-76.json"
+    },
+    {
+      "path": "data/departments/communes-dept-77.json",
+      "sha256": "e558d6b2339c917cd2f06b363b4f9c25c0b406ff9efbfb82f4616f411f5c2030",
+      "source": "public/data/departments/communes-dept-77.json"
+    },
+    {
+      "path": "data/departments/communes-dept-78.json",
+      "sha256": "07fa36b44870f9abad833e0a1fa27e1b6c3722e1c571ff85be8440639e8b0e79",
+      "source": "public/data/departments/communes-dept-78.json"
+    },
+    {
+      "path": "data/departments/communes-dept-79.json",
+      "sha256": "a294dafc535e54ecb593a653dca5ecc37ad49fb4432aca5cffea2a435b62fc36",
+      "source": "public/data/departments/communes-dept-79.json"
+    },
+    {
+      "path": "data/departments/communes-dept-80.json",
+      "sha256": "812058ee3b2e5561a03a3569a3a543906e29d3a4892471f874ffcf41940f184a",
+      "source": "public/data/departments/communes-dept-80.json"
+    },
+    {
+      "path": "data/departments/communes-dept-81.json",
+      "sha256": "e249cae3deaa12697f9544ed33fdd2ee4426fc5965677866b0fb100254c0b21a",
+      "source": "public/data/departments/communes-dept-81.json"
+    },
+    {
+      "path": "data/departments/communes-dept-82.json",
+      "sha256": "f4b15050aff5b121cbec336e6313422cdf5e3b4c71fbd05dde02827c35a2b109",
+      "source": "public/data/departments/communes-dept-82.json"
+    },
+    {
+      "path": "data/departments/communes-dept-83.json",
+      "sha256": "3d9754421c91a83404849de116d81279baabc85cdf3887d72625d8dea89a085e",
+      "source": "public/data/departments/communes-dept-83.json"
+    },
+    {
+      "path": "data/departments/communes-dept-84.json",
+      "sha256": "1e3c23d94003520703df4469ac3ac73a1af4800b3f3e7e33068989cb517b6e2f",
+      "source": "public/data/departments/communes-dept-84.json"
+    },
+    {
+      "path": "data/departments/communes-dept-85.json",
+      "sha256": "37384e02402d77ccaa9548964622ca983fd93fcb0b5b2f451b9ef527a25a38ed",
+      "source": "public/data/departments/communes-dept-85.json"
+    },
+    {
+      "path": "data/departments/communes-dept-86.json",
+      "sha256": "2582a79721f7258d96a7ae335b2cf2b563514145c709df0cd6e1616acb1d2f35",
+      "source": "public/data/departments/communes-dept-86.json"
+    },
+    {
+      "path": "data/departments/communes-dept-87.json",
+      "sha256": "1249bc927a16f3b88d6765ff1c1fce6d896ba4f87d6412a6bad606d483fe7ccf",
+      "source": "public/data/departments/communes-dept-87.json"
+    },
+    {
+      "path": "data/departments/communes-dept-88.json",
+      "sha256": "b238750226c4d6c838616eb715902f8caec8b628334513c813678c19d0ce35d0",
+      "source": "public/data/departments/communes-dept-88.json"
+    },
+    {
+      "path": "data/departments/communes-dept-89.json",
+      "sha256": "d1a634b325eda1fe7a19511d7461e9583e29558c5450125b194a7f10191f7fa9",
+      "source": "public/data/departments/communes-dept-89.json"
+    },
+    {
+      "path": "data/departments/communes-dept-90.json",
+      "sha256": "c0f7147e3c15da51a33f5ee0613afb8f15f42a747a828187737f14cae100f0f0",
+      "source": "public/data/departments/communes-dept-90.json"
+    },
+    {
+      "path": "data/departments/communes-dept-91.json",
+      "sha256": "9cb5fb0c5ebbf28587f76b4013a5f69e49ffacabd1013d6dc6bd0fa609e06c8c",
+      "source": "public/data/departments/communes-dept-91.json"
+    },
+    {
+      "path": "data/departments/communes-dept-92.json",
+      "sha256": "3b155bde0130b0443d34dedf7964da060285f253c73e337930f6990733d84963",
+      "source": "public/data/departments/communes-dept-92.json"
+    },
+    {
+      "path": "data/departments/communes-dept-93.json",
+      "sha256": "06b8e684fbc3860043485fa88f68f4015d358553b75b9ea0f12c6fc802ed9d92",
+      "source": "public/data/departments/communes-dept-93.json"
+    },
+    {
+      "path": "data/departments/communes-dept-94.json",
+      "sha256": "9764a29cadc9edbf78daf37dea20edf259339b01fffc320aa16c426a03d32a75",
+      "source": "public/data/departments/communes-dept-94.json"
+    },
+    {
+      "path": "data/departments/communes-dept-95.json",
+      "sha256": "20e287f3bd60172a7d9fa2bc21d12bece43c843270a1f6d8a696aa44fa889cf8",
+      "source": "public/data/departments/communes-dept-95.json"
+    },
+    {
+      "path": "data/departments/communes-dept-971.json",
+      "sha256": "a54a2696223faa9a1ebd03041dcbd335a794fe8976c51264f7e70bd5b4c5bf5a",
+      "source": "public/data/departments/communes-dept-971.json"
+    },
+    {
+      "path": "data/departments/communes-dept-972.json",
+      "sha256": "067ed4fa3164a84f717c85fd820b4b5af14995bbc6a2d5b0ffc81c1c960864e9",
+      "source": "public/data/departments/communes-dept-972.json"
+    },
+    {
+      "path": "data/departments/communes-dept-973.json",
+      "sha256": "9e7ada52bd1e4f2bef953117f27370fe83e596efd1c551b654e79441ae2eed1c",
+      "source": "public/data/departments/communes-dept-973.json"
+    },
+    {
+      "path": "data/departments/communes-dept-974.json",
+      "sha256": "63a0cba1553c0f0370980fea2d05b8b7099f126bdd3195f0315995d407f8a07e",
+      "source": "public/data/departments/communes-dept-974.json"
+    },
+    {
+      "path": "data/departments/communes-dept-975.json",
+      "sha256": "c1eca44c9c999ed1cc4d4c9ed75c9ed2913a866a5341b9d23e34913544b2e213",
+      "source": "public/data/departments/communes-dept-975.json"
+    },
+    {
+      "path": "data/departments/communes-dept-976.json",
+      "sha256": "2d5b9573929a71112e0b11f5868f98412f4f18539f1ababe544a6ca28eb5d9ed",
+      "source": "public/data/departments/communes-dept-976.json"
+    },
+    {
+      "path": "data/departments/communes-dept-977.json",
+      "sha256": "bdb80f42093a7ee904ceddb9ffe57be5ee9f349886d367982a0e12068a9a5556",
+      "source": "public/data/departments/communes-dept-977.json"
+    },
+    {
+      "path": "data/departments/communes-dept-978.json",
+      "sha256": "8b0c66bf42a788e65bafdebce2a5d9a4516974266d1ba4f1928f63f39b87de14",
+      "source": "public/data/departments/communes-dept-978.json"
+    },
+    {
+      "path": "data/departments/communes-dept-98.json",
+      "sha256": "c0dfd60fbdedb11fef10aa8aca1138625e27e021d50639d3c5afa840382a6732",
+      "source": "public/data/departments/communes-dept-98.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-01.json",
+      "sha256": "634bad94ed56a5aa38dd291f099057083efdb609127eedc333221deeac62a5cd",
+      "source": "public/data/departments/dpe-averages-dept-01.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-02.json",
+      "sha256": "1848dbe7b725c2dbdf782fcc98656d4a4ef9bb7b39ab82b01f8a8107847c3971",
+      "source": "public/data/departments/dpe-averages-dept-02.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-03.json",
+      "sha256": "f470c0c052e8db3dfd5b5419d86e3faf4ecfe24371b1ce4f66cd1f178a073635",
+      "source": "public/data/departments/dpe-averages-dept-03.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-04.json",
+      "sha256": "c72ac131c207080f086267d232b809cce996cae7b7ecce553f9afcf71c9399c2",
+      "source": "public/data/departments/dpe-averages-dept-04.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-05.json",
+      "sha256": "db267b2b69fe28fbb3de86d02f3e146f392b33dc599cb4453c91afb2d7fe4ffa",
+      "source": "public/data/departments/dpe-averages-dept-05.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-06.json",
+      "sha256": "a733e74756c57254066dca1f014a70b7970da43e6d1cab7af0168e616bd5c97e",
+      "source": "public/data/departments/dpe-averages-dept-06.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-07.json",
+      "sha256": "603c40f4284618ae7dcc145736fb4887982b5d562b28ab11bb5173ecad59466b",
+      "source": "public/data/departments/dpe-averages-dept-07.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-08.json",
+      "sha256": "df171eaf4a8bc5836da07abc83a6db5d66cf87ce04d752c83b36d8d5ddbc3e6e",
+      "source": "public/data/departments/dpe-averages-dept-08.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-09.json",
+      "sha256": "9ddd04935d0d103aa00e5e94806fede5ab6b4be18adc49e22095ed2f47816514",
+      "source": "public/data/departments/dpe-averages-dept-09.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-10.json",
+      "sha256": "075d87173f8fd5a8c9b330308ee54b5df34d64d55c21e6295e0b2e937430597b",
+      "source": "public/data/departments/dpe-averages-dept-10.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-11.json",
+      "sha256": "8d139b737eeb587d8660676843b7c6b8e792b54efb686313809d9435cd6515ef",
+      "source": "public/data/departments/dpe-averages-dept-11.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-12.json",
+      "sha256": "134d6ebf5dc3162ad2e7cfd098fd26669732843654f07f5befa3599ce6e7feb9",
+      "source": "public/data/departments/dpe-averages-dept-12.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-13.json",
+      "sha256": "95f609a4fb1003865dbbd0081692f538675d98cb98d4fd800af30eba6f1f5479",
+      "source": "public/data/departments/dpe-averages-dept-13.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-14.json",
+      "sha256": "ac04bdd009f3ebd07c14b433292c29938afbe2b42cc8e45454e10ba2c8e4ca26",
+      "source": "public/data/departments/dpe-averages-dept-14.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-15.json",
+      "sha256": "ffeaadb141be72776067338793981188bfce41198275466e75704a7a225be3a1",
+      "source": "public/data/departments/dpe-averages-dept-15.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-16.json",
+      "sha256": "d4fda395771c2029af9ac1b825adccad9a92bb1f24429fde9034e9c0afeb66e6",
+      "source": "public/data/departments/dpe-averages-dept-16.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-17.json",
+      "sha256": "76273d95f979ea6f2f3047e9db15deebbda6d2ac5f99a80f1ddacf2be73447b5",
+      "source": "public/data/departments/dpe-averages-dept-17.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-18.json",
+      "sha256": "7ba5db220b24fd5eb9d11519baf53a4a977bc98be88aea705baa3ca0fe19c7b0",
+      "source": "public/data/departments/dpe-averages-dept-18.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-19.json",
+      "sha256": "115dd2870596542803af8446dc62997585b66fb52a0e548106ae92e5cee579ab",
+      "source": "public/data/departments/dpe-averages-dept-19.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-20.json",
+      "sha256": "ec6c23a75095e911398586e5e5072381fce09b0a79d9d2e3123dc853c517e8a7",
+      "source": "public/data/departments/dpe-averages-dept-20.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-21.json",
+      "sha256": "fc334e45b4622449986e59372acd32a6683d6492f55c95acd8816ecd11ebf2fd",
+      "source": "public/data/departments/dpe-averages-dept-21.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-22.json",
+      "sha256": "18181c5c50b336622ec9611ccb024195e102d3da2e7f2237f6fb2e72481f018e",
+      "source": "public/data/departments/dpe-averages-dept-22.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-23.json",
+      "sha256": "b001dcc07d2eefb6caa92e29cd38cbe0d2cd21bb89c850c538f3f13046b0c9cd",
+      "source": "public/data/departments/dpe-averages-dept-23.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-24.json",
+      "sha256": "e709d63d5207a24c1d7e7fb0baa46831423c7aaffc72bc8d7872205ba5448449",
+      "source": "public/data/departments/dpe-averages-dept-24.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-25.json",
+      "sha256": "523ea9ab26929a0c5c9457996239d4ae67524014afe120cc80ac50d01008f9b5",
+      "source": "public/data/departments/dpe-averages-dept-25.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-26.json",
+      "sha256": "f01c7aa8553287df1c7191fd6638ccf893b102a59e46133a23bc904805972292",
+      "source": "public/data/departments/dpe-averages-dept-26.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-27.json",
+      "sha256": "2d48c4aa2e38fc7996eb95d80983f0d3fc6a19424c0c3c464f0c733fb73b049b",
+      "source": "public/data/departments/dpe-averages-dept-27.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-28.json",
+      "sha256": "0be255a5d685ad2281c12dad0999ac4e325897c7d9e9d7cf97e363c270761aef",
+      "source": "public/data/departments/dpe-averages-dept-28.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-29.json",
+      "sha256": "9cdace8d9ae7cb3f6572a896a7cb9df0a583111c68684bf17193e25340e2022d",
+      "source": "public/data/departments/dpe-averages-dept-29.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-30.json",
+      "sha256": "8db743e37ba1fe81cd9c7165ae2d49cd31b56260d796e77baa0e8e51fb80faf1",
+      "source": "public/data/departments/dpe-averages-dept-30.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-31.json",
+      "sha256": "2a56a1340766d24be156615a7eee1875a4abf1d7bb82dffbe6f4bd3c9f9abfc1",
+      "source": "public/data/departments/dpe-averages-dept-31.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-32.json",
+      "sha256": "451a8face84e6f235920821d7a0f210342821bd75d7a6cbd0d714bf27be94e66",
+      "source": "public/data/departments/dpe-averages-dept-32.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-33.json",
+      "sha256": "a27d3784c3da8bbd89e1710664daf23c4ca8e9bdf861bc20db6bd5b644bd360b",
+      "source": "public/data/departments/dpe-averages-dept-33.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-34.json",
+      "sha256": "be57a5b50096148c54b4b6cb5eeca26162ff2f52a8ebe5e442ed98954b7b2d51",
+      "source": "public/data/departments/dpe-averages-dept-34.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-35.json",
+      "sha256": "63979e19c9893e1ce556e4058345143842a81305e83d42c2f7838351ba1dddfe",
+      "source": "public/data/departments/dpe-averages-dept-35.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-36.json",
+      "sha256": "2b17be368556cca290ebe18bae41c2ee62fb0c4d5046e0560965286c6339dfe0",
+      "source": "public/data/departments/dpe-averages-dept-36.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-37.json",
+      "sha256": "114566bf5d9121e8b2b59cf5da88d1de503e9c3ef32b1729b8d67f039d3f0c7f",
+      "source": "public/data/departments/dpe-averages-dept-37.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-38.json",
+      "sha256": "a395eb59da32d56c72558b7c98f456daef34feb00fb9334866b1e5492ebeb13f",
+      "source": "public/data/departments/dpe-averages-dept-38.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-39.json",
+      "sha256": "40b0817c03e36548bd4f379ca34d116428900eaef512edacb3804c20a7f4334f",
+      "source": "public/data/departments/dpe-averages-dept-39.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-40.json",
+      "sha256": "1bb1e78332a5072ba5fc3fdf413c3fd3c1ea944d588147a5437ecb6bfca99faa",
+      "source": "public/data/departments/dpe-averages-dept-40.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-41.json",
+      "sha256": "259439b6d08c7df8c889902d8f1fdd8748f05e829d5b9e511744699e612307cd",
+      "source": "public/data/departments/dpe-averages-dept-41.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-42.json",
+      "sha256": "7c66e92113ec8202ae5fcc9e4315488121ef5a69f3e591b9cc8a3c6e1e79a194",
+      "source": "public/data/departments/dpe-averages-dept-42.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-43.json",
+      "sha256": "8da3d2b27618c4e6c83f777254d0832c212ebe5aeb367c7db243f9ca01d338ec",
+      "source": "public/data/departments/dpe-averages-dept-43.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-44.json",
+      "sha256": "83c62b4ff295cf72c2c87995e8037e71e375cc94b77c2736dbaee066425c9466",
+      "source": "public/data/departments/dpe-averages-dept-44.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-45.json",
+      "sha256": "b8ca1c26268d75f18f1eb1fc9d26922e2a3a7736f08f582beaf63bd00672a7f6",
+      "source": "public/data/departments/dpe-averages-dept-45.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-46.json",
+      "sha256": "fc0b5c94fe73b57267992d33643f1bca93f13439e1021901f8f8102dfda24b01",
+      "source": "public/data/departments/dpe-averages-dept-46.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-47.json",
+      "sha256": "e8378de70183b2c40815e5420803754318ea54a5382497f52284c1808058c5e4",
+      "source": "public/data/departments/dpe-averages-dept-47.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-48.json",
+      "sha256": "94c7804ef7153ca403ca7fd62411105b8b5ef6315d3fb60e177db3181a0dfc60",
+      "source": "public/data/departments/dpe-averages-dept-48.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-49.json",
+      "sha256": "c933f87b4f908c26c3be2844de6c00b03724e7e1ac0d8ccedd9cc3f1e0a328a8",
+      "source": "public/data/departments/dpe-averages-dept-49.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-50.json",
+      "sha256": "999fef3799f34dc3701d2ffb0683c6e0b207d3371b87936e5466e73fc5abce7f",
+      "source": "public/data/departments/dpe-averages-dept-50.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-51.json",
+      "sha256": "7aa175dc6b90cb64e784e0b5caea60492987f53c1d78c708b57e671311829f78",
+      "source": "public/data/departments/dpe-averages-dept-51.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-52.json",
+      "sha256": "ba54848cf23a372c84847903cda3804f6c7f1623a18c293a9d26b01415ee47a3",
+      "source": "public/data/departments/dpe-averages-dept-52.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-53.json",
+      "sha256": "569f33fedc23fc9f6b7c9128f6d191611fb845744b8a9f8eae98b58f599a186b",
+      "source": "public/data/departments/dpe-averages-dept-53.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-54.json",
+      "sha256": "63e05e8eaac8152c99dee320383c953b96d0fb97b8533f0c56fd825095e6b410",
+      "source": "public/data/departments/dpe-averages-dept-54.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-55.json",
+      "sha256": "aed2c36feea7862047e3daf5facbd18da36aa04787a7c1e839f9b8771b3713ee",
+      "source": "public/data/departments/dpe-averages-dept-55.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-56.json",
+      "sha256": "45466c0fc66085bbf211de4b60bc7e4465164e03d3e9ee88c9315213999a58de",
+      "source": "public/data/departments/dpe-averages-dept-56.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-57.json",
+      "sha256": "c577987d977e5e1ec27210ef8a2438a76526c0a7402c55dbd196193d83eccb3e",
+      "source": "public/data/departments/dpe-averages-dept-57.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-58.json",
+      "sha256": "99a370ce416ade85cd020b1b00ffe39caa38fee4b966ffd5a9adfdf764fc3f63",
+      "source": "public/data/departments/dpe-averages-dept-58.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-59.json",
+      "sha256": "8eafc013ef314047a939a26a6c2466ef8c5d35b81295bac048b901e777c465b8",
+      "source": "public/data/departments/dpe-averages-dept-59.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-60.json",
+      "sha256": "f123c2d725e23a65d4a6f759e702384c9748dc53fde23aa32b72d14b9db76260",
+      "source": "public/data/departments/dpe-averages-dept-60.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-61.json",
+      "sha256": "b5e3b41a67efb35134fd2a88a1df939539f52b1c433fa4210e1af56d28860441",
+      "source": "public/data/departments/dpe-averages-dept-61.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-62.json",
+      "sha256": "5607badac91ddb695036b093119ea020a4ddd5a61ab627fa6d0beee97e4b247b",
+      "source": "public/data/departments/dpe-averages-dept-62.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-63.json",
+      "sha256": "f4676340a35d0104f1ff24a2940310177e4d6089f945b9dd0249cf60756ae500",
+      "source": "public/data/departments/dpe-averages-dept-63.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-64.json",
+      "sha256": "c09c208f9dba886c46c297c07fac62a364b40384d08c7b82f71098e7cbfcd7a1",
+      "source": "public/data/departments/dpe-averages-dept-64.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-65.json",
+      "sha256": "0f7ff39261403f39ae7f214edfa02a1f22ca28f6795f8c8af15be9085c20ae0b",
+      "source": "public/data/departments/dpe-averages-dept-65.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-66.json",
+      "sha256": "cf7282538180416cfe659c9ec88e72f7825f72639d78ca3b8038f77ff32b91da",
+      "source": "public/data/departments/dpe-averages-dept-66.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-67.json",
+      "sha256": "da230ac22443c11a1e340f99b9bc88270b32d079f7f3030af6f448fe4893b148",
+      "source": "public/data/departments/dpe-averages-dept-67.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-68.json",
+      "sha256": "a05fc0c3c9a59891a7f787d58c41291506f59c78f18ab27e1910ab0fc74a80a4",
+      "source": "public/data/departments/dpe-averages-dept-68.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-69.json",
+      "sha256": "e0b049841d188534d5ed058cc661bb53d48154ba4f82cf9905c753c03d4b37b1",
+      "source": "public/data/departments/dpe-averages-dept-69.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-70.json",
+      "sha256": "ce798fe4e1c40dccbafb8082d14bbf4dbaed75764c530cab36f26ffd7af211be",
+      "source": "public/data/departments/dpe-averages-dept-70.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-71.json",
+      "sha256": "fef015bf555b2dba8ad634303365ed7f9c338d2ad29a03b56504bf7b2573d470",
+      "source": "public/data/departments/dpe-averages-dept-71.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-72.json",
+      "sha256": "a55ff6d072ee1c86426ccd68fc5eb22a6ef8580372d073f4e3d3cad59a2b0b6a",
+      "source": "public/data/departments/dpe-averages-dept-72.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-73.json",
+      "sha256": "83a312e8b728dfb5a416efd95b4a04a4876162552f13db19fcf279e0d9a5b0de",
+      "source": "public/data/departments/dpe-averages-dept-73.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-74.json",
+      "sha256": "18801c93b36e8478bc6f84b885e0f41e8f4af40f1d55bae7f0abeb337aa42711",
+      "source": "public/data/departments/dpe-averages-dept-74.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-75.json",
+      "sha256": "545f47e685f7f1fc699ff5117ea25753a8220352ec3d09041d4594097e576cbd",
+      "source": "public/data/departments/dpe-averages-dept-75.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-76.json",
+      "sha256": "d961306592c57bbb94a8e4781788bca312dc8f9463155cdf8fc6a4e6c496da51",
+      "source": "public/data/departments/dpe-averages-dept-76.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-77.json",
+      "sha256": "e5b260e6c3ed25adb8c45cb9182a87c9e9d56a317ba92a5ef7d8a70254e2d505",
+      "source": "public/data/departments/dpe-averages-dept-77.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-78.json",
+      "sha256": "f8b6fda78d8cfab9650bec8f4d136ea4890fefca8eac0f760e254f9d832723fe",
+      "source": "public/data/departments/dpe-averages-dept-78.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-79.json",
+      "sha256": "b626e63fbe4b6b17507c0044d9910dc74cb80f0f4933f65bd8afe202fcec022b",
+      "source": "public/data/departments/dpe-averages-dept-79.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-80.json",
+      "sha256": "563a59dd5b47433b1f94ad337c8dc4ee388a3910ab5ccd6119fc877eea1bc71c",
+      "source": "public/data/departments/dpe-averages-dept-80.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-81.json",
+      "sha256": "6dbe9d3e86eee14dee8095b54d81680075819a2df3abeb1eb6672b30182c3da6",
+      "source": "public/data/departments/dpe-averages-dept-81.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-82.json",
+      "sha256": "5d60cb3686ca32556e870a3eeb8b9c9e1c863168d6cc5087b2660bba2a0067ad",
+      "source": "public/data/departments/dpe-averages-dept-82.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-83.json",
+      "sha256": "ba91a67c3e6c8a0508949f29a9a4a5130b335fdca95e14cdec49744ee477e3c2",
+      "source": "public/data/departments/dpe-averages-dept-83.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-84.json",
+      "sha256": "8ff1384cdb35ff1a593a9d3ec5f3ab0bed0a24d46e5917859725213b7d48ac70",
+      "source": "public/data/departments/dpe-averages-dept-84.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-85.json",
+      "sha256": "94fb6c44fc4ac512d39ddffd0c2b977f436fa5bff3682e4db57e4c62b7fa69f9",
+      "source": "public/data/departments/dpe-averages-dept-85.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-86.json",
+      "sha256": "b6225ea42ca5caf914ba9a2b393be361d7287a59ee92142d501f2898b42452ec",
+      "source": "public/data/departments/dpe-averages-dept-86.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-87.json",
+      "sha256": "dc9ea6200201b67b51efa3ed17b090f98fa7f8ededb670f8503542e8c0cd4c20",
+      "source": "public/data/departments/dpe-averages-dept-87.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-88.json",
+      "sha256": "23ea8454b28c966528301630951662690f25a17a226d384bd7e9ba9f3467e68b",
+      "source": "public/data/departments/dpe-averages-dept-88.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-89.json",
+      "sha256": "92d955c1bcfa75a76d38289bf0429728ce742f7f2054a51e04dba6f0571143e0",
+      "source": "public/data/departments/dpe-averages-dept-89.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-90.json",
+      "sha256": "ce84cae1be6454adb955a95844afbabb16caaa91d3f5f39a3f2a4097aa48a868",
+      "source": "public/data/departments/dpe-averages-dept-90.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-91.json",
+      "sha256": "ff4b96f8fbe1b3cbebb1b2d74bb86fb2458560f26c61a2ea8f04e5fce8d30c04",
+      "source": "public/data/departments/dpe-averages-dept-91.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-92.json",
+      "sha256": "a2f7d649d9acb350ce0f296c34c1b8bfae781c7e2255e72a0d506df779bb1cf9",
+      "source": "public/data/departments/dpe-averages-dept-92.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-93.json",
+      "sha256": "9936de7b04ec241fe93c74f57b67d070182f12a5ab56c42758da405f008cc447",
+      "source": "public/data/departments/dpe-averages-dept-93.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-94.json",
+      "sha256": "a15cfc91676539c3e7643ab5e5ef3ce586d173487258d8896117fedbbc4caa29",
+      "source": "public/data/departments/dpe-averages-dept-94.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-95.json",
+      "sha256": "9e4fa5487b7583ff97e529346e1cce6b96c2f9c51e2a0047ddb5903ac6301f19",
+      "source": "public/data/departments/dpe-averages-dept-95.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-971.json",
+      "sha256": "dfbebcc493030435488ff024c06f310e8e4249dc84b94c498abc9e78e23f7b2f",
+      "source": "public/data/departments/dpe-averages-dept-971.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-972.json",
+      "sha256": "fe5b59cc8a2394d591b35a59ce06a3226fc4794f3981f864d33ac25361a02a7e",
+      "source": "public/data/departments/dpe-averages-dept-972.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-973.json",
+      "sha256": "ecadf2215db084a39a64e823ea97dc2e2947cf4e8e534b66859687df54731cbf",
+      "source": "public/data/departments/dpe-averages-dept-973.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-974.json",
+      "sha256": "6a662b31389e6d2669d046203bec9c7a972c40a1601ae22da85b7e50ec7b6985",
+      "source": "public/data/departments/dpe-averages-dept-974.json"
+    },
+    {
+      "path": "data/departments/dpe-averages-dept-976.json",
+      "sha256": "6f87e99e8f6252bb9af70fccb5d4d8795c18cfe38041c0b27619705cdf811aa8",
+      "source": "public/data/departments/dpe-averages-dept-976.json"
+    },
+    {
+      "path": "favicon-16x16.png",
+      "sha256": "36928efd25b6362cab48eab9919b7cc7b5301ab4b139db6913afeb56a4e7f96a",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/favicon-16x16.png"
+    },
+    {
+      "path": "favicon-192x192.png",
+      "sha256": "353f586ed6732752c517f084378b13ad9aea088f45279aba7b08823955cabc5d",
+      "source": "public/favicon-192x192.png"
+    },
+    {
+      "path": "favicon-32x32.png",
+      "sha256": "f0ec55b9751d200a2acd1dd53f51c0d0e1deb95ca50923233ac6ed62b82120bc",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/favicon-32x32.png"
+    },
+    {
+      "path": "favicon-48x48.png",
+      "sha256": "50965e253bef8eb7f35c719b1fe37b3ea9860c8b9793df5a37f6f3cf5f47a0b4",
+      "source": "public/favicon-48x48.png"
+    },
+    {
+      "path": "favicon-512x512.png",
+      "sha256": "c132aef828d3d9308651a6112ceca903710087fd7180a574bc8a9010d03f5d3f",
+      "source": "public/favicon-512x512.png"
+    },
+    {
+      "path": "favicon-64x64.png",
+      "sha256": "c676648c7d840008a3ab599a7b65e1da8aa76719d0913831d73e95558cd83ba2",
+      "source": "public/favicon-64x64.png"
+    },
+    {
+      "path": "favicon.ico",
+      "sha256": "8f54bebaca8a8ba0802d489e60abe310e5e220d08b6abc672d770e0e5ddb0e8c",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/favicon.ico"
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "55b294f84d18e76849eaa177ffb83d04a2b1240cc602996881e033916c396da0",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/favicon.svg"
+    },
+    {
+      "path": "index.html",
+      "sha256": "bfa4b7c203904faeb0afed291ac6bcd3891fa392c88f82f4a635c0c9395c02ff",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/index.html"
+    },
+    {
+      "path": "manifest.example.json",
+      "sha256": "ad080430036a2ea0afee762e26a07abbbfa595aeefed373eea5c5df0cd250a14",
+      "source": "public/manifest.example.json"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "sha256": "909984d1deb84b05b8e3d26b213db241526f0dd24e2a8b4e9622edcce746afc9",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/manifest.webmanifest"
+    },
+    {
+      "path": "noise.svg",
+      "sha256": "53eccf7209e8e2b3f9f6f76d262de9b50be21bae304e7de9493ec55fe02c74c9",
+      "source": "public/noise.svg"
+    },
+    {
+      "path": "og-image.png",
+      "sha256": "a626e32a01f14d6ff264332f5dd5e3e25ab47006ee491535fd505b95fd4d324e",
+      "source": "public/og-image.png"
+    },
+    {
+      "path": "og-image.svg",
+      "sha256": "620175dd6c8df4c98ec165772dd4f083a834d8330cddc39d5fbed1a831fe410f",
+      "source": "public/og-image.svg"
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "f060ffedbdfb044217dabda65184601d920fe6901f7faa22376479986501a0bd",
+      "source": null
+    },
+    {
+      "path": "robots.txt.template",
+      "sha256": "cd81852a62af8d04c449a7611a90c7f0df688842321cf7d88f3200107beac630",
+      "source": "public/robots.txt.template"
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "eeef63fdba2c9c63deb4bc0375a4955c9581d3dc859d44bdff27369abb155475",
+      "source": null
+    },
+    {
+      "path": "sitemap.xml.template",
+      "sha256": "65c27676c17880dfdfdd335bb59d44ef10477cc1a88aa739697e48a0bd62ae70",
+      "source": "public/sitemap.xml.template"
+    },
+    {
+      "path": "stats.html",
+      "sha256": "82f706580541cc2eedab4c0547c721f997724dc94f50e242a19fb450d2a8c9ac",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/stats.html"
+    },
+    {
+      "path": "sw.js",
+      "sha256": "0c7fe7f2b5607dbb53e2c15fb4df9f6fb55b754c4ccc8e6ef8ca21cb8cad9e5e",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/sw.js"
+    },
+    {
+      "path": "workbox-5ffe50d4.js",
+      "sha256": "5d6d993b663efd8a90b17a86aba1a2addea4bb20a682f8f8de97ac57b7bd28c7",
+      "source": "e2e-pwa/fixtures/production-2026-10-03/static/workbox-5ffe50d4.js"
+    }
+  ]
+}

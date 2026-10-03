@@ -1,0 +1,49 @@
+Supplemental notices for the byte-preserved production stats.html visualization
+
+The production stats.html includes Rollup Plugin Visualizer's treemap viewer and
+its bundled frontend library implementations. These supplemental full license
+texts accompany the captured bytes; they do not modify the captured HTML or
+any hashed application asset. Keep the application's existing Open Licence,
+MIT, and ISC notices and its embedded comments as well.
+
+The viewer runtime is exactly byte-identical to the dist/lib/treemap.js shipped
+in the locally available rollup-plugin-visualizer 6.0.3 package. That match is not
+a claim that its version, or every transitive frontend dependency version, has
+been uniquely recovered from production. Package identities below are supported
+by the runtime code and matching viewer metadata. Unknown historical versions
+are intentionally not assigned.
+
+License texts:
+
+- Rollup Plugin Visualizer: MIT, Denis Bardadym
+  rollup-plugin-visualizer-MIT.txt
+  https://github.com/btd/rollup-plugin-visualizer
+- Preact: MIT, Jason Miller
+  preact-MIT.txt
+  https://github.com/preactjs/preact
+- Picomatch: MIT, Jon Schlinkert
+  picomatch-MIT.txt
+  https://github.com/micromatch/picomatch
+- bytes: MIT, TJ Holowaychuk and Jed Watson
+  bytes-MIT.txt
+  https://github.com/visionmedia/bytes.js
+- D3 array, color, hierarchy, interpolate, scale, and format: ISC, Mike Bostock
+  d3-array-ISC.txt; d3-color-ISC.txt; d3-hierarchy-ISC.txt;
+  d3-interpolate-ISC.txt; d3-scale-ISC.txt; d3-format-ISC.txt
+  https://github.com/d3
+- internmap: ISC, Mike Bostock
+  internmap-ISC.txt
+  https://github.com/mbostock/internmap
+
+The upstream source revisions recorded for these notices identify where the
+license text was obtained, not the versions bundled in the captured app.
+D3's component-specific copyright lines and complete permission/disclaimer
+texts are preserved individually rather than replaced by a synthesized
+project-wide license. The bytes notice is copied from the complete upstream
+notice preserved in Playwright's ThirdPartyNotices.txt; the section's version
+identifies that notice source only.
+
+Separate existing uncertainty: the application's legal page attributes its SVG
+map artwork generally to Wikimedia Commons, without naming each source work,
+author, or exact license. These software notices do not resolve that artwork
+provenance or establish that the Open Licence for data covers the artwork.

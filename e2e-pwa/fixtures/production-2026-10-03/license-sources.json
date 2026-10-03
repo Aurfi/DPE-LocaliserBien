@@ -1,0 +1,141 @@
+{
+  "retrievedAt": "2026-10-03",
+  "scope": "Sources for supplemental notices, not a reconstructed production lockfile or legal clearance. Runtime files remain unchanged.",
+  "notices": [
+    {
+      "package": "d3-array",
+      "repository": "https://github.com/d3/d3-array",
+      "sourceCommit": "be0ae0d2b36ab91b833294ad2cfc5d5905acbd0f",
+      "licenseSourceUrl": "https://github.com/d3/d3-array/blob/be0ae0d2b36ab91b833294ad2cfc5d5905acbd0f/LICENSE",
+      "license": "ISC",
+      "licenseFile": "d3-array-ISC.txt",
+      "historicalBundledVersionEstablished": false,
+      "copyrightLines": ["Copyright 2010-2023 Mike Bostock"],
+      "licenseSha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "d3-color",
+      "repository": "https://github.com/d3/d3-color",
+      "sourceCommit": "71c7f100f9fa85a1c70fcbaeb5f803ee8db5620d",
+      "licenseSourceUrl": "https://github.com/d3/d3-color/blob/71c7f100f9fa85a1c70fcbaeb5f803ee8db5620d/LICENSE",
+      "license": "ISC",
+      "licenseFile": "d3-color-ISC.txt",
+      "historicalBundledVersionEstablished": false,
+      "copyrightLines": ["Copyright 2010-2022 Mike Bostock"],
+      "licenseSha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "d3-format",
+      "repository": "https://github.com/d3/d3-format",
+      "sourceCommit": "ebdc2d530277df379157f82fee6ea5623d179bd7",
+      "licenseSourceUrl": "https://github.com/d3/d3-format/blob/ebdc2d530277df379157f82fee6ea5623d179bd7/LICENSE",
+      "license": "ISC",
+      "licenseFile": "d3-format-ISC.txt",
+      "historicalBundledVersionEstablished": false,
+      "copyrightLines": ["Copyright 2010-2026 Mike Bostock"],
+      "licenseSha256": "2a6d2d5f32ba0b755ddbc1c833f766e30cdbe6ebe9a6d4e3e24427721f0b63d3",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "d3-hierarchy",
+      "repository": "https://github.com/d3/d3-hierarchy",
+      "sourceCommit": "c4ae7066d5a52e8aeaab24b3f7113e25c38183f2",
+      "licenseSourceUrl": "https://github.com/d3/d3-hierarchy/blob/c4ae7066d5a52e8aeaab24b3f7113e25c38183f2/LICENSE",
+      "license": "ISC",
+      "licenseFile": "d3-hierarchy-ISC.txt",
+      "historicalBundledVersionEstablished": false,
+      "copyrightLines": ["Copyright 2010-2021 Mike Bostock"],
+      "licenseSha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "d3-interpolate",
+      "repository": "https://github.com/d3/d3-interpolate",
+      "sourceCommit": "2eeffc0d02f2947552cf0a0b73bdf26fe90e1c28",
+      "licenseSourceUrl": "https://github.com/d3/d3-interpolate/blob/2eeffc0d02f2947552cf0a0b73bdf26fe90e1c28/LICENSE",
+      "license": "ISC",
+      "licenseFile": "d3-interpolate-ISC.txt",
+      "historicalBundledVersionEstablished": false,
+      "copyrightLines": ["Copyright 2010-2021 Mike Bostock"],
+      "licenseSha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "d3-scale",
+      "repository": "https://github.com/d3/d3-scale",
+      "sourceCommit": "d6904a4bde09e16005e0ad8ca3e25b10ce54fa0d",
+      "licenseSourceUrl": "https://github.com/d3/d3-scale/blob/d6904a4bde09e16005e0ad8ca3e25b10ce54fa0d/LICENSE",
+      "license": "ISC",
+      "licenseFile": "d3-scale-ISC.txt",
+      "historicalBundledVersionEstablished": false,
+      "copyrightLines": ["Copyright 2010-2021 Mike Bostock"],
+      "licenseSha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "internmap",
+      "repository": "https://github.com/mbostock/internmap",
+      "sourceCommit": "78db0b387b951c036f7a8d6580d98afd8f416a5e",
+      "licenseSourceUrl": "https://github.com/mbostock/internmap/blob/78db0b387b951c036f7a8d6580d98afd8f416a5e/LICENSE",
+      "license": "ISC",
+      "licenseFile": "internmap-ISC.txt",
+      "historicalBundledVersionEstablished": false,
+      "copyrightLines": ["Copyright 2021 Mike Bostock"],
+      "licenseSha256": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "preact",
+      "repository": "https://github.com/preactjs/preact",
+      "sourceCommit": "45728eb4315bcb22c5d50b8fec0bbac419eaa799",
+      "licenseSourceUrl": "https://github.com/preactjs/preact/blob/45728eb4315bcb22c5d50b8fec0bbac419eaa799/LICENSE",
+      "license": "MIT",
+      "licenseFile": "preact-MIT.txt",
+      "historicalBundledVersionEstablished": false,
+      "copyrightLines": ["Copyright (c) 2015-present Jason Miller"],
+      "licenseSha256": "1fe6958409c8c257a70c587a18b6f7f412b179b456630790d30b2ec9a8e4b7d4",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "rollup-plugin-visualizer",
+      "license": "MIT",
+      "licenseFile": "rollup-plugin-visualizer-MIT.txt",
+      "historicalBundledVersionEstablished": false,
+      "sourceKind": "approved installed upstream package LICENSE",
+      "sourcePackageVersion": "6.0.3",
+      "sourceSection": null,
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:btd/rollup-plugin-visualizer.git"
+      },
+      "licenseSha256": "975abd563775a4953726209bc094d541510e2e1614b325ff8bc32ad94c5e3ab2",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "picomatch",
+      "license": "MIT",
+      "licenseFile": "picomatch-MIT.txt",
+      "historicalBundledVersionEstablished": false,
+      "sourceKind": "approved installed upstream package LICENSE",
+      "sourcePackageVersion": "4.0.7",
+      "sourceSection": null,
+      "repository": "micromatch/picomatch",
+      "licenseSha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+      "noticeSourceOnly": true
+    },
+    {
+      "package": "bytes",
+      "license": "MIT",
+      "licenseFile": "bytes-MIT.txt",
+      "historicalBundledVersionEstablished": false,
+      "sourceKind": "upstream license preserved in approved installed Playwright ThirdPartyNotices",
+      "sourcePackageVersion": null,
+      "sourceSection": "bytes@3.1.2",
+      "repository": "https://github.com/visionmedia/bytes.js",
+      "licenseSha256": "e3b44af066615de2ea48d18d852d0762f18c0b2efcea714fa48a6f729d405b85",
+      "noticeSourceOnly": true
+    }
+  ]
+}

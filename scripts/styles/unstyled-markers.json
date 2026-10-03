@@ -1,0 +1,32 @@
+[
+  {
+    "class": "score-badge",
+    "files": ["src/components/partages/CarteBien.vue", "src/components/fonctionnalites/recherche/ModaleProprietee.vue"],
+    "reason": "Existing semantic/test hook; visual styling comes from adjacent finite utility classes.",
+    "evidence": "src/components/__tests__/ScoreWording.spec.js; src/components/__tests__/PropertyModal.spec.js"
+  },
+  {
+    "class": "card-metadata",
+    "files": ["src/components/partages/CarteBien.vue"],
+    "reason": "Existing metadata test hook; flex and spacing classes provide styling.",
+    "evidence": "src/components/__tests__/ScoreWording.spec.js"
+  },
+  {
+    "class": "corse-map",
+    "files": ["src/components/fonctionnalites/localisation/CarteCorse.vue"],
+    "reason": "Existing unstyled SVG group label; SVG transform, fill and stroke attributes provide rendering. Kept unchanged in this dependency-only migration.",
+    "evidence": "scripts/styles/check-classes.test.mjs: legacy SVG markers remain exactly scoped"
+  },
+  {
+    "class": "france-map",
+    "files": ["src/components/fonctionnalites/localisation/CarteFrance.vue"],
+    "reason": "Existing unstyled SVG group label; SVG transform, fill and stroke attributes provide rendering. Kept unchanged in this dependency-only migration.",
+    "evidence": "scripts/styles/check-classes.test.mjs: legacy SVG markers remain exactly scoped"
+  },
+  {
+    "class": "world-map",
+    "files": ["src/components/fonctionnalites/localisation/CarteMonde.vue"],
+    "reason": "Existing unstyled SVG group label; SVG transform, fill and stroke attributes provide rendering. Kept unchanged in this dependency-only migration.",
+    "evidence": "scripts/styles/check-classes.test.mjs: legacy SVG markers remain exactly scoped"
+  }
+]

@@ -12,7 +12,7 @@ vi.mock('../fonctionnalites/recherche/PropertyModal.vue', () => ({
         <div class="property-address">{{ formattedAddress }}</div>
         <div class="property-commune">{{ commune }}</div>
         <div class="property-surface">{{ surface }} m²</div>
-        <div class="property-score">{{ matchScore }}%</div>
+        <div class="property-score">Score {{ matchScore }}/100</div>
         <button @click="$emit('close')">Fermer</button>
         <button @click="$emit('show-details')">Détails</button>
       </div>
@@ -90,7 +90,7 @@ vi.mock('../partages/CarteBien.vue', () => ({
         <div class="address">{{ address }}</div>
         <div class="location">{{ location }}</div>
         <div class="surface">{{ surface }} m²</div>
-        <div class="score" v-if="score !== undefined">{{ Math.round(score) }}%</div>
+        <div class="score" v-if="score !== undefined">Score {{ Math.round(score) }}/100</div>
         <div class="distance" v-if="distance !== undefined">{{ distance.toFixed(1) }} km</div>
         <div class="floor" v-if="floor">{{ floor }}</div>
         <div class="year" v-if="yearBuilt">{{ yearBuilt }}</div>
@@ -485,7 +485,7 @@ describe('ResultatsLocaliserDpe', () => {
       expect(firstCard.text()).toContain('123 Rue de la Paix')
       expect(firstCard.text()).toContain('Paris - 75001')
       expect(firstCard.text()).toContain('100 m²')
-      expect(firstCard.text()).toContain('95%')
+      expect(firstCard.text()).toContain('Score 95/100')
       expect(firstCard.text()).toContain('0.5 km')
       expect(firstCard.text()).toContain('Étage: 2')
       expect(firstCard.text()).toContain('1950')
@@ -505,7 +505,7 @@ describe('ResultatsLocaliserDpe', () => {
     it("affiche l'en-tête avec le bon texte de statut", () => {
       const header = wrapper.findComponent('[data-testid="results-header"]')
       expect(header.text()).toContain('3 résultats affichés')
-      expect(header.props('statusText')).toBe('Aucune correspondance parfaite')
+      expect(header.props('statusText')).toBe('Aucune correspondance forte avec vos critères')
       expect(header.props('statusClass')).toContain('text-amber-600')
     })
 
@@ -699,11 +699,11 @@ describe('ResultatsLocaliserDpe', () => {
 
   describe('Score et statut de correspondance', () => {
     it('calcule correctement le statut de correspondance', () => {
-      expect(wrapper.vm.getMatchStatusText()).toBe('Aucune correspondance parfaite')
+      expect(wrapper.vm.getMatchStatusText()).toBe('Aucune correspondance forte avec vos critères')
       expect(wrapper.vm.getMatchStatusClass()).toContain('text-amber-600')
     })
 
-    it('affiche une correspondance parfaite pour un score de 100%', async () => {
+    it('affiche une correspondance forte pour un score de 100/100', async () => {
       const perfectResults = [
         { ...mockSearchResult.results[0], matchScore: 100 },
         { ...mockSearchResult.results[1], matchScore: 85 }
@@ -713,11 +713,11 @@ describe('ResultatsLocaliserDpe', () => {
         searchResult: { ...mockSearchResult, results: perfectResults }
       })
 
-      expect(wrapper.vm.getMatchStatusText()).toBe('Une correspondance parfaite')
+      expect(wrapper.vm.getMatchStatusText()).toBe('Une correspondance forte avec vos critères')
       expect(wrapper.vm.getMatchStatusClass()).toContain('text-green-600')
     })
 
-    it('affiche un avertissement pour plusieurs correspondances parfaites', async () => {
+    it('compte plusieurs correspondances fortes', async () => {
       const perfectResults = [
         { ...mockSearchResult.results[0], matchScore: 100 },
         { ...mockSearchResult.results[1], matchScore: 100 }
@@ -727,7 +727,7 @@ describe('ResultatsLocaliserDpe', () => {
         searchResult: { ...mockSearchResult, results: perfectResults }
       })
 
-      expect(wrapper.vm.getMatchStatusText()).toBe('2 correspondances parfaites - vérifiez la vue satellite')
+      expect(wrapper.vm.getMatchStatusText()).toBe('2 correspondances fortes avec vos critères')
       expect(wrapper.vm.getMatchStatusClass()).toContain('text-orange-600')
     })
 
@@ -750,10 +750,10 @@ describe('ResultatsLocaliserDpe', () => {
       expect(tooltipWithDiff).toContain('+5kg')
     })
 
-    it('affiche le tooltip de correspondance exacte pour un score de 100%', () => {
+    it('décrit une similarité forte pour un score de 100/100', () => {
       const perfectResult = { ...mockSearchResult.results[0], matchScore: 100 }
       const tooltip = wrapper.vm.getScoreTooltip(perfectResult)
-      expect(tooltip).toBe('Correspondance exacte')
+      expect(tooltip).toBe('Correspondance forte avec vos critères')
     })
   })
 

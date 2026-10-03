@@ -36,6 +36,9 @@ describe('useRecherches', () => {
     localStorage.clear.mockReset()
     // After clearing, make getItem return null so loadRecentSearches sees empty storage
     localStorage.getItem.mockReturnValue(null)
+    // Existing history behavior applies only after the explicit opt-in.
+    store.setHistoryEnabled(true)
+    vi.clearAllMocks()
   })
 
   afterEach(() => {
@@ -192,15 +195,14 @@ describe('useRecherches', () => {
       expect(localStorage.setItem).toHaveBeenCalledWith('dpe_recent_searches', expect.any(String))
     })
 
-    it('déclenche un StorageEvent après la sauvegarde', () => {
+    it('met à jour les consommateurs réactifs sans simuler un événement inter-onglets', () => {
       const dispatchSpy = vi.spyOn(window, 'dispatchEvent')
+      const recentSearches = store.recentSearches
 
       store.saveSearch(buildSearchData())
 
-      expect(dispatchSpy).toHaveBeenCalledOnce()
-      const event = dispatchSpy.mock.calls[0][0]
-      expect(event.type).toBe('storage')
-      expect(event.key).toBe('dpe_recent_searches')
+      expect(recentSearches.value).toHaveLength(1)
+      expect(dispatchSpy).not.toHaveBeenCalled()
 
       dispatchSpy.mockRestore()
     })

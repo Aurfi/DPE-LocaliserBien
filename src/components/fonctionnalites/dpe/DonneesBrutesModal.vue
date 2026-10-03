@@ -1,15 +1,18 @@
 <template>
   <div
     v-if="show && dpeData"
-    class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[10000] p-4 backdrop-blur-sm"
+    ref="modalLayer"
+    data-modal-layer="raw"
+    :style="{ zIndex: 10000 + modalDepth }"
+    class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[10000] p-4 "
     @click.self="$emit('close')"
   >
-    <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden border border-gray-100 dark:border-gray-700">
+    <div ref="modalDialog" role="dialog" tabindex="-1" :aria-modal="modalIsTop ? 'true' : undefined" :aria-labelledby="modalTitleId" class="bg-white dark:bg-gray-800 rounded-xl  max-w-6xl w-full max-h-[90vh] overflow-hidden border border-gray-100 dark:border-gray-700">
       <!-- En-tête -->
-      <div class="sticky top-0 z-10 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-700 border-b border-gray-200 dark:border-gray-600 px-6 py-4">
+      <div class="sticky top-0 z-10 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-600 px-6 py-4">
         <div class="flex items-center justify-between">
           <div>
-            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">
+            <h3 :id="modalTitleId" tabindex="-1" data-modal-initial-focus class="text-xl font-bold text-gray-900 dark:text-gray-100">
               Données brutes DPE
             </h3>
             <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
@@ -21,6 +24,7 @@
           </div>
           <button
             @click="$emit('close')"
+            aria-label="Fermer"
             class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors bg-white dark:bg-gray-700 rounded-full p-2 hover:bg-gray-50 dark:hover:bg-gray-600"
           >
             <X class="w-6 h-6" />
@@ -36,6 +40,7 @@
             v-model="searchQuery"
             type="text"
             placeholder="Filtrer les champs..."
+            aria-label="Filtrer les champs des données brutes"
             class="w-full pl-10 pr-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400"
           >
           <span class="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-gray-500 dark:text-gray-400">
@@ -90,9 +95,13 @@
 
 <script>
 import { Search, X } from 'lucide-vue-next'
+import { useModalLayer } from '../../../composables/useModalLayer.js'
 
 export default {
   name: 'DonneesBrutesModal',
+  setup(_props, { emit }) {
+    return useModalLayer(() => emit('close'))
+  },
   components: {
     Search,
     X

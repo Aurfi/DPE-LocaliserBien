@@ -1,0 +1,87 @@
+{
+  "source": "LocaliserBien validated calendar-date candidate, 2026-10-03",
+  "compiler": "Tailwind CSS 3.4.19 (one-time migration only, removed from project)",
+  "inputs": {
+    "src/style.css": "624f2cd8e8450ccdc0b468f5bae8be38483933222c2e6d632ba51f667a7d9aa8",
+    "tailwind.config.js": "18f8eb6688e17c38fc584c5ce524d3234ccfb2c79f4c7e0a80325aef7b9e371b",
+    "src/components/fonctionnalites/dpe/FormulaireRechercheDPE.vue": "82c1c6efaaf1509b68edeb570386ee10d57fc6064256820924072a50467167a5"
+  },
+  "retained": {
+    "retained-foundation.css": "f3e71910b2876bfd1e5e34eec11bc431453e11059ea7246980be8f3a0ef6b2ed",
+    "retained-container.css": "8c76c95d8a1aae9899c43c9c7d14120d6864f40e9b7b83f5cf3a71f82191a58c",
+    "retained-utilities.css": "85c2350fcbc123032929a8fe449c33938fdb4ef8236f953c086769b86b446e46"
+  },
+  "license": "public/THIRD_PARTY_NOTICES.txt",
+  "originalBuild": {
+    "sourceSha256": "9076ccb36ceac3ac84aef434d4c3b92780d9e03435bb2c63d86d843da0588033",
+    "distSha256": "bd39b5a204fd1dcadd76e157ee8bd824c9f34b34f6422e41a92f0a3922ba4445",
+    "globalArtifact": "index-DhsxlvPv.css",
+    "scopedArtifact": "vue-vendor-rN-zGmlS.css",
+    "globalArtifactSha256": "cac4f986ac7b44b81e76213dc6d43955d4c4f6b6831b9fb0228a671d15dbc913",
+    "scopedArtifactSha256": "cef1bf0a664e1037184687a0233b80052fa519106fc39ba542f13aa4886f610b"
+  },
+  "originalConfiguration": {
+    "content": ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+    "darkMode": "class",
+    "theme": {
+      "extend": {
+        "colors": {
+          "dpe-green": "#00A859",
+          "dpe-yellow": "#FFC107",
+          "dpe-orange": "#FF9800",
+          "dpe-red": "#F44336",
+          "france-blue": "#0055A4",
+          "france-red": "#EF4135"
+        },
+        "fontFamily": {
+          "sans": ["Inter", "system-ui", "sans-serif"]
+        },
+        "animation": {
+          "triangulate": "triangulate 2s ease-in-out infinite",
+          "scan": "scan 1.5s ease-in-out infinite",
+          "pulse-green": "pulse-green 1s ease-in-out infinite",
+          "typing": "typing 1.5s steps(40, end) infinite"
+        },
+        "keyframes": {
+          "triangulate": {
+            "0%, 100%": {
+              "transform": "scale(1)",
+              "opacity": "1"
+            },
+            "50%": {
+              "transform": "scale(1.1)",
+              "opacity": "0.7"
+            }
+          },
+          "scan": {
+            "0%": {
+              "transform": "translateX(-100%)"
+            },
+            "100%": {
+              "transform": "translateX(400px)"
+            }
+          },
+          "pulse-green": {
+            "0%, 100%": {
+              "backgroundColor": "#10B981",
+              "boxShadow": "0 0 0 0 rgba(16, 185, 129, 0.7)"
+            },
+            "50%": {
+              "backgroundColor": "#059669",
+              "boxShadow": "0 0 0 10px rgba(16, 185, 129, 0)"
+            }
+          },
+          "typing": {
+            "0%": {
+              "width": "0"
+            },
+            "100%": {
+              "width": "100%"
+            }
+          }
+        }
+      }
+    },
+    "plugins": []
+  }
+}

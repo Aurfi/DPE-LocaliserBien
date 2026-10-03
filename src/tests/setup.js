@@ -40,11 +40,10 @@ global.fetch = vi.fn((url, options) => {
 })
 
 // Mock IntersectionObserver
-global.IntersectionObserver = vi.fn(() => ({
-  observe: vi.fn(),
-  unobserve: vi.fn(),
-  disconnect: vi.fn()
-}))
+// biome-ignore lint/complexity/useArrowFunction: Vitest 4 constructor mocks must be constructable.
+global.IntersectionObserver = vi.fn(function () {
+  return { observe: vi.fn(), unobserve: vi.fn(), disconnect: vi.fn() }
+})
 
 // Mock window.matchMedia
 Object.defineProperty(window, 'matchMedia', {

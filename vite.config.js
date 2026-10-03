@@ -4,8 +4,11 @@ import { fileURLToPath, URL } from 'node:url'
 import vue from '@vitejs/plugin-vue'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { defineConfig, loadEnv } from 'vite'
-import { createHtmlPlugin } from 'vite-plugin-html'
 import { VitePWA } from 'vite-plugin-pwa'
+import { htmlEnvironmentDefines } from './scripts/html/environment.mjs'
+import { assertNoBuildToolRuntimeModules, runtimeModuleGraph } from './scripts/security/runtime-module-policy.mjs'
+
+const dependencyPolicy = JSON.parse(fs.readFileSync(new URL('./security-policy.json', import.meta.url), 'utf8'))
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), 'VITE_')
@@ -29,29 +32,55 @@ export default defineConfig(({ mode }) => {
   })
 
   return {
+    // Geography indexes are default imports. Avoid tens of thousands of unused
+    // named exports and parse their compact payload only when the module loads.
+    json: { namedExports: false, stringify: true },
+    // Native %VITE_HTML_*% placeholders use separately escaped HTML/JSON values.
+    define: htmlEnvironmentDefines(env),
     plugins: [
       vue(),
-      processTemplates(),
-      createHtmlPlugin({
-        minify: true,
-        inject: {
-          data: {
-            ...env
-          }
+      {
+        name: 'dependency-runtime-boundary',
+        apply: 'build',
+        generateBundle(_options, bundle) {
+          assertNoBuildToolRuntimeModules(bundle, dependencyPolicy)
+          fs.mkdirSync('reports/security', { recursive: true })
+          fs.writeFileSync(
+            'reports/security/runtime-module-graph.json',
+            `${JSON.stringify(runtimeModuleGraph(bundle, process.cwd()), null, 2)}\n`
+          )
         }
-      }),
-      // Bundle analyzer - generates stats.html after build
-      visualizer({
-        filename: 'dist/stats.html',
-        open: false,
-        gzipSize: true,
-        brotliSize: true
-      }),
+      },
+      processTemplates(),
+      // Opt-in developer report, kept outside the public build and PWA cache.
+      ...(process.env.ANALYZE === 'true'
+        ? [visualizer({ filename: 'reports/bundle-stats.html', open: false, gzipSize: true, brotliSize: true })]
+        : []),
       // PWA: installable app without offline caching (runtime caching disabled)
       VitePWA({
         registerType: 'autoUpdate',
         injectRegister: 'auto',
-        workbox: { runtimeCaching: [] },
+        manifest: {
+          name: env.VITE_SITE_NAME || 'LocaliserBien',
+          short_name: env.VITE_SITE_NAME || 'LocaliserBien',
+          description:
+            'Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France.',
+          lang: 'fr-FR',
+          start_url: '/',
+          scope: '/',
+          display: 'standalone',
+          theme_color: '#f7f8fa',
+          background_color: '#f7f8fa',
+          icons: [
+            { src: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+            { src: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' }
+          ]
+        },
+        workbox: {
+          runtimeCaching: [],
+          globIgnores: ['**/stats.html', '**/bundle-stats.html', '**/commune-name-departments.json-*.js'],
+          navigateFallbackAllowlist: [/^\/(?:(?:informations|mentions-legales|faq)\/?)?(?:\?.*)?$/]
+        },
         includeAssets: [
           'favicon.ico',
           'favicon.svg',
@@ -59,7 +88,7 @@ export default defineConfig(({ mode }) => {
           'android-chrome-192x192.png',
           'android-chrome-512x512.png'
         ]
-        // Using existing public/manifest.json
+        // The plugin generates this manifest.webmanifest; no separate manifest.json.
       })
     ],
     resolve: {
@@ -69,7 +98,8 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       port: Number(env.VITE_DEV_PORT || 3000),
-      host: true,
+      // Expose beyond loopback only with an explicit CLI --host argument.
+      host: '127.0.0.1',
       headers: {
         // En-têtes de sécurité pour le développement (relaxés pour Vite)
         // Note: ne pas forcer nosniff en dev pour éviter les erreurs de type MIME avec les modules

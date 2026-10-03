@@ -1,0 +1,34 @@
+Immutable LocaliserBien earlier-candidate browser fixture
+
+Source project: https://github.com/Aurfi/DPE-LocaliserBien
+Retained source revision identifier: 7fe6a35b66a0fd4b4813617477cb7e720d1d94a4
+Application content and public DPE/geographic attribution: see the preserved
+application pages and licenses/LocaliserBien-Open-Licence-2.0.txt.
+
+Compiled JavaScript and CSS retain their original embedded license comments.
+Supplemental full license notices are preserved in licenses/ for these projects:
+
+- Vue and its core runtime packages: MIT, Yuxi (Evan) You
+  https://github.com/vuejs/core
+- Vue Router: MIT, Eduardo San Martin Morote
+  https://github.com/vuejs/router
+- Headless UI, Heroicons and Tailwind CSS output: MIT, Tailwind Labs, Inc.
+  https://github.com/tailwindlabs/headlessui
+  https://github.com/tailwindlabs/heroicons
+  https://github.com/tailwindlabs/tailwindcss
+- Lucide icons: ISC, Lucide Contributors
+  https://github.com/lucide-icons/lucide
+- Workbox worker/runtime helpers: MIT, Google LLC
+  https://github.com/GoogleChrome/workbox
+- TanStack helpers: MIT, Tanner Linsley
+  https://github.com/TanStack/virtual
+- Vite's browser module-preload helper: MIT, Vite contributors
+  https://github.com/vitejs/vite
+- vite-plugin-pwa's registration helper: MIT, Anthony Fu and contributors
+  https://github.com/vite-pwa/vite-plugin-pwa
+
+The fixture contains already-compiled historical browser assets, not copies of
+these packages' compiler/build installations. These notices do not claim that
+all packages are current application dependencies. No package is installed or
+recompiled to prepare or run this baseline. Runtime files are byte-preserved;
+license text is kept alongside them rather than appended to hashed assets.

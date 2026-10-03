@@ -46,12 +46,19 @@
       "!dist",
       "!node_modules",
       "!coverage",
+      "!reports",
+      "!test-results",
+      "!playwright-report",
       "!.nuxt",
       "!.output",
       "!**/*.min.js",
       "!public/data/*.json",
+      "!public/data/geography-v1-*",
+      "!src/data/geography/*.json",
       "!**/*.css",
-      "!backups"
+      "!backups",
+      "!e2e-pwa/fixtures/baseline-7fe6a35/static",
+      "!e2e-pwa/fixtures/production-2026-10-03/static"
     ]
   }
 }

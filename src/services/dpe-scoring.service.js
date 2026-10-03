@@ -1,3 +1,4 @@
+import { buildNumericQuery, parseSearchComparison } from '../utils/numericSearchInput.js'
 /**
  * Service dedicated to DPE result scoring and matching logic
  * Extracted from dpe-search.service.js to improve code organization
@@ -12,25 +13,7 @@ class DPEScoringService {
    * @returns {Object} - {operator: '<'|'>'|'=', value: number}
    */
   parseComparisonValue(value) {
-    if (!value) return null
-
-    const strValue = value.toString().trim()
-
-    // Vérifier l'opérateur <
-    if (strValue.startsWith('<')) {
-      const num = parseInt(strValue.substring(1), 10)
-      return { operator: '<', value: num }
-    }
-
-    // Vérifier l'opérateur >
-    if (strValue.startsWith('>')) {
-      const num = parseInt(strValue.substring(1), 10)
-      return { operator: '>', value: num }
-    }
-
-    // Aucun opérateur, correspondance exacte
-    const num = parseInt(strValue, 10)
-    return { operator: '=', value: num }
+    return parseSearchComparison(value)
   }
 
   /**
@@ -40,16 +23,7 @@ class DPEScoringService {
    * @returns {string} - Range query string or exact value
    */
   buildRangeQuery(comparison, fieldName) {
-    if (!comparison) return null
-
-    switch (comparison.operator) {
-      case '<':
-        return `${fieldName}:[0 TO ${comparison.value}]`
-      case '>':
-        return `${fieldName}:[${comparison.value} TO 9999]`
-      default:
-        return `${fieldName}:${comparison.value}`
-    }
+    return buildNumericQuery(comparison, fieldName)
   }
 
   /**
@@ -93,7 +67,7 @@ class DPEScoringService {
     const parsedConso = searchRequest.consommationEnergie
       ? this.parseComparisonValue(searchRequest.consommationEnergie)
       : null
-    const parsedGES = searchRequest.emissionGES ? this.parseComparisonValue(searchRequest.emissionGES) : null
+    const parsedGES = searchRequest.emissionGES != null ? this.parseComparisonValue(searchRequest.emissionGES) : null
     const parsedSurface = searchRequest.surfaceHabitable
       ? this.parseComparisonValue(searchRequest.surfaceHabitable)
       : null
@@ -229,7 +203,7 @@ class DPEScoringService {
     }
 
     // Pénalité GES (même logique)
-    if (parsedGES?.value && ademeData.emission_ges_5_usages_par_m2) {
+    if (parsedGES?.value != null && ademeData.emission_ges_5_usages_par_m2 != null) {
       const gesDiff = Math.abs(ademeData.emission_ges_5_usages_par_m2 - parsedGES.value)
 
       if (gesDiff === 0) {
@@ -276,7 +250,7 @@ class DPEScoringService {
     const parsedConso = searchRequest.consommationEnergie
       ? this.parseComparisonValue(searchRequest.consommationEnergie)
       : null
-    const parsedGES = searchRequest.emissionGES ? this.parseComparisonValue(searchRequest.emissionGES) : null
+    const parsedGES = searchRequest.emissionGES != null ? this.parseComparisonValue(searchRequest.emissionGES) : null
     const parsedSurface = searchRequest.surfaceHabitable
       ? this.parseComparisonValue(searchRequest.surfaceHabitable)
       : null

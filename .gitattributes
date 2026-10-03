@@ -1,0 +1,7 @@
+# Preserve audited historical bytes; do not normalize frozen browser assets.
+/e2e-pwa/fixtures/baseline-7fe6a35/static/** binary
+/e2e-pwa/fixtures/baseline-7fe6a35/*.sha256 text eol=lf
+
+# Byte-preserved public production capture, including inert precached stats HTML.
+/e2e-pwa/fixtures/production-2026-10-03/static/** binary
+/e2e-pwa/fixtures/production-2026-10-03/*.sha256 text eol=lf

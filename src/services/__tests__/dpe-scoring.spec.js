@@ -69,9 +69,7 @@ describe('DPEScoringService', () => {
       })
 
       it('doit parser le nombre 0 (type number) comme valeur exacte', () => {
-        // 0 est falsy — la fonction doit retourner null car !value est true pour 0
-        // Vérifier le comportement réel : parseComparisonValue(0) → null
-        expect(service.parseComparisonValue(0)).toBeNull()
+        expect(service.parseComparisonValue(0)).toEqual({ operator: '=', value: 0 })
       })
 
       it('doit parser une grande valeur sans opérateur', () => {

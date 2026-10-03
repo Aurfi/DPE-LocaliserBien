@@ -1,23 +1,50 @@
 name: CI/CD Pipeline
 
 on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: 'Read-only preflight, or publish an explicitly reviewed release'
+        type: choice
+        required: true
+        default: preflight
+        options: [preflight, deploy]
+      reviewed_commit:
+        description: 'Deploy only: exact reviewed 40-character main commit'
+        type: string
+        default: ''
+      expected_index_sha256:
+        description: 'Deploy only: live index SHA-256 from a fresh preflight'
+        type: string
+        default: ''
+      htaccess:
+        description: 'preserve (default), or explicitly verified confirmed-absent'
+        type: string
+        default: preserve
   push:
     branches: [ main, master, develop ]
   pull_request:
     branches: [ main, master ]
 
+permissions:
+  contents: read
+
 jobs:
   lint-and-test:
+    # A manual read-only preflight does not need a dependency install or build.
+    if: github.event_name != 'workflow_dispatch' || inputs.operation != 'preflight'
     name: Lint, Test & Build
     runs-on: ubuntu-latest
     
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [24.x]
     
     steps:
     - name: 📥 Checkout code
       uses: actions/checkout@v4
+      with:
+        persist-credentials: false
       
     - name: 🔧 Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
@@ -32,9 +59,20 @@ jobs:
       run: npm run lint
       continue-on-error: false
     
-    - name: 🧪 Run tests
-      run: npm test -- --run
-      continue-on-error: true
+    - name: Verify finite CSS classes and native HTML interpolation
+      run: |
+        npm run check:styles
+        npm run test:styles
+        npm run test:html
+
+    - name: Test deployment safety offline
+      run: python3 -m unittest discover -s scripts/deployment -p 'test_*.py' -v
+
+    - name: 🧪 Run tests and enforce coverage thresholds
+      run: npm run test:coverage
+      continue-on-error: false
+      env:
+        TZ: Europe/Paris
     
     - name: 🏗️ Build project
       run: |
@@ -43,18 +81,16 @@ jobs:
         VITE_SITE_NAME=LocaliserBien
         VITE_SITE_DOMAIN=localiserbien.fr
         VITE_CONTACT_EMAIL=contact@localiserbien.fr
-        VITE_GITHUB_URL=https://github.com/Aurfi/DPE-LocaliserBien
-        VITE_DIRECTOR_NAME=AurFi
-        VITE_TWITTER_HANDLE=@Aurfi
+        VITE_PUBLICATION_DIRECTOR=
         VITE_ADEME_API_URL=https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines
         VITE_GEO_API_URL=https://data.geopf.fr/geocodage
-        VITE_APP_TITLE=Localisateur de bien immobilier - Trouvez l'adresse d'un bien
-        VITE_APP_DESCRIPTION=Service gratuit de localisation de biens immobiliers en France. Retrouvez l'adresse exacte d'une annonce à partir des données DPE publiques.
+        VITE_APP_TITLE=LocaliserBien - Recherchez des correspondances DPE
+        VITE_APP_DESCRIPTION=Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien.
         VITE_APP_KEYWORDS=localisation bien immobilier,DPE,adresse bien,recherche immobilier,diagnostic performance énergétique,France,localiser bien
-        VITE_OG_TITLE=LocaliserBien - Trouvez l'adresse de n'importe quel bien immobilier
-        VITE_OG_DESCRIPTION=Service gratuit de localisation de biens immobiliers en France à partir des données DPE publiques.
-        VITE_TWITTER_TITLE=LocaliserBien - Trouvez l'adresse d'un bien immobilier
-        VITE_TWITTER_DESCRIPTION=Service gratuit de localisation de biens immobiliers en France à partir des données DPE publiques.
+        VITE_OG_TITLE=LocaliserBien - Recherchez des correspondances DPE
+        VITE_OG_DESCRIPTION=Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien.
+        VITE_TWITTER_TITLE=LocaliserBien - Recherchez des correspondances DPE
+        VITE_TWITTER_DESCRIPTION=Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien.
         VITE_HOST_NAME=OVH
         VITE_HOST_ADDRESS=2 rue Kellermann, 59100 Roubaix, France
         VITE_ENABLE_ANALYTICS=false
@@ -62,9 +98,19 @@ jobs:
         VITE_DEV_PORT=3000
         ENVEOF
         npm run build
+        node scripts/check-built-site.mjs
       env:
         CI: true
     
+    - name: Retain browser dependency boundary evidence
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: browser-dependency-graph
+        path: reports/security/runtime-module-graph.json
+        if-no-files-found: ignore
+        retention-days: 14
+
     - name: 📊 Check build output
       run: |
         echo "Build completed successfully!"
@@ -79,23 +125,84 @@ jobs:
         name: build-artifacts
         path: dist/
         retention-days: 7
+        # Required for the reviewed route-only .htaccess. The build check rejects
+        # unexpected hidden files before this artifact can be uploaded.
+        include-hidden-files: true
+
+  pwa-lifecycle:
+    name: PWA lifecycle (two pinned baselines to same-run candidate)
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
+    needs: [lint-and-test]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24.x'
+        cache: npm
+    - name: Install current locked test toolchain only
+      run: npm ci
+    - name: Verify immutable baseline and offline fixture failure cases
+      run: npm run test:pwa:unit
+    - name: Install official Playwright Chromium and OS dependencies
+      run: npx --no-install playwright install --with-deps chromium
+    - name: Download this run's exact candidate build
+      uses: actions/download-artifact@v4
+      with:
+        name: build-artifacts
+        path: dist/
+    - name: Verify preserved baseline bytes and record exact artifact provenance
+      run: node scripts/pwa/provenance.mjs record
+    - name: Test real installation, open-tab upgrade, cleanup and offline boundaries
+      run: npm run test:pwa
+    - name: Retain PWA browser evidence even on failure
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: pwa-lifecycle-evidence
+        path: |
+          reports/pwa/
+          test-results/pwa/
+          playwright-report/pwa/
+        retention-days: 14
 
   security-check:
-    name: Security Audit
+    if: github.event_name != 'workflow_dispatch' || inputs.operation != 'preflight'
+    name: Dependency Policy
     runs-on: ubuntu-latest
     
     steps:
     - name: 📥 Checkout code
       uses: actions/checkout@v4
+      with:
+        persist-credentials: false
     
     - name: 🔧 Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20.x'
+        node-version: '24.x'
     
-    - name: 🔒 Run npm audit
-      run: npm audit --audit-level=moderate
-      continue-on-error: true
+    - name: Install exact locked dependencies for tree verification
+      run: npm ci --ignore-scripts --no-audit
+
+    - name: Test dependency policy failure cases
+      run: npm run test:security
+
+    - name: Require clean full and production audits and retired-package absence
+      run: npm run security:audit
+
+    - name: Retain raw audits, installed tree and policy evidence
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: dependency-audit-evidence
+        path: reports/security/
+        retention-days: 14
     
     - name: 🔍 Check for sensitive data
       run: |
@@ -105,24 +212,82 @@ jobs:
         ! grep -r "password.*=.*['\"]" --include="*.js" --include="*.vue" --include="*.ts" --exclude-dir=node_modules --exclude-dir=dist src/ || echo "Warning: Potential hardcoded password found"
         echo "Security check completed"
 
-  deploy:
-    name: Deploy to FTP
+  preflight:
+    name: Read-only OVH preflight
     runs-on: ubuntu-latest
-    needs: lint-and-test
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-
+    timeout-minutes: 10
+    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.operation == 'preflight'
+    environment: ovh-production
+    concurrency:
+      group: localiserbien-production
+      cancel-in-progress: false
     steps:
-    - name: 📥 Download build artifacts
-      uses: actions/download-artifact@v4
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - name: Verify TLS, destination and live fingerprints without writes
+      run: python3 scripts/deployment/ovh_release.py preflight
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+
+  deploy:
+    name: Publish reviewed release over verified FTPS
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    needs: [lint-and-test, security-check]
+    # Pushes and PRs NEVER publish. Configure required reviewers and main-only
+    # branch access on this environment before enabling production releases.
+    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.operation == 'deploy'
+    environment: ovh-production
+    concurrency:
+      group: localiserbien-production
+      cancel-in-progress: false
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24.x'
+    - uses: actions/download-artifact@v4
       with:
         name: build-artifacts
         path: dist/
-
-    - name: 🚀 Deploy to FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+    - name: Revalidate the exact downloaded public build
+      run: node scripts/check-built-site.mjs
+    - name: Read the pinned public recovery-source commit
+      id: public-baseline
+      run: |
+        python3 - <<'PYCODE'
+        import json, os, re
+        from pathlib import Path
+        plan = json.loads(Path("scripts/deployment/public-release-plan.json").read_text())
+        commit = plan['source_commit']
+        assert re.fullmatch(r'[a-f0-9]{40}', commit)
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+            output.write('commit=' + commit + '\n')
+        PYCODE
+    - name: Check out immutable public recovery sources
+      uses: actions/checkout@v4
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: dist/
-        server-dir: ./www/
+        ref: ${{ steps.public-baseline.outputs.commit }}
+        path: .release-baseline
+        persist-credentials: false
+    - name: Verify public recovery sources, stage public files, and promote without cleanup
+      run: |
+        python3 scripts/deployment/ovh_release.py deploy \
+          --reviewed-commit "$REVIEWED_COMMIT" \
+          --baseline-root .release-baseline \
+          --expected-index "$EXPECTED_INDEX" \
+          --htaccess "$HTACCESS_POLICY" \
+          --release-id "github-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${GITHUB_SHA:0:12}"
+      env:
+        REVIEWED_COMMIT: ${{ inputs.reviewed_commit }}
+        EXPECTED_INDEX: ${{ inputs.expected_index_sha256 }}
+        HTACCESS_POLICY: ${{ inputs.htaccess }}
+        OVH_RELEASE_ENABLED: ${{ vars.OVH_RELEASE_ENABLED }}
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}

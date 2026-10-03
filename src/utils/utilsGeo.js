@@ -3,31 +3,17 @@
  * Shared utilities to avoid duplication across services
  */
 
-// API base URL from environment variables (new Géoplateforme endpoint)
-const _GEO_API_URL = import.meta.env.VITE_GEO_API_URL || 'https://data.geopf.fr/geocodage'
+import {
+  AmbiguousCommuneError,
+  getDepartmentsFromCommuneName,
+  getDepartmentsFromPostalCode,
+  normalizeCommuneName
+} from './communeDirectory.js'
 
-/**
- * Get department code from postal code using simple rule (much faster than dictionary lookup)
- * @param {string} postalCode - 5-digit postal code
- * @returns {string} Department code (e.g., '13', '2A', '2B')
- */
+/** Return a department only when the source snapshot identifies exactly one. */
 export function getDepartmentFromPostalCode(postalCode) {
-  if (!/^\d{5}$/.test(postalCode)) return null
-
-  // Special case: Corsica
-  if (postalCode.startsWith('20')) {
-    // 20000-20199 → 2A (Corse-du-Sud)
-    // 20200-20999 → 2B (Haute-Corse)
-    return parseInt(postalCode, 10) < 20200 ? '2A' : '2B'
-  }
-
-  // DOM-TOM: 3-digit department codes
-  if (postalCode.startsWith('97') || postalCode.startsWith('98')) {
-    return postalCode.substring(0, 3)
-  }
-
-  // All other departments: first 2 digits = department code
-  return postalCode.substring(0, 2)
+  const departments = getDepartmentsFromPostalCode(postalCode)
+  return departments.length === 1 ? departments[0] : null
 }
 
 /**
@@ -117,7 +103,8 @@ export async function geocodeAddress(address, options = {}) {
           lon,
           formattedAddress: feature.properties.label,
           postalCode,
-          city
+          city,
+          communeCode: feature.properties.citycode
         }
 
         // Extended format for compatibility with DPE search service
@@ -190,13 +177,40 @@ export async function getCommuneCoordinatesFromDatabase(communeInput, loadDepart
     const isPostalCode = /^\d{5}$/.test(communeInput)
 
     if (isPostalCode) {
-      // STEP 1: Use simple rule to get department (no dictionary lookup needed!)
-      const deptCode = getDepartmentFromPostalCode(communeInput)
-      if (!deptCode) return null
-
-      // STEP 2: Load only the relevant department file
-      const deptData = await loadDepartmentFn(deptCode)
-      if (!deptData?.postalCodes?.[communeInput]) return null
+      const departments = getDepartmentsFromPostalCode(communeInput)
+      if (departments.length === 0) return null
+      const loaded = await Promise.all(departments.map(code => loadDepartmentFn(code)))
+      // An incomplete cross-department match must not silently narrow the search area.
+      if (loaded.some(data => !data?.postalCodes?.[communeInput])) return null
+      if (loaded.length > 1) {
+        const areas = loaded.map(data => {
+          const area = data.postalCodes[communeInput]
+          const commune =
+            area.communeCount === 1
+              ? data.communes.find(candidate => candidate.codesPostaux?.includes(communeInput))
+              : null
+          return { ...area, coverageRadius: area.coverageRadius || commune?.radius || 0 }
+        })
+        const lon = areas.reduce((sum, area) => sum + area.center[0], 0) / areas.length
+        const lat = areas.reduce((sum, area) => sum + area.center[1], 0) / areas.length
+        return {
+          lat,
+          lon,
+          centre: { lat, lon },
+          mairie: { lat, lon },
+          radius: 0,
+          coverageRadius: Math.max(
+            ...areas.map(
+              area => calculateDistance(lat, lon, area.center[1], area.center[0]) + (area.coverageRadius || 0)
+            )
+          ),
+          isMultiCommune: true,
+          communes: areas.flatMap(area => area.communes),
+          communeCount: areas.reduce((sum, area) => sum + area.communeCount, 0),
+          departments
+        }
+      }
+      const deptData = loaded[0]
 
       const postalData = deptData.postalCodes[communeInput]
 
@@ -282,7 +296,7 @@ export function getCommuneCoordinatesFromLocal(communeInput, communes) {
 /**
  * Main wrapper function to get commune coordinates with smart fallback
  * For postal codes: direct database lookup
- * For city names: geo API first to get postal code, then targeted database lookup
+ * For known city names: indexed unique commune; geocoder fallback for other addresses.
  * @param {string} communeInput - Postal code or commune name
  * @param {Function} loadDepartmentFn - Function to load department data
  * @param {Object} departmentCache - Cache of loaded departments
@@ -298,9 +312,55 @@ export async function getCommuneCoordinates(communeInput, loadDepartmentFn, depa
     return await getCommuneCoordinatesFromDatabase(communeInput, loadDepartmentFn, departmentCache)
   }
 
-  // STEP 2: For city names, get postal code from geo API first, then check if multi-postal commune
+  // Known commune names use the source directory. A geocoder's first hit cannot resolve homonyms.
   try {
+    const departments = await getDepartmentsFromCommuneName(communeInput)
+    if (departments.length > 1) throw new AmbiguousCommuneError()
+    if (departments.length === 1) {
+      const data = await loadDepartmentFn(departments[0])
+      const matches =
+        data?.communes?.filter(
+          candidate => normalizeCommuneName(candidate.nom) === normalizeCommuneName(communeInput)
+        ) || []
+      if (matches.length > 1) throw new AmbiguousCommuneError()
+      if (matches.length === 0) return null
+      const commune = matches[0]
+      if (!commune.centre?.coordinates || !commune.codesPostaux?.length) return null
+      const [lon, lat] = commune.centre.coordinates
+      const [mairieLon, mairieLat] = commune.mairie?.coordinates || [lon, lat]
+      return {
+        lat,
+        lon,
+        centre: { lat, lon },
+        mairie: { lat: mairieLat, lon: mairieLon },
+        radius: commune.radius || 0,
+        coverageRadius: 0,
+        isMultiCommune: commune.codesPostaux.length > 1,
+        postalCode: commune.codesPostaux[0],
+        allPostalCodes: [...commune.codesPostaux],
+        communeName: commune.nom,
+        communeCode: commune.code
+      }
+    }
+
+    // Addresses or names absent from the snapshot may still be resolved by the geocoder.
     const geoResult = await geocodeAddress(communeInput)
+    if (geoResult?.city) {
+      const qualifiedPostcodes = [...new Set(communeInput.match(/\b\d{5}\b/g) || [])]
+      const explicitlyQualified = qualifiedPostcodes.length === 1 && qualifiedPostcodes[0] === geoResult.postalCode
+      if (!explicitlyQualified) {
+        const candidateDepartments = await getDepartmentsFromCommuneName(geoResult.city)
+        if (candidateDepartments.length > 1) throw new AmbiguousCommuneError()
+        if (candidateDepartments.length === 1) {
+          const candidateData = await loadDepartmentFn(candidateDepartments[0])
+          const homonyms = candidateData?.communes?.filter(
+            candidate => normalizeCommuneName(candidate.nom) === normalizeCommuneName(geoResult.city)
+          )
+          if (!homonyms) return null
+          if (homonyms.length > 1) throw new AmbiguousCommuneError()
+        }
+      }
+    }
     if (geoResult?.postalCode) {
       // Get department using postal code from geo API
       const deptCode = getDepartmentFromPostalCode(geoResult.postalCode)
@@ -308,7 +368,12 @@ export async function getCommuneCoordinates(communeInput, loadDepartmentFn, depa
         const deptData = await loadDepartmentFn(deptCode)
         if (deptData?.communes) {
           // Find the commune that contains this postal code
-          const commune = deptData.communes.find(c => c.codesPostaux?.includes(geoResult.postalCode))
+          const matches = deptData.communes.filter(c =>
+            geoResult.communeCode
+              ? c.code === geoResult.communeCode
+              : normalizeCommuneName(c.nom) === normalizeCommuneName(geoResult.city || communeInput)
+          )
+          const commune = matches.length === 1 ? matches[0] : null
 
           if (commune) {
             if (commune.codesPostaux.length > 1) {
@@ -347,9 +412,19 @@ export async function getCommuneCoordinates(communeInput, loadDepartmentFn, depa
       }
     }
 
-    // Fallback: return the geo API result in extended format
-    return await geocodeAddress(communeInput, { extendedFormat: true })
-  } catch (_error) {
+    // Reuse the result that passed the ambiguity checks; never issue a second unchecked lookup.
+    return geoResult
+      ? {
+          ...geoResult,
+          centre: { lat: geoResult.lat, lon: geoResult.lon },
+          mairie: { lat: geoResult.lat, lon: geoResult.lon },
+          radius: 0,
+          coverageRadius: 0,
+          isMultiCommune: false
+        }
+      : null
+  } catch (error) {
+    if (error.code === 'AMBIGUOUS_COMMUNE') throw error
     return null
   }
 }

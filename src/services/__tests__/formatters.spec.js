@@ -37,8 +37,37 @@ describe('Formatteurs de données DPE', () => {
     })
 
     it('doit gérer les valeurs null/undefined', () => {
-      expect(formatYearDisplay(null)).toBe('N/A')
-      expect(formatYearDisplay(undefined)).toBe('N/A')
+      expect(formatYearDisplay(null)).toBe('Inconnue')
+      expect(formatYearDisplay(undefined)).toBe('Inconnue')
+    })
+
+    it.each([1, '1', 0, '001', 999, 10000, -1970, 1970.5, '1970.5', '1970 extra', '2000-1948', {}, [1970]])(
+      'labels an invalid year/code as unknown and does not sort it as a year: %s',
+      value => {
+        expect(formatYearDisplay(value)).toBe('Inconnue')
+        expect(extractYearFromValue(value)).toBeNull()
+      }
+    )
+
+    it.each([
+      [1970, '1970', 1970],
+      [' 1948-1974 ', '1948-1974', 1948],
+      ['1948 – 1974', '1948 – 1974', 1948],
+      ['avant 1948', 'avant 1948', 1948],
+      ['après 2021', 'après 2021', 2021],
+      ['2013 et après', '2013 et après', 2013],
+      ['entre 1948 et 1974', 'entre 1948 et 1974', 1948],
+      ['de 1948 à 1974', 'de 1948 à 1974', 1948],
+      ['à partir de 2021', 'à partir de 2021', 2021]
+    ])('preserves plausible construction year/period %s', (value, label, year) => {
+      expect(formatYearDisplay(value)).toBe(label)
+      expect(extractYearFromValue(value)).toBe(year)
+    })
+
+    it('does not display a future construction year as an established fact', () => {
+      const future = new Date().getFullYear() + 1
+      expect(formatYearDisplay(future)).toBe('Inconnue')
+      expect(extractYearFromValue(future)).toBeNull()
     })
   })
 

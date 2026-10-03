@@ -350,3 +350,39 @@ describe('utilsCartes', () => {
     })
   })
 })
+
+describe('missing and malformed map coordinates', () => {
+  it.each([null, undefined, '', '  ', false, true, {}, [], NaN, Infinity, '48.8junk'])(
+    'rejects absent or malformed coordinates: %j',
+    value => {
+      expect(getGeoportailUrl(value, 2.3)).toBeNull()
+      expect(getGeoportailUrl(48.8, value)).toBeNull()
+    }
+  )
+
+  it.each(['91,2', '-91,2', '48,181', '48,-181'])('rejects out-of-range geopoints: %s', point => {
+    expect(getGeoportailUrl(getLatitudeFromGeopoint(point), getLongitudeFromGeopoint(point))).toBeNull()
+  })
+
+  it.each([{}, [], 42, true])('does not throw for a non-string geopoint: %j', point => {
+    expect(getLatitudeFromGeopoint(point)).toBeNull()
+    expect(getLongitudeFromGeopoint(point)).toBeNull()
+  })
+
+  it.each([' ', 'bad', '48junk', 'Infinity'])('does not partially parse coordinate text: %s', value => {
+    expect(getLatitudeFromGeopoint(`${value},2.3`)).toBeNull()
+    expect(getLongitudeFromGeopoint(`48.8,${value}`)).toBeNull()
+  })
+
+  it.each([
+    [0, 2.3],
+    [48.8, 0],
+    ['0', '0'],
+    [-90, -180],
+    [90, 180]
+  ])('preserves valid coordinates (%s, %s)', (lat, lng) => {
+    const url = new URL(getGeoportailUrl(lat, lng))
+    expect(url.searchParams.get('lat')).toBe(String(lat))
+    expect(url.searchParams.get('lng')).toBe(String(lng))
+  })
+})

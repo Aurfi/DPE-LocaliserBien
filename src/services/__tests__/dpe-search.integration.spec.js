@@ -1,7 +1,33 @@
-import { describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 describe('DPE Search Integration Tests - REAL API', () => {
-  describe('Complete Search Flow with REAL ADEME API', () => {
+  // Network checks are opt-in and must not masquerade as passing offline tests.
+  describe.runIf(process.env.LOCALISER_LIVE_API_TESTS === '1')('Complete Search Flow with REAL ADEME API', () => {
+    let previousFetch
+    let upstreamCalls
+    beforeEach(() => {
+      previousFetch = global.fetch
+      upstreamCalls = []
+      global.fetch = vi.fn(async (url, options) => {
+        const external = /^https:\/\//.test(String(url))
+        try {
+          const response = await previousFetch(url, options)
+          if (external) upstreamCalls.push({ ok: response.ok, status: response.status })
+          return response
+        } catch (error) {
+          if (external) upstreamCalls.push({ ok: false, status: 'request failed' })
+          throw error
+        }
+      })
+    })
+    afterEach(() => {
+      global.fetch = previousFetch
+      expect(upstreamCalls.length, 'live test must actually contact an upstream').toBeGreaterThan(0)
+      expect(
+        upstreamCalls.every(call => call.ok),
+        'upstream failures must not be counted as a passing smoke test'
+      ).toBe(true)
+    })
     it('should successfully search for properties in Paris using real API', async () => {
       // Import the actual service
       const DPESearchService = (await import('../dpe-search.service.js')).default
@@ -144,26 +170,21 @@ describe('DPE Search Integration Tests - REAL API', () => {
         monthsBack: 6 // Search last 6 months
       }
 
-      try {
-        const results = await searchRecentDPE(searchParams)
+      // A live smoke check must fail when its upstream request fails.
+      const results = await searchRecentDPE(searchParams)
 
-        expect(results).toBeDefined()
-        expect(results.results).toBeDefined()
-        expect(Array.isArray(results.results)).toBe(true)
+      expect(results).toBeDefined()
+      expect(results.results).toBeDefined()
+      expect(Array.isArray(results.results)).toBe(true)
 
-        // Check results structure if any returned
-        if (results.results.length > 0) {
-          // Check that results have expected fields
-          results.results.forEach(result => {
-            // Check for any of the possible date field names
-            const hasDate = result.date_etablissement_dpe || result.dateEtablissement || result.date
-            expect(hasDate).toBeTruthy()
-          })
-        }
-      } catch (error) {
-        // If geocoding fails or no results, that's ok for the test
-        // We're testing that the function works, not that it always finds results
-        expect(error).toBeDefined()
+      // Check results structure if any returned
+      if (results.results.length > 0) {
+        // Check that results have expected fields
+        results.results.forEach(result => {
+          // Check for any of the possible date field names
+          const hasDate = result.date_etablissement_dpe || result.dateEtablissement || result.date
+          expect(hasDate).toBeTruthy()
+        })
       }
     }, 15000)
   })

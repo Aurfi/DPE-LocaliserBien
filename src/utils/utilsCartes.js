@@ -60,11 +60,10 @@ export function getGoogleMapsSearchUrl(lat, lon, address = null) {
  * @returns {number|null} Latitude or null
  */
 export function getLatitudeFromGeopoint(geopoint) {
-  if (!geopoint) return null
+  if (typeof geopoint !== 'string') return null
   const coords = geopoint.split(',')
-  if (coords.length < 2 || !coords[0]) return null
-  const lat = parseFloat(coords[0].trim())
-  return Number.isFinite(lat) ? lat : null
+  if (coords.length < 2) return null
+  return getCoordinate(coords[0], 90)
 }
 
 /**
@@ -73,11 +72,17 @@ export function getLatitudeFromGeopoint(geopoint) {
  * @returns {number|null} Longitude or null
  */
 export function getLongitudeFromGeopoint(geopoint) {
-  if (!geopoint) return null
+  if (typeof geopoint !== 'string') return null
   const coords = geopoint.split(',')
-  if (coords.length < 2 || !coords[1]) return null
-  const lon = parseFloat(coords[1].trim())
-  return Number.isFinite(lon) ? lon : null
+  if (coords.length < 2) return null
+  return getCoordinate(coords[1], 180)
+}
+
+function getCoordinate(value, limit) {
+  if (typeof value !== 'number' && typeof value !== 'string') return null
+  if (typeof value === 'string' && !value.trim()) return null
+  const coordinate = Number(value)
+  return Number.isFinite(coordinate) && Math.abs(coordinate) <= limit ? coordinate : null
 }
 
 /**
@@ -88,9 +93,9 @@ export function getLongitudeFromGeopoint(geopoint) {
  * @returns {string|null} Geoportail URL or null
  */
 export function getGeoportailUrl(lat, lon, zoom = 17) {
-  const latNum = Number(lat)
-  const lonNum = Number(lon)
-  if (!Number.isFinite(latNum) || !Number.isFinite(lonNum)) return null
+  const latNum = getCoordinate(lat, 90)
+  const lonNum = getCoordinate(lon, 180)
+  if (latNum === null || lonNum === null) return null
   return `https://explore.data.gouv.fr/fr/immobilier?onglet=carte&filtre=tous&lat=${latNum}&lng=${lonNum}&zoom=${zoom}.00`
 }
 

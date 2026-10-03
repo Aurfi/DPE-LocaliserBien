@@ -1,7 +1,7 @@
 <template>
   <div v-if="recentSearches.length > 0" class="max-w-4xl mx-auto mt-8 mb-8">
-    <div class="text-center mb-6">
-      <h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+    <div class="mb-4">
+      <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200">
         Recherches récentes
       </h2>
       <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
@@ -36,7 +36,7 @@
     <!-- Context Menu -->
     <div 
       v-if="contextMenu.show"
-      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[140px]"
+      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg  border border-gray-200 dark:border-gray-700 py-1 min-w-[140px]"
       :style="{ top: contextMenu.y + 'px', left: contextMenu.x + 'px' }"
     >
       <button
@@ -60,11 +60,12 @@
         v-for="(search, index) in recentSearches"
         :key="index"
         @click="relaunchSearch(search)"
+        role="button" tabindex="0" @keydown.enter="relaunchSearch(search)" @keydown.space.prevent="relaunchSearch(search)"
         @contextmenu.prevent="showContextMenu($event, index)"
-        class="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-[1.02] border border-gray-100 dark:border-gray-700"
+        class="group relative bg-white dark:bg-gray-800  rounded-lg p-5   transition-all duration-300 cursor-pointer hover:scale-[1.02] border border-gray-100 dark:border-gray-700"
       >
         <!-- Badge nombre de résultats -->
-        <div class="absolute -top-2 -right-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">
+        <div class="absolute -top-2 -right-2 bg-gray-600 text-white text-xs font-bold px-2.5 py-1 rounded-full ">
           {{ search.resultCount }} résultat{{ search.resultCount > 1 ? 's' : '' }}
         </div>
         
@@ -146,7 +147,7 @@
         </div>
         
         <!-- Effet hover -->
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
       </div>
     </div>
     
@@ -231,6 +232,9 @@ export default {
         monthsBack: search.monthsBack,
         radius: search.radius,
         surface: search.surface,
+        consommation: search.consommation ?? null,
+        ges: search.ges ?? null,
+        typeBien: search.typeBien || null,
         energyClasses: search.energyClasses || [],
         gesClasses: search.gesClasses || []
       })

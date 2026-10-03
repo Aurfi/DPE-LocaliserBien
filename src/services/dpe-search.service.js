@@ -1,3 +1,4 @@
+import { normalizeNumericCriteria } from '../utils/numericSearchInput.js'
 // Service pour intégrer avec notre API DPE backend
 
 import { useDepartements } from '../stores/useDepartements.js'
@@ -50,7 +51,8 @@ class DPESearchService {
       searchResults.localAverages = null
 
       return searchResults
-    } catch (_error) {
+    } catch (error) {
+      if (error.code === 'AMBIGUOUS_COMMUNE') throw error
       throw new Error('Impossible de contacter le service de recherche DPE')
     }
   }
@@ -76,6 +78,8 @@ class DPESearchService {
         hasLegacyData: false
       }
     }
+
+    searchRequest = normalizeNumericCriteria(searchRequest, ['surfaceHabitable', 'consommationEnergie', 'emissionGES'])
 
     // Obtenir les coordonnées de la commune pour vérifier si multi-commune
     const communeCoords = await this.getCommuneCoordinates(searchRequest.commune)
