@@ -23,8 +23,8 @@
           />
         </div>
 
-        <!-- Options en ligne -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Période et périmètre -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <!-- Période -->
           <div>
             <label for="nearby-monthsBack" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
@@ -65,154 +65,170 @@
               <option value="30">30 km</option>
             </select>
           </div>
-
-          <!-- Surface (optionnel) -->
-          <div>
-            <label for="nearby-surface" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-
-              Surface (optionnel)
-            </label>
-            <div class="relative">
-              <input
-                v-model="searchCriteria.surface" id="nearby-surface"
-                :aria-invalid="!!numericErrors.surface"
-                :aria-describedby="numericErrors.surface ? 'nearby-surface-error' : undefined"
-                type="text"
-                placeholder="Ex: 100"
-                @input="validateSurfaceInput"
-                class="w-full px-4 py-3 pr-12 text-base bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-800 dark:text-gray-100 no-spinners"
-              />
-              <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
-                m²
-              </span>
-            </div>
-            <p v-if="numericErrors.surface" id="nearby-surface-error" class="field-error">{{ numericErrors.surface }}</p>
-            <!-- Property type selector -->
-            <div class="mt-2">
-              <div class="flex gap-1">
-                <button
-                  type="button"
-                  @click="selectPropertyType('maison')"
-                  :aria-pressed="searchCriteria.typeBien === 'maison'"
-                  :class="[
-                    'property-option border transition-colors',
-                    searchCriteria.typeBien === 'maison'
-                      ? 'bg-blue-600 text-white shadow-sm'
-                      : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
-                  ]"
-                  title="Maison"
-                >
-                  Maison
-                </button>
-                <button
-                  type="button"
-                  @click="selectPropertyType('appartement')"
-                  :aria-pressed="searchCriteria.typeBien === 'appartement'"
-                  :class="[
-                    'property-option border transition-colors',
-                    searchCriteria.typeBien === 'appartement'
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
-                  ]"
-                  title="Appartement"
-                >
-                  Appartement
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <!-- Consommation et GES (optionnel) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!-- Consommation énergétique -->
-          <div>
-            <label for="nearby-consommation" class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
-              Consommation (optionnel)
-            </label>
-            <div class="relative">
-              <input
-                v-model="searchCriteria.consommation" id="nearby-consommation"
-                :aria-invalid="!!numericErrors.consommation"
-                :aria-describedby="numericErrors.consommation ? 'nearby-consommation-error' : undefined"
-                type="text"
-                placeholder="ex : 250"
-                @input="validateConsommationInput"
-                :disabled="selectedEnergyClasses.length > 0"
-                class="w-full px-4 py-3 pr-24 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500/60 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
-              />
-              <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
-                kWh/m²/an
-              </span>
-            </div>
-            <p v-if="numericErrors.consommation" id="nearby-consommation-error" class="field-error">{{ numericErrors.consommation }}</p>
-            <div class="mt-2">
-              <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Classe indiquée dans l’annonce</p>
-              <div class="class-options">
-                <button
-                  v-for="classe in ['A', 'B', 'C', 'D', 'E', 'F', 'G']"
-                  :key="'energy-' + classe"
-                  type="button"
-                  @click="toggleEnergyClasse(classe)"
-                  :aria-label="`Classe énergétique ${classe}`"
-                  :aria-pressed="selectedEnergyClasses.includes(classe)"
-                  :class="[
-                    'class-option border transition-colors',
-                    selectedEnergyClasses.includes(classe)
-                      ? getClasseColor(classe) + ' shadow-sm'
-                      : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
-                  ]"
-                >
-                  {{ classe }}
-                </button>
-              </div>
-            </div>
-          </div>
+        <details
+          class="nearby-filter-disclosure"
+          :open="optionalFiltersOpen"
+          @toggle="optionalFiltersOpen = $event.target.open"
+        >
+          <summary class="nearby-filter-summary">
+            <span class="font-medium">Filtres facultatifs</span>
+            <span v-if="activeOptionalFilters.length"> ({{ activeOptionalFilters.length }} actif{{ activeOptionalFilters.length > 1 ? 's' : '' }})</span>
+            <span class="nearby-filter-description">
+              {{ activeOptionalFilters.join(' · ') || 'Surface, type de bien, énergie, GES' }}
+            </span>
+            <span v-if="hasNumericErrors" class="field-error">Un filtre est à corriger.</span>
+          </summary>
+          <div class="nearby-filter-fields space-y-6">
+            <!-- Surface (optionnel) -->
+            <div>
+              <label for="nearby-surface" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
 
-          <!-- GES -->
-          <div>
-            <label for="nearby-ges" class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
-              GES (optionnel)
-            </label>
-            <div class="relative">
-              <input
-                v-model="searchCriteria.ges" id="nearby-ges"
-                :aria-invalid="!!numericErrors.ges"
-                :aria-describedby="numericErrors.ges ? 'nearby-ges-error' : undefined"
-                type="text"
-                placeholder="ex : 58"
-                @input="validateGESInput"
-                :disabled="selectedGESClasses.length > 0"
-                class="w-full px-4 py-3 pr-28 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500/60 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
-              />
-              <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
-                kgCO₂/m²/an
-              </span>
+                Surface (optionnel)
+              </label>
+              <div class="relative">
+                <input
+                  v-model="searchCriteria.surface" id="nearby-surface"
+                  :aria-invalid="!!numericErrors.surface"
+                  :aria-describedby="numericErrors.surface ? 'nearby-surface-error' : undefined"
+                  type="text"
+                  placeholder="Ex: 100"
+                  @input="validateSurfaceInput"
+                  class="w-full px-4 py-3 pr-12 text-base bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-800 dark:text-gray-100 no-spinners"
+                />
+                <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
+                  m²
+                </span>
+              </div>
+              <p v-if="numericErrors.surface" id="nearby-surface-error" class="field-error">{{ numericErrors.surface }}</p>
+              <!-- Property type selector -->
+              <div class="mt-2">
+                <div class="flex gap-1">
+                  <button
+                    type="button"
+                    @click="selectPropertyType('maison')"
+                    :aria-pressed="searchCriteria.typeBien === 'maison'"
+                    :class="[
+                      'property-option border transition-colors',
+                      searchCriteria.typeBien === 'maison'
+                        ? 'bg-blue-600 text-white shadow-sm'
+                        : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+                    ]"
+                    title="Maison"
+                  >
+                    Maison
+                  </button>
+                  <button
+                    type="button"
+                    @click="selectPropertyType('appartement')"
+                    :aria-pressed="searchCriteria.typeBien === 'appartement'"
+                    :class="[
+                      'property-option border transition-colors',
+                      searchCriteria.typeBien === 'appartement'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+                    ]"
+                    title="Appartement"
+                  >
+                    Appartement
+                  </button>
+                </div>
+              </div>
             </div>
-            <p v-if="numericErrors.ges" id="nearby-ges-error" class="field-error">{{ numericErrors.ges }}</p>
-            <div class="mt-2">
-              <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Classe indiquée dans l’annonce</p>
-              <div class="class-options">
-                <button
-                  v-for="classe in ['A', 'B', 'C', 'D', 'E', 'F', 'G']"
-                  :key="'ges-' + classe"
-                  type="button"
-                  @click="toggleGESClasse(classe)"
-                  :aria-label="`Classe GES ${classe}`"
-                  :aria-pressed="selectedGESClasses.includes(classe)"
-                  :class="[
-                    'class-option border transition-colors',
-                    selectedGESClasses.includes(classe)
-                      ? getGESClassColor(classe) + ' shadow-sm'
-                      : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
-                  ]"
-                >
-                  {{ classe }}
-                </button>
+
+            <!-- Consommation et GES (optionnel) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Consommation énergétique -->
+              <div>
+                <label for="nearby-consommation" class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
+                  Consommation (optionnel)
+                </label>
+                <div class="relative">
+                  <input
+                    v-model="searchCriteria.consommation" id="nearby-consommation"
+                    :aria-invalid="!!numericErrors.consommation"
+                    :aria-describedby="numericErrors.consommation ? 'nearby-consommation-error' : undefined"
+                    type="text"
+                    placeholder="ex : 250"
+                    @input="validateConsommationInput"
+                    :disabled="selectedEnergyClasses.length > 0"
+                    class="w-full px-4 py-3 pr-24 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500/60 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
+                  />
+                  <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
+                    kWh/m²/an
+                  </span>
+                </div>
+                <p v-if="numericErrors.consommation" id="nearby-consommation-error" class="field-error">{{ numericErrors.consommation }}</p>
+                <div class="mt-2">
+                  <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Classe indiquée dans l’annonce</p>
+                  <div class="class-options">
+                    <button
+                      v-for="classe in ['A', 'B', 'C', 'D', 'E', 'F', 'G']"
+                      :key="'energy-' + classe"
+                      type="button"
+                      @click="toggleEnergyClasse(classe)"
+                      :aria-label="`Classe énergétique ${classe}`"
+                      :aria-pressed="selectedEnergyClasses.includes(classe)"
+                      :class="[
+                        'class-option border transition-colors',
+                        selectedEnergyClasses.includes(classe)
+                          ? getClasseColor(classe) + ' shadow-sm'
+                          : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+                      ]"
+                    >
+                      {{ classe }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- GES -->
+              <div>
+                <label for="nearby-ges" class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
+                  GES (optionnel)
+                </label>
+                <div class="relative">
+                  <input
+                    v-model="searchCriteria.ges" id="nearby-ges"
+                    :aria-invalid="!!numericErrors.ges"
+                    :aria-describedby="numericErrors.ges ? 'nearby-ges-error' : undefined"
+                    type="text"
+                    placeholder="ex : 58"
+                    @input="validateGESInput"
+                    :disabled="selectedGESClasses.length > 0"
+                    class="w-full px-4 py-3 pr-28 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-500/60 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
+                  />
+                  <span class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-400 dark:text-gray-500 pointer-events-none select-none">
+                    kgCO₂/m²/an
+                  </span>
+                </div>
+                <p v-if="numericErrors.ges" id="nearby-ges-error" class="field-error">{{ numericErrors.ges }}</p>
+                <div class="mt-2">
+                  <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Classe indiquée dans l’annonce</p>
+                  <div class="class-options">
+                    <button
+                      v-for="classe in ['A', 'B', 'C', 'D', 'E', 'F', 'G']"
+                      :key="'ges-' + classe"
+                      type="button"
+                      @click="toggleGESClasse(classe)"
+                      :aria-label="`Classe GES ${classe}`"
+                      :aria-pressed="selectedGESClasses.includes(classe)"
+                      :class="[
+                        'class-option border transition-colors',
+                        selectedGESClasses.includes(classe)
+                          ? getGESClassColor(classe) + ' shadow-sm'
+                          : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+                      ]"
+                    >
+                      {{ classe }}
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </details>
 
         <!-- Bouton de recherche -->
         <button
@@ -226,7 +242,7 @@
       </form>
       
       <!-- Error message display -->
-      <div v-if="errorMessage" class="mt-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-4">
+      <div v-if="errorMessage" role="alert" class="mt-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-4">
         <div class="flex">
           <div class="flex-shrink-0">
             <svg class="h-5 w-5 text-red-400 dark:text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -244,7 +260,7 @@
 
 <script>
 import { Loader } from 'lucide-vue-next'
-import { computed, onBeforeUnmount, ref } from 'vue'
+import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import * as recentDPEService from '../../../services/recent-dpe.service'
 import { useRecherches } from '../../../stores/useRecherches.js'
 import { numericSearchInputError, parseNumericSearchInput } from '../../../utils/numericSearchInput.js'
@@ -279,6 +295,29 @@ export default {
     const selectedClasses = ref([]) // Keep for backward compatibility
     const selectedEnergyClasses = ref([])
     const selectedGESClasses = ref([])
+    const optionalFiltersOpen = ref(false)
+    const activeOptionalFilters = computed(() => {
+      const filters = []
+      const hasValue = value => value != null && String(value).trim() !== ''
+      const criteria = searchCriteria.value
+      if (hasValue(criteria.surface)) filters.push(`Surface : ${criteria.surface} m²`)
+      if (criteria.typeBien) filters.push(criteria.typeBien === 'maison' ? 'Maison' : 'Appartement')
+      if (selectedEnergyClasses.value.length) {
+        filters.push(`Énergie : ${selectedEnergyClasses.value.join(', ')}`)
+      } else if (hasValue(criteria.consommation)) {
+        filters.push(`Consommation : ${criteria.consommation} kWh/m²/an`)
+      }
+      if (selectedGESClasses.value.length) {
+        filters.push(`GES : ${selectedGESClasses.value.join(', ')}`)
+      } else if (hasValue(criteria.ges)) {
+        filters.push(`GES : ${criteria.ges} kgCO₂/m²/an`)
+      }
+      return filters
+    })
+    watch(activeOptionalFilters, filters => {
+      // Reveal restored/edited criteria without closing controls while the user clears them.
+      if (filters.length) optionalFiltersOpen.value = true
+    })
 
     const toggleClasse = classe => {
       const index = selectedClasses.value.indexOf(classe)
@@ -357,6 +396,16 @@ export default {
         // D'abord géocoder l'adresse pour obtenir les coordonnées
         const geoData = await geocodeAddress(submittedCriteria.address)
         if (currentRequest !== requestId) return
+        if (
+          !Number.isFinite(geoData?.lat) ||
+          !Number.isFinite(geoData?.lon) ||
+          Math.abs(geoData.lat) > 90 ||
+          Math.abs(geoData.lon) > 180
+        ) {
+          errorMessage.value = 'Adresse introuvable. Vérifiez la rue, la ville ou le code postal, puis réessayez.'
+          emit('search-error', new Error(errorMessage.value))
+          return
+        }
 
         // Émettre un événement pour démarrer l'animation avec les coordonnées
         emit('search-started', {
@@ -383,7 +432,7 @@ export default {
       } catch (error) {
         if (currentRequest !== requestId) return
         // Store error message for display
-        errorMessage.value = error.message || 'Une erreur est survenue lors de la recherche'
+        errorMessage.value = 'La recherche n’a pas pu aboutir. Veuillez réessayer dans quelques instants.'
         emit('search-error', error)
       } finally {
         if (currentRequest === requestId) loading.value = false
@@ -419,6 +468,7 @@ export default {
       searchCriteria.value.typeBien = savedSearch.typeBien || null
       selectedEnergyClasses.value = savedSearch.energyClasses || []
       selectedGESClasses.value = savedSearch.gesClasses || []
+      optionalFiltersOpen.value = activeOptionalFilters.value.length > 0
 
       // Lancer automatiquement la recherche
       return searchRecentDPE()
@@ -454,6 +504,8 @@ export default {
       errorMessage,
       numericErrors,
       hasNumericErrors,
+      optionalFiltersOpen,
+      activeOptionalFilters,
       searchCriteria,
       selectedClasses,
       selectedEnergyClasses,
@@ -477,6 +529,36 @@ export default {
 </script>
 
 <style>
+.nearby-filter-disclosure {
+  border-top: 1px solid #e5e7eb;
+}
+
+.dark .nearby-filter-disclosure {
+  border-color: #374151;
+}
+
+.nearby-filter-summary {
+  min-height: 44px;
+  padding: 12px 4px;
+  cursor: pointer;
+}
+
+.nearby-filter-description {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+  color: #4b5563;
+}
+
+.dark .nearby-filter-description {
+  color: #d1d5db;
+}
+
+.nearby-filter-fields {
+  padding-top: 12px;
+}
+
 /* Hide number input spinners */
 .no-spinners::-webkit-outer-spin-button,
 .no-spinners::-webkit-inner-spin-button {

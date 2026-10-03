@@ -6,6 +6,8 @@ export default defineConfig({
   plugins: [vue()],
   test: {
     environment: 'happy-dom',
+    // Unit tests drive iframe events explicitly; never contact a map provider.
+    environmentOptions: { happyDOM: { settings: { disableIframePageLoading: true } } },
     globals: true,
     // Bound DOM worker memory on small CI runners and local machines.
     maxWorkers: 2,

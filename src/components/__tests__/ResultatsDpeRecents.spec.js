@@ -130,8 +130,8 @@ describe('recent DPE result list rendering', () => {
   it.each([undefined, null, []])('renders an empty state for absent or empty rows: %s', rows => {
     const wrapper = renderResults(rows)
     expect(wrapper.get('h2').text()).toBe('0 résultat affiché')
-    expect(wrapper.text()).toContain('Aucun résultat trouvé')
-    expect(wrapper.text()).toContain('Impossible de trouver un DPE correspondant à ces informations.')
+    expect(wrapper.text()).toContain('Aucun DPE trouvé avec ces critères.')
+    expect(wrapper.text()).toContain('Essayez une période ou un rayon plus large.')
     expect(cards(wrapper)).toHaveLength(0)
     expect(wrapper.find('select').exists()).toBe(false)
   })
@@ -157,6 +157,25 @@ describe('recent DPE result list rendering', () => {
     const wrapper = renderResults([dpe('one')])
     await wrapper.get('button[title="Nouvelle recherche"]').trigger('click')
     expect(wrapper.emitted('clear-results')).toEqual([[]])
+  })
+})
+
+describe('recent search criteria context', () => {
+  it('shows the actual short radius and active month beside a plain empty state', () => {
+    const wrapper = renderResults([], {
+      results: search([], { searchRadius: 0.1 }),
+      searchCriteria: { monthsBack: 1 }
+    })
+    expect(wrapper.findComponent(EnteteResultats).props('subtitle')).toContain('Rayon : 100 m · Dernier mois')
+    expect(wrapper.text()).toContain('Essayez une période ou un rayon plus large.')
+    expect(wrapper.find('svg.lucide-octagon-x').exists()).toBe(false)
+  })
+
+  it('shows a known larger period and leaves missing or invalid criteria out', async () => {
+    const wrapper = renderResults([], { searchCriteria: { monthsBack: 6 } })
+    expect(wrapper.findComponent(EnteteResultats).props('subtitle')).toContain('Rayon : 2 km · 6 derniers mois')
+    await wrapper.setProps({ results: search([], { searchRadius: NaN }), searchCriteria: { monthsBack: -1 } })
+    expect(wrapper.findComponent(EnteteResultats).props('subtitle')).toBe('Autour de 10 avenue de la Recherche')
   })
 })
 
@@ -457,7 +476,7 @@ describe('recent result hiding and dialog lifecycle', () => {
     expect(wrapper.get('h2').text()).toBe('1 résultat affiché (2 masqués)')
     await hideCard(wrapper, 0)
     expect(cards(wrapper)).toHaveLength(0)
-    expect(wrapper.text()).toContain('Aucun résultat trouvé')
+    expect(wrapper.text()).toContain('Aucun DPE trouvé avec ces critères.')
     expect(wrapper.get('h2').text()).toBe('0 résultat affiché (3 masqués)')
     expect(rows.map(row => row.numero_dpe)).toEqual(['first', 'second', 'third'])
   })
@@ -502,8 +521,8 @@ describe('recent result hiding and dialog lifecycle', () => {
       numberOfLevels: 4,
       ceilingHeight: 2.6,
       diagnosisDate: '1 septembre 2026',
-      energyConsumption: 143,
-      gesEmissions: 25,
+      energyConsumption: 142.6,
+      gesEmissions: 25.4,
       departmentAverages: averages
     })
     const map = new URL(wrapper.findComponent(PropertyDialog).props('mapUrl'))
@@ -549,10 +568,10 @@ describe('recent result hiding and dialog lifecycle', () => {
     [
       { surface_habitable_logement: 78.7, conso_5_usages_par_m2_ep: 198.7, emission_ges_5_usages_par_m2: 14.6 },
       79,
-      199,
-      15
+      198.7,
+      14.6
     ],
-    [{ surface_habitable: 54.2, consommation_energie: 112.2, estimation_ges: 8.4 }, 54, 112, 8],
+    [{ surface_habitable: 54.2, consommation_energie: 112.2, estimation_ges: 8.4 }, 54, 112.2, 8.4],
     [{}, null, null, null]
   ])('passes safe normalized modal values for raw or missing metrics: %j', async (raw, surface, energy, ges) => {
     const property = dpe('raw', {
@@ -576,7 +595,7 @@ describe('recent result hiding and dialog lifecycle', () => {
       floor: null,
       yearBuilt: null,
       diagnosisDate: null,
-      mapUrl: null
+      mapUrl: 'https://maps.google.com/maps?q=15%20rue%20Brute&output=embed&z=19&t=k'
     })
   })
 

@@ -40,7 +40,6 @@ describe('utilsCartes', () => {
       expect(getGoogleMapsEmbedUrl(NaN, 2.3522)).toBe('')
       expect(getGoogleMapsEmbedUrl(48.8566, 'invalid')).toBe('')
       expect(getGoogleMapsEmbedUrl(undefined, undefined)).toBe('')
-      // Note: null est converti en 0 par Number()
     })
 
     it('devrait inclure adresse et coordonnées quand les deux sont fournies', () => {
@@ -64,6 +63,30 @@ describe('utilsCartes', () => {
       expect(result).toBe(expected)
     })
 
+    it.each([null, undefined, '', ' ', true, false, {}, [], NaN, Infinity, '48junk'])(
+      'ne convertit pas une coordonnée absente ou invalide en zéro : %j',
+      value => {
+        expect(getGoogleMapsEmbedUrl(value, 2.3)).toBe('')
+        expect(getGoogleMapsEmbedUrl(48.8, value)).toBe('')
+        const fallback = new URL(getGoogleMapsEmbedUrl(value, value, 'Paris France'))
+        expect(fallback.searchParams.get('q')).toBe('Paris France')
+        expect(fallback.searchParams.has('ll')).toBe(false)
+      }
+    )
+
+    it('rejette les coordonnées hors limites et accepte les vrais zéros', () => {
+      expect(getGoogleMapsEmbedUrl(91, 2)).toBe('')
+      expect(getGoogleMapsEmbedUrl(48, -181)).toBe('')
+      expect(new URL(getGoogleMapsEmbedUrl(48, 0)).searchParams.get('q')).toBe('48,0')
+      expect(new URL(getGoogleMapsEmbedUrl(0, 2)).searchParams.get('q')).toBe('0,2')
+      expect(new URL(getGoogleMapsEmbedUrl(-90, 180)).searchParams.get('q')).toBe('-90,180')
+    })
+
+    it('ignore une adresse non textuelle sans inventer une position', () => {
+      expect(getGoogleMapsEmbedUrl(null, null, {})).toBe('')
+      expect(getGoogleMapsEmbedUrl(null, null, '   ')).toBe('')
+    })
+
     it('devrait gérer les coordonnées zéro', () => {
       const result = getGoogleMapsEmbedUrl(0, 0)
       // Les coordonnées zéro sont traitées comme invalides
@@ -74,19 +97,19 @@ describe('utilsCartes', () => {
   describe('getGoogleMapsSearchUrl', () => {
     it('devrait générer une URL de recherche avec adresse quand fournie', () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522, '1 rue de la Paix, Paris')
-      const expected = 'https://www.google.com/maps/recherche/?api=1&query=1%20rue%20de%20la%20Paix%2C%20Paris'
+      const expected = 'https://www.google.com/maps/search/?api=1&query=1%20rue%20de%20la%20Paix%2C%20Paris'
       expect(result).toBe(expected)
     })
 
     it('devrait générer une URL de recherche avec coordonnées sans adresse', () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522)
-      const expected = 'https://www.google.com/maps/recherche/?api=1&query=48.8566,2.3522'
+      const expected = 'https://www.google.com/maps/search/?api=1&query=48.8566,2.3522'
       expect(result).toBe(expected)
     })
 
     it('devrait gérer les coordonnées en chaîne de caractères', () => {
       const result = getGoogleMapsSearchUrl('48.8566', '2.3522')
-      const expected = 'https://www.google.com/maps/recherche/?api=1&query=48.8566,2.3522'
+      const expected = 'https://www.google.com/maps/search/?api=1&query=48.8566,2.3522'
       expect(result).toBe(expected)
     })
 
@@ -95,21 +118,36 @@ describe('utilsCartes', () => {
       expect(getGoogleMapsSearchUrl(48.8566, 'invalid')).toBe('https://www.google.com/maps')
     })
 
+    it.each([null, undefined, '', ' ', true, false, {}, [], NaN, Infinity, '48junk'])(
+      'garde un lien de secours sûr avec une coordonnée absente : %j',
+      value => {
+        expect(getGoogleMapsSearchUrl(value, 2.3)).toBe('https://www.google.com/maps')
+        expect(getGoogleMapsSearchUrl(48.8, value)).toBe('https://www.google.com/maps')
+      }
+    )
+
+    it('ne recherche pas des coordonnées impossibles ou un point zéro par défaut', () => {
+      expect(getGoogleMapsSearchUrl(91, 2.3)).toBe('https://www.google.com/maps')
+      expect(getGoogleMapsSearchUrl(48.8, -181)).toBe('https://www.google.com/maps')
+      expect(getGoogleMapsSearchUrl(0, 0)).toBe('https://www.google.com/maps')
+      expect(getGoogleMapsSearchUrl(48.8, 0)).toContain('query=48.8,0')
+    })
+
     it("devrait préférer l'adresse aux coordonnées", () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522, 'Paris France')
-      const expected = 'https://www.google.com/maps/recherche/?api=1&query=Paris%20France'
+      const expected = 'https://www.google.com/maps/search/?api=1&query=Paris%20France'
       expect(result).toBe(expected)
     })
 
     it("devrait gérer les caractères spéciaux dans l'adresse", () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522, 'Café & Restaurant, Paris')
-      const expected = 'https://www.google.com/maps/recherche/?api=1&query=Caf%C3%A9%20%26%20Restaurant%2C%20Paris'
+      const expected = 'https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20%26%20Restaurant%2C%20Paris'
       expect(result).toBe(expected)
     })
 
     it("devrait gérer une chaîne d'adresse vide et utiliser les coordonnées", () => {
       const result = getGoogleMapsSearchUrl(48.8566, 2.3522, '')
-      const expected = 'https://www.google.com/maps/recherche/?api=1&query=48.8566,2.3522'
+      const expected = 'https://www.google.com/maps/search/?api=1&query=48.8566,2.3522'
       expect(result).toBe(expected)
     })
   })

@@ -24,7 +24,8 @@
     />
 
     <p v-if="searchResult.searchStrategy !== 'ERROR' && filteredResults.length > 0" data-score-explanation class="text-sm text-gray-600 dark:text-gray-400 mb-5">
-      Le score de similarité compare les critères saisis. Même à 100/100, il ne confirme pas l’identité du bien.
+      Résultats indicatifs.
+      <a href="/informations#resultats" target="_blank" rel="noopener noreferrer" aria-label="Comprendre le score (nouvel onglet)" class="quiet-link underline">Comprendre le score</a>
     </p>
 
     <!-- Empty state -->

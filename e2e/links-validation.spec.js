@@ -22,14 +22,15 @@ test('navigates guide, legal page, old FAQ route, Back and Forward', async ({ pa
   await expect(page).toHaveURL(/\/informations$/)
 })
 
-test('keeps map navigation explicit with safe external links', async ({ page }) => {
+test('keeps safe external map links available alongside the detail preview', async ({ page }) => {
   await search(page)
   await page.getByRole('button', { name: 'Voir détails', exact: true }).click()
   const maps = page.getByRole('link', { name: 'Voir sur Maps', exact: true })
   await expect(maps).toHaveAttribute('href', /^https:\/\/www\.google\.com\/maps\/search\/\?api=1&query=/)
   await expect(maps).toHaveAttribute('target', '_blank')
   await expect(maps).toHaveAttribute('rel', /noopener/)
-  await expect(page.locator('iframe')).toHaveCount(0)
+  await expect(page.locator('iframe')).toHaveCount(1)
+  await expect(page.locator('iframe')).toHaveAttribute('src', /^https:\/\/maps\.google\.com\/maps\?/)
   await page.getByRole('button', { name: 'Fermer', exact: true }).click()
   await page.getByRole('link', { name: 'Mentions légales', exact: true }).click()
   for (const link of await page.locator('a[target="_blank"]').all()) {

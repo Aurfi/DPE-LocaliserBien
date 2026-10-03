@@ -160,6 +160,22 @@ jobs:
       run: node scripts/pwa/provenance.mjs record
     - name: Test real installation, open-tab upgrade, cleanup and offline boundaries
       run: npm run test:pwa
+    - name: Test page copy, mobile filters and inline-map lifecycle
+      run: npx --no-install playwright test e2e/map-preview.spec.js e2e/product-pages.spec.js --project=chromium --retries=0 --output=test-results/ui
+      env:
+        PLAYWRIGHT_HTML_OUTPUT_DIR: playwright-report/ui
+        PLAYWRIGHT_HTML_OPEN: never
+    - name: Retain product browser evidence even on failure
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: product-browser-evidence
+        path: |
+          test-results/ui/
+          test-results/e2e-results.json
+          test-results/e2e-junit.xml
+          playwright-report/ui/
+        retention-days: 14
     - name: Retain PWA browser evidence even on failure
       if: always()
       uses: actions/upload-artifact@v4

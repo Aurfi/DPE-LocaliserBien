@@ -2,10 +2,11 @@
   <div v-if="show && property" ref="modalLayer" data-modal-layer="dpe" :style="{ zIndex: 10000 + modalDepth }" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[9999] p-4  overflow-y-auto" @click.self="$emit('close')">
     <div ref="modalDialog" role="dialog" tabindex="-1" :aria-modal="modalIsTop ? 'true' : undefined" :aria-labelledby="modalTitleId" class="bg-white dark:bg-gray-800 rounded-xl  max-w-5xl w-full max-h-[90vh] overflow-hidden border border-gray-100 dark:border-gray-700 my-auto">
       <!-- En-tête -->
-      <div class="p-4 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-gray-700 dark:to-gray-700 border-b border-gray-200 dark:border-gray-600">
+      <div class="p-4 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-600">
         <div class="flex items-center justify-between">
           <h3 :id="modalTitleId" tabindex="-1" data-modal-initial-focus class="text-xl font-bold text-gray-900 dark:text-gray-100">
-            Rapport DPE Complet - {{ property.numeroDPE || property.id }}
+            Détails du diagnostic · {{ property.numeroDPE || property.numero_dpe || property.id }}
+            <span v-if="isLegacyDPE" class="ml-2 text-xs font-normal text-gray-600 dark:text-gray-400">DPE ancien · avant juillet 2021</span>
           </h3>
           <button
             @click="$emit('close')"
@@ -20,115 +21,43 @@
       <!-- Contenu scrollable -->
       <div class="overflow-y-auto" style="max-height: calc(90vh - 80px);">
         <div class="p-6 space-y-6">
-          <!-- Section 1: Consommations détaillées avec moyennes départementales -->
-          <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4">
-            <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
-              <svg class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-              </svg>
-              Consommations détaillées
-              <span v-if="departmentAverages" class="ml-auto text-xs font-normal text-gray-500 dark:text-gray-400">
-                vs moyennes dept. {{ departmentAverages.department }}
-              </span>
-            </h4>
-            <!-- Total consumption comparison if department averages available -->
-            <div v-if="getDeptAverage('total')" class="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-3 mb-4 border border-blue-200 dark:border-blue-700">
-              <div class="flex items-center justify-between">
-                <div>
-                  <p class="text-xs text-gray-600 dark:text-gray-400 mb-1">Consommation totale vs moyenne départementale</p>
-                  <div class="flex items-center gap-4">
-                    <div>
-                      <span class="text-lg font-bold text-gray-900 dark:text-gray-100">{{ getConsommation() }}</span>
-                      <span class="text-sm text-gray-600 dark:text-gray-400 ml-1">kWh/m²/an</span>
-                    </div>
-                    <div class="text-gray-400 dark:text-gray-500">vs</div>
-                    <div>
-                      <span class="text-lg font-bold" :class="getConsommation() < getDeptAverage('total') ? 'text-green-600 dark:text-green-400' : 'text-orange-600 dark:text-orange-400'">{{ Math.round(getDeptAverage('total')) }}</span>
-                      <span class="text-sm text-gray-600 dark:text-gray-400 ml-1">moy. dept.</span>
-                    </div>
-                  </div>
-                  <p class="text-xs mt-2" :class="getConsommation() < getDeptAverage('total') ? 'text-green-600 dark:text-green-400' : 'text-orange-600 dark:text-orange-400'">
-                    {{ getConsommation() < getDeptAverage('total') ? 
-                      `${Math.round((getDeptAverage('total') - getConsommation()) / getDeptAverage('total') * 100)}% mieux que la moyenne` :
-                      `${Math.round((getConsommation() - getDeptAverage('total')) / getDeptAverage('total') * 100)}% au-dessus de la moyenne` }}
-                  </p>
-                  <div v-if="getDeptRangeInfo()" class="mt-3 pt-3 border-t border-blue-300 dark:border-blue-800">
-                    <p class="text-xs text-gray-600 dark:text-gray-400">
-                      <span class="font-medium">Échantillon dept. {{ departmentAverages.department }}:</span> {{ getDeptRangeInfo().count.toLocaleString('fr-FR') }} biens de {{ getDeptRangeInfo().range }}
-                      <span class="text-gray-500 dark:text-gray-500 ml-1">(surface moy: {{ getDeptRangeInfo().avgSurface }}m²)</span>
-                    </p>
-                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                      Période: {{ formatDateRange(departmentAverages.dateRange) }}
-                    </p>
-                  </div>
+          <!-- Only compare complete, arithmetically compatible source usages. -->
+          <section v-if="consumptionBreakdown.hasUsageData" class="border-b border-gray-200 dark:border-gray-700 pb-6">
+            <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Consommations par usage</h4>
+            <template v-if="consumptionBreakdown.comparable">
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Valeurs ADEME en énergie primaire, en kWh/an.</p>
+              <dl class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div v-for="usage in consumptionBreakdown.entries" :key="usage.key" data-consumption-usage>
+                  <dt class="text-xs text-gray-500 dark:text-gray-400 mb-1">{{ usage.label }}</dt>
+                  <dd class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ usage.value }} kWh/an</dd>
                 </div>
-              </div>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div v-if="property.consoDetails?.chauffage !== undefined" class="bg-white dark:bg-gray-800 rounded-lg p-3">
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Chauffage</p>
-                <p class="text-lg font-bold text-gray-900 dark:text-gray-100">{{ Math.round(property.consoDetails.chauffage / getSurface()) }} kWh/m²/an</p>
-                <div v-if="getDeptAverage('chauffage')" class="text-xs mt-2 pt-2 border-t border-gray-200 dark:border-gray-700">
-                  <span class="text-gray-500 dark:text-gray-400">Moy. dept:</span>
-                  <span class="ml-1 font-medium" :class="(property.consoDetails?.chauffage / getSurface()) < getDeptAverage('chauffage') ? 'text-green-600 dark:text-green-400' : 'text-orange-600 dark:text-orange-400'">
-                    {{ Math.round(getDeptAverage('chauffage')) }} kWh/m²/an
-                  </span>
-                </div>
-              </div>
-              <div v-if="property.consoDetails?.eauChaude !== undefined" class="bg-white dark:bg-gray-800 rounded-lg p-3">
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Eau chaude</p>
-                <p class="text-lg font-bold text-gray-900 dark:text-gray-100">{{ Math.round(property.consoDetails.eauChaude / getSurface()) }} kWh/m²/an</p>
-                <div v-if="getDeptAverage('eau_chaude')" class="text-xs mt-2 pt-2 border-t border-gray-200 dark:border-gray-700">
-                  <span class="text-gray-500 dark:text-gray-400">Moy. dept:</span>
-                  <span class="ml-1 font-medium" :class="(property.consoDetails?.eauChaude / getSurface()) < getDeptAverage('eau_chaude') ? 'text-green-600 dark:text-green-400' : 'text-orange-600 dark:text-orange-400'">
-                    {{ Math.round(getDeptAverage('eau_chaude')) }} kWh/m²/an
-                  </span>
-                </div>
-              </div>
-              <div v-if="property.consoDetails?.refroidissement !== undefined" class="bg-white dark:bg-gray-800 rounded-lg p-3">
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Climatisation</p>
-                <p v-if="property.consoDetails.refroidissement > 0" class="text-lg font-bold text-gray-900 dark:text-gray-100">{{ Math.round(property.consoDetails.refroidissement / getSurface()) }} kWh/m²/an</p>
-                <p v-else class="text-sm text-gray-600 dark:text-gray-400">Pas de climatisation</p>
-                <div v-if="getDeptRangeInfo()?.acPercentage" class="text-xs mt-2 pt-2 border-t border-gray-200 dark:border-gray-700">
-                  <span class="text-gray-500 dark:text-gray-400">Dept. {{ departmentAverages.department }}:</span>
-                  <span class="ml-1 font-medium text-gray-600 dark:text-gray-300">{{ getDeptRangeInfo().acPercentage }}% ont la clim</span>
-                </div>
-              </div>
-              <div v-if="property.consoDetails?.eclairage !== undefined" class="bg-white dark:bg-gray-800 rounded-lg p-3">
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Éclairage</p>
-                <p class="text-lg font-bold text-gray-900 dark:text-gray-100">{{ Math.round(property.consoDetails.eclairage / getSurface()) }} kWh/m²/an</p>
-              </div>
-              <div v-if="property.consoDetails?.auxiliaires !== undefined" class="bg-white dark:bg-gray-800 rounded-lg p-3">
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Auxiliaires (VMC, pompes)</p>
-                <p class="text-lg font-bold text-gray-900 dark:text-gray-100">{{ Math.round(property.consoDetails.auxiliaires / getSurface()) }} kWh/m²/an</p>
-              </div>
-            </div>
-          </div>
+              </dl>
+            </template>
+            <p v-else data-consumption-unavailable class="text-sm text-gray-600 dark:text-gray-400">
+              Le détail par usage est incomplet ou ne correspond pas au total transmis. Consultez les valeurs d’origine dans les données brutes.
+            </p>
+          </section>
 
           <!-- Section 2: Systèmes -->
-          <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4">
+          <div v-if="hasSystems" class="border-b border-gray-200 dark:border-gray-700 pb-6">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
-              <svg class="w-5 h-5 mr-2 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
               Systèmes et équipements
             </h4>
             <div class="space-y-3">
-              <div v-if="property.systemeChauffage" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.systemeChauffage" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Système de chauffage</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.systemeChauffage }}</p>
               </div>
-              <div v-if="property.systemeECS" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.systemeECS" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Système d'eau chaude sanitaire</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.systemeECS }}</p>
               </div>
               <div class="grid md:grid-cols-2 gap-3">
-                <div v-if="property.typeVentilation || property.type_ventilation" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+                <div v-if="property.typeVentilation || property.type_ventilation" class="py-2">
                   <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Ventilation</p>
                   <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ getVentilationLabel(property.typeVentilation || property.type_ventilation) }}</p>
                 </div>
-                <div v-if="property.installationSolaire" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+                <div v-if="property.installationSolaire" class="py-2">
                   <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Installation solaire</p>
                   <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.installationSolaire }}</p>
                 </div>
@@ -137,43 +66,40 @@
           </div>
 
           <!-- Section 3: Qualité de l'isolation -->
-          <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4">
+          <div v-if="hasInsulation" class="border-b border-gray-200 dark:border-gray-700 pb-6">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
-              <svg class="w-5 h-5 mr-2 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-              </svg>
               Qualité de l'isolation
             </h4>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div v-if="property.isolationEnveloppe" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.isolationEnveloppe" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Enveloppe</p>
                 <div class="flex items-center justify-between">
                   <p class="text-sm font-medium" :class="getInsulationRating(property.isolationEnveloppe).color">{{ getInsulationRating(property.isolationEnveloppe).level }}/{{ getInsulationRating(property.isolationEnveloppe).max }}</p>
                   <p class="text-xs text-gray-600 dark:text-gray-400">{{ getInsulationRating(property.isolationEnveloppe).label }}</p>
                 </div>
               </div>
-              <div v-if="property.isolationMurs" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.isolationMurs" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Murs</p>
                 <div class="flex items-center justify-between">
                   <p class="text-sm font-medium" :class="getInsulationRating(property.isolationMurs).color">{{ getInsulationRating(property.isolationMurs).level }}/{{ getInsulationRating(property.isolationMurs).max }}</p>
                   <p class="text-xs text-gray-600 dark:text-gray-400">{{ getInsulationRating(property.isolationMurs).label }}</p>
                 </div>
               </div>
-              <div v-if="property.isolationMenuiseries" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.isolationMenuiseries" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Menuiseries</p>
                 <div class="flex items-center justify-between">
                   <p class="text-sm font-medium" :class="getInsulationRating(property.isolationMenuiseries).color">{{ getInsulationRating(property.isolationMenuiseries).level }}/{{ getInsulationRating(property.isolationMenuiseries).max }}</p>
                   <p class="text-xs text-gray-600 dark:text-gray-400">{{ getInsulationRating(property.isolationMenuiseries).label }}</p>
                 </div>
               </div>
-              <div v-if="property.isolationPlancherBas" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.isolationPlancherBas" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Plancher bas</p>
                 <div class="flex items-center justify-between">
                   <p class="text-sm font-medium" :class="getInsulationRating(property.isolationPlancherBas).color">{{ getInsulationRating(property.isolationPlancherBas).level }}/{{ getInsulationRating(property.isolationPlancherBas).max }}</p>
                   <p class="text-xs text-gray-600 dark:text-gray-400">{{ getInsulationRating(property.isolationPlancherBas).label }}</p>
                 </div>
               </div>
-              <div v-if="property.isolationToiture" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.isolationToiture" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Toiture / Combles</p>
                 <div v-if="property.isolationToiture === 'Oui' || property.isolationToiture === 'Non'">
                   <p class="text-sm font-medium" :class="property.isolationToiture === 'Oui' ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'">{{ property.isolationToiture }}</p>
@@ -184,11 +110,11 @@
                 </div>
               </div>
               <!-- Alternative isolation fields for Recent DPE -->
-              <div v-if="property.type_vitrage" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.type_vitrage" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Type de vitrage</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.type_vitrage }}</p>
               </div>
-              <div v-if="property.type_materiaux_menuiseries" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.type_materiaux_menuiseries" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Matériaux menuiseries</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.type_materiaux_menuiseries }}</p>
               </div>
@@ -196,47 +122,44 @@
           </div>
 
           <!-- Section 4: Caractéristiques du bien -->
-          <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4">
+          <div class="border-b border-gray-200 dark:border-gray-700 pb-6">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
-              <svg class="w-5 h-5 mr-2 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-5 0H3m2 0h-2M9 7h6m-6 4h6m-6 4h6"></path>
-              </svg>
               Caractéristiques du bien
             </h4>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Surface habitable</p>
-                <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ getSurface() }} m²</p>
+                <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ getSurface() === null ? 'Non renseignée' : `${getSurface()} m²` }}</p>
               </div>
-              <div v-if="property.typeBien" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.typeBien" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Type de bien</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.typeBien === 'appartement' ? 'Appartement' : property.typeBien === 'maison' ? 'Maison' : property.typeBien }}</p>
               </div>
-              <div v-if="property.anneeConstruction" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.anneeConstruction" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Année de construction</p>
                 <p data-construction-year class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ formatYearDisplay(property.anneeConstruction) }}</p>
               </div>
-              <div v-if="getFloorDisplay()" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="getFloorDisplay()" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Localisation</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ getFloorDisplay() }}</p>
               </div>
-              <div v-if="property.hauteurSousPlafond" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.hauteurSousPlafond" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Hauteur sous plafond</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.hauteurSousPlafond }} m</p>
               </div>
-              <div v-if="property.nombreNiveaux" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.nombreNiveaux" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Nombre de niveaux</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.nombreNiveaux }}</p>
               </div>
-              <div v-if="property.logementTraversant" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.logementTraversant" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Logement traversant</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.logementTraversant }}</p>
               </div>
-              <div v-if="property.ubat" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.ubat" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Coefficient Ubat</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.ubat.toFixed(2) }} W/m²K</p>
               </div>
-              <div v-if="property.classeInertie" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.classeInertie" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Inertie thermique</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.classeInertie }}</p>
               </div>
@@ -244,33 +167,30 @@
           </div>
 
           <!-- Section 5: Informations DPE -->
-          <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4">
+          <div class="border-b border-gray-200 dark:border-gray-700 pb-6">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
-              <svg class="w-5 h-5 mr-2 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-              </svg>
               Informations du diagnostic
             </h4>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div v-if="property.numeroDPE || property.numero_dpe" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.numeroDPE || property.numero_dpe" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Numéro DPE</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.numeroDPE || property.numero_dpe }}</p>
               </div>
-              <div v-if="formatDate(property.dateVisite || property.date_visite_diagnostiqueur)" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="formatDate(property.dateVisite || property.date_visite_diagnostiqueur)" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Date du diagnostic</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ formatDate(property.dateVisite || property.date_visite_diagnostiqueur) }}</p>
               </div>
-              <div v-if="property.classeDPE || property.classe_consommation_energie" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="property.classeDPE || property.classe_consommation_energie" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Classe énergétique</p>
                 <span :class="getDPEBadgeClass(property.classeDPE || property.classe_consommation_energie)" class="px-3 py-1 rounded text-sm font-bold">
                   Classe {{ property.classeDPE || property.classe_consommation_energie }}
                 </span>
               </div>
-              <div v-if="getConsommation()" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="getConsommation()" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Consommation totale</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ getConsommation() }} kWh/m²/an</p>
               </div>
-              <div v-if="getGES()" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="getGES()" class="py-2">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Émissions GES</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ getGES() }} kg CO₂/m²/an</p>
               </div>
@@ -301,8 +221,9 @@
 </template>
 
 <script>
-import { Database, ExternalLink, X } from 'lucide-vue-next'
+import { Database, X } from 'lucide-vue-next'
 import { useModalLayer } from '../../../composables/useModalLayer.js'
+import { finiteNonNegativeNumber, getConsumptionBreakdown } from '../../../utils/dpeConsumptionDetails.js'
 import { formatDate, formatYearDisplay } from '../../../utils/formateursDPE.js'
 import DonneesBrutesModal from './DonneesBrutesModal.vue'
 
@@ -314,8 +235,7 @@ export default {
   components: {
     Database,
     DonneesBrutesModal,
-    X,
-    ExternalLink
+    X
   },
   data() {
     return {
@@ -337,6 +257,30 @@ export default {
     }
   },
   emits: ['close'],
+  computed: {
+    consumptionBreakdown() {
+      return getConsumptionBreakdown(this.property)
+    },
+    isLegacyDPE() {
+      return Boolean(this.property?.isLegacyData || this.property?.fromLegacy)
+    },
+    hasSystems() {
+      return ['systemeChauffage', 'systemeECS', 'typeVentilation', 'type_ventilation', 'installationSolaire'].some(
+        key => this.property?.[key]
+      )
+    },
+    hasInsulation() {
+      return [
+        'isolationEnveloppe',
+        'isolationMurs',
+        'isolationMenuiseries',
+        'isolationPlancherBas',
+        'isolationToiture',
+        'type_vitrage',
+        'type_materiaux_menuiseries'
+      ].some(key => this.property?.[key])
+    }
+  },
   watch: {
     show(value) {
       if (!value) this.showRawData = false
@@ -354,124 +298,29 @@ export default {
   methods: {
     formatYearDisplay,
     getConsommation() {
-      return this.property.consommationEnergie || this.property.consommation_energie || 0
+      return this.getMetric('conso_5_usages_par_m2_ep', 'consommationEnergie', 'consommation_energie')
     },
 
     getGES() {
-      return this.property.emissionGES || this.property.ges || this.property.estimation_ges || 0
+      return this.getMetric('emission_ges_5_usages_par_m2', 'emissionGES', 'ges', 'estimation_ges')
     },
 
-    getSurface() {
-      return (
-        this.property.surfaceHabitable ||
-        this.property.surface_habitable_logement ||
-        this.property.surface_habitable ||
-        1
-      )
-    },
-
-    getDeptAverage(type) {
-      if (!this.departmentAverages || !this.property) return null
-
-      // Trouver la tranche de surface appropriée
-      const surface = this.getSurface()
-      let range = null
-
-      for (const surfaceRange of this.departmentAverages.surfaceRanges) {
-        const [min, max] = surfaceRange.range
-          .replace('m²', '')
-          .replace('+', '-999')
-          .split('-')
-          .map(n => parseInt(n, 10))
-        if (surface >= min && (max === 999 || surface <= max)) {
-          range = surfaceRange
-          break
-        }
+    getMetric(...keys) {
+      const source = this.property?.rawData ?? this.property
+      for (const key of keys) {
+        const value = finiteNonNegativeNumber(source?.[key])
+        if (value !== null) return value
       }
-
-      // Gérer les cas particuliers pour les surfaces très petites ou très grandes
-      if (!range && this.departmentAverages.surfaceRanges.length > 0) {
-        if (surface < 15) {
-          range = this.departmentAverages.surfaceRanges[0]
-        } else if (surface > 150) {
-          range = this.departmentAverages.surfaceRanges[this.departmentAverages.surfaceRanges.length - 1]
-        }
-      }
-
-      if (!range) return null
-
-      // Retourner la valeur de consommation appropriée
-      if (type === 'total') {
-        return range.consumption.total
-      } else if (type === 'chauffage') {
-        return range.consumption.chauffage
-      } else if (type === 'eau_chaude') {
-        return range.consumption.eau_chaude
-      } else if (type === 'ges') {
-        return range.ges
-      }
-
       return null
     },
 
-    getDeptRangeInfo() {
-      if (!this.departmentAverages || !this.property) return null
-
-      // Trouver la tranche de surface appropriée
-      const surface = this.getSurface()
-      let range = null
-
-      for (const surfaceRange of this.departmentAverages.surfaceRanges) {
-        const [min, max] = surfaceRange.range
-          .replace('m²', '')
-          .replace('+', '-999')
-          .split('-')
-          .map(n => parseInt(n, 10))
-        if (surface >= min && (max === 999 || surface <= max)) {
-          range = surfaceRange
-          break
-        }
-      }
-
-      // Gérer les cas particuliers pour les surfaces très petites ou très grandes
-      if (!range && this.departmentAverages.surfaceRanges.length > 0) {
-        if (surface < 15) {
-          range = this.departmentAverages.surfaceRanges[0]
-        } else if (surface > 150) {
-          range = this.departmentAverages.surfaceRanges[this.departmentAverages.surfaceRanges.length - 1]
-        }
-      }
-
-      return range
-    },
-
-    formatDateRange(dateRange) {
-      if (!dateRange) return 'sept. 2022 → présent'
-
-      // Analyser la chaîne de plage de dates (format: "2022-09-11 to present")
-      const match = dateRange.match(/(\d{4})-(\d{2})-(\d{2}) to (.+)/)
-      if (!match) return dateRange
-
-      const [, year, month, , end] = match
-      const months = {
-        '01': 'janv.',
-        '02': 'févr.',
-        '03': 'mars',
-        '04': 'avr.',
-        '05': 'mai',
-        '06': 'juin',
-        '07': 'juil.',
-        '08': 'août',
-        '09': 'sept.',
-        10: 'oct.',
-        11: 'nov.',
-        12: 'déc.'
-      }
-
-      const startDate = `${months[month]} ${year}`
-      const endDate = end === 'present' ? 'présent' : end
-
-      return `${startDate} → ${endDate}`
+    getSurface() {
+      return this.getMetric(
+        'surface_habitable_logement',
+        'surfaceHabitable',
+        'surface_habitable',
+        'surface_thermique_lot'
+      )
     },
 
     formatDate,

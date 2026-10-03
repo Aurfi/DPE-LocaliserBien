@@ -37,7 +37,9 @@ describe('optional history preference', () => {
   it('is an unchecked inline option with local-only explanation, not a blocking popup', () => {
     const wrapper = mountComponent(PreferenceHistorique)
     expect(wrapper.get('input[type="checkbox"]').element.checked).toBe(false)
-    expect(wrapper.get('#history-explanation').text()).toContain('uniquement dans ce navigateur')
+    expect(wrapper.get('#history-explanation').text()).toBe(
+      "Option désactivée par défaut. L'historique est enregistré uniquement dans ce navigateur."
+    )
     expect(wrapper.find('[role="dialog"]').exists()).toBe(false)
     expect(localStorage.setItem).not.toHaveBeenCalled()
   })

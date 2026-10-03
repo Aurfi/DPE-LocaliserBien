@@ -24,10 +24,6 @@
               {{ distanceTooltip }}
             </div>
           </div>
-          <!-- Icône du type de bien -->
-          <Home v-if="propertyType === 'maison'" class="w-4 h-4 text-blue-500 dark:text-blue-400" />
-          <Building2 v-else-if="propertyType === 'appartement'" class="w-4 h-4 text-purple-500 dark:text-purple-400" />
-          <Home v-else class="w-4 h-4 text-gray-300 dark:text-gray-600" />
           <!-- Score de correspondance -->
           <div v-if="score !== undefined" class="relative inline-block group">
             <span
@@ -59,6 +55,7 @@
         </h3>
         <p class="text-sm text-gray-600 dark:text-gray-400">
           {{ location }}
+          <span v-if="propertyType === 'maison' || propertyType === 'appartement'" data-property-type> · {{ propertyType === 'maison' ? 'Maison' : 'Appartement' }}</span>
         </p>
       </div>
 
@@ -134,14 +131,12 @@
 </template>
 
 <script>
-import { AlertTriangle, Building2, Database, Home, Trash2 } from 'lucide-vue-next'
+import { AlertTriangle, Database, Trash2 } from 'lucide-vue-next'
 import { formatYearDisplay } from '../../utils/formateursDPE.js'
 
 export default {
   name: 'CarteBien',
   components: {
-    Home,
-    Building2,
     Database,
     Trash2,
     AlertTriangle
