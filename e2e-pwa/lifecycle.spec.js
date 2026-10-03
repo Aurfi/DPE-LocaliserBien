@@ -90,7 +90,9 @@ for (const baselineId of baselineIds) {
       await controlled(page)
       await expect(page.locator('script[type="module"][src]')).toHaveAttribute('src', release.baseline.moduleUrl)
       await expect.poll(() => page.evaluate(() => window.__pwaAppListening)).toBe(true)
-      await expect(page.locator('#app')).toHaveAttribute('data-v-app', '')
+      // The old public app renders a nested #app; its Vue mount is the direct body child.
+      const mountSelector = baselineId === 'public-production-2026-10-03' ? 'body > #app' : '#app'
+      await expect(page.locator(mountSelector)).toHaveAttribute('data-v-app', '')
       if (baselineId === 'earlier-candidate-7fe6a35') {
         await expect(page.getByRole('heading', { level: 1 })).toHaveText('Retrouver un bien grâce à son DPE')
       } else {
