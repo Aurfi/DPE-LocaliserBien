@@ -197,10 +197,10 @@ for (const baselineId of baselineIds) {
       await context.setOffline(true)
       const offlineRoutes = [
         ['/', 'Retrouver un bien grâce à son DPE'],
-        ['/informations', 'Informations'],
+        ['/informations', 'Guide et informations'],
         ['/mentions-legales', 'Mentions légales et vie privée'],
-        ['/faq', 'Informations'],
-        ['/informations?source=pwa-test', 'Informations']
+        ['/faq', 'Guide et informations'],
+        ['/informations?source=pwa-test', 'Guide et informations']
       ]
       for (const [route, heading] of offlineRoutes) {
         const offlinePage = await context.newPage()
