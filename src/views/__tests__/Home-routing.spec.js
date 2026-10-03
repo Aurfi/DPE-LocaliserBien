@@ -4,11 +4,20 @@ import { AmbiguousCommuneError } from '../../utils/communeDirectory.js'
 import Home from '../Home.vue'
 
 vi.mock('../../services/dpe-search.service.js', () => ({
-  default: vi.fn(() => ({ search: vi.fn().mockRejectedValue(new AmbiguousCommuneError()) }))
+  // biome-ignore lint/complexity/useArrowFunction: Vitest 4 constructor mocks must be constructable.
+  default: vi.fn(function () {
+    return { search: vi.fn().mockRejectedValue(new AmbiguousCommuneError()) }
+  })
 }))
 
 let wrapper
-afterEach(() => wrapper?.unmount())
+afterEach(async () => {
+  wrapper?.unmount()
+  vi.useRealTimers()
+  // Shallow-mounted async components can still be resolving their modules.
+  // Finish that work before Vitest tears down this file's environment.
+  await vi.dynamicImportSettled()
+})
 
 describe('actionable commune ambiguity', () => {
   it('keeps the form visible, stops loading and displays a postcode clarification', async () => {

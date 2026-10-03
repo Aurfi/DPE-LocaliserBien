@@ -18,15 +18,15 @@
     <link rel="dns-prefetch" href="https://data.geopf.fr">
 
     <!-- Primary Meta Tags -->
-    <title><%= VITE_APP_TITLE %></title>
-    <meta name="title" content="<%= VITE_APP_TITLE %>">
-    <meta name="description" content="<%= VITE_APP_DESCRIPTION %>">
-    <meta name="keywords" content="<%= VITE_APP_KEYWORDS %>">
-    <meta name="author" content="<%= VITE_SITE_NAME %>">
+    <title>%VITE_HTML_APP_TITLE%</title>
+    <meta name="title" content="%VITE_HTML_APP_TITLE%">
+    <meta name="description" content="%VITE_HTML_APP_DESCRIPTION%">
+    <meta name="keywords" content="%VITE_HTML_APP_KEYWORDS%">
+    <meta name="author" content="%VITE_HTML_SITE_NAME%">
     <meta name="robots" content="index, follow">
     <meta name="language" content="fr-FR">
     <meta name="revisit-after" content="7 days">
-    <link rel="canonical" href="<%= VITE_SITE_URL %>/" />
+    <link rel="canonical" href="%VITE_HTML_SITE_URL%/" />
     
     <!-- Geo-targeting for France -->
     <meta name="geo.region" content="FR" />
@@ -36,11 +36,11 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="<%= VITE_SITE_URL %>/">
-    <meta property="og:site_name" content="<%= VITE_SITE_NAME %>">
-    <meta property="og:title" content="<%= VITE_OG_TITLE %>">
-    <meta property="og:description" content="<%= VITE_OG_DESCRIPTION %>">
-    <meta property="og:image" content="<%= VITE_SITE_URL %>/og-image.png">
+    <meta property="og:url" content="%VITE_HTML_SITE_URL%/">
+    <meta property="og:site_name" content="%VITE_HTML_SITE_NAME%">
+    <meta property="og:title" content="%VITE_HTML_OG_TITLE%">
+    <meta property="og:description" content="%VITE_HTML_OG_DESCRIPTION%">
+    <meta property="og:image" content="%VITE_HTML_SITE_URL%/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="fr_FR">
@@ -48,10 +48,10 @@
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="<%= VITE_SITE_URL %>/">
-    <meta property="twitter:title" content="<%= VITE_TWITTER_TITLE %>">
-    <meta property="twitter:description" content="<%= VITE_TWITTER_DESCRIPTION %>">
-    <meta property="twitter:image" content="<%= VITE_SITE_URL %>/og-image.png">
+    <meta property="twitter:url" content="%VITE_HTML_SITE_URL%/">
+    <meta property="twitter:title" content="%VITE_HTML_TWITTER_TITLE%">
+    <meta property="twitter:description" content="%VITE_HTML_TWITTER_DESCRIPTION%">
+    <meta property="twitter:image" content="%VITE_HTML_SITE_URL%/og-image.png">
     
     <!-- Critical CSS inline fallback for faster FCP -->
     <style>
@@ -62,8 +62,8 @@
     <!-- Additional Meta Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="<%= VITE_SITE_NAME %>">
-    <meta name="application-name" content="<%= VITE_SITE_NAME %>">
+    <meta name="apple-mobile-web-app-title" content="%VITE_HTML_SITE_NAME%">
+    <meta name="application-name" content="%VITE_HTML_SITE_NAME%">
     <meta name="msapplication-TileColor" content="#3B82F6">
     <meta name="msapplication-config" content="/browserconfig.xml">
     
@@ -76,9 +76,9 @@
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "<%= VITE_SITE_NAME %>",
-      "url": "<%= VITE_SITE_URL %>",
-      "description": "<%= VITE_APP_DESCRIPTION %>",
+      "name": %VITE_HTML_JSONLD_SITE_NAME%,
+      "url": %VITE_HTML_JSONLD_SITE_URL%,
+      "description": %VITE_HTML_JSONLD_APP_DESCRIPTION%,
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "Web",
       "offers": {
@@ -88,8 +88,8 @@
       },
       "author": {
         "@type": "Organization",
-        "name": "<%= VITE_SITE_NAME %>",
-        "url": "<%= VITE_SITE_URL %>"
+        "name": %VITE_HTML_JSONLD_SITE_NAME%,
+        "url": %VITE_HTML_JSONLD_SITE_URL%
       }
     }
     </script>
@@ -99,14 +99,14 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "<%= VITE_SITE_NAME %>",
-      "url": "<%= VITE_SITE_URL %>",
-      "description": "<%= VITE_APP_DESCRIPTION %>",
+      "name": %VITE_HTML_JSONLD_SITE_NAME%,
+      "url": %VITE_HTML_JSONLD_SITE_URL%,
+      "description": %VITE_HTML_JSONLD_APP_DESCRIPTION%,
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "<%= VITE_SITE_URL %>/?search={search_term_string}"
+          "urlTemplate": %VITE_HTML_JSONLD_SEARCH_URL%
         },
         "query-input": "required name=search_term_string"
       }
@@ -118,12 +118,12 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "@id": "<%= VITE_SITE_URL %>/#organization",
-      "name": "<%= VITE_SITE_NAME %>",
-      "url": "<%= VITE_SITE_URL %>",
+      "@id": %VITE_HTML_JSONLD_ORGANIZATION_ID%,
+      "name": %VITE_HTML_JSONLD_SITE_NAME%,
+      "url": %VITE_HTML_JSONLD_SITE_URL%,
       "logo": {
         "@type": "ImageObject",
-        "url": "<%= VITE_SITE_URL %>/android-chrome-512x512.png",
+        "url": %VITE_HTML_JSONLD_LOGO_URL%,
         "width": 512,
         "height": 512
       },
@@ -140,7 +140,7 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "<%= VITE_SITE_URL %>"
+        "item": %VITE_HTML_JSONLD_SITE_URL%
       }]
     }
     </script>
@@ -184,8 +184,8 @@
       "description": "Service de localisation de biens immobiliers basé sur les données DPE publiques de l'ADEME",
       "provider": {
         "@type": "Organization",
-        "name": "<%= VITE_SITE_NAME %>",
-        "url": "<%= VITE_SITE_URL %>"
+        "name": %VITE_HTML_JSONLD_SITE_NAME%,
+        "url": %VITE_HTML_JSONLD_SITE_URL%
       },
       "areaServed": {
         "@type": "Country",

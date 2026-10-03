@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "classification": "Verified earlier release-candidate artifact; not the currently deployed OVH release",
+  "sourceRepository": "https://github.com/Aurfi/DPE-LocaliserBien",
+  "sourceRevision": "7fe6a35b66a0fd4b4813617477cb7e720d1d94a4",
+  "originalArtifact": {
+    "files": 238,
+    "bytes": 11187347,
+    "manifestSha256": "6d240822975f7602c7286311f1026e4ec368e3fc23286517d10b6c399639c94f",
+    "indexSha256": "e1d790d4df3dddfaa97b9ef822fd41a162ffa6c3927d8801c7b50de4d90b389e",
+    "swSha256": "43d93cf9dc0faeb189d091740a95de4656b29d4e90cd01bcc7a767187cf82074"
+  },
+  "fixture": {
+    "files": 20,
+    "bytes": 628713,
+    "manifestSha256": "71907e2474fa702d040e7f5bf8e895ac5a4b48a1d9b56de9a4e27f8007d1d26e",
+    "precacheEntries": 15
+  },
+  "omittedFiles": 218,
+  "omissionReason": "Non-precached geography JSON/name-index chunk, unused image variants, social metadata images, robots/sitemap files and host configuration are not required for old-worker installation or the old-tab startup/upgrade path. No old-search/geography or OVH hosting validation is claimed.",
+  "preservation": "Every retained runtime file is a byte-for-byte copy of the verified original artifact; worker, precache list and HTML are not regenerated or rewritten."
+}

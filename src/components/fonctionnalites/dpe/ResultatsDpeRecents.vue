@@ -30,11 +30,11 @@
         :index="index"
         :dateDisplay="formatDate(dpe.date_etablissement_dpe)"
         :dateTooltip="formatFullDate(dpe.date_etablissement_dpe)"
-        :distance="dpe._distance"
+        :distance="getFiniteNumber(dpe._distance) ?? undefined"
         :propertyType="getPropertyType(dpe)"
         :address="getAddressWithoutCityAndPostcode(dpe)"
         :location="`${dpe.nom_commune_ban || dpe.nom_commune_brut || 'Localisation inconnue'} - ${dpe.code_postal_ban || dpe.code_postal_brut || ''}`"
-        :surface="Math.round(dpe.surfaceHabitable)"
+        :surface="getSurface(dpe)"
         :floor="getFloorDisplay(dpe)"
         :yearBuilt="formatYearDisplay(dpe.anneeConstruction)"
         :hasIncompleteData="false"
@@ -50,7 +50,7 @@
       :property="selectedProperty"
       :formattedAddress="selectedProperty.adresse_ban || selectedProperty.adresse_brut || getFormattedAddress(selectedProperty)"
       :commune="selectedProperty.nom_commune_ban || selectedProperty.nom_commune_brut"
-      :surface="Math.round(selectedProperty.surfaceHabitable || selectedProperty.surface_habitable_logement || selectedProperty.surface_habitable || 0)"
+      :surface="getSurface(selectedProperty)"
       :energyClass="selectedProperty.etiquette_dpe"
       :mapUrl="selectedProperty._geopoint ? getGoogleMapsEmbedUrlForDPE(selectedProperty) : null"
       :geoportailUrl="getGeoportailUrl(getLatitudeFromGeopoint(selectedProperty._geopoint), getLongitudeFromGeopoint(selectedProperty._geopoint))"
@@ -81,7 +81,9 @@
 
 <script>
 import { OctagonX } from 'lucide-vue-next'
+import { watch } from 'vue'
 import { useGestionResultats } from '../../../composables/useGestionResultats'
+import { formatDpeDate, getDpeAgeDays, getDpeDateSortValue } from '../../../utils/datesDPE.js'
 import {
   extractYearFromValue,
   formatYearDisplay,
@@ -125,8 +127,15 @@ export default {
     }
   },
   emits: ['clear-results'],
-  setup() {
+  setup(props) {
     const { selectedProperty, showDPEDetails, hiddenResults, showDetails, closeModal } = useGestionResultats()
+
+    // A new search (or replacement rows) must not inherit hidden cards or stale dialogs.
+    // Keep this local to recent results: localiser mode has its own history lifecycle.
+    watch([() => props.results, () => props.results?.results], () => {
+      hiddenResults.value.clear()
+      closeModal()
+    })
 
     return {
       OctagonX,
@@ -227,14 +236,14 @@ export default {
         })
       } else if (this.sortBy === 'date-desc') {
         results = [...results].sort((a, b) => {
-          const dateA = a.date_etablissement_dpe ? new Date(a.date_etablissement_dpe).getTime() : 0
-          const dateB = b.date_etablissement_dpe ? new Date(b.date_etablissement_dpe).getTime() : 0
+          const dateA = getDpeDateSortValue(a.date_etablissement_dpe)
+          const dateB = getDpeDateSortValue(b.date_etablissement_dpe)
           return dateB - dateA
         })
       } else if (this.sortBy === 'date-asc') {
         results = [...results].sort((a, b) => {
-          const dateA = a.date_etablissement_dpe ? new Date(a.date_etablissement_dpe).getTime() : 0
-          const dateB = b.date_etablissement_dpe ? new Date(b.date_etablissement_dpe).getTime() : 0
+          const dateA = getDpeDateSortValue(a.date_etablissement_dpe)
+          const dateB = getDpeDateSortValue(b.date_etablissement_dpe)
           return dateA - dateB
         })
       } else {
@@ -265,28 +274,32 @@ export default {
     formatYearDisplay,
 
     hideResult(index) {
-      if (index !== null && index >= 0) {
-        const originalIndex = this.results.results.findIndex((_result, i) => {
-          let count = 0
-          for (let j = 0; j <= i; j++) {
-            if (!this.hiddenResults.has(j)) {
-              if (count === index) return true
-              count++
-            }
-          }
-          return false
-        })
-        if (originalIndex !== -1) {
-          this.hiddenResults.add(originalIndex)
-        }
+      if (!Number.isInteger(index) || index < 0) return
+      // The event index belongs to the sorted/filtered cards, not the source rows.
+      const result = this.filteredResults[index]
+      if (!result) return
+      const originalIndex = this.results.results.indexOf(result)
+      if (originalIndex !== -1) this.hiddenResults.add(originalIndex)
+    },
+
+    getFiniteNumber(value) {
+      if (typeof value !== 'number' && typeof value !== 'string') return null
+      if (typeof value === 'string' && !value.trim()) return null
+      const number = Number(value)
+      return Number.isFinite(number) ? number : null
+    },
+
+    getSurface(dpe) {
+      for (const value of [dpe.surfaceHabitable, dpe.surface_habitable_logement, dpe.surface_habitable]) {
+        const number = this.getFiniteNumber(value)
+        if (number !== null && number >= 0) return Math.round(number)
       }
+      return null
     },
 
     formatDate(dateStr) {
-      const date = new Date(dateStr)
-      const now = new Date()
-      const diffTime = Math.abs(now - date)
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+      const diffDays = getDpeAgeDays(dateStr)
+      if (diffDays === null) return null
 
       if (diffDays === 0) return "Aujourd'hui"
       if (diffDays === 1) return 'Hier'
@@ -307,15 +320,11 @@ export default {
         return `Il y a ${totalMonths} mois`
       }
 
-      return date.toLocaleDateString('fr-FR')
+      return formatDpeDate(dateStr) || null
     },
 
     formatFullDate(dateStr) {
-      return new Date(dateStr).toLocaleDateString('fr-FR', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric'
-      })
+      return formatDpeDate(dateStr) || null
     },
 
     getFormattedAddress(dpe) {

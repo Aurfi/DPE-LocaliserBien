@@ -256,7 +256,7 @@
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Numéro DPE</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ property.numeroDPE || property.numero_dpe }}</p>
               </div>
-              <div v-if="property.dateVisite || property.date_visite_diagnostiqueur" class="bg-white dark:bg-gray-800 rounded-lg p-3">
+              <div v-if="formatDate(property.dateVisite || property.date_visite_diagnostiqueur)" class="bg-white dark:bg-gray-800 rounded-lg p-3">
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-1">Date du diagnostic</p>
                 <p class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ formatDate(property.dateVisite || property.date_visite_diagnostiqueur) }}</p>
               </div>
@@ -303,7 +303,7 @@
 <script>
 import { Database, ExternalLink, X } from 'lucide-vue-next'
 import { useModalLayer } from '../../../composables/useModalLayer.js'
-import { formatYearDisplay } from '../../../utils/formateursDPE.js'
+import { formatDate, formatYearDisplay } from '../../../utils/formateursDPE.js'
 import DonneesBrutesModal from './DonneesBrutesModal.vue'
 
 export default {
@@ -474,15 +474,7 @@ export default {
       return `${startDate} → ${endDate}`
     },
 
-    formatDate(dateStr) {
-      if (!dateStr) return ''
-      const date = new Date(dateStr)
-      return date.toLocaleDateString('fr-FR', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric'
-      })
-    },
+    formatDate,
 
     getVentilationLabel(value) {
       const labels = {

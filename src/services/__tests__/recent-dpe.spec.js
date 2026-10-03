@@ -242,22 +242,26 @@ describe('recent-dpe.service', () => {
       expect(result.fullSearchAddress).toBe('12 Rue de la Paix 75001 Paris')
     })
 
-    it('doit calculer la date limite en fonction de monthsBack', async () => {
-      fetch.mockResolvedValue(mockFetchOk())
-
-      await searchRecentDPE(makeCriteria({ monthsBack: 3 }))
-
-      const urls = getCalledUrls()
-      // La date doit être environ 3 mois en arrière
-      const expectedYear = new Date()
-      expectedYear.setMonth(expectedYear.getMonth() - 3)
-      const expectedDateStr = expectedYear.toISOString().split('T')[0].substring(0, 7) // YYYY-MM
-
-      urls.forEach(url => {
-        if (url.includes('date_etablissement_dpe')) {
-          expect(url).toContain(expectedDateStr)
+    it.each([
+      [2026, 9, 3, 0, 30, 3, '2026-07-03'],
+      [2026, 9, 3, 23, 30, 3, '2026-07-03'],
+      [2026, 2, 31, 0, 30, 1, '2026-02-28'],
+      [2024, 2, 31, 23, 30, 1, '2024-02-29']
+    ])('uses the exact local-calendar cutoff in both queries: %j/%j/%j %j:%j', async (...values) => {
+      const [year, month, day, hour, minute, monthsBack, expected] = values
+      vi.useFakeTimers({ toFake: ['Date'] })
+      vi.setSystemTime(new Date(year, month, day, hour, minute))
+      try {
+        fetch.mockResolvedValue(mockFetchOk())
+        await searchRecentDPE(makeCriteria({ monthsBack }))
+        const queries = fetch.mock.calls.map(([url]) => new URL(url).searchParams.get('qs'))
+        expect(queries).toHaveLength(2)
+        for (const query of queries) {
+          expect(query).toMatch(new RegExp(`date_etablissement_dpe:>${expected}(?: AND|$)`))
         }
-      })
+      } finally {
+        vi.useRealTimers()
+      }
     })
 
     it('doit retourner totalFound égal au nombre de résultats', async () => {

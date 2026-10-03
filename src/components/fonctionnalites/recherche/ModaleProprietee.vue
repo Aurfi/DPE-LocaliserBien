@@ -18,7 +18,7 @@
               <span class="font-medium">{{ commune }}</span>
             </div>
             <span class="text-gray-400 dark:text-gray-500">•</span>
-            <span class="font-medium">{{ surface }}m²</span>
+            <span class="font-medium">{{ surface == null ? 'Surface non renseignée' : `${surface}m²` }}</span>
             <span class="inline text-gray-400 dark:text-gray-500">•</span>
             <a
               :href="getGoogleMapsUrl()"
@@ -84,7 +84,7 @@
             <div class="space-y-1.5">
               <div class="flex flex-wrap justify-between items-center gap-x-3 gap-y-1 px-2 py-1.5 bg-gray-50 dark:bg-gray-700 rounded-lg">
                 <span class="text-gray-600 dark:text-gray-300 text-sm">Surface habitable:</span>
-                <span class="font-semibold text-gray-900 dark:text-gray-100 text-sm">{{ surface }}m²</span>
+                <span class="font-semibold text-gray-900 dark:text-gray-100 text-sm">{{ surface == null ? 'Surface non renseignée' : `${surface}m²` }}</span>
               </div>
               <div v-if="propertyType" class="flex flex-wrap justify-between items-center gap-x-3 gap-y-1 px-2 py-1.5 bg-gray-50 dark:bg-gray-700 rounded-lg">
                 <span class="text-gray-600 dark:text-gray-300 text-sm">Type de bien:</span>

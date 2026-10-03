@@ -38,7 +38,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [24.x]
     
     steps:
     - name: 📥 Checkout code
@@ -59,11 +59,17 @@ jobs:
       run: npm run lint
       continue-on-error: false
     
+    - name: Verify finite CSS classes and native HTML interpolation
+      run: |
+        npm run check:styles
+        npm run test:styles
+        npm run test:html
+
     - name: Test deployment safety offline
       run: python3 -m unittest discover -s scripts/deployment -p 'test_*.py' -v
 
-    - name: 🧪 Run tests
-      run: npm test -- --run
+    - name: 🧪 Run tests and enforce coverage thresholds
+      run: npm run test:coverage
       continue-on-error: false
       env:
         TZ: Europe/Paris
@@ -96,6 +102,15 @@ jobs:
       env:
         CI: true
     
+    - name: Retain browser dependency boundary evidence
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: browser-dependency-graph
+        path: reports/security/runtime-module-graph.json
+        if-no-files-found: ignore
+        retention-days: 14
+
     - name: 📊 Check build output
       run: |
         echo "Build completed successfully!"
@@ -114,9 +129,51 @@ jobs:
         # unexpected hidden files before this artifact can be uploaded.
         include-hidden-files: true
 
+  pwa-lifecycle:
+    name: PWA lifecycle (earlier candidate to same-run candidate)
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
+    needs: [lint-and-test]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24.x'
+        cache: npm
+    - name: Install current locked test toolchain only
+      run: npm ci
+    - name: Verify immutable baseline and offline fixture failure cases
+      run: npm run test:pwa:unit
+    - name: Install official Playwright Chromium and OS dependencies
+      run: npx --no-install playwright install --with-deps chromium
+    - name: Download this run's exact candidate build
+      uses: actions/download-artifact@v4
+      with:
+        name: build-artifacts
+        path: dist/
+    - name: Verify preserved baseline bytes and record exact artifact provenance
+      run: node scripts/pwa/provenance.mjs record
+    - name: Test real installation, open-tab upgrade, cleanup and offline boundaries
+      run: npm run test:pwa
+    - name: Retain PWA browser evidence even on failure
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: pwa-lifecycle-evidence
+        path: |
+          reports/pwa/
+          test-results/pwa/
+          playwright-report/pwa/
+        retention-days: 14
+
   security-check:
     if: github.event_name != 'workflow_dispatch' || inputs.operation != 'preflight'
-    name: Security Audit
+    name: Dependency Policy
     runs-on: ubuntu-latest
     
     steps:
@@ -128,11 +185,24 @@ jobs:
     - name: 🔧 Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20.x'
+        node-version: '24.x'
     
-    - name: 🔒 Run npm audit
-      run: npm audit --audit-level=moderate
-      continue-on-error: true
+    - name: Install exact locked dependencies for tree verification
+      run: npm ci --ignore-scripts --no-audit
+
+    - name: Test dependency policy failure cases
+      run: npm run test:security
+
+    - name: Require clean full and production audits and retired-package absence
+      run: npm run security:audit
+
+    - name: Retain raw audits, installed tree and policy evidence
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: dependency-audit-evidence
+        path: reports/security/
+        retention-days: 14
     
     - name: 🔍 Check for sensitive data
       run: |
@@ -166,7 +236,7 @@ jobs:
     name: Publish reviewed release over verified FTPS
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    needs: lint-and-test
+    needs: [lint-and-test, security-check]
     # Pushes and PRs NEVER publish. Configure required reviewers and main-only
     # branch access on this environment before enabling production releases.
     if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.operation == 'deploy'
@@ -180,7 +250,7 @@ jobs:
         persist-credentials: false
     - uses: actions/setup-node@v4
       with:
-        node-version: '20.x'
+        node-version: '24.x'
     - uses: actions/download-artifact@v4
       with:
         name: build-artifacts

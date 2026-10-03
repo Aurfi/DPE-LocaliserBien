@@ -61,7 +61,7 @@ public files during rollback would otherwise leave the new worker in place.
 After the reviewed workflow is authorized and present on main, manually run
 `CI/CD Pipeline` with operation `preflight`. Pushes and pull requests build/test
 but do not use FTP secrets or publish. A manual preflight skips the frontend
-build/test and security-audit jobs. Deployments, pushes and pull requests retain
+build/test and dependency-policy jobs. Deployments, pushes and pull requests retain
 those checks. Preflight needs no enabling variables.
 
 The preflight only authenticates with protected FTPS, navigates/lists directories,
@@ -99,10 +99,14 @@ Manually run the CI workflow on main with operation `deploy`, the exact full
 Inputs are passed through quoted environment variables, not interpolated into shell
 commands. Runtime checks bind the reviewed SHA to `GITHUB_SHA` and main.
 
-Lint, frontend tests, the offline deployment tests, build and built-site checks must
-pass. The deployment job downloads **this run's** build and checks it again. The
-npm vulnerability audit remains advisory as in the candidate's existing workflow;
-it must not be described as a blocking clean security audit.
+Lint, frontend tests with coverage thresholds, offline deployment tests, build,
+built-site validation and the dependency-policy job must all pass. Full and
+production npm audits must report zero findings, with no advisory exceptions.
+Raw audits, installed-tree and browser-module evidence are retained outside the
+public build. The deployment job downloads **this run's** build and checks it again.
+A successful PWA lifecycle job for the exact same candidate SHA is also a release
+review requirement; the manual deployment job alone does not establish it. See
+PWA_LIFECYCLE_TESTS.md for its scope and the separate prior-production identity gate.
 
 The tool then:
 1. Reads current versions of candidate paths and computes a change plan. It refuses

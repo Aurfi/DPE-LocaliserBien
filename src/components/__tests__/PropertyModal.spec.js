@@ -402,3 +402,29 @@ describe('PropertyModal', () => {
     })
   })
 })
+
+describe('property modal missing and zero surface', () => {
+  it.each([null, undefined])('labels an absent surface without inventing a measurement: %s', surface => {
+    const wrapper = mount(PropertyModal, { props: { property: {}, surface } })
+    try {
+      expect(wrapper.text()).toContain('Surface non renseignée')
+      expect(wrapper.text()).not.toMatch(/NaN|0m²/)
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('displays a known zero surface without changing missing energy defaults', () => {
+    const wrapper = mount(PropertyModal, {
+      props: { property: {}, surface: 0, energyConsumption: 0, gesEmissions: 0 }
+    })
+    try {
+      expect(wrapper.text()).toContain('0m²')
+      expect(wrapper.text()).not.toContain('0 kWh/m²/an')
+      expect(wrapper.text()).not.toContain('0 kg/m²/an')
+      expect(wrapper.text()).not.toContain('Surface non renseignée')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+})

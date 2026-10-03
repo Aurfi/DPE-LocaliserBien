@@ -51,7 +51,10 @@ vi.mock('../processeur-resultats-dpe.service.js', () => {
     })
   }
   return {
-    default: vi.fn(() => mockProcesseur)
+    // biome-ignore lint/complexity/useArrowFunction: Vitest 4 constructor mocks must be constructable.
+    default: vi.fn(function () {
+      return mockProcesseur
+    })
   }
 })
 

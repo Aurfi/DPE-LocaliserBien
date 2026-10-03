@@ -507,16 +507,22 @@ export default {
 
 <style scoped>
 .form-group {
-  @apply relative;
+    position: relative
 }
 
 /* Animation pour les champs focus */
 .form-group input:focus + .absolute {
-  @apply text-green-600;
+    --tw-text-opacity: 1;
+    color: rgb(22 163 74 / var(--tw-text-opacity, 1))
+}
+button:hover .form-group input:focus + .absolute {
+    --tw-text-opacity: 1;
+    color: rgb(21 128 61 / var(--tw-text-opacity, 1))
 }
 
 /* Style pour les exemples */
 button:hover .text-green-600 {
-  @apply text-green-700;
+    --tw-text-opacity: 1;
+    color: rgb(21 128 61 / var(--tw-text-opacity, 1))
 }
 </style>

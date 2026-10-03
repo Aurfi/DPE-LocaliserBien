@@ -1,63 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-@layer base {
-  html { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color-scheme: light; background: #f7f8fa; }
-  html.dark { color-scheme: dark; background: #111827; }
-  body { @apply text-gray-900 dark:text-gray-100; margin: 0; }
-  button, input, select, textarea { font: inherit; }
-  button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
-  :focus-visible { outline: 2px solid #335f85; outline-offset: 4px; }
-  .dark :focus-visible { outline-color: #93c5fd; }
-  button:disabled { cursor: not-allowed; }
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-  }
-}
-
-@layer components {
-  .site-shell { background: #f7f8fa; }
-  .dark .site-shell { background: #111827; }
-  .site-width { width: min(100% - 2rem, 1120px); margin-inline: auto; }
-  .site-header { @apply border-b border-gray-200 dark:border-gray-800; padding-block: 1.15rem; }
-  .site-wordmark { @apply text-lg font-semibold text-gray-900 dark:text-gray-100; letter-spacing: -0.04em; }
-  .quiet-link { @apply text-sm text-gray-600 dark:text-gray-300; text-underline-offset: 4px; }
-  .quiet-link:hover { text-decoration: underline; }
-  .site-footer { @apply border-t border-gray-200 dark:border-gray-800; margin-top: 3rem; padding-block: 2rem 1rem; }
-  .footer-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; }
-  .footer-links { @apply text-sm text-gray-600 dark:text-gray-400; display: flex; flex-direction: column; align-items: flex-start; gap: .3rem; }
-  .footer-links a { padding-block: .3rem; text-underline-offset: 4px; }
-  .footer-links a:hover { text-decoration: underline; }
-  .footer-bottom { @apply border-t border-gray-200 dark:border-gray-800 text-xs text-gray-500 dark:text-gray-400; margin-top: 1.75rem; padding-top: 1rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
-  .theme-choice { @apply border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-md; min-height: 40px; padding: .4rem .65rem; }
-  .search-navigation { @apply border-b border-gray-200 dark:border-gray-700; display: flex; gap: 1.25rem; margin: 0 auto 1.5rem; max-width: 896px; }
-  .search-navigation-item { @apply text-sm text-gray-500 dark:text-gray-400; min-height: 48px; padding: .6rem 0; margin-bottom: -1px; border-bottom: 2px solid transparent; }
-  .search-navigation-item.is-active { @apply text-gray-900 dark:text-gray-100; border-color: currentColor; font-weight: 600; }
-  .search-panel { @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700; border-radius: 12px; padding: 1.25rem; }
-  .search-heading { @apply text-gray-900 dark:text-gray-100 font-semibold; font-size: clamp(1.3rem, 3vw, 1.75rem); line-height: 1.3; letter-spacing: -.025em; }
-  .search-description { @apply text-sm text-gray-500 dark:text-gray-400; margin-top: .65rem; line-height: 1.6; }
-  .btn-primary { @apply text-white font-semibold; background: #244a68; min-height: 48px; border-radius: 7px; padding: .75rem 1.25rem; transition: background-color .15s; }
-  .btn-primary:hover { background: #173b57; }
-  .dark .btn-primary { background: #9bc0de; color: #112b40; }
-  .dark .btn-primary:hover { background: #b7d2e7; }
-  .btn-primary:disabled { opacity: .55; }
-  .btn-secondary { @apply bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600 font-medium; min-height: 44px; padding: .6rem 1rem; border-radius: 7px; }
-  .input-field { @apply w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100; min-height: 48px; padding: .75rem; border-radius: 7px; }
-  .search-panel input, .search-panel select { @apply bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-600; border-radius: 7px; }
-  .search-panel input[aria-invalid="true"] { @apply border-red-600 dark:border-red-400; }
-  .search-panel input:focus, .search-panel select:focus { border-color: #456b88; }
-  .search-panel input::placeholder { @apply text-gray-400 dark:text-gray-500; }
-  .search-panel input:disabled { @apply bg-gray-50 dark:bg-gray-800; }
-  .field-error { @apply text-xs text-red-700 dark:text-red-300; margin-top: .45rem; }
-  .class-options { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
-  .class-option { min-height: 44px; min-width: 0; border-radius: 5px; font-size: .8rem; font-weight: 600; }
-  .property-option { min-height: 44px; padding: .4rem .7rem; border-radius: 5px; font-size: .8rem; }
-  .card { @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700; border-radius: 10px; }
-  .section-title { @apply text-xl font-semibold text-gray-800 dark:text-gray-100; margin-bottom: 1rem; }
-  @media (min-width: 640px) {
-    .search-panel { padding: 2rem; }
-    .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
-    .search-navigation { gap: 2rem; }
-  }
-}
+/* The import order is part of the styling contract. Do not introduce CSS layers. */
+@import './styles/retained-foundation.css';
+@import './styles/app-base.css';
+@import './styles/retained-container.css';
+@import './styles/app-components.css';
+@import './styles/retained-utilities.css';

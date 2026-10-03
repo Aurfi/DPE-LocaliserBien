@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "retiredPackages": ["braces", "chokidar", "fast-glob", "micromatch", "tailwindcss", "vite-plugin-html"],
+  "buildToolRuntimePackages": [
+    "@vitejs/plugin-vue",
+    "autoprefixer",
+    "braces",
+    "chokidar",
+    "fast-glob",
+    "micromatch",
+    "postcss",
+    "rollup",
+    "rollup-plugin-visualizer",
+    "tailwindcss",
+    "terser",
+    "vite",
+    "vite-plugin-html",
+    "vite-plugin-pwa",
+    "workbox-build"
+  ]
+}

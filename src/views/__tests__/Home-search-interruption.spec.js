@@ -7,7 +7,10 @@ import Home from '../Home.vue'
 const mocks = vi.hoisted(() => ({ geocode: vi.fn(), locate: vi.fn(), nearby: vi.fn() }))
 vi.mock('../../utils/utilsGeo.js', () => ({ geocodeAddress: mocks.geocode }))
 vi.mock('../../services/dpe-search.service.js', () => ({
-  default: vi.fn(() => ({ search: mocks.locate }))
+  // biome-ignore lint/complexity/useArrowFunction: Vitest 4 constructor mocks must be constructable.
+  default: vi.fn(function () {
+    return { search: mocks.locate }
+  })
 }))
 vi.mock('../../services/recent-dpe.service', () => ({ searchRecentDPE: mocks.nearby }))
 vi.mock('../../utils/departmentAverages.js', () => ({
@@ -23,8 +26,11 @@ const deferred = () => {
 }
 
 let wrapper
-afterEach(() => {
+afterEach(async () => {
   wrapper?.unmount()
+  // Vue's async component modules can still be resolving after unmount.
+  // Await them before environment teardown, as in Home-routing.spec.js.
+  await vi.dynamicImportSettled()
   vi.clearAllMocks()
 })
 

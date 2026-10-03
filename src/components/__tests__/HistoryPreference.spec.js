@@ -100,7 +100,9 @@ describe('optional history preference', () => {
 describe('system font delivery', () => {
   it('does not declare remote font requests or hints in the document', () => {
     const html = readFileSync(resolve('index.html'), 'utf8')
-    const css = readFileSync(resolve('src/style.css'), 'utf8')
+    const stylesheet = readFileSync(resolve('src/style.css'), 'utf8')
+    expect(stylesheet).toContain("@import './styles/app-base.css'")
+    const css = readFileSync(resolve('src/styles/app-base.css'), 'utf8')
     expect(html).not.toMatch(/fonts\.(?:googleapis|gstatic)\.com/)
     expect(html).toContain('font-family: system-ui,')
     expect(css).toContain('font-family: system-ui,')

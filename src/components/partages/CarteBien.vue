@@ -77,7 +77,7 @@
         <!-- Surface -->
         <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
           <div class="text-xs text-gray-500 dark:text-gray-400">Surface</div>
-          <div class="font-bold text-gray-800 dark:text-gray-200">{{ surface }} m²</div>
+          <div class="font-bold text-gray-800 dark:text-gray-200">{{ surface == null ? 'Non renseignée' : `${surface} m²` }}</div>
         </div>
 
         <!-- Année de construction -->

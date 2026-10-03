@@ -46,6 +46,7 @@
       "!dist",
       "!node_modules",
       "!coverage",
+      "!reports",
       "!test-results",
       "!playwright-report",
       "!.nuxt",
@@ -54,7 +55,8 @@
       "!public/data/*.json",
       "!src/data/geography/*.json",
       "!**/*.css",
-      "!backups"
+      "!backups",
+      "!e2e-pwa/fixtures/baseline-7fe6a35/static"
     ]
   }
 }

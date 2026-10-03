@@ -1,3 +1,4 @@
+import { getDpeDateCutoff } from '../utils/datesDPE.js'
 import { buildNumericQuery, normalizeNumericCriteria, parseSearchComparison } from '../utils/numericSearchInput.js'
 import { calculateDistance, geocodeAddress } from '../utils/utilsGeo.js'
 
@@ -139,7 +140,7 @@ function mapAdemeResult(ademeData) {
         ? ademeData.numero_etage_appartement
         : null,
     nombreNiveaux: ademeData.nombre_niveau_logement || null,
-    surfaceHabitable: ademeData.surface_habitable_logement || 0,
+    surfaceHabitable: ademeData.surface_habitable_logement ?? null,
     anneeConstruction: ademeData.annee_construction || ademeData.periode_construction || null,
     complementRefLogement: ademeData.compl_ref_logement || ademeData.complement_adresse_logement || '',
 
@@ -195,9 +196,7 @@ function mapAdemeResult(ademeData) {
 export async function searchRecentDPE(criteria) {
   criteria = normalizeNumericCriteria(criteria, ['surface', 'consommation', 'ges'])
   // 1. Calculer la date limite
-  const dateLimit = new Date()
-  dateLimit.setMonth(dateLimit.getMonth() - criteria.monthsBack)
-  const dateLimitStr = dateLimit.toISOString().split('T')[0]
+  const dateLimitStr = getDpeDateCutoff(criteria.monthsBack)
 
   // 2. Géocoder l'adresse pour obtenir les coordonnées (nécessaire pour la recherche par rayon)
   const { lat, lon, formattedAddress, postalCode, city } = await geocodeAddress(criteria.address, {

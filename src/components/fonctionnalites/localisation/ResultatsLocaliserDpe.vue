@@ -42,8 +42,8 @@
         :key="index"
         :result="result"
         :index="index"
-        :dateDisplay="result.dateVisite ? `il y a ${getDaysAgo(result.dateVisite)}` : null"
-        :dateTooltip="result.dateVisite ? formatDate(result.dateVisite) : null"
+        :dateDisplay="formatRelativeDate(result.dateVisite)"
+        :dateTooltip="formatDate(result.dateVisite) || null"
         :distance="result.distance"
         :distanceTooltip="result.distance !== undefined ? `Distance estimée depuis ${searchResult?.isMultiCommune ? 'le centre' : 'la mairie'}` : null"
         :propertyType="getPropertyType(result)"
@@ -79,7 +79,7 @@
       :location="selectedProperty.complementRefLogement"
       :numberOfLevels="selectedProperty.nombreNiveaux"
       :ceilingHeight="selectedProperty.hauteurSousPlafond"
-      :diagnosisDate="selectedProperty.dateVisite ? formatDate(selectedProperty.dateVisite) : null"
+      :diagnosisDate="formatDate(selectedProperty.dateVisite) || null"
       :energyConsumption="selectedProperty.consommationEnergie"
       :gesEmissions="selectedProperty.emissionGES"
       :departmentAverages="departmentAverages"
@@ -107,6 +107,7 @@
 <script>
 import { OctagonX } from 'lucide-vue-next'
 import { useGestionResultats } from '../../../composables/useGestionResultats'
+import { getDpeDateSortValue } from '../../../utils/datesDPE.js'
 import {
   cleanAddress,
   extractYearFromValue,
@@ -244,14 +245,14 @@ export default {
         })
       } else if (this.sortBy === 'date-desc') {
         results = [...results].sort((a, b) => {
-          const dateA = a.dateVisite ? new Date(a.dateVisite).getTime() : 0
-          const dateB = b.dateVisite ? new Date(b.dateVisite).getTime() : 0
+          const dateA = getDpeDateSortValue(a.dateVisite)
+          const dateB = getDpeDateSortValue(b.dateVisite)
           return dateB - dateA
         })
       } else if (this.sortBy === 'date-asc') {
         results = [...results].sort((a, b) => {
-          const dateA = a.dateVisite ? new Date(a.dateVisite).getTime() : 0
-          const dateB = b.dateVisite ? new Date(b.dateVisite).getTime() : 0
+          const dateA = getDpeDateSortValue(a.dateVisite)
+          const dateB = getDpeDateSortValue(b.dateVisite)
           return dateA - dateB
         })
       } else {
@@ -288,6 +289,11 @@ export default {
     formatYearDisplay,
     formatDate,
     getDaysAgo,
+    formatRelativeDate(value) {
+      const age = getDaysAgo(value)
+      if (!age) return null
+      return age === "aujourd'hui" || age === 'hier' ? age : `il y a ${age}`
+    },
     getFloorDisplay,
     getPropertyType,
 

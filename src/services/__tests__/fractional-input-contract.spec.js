@@ -326,21 +326,27 @@ describe('numeric boundary compatibility and zero comparisons', () => {
   it('normalizes and builds fractional bounds without newer own-property or large-integer APIs', () => {
     const previousOwn = Object.hasOwn
     const previousLargeInteger = globalThis.BigInt
+    let normalized
+    let percentQuery
+    let zeroQuery
+    let smallQuery
     try {
       Object.hasOwn = undefined
       globalThis.BigInt = undefined
-      expect(normalizeNumericCriteria({ surface: '65,5' }, ['surface'])).toEqual({ surface: 65.5 })
-      expect(buildNumericQuery({ operator: '=', value: 65.5 }, 'surface', { percent: 15 })).toBe(
-        'surface:[55.675 TO 75.325]'
-      )
-      expect(buildNumericQuery({ operator: '=', value: 0.5 }, 'surface', { absolute: 1 })).toBe('surface:[-0.5 TO 1.5]')
-      expect(buildNumericQuery({ operator: '=', value: 0.0000001 }, 'surface', { absolute: 1 })).toBe(
-        'surface:[-0.9999999 TO 1.0000001]'
-      )
+      // Exercise application code without these browser APIs. Vitest 4's own
+      // assertion implementation needs Object.hasOwn, so assert after restoring.
+      normalized = normalizeNumericCriteria({ surface: '65,5' }, ['surface'])
+      percentQuery = buildNumericQuery({ operator: '=', value: 65.5 }, 'surface', { percent: 15 })
+      zeroQuery = buildNumericQuery({ operator: '=', value: 0.5 }, 'surface', { absolute: 1 })
+      smallQuery = buildNumericQuery({ operator: '=', value: 0.0000001 }, 'surface', { absolute: 1 })
     } finally {
       Object.hasOwn = previousOwn
       globalThis.BigInt = previousLargeInteger
     }
+    expect(normalized).toEqual({ surface: 65.5 })
+    expect(percentQuery).toBe('surface:[55.675 TO 75.325]')
+    expect(zeroQuery).toBe('surface:[-0.5 TO 1.5]')
+    expect(smallQuery).toBe('surface:[-0.9999999 TO 1.0000001]')
   })
   it.each(['<', '>'])('retains explicit %s0 boundaries rather than omitting numeric filters', async operator => {
     await builder.executerRecherche(

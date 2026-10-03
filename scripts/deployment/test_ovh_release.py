@@ -351,7 +351,7 @@ class WorkflowSafetyTests(unittest.TestCase):
 
     def test_deploy_still_requires_passing_build_and_explicit_main_dispatch(self):
         deploy = self.job('deploy')
-        self.assertIn('    needs: lint-and-test', deploy.splitlines())
+        self.assertIn('    needs: [lint-and-test, security-check]', deploy.splitlines())
         self.assertIn("    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.operation == 'deploy'",
                       deploy.splitlines())
         self.assertIn('    environment: ovh-production', deploy.splitlines())
@@ -359,6 +359,15 @@ class WorkflowSafetyTests(unittest.TestCase):
         for guard in ('OVH_RELEASE_ENABLED', 'OVH_PRIVATE_BACKUP_CONFIRMED'):
             self.assertIn(guard + ': ${{ vars.' + guard + ' }}', deploy)
         self.assertIn('permissions:\n  contents: read\n', self.ci)
+
+    def test_security_policy_is_required_and_retains_raw_audit_evidence(self):
+        security = self.job('security-check')
+        self.assertIn('run: npm run test:coverage', self.job('lint-and-test'))
+        self.assertIn('run: npm run test:security', security)
+        self.assertIn('run: npm run security:audit', security)
+        self.assertNotIn('continue-on-error: true', security)
+        self.assertIn('if: always()', security)
+        self.assertIn('path: reports/security/', security)
 
     def test_generated_metadata_makes_no_exact_or_universal_identification_claim(self):
         for prefix in ('APP', 'OG', 'TWITTER'):

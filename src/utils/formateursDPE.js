@@ -1,3 +1,5 @@
+import { formatDpeDate, getDpeAgeDays } from './datesDPE.js'
+
 /**
  * Utility functions for formatting DPE data
  */
@@ -33,24 +35,15 @@ export function formatYearDisplay(value) {
  * Format date to French locale
  */
 export function formatDate(dateString) {
-  if (!dateString) return ''
-  const date = new Date(dateString)
-  return date.toLocaleDateString('fr-FR', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
-  })
+  return formatDpeDate(dateString)
 }
 
 /**
  * Get relative time from date
  */
 export function getDaysAgo(dateString) {
-  if (!dateString) return ''
-  const date = new Date(dateString)
-  const now = new Date()
-  const diffTime = Math.abs(now - date)
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+  const diffDays = getDpeAgeDays(dateString)
+  if (diffDays === null) return ''
 
   if (diffDays === 0) return "aujourd'hui"
   if (diffDays === 1) return 'hier'
