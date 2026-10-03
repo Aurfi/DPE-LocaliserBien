@@ -9,7 +9,7 @@ test('loads one map only on opening a result and preserves nested dialog and scr
   await page.route('https://maps.google.com/maps?**', route => {
     requests.push(route.request())
     return route.fulfill({
-      contentType: 'text/html',
+      contentType: 'text/html; charset=utf-8',
       body: '<!doctype html><html lang="fr"><body><p>Aperçu contrôlé</p><button>Contrôle de carte</button></body></html>'
     })
   })
@@ -84,17 +84,35 @@ test('uses the selected result on reopening and never invents missing coordinate
   await page.goto('/')
   await fillSearch(page)
   await page.getByRole('button', { name: 'Localiser', exact: true }).click()
-  const triggers = page.getByRole('button', { name: 'Voir détails', exact: true })
-  await expect(triggers).toHaveCount(2)
-  await triggers.nth(0).click()
-  const original = await page.locator('[data-map-preview] iframe').getAttribute('src')
+  await expect(page.getByRole('button', { name: 'Voir détails', exact: true })).toHaveCount(2)
+  // Results are ranked, so fixture order is not a contract. Identify each card
+  // by its unique visible street number, then verify the full modal address.
+  const resultButton = streetNumber =>
+    page
+      .locator('.property-card-content')
+      .filter({ has: page.getByRole('heading', { level: 3, name: new RegExp(`^${streetNumber} rue du`) }) })
+      .getByRole('button', { name: 'Voir détails', exact: true })
+  const withCoordinates = resultButton(1)
+  const withoutCoordinates = resultButton(2)
+  await expect(withCoordinates).toHaveCount(1)
+  await expect(withoutCoordinates).toHaveCount(1)
+  await withCoordinates.click()
+  await expect(page.getByRole('dialog', { name: '1 rue du Test', exact: true })).toBeVisible()
+  const frame = page.locator('[data-map-preview] iframe')
+  const original = new URL(await frame.getAttribute('src'))
+  expect(original.searchParams.get('q')).toContain('1 rue du Test')
+  expect(original.searchParams.get('ll')).toBe('48.8626,2.3363')
   await page.keyboard.press('Escape')
-  await triggers.nth(1).click()
-  const next = new URL(await page.locator('[data-map-preview] iframe').getAttribute('src'))
-  expect(next.href).not.toBe(original)
+  await expect(frame).toHaveCount(0)
+  await expect(withCoordinates).toBeFocused()
+  await withoutCoordinates.click()
+  await expect(page.getByRole('dialog', { name: '2 rue du Test', exact: true })).toBeVisible()
+  const next = new URL(await frame.getAttribute('src'))
+  expect(next.href).not.toBe(original.href)
   expect(next.searchParams.get('q')).toContain('2 rue du Test')
   expect(next.searchParams.has('ll')).toBe(false)
   expect(next.searchParams.get('q')).not.toBe('0,0')
   await page.keyboard.press('Escape')
-  await expect(triggers.nth(1)).toBeFocused()
+  await expect(frame).toHaveCount(0)
+  await expect(withoutCoordinates).toBeFocused()
 })

@@ -74,7 +74,16 @@ test('opens the actual results help link at its results heading in a new tab', a
   await help.click()
   const guide = await opened
   await expect(guide).toHaveURL(/\/informations#resultats$/)
-  await expect(guide.getByRole('heading', { name: 'Lire les résultats', exact: true })).toBeInViewport({ ratio: 1 })
+  const resultsHeading = guide.getByRole('heading', { name: 'Lire les résultats', exact: true })
+  await expect(resultsHeading).toBeVisible()
+  // Native hash scrolling rounds fractional CSS pixels. Keep the heading at
+  // the anchor near the top, allowing at most one pixel of rounding.
+  await expect
+    .poll(() => resultsHeading.evaluate(element => element.getBoundingClientRect().top))
+    .toBeLessThanOrEqual(32)
+  const headingBounds = await resultsHeading.boundingBox()
+  expect(headingBounds.y).toBeGreaterThanOrEqual(-1)
+  expect(headingBounds.y + headingBounds.height).toBeLessThanOrEqual(guide.viewportSize().height)
   await expect.poll(() => guide.evaluate(() => window.scrollY)).toBeGreaterThan(0)
   await expect(guide.locator('#resultats')).toContainText('pas une probabilité d’identification')
   await guide.close()
