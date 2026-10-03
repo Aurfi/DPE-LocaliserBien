@@ -3,6 +3,7 @@
  * Store centralisé de gestion et mise en cache des données départementales
  */
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import runtimeDirectory from '../../data/geography/runtime-directory.json'
 
 // Helper — crée une réponse fetch réussie
 const mockOkResponse = data =>
@@ -72,7 +73,7 @@ describe('useDepartements', () => {
 
       await store.loadDepartment('13')
 
-      expect(fetch).toHaveBeenCalledWith('/data/departments/communes-dept-13.json')
+      expect(fetch).toHaveBeenCalledWith(`${runtimeDirectory.basePath}communes-dept-13.json`)
     })
 
     it("utilise l'URL correcte pour les départements Corse (2A)", async () => {
@@ -80,7 +81,7 @@ describe('useDepartements', () => {
 
       await store.loadDepartment('2A')
 
-      expect(fetch).toHaveBeenCalledWith('/data/departments/communes-dept-2A.json')
+      expect(fetch).toHaveBeenCalledWith(`${runtimeDirectory.basePath}communes-dept-2A.json`)
     })
 
     it("utilise l'URL correcte pour les départements DOM-TOM (971)", async () => {
@@ -88,7 +89,7 @@ describe('useDepartements', () => {
 
       await store.loadDepartment('971')
 
-      expect(fetch).toHaveBeenCalledWith('/data/departments/communes-dept-971.json')
+      expect(fetch).toHaveBeenCalledWith(`${runtimeDirectory.basePath}communes-dept-971.json`)
     })
 
     it('met les données en cache après le premier chargement', async () => {
@@ -391,7 +392,7 @@ describe('useDepartements', () => {
 
       // Seulement '13' doit être chargé
       expect(fetch).toHaveBeenCalledOnce()
-      expect(fetch).toHaveBeenCalledWith('/data/departments/communes-dept-13.json')
+      expect(fetch).toHaveBeenCalledWith(`${runtimeDirectory.basePath}communes-dept-13.json`)
     })
 
     it("ne lève pas d'erreur quand certains chargements échouent", async () => {

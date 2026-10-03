@@ -3,6 +3,7 @@ import argparse
 import contextlib
 import ftplib
 import io
+import json
 import os
 from pathlib import Path
 import re
@@ -29,6 +30,7 @@ class FakeFTP:
         self.corrupt_stores = False
         self.deny_retr = None
         self.on_manifest = None
+        self.on_rename = None
 
     def pwd(self):
         return self.current
@@ -80,6 +82,8 @@ class FakeFTP:
         if target == self.fail_rename:
             raise ftplib.error_perm('550 unavailable')
         self.files[target] = self.files.pop(source)
+        if self.on_rename:
+            self.on_rename(self, source, target)
 
 
 class ReleaseTests(unittest.TestCase):
@@ -95,15 +99,33 @@ class ReleaseTests(unittest.TestCase):
         self.remote = release.Remote(self.ftp)
         self.args = argparse.Namespace(reviewed_commit='a' * 40,
             expected_index=release.digest(self.old['index.html']),
-            release_id='test-release-0001', htaccess='preserve')
+            release_id='test-release-0001', htaccess='preserve', plan_commit='a' * 40)
+        self.temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temporary.cleanup)
+        self.root = Path(self.temporary.name)
+        self.args.baseline_root = str(self.root)
+        self.args.plan = str(self.root / 'plan.json')
+        self.baseline = {'schema': 1, 'source_commit': 'b' * 40, 'files': []}
+        for name, data in self.old.items():
+            if name == '.htaccess':
+                continue
+            source = 'public/' + name
+            path = self.root / source
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(data)
+            self.baseline['files'].append({'path': name, 'sha256': release.digest(data), 'source': source})
         self.env = patch.dict(os.environ, {'GITHUB_SHA': 'a' * 40,
             'GITHUB_REF': 'refs/heads/main',
-            'OVH_PRIVATE_BACKUP_CONFIRMED': 'outside-all-document-roots',
             'OVH_RELEASE_ENABLED': 'reviewed-and-approved'})
         self.env.start()
         self.addCleanup(self.env.stop)
 
+    def prepare_plan(self):
+        plan = release.make_plan(self.new, self.baseline)
+        Path(self.args.plan).write_text(json.dumps(plan))
+
     def publish(self):
+        self.prepare_plan()
         with contextlib.redirect_stdout(io.StringIO()):
             release.deploy(self.remote, self.args, self.new)
 
@@ -113,7 +135,8 @@ class ReleaseTests(unittest.TestCase):
             release.rollback(self.remote, self.args)
 
     def public_writes(self):
-        return [c for c in self.ftp.calls if c[0] == 'rename' and c[2].startswith('/home/www/')]
+        return [c for c in self.ftp.calls if c[0] == 'rename' and c[2] in
+                {'/home/www/' + name for name in self.new}]
 
     def test_preflight_has_no_remote_writes_or_configuration_contents(self):
         stream = io.StringIO()
@@ -129,25 +152,25 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual(paths[-2:], ['/home/www/index.html', '/home/www/sw.js'])
         for name in ('.htaccess', 'unknown.txt', 'assets/old-hash.js'):
             self.assertEqual(self.ftp.files['/home/www/' + name], self.old[name])
-        self.assertFalse(any(c[0] == 'stor' and c[1].startswith('/home/www/') for c in self.ftp.calls))
+        self.assertFalse(any(c[0] == 'stor' and c[1] in
+                             {'/home/www/' + name for name in self.new} for c in self.ftp.calls))
         self.assertFalse(any(c[0] == 'delete' for c in self.ftp.calls))
 
-    def test_private_snapshot_precedes_every_public_write(self):
+    def test_public_recovery_record_precedes_every_live_promotion(self):
         self.publish()
         manifest_read = next(i for i, c in enumerate(self.ftp.calls)
                              if c[0] == 'retr' and c[1].endswith('/manifest.json'))
         first_public = next(i for i, c in enumerate(self.ftp.calls) if c in self.public_writes())
         self.assertLess(manifest_read, first_public)
-        self.assertIn('/home/.localiserbien-releases/test-release-0001/before/index.html', self.ftp.files)
-        self.assertFalse(any(p.startswith('/home/www/') and 'before/' in p for p in self.ftp.files))
+        self.assertFalse(any('before/' in p for p in self.ftp.files))
+        self.assertFalse(any(value == b'private old config' for path, value in self.ftp.files.items()
+                             if release.STAGE_PREFIX in path))
 
-    def test_exact_config_pin_allows_replace_and_recover(self):
+    def test_existing_private_config_replacement_is_unsupported(self):
         self.args.htaccess = release.digest(self.old['.htaccess'])
-        self.publish()
-        self.assertEqual(self.ftp.files['/home/www/.htaccess'], b'new config')
-        self.recover()
-        self.assertEqual(self.ftp.files['/home/www/.htaccess'], b'private old config')
-        self.assertFalse(any(c[0] == 'stor' and c[1].startswith('/home/www/') for c in self.ftp.calls))
+        with self.assertRaises(release.ReleaseError):
+            self.publish()
+        self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
 
     def test_config_wrong_pin_blocks_all_writes(self):
         self.args.htaccess = 'c' * 64
@@ -161,13 +184,13 @@ class ReleaseTests(unittest.TestCase):
             self.publish()
         self.assertFalse(self.public_writes())
 
-    def test_new_config_rollback_moves_it_back_to_private_storage(self):
+    def test_new_public_config_rollback_moves_it_out_of_active_path(self):
         del self.ftp.files['/home/www/.htaccess']
         self.args.htaccess = 'confirmed-absent'
         self.publish()
         self.recover()
         self.assertNotIn('/home/www/.htaccess', self.ftp.files)
-        self.assertTrue(any(path.endswith('/introduced-htaccess') for path in self.ftp.files))
+        self.assertTrue(any(path.endswith('/introduced-route-config.txt') for path in self.ftp.files))
 
     def test_rollback_restores_mutable_files_but_retains_both_asset_generations(self):
         self.publish()
@@ -199,9 +222,9 @@ class ReleaseTests(unittest.TestCase):
         self.publish()
         self.assertEqual(self.ftp.files['/home/www/newdir/test.json'], b'new data')
 
-    def test_wrong_commit_ref_backup_confirmation_and_live_index_each_block(self):
+    def test_wrong_commit_ref_enablement_and_live_index_each_block(self):
         for variable, value in [('GITHUB_SHA', 'b' * 40), ('GITHUB_REF', 'refs/heads/other'),
-                                ('OVH_PRIVATE_BACKUP_CONFIRMED', ''), ('OVH_RELEASE_ENABLED', '')]:
+                                ('OVH_RELEASE_ENABLED', '')]:
             with self.subTest(variable=variable), patch.dict(os.environ, {variable: value}):
                 with self.assertRaises(release.ReleaseError):
                     self.publish()
@@ -222,13 +245,13 @@ class ReleaseTests(unittest.TestCase):
     def test_missing_live_worker_blocks_all_writes(self):
         del self.ftp.files['/home/www/sw.js']
         before = dict(self.ftp.files)
-        with self.assertRaisesRegex(release.ReleaseError, 'first-time service-worker installation'):
+        with self.assertRaisesRegex(release.ReleaseError, 'reviewed public baseline'):
             self.publish()
         self.assertEqual(before, self.ftp.files)
         self.assertFalse({'stor', 'mkd', 'rename', 'delete'} & {c[0] for c in self.ftp.calls})
 
-    def test_private_rename_failure_leaves_production_untouched(self):
-        self.ftp.fail_rename = '/home/.localiserbien-releases/test-release-0001/probe-a'
+    def test_public_probe_failure_leaves_live_targets_untouched(self):
+        self.ftp.fail_rename = '/home/www/_localiserbien-stage-test-release-0001/probe-a.txt'
         with self.assertRaises(ftplib.error_perm):
             self.publish()
         self.assertFalse(self.public_writes())
@@ -264,9 +287,9 @@ class ReleaseTests(unittest.TestCase):
             self.recover()
         self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
 
-    def test_corrupt_private_backup_blocks_rollback_before_writes(self):
+    def test_corrupt_public_recovery_source_blocks_rollback_before_writes(self):
         self.publish()
-        self.ftp.files['/home/.localiserbien-releases/test-release-0001/before/sw.js'] = b'corrupt'
+        (self.root / 'public/sw.js').write_bytes(b'corrupt')
         self.ftp.calls.clear()
         with self.assertRaises(release.ReleaseError):
             self.recover()
@@ -324,6 +347,150 @@ class ReleaseTests(unittest.TestCase):
             cls.return_value.close.assert_called_once()
 
 
+    def test_live_drift_before_deploy_blocks_every_remote_write(self):
+        self.ftp.files['/home/www/data/existing.json'] = b'drift'
+        with self.assertRaises(release.ReleaseError):
+            self.publish()
+        self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
+
+    def test_supposed_new_path_already_present_blocks_every_write(self):
+        self.ftp.files['/home/www/assets/new-hash.js'] = self.new['assets/new-hash.js']
+        with self.assertRaises(release.ReleaseError):
+            self.publish()
+        self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
+
+    def test_unchanged_path_drift_also_blocks_every_write(self):
+        self.new['unknown.txt'] = self.old['unknown.txt']
+        self.ftp.files['/home/www/unknown.txt'] = b'drift'
+        with self.assertRaises(release.ReleaseError):
+            self.publish()
+        self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
+
+    def test_build_plan_mismatch_blocks_all_writes(self):
+        self.prepare_plan()
+        files = dict(self.new, extra_json=b'unreviewed')
+        with self.assertRaises(release.ReleaseError):
+            release.deploy(self.remote, self.args, files)
+        self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
+
+    def test_corrupt_recovery_record_blocks_all_rollback_writes(self):
+        self.publish()
+        self.ftp.files[release.snapshot_path(self.remote, self.args.release_id) + '/manifest.json'] = b'{}'
+        self.ftp.calls.clear()
+        with self.assertRaises(release.ReleaseError):
+            self.recover()
+        self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
+
+    def test_omitted_legacy_data_is_never_touched(self):
+        del self.new['data/existing.json']
+        self.new['data/geography-v1/communes-dept-75.json'] = b'compact versioned public data'
+        self.publish()
+        self.assertEqual(self.ftp.files['/home/www/data/existing.json'], b'old data')
+        self.recover()
+        self.assertEqual(self.ftp.files['/home/www/data/existing.json'], b'old data')
+        self.assertEqual(self.ftp.files['/home/www/data/geography-v1/communes-dept-75.json'],
+                         b'compact versioned public data')
+
+    def test_recovery_source_symlink_rejected(self):
+        source = self.root / 'public/sw.js'
+        source.unlink()
+        source.symlink_to(self.root / 'public/index.html')
+        with self.assertRaises(release.ReleaseError):
+            self.publish()
+        self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
+
+    def test_recovery_source_traversal_rejected(self):
+        self.prepare_plan()
+        plan = json.loads(Path(self.args.plan).read_text())
+        next(e for e in plan['files'] if e['path'] == 'sw.js')['source'] = '../private.json'
+        Path(self.args.plan).write_text(json.dumps(plan))
+        with self.assertRaises(release.ReleaseError):
+            release.deploy(self.remote, self.args, self.new)
+        self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
+
+    def test_missing_before_image_blocks_deploy_before_network(self):
+        self.prepare_plan()
+        (self.root / 'public/sw.js').unlink()
+        with patch.object(release, 'connect') as connect:
+            with patch('sys.argv', ['ovh_release.py', 'rollback', '--reviewed-commit', 'a' * 40,
+                                    '--expected-index', self.args.expected_index, '--release-id', self.args.release_id,
+                                    '--plan', self.args.plan, '--baseline-root', self.args.baseline_root, '--plan-commit', 'a' * 40]), contextlib.redirect_stderr(io.StringIO()):
+                self.assertEqual(release.main(), 1)
+            connect.assert_not_called()
+
+    def test_no_private_zip_or_before_images_copied_to_server(self):
+        self.publish()
+        staged = {p: v for p, v in self.ftp.files.items() if release.STAGE_PREFIX in p}
+        self.assertTrue(staged)
+        self.assertFalse(any('before/' in p or p.endswith('.zip') for p in staged))
+        self.assertFalse(any(v == self.old['.htaccess'] for v in staged.values()))
+        manifest = json.loads(self.ftp.files[release.snapshot_path(self.remote, self.args.release_id) + '/manifest.json'])
+        self.assertEqual(set(manifest), {'schema', 'release_id', 'commit', 'initial_index_sha256', 'htaccess', 'plan_sha256'})
+
+    def test_final_release_guard_catches_earlier_promoted_file_drift(self):
+        def drift(ftp, source, target):
+            if target == '/home/www/sw.js':
+                ftp.files['/home/www/index.html'] = b'external edit after promotion'
+        self.ftp.on_rename = drift
+        with self.assertRaisesRegex(release.ReleaseError, 'Final release state drifted'):
+            self.publish()
+
+    def test_final_release_guard_catches_unchanged_file_drift(self):
+        self.new['unknown.txt'] = self.old['unknown.txt']
+        def drift(ftp, source, target):
+            if target == '/home/www/sw.js':
+                ftp.files['/home/www/unknown.txt'] = b'external edit'
+        self.ftp.on_rename = drift
+        with self.assertRaisesRegex(release.ReleaseError, 'Final release state drifted'):
+            self.publish()
+
+    def test_final_recovery_guard_catches_earlier_restored_file_drift(self):
+        self.publish()
+        def drift(ftp, source, target):
+            if target == '/home/www/sw.js':
+                ftp.files['/home/www/data/existing.json'] = b'external edit'
+        self.ftp.on_rename = drift
+        with self.assertRaisesRegex(release.ReleaseError, 'Final recovery state drifted'):
+            self.recover()
+
+    def test_wrong_original_plan_commit_blocks_rollback_writes(self):
+        self.publish()
+        self.args.plan_commit = 'c' * 40
+        self.ftp.calls.clear()
+        with self.assertRaises(release.ReleaseError):
+            self.recover()
+        self.assertFalse({'stor', 'mkd', 'rename'} & {c[0] for c in self.ftp.calls})
+
+    def test_all_legacy_departments_survive_versioned_publish_and_rollback(self):
+        baseline = json.loads(Path(__file__).with_name('public-baseline.json').read_text())
+        paths = [entry['path'] for entry in baseline['files']
+                 if entry['path'].startswith('data/departments/')]
+        self.assertEqual(len(paths), 205)
+        legacy = {}
+        introduced = {}
+        self.ftp.dirs.add('/home/www/data/departments')
+        for name in paths:
+            is_commune = '/communes-' in name
+            old = (b'{"population":1234,"nom":"Old commune","unchanged":true}' if is_commune
+                   else b'{"avgSurface":99,"updateDate":"2025-09-11","unchanged":true}')
+            legacy['/home/www/' + name] = old
+            self.ftp.files['/home/www/' + name] = old
+            if is_commune:
+                new_name = 'data/geography-v1-50c1f57902864f71/' + name.rsplit('/', 1)[1]
+                introduced[new_name] = b'{"compact":true}'
+        self.assertEqual(len(introduced), 105)
+        self.new.update(introduced)
+        self.publish()
+        plan = json.loads(Path(self.args.plan).read_text())
+        self.assertFalse(any(entry['path'].startswith('data/departments/') for entry in plan['files']))
+        self.assertEqual({path: self.ftp.files[path] for path in legacy}, legacy)
+        self.recover()
+        self.assertEqual({path: self.ftp.files[path] for path in legacy}, legacy)
+        self.assertTrue(all(self.ftp.files['/home/www/' + path] == value
+                            for path, value in introduced.items()))
+        self.assertFalse(any(call[0] == 'delete' for call in self.ftp.calls))
+
+
 class WorkflowSafetyTests(unittest.TestCase):
     """Focused structure checks without a third-party YAML dependency in CI."""
     def setUp(self):
@@ -356,7 +523,7 @@ class WorkflowSafetyTests(unittest.TestCase):
                       deploy.splitlines())
         self.assertIn('    environment: ovh-production', deploy.splitlines())
         self.assertIn('      cancel-in-progress: false', deploy.splitlines())
-        for guard in ('OVH_RELEASE_ENABLED', 'OVH_PRIVATE_BACKUP_CONFIRMED'):
+        for guard in ('OVH_RELEASE_ENABLED',):
             self.assertIn(guard + ': ${{ vars.' + guard + ' }}', deploy)
         self.assertIn('permissions:\n  contents: read\n', self.ci)
 
@@ -368,6 +535,23 @@ class WorkflowSafetyTests(unittest.TestCase):
         self.assertNotIn('continue-on-error: true', security)
         self.assertIn('if: always()', security)
         self.assertIn('path: reports/security/', security)
+
+    def test_public_sources_are_pinned_without_private_backup_prerequisite(self):
+        deploy = self.job('deploy')
+        self.assertIn('ref: ${{ steps.public-baseline.outputs.commit }}', deploy)
+        self.assertIn('--baseline-root .release-baseline', deploy)
+        self.assertNotIn('OVH_PRIVATE_BACKUP_CONFIRMED', deploy)
+        self.assertIn('persist-credentials: false', deploy)
+
+    def test_recovery_loads_original_plan_after_main_advances(self):
+        rollback = (Path(__file__).resolve().parents[2] / '.github/workflows/ovh-rollback.yml').read_text()
+        self.assertIn('release_plan_commit:', rollback)
+        self.assertIn('ref: ${{ inputs.release_plan_commit }}', rollback)
+        self.assertIn('--plan .recovery-plan/scripts/deployment/public-release-plan.json', rollback)
+        self.assertIn('--plan-commit "$RECOVERY_PLAN_COMMIT"', rollback)
+        self.assertIn('--baseline-root .release-baseline', rollback)
+        self.assertNotIn('OVH_PRIVATE_BACKUP_CONFIRMED', rollback)
+        self.assertNotIn('npm ', rollback)
 
     def test_generated_metadata_makes_no_exact_or_universal_identification_claim(self):
         for prefix in ('APP', 'OG', 'TWITTER'):

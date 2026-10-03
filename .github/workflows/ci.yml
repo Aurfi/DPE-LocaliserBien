@@ -18,7 +18,7 @@ on:
         type: string
         default: ''
       htaccess:
-        description: 'preserve (default), existing reviewed SHA-256, or confirmed-absent'
+        description: 'preserve (default), or explicitly verified confirmed-absent'
         type: string
         default: preserve
   push:
@@ -257,10 +257,29 @@ jobs:
         path: dist/
     - name: Revalidate the exact downloaded public build
       run: node scripts/check-built-site.mjs
-    - name: Stage, snapshot privately, and promote files without broad cleanup
+    - name: Read the pinned public recovery-source commit
+      id: public-baseline
+      run: |
+        python3 - <<'PYCODE'
+        import json, os, re
+        from pathlib import Path
+        plan = json.loads(Path("scripts/deployment/public-release-plan.json").read_text())
+        commit = plan['source_commit']
+        assert re.fullmatch(r'[a-f0-9]{40}', commit)
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+            output.write('commit=' + commit + '\n')
+        PYCODE
+    - name: Check out immutable public recovery sources
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ steps.public-baseline.outputs.commit }}
+        path: .release-baseline
+        persist-credentials: false
+    - name: Verify public recovery sources, stage public files, and promote without cleanup
       run: |
         python3 scripts/deployment/ovh_release.py deploy \
           --reviewed-commit "$REVIEWED_COMMIT" \
+          --baseline-root .release-baseline \
           --expected-index "$EXPECTED_INDEX" \
           --htaccess "$HTACCESS_POLICY" \
           --release-id "github-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${GITHUB_SHA:0:12}"
@@ -269,7 +288,6 @@ jobs:
         EXPECTED_INDEX: ${{ inputs.expected_index_sha256 }}
         HTACCESS_POLICY: ${{ inputs.htaccess }}
         OVH_RELEASE_ENABLED: ${{ vars.OVH_RELEASE_ENABLED }}
-        OVH_PRIVATE_BACKUP_CONFIRMED: ${{ vars.OVH_PRIVATE_BACKUP_CONFIRMED }}
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}

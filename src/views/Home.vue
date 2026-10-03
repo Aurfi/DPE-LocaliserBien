@@ -63,7 +63,6 @@
         v-if="searchResults"
         :searchResult="searchResults"
         :searchCriteria="searchCriteria"
-        :departmentAverages="searchResults.departmentAverages"
         @newSearch="handleNewSearch"
       />
       
@@ -72,7 +71,6 @@
         v-if="recentDPEResults"
         :results="recentDPEResults"
         :searchCriteria="recentDPESearchCriteria"
-        :departmentAverages="recentDPEResults.departmentAverages"
         @clear-results="handleClearRecentResults"
       />
     </div>
@@ -104,7 +102,6 @@ const NavigationOnglets = defineAsyncComponent(() => import('../components/base/
 const AnimationTriangulation = defineAsyncComponent(() => import('../components/animations/AnimationTriangulation.vue'))
 
 import DPESearchService from '../services/dpe-search.service.js' // Système de scoring clair
-import { loadDepartmentAveragesForResults } from '../utils/departmentAverages.js'
 
 export default {
   name: 'Home',
@@ -182,13 +179,6 @@ export default {
         const results = await this.dpeService.search(searchData)
         if (requestId !== this.searchRequestId) return
         this.searchResults = results
-
-        // Optional comparisons are attached only to the results that requested them.
-        const currentResults = this.searchResults
-        if (currentResults) {
-          const averages = await loadDepartmentAveragesForResults(currentResults)
-          if (this.searchResults === currentResults) currentResults.departmentAverages = averages
-        }
 
         if (requestId !== this.searchRequestId) return
 
@@ -304,12 +294,6 @@ export default {
       // Stocker les résultats et les critères de recherche quand ils arrivent
       this.recentDPEResults = results
       this.recentDPESearchCriteria = searchCriteria
-
-      const currentResults = this.recentDPEResults
-      if (currentResults?.results?.length > 0) {
-        const averages = await loadDepartmentAveragesForResults(currentResults)
-        if (this.recentDPEResults === currentResults) currentResults.departmentAverages = averages
-      }
     },
 
     handleRechercheDPERecenteError(_error) {

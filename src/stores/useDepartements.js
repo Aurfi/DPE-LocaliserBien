@@ -4,6 +4,7 @@
  */
 
 import { computed, reactive } from 'vue'
+import runtimeDirectory from '../data/geography/runtime-directory.json'
 
 let cleanupRegistered = false
 
@@ -65,7 +66,7 @@ export function useDepartements() {
     departmentState.loadingDepartments.add(deptCode)
 
     try {
-      const response = await fetch(`/data/departments/communes-dept-${deptCode}.json`)
+      const response = await fetch(`${runtimeDirectory.basePath}communes-dept-${deptCode}.json`)
 
       if (!response.ok) {
         throw new Error(`Impossible de charger le département ${deptCode}: ${response.status}`)

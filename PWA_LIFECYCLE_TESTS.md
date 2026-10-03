@@ -2,11 +2,15 @@
 
 ## Status and release gate
 
-This is a reviewed test addition; the browser test still requires a successful CI
-run. Unit tests, test discovery and lint do not constitute browser-pass evidence.
-The new `pwa-lifecycle` job runs only on ordinary PR/push events. The production
-deployment job is unchanged: green manual deploy checks alone do **not** establish
-release readiness. Require a successful PWA job for the exact same candidate SHA.
+The browser tests passed without retries in [CI run 37137800526](https://github.com/Aurfi/DPE-LocaliserBien/actions/runs/37137800526)
+on 3 October 2026 for candidate `68c927b466726839fd7f30990d35355f35ea75fd`.
+Both pinned baselines upgraded to that run's exact candidate build. The PR merge
+test tree matched the published candidate tree. This records that candidate's
+browser evidence; it is not evidence of production deployment.
+
+The `pwa-lifecycle` job runs only on ordinary PR/push events. Green manual deploy
+checks alone do **not** establish browser-pass evidence. For a changed release
+candidate, require a successful PWA job and review its exact artifact identity.
 The two pinned baselines include the public production bytes observed on
 2026-10-03. Refresh production identity when preparing a later release, and perform
 authorized OVH/Apache checks before a production-ready claim.

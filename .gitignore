@@ -46,6 +46,7 @@ nginx.conf
 .htaccess.production
 # The reviewed route-only public/.htaccess is versioned and copied into builds.
 reports/
+public/data/geography-v1-*/
 public/sitemap.xml
 public/robots.txt
 public/manifest.json

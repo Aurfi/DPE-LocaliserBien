@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
+import { collectRuntimeData, verifyRuntimeDirectory } from './geography/runtime-data.mjs'
 
 const dist = path.resolve('dist')
 function checkHiddenFiles(directory, prefix = '') {
@@ -11,13 +12,9 @@ function checkHiddenFiles(directory, prefix = '') {
   }
 }
 checkHiddenFiles(dist)
-for (const name of readdirSync('public/data/departments').filter(name => name.endsWith('.json'))) {
-  assert.deepEqual(
-    JSON.parse(readFileSync(path.join(dist, 'data/departments', name), 'utf8')),
-    JSON.parse(readFileSync(path.join('public/data/departments', name), 'utf8')),
-    `department content changed during build: ${name}`
-  )
-}
+const runtime = collectRuntimeData()
+verifyRuntimeDirectory(dist, runtime)
+assert(!existsSync(path.join(dist, 'data/departments')), 'raw geography and expired averages must not ship')
 const html = readFileSync(path.join(dist, 'index.html'), 'utf8')
 const manifestLinks = [...html.matchAll(/<link\b[^>]*\brel=["']manifest["'][^>]*>/g)]
 assert.equal(manifestLinks.length, 1, 'exactly one web manifest link')
@@ -38,6 +35,7 @@ assert(!existsSync(path.join(dist, 'stats.html')), 'bundle report must not ship'
 const sw = readFileSync(path.join(dist, 'sw.js'), 'utf8')
 assert(!sw.includes('stats.html'), 'bundle report must not be precached')
 assert(!sw.includes('commune-name-departments.json-'), 'name directory must load on demand, not via precache')
+assert(!sw.includes('communes-dept-'), 'geography shards must load on demand, not via precache')
 assert(!html.includes('commune-name-departments.json-'), 'name directory must not be preloaded by the homepage')
 assert(!html.includes('href="/manifest.json"'), 'no missing manifest reference')
 assert.equal(readFileSync(path.join(dist, '.htaccess'), 'utf8'), readFileSync('public/.htaccess', 'utf8'))

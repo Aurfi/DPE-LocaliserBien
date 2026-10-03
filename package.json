@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/minify-department-data.mjs",
+    "build": "vite build && node scripts/geography/generate-runtime.mjs --finalize",
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
@@ -24,8 +24,10 @@
     "check:styles": "node scripts/styles/check-classes.mjs",
     "test:styles": "node --test scripts/styles/*.test.mjs",
     "test:html": "node --test scripts/html/*.test.mjs",
-    "predev": "npm run check:styles",
-    "prebuild": "npm run check:styles",
+    "predev": "npm run check:styles && npm run geography:generate",
+    "prebuild": "npm run check:styles && npm run geography:generate && npm run test:geography",
+    "geography:generate": "node scripts/geography/generate-runtime.mjs",
+    "test:geography": "node --test scripts/geography/*.test.mjs",
     "test:pwa:unit": "node --test scripts/pwa/*.test.mjs",
     "test:pwa": "playwright test --config=playwright.pwa.config.js"
   },

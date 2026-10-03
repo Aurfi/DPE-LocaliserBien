@@ -2,6 +2,7 @@ import { flushPromises, mount } from '@vue/test-utils'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import RechercheDPERecente from '../../components/fonctionnalites/dpe/RechercheDPERecente.vue'
 import { useRecherches } from '../../stores/useRecherches.js'
+import { loadDepartmentAveragesForResults } from '../../utils/departmentAverages.js'
 import Home from '../Home.vue'
 
 const mocks = vi.hoisted(() => ({ geocode: vi.fn(), locate: vi.fn(), nearby: vi.fn() }))
@@ -43,14 +44,37 @@ const mountHome = () =>
         NavigationOnglets: true,
         RecherchesRecentes: true,
         HistoriqueRechercheDPE: true,
-        DPEResults: true,
-        RecentDPEResults: true,
+        DPEResults: {
+          name: 'DPEResults',
+          props: ['searchResult', 'searchCriteria', 'departmentAverages'],
+          template: '<div />'
+        },
+        RecentDPEResults: {
+          name: 'RecentDPEResults',
+          props: ['results', 'searchCriteria', 'departmentAverages'],
+          template: '<div />'
+        },
         AnimationTriangulation: true
       }
     }
   })
 
 describe('search mode interruptions', () => {
+  it('does not request or forward retired department averages in either search mode', async () => {
+    const results = { results: [{ matchScore: 100 }], totalFound: 1, departmentAverages: { department: '75' } }
+    mocks.locate.mockResolvedValue(results)
+    wrapper = mountHome()
+    await flushPromises()
+    await wrapper.vm.handleSearch({ commune: '75001' })
+    await flushPromises()
+    expect(wrapper.getComponent({ name: 'DPEResults' }).props('departmentAverages')).toBeFalsy()
+    wrapper.vm.recentSearchPending = true
+    await wrapper.vm.handleRecentDPEResults({}, results)
+    await flushPromises()
+    expect(wrapper.getComponent({ name: 'RecentDPEResults' }).props('departmentAverages')).toBeFalsy()
+    expect(loadDepartmentAveragesForResults).not.toHaveBeenCalled()
+  })
+
   it('completes either search immediately with history disabled and writes no criteria to storage', async () => {
     useRecherches().setHistoryEnabled(false)
     localStorage.setItem.mockClear()

@@ -2,7 +2,7 @@
 """Conservative, explicit-FTPS release tool. No sync, broad delete, or TLS fallback.
 
 Preflight is read-only. Deploy/rollback require exact release/live fingerprints and
-an owner-confirmed backup directory outside ALL web roots. See OVH_DEPLOYMENT.md.
+a reviewed public recovery plan. Private hosting files are never copied or staged.
 """
 import argparse
 import ftplib
@@ -17,7 +17,8 @@ import sys
 import uuid
 
 MAX_BYTES = 64 * 1024 * 1024
-BACKUP_NAME = '.localiserbien-releases'
+STAGE_PREFIX = '_localiserbien-stage-'
+PLAN_FILE = Path(__file__).with_name('public-release-plan.json')
 SHA256 = re.compile(r'^[a-f0-9]{64}$')
 COMMIT = re.compile(r'^[a-f0-9]{40}$')
 RELEASE = re.compile(r'^[A-Za-z0-9][A-Za-z0-9_-]{7,100}$')
@@ -88,8 +89,6 @@ class Remote:
         require(self.web and self.web != self.home and self.web.endswith('/www'),
                 'Document root did not resolve to the expected www child.')
         ftp.cwd(self.home)
-        self.private = self.home.rstrip('/') + '/' + BACKUP_NAME
-        require(not self.private.startswith(self.web + '/'), 'Backup directory is inside www.')
 
     def entries(self, directory):
         # Do not interpret a 550 listing/permission failure as an empty directory.
@@ -189,7 +188,7 @@ def preflight(remote):
         'document_root': './www/', 'index_sha256': digest(index),
         'htaccess_sha256': fingerprint(config),
         'writes_tested': False, 'rename_atomicity_tested': False,
-        'backup_privacy_verified': False, 'rollback_tested_on_ovh': False,
+        'public_recovery_plan_verified': False, 'rollback_tested_on_ovh': False,
     }
     print(json.dumps(result, indent=2))
     return result
@@ -200,8 +199,6 @@ def check_mutation_approval(args):
     require(args.reviewed_commit == os.environ.get('GITHUB_SHA'),
             'The checked-out workflow commit differs from the reviewed commit.')
     require(os.environ.get('GITHUB_REF') == 'refs/heads/main', 'Only reviewed main may mutate production.')
-    require(os.environ.get('OVH_PRIVATE_BACKUP_CONFIRMED') == 'outside-all-document-roots',
-            'Owner must confirm the sibling backup directory is outside EVERY web document root.')
     require(os.environ.get('OVH_RELEASE_ENABLED') == 'reviewed-and-approved',
             'Production release gates have not been enabled by the owner.')
     require(SHA256.fullmatch(args.expected_index or ''), 'The exact live index fingerprint is required.')
@@ -216,155 +213,238 @@ def check_index(remote, expected):
 
 def snapshot_path(remote, release_id):
     require(RELEASE.fullmatch(release_id or ''), 'A valid release ID is required.')
-    return remote.private + '/' + release_id
+    # This staging area is deliberately public. It must NEVER contain private
+    # configuration, a whole hosting archive, credentials or unreviewed live bytes.
+    return remote.web + '/' + STAGE_PREFIX + release_id
+
+
+def build_digest(files):
+    return digest(''.join(name + '\0' + digest(data) + '\n'
+                          for name, data in sorted(files.items())).encode())
+
+
+def make_plan(files, baseline):
+    require(baseline.get('schema') == 1 and COMMIT.fullmatch(baseline.get('source_commit', '')),
+            'Invalid public baseline identity.')
+    old = {}
+    for entry in baseline.get('files', []):
+        name = relative_path(entry.get('path'))
+        require(name != '.htaccess' and name not in old and SHA256.fullmatch(entry.get('sha256', '')),
+                'Invalid public baseline entry.')
+        old[name] = entry
+    require(all(name in old for name in ('index.html', 'sw.js')),
+            'A known installed entrypoint and service worker are required.')
+    entries = []
+    for name, data in sorted(files.items()):
+        prior = old.get(name)
+        entries.append({'path': name, 'before': prior['sha256'] if prior else None,
+                        'after': digest(data), 'source': prior.get('source') if prior else None})
+    return {'schema': 2, 'source_commit': baseline['source_commit'],
+            'candidate_sha256': build_digest(files), 'files': entries}
+
+
+def load_plan(args, files=None):
+    path = Path(args.plan)
+    require(path.is_file() and not path.is_symlink() and path.stat().st_size <= MAX_BYTES,
+            'Reviewed public recovery plan is missing or unsafe.')
+    plan = json.loads(path.read_bytes())
+    require(isinstance(plan, dict) and plan.get('schema') == 2 and
+            COMMIT.fullmatch(plan.get('source_commit', '')) and
+            SHA256.fullmatch(plan.get('candidate_sha256', '')), 'Invalid public recovery plan.')
+    entries = plan.get('files')
+    require(isinstance(entries, list) and 0 < len(entries) <= 2000, 'Invalid recovery entry count.')
+    seen, restore = set(), {}
+    root = Path(args.baseline_root)
+    require(root.is_dir() and not root.is_symlink(), 'Pinned public baseline checkout is unavailable.')
+    for entry in entries:
+        require(isinstance(entry, dict), 'Invalid recovery entry.')
+        name = relative_path(entry.get('path'))
+        require(name not in seen, 'Duplicate recovery entry.')
+        seen.add(name)
+        before, after, source = entry.get('before'), entry.get('after'), entry.get('source')
+        require((before is None or isinstance(before, str) and SHA256.fullmatch(before)) and
+                isinstance(after, str) and SHA256.fullmatch(after), 'Invalid recovery fingerprint.')
+        require(name != '.htaccess' or before is None, 'Private configuration replacement is unsupported.')
+        if before is None or before == after:
+            restore[name] = None
+            continue
+        require(isinstance(source, str), 'Changed existing file has no public recovery source.')
+        relative_path(source)
+        require(source.startswith(('public/', 'e2e-pwa/fixtures/')),
+                'Recovery source is outside the reviewed public source areas.')
+        local = root
+        for part in PurePosixPath(source).parts:
+            local = local / part
+            require(not local.is_symlink(), 'Recovery symlinks are forbidden.')
+        require(local.is_file() and local.stat().st_size <= MAX_BYTES,
+                'Public recovery source is missing or too large.')
+        data = local.read_bytes()
+        require(digest(data) == before, 'Public recovery source failed hash verification.')
+        restore[name] = data
+    require({'index.html', 'sw.js', '.htaccess', 'manifest.webmanifest'} <= seen,
+            'Recovery plan lacks required build entries.')
+    by_name = {entry['path']: entry for entry in entries}
+    require(all(by_name[name]['before'] is not None for name in ('index.html', 'sw.js')),
+            'First-time entrypoint or service-worker installation is unsupported.')
+    require(digest(''.join(name + '\0' + by_name[name]['after'] + '\n'
+                           for name in sorted(seen)).encode()) == plan['candidate_sha256'],
+            'Recovery plan candidate digest is inconsistent.')
+    if files is not None:
+        require(set(files) == seen and build_digest(files) == plan['candidate_sha256'],
+                'Build differs from the explicitly reviewed recovery plan; regenerate and review it.')
+    return plan, entries, restore
+
+
+def plan_digest(plan):
+    return digest(json.dumps(plan, sort_keys=True, separators=(',', ':')).encode())
+
+
+def selected_entries(entries, choice):
+    require(choice in ('preserve', 'confirmed-absent'),
+            'Only configuration preservation or explicitly confirmed absence is supported.')
+    return [entry for entry in entries if choice != 'preserve' or entry['path'] != '.htaccess']
 
 
 def config_guard(remote, choice):
-    require(choice in ('preserve', 'confirmed-absent') or SHA256.fullmatch(choice or ''),
-            'Configuration choice must preserve, confirm absence, or pin its current SHA-256.')
-    if choice == 'preserve':
-        return
-    previous = remote.optional(remote.web + '/.htaccess')
+    selected_entries([], choice)
     if choice == 'confirmed-absent':
-        require(previous is None, 'Live .htaccess exists; review and pin its fingerprint.')
-    else:
-        require(previous is not None and digest(previous) == choice,
-                'Live .htaccess changed or is unreadable; preserve it or review it privately.')
+        require(remote.optional(remote.web + '/.htaccess') is None,
+                'Live .htaccess exists; preserve it and review any configuration change separately.')
+
+
+def staged_path(base, name):
+    # An Apache configuration file must not become active inside staging.
+    return base + '/' + ('reviewed-route-config.txt' if name == '.htaccess' else 'files/' + name)
+
+
+def observed_hash(remote, name):
+    value = remote.web_optional(name)
+    return digest(value) if value is not None else None
+
+
+def verify_before(remote, entries):
+    for entry in entries:
+        require(observed_hash(remote, entry['path']) == entry['before'],
+                'Live path differs from the reviewed public baseline; no promotion is permitted.')
+
+
+def probe_rename(remote, base):
+    remote.store(base + '/probe-a.txt', b'public rename probe: old')
+    remote.store(base + '/probe-b.txt', b'public rename probe: new')
+    remote.rename(base + '/probe-b.txt', base + '/probe-a.txt')
+    require(remote.read(base + '/probe-a.txt') == b'public rename probe: new',
+            'Public overwrite-rename probe failed.')
 
 
 def deploy(remote, args, files):
     check_mutation_approval(args)
+    plan, entries, _ = load_plan(args, files)
+    entries = selected_entries(entries, args.htaccess)
     check_index(remote, args.expected_index)
     config_guard(remote, args.htaccess)
-    files = dict(files)
-    if args.htaccess == 'preserve':
-        del files['.htaccess']
-    changes, previous = [], {}
-    # Full read-only plan before any writes. Existing unknown files are never deleted.
-    for name, data in files.items():
-        # Missing parent directories are supported only after the read-only plan.
-        current = remote.web
-        absent_parent = False
-        for part in PurePosixPath(name).parts[:-1]:
-            facts = remote.entries(current).get(part)
-            if facts is None:
-                absent_parent = True
-                break
-            require(facts.get('type') == 'dir', 'A release directory is not a regular directory.')
-            current += '/' + part
-        old = None if absent_parent else remote.optional(remote.web + '/' + name)
-        require(name != 'sw.js' or old is not None,
-                'Live sw.js is missing; first-time service-worker installation requires a separate recovery plan.')
-        if old == data:
-            continue
-        require(old is None or not immutable_path(name),
-                'Existing immutable asset has different bytes; refusing to overwrite it.')
-        previous[name] = old
-        changes.append({'path': name, 'before': digest(old) if old is not None else None,
-                        'after': digest(data)})
+    require(all(entry['before'] is None or entry['before'] == entry['after'] or
+                not immutable_path(entry['path']) for entry in entries),
+            'Existing immutable asset has different bytes; refusing to overwrite it.')
+    # This compares ALL candidate paths, including supposed additions and
+    # unchanged files. A stale backup or unknown live file blocks every write.
+    verify_before(remote, entries)
+    changes = [entry for entry in entries if entry['before'] != entry['after']]
     require(changes, 'No changes to publish.')
     base = snapshot_path(remote, args.release_id)
-    remote.mkdir(remote.private)
-    require(args.release_id not in remote.entries(remote.private),
-            'Release ID already exists; do not reuse or overwrite its recovery snapshot.')
+    require(STAGE_PREFIX + args.release_id not in remote.entries(remote.web),
+            'Release ID already exists; do not reuse its staging or recovery record.')
     remote.ftp.mkd(base)
-    for subdir in ('before', 'stage'):
-        remote.ftp.mkd(base + '/' + subdir)
-    # Probe overwrite-rename solely inside the confirmed private directory. This
-    # checks capability, not a guarantee of the server filesystem's atomicity.
-    remote.store(base + '/probe-a', b'old')
-    remote.store(base + '/probe-b', b'new')
-    remote.rename(base + '/probe-b', base + '/probe-a')
-    require(remote.read(base + '/probe-a') == b'new', 'Private overwrite-rename probe failed.')
-    for change in changes:
-        name = change['path']
-        if previous[name] is not None:
-            remote.parents(base + '/before', name)
-            remote.store(base + '/before/' + name, previous[name])
-        remote.parents(base + '/stage', name)
-        remote.store(base + '/stage/' + name, files[name])
-    manifest = {'schema': 1, 'release_id': args.release_id, 'commit': args.reviewed_commit,
-                'initial_index_sha256': args.expected_index, 'changes': changes}
+    probe_rename(remote, base)
+    for entry in changes:
+        name = entry['path']
+        staged = staged_path(base, name)
+        remote.parents(base, staged[len(base) + 1:])
+        remote.store(staged, files[name])
+    # Public hashes/identifiers only; the private ZIP and live configuration bytes
+    # never enter this directory, GitHub artifacts or logs.
+    manifest = {'schema': 2, 'release_id': args.release_id, 'commit': args.reviewed_commit,
+                'initial_index_sha256': args.expected_index, 'htaccess': args.htaccess,
+                'plan_sha256': plan_digest(plan)}
     remote.store(base + '/manifest.json', json.dumps(manifest, sort_keys=True).encode())
-    print('Private recovery snapshot verified. Recovery release ID: ' + args.release_id, flush=True)
-    # Recheck EVERY affected file before the first live mutation, not only index.
-    for change in changes:
-        name = change['path']
-        current = previous[name]
-        # Missing new directories cannot have drifted unnoticed: verify parents now.
-        if current is None:
-            remote.parents(remote.web, name)
-        observed = remote.optional(remote.web + '/' + name)
-        require(observed == current, 'Live files changed while staging; no file promotion performed.')
+    print('Pinned public recovery bytes verified. Recovery release ID: ' + args.release_id, flush=True)
+    verify_before(remote, entries)
     check_index(remote, args.expected_index)
     config_guard(remote, args.htaccess)
-    for change in sorted(changes, key=lambda c: promotion_order(c['path'])):
-        name = change['path']
-        # Best-effort per-file race guard. GitHub concurrency does not lock manual FTP editors.
-        observed = remote.optional(remote.web + '/' + name)
-        require(observed == previous[name], 'Live file changed during promotion; use the recovery snapshot.')
-        remote.rename(base + '/stage/' + name, remote.web + '/' + name)
-        require(digest(remote.read(remote.web + '/' + name)) == change['after'],
-                'Promotion readback failed; use the recovery snapshot.')
+    for entry in sorted(changes, key=lambda c: promotion_order(c['path'])):
+        name = entry['path']
+        require(observed_hash(remote, name) == entry['before'],
+                'Live file changed during promotion; use the reviewed recovery plan.')
+        remote.parents(remote.web, name)
+        remote.rename(staged_path(base, name), remote.web + '/' + name)
+        require(digest(remote.read(remote.web + '/' + name)) == entry['after'],
+                'Promotion readback failed; use the reviewed recovery plan.')
+    for entry in entries:
+        require(observed_hash(remote, entry['path']) == entry['after'],
+                'Final release state drifted; inspect the reviewed recovery plan.')
     print('Release file readbacks passed. HTTP, routing, device, and old-tab checks are still required.')
 
 
 def load_snapshot(remote, args):
+    plan, entries, restore = load_plan(args)
     base = snapshot_path(remote, args.release_id)
     manifest = json.loads(remote.read(base + '/manifest.json'))
-    require(isinstance(manifest, dict) and manifest.get('schema') == 1 and
-            manifest.get('release_id') == args.release_id, 'Invalid recovery manifest.')
-    changes = manifest.get('changes')
-    require(isinstance(changes, list) and 0 < len(changes) <= 2000, 'Invalid recovery entry count.')
-    seen, restore = set(), {}
-    for change in changes:
-        require(isinstance(change, dict), 'Invalid recovery entry.')
-        name = relative_path(change.get('path'))
-        require(name not in seen, 'Duplicate recovery entry.')
-        seen.add(name)
-        before, after = change.get('before'), change.get('after')
-        require((before is None or isinstance(before, str) and SHA256.fullmatch(before)) and
-                isinstance(after, str) and SHA256.fullmatch(after), 'Invalid recovery fingerprint.')
-        data = None if before is None else remote.read(base + '/before/' + name)
-        require(data is None or digest(data) == before, 'Recovery copy failed hash verification.')
-        restore[name] = data
-    return base, changes, restore
+    require(isinstance(manifest, dict) and manifest.get('schema') == 2 and
+            manifest.get('release_id') == args.release_id and
+            manifest.get('plan_sha256') == plan_digest(plan) and
+            COMMIT.fullmatch(args.plan_commit or '') and
+            manifest.get('commit') == args.plan_commit and
+            SHA256.fullmatch(manifest.get('initial_index_sha256', '')),
+            'Recovery record does not match the reviewed public plan.')
+    return base, selected_entries(entries, manifest.get('htaccess')), restore
 
 
 def rollback(remote, args):
     check_mutation_approval(args)
     check_index(remote, args.expected_index)
-    base, changes, restore = load_snapshot(remote, args)
+    base, entries, restore = load_snapshot(remote, args)
     current = {}
-    # A partial interrupted release may have a mix of before/after files. Reject
-    # unrelated edits, and validate ALL backup bytes before the first live write.
-    for change in changes:
-        name = change['path']
-        value = remote.web_optional(name)
-        observed = digest(value) if value is not None else None
-        require(observed in (change['before'], change['after']),
+    # Partial before/after states are recoverable; unknown edits stop all writes.
+    for entry in entries:
+        name = entry['path']
+        current[name] = observed_hash(remote, name)
+        require(current[name] in (entry['before'], entry['after']),
                 'A live file has an unrelated change; automatic rollback is blocked.')
-        current[name] = value
+    changes = [entry for entry in entries if entry['before'] != entry['after']]
     stage = base + '/rollback-' + uuid.uuid4().hex
     remote.ftp.mkd(stage)
-    for name, data in restore.items():
-        if data is not None and data != current[name]:
-            remote.parents(stage, name)
-            remote.store(stage + '/' + name, data)
+    for entry in changes:
+        name = entry['path']
+        data = restore[name]
+        if data is not None and current[name] != entry['before']:
+            staged = staged_path(stage, name)
+            remote.parents(stage, staged[len(stage) + 1:])
+            remote.store(staged, data)
     check_index(remote, args.expected_index)
-    for change in sorted(changes, key=lambda c: promotion_order(c['path'])):
-        name, data = change['path'], restore[change['path']]
-        require(remote.web_optional(name) == current[name],
-                'Live file changed during rollback; stop and review privately.')
-        if data is not None and data != current[name]:
-            remote.rename(stage + '/' + name, remote.web + '/' + name)
-            require(digest(remote.read(remote.web + '/' + name)) == change['before'],
-                    'Rollback readback failed; recovery snapshot is retained.')
-        elif data is None and name == '.htaccess' and current[name] is not None:
-            # Recoverable move, never DELE. Restore its confirmed previous absence.
-            remote.rename(remote.web + '/' + name, stage + '/introduced-htaccess')
-        # Newly introduced public assets/data are deliberately retained, protecting
-        # open new-build tabs. This is release rollback, not exact tree restoration.
+    # Recheck the full planned surface again after staging.
+    for entry in entries:
+        require(observed_hash(remote, entry['path']) == current[entry['path']],
+                'Live file changed during recovery staging; no rollback promotion performed.')
+    for entry in sorted(changes, key=lambda c: promotion_order(c['path'])):
+        name, data = entry['path'], restore[entry['path']]
+        require(observed_hash(remote, name) == current[name],
+                'Live file changed during rollback; stop and review.')
+        if data is not None and current[name] != entry['before']:
+            remote.rename(staged_path(stage, name), remote.web + '/' + name)
+            require(digest(remote.read(remote.web + '/' + name)) == entry['before'],
+                    'Rollback readback failed; public recovery sources are retained.')
+        elif entry['before'] is None and name == '.htaccess' and current[name] is not None:
+            # Only the reviewed, already-public route-only configuration can enter
+            # this path. Unknown or private configuration is rejected above.
+            remote.rename(remote.web + '/' + name, stage + '/introduced-route-config.txt')
+            require(observed_hash(remote, name) is None,
+                    'Configuration absence was not restored; inspect before retrying.')
+        # Added public assets/data stay available to open newer tabs. No DELE.
+    for entry in entries:
+        name = entry['path']
+        expected = (entry['before'] if entry['before'] is not None or name == '.htaccess'
+                    else current[name])
+        require(observed_hash(remote, name) == expected,
+                'Final recovery state drifted; do not report recovery complete.')
     print('Rollback file readbacks passed; HTTP and service-worker recovery still require verification.')
 
 
@@ -376,13 +456,21 @@ def main():
     parser.add_argument('--expected-index', default='')
     parser.add_argument('--htaccess', default='preserve')
     parser.add_argument('--release-id', default='')
+    parser.add_argument('--plan', default=str(PLAN_FILE))
+    parser.add_argument('--baseline-root', default='.')
+    parser.add_argument('--plan-commit', default='')
     args = parser.parse_args()
     ftp = None
     try:
         # Fail on local approval/build errors BEFORE touching the network.
         if args.operation != 'preflight':
             check_mutation_approval(args)
+        if args.operation == 'rollback':
+            require(COMMIT.fullmatch(args.plan_commit or ''),
+                    'The exact original release commit containing its recovery plan is required.')
         files = inventory(args.dist) if args.operation == 'deploy' else None
+        if args.operation != 'preflight':
+            load_plan(args, files)  # Verify all public recovery bytes BEFORE network access.
         ftp = connect()
         remote = Remote(ftp)
         if args.operation == 'preflight':
