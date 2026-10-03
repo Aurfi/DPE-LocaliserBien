@@ -5,19 +5,19 @@ import { startReleaseFixture } from '../scripts/pwa/fixture.mjs'
 import { verifyBaseline } from '../scripts/pwa/provenance.mjs'
 
 export const test = base.extend({
-  // biome-ignore lint/correctness/noEmptyPattern: Playwright requires object-pattern fixture dependencies.
-  release: async ({}, use, testInfo) => {
+  baselineId: ['earlier-candidate-7fe6a35', { option: true }],
+  release: async ({ baselineId }, use, testInfo) => {
     const provenance = JSON.parse(await readFile('reports/pwa/builds.json', 'utf8'))
-    const baseline = await verifyBaseline()
+    const baseline = await verifyBaseline(baselineId)
     const release = await startReleaseFixture(baseline.directory, 'dist')
     try {
-      expect(release.baseline).toEqual(provenance.baseline.build)
+      expect(release.baseline).toEqual(provenance.baselines[baselineId].build)
       expect(release.candidate).toEqual(provenance.candidate.build)
       await use(release)
     } finally {
       try {
         await testInfo.attach('pwa-build-provenance-and-server-requests', {
-          body: JSON.stringify({ provenance, requests: release.requests, denied: release.denied }, null, 2),
+          body: JSON.stringify({ baselineId, provenance, requests: release.requests, denied: release.denied }, null, 2),
           contentType: 'application/json'
         })
       } finally {

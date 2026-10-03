@@ -130,7 +130,7 @@ jobs:
         include-hidden-files: true
 
   pwa-lifecycle:
-    name: PWA lifecycle (earlier candidate to same-run candidate)
+    name: PWA lifecycle (two pinned baselines to same-run candidate)
     if: github.event_name == 'pull_request' || github.event_name == 'push'
     needs: [lint-and-test]
     runs-on: ubuntu-latest

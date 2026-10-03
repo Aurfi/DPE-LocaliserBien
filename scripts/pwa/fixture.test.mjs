@@ -1,13 +1,21 @@
 import assert from 'node:assert/strict'
-import { mkdir, mkdtemp, rm, symlink, writeFile } from 'node:fs/promises'
+import { createHash } from 'node:crypto'
+import { mkdir, mkdtemp, readFile, rm, symlink, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
 import { expectedCacheEntries, parsePrecache, readRelease, sha256 } from './artifacts.mjs'
 import { createReleaseHandler } from './fixture.mjs'
-import { assertFixtureIdentity, parseFileManifest, verifyBaseline } from './provenance.mjs'
+import {
+  assertFixtureIdentity,
+  assertPublicCapture,
+  baselineIds,
+  parseFileManifest,
+  verifyBaseline
+} from './provenance.mjs'
 
 const worker = entries => `define([],function(e){e.precacheAndRoute(${JSON.stringify(entries)},{})})`
+const md5 = bytes => createHash('md5').update(bytes).digest('hex')
 const index = revision => `<script type="module" crossorigin src="/assets/index-${revision}.js"></script>`
 function release(version) {
   return {
@@ -135,19 +143,22 @@ test('real build descriptor verifies files and rejects missing assets and symlin
     await writeFile(
       path.join(directory, 'sw.js'),
       worker([
-        { url: 'index.html', revision: 'ab' },
+        { url: 'index.html', revision: md5(index('new')) },
         { url: 'assets/index-new.js', revision: null }
       ])
     )
     const result = await readRelease(directory)
+    await writeFile(path.join(directory, 'index.html'), `${index('new')}<!-- edited -->`)
+    await assert.rejects(readRelease(directory), /Precache revision does not match bytes/)
+    await writeFile(path.join(directory, 'index.html'), index('new'))
     assert.equal(result.descriptor.moduleUrl, '/assets/index-new.js')
     assert.equal(result.descriptor.precache[1].sha256, sha256('app'))
-    await writeFile(path.join(directory, 'sw.js'), worker([{ url: 'index.html', revision: 'ab' }]))
+    await writeFile(path.join(directory, 'sw.js'), worker([{ url: 'index.html', revision: md5(index('new')) }]))
     await assert.rejects(readRelease(directory), /entry module is not precached/)
     await writeFile(
       path.join(directory, 'sw.js'),
       worker([
-        { url: 'index.html', revision: 'ab' },
+        { url: 'index.html', revision: md5(index('new')) },
         { url: 'assets/index-new.js', revision: null }
       ])
     )
@@ -216,4 +227,61 @@ test('retained actual baseline verifies completely without installing or buildin
   assert.equal(baseline.release.descriptor.precache.length, 15)
   assert.equal(baseline.pin.indexSha256, 'e1d790d4df3dddfaa97b9ef822fd41a162ffa6c3927d8801c7b50de4d90b389e')
   assert.equal(baseline.pin.originalManifestSha256, '6d240822975f7602c7286311f1026e4ec368e3fc23286517d10b6c399639c94f')
+})
+
+test('public production capture verifies real bytes, unknown source revision and matching HTTP evidence', async () => {
+  const baseline = await verifyBaseline('public-production-2026-10-03')
+  assert.equal(baseline.release.files.size, 20)
+  assert.equal(baseline.release.descriptor.precache.length, 16)
+  assert.equal(baseline.provenance.publicCapture.matchedMd5Revisions, 8)
+  assert.equal(baseline.pin.sourceRevision, null)
+  assert.equal(baseline.provenance.sourceRevision, null)
+  assert.equal(baseline.pin.indexSha256, 'bfa4b7c203904faeb0afed291ac6bcd3891fa392c88f82f4a635c0c9395c02ff')
+  assert.equal(baseline.pin.swSha256, '0c7fe7f2b5607dbb53e2c15fb4df9f6fb55b754c4ccc8e6ef8ca21cb8cad9e5e')
+  assert.equal(baseline.pin.captureManifestSha256, '52b4c89a1246327d38c15306223b8307f9b435e8c70b224cc1f5a3153380c6c6')
+  assert.equal(baseline.release.files.has('stats.html'), true)
+  assert.equal(baseline.release.files.has('manifest.json'), false)
+  assert.deepEqual(baselineIds, ['earlier-candidate-7fe6a35', 'public-production-2026-10-03'])
+  await assert.rejects(verifyBaseline('unreviewed-production'), /Unknown baseline/)
+})
+
+test('public capture rejects missing/edited stability, absent assets, origin changes and unverified TLS', async () => {
+  const baseline = await verifyBaseline('public-production-2026-10-03')
+  const original = JSON.parse(await readFile(path.join(baseline.pin.directory, 'http-capture.json'), 'utf8'))
+  const mutate = change => {
+    const http = structuredClone(original)
+    change(http)
+    assert.throws(() => assertPublicCapture(baseline.pin, http, baseline.release.descriptor))
+  }
+  mutate(http => http.requests.pop())
+  mutate(http => {
+    http.requests.at(-1).sha256 = sha256('changed worker')
+  })
+  mutate(http => {
+    http.requests[0].tlsVerified = false
+  })
+  mutate(http => {
+    http.requests[0].effectiveOrigin = 'https://unexpected.test'
+  })
+  mutate(http => {
+    http.requests[0].effectiveUrl = 'https://unexpected.test/index.html'
+  })
+  mutate(http => {
+    http.requests[0].status = 404
+  })
+  mutate(http => {
+    http.requests[0].durationSeconds = 31
+  })
+  mutate(http => {
+    http.requests[0].completedAt = 'not-a-time'
+  })
+  mutate(http => {
+    http.requests[0].startedAt = '2000-01-01T00:00:00.000000Z'
+  })
+  mutate(http => {
+    http.requests.splice(3, 1)
+  })
+  mutate(http => {
+    http.requests[3] = structuredClone(http.requests[2])
+  })
 })

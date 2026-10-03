@@ -121,7 +121,8 @@ npm run test:e2e   # Construire puis tester le navigateur sur le build de produc
 
 Les tests Playwright d’interface utilisent des réponses API synthétiques et bloquent
 les service workers. Une suite Chromium distincte (`npm run test:pwa`) vérifie le
-cycle de vie réel du PWA, d’un artefact candidat antérieur conservé vers le candidat
+cycle de vie réel du PWA depuis deux références figées (un candidat antérieur
+conservé et les octets publics de production capturés le 3 octobre 2026) vers le candidat
 courant, sur localhost. Aucun ancien compilateur n’est réinstallé. Voir
 [PWA_LIFECYCLE_TESTS.md](PWA_LIFECYCLE_TESTS.md) pour les prérequis et les preuves
 requises. Ces suites ne valident pas la disponibilité des API, Apache/OVH ou de

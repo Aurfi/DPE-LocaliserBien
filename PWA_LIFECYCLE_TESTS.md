@@ -6,8 +6,9 @@ This is a reviewed test addition; the browser test still requires a successful C
 run. Unit tests, test discovery and lint do not constitute browser-pass evidence.
 The new `pwa-lifecycle` job runs only on ordinary PR/push events. The production
 deployment job is unchanged: green manual deploy checks alone do **not** establish
-release readiness. Require a successful PWA job for the exact same candidate SHA,
-then independently establish the actual previous-production identity and perform
+release readiness. Require a successful PWA job for the exact same candidate SHA.
+The two pinned baselines include the public production bytes observed on
+2026-10-03. Refresh production identity when preparing a later release, and perform
 authorized OVH/Apache checks before a production-ready claim.
 
 No application logic, UI, dependencies, existing UI Playwright configuration or
@@ -16,18 +17,18 @@ Vitest application coverage; prior coverage inputs and the 70% thresholds remain
 unchanged. Frozen fixture bytes are excluded from formatting and protected against
 Git line-ending conversion.
 
-## Two actual static artifacts, one current toolchain
+## Two independent baselines, one same-run candidate and current toolchain
 
 - Candidate: this workflow run's exact `build-artifacts`, produced by the existing
   lint/test/build job. The PWA job downloads it from the same run, without rebuilding
   or rewriting it. The recorded checkout SHA must equal the workflow's `GITHUB_SHA`.
-- Baseline: a checked-in, immutable subset of an earlier verified candidate build,
+- Earlier-candidate baseline: a checked-in, immutable subset of an earlier verified candidate build,
   source revision `7fe6a35b66a0fd4b4813617477cb7e720d1d94a4`. Its original full
   artifact inventory SHA-256 is
   `6d240822975f7602c7286311f1026e4ec368e3fc23286517d10b6c399639c94f` and HTML SHA-256
   is `e1d790d4df3dddfaa97b9ef822fd41a162ffa6c3927d8801c7b50de4d90b389e`.
 
-The baseline contains 20 actual files (628,713 bytes): the real worker, its imported
+The earlier-candidate baseline contains 20 actual files (628,713 bytes): the real worker, its imported
 Workbox helper, all 15 original precache entries and required startup resources.
 The full original checksum inventory and a pinned subset inventory are retained.
 CI verifies exact files and bytes, original-artifact membership and provenance
@@ -40,13 +41,29 @@ or expiring artifact dependency exists.** The current locked dependency tree is
 unchanged. Historical compiled fixture files are test data, not installed packages
 or production output, and are never imported into the application build.
 
-This is **earlier candidate → current candidate**, not “current production →
-candidate.” The previously deployed production bytes are not established by this
-fixture. Other earlier release versions, real devices and production hosting remain
-separate verification targets.
+The second baseline is a byte-preserved public HTTPS capture from
+https://localiserbien.fr on 2026-10-03, 16:01:52–16:05:07 UTC. Its 20 files
+(1,504,043 bytes) contain every one of the old worker's 16 precache entries,
+including `stats.html`, plus its Workbox helper and HTML-referenced favicons.
+All eight non-null MD5 revisions match. Start/end HTML and worker SHA-256 values
+match; the capture inventory is pinned to
+`52b4c89a1246327d38c15306223b8307f9b435e8c70b224cc1f5a3153380c6c6`.
+HTTP response timestamps, status, duration, safe headers and exact origin are
+retained and verified. Source commit is explicitly unknown. See the
+[production capture README](e2e-pwa/fixtures/production-2026-10-03/README.md).
+
+The exact same lifecycle runs in fresh isolated contexts for **earlier candidate →
+current candidate** and **captured public production → current candidate**.
+The historical fixture and its evidence are preserved unchanged. The capture is
+sequential HTTP, not an atomic hosting snapshot. It does not prove private files,
+Apache/OVH behavior, source commit, logs, retention or backups. Other historical
+releases, real devices and later public production changes remain separate targets.
+The old stats asset is only fetched/precached as bytes, never navigated to or
+executed. No real search records, private paths or third-party fonts were fetched.
 
 `reports/pwa/builds.json` records artifact identities, candidate SHA, Node version,
-worker/index hashes, real precache lists and every visible build-file SHA-256.
+both baseline capture/source identities, worker/index hashes, real precache lists
+and every visible build-file SHA-256.
 The fixture verifies these descriptions against the actual served files again.
 
 ## Browser sequence and assertions
@@ -56,7 +73,10 @@ The fixture verifies these descriptions against the actual served files again.
    controller, and every old precache response must match the original body hash.
 2. Reload while still serving the old artifact to model a returning user. A
    forwarding-only listener observer waits for the app's async Workbox registration
-   listeners; the real old form must render before promotion.
+   listeners; the real old form must render before promotion. The historical
+   baseline retains its exact h1 assertion. The older public home instead requires
+   its observed explanatory text and actual form controls; candidate assertions
+   are identical in both cases.
 3. Keep both tabs open, switch the local server atomically to the candidate, and
    call `ServiceWorkerRegistration.update()` on the existing registration. Do not
    rewrite/unregister the worker, force `skipWaiting`, manipulate clocks, close old

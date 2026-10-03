@@ -53,6 +53,9 @@ export async function readRelease(directory, { includeHidden = false } = {}) {
   const precache = parsePrecache(sw.bytes.toString()).map(entry => {
     const file = files.get(entry.url)
     if (!file) throw new Error(`Missing precache asset: ${entry.url}`)
+    if (entry.revision !== null && createHash('md5').update(file.bytes).digest('hex') !== entry.revision) {
+      throw new Error(`Precache revision does not match bytes: ${entry.url}`)
+    }
     return { ...entry, sha256: file.sha256 }
   })
   if (!precache.some(entry => entry.url === moduleUrl.slice(1))) {

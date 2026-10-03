@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "classification": "Exact public production HTTP bytes observed during the stated capture window; source commit unknown; not an atomic hosting snapshot",
+  "sourceRepository": "https://github.com/Aurfi/DPE-LocaliserBien",
+  "sourceRevision": null,
+  "publicCapture": {
+    "origin": "https://localiserbien.fr",
+    "startedAt": "2026-10-03T16:01:52.403217Z",
+    "completedAt": "2026-10-03T16:05:07.304378Z",
+    "manifestSha256": "52b4c89a1246327d38c15306223b8307f9b435e8c70b224cc1f5a3153380c6c6",
+    "httpEvidenceSha256": "3370956e25500d1c01f153fa18519f16e6cd78284c42fefb4c01e11376a67793",
+    "files": 20,
+    "bytes": 1504043,
+    "indexAndWorkerStable": true,
+    "matchedMd5Revisions": 8
+  },
+  "fixture": {
+    "files": 20,
+    "bytes": 1504043,
+    "manifestSha256": "52b4c89a1246327d38c15306223b8307f9b435e8c70b224cc1f5a3153380c6c6",
+    "precacheEntries": 16
+  },
+  "omissionReason": "Only all real worker precache entries, the worker, its observed Workbox import and two index-referenced favicons are retained. No search/geography data, third-party fonts, source maps, unreferenced assets, or private hosting files were fetched. The index-referenced manifest.json returned HTTP 404 and is not synthesized.",
+  "preservation": "All retained files are exact public GET response bodies, including stats.html. No HTML, worker, manifest or bundle was regenerated or rewritten.",
+  "limits": [
+    "Public sequential HTTP capture is not an atomic filesystem/deployment snapshot.",
+    "Matching content revisions and end-of-capture entry hashes do not establish source commit, private files, deployment provenance, hosting configuration, access logs or backup/retention.",
+    "No third-party fonts, API endpoints, search records, source maps, private directories or credentials fetched."
+  ]
+}

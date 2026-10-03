@@ -1,0 +1,45 @@
+Immutable LocaliserBien public-production browser fixture
+
+Public capture origin: https://localiserbien.fr
+Observed: 2026-10-03 16:01:52-16:05:07 UTC
+Source project: https://github.com/Aurfi/DPE-LocaliserBien
+Production source revision: unknown
+
+All embedded copyright and license comments are preserved in the exact
+captured response bodies. Full existing project notices are retained in
+licenses/ without modifying the frozen runtime assets:
+
+- LocaliserBien source-project Open Licence 2.0 text
+  LocaliserBien-Open-Licence-2.0.txt
+- Vue core runtime: MIT, Yuxi (Evan) You
+  Vue-MIT.txt; https://github.com/vuejs/core
+- Vue Router: MIT, Eduardo San Martin Morote
+  Vue-Router-MIT.txt; https://github.com/vuejs/router
+- Tailwind Labs projects: MIT, Tailwind Labs, Inc.
+  Tailwind-Labs-MIT.txt; https://github.com/tailwindlabs
+- Lucide: ISC, Lucide Contributors
+  Lucide-ISC.txt; https://github.com/lucide-icons/lucide
+- Workbox: MIT, Google LLC
+  Workbox-MIT.txt; https://github.com/GoogleChrome/workbox
+- TanStack helpers: MIT, Tanner Linsley
+  TanStack-MIT.txt; https://github.com/TanStack/virtual
+- Vite browser helpers: MIT, Vite contributors
+  Vite-Core-MIT.txt; https://github.com/vitejs/vite
+- vite-plugin-pwa registration helper: MIT, Anthony Fu and contributors
+  Vite-PWA-MIT.txt; https://github.com/vite-pwa/vite-plugin-pwa
+
+Retained notices are conservative attribution, not an assertion that every
+listed package is present in this specific compiled output or a current app
+dependency. No historical compiler/package was installed or executed.
+
+The real precached stats.html includes additional visualization libraries.
+See licenses/SUPPLEMENTAL_STATS_NOTICES.txt, eleven complete supplemental
+license texts, their checksums in licenses/supplemental.sha256, and the
+public upstream source index in license-sources.json. Notice-source revisions
+are distinct from unknown historical bundled dependency versions.
+
+The existing generic Wikimedia Commons attribution for SVG map artwork does
+not identify each source work, author, or exact license. These software notices
+do not resolve that separate artwork provenance and do not claim all captured
+materials share the Open Licence used for source-project/data attribution.
+This is preserved attribution with explicit limits, not exhaustive legal clearance.
