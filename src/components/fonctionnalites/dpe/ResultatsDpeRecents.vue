@@ -57,7 +57,7 @@
       :yearBuilt="selectedProperty.anneeConstruction ? String(selectedProperty.anneeConstruction) : null"
       :numberOfLevels="selectedProperty.nombreNiveaux"
       :ceilingHeight="selectedProperty.hauteurSousPlafond"
-      :diagnosisDate="selectedProperty.date_visite_diagnostiqueur ? formatFullDate(selectedProperty.date_visite_diagnostiqueur) : null"
+      :diagnosisDate="formatFullDate(selectedProperty.date_etablissement_dpe)"
       :energyConsumption="getMetric(selectedProperty, ['conso_5_usages_par_m2_ep', 'consommationEnergie', 'consommation_energie'])"
       :gesEmissions="getMetric(selectedProperty, ['emission_ges_5_usages_par_m2', 'emissionGES', 'estimation_ges'])"
       :departmentAverages="departmentAverages"
@@ -305,7 +305,7 @@ export default {
     getSurface(dpe) {
       for (const value of [dpe.surfaceHabitable, dpe.surface_habitable_logement, dpe.surface_habitable]) {
         const number = this.getFiniteNumber(value)
-        if (number !== null && number >= 0) return Math.round(number)
+        if (number !== null && number >= 0) return number
       }
       return null
     },

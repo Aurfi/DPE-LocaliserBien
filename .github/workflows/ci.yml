@@ -165,6 +165,16 @@ jobs:
       env:
         PLAYWRIGHT_HTML_OUTPUT_DIR: playwright-report/ui
         PLAYWRIGHT_HTML_OPEN: never
+        # Vite preview validates config metadata; it serves the downloaded build unchanged.
+        VITE_SITE_URL: "https://localiserbien.fr"
+        VITE_SITE_NAME: "LocaliserBien"
+        VITE_APP_TITLE: "LocaliserBien - Recherchez des correspondances DPE"
+        VITE_APP_DESCRIPTION: "Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien."
+        VITE_APP_KEYWORDS: "localisation bien immobilier,DPE,adresse bien,recherche immobilier,diagnostic performance énergétique,France,localiser bien"
+        VITE_OG_TITLE: "LocaliserBien - Recherchez des correspondances DPE"
+        VITE_OG_DESCRIPTION: "Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien."
+        VITE_TWITTER_TITLE: "LocaliserBien - Recherchez des correspondances DPE"
+        VITE_TWITTER_DESCRIPTION: "Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien."
     - name: Retain product browser evidence even on failure
       if: always()
       uses: actions/upload-artifact@v4

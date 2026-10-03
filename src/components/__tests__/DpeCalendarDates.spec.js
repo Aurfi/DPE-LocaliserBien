@@ -47,13 +47,13 @@ afterEach(() => {
 })
 
 describe('real DPE calendar-date regression', () => {
-  it('keeps the establishment date on recent cards and the visit date in the property dialog', async () => {
+  it('keeps the establishment date on recent cards and their property dialog when the visit date differs', async () => {
     const wrapper = recent([row('2613E2476282I', '2026-09-28', '2026-06-04')])
     const card = wrapper.findComponent(CarteBien)
     expect(card.props('dateTooltip')).toBe('28 septembre 2026')
     expect(card.props('dateDisplay')).toBe('Il y a 5 jours')
     await card.trigger('click')
-    expect(wrapper.findComponent(propertyDialog).props('diagnosisDate')).toBe('4 juin 2026')
+    expect(wrapper.findComponent(propertyDialog).props('diagnosisDate')).toBe('28 septembre 2026')
   })
 
   it('uses the shared calendar formatter for localiser cards and their property dialog', async () => {
