@@ -1,3 +1,9 @@
+import {
+  buildNumericQuery,
+  matchesNumericBoundary,
+  normalizeNumericCriteria,
+  percentageBound
+} from '../utils/numericSearchInput.js'
 /**
  * Service dédié à la construction et exécution des recherches ADEME
  * Extrait de dpe-search.service.js pour améliorer les performances par chargement paresseux
@@ -30,6 +36,7 @@ class ConstructeurRechercheAdeme {
    * @returns {Promise<Array>}
    */
   async executerRecherche(searchRequest, communeCoords = null) {
+    searchRequest = normalizeNumericCriteria(searchRequest, ['surfaceHabitable', 'consommationEnergie', 'emissionGES'])
     let { consommationEnergie, energyClass, commune, emissionGES, gesClass, surfaceHabitable, typeBien } = searchRequest
 
     // Allowlist validation for energy/GES classes
@@ -88,7 +95,7 @@ class ConstructeurRechercheAdeme {
     } else if (consommationEnergie) {
       // Parse for comparison operators
       const consoComparison = this.scoringService.parseComparisonValue(consommationEnergie)
-      if (consoComparison && consoComparison.value > 0) {
+      if (consoComparison && (consoComparison.value > 0 || consoComparison.operator !== '=')) {
         const query = this.scoringService.buildRangeQuery(consoComparison, 'conso_5_usages_par_m2_ep')
         if (query) conditions.push(query)
       }
@@ -98,10 +105,10 @@ class ConstructeurRechercheAdeme {
     if (gesClass) {
       // Use native etiquette_ges field for class search
       conditions.push(`etiquette_ges:"${this.nettoyerPourRequete(gesClass)}"`)
-    } else if (emissionGES) {
+    } else if (emissionGES != null) {
       // Parse for comparison operators
       const gesComparison = this.scoringService.parseComparisonValue(emissionGES)
-      if (gesComparison && gesComparison.value > 0) {
+      if (gesComparison && gesComparison.value >= 0) {
         const query = this.scoringService.buildRangeQuery(gesComparison, 'emission_ges_5_usages_par_m2')
         if (query) conditions.push(query)
       }
@@ -122,13 +129,10 @@ class ConstructeurRechercheAdeme {
     // Add surface filter with operator support
     if (surfaceHabitable) {
       const surfaceComparison = this.scoringService.parseComparisonValue(surfaceHabitable)
-      if (surfaceComparison && surfaceComparison.value > 0) {
+      if (surfaceComparison && (surfaceComparison.value > 0 || surfaceComparison.operator !== '=')) {
         if (surfaceComparison.operator === '=') {
           // For exact match, use ±1m² tolerance
-          const roundedSurface = Math.round(surfaceComparison.value)
-          const minSurface = roundedSurface - 1
-          const maxSurface = roundedSurface + 1
-          conditions.push(`surface_habitable_logement:[${minSurface} TO ${maxSurface}]`)
+          conditions.push(buildNumericQuery(surfaceComparison, 'surface_habitable_logement', { absolute: 1 }))
         } else {
           // For < or > operators, use range query
           const query = this.scoringService.buildRangeQuery(surfaceComparison, 'surface_habitable_logement')
@@ -215,23 +219,25 @@ class ConstructeurRechercheAdeme {
 
         const step2Conditions = []
 
+        // Without a verified centre, expanding numeric tolerances must not remove
+        // the location constraint and turn a local search into a national one.
+        if (!communeCoords && codePostal) {
+          const postal = this.nettoyerPourRequete(codePostal)
+          step2Conditions.push(`(code_postal_ban:"${postal}" OR code_postal_brut:"${postal}")`)
+        }
+
         if (isClassSearch) {
           step2Conditions.push(`etiquette_dpe:"${this.nettoyerPourRequete(energyClass)}"`)
           if (gesClass) {
             step2Conditions.push(`etiquette_ges:"${this.nettoyerPourRequete(gesClass)}"`)
+          } else if (gesNum !== null && gesNum >= 0) {
+            step2Conditions.push(buildNumericQuery(gesParsed, 'emission_ges_5_usages_par_m2', { percent: 5 }))
           }
         } else {
-          const consoMin = consoNum > 0 ? Math.round(consoNum * 0.95) : null
-          const consoMax = consoNum > 0 ? Math.round(consoNum * 1.05) : null
-          const gesMin = gesNum > 0 ? Math.round(gesNum * 0.95) : null
-          const gesMax = gesNum > 0 ? Math.round(gesNum * 1.05) : null
-
-          if (consoMin && consoMax) {
-            step2Conditions.push(`conso_5_usages_par_m2_ep:[${consoMin} TO ${consoMax}]`)
-          }
-          if (gesMin && gesMax) {
-            step2Conditions.push(`emission_ges_5_usages_par_m2:[${gesMin} TO ${gesMax}]`)
-          }
+          if (consoParsed && (consoNum > 0 || consoParsed.operator !== '='))
+            step2Conditions.push(buildNumericQuery(consoParsed, 'conso_5_usages_par_m2_ep', { percent: 5 }))
+          if (gesNum !== null && gesNum >= 0)
+            step2Conditions.push(buildNumericQuery(gesParsed, 'emission_ges_5_usages_par_m2', { percent: 5 }))
         }
         if (typeBien) {
           if (typeBien === 'maison') {
@@ -244,10 +250,8 @@ class ConstructeurRechercheAdeme {
         }
 
         // Ajouter le filtre de surface avec tolérance ±15% pour step 2
-        if (surfaceNum && surfaceNum > 0) {
-          const minSurface = Math.round(surfaceNum * 0.85)
-          const maxSurface = Math.round(surfaceNum * 1.15)
-          step2Conditions.push(`surface_habitable_logement:[${minSurface} TO ${maxSurface}]`)
+        if (surfaceParsed && (surfaceNum > 0 || surfaceParsed.operator !== '=')) {
+          step2Conditions.push(buildNumericQuery(surfaceParsed, 'surface_habitable_logement', { percent: 15 }))
         }
 
         const step2Query = step2Conditions.join(' AND ')
@@ -318,19 +322,11 @@ class ConstructeurRechercheAdeme {
           const surfaceParsed3 = this.scoringService.parseComparisonValue(surfaceHabitable)
           const surfaceNum3 = surfaceParsed3 ? surfaceParsed3.value : null
 
-          const consoMin = consoNum3 > 0 ? Math.round(consoNum3 * 0.9) : null
-          const consoMax = consoNum3 > 0 ? Math.round(consoNum3 * 1.1) : null
-          const gesMin = gesNum3 > 0 ? Math.round(gesNum3 * 0.9) : null
-          const gesMax = gesNum3 > 0 ? Math.round(gesNum3 * 1.1) : null
-
           const step3Conditions = []
-
-          if (consoMin && consoMax) {
-            step3Conditions.push(`conso_5_usages_par_m2_ep:[${consoMin} TO ${consoMax}]`)
-          }
-          if (gesMin && gesMax) {
-            step3Conditions.push(`emission_ges_5_usages_par_m2:[${gesMin} TO ${gesMax}]`)
-          }
+          if (consoParsed3 && (consoNum3 > 0 || consoParsed3.operator !== '='))
+            step3Conditions.push(buildNumericQuery(consoParsed3, 'conso_5_usages_par_m2_ep', { percent: 10 }))
+          if (gesNum3 !== null && gesNum3 >= 0)
+            step3Conditions.push(buildNumericQuery(gesParsed3, 'emission_ges_5_usages_par_m2', { percent: 10 }))
           if (typeBien) {
             if (typeBien === 'maison') {
               step3Conditions.push(`(type_batiment:"maison" OR type_batiment:"immeuble")`)
@@ -342,10 +338,8 @@ class ConstructeurRechercheAdeme {
           }
 
           // Ajouter le filtre de surface avec tolérance ±35% pour step 3
-          if (surfaceNum3 && surfaceNum3 > 0) {
-            const minSurface = Math.round(surfaceNum3 * 0.65)
-            const maxSurface = Math.round(surfaceNum3 * 1.35)
-            step3Conditions.push(`surface_habitable_logement:[${minSurface} TO ${maxSurface}]`)
+          if (surfaceParsed3 && (surfaceNum3 > 0 || surfaceParsed3.operator !== '=')) {
+            step3Conditions.push(buildNumericQuery(surfaceParsed3, 'surface_habitable_logement', { percent: 35 }))
           }
 
           const step3Query = step3Conditions.join(' AND ')
@@ -404,7 +398,8 @@ class ConstructeurRechercheAdeme {
       }
 
       // Filtrer par surface - mais être moins strict si peu de résultats
-      if (surfaceHabitable && results.length > 5) {
+      const surfaceComparison = this.scoringService.parseComparisonValue(surfaceHabitable)
+      if (surfaceComparison?.operator === '=' && surfaceHabitable && results.length > 5) {
         const tolerance = surfaceHabitable * 0.25
         const filtered = results.filter(r => Math.abs(r.surfaceHabitable - surfaceHabitable) <= tolerance)
 
@@ -438,18 +433,24 @@ class ConstructeurRechercheAdeme {
    * Recherche élargie si pas de résultats exacts
    */
   async executerRechercheFuzzy(searchRequest, communeCoords = null) {
+    searchRequest = normalizeNumericCriteria(searchRequest, ['surfaceHabitable', 'consommationEnergie', 'emissionGES'])
     const { consommationEnergie, emissionGES, commune, typeBien, surfaceHabitable } = searchRequest
 
-    const consoVariations = consommationEnergie
-      ? [Math.round(consommationEnergie * 0.9), consommationEnergie, Math.round(consommationEnergie * 1.1)]
-      : [consommationEnergie]
-
-    const gesVariations = emissionGES
-      ? [Math.round(emissionGES * 0.8), emissionGES, Math.round(emissionGES * 1.2)].filter(v => v > 0)
-      : [emissionGES]
+    const variations = (raw, percent) => {
+      const parsed = this.scoringService.parseComparisonValue(raw)
+      if (!parsed || parsed.operator !== '=') return [raw]
+      if (parsed.value === 0) return [0]
+      return [percentageBound(parsed.value, 100 - percent), parsed.value, percentageBound(parsed.value, 100 + percent)]
+    }
+    const consoVariations = consommationEnergie ? variations(consommationEnergie, 10) : [consommationEnergie]
+    const gesVariations =
+      emissionGES != null
+        ? variations(emissionGES, 20).filter(v => this.scoringService.parseComparisonValue(v)?.value >= 0)
+        : [emissionGES]
+    const surfaceComparison = this.scoringService.parseComparisonValue(surfaceHabitable)
 
     const codePostal = communeCoords?.postalCode || extractPostalCode(commune)
-    const codeDepartement = codePostal ? codePostal.substring(0, 2) : null
+    if (!communeCoords && !codePostal) return []
     const results = []
 
     // Lazy load processor une seule fois pour la recherche fuzzy
@@ -458,12 +459,19 @@ class ConstructeurRechercheAdeme {
 
     for (const conso of consoVariations) {
       for (const ges of gesVariations) {
+        const consoComparison = this.scoringService.parseComparisonValue(conso)
+        const gesComparison = this.scoringService.parseComparisonValue(ges)
+        // Never turn an unrepresentable derived variation into an unfiltered query.
+        if ((conso != null && !consoComparison) || (ges != null && !gesComparison)) continue
         const conditions = []
-        if (codeDepartement) {
-          conditions.push(`code_postal_ban:${codeDepartement}*`)
+        if (!communeCoords && codePostal) {
+          const postal = this.nettoyerPourRequete(codePostal)
+          conditions.push(`(code_postal_ban:"${postal}" OR code_postal_brut:"${postal}")`)
         }
-        if (conso) conditions.push(`conso_5_usages_par_m2_ep:${conso}`)
-        if (ges) conditions.push(`emission_ges_5_usages_par_m2:${ges}`)
+        if (conso) conditions.push(buildNumericQuery(consoComparison, 'conso_5_usages_par_m2_ep'))
+        if (ges != null) conditions.push(buildNumericQuery(gesComparison, 'emission_ges_5_usages_par_m2'))
+        if (surfaceComparison && surfaceComparison.operator !== '=')
+          conditions.push(buildNumericQuery(surfaceComparison, 'surface_habitable_logement'))
         if (typeBien) conditions.push(`type_batiment:"${this.nettoyerPourRequete(typeBien)}"`)
 
         const qsQuery = conditions.join(' AND ')
@@ -474,6 +482,9 @@ class ConstructeurRechercheAdeme {
             qs: qsQuery,
             size: '50'
           })
+          if (communeCoords) {
+            params.append('geo_distance', `${communeCoords.lon}:${communeCoords.lat}:25000`)
+          }
 
           const response = await fetch(`${url}?${params}`)
           const data = await response.json()
@@ -514,7 +525,11 @@ class ConstructeurRechercheAdeme {
     let filteredResults = results
     if (surfaceHabitable) {
       const tolerance = surfaceHabitable * 0.3
-      filteredResults = results.filter(r => Math.abs(r.surfaceHabitable - surfaceHabitable) <= tolerance)
+      filteredResults = results.filter(r =>
+        surfaceComparison?.operator === '='
+          ? Math.abs(r.surfaceHabitable - surfaceComparison.value) <= tolerance
+          : matchesNumericBoundary(r.surfaceHabitable, surfaceComparison)
+      )
     }
 
     // Trier par distance si disponible, sinon par score

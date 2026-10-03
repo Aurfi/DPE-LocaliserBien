@@ -1,7 +1,7 @@
 <template>
   <div v-if="recentSearches.length > 0" class="max-w-4xl mx-auto mb-8">
-    <div class="text-center mb-6">
-      <h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+    <div class="mb-4">
+      <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200">
         Recherches récentes
       </h2>
       <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
@@ -36,7 +36,7 @@
     <!-- Context Menu -->
     <div 
       v-if="contextMenu.show"
-      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[140px]"
+      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg  border border-gray-200 dark:border-gray-700 py-1 min-w-[140px]"
       :style="{ top: contextMenu.y + 'px', left: contextMenu.x + 'px' }"
     >
       <button
@@ -60,12 +60,13 @@
         v-for="(search, index) in recentSearches"
         :key="index"
         @click="relaunchSearch(search)"
+        role="button" tabindex="0" @keydown.enter="relaunchSearch(search)" @keydown.space.prevent="relaunchSearch(search)"
         @contextmenu.prevent="showContextMenu($event, index)"
-        class="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-[1.02] border border-gray-100 dark:border-gray-700"
+        class="group relative bg-white dark:bg-gray-800  rounded-lg p-5   transition-all duration-300 cursor-pointer hover:scale-[1.02] border border-gray-100 dark:border-gray-700"
       >
         <!-- Badge nombre de résultats avec couleur selon les correspondances parfaites -->
         <div 
-          class="absolute -top-2 right-2 text-white font-medium px-2 py-1 rounded-full shadow-md flex items-center"
+          class="absolute -top-2 right-2 text-white font-medium px-2 py-1 rounded-full  flex items-center"
           :class="getResultBubbleColor(search)"
         >
           <span class="text-sm">{{ search.resultCount }}</span> <span class="text-sm ml-1">résultat{{ search.resultCount > 1 ? 's' : '' }}</span>
@@ -117,23 +118,17 @@
             </div>
           </div>
           
-          <!-- Classes sélectionnées ou calculées -->
+          <!-- Classes explicitement sélectionnées dans l’annonce -->
           <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
             <div class="flex items-center gap-2">
               <!-- Classe énergétique -->
-              <span v-if="search.energyClass" class="px-2 py-0.5 text-xs font-bold rounded" :class="getEnergyClassColor(search.energyClass)">
+              <span v-if="search.energyClass" data-testid="history-energy-class" class="px-2 py-0.5 text-xs font-bold rounded" :class="getEnergyClassColor(search.energyClass)">
                 {{ search.energyClass }}
-              </span>
-              <span v-else-if="search.consommation" class="px-2 py-0.5 text-xs font-bold rounded" :class="getEnergyClassColor(getEnergyClass(search.consommation))">
-                {{ getEnergyClass(search.consommation) }}
               </span>
               
               <!-- Classe GES -->
-              <span v-if="search.gesClass" class="px-2 py-0.5 text-xs font-bold rounded" :class="getGESClassColor(search.gesClass)">
+              <span v-if="search.gesClass" data-testid="history-ges-class" class="px-2 py-0.5 text-xs font-bold rounded" :class="getGESClassColor(search.gesClass)">
                 {{ search.gesClass }}
-              </span>
-              <span v-else-if="search.ges" class="px-2 py-0.5 text-xs font-bold rounded" :class="getGESClassColor(getGESClass(search.ges))">
-                {{ getGESClass(search.ges) }}
               </span>
             </div>
             <div class="flex items-center gap-1 text-xs text-gray-400">
@@ -144,7 +139,7 @@
         </div>
         
         <!-- Effet hover -->
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
       </div>
     </div>
     
@@ -163,7 +158,6 @@
 <script>
 import { Building2, Clock, Edit2, Home, MapPin, Trash2, Zap } from 'lucide-vue-next'
 import { useRecherches } from '../../../stores/useRecherches.js'
-import { getGESClass as _getGESClassFromThresholds } from '../../../utils/dpe-thresholds.js'
 import ModaleConfirmation from '../../base/ModaleConfirmation.vue'
 import ModaleEntree from '../../base/ModaleEntree.vue'
 
@@ -246,16 +240,6 @@ export default {
       return formattedName
     },
 
-    getEnergyClass(consommation) {
-      if (consommation <= 50) return 'A'
-      if (consommation <= 90) return 'B'
-      if (consommation <= 150) return 'C'
-      if (consommation <= 230) return 'D'
-      if (consommation <= 330) return 'E'
-      if (consommation <= 450) return 'F'
-      return 'G'
-    },
-
     getEnergyClassColor(classe) {
       const colors = {
         A: 'bg-green-500 text-white',
@@ -267,10 +251,6 @@ export default {
         G: 'bg-purple-600 text-white'
       }
       return colors[classe?.toUpperCase()] || 'bg-gray-400 text-white'
-    },
-
-    getGESClass(emission) {
-      return _getGESClassFromThresholds(emission)
     },
 
     getGESClassColor(classe) {
@@ -318,6 +298,7 @@ export default {
         surfaceHabitable: search.surface,
         energyClass: search.energyClass,
         gesClass: search.gesClass,
+        typeBien: search.typeBien || null,
         maxResults: 5
       })
     },

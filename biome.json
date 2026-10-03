@@ -46,10 +46,13 @@
       "!dist",
       "!node_modules",
       "!coverage",
+      "!test-results",
+      "!playwright-report",
       "!.nuxt",
       "!.output",
       "!**/*.min.js",
       "!public/data/*.json",
+      "!src/data/geography/*.json",
       "!**/*.css",
       "!backups"
     ]

@@ -29,7 +29,7 @@ describe('FormulaireRechercheDPE', () => {
   describe('Component Rendering', () => {
     it('renders the component correctly', () => {
       expect(wrapper.find('form').exists()).toBe(true)
-      expect(wrapper.text()).toContain('Localiser une annonce immobilière grâce aux données de son DPE')
+      expect(wrapper.text()).toContain('Retrouver un bien grâce à son DPE')
     })
 
     it('renders all form fields', () => {
@@ -90,12 +90,13 @@ describe('FormulaireRechercheDPE', () => {
       expect(wrapper.vm.formData.surface).toBe('150')
     })
 
-    it('filters out non-numeric characters from surface input', async () => {
+    it('preserves and rejects non-numeric characters in surface input', async () => {
       const surfaceInput = wrapper.find('input[placeholder*="100"]')
       await surfaceInput.setValue('150abc')
       await surfaceInput.trigger('input')
 
-      expect(wrapper.vm.formData.surface).toBe('150')
+      expect(wrapper.vm.formData.surface).toBe('150abc')
+      expect(wrapper.vm.surfaceError).toContain('nombre')
     })
 
     it('allows operators in surface input', async () => {
@@ -328,24 +329,24 @@ describe('FormulaireRechercheDPE', () => {
       expect(wrapper.vm.isPartiallyFilled).toBe(true)
     })
 
-    it('correctly gets energy class from consumption value', () => {
-      expect(wrapper.vm.getEnergyClassFromValue(45)).toBe('A')
-      expect(wrapper.vm.getEnergyClassFromValue(80)).toBe('B')
-      expect(wrapper.vm.getEnergyClassFromValue(140)).toBe('C')
-      expect(wrapper.vm.getEnergyClassFromValue(200)).toBe('D')
-      expect(wrapper.vm.getEnergyClassFromValue(300)).toBe('E')
-      expect(wrapper.vm.getEnergyClassFromValue(400)).toBe('F')
-      expect(wrapper.vm.getEnergyClassFromValue(500)).toBe('G')
+    it('only selects the energy class explicitly indicated by the user', async () => {
+      await wrapper.get('#search-consommation').setValue('173')
+      for (const button of wrapper.findAll('button[aria-label^="Classe énergétique"]')) {
+        expect(button.attributes('aria-pressed')).toBe('false')
+      }
+      await wrapper.get('button[aria-label="Classe énergétique C"]').trigger('click')
+      expect(wrapper.get('button[aria-label="Classe énergétique C"]').attributes('aria-pressed')).toBe('true')
+      expect(wrapper.vm.formData.consommation).toBe(null)
     })
 
-    it('correctly gets GES class from emission value', () => {
-      expect(wrapper.vm.getGESClassFromValue(5)).toBe('A')
-      expect(wrapper.vm.getGESClassFromValue(10)).toBe('B')
-      expect(wrapper.vm.getGESClassFromValue(25)).toBe('C')
-      expect(wrapper.vm.getGESClassFromValue(45)).toBe('D')
-      expect(wrapper.vm.getGESClassFromValue(65)).toBe('E')
-      expect(wrapper.vm.getGESClassFromValue(95)).toBe('F')
-      expect(wrapper.vm.getGESClassFromValue(120)).toBe('G')
+    it('only selects the GES class explicitly indicated by the user', async () => {
+      await wrapper.get('#search-ges').setValue('6')
+      for (const button of wrapper.findAll('button[aria-label^="Classe GES"]')) {
+        expect(button.attributes('aria-pressed')).toBe('false')
+      }
+      await wrapper.get('button[aria-label="Classe GES A"]').trigger('click')
+      expect(wrapper.get('button[aria-label="Classe GES A"]').attributes('aria-pressed')).toBe('true')
+      expect(wrapper.vm.formData.ges).toBe(null)
     })
   })
 
@@ -509,5 +510,23 @@ describe('FormulaireRechercheDPE', () => {
       expect(communeLabel).toBeTruthy()
       expect(surfaceLabel).toBeTruthy()
     })
+  })
+})
+
+describe('restrained search form accessibility', () => {
+  it('associates labels, errors and keyboard-accessible selectors', async () => {
+    const wrapper = mount(FormulaireRechercheDPE, { global: { stubs: { RouterLink: true } } })
+    for (const field of ['commune', 'surface', 'consommation', 'ges']) {
+      expect(wrapper.find(`label[for="search-${field}"]`).exists()).toBe(true)
+      expect(wrapper.find(`#search-${field}`).exists()).toBe(true)
+    }
+    expect(wrapper.find('button[tabindex="-1"]').exists()).toBe(false)
+    await wrapper.get('#search-surface').trigger('blur')
+    expect(wrapper.get('#search-surface').attributes('aria-invalid')).toBe('true')
+    expect(wrapper.get('#search-surface').attributes('aria-describedby')).toBe('search-surface-error')
+    expect(wrapper.get('#search-surface-error').text()).toBe('Indiquez la surface.')
+    await wrapper.get('button[aria-label="Classe GES C"]').trigger('click')
+    expect(wrapper.get('button[aria-label="Classe GES C"]').attributes('aria-pressed')).toBe('true')
+    wrapper.unmount()
   })
 })

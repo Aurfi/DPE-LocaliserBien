@@ -1,0 +1,9 @@
+# Known client-side routes only. Missing assets and arbitrary paths stay 404.
+# This file is copied by Vite into dist; verify on an OVH preview before release.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^faq/?$ /informations [R=301,L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(informations|mentions-legales)/?$ index.html [L]
+</IfModule>

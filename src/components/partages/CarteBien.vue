@@ -1,26 +1,26 @@
 <template>
   <div
-    class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all duration-200 flex flex-col h-full"
+    class="bg-white dark:bg-gray-800 rounded-xl  border border-gray-200 dark:border-gray-700  transition-all duration-200 flex flex-col h-full"
     :class="{ 'cursor-pointer': !hasIncompleteData, 'cursor-not-allowed opacity-90': hasIncompleteData }"
     @click="!hasIncompleteData && $emit('click', result)"
     @contextmenu.prevent="showMenuContextuel($event)"
   >
-    <div class="px-5 pt-4 pb-5 flex flex-col h-full">
+    <div class="property-card-content px-5 pt-4 pb-5 flex flex-col h-full">
       <!-- Date, distance et score -->
-      <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-3">
+      <div class="card-metadata flex flex-wrap items-center justify-between gap-x-3 gap-y-2 text-xs text-gray-500 dark:text-gray-400 mb-3">
         <div class="flex items-center gap-1 relative inline-block group">
-          <Calendar class="w-3.5 h-3.5" />
+
           <span v-if="dateDisplay">{{ dateDisplay }}</span>
           <!-- Date tooltip -->
-          <div v-if="dateTooltip" class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-medium rounded-full whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-150 z-10 backdrop-blur-md shadow-lg bg-blue-500/20 text-blue-700 dark:text-blue-300 border border-blue-500/30">
+          <div v-if="dateTooltip" class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-medium rounded-full whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-150 z-10   bg-blue-500/20 text-blue-700 dark:text-blue-300 border border-blue-500/30">
             {{ dateTooltip }}
           </div>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex shrink-0 items-center gap-3">
           <div v-if="distance !== undefined" class="relative inline-block group">
             <span class="text-gray-600 dark:text-gray-400 text-sm">{{ distance.toFixed(1) }} km</span>
             <!-- Distance tooltip -->
-            <div v-if="distanceTooltip" class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-medium rounded-full whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-150 z-10 backdrop-blur-md shadow-lg bg-gray-500/20 text-gray-700 dark:text-gray-300 border border-gray-500/30">
+            <div v-if="distanceTooltip" class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-medium rounded-full whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-150 z-10   bg-gray-500/20 text-gray-700 dark:text-gray-300 border border-gray-500/30">
               {{ distanceTooltip }}
             </div>
           </div>
@@ -32,15 +32,16 @@
           <div v-if="score !== undefined" class="relative inline-block group">
             <span
               :class="getScoreBadgeClass(score)"
-              class="inline-block px-2 py-0.5 rounded text-xs font-bold"
+              :aria-label="`Score de similarité : ${isNaN(score) ? 0 : Math.round(score)} sur 100`"
+              class="score-badge inline-block whitespace-nowrap px-2 py-0.5 rounded text-xs font-bold"
             >
-              {{ isNaN(score) ? 0 : Math.round(score) }}%
+              Score {{ isNaN(score) ? 0 : Math.round(score) }}/100
             </span>
             <!-- Score tooltip -->
             <div
               v-if="scoreTooltip"
               :class="getTooltipClass(score)"
-              class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-medium rounded-full whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-150 z-10 backdrop-blur-md shadow-lg"
+              class="absolute bottom-full right-0 mb-2 w-52 px-3 py-1.5 text-xs font-medium rounded-lg whitespace-normal opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-150 z-10"
             >
               {{ scoreTooltip }}
             </div>
@@ -72,7 +73,7 @@
       </div>
 
       <!-- Informations clés -->
-      <div class="grid gap-2 mb-3" :class="shouldShowFloor ? 'grid-cols-3' : 'grid-cols-2'">
+      <div class="card-metrics grid grid-cols-2 gap-2 mb-3" :class="{ 'has-floor': shouldShowFloor }">
         <!-- Surface -->
         <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
           <div class="text-xs text-gray-500 dark:text-gray-400">Surface</div>
@@ -82,7 +83,7 @@
         <!-- Année de construction -->
         <div class="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2">
           <div class="text-xs text-gray-500 dark:text-gray-400">Construction</div>
-          <div class="font-bold text-gray-800 dark:text-gray-200">{{ yearBuilt || 'N/A' }}</div>
+          <div data-construction-year class="font-bold text-gray-800 dark:text-gray-200">{{ formatYearDisplay(yearBuilt) }}</div>
         </div>
 
         <!-- Étage (seulement pour appartements avec une valeur) -->
@@ -99,9 +100,9 @@
         <button
           v-if="!hasIncompleteData"
           @click.stop="$emit('click', result)"
-          class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 font-medium text-sm py-2 px-4 transition-colors flex items-center justify-center gap-1"
+          class="btn-secondary w-full text-sm flex items-center justify-center"
         >
-          <ExternalLink class="w-3.5 h-3.5" />
+
           Voir détails
         </button>
         <button
@@ -118,7 +119,7 @@
     <!-- Context menu -->
     <div
       v-if="contextMenuShow"
-      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[120px]"
+      class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg  border border-gray-200 dark:border-gray-700 py-1 min-w-[120px]"
       :style="{ top: contextMenuY + 'px', left: contextMenuX + 'px' }"
     >
       <button
@@ -133,15 +134,14 @@
 </template>
 
 <script>
-import { AlertTriangle, Building2, Calendar, Database, ExternalLink, Home, Trash2 } from 'lucide-vue-next'
+import { AlertTriangle, Building2, Database, Home, Trash2 } from 'lucide-vue-next'
+import { formatYearDisplay } from '../../utils/formateursDPE.js'
 
 export default {
   name: 'CarteBien',
   components: {
-    Calendar,
     Home,
     Building2,
-    ExternalLink,
     Database,
     Trash2,
     AlertTriangle
@@ -191,6 +191,7 @@ export default {
     window.removeEventListener('click', this.hideMenuContextuel)
   },
   methods: {
+    formatYearDisplay,
     showMenuContextuel(event) {
       event.stopPropagation()
       this.contextMenuShow = true
@@ -266,3 +267,15 @@ export default {
   emits: ['click', 'hide', 'show-raw-data']
 }
 </script>
+
+<style scoped>
+.property-card-content {
+  container: property-card / inline-size;
+}
+
+@container property-card (min-width: 19.5rem) {
+  .card-metrics.has-floor {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+</style>

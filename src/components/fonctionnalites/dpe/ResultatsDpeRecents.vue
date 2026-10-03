@@ -126,15 +126,7 @@ export default {
   },
   emits: ['clear-results'],
   setup() {
-    const {
-      selectedProperty,
-      showDPEDetails,
-      hiddenResults,
-      showDetails,
-      closeModal,
-      setupEventListeners,
-      cleanupEventListeners
-    } = useGestionResultats()
+    const { selectedProperty, showDPEDetails, hiddenResults, showDetails, closeModal } = useGestionResultats()
 
     return {
       OctagonX,
@@ -142,9 +134,7 @@ export default {
       showDPEDetails,
       hiddenResults,
       showDetails,
-      closeModal,
-      setupEventListeners,
-      cleanupEventListeners
+      closeModal
     }
   },
   data() {
@@ -270,12 +260,6 @@ export default {
 
       return results
     }
-  },
-  mounted() {
-    this.setupEventListeners()
-  },
-  unmounted() {
-    this.cleanupEventListeners()
   },
   methods: {
     formatYearDisplay,

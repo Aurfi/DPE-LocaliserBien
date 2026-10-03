@@ -6,17 +6,18 @@
       :commune="searchCriteria?.commune || recentDPESearchCriteria?.address || ''"
       :coordinates="recentDPESearchCoordinates || recentDPEResults?.searchCoordinates || null"
       :onComplete="handleAnimationComplete"
+      @cancel="handleNewSearch"
       :isDataReady="searchResults !== null || recentDPEResults !== null"
       :waitingForResults="true"
       :resultsCount="(searchResults?.results?.length ?? 0) + (recentDPEResults?.results?.length ?? 0)"
-      class="relative z-10 min-h-screen"
+      class="relative"
     />
     
     <!-- Interface principale -->
-    <div v-show="!showAnimation" class="container mx-auto px-4 py-4 min-h-screen">
+    <div v-show="!showAnimation" class="container mx-auto px-4 py-6 sm:py-10">
 
       <!-- Navigation par onglets avec padding adaptatif -->
-      <div class="pt-2 lg:pt-6">
+      <div>
         <NavigationOnglets
           v-if="!searchResults && !recentDPEResults && !showAnimation"
           :activeTab="activeTab"
@@ -25,7 +26,10 @@
       </div>
 
       <!-- Tab: Localiser un bien -->
-      <div v-if="activeTab === 'locate' && !searchResults" class="mt-4 lg:mt-16 xl:mt-20">
+      <div v-if="activeTab === 'locate' && !searchResults">
+        <p v-if="searchError" role="alert" class="max-w-4xl mx-auto mb-4 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700 dark:border-red-800 dark:bg-red-900/20 dark:text-red-300">
+          {{ searchError }}
+        </p>
         <!-- Formulaire de recherche -->
         <FormulaireRechercheDPE
           ref="searchForm"
@@ -34,13 +38,13 @@
 
         <!-- Recherches récentes -->
         <RecherchesRecentes
-          class="mt-6 lg:mt-12"
+          class="mt-8"
           @relaunch-search="handleSearch"
         />
       </div>
       
       <!-- Tab: DPE récents -->
-      <div v-show="activeTab === 'recent' && !recentDPEResults" class="mt-4 lg:mt-16 xl:mt-20">
+      <div v-show="activeTab === 'recent' && !recentDPEResults">
         <RechercheDPERecente
           ref="recentFormulaireRechercheDPE"
           @search-started="handleRechercheDPERecenteStarted"
@@ -100,6 +104,7 @@ const NavigationOnglets = defineAsyncComponent(() => import('../components/base/
 const AnimationTriangulation = defineAsyncComponent(() => import('../components/animations/AnimationTriangulation.vue'))
 
 import DPESearchService from '../services/dpe-search.service.js' // Système de scoring clair
+import { loadDepartmentAveragesForResults } from '../utils/departmentAverages.js'
 
 export default {
   name: 'Home',
@@ -117,8 +122,11 @@ export default {
     return {
       showAnimation: false,
       animationTimeout: null,
+      searchRequestId: 0,
+      recentSearchPending: false,
       searchCriteria: null,
       searchResults: null,
+      searchError: null,
       recentDPEResults: null,
       recentDPESearchCriteria: null,
       recentDPESearchCoordinates: null,
@@ -141,12 +149,21 @@ export default {
   },
 
   beforeUnmount() {
+    this.searchRequestId++
+    this.recentSearchPending = false
     // Nettoyer l'écouteur d'événement
     window.removeEventListener('reset-search', this.handleNewSearch)
   },
 
   methods: {
     async handleSearch(searchData) {
+      // A nearby geocode can still be pending while the search tabs are visible.
+      this.$refs.recentFormulaireRechercheDPE?.cancelSearch?.()
+      const requestId = ++this.searchRequestId
+      this.searchResults = null
+      this.recentSearchPending = false
+      this.recentDPESearchCriteria = null
+      this.searchError = null
       // Stocker les critères pour l'animation
       this.searchCriteria = searchData
 
@@ -154,48 +171,26 @@ export default {
       this.recentDPEResults = null
 
       // Faire défiler vers le haut pour s'assurer que l'animation soit visible sur les petits écrans
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      window.scrollTo({ top: 0, behavior: 'instant' })
 
       // Démarrer l'animation de triangulation
       this.showAnimation = true
       window.dispatchEvent(new CustomEvent('animation-start'))
 
-      // Ajouter un timeout de 10 secondes pour l'animation
-      this.animationTimeout = setTimeout(() => {
-        this.handleAnimationTimeout()
-      }, 10000)
-
       // Lancer la vraie recherche en arrière-plan
       try {
-        this.searchResults = await this.dpeService.search(searchData)
+        const results = await this.dpeService.search(searchData)
+        if (requestId !== this.searchRequestId) return
+        this.searchResults = results
 
-        // Charger les moyennes départementales si nous avons des résultats
-        if (this.searchResults) {
-          let postalCode = null
-
-          // Essayer d'obtenir le code postal des résultats de recherche
-          if (this.searchResults.postalCode) {
-            postalCode = this.searchResults.postalCode
-          } else if (this.searchResults.results?.length > 0) {
-            const firstResult = this.searchResults.results[0]
-            if (firstResult.codePostal) {
-              postalCode = firstResult.codePostal
-            }
-          }
-
-          // Charger les moyennes départementales si nous avons un code postal
-          if (postalCode) {
-            const dept = postalCode.substring(0, 2)
-            try {
-              const response = await fetch(`/data/departments/dpe-averages-dept-${dept}.json`)
-              if (response.ok) {
-                this.searchResults.departmentAverages = await response.json()
-              }
-            } catch (_error) {
-              // Échec silencieux - les moyennes départementales sont optionnelles
-            }
-          }
+        // Optional comparisons are attached only to the results that requested them.
+        const currentResults = this.searchResults
+        if (currentResults) {
+          const averages = await loadDepartmentAveragesForResults(currentResults)
+          if (this.searchResults === currentResults) currentResults.departmentAverages = averages
         }
+
+        if (requestId !== this.searchRequestId) return
 
         // Sauvegarder dans le cache si des résultats ont été trouvés
         if (this.searchResults && this.searchResults.totalFound > 0) {
@@ -214,6 +209,17 @@ export default {
           this.recherchesStore.saveSearch(searchData, this.searchResults.totalFound, bestMatchScore, perfectMatchCount)
         }
       } catch (error) {
+        if (requestId !== this.searchRequestId) return
+        if (error.code === 'AMBIGUOUS_COMMUNE') {
+          this.searchResults = null
+          this.searchError = error.message
+          this.showAnimation = false
+          clearTimeout(this.animationTimeout)
+          this.animationTimeout = null
+          window.dispatchEvent(new CustomEvent('animation-end'))
+          this.$refs.searchForm?.resetLoading?.()
+          return
+        }
         // En cas d'erreur, on peut afficher un message d'erreur
         this.searchResults = {
           results: [],
@@ -232,11 +238,8 @@ export default {
         this.animationTimeout = null
       }
 
-      // Ajouter un petit délai pour éviter le flash de la page d'accueil
-      setTimeout(() => {
-        this.showAnimation = false
-        window.dispatchEvent(new CustomEvent('animation-end'))
-      }, 100)
+      this.showAnimation = false
+      window.dispatchEvent(new CustomEvent('animation-end'))
 
       // Reset du formulaire
       if (this.searchResults && this.$refs.searchForm) {
@@ -248,6 +251,14 @@ export default {
     },
 
     handleNewSearch() {
+      this.searchRequestId++
+      this.recentSearchPending = false
+      this.recentDPEResults = null
+      this.recentDPESearchCriteria = null
+      this.recentDPESearchCoordinates = null
+      this.$refs.searchForm?.resetLoading?.()
+      this.$refs.recentFormulaireRechercheDPE?.cancelSearch?.()
+      this.searchError = null
       this.searchResults = null
       this.searchCriteria = null
       this.showAnimation = false
@@ -261,10 +272,17 @@ export default {
     },
 
     handleTabChange(tab) {
+      if (tab === this.activeTab) return
+      this.$refs.recentFormulaireRechercheDPE?.cancelSearch?.()
+      this.recentSearchPending = false
       this.activeTab = tab
     },
 
     handleRechercheDPERecenteStarted(searchCriteria) {
+      this.searchRequestId++
+      this.recentSearchPending = true
+      this.recentDPEResults = null
+      this.searchCriteria = null
       // Stocker les critères de recherche et les coordonnées pour l'animation
       this.recentDPESearchCriteria = searchCriteria
       this.recentDPESearchCoordinates = searchCriteria.coordinates
@@ -273,53 +291,30 @@ export default {
       this.searchResults = null
 
       // Faire défiler vers le haut pour s'assurer que l'animation soit visible
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      window.scrollTo({ top: 0, behavior: 'instant' })
 
       // Démarrer immédiatement l'animation de triangulation avec les coordonnées
       this.showAnimation = true
       window.dispatchEvent(new CustomEvent('animation-start'))
-
-      // Ajouter un timeout de 10 secondes pour l'animation
-      this.animationTimeout = setTimeout(() => {
-        this.handleAnimationTimeout()
-      }, 10000)
     },
 
     async handleRecentDPEResults(searchCriteria, results) {
+      if (!this.recentSearchPending) return
+      this.recentSearchPending = false
       // Stocker les résultats et les critères de recherche quand ils arrivent
       this.recentDPEResults = results
       this.recentDPESearchCriteria = searchCriteria
 
-      // Charger les moyennes départementales si nous avons des résultats
-      if (results?.results && results.results.length > 0) {
-        // Obtenir le code postal du résultat de géocodage (toujours disponible)
-        let postalCode = results.postalCode
-
-        // Utiliser le code postal du premier résultat si nécessaire (essayer plusieurs champs)
-        if (!postalCode && results.results[0]) {
-          const firstResult = results.results[0]
-          postalCode =
-            firstResult.codePostal ||
-            firstResult.code_postal_ban ||
-            firstResult.code_postal_brut ||
-            firstResult.code_postal
-        }
-
-        if (postalCode) {
-          const dept = postalCode.substring(0, 2)
-          try {
-            const response = await fetch(`/data/departments/dpe-averages-dept-${dept}.json`)
-            if (response.ok) {
-              this.recentDPEResults.departmentAverages = await response.json()
-            }
-          } catch (_error) {
-            // Échec silencieux - les moyennes départementales sont optionnelles
-          }
-        }
+      const currentResults = this.recentDPEResults
+      if (currentResults?.results?.length > 0) {
+        const averages = await loadDepartmentAveragesForResults(currentResults)
+        if (this.recentDPEResults === currentResults) currentResults.departmentAverages = averages
       }
     },
 
     handleRechercheDPERecenteError(_error) {
+      if (!this.recentSearchPending) return
+      this.recentSearchPending = false
       // Gérer l'erreur de recherche - arrêter l'animation
       this.showAnimation = false
       window.dispatchEvent(new CustomEvent('animation-end'))

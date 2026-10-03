@@ -1,264 +1,77 @@
 <template>
-  <div>
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
-      
-      <!-- Bouton retour -->
-      <div class="mb-8">
-        <router-link 
-          to="/" 
-          class="inline-flex items-center px-6 py-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium hover:scale-105 border border-white/50 dark:border-gray-700/50"
-        >
-          <Home class="w-5 h-5 mr-2" />
-          Accueil
-        </router-link>
-      </div>
-      
-      <!-- En-tête -->
-      <div class="text-center mb-12">
-        <div class="flex items-center justify-center mb-4">
-          <Scale class="w-10 h-10 text-blue-600 dark:text-blue-400 mr-3" />
-          <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Mentions Légales</h1>
-        </div>
-        <p class="text-lg text-gray-600 dark:text-gray-400">
-          Dernière mise à jour : Avril 2026
-        </p>
-      </div>
+  <div class="container mx-auto max-w-4xl px-4 py-8">
+    <router-link to="/" class="quiet-link">Retour à la recherche</router-link>
+    <h1 class="mt-6 text-2xl font-semibold text-gray-900 dark:text-gray-100">Mentions légales et vie privée</h1>
+    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Projet de notice · 2 octobre 2026</p>
+    <p role="note" class="mt-5 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-100">
+      Cette notice est en cours de validation dans la prévisualisation. L’identification du responsable au titre du RGPD,
+      les modalités des journaux d’hébergement et la conservation des messages restent à préciser avant publication.
+    </p>
 
-      <!-- Contenu -->
-      <div class="space-y-8">
-        
-        <!-- Éditeur du site -->
-        <section class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 border border-white/50 dark:border-gray-700/50">
-          <h2 class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Building class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Éditeur du site
-          </h2>
-          <div class="text-gray-600 dark:text-gray-400 space-y-2">
-            <p><strong>Nom du service :</strong> {{ siteName }}</p>
-            <p><strong>Directeur de la publication :</strong> <a :href="githubUrl" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">{{ directorName }}</a></p>
-            <p><strong>Type de service :</strong> Plateforme de recherche de diagnostics de performance énergétique</p>
-          </div>
-        </section>
-
-        <!-- Hébergement -->
-        <section class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 border border-white/50 dark:border-gray-700/50">
-          <h2 class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Server class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Hébergement
-          </h2>
-          <div class="text-gray-600 dark:text-gray-400 space-y-2">
-            <p><strong>Hébergeur :</strong> {{ hostName }}</p>
-            <p><strong>Siège social :</strong> {{ hostAddress }}</p>
-          </div>
-        </section>
-
-        <!-- Sources des données -->
-        <section class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 border border-white/50 dark:border-gray-700/50">
-          <h2 class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Database class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Sources des données
-          </h2>
-          <div class="text-gray-600 dark:text-gray-400 space-y-4">
-            <div>
-              <p class="mb-2">
-                <strong>Diagnostics de Performance Énergétique (DPE) :</strong> Données fournies par l'<a href="https://www.ademe.fr/" target="_blank" rel="noopener noreferrer" class="font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent hover:from-red-400 hover:to-red-500 transition-all">ADEME</a>.
-              </p>
-            </div>
-            
-            <p class="text-sm pt-2">
-              <strong>Licence :</strong> Licence Ouverte v2.0 (Etalab) pour l'ensemble des données publiques
-            </p>
-          </div>
-        </section>
-
-        <!-- Propriété intellectuelle -->
-        <section class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 border border-white/50 dark:border-gray-700/50">
-          <h2 class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Copyright class="w-5 h-5 mr-2 text-green-600 dark:text-green-400" />
-            Propriété intellectuelle
-          </h2>
-          <div class="text-gray-600 dark:text-gray-400 space-y-3">
-            <p>
-              <strong>Code source :</strong> Application développée avec des bibliothèques open source :
-            </p>
-            <ul class="list-disc list-inside space-y-1 ml-4 text-sm">
-              <li>Vue.js (licence MIT)</li>
-              <li>Tailwind CSS (licence MIT)</li>
-              <li>Vite (licence MIT)</li>
-              <li>Lucide Icons (licence ISC)</li>
-              <li>Biome (licence MIT/Apache-2.0)</li>
-            </ul>
-            <p class="mt-3">
-              <strong>Cartes SVG :</strong> Les cartes géographiques utilisées dans les animations proviennent de 
-              <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Wikimedia Commons</a> 
-              et sont disponibles sous licences libres.
-            </p>
-            <p class="mt-3">
-              <strong>Données :</strong> Toutes les données affichées proviennent de sources publiques 
-              officielles et sont librement réutilisables selon leurs licences respectives.
-            </p>
-          </div>
-        </section>
-
-        <!-- Protection des données -->
-        <section class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 border border-white/50 dark:border-gray-700/50">
-          <h2 class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <Shield class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-            Vie privée
-          </h2>
-          <div class="text-gray-600 dark:text-gray-400">
-            <div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400 dark:border-green-600 p-4 mb-4">
-              <p class="text-green-800 dark:text-green-400 font-semibold mb-2">
-                ✓ Aucune donnée personnelle collectée
-              </p>
-              <p class="text-sm text-green-700 dark:text-green-500">
-                Ce service respecte intégralement votre vie privée. Pas de compte utilisateur, 
-                pas de tracking, pas d'analyse comportementale.
-              </p>
-            </div>
-            <p class="text-sm">
-              Bien que n'en collectant aucune, le site s'engage à ce que le traitement d'éventuelles données 
-              personnelles soit conforme au Règlement Général sur la Protection des Données (<a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">RGPD</a>) et à la 
-              <a href="https://www.cnil.fr/fr/le-cadre-national/la-loi-informatique-et-libertes" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">loi Informatique et Libertés</a>.
-            </p>
-          </div>
-        </section>
-
-
-        <!-- Conditions d'utilisation -->
-        <section class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 border border-white/50 dark:border-gray-700/50">
-          <h2 class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <FileText class="w-5 h-5 mr-2 text-green-600 dark:text-green-400" />
-            Conditions d'utilisation
-          </h2>
-          <div class="text-gray-600 dark:text-gray-400 space-y-3">
-            <p class="mb-3">
-              En utilisant ce service, vous acceptez :
-            </p>
-            <ul class="list-disc list-inside space-y-1 ml-4">
-              <li>D'utiliser le service uniquement à des fins personnelles et légales</li>
-              <li>De ne pas effectuer de requêtes automatisées excessives</li>
-              <li>De ne pas tenter d'extraire massivement les données (elles sont disponibles directement sur 
-                <a href="https://www.data.gouv.fr/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">data.gouv.fr</a>)</li>
-              <li>Que le service est fourni "tel quel" sans garantie</li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- Responsabilité -->
-        <section class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 border border-white/50 dark:border-gray-700/50">
-          <h2 class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-            <AlertTriangle class="w-5 h-5 mr-2 text-orange-500 dark:text-orange-400" />
-            Limitation de responsabilité
-          </h2>
-          <div class="text-gray-600 dark:text-gray-400 space-y-3">
-            <p>
-              Les informations fournies par ce service sont à titre indicatif uniquement :
-            </p>
-            <ul class="list-disc list-inside space-y-1 ml-4">
-              <li>Les données affichées proviennent de l'ADEME et peuvent contenir des inexactitudes</li>
-              <li>Ce service ne constitue pas un diagnostic officiel</li>
-              <li>La disponibilité du service n'est pas garantie</li>
-              <li>L'éditeur décline toute responsabilité en cas d'erreur ou d'omission</li>
-            </ul>
-            
-            <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 dark:border-yellow-600 p-4 mt-4">
-              <p class="text-sm text-yellow-800 dark:text-yellow-400">
-                <AlertTriangle class="w-4 h-4 inline mr-1" />
-                <strong>Important :</strong> Pour toute démarche officielle, consultez directement 
-                les organismes compétents (ADEME, diagnostiqueurs certifiés, etc.).
-              </p>
-            </div>
-          </div>
-        </section>
-
-
-      </div>
-
-      <!-- Contact -->
-      <section class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl p-6 mt-8 border border-white/50 dark:border-gray-700/50">
-        <h2 class="flex items-center text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-          <Mail class="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-          Contact
-        </h2>
-        <div class="text-gray-600 dark:text-gray-400">
-          <p>
-            Pour toute question concernant ces mentions légales, 
-            vous pouvez nous <a :href="`mailto:${contactEmail}`" class="text-blue-600 dark:text-blue-400 hover:underline">contacter</a>.
-          </p>
-        </div>
+    <div class="mt-6 space-y-6 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+      <section class="card p-5 sm:p-7">
+        <h2 class="section-title">Éditeur et hébergement</h2>
+        <p>{{ siteName }} est un service gratuit, sans publicité et sans compte utilisateur, édité par une personne physique à titre non professionnel.</p>
+        <p class="mt-3">L’éditeur souhaite préserver son anonymat dans le cadre de l’<a class="quiet-link underline" href="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000049568614" target="_blank" rel="noopener noreferrer">article 1-1 II de la loi pour la confiance dans l’économie numérique</a>. Son identité a été communiquée à l’hébergeur.</p>
+        <p class="mt-3"><strong>Hébergeur :</strong> OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.</p>
+        <p class="mt-2"><strong>Contact du site :</strong> <a class="quiet-link underline" :href="`mailto:${contactEmail}`">{{ contactEmail }}</a></p>
       </section>
 
-      <!-- Bottom navigation -->
-      <div class="mt-6 text-center">
-        <router-link 
-          to="/" 
-          class="inline-flex items-center px-6 py-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium hover:scale-105 border border-white/50 dark:border-gray-700/50"
-        >
-          <Home class="w-5 h-5 mr-2" />
-          Accueil
-        </router-link>
-      </div>
+      <section class="card p-5 sm:p-7">
+        <h2 class="section-title">Données et attribution</h2>
+        <p>Les diagnostics consultés proviennent des jeux publics de l’ADEME. Les pages sources indiquent leurs conditions d’utilisation et dates de mise à jour :</p>
+        <ul class="mt-3 list-disc space-y-2 pl-5">
+          <li><a class="quiet-link underline" href="https://data.ademe.fr/datasets/dpe03existant" target="_blank" rel="noopener noreferrer">DPE logements existants depuis juillet 2021</a></li>
+          <li><a class="quiet-link underline" href="https://data.ademe.fr/datasets/dpe-france" target="_blank" rel="noopener noreferrer">DPE antérieurs à juillet 2021</a></li>
+          <li><a class="quiet-link underline" href="https://geoservices.ign.fr/" target="_blank" rel="noopener noreferrer">Géocodage de la Géoplateforme de l’IGN</a></li>
+        </ul>
+        <p class="mt-3">Les jeux DPE sont présentés sous <a class="quiet-link underline" href="https://www.data.gouv.fr/pages/legal/licences/etalab-2.0" target="_blank" rel="noopener noreferrer">Licence Ouverte 2.0</a>. Cette mention ne dispense pas du respect des dispositions légales applicables, notamment à la réutilisation et à la protection des données personnelles.</p>
+        <p class="mt-3">{{ siteName }} est un outil indépendant. Il n’est ni un diagnostic officiel, ni un service agréé par l’ADEME ou l’IGN. Le score compare les critères saisis ; il ne confirme pas l’identité du bien.</p>
+      </section>
 
+      <section class="card p-5 sm:p-7" id="vie-privee">
+        <h2 class="section-title">Recherches et services externes</h2>
+        <p>Votre navigateur interroge directement l’ADEME et, selon la recherche, le service de géocodage de l’IGN. Ils reçoivent les critères nécessaires, tels que la commune, l’adresse ou les coordonnées recherchées, ainsi que des informations techniques de connexion dont votre adresse IP.</p>
+        <p class="mt-3">L’application ne comporte pas de serveur recevant un historique centralisé des recherches. Cela ne signifie pas qu’aucune donnée personnelle n’est traitée par les services contactés.</p>
+        <p class="mt-3">Les polices sont celles disponibles sur votre appareil. Le site ne charge pas automatiquement Google Fonts ni de carte Google intégrée. Le lien « Voir sur Maps » ouvre volontairement un site externe, soumis à ses propres règles de confidentialité.</p>
+        <p class="mt-3">Aucun outil publicitaire ou script d’analyse comportementale n’est configuré dans cette application. Les éventuels journaux techniques et statistiques de l’hébergement doivent être distingués de ce fonctionnement côté navigateur.</p>
+      </section>
+
+      <section class="card p-5 sm:p-7">
+        <h2 class="section-title">Données conservées sur votre appareil</h2>
+        <p>L’historique persistant est facultatif. Vous pouvez l’activer depuis les réglages du site. Sans activation, aucune nouvelle recherche n’est enregistrée dans cet historique.</p>
+        <p class="mt-3">Une fois activé, le stockage local de votre navigateur conserve jusqu’à dix recherches par mode, avec leurs critères, date, nombre de résultats et éventuel libellé personnalisé. Les recherches de proximité peuvent inclure une adresse et des coordonnées. Ces listes ne sont pas synchronisées par l’application vers un compte ou un serveur.</p>
+        <p class="mt-3">Il n’y a pas d’expiration automatique des entrées. Les plus anciennes sont remplacées lorsque la limite est atteinte. Vous pouvez supprimer une entrée ou effacer les historiques. Désactiver l’option arrête l’enregistrement et masque les listes sans effacer automatiquement les données déjà présentes.</p>
+        <p class="mt-3">Un choix explicite de thème clair ou sombre est conservé localement ; sélectionner « Système » supprime ce choix. Le navigateur peut aussi conserver les fichiers statiques de l’application installable. Son service worker ne met pas les réponses de recherche des API dans ce cache.</p>
+        <p class="mt-3">Les paramètres de votre navigateur permettent également d’effacer les données du site.</p>
+      </section>
+
+      <section class="card p-5 sm:p-7">
+        <h2 class="section-title">Hébergement et contact</h2>
+        <p>La consultation du site entraîne des échanges techniques avec OVH. La configuration des journaux, leur durée de conservation et les rôles respectifs de l’hébergeur et de l’éditeur doivent être confirmés pour cette installation.</p>
+        <p class="mt-3">Si vous écrivez à {{ contactEmail }}, votre adresse électronique et votre message servent à traiter votre demande. La messagerie utilise OVH et une redirection vers Gmail. La durée de conservation et les modalités d’exercice des droits seront précisées dans la notice finalisée.</p>
+        <p class="mt-3">Pour une question relative à vos données, utilisez <a class="quiet-link underline" :href="`mailto:${contactEmail}`">{{ contactEmail }}</a>. Vous pouvez également consulter les <a class="quiet-link underline" href="https://www.cnil.fr/fr/mes-demarches/les-droits-pour-maitriser-vos-donnees-personnelles" target="_blank" rel="noopener noreferrer">informations de la CNIL sur vos droits</a>.</p>
+      </section>
+
+      <section class="card p-5 sm:p-7">
+        <h2 class="section-title">Utilisation et limites</h2>
+        <p>Les résultats sont indicatifs et peuvent contenir des erreurs, des informations manquantes ou des diagnostics anciens. Vérifiez les caractéristiques du bien et consultez un professionnel compétent pour toute démarche nécessitant un diagnostic officiel.</p>
+        <p class="mt-3">Respectez les droits des personnes, les conditions des sources et leurs limites techniques. Les bibliothèques du projet conservent leurs licences respectives, notamment Vue.js, Tailwind CSS et Vite (MIT), Lucide (ISC) et Biome (MIT/Apache-2.0).</p>
+      </section>
     </div>
   </div>
 </template>
 
 <script>
-import {
-  AlertTriangle,
-  Building,
-  Copyright,
-  Database,
-  FileText,
-  HelpCircle,
-  Home,
-  Mail,
-  Scale,
-  Server,
-  Shield
-} from 'lucide-vue-next'
-
 export default {
   name: 'MentionsLegales',
-  components: {
-    Scale,
-    Building,
-    Server,
-    Database,
-    Copyright,
-    Shield,
-    AlertTriangle,
-    FileText,
-    Home,
-    HelpCircle,
-    Mail
-  },
   computed: {
     siteName() {
-      return import.meta.env.VITE_SITE_NAME || 'Site Name'
-    },
-    githubUrl() {
-      return import.meta.env.VITE_GITHUB_URL || '#'
-    },
-    directorName() {
-      return import.meta.env.VITE_DIRECTOR_NAME || 'Director'
+      return import.meta.env.VITE_SITE_NAME || 'LocaliserBien'
     },
     contactEmail() {
-      return import.meta.env.VITE_CONTACT_EMAIL || 'contact@example.com'
-    },
-    hostName() {
-      return import.meta.env.VITE_HOST_NAME || 'Your Hosting Provider'
-    },
-    hostAddress() {
-      return import.meta.env.VITE_HOST_ADDRESS || 'Hosting provider address'
+      return import.meta.env.VITE_CONTACT_EMAIL || 'contact@localiserbien.fr'
     }
   }
 }
 </script>
-
-<style scoped>
-.container {
-  max-width: 1200px;
-}
-</style>

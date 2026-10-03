@@ -144,8 +144,8 @@ describe('getDepartmentFromPostalCode', () => {
       expect(getDepartmentFromPostalCode('20000')).toBe('2A')
     })
 
-    it('devrait retourner "2A" pour 20199 (limite supérieure Corse-du-Sud)', () => {
-      expect(getDepartmentFromPostalCode('20199')).toBe('2A')
+    it('devrait refuser 20199 absent du répertoire source', () => {
+      expect(getDepartmentFromPostalCode('20199')).toBeNull()
     })
 
     it('devrait retourner "2B" pour 20200 (limite inférieure Haute-Corse)', () => {
@@ -156,8 +156,8 @@ describe('getDepartmentFromPostalCode', () => {
       expect(getDepartmentFromPostalCode('20600')).toBe('2B')
     })
 
-    it('devrait retourner "2B" pour 20999 (limite supérieure Haute-Corse)', () => {
-      expect(getDepartmentFromPostalCode('20999')).toBe('2B')
+    it('devrait refuser 20999 absent du répertoire source', () => {
+      expect(getDepartmentFromPostalCode('20999')).toBeNull()
     })
 
     it('devrait retourner "2A" pour 20100 (Sartène, milieu de Corse-du-Sud)', () => {
@@ -216,8 +216,8 @@ describe('getDepartmentFromPostalCode', () => {
       expect(getDepartmentFromPostalCode('750 01')).toBeNull()
     })
 
-    it("devrait throw pour un nombre entier (pas une chaîne) car .startsWith() n'existe pas sur Number", () => {
-      expect(() => getDepartmentFromPostalCode(75001)).toThrow()
+    it('devrait refuser un code postal numérique sans perdre les zéros initiaux', () => {
+      expect(getDepartmentFromPostalCode(75001)).toBeNull()
     })
   })
 })
@@ -457,9 +457,11 @@ describe('geocodeAddress', () => {
 
       vi.useFakeTimers()
       const promise = geocodeAddress('adresse test', { throwOnError: true })
+      // Attach the rejection handler before timers cause the promise to reject.
+      const assertion = expect(promise).rejects.toThrow()
       await vi.runAllTimersAsync()
 
-      await expect(promise).rejects.toThrow()
+      await assertion
       vi.useRealTimers()
     })
   })
@@ -734,8 +736,8 @@ describe('getCommuneCoordinates', () => {
     })
   })
 
-  describe("nom de commune — appel à l'API de géocodage puis lookup en base", () => {
-    it('devrait géocoder puis récupérer les données depuis la base pour une commune à code postal unique', async () => {
+  describe('nom de commune — index local puis géocodage si absent', () => {
+    it('devrait récupérer une commune indexée sans sélection arbitraire du géocodeur', async () => {
       global.fetch = vi.fn().mockResolvedValueOnce({
         ok: true,
         json: () =>
@@ -756,9 +758,8 @@ describe('getCommuneCoordinates', () => {
 
       expect(result).not.toBeNull()
       expect(result.postalCode).toBe('13100')
-      expect(global.fetch).toHaveBeenCalledTimes(1)
-      const calledUrl = global.fetch.mock.calls[0][0]
-      expect(calledUrl).toContain('Aix-en-Provence')
+      expect(global.fetch).not.toHaveBeenCalled()
+      expect(loadDept).toHaveBeenCalledTimes(1)
     })
 
     it('devrait retourner isMultiCommune: true pour une commune avec plusieurs codes postaux', async () => {

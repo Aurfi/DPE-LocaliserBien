@@ -1,5 +1,11 @@
 import { defineConfig, devices } from '@playwright/test'
 
+// Optional existing browser executable for constrained CI environments. No download
+// or browser installation is performed by this configuration.
+const chromiumLaunchOptions = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH
+  ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH }
+  : {}
+
 export default defineConfig({
   testDir: './e2e',
   fullyParallel: true,
@@ -12,7 +18,8 @@ export default defineConfig({
     ['junit', { outputFile: 'test-results/e2e-junit.xml' }]
   ],
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://127.0.0.1:4173',
+    serviceWorkers: 'block', // Deterministic API fixtures; real SW upgrade QA is a separate gate.
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure'
@@ -21,7 +28,7 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] }
+      use: { ...devices['Desktop Chrome'], launchOptions: chromiumLaunchOptions }
     },
     {
       name: 'firefox',
@@ -33,7 +40,7 @@ export default defineConfig({
     },
     {
       name: 'Mobile Chrome',
-      use: { ...devices['Pixel 5'] }
+      use: { ...devices['Pixel 5'], launchOptions: chromiumLaunchOptions }
     },
     {
       name: 'Mobile Safari',
@@ -42,9 +49,9 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: 'npm run dev',
-    url: 'http://localhost:3000',
-    reuseExistingServer: !process.env.CI,
+    command: 'npm run preview -- --host 127.0.0.1 --port 4173 --strictPort',
+    url: 'http://127.0.0.1:4173',
+    reuseExistingServer: false,
     timeout: 120 * 1000
   }
 })

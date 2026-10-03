@@ -608,14 +608,11 @@ describe('ConstructeurRechercheAdeme', () => {
 
       // La valeur ">80" est passée comme surfaceHabitable
       // Désormais parseComparisonValue extrait la valeur numérique 80
-      // et le filtre surface est correctement ajouté avec la tolérance ±15%
+      // et sa borne inclusive est conservée sans élargissement du côté opposé
       await service.executerRecherche({ commune: '75001', surfaceHabitable: '>80' }, COORDS_PARIS)
 
       const appelEtape2 = global.fetch.mock.calls[1][0]
-      // 80 * 0.85 = 68, 80 * 1.15 = 92
-      expect(appelEtape2).toContain('surface_habitable_logement')
-      expect(appelEtape2).toContain('68')
-      expect(appelEtape2).toContain('92')
+      expect(new URL(appelEtape2).searchParams.get('qs')).toContain('surface_habitable_logement:[80 TO 9999]')
     })
 
     it("doit construire une plage ±15% pour surfaceHabitable numérique à l'étape 2", async () => {
@@ -736,11 +733,7 @@ describe('ConstructeurRechercheAdeme', () => {
       await service.executerRecherche({ commune: '75001', surfaceHabitable: '>80' }, COORDS_PARIS)
 
       const appelEtape3 = global.fetch.mock.calls[2][0]
-      // parseComparisonValue extracts 80 from ">80", then applies ±35% tolerance
-      // 80 * 0.65 = 52, 80 * 1.35 = 108
-      expect(appelEtape3).toContain('surface_habitable_logement')
-      expect(appelEtape3).toContain('52')
-      expect(appelEtape3).toContain('108')
+      expect(new URL(appelEtape3).searchParams.get('qs')).toContain('surface_habitable_logement:[80 TO 9999]')
     })
 
     it("doit construire une plage ±35% pour surfaceHabitable numérique à l'étape 3", async () => {
@@ -890,7 +883,7 @@ describe('ConstructeurRechercheAdeme', () => {
       expect(appelUrl).not.toContain('conso_5_usages_par_m2_ep')
     })
 
-    it('ne doit pas ajouter de filtre GES si emissionGES est 0', async () => {
+    it('conserve le filtre GES quand la valeur explicite est 0', async () => {
       scoringService.parseComparisonValue.mockReturnValue({ operator: '=', value: 0 })
 
       global.fetch = vi.fn().mockResolvedValue({
@@ -901,21 +894,15 @@ describe('ConstructeurRechercheAdeme', () => {
       await service.executerRecherche({ commune: '75001', emissionGES: 0 }, null)
 
       const appelUrl = global.fetch.mock.calls[0][0]
-      expect(appelUrl).not.toContain('emission_ges_5_usages_par_m2')
+      expect(new URL(appelUrl).searchParams.get('qs')).toContain('emission_ges_5_usages_par_m2:0')
     })
 
-    it('ne doit pas ajouter de filtre conso si parseComparisonValue retourne null', async () => {
-      scoringService.parseComparisonValue.mockReturnValue(null)
-
-      global.fetch = vi.fn().mockResolvedValue({
-        ok: true,
-        json: () => Promise.resolve({ results: [] })
-      })
-
-      await service.executerRecherche({ commune: '75001', consommationEnergie: 'invalide' }, null)
-
-      const appelUrl = global.fetch.mock.calls[0][0]
-      expect(appelUrl).not.toContain('conso_5_usages_par_m2_ep')
+    it('refuse une valeur malformée au lieu de lancer une recherche sans ce critère', async () => {
+      global.fetch = vi.fn()
+      await expect(
+        service.executerRecherche({ commune: '75001', consommationEnergie: 'invalide' }, null)
+      ).rejects.toMatchObject({ code: 'INVALID_NUMERIC_INPUT' })
+      expect(global.fetch).not.toHaveBeenCalled()
     })
 
     it('ne doit pas ajouter de filtre surface si surfaceHabitable est 0', async () => {
@@ -1144,7 +1131,7 @@ describe('ConstructeurRechercheAdeme', () => {
       expect(allUrls).not.toContain('code_postal_ban')
     })
 
-    it('doit utiliser communeCoords.postalCode pour le code département si fourni', async () => {
+    it('doit borner la recherche fuzzy par coordonnées sans deviner un préfixe départemental', async () => {
       extractPostalCode.mockReturnValue(null)
       global.fetch = vi.fn().mockResolvedValue(reponseFetchVide())
       const coordsAvecPostal = { ...COORDS_PARIS, postalCode: '75001' }
@@ -1158,8 +1145,12 @@ describe('ConstructeurRechercheAdeme', () => {
       )
 
       const urls = global.fetch.mock.calls.map(c => c[0])
-      const allUrls = urls.join(' ')
-      expect(allUrls).toContain('75')
+      expect(urls.length).toBeGreaterThan(0)
+      for (const url of urls) {
+        const params = new URL(url).searchParams
+        expect(params.get('geo_distance')).toBe('2.3522:48.8566:25000')
+        expect(params.get('qs')).not.toContain('code_postal_ban:75*')
+      }
     })
 
     it("doit s'arrêter après 10 résultats dans la boucle externe (conso)", async () => {

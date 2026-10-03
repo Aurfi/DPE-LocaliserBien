@@ -1,20 +1,21 @@
 <template>
   <div class="max-w-4xl mx-auto">
     <!-- Formulaire de recherche -->
-    <div class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 transition-all duration-500 border border-white/50 dark:border-gray-700/50">
-      <div class="text-center mb-6">
-        <p class="text-lg text-gray-800 dark:text-gray-200 font-medium">Rechercher les DPE les plus récents autour d'une adresse</p>
+    <div class="search-panel">
+      <div class="mb-7">
+        <h1 class="search-heading">Rechercher les DPE les plus récents autour d’une adresse</h1>
+        <p class="search-description">Choisissez une adresse et un périmètre pour explorer les diagnostics disponibles.</p>
       </div>
       
       <form @submit.prevent="searchRecentDPE" class="space-y-6">
         <!-- Adresse -->
         <div>
-          <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-            <MapPin class="w-4 h-4 inline mr-1" />
+          <label for="nearby-address" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
+
             Adresse de recherche
           </label>
           <input
-            v-model="searchCriteria.address"
+            v-model="searchCriteria.address" id="nearby-address"
             type="text"
             placeholder="Ex: 15 rue de la Paix, 75002 Paris"
             class="w-full px-4 py-3 text-base bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-400 dark:placeholder-gray-300 text-gray-800 dark:text-gray-100"
@@ -26,12 +27,12 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <!-- Période -->
           <div>
-            <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-              <Calendar class="w-4 h-4 inline mr-1" />
+            <label for="nearby-monthsBack" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
+
               DPE des derniers
             </label>
             <select
-              v-model="searchCriteria.monthsBack"
+              v-model="searchCriteria.monthsBack" id="nearby-monthsBack"
               class="w-full px-4 py-3 text-base bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-800 dark:text-gray-100"
             >
               <option value="1">1 mois</option>
@@ -45,12 +46,12 @@
 
           <!-- Rayon -->
           <div>
-            <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-              <Circle class="w-4 h-4 inline mr-1" />
+            <label for="nearby-radius" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
+
               Rayon de recherche
             </label>
             <select
-              v-model="searchCriteria.radius"
+              v-model="searchCriteria.radius" id="nearby-radius"
               class="w-full px-4 py-3 text-base bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-700 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-800 dark:text-gray-100"
             >
               <option value="0.1">100 m</option>
@@ -67,13 +68,15 @@
 
           <!-- Surface (optionnel) -->
           <div>
-            <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
-              <Grid2x2Check class="w-4 h-4 inline mr-1" />
+            <label for="nearby-surface" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
+
               Surface (optionnel)
             </label>
             <div class="relative">
               <input
-                v-model="searchCriteria.surface"
+                v-model="searchCriteria.surface" id="nearby-surface"
+                :aria-invalid="!!numericErrors.surface"
+                :aria-describedby="numericErrors.surface ? 'nearby-surface-error' : undefined"
                 type="text"
                 placeholder="Ex: 100"
                 @input="validateSurfaceInput"
@@ -83,34 +86,37 @@
                 m²
               </span>
             </div>
+            <p v-if="numericErrors.surface" id="nearby-surface-error" class="field-error">{{ numericErrors.surface }}</p>
             <!-- Property type selector -->
-            <div class="mt-1">
+            <div class="mt-2">
               <div class="flex gap-1">
                 <button
                   type="button"
                   @click="selectPropertyType('maison')"
+                  :aria-pressed="searchCriteria.typeBien === 'maison'"
                   :class="[
-                    'w-6 h-6 text-xs rounded font-semibold transition-all flex items-center justify-center',
+                    'property-option border transition-colors',
                     searchCriteria.typeBien === 'maison'
                       ? 'bg-blue-600 text-white shadow-sm'
                       : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                   ]"
                   title="Maison"
                 >
-                  <Home class="w-3.5 h-3.5" />
+                  Maison
                 </button>
                 <button
                   type="button"
                   @click="selectPropertyType('appartement')"
+                  :aria-pressed="searchCriteria.typeBien === 'appartement'"
                   :class="[
-                    'w-6 h-6 text-xs rounded font-semibold transition-all flex items-center justify-center',
+                    'property-option border transition-colors',
                     searchCriteria.typeBien === 'appartement'
-                      ? 'bg-purple-600 text-white shadow-sm'
+                      ? 'bg-blue-600 text-white'
                       : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                   ]"
                   title="Appartement"
                 >
-                  <Building class="w-3.5 h-3.5" />
+                  Appartement
                 </button>
               </div>
             </div>
@@ -121,12 +127,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <!-- Consommation énergétique -->
           <div>
-            <label class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
+            <label for="nearby-consommation" class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
               Consommation (optionnel)
             </label>
             <div class="relative">
               <input
-                v-model="searchCriteria.consommation"
+                v-model="searchCriteria.consommation" id="nearby-consommation"
+                :aria-invalid="!!numericErrors.consommation"
+                :aria-describedby="numericErrors.consommation ? 'nearby-consommation-error' : undefined"
                 type="text"
                 placeholder="ex : 250"
                 @input="validateConsommationInput"
@@ -137,16 +145,20 @@
                 kWh/m²/an
               </span>
             </div>
-            <div class="mt-1">
-              <div class="flex gap-1">
+            <p v-if="numericErrors.consommation" id="nearby-consommation-error" class="field-error">{{ numericErrors.consommation }}</p>
+            <div class="mt-2">
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Classe indiquée dans l’annonce</p>
+              <div class="class-options">
                 <button
                   v-for="classe in ['A', 'B', 'C', 'D', 'E', 'F', 'G']"
                   :key="'energy-' + classe"
                   type="button"
                   @click="toggleEnergyClasse(classe)"
+                  :aria-label="`Classe énergétique ${classe}`"
+                  :aria-pressed="selectedEnergyClasses.includes(classe)"
                   :class="[
-                    'w-6 h-6 text-xs rounded font-semibold transition-all flex items-center justify-center',
-                    selectedEnergyClasses.includes(classe) || (!selectedEnergyClasses.length && getEnergyClassFromValue(searchCriteria.consommation) === classe)
+                    'class-option border transition-colors',
+                    selectedEnergyClasses.includes(classe)
                       ? getClasseColor(classe) + ' shadow-sm'
                       : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                   ]"
@@ -159,12 +171,14 @@
 
           <!-- GES -->
           <div>
-            <label class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
+            <label for="nearby-ges" class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
               GES (optionnel)
             </label>
             <div class="relative">
               <input
-                v-model="searchCriteria.ges"
+                v-model="searchCriteria.ges" id="nearby-ges"
+                :aria-invalid="!!numericErrors.ges"
+                :aria-describedby="numericErrors.ges ? 'nearby-ges-error' : undefined"
                 type="text"
                 placeholder="ex : 58"
                 @input="validateGESInput"
@@ -175,16 +189,20 @@
                 kgCO₂/m²/an
               </span>
             </div>
-            <div class="mt-1">
-              <div class="flex gap-1">
+            <p v-if="numericErrors.ges" id="nearby-ges-error" class="field-error">{{ numericErrors.ges }}</p>
+            <div class="mt-2">
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Classe indiquée dans l’annonce</p>
+              <div class="class-options">
                 <button
                   v-for="classe in ['A', 'B', 'C', 'D', 'E', 'F', 'G']"
                   :key="'ges-' + classe"
                   type="button"
                   @click="toggleGESClasse(classe)"
+                  :aria-label="`Classe GES ${classe}`"
+                  :aria-pressed="selectedGESClasses.includes(classe)"
                   :class="[
-                    'w-6 h-6 text-xs rounded font-semibold transition-all flex items-center justify-center',
-                    selectedGESClasses.includes(classe) || (!selectedGESClasses.length && getGESClassFromValue(searchCriteria.ges) === classe)
+                    'class-option border transition-colors',
+                    selectedGESClasses.includes(classe)
                       ? getGESClassColor(classe) + ' shadow-sm'
                       : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                   ]"
@@ -199,11 +217,10 @@
         <!-- Bouton de recherche -->
         <button
           type="submit"
-          :disabled="loading || !searchCriteria.address"
-          class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center"
+          :disabled="loading || !searchCriteria.address || hasNumericErrors"
+          class="btn-primary w-full sm:w-auto sm:min-w-[240px] flex items-center justify-center"
         >
-          <Search v-if="!loading" class="w-5 h-5 mr-2" />
-          <Loader v-else class="w-5 h-5 mr-2 animate-spin" />
+          <Loader v-if="loading" class="w-5 h-5 mr-2 animate-spin" />
           {{ loading ? 'Recherche en cours...' : 'Rechercher' }}
         </button>
       </form>
@@ -226,30 +243,23 @@
 </template>
 
 <script>
-import { Building, Calendar, Circle, Grid2x2Check, Home, Loader, MapPin, Search, Zap } from 'lucide-vue-next'
-import { ref } from 'vue'
+import { Loader } from 'lucide-vue-next'
+import { computed, onBeforeUnmount, ref } from 'vue'
 import * as recentDPEService from '../../../services/recent-dpe.service'
 import { useRecherches } from '../../../stores/useRecherches.js'
-import { getGESClass as _getGESClassFromThresholds } from '../../../utils/dpe-thresholds.js'
+import { numericSearchInputError, parseNumericSearchInput } from '../../../utils/numericSearchInput.js'
 import { geocodeAddress } from '../../../utils/utilsGeo.js'
 
 export default {
   name: 'RechercheDPERecente',
   components: {
-    MapPin,
-    Calendar,
-    Circle,
-    Home,
-    Grid2x2Check,
-    Building,
-    Zap,
-    Search,
     Loader
   },
   emits: ['search-results', 'search-started', 'search-error'],
   setup(_props, { emit }) {
     const recherchesStore = useRecherches()
     const loading = ref(false)
+    let requestId = 0
     const errorMessage = ref(null)
     const searchCriteria = ref({
       address: '',
@@ -260,6 +270,12 @@ export default {
       consommation: null,
       ges: null
     })
+    const numericErrors = computed(() => ({
+      surface: numericSearchInputError(searchCriteria.value.surface),
+      consommation: numericSearchInputError(searchCriteria.value.consommation),
+      ges: numericSearchInputError(searchCriteria.value.ges)
+    }))
+    const hasNumericErrors = computed(() => Object.values(numericErrors.value).some(Boolean))
     const selectedClasses = ref([]) // Keep for backward compatibility
     const selectedEnergyClasses = ref([])
     const selectedGESClasses = ref([])
@@ -317,52 +333,40 @@ export default {
       return getClasseColor(classe)
     }
 
-    // Calculer la classe énergétique à partir de la valeur de consommation
-    const getEnergyClassFromValue = value => {
-      if (!value) return null
-      // Supprimer les opérateurs si présents
-      const numValue = parseInt(value.toString().replace(/[<>]/g, ''), 10)
-      if (Number.isNaN(numValue)) return null
-
-      if (numValue <= 50) return 'A'
-      if (numValue <= 90) return 'B'
-      if (numValue <= 150) return 'C'
-      if (numValue <= 230) return 'D'
-      if (numValue <= 330) return 'E'
-      if (numValue <= 450) return 'F'
-      return 'G'
+    const cancelSearch = () => {
+      requestId++
+      loading.value = false
     }
-
-    // Calculer la classe GES à partir de la valeur d'émission
-    const getGESClassFromValue = value => {
-      if (!value) return null
-      // Supprimer les opérateurs si présents
-      const numValue = parseInt(value.toString().replace(/[<>]/g, ''), 10)
-      if (Number.isNaN(numValue)) return null
-
-      return _getGESClassFromThresholds(numValue)
-    }
+    onBeforeUnmount(cancelSearch)
 
     const searchRecentDPE = async () => {
+      if (loading.value || hasNumericErrors.value) return
+      const currentRequest = ++requestId
+      const submittedCriteria = {
+        ...searchCriteria.value,
+        surface: parseNumericSearchInput(searchCriteria.value.surface).value,
+        consommation: parseNumericSearchInput(searchCriteria.value.consommation).value,
+        ges: parseNumericSearchInput(searchCriteria.value.ges).value,
+        energyClasses: [...selectedEnergyClasses.value],
+        gesClasses: [...selectedGESClasses.value]
+      }
       loading.value = true
       errorMessage.value = null
 
       try {
         // D'abord géocoder l'adresse pour obtenir les coordonnées
-        const geoData = await geocodeAddress(searchCriteria.value.address)
+        const geoData = await geocodeAddress(submittedCriteria.address)
+        if (currentRequest !== requestId) return
 
         // Émettre un événement pour démarrer l'animation avec les coordonnées
         emit('search-started', {
-          ...searchCriteria.value,
+          ...submittedCriteria,
           coordinates: { lat: geoData.lat, lon: geoData.lon }
         })
 
         // Maintenant récupérer les vrais résultats DPE
-        const results = await recentDPEService.searchRecentDPE({
-          ...searchCriteria.value,
-          energyClasses: selectedEnergyClasses.value,
-          gesClasses: selectedGESClasses.value
-        })
+        const results = await recentDPEService.searchRecentDPE(submittedCriteria)
+        if (currentRequest !== requestId) return
 
         // Ajouter le code postal du géocodage s'il est disponible
         if (results?.searchMetadata?.postalCode) {
@@ -370,24 +374,19 @@ export default {
         }
 
         // Passer à la fois les critères de recherche et les résultats
-        emit('search-results', searchCriteria.value, results)
+        emit('search-results', submittedCriteria, results)
 
         // Sauvegarder la recherche dans l'historique si des résultats ont été trouvés
         if (results && results.totalFound > 0) {
-          saveToHistory(
-            {
-              ...searchCriteria.value,
-              energyClasses: selectedClasses.value
-            },
-            results.totalFound
-          )
+          saveToHistory(submittedCriteria, results.totalFound)
         }
       } catch (error) {
+        if (currentRequest !== requestId) return
         // Store error message for display
         errorMessage.value = error.message || 'Une erreur est survenue lors de la recherche'
         emit('search-error', error)
       } finally {
-        loading.value = false
+        if (currentRequest === requestId) loading.value = false
       }
     }
 
@@ -398,6 +397,8 @@ export default {
         monthsBack: criteria.monthsBack,
         radius: criteria.radius,
         surface: criteria.surface,
+        consommation: criteria.consommation,
+        ges: criteria.ges,
         typeBien: criteria.typeBien || null,
         energyClasses: criteria.energyClasses || [],
         gesClasses: criteria.gesClasses || []
@@ -413,11 +414,14 @@ export default {
       searchCriteria.value.monthsBack = savedSearch.monthsBack
       searchCriteria.value.radius = savedSearch.radius
       searchCriteria.value.surface = savedSearch.surface
+      searchCriteria.value.consommation = savedSearch.consommation ?? null
+      searchCriteria.value.ges = savedSearch.ges ?? null
+      searchCriteria.value.typeBien = savedSearch.typeBien || null
       selectedEnergyClasses.value = savedSearch.energyClasses || []
       selectedGESClasses.value = savedSearch.gesClasses || []
 
       // Lancer automatiquement la recherche
-      searchRecentDPE()
+      return searchRecentDPE()
     }
 
     const resetLoading = () => {
@@ -432,33 +436,24 @@ export default {
       }
     }
 
+    // Do not strip punctuation or units: preserve what was typed/pasted.
     const validateSurfaceInput = event => {
-      const value = event.target.value
-      // Autoriser les nombres et les opérateurs < >
-      const cleaned = value.replace(/[^0-9<>]/g, '')
-      searchCriteria.value.surface = cleaned
-      event.target.value = cleaned
+      searchCriteria.value.surface = event.target.value
     }
 
     const validateConsommationInput = event => {
-      const value = event.target.value
-      // Autoriser les nombres et les opérateurs < >
-      const cleaned = value.replace(/[^0-9<>]/g, '')
-      searchCriteria.value.consommation = cleaned
-      event.target.value = cleaned
+      searchCriteria.value.consommation = event.target.value
     }
 
     const validateGESInput = event => {
-      const value = event.target.value
-      // Autoriser les nombres et les opérateurs < >
-      const cleaned = value.replace(/[^0-9<>]/g, '')
-      searchCriteria.value.ges = cleaned
-      event.target.value = cleaned
+      searchCriteria.value.ges = event.target.value
     }
 
     return {
       loading,
       errorMessage,
+      numericErrors,
+      hasNumericErrors,
       searchCriteria,
       selectedClasses,
       selectedEnergyClasses,
@@ -468,11 +463,10 @@ export default {
       toggleGESClasse,
       getClasseColor,
       getGESClassColor,
-      getEnergyClassFromValue,
-      getGESClassFromValue,
       searchRecentDPE,
       relaunchSearch,
       resetLoading,
+      cancelSearch,
       selectPropertyType,
       validateSurfaceInput,
       validateConsommationInput,

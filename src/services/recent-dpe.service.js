@@ -1,3 +1,4 @@
+import { buildNumericQuery, normalizeNumericCriteria, parseSearchComparison } from '../utils/numericSearchInput.js'
 import { calculateDistance, geocodeAddress } from '../utils/utilsGeo.js'
 
 const ADEME_API_URL = 'https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines'
@@ -19,25 +20,7 @@ function escapeLucene(str) {
  * @returns {Object} - {operator: '<'|'>'|'=', value: number}
  */
 function parseComparisonValue(value) {
-  if (!value) return null
-
-  const strValue = value.toString().trim()
-
-  // Vérifier l'opérateur <
-  if (strValue.startsWith('<')) {
-    const num = parseInt(strValue.substring(1), 10)
-    return { operator: '<', value: num }
-  }
-
-  // Vérifier l'opérateur >
-  if (strValue.startsWith('>')) {
-    const num = parseInt(strValue.substring(1), 10)
-    return { operator: '>', value: num }
-  }
-
-  // Aucun opérateur, correspondance exacte
-  const num = parseInt(strValue, 10)
-  return { operator: '=', value: num }
+  return parseSearchComparison(value)
 }
 
 /**
@@ -47,26 +30,14 @@ function parseComparisonValue(value) {
  * @returns {string} - Chaîne de requête de plage ou valeur exacte
  */
 function buildRangeQuery(comparison, fieldName) {
-  if (!comparison) return null
-
-  switch (comparison.operator) {
-    case '<':
-      return `${fieldName}:[0 TO ${comparison.value}]`
-    case '>':
-      return `${fieldName}:[${comparison.value} TO 9999]`
-    default: {
-      // Pour une correspondance exacte dans la recherche récente, utiliser une tolérance
-      const min = Math.round(comparison.value * 0.9)
-      const max = Math.round(comparison.value * 1.1)
-      return `${fieldName}:[${min} TO ${max}]`
-    }
-  }
+  return buildNumericQuery(comparison, fieldName, { percent: 10 })
 }
 
 /**
  * Calcule un score de correspondance pour les critères optionnels
  */
 function calculateMatchScore(dpe, criteria) {
+  criteria = { ...criteria, surface: parseComparisonValue(criteria.surface)?.value }
   let score = 100
 
   // Score pour la surface (tolérance 15%)
@@ -86,7 +57,7 @@ function calculateMatchScore(dpe, criteria) {
     (criteria.consommation &&
       !criteria.consommation.toString().includes('<') &&
       !criteria.consommation.toString().includes('>')) ||
-    (criteria.ges && !criteria.ges.toString().includes('<') && !criteria.ges.toString().includes('>'))
+    (criteria.ges != null && !criteria.ges.toString().includes('<') && !criteria.ges.toString().includes('>'))
 
   if (!hasPreciseValues && criteria.energyClasses && criteria.energyClasses.length > 0 && dpe.etiquette_dpe) {
     const classesDPE = dpe.etiquette_dpe.toUpperCase()
@@ -222,6 +193,7 @@ function mapAdemeResult(ademeData) {
  * Recherche les DPE récents autour d'une adresse
  */
 export async function searchRecentDPE(criteria) {
+  criteria = normalizeNumericCriteria(criteria, ['surface', 'consommation', 'ges'])
   // 1. Calculer la date limite
   const dateLimit = new Date()
   dateLimit.setMonth(dateLimit.getMonth() - criteria.monthsBack)
@@ -396,13 +368,9 @@ async function searchByAddress(userInput, geocodedAddress, dateLimit, criteria) 
   // Ajouter le filtre de surface si spécifié (avec support des opérateurs)
   if (criteria.surface) {
     const surfaceComparison = parseComparisonValue(criteria.surface)
-    if (surfaceComparison && surfaceComparison.value > 0) {
+    if (surfaceComparison && (surfaceComparison.value > 0 || surfaceComparison.operator !== '=')) {
       if (surfaceComparison.operator === '=') {
-        // Pour une correspondance exacte, arrondir et utiliser ±1 m²
-        const roundedSurface = Math.round(surfaceComparison.value)
-        const minSurface = roundedSurface - 1
-        const maxSurface = roundedSurface + 1
-        qsFilter += ` AND surface_habitable_logement:[${minSurface} TO ${maxSurface}]`
+        qsFilter += ` AND ${buildNumericQuery(surfaceComparison, 'surface_habitable_logement', { absolute: 1 })}`
       } else {
         // Pour les opérateurs < ou >, utiliser une requête de plage
         const query = buildRangeQuery(surfaceComparison, 'surface_habitable_logement')
@@ -414,10 +382,9 @@ async function searchByAddress(userInput, geocodedAddress, dateLimit, criteria) 
   // Ajouter le filtre de consommation si spécifié
   if (criteria.consommation) {
     const consoComparison = parseComparisonValue(criteria.consommation)
-    if (consoComparison && consoComparison.value > 0) {
+    if (consoComparison && (consoComparison.value > 0 || consoComparison.operator !== '=')) {
       if (consoComparison.operator === '=') {
-        const exactValue = Math.round(consoComparison.value)
-        qsFilter += ` AND conso_5_usages_par_m2_ep:${exactValue}`
+        qsFilter += ` AND ${buildNumericQuery(consoComparison, 'conso_5_usages_par_m2_ep')}`
       } else {
         const query = buildRangeQuery(consoComparison, 'conso_5_usages_par_m2_ep')
         if (query) qsFilter += ` AND ${query}`
@@ -426,12 +393,11 @@ async function searchByAddress(userInput, geocodedAddress, dateLimit, criteria) 
   }
 
   // Ajouter le filtre GES si spécifié
-  if (criteria.ges) {
+  if (criteria.ges != null) {
     const gesComparison = parseComparisonValue(criteria.ges)
-    if (gesComparison && gesComparison.value > 0) {
+    if (gesComparison && gesComparison.value >= 0) {
       if (gesComparison.operator === '=') {
-        const exactValue = Math.round(gesComparison.value)
-        qsFilter += ` AND emission_ges_5_usages_par_m2:${exactValue}`
+        qsFilter += ` AND ${buildNumericQuery(gesComparison, 'emission_ges_5_usages_par_m2')}`
       } else {
         const query = buildRangeQuery(gesComparison, 'emission_ges_5_usages_par_m2')
         if (query) qsFilter += ` AND ${query}`
@@ -495,13 +461,9 @@ async function searchInRadius(lat, lon, radius, dateLimit, _monthsBack, criteria
   // Ajouter le filtre de surface si spécifié (avec support des opérateurs)
   if (criteria.surface) {
     const surfaceComparison = parseComparisonValue(criteria.surface)
-    if (surfaceComparison && surfaceComparison.value > 0) {
+    if (surfaceComparison && (surfaceComparison.value > 0 || surfaceComparison.operator !== '=')) {
       if (surfaceComparison.operator === '=') {
-        // Pour une correspondance exacte, arrondir et utiliser ±1 m²
-        const roundedSurface = Math.round(surfaceComparison.value)
-        const minSurface = roundedSurface - 1
-        const maxSurface = roundedSurface + 1
-        qsFilter += ` AND surface_habitable_logement:[${minSurface} TO ${maxSurface}]`
+        qsFilter += ` AND ${buildNumericQuery(surfaceComparison, 'surface_habitable_logement', { absolute: 1 })}`
       } else {
         // Pour les opérateurs < ou >, utiliser une requête de plage
         const query = buildRangeQuery(surfaceComparison, 'surface_habitable_logement')
@@ -513,11 +475,10 @@ async function searchInRadius(lat, lon, radius, dateLimit, _monthsBack, criteria
   // Ajouter le filtre de consommation si spécifié (avec support des opérateurs)
   if (criteria.consommation) {
     const consoComparison = parseComparisonValue(criteria.consommation)
-    if (consoComparison && consoComparison.value > 0) {
+    if (consoComparison && (consoComparison.value > 0 || consoComparison.operator !== '=')) {
       if (consoComparison.operator === '=') {
         // Pour une correspondance exacte de consommation, utiliser la valeur exacte
-        const exactValue = Math.round(consoComparison.value)
-        qsFilter += ` AND conso_5_usages_par_m2_ep:${exactValue}`
+        qsFilter += ` AND ${buildNumericQuery(consoComparison, 'conso_5_usages_par_m2_ep')}`
       } else {
         const query = buildRangeQuery(consoComparison, 'conso_5_usages_par_m2_ep')
         if (query) qsFilter += ` AND ${query}`
@@ -526,13 +487,12 @@ async function searchInRadius(lat, lon, radius, dateLimit, _monthsBack, criteria
   }
 
   // Ajouter le filtre GES si spécifié (avec support des opérateurs)
-  if (criteria.ges) {
+  if (criteria.ges != null) {
     const gesComparison = parseComparisonValue(criteria.ges)
-    if (gesComparison && gesComparison.value > 0) {
+    if (gesComparison && gesComparison.value >= 0) {
       if (gesComparison.operator === '=') {
         // Pour une correspondance exacte de GES, utiliser la valeur exacte
-        const exactValue = Math.round(gesComparison.value)
-        qsFilter += ` AND emission_ges_5_usages_par_m2:${exactValue}`
+        qsFilter += ` AND ${buildNumericQuery(gesComparison, 'emission_ges_5_usages_par_m2')}`
       } else {
         const query = buildRangeQuery(gesComparison, 'emission_ges_5_usages_par_m2')
         if (query) qsFilter += ` AND ${query}`

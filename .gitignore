@@ -44,7 +44,8 @@ ADEME_API_REFERENCE.md
 # Production-specific files (keep examples only)
 nginx.conf
 .htaccess.production
-public/.htaccess
+# The reviewed route-only public/.htaccess is versioned and copied into builds.
+reports/
 public/sitemap.xml
 public/robots.txt
 public/manifest.json

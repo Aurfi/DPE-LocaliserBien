@@ -1,10 +1,15 @@
+import { buildNumericQuery, normalizeNumericCriteria, parseSearchComparison } from '../utils/numericSearchInput.js'
 /**
  * Service pour rechercher les données DPE pré-2021 (avant juillet 2021)
  * Utilise le jeu de données dpe-france avec des noms de champs différents
  */
 
 import { useDepartements } from '../stores/useDepartements.js'
-import { getDepartmentFromPostalCode } from '../utils/utilsGeo.js'
+import {
+  getDepartmentsFromCommuneName,
+  getDepartmentsFromPostalCode,
+  normalizeCommuneName
+} from '../utils/communeDirectory.js'
 
 class DPELegacyService {
   constructor() {
@@ -20,74 +25,32 @@ class DPELegacyService {
     return await this.departmentStore.loadDepartment(deptCode)
   }
 
-  /**
-   * Obtenir les codes INSEE pour un code postal ou nom de commune donné
-   * Pour les codes postaux multi-communes, retourne la plus grande commune par population
-   * @param {string} commune - Code postal ou nom de commune
-   * @returns {Promise<Array>} Tableau des codes INSEE
-   */
+  /** Return every matching commune; population does not disambiguate a property location. */
   async getINSEECodes(commune) {
-    if (!commune) return []
-
+    if (typeof commune !== 'string' || !commune.trim()) return []
     try {
       const isPostalCode = /^\d{5}$/.test(commune)
-
-      if (isPostalCode) {
-        // Obtenir le département depuis le code postal
-        const deptCode = getDepartmentFromPostalCode(commune)
-        if (!deptCode) return []
-
-        // Charger les données du département
-        const deptData = await this.loadDepartment(deptCode)
-        if (!deptData) return []
-
-        // Trouver toutes les communes avec ce code postal
-        const matchingCommunes = deptData.communes.filter(c => c.codesPostaux?.includes(commune))
-
-        if (matchingCommunes.length === 0) return []
-
-        // Pour plusieurs communes, prendre celle avec la plus haute population
-        if (matchingCommunes.length > 1) {
-          const biggest = matchingCommunes.reduce((prev, current) =>
-            current.population > prev.population ? current : prev
-          )
-          return [biggest.code]
-        }
-
-        return [matchingCommunes[0].code]
-      } else {
-        // Rechercher par nom de commune dans TOUS les départements
-        const normalizedSearch = commune.toLowerCase().trim()
-
-        // Rechercher dans tous les départements (01 à 95 + 2A, 2B pour la Corse)
-        const allDeptCodes = []
-        for (let i = 1; i <= 95; i++) {
-          const code = i.toString().padStart(2, '0')
-          allDeptCodes.push(code)
-        }
-        // Ajouter la Corse
-        allDeptCodes.push('2A', '2B')
-
-        // Rechercher dans chaque département
-        for (const deptCode of allDeptCodes) {
-          try {
-            const deptData = await this.loadDepartment(deptCode)
-            if (deptData?.communes) {
-              const foundCommune = deptData.communes.find(
-                c =>
-                  c.nom &&
-                  (c.nom.toLowerCase() === normalizedSearch ||
-                    c.nom.toLowerCase().replace(/[-\s]/g, '') === normalizedSearch.replace(/[-\s]/g, ''))
+      const departments = isPostalCode
+        ? getDepartmentsFromPostalCode(commune)
+        : await getDepartmentsFromCommuneName(commune)
+      const normalized = normalizeCommuneName(commune)
+      const loaded = await Promise.all(departments.map(code => this.loadDepartment(code)))
+      // Avoid an apparently complete match when one of the relevant files could not load.
+      if (loaded.some(data => !Array.isArray(data?.communes))) return []
+      return [
+        ...new Set(
+          loaded.flatMap(data =>
+            data.communes
+              .filter(candidate =>
+                isPostalCode
+                  ? candidate.codesPostaux?.includes(commune)
+                  : normalizeCommuneName(candidate.nom) === normalized
               )
-              if (foundCommune) {
-                return [foundCommune.code]
-              }
-            }
-          } catch (_error) {}
-        }
-      }
-
-      return []
+              .map(candidate => candidate.code)
+              .filter(code => typeof code === 'string')
+          )
+        )
+      ]
     } catch (_error) {
       return []
     }
@@ -97,38 +60,14 @@ class DPELegacyService {
    * Analyser la valeur de comparaison (comme le service principal)
    */
   parseComparisonValue(value) {
-    if (!value) return null
-
-    const strValue = value.toString().trim()
-
-    if (strValue.startsWith('<')) {
-      const num = parseInt(strValue.substring(1), 10)
-      return { operator: '<', value: num }
-    }
-
-    if (strValue.startsWith('>')) {
-      const num = parseInt(strValue.substring(1), 10)
-      return { operator: '>', value: num }
-    }
-
-    const num = parseInt(strValue, 10)
-    return { operator: '=', value: num }
+    return parseSearchComparison(value)
   }
 
   /**
    * Construire la requête de plage (comme le service principal)
    */
   buildRangeQuery(comparison, fieldName) {
-    if (!comparison) return null
-
-    switch (comparison.operator) {
-      case '<':
-        return `${fieldName}:[0 TO ${comparison.value}]`
-      case '>':
-        return `${fieldName}:[${comparison.value} TO 9999]`
-      default:
-        return `${fieldName}:${comparison.value}`
-    }
+    return buildNumericQuery(comparison, fieldName)
   }
 
   /**
@@ -139,6 +78,11 @@ class DPELegacyService {
    */
   async searchLegacy(searchRequest, _hasPostResults = false) {
     try {
+      searchRequest = normalizeNumericCriteria(searchRequest, [
+        'surfaceHabitable',
+        'consommationEnergie',
+        'emissionGES'
+      ])
       const startTime = Date.now()
 
       // Obtenir les codes INSEE pour l'emplacement
@@ -152,7 +96,13 @@ class DPELegacyService {
         }
       }
 
-      const _results = []
+      const inseeCondition =
+        inseeCodes.length === 1
+          ? `code_insee_commune_actualise:"${inseeCodes[0]}"`
+          : `(${inseeCodes.map(code => `code_insee_commune_actualise:"${code}"`).join(' OR ')})`
+      const departments = /^\d{5}$/.test(searchRequest.commune)
+        ? getDepartmentsFromPostalCode(searchRequest.commune)
+        : await getDepartmentsFromCommuneName(searchRequest.commune)
       let searchStrategy = 'NONE'
 
       // Vérifier s'il s'agit d'une recherche par classe
@@ -184,14 +134,14 @@ class DPELegacyService {
       const strictConditions = []
 
       // Filtre code INSEE
-      strictConditions.push(`code_insee_commune_actualise:"${inseeCodes[0]}"`)
+      strictConditions.push(inseeCondition)
 
       // Consommation d'énergie ou classe
       if (isClassSearch && searchRequest.energyClass) {
         strictConditions.push(`classe_consommation_energie:"${searchRequest.energyClass.toUpperCase()}"`)
       } else if (searchRequest.consommationEnergie) {
         const consoComparison = this.parseComparisonValue(searchRequest.consommationEnergie)
-        if (consoComparison && consoComparison.value > 0) {
+        if (consoComparison && (consoComparison.value > 0 || consoComparison.operator !== '=')) {
           const query = this.buildRangeQuery(consoComparison, 'consommation_energie')
           if (query) strictConditions.push(query)
         }
@@ -200,9 +150,9 @@ class DPELegacyService {
       // Émissions GES ou classe
       if (searchRequest.gesClass) {
         strictConditions.push(`classe_estimation_ges:"${searchRequest.gesClass.toUpperCase()}"`)
-      } else if (searchRequest.emissionGES) {
+      } else if (searchRequest.emissionGES != null) {
         const gesComparison = this.parseComparisonValue(searchRequest.emissionGES)
-        if (gesComparison && gesComparison.value > 0) {
+        if (gesComparison && gesComparison.value >= 0) {
           const query = this.buildRangeQuery(gesComparison, 'estimation_ges')
           if (query) strictConditions.push(query)
         }
@@ -224,11 +174,9 @@ class DPELegacyService {
       // Surface avec tolérance ±1% pour la recherche stricte
       if (searchRequest.surfaceHabitable) {
         const surfaceComparison = this.parseComparisonValue(searchRequest.surfaceHabitable)
-        if (surfaceComparison && surfaceComparison.value > 0) {
+        if (surfaceComparison && (surfaceComparison.value > 0 || surfaceComparison.operator !== '=')) {
           if (surfaceComparison.operator === '=') {
-            const minSurface = Math.round(surfaceComparison.value * 0.99)
-            const maxSurface = Math.round(surfaceComparison.value * 1.01)
-            strictConditions.push(`surface_thermique_lot:[${minSurface} TO ${maxSurface}]`)
+            strictConditions.push(buildNumericQuery(surfaceComparison, 'surface_thermique_lot', { percent: 1 }))
           } else {
             const query = this.buildRangeQuery(surfaceComparison, 'surface_thermique_lot')
             if (query) strictConditions.push(query)
@@ -247,7 +195,7 @@ class DPELegacyService {
       if (allResults.length < 10) {
         const expandedConditions = []
 
-        expandedConditions.push(`code_insee_commune_actualise:"${inseeCodes[0]}"`)
+        expandedConditions.push(inseeCondition)
 
         if (isClassSearch) {
           if (searchRequest.energyClass) {
@@ -255,18 +203,24 @@ class DPELegacyService {
           }
           if (searchRequest.gesClass) {
             expandedConditions.push(`classe_estimation_ges:"${searchRequest.gesClass.toUpperCase()}"`)
+          } else if (searchRequest.emissionGES != null) {
+            expandedConditions.push(
+              buildNumericQuery(this.parseComparisonValue(searchRequest.emissionGES), 'estimation_ges', { percent: 5 })
+            )
           }
         } else {
           // Tolérance ±5% pour énergie/GES
           if (searchRequest.consommationEnergie) {
-            const min = Math.round(searchRequest.consommationEnergie * 0.95)
-            const max = Math.round(searchRequest.consommationEnergie * 1.05)
-            expandedConditions.push(`consommation_energie:[${min} TO ${max}]`)
+            expandedConditions.push(
+              buildNumericQuery(this.parseComparisonValue(searchRequest.consommationEnergie), 'consommation_energie', {
+                percent: 5
+              })
+            )
           }
-          if (searchRequest.emissionGES) {
-            const min = Math.round(searchRequest.emissionGES * 0.95)
-            const max = Math.round(searchRequest.emissionGES * 1.05)
-            expandedConditions.push(`estimation_ges:[${min} TO ${max}]`)
+          if (searchRequest.emissionGES != null) {
+            expandedConditions.push(
+              buildNumericQuery(this.parseComparisonValue(searchRequest.emissionGES), 'estimation_ges', { percent: 5 })
+            )
           }
         }
 
@@ -284,9 +238,11 @@ class DPELegacyService {
 
         // Tolérance de surface ±15%
         if (searchRequest.surfaceHabitable) {
-          const min = Math.round(searchRequest.surfaceHabitable * 0.85)
-          const max = Math.round(searchRequest.surfaceHabitable * 1.15)
-          expandedConditions.push(`surface_thermique_lot:[${min} TO ${max}]`)
+          expandedConditions.push(
+            buildNumericQuery(this.parseComparisonValue(searchRequest.surfaceHabitable), 'surface_thermique_lot', {
+              percent: 15
+            })
+          )
         }
 
         const expandedQuery = expandedConditions.join(' AND ')
@@ -298,8 +254,9 @@ class DPELegacyService {
       }
 
       // ÉTAPE 3 : Recherche régionale (à l'échelle du département) si encore besoin
-      if (allResults.length < 20) {
-        const deptCode = inseeCodes[0].substring(0, 2)
+      // The source's 98 file groups several territories; it is not an ADEME department.
+      if (allResults.length < 20 && departments.length === 1 && departments[0] !== '98') {
+        const deptCode = departments[0]
         const regionalConditions = []
 
         regionalConditions.push(`tv016_departement_code:"${deptCode}"`)
@@ -310,18 +267,24 @@ class DPELegacyService {
           }
           if (searchRequest.gesClass) {
             regionalConditions.push(`classe_estimation_ges:"${searchRequest.gesClass.toUpperCase()}"`)
+          } else if (searchRequest.emissionGES != null) {
+            regionalConditions.push(
+              buildNumericQuery(this.parseComparisonValue(searchRequest.emissionGES), 'estimation_ges', { percent: 10 })
+            )
           }
         } else {
           // Tolérance ±10%
           if (searchRequest.consommationEnergie) {
-            const min = Math.round(searchRequest.consommationEnergie * 0.9)
-            const max = Math.round(searchRequest.consommationEnergie * 1.1)
-            regionalConditions.push(`consommation_energie:[${min} TO ${max}]`)
+            regionalConditions.push(
+              buildNumericQuery(this.parseComparisonValue(searchRequest.consommationEnergie), 'consommation_energie', {
+                percent: 10
+              })
+            )
           }
-          if (searchRequest.emissionGES) {
-            const min = Math.round(searchRequest.emissionGES * 0.9)
-            const max = Math.round(searchRequest.emissionGES * 1.1)
-            regionalConditions.push(`estimation_ges:[${min} TO ${max}]`)
+          if (searchRequest.emissionGES != null) {
+            regionalConditions.push(
+              buildNumericQuery(this.parseComparisonValue(searchRequest.emissionGES), 'estimation_ges', { percent: 10 })
+            )
           }
         }
 
@@ -339,9 +302,11 @@ class DPELegacyService {
 
         // Tolérance de surface ±35%
         if (searchRequest.surfaceHabitable) {
-          const min = Math.round(searchRequest.surfaceHabitable * 0.65)
-          const max = Math.round(searchRequest.surfaceHabitable * 1.35)
-          regionalConditions.push(`surface_thermique_lot:[${min} TO ${max}]`)
+          regionalConditions.push(
+            buildNumericQuery(this.parseComparisonValue(searchRequest.surfaceHabitable), 'surface_thermique_lot', {
+              percent: 35
+            })
+          )
         }
 
         const regionalQuery = regionalConditions.join(' AND ')
@@ -468,6 +433,12 @@ class DPELegacyService {
    * Calculer le score de correspondance pour les résultats legacy (même logique que le service principal)
    */
   calculateMatchScore(legacyData, searchRequest) {
+    searchRequest = {
+      ...searchRequest,
+      surfaceHabitable: this.parseComparisonValue(searchRequest.surfaceHabitable)?.value,
+      consommationEnergie: this.parseComparisonValue(searchRequest.consommationEnergie)?.value,
+      emissionGES: this.parseComparisonValue(searchRequest.emissionGES)?.value
+    }
     let baseScore = 0
     let multiplier = 1.0
 
@@ -572,7 +543,7 @@ class DPELegacyService {
       }
 
       // Pénalité GES
-      if (searchRequest.emissionGES && legacyData.estimation_ges) {
+      if (searchRequest.emissionGES != null && legacyData.estimation_ges != null) {
         const gesDiff = Math.abs(legacyData.estimation_ges - searchRequest.emissionGES)
 
         if (gesDiff === 0) {
@@ -595,6 +566,12 @@ class DPELegacyService {
    * Obtenir les raisons de correspondance pour l'affichage
    */
   getMatchReasons(legacyData, searchRequest) {
+    searchRequest = {
+      ...searchRequest,
+      surfaceHabitable: this.parseComparisonValue(searchRequest.surfaceHabitable)?.value,
+      consommationEnergie: this.parseComparisonValue(searchRequest.consommationEnergie)?.value,
+      emissionGES: this.parseComparisonValue(searchRequest.emissionGES)?.value
+    }
     const reasons = []
 
     const isClassSearch = searchRequest.energyClass && !searchRequest.consommationEnergie
@@ -626,7 +603,7 @@ class DPELegacyService {
         reasons.push(`Consommation exacte: ${searchRequest.consommationEnergie} kWh/m²/an`)
       }
 
-      if (searchRequest.emissionGES === legacyData.estimation_ges) {
+      if (searchRequest.emissionGES != null && searchRequest.emissionGES === legacyData.estimation_ges) {
         reasons.push(`GES exact: ${searchRequest.emissionGES} kgCO²/m²/an`)
       }
     }

@@ -1,0 +1,54 @@
+name: Recover a reviewed OVH release
+
+on:
+  workflow_dispatch:
+    inputs:
+      reviewed_commit:
+        description: 'Exact reviewed main commit containing this recovery tool'
+        type: string
+        required: true
+      release_id:
+        description: 'Private recovery release ID printed by the original deploy run'
+        type: string
+        required: true
+      expected_index_sha256:
+        description: 'Current live index SHA-256 from a fresh read-only preflight'
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  rollback:
+    name: Restore the private snapshot without deleting retained assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    if: github.ref == 'refs/heads/main'
+    environment: ovh-production
+    concurrency:
+      group: localiserbien-production
+      cancel-in-progress: false
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    # Recovery deliberately does not depend on a fresh frontend build or network
+    # dependency installation. Test this checked-out tool before giving it secrets.
+    - name: Test recovery logic offline
+      run: python3 -m unittest discover -s scripts/deployment -p 'test_*.py' -v
+    - name: Verify snapshot and live files, then recover via FTPS
+      run: |
+        python3 scripts/deployment/ovh_release.py rollback \
+          --reviewed-commit "$REVIEWED_COMMIT" \
+          --expected-index "$EXPECTED_INDEX" \
+          --release-id "$RECOVERY_RELEASE_ID"
+      env:
+        REVIEWED_COMMIT: ${{ inputs.reviewed_commit }}
+        EXPECTED_INDEX: ${{ inputs.expected_index_sha256 }}
+        RECOVERY_RELEASE_ID: ${{ inputs.release_id }}
+        OVH_RELEASE_ENABLED: ${{ vars.OVH_RELEASE_ENABLED }}
+        OVH_PRIVATE_BACKUP_CONFIRMED: ${{ vars.OVH_PRIVATE_BACKUP_CONFIRMED }}
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}

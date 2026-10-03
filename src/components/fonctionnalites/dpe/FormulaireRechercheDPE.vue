@@ -1,20 +1,24 @@
 <template>
   <div class="max-w-4xl mx-auto">
     <!-- Formulaire de recherche DPE -->
-    <div class="bg-gray-50/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 mb-8 transition-all duration-500 border border-gray-100/50 dark:border-gray-700/50">
-      <div class="text-center mb-6">
-        <p class="text-lg text-gray-800 dark:text-gray-200 font-medium">Localiser une annonce immobilière grâce aux données de son DPE</p>
+    <div class="search-panel p-4 sm:p-8">
+      <div class="mb-5 sm:mb-7">
+        <h1 class="search-heading">Retrouver un bien grâce à son DPE</h1>
+        <p class="search-description">Recopiez les critères de l’annonce. Gratuit, sans compte.</p>
       </div>
-      <form @submit.prevent="handleSubmit" class="space-y-6" novalidate>
+      <form @submit.prevent="handleSubmit" class="space-y-5 sm:space-y-6" novalidate>
         <!-- Responsive grid: one field per line on mobile, flex on larger screens -->
-        <div class="grid grid-cols-1 md:flex md:flex-wrap items-start gap-4 lg:gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 items-start gap-5 sm:gap-6">
           <!-- Code postal ou commune (en premier) -->
-          <div class="w-full md:flex-1 md:min-w-[180px]">
-            <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
+          <div class="min-w-0">
+            <label for="search-commune" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
               Commune
             </label>
             <input 
               v-model="formData.commune"
+                id="search-commune"
+                :aria-invalid="!!communeError"
+                :aria-describedby="communeError ? 'search-commune-error' : undefined"
               type="text" 
               placeholder="ex : 13080 ou Lyon"
               @blur="touchedFields.commune = true"
@@ -25,16 +29,20 @@
                   : 'border-gray-200 dark:border-gray-700 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400'
               ]"
             />
+            <p v-if="communeError" id="search-commune-error" class="field-error">{{ communeError === true ? 'Indiquez une commune ou un code postal.' : communeError }}</p>
           </div>
 
           <!-- Surface (en deuxième) -->
-          <div class="w-full md:flex-1 md:min-w-[120px]">
-            <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
+          <div class="min-w-0">
+            <label for="search-surface" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
               Surface
             </label>
             <div class="relative">
               <input 
                 v-model="formData.surface"
+                id="search-surface"
+                :aria-invalid="!!surfaceError"
+                :aria-describedby="surfaceError ? 'search-surface-error' : undefined"
                 type="text" 
                 placeholder="ex : 100"
                 @input="validateSurfaceInput"
@@ -50,53 +58,57 @@
                 m²
               </span>
             </div>
+            <p v-if="surfaceError" id="search-surface-error" class="field-error">{{ surfaceError === true ? 'Indiquez la surface.' : surfaceError }}</p>
             <!-- Property type selector -->
-            <div class="mt-1">
+            <div class="mt-2">
               <div class="flex gap-1">
                 <button
                   type="button"
-                  tabindex="-1"
+
                   @click="selectPropertyType('maison')"
                   aria-label="Rechercher une maison"
                   :aria-pressed="formData.typeBien === 'maison'"
                   :class="[
-                    'w-6 h-6 text-xs rounded font-semibold transition-all flex items-center justify-center',
+                    'property-option border transition-colors',
                     formData.typeBien === 'maison'
                       ? 'bg-blue-600 text-white shadow-sm'
                       : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                   ]"
                   title="Maison"
                 >
-                  <Home class="w-3.5 h-3.5" />
+                  Maison
                 </button>
                 <button
                   type="button"
-                  tabindex="-1"
+
                   @click="selectPropertyType('appartement')"
                   aria-label="Rechercher un appartement"
                   :aria-pressed="formData.typeBien === 'appartement'"
                   :class="[
-                    'w-6 h-6 text-xs rounded font-semibold transition-all flex items-center justify-center',
+                    'property-option border transition-colors',
                     formData.typeBien === 'appartement'
-                      ? 'bg-purple-600 text-white shadow-sm'
+                      ? 'bg-blue-600 text-white'
                       : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                   ]"
                   title="Appartement"
                 >
-                  <Building2 class="w-3.5 h-3.5" />
+                  Appartement
                 </button>
               </div>
             </div>
           </div>
 
           <!-- Consommation énergétique (en troisième) -->
-          <div class="w-full md:flex-1 md:min-w-[140px]">
-            <label class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
+          <div class="min-w-0">
+            <label for="search-consommation" class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-2">
               Consommation énergétique
             </label>
             <div class="relative">
               <input 
                 v-model="formData.consommation"
+                id="search-consommation"
+                :aria-invalid="!!consommationError"
+                :aria-describedby="consommationError ? 'search-consommation-error' : undefined"
                 type="text" 
                 :placeholder="selectedEnergyClass ? '' : 'ex : 250'"
                 @input="validateConsommationInput"
@@ -113,20 +125,22 @@
                 kWh/m²/an
               </span>
             </div>
+            <p v-if="consommationError" id="search-consommation-error" class="field-error">{{ consommationError === true ? 'Indiquez une consommation ou choisissez une classe.' : consommationError }}</p>
             <!-- Sélection par classe énergétique -->
-            <div class="mt-1">
-              <div class="flex gap-1 flex-wrap">
+            <div class="mt-2">
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Classe indiquée dans l’annonce</p>
+              <div class="class-options">
                 <button
                   v-for="classe in ['A', 'B', 'C', 'D', 'E', 'F', 'G']"
                   :key="'energy-' + classe"
                   type="button"
-                  tabindex="-1"
+
                   @click="selectEnergyClass(classe)"
                   :aria-label="`Classe énergétique ${classe}`"
-                  :aria-pressed="selectedEnergyClass === classe || getEnergyClassFromValue(formData.consommation) === classe"
+                  :aria-pressed="selectedEnergyClass === classe"
                   :class="[
-                    'px-1.5 py-0.5 text-xs rounded font-semibold transition-all',
-                    selectedEnergyClass === classe || getEnergyClassFromValue(formData.consommation) === classe
+                    'class-option border transition-colors',
+                    selectedEnergyClass === classe
                       ? getEnergyClassColor(classe) + ' shadow-sm'
                       : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                   ]"
@@ -142,16 +156,20 @@
           </div>
 
           <!-- GES optionnel (en quatrième) -->
-          <div class="w-full md:flex-1 md:min-w-[140px]">
-            <label class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
+          <div class="min-w-0">
+            <label for="search-ges" class="block text-sm font-medium text-gray-500 dark:text-gray-300 mb-2">
               GES <span class="text-xs text-gray-400">(optionnel)</span>
             </label>
             <div class="relative">
               <input 
                 v-model="formData.ges"
+                id="search-ges"
+                :aria-invalid="!!gesError"
+                :aria-describedby="gesError ? 'search-ges-error' : undefined"
                 type="text" 
                 :placeholder="selectedGESClass ? '' : 'ex : 58'"
                 @input="validateGESInput"
+                @blur="touchedFields.ges = true"
                 :disabled="selectedGESClass !== null"
                 class="w-full px-4 py-3 pr-28 text-base bg-gray-50/60 dark:bg-gray-900/30 border border-gray-200/80 dark:border-gray-700/80 rounded-2xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all placeholder-gray-400 dark:placeholder-gray-300 text-gray-900 dark:text-gray-100 no-spinners disabled:opacity-50 disabled:cursor-not-allowed"
               />
@@ -159,18 +177,22 @@
                 kgCO₂/m²/an
               </span>
             </div>
+            <p v-if="gesError" id="search-ges-error" class="field-error">{{ gesError }}</p>
             <!-- Sélection par classe GES -->
-            <div class="mt-1">
-              <div class="flex gap-1 flex-wrap">
+            <div class="mt-2">
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Classe indiquée dans l’annonce</p>
+              <div class="class-options">
                 <button
                   v-for="classe in ['A', 'B', 'C', 'D', 'E', 'F', 'G']"
                   :key="'ges-' + classe"
                   type="button"
-                  tabindex="-1"
+
                   @click="selectGESClass(classe)"
+                  :aria-label="`Classe GES ${classe}`"
+                  :aria-pressed="selectedGESClass === classe"
                   :class="[
-                    'px-1.5 py-0.5 text-xs rounded font-semibold transition-all',
-                    selectedGESClass === classe || getGESClassFromValue(formData.ges) === classe
+                    'class-option border transition-colors',
+                    selectedGESClass === classe
                       ? getGESClassColor(classe) + ' shadow-sm'
                       : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                   ]"
@@ -191,12 +213,11 @@
         <div class="mt-6">
           <button 
             type="submit"
-            :disabled="isPartiallyFilled && !isFormValid"
-            class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center"
+            :disabled="isLoading || (isPartiallyFilled && !isFormValid)"
+            class="btn-primary w-full sm:w-auto sm:min-w-[240px] flex items-center justify-center"
           >
             <span v-if="!isLoading" class="flex items-center">
-              <Search class="w-5 h-5 mr-2" />
-              <span class="text-lg">Localiser</span>
+              <span>{{ isPartiallyFilled ? 'Localiser' : 'Localiser un exemple' }}</span>
             </span>
             <span v-else class="flex items-center">
               <Loader2 class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" />
@@ -205,6 +226,8 @@
           </button>
         </div>
         
+        <p class="text-sm text-gray-500 dark:text-gray-400"><router-link to="/informations" class="quiet-link underline">Où trouver ces informations dans l’annonce ?</router-link></p>
+
         <!-- Error message display -->
         <div v-if="errorMessage" class="mt-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-4">
           <div class="flex">
@@ -238,18 +261,14 @@
 </style>
 
 <script>
-import { AlertCircle, Building2, Home, Loader2, MapPin, Search } from 'lucide-vue-next'
-import { getGESClass as _getGESClassFromThresholds } from '../../../utils/dpe-thresholds.js'
+import { AlertCircle, Loader2 } from 'lucide-vue-next'
+import { numericSearchInputError, parseNumericSearchInput } from '../../../utils/numericSearchInput.js'
 
 export default {
   name: 'DPESearchForm',
   components: {
-    Search,
     Loader2,
-    MapPin,
-    AlertCircle,
-    Home,
-    Building2
+    AlertCircle
   },
   emits: ['search'],
   data() {
@@ -277,26 +296,35 @@ export default {
       touchedFields: {
         commune: false,
         surface: false,
-        consommation: false
+        consommation: false,
+        ges: false
       }
     }
   },
   computed: {
-    isFormValid() {
-      // Analyser les valeurs numériques pour validation
-      const surfaceValue = this.parseNumericValue(this.formData.surface)
-      const consommationValue = this.parseNumericValue(this.formData.consommation)
+    numericErrors() {
+      return {
+        surface: numericSearchInputError(this.formData.surface, {
+          requiredMessage: 'Indiquez la surface.',
+          minimum: 10,
+          minimumMessage: 'Minimum 10 m²'
+        }),
+        consommation: this.selectedEnergyClass
+          ? null
+          : numericSearchInputError(this.formData.consommation, {
+              requiredMessage: 'Indiquez une consommation ou choisissez une classe.',
+              minimum: 10,
+              minimumMessage: 'Minimum 10 kWh/m²/an'
+            }),
+        ges: this.selectedGESClass ? null : numericSearchInputError(this.formData.ges)
+      }
+    },
 
-      return (
-        (this.formData.consommation || this.selectedEnergyClass) &&
-        (!consommationValue ||
-          consommationValue >= 10 ||
-          this.formData.consommation?.includes('<') ||
-          this.formData.consommation?.includes('>')) &&
+    isFormValid() {
+      return Boolean(
         this.formData.commune &&
-        this.formData.commune.length >= 2 &&
-        this.formData.surface &&
-        (surfaceValue >= 10 || this.formData.surface?.includes('<') || this.formData.surface?.includes('>'))
+          this.formData.commune.trim().length >= 2 &&
+          !Object.values(this.numericErrors).some(Boolean)
       )
     },
 
@@ -321,25 +349,17 @@ export default {
     },
 
     surfaceError() {
-      if (!this.touchedFields.surface) return null
-      if (!this.formData.surface) return true
-      const surfaceValue = this.parseNumericValue(this.formData.surface)
-      if (surfaceValue && surfaceValue < 10 && !this.formData.surface?.includes('<')) {
-        return 'Minimum 10 m²'
-      }
-      return null
+      if (!this.touchedFields.surface && !parseNumericSearchInput(this.formData.surface).error) return null
+      return this.numericErrors.surface
     },
 
     consommationError() {
-      if (!this.touchedFields.consommation) return null
-      if (!this.formData.consommation && !this.selectedEnergyClass) {
-        return true
-      }
-      const consommationValue = this.parseNumericValue(this.formData.consommation)
-      if (consommationValue && consommationValue < 10 && !this.formData.consommation?.includes('<')) {
-        return 'Minimum 10 kWh/m²/an'
-      }
-      return null
+      if (!this.touchedFields.consommation && !parseNumericSearchInput(this.formData.consommation).error) return null
+      return this.numericErrors.consommation
+    },
+
+    gesError() {
+      return this.numericErrors.ges
     }
   },
   watch: {
@@ -375,7 +395,8 @@ export default {
         }
       }
 
-      // Vérifier si le formulaire est valide (avec les données personnalisées ou d'exemple)
+      // Also guard programmatic submits, not only the disabled submit button.
+      this.touchedFields = { commune: true, surface: true, consommation: true, ges: true }
       if (!this.isFormValid) return
 
       this.isLoading = true
@@ -455,24 +476,6 @@ export default {
       return colors[classe]
     },
 
-    // Déterminer la classe énergétique à partir de la valeur
-    getEnergyClassFromValue(value) {
-      if (!value || this.selectedEnergyClass) return null
-      if (value <= 50) return 'A'
-      if (value <= 90) return 'B'
-      if (value <= 150) return 'C'
-      if (value <= 230) return 'D'
-      if (value <= 330) return 'E'
-      if (value <= 450) return 'F'
-      return 'G'
-    },
-
-    // Déterminer la classe GES à partir de la valeur
-    getGESClassFromValue(value) {
-      if (!value || this.selectedGESClass) return null
-      return _getGESClassFromThresholds(value)
-    },
-
     // Sélection du type de bien
     selectPropertyType(type) {
       if (this.formData.typeBien === type) {
@@ -482,43 +485,21 @@ export default {
       }
     },
 
-    // Méthodes de validation pour les champs de saisie
+    // Keep the raw input visible. Validation explains unsupported values.
     validateSurfaceInput(event) {
-      const value = event.target.value
-      // Autoriser les nombres et les opérateurs < >
-      const cleaned = value.replace(/[^0-9<>]/g, '')
-      this.formData.surface = cleaned
-      event.target.value = cleaned
+      this.formData.surface = event.target.value
     },
 
     validateConsommationInput(event) {
-      const value = event.target.value
-      // Autoriser les nombres et les opérateurs < >
-      const cleaned = value.replace(/[^0-9<>]/g, '')
-      this.formData.consommation = cleaned
-      event.target.value = cleaned
+      this.formData.consommation = event.target.value
     },
 
     validateGESInput(event) {
-      const value = event.target.value
-      // Autoriser les nombres et les opérateurs < >
-      const cleaned = value.replace(/[^0-9<>]/g, '')
-      this.formData.ges = cleaned
-      event.target.value = cleaned
+      this.formData.ges = event.target.value
     },
 
-    // Analyser les valeurs numériques à partir de chaînes avec des opérateurs
     parseNumericValue(value) {
-      if (!value) return null
-      // Si c'est déjà un nombre, le retourner
-      if (typeof value === 'number') return value
-      // Si ça contient < ou >, retourner la chaîne telle quelle pour que le service la gère
-      if (typeof value === 'string' && (value.includes('<') || value.includes('>'))) {
-        return value // Le service devra gérer les opérateurs
-      }
-      // Sinon analyser comme un nombre
-      const parsed = parseInt(value, 10)
-      return Number.isNaN(parsed) ? null : parsed
+      return parseNumericSearchInput(value).value
     }
   }
 }

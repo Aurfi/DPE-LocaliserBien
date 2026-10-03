@@ -29,6 +29,9 @@ export default defineConfig(({ mode }) => {
   })
 
   return {
+    // Geography indexes are default imports. Avoid tens of thousands of unused
+    // named exports and parse their compact payload only when the module loads.
+    json: { namedExports: false, stringify: true },
     plugins: [
       vue(),
       processTemplates(),
@@ -40,18 +43,35 @@ export default defineConfig(({ mode }) => {
           }
         }
       }),
-      // Bundle analyzer - generates stats.html after build
-      visualizer({
-        filename: 'dist/stats.html',
-        open: false,
-        gzipSize: true,
-        brotliSize: true
-      }),
+      // Opt-in developer report, kept outside the public build and PWA cache.
+      ...(process.env.ANALYZE === 'true'
+        ? [visualizer({ filename: 'reports/bundle-stats.html', open: false, gzipSize: true, brotliSize: true })]
+        : []),
       // PWA: installable app without offline caching (runtime caching disabled)
       VitePWA({
         registerType: 'autoUpdate',
         injectRegister: 'auto',
-        workbox: { runtimeCaching: [] },
+        manifest: {
+          name: env.VITE_SITE_NAME || 'LocaliserBien',
+          short_name: env.VITE_SITE_NAME || 'LocaliserBien',
+          description:
+            'Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France.',
+          lang: 'fr-FR',
+          start_url: '/',
+          scope: '/',
+          display: 'standalone',
+          theme_color: '#f7f8fa',
+          background_color: '#f7f8fa',
+          icons: [
+            { src: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+            { src: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' }
+          ]
+        },
+        workbox: {
+          runtimeCaching: [],
+          globIgnores: ['**/stats.html', '**/bundle-stats.html', '**/commune-name-departments.json-*.js'],
+          navigateFallbackAllowlist: [/^\/(?:(?:informations|mentions-legales|faq)\/?)?(?:\?.*)?$/]
+        },
         includeAssets: [
           'favicon.ico',
           'favicon.svg',
@@ -59,7 +79,7 @@ export default defineConfig(({ mode }) => {
           'android-chrome-192x192.png',
           'android-chrome-512x512.png'
         ]
-        // Using existing public/manifest.json
+        // The plugin generates this manifest.webmanifest; no separate manifest.json.
       })
     ],
     resolve: {

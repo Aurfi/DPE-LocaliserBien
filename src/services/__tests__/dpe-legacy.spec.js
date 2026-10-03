@@ -12,12 +12,7 @@ vi.mock('../../stores/useDepartements.js', () => ({
   }))
 }))
 
-vi.mock('../../utils/utilsGeo.js', () => ({
-  getDepartmentFromPostalCode: vi.fn()
-}))
-
 import { useDepartements } from '../../stores/useDepartements.js'
-import { getDepartmentFromPostalCode } from '../../utils/utilsGeo.js'
 import DPELegacyService from '../dpe-legacy.service.js'
 
 // Données de test réutilisables
@@ -72,7 +67,7 @@ describe('DPELegacyService', () => {
   beforeEach(() => {
     mockLoadDepartment = vi.fn()
     useDepartements.mockReturnValue({ loadDepartment: mockLoadDepartment })
-    getDepartmentFromPostalCode.mockReset()
+
     service = new DPELegacyService()
   })
 
@@ -100,18 +95,15 @@ describe('DPELegacyService', () => {
 
     describe('recherche par code postal (5 chiffres)', () => {
       it('doit retourner le code INSEE de la commune correspondante', async () => {
-        getDepartmentFromPostalCode.mockReturnValue('75')
         mockLoadDepartment.mockResolvedValue(makeDeptData([makeCommune('75001', 'Paris 1er', ['75001'])]))
 
         const result = await service.getINSEECodes('75001')
 
-        expect(getDepartmentFromPostalCode).toHaveBeenCalledWith('75001')
+        expect(mockLoadDepartment).toHaveBeenCalledWith('75')
         expect(result).toEqual(['75001'])
       })
 
-      it('doit retourner un tableau vide si getDepartmentFromPostalCode retourne null', async () => {
-        getDepartmentFromPostalCode.mockReturnValue(null)
-
+      it('doit retourner un tableau vide pour un code postal inconnu', async () => {
         const result = await service.getINSEECodes('99999')
 
         expect(result).toEqual([])
@@ -119,7 +111,6 @@ describe('DPELegacyService', () => {
       })
 
       it('doit retourner un tableau vide si le département ne se charge pas', async () => {
-        getDepartmentFromPostalCode.mockReturnValue('75')
         mockLoadDepartment.mockResolvedValue(null)
 
         const result = await service.getINSEECodes('75001')
@@ -128,7 +119,6 @@ describe('DPELegacyService', () => {
       })
 
       it('doit retourner un tableau vide si aucune commune ne correspond au code postal', async () => {
-        getDepartmentFromPostalCode.mockReturnValue('13')
         mockLoadDepartment.mockResolvedValue(makeDeptData([makeCommune('13001', 'Marseille', ['13001'])]))
 
         const result = await service.getINSEECodes('13100')
@@ -136,8 +126,7 @@ describe('DPELegacyService', () => {
         expect(result).toEqual([])
       })
 
-      it('doit prendre la commune avec la plus haute population pour les codes postaux multi-communes', async () => {
-        getDepartmentFromPostalCode.mockReturnValue('13')
+      it('doit conserver toutes les communes des codes postaux multi-communes', async () => {
         mockLoadDepartment.mockResolvedValue(
           makeDeptData([
             makeCommune('13100', 'Aix-Petite', ['13100'], 5000),
@@ -148,11 +137,10 @@ describe('DPELegacyService', () => {
 
         const result = await service.getINSEECodes('13100')
 
-        expect(result).toEqual(['13101'])
+        expect(result).toEqual(['13100', '13101', '13102'])
       })
 
       it('doit retourner un tableau avec un seul code pour une commune unique', async () => {
-        getDepartmentFromPostalCode.mockReturnValue('33')
         mockLoadDepartment.mockResolvedValue(makeDeptData([makeCommune('33000', 'Bordeaux', ['33000'], 250000)]))
 
         const result = await service.getINSEECodes('33000')
@@ -161,7 +149,6 @@ describe('DPELegacyService', () => {
       })
 
       it("doit retourner un tableau vide si la commune n'a pas de codesPostaux", async () => {
-        getDepartmentFromPostalCode.mockReturnValue('69')
         mockLoadDepartment.mockResolvedValue(makeDeptData([{ code: '69001', nom: 'Lyon', population: 500000 }]))
 
         const result = await service.getINSEECodes('69001')
@@ -200,8 +187,8 @@ describe('DPELegacyService', () => {
 
       it('doit trouver une commune en ignorant les espaces et les tirets', async () => {
         mockLoadDepartment.mockImplementation(async deptCode => {
-          if (deptCode === '06') {
-            return makeDeptData([makeCommune('06123', 'Saint-Martin', ['06600'])])
+          if (['32', '54', '65', '67', '978'].includes(deptCode)) {
+            return makeDeptData([makeCommune('32123', 'Saint-Martin', ['32300'])])
           }
           return null
         })
@@ -209,7 +196,7 @@ describe('DPELegacyService', () => {
         // "saint martin" (sans tiret) doit correspondre à "Saint-Martin"
         const result = await service.getINSEECodes('saint martin')
 
-        expect(result).toEqual(['06123'])
+        expect(result).toEqual(['32123'])
       })
 
       it('doit retourner un tableau vide si la commune est introuvable dans tous les départements', async () => {
@@ -234,13 +221,13 @@ describe('DPELegacyService', () => {
         expect(result).toEqual(['02999'])
       })
 
-      it('doit itérer les 97 codes de département (01 à 95 plus la Corse)', async () => {
+      it('ne doit charger aucun département pour un nom absent de l’index', async () => {
         mockLoadDepartment.mockResolvedValue(null)
 
         await service.getINSEECodes('NomInexistant')
 
-        // 95 départements (01-95) + 2A + 2B = 97 appels au total (si aucun trouvé)
-        expect(mockLoadDepartment).toHaveBeenCalledTimes(97)
+        // Aucun balayage de fichiers, notamment le département 20 inexistant.
+        expect(mockLoadDepartment).not.toHaveBeenCalled()
       })
 
       it('doit chercher dans la Corse : codes 2A et 2B', async () => {
@@ -258,7 +245,7 @@ describe('DPELegacyService', () => {
         expect(result).toEqual(['2A004'])
       })
 
-      it("doit s'arrêter dès la première commune trouvée (retour anticipé)", async () => {
+      it('doit charger uniquement le département indexé pour Nice', async () => {
         let callCount = 0
         mockLoadDepartment.mockImplementation(async deptCode => {
           callCount++
@@ -270,8 +257,7 @@ describe('DPELegacyService', () => {
 
         await service.getINSEECodes('Nice')
 
-        // Doit s'arrêter après '06' (6e département), pas après 97
-        expect(callCount).toBeLessThan(97)
+        expect(callCount).toBe(1)
       })
 
       it('doit gérer les départements retournant des données sans tableau communes', async () => {
@@ -288,18 +274,16 @@ describe('DPELegacyService', () => {
 
     describe('codes Corse spéciaux via code postal', () => {
       it('doit trouver une commune avec le code postal 20000 (Corse-du-Sud)', async () => {
-        getDepartmentFromPostalCode.mockReturnValue('2A')
         mockLoadDepartment.mockResolvedValue(makeDeptData([makeCommune('2A004', 'Ajaccio', ['20000'])]))
 
         const result = await service.getINSEECodes('20000')
 
-        expect(getDepartmentFromPostalCode).toHaveBeenCalledWith('20000')
+        expect(mockLoadDepartment).toHaveBeenCalledTimes(1)
         expect(mockLoadDepartment).toHaveBeenCalledWith('2A')
         expect(result).toEqual(['2A004'])
       })
 
       it('doit trouver une commune avec le code postal 20200 (Haute-Corse)', async () => {
-        getDepartmentFromPostalCode.mockReturnValue('2B')
         mockLoadDepartment.mockResolvedValue(makeDeptData([makeCommune('2B033', 'Bastia', ['20200'])]))
 
         const result = await service.getINSEECodes('20200')
@@ -821,13 +805,10 @@ describe('DPELegacyService', () => {
 
   describe('searchLegacy - flux de recherche complet', () => {
     beforeEach(() => {
-      getDepartmentFromPostalCode.mockReturnValue('75')
       mockLoadDepartment.mockResolvedValue(makeDeptData([makeCommune('75001', 'Paris 1er', ['75001'])]))
     })
 
     it("doit retourner un message d'erreur si la commune est introuvable", async () => {
-      getDepartmentFromPostalCode.mockReturnValue(null)
-
       const result = await service.searchLegacy({ commune: '99999' })
 
       expect(result.results).toEqual([])

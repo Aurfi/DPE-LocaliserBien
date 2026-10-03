@@ -5,9 +5,9 @@ Application web pour localiser des biens immobiliers en France à partir des don
 ## ✨ Fonctionnalités
 
 - **Recherche précise** : Trouvez un bien par surface, consommation énergétique et localisation
-- **Visualisation carte** : Intégration Google Maps gratuite (sans clé API)
+- **Lien cartographique** : Ouverture volontaire de Google Maps, sans carte intégrée
 - **Mode sombre** : Interface adaptative jour/nuit
-- **100% gratuit** : Aucune donnée personnelle collectée
+- **100% gratuit** : Sans compte ni publicité ; historique local facultatif
 - **Responsive** : Optimisé pour mobile, tablette et desktop
 
 ## 🚀 Installation
@@ -86,10 +86,16 @@ Licence Ouverte 2.0 (Etalab) - Voir le fichier [LICENSE](LICENSE) pour plus de d
 
 ## 🔒 Vie Privée
 
-- ✅ Aucune donnée personnelle collectée
+- ✅ Historique local désactivé par défaut, activable et effaçable
 - ✅ Pas de cookies de tracking
 - ✅ Pas de compte utilisateur requis
 - ✅ Code source transparent
+
+Les recherches interrogent directement l’ADEME et, selon le mode, l’IGN : ces
+services reçoivent les critères nécessaires et les informations techniques de
+connexion. L’application ne charge pas Google Fonts ou une carte Google intégrée.
+Les journaux de l’hébergement et la messagerie doivent être documentés séparément.
+La notice du candidat reste un projet, à finaliser avant la mise en production.
 
 ## 📝 Commandes Disponibles
 
@@ -99,7 +105,17 @@ npm run build      # Build pour production
 npm run preview    # Prévisualiser le build
 npm run lint       # Vérifier le code avec Biome
 npm run test       # Lancer les tests
+npm run test:e2e   # Construire puis tester le navigateur sur le build de production
 ```
+
+Les tests Playwright utilisent des réponses API synthétiques et bloquent les
+service workers. Ils vérifient l’interface et les requêtes, pas la disponibilité
+des API, Apache/OVH, les mises à jour du service worker ou de vrais téléphones.
+Les navigateurs Playwright doivent être disponibles. Un Chromium déjà installé
+peut être sélectionné avec `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` et les projets
+`--project=chromium --project='Mobile Chrome'`. Les validations sur appareils réels,
+les transitions du service worker et les contrôles OVH restent distincts.
+Voir `OVH_DEPLOYMENT.md` avant toute mise en production.
 
 ## 🤝 Contribution
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 py-6">
+  <div class="max-w-7xl mx-auto py-2">
     <!-- Error state -->
     <EtatErreur
       v-if="searchResult.searchStrategy === 'ERROR'"
@@ -22,6 +22,10 @@
       :sortOptions="sortOptions"
       @close="$emit('newSearch')"
     />
+
+    <p v-if="searchResult.searchStrategy !== 'ERROR' && filteredResults.length > 0" data-score-explanation class="text-sm text-gray-600 dark:text-gray-400 mb-5">
+      Le score de similarité compare les critères saisis. Même à 100/100, il ne confirme pas l’identité du bien.
+    </p>
 
     <!-- Empty state -->
     <EtatVide
@@ -112,6 +116,7 @@ import {
   getFloorDisplay,
   getPropertyType
 } from '../../../utils/formateursDPE'
+import { parseSearchComparison } from '../../../utils/numericSearchInput.js'
 import { getGeoportailUrl, getGoogleMapsEmbedUrl } from '../../../utils/utilsCartes'
 import RetourEnHaut from '../../base/RetourEnHaut.vue'
 import CarteBien from '../../partages/CarteBien.vue'
@@ -158,9 +163,7 @@ export default {
       hiddenResults,
       showDetails,
       closeModal,
-      showRawDataForResult,
-      setupEventListeners,
-      cleanupEventListeners
+      showRawDataForResult
     } = useGestionResultats()
 
     return {
@@ -172,9 +175,7 @@ export default {
       hiddenResults,
       showDetails,
       closeModal,
-      showRawDataForResult,
-      setupEventListeners,
-      cleanupEventListeners
+      showRawDataForResult
     }
   },
   data() {
@@ -281,12 +282,6 @@ export default {
       return uniqueEtages.size > 1
     }
   },
-  mounted() {
-    this.setupEventListeners()
-  },
-  unmounted() {
-    this.cleanupEventListeners()
-  },
   methods: {
     // Import formatting functions from utils
     extractYearFromValue,
@@ -298,22 +293,22 @@ export default {
 
     getMatchStatusText() {
       if (!this.searchResult?.results?.length) return ''
-      const perfectMatches = this.searchResult.results.filter(r => r.matchScore === 100).length
-      if (perfectMatches === 0) {
-        return 'Aucune correspondance parfaite'
-      } else if (perfectMatches === 1) {
-        return 'Une correspondance parfaite'
+      const strongMatches = this.searchResult.results.filter(r => r.matchScore === 100).length
+      if (strongMatches === 0) {
+        return 'Aucune correspondance forte avec vos critères'
+      } else if (strongMatches === 1) {
+        return 'Une correspondance forte avec vos critères'
       } else {
-        return `${perfectMatches} correspondances parfaites - vérifiez la vue satellite`
+        return `${strongMatches} correspondances fortes avec vos critères`
       }
     },
 
     getMatchStatusClass() {
       if (!this.searchResult?.results?.length) return 'text-gray-500 dark:text-gray-400'
-      const perfectMatches = this.searchResult.results.filter(r => r.matchScore === 100).length
-      if (perfectMatches === 0) {
+      const strongMatches = this.searchResult.results.filter(r => r.matchScore === 100).length
+      if (strongMatches === 0) {
         return 'text-amber-600 dark:text-amber-400 font-medium'
-      } else if (perfectMatches === 1) {
+      } else if (strongMatches === 1) {
         return 'text-green-600 dark:text-green-400 font-medium'
       } else {
         return 'text-orange-600 dark:text-orange-400 font-medium'
@@ -376,17 +371,10 @@ export default {
     getScoreTooltip(result) {
       if (!this.searchCriteria) return ''
       if (result.matchScore && Math.round(result.matchScore) === 100) {
-        return 'Correspondance exacte'
+        return 'Correspondance forte avec vos critères'
       }
       const diffs = []
-      const parseValue = value => {
-        if (!value) return null
-        const strValue = value.toString().trim()
-        if (strValue.startsWith('<') || strValue.startsWith('>')) {
-          return parseInt(strValue.substring(1), 10)
-        }
-        return parseInt(strValue, 10)
-      }
+      const parseValue = value => parseSearchComparison(value)?.value ?? null
 
       if (this.searchCriteria.surfaceHabitable && result.surfaceHabitable) {
         const searchSurface = parseValue(this.searchCriteria.surfaceHabitable)
@@ -410,9 +398,9 @@ export default {
         }
       }
 
-      if (this.searchCriteria.emissionGES && result.emissionGES) {
+      if (this.searchCriteria.emissionGES != null && result.emissionGES != null) {
         const searchGES = parseValue(this.searchCriteria.emissionGES)
-        if (searchGES) {
+        if (searchGES !== null) {
           const diff = Math.round(result.emissionGES - searchGES)
           if (diff !== 0) {
             const sign = diff > 0 ? '+' : ''

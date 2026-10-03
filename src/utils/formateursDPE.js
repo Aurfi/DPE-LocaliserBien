@@ -2,21 +2,31 @@
  * Utility functions for formatting DPE data
  */
 
-/**
- * Extract year from a value that can be a simple year or a range (e.g., "1948-1974")
- */
+// Construction fields can contain legacy codes or invalid years. Without a
+// source dictionary, never interpret such a code as a year or a period.
+function constructionPeriod(value) {
+  if (typeof value !== 'string' && typeof value !== 'number') return null
+  const text = String(value).trim()
+  const periodShape =
+    /^(?:\d{4}|\d{4}\s*[-–—/]\s*\d{4}|(?:avant|après|apres|depuis|[àa] partir de)\s+\d{4}|\d{4}\s+et\s+(?:avant|après|apres)|(?:de|entre)\s+\d{4}\s+(?:[àa]|et)\s+\d{4})$/i
+  if (!periodShape.test(text)) return null
+  const years = text.match(/\d{4}/g).map(Number)
+  const currentYear = new Date().getFullYear()
+  if (years.some(year => year < 1000 || year > currentYear)) return null
+  if (years.length === 2 && years[0] > years[1]) return null
+  return { text, firstYear: years[0] }
+}
+
+/** Extract a sortable year only from a valid construction year or period. */
 export function extractYearFromValue(value) {
-  if (!value) return null
-  const strValue = String(value)
-  const match = strValue.match(/(\d{4})/)
-  return match ? parseInt(match[1], 10) : null
+  return constructionPeriod(value)?.firstYear ?? null
 }
 
 /**
  * Format year display (keep ranges like "1948-1974")
  */
 export function formatYearDisplay(value) {
-  return value || 'N/A'
+  return constructionPeriod(value)?.text ?? 'Inconnue'
 }
 
 /**
