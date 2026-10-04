@@ -410,3 +410,90 @@ jobs:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+
+  diagnose-ovh-ftps-once:
+    name: Diagnose existing OVH FTPS connection without writes
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # Read-only diagnosis of the exact failed attempt. No release or credential
+    # changes; later pushes and pull requests cannot activate this job.
+    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main' && github.event_name == 'push' && github.event.before == 'ec05cb110f440ce8ca63000ee2c5e4959964139e'
+    environment: ovh-production
+    concurrency:
+      group: localiserbien-production
+      cancel-in-progress: false
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+        persist-credentials: false
+    - name: Verify the diagnostic-only revision
+      run: |
+        python3 - <<'PYCODE'
+        import os, subprocess
+        parent = 'ec05cb110f440ce8ca63000ee2c5e4959964139e'
+        parents = subprocess.check_output(['git', 'rev-list', '--parents', '-n', '1', 'HEAD'], text=True).split()
+        assert parents == [os.environ['GITHUB_SHA'], parent], 'Diagnostic must directly follow the failed attempt.'
+        changed = subprocess.check_output(['git', 'diff', '--name-only', parent, 'HEAD'], text=True).splitlines()
+        assert changed == ['.github/workflows/ci.yml'], 'Only this diagnostic workflow may change.'
+        PYCODE
+    - name: Report safe FTPS failure stage without writes or secret output
+      run: |
+        python3 - <<'PYCODE'
+        import ftplib, json, re, ssl, sys
+        sys.path.insert(0, 'scripts/deployment')
+        import ovh_release as release
+        phase = 'local-validation'
+        original = ftplib.FTP_TLS
+        class ObservedFTP(original):
+            pass
+        def observe(method, label):
+            operation = getattr(original, method)
+            def traced(self, *args, **kwargs):
+                global phase
+                phase = label
+                return operation(self, *args, **kwargs)
+            return traced
+        for method, label in {
+            'connect': 'control-connect', 'auth': 'control-tls',
+            'login': 'authenticate', 'prot_p': 'protect-data',
+            'pwd': 'resolve-root', 'cwd': 'select-root',
+            'mlsd': 'list-target', 'retrbinary': 'read-live-file',
+        }.items():
+            setattr(ObservedFTP, method, observe(method, label))
+        ftplib.FTP_TLS = ObservedFTP
+        ftp = None
+        try:
+            ftp = release.connect()
+            remote = release.Remote(ftp)
+            release.preflight(remote)
+        except release.ReleaseError as error:
+            print('Stopped: ' + str(error), file=sys.stderr)
+            sys.exit(1)
+        except (ftplib.Error, OSError, ValueError, KeyError, TypeError) as error:
+            # Only allowlisted phase/type and numeric error codes. Never log raw
+            # exceptions, hostnames, usernames, passwords, or live file contents.
+            detail = {'stage': phase, 'category': 'secure-transfer-failed'}
+            if isinstance(error, ssl.SSLCertVerificationError):
+                detail['category'] = 'tls-certificate-verification'
+                detail['verify_code'] = error.verify_code
+            elif isinstance(error, ssl.SSLError):
+                detail['category'] = 'tls-protocol'
+            elif isinstance(error, ftplib.Error):
+                detail['category'] = 'ftp-protocol'
+                code = str(error)[:3]
+                if re.fullmatch(r'[1-5][0-9]{2}', code):
+                    detail['reply_code'] = code
+            elif isinstance(error, OSError):
+                detail['category'] = 'network-or-filesystem'
+                detail['errno'] = error.errno
+            print('Stopped: ' + json.dumps(detail, sort_keys=True), file=sys.stderr)
+            sys.exit(1)
+        finally:
+            if ftp is not None:
+                ftp.close()
+        PYCODE
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
