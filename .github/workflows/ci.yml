@@ -653,3 +653,44 @@ jobs:
         PYCODE
       env:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
+
+  capture-ovh-public-fingerprint-once:
+    name: Capture public SSH fingerprints without login
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main' && github.event_name == 'push' && github.event.before == 'e92e6fb1908c6ce8b09f10716469e7d27d85fad7'
+    environment: ovh-production
+    concurrency:
+      group: localiserbien-production
+      cancel-in-progress: false
+    steps:
+    - name: Read only public host keys from the already configured server
+      run: |
+        python3 - <<'PYCODE'
+        import base64, hashlib, json, os, re, subprocess, sys
+        host = os.environ.get('FTP_SERVER', '')
+        if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9.-]*', host):
+            sys.exit('Stopped: configured hostname is unavailable or invalid.')
+        try:
+            result = subprocess.run(['ssh-keyscan', '-T', '8', '-p', '22', '-t', 'ed25519,ecdsa,rsa', host],
+                                    capture_output=True, text=True, timeout=30, check=False)
+            keys = set()
+            for line in result.stdout.splitlines():
+                fields = line.split()
+                if len(fields) != 3 or fields[0].lower() not in (host.lower(), '[' + host.lower() + ']:22'):
+                    continue
+                if fields[1] not in ('ssh-ed25519', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'ssh-rsa'):
+                    continue
+                raw = base64.b64decode(fields[2], validate=True)
+                fingerprint = 'SHA256:' + base64.b64encode(hashlib.sha256(raw).digest()).decode().rstrip('=')
+                keys.add((fields[1], fingerprint))
+            if not keys:
+                sys.exit('Stopped: no public SSH host key observed.')
+            print(json.dumps({'authentication_attempted': False, 'writes_attempted': False,
+                              'independently_verified': False,
+                              'public_host_keys': [{'type': kind, 'fingerprint': fingerprint} for kind, fingerprint in sorted(keys)]}, sort_keys=True))
+        except (OSError, ValueError, subprocess.SubprocessError):
+            sys.exit('Stopped: public host-key capture failed; raw details are omitted.')
+        PYCODE
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
