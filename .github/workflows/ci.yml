@@ -263,8 +263,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     needs: [lint-and-test, security-check]
-    # Pushes and PRs NEVER publish. Configure required reviewers and main-only
-    # branch access on this environment before enabling production releases.
+    # This general release job remains manual-only. The bounded one-release
+    # job below also preserves the existing protected production environment.
     if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.operation == 'deploy'
     environment: ovh-production
     concurrency:
@@ -314,6 +314,99 @@ jobs:
         EXPECTED_INDEX: ${{ inputs.expected_index_sha256 }}
         HTACCESS_POLICY: ${{ inputs.htaccess }}
         OVH_RELEASE_ENABLED: ${{ vars.OVH_RELEASE_ENABLED }}
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+
+  deploy-reviewed-edf392c:
+    name: Publish requested edf392c release over verified FTPS
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    needs: [lint-and-test, security-check, pwa-lifecycle]
+    # One authorized release only: an immediate workflow-only child of this
+    # reviewed main commit. Later pushes and pull requests cannot activate it.
+    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main' && github.event_name == 'push' && github.event.before == 'edf392cff080df120361a22bee59b0ee2d5f226e'
+    environment: ovh-production
+    concurrency:
+      group: localiserbien-production
+      cancel-in-progress: false
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+        persist-credentials: false
+    - name: Verify bounded release scope
+      run: |
+        python3 - <<'PYCODE'
+        import json, os, subprocess
+        from pathlib import Path
+        reviewed = 'edf392cff080df120361a22bee59b0ee2d5f226e'
+        parents = subprocess.check_output(['git', 'rev-list', '--parents', '-n', '1', 'HEAD'], text=True).split()
+        assert parents == [os.environ['GITHUB_SHA'], reviewed], 'Release must directly follow reviewed main.'
+        changed = subprocess.check_output(['git', 'diff', '--name-only', reviewed, 'HEAD'], text=True).splitlines()
+        assert changed == ['.github/workflows/ci.yml'], 'Only this release workflow may differ from reviewed main.'
+        plan = json.loads(Path('scripts/deployment/public-release-plan.json').read_text())
+        assert plan['source_commit'] == '68c927b466726839fd7f30990d35355f35ea75fd'
+        assert plan['candidate_sha256'] == 'db458630402cf9d46ed8197f055bba46aa7cdff06f8e7c650bd7ed1d506bc3bb'
+        assert len(plan['files']) == 139
+        PYCODE
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24.x'
+    - name: Download the exact candidate exercised by this run's browser tests
+      uses: actions/download-artifact@v4
+      with:
+        name: build-artifacts
+        path: dist/
+    - name: Require identical reviewed public build bytes
+      run: |
+        node scripts/check-built-site.mjs
+        python3 - <<'PYCODE'
+        import sys
+        sys.path.insert(0, 'scripts/deployment')
+        from ovh_release import build_digest, inventory
+        files = inventory('dist')
+        assert len(files) == 139
+        assert build_digest(files) == 'db458630402cf9d46ed8197f055bba46aa7cdff06f8e7c650bd7ed1d506bc3bb', 'Build differs from the reviewed artifact.'
+        PYCODE
+    - name: Check out immutable public recovery sources
+      uses: actions/checkout@v4
+      with:
+        ref: 68c927b466726839fd7f30990d35355f35ea75fd
+        path: .release-baseline
+        persist-credentials: false
+    - name: Read fresh live fingerprint without changing production
+      id: fresh-preflight
+      run: |
+        python3 scripts/deployment/ovh_release.py preflight > "$RUNNER_TEMP/ovh-preflight.json"
+        cat "$RUNNER_TEMP/ovh-preflight.json"
+        python3 - <<'PYCODE'
+        import json, os
+        from pathlib import Path
+        result = json.loads((Path(os.environ['RUNNER_TEMP']) / 'ovh-preflight.json').read_text())
+        plan = json.loads(Path('scripts/deployment/public-release-plan.json').read_text())
+        expected = next(entry['before'] for entry in plan['files'] if entry['path'] == 'index.html')
+        assert result['index_sha256'] == expected, 'Live index differs from the reviewed recovery baseline.'
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+            output.write('index_sha256=' + expected + '\n')
+        PYCODE
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+    - name: Promote reviewed public files while preserving existing configuration
+      run: |
+        python3 scripts/deployment/ovh_release.py deploy \
+          --reviewed-commit "$GITHUB_SHA" \
+          --baseline-root .release-baseline \
+          --expected-index "$EXPECTED_INDEX" \
+          --htaccess preserve \
+          --release-id "github-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${GITHUB_SHA:0:12}"
+      env:
+        EXPECTED_INDEX: ${{ steps.fresh-preflight.outputs.index_sha256 }}
+        # Explicit authorization for this one bounded release; no persistent
+        # environment variable, permission, or ordinary deploy gate is changed.
+        OVH_RELEASE_ENABLED: reviewed-and-approved
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
