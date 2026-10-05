@@ -516,15 +516,15 @@ class WorkflowSafetyTests(unittest.TestCase):
         self.assertNotRegex(self.job('preflight'), r'(?m)^    needs:')
         self.assertNotIn('npm ', self.job('preflight'))
 
-    def test_deploy_still_requires_passing_build_and_explicit_main_dispatch(self):
+    def test_deploy_requires_all_tests_and_explicit_main_release_intent(self):
         deploy = self.job('deploy')
-        self.assertIn('    needs: [lint-and-test, security-check]', deploy.splitlines())
-        self.assertIn("    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.operation == 'deploy'",
-                      deploy.splitlines())
+        self.assertIn('    needs: [lint-and-test, security-check, pwa-lifecycle, deployment-safety, release-intent]', deploy.splitlines())
+        self.assertIn("github.ref == 'refs/heads/main'", deploy)
+        self.assertIn("needs.release-intent.outputs.enabled == 'true'", deploy)
         self.assertIn('    environment: ovh-production', deploy.splitlines())
         self.assertIn('      cancel-in-progress: false', deploy.splitlines())
-        for guard in ('OVH_RELEASE_ENABLED',):
-            self.assertIn(guard + ': ${{ vars.' + guard + ' }}', deploy)
+        self.assertIn('OVH_RELEASE_ENABLED: reviewed-and-approved', deploy)
+        self.assertIn('release_intent.py --require-active', deploy)
         self.assertIn('permissions:\n  contents: read\n', self.ci)
 
     def test_security_policy_is_required_and_retains_raw_audit_evidence(self):
@@ -538,8 +538,8 @@ class WorkflowSafetyTests(unittest.TestCase):
 
     def test_public_sources_are_pinned_without_private_backup_prerequisite(self):
         deploy = self.job('deploy')
-        self.assertIn('ref: ${{ steps.public-baseline.outputs.commit }}', deploy)
-        self.assertIn('--baseline-root .release-baseline', deploy)
+        self.assertIn('ref: ${{ needs.release-intent.outputs.source_commit }}', deploy)
+        self.assertIn('path: .release-baseline', deploy)
         self.assertNotIn('OVH_PRIVATE_BACKUP_CONFIRMED', deploy)
         self.assertIn('persist-credentials: false', deploy)
 
@@ -568,3 +568,4 @@ class WorkflowSafetyTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
