@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "source_commit": "3c1e57ded6683646643d3424f9b224f08a0f0d7e",
-  "candidate_sha256": "612613673305356f4116bffc0ceca8c5e3520aa16bb4e483866b6f325036a9f2",
+  "source_commit": "1742eaed62fe7a0b1e0aa59c6c0e53663836cc01",
+  "candidate_sha256": "5e8d0ca25e4a95be87c48a03428ab7ffd60a7e0ebd1cb7063a464df90c9e9a07",
   "files": [
     {
       "path": ".htaccess",
@@ -70,9 +70,9 @@
       "source": null
     },
     {
-      "path": "assets/index-CRXvP7TI.js",
-      "before": "5166efe103f6f2cae380566c30f1d75cd365c290151799133ea6754d837e3854",
-      "after": "5166efe103f6f2cae380566c30f1d75cd365c290151799133ea6754d837e3854",
+      "path": "assets/index-D7GliiP2.js",
+      "before": null,
+      "after": "4851afdc28774f3cadf100543913bd23b0910593499ff2f600b6b65ce72fe5a8",
       "source": null
     },
     {
@@ -809,21 +809,21 @@
     },
     {
       "path": "index.html",
-      "before": "f4c1d84b63aba14517e4829bd9162250a0f08915b4c43c5383c2fbbbc79299e1",
-      "after": "0129cbb33bed4e915affb7ff203acdd608d4bbd58c9fadb2b781a52ab9617f39",
-      "source": "e2e-pwa/fixtures/production-217ee828/static/index.html"
+      "before": "0129cbb33bed4e915affb7ff203acdd608d4bbd58c9fadb2b781a52ab9617f39",
+      "after": "74b32c619c0788041b873487216376a79e45ce6f6377427990930b6a70fffa59",
+      "source": "e2e-pwa/fixtures/production-612e77a9/static/index.html"
     },
     {
       "path": "manifest.example.json",
-      "before": "ad080430036a2ea0afee762e26a07abbbfa595aeefed373eea5c5df0cd250a14",
+      "before": "eb696a1818fbcc4d3fabeabac284a23b94e9a9502cbc8d4fbe4a3e032aa0975c",
       "after": "eb696a1818fbcc4d3fabeabac284a23b94e9a9502cbc8d4fbe4a3e032aa0975c",
-      "source": "e2e-pwa/fixtures/production-217ee828/static/manifest.example.json"
+      "source": null
     },
     {
       "path": "manifest.webmanifest",
-      "before": "a67ab9d4649f8566c917a5e9cd7e98724ea796e3a39030a32f83b599cab7ab14",
+      "before": "bf5cfb448487fc399cdbb7dcc844ccb14af7b035cb5123c53edf6f8b72b855d8",
       "after": "bf5cfb448487fc399cdbb7dcc844ccb14af7b035cb5123c53edf6f8b72b855d8",
-      "source": "e2e-pwa/fixtures/production-217ee828/static/manifest.webmanifest.txt"
+      "source": null
     },
     {
       "path": "noise.svg",
@@ -857,21 +857,21 @@
     },
     {
       "path": "sitemap.xml",
-      "before": "bf0e752bbdd23b07367e4e2fe37fc8bc87b8746578b42104363058e3c3f055ea",
+      "before": "f9a1dceb292581c4378a29c3494ab1ef3180ae75b742440a0a28f5942388e8cb",
       "after": "f9a1dceb292581c4378a29c3494ab1ef3180ae75b742440a0a28f5942388e8cb",
-      "source": "e2e-pwa/fixtures/production-217ee828/static/sitemap.xml"
+      "source": null
     },
     {
       "path": "sitemap.xml.template",
-      "before": "ac76e37680b25be6864b01e3a0c5674f9bcafd6eea10fb844f5a65d2f58d9e95",
+      "before": "03f22e168512969bc7645bae89596a0b6d5d855631416f6f5fb15b04d15f6648",
       "after": "03f22e168512969bc7645bae89596a0b6d5d855631416f6f5fb15b04d15f6648",
-      "source": "e2e-pwa/fixtures/production-217ee828/static/sitemap.xml.template"
+      "source": null
     },
     {
       "path": "sw.js",
-      "before": "7a0515290c4b1ec131faa3178af37d36f0075ace17ea9d9e6df7b3c9173ecf25",
-      "after": "c662f2b99e6ca83c111fca1b799412310eb3bd08299465431fe28a6c0c3cb05e",
-      "source": "e2e-pwa/fixtures/production-217ee828/static/sw.min.js"
+      "before": "c662f2b99e6ca83c111fca1b799412310eb3bd08299465431fe28a6c0c3cb05e",
+      "after": "cd52d99ec5730148fe7a37ab68dc0d772f28c5b16a9e61540322e933505f2e5b",
+      "source": "e2e-pwa/fixtures/production-612e77a9/static/sw.min.js"
     },
     {
       "path": "workbox-9c191d2f.js",
