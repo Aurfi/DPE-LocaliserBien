@@ -694,3 +694,104 @@ jobs:
         PYCODE
       env:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
+
+  deploy-reviewed-release-sftp-once:
+    name: Publish requested release over pinned SFTP
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    needs: [lint-and-test, security-check, pwa-lifecycle]
+    # One release only, activated only after explicit owner approval of the
+    # observed first-use Ed25519 fingerprint. Later pushes cannot activate it.
+    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main' && github.event_name == 'push' && github.event.before == '42ba735b75483b18d5a094e2748fc3fe296172a9'
+    environment: ovh-production
+    concurrency:
+      group: localiserbien-production
+      cancel-in-progress: false
+    env:
+      OVH_SFTP_HOST_KEY_TYPE: ssh-ed25519
+      OVH_SFTP_HOST_KEY_SHA256: SHA256:6053kGsbCzj0rOIpNAz9SNbToAfBc/rUoX/LlnG1AhY
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        # Include the reviewed application commit through the diagnostic chain.
+        fetch-depth: 6
+        persist-credentials: false
+    - name: Verify exact release parent and application scope
+      run: |
+        python3 - <<'PYCODE'
+        import json, os, subprocess
+        from pathlib import Path
+        reviewed = 'edf392cff080df120361a22bee59b0ee2d5f226e'
+        parent = '42ba735b75483b18d5a094e2748fc3fe296172a9'
+        parents = subprocess.check_output(['git', 'rev-list', '--parents', '-n', '1', 'HEAD'], text=True).split()
+        assert parents == [os.environ['GITHUB_SHA'], parent], 'Release must directly follow the fingerprint capture.'
+        changed = subprocess.check_output(['git', 'diff', '--name-only', reviewed, 'HEAD'], text=True).splitlines()
+        assert changed == ['.github/workflows/ci.yml', 'scripts/deployment/ovh_sftp_release.py', 'tests/deployment_sftp/test_ovh_sftp_release.py'], 'Application, build, recovery plan, and existing release engine must remain unchanged.'
+        plan = json.loads(Path('scripts/deployment/public-release-plan.json').read_text())
+        assert plan['source_commit'] == '68c927b466726839fd7f30990d35355f35ea75fd'
+        assert plan['candidate_sha256'] == 'db458630402cf9d46ed8197f055bba46aa7cdff06f8e7c650bd7ed1d506bc3bb'
+        assert len(plan['files']) == 139
+        PYCODE
+    - name: Install pinned SFTP tool in this protected job only
+      run: python3 -m pip install --disable-pip-version-check 'paramiko==5.0.0'
+    - name: Verify exact-pin authentication and guarded SFTP release behavior offline
+      run: python3 -m unittest discover -s tests/deployment_sftp -p 'test_*.py' -v
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24.x'
+    - name: Download the exact candidate exercised by this run's browser tests
+      uses: actions/download-artifact@v4
+      with:
+        name: build-artifacts
+        path: dist/
+    - name: Require identical reviewed public build bytes
+      run: |
+        node scripts/check-built-site.mjs
+        python3 - <<'PYCODE'
+        import sys
+        sys.path.insert(0, 'scripts/deployment')
+        from ovh_release import build_digest, inventory
+        files = inventory('dist')
+        assert len(files) == 139
+        assert build_digest(files) == 'db458630402cf9d46ed8197f055bba46aa7cdff06f8e7c650bd7ed1d506bc3bb', 'Build differs from the reviewed artifact.'
+        PYCODE
+    - name: Check out immutable public recovery sources
+      uses: actions/checkout@v4
+      with:
+        ref: 68c927b466726839fd7f30990d35355f35ea75fd
+        path: .release-baseline
+        persist-credentials: false
+    - name: Read fresh SFTP fingerprint without changing production
+      id: fresh-sftp-preflight
+      run: |
+        python3 scripts/deployment/ovh_sftp_release.py preflight > "$RUNNER_TEMP/ovh-sftp-preflight.json"
+        cat "$RUNNER_TEMP/ovh-sftp-preflight.json"
+        python3 - <<'PYCODE'
+        import json, os
+        from pathlib import Path
+        result = json.loads((Path(os.environ['RUNNER_TEMP']) / 'ovh-sftp-preflight.json').read_text())
+        plan = json.loads(Path('scripts/deployment/public-release-plan.json').read_text())
+        expected = next(entry['before'] for entry in plan['files'] if entry['path'] == 'index.html')
+        assert result['index_sha256'] == expected, 'Live index differs from the reviewed recovery baseline.'
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+            output.write('index_sha256=' + expected + '\n')
+        PYCODE
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+    - name: Promote reviewed public files while preserving existing configuration
+      run: |
+        python3 scripts/deployment/ovh_sftp_release.py deploy \
+          --reviewed-commit "$GITHUB_SHA" \
+          --baseline-root .release-baseline \
+          --expected-index "$EXPECTED_INDEX" \
+          --htaccess preserve \
+          --release-id "github-sftp-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${GITHUB_SHA:0:12}"
+      env:
+        EXPECTED_INDEX: ${{ steps.fresh-sftp-preflight.outputs.index_sha256 }}
+        # Applies only to this explicitly authorized, exact-artifact release.
+        OVH_RELEASE_ENABLED: reviewed-and-approved
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
