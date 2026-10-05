@@ -215,7 +215,9 @@ class WorkflowTests(unittest.TestCase):
     def test_rollback_retains_manual_production_and_variable_gates(self):
         rollback = (ROOT / '.github/workflows/ovh-rollback.yml').read_text()
         self.assertIn('workflow_dispatch:', rollback)
-        self.assertNotRegex(rollback, r'(?m)^  (push|pull_request):')
+        manual_job = rollback.split('  rollback:', 1)[1].split('  recovery-intent:', 1)[0]
+        self.assertIn("github.event_name == 'workflow_dispatch'", manual_job)
+        self.assertIn('OVH_RELEASE_ENABLED: ${{ vars.OVH_RELEASE_ENABLED }}', manual_job)
         self.assertIn('environment: ovh-production', rollback)
         self.assertIn('group: localiserbien-production', rollback)
         self.assertIn('cancel-in-progress: false', rollback)

@@ -1,6 +1,8 @@
 name: Recover a reviewed OVH release
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       reviewed_commit:
@@ -33,7 +35,7 @@ jobs:
     name: Restore verified public before-images without deleting retained assets
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main'
+    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch'
     environment: ovh-production
     concurrency:
       group: localiserbien-production
@@ -108,3 +110,76 @@ jobs:
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
 
+
+  recovery-intent:
+    name: Check explicit recovery intent without hosting access
+    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      enabled: ${{ steps.intent.outputs.enabled }}
+      release_plan_commit: ${{ steps.intent.outputs.release_plan_commit }}
+      source_commit: ${{ steps.intent.outputs.source_commit }}
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - name: Activate only a new explicitly reviewed recovery-only commit
+      id: intent
+      run: python3 scripts/deployment/recovery_intent.py
+
+  recover-reviewed-intent:
+    name: Recover only the explicitly reviewed SFTP release
+    needs: [recovery-intent]
+    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main' && needs.recovery-intent.outputs.enabled == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: ovh-production
+    concurrency:
+      group: localiserbien-production
+      cancel-in-progress: false
+    env:
+      OVH_SFTP_HOST_KEY_TYPE: ssh-ed25519
+      OVH_SFTP_HOST_KEY_SHA256: SHA256:6053kGsbCzj0rOIpNAz9SNbToAfBc/rUoX/LlnG1AhY
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+    - name: Revalidate explicit recovery intent inside the protected job
+      run: python3 scripts/deployment/recovery_intent.py --require-active
+    - name: Install the existing pinned SFTP recovery dependency
+      run: python3 -m pip install --disable-pip-version-check 'paramiko==5.0.0'
+    - name: Test current release, host-pin and recovery guards before secrets
+      run: |
+        python3 -m unittest discover -s scripts/deployment -p 'test_*.py' -v
+        python3 -m unittest discover -s tests/deployment_sftp -p 'test_*.py' -v
+        python3 -m unittest discover -s tests/deployment_workflow -p 'test_*.py' -v
+    - name: Check out the exact original release plan
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ needs.recovery-intent.outputs.release_plan_commit }}
+        path: .recovery-plan
+        persist-credentials: false
+    - name: Check out immutable public recovery sources
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ needs.recovery-intent.outputs.source_commit }}
+        path: .release-baseline
+        persist-credentials: false
+    - name: Observe current main before recovery writes
+      uses: actions/checkout@v4
+      with:
+        ref: main
+        path: .latest-main
+        persist-credentials: false
+    - name: Verify original manifest and live state, then recover reviewed bytes
+      run: python3 scripts/deployment/reviewed_sftp_recovery.py
+      env:
+        # This gate applies only to a separately reviewed recovery-intent commit.
+        # It does not alter the existing manual workflow variable gate or settings.
+        OVH_RELEASE_ENABLED: reviewed-and-approved
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
