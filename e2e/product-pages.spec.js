@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test'
 import { mockPublicApis, search } from './fixtures.js'
+import { registerGuideChecks } from './guides-checks.js'
 
 // Keep the actual built app and its local geography/static files. Page fixtures
 // fulfill synthetic public API responses; everything else off-origin, including
@@ -30,6 +31,7 @@ test('presents calm, complete guidance for both search modes and DPE classes', a
     'Retrouver un bien à partir d’une annonce',
     'Explorer les biens à proximité',
     'Lire les résultats',
+    'Pour aller plus loin',
     'Questions utiles'
   ])
   await expect(main).not.toContainText(/\p{Extended_Pictographic}|projet de notice|en cours de validation|brouillon/iu)
@@ -265,3 +267,26 @@ test('explains an unknown nearby address in French and recovers after correction
   expect(queries.length).toBeGreaterThan(0)
   expect(pageErrors).toEqual([])
 })
+
+test('visible application copy omits free and no-account marketing on every main page', async ({ page }, testInfo) => {
+  await mockPublicApis(page)
+  for (const [url, title, screenshot] of [
+    ['/', 'Retrouver un bien grâce à son DPE', 'home'],
+    ['/informations', 'Guide et informations', 'information'],
+    ['/mentions-legales', 'Mentions légales et vie privée', 'legal']
+  ]) {
+    await page.goto(url)
+    await expect(page.getByRole('heading', { level: 1, name: title, exact: true })).toBeVisible()
+    // Check rendered visible text only. SEO/JSON-LD and workflow environment
+    // descriptions remain a separate, explicitly pending task.
+    expect(await page.locator('body').innerText()).not.toMatch(
+      /\bgratuit\w*|\bsans[\s,;:-]+(?:compte|inscription|abonnement)\b/i
+    )
+    await testInfo.attach(`visible-copy-${screenshot}.png`, {
+      body: await page.screenshot({ fullPage: true }),
+      contentType: 'image/png'
+    })
+  }
+})
+
+registerGuideChecks()

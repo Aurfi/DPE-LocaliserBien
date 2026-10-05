@@ -122,6 +122,20 @@ test('server cannot impersonate worker navigation fallback or expose source/cont
   assert.equal(request(fixture.handle, '/__pwa_probe__.html').headers['content-type'], 'text/html; charset=utf-8')
 })
 
+test('real directory indexes are served without introducing a catch-all fallback', () => {
+  const candidate = release('new')
+  candidate.files.set('guides/real/index.html', { bytes: '<h1>Guide</h1>', sha256: 'guide-only' })
+  const fixture = createReleaseHandler({ baseline: release('old'), candidate })
+  assert.equal(request(fixture.handle, '/guides/real/').status, 404)
+  fixture.promote()
+  const response = request(fixture.handle, '/guides/real/')
+  assert.equal(response.status, 200)
+  assert.equal(response.body, '<h1>Guide</h1>')
+  assert.equal(response.headers['content-type'], 'text/html; charset=utf-8')
+  assert.equal(request(fixture.handle, '/guides/missing/').status, 404)
+  assert.equal(request(fixture.handle, '/private/results/').status, 404)
+})
+
 test('API fixtures are fresh, synthetic, and transport fails when offline', () => {
   const fixture = createReleaseHandler({ baseline: release('old'), candidate: release('new') })
   for (const sequence of [1, 2]) {

@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { defineConfig, loadEnv } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import { guideSitemapEntries, staticGuides } from './scripts/guides/generate.mjs'
 import { htmlEnvironmentDefines } from './scripts/html/environment.mjs'
 import { assertNoBuildToolRuntimeModules, runtimeModuleGraph } from './scripts/security/runtime-module-policy.mjs'
 
@@ -19,7 +20,9 @@ export default defineConfig(({ mode }) => {
     buildStart() {
       // Traiter sitemap.xml.template
       const sitemapTemplate = fs.readFileSync(path.resolve('public/sitemap.xml.template'), 'utf-8')
-      const sitemapContent = sitemapTemplate.replace(/{{SITE_URL}}/g, env.VITE_SITE_URL || 'https://example.com')
+      const sitemapContent = sitemapTemplate
+        .replace(/{{SITE_URL}}/g, env.VITE_SITE_URL || 'https://example.com')
+        .replace('{{GUIDE_URLS}}', guideSitemapEntries(env.VITE_SITE_URL))
       fs.writeFileSync(path.resolve('public/sitemap.xml'), sitemapContent)
 
       // Traiter robots.txt.template
@@ -39,6 +42,7 @@ export default defineConfig(({ mode }) => {
     define: htmlEnvironmentDefines(env),
     plugins: [
       vue(),
+      staticGuides(env),
       {
         name: 'dependency-runtime-boundary',
         apply: 'build',
@@ -78,7 +82,14 @@ export default defineConfig(({ mode }) => {
         },
         workbox: {
           runtimeCaching: [],
-          globIgnores: ['**/stats.html', '**/bundle-stats.html', '**/commune-name-departments.json-*.js'],
+          globIgnores: [
+            '**/stats.html',
+            '**/bundle-stats.html',
+            '**/commune-name-departments.json-*.js',
+            'guides/**',
+            'documentation/**',
+            'assets/guides-*.css'
+          ],
           navigateFallbackAllowlist: [/^\/(?:(?:informations|mentions-legales|faq)\/?)?(?:\?.*)?$/]
         },
         includeAssets: [

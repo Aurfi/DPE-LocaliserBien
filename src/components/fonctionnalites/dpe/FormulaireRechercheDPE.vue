@@ -4,7 +4,7 @@
     <div class="search-panel p-4 sm:p-8">
       <div class="mb-5 sm:mb-7">
         <h1 class="search-heading">Retrouver un bien grâce à son DPE</h1>
-        <p class="search-description">Recopiez les critères de l’annonce. Gratuit, sans compte.</p>
+        <p class="search-description">Recopiez les critères de l’annonce.</p>
       </div>
       <form @submit.prevent="handleSubmit" class="space-y-5 sm:space-y-6" novalidate>
         <!-- Responsive grid: one field per line on mobile, flex on larger screens -->
