@@ -20,6 +20,11 @@ on:
         type: string
         required: true
 
+      expected_htaccess_sha256:
+        description: 'Reviewed preserved live .htaccess SHA-256'
+        type: string
+        required: true
+
 permissions:
   contents: read
 
@@ -28,23 +33,36 @@ jobs:
     name: Restore verified public before-images without deleting retained assets
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    if: github.ref == 'refs/heads/main'
+    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main'
     environment: ovh-production
     concurrency:
       group: localiserbien-production
       cancel-in-progress: false
+    env:
+      OVH_SFTP_HOST_KEY_TYPE: ssh-ed25519
+      OVH_SFTP_HOST_KEY_SHA256: SHA256:6053kGsbCzj0rOIpNAz9SNbToAfBc/rUoX/LlnG1AhY
     steps:
     - uses: actions/checkout@v4
       with:
         persist-credentials: false
-    # Recovery deliberately does not depend on a fresh frontend build or network
-    # dependency installation. Test this checked-out tool before giving it secrets.
+    # Recovery does not depend on a fresh frontend build. Install and test only
+    # the existing pinned SFTP transport before exposing hosting secrets.
+    - name: Install the existing pinned SFTP recovery dependency
+      run: python3 -m pip install --disable-pip-version-check 'paramiko==5.0.0'
     - name: Test recovery logic offline
-      run: python3 -m unittest discover -s scripts/deployment -p 'test_*.py' -v
-    - name: Validate the original release commit before checkout
-      run: python3 -c 'import os,re; assert re.fullmatch(r"[a-f0-9]{40}", os.environ["RECOVERY_PLAN_COMMIT"])'
+      run: |
+        python3 -m unittest discover -s scripts/deployment -p 'test_*.py' -v
+        python3 -m unittest discover -s tests/deployment_sftp -p 'test_*.py' -v
+    - name: Validate recovery identity and preserved-config approval before checkout
+      run: |
+        python3 - <<'PYCODE'
+        import os, re
+        assert re.fullmatch(r'[a-f0-9]{40}', os.environ['RECOVERY_PLAN_COMMIT'])
+        assert re.fullmatch(r'[a-f0-9]{64}', os.environ['EXPECTED_HTACCESS'])
+        PYCODE
       env:
         RECOVERY_PLAN_COMMIT: ${{ inputs.release_plan_commit }}
+        EXPECTED_HTACCESS: ${{ inputs.expected_htaccess_sha256 }}
     - name: Load the original reviewed plan even after main advances
       uses: actions/checkout@v4
       with:
@@ -69,21 +87,24 @@ jobs:
         ref: ${{ steps.public-baseline.outputs.commit }}
         path: .release-baseline
         persist-credentials: false
-    - name: Verify the original public plan and live files, then recover via FTPS
+    - name: Verify the original public plan and live files, then recover via pinned SFTP
       run: |
-        python3 scripts/deployment/ovh_release.py rollback \
+        python3 scripts/deployment/ovh_sftp_release.py rollback \
           --reviewed-commit "$REVIEWED_COMMIT" \
           --plan .recovery-plan/scripts/deployment/public-release-plan.json \
           --plan-commit "$RECOVERY_PLAN_COMMIT" \
           --baseline-root .release-baseline \
           --expected-index "$EXPECTED_INDEX" \
+          --expected-htaccess "$EXPECTED_HTACCESS" \
           --release-id "$RECOVERY_RELEASE_ID"
       env:
         REVIEWED_COMMIT: ${{ inputs.reviewed_commit }}
         EXPECTED_INDEX: ${{ inputs.expected_index_sha256 }}
+        EXPECTED_HTACCESS: ${{ inputs.expected_htaccess_sha256 }}
         RECOVERY_RELEASE_ID: ${{ inputs.release_id }}
         RECOVERY_PLAN_COMMIT: ${{ inputs.release_plan_commit }}
         OVH_RELEASE_ENABLED: ${{ vars.OVH_RELEASE_ENABLED }}
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+
