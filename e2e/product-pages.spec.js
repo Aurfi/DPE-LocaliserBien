@@ -22,6 +22,35 @@ async function openNearby(page) {
 const addressError = 'Adresse introuvable. Vérifiez la rue, la ville ou le code postal, puis réessayez.'
 const emptyGeocoder = route => route.fulfill({ json: { features: [] } })
 
+test('keeps the approved home title in source HTML, after hydration and on return navigation', async ({ page }) => {
+  const homeTitle = 'Trouver l’adresse d’une annonce avec son DPE | LocaliserBien'
+  const response = await page.goto('/')
+  expect(await response.text()).toContain(`<title>${homeTitle}</title>`)
+  await expect(page).toHaveTitle(homeTitle)
+  await expect(page.locator('meta[name="title"]')).toHaveAttribute('content', homeTitle)
+  await expect(page.locator('meta[property="og:title"]')).toHaveAttribute(
+    'content',
+    'LocaliserBien - Recherchez des correspondances DPE'
+  )
+  await expect(page.locator('meta[property="twitter:title"]')).toHaveAttribute(
+    'content',
+    'LocaliserBien - Recherchez des correspondances DPE'
+  )
+  await expect(page.locator('.site-wordmark')).toHaveText('LocaliserBien')
+  await expect(page.locator('main form').first()).toBeVisible()
+  await expect(page).toHaveTitle(homeTitle)
+  await page.getByRole('link', { name: 'Guide et informations', exact: true }).click()
+  await expect(page).toHaveTitle('Informations - Localisateur de bien immobilier')
+  await page.getByRole('link', { name: 'Mentions légales', exact: true }).click()
+  await expect(page).toHaveTitle('Mentions Légales - Localisateur de bien immobilier')
+  await page.getByRole('link', { name: 'Accueil', exact: true }).click()
+  await expect(page).toHaveTitle(homeTitle)
+  await page.goBack()
+  await expect(page).toHaveTitle('Mentions Légales - Localisateur de bien immobilier')
+  await page.goForward()
+  await expect(page).toHaveTitle(homeTitle)
+})
+
 test('presents calm, complete guidance for both search modes and DPE classes', async ({ page }) => {
   await mockPublicApis(page)
   await page.goto('/informations')

@@ -15,7 +15,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    meta: { title: "Localisateur de bien immobilier - Trouvez l'adresse d'un bien" }
+    meta: { title: import.meta.env.VITE_APP_TITLE }
   },
   {
     path: '/informations',

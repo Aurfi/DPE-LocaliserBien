@@ -84,7 +84,7 @@ jobs:
         VITE_PUBLICATION_DIRECTOR=
         VITE_ADEME_API_URL=https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines
         VITE_GEO_API_URL=https://data.geopf.fr/geocodage
-        VITE_APP_TITLE=LocaliserBien - Recherchez des correspondances DPE
+        VITE_APP_TITLE=Trouver l’adresse d’une annonce avec son DPE | LocaliserBien
         VITE_APP_DESCRIPTION=Recherchez des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien.
         VITE_APP_KEYWORDS=localisation bien immobilier,DPE,adresse bien,recherche immobilier,diagnostic performance énergétique,France,localiser bien
         VITE_OG_TITLE=LocaliserBien - Recherchez des correspondances DPE
@@ -168,7 +168,7 @@ jobs:
         # Vite preview validates config metadata; it serves the downloaded build unchanged.
         VITE_SITE_URL: "https://localiserbien.fr"
         VITE_SITE_NAME: "LocaliserBien"
-        VITE_APP_TITLE: "LocaliserBien - Recherchez des correspondances DPE"
+        VITE_APP_TITLE: "Trouver l’adresse d’une annonce avec son DPE | LocaliserBien"
         VITE_APP_DESCRIPTION: "Recherchez des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien."
         VITE_APP_KEYWORDS: "localisation bien immobilier,DPE,adresse bien,recherche immobilier,diagnostic performance énergétique,France,localiser bien"
         VITE_OG_TITLE: "LocaliserBien - Recherchez des correspondances DPE"
