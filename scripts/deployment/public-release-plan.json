@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "source_commit": "68c927b466726839fd7f30990d35355f35ea75fd",
-  "candidate_sha256": "db458630402cf9d46ed8197f055bba46aa7cdff06f8e7c650bd7ed1d506bc3bb",
+  "source_commit": "6a549df167ce06f4b36345bb2b2561674976a834",
+  "candidate_sha256": "dfe29c309a0ee3068df6f0484dcee56956afbc8ddbe051727b22f9147a574013",
   "files": [
     {
       "path": ".htaccess",
@@ -11,7 +11,7 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.txt",
-      "before": null,
+      "before": "4840bde0c00694e2ff0c67f7f8bd67c9c2316ec2d7c347a661032be830c40735",
       "after": "4840bde0c00694e2ff0c67f7f8bd67c9c2316ec2d7c347a661032be830c40735",
       "source": null
     },
@@ -19,821 +19,863 @@
       "path": "android-chrome-192x192.png",
       "before": "353f586ed6732752c517f084378b13ad9aea088f45279aba7b08823955cabc5d",
       "after": "353f586ed6732752c517f084378b13ad9aea088f45279aba7b08823955cabc5d",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/android-chrome-192x192.png"
+      "source": null
     },
     {
       "path": "android-chrome-512x512.png",
       "before": "c132aef828d3d9308651a6112ceca903710087fd7180a574bc8a9010d03f5d3f",
       "after": "c132aef828d3d9308651a6112ceca903710087fd7180a574bc8a9010d03f5d3f",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/android-chrome-512x512.png"
+      "source": null
     },
     {
       "path": "apple-touch-icon.png",
       "before": "55ae5feb53f56cdcac8fcbd074398bcf8481db8e080ded5653b7915c219849e9",
       "after": "55ae5feb53f56cdcac8fcbd074398bcf8481db8e080ded5653b7915c219849e9",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/apple-touch-icon.png"
-    },
-    {
-      "path": "assets/chunk-B6wxDx6w.js",
-      "before": null,
-      "after": "9d253cbc8dc875adcf9c581372389cd1b5fe5b0780a9a8a02794baa4e34dcffc",
       "source": null
     },
     {
-      "path": "assets/chunk-CAFAAuiI.js",
+      "path": "assets/chunk-BNQmtEyK.js",
       "before": null,
-      "after": "be4c5173328349058b67f8e08f709ad2e67790d5650647c7b9b9afe15d11eac7",
+      "after": "c89100056aeb2b62d678c7f3bc67cbd1c6fc36497860556df432c147cfd56c05",
+      "source": null
+    },
+    {
+      "path": "assets/chunk-CL52YXx_.js",
+      "before": null,
+      "after": "209bd587cc8cfef002b44aa0d34ad42c95a9ca25f87ec135f981012aba68422b",
       "source": null
     },
     {
       "path": "assets/commune-name-departments.json-Bzbps99i.js",
-      "before": null,
+      "before": "dc60f32518ede6d48164e45f474d2574185c8f4eb9e2b5b05cbc0c5610cabd03",
       "after": "dc60f32518ede6d48164e45f474d2574185c8f4eb9e2b5b05cbc0c5610cabd03",
       "source": null
     },
     {
-      "path": "assets/constructeur-recherche-ademe.service.js-DK2qiKYO.js",
+      "path": "assets/constructeur-recherche-ademe.service.js-Bhcs4Tfo.js",
       "before": null,
-      "after": "cf4f59978fe9a82924a87bcd3c14fd4491f8a32ed9c482ad7ece3f231985f345",
+      "after": "5bd1eb727629f20a0f363459fa2d66ec04d748ce34ce46883d9d49a126c49fa8",
+      "source": null
+    },
+    {
+      "path": "assets/guides-fc87aba0efac.css",
+      "before": null,
+      "after": "fc87aba0eface5dd3a7585b096d2828b2168928ac64315bad00b0d7f1e0672cb",
       "source": null
     },
     {
       "path": "assets/index-B5qvwuRl.css",
-      "before": null,
+      "before": "f5c6fefcfdb8b8b45ff6f7e984fe2304a69fd53c4534a5bb6ac98e4611e8b62e",
       "after": "f5c6fefcfdb8b8b45ff6f7e984fe2304a69fd53c4534a5bb6ac98e4611e8b62e",
       "source": null
     },
     {
-      "path": "assets/index-CiIi8r1W.js",
+      "path": "assets/index-CRXvP7TI.js",
       "before": null,
-      "after": "b427ffc25dd0e4b20080f22b50ef2acfc9dc5212d2f3143b74bfcbadf4a82fcf",
+      "after": "5166efe103f6f2cae380566c30f1d75cd365c290151799133ea6754d837e3854",
       "source": null
     },
     {
       "path": "assets/processeur-resultats-dpe.service.js-DVDJ9zaS.js",
       "before": "bae19f8e07b605b48724d0b54593947f1630e1498bf9258d1f0d2a14752266e6",
       "after": "bae19f8e07b605b48724d0b54593947f1630e1498bf9258d1f0d2a14752266e6",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/assets/processeur-resultats-dpe.service.js-DVDJ9zaS.js"
+      "source": null
     },
     {
-      "path": "assets/vue-vendor-C5aN79aV.css",
+      "path": "assets/vue-vendor-zVV11Hbz.css",
       "before": null,
-      "after": "adbb292a3f8865d7a41cfd3d05aa3d8f5d0af801845a6bbd0702030358893368",
+      "after": "6bbeaca577c0d32e00d7e6ce952dd6bdb16bf20918f5da85edf79b7f7fcc99e8",
       "source": null
     },
     {
       "path": "assets/workbox-window.prod.es5.mjs-CVj4lb2z.js",
-      "before": null,
+      "before": "0186eb8e05ce5812fcb6fd8a10bd870a93bc27b4613f9bf64d4a93c75977bf82",
       "after": "0186eb8e05ce5812fcb6fd8a10bd870a93bc27b4613f9bf64d4a93c75977bf82",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-01.json",
-      "before": null,
+      "before": "16b5bf512c983e478a93654d95d499fb04cf201a5b0fd338be662a871587694a",
       "after": "16b5bf512c983e478a93654d95d499fb04cf201a5b0fd338be662a871587694a",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-02.json",
-      "before": null,
+      "before": "d8359e6f606b3761915d19df79a58a4cc25be68ef818d4f08afda2065fe993c6",
       "after": "d8359e6f606b3761915d19df79a58a4cc25be68ef818d4f08afda2065fe993c6",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-03.json",
-      "before": null,
+      "before": "03d2bd1ccfa716f344ae41c400b7e815ab2f3f1c0a4ef46fe24ab55d9e85023a",
       "after": "03d2bd1ccfa716f344ae41c400b7e815ab2f3f1c0a4ef46fe24ab55d9e85023a",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-04.json",
-      "before": null,
+      "before": "d5c51a0da0c6894d61acee5b4696426bf797cc1d506909615db683fac4de9a80",
       "after": "d5c51a0da0c6894d61acee5b4696426bf797cc1d506909615db683fac4de9a80",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-05.json",
-      "before": null,
+      "before": "1c6412dff640b42267b58e828f41e117530b44dfea37a78e53ea1d372b1baef8",
       "after": "1c6412dff640b42267b58e828f41e117530b44dfea37a78e53ea1d372b1baef8",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-06.json",
-      "before": null,
+      "before": "3167c9d2e60f578ade5bf3d0ddd3c20b2d2c5d719f863c3b4e5b6cb95a5ac124",
       "after": "3167c9d2e60f578ade5bf3d0ddd3c20b2d2c5d719f863c3b4e5b6cb95a5ac124",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-07.json",
-      "before": null,
+      "before": "829f7db399aa7c595da54011f7e69339c636aec5ced79308d49aca3d51fd9d7b",
       "after": "829f7db399aa7c595da54011f7e69339c636aec5ced79308d49aca3d51fd9d7b",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-08.json",
-      "before": null,
+      "before": "5bce8e3a712078479b08f32b6a4706a126794a011a04d89d9f2a96335f7bd71c",
       "after": "5bce8e3a712078479b08f32b6a4706a126794a011a04d89d9f2a96335f7bd71c",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-09.json",
-      "before": null,
+      "before": "d4d27e759d7b87d61efaffaec5fa693697b2fdf018c999d7d37d2f393b35f0b6",
       "after": "d4d27e759d7b87d61efaffaec5fa693697b2fdf018c999d7d37d2f393b35f0b6",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-10.json",
-      "before": null,
+      "before": "798741ea2b86e05f756a74747c3bcc5fc8f75a241a6000239f74e96489b62b47",
       "after": "798741ea2b86e05f756a74747c3bcc5fc8f75a241a6000239f74e96489b62b47",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-11.json",
-      "before": null,
+      "before": "f0494bde38e21713778dc16d2efc30b9838f97860cfe5a01f8c1fa1c05888749",
       "after": "f0494bde38e21713778dc16d2efc30b9838f97860cfe5a01f8c1fa1c05888749",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-12.json",
-      "before": null,
+      "before": "c8c345ba32ae7aab8a5605e3421531b872e90ef6d615b563bdd8e60772853a6f",
       "after": "c8c345ba32ae7aab8a5605e3421531b872e90ef6d615b563bdd8e60772853a6f",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-13.json",
-      "before": null,
+      "before": "65a629b17bb946fa34c813ba0da26a48a725b774673954a14299e8c6e05f1dbe",
       "after": "65a629b17bb946fa34c813ba0da26a48a725b774673954a14299e8c6e05f1dbe",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-14.json",
-      "before": null,
+      "before": "4d32ea9ebb42145e48e57e150dcd8b2452b2a9a5f9972ba34b0f9be08bb4dff5",
       "after": "4d32ea9ebb42145e48e57e150dcd8b2452b2a9a5f9972ba34b0f9be08bb4dff5",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-15.json",
-      "before": null,
+      "before": "188f4d72555a12b738f33a10d7b799f6c54764430ab782114e4c6345489434c9",
       "after": "188f4d72555a12b738f33a10d7b799f6c54764430ab782114e4c6345489434c9",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-16.json",
-      "before": null,
+      "before": "6d1f7cb97b14238c93f1c084cce7c435a62133b790206ba47d42c5a80f6ef32c",
       "after": "6d1f7cb97b14238c93f1c084cce7c435a62133b790206ba47d42c5a80f6ef32c",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-17.json",
-      "before": null,
+      "before": "9b213da633a7fecff194566d9bffac034373d0c3c992e5c4894626adb4539cd6",
       "after": "9b213da633a7fecff194566d9bffac034373d0c3c992e5c4894626adb4539cd6",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-18.json",
-      "before": null,
+      "before": "404921704b3fe00a676e8a967f5565556ceb6a95beab28a0be3c0b81fb48a470",
       "after": "404921704b3fe00a676e8a967f5565556ceb6a95beab28a0be3c0b81fb48a470",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-19.json",
-      "before": null,
+      "before": "f2f90d35a7542036ea1f507c1c75b32b2a779ccab09baaac5f441adad25f8be8",
       "after": "f2f90d35a7542036ea1f507c1c75b32b2a779ccab09baaac5f441adad25f8be8",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-21.json",
-      "before": null,
+      "before": "7ea3a8dc87826804f11baa51b4e61c6358c3006b7419c3e236933f799dc1b266",
       "after": "7ea3a8dc87826804f11baa51b4e61c6358c3006b7419c3e236933f799dc1b266",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-22.json",
-      "before": null,
+      "before": "8145a183f968f3235b706ecf1af6155c0a1820cd044d214b6c2815ecec61d611",
       "after": "8145a183f968f3235b706ecf1af6155c0a1820cd044d214b6c2815ecec61d611",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-23.json",
-      "before": null,
+      "before": "abb93d25de110a1b7fb72f9cbd8d714e74c36014f9efba89c3c4266c1d319d08",
       "after": "abb93d25de110a1b7fb72f9cbd8d714e74c36014f9efba89c3c4266c1d319d08",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-24.json",
-      "before": null,
+      "before": "f7758814f5f13abc5eb629abf07b2951f8ef6c3c312b201d77f53132a05821dc",
       "after": "f7758814f5f13abc5eb629abf07b2951f8ef6c3c312b201d77f53132a05821dc",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-25.json",
-      "before": null,
+      "before": "c8850a7fcffb9b79e4c05357bb7d382bc80c28b9ab3801d744e4b0504c2aafef",
       "after": "c8850a7fcffb9b79e4c05357bb7d382bc80c28b9ab3801d744e4b0504c2aafef",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-26.json",
-      "before": null,
+      "before": "53a3de48ac00f742566caadb667ba65f0741472ec3539913d076edc77709eabc",
       "after": "53a3de48ac00f742566caadb667ba65f0741472ec3539913d076edc77709eabc",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-27.json",
-      "before": null,
+      "before": "26204e19fb80ebeef89913b6d23b94b61f6b89f16419399263e3828e69c6b66b",
       "after": "26204e19fb80ebeef89913b6d23b94b61f6b89f16419399263e3828e69c6b66b",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-28.json",
-      "before": null,
+      "before": "7bff17efdf460104ef888f3584af618f374b90ba4ce61c9d2c8c90e206991c2d",
       "after": "7bff17efdf460104ef888f3584af618f374b90ba4ce61c9d2c8c90e206991c2d",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-29.json",
-      "before": null,
+      "before": "eb57e5b37f2d9b8507580b1288bcd86399afde2a72657c2fc13261d8e925f97e",
       "after": "eb57e5b37f2d9b8507580b1288bcd86399afde2a72657c2fc13261d8e925f97e",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-2A.json",
-      "before": null,
+      "before": "f80ed98182ce9592031828c6ab5b1a9e6a4bf6dccfec899b62f5f6aa6e33c570",
       "after": "f80ed98182ce9592031828c6ab5b1a9e6a4bf6dccfec899b62f5f6aa6e33c570",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-2B.json",
-      "before": null,
+      "before": "914c30f2d5862a33c78a05643eb4c12cfde72bbca9213e8f6bdf66d11851d9e5",
       "after": "914c30f2d5862a33c78a05643eb4c12cfde72bbca9213e8f6bdf66d11851d9e5",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-30.json",
-      "before": null,
+      "before": "5b68ec9506ea0924cc8ca1f9b85a133b87bddaaba91d3b011fdb3e794eadf910",
       "after": "5b68ec9506ea0924cc8ca1f9b85a133b87bddaaba91d3b011fdb3e794eadf910",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-31.json",
-      "before": null,
+      "before": "12e39f19f1a426ff250b6bd63341f433cfe71e6b86d8931d6347b3ca62b74fdd",
       "after": "12e39f19f1a426ff250b6bd63341f433cfe71e6b86d8931d6347b3ca62b74fdd",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-32.json",
-      "before": null,
+      "before": "46dd2e55d975facf39cc00900c4eb5869ff41227384e74f0a137081c714d6b5e",
       "after": "46dd2e55d975facf39cc00900c4eb5869ff41227384e74f0a137081c714d6b5e",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-33.json",
-      "before": null,
+      "before": "5d68b5615fb48beca127eebe56f3278fd1fdbc03a86b70880e129ae717d3c5f4",
       "after": "5d68b5615fb48beca127eebe56f3278fd1fdbc03a86b70880e129ae717d3c5f4",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-34.json",
-      "before": null,
+      "before": "35ac737f219acf75e6b204e0b532b3ca434319e98425e47d74ebb175e62dc6c1",
       "after": "35ac737f219acf75e6b204e0b532b3ca434319e98425e47d74ebb175e62dc6c1",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-35.json",
-      "before": null,
+      "before": "31a01d8f0807d374ccd408dfc8b3e69c4233ba64543fb2eba8fbc8cd9ada12e8",
       "after": "31a01d8f0807d374ccd408dfc8b3e69c4233ba64543fb2eba8fbc8cd9ada12e8",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-36.json",
-      "before": null,
+      "before": "9fb813d330bfe3db454c930fc0a228ee31729c3f993aa3944a459b55e9cebc4c",
       "after": "9fb813d330bfe3db454c930fc0a228ee31729c3f993aa3944a459b55e9cebc4c",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-37.json",
-      "before": null,
+      "before": "7a3ee48f627836556e2e1dc19a7cd6f1f94b6c226cb885d10bbb7f65ea8fa9b8",
       "after": "7a3ee48f627836556e2e1dc19a7cd6f1f94b6c226cb885d10bbb7f65ea8fa9b8",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-38.json",
-      "before": null,
+      "before": "0ae670990bc74a42ef8b05cdca5deae7c84b2fb05e2c01ba79e8cb61b0eeba86",
       "after": "0ae670990bc74a42ef8b05cdca5deae7c84b2fb05e2c01ba79e8cb61b0eeba86",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-39.json",
-      "before": null,
+      "before": "159024eb4d3114d1f85eb8cb354dbec92c1fb4c054ce5077e67974af152e79ab",
       "after": "159024eb4d3114d1f85eb8cb354dbec92c1fb4c054ce5077e67974af152e79ab",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-40.json",
-      "before": null,
+      "before": "68d762741d982a74e16ccd1cd2413a5a5aa0091fcf14a46146ac51dba16bdad3",
       "after": "68d762741d982a74e16ccd1cd2413a5a5aa0091fcf14a46146ac51dba16bdad3",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-41.json",
-      "before": null,
+      "before": "6d881156369e762ac98e31f65790245b08550dedd006d437bf7eb6fe23a45005",
       "after": "6d881156369e762ac98e31f65790245b08550dedd006d437bf7eb6fe23a45005",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-42.json",
-      "before": null,
+      "before": "52f4ba381d87a7b34c711a8ebd87b541f5b13a5784f896443662dad976db61df",
       "after": "52f4ba381d87a7b34c711a8ebd87b541f5b13a5784f896443662dad976db61df",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-43.json",
-      "before": null,
+      "before": "e8cfe63102e0275eeb8b7f9131e42d6c11c83ba57fea07c51b3fa19ebd5f3a6b",
       "after": "e8cfe63102e0275eeb8b7f9131e42d6c11c83ba57fea07c51b3fa19ebd5f3a6b",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-44.json",
-      "before": null,
+      "before": "c5502bbbe2c3fcd7460f19bdea0f137675c81a331f633a1928584a7e8c30bab3",
       "after": "c5502bbbe2c3fcd7460f19bdea0f137675c81a331f633a1928584a7e8c30bab3",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-45.json",
-      "before": null,
+      "before": "f64310307712350b43224b67330fa3525fc030fc82ee6cf2e1b31199f2cb697e",
       "after": "f64310307712350b43224b67330fa3525fc030fc82ee6cf2e1b31199f2cb697e",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-46.json",
-      "before": null,
+      "before": "c692b6d3dbbcdb28065cea2141a0f6a7d0f28d1c2edd517fd6ea29a54a1f07c3",
       "after": "c692b6d3dbbcdb28065cea2141a0f6a7d0f28d1c2edd517fd6ea29a54a1f07c3",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-47.json",
-      "before": null,
+      "before": "1d6730e65981fdaf9500d133fc4691d808bfcf8734f1b6e8038c6d7fd611564b",
       "after": "1d6730e65981fdaf9500d133fc4691d808bfcf8734f1b6e8038c6d7fd611564b",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-48.json",
-      "before": null,
+      "before": "5fe53b9d4bb9aa387355e210a575e4d65e1f06494ffb42f417fbb2d79c5613c1",
       "after": "5fe53b9d4bb9aa387355e210a575e4d65e1f06494ffb42f417fbb2d79c5613c1",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-49.json",
-      "before": null,
+      "before": "8a2b31677970a898b937fce3ffd8d81c412b36728d83d95fa5c454610ba72c97",
       "after": "8a2b31677970a898b937fce3ffd8d81c412b36728d83d95fa5c454610ba72c97",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-50.json",
-      "before": null,
+      "before": "57aa99d6cbd1dd2fa1b596feeb4b530be932fbc73f4cb19614f36d6e9513a38d",
       "after": "57aa99d6cbd1dd2fa1b596feeb4b530be932fbc73f4cb19614f36d6e9513a38d",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-51.json",
-      "before": null,
+      "before": "415fd96855d0d1fa267bbe5f6d67906b62342e05b1e5fc0f6eae977f82995e36",
       "after": "415fd96855d0d1fa267bbe5f6d67906b62342e05b1e5fc0f6eae977f82995e36",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-52.json",
-      "before": null,
+      "before": "9f24b8845bab7270670f3544cccdd3a6cf2a5a84123da1d2bec63569bab903f5",
       "after": "9f24b8845bab7270670f3544cccdd3a6cf2a5a84123da1d2bec63569bab903f5",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-53.json",
-      "before": null,
+      "before": "c0d24748d591150085b8fef5630475984763d9e02960d0d75f23b7161bf7ff22",
       "after": "c0d24748d591150085b8fef5630475984763d9e02960d0d75f23b7161bf7ff22",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-54.json",
-      "before": null,
+      "before": "8629b81ca552e0145077fd251ba69eeeb22a5714b5b27a4b60d54e6b8733f963",
       "after": "8629b81ca552e0145077fd251ba69eeeb22a5714b5b27a4b60d54e6b8733f963",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-55.json",
-      "before": null,
+      "before": "1bb7b50506b714d9806c08fdc52933b8b5699d3aad20332ccec16d7867852cdc",
       "after": "1bb7b50506b714d9806c08fdc52933b8b5699d3aad20332ccec16d7867852cdc",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-56.json",
-      "before": null,
+      "before": "80620be7030eca33cef08325ec89c7dc3db747849f5fd0a0ba8ea5aa51189ff7",
       "after": "80620be7030eca33cef08325ec89c7dc3db747849f5fd0a0ba8ea5aa51189ff7",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-57.json",
-      "before": null,
+      "before": "883973257dc72f2f97b7421e220e83fd915bcb1d54e70083531d7696d2b57ace",
       "after": "883973257dc72f2f97b7421e220e83fd915bcb1d54e70083531d7696d2b57ace",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-58.json",
-      "before": null,
+      "before": "ae909daf7ba309b21480c59759d46aaee6445e63d712194571b65aa575fb8bad",
       "after": "ae909daf7ba309b21480c59759d46aaee6445e63d712194571b65aa575fb8bad",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-59.json",
-      "before": null,
+      "before": "04e2eaf64debdf574548f8c5279770711c1f487cb0c2345dd704356747293e01",
       "after": "04e2eaf64debdf574548f8c5279770711c1f487cb0c2345dd704356747293e01",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-60.json",
-      "before": null,
+      "before": "397f8d559a7ef40d4cb811cc758937d4b319a587bcbb919f41041e2a2364a9a1",
       "after": "397f8d559a7ef40d4cb811cc758937d4b319a587bcbb919f41041e2a2364a9a1",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-61.json",
-      "before": null,
+      "before": "29276c217cb3803227d1a4f18a60fe40beace540a5c2de23104711c6149e3de0",
       "after": "29276c217cb3803227d1a4f18a60fe40beace540a5c2de23104711c6149e3de0",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-62.json",
-      "before": null,
+      "before": "b82c1ab651ad756b88e513d6171b25b31ca0bd47a5714153fe1ce4f9cfafab40",
       "after": "b82c1ab651ad756b88e513d6171b25b31ca0bd47a5714153fe1ce4f9cfafab40",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-63.json",
-      "before": null,
+      "before": "c2342a88c1a8bea518aca7b1c700386dc30519c141f1290f22aa2c7345364243",
       "after": "c2342a88c1a8bea518aca7b1c700386dc30519c141f1290f22aa2c7345364243",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-64.json",
-      "before": null,
+      "before": "8dbd0b447cf573073993f63de2de90b4aa91c0b01283087d1cb47474d4ca1ab4",
       "after": "8dbd0b447cf573073993f63de2de90b4aa91c0b01283087d1cb47474d4ca1ab4",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-65.json",
-      "before": null,
+      "before": "0d0297dabcc59e3ecbb1dcabd73eaa5c29456ffd0caa41d3e0d5cab68a0a2bfe",
       "after": "0d0297dabcc59e3ecbb1dcabd73eaa5c29456ffd0caa41d3e0d5cab68a0a2bfe",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-66.json",
-      "before": null,
+      "before": "f4194c772f6d7ee2cdc501a2aeacaee8c6c5458e8729e19176e53a2012f43935",
       "after": "f4194c772f6d7ee2cdc501a2aeacaee8c6c5458e8729e19176e53a2012f43935",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-67.json",
-      "before": null,
+      "before": "625aa4871afafa490b0e156cdb32fa95d013e4becbb11e7ebb69b05e31837279",
       "after": "625aa4871afafa490b0e156cdb32fa95d013e4becbb11e7ebb69b05e31837279",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-68.json",
-      "before": null,
+      "before": "248841268482ea7069d2a1ca250493b4d2f359c3ce18caf49c6b9bbd367e4583",
       "after": "248841268482ea7069d2a1ca250493b4d2f359c3ce18caf49c6b9bbd367e4583",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-69.json",
-      "before": null,
+      "before": "d00c37611c31e8761d2f766ea40422d8db072b251710a16724e99faa9cba4891",
       "after": "d00c37611c31e8761d2f766ea40422d8db072b251710a16724e99faa9cba4891",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-70.json",
-      "before": null,
+      "before": "cd2190f288c4b364b9eacb2711bcf923a4a43fa960b24ad373629e97bd8c400a",
       "after": "cd2190f288c4b364b9eacb2711bcf923a4a43fa960b24ad373629e97bd8c400a",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-71.json",
-      "before": null,
+      "before": "d1f07abc6129f51c74e0d9f6299d1d8f48cde1e5b084f632aede9db5994aba82",
       "after": "d1f07abc6129f51c74e0d9f6299d1d8f48cde1e5b084f632aede9db5994aba82",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-72.json",
-      "before": null,
+      "before": "fa29293a741668430acf4ef6ce34bcfbafccb0d4ecfc6d047203e9858a44daa5",
       "after": "fa29293a741668430acf4ef6ce34bcfbafccb0d4ecfc6d047203e9858a44daa5",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-73.json",
-      "before": null,
+      "before": "07ac642d86aa46ff0b3b6cf31653e645f18c684d4b9c5d67e6abd73fdffe138a",
       "after": "07ac642d86aa46ff0b3b6cf31653e645f18c684d4b9c5d67e6abd73fdffe138a",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-74.json",
-      "before": null,
+      "before": "6b128f3db17b2a4abc3c8ff6fe7535637ecece5dd527b3578aa7d2bba39c5399",
       "after": "6b128f3db17b2a4abc3c8ff6fe7535637ecece5dd527b3578aa7d2bba39c5399",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-75.json",
-      "before": null,
+      "before": "7c2c951ddaadd4231be9a287a0eda91bd3b93bf590cebc5fdcde50c034c01235",
       "after": "7c2c951ddaadd4231be9a287a0eda91bd3b93bf590cebc5fdcde50c034c01235",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-76.json",
-      "before": null,
+      "before": "13cf2782d808d0a0ffd2a188aa243cb840446cab4d4b8b39685cd7b4b3681b46",
       "after": "13cf2782d808d0a0ffd2a188aa243cb840446cab4d4b8b39685cd7b4b3681b46",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-77.json",
-      "before": null,
+      "before": "6d32836c39c8faf5379ce455a3fd332b0f8a1b71f0cf40a3ec7ed686831445ca",
       "after": "6d32836c39c8faf5379ce455a3fd332b0f8a1b71f0cf40a3ec7ed686831445ca",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-78.json",
-      "before": null,
+      "before": "34a67b6910e612117c052871be707ae481395114a00b12c95683121cebd848e4",
       "after": "34a67b6910e612117c052871be707ae481395114a00b12c95683121cebd848e4",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-79.json",
-      "before": null,
+      "before": "989612627c3ab331534652b6f1ca9e3030f98351dcd4cf834c8f5b535b77a1bb",
       "after": "989612627c3ab331534652b6f1ca9e3030f98351dcd4cf834c8f5b535b77a1bb",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-80.json",
-      "before": null,
+      "before": "e2a47f66effd215d27d712c6a6407fbb5209512568270158e7da93b82cbde61c",
       "after": "e2a47f66effd215d27d712c6a6407fbb5209512568270158e7da93b82cbde61c",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-81.json",
-      "before": null,
+      "before": "693f4a559fdd8bbebaa3c7c37c122f3a40889acc04a4ff2f42927d009ad7e34c",
       "after": "693f4a559fdd8bbebaa3c7c37c122f3a40889acc04a4ff2f42927d009ad7e34c",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-82.json",
-      "before": null,
+      "before": "41385b689651de9323e893aa149c9c917e412eea1da948bbc0eb5f2efd8cd511",
       "after": "41385b689651de9323e893aa149c9c917e412eea1da948bbc0eb5f2efd8cd511",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-83.json",
-      "before": null,
+      "before": "efbebe3257bce6a3394061983de2c2b408f429763f22bf408f0bd93c44a7bff7",
       "after": "efbebe3257bce6a3394061983de2c2b408f429763f22bf408f0bd93c44a7bff7",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-84.json",
-      "before": null,
+      "before": "2701f959c46cb1691c568090a95560c69a79f56ed290400b7cdf435be6e3a2fd",
       "after": "2701f959c46cb1691c568090a95560c69a79f56ed290400b7cdf435be6e3a2fd",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-85.json",
-      "before": null,
+      "before": "83664f9ab8c5f2ae91bf452744801964388803b4a26e88847e7c0fc36a7c4dab",
       "after": "83664f9ab8c5f2ae91bf452744801964388803b4a26e88847e7c0fc36a7c4dab",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-86.json",
-      "before": null,
+      "before": "8442cda2e217298b751ee481961eac25147e35b81d1b7bbbdb898b899592e20a",
       "after": "8442cda2e217298b751ee481961eac25147e35b81d1b7bbbdb898b899592e20a",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-87.json",
-      "before": null,
+      "before": "3dbeb9903b813a1b497dc42750aca97648e608cf5f579f9bb373a2df4ab6355f",
       "after": "3dbeb9903b813a1b497dc42750aca97648e608cf5f579f9bb373a2df4ab6355f",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-88.json",
-      "before": null,
+      "before": "13b2d836dc0c964edb3635dbf99251ebc19df0ec5f0eb39489866059c160cd59",
       "after": "13b2d836dc0c964edb3635dbf99251ebc19df0ec5f0eb39489866059c160cd59",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-89.json",
-      "before": null,
+      "before": "c4f7e5cb34113f9a7604a1c3268204335517641298b187e4b7addce21a401210",
       "after": "c4f7e5cb34113f9a7604a1c3268204335517641298b187e4b7addce21a401210",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-90.json",
-      "before": null,
+      "before": "2e2c6ae976acbd96abf7d60372762205d4c74a8d4affa16603a424f1875939d4",
       "after": "2e2c6ae976acbd96abf7d60372762205d4c74a8d4affa16603a424f1875939d4",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-91.json",
-      "before": null,
+      "before": "34b1e9adbc08f9d9b0ca31512151bfd4e2132320f3616bcff892d812c9cdf4a9",
       "after": "34b1e9adbc08f9d9b0ca31512151bfd4e2132320f3616bcff892d812c9cdf4a9",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-92.json",
-      "before": null,
+      "before": "fb8e02a444a4a330bc14f1287b96891b069d2b63b10d082b770e54be4da13197",
       "after": "fb8e02a444a4a330bc14f1287b96891b069d2b63b10d082b770e54be4da13197",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-93.json",
-      "before": null,
+      "before": "34ec1dce5da328ce600398903fea7f4b887ec71fd8ba35f4b4d16e2be31247d1",
       "after": "34ec1dce5da328ce600398903fea7f4b887ec71fd8ba35f4b4d16e2be31247d1",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-94.json",
-      "before": null,
+      "before": "6f03c096fbb2bcb7205d7de88887aeed51fffd3365dc8f4643b57547e3dea21f",
       "after": "6f03c096fbb2bcb7205d7de88887aeed51fffd3365dc8f4643b57547e3dea21f",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-95.json",
-      "before": null,
+      "before": "b45acfd19f666a5aa2f9ef0cbdc6a28aa570eac58815a7e7a0128c0032165b33",
       "after": "b45acfd19f666a5aa2f9ef0cbdc6a28aa570eac58815a7e7a0128c0032165b33",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-971.json",
-      "before": null,
+      "before": "cf2f3b0b0d1650a4ec0df4e75ce777a170443de8c9a3b0f6237b2050fde2f9c4",
       "after": "cf2f3b0b0d1650a4ec0df4e75ce777a170443de8c9a3b0f6237b2050fde2f9c4",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-972.json",
-      "before": null,
+      "before": "0497029c84b7ea082533b177a2f092cd5f378cfdb1746d2f24c21364cbb286f9",
       "after": "0497029c84b7ea082533b177a2f092cd5f378cfdb1746d2f24c21364cbb286f9",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-973.json",
-      "before": null,
+      "before": "4b78f3f153496b4c5023fd7e49c039a964236be9eec633d2fed11fc8c8df4591",
       "after": "4b78f3f153496b4c5023fd7e49c039a964236be9eec633d2fed11fc8c8df4591",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-974.json",
-      "before": null,
+      "before": "daa56bca43ebfd35026b4b4e5c5d30e9c2e36881aac46fa9c42e3f7467afdedb",
       "after": "daa56bca43ebfd35026b4b4e5c5d30e9c2e36881aac46fa9c42e3f7467afdedb",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-975.json",
-      "before": null,
+      "before": "5936ec5fce531f16c4be72eeee4be946c994c3c62f0d8c4b173a9b7fb73495de",
       "after": "5936ec5fce531f16c4be72eeee4be946c994c3c62f0d8c4b173a9b7fb73495de",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-976.json",
-      "before": null,
+      "before": "2ac5af46d09831fe6c9a583e1ba5e1d1e900f401bbfd1ba098f83f65a14d3ed9",
       "after": "2ac5af46d09831fe6c9a583e1ba5e1d1e900f401bbfd1ba098f83f65a14d3ed9",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-977.json",
-      "before": null,
+      "before": "3539eda48f0a73d9d9077cf0bf731fd5f26f3a02a847d3078c1035d111885572",
       "after": "3539eda48f0a73d9d9077cf0bf731fd5f26f3a02a847d3078c1035d111885572",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-978.json",
-      "before": null,
+      "before": "3a177c465b6fafbbc1c7968d4141513edfec870423164aebe1e411f67df0ede0",
       "after": "3a177c465b6fafbbc1c7968d4141513edfec870423164aebe1e411f67df0ede0",
       "source": null
     },
     {
       "path": "data/geography-v1-50c1f57902864f71/communes-dept-98.json",
-      "before": null,
+      "before": "c7fcb5f7e947d8435328deea54620295a3a8f27bf0e6efb894610b36aab5c868",
       "after": "c7fcb5f7e947d8435328deea54620295a3a8f27bf0e6efb894610b36aab5c868",
+      "source": null
+    },
+    {
+      "path": "documentation/agents/capabilities.json",
+      "before": null,
+      "after": "d1b8cd0bf154c93a9f18443f1886ca44cfd5b86b66f2984581756cd6df29f05d",
+      "source": null
+    },
+    {
+      "path": "documentation/agents/index.html",
+      "before": null,
+      "after": "39741e6247aaf533871426646172819060567946675752616140bc6a38687de3",
       "source": null
     },
     {
       "path": "favicon-16x16.png",
       "before": "36928efd25b6362cab48eab9919b7cc7b5301ab4b139db6913afeb56a4e7f96a",
       "after": "36928efd25b6362cab48eab9919b7cc7b5301ab4b139db6913afeb56a4e7f96a",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/favicon-16x16.png"
+      "source": null
     },
     {
       "path": "favicon-192x192.png",
       "before": "353f586ed6732752c517f084378b13ad9aea088f45279aba7b08823955cabc5d",
       "after": "353f586ed6732752c517f084378b13ad9aea088f45279aba7b08823955cabc5d",
-      "source": "public/favicon-192x192.png"
+      "source": null
     },
     {
       "path": "favicon-32x32.png",
       "before": "f0ec55b9751d200a2acd1dd53f51c0d0e1deb95ca50923233ac6ed62b82120bc",
       "after": "f0ec55b9751d200a2acd1dd53f51c0d0e1deb95ca50923233ac6ed62b82120bc",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/favicon-32x32.png"
+      "source": null
     },
     {
       "path": "favicon-48x48.png",
       "before": "50965e253bef8eb7f35c719b1fe37b3ea9860c8b9793df5a37f6f3cf5f47a0b4",
       "after": "50965e253bef8eb7f35c719b1fe37b3ea9860c8b9793df5a37f6f3cf5f47a0b4",
-      "source": "public/favicon-48x48.png"
+      "source": null
     },
     {
       "path": "favicon-512x512.png",
       "before": "c132aef828d3d9308651a6112ceca903710087fd7180a574bc8a9010d03f5d3f",
       "after": "c132aef828d3d9308651a6112ceca903710087fd7180a574bc8a9010d03f5d3f",
-      "source": "public/favicon-512x512.png"
+      "source": null
     },
     {
       "path": "favicon-64x64.png",
       "before": "c676648c7d840008a3ab599a7b65e1da8aa76719d0913831d73e95558cd83ba2",
       "after": "c676648c7d840008a3ab599a7b65e1da8aa76719d0913831d73e95558cd83ba2",
-      "source": "public/favicon-64x64.png"
+      "source": null
     },
     {
       "path": "favicon.ico",
       "before": "8f54bebaca8a8ba0802d489e60abe310e5e220d08b6abc672d770e0e5ddb0e8c",
       "after": "8f54bebaca8a8ba0802d489e60abe310e5e220d08b6abc672d770e0e5ddb0e8c",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/favicon.ico"
+      "source": null
     },
     {
       "path": "favicon.svg",
       "before": "55b294f84d18e76849eaa177ffb83d04a2b1240cc602996881e033916c396da0",
       "after": "55b294f84d18e76849eaa177ffb83d04a2b1240cc602996881e033916c396da0",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/favicon.svg"
+      "source": null
+    },
+    {
+      "path": "guides/dpe-recent-vente/index.html",
+      "before": null,
+      "after": "22a5742666c65dc833356cb8b34c5295998c613039945ced75583909a59d6937",
+      "source": null
+    },
+    {
+      "path": "guides/index.html",
+      "before": null,
+      "after": "1ac9a3fba7945181039234b0d8f7d24ef629e7bdbe037d1ccdeb2f69fa3cd36d",
+      "source": null
+    },
+    {
+      "path": "guides/rechercher-avec-dpe/index.html",
+      "before": null,
+      "after": "f7de590139453152f852fed17f1dc1a3357b2ab32b88a81b959dcf9725ef1887",
+      "source": null
+    },
+    {
+      "path": "guides/retrouver-adresse-annonce/index.html",
+      "before": null,
+      "after": "100775bc2d0ca1025f2a56309dcbe419ab1e5d14527eb16266be62e1ac929ede",
+      "source": null
     },
     {
       "path": "index.html",
-      "before": "bfa4b7c203904faeb0afed291ac6bcd3891fa392c88f82f4a635c0c9395c02ff",
-      "after": "a3500dfac937951659125bec6341bfc2664286d2529e5dd424ddea1f4dd4f0ef",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/index.html"
+      "before": "a3500dfac937951659125bec6341bfc2664286d2529e5dd424ddea1f4dd4f0ef",
+      "after": "f4c1d84b63aba14517e4829bd9162250a0f08915b4c43c5383c2fbbbc79299e1",
+      "source": "e2e-pwa/fixtures/production-2026-10-05/static/index.html"
     },
     {
       "path": "manifest.example.json",
       "before": "ad080430036a2ea0afee762e26a07abbbfa595aeefed373eea5c5df0cd250a14",
       "after": "ad080430036a2ea0afee762e26a07abbbfa595aeefed373eea5c5df0cd250a14",
-      "source": "public/manifest.example.json"
+      "source": null
     },
     {
       "path": "manifest.webmanifest",
-      "before": "909984d1deb84b05b8e3d26b213db241526f0dd24e2a8b4e9622edcce746afc9",
+      "before": "a67ab9d4649f8566c917a5e9cd7e98724ea796e3a39030a32f83b599cab7ab14",
       "after": "a67ab9d4649f8566c917a5e9cd7e98724ea796e3a39030a32f83b599cab7ab14",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/manifest.webmanifest"
+      "source": null
     },
     {
       "path": "noise.svg",
       "before": "53eccf7209e8e2b3f9f6f76d262de9b50be21bae304e7de9493ec55fe02c74c9",
       "after": "53eccf7209e8e2b3f9f6f76d262de9b50be21bae304e7de9493ec55fe02c74c9",
-      "source": "public/noise.svg"
+      "source": null
     },
     {
       "path": "og-image.png",
       "before": "a626e32a01f14d6ff264332f5dd5e3e25ab47006ee491535fd505b95fd4d324e",
       "after": "a626e32a01f14d6ff264332f5dd5e3e25ab47006ee491535fd505b95fd4d324e",
-      "source": "public/og-image.png"
+      "source": null
     },
     {
       "path": "og-image.svg",
       "before": "620175dd6c8df4c98ec165772dd4f083a834d8330cddc39d5fbed1a831fe410f",
       "after": "620175dd6c8df4c98ec165772dd4f083a834d8330cddc39d5fbed1a831fe410f",
-      "source": "public/og-image.svg"
+      "source": null
     },
     {
       "path": "robots.txt",
       "before": "f060ffedbdfb044217dabda65184601d920fe6901f7faa22376479986501a0bd",
-      "after": "f060ffedbdfb044217dabda65184601d920fe6901f7faa22376479986501a0bd",
-      "source": null
+      "after": "0bfe12c8c5daf75c9ed1fa0341dae64db0c1386d0657fc768e6f6ec6020b2790",
+      "source": "e2e-pwa/fixtures/production-2026-10-05/static/robots.txt"
     },
     {
       "path": "robots.txt.template",
       "before": "cd81852a62af8d04c449a7611a90c7f0df688842321cf7d88f3200107beac630",
-      "after": "cd81852a62af8d04c449a7611a90c7f0df688842321cf7d88f3200107beac630",
-      "source": "public/robots.txt.template"
+      "after": "f2150b9847db6e82e5e0c35a1cfb425c8041e62cf160a8754b58acd968b1096f",
+      "source": "e2e-pwa/fixtures/production-2026-10-05/static/robots.txt.template"
     },
     {
       "path": "sitemap.xml",
       "before": "eeef63fdba2c9c63deb4bc0375a4955c9581d3dc859d44bdff27369abb155475",
-      "after": "eeef63fdba2c9c63deb4bc0375a4955c9581d3dc859d44bdff27369abb155475",
-      "source": null
+      "after": "bf0e752bbdd23b07367e4e2fe37fc8bc87b8746578b42104363058e3c3f055ea",
+      "source": "e2e-pwa/fixtures/production-2026-10-05/static/sitemap.xml"
     },
     {
       "path": "sitemap.xml.template",
       "before": "65c27676c17880dfdfdd335bb59d44ef10477cc1a88aa739697e48a0bd62ae70",
-      "after": "65c27676c17880dfdfdd335bb59d44ef10477cc1a88aa739697e48a0bd62ae70",
-      "source": "public/sitemap.xml.template"
+      "after": "ac76e37680b25be6864b01e3a0c5674f9bcafd6eea10fb844f5a65d2f58d9e95",
+      "source": "e2e-pwa/fixtures/production-2026-10-05/static/sitemap.xml.template"
     },
     {
       "path": "sw.js",
-      "before": "0c7fe7f2b5607dbb53e2c15fb4df9f6fb55b754c4ccc8e6ef8ca21cb8cad9e5e",
-      "after": "c6364a1aa4137e9f2c9b23c359c975aa6949e3265e946d8b5f20ccd4aab4c04a",
-      "source": "e2e-pwa/fixtures/production-2026-10-03/static/sw.js"
+      "before": "c6364a1aa4137e9f2c9b23c359c975aa6949e3265e946d8b5f20ccd4aab4c04a",
+      "after": "7a0515290c4b1ec131faa3178af37d36f0075ace17ea9d9e6df7b3c9173ecf25",
+      "source": "e2e-pwa/fixtures/production-2026-10-05/static/sw.js"
     },
     {
       "path": "workbox-9c191d2f.js",
-      "before": null,
+      "before": "04b086f1b2f4215ee4b659a7bc9c76162894abdb43fa876247bc7c0bd6fd1c37",
       "after": "04b086f1b2f4215ee4b659a7bc9c76162894abdb43fa876247bc7c0bd6fd1c37",
       "source": null
     }
