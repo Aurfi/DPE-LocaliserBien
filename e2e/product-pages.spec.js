@@ -268,4 +268,25 @@ test('explains an unknown nearby address in French and recovers after correction
   expect(pageErrors).toEqual([])
 })
 
+test('visible application copy omits free and no-account marketing on every main page', async ({ page }, testInfo) => {
+  await mockPublicApis(page)
+  for (const [url, title, screenshot] of [
+    ['/', 'Retrouver un bien grâce à son DPE', 'home'],
+    ['/informations', 'Guide et informations', 'information'],
+    ['/mentions-legales', 'Mentions légales et vie privée', 'legal']
+  ]) {
+    await page.goto(url)
+    await expect(page.getByRole('heading', { level: 1, name: title, exact: true })).toBeVisible()
+    // Check rendered visible text only. SEO/JSON-LD and workflow environment
+    // descriptions remain a separate, explicitly pending task.
+    expect(await page.locator('body').innerText()).not.toMatch(
+      /\bgratuit\w*|\bsans[\s,;:-]+(?:compte|inscription|abonnement)\b/i
+    )
+    await testInfo.attach(`visible-copy-${screenshot}.png`, {
+      body: await page.screenshot({ fullPage: true }),
+      contentType: 'image/png'
+    })
+  }
+})
+
 registerGuideChecks()

@@ -12,7 +12,7 @@
         <div class="footer-grid">
           <div>
             <p class="font-semibold text-gray-900 dark:text-gray-100">{{ siteName }}</p>
-            <p class="mt-2 max-w-xs text-sm text-gray-600 dark:text-gray-400">Service gratuit de localisation d'annonce immobilière</p>
+            <p class="mt-2 max-w-xs text-sm text-gray-600 dark:text-gray-400">Service de localisation d'annonce immobilière</p>
             <div class="mt-3"><InstallationPWA variant="link" /></div>
           </div>
           <nav aria-label="Informations du site" class="footer-links">

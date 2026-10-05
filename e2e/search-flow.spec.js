@@ -5,7 +5,7 @@ test('loads the free form and validates malformed decimals without API requests'
   const queries = await mockPublicApis(page)
   await page.goto('/')
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Retrouver un bien grâce à son DPE')
-  await expect(page.getByText('Recopiez les critères de l’annonce. Gratuit, sans compte.')).toBeVisible()
+  await expect(page.getByText('Recopiez les critères de l’annonce.')).toBeVisible()
   await expect(page.getByRole('button', { name: 'Localiser un exemple', exact: true })).toBeEnabled()
   await page.locator('#search-commune').focus()
   await page.locator('#search-surface').focus()

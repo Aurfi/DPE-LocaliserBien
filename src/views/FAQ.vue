@@ -4,7 +4,7 @@
 
     <header class="information-header">
       <h1 class="search-heading">Guide et informations</h1>
-      <p>Deux façons de rechercher un bien dans les données DPE. Gratuit, sans compte.</p>
+      <p>Deux façons de rechercher un bien dans les données DPE.</p>
     </header>
 
     <section class="information-guide" aria-labelledby="guide-annonce">
