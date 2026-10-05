@@ -305,11 +305,22 @@ def selected_entries(entries, choice):
     return [entry for entry in entries if choice != 'preserve' or entry['path'] != '.htaccess']
 
 
-def config_guard(remote, choice):
+def config_guard(remote, choice, expected=''):
     selected_entries([], choice)
+    if expected:
+        require(choice == 'preserve' and SHA256.fullmatch(expected),
+                'Configuration fingerprint requires preserve mode.')
+        require(observed_hash(remote, '.htaccess') == expected,
+                'Preserved .htaccess differs from the reviewed live fingerprint.')
     if choice == 'confirmed-absent':
         require(remote.optional(remote.web + '/.htaccess') is None,
                 'Live .htaccess exists; preserve it and review any configuration change separately.')
+
+
+def preserved_config_guard(remote, args):
+    expected = getattr(args, 'expected_htaccess', '')
+    if expected:
+        config_guard(remote, 'preserve', expected)
 
 
 def staged_path(base, name):
@@ -341,7 +352,7 @@ def deploy(remote, args, files):
     plan, entries, _ = load_plan(args, files)
     entries = selected_entries(entries, args.htaccess)
     check_index(remote, args.expected_index)
-    config_guard(remote, args.htaccess)
+    config_guard(remote, args.htaccess, getattr(args, 'expected_htaccess', ''))
     require(all(entry['before'] is None or entry['before'] == entry['after'] or
                 not immutable_path(entry['path']) for entry in entries),
             'Existing immutable asset has different bytes; refusing to overwrite it.')
@@ -369,9 +380,10 @@ def deploy(remote, args, files):
     print('Pinned public recovery bytes verified. Recovery release ID: ' + args.release_id, flush=True)
     verify_before(remote, entries)
     check_index(remote, args.expected_index)
-    config_guard(remote, args.htaccess)
+    config_guard(remote, args.htaccess, getattr(args, 'expected_htaccess', ''))
     for entry in sorted(changes, key=lambda c: promotion_order(c['path'])):
         name = entry['path']
+        preserved_config_guard(remote, args)
         require(observed_hash(remote, name) == entry['before'],
                 'Live file changed during promotion; use the reviewed recovery plan.')
         remote.parents(remote.web, name)
@@ -381,6 +393,7 @@ def deploy(remote, args, files):
     for entry in entries:
         require(observed_hash(remote, entry['path']) == entry['after'],
                 'Final release state drifted; inspect the reviewed recovery plan.')
+    preserved_config_guard(remote, args)
     print('Release file readbacks passed. HTTP, routing, device, and old-tab checks are still required.')
 
 
@@ -401,7 +414,11 @@ def load_snapshot(remote, args):
 def rollback(remote, args):
     check_mutation_approval(args)
     check_index(remote, args.expected_index)
+    preserved_config_guard(remote, args)
     base, entries, restore = load_snapshot(remote, args)
+    require(not getattr(args, 'expected_htaccess', '') or
+            all(entry['path'] != '.htaccess' for entry in entries),
+            'Preserved-configuration recovery cannot remove an introduced .htaccess; review that recovery separately.')
     current = {}
     # Partial before/after states are recoverable; unknown edits stop all writes.
     for entry in entries:
@@ -426,6 +443,7 @@ def rollback(remote, args):
                 'Live file changed during recovery staging; no rollback promotion performed.')
     for entry in sorted(changes, key=lambda c: promotion_order(c['path'])):
         name, data = entry['path'], restore[entry['path']]
+        preserved_config_guard(remote, args)
         require(observed_hash(remote, name) == current[name],
                 'Live file changed during rollback; stop and review.')
         if data is not None and current[name] != entry['before']:
@@ -445,6 +463,7 @@ def rollback(remote, args):
                     else current[name])
         require(observed_hash(remote, name) == expected,
                 'Final recovery state drifted; do not report recovery complete.')
+    preserved_config_guard(remote, args)
     print('Rollback file readbacks passed; HTTP and service-worker recovery still require verification.')
 
 
@@ -454,6 +473,7 @@ def main():
     parser.add_argument('--dist', default='dist')
     parser.add_argument('--reviewed-commit', default='')
     parser.add_argument('--expected-index', default='')
+    parser.add_argument('--expected-htaccess', default='')
     parser.add_argument('--htaccess', default='preserve')
     parser.add_argument('--release-id', default='')
     parser.add_argument('--plan', default=str(PLAN_FILE))
@@ -495,3 +515,4 @@ def main():
 
 if __name__ == '__main__':
     sys.exit(main())
+
