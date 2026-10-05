@@ -559,7 +559,9 @@ class WorkflowSafetyTests(unittest.TestCase):
             description = re.search(r'^        VITE_' + prefix + r'_DESCRIPTION=(.*)$', self.ci, re.MULTILINE)
             self.assertIsNotNone(title)
             self.assertIsNotNone(description)
-            self.assertIn('correspondances DPE', title.group(1))
+            expected_title = ('Trouver l’adresse d’une annonce avec son DPE | LocaliserBien'
+                              if prefix == 'APP' else 'LocaliserBien - Recherchez des correspondances DPE')
+            self.assertEqual(expected_title, title.group(1))
             self.assertIn('correspondances possibles', description.group(1))
             self.assertIn("ne garantit pas l'identification du bien", description.group(1))
         self.assertNotIn('adresse exacte', self.ci)
