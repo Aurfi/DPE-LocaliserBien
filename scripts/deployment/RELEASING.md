@@ -106,3 +106,36 @@ refuses unrelated live drift, restores verified public bytes, leaves added asset
 for newer tabs, and performs readbacks. It does not delete unknown files, copy
 private configuration or automatically clean up stages. Verify HTTP and PWA
 recovery afterward.
+
+
+## Explicit recovery intent when manual dispatch is unavailable
+
+`recovery-intent.json` starts inactive. This path is never an automatic reaction
+to a failed or uncertain deployment. Inspect the live state and obtain explicit
+approval of a recovery action before publishing an active recovery intent.
+
+Make one commit directly after exact reviewed current main, changing only
+`scripts/deployment/recovery-intent.json`, with exactly these fields:
+
+- `schema`: `1`; `operation`: `"rollback"`
+- `reviewed_recovery_commit`: exact current main parent being reviewed
+- `release_plan_commit`: exact original deployed release commit, an ancestor
+- `release_id`: original release ID, matching its public staging manifest
+- `plan_sha256`: canonical digest of that original commit's public release plan
+- `expected_index_sha256`: freshly reviewed current live index hash
+- `expected_htaccess_sha256`: freshly reviewed configuration hash to preserve
+
+The recovery workflow ignores ordinary pushes, unchanged stale intents and
+non-main/fork events. An active intent cannot change application, workflows,
+plans or recovery source files. It revalidates the original plan/source history,
+uses the existing production environment and concurrency lock, and passes current
+offline engine, host-pin and recovery tests before exposing existing hosting
+secrets. The original immutable plan and public before-images are checked out,
+verified and matched to the live release manifest. Only known original before/
+after states are recoverable; unrelated changes stop before writes. A point-in-
+time main check rejects a superseded run. Afterward verify live HTTP and PWA state.
+
+This explicitly reviewed commit supplies the action gate only for the intent
+path. The old manual dispatch path and its `OVH_RELEASE_ENABLED` variable gate
+are unchanged. No new credential, variable, account permission or host trust is
+created. Publishing this inactive extension alone performs no hosting access.
