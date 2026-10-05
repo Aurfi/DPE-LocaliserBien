@@ -48,7 +48,7 @@ describe('legal and privacy copy', () => {
     expect(page.text()).toContain('Les données peuvent être anciennes, incomplètes ou comporter des erreurs.')
   })
 
-  it('describes browser queries, the embedded map connection and OVH to Gmail contact processing', () => {
+  it('describes browser queries, the embedded map connection and concise contact processing', () => {
     const page = mountPage()
     expect(page.text()).toContain('Votre navigateur interroge directement l’ADEME')
     expect(page.text()).toContain('le service de géocodage de l’IGN')
@@ -57,8 +57,10 @@ describe('legal and privacy copy', () => {
     expect(page.text()).toContain('Google reçoit l’adresse et/ou les coordonnées du bien')
     expect(page.text()).toContain('dont votre adresse IP')
     expect(page.text()).not.toMatch(/sans carte|pas.*carte Google intégrée|uniquement.*lien externe/i)
-    expect(page.text()).toContain('votre adresse électronique et votre message servent à traiter votre demande')
-    expect(page.text()).toContain('La messagerie passe par OVH, puis les messages sont redirigés vers Gmail.')
+    expect(page.text()).toContain(
+      'Votre adresse e-mail et votre message sont utilisés uniquement pour répondre à votre demande.'
+    )
+    expect(page.text()).not.toMatch(/messagerie passe par|redirigés vers|Gmail/i)
   })
 
   it('keeps storage limits and explicit deletion semantics on the privacy page', () => {

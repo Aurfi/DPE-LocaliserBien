@@ -39,7 +39,7 @@
 
       <section class="card p-5 sm:p-7">
         <h2 class="section-title">Contact et droits</h2>
-        <p>Si vous écrivez à {{ contactEmail }}, votre adresse électronique et votre message servent à traiter votre demande. La messagerie passe par OVH, puis les messages sont redirigés vers Gmail.</p>
+        <p>Votre adresse e-mail et votre message sont utilisés uniquement pour répondre à votre demande.</p>
         <p class="mt-3">Pour exercer vos droits ou poser une question sur vos données, écrivez à <a class="quiet-link underline" :href="`mailto:${contactEmail}`">{{ contactEmail }}</a>. Consultez aussi les <a class="quiet-link underline" href="https://www.cnil.fr/fr/mes-demarches/les-droits-pour-maitriser-vos-donnees-personnelles" target="_blank" rel="noopener noreferrer">informations de la CNIL sur vos droits</a>.</p>
         <p class="mt-3"><a class="quiet-link underline" href="/THIRD_PARTY_NOTICES.txt" target="_blank" rel="noopener noreferrer">Crédits et licences des éléments du site</a></p>
       </section>

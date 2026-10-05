@@ -109,7 +109,10 @@ test('navigates the privacy link to real legal content without draft or publishe
     /projet de notice|en cours de validation|restent à préciser|doivent être confirmés|notice finalisée|seront précisées|non professionnel|anonymat|LCEN|confiance dans l’économie numérique|Google Fonts|polices/i
   )
   await expect(main).toContainText('OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.')
-  await expect(main).toContainText('La messagerie passe par OVH, puis les messages sont redirigés vers Gmail.')
+  await expect(main).toContainText(
+    'Votre adresse e-mail et votre message sont utilisés uniquement pour répondre à votre demande.'
+  )
+  await expect(main).not.toContainText(/messagerie passe par|redirigés vers|Gmail/i)
   await expect(main.locator('a[href^="mailto:"]')).toHaveCount(2)
   await expect(page.locator('#vie-privee')).toContainText('Google reçoit l’adresse et/ou les coordonnées du bien')
   await page.reload()
