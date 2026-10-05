@@ -45,8 +45,8 @@ export function createReleaseHandler({ baseline, candidate }) {
       )
       return
     }
-    const filename = url.pathname === '/' ? 'index.html' : url.pathname.slice(1)
-    // Serve exact built files only. No SPA fallback here: fallback assertions must
+    const filename = url.pathname.endsWith('/') ? `${url.pathname.slice(1)}index.html` : url.pathname.slice(1)
+    // Serve exact built files and real directory indexes only. No SPA fallback here: fallback assertions must
     // be satisfied by the real worker, never by the fixture server.
     const file = release.files.get(filename)
     requests.push({ phase, pathname: url.pathname, sha256: file?.sha256 ?? null })

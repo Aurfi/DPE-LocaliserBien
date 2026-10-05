@@ -1,0 +1,40 @@
+<p class="lead">LocaliserBien est une interface de recherche dans les données DPE publiques françaises. Elle aide à repérer des correspondances possibles avec une annonce et à consulter des diagnostics autour d’une adresse.</p>
+<section>
+  <h2>Interface disponible</h2>
+  <p>La recherche se fait dans le navigateur, sur la <a href="/">page d’accueil</a>, avec JavaScript activé. Il n’existe pas d’API de recherche LocaliserBien ni de serveur MCP LocaliserBien publié. Le <a href="/documentation/agents/capabilities.json">descriptif JSON des capacités</a> décrit le fonctionnement de l’interface ; ce fichier n’exécute aucune recherche.</p>
+  <p>Les guides et cette documentation sont lisibles sans JavaScript. Le formulaire n’accepte ni URL d’annonce, ni image, ni numéro de DPE. Il n’existe pas de lien documenté pour lancer une recherche en passant ses critères dans l’URL.</p>
+</section>
+<section>
+  <h2>Rechercher à partir d’une annonce</h2>
+  <ol>
+    <li>Ouvrir l’onglet <strong>Trouver un bien</strong>.</li>
+    <li>Renseigner <strong>Commune</strong> (nom ou code postal) et <strong>Surface</strong> (m²), puis <strong>Consommation énergétique</strong> (kWh/m²/an en énergie primaire) ou la classe DPE de A à G. Ces critères sont nécessaires.</li>
+    <li>Ajouter le type de bien (maison ou appartement) et les GES (kgCO₂/m²/an ou classe A à G) si ces informations sont connues. Ne pas inventer les valeurs manquantes.</li>
+    <li>Cliquer sur <strong>Localiser</strong>. Si le nom de commune est ambigu, demander une localisation plus précise.</li>
+    <li>Comparer les résultats avec l’annonce. Signaler les écarts et les autres correspondances plausibles.</li>
+  </ol>
+  <p>Saisir les nombres sans unité, avec une virgule ou un point décimal. L’interface accepte aussi &lt; et &gt; ; dans la recherche actuelle, la valeur limite est incluse : &lt;100 inclut 100 et &gt;100 inclut 100.</p>
+  <p>Dans « Trouver un bien », une valeur exacte doit être d’au moins 10 m² pour la surface et 10 kWh/m²/an pour la consommation. Si le formulaire refuse une valeur, ne pas la remplacer par une valeur inventée.</p>
+  <p>La recherche peut élargir les tolérances et le secteur lorsqu’elle ne trouve pas de résultat initial. Une recherche élargie peut aussi renvoyer une autre classe DPE/GES. Vérifier chaque résultat par rapport aux critères demandés.</p>
+</section>
+<section>
+  <h2>Consulter des diagnostics à proximité</h2>
+  <p>Dans <strong>Biens à proximité</strong>, renseigner une adresse et choisir un rayon et une période parmi les options du formulaire. La surface, le type de bien, la consommation et les GES sont facultatifs. Vérifier l’adresse géocodée affichée avec les résultats avant de les interpréter.</p>
+</section>
+<section>
+  <h2>Résultats et limites</h2>
+  <p>Les cartes et fiches affichent, selon les données disponibles, une adresse, une surface, les valeurs et classes DPE/GES, la date et le numéro du diagnostic, le type de bien et des caractéristiques techniques. Un score de correspondance ou une distance peut aider au tri. Une donnée absente ne doit pas être remplacée par une supposition.</p>
+  <ul>
+    <li>Le score n’est pas une probabilité d’identification. Aucune adresse ne doit être présentée comme certaine sur sa seule base.</li>
+    <li>Un diagnostic récent ne prouve ni une mise en vente ni une mise en location. Le site ne fournit pas l’identité du propriétaire.</li>
+    <li>Les coordonnées et adresses peuvent être imprécises. Plusieurs logements ou diagnostics peuvent partager une adresse.</li>
+    <li>Les requêtes sont limitées en volume. Le nombre de résultats affiché n’est pas un total exhaustif de logements dans une commune.</li>
+    <li>Une erreur de service ou une recherche vide ne prouve pas l’absence du bien. Un diagnostic manquant, ancien ou une étiquette actualisée peuvent expliquer l’écart.</li>
+  </ul>
+</section>
+<section>
+  <h2>Sources et échanges de données</h2>
+  <p>Le navigateur interroge directement les données de l’ADEME : <a href="https://data.ademe.fr/datasets/dpe03existant">DPE des logements existants depuis juillet 2021</a> et, pour la recherche à partir d’une annonce, <a href="https://data.ademe.fr/datasets/dpe-france">anciens diagnostics</a>. Le géocodage utilise les <a href="https://geoservices.ign.fr/">Géoservices de l’IGN</a>. Les données n’ont pas toutes la même date ni la même qualité ; les anciens DPE ne doivent pas être traités comme des diagnostics actuels.</p>
+  <p>Les services interrogés reçoivent les critères nécessaires et des informations techniques de connexion. L’ouverture d’une fiche charge un aperçu Google Maps avec la localisation du résultat. L’historique local est désactivé par défaut. Voir la <a href="/mentions-legales#vie-privee">notice de vie privée</a>.</p>
+  <p>Respecter les choix de l’utilisateur et les règles des services sources. Cette documentation ne constitue pas une autorisation de collecte en masse. Le fichier robots.txt indique des préférences d’exploration ; il ne contrôle pas l’accès aux données.</p>
+</section>

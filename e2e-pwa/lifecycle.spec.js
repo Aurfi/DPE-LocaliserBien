@@ -172,6 +172,23 @@ for (const baselineId of baselineIds) {
         scriptURL: `${release.origin}/sw.js`
       })
 
+      // After the historical worker upgrades, guides must remain independent
+      // network documents rather than being replaced by a cached application.
+      const guidePage = await context.newPage()
+      try {
+        const response = await guidePage.goto(`${release.origin}/guides/retrouver-adresse-annonce/`)
+        expect(response.status()).toBe(200)
+        expect(response.fromServiceWorker()).toBe(false)
+        await expect(guidePage.getByRole('heading', { level: 1 })).toHaveText(
+          'Retrouver l’adresse d’une annonce immobilière'
+        )
+        await expect(guidePage.locator('script[type="module"]')).toHaveCount(0)
+        expect((await guidePage.goto(`${release.origin}/guides/missing/`)).status()).toBe(404)
+      } finally {
+        await guidePage.close()
+      }
+      await assertOnlyAppPrecache(probe, release.candidate, release.origin)
+
       // The same GET must reach the real local fixture on every call.
       // It carries synthetic result data, never a real person's search or record.
       for (const sequence of [1, 2]) {
@@ -216,6 +233,8 @@ for (const baselineId of baselineIds) {
         }
       }
       for (const route of [
+        '/guides/retrouver-adresse-annonce/',
+        '/documentation/agents/',
         '/private/results',
         '/api/dpe-results',
         '/assets/missing.js',

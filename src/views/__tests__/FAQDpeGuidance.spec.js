@@ -42,6 +42,7 @@ describe('DPE guidance', () => {
       'Retrouver un bien à partir d’une annonce',
       'Explorer les biens à proximité',
       'Lire les résultats',
+      'Pour aller plus loin',
       'Questions utiles'
     ])
     const criteria = wrapper.find('dl')

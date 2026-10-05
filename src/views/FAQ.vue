@@ -25,6 +25,7 @@
         </div>
       </dl>
       <p>Cliquez sur <strong>Localiser</strong>, puis comparez les résultats avec l’annonce.</p>
+      <p><a href="/guides/retrouver-adresse-annonce/">Voir la méthode avec un exemple d’annonce</a>.</p>
       <p class="information-example">Exemple : Marseille 13008 · 65 m² · 173 kWh/m²/an.</p>
     </section>
 
@@ -38,6 +39,12 @@
       <h2 id="guide-resultats">Lire les résultats</h2>
       <p>Plusieurs biens peuvent correspondre. Comparez la surface, les valeurs DPE, le type de bien et la date du diagnostic avec l’annonce.</p>
       <p>Le score mesure la proximité des critères, pas une probabilité d’identification. La carte aide à situer un résultat, sans confirmer qu’il s’agit du bien recherché.</p>
+    </section>
+
+    <section class="information-section" aria-labelledby="guide-lectures">
+      <h2 id="guide-lectures">Pour aller plus loin</h2>
+      <p><a href="/guides/rechercher-avec-dpe/">Quelles valeurs du DPE saisir ?</a> · <a href="/guides/dpe-recent-vente/">Que signifie un DPE récent ?</a></p>
+      <p><a href="/documentation/agents/">Documentation pour les assistants et agents</a></p>
     </section>
 
     <section class="information-section" aria-labelledby="guide-questions">

@@ -18,6 +18,7 @@
           <nav aria-label="Informations du site" class="footer-links">
             <router-link to="/">Accueil</router-link>
             <router-link to="/informations">Informations</router-link>
+            <a href="/guides/">Guides</a>
             <router-link to="/mentions-legales">Mentions légales</router-link>
           </nav>
           <div>

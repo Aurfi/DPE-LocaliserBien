@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { collectRuntimeData, verifyRuntimeDirectory } from './geography/runtime-data.mjs'
+import { verifyGuideBuild } from './guides/check-built.mjs'
 
 const dist = path.resolve('dist')
 function checkHiddenFiles(directory, prefix = '') {
@@ -12,6 +13,7 @@ function checkHiddenFiles(directory, prefix = '') {
   }
 }
 checkHiddenFiles(dist)
+verifyGuideBuild(dist)
 const runtime = collectRuntimeData()
 verifyRuntimeDirectory(dist, runtime)
 assert(!existsSync(path.join(dist, 'data/departments')), 'raw geography and expired averages must not ship')
