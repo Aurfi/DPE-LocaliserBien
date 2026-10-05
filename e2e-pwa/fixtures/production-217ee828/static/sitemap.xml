@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Main page -->
+  <url>
+    <loc>https://localiserbien.fr/</loc>
+    <lastmod>2025-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://localiserbien.fr/og-image.png</image:loc>
+      <image:title>LocaliserBien - Localisateur de biens immobiliers</image:title>
+      <image:caption>Service gratuit de localisation de biens immobiliers en France</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Informations page -->
+  <url>
+    <loc>https://localiserbien.fr/informations</loc>
+    <lastmod>2025-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Legal mentions -->
+  <url>
+    <loc>https://localiserbien.fr/mentions-legales</loc>
+    <lastmod>2025-01-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+    <url><loc>https://localiserbien.fr/guides/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://localiserbien.fr/guides/retrouver-adresse-annonce/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://localiserbien.fr/guides/rechercher-avec-dpe/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://localiserbien.fr/guides/dpe-recent-vente/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://localiserbien.fr/documentation/agents/</loc><lastmod>2026-10-05</lastmod></url>
+</urlset>
