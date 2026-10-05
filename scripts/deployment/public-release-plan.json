@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "source_commit": "6a549df167ce06f4b36345bb2b2561674976a834",
-  "candidate_sha256": "dfe29c309a0ee3068df6f0484dcee56956afbc8ddbe051727b22f9147a574013",
+  "source_commit": "3c1e57ded6683646643d3424f9b224f08a0f0d7e",
+  "candidate_sha256": "612613673305356f4116bffc0ceca8c5e3520aa16bb4e483866b6f325036a9f2",
   "files": [
     {
       "path": ".htaccess",
@@ -35,13 +35,13 @@
     },
     {
       "path": "assets/chunk-BNQmtEyK.js",
-      "before": null,
+      "before": "c89100056aeb2b62d678c7f3bc67cbd1c6fc36497860556df432c147cfd56c05",
       "after": "c89100056aeb2b62d678c7f3bc67cbd1c6fc36497860556df432c147cfd56c05",
       "source": null
     },
     {
       "path": "assets/chunk-CL52YXx_.js",
-      "before": null,
+      "before": "209bd587cc8cfef002b44aa0d34ad42c95a9ca25f87ec135f981012aba68422b",
       "after": "209bd587cc8cfef002b44aa0d34ad42c95a9ca25f87ec135f981012aba68422b",
       "source": null
     },
@@ -53,13 +53,13 @@
     },
     {
       "path": "assets/constructeur-recherche-ademe.service.js-Bhcs4Tfo.js",
-      "before": null,
+      "before": "5bd1eb727629f20a0f363459fa2d66ec04d748ce34ce46883d9d49a126c49fa8",
       "after": "5bd1eb727629f20a0f363459fa2d66ec04d748ce34ce46883d9d49a126c49fa8",
       "source": null
     },
     {
       "path": "assets/guides-fc87aba0efac.css",
-      "before": null,
+      "before": "fc87aba0eface5dd3a7585b096d2828b2168928ac64315bad00b0d7f1e0672cb",
       "after": "fc87aba0eface5dd3a7585b096d2828b2168928ac64315bad00b0d7f1e0672cb",
       "source": null
     },
@@ -71,7 +71,7 @@
     },
     {
       "path": "assets/index-CRXvP7TI.js",
-      "before": null,
+      "before": "5166efe103f6f2cae380566c30f1d75cd365c290151799133ea6754d837e3854",
       "after": "5166efe103f6f2cae380566c30f1d75cd365c290151799133ea6754d837e3854",
       "source": null
     },
@@ -83,7 +83,7 @@
     },
     {
       "path": "assets/vue-vendor-zVV11Hbz.css",
-      "before": null,
+      "before": "6bbeaca577c0d32e00d7e6ce952dd6bdb16bf20918f5da85edf79b7f7fcc99e8",
       "after": "6bbeaca577c0d32e00d7e6ce952dd6bdb16bf20918f5da85edf79b7f7fcc99e8",
       "source": null
     },
@@ -725,13 +725,13 @@
     },
     {
       "path": "documentation/agents/capabilities.json",
-      "before": null,
+      "before": "d1b8cd0bf154c93a9f18443f1886ca44cfd5b86b66f2984581756cd6df29f05d",
       "after": "d1b8cd0bf154c93a9f18443f1886ca44cfd5b86b66f2984581756cd6df29f05d",
       "source": null
     },
     {
       "path": "documentation/agents/index.html",
-      "before": null,
+      "before": "39741e6247aaf533871426646172819060567946675752616140bc6a38687de3",
       "after": "39741e6247aaf533871426646172819060567946675752616140bc6a38687de3",
       "source": null
     },
@@ -785,45 +785,45 @@
     },
     {
       "path": "guides/dpe-recent-vente/index.html",
-      "before": null,
+      "before": "22a5742666c65dc833356cb8b34c5295998c613039945ced75583909a59d6937",
       "after": "22a5742666c65dc833356cb8b34c5295998c613039945ced75583909a59d6937",
       "source": null
     },
     {
       "path": "guides/index.html",
-      "before": null,
+      "before": "1ac9a3fba7945181039234b0d8f7d24ef629e7bdbe037d1ccdeb2f69fa3cd36d",
       "after": "1ac9a3fba7945181039234b0d8f7d24ef629e7bdbe037d1ccdeb2f69fa3cd36d",
       "source": null
     },
     {
       "path": "guides/rechercher-avec-dpe/index.html",
-      "before": null,
+      "before": "f7de590139453152f852fed17f1dc1a3357b2ab32b88a81b959dcf9725ef1887",
       "after": "f7de590139453152f852fed17f1dc1a3357b2ab32b88a81b959dcf9725ef1887",
       "source": null
     },
     {
       "path": "guides/retrouver-adresse-annonce/index.html",
-      "before": null,
+      "before": "100775bc2d0ca1025f2a56309dcbe419ab1e5d14527eb16266be62e1ac929ede",
       "after": "100775bc2d0ca1025f2a56309dcbe419ab1e5d14527eb16266be62e1ac929ede",
       "source": null
     },
     {
       "path": "index.html",
-      "before": "a3500dfac937951659125bec6341bfc2664286d2529e5dd424ddea1f4dd4f0ef",
-      "after": "f4c1d84b63aba14517e4829bd9162250a0f08915b4c43c5383c2fbbbc79299e1",
-      "source": "e2e-pwa/fixtures/production-2026-10-05/static/index.html"
+      "before": "f4c1d84b63aba14517e4829bd9162250a0f08915b4c43c5383c2fbbbc79299e1",
+      "after": "0129cbb33bed4e915affb7ff203acdd608d4bbd58c9fadb2b781a52ab9617f39",
+      "source": "e2e-pwa/fixtures/production-217ee828/static/index.html"
     },
     {
       "path": "manifest.example.json",
       "before": "ad080430036a2ea0afee762e26a07abbbfa595aeefed373eea5c5df0cd250a14",
-      "after": "ad080430036a2ea0afee762e26a07abbbfa595aeefed373eea5c5df0cd250a14",
-      "source": null
+      "after": "eb696a1818fbcc4d3fabeabac284a23b94e9a9502cbc8d4fbe4a3e032aa0975c",
+      "source": "e2e-pwa/fixtures/production-217ee828/static/manifest.example.json"
     },
     {
       "path": "manifest.webmanifest",
       "before": "a67ab9d4649f8566c917a5e9cd7e98724ea796e3a39030a32f83b599cab7ab14",
-      "after": "a67ab9d4649f8566c917a5e9cd7e98724ea796e3a39030a32f83b599cab7ab14",
-      "source": null
+      "after": "bf5cfb448487fc399cdbb7dcc844ccb14af7b035cb5123c53edf6f8b72b855d8",
+      "source": "e2e-pwa/fixtures/production-217ee828/static/manifest.webmanifest.txt"
     },
     {
       "path": "noise.svg",
@@ -845,33 +845,33 @@
     },
     {
       "path": "robots.txt",
-      "before": "f060ffedbdfb044217dabda65184601d920fe6901f7faa22376479986501a0bd",
+      "before": "0bfe12c8c5daf75c9ed1fa0341dae64db0c1386d0657fc768e6f6ec6020b2790",
       "after": "0bfe12c8c5daf75c9ed1fa0341dae64db0c1386d0657fc768e6f6ec6020b2790",
-      "source": "e2e-pwa/fixtures/production-2026-10-05/static/robots.txt"
+      "source": null
     },
     {
       "path": "robots.txt.template",
-      "before": "cd81852a62af8d04c449a7611a90c7f0df688842321cf7d88f3200107beac630",
+      "before": "f2150b9847db6e82e5e0c35a1cfb425c8041e62cf160a8754b58acd968b1096f",
       "after": "f2150b9847db6e82e5e0c35a1cfb425c8041e62cf160a8754b58acd968b1096f",
-      "source": "e2e-pwa/fixtures/production-2026-10-05/static/robots.txt.template"
+      "source": null
     },
     {
       "path": "sitemap.xml",
-      "before": "eeef63fdba2c9c63deb4bc0375a4955c9581d3dc859d44bdff27369abb155475",
-      "after": "bf0e752bbdd23b07367e4e2fe37fc8bc87b8746578b42104363058e3c3f055ea",
-      "source": "e2e-pwa/fixtures/production-2026-10-05/static/sitemap.xml"
+      "before": "bf0e752bbdd23b07367e4e2fe37fc8bc87b8746578b42104363058e3c3f055ea",
+      "after": "f9a1dceb292581c4378a29c3494ab1ef3180ae75b742440a0a28f5942388e8cb",
+      "source": "e2e-pwa/fixtures/production-217ee828/static/sitemap.xml"
     },
     {
       "path": "sitemap.xml.template",
-      "before": "65c27676c17880dfdfdd335bb59d44ef10477cc1a88aa739697e48a0bd62ae70",
-      "after": "ac76e37680b25be6864b01e3a0c5674f9bcafd6eea10fb844f5a65d2f58d9e95",
-      "source": "e2e-pwa/fixtures/production-2026-10-05/static/sitemap.xml.template"
+      "before": "ac76e37680b25be6864b01e3a0c5674f9bcafd6eea10fb844f5a65d2f58d9e95",
+      "after": "03f22e168512969bc7645bae89596a0b6d5d855631416f6f5fb15b04d15f6648",
+      "source": "e2e-pwa/fixtures/production-217ee828/static/sitemap.xml.template"
     },
     {
       "path": "sw.js",
-      "before": "c6364a1aa4137e9f2c9b23c359c975aa6949e3265e946d8b5f20ccd4aab4c04a",
-      "after": "7a0515290c4b1ec131faa3178af37d36f0075ace17ea9d9e6df7b3c9173ecf25",
-      "source": "e2e-pwa/fixtures/production-2026-10-05/static/sw.js"
+      "before": "7a0515290c4b1ec131faa3178af37d36f0075ace17ea9d9e6df7b3c9173ecf25",
+      "after": "c662f2b99e6ca83c111fca1b799412310eb3bd08299465431fe28a6c0c3cb05e",
+      "source": "e2e-pwa/fixtures/production-217ee828/static/sw.min.js"
     },
     {
       "path": "workbox-9c191d2f.js",
