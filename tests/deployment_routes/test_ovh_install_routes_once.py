@@ -111,11 +111,18 @@ class RoutingTests(unittest.TestCase):
             if path=='/manifest.webmanifest':return 200,{},b'manifest'
             return 200,{},b'index'
         self.assertEqual(len(routes.verify_http(RID,good)),12)
-        for kind in ('route404','soft404','external_redirect','worker_drift','manifest_drift'):
+        def default_port(path,token):
+            if path.startswith('/faq'):return 301,{'Location':'https://localiserbien.fr:443/informations'},b''
+            return good(path,token)
+        self.assertEqual(len(routes.verify_http(RID,default_port)),12)
+        for kind in ('route404','soft404','external_redirect','wrong_port','http_redirect','userinfo','worker_drift','manifest_drift'):
             def bad(path,token):
                 if kind=='route404' and path=='/informations':return 404,{},b'missing'
                 if kind=='soft404' and '__missing_' in path:return 200,{},b'index'
                 if kind=='external_redirect' and path.startswith('/faq'):return 301,{'Location':'https://other.example/informations'},b''
+                if kind=='wrong_port' and path.startswith('/faq'):return 301,{'Location':'https://localiserbien.fr:8443/informations'},b''
+                if kind=='http_redirect' and path.startswith('/faq'):return 301,{'Location':'http://localiserbien.fr/informations'},b''
+                if kind=='userinfo' and path.startswith('/faq'):return 301,{'Location':'https://user@localiserbien.fr/informations'},b''
                 if kind=='worker_drift' and path=='/sw.js':return 200,{},b'wrong'
                 if kind=='manifest_drift' and path=='/manifest.webmanifest':return 200,{},b'wrong'
                 return good(path,token)

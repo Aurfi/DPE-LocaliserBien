@@ -74,7 +74,9 @@ def verify_http(token, fetch=fetch_http):
         code, headers, body = fetch(path, token)
         destination = urllib.parse.urlsplit(urllib.parse.urljoin(ORIGIN, headers.get('Location', '')))
         release.require(code == 301 and destination.scheme == 'https' and
-                        destination.netloc == 'localiserbien.fr' and destination.path == '/informations',
+                        destination.hostname == 'localiserbien.fr' and destination.port in (None, 443) and
+                        destination.username is None and destination.password is None and
+                        destination.path == '/informations',
                         'Legacy FAQ route did not return its intended same-site permanent redirect.')
         report.append({'path': path, 'status': code, 'destination': destination.path})
     for path in ('/assets/__missing_' + token + '.js', '/data/__missing_' + token + '.json',
