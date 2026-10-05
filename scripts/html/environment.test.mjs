@@ -9,6 +9,12 @@ import { escapeHtml, htmlEnvironmentDefines, requiredHtmlEnvironment, serializeJ
 const root = fileURLToPath(new URL('../../', import.meta.url))
 const template = readFileSync(new URL('../../index.html', import.meta.url), 'utf8')
 const baseline = JSON.parse(readFileSync(new URL('./fixtures/baseline-seo.json', import.meta.url), 'utf8'))
+// Keep the historical production capture immutable. Current descriptions remove
+// only the separately reviewed service-marketing claim.
+const currentEnvironment = { ...baseline.environment }
+for (const key of ['VITE_APP_DESCRIPTION', 'VITE_OG_DESCRIPTION', 'VITE_TWITTER_DESCRIPTION']) {
+  currentEnvironment[key] = currentEnvironment[key].replace('gratuitement ', '')
+}
 
 function parseHtml(html) {
   const window = new Window({
@@ -112,30 +118,44 @@ test('every native HTML placeholder has a context-specific alias and no EJS rema
   assert.equal((template.match(/type="application\/ld\+json"/g) || []).length, 6)
 })
 
-test('native Vite output preserves SEO metadata and schemas with the reviewed FAQ wording', async () => {
-  const html = await nativeHtml(baseline.environment)
+test('native Vite output preserves unrelated SEO fields while removing reviewed marketing claims', async () => {
+  const html = await nativeHtml(currentEnvironment)
   assert.doesNotMatch(html, /%VITE_[A-Z_]+%|<%/)
   const { window, document } = parseHtml(html)
   try {
     assert.equal(document.title, baseline.title)
     assert.equal(document.querySelector('link[rel="canonical"]').getAttribute('href'), baseline.canonical)
     for (const { attribute, key, content } of baseline.metadata) {
-      assert.equal(document.querySelector(`meta[${attribute}="${key}"]`)?.getAttribute('content'), content, key)
+      const expectedContent = ['description', 'og:description', 'twitter:description'].includes(key)
+        ? content.replace('gratuitement ', '')
+        : content
+      assert.equal(document.querySelector(`meta[${attribute}="${key}"]`)?.getAttribute('content'), expectedContent, key)
     }
     const expected = structuredClone(baseline.structuredData)
     assert.equal(expected.length, 6)
     // The old HTML-escaped EJS values were not decoded inside script raw text.
-    // Correct the two escaped descriptions and the reviewed FAQ answer below.
-    // All remaining fields stay identical to the frozen production output.
+    // Correct serialization plus the explicitly reviewed copy-only differences.
+    // Every unrelated field stays identical to the frozen production output.
     for (const schema of expected.slice(0, 2)) {
       assert.match(schema.description, /l&#39;identification/)
-      schema.description = baseline.environment.VITE_APP_DESCRIPTION
+      schema.description = currentEnvironment.VITE_APP_DESCRIPTION
     }
     const faq = expected.find(schema => schema['@type'] === 'FAQPage')
     assert.match(faq.mainEntity[0].acceptedAnswer.text, /localiser précisément/)
     faq.mainEntity[0].acceptedAnswer.text =
       'LocaliserBien compare les critères d’une annonce aux données DPE publiques de l’ADEME. Saisissez la commune, la surface et la consommation ou une classe DPE, puis consultez les correspondances proposées.'
+    const organization = expected.find(schema => schema['@type'] === 'Organization')
+    organization.description = organization.description.replace('gratuit ', '')
+    const previousQuestions = faq.mainEntity.length
+    faq.mainEntity = faq.mainEntity.filter(question => question.name !== 'Le service est-il gratuit ?')
+    assert.equal(faq.mainEntity.length, previousQuestions - 1)
+    for (const type of ['WebApplication', 'Service']) {
+      const schema = expected.find(item => item['@type'] === type)
+      assert.equal(schema.offers.price, '0')
+      delete schema.offers
+    }
     assert.deepEqual(structuredData(document), expected)
+    assert.doesNotMatch(html, /\bgratuit\w*|\bsans[\s,;:-]+(?:compte|inscription|abonnement)\b|\bfree\b/i)
   } finally {
     await window.happyDOM.close()
   }

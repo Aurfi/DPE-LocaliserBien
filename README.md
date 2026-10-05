@@ -7,7 +7,7 @@ Application web pour localiser des biens immobiliers en France à partir des don
 - **Recherche précise** : Trouvez un bien par surface, consommation énergétique et localisation
 - **Aperçu cartographique** : Vue satellite Google Maps dans la fiche d’un bien, avec un lien externe toujours disponible
 - **Mode sombre** : Interface adaptative jour/nuit
-- **100% gratuit** : Sans compte ni publicité ; historique local facultatif
+- **Sans publicité** : Historique local facultatif
 - **Responsive** : Optimisé pour mobile, tablette et desktop
 
 ## 🚀 Installation

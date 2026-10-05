@@ -229,11 +229,11 @@ class WorkflowTests(unittest.TestCase):
         self.assertIn('expected_htaccess_sha256:', rollback)
         self.assertNotIn('ovh_release.py rollback', rollback)
 
-    def test_all_six_metadata_descriptions_unchanged(self):
+    def test_all_six_metadata_descriptions_omit_removed_claims(self):
         descriptions = [line.split('DESCRIPTION', 1)[1] for line in self.text.splitlines() if 'DESCRIPTION' in line]
         self.assertEqual(len(descriptions), 6)
         for line in descriptions:
-            self.assertIn("Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien.", line)
+            self.assertIn("Recherchez des correspondances possibles dans les données DPE publiques en France. Un résultat ne garantit pas l'identification du bien.", line)
 
 
 if __name__ == '__main__':
