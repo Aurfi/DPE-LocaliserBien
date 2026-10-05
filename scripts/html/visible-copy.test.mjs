@@ -14,7 +14,7 @@ function activeVue(directory) {
   })
 }
 
-test('active Vue copy omits free and no-account marketing without changing SEO metadata scope', () => {
+test('active Vue copy omits free and no-account marketing', () => {
   for (const file of activeVue(path.join(root, 'src'))) {
     assert.doesNotMatch(
       fs.readFileSync(file, 'utf8'),

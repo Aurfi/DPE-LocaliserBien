@@ -67,8 +67,7 @@ export default defineConfig(({ mode }) => {
         manifest: {
           name: env.VITE_SITE_NAME || 'LocaliserBien',
           short_name: env.VITE_SITE_NAME || 'LocaliserBien',
-          description:
-            'Recherchez gratuitement des correspondances possibles dans les données DPE publiques en France.',
+          description: 'Recherchez des correspondances possibles dans les données DPE publiques en France.',
           lang: 'fr-FR',
           start_url: '/',
           scope: '/',

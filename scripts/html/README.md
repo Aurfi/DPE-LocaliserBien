@@ -37,8 +37,12 @@ The baseline had one genuine serialization defect: the two environment-derived
 JSON-LD descriptions contained the literal text `l&#39;identification`. Script
 contents do not decode HTML entities. The comparison explicitly corrects only
 those two descriptions to the original environment value, `l'identification`,
-then requires deep equality of every field in all six schemas. No schemas,
-static FAQ text, search action or other SEO content were removed or rewritten.
+then requires deep equality of all six schemas after explicit current-copy
+adjustments. The frozen fixture remains byte-for-byte unchanged. Current
+expectations remove free-service wording from descriptions, remove the
+promotional FAQ entry and two zero-price Offer declarations, and retain the
+previously reviewed how-it-works answer. Search actions, schema types, canonical
+URLs and all unrelated fields are preserved.
 
 Special-character cases separately verify apostrophes, quotes, ampersands, angle
 brackets, backslashes, newlines and Unicode line separators in HTML and parsed

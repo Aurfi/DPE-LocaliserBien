@@ -277,8 +277,7 @@ test('visible application copy omits free and no-account marketing on every main
   ]) {
     await page.goto(url)
     await expect(page.getByRole('heading', { level: 1, name: title, exact: true })).toBeVisible()
-    // Check rendered visible text only. SEO/JSON-LD and workflow environment
-    // descriptions remain a separate, explicitly pending task.
+    // Check the visible body alongside the separately tested SEO/JSON-LD copy.
     expect(await page.locator('body').innerText()).not.toMatch(
       /\bgratuit\w*|\bsans[\s,;:-]+(?:compte|inscription|abonnement)\b/i
     )
