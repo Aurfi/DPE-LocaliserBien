@@ -795,3 +795,66 @@ jobs:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+
+  install-reviewed-routes-once:
+    name: Complete reviewed route hosting without replacing configuration
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: [lint-and-test, security-check, pwa-lifecycle]
+    if: github.repository == 'Aurfi/DPE-LocaliserBien' && github.ref == 'refs/heads/main' && github.event_name == 'push' && github.event.before == '1b8f7b36b2f1afc61683b4d97f7b4dc0f838284b'
+    environment: ovh-production
+    concurrency:
+      group: localiserbien-production
+      cancel-in-progress: false
+    env:
+      OVH_SFTP_HOST_KEY_TYPE: ssh-ed25519
+      OVH_SFTP_HOST_KEY_SHA256: SHA256:6053kGsbCzj0rOIpNAz9SNbToAfBc/rUoX/LlnG1AhY
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+        persist-credentials: false
+    - name: Verify exact routing-only scope
+      run: |
+        python3 - <<'PYCODE'
+        import os, subprocess
+        parent = '1b8f7b36b2f1afc61683b4d97f7b4dc0f838284b'
+        parents = subprocess.check_output(['git', 'rev-list', '--parents', '-n', '1', 'HEAD'], text=True).split()
+        assert parents == [os.environ['GITHUB_SHA'], parent], 'Unexpected route-fix ancestry.'
+        changed = subprocess.check_output(['git', 'diff', '--name-only', parent, 'HEAD'], text=True).splitlines()
+        assert changed == ['.github/workflows/ci.yml', 'scripts/deployment/ovh_install_routes_once.py', 'tests/deployment_routes/test_ovh_install_routes_once.py'], 'Application, public route bytes, adapter, and recovery plan must remain unchanged.'
+        PYCODE
+    - name: Install the same pinned SFTP tool in this protected job only
+      run: python3 -m pip install --disable-pip-version-check 'paramiko==5.0.0'
+    - name: Verify transport and fail-closed route installation offline
+      run: |
+        python3 -m unittest discover -s tests/deployment_sftp -p 'test_*.py' -v
+        python3 -m unittest discover -s tests/deployment_routes -p 'test_*.py' -v
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24.x'
+    - uses: actions/download-artifact@v4
+      with:
+        name: build-artifacts
+        path: dist/
+    - name: Require identical reviewed artifact and route bytes
+      run: |
+        node scripts/check-built-site.mjs
+        python3 - <<'PYCODE'
+        import hashlib, sys
+        from pathlib import Path
+        sys.path.insert(0, 'scripts/deployment')
+        from ovh_release import build_digest, inventory
+        files = inventory('dist')
+        assert len(files) == 139
+        assert build_digest(files) == 'db458630402cf9d46ed8197f055bba46aa7cdff06f8e7c650bd7ed1d506bc3bb'
+        assert hashlib.sha256(files['.htaccess']).hexdigest() == 'dfc61c3c3c61be691cbac1d0cd3f052eedf08bf5620e95809018d2b8a88d5762'
+        assert files['.htaccess'] == Path('public/.htaccess').read_bytes()
+        PYCODE
+    - name: Install only absent reviewed routing config and verify public HTTP behavior
+      run: python3 scripts/deployment/ovh_install_routes_once.py
+      env:
+        OVH_ROUTE_INSTALL_ENABLED: reviewed-and-approved
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
