@@ -327,13 +327,15 @@ async function openNearbyAlertForm(page) {
   await page.goto('/')
   await page.getByRole('button', { name: 'Biens à proximité', exact: true }).click()
   const form = page.locator('form').filter({ has: page.locator('#nearby-address') })
-  await expect(form.getByRole('button', { name: 'Rechercher', exact: true })).toBeEnabled()
+  await expect(form.getByLabel('Adresse de recherche', { exact: true })).toHaveValue('')
+  await expect(form.getByRole('button', { name: 'Rechercher', exact: true })).toBeDisabled()
   await expect(page.getByRole('region', { name: alertOfferName, exact: true })).toHaveCount(0)
   return form
 }
 
 async function submitNearbyAlertSearch(form) {
   await form.getByLabel('Adresse de recherche', { exact: true }).fill('1 rue du Test 75001 Paris')
+  await expect(form.getByRole('button', { name: 'Rechercher', exact: true })).toBeEnabled()
   await form.getByRole('button', { name: 'Rechercher', exact: true }).click()
 }
 
