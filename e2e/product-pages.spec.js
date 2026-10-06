@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test'
 import { mockPublicApis, search } from './fixtures.js'
 import { registerGuideChecks } from './guides-checks.js'
+import { initialLayoutReport, observeInitialLayout } from './layout-stability.js'
 
 // Keep the actual built app and its local geography/static files. Page fixtures
 // fulfill synthetic public API responses; everything else off-origin, including
@@ -318,3 +319,127 @@ test('visible application copy omits free and no-account marketing on every main
 })
 
 registerGuideChecks()
+
+// This spec is already included in the Chromium CI allowlist. Explicit viewport
+// sizes cover mobile there without changing the workflow or relying on a project
+// called Mobile Chrome. Run the identical tests against baseline and candidate.
+for (const viewport of [
+  { width: 375, height: 812 },
+  { width: 1280, height: 900 }
+]) {
+  for (const colorScheme of ['light', 'dark']) {
+    for (const historyEnabled of [false, true]) {
+      test(`initial layout stays stable at ${viewport.width}px, ${colorScheme}, history ${historyEnabled}`, async ({
+        page,
+        browserName
+      }, testInfo) => {
+        await page.setViewportSize(viewport)
+        await page.emulateMedia({ colorScheme })
+        test.setTimeout(60_000)
+        // Fixed lab conditions for both revisions, not Lighthouse score emulation.
+        // Other browser engines still run the viewport/DOM checks without CDP.
+        if (viewport.width === 375 && browserName === 'chromium') {
+          const cdp = await page.context().newCDPSession(page)
+          await cdp.send('Network.enable')
+          await cdp.send('Network.emulateNetworkConditions', {
+            offline: false,
+            latency: 150,
+            downloadThroughput: 1_600_000 / 8,
+            uploadThroughput: 750_000 / 8,
+            connectionType: 'cellular4g'
+          })
+          await cdp.send('Emulation.setCPUThrottlingRate', { rate: 4 })
+        }
+        await page.addInitScript(
+          ({ colorScheme, historyEnabled }) => {
+            localStorage.setItem('theme', colorScheme)
+            localStorage.setItem('dpe_history_preference', historyEnabled ? 'enabled' : 'disabled')
+            localStorage.setItem(
+              'dpe_recent_searches',
+              JSON.stringify([
+                {
+                  commune: '75001',
+                  surface: 65,
+                  consommation: 175,
+                  resultCount: 1,
+                  timestamp: 1791000000000,
+                  displayName: 'Recherche de test'
+                }
+              ])
+            )
+          },
+          { colorScheme, historyEnabled }
+        )
+        await observeInitialLayout(page)
+        const errors = []
+        page.on('pageerror', error => errors.push(error.message))
+        // Each Playwright test starts with a fresh browser context. Capture before
+        // any clicks/scrolling can hide a load shift behind hadRecentInput.
+        // Safety routing disables HTTP cache: reload is another network load.
+        // The later SPA return exercises the in-memory route/component cache.
+        for (const load of ['cold', 'reload']) {
+          if (load === 'cold') await page.goto('/')
+          else await page.reload()
+          await expect(page.getByRole('heading', { level: 1 })).toHaveText('Retrouver un bien grâce à son DPE')
+          await expect(page.getByRole('navigation', { name: 'Type de recherche' })).toBeVisible()
+          await expect(page.locator('.site-footer')).toBeVisible()
+          const report = await initialLayoutReport(page)
+          await testInfo.attach(`initial-layout-${load}.json`, {
+            body: JSON.stringify(
+              {
+                ...report,
+                throttle:
+                  viewport.width === 375 && browserName === 'chromium'
+                    ? { latencyMs: 150, downloadBitsPerSecond: 1_600_000, uploadBitsPerSecond: 750_000, cpuSlowdown: 4 }
+                    : null
+              },
+              null,
+              2
+            ),
+            contentType: 'application/json'
+          })
+          await testInfo.attach(`initial-layout-${load}.png`, {
+            body: await page.screenshot(),
+            contentType: 'image/png'
+          })
+          // Soft checks still retain both baseline measurements if the old code
+          // paints the footer alone or resolves visible content in a later flush.
+          expect.soft(report.states.length).toBeGreaterThan(0)
+          expect.soft(report.states.some(state => state.footer && !state.heading)).toBe(false)
+          expect.soft(report.states.some(state => state.form && !state.tabs)).toBe(false)
+          if (historyEnabled) expect.soft(report.states.some(state => state.form && !state.history)).toBe(false)
+          if (testInfo.project.name === 'chromium' || testInfo.project.name === 'Mobile Chrome') {
+            expect.soft(report.supported).toBe(true)
+            expect.soft(report.cls).toBeLessThanOrEqual(0.1)
+          }
+          expect.soft(report.header.top).toBe(report.firstHeader.top)
+          expect.soft(report.header.height).toBe(report.firstHeader.height)
+          expect.soft(report.footer.top).toBeGreaterThanOrEqual(report.main.bottom)
+          expect.soft(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+          expect.soft(await page.evaluate(() => scrollY)).toBe(0)
+          await expect(page.getByRole('heading', { name: 'Recherches récentes', exact: true })).toHaveCount(
+            historyEnabled ? 1 : 0
+          )
+        }
+        // Subsequent routes, a cached return and browser history keep working.
+        const guide = page.getByRole('link', { name: 'Guide et informations', exact: true })
+        await guide.focus()
+        await page.keyboard.press('Enter')
+        await expect(page).toHaveURL(/\/informations$/)
+        await expect(page.getByRole('heading', { level: 1 })).toHaveText('Guide et informations')
+        await page.locator('.site-wordmark').click()
+        await expect(page.locator('#search-commune')).toBeVisible()
+        await page.goBack()
+        await expect(page.getByRole('heading', { level: 1 })).toHaveText('Guide et informations')
+        await page.goForward()
+        await expect(page.locator('#search-commune')).toBeVisible()
+        await expect(page.locator('.site-footer')).toBeVisible()
+        const footerLink = page.locator('.site-footer').getByRole('link', { name: 'Mentions légales', exact: true })
+        await footerLink.focus()
+        await page.keyboard.press('Enter')
+        await expect(page.getByRole('heading', { level: 1 })).toHaveText('Mentions légales et vie privée')
+        expect(errors).toEqual([])
+      })
+    }
+  }
+}
