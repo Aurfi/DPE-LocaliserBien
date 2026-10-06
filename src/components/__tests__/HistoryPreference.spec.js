@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
+import { nextTick } from 'vue'
 import { useRecherches } from '../../stores/useRecherches.js'
 import HistoriqueRechercheDPE from '../fonctionnalites/dpe/HistoriqueRechercheDPE.vue'
 import RecherchesRecentes from '../fonctionnalites/recherche/RecherchesRecentes.vue'
@@ -25,6 +26,7 @@ beforeEach(() => {
   localStorage.getItem.mockImplementation(key => storage.get(key) ?? null)
   localStorage.setItem.mockImplementation((key, value) => storage.set(key, value))
   localStorage.removeItem.mockImplementation(key => storage.delete(key))
+  window.dispatchEvent(new StorageEvent('storage', { key: null }))
   localStorage.setItem.mockClear()
 })
 
@@ -34,12 +36,12 @@ afterEach(() => {
 })
 
 describe('optional history preference', () => {
-  it('is an unchecked inline option with local-only explanation, not a blocking popup', () => {
+  it('keeps the unchecked, labelled inline option without verbose explanation', () => {
     const wrapper = mountComponent(PreferenceHistorique)
     expect(wrapper.get('input[type="checkbox"]').element.checked).toBe(false)
-    expect(wrapper.get('#history-explanation').text()).toBe(
-      "Option désactivée par défaut. L'historique est enregistré uniquement dans ce navigateur."
-    )
+    expect(wrapper.get('label').text()).toBe('Conserver mes recherches sur cet appareil')
+    expect(wrapper.find('#history-explanation').exists()).toBe(false)
+    expect(wrapper.get('input').attributes('aria-describedby')).toBeUndefined()
     expect(wrapper.find('[role="dialog"]').exists()).toBe(false)
     expect(localStorage.setItem).not.toHaveBeenCalled()
   })
@@ -75,6 +77,90 @@ describe('optional history preference', () => {
     expect(storage.has('recent_dpe_searches')).toBe(false)
     expect(wrapper.get('input').element.checked).toBe(false)
     expect(wrapper.get('[role="status"]').text()).toContain('ont été effacées')
+    expect(findButton(wrapper, 'Effacer les recherches enregistrées')).toBeUndefined()
+    expect(findButton(wrapper, 'Tout effacer')).toBeUndefined()
+  })
+
+  it.each([undefined, '[]', '{}', 'null', '{invalid'])(
+    'hides clear controls for empty or invalid storage (%s)',
+    value => {
+      storage.clear()
+      if (value !== undefined) {
+        storage.set('dpe_recent_searches', value)
+        storage.set('recent_dpe_searches', value)
+      }
+      window.dispatchEvent(new StorageEvent('storage', { key: null }))
+      const wrapper = mountComponent(PreferenceHistorique)
+      expect(wrapper.get('input').element.checked).toBe(false)
+      expect(wrapper.findAll('button')).toHaveLength(0)
+    }
+  )
+
+  it.each(['recent', 'dpe'])('reacts to the first persisted %s search and removal of its last entry', async type => {
+    const store = useRecherches()
+    store.clearSearchHistory()
+    const wrapper = mountComponent(PreferenceHistorique)
+    await wrapper.get('input').setValue(true)
+    expect(wrapper.findAll('button')).toHaveLength(0)
+    if (type === 'recent') store.saveSearch({ commune: 'Paris', surfaceHabitable: 65.5 })
+    else store.saveRecentDPESearch({ address: 'Lyon', radius: 1 }, { results: [] })
+    await nextTick()
+    expect(findButton(wrapper, 'Effacer les recherches enregistrées')).toBeDefined()
+    store.removeSearch(0, type)
+    await nextTick()
+    expect(wrapper.findAll('button')).toHaveLength(0)
+    expect(wrapper.get('input').element.checked).toBe(true)
+  })
+
+  it('keeps clear available while either saved collection remains', async () => {
+    const wrapper = mountComponent(PreferenceHistorique)
+    useRecherches().clearSearchHistory('recent')
+    await nextTick()
+    expect(findButton(wrapper, 'Effacer les recherches enregistrées')).toBeDefined()
+    useRecherches().clearSearchHistory('dpe')
+    await nextTick()
+    expect(wrapper.findAll('button')).toHaveLength(0)
+  })
+
+  it('drops a pending confirmation after cross-tab deletion, then offers a fresh clear action for new history', async () => {
+    const wrapper = mountComponent(PreferenceHistorique)
+    await findButton(wrapper, 'Effacer les recherches enregistrées').trigger('click')
+    storage.clear()
+    window.dispatchEvent(new StorageEvent('storage', { key: null }))
+    await nextTick()
+    expect(wrapper.findAll('button')).toHaveLength(0)
+    storage.set('recent_dpe_searches', JSON.stringify([{ address: 'Nantes' }]))
+    window.dispatchEvent(new StorageEvent('storage', { key: 'recent_dpe_searches' }))
+    await nextTick()
+    expect(findButton(wrapper, 'Effacer les recherches enregistrées')).toBeDefined()
+    expect(findButton(wrapper, 'Tout effacer')).toBeUndefined()
+    expect(wrapper.get('input').element.checked).toBe(false)
+    expect(wrapper.text()).not.toContain('Nantes')
+  })
+
+  it('does not reuse a pending confirmation after clearing and saving again in the same turn', async () => {
+    const wrapper = mountComponent(PreferenceHistorique)
+    const store = useRecherches()
+    await wrapper.get('input').setValue(true)
+    await findButton(wrapper, 'Effacer les recherches enregistrées').trigger('click')
+    store.clearSearchHistory()
+    store.saveSearch({ commune: 'Paris' })
+    await nextTick()
+    expect(findButton(wrapper, 'Effacer les recherches enregistrées')).toBeDefined()
+    expect(findButton(wrapper, 'Tout effacer')).toBeUndefined()
+  })
+
+  it('does not reveal clear controls for a save that never reached storage', async () => {
+    const store = useRecherches()
+    store.clearSearchHistory()
+    const wrapper = mountComponent(PreferenceHistorique)
+    await wrapper.get('input').setValue(true)
+    localStorage.setItem.mockImplementation(() => {
+      throw new Error('Storage full')
+    })
+    expect(store.saveSearch({ commune: 'Paris' })).toBe(false)
+    await nextTick()
+    expect(wrapper.findAll('button')).toHaveLength(0)
   })
 
   it('keeps the checkbox off and explains a failed opt-in without blocking search', async () => {
@@ -96,6 +182,7 @@ describe('optional history preference', () => {
     await findButton(wrapper, 'Tout effacer').trigger('click')
     expect(wrapper.get('[role="status"]').text()).toContain("L'effacement a échoué")
     expect(storage.has('dpe_recent_searches')).toBe(true)
+    expect(findButton(wrapper, 'Effacer les recherches enregistrées')).toBeDefined()
   })
 })
 

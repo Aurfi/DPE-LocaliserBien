@@ -5,13 +5,15 @@
 
 import { computed, reactive } from 'vue'
 
-// Only this explicit preference enables reading or writing search history.
+// Only this explicit preference enables displaying or saving search history.
+// Presence alone is checked while off so retained entries can still be erased.
 const HISTORY_PREFERENCE_KEY = 'dpe_history_preference'
 let initialized = false
 
 // État global réactif
 const searchState = reactive({
   historyEnabled: false,
+  storedHistory: { recent: false, dpe: false },
   recentSearches: [],
   recentDPESearches: [],
   isLoading: false,
@@ -23,20 +25,32 @@ const searchState = reactive({
  * @returns {Object} API du store des recherches
  */
 export function useRecherches() {
+  const readStoredHistory = (key, type) => {
+    let stored
+    try {
+      stored = localStorage.getItem(key)
+    } catch (_error) {
+      // An inaccessible key is not evidence that previously saved entries vanished.
+      return []
+    }
+    try {
+      const parsed = stored ? JSON.parse(stored) : []
+      const entries = Array.isArray(parsed) ? parsed : []
+      searchState.storedHistory[type] = entries.length > 0
+      return entries
+    } catch (_error) {
+      searchState.storedHistory[type] = false
+      return []
+    }
+  }
+
   /**
    * Charge les recherches récentes depuis localStorage
    */
   const loadRecentSearches = () => {
     if (!searchState.historyEnabled) return []
-    try {
-      const stored = localStorage.getItem('dpe_recent_searches')
-      const parsed = stored ? JSON.parse(stored) : []
-      searchState.recentSearches = Array.isArray(parsed) ? parsed : []
-      return searchState.recentSearches
-    } catch (_error) {
-      searchState.recentSearches = []
-      return []
-    }
+    searchState.recentSearches = readStoredHistory('dpe_recent_searches', 'recent')
+    return searchState.recentSearches
   }
 
   /**
@@ -94,6 +108,7 @@ export function useRecherches() {
 
       // Sauvegarder dans localStorage
       localStorage.setItem('dpe_recent_searches', JSON.stringify(searchState.recentSearches))
+      searchState.storedHistory.recent = searchState.recentSearches.length > 0
 
       return true
     } catch (error) {
@@ -107,15 +122,8 @@ export function useRecherches() {
    */
   const loadRecentDPESearches = () => {
     if (!searchState.historyEnabled) return []
-    try {
-      const stored = localStorage.getItem('recent_dpe_searches')
-      const parsed = stored ? JSON.parse(stored) : []
-      searchState.recentDPESearches = Array.isArray(parsed) ? parsed : []
-      return searchState.recentDPESearches
-    } catch (_error) {
-      searchState.recentDPESearches = []
-      return []
-    }
+    searchState.recentDPESearches = readStoredHistory('recent_dpe_searches', 'dpe')
+    return searchState.recentDPESearches
   }
 
   /**
@@ -163,6 +171,7 @@ export function useRecherches() {
 
       // Sauvegarder dans localStorage
       localStorage.setItem('recent_dpe_searches', JSON.stringify(searchState.recentDPESearches))
+      searchState.storedHistory.dpe = searchState.recentDPESearches.length > 0
 
       return true
     } catch (error) {
@@ -182,9 +191,11 @@ export function useRecherches() {
       if (type === 'recent') {
         searchState.recentSearches.splice(index, 1)
         localStorage.setItem('dpe_recent_searches', JSON.stringify(searchState.recentSearches))
+        searchState.storedHistory.recent = searchState.recentSearches.length > 0
       } else if (type === 'dpe') {
         searchState.recentDPESearches.splice(index, 1)
         localStorage.setItem('recent_dpe_searches', JSON.stringify(searchState.recentDPESearches))
+        searchState.storedHistory.dpe = searchState.recentDPESearches.length > 0
       }
       return true
     } catch (error) {
@@ -202,10 +213,12 @@ export function useRecherches() {
       if (type === 'recent' || type === 'all') {
         searchState.recentSearches = []
         localStorage.removeItem('dpe_recent_searches')
+        searchState.storedHistory.recent = false
       }
       if (type === 'dpe' || type === 'all') {
         searchState.recentDPESearches = []
         localStorage.removeItem('recent_dpe_searches')
+        searchState.storedHistory.dpe = false
       }
       return true
     } catch (error) {
@@ -226,9 +239,11 @@ export function useRecherches() {
       if (type === 'recent' && searchState.recentSearches[index]) {
         searchState.recentSearches[index].displayName = displayName
         localStorage.setItem('dpe_recent_searches', JSON.stringify(searchState.recentSearches))
+        searchState.storedHistory.recent = searchState.recentSearches.length > 0
       } else if (type === 'dpe' && searchState.recentDPESearches[index]) {
         searchState.recentDPESearches[index].displayName = displayName
         localStorage.setItem('recent_dpe_searches', JSON.stringify(searchState.recentDPESearches))
+        searchState.storedHistory.dpe = searchState.recentDPESearches.length > 0
       }
       return true
     } catch (error) {
@@ -243,7 +258,7 @@ export function useRecherches() {
       loadRecentSearches()
       loadRecentDPESearches()
     } else {
-      // Old entries stay on disk, unread and hidden, until explicitly enabled.
+      // Old entries stay on disk and out of the displayed collections until enabled.
       searchState.recentSearches = []
       searchState.recentDPESearches = []
     }
@@ -254,6 +269,11 @@ export function useRecherches() {
       applyHistoryPreference(localStorage.getItem(HISTORY_PREFERENCE_KEY) === 'enabled')
     } catch (_error) {
       applyHistoryPreference(false)
+    }
+    if (!searchState.historyEnabled) {
+      // Inspect presence without retaining or displaying the stored entries.
+      readStoredHistory('dpe_recent_searches', 'recent')
+      readStoredHistory('recent_dpe_searches', 'dpe')
     }
   }
 
@@ -276,16 +296,20 @@ export function useRecherches() {
   const hasRecentSearches = computed(() => recentSearchCount.value > 0)
   const hasRecentDPESearches = computed(() => recentDPESearchCount.value > 0)
 
-  // Read only the preference until the user has explicitly opted in.
+  const hasSavedSearches = computed(() => searchState.storedHistory.recent || searchState.storedHistory.dpe)
+
+  // Hydrate collections only after explicit opt-in; otherwise keep presence alone.
   if (!initialized) {
     loadHistoryPreference()
     window.addEventListener('storage', event => {
       if (event.key === HISTORY_PREFERENCE_KEY || event.key === null) loadHistoryPreference()
-      else if (searchState.historyEnabled) {
-        // Read the latest storage value: a queued event can predate a deletion.
-        // Same-page consumers already observe the reactive collections directly.
-        if (event.key === 'dpe_recent_searches') loadRecentSearches()
-        else if (event.key === 'recent_dpe_searches') loadRecentDPESearches()
+      // Read current storage: a queued event can predate a deletion.
+      else if (event.key === 'dpe_recent_searches') {
+        if (searchState.historyEnabled) loadRecentSearches()
+        else readStoredHistory(event.key, 'recent')
+      } else if (event.key === 'recent_dpe_searches') {
+        if (searchState.historyEnabled) loadRecentDPESearches()
+        else readStoredHistory(event.key, 'dpe')
       }
     })
     initialized = true
@@ -305,6 +329,7 @@ export function useRecherches() {
     recentDPESearchCount,
     hasRecentSearches,
     hasRecentDPESearches,
+    hasSavedSearches,
 
     // Actions
     setHistoryEnabled,

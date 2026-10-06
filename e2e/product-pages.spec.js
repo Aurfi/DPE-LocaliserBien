@@ -152,17 +152,62 @@ test('navigates the privacy link to real legal content without draft or publishe
   await expect(privacyHeading).toBeInViewport({ ratio: 1 })
 })
 
-test('keeps the home history hint to the exact two French sentences', async ({ page }) => {
+test('keeps the history option concise and keyboard-accessible when nothing is saved', async ({ page }) => {
   await mockPublicApis(page)
   await page.goto('/')
-  const copy = "Option désactivée par défaut. L'historique est enregistré uniquement dans ce navigateur."
   const preference = page.getByRole('checkbox', { name: 'Conserver mes recherches sur cet appareil', exact: true })
+  const clear = page.getByRole('button', { name: 'Effacer les recherches enregistrées', exact: true })
   await expect(preference).not.toBeChecked()
-  await expect(page.locator('#history-explanation')).toHaveText(copy)
-  await expect(preference).toHaveAccessibleDescription(copy)
-  await preference.check()
+  await expect(page.locator('#history-explanation')).toHaveCount(0)
+  await expect(preference).not.toHaveAttribute('aria-describedby')
+  await expect(clear).toHaveCount(0)
+  await preference.focus()
+  await page.keyboard.press('Space')
   await expect(preference).toBeChecked()
-  await expect(page.locator('#history-explanation')).toHaveText(copy)
+  await expect(clear).toHaveCount(0)
+  await page.reload()
+  await expect(preference).toBeChecked()
+  await expect(clear).toHaveCount(0)
+})
+
+test('shows clear only for retained searches in either mode and follows cross-tab changes', async ({
+  page,
+  context
+}) => {
+  await mockPublicApis(page)
+  await page.goto('/')
+  const otherTab = await context.newPage()
+  await mockPublicApis(otherTab)
+  await otherTab.goto('/')
+  const preference = page.getByRole('checkbox', { name: 'Conserver mes recherches sur cet appareil', exact: true })
+  const clear = page.getByRole('button', { name: 'Effacer les recherches enregistrées', exact: true })
+  const confirm = page.getByRole('button', { name: 'Tout effacer', exact: true })
+  for (const key of ['dpe_recent_searches', 'recent_dpe_searches']) {
+    await otherTab.evaluate(key => {
+      const entry = key === 'dpe_recent_searches' ? { commune: 'Paris' } : { address: 'Lyon' }
+      localStorage.setItem(key, JSON.stringify([entry]))
+    }, key)
+    await expect(clear).toBeVisible()
+    await expect(preference).not.toBeChecked()
+    await page.reload()
+    await expect(clear).toBeVisible()
+    await expect(preference).not.toBeChecked()
+    await clear.click()
+    await page.getByRole('button', { name: 'Annuler', exact: true }).click()
+    await clear.click()
+    await confirm.click()
+    await expect(clear).toHaveCount(0)
+    await expect(confirm).toHaveCount(0)
+    expect(await page.evaluate(key => localStorage.getItem(key), key)).toBeNull()
+  }
+  await otherTab.evaluate(() => localStorage.setItem('dpe_recent_searches', JSON.stringify([{ commune: 'Paris' }])))
+  await expect(clear).toBeVisible()
+  await clear.click()
+  await otherTab.evaluate(() => localStorage.clear())
+  await expect(confirm).toHaveCount(0)
+  await expect(clear).toHaveCount(0)
+  await expect(preference).not.toBeChecked()
+  await otherTab.close()
 })
 
 test('keeps nearby submit in the first mobile viewport and preserves edited optional filters', async ({ page }) => {
