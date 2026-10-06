@@ -41,6 +41,15 @@
       />
     </div>
 
+    <section aria-labelledby="dpe-alert-interest-title" class="dpe-alert-interest">
+      <h3 id="dpe-alert-interest-title">Alertes DPE par e-mail, en projet</h3>
+      <p>
+        5,99 € au total pour suivre jusqu’à 3 recherches pendant 30 jours. Un e-mail quotidien si de nouveaux DPE correspondent à vos critères. Sans renouvellement automatique.
+      </p>
+      <p><a :href="alertInterestHref">Être recontacté à ce tarif</a></p>
+      <p>Service pas encore disponible. Aucun paiement ni engagement.</p>
+    </section>
+
     <!-- Modals -->
     <ModaleProprietee
       v-if="selectedProperty"
@@ -97,6 +106,17 @@ import EnteteResultats from '../../partages/EnteteResultats.vue'
 import ModaleProprietee from '../recherche/ModaleProprietee.vue'
 import ModaleDetailsDPE from './ModaleDetailsDPE.vue'
 
+// An editable email draft only: never include the current search or send anything automatically.
+const alertInterestSubject = 'Alertes DPE à 5,99 € — demande de contact'
+const alertInterestBody = [
+  'Bonjour,',
+  'Je souhaite être recontacté(e) pour acheter les alertes DPE à 5,99 € pour 30 jours, avec jusqu’à 3 recherches suivies et sans renouvellement automatique.',
+  '',
+  'Ma zone et mes critères :',
+  'À partir de quand j’en aurais besoin :'
+].join('\r\n')
+const alertInterestHref = `mailto:contact@localiserbien.fr?subject=${encodeURIComponent(alertInterestSubject)}&body=${encodeURIComponent(alertInterestBody)}`
+
 export default {
   name: 'ResultatsDpeRecents',
   components: {
@@ -132,6 +152,7 @@ export default {
     })
 
     return {
+      alertInterestHref,
       selectedProperty,
       showDPEDetails,
       hiddenResults,
@@ -423,6 +444,48 @@ export default {
 </script>
 
 <style scoped>
+.dpe-alert-interest {
+  margin-top: 2rem;
+  border-top: 1px solid #d1d5db;
+  padding-top: 1.25rem;
+  color: #4b5563;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.dpe-alert-interest h3 {
+  color: #111827;
+  font-weight: 600;
+}
+
+.dpe-alert-interest p {
+  margin-top: 0.5rem;
+}
+
+.dpe-alert-interest a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.dpe-alert-interest a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.dark .dpe-alert-interest {
+  border-color: #374151;
+  color: #9ca3af;
+}
+
+.dark .dpe-alert-interest h3 {
+  color: #f3f4f6;
+}
+
+.dark .dpe-alert-interest a {
+  color: #93c5fd;
+}
+
 /* Animations pour les résultats */
 .grid > div {
   animation: fadeInUp 0.6s ease-out;

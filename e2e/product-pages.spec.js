@@ -318,3 +318,99 @@ test('visible application copy omits free and no-account marketing on every main
 })
 
 registerGuideChecks()
+
+// Local-only validation of the proposed DPE alert interest link; no email is sent.
+const alertOfferName = 'Alertes DPE par e-mail, en projet'
+const alertInterestName = 'Être recontacté à ce tarif'
+
+async function openNearbyAlertForm(page) {
+  await page.goto('/')
+  await page.getByRole('button', { name: 'Biens à proximité', exact: true }).click()
+  const form = page.locator('form').filter({ has: page.locator('#nearby-address') })
+  await expect(form.getByRole('button', { name: 'Rechercher', exact: true })).toBeEnabled()
+  await expect(page.getByRole('region', { name: alertOfferName, exact: true })).toHaveCount(0)
+  return form
+}
+
+async function submitNearbyAlertSearch(form) {
+  await form.getByLabel('Adresse de recherche', { exact: true }).fill('1 rue du Test 75001 Paris')
+  await form.getByRole('button', { name: 'Rechercher', exact: true }).click()
+}
+
+for (const { label, viewport } of [
+  { label: 'desktop 1280px', viewport: { width: 1280, height: 900 } },
+  { label: 'mobile 375px', viewport: { width: 375, height: 812 } }
+]) {
+  test.describe(`DPE alert interest: ${label}`, () => {
+    test.use({ viewport })
+
+    test('shows one optional priced interest link below results and preserves return-to-search flows', async ({
+      page
+    }, testInfo) => {
+      expect(page.viewportSize()).toEqual(viewport)
+      await mockPublicApis(page)
+      const form = await openNearbyAlertForm(page)
+      // The offer must not displace or block the existing first-screen search.
+      await expect(form.getByRole('button', { name: 'Rechercher', exact: true })).toBeInViewport({ ratio: 1 })
+      await submitNearbyAlertSearch(form)
+      await expect(page.getByRole('button', { name: 'Voir détails', exact: true })).toHaveCount(1)
+      const offer = page.getByRole('region', { name: alertOfferName, exact: true })
+      await expect(offer).toHaveCount(1)
+      await expect(offer).toContainText('5,99 € au total pour suivre jusqu’à 3 recherches pendant 30 jours.')
+      await expect(offer).toContainText('Service pas encore disponible. Aucun paiement ni engagement.')
+      await expect(offer.locator('form, input, button, dialog, [role="dialog"]')).toHaveCount(0)
+      expect(await offer.evaluate(element => element.previousElementSibling.classList.contains('grid'))).toBe(true)
+      const link = offer.getByRole('link', { name: alertInterestName, exact: true })
+      const email = new URL(await link.getAttribute('href'))
+      expect(email.pathname).toBe('contact@localiserbien.fr')
+      expect(email.searchParams.get('body')).not.toContain('1 rue du Test')
+      expect(email.searchParams.get('body')).toContain('5,99 € pour 30 jours')
+      await link.focus()
+      await expect(link).toBeFocused()
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
+      await page.screenshot({ path: testInfo.outputPath('alert-interest-light.png'), fullPage: true })
+      await page.evaluate(() => document.documentElement.classList.add('dark'))
+      await page.screenshot({ path: testInfo.outputPath('alert-interest-dark.png'), fullPage: true })
+      await page.evaluate(() => document.documentElement.classList.remove('dark'))
+
+      // Prevent only native mail-client launch in the test; the app has no click handler.
+      await link.evaluate(element => element.addEventListener('click', event => event.preventDefault()))
+      await link.click()
+      await link.click()
+      await expect(offer).toHaveCount(1)
+      await expect(page.locator('[role="dialog"]')).toHaveCount(0)
+      await expect(page.getByRole('button', { name: 'Voir détails', exact: true })).toHaveCount(1)
+      await page.getByRole('button', { name: 'Nouvelle recherche', exact: true }).click()
+      await expect(offer).toHaveCount(0)
+      await expect(form.getByRole('button', { name: 'Rechercher', exact: true })).toBeEnabled()
+      await submitNearbyAlertSearch(form)
+      await expect(offer).toHaveCount(1)
+      await page.getByRole('link', { name: 'Guide et informations', exact: true }).click()
+      await expect(offer).toHaveCount(0)
+      await page.goBack()
+      await expect(page).toHaveURL('/')
+      await expect(offer).toHaveCount(0)
+      await page.goForward()
+      await expect(page).toHaveURL('/informations')
+      await expect(offer).toHaveCount(0)
+    })
+
+    test('offers the same unlaunched proposal after genuine zero results without hiding the empty state', async ({
+      page
+    }) => {
+      expect(page.viewportSize()).toEqual(viewport)
+      await mockPublicApis(page, { results: [] })
+      const form = await openNearbyAlertForm(page)
+      await submitNearbyAlertSearch(form)
+      await expect(
+        page.getByRole('heading', { name: 'Aucun DPE trouvé avec ces critères.', exact: true })
+      ).toBeVisible()
+      await expect(page.getByText('Essayez une période ou un rayon plus large.', { exact: true })).toBeVisible()
+      await expect(page.getByRole('region', { name: alertOfferName, exact: true })).toHaveCount(1)
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
+      await page.getByRole('button', { name: 'Nouvelle recherche', exact: true }).click()
+      await expect(page.getByRole('region', { name: alertOfferName, exact: true })).toHaveCount(0)
+      await expect(form.getByRole('button', { name: 'Rechercher', exact: true })).toBeEnabled()
+    })
+  })
+}
