@@ -7,7 +7,9 @@
       </div>
     </header>
     <main id="contenu-principal" class="flex-1" tabindex="-1"><router-view /></main>
-    <footer v-show="!modalOpen" class="site-footer">
+    <!-- Keep the header visible while the first lazy route resolves. Mount its
+         footer with the page, never above an empty router-view. -->
+    <footer v-if="$route.matched.length > 0" v-show="!modalOpen" class="site-footer">
       <div class="site-width">
         <div class="footer-grid">
           <div>

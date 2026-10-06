@@ -81,7 +81,9 @@
 // Composants critiques chargés immédiatement
 
 import { defineAsyncComponent } from 'vue'
+import NavigationOnglets from '../components/base/NavigationOnglets.vue'
 import FormulaireRechercheDPE from '../components/fonctionnalites/dpe/FormulaireRechercheDPE.vue'
+import RecherchesRecentes from '../components/fonctionnalites/recherche/RecherchesRecentes.vue'
 import { useRecherches } from '../stores/useRecherches.js'
 
 // Lazy loading des composants non-critiques pour améliorer le FCP
@@ -95,10 +97,6 @@ const RechercheDPERecente = defineAsyncComponent(
 const HistoriqueRechercheDPE = defineAsyncComponent(
   () => import('../components/fonctionnalites/dpe/HistoriqueRechercheDPE.vue')
 )
-const RecherchesRecentes = defineAsyncComponent(
-  () => import('../components/fonctionnalites/recherche/RecherchesRecentes.vue')
-)
-const NavigationOnglets = defineAsyncComponent(() => import('../components/base/NavigationOnglets.vue'))
 const AnimationTriangulation = defineAsyncComponent(() => import('../components/animations/AnimationTriangulation.vue'))
 
 import DPESearchService from '../services/dpe-search.service.js' // Système de scoring clair
