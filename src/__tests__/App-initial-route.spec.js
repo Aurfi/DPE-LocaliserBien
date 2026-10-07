@@ -3,6 +3,13 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import App from '../App.vue'
 
+// App.vue no longer waits on route state to show its footer: main.js
+// (mountWhenReady in bootstrap.js) only mounts this component once the
+// first navigation has settled, so by the time App exists, CLS is already
+// avoided. These tests cover what's left at the component level: the
+// footer and its navigation are always present, including while a route
+// is still pending or has failed to load.
+
 const deferred = () => {
   let resolve
   let reject
@@ -43,27 +50,25 @@ function start(path = '/') {
   return { home, information, homeLoader, router, errors }
 }
 
-function expectPendingShell() {
-  expect(wrapper.get('.site-header').isVisible()).toBe(true)
-  expect(wrapper.get('#contenu-principal').attributes('tabindex')).toBe('-1')
-  expect(wrapper.find('main h1').exists()).toBe(false)
-  expect(wrapper.find('.site-footer').exists()).toBe(false)
-}
-
-describe('first lazy route layout', () => {
-  it.each(['/', '/informations', '/faq', '/unknown'])('mounts the footer with the first page at %s', async path => {
-    const { home, information, router } = start(path)
-    await flushPromises()
-    expectPendingShell()
-    home.resolve(Home)
-    information.resolve(Information)
-    await router.isReady()
-    await flushPromises()
-    expect(wrapper.get('main h1').isVisible()).toBe(true)
-    expect(wrapper.get('.site-footer').isVisible()).toBe(true)
-    expect(wrapper.get('.site-footer nav').attributes('aria-label')).toBe('Informations du site')
-    expect(wrapper.get('.site-footer a').attributes('href')).toBe('/')
-  })
+describe('App shell independent of route state', () => {
+  it.each(['/', '/informations', '/faq', '/unknown'])(
+    'renders the footer and its navigation before the first route resolves, at %s',
+    async path => {
+      const { home, information, router } = start(path)
+      await flushPromises()
+      expect(wrapper.get('.site-header').isVisible()).toBe(true)
+      expect(wrapper.find('main h1').exists()).toBe(false)
+      expect(wrapper.get('.site-footer').isVisible()).toBe(true)
+      expect(wrapper.get('.site-footer nav').attributes('aria-label')).toBe('Informations du site')
+      expect(wrapper.get('.site-footer a').attributes('href')).toBe('/')
+      home.resolve(Home)
+      information.resolve(Information)
+      await router.isReady()
+      await flushPromises()
+      expect(wrapper.get('main h1').isVisible()).toBe(true)
+      expect(wrapper.get('.site-footer').isVisible()).toBe(true)
+    }
+  )
 
   it('preserves the resolved page and footer during later navigation, cached return and Back', async () => {
     const { home, information, homeLoader, router } = start()
@@ -96,14 +101,15 @@ describe('first lazy route layout', () => {
     expect(wrapper.get('.site-footer').isVisible()).toBe(true)
   })
 
-  it('keeps the header usable if the first route fails and renders a later successful navigation', async () => {
+  it('keeps the header and footer usable if the first route fails, and renders a later successful navigation', async () => {
     const { home, information, router, errors } = start()
     await flushPromises()
     const failure = new Error('Synthetic route failure')
     home.reject(failure)
     await flushPromises()
     expect(errors).toHaveBeenCalledWith(failure, expect.anything(), expect.anything())
-    expectPendingShell()
+    expect(wrapper.get('.site-footer').isVisible()).toBe(true)
+    expect(wrapper.find('main h1').exists()).toBe(false)
     information.resolve(Information)
     await wrapper.get('.site-header .quiet-link').trigger('click')
     await flushPromises()

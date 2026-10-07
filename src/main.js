@@ -1,64 +1,13 @@
-import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
 import './style.css'
 import { registerSW } from 'virtual:pwa-register'
-import App from './App.vue'
-import { navigationScroll } from './utils/navigationScroll.js'
+import { createAppRouter, createShellApp, mountWhenReady } from './bootstrap.js'
 // Imported for its side effect: attaches the beforeinstallprompt listener
 // immediately, before the router resolves the first lazy route.
 import './utils/pwaInstallPrompt.js'
 
-// Lazy loading des vues pour réduire le bundle initial
-const Home = () => import('./views/Home.vue')
-const FAQ = () => import('./views/FAQ.vue')
-const MentionsLegales = () => import('./views/MentionsLegales.vue')
-
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home,
-    meta: { title: import.meta.env.VITE_APP_TITLE }
-  },
-  {
-    path: '/informations',
-    name: 'Informations',
-    component: FAQ,
-    meta: { title: 'Informations - Localisateur de bien immobilier' }
-  },
-  // Redirection de l'ancienne URL vers la nouvelle
-  {
-    path: '/faq',
-    redirect: '/informations'
-  },
-  {
-    path: '/mentions-legales',
-    name: 'MentionsLegales',
-    component: MentionsLegales,
-    meta: { title: 'Mentions Légales - Localisateur de bien immobilier' }
-  },
-  // Page 404 - Redirection vers la page d'accueil
-  {
-    path: '/:pathMatch(.*)*',
-    redirect: '/'
-  }
-]
-
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-  scrollBehavior: navigationScroll
-})
-
-// Mise à jour dynamique du titre de la page
-router.beforeEach((to, _from, next) => {
-  document.title = to.meta.title || 'Localisateur de bien immobilier'
-  next()
-})
-
-const app = createApp(App)
-app.use(router)
-app.mount('#app')
+const router = createAppRouter()
+const app = createShellApp(router)
+mountWhenReady(app, router)
 
 // Register PWA service worker (vite-plugin-pwa)
 if ('serviceWorker' in navigator) {
