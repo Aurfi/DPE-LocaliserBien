@@ -4,6 +4,9 @@ import './style.css'
 import { registerSW } from 'virtual:pwa-register'
 import App from './App.vue'
 import { navigationScroll } from './utils/navigationScroll.js'
+// Imported for its side effect: attaches the beforeinstallprompt listener
+// immediately, before the router resolves the first lazy route.
+import './utils/pwaInstallPrompt.js'
 
 // Lazy loading des vues pour réduire le bundle initial
 const Home = () => import('./views/Home.vue')

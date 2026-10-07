@@ -36,12 +36,14 @@ afterEach(() => {
 })
 
 describe('optional history preference', () => {
-  it('keeps the unchecked, labelled inline option without verbose explanation', () => {
+  it('is an unchecked inline option with local-only explanation, not a blocking popup', () => {
     const wrapper = mountComponent(PreferenceHistorique)
     expect(wrapper.get('input[type="checkbox"]').element.checked).toBe(false)
     expect(wrapper.get('label').text()).toBe('Conserver mes recherches sur cet appareil')
-    expect(wrapper.find('#history-explanation').exists()).toBe(false)
-    expect(wrapper.get('input').attributes('aria-describedby')).toBeUndefined()
+    expect(wrapper.get('#history-explanation').text()).toBe(
+      "Option désactivée par défaut. L'historique est enregistré uniquement dans ce navigateur."
+    )
+    expect(wrapper.get('input').attributes('aria-describedby')).toBe('history-explanation')
     expect(wrapper.find('[role="dialog"]').exists()).toBe(false)
     expect(localStorage.setItem).not.toHaveBeenCalled()
   })
