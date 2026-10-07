@@ -158,10 +158,8 @@ test('keeps the history option concise and keyboard-accessible when nothing is s
   const preference = page.getByRole('checkbox', { name: 'Conserver mes recherches sur cet appareil', exact: true })
   const clear = page.getByRole('button', { name: 'Effacer les recherches enregistrées', exact: true })
   await expect(preference).not.toBeChecked()
-  await expect(page.locator('#history-explanation')).toContainText(
-    "Option désactivée par défaut. L'historique est enregistré uniquement dans ce navigateur."
-  )
-  await expect(preference).toHaveAttribute('aria-describedby', 'history-explanation')
+  await expect(page.locator('#history-explanation')).toHaveCount(0)
+  await expect(preference).not.toHaveAttribute('aria-describedby')
   await expect(clear).toHaveCount(0)
   await preference.focus()
   await page.keyboard.press('Space')
