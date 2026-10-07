@@ -13,14 +13,14 @@
     <p id="history-explanation" class="mt-1 max-w-2xl">
       Option désactivée par défaut. L'historique est enregistré uniquement dans ce navigateur.
     </p>
-    <div v-if="confirmClear" class="mt-2">
+    <div v-if="hasSavedSearches && confirmClear" class="mt-2">
       <p>Effacer définitivement les recherches enregistrées dans les deux modes ?</p>
       <div class="mt-1 flex flex-wrap gap-4">
         <button type="button" class="quiet-link" @click="clearHistory">Tout effacer</button>
         <button type="button" class="quiet-link" @click="confirmClear = false">Annuler</button>
       </div>
     </div>
-    <button v-else type="button" class="quiet-link mt-2" @click="confirmClear = true; status = ''">
+    <button v-else-if="hasSavedSearches" type="button" class="quiet-link mt-2" @click="confirmClear = true; status = ''">
       Effacer les recherches enregistrées
     </button>
     <p v-if="status" role="status" class="mt-1">{{ status }}</p>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { useRecherches } from '../../stores/useRecherches.js'
 
 export default {
@@ -37,6 +37,13 @@ export default {
     const store = useRecherches()
     const confirmClear = ref(false)
     const status = ref('')
+    watch(
+      store.hasSavedSearches,
+      hasSavedSearches => {
+        if (!hasSavedSearches) confirmClear.value = false
+      },
+      { flush: 'sync' }
+    )
     const changePreference = event => {
       const enabled = event.target.checked
       const saved = store.setHistoryEnabled(enabled)
@@ -54,7 +61,14 @@ export default {
         ? 'Les recherches enregistrées ont été effacées.'
         : "L'effacement a échoué. Vérifiez les autorisations de stockage de votre navigateur."
     }
-    return { historyEnabled: store.historyEnabled, confirmClear, status, changePreference, clearHistory }
+    return {
+      historyEnabled: store.historyEnabled,
+      hasSavedSearches: store.hasSavedSearches,
+      confirmClear,
+      status,
+      changePreference,
+      clearHistory
+    }
   }
 }
 </script>

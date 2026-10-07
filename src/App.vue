@@ -7,6 +7,9 @@
       </div>
     </header>
     <main id="contenu-principal" class="flex-1" tabindex="-1"><router-view /></main>
+    <!-- main.js only mounts this app once the first navigation has settled
+         (see mountWhenReady in bootstrap.js), so this never paints above an
+         empty router-view. -->
     <footer v-show="!modalOpen" class="site-footer">
       <div class="site-width">
         <div class="footer-grid">

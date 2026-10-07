@@ -11,6 +11,11 @@
 
 <script>
 import { Download } from 'lucide-vue-next'
+import {
+  clearDeferredInstallPrompt,
+  getDeferredInstallPrompt,
+  onInstallPromptChange
+} from '../../utils/pwaInstallPrompt.js'
 
 export default {
   name: 'InstallPWA',
@@ -20,8 +25,8 @@ export default {
   },
   data() {
     return {
-      deferredPrompt: null,
-      showButton: false
+      showButton: false,
+      stopListening: null
     }
   },
   mounted() {
@@ -29,27 +34,29 @@ export default {
     const ua = navigator.userAgent.toLowerCase()
     const isAndroid = ua.includes('android')
     const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone
+    this.isAndroid = isAndroid
+    this.isStandalone = isStandalone
 
-    window.addEventListener('beforeinstallprompt', e => {
-      // Chrome fires this on Android if app is installable
-      e.preventDefault()
-      this.deferredPrompt = e
-      this.showButton = isAndroid && !isStandalone
-    })
-
-    window.addEventListener('appinstalled', () => {
-      this.showButton = false
-      this.deferredPrompt = null
-    })
+    const sync = () => {
+      this.showButton = Boolean(getDeferredInstallPrompt()) && isAndroid && !isStandalone
+    }
+    // Catches a prompt captured before this component mounted (e.g. while
+    // the first lazy route was still resolving).
+    sync()
+    this.stopListening = onInstallPromptChange(sync)
+  },
+  beforeUnmount() {
+    this.stopListening?.()
   },
   methods: {
     async install() {
-      if (!this.deferredPrompt) return
-      this.deferredPrompt.prompt()
+      const deferredPrompt = getDeferredInstallPrompt()
+      if (!deferredPrompt) return
+      deferredPrompt.prompt()
       try {
-        await this.deferredPrompt.userChoice
+        await deferredPrompt.userChoice
       } finally {
-        this.deferredPrompt = null
+        clearDeferredInstallPrompt()
         this.showButton = false
       }
     }

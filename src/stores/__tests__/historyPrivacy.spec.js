@@ -31,12 +31,13 @@ afterEach(() => {
 const createStore = async () => (await import('../useRecherches.js')).useRecherches()
 
 describe('history requires an explicit local opt-in', () => {
-  it('reads only the preference on first use and preserves old entries without displaying them', async () => {
+  it('checks persisted presence on first use without loading or displaying old entries', async () => {
     const store = await createStore()
     expect(store.historyEnabled.value).toBe(false)
+    expect(store.hasSavedSearches.value).toBe(true)
     expect(store.recentSearches.value).toEqual([])
     expect(store.recentDPESearches.value).toEqual([])
-    expect(localStorage.getItem.mock.calls).toEqual([[preferenceKey]])
+    expect(localStorage.getItem.mock.calls).toEqual([[preferenceKey], [listingKey], [nearbyKey]])
     expect(localStorage.setItem).not.toHaveBeenCalled()
     expect(localStorage.removeItem).not.toHaveBeenCalled()
     expect(JSON.parse(storage.get(listingKey))).toEqual(oldListing)
@@ -93,13 +94,14 @@ describe('history requires an explicit local opt-in', () => {
     expect(store.historyEnabled.value).toBe(true)
     expect(store.recentSearches.value).toEqual(oldListing)
     expect(store.recentDPESearches.value).toEqual(oldNearby)
+    expect(store.hasSavedSearches.value).toBe(true)
   })
 
   it.each(['disabled', 'true', '1', '{}'])('does not treat %s as opt-in', async value => {
     storage.set(preferenceKey, value)
     const store = await createStore()
     expect(store.historyEnabled.value).toBe(false)
-    expect(localStorage.getItem.mock.calls).toEqual([[preferenceKey]])
+    expect(localStorage.getItem.mock.calls).toEqual([[preferenceKey], [listingKey], [nearbyKey]])
   })
 
   it('stays off if reading local storage fails', async () => {
@@ -156,7 +158,7 @@ describe('history requires an explicit local opt-in', () => {
     expect(store.recentSearches.value).toEqual([])
     expect(store.recentDPESearches.value).toEqual([])
     expect(store.saveSearch(criteria)).toBe(false)
-    expect(localStorage.getItem.mock.calls).toEqual([[preferenceKey]])
+    expect(localStorage.getItem.mock.calls).toEqual([[preferenceKey], [listingKey], [nearbyKey]])
   })
 
   it('honors cleared storage in another tab', async () => {
@@ -205,7 +207,7 @@ describe('history requires an explicit local opt-in', () => {
     expect(store[collection].value).toEqual([])
   })
 
-  it('ignores both history-key changes without reading or writing history while disabled', async () => {
+  it('refreshes presence on both history-key changes without hydrating or writing history while disabled', async () => {
     const store = await createStore()
     localStorage.getItem.mockClear()
     for (const key of [listingKey, nearbyKey]) {
@@ -215,7 +217,8 @@ describe('history requires an explicit local opt-in', () => {
     }
     expect(store.recentSearches.value).toEqual([])
     expect(store.recentDPESearches.value).toEqual([])
-    expect(localStorage.getItem).not.toHaveBeenCalled()
+    expect(store.hasSavedSearches.value).toBe(false)
+    expect(localStorage.getItem.mock.calls).toEqual([[listingKey], [listingKey], [nearbyKey], [nearbyKey]])
     expect(localStorage.setItem).not.toHaveBeenCalled()
     expect(localStorage.removeItem).not.toHaveBeenCalled()
   })
@@ -228,5 +231,106 @@ describe('history requires an explicit local opt-in', () => {
     expect(store.recentSearches.value).toEqual([])
     expect(store.recentDPESearches.value).toEqual([])
     expect(store.saveSearch(criteria)).toBe(true)
+  })
+})
+
+describe('persisted search presence', () => {
+  it('keeps last-known presence after a transient storage read failure', async () => {
+    const store = await createStore()
+    expect(store.hasSavedSearches.value).toBe(true)
+    localStorage.getItem.mockImplementation(() => {
+      throw new Error('Storage blocked')
+    })
+    window.dispatchEvent(new StorageEvent('storage', { key: null }))
+    expect(store.hasSavedSearches.value).toBe(true)
+    expect(store.historyEnabled.value).toBe(false)
+    expect(store.recentSearches.value).toEqual([])
+    expect(store.recentDPESearches.value).toEqual([])
+    localStorage.getItem.mockImplementation(key => storage.get(key) ?? null)
+    storage.clear()
+    window.dispatchEvent(new StorageEvent('storage', { key: null }))
+    expect(store.hasSavedSearches.value).toBe(false)
+  })
+
+  it.each(['recent', 'dpe'])('does not report a failed first %s save as persisted history', async type => {
+    storage.clear()
+    const store = await createStore()
+    store.setHistoryEnabled(true)
+    localStorage.setItem.mockImplementation(() => {
+      throw new Error('Storage full')
+    })
+    const saved =
+      type === 'recent'
+        ? store.saveSearch(criteria)
+        : store.saveRecentDPESearch({ address: 'Bordeaux' }, { results: [] })
+    expect(saved).toBe(false)
+    expect(store.hasSavedSearches.value).toBe(false)
+  })
+
+  it.each([null, '', '[]', '{}', 'null', 'broken JSON'])(
+    'ignores missing, empty or invalid histories (%s)',
+    async value => {
+      storage.clear()
+      if (value !== null) {
+        storage.set(listingKey, value)
+        storage.set(nearbyKey, value)
+      }
+      const store = await createStore()
+      expect(store.hasSavedSearches.value).toBe(false)
+      expect(store.historyEnabled.value).toBe(false)
+    }
+  )
+
+  it.each([listingKey, nearbyKey])('recognizes %s even if the other history is corrupt', async key => {
+    storage.set(listingKey, 'broken JSON')
+    storage.set(nearbyKey, 'broken JSON')
+    storage.set(key, JSON.stringify(key === listingKey ? oldListing : oldNearby))
+    storage.set(preferenceKey, 'disabled')
+    const store = await createStore()
+    expect(store.hasSavedSearches.value).toBe(true)
+    expect(store.historyEnabled.value).toBe(false)
+    expect(store.recentSearches.value).toEqual([])
+    expect(store.recentDPESearches.value).toEqual([])
+  })
+
+  it.each(['recent', 'dpe'])('retains persisted presence after a failed last-entry %s deletion', async type => {
+    storage.delete(type === 'recent' ? nearbyKey : listingKey)
+    const store = await createStore()
+    store.setHistoryEnabled(true)
+    localStorage.setItem.mockImplementation(() => {
+      throw new Error('Storage blocked')
+    })
+    expect(store.removeSearch(0, type)).toBe(false)
+    expect(store.hasSavedSearches.value).toBe(true)
+  })
+
+  it('keeps presence after partial clear failure and removes it after a successful retry', async () => {
+    const store = await createStore()
+    localStorage.removeItem.mockImplementation(key => {
+      if (key === nearbyKey) throw new Error('Storage blocked')
+      storage.delete(key)
+    })
+    expect(store.clearSearchHistory()).toBe(false)
+    expect(storage.has(listingKey)).toBe(false)
+    expect(storage.has(nearbyKey)).toBe(true)
+    expect(store.hasSavedSearches.value).toBe(true)
+    localStorage.removeItem.mockImplementation(key => storage.delete(key))
+    expect(store.clearSearchHistory()).toBe(true)
+    expect(store.hasSavedSearches.value).toBe(false)
+  })
+
+  it.each([listingKey, nearbyKey])('uses current %s storage, not stale event data, while disabled', async key => {
+    storage.clear()
+    const store = await createStore()
+    const entries = JSON.stringify(key === listingKey ? oldListing : oldNearby)
+    storage.set(key, entries)
+    window.dispatchEvent(new StorageEvent('storage', { key, newValue: null }))
+    expect(store.hasSavedSearches.value).toBe(true)
+    storage.set(key, '[]')
+    window.dispatchEvent(new StorageEvent('storage', { key, newValue: entries }))
+    expect(store.hasSavedSearches.value).toBe(false)
+    expect(store.recentSearches.value).toEqual([])
+    expect(store.recentDPESearches.value).toEqual([])
+    expect(localStorage.setItem).not.toHaveBeenCalled()
   })
 })
