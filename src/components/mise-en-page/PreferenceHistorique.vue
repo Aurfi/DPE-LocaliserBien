@@ -4,15 +4,11 @@
       <input
         type="checkbox"
         :checked="historyEnabled"
-        aria-describedby="history-explanation"
         class="mt-1"
         @change="changePreference"
       />
       Conserver mes recherches sur cet appareil
     </label>
-    <p id="history-explanation" class="mt-1 max-w-2xl">
-      Option désactivée par défaut. L'historique est enregistré uniquement dans ce navigateur.
-    </p>
     <div v-if="hasSavedSearches && confirmClear" class="mt-2">
       <p>Effacer définitivement les recherches enregistrées dans les deux modes ?</p>
       <div class="mt-1 flex flex-wrap gap-4">
